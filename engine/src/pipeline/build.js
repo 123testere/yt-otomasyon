@@ -52,9 +52,10 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   });
 
   console.log('  son kurgu…');
+  const music = await pickMusic(settings.music, dir);
   const videoPath = await renderFinal({
     clips, narration: narrated.narration, total: narrated.total, subtitles, badge, placement,
-    music: pickMusic(settings.music), musicVolume: settings.musicVolume, dir,
+    music: music?.file, musicVolume: settings.musicVolume, dir,
   });
 
   let thumbnailPath = null;
@@ -74,6 +75,6 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
     }
   }
 
-  const credits = [...new Set(visuals.map((v) => v.credit).filter(Boolean))];
+  const credits = [...new Set([music?.credit, ...visuals.map((v) => v.credit)].filter(Boolean))];
   return { videoPath, thumbnailPath, duration: narrated.total, credits };
 }

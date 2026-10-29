@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
-import { MUSIC_DIR } from '../lib/paths.js';
-import { run } from '../lib/util.js';
+import { MUSIC_DIR, ROOT } from '../lib/paths.js';
+import { download, run } from '../lib/util.js';
 
 const FPS = 30;
 const ENCODE = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '21', '-pix_fmt', 'yuv420p', '-r', String(FPS)];
@@ -55,15 +55,27 @@ export function characterPlacement(fmt) {
     : { size: 280, x: 40, y: fmt.h - 280 - 40, sideMargin: 280 + 80 };
 }
 
-export function pickMusic(mood) {
+const musicLibrary = JSON.parse(fs.readFileSync(path.join(ROOT, 'shared', 'music.json'), 'utf8'));
+const randomOf = (list) => list[Math.floor(Math.random() * list.length)];
+
+// Önce kullanıcının assets/music/<tür>/ klasörüne koyduğu parçalar; yoksa telifsiz kütüphaneden indirilir.
+export async function pickMusic(mood, dir) {
   if (!mood || mood === 'yok') return null;
-  const dir = path.join(MUSIC_DIR, mood);
-  const tracks = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp3|m4a|wav|ogg)$/i.test(f)) : [];
-  if (!tracks.length) {
-    console.warn(`  "${mood}" müzik klasörü boş (assets/music/${mood}); müziksiz devam ediliyor.`);
+  const own = path.join(MUSIC_DIR, mood);
+  const tracks = fs.existsSync(own) ? fs.readdirSync(own).filter((f) => /\.(mp3|m4a|wav|ogg)$/i.test(f)) : [];
+  if (tracks.length) return { file: path.join(own, randomOf(tracks)), credit: null };
+
+  const titles = musicLibrary.moods[mood];
+  if (!titles?.length) return null;
+  const title = randomOf(titles);
+  const file = path.join(dir, 'muzik.mp3');
+  try {
+    await download(`${musicLibrary.source}${encodeURIComponent(title)}.mp3`, file, { timeoutMs: 120_000, minBytes: 100_000 });
+  } catch (e) {
+    console.warn(`  müzik indirilemedi (${title}): ${e.message}; müziksiz devam ediliyor.`);
     return null;
   }
-  return path.join(dir, tracks[Math.floor(Math.random() * tracks.length)]);
+  return { file, credit: `"${title}" ${musicLibrary.artist}, ${musicLibrary.license}` };
 }
 
 export async function renderFinal({ clips, narration, total, subtitles, badge, placement, music, musicVolume, dir }) {

@@ -173,7 +173,7 @@ export default function ChannelSettings() {
         </Section>
 
         <Section title="Müzik ve altyazı">
-          <Label hint="Müzik dosyaları repodaki assets/music/<tür> klasöründen seçilir.">Arka plan müziği</Label>
+          <Label hint="Seçilen türde telifsiz bir parça (Kevin MacLeod) otomatik eklenir; açıklamaya kaynak yazılır.">Arka plan müziği</Label>
           <ChoiceChips items={options.musicMoods} value={s.music} onChange={(music) => set({ music })} />
           {s.music !== 'yok' ? (
             <>

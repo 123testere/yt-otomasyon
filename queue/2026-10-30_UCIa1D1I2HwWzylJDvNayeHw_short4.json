@@ -1,0 +1,54 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short4",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-29T22:30:00.000Z",
+  "topic": "Kimsenin okuyamadığı Voynich el yazması",
+  "title": "600 Yıldır Kimsenin Okuyamadığı Kitap",
+  "description": "Voynich el yazması 15. yüzyıldan kalma, bilinmeyen bir alfabeyle yazılmış ve bugüne kadar kimse çözemedi. İçindeki bitkilerin çoğu da hiçbir yerde yok.\n\n#voynich #gizem #tarih #çözülemeyengizemler",
+  "tags": ["voynich el yazması", "voynich", "çözülemeyen gizemler", "gizemli kitap", "şifreli kitap", "tarih", "gizem", "ilginç bilgiler"],
+  "scenes": [
+    {
+      "narration": "Evlat, öyle bir kitap var ki 600 yıldır tek bir cümlesi bile okunamadı.",
+      "visual": {
+        "query": "Voynich manuscript",
+        "prompt": "an ancient mysterious book lying open on a wooden desk, strange symbols glowing faintly in candlelight"
+      }
+    },
+    {
+      "narration": "Adı Voynich el yazması. Karbon testine göre 1400'lerin başında yazılmış.",
+      "visual": {
+        "query": "medieval manuscript",
+        "prompt": "a medieval scribe writing by candlelight in a stone room, quill and old parchment"
+      }
+    },
+    {
+      "narration": "Sayfaları dünyada başka hiçbir yerde görülmeyen bir alfabeyle dolu. Dilbilimciler de şifre uzmanları da çözemedi.",
+      "visual": {
+        "query": "Voynich manuscript page",
+        "prompt": "close-up of parchment covered in unknown flowing alphabet, cryptographers studying it with magnifying glasses"
+      }
+    },
+    {
+      "narration": "Daha da tuhafı, kitapta çizilmiş bitkilerin çoğu bilinen hiçbir türe benzemiyor.",
+      "visual": {
+        "query": "botanical illustration manuscript",
+        "prompt": "strange fantastical plants with twisting roots and impossible flowers, drawn like a medieval herbal book"
+      }
+    },
+    {
+      "narration": "Kitap bugün Yale Üniversitesi'nin kütüphanesinde korunuyor ve hâlâ sırrını saklıyor.",
+      "visual": {
+        "query": "Beinecke Library Yale",
+        "prompt": "a grand rare book library with marble walls glowing softly, a single ancient book in a glass case"
+      }
+    },
+    {
+      "narration": "Sence bu kitap gerçek bir dil mi, yoksa ustaca bir şaka mı? Yorumlara yaz.",
+      "visual": {
+        "query": "old book candle dark",
+        "prompt": "an old closed book on a table with a flickering candle in a dark room, mysterious atmosphere"
+      }
+    }
+  ]
+}
