@@ -1,0 +1,54 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-30T09:00:00.000Z",
+  "topic": "Ahtapotun üç kalbi, mavi kanı ve düşünen kolları",
+  "title": "3 Kalbi ve Mavi Kanı Olan Canlı",
+  "description": "Ahtapotun 3 kalbi var, kanı mavi ve sinir hücrelerinin çoğu kollarında. Okyanusun en tuhaf canlısını 45 saniyede tanı.\n\n#ahtapot #ilginçbilgiler #okyanus #hayvanlar",
+  "tags": ["ahtapot", "ahtapotun 3 kalbi", "mavi kan", "ilginç bilgiler", "okyanus canlıları", "hayvanlar alemi", "bilim", "deniz canlıları"],
+  "scenes": [
+    {
+      "narration": "Evlat, bir canlının 3 kalbi ve mavi kanı olsaydı bilim kurgu derdin. Ama bu canlı şu an okyanusta yüzüyor.",
+      "visual": {
+        "query": "octopus underwater",
+        "prompt": "a large octopus gliding through deep blue ocean water, light rays from above, close-up"
+      }
+    },
+    {
+      "narration": "Ahtapotun 2 kalbi solungaçlarına kan pompalar. Üçüncüsü ise kanı bütün vücuda dağıtır.",
+      "visual": {
+        "query": "octopus close up",
+        "prompt": "anatomical style view of an octopus body with glowing hearts visible inside, dark ocean background"
+      }
+    },
+    {
+      "narration": "İşin garibi, ahtapot yüzerken bu üçüncü kalp durur. Bu yüzden yüzmek onu çabucak yorar ve çoğu zaman sürünmeyi seçer.",
+      "visual": {
+        "query": "octopus crawling seabed",
+        "prompt": "an octopus crawling slowly across rocky sea floor among corals, soft turquoise light"
+      }
+    },
+    {
+      "narration": "Kanı mavidir, çünkü oksijeni demir yerine bakır içeren bir proteinle taşır.",
+      "visual": {
+        "query": "blue liquid drop",
+        "prompt": "a glowing drop of deep blue liquid falling into dark water, macro shot"
+      }
+    },
+    {
+      "narration": "Ve sinir hücrelerinin yaklaşık üçte ikisi beyninde değil, kollarındadır. Yani her kol bir bakıma kendi başına karar verebilir.",
+      "visual": {
+        "query": "octopus tentacles",
+        "prompt": "octopus tentacles curling around a seashell, each arm moving independently, dramatic underwater lighting"
+      }
+    },
+    {
+      "narration": "Peki sence en tuhaf özelliği hangisi? Yorumlara yaz.",
+      "visual": {
+        "query": "octopus eye",
+        "prompt": "extreme close-up of an intelligent octopus eye looking at the camera, deep sea background"
+      }
+    }
+  ]
+}
