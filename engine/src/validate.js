@@ -3,13 +3,36 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { CONFIG_DIR, QUEUE_DIR } from './lib/paths.js';
+import { CONFIG_DIR, DONE_DIR, QUEUE_DIR } from './lib/paths.js';
 
 const WORD_TOLERANCE = 0.3;
 
 const countWords = (text) => text.trim().split(/\s+/).filter(Boolean).length;
 
-export function validateJob(job, { fileId, needed } = {}) {
+// Başlıkları büyük/küçük harf, noktalama ve boşluk farkını yok sayarak karşılaştırır.
+export const normalizeTitle = (t = '') => t.toLocaleLowerCase('tr').replace(/[^\p{L}\p{N}]/gu, '');
+
+// Kanalın daha önce kullandığı başlıklar: yüklenenler (done/), Firestore geçmişi (config/channels.json).
+export function usedTitles(channelId, excludeId) {
+  const titles = new Set();
+  const channelsFile = path.join(CONFIG_DIR, 'channels.json');
+  if (fs.existsSync(channelsFile)) {
+    const channel = JSON.parse(fs.readFileSync(channelsFile, 'utf8')).find((c) => c.id === channelId);
+    for (const t of channel?.recentTitles ?? []) titles.add(normalizeTitle(t));
+  }
+  if (fs.existsSync(DONE_DIR)) {
+    for (const f of fs.readdirSync(DONE_DIR).filter((n) => n.endsWith('.json'))) {
+      if (f.slice(0, -5) === excludeId) continue;
+      try {
+        const done = JSON.parse(fs.readFileSync(path.join(DONE_DIR, f), 'utf8'));
+        if (done.channelId === channelId) titles.add(normalizeTitle(done.title));
+      } catch { /* bozuk dosya başlık kontrolünü engellemesin */ }
+    }
+  }
+  return titles;
+}
+
+export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   const errors = [];
   const req = (cond, msg) => { if (!cond) errors.push(msg); };
 
@@ -26,6 +49,9 @@ export function validateJob(job, { fileId, needed } = {}) {
   req(typeof job.description === 'string' && job.description.length <= 4500, 'description en fazla 4500 karakter olmalı');
   for (const field of ['title', 'description']) {
     if (/[<>]/.test(job[field] ?? '')) errors.push(`${field} içinde < veya > olamaz (YouTube reddeder)`);
+  }
+  if (takenTitles && typeof job.title === 'string' && takenTitles.has(normalizeTitle(job.title))) {
+    errors.push(`"${job.title}" başlığı bu kanalda daha önce kullanıldı; yeni bir başlık yaz`);
   }
   req(Array.isArray(job.tags) && job.tags.every((t) => typeof t === 'string'), 'tags metin dizisi olmalı');
   if (Array.isArray(job.tags)) req(job.tags.join(',').length <= 450, 'tags toplamı 450 karakteri geçmemeli');
@@ -63,12 +89,17 @@ export function loadNeeded() {
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const needed = loadNeeded();
-  const files = fs.existsSync(QUEUE_DIR) ? fs.readdirSync(QUEUE_DIR).filter((f) => f.endsWith('.json')) : [];
+  const files = fs.existsSync(QUEUE_DIR) ? fs.readdirSync(QUEUE_DIR).filter((f) => f.endsWith('.json')).sort() : [];
+  const queuedTitles = {}; // kuyruktaki dosyalar birbirinin başlığını da tekrar etmesin
   let bad = 0;
   for (const f of files) {
     let errors;
     try {
-      errors = validateJob(JSON.parse(fs.readFileSync(path.join(QUEUE_DIR, f), 'utf8')), { fileId: f.slice(0, -5), needed });
+      const job = JSON.parse(fs.readFileSync(path.join(QUEUE_DIR, f), 'utf8'));
+      const takenTitles = usedTitles(job.channelId, job.id);
+      for (const t of queuedTitles[job.channelId] ?? []) takenTitles.add(t);
+      errors = validateJob(job, { fileId: f.slice(0, -5), needed, takenTitles });
+      (queuedTitles[job.channelId] ??= []).push(normalizeTitle(job.title));
     } catch (e) {
       errors = [`JSON okunamadı: ${e.message}`];
     }

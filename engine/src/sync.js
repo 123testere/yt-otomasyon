@@ -56,11 +56,12 @@ async function main() {
 
   await firestore.doc('meta/options').set({ json: JSON.stringify(options), updatedAt: now });
 
-  const videosSnap = await firestore.collection('videos').select('channelId', 'title', 'createdAt').get();
+  const videosSnap = await firestore.collection('videos').select('channelId', 'title', 'createdAt', 'status').get();
   const titlesByChannel = {};
   for (const v of videosSnap.docs) {
-    const { channelId, title, createdAt } = v.data();
-    if (!channelId || !title) continue;
+    const { channelId, title, createdAt, status } = v.data();
+    // Sadece yayınlananlar geçmişe girer; kuyrukta bekleyen bir iş kendi başlığına takılmasın.
+    if (!channelId || !title || status !== 'uploaded') continue;
     (titlesByChannel[channelId] ??= []).push({ title, at: createdAt?.toMillis?.() ?? 0 });
   }
 

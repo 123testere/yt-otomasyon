@@ -40,6 +40,7 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 ## Başlık, açıklama, etiketler
 
 - `title`: En fazla 70 karakter tercih et (sınır 100). Merak uyandırsın ama yalan vaat etmesin (clickbait yok). `<` ve `>` kullanma.
+  Her video kendi konusuna özel bir başlık alır. Kanalın önceki başlıklarını (`recentTitles` ve `done/`) **tekrarlama**, aynı kalıbı art arda kullanma (ör. her başlık "…Biliyor Muydunuz?" diye bitmesin). Doğrulayıcı tekrar eden başlığı reddeder.
 - `description`: 2-4 cümlelik özet, ardından konuyla ilgili 3-5 hashtag. `<` ve `>` kullanma.
 - `tags`: 8-15 arası arama ifadesi, kanal dilinde.
 - Uzun video için ayrıca:

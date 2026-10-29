@@ -9,7 +9,7 @@ import { resolveSettings } from './lib/options.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './lib/paths.js';
 import { buildVideo } from './pipeline/build.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
-import { loadNeeded, validateJob } from './validate.js';
+import { loadNeeded, usedTitles, validateJob } from './validate.js';
 
 const MAX_ATTEMPTS = 3;
 const TIME_BUDGET_MS = Number(process.env.TIME_BUDGET_MIN ?? 300) * 60 * 1000;
@@ -47,9 +47,17 @@ async function main() {
       break;
     }
     const fileId = path.basename(file, '.json');
-    const errors = parseError ? [`JSON okunamadı: ${parseError}`] : validateJob(job, { fileId, needed });
     const ref = firestore.doc(`videos/${fileId}`);
+    const prev = (await ref.get()).data() ?? {};
+    // Yüklenmiş ama dosyası taşınamamış (iş yarıda kesilmiş) olabilir.
+    if (prev.status === 'uploaded') {
+      move(file, DONE_DIR);
+      continue;
+    }
 
+    const errors = parseError
+      ? [`JSON okunamadı: ${parseError}`]
+      : validateJob(job, { fileId, needed, takenTitles: usedTitles(job.channelId, fileId) });
     if (errors.length) {
       console.error(`✗ ${fileId}: ${errors.join('; ')}`);
       await ref.set({ channelId: job?.channelId ?? null, title: job?.title ?? fileId, type: job?.type ?? null,
@@ -58,11 +66,6 @@ async function main() {
       continue;
     }
 
-    const prev = (await ref.get()).data() ?? {};
-    if (prev.status === 'uploaded') {
-      move(file, DONE_DIR);
-      continue;
-    }
     if (prev.retry) prev.attempts = 0;
     // Deneme hakkı biten iş kuyrukta bekler; uygulamadan "Yeniden dene" denince tekrar işlenir.
     if ((prev.attempts ?? 0) >= MAX_ATTEMPTS) continue;
