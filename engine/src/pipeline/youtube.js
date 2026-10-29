@@ -22,7 +22,20 @@ function classify(e) {
   return e;
 }
 
-export async function upload({ refreshToken, job, settings, videoPath, thumbnailPath }) {
+const MAX_DESCRIPTION = 4900;
+
+// Lisans gereği kaynak gösterilmesi gereken görseller açıklamanın sonuna eklenir (YouTube sınırını aşmadan).
+function withCredits(description, credits, language) {
+  if (!credits?.length) return description;
+  let text = `${description}\n\n${language === 'tr' ? 'Görsel kaynakları' : 'Image credits'}:`;
+  for (const line of credits) {
+    if (text.length + line.length + 3 > MAX_DESCRIPTION) break;
+    text += `\n• ${line}`;
+  }
+  return text.replace(/[<>]/g, '');
+}
+
+export async function upload({ refreshToken, job, settings, videoPath, thumbnailPath, credits }) {
   const auth = oauthClient();
   auth.setCredentials({ refresh_token: refreshToken });
   const yt = google.youtube({ version: 'v3', auth });
@@ -42,7 +55,7 @@ export async function upload({ refreshToken, job, settings, videoPath, thumbnail
   }
 
   const hashtags = [settings.hashtags?.trim(), job.type === 'short' ? '#shorts' : ''].filter(Boolean).join(' ');
-  const description = [job.description.trim(), hashtags].filter(Boolean).join('\n\n');
+  const description = withCredits([job.description.trim(), hashtags].filter(Boolean).join('\n\n'), credits, settings.language);
 
   let videoId;
   try {

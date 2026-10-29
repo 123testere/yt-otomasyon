@@ -74,5 +74,6 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
     }
   }
 
-  return { videoPath, thumbnailPath, duration: narrated.total };
+  const credits = [...new Set(visuals.map((v) => v.credit).filter(Boolean))];
+  return { videoPath, thumbnailPath, duration: narrated.total, credits };
 }

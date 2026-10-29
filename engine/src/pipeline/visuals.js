@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { options, pick } from '../lib/options.js';
 import { download, hashSeed, run, sleep } from '../lib/util.js';
+import { nasa, openverse, wikimedia } from './archives.js';
 
 const PEXELS_KEY = process.env.PEXELS_API_KEY;
 const POLLINATIONS_TOKEN = process.env.POLLINATIONS_TOKEN;
@@ -82,13 +83,19 @@ export async function sceneVisual(scene, i, { settings, fmt, dir, used, seedBase
   const base = path.join(dir, `gorsel-${String(i).padStart(3, '0')}`);
   const ai = () => aiImageWithRetry(`${scene.visual.prompt}, ${style.suffix ?? 'cinematic, detailed'}`,
     { ...fmt, seed: seedBase + i }, `${base}.jpg`).then((file) => ({ kind: 'image', file }));
-  const photo = () => pexelsPhoto(scene.visual.query, fmt, `${base}.jpg`, used);
-  const video = () => pexelsVideo(scene.visual.query, fmt, `${base}.mp4`, used);
+  const q = scene.visual.query;
+  const photo = () => pexelsPhoto(q, fmt, `${base}.jpg`, used);
+  const video = () => pexelsVideo(q, fmt, `${base}.mp4`, used);
+  const wiki = () => wikimedia(q, fmt, `${base}-w.jpg`, used);
+  const ov = () => openverse(q, fmt, `${base}-o.jpg`, used);
+  const space = () => nasa(q, fmt, `${base}-n.jpg`, used);
 
+  // Anahtarsız arşivler: uzay/bilim kanallarında önce NASA.
+  const archives = ['uzay', 'bilim'].includes(settings.niche) ? [space, wiki, ov] : [wiki, ov];
   const chain = {
-    'pexels-video': [video, photo, ai],
-    'pexels-photo': [photo, ai],
-    ai: [ai, photo],
+    'pexels-video': [video, photo, ...archives, ai],
+    'pexels-photo': [photo, ...archives, ai],
+    ai: [ai, photo, ...archives],
   }[style.source];
 
   for (const attempt of chain) {
