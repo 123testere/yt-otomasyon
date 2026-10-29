@@ -19,16 +19,10 @@
       "music": "gizemli",
       "musicVolume": "0.12",
       "subtitles": "kelime",
-      "subtitleColor": "beyaz",
+      "subtitleColor": "sari",
       "long": {
         "days": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          0
+          1
         ],
         "time": "22:00",
         "minutes": 8
