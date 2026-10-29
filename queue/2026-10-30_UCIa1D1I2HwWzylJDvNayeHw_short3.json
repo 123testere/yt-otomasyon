@@ -1,0 +1,54 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short3",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-30T12:00:00.000Z",
+  "topic": "Mimar Sinan'ın çıraklık, kalfalık ve ustalık eserleri",
+  "title": "Mimar Sinan Ustalık Eserini 80 Yaşında Yaptı",
+  "description": "Mimar Sinan, Şehzade Camii'ne çıraklık, Süleymaniye'ye kalfalık, Selimiye'ye ustalık eserim dedi. Selimiye'yi yaklaşık 80 yaşındayken tamamladı.\n\n#mimarsinan #selimiye #süleymaniye #tarih #ilginçbilgiler",
+  "tags": ["mimar sinan", "selimiye camii", "süleymaniye camii", "şehzade camii", "osmanlı mimarisi", "tarih", "ilginç bilgiler", "edirne"],
+  "scenes": [
+    {
+      "narration": "Evlat, çoğu insan 80 yaşında emekli olur. Bir usta ise o yaşta hayatının en büyük eserini bitirdi.",
+      "visual": {
+        "query": "Selimiye Mosque Edirne",
+        "prompt": "grand ottoman mosque with four slender minarets at golden sunset, wide shot"
+      }
+    },
+    {
+      "narration": "Mimar Sinan yaklaşık 50 yıl boyunca Osmanlı'nın baş mimarıydı ve 300'den fazla yapıya imza attı.",
+      "visual": {
+        "query": "Mimar Sinan",
+        "prompt": "old ottoman architect studying building plans by candlelight, 16th century workshop"
+      }
+    },
+    {
+      "narration": "Kendi eserlerini 3'e ayırdı. İstanbul'daki Şehzade Camii için çıraklık eserim dedi.",
+      "visual": {
+        "query": "Sehzade Mosque Istanbul",
+        "prompt": "ottoman mosque courtyard with arches and a central fountain, morning light"
+      }
+    },
+    {
+      "narration": "Süleymaniye Camii için kalfalık eserim dedi. Oysa bu cami bugün bile İstanbul'un silüetine hâkim.",
+      "visual": {
+        "query": "Suleymaniye Mosque",
+        "prompt": "huge ottoman mosque on a hill overlooking the golden horn, istanbul skyline"
+      }
+    },
+    {
+      "narration": "Ustalık eserim dediği ise Edirne'deki Selimiye Camii. Dev kubbesi, yapıyı içeriden adeta havada asılı gösterir.",
+      "visual": {
+        "query": "Selimiye Mosque dome interior",
+        "prompt": "looking up inside a vast ottoman dome with intricate tile patterns and rows of windows"
+      }
+    },
+    {
+      "narration": "Sence 80 yaşında başyapıt üretmek mümkün mü? Yorumlara yaz.",
+      "visual": {
+        "query": "Edirne Selimiye night",
+        "prompt": "illuminated ottoman mosque at night under a starry sky, reflections on wet stone"
+      }
+    }
+  ]
+}
