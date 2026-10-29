@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844852318279",
+    "project_id": "yt-otomasyon-dk25",
+    "storage_bucket": "yt-otomasyon-dk25.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844852318279:android:31e098cdaaf5c7b8d32162",
+        "android_client_info": {
+          "package_name": "com.delikurt.ytotomasyon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy5q96gMFWD_MmbUliWdPW_cKFLju0YiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

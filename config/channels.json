@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TEST_KANALI",
+    "title": "Test Kanalı (silinecek)",
+    "enabled": true,
+    "settings": {
+      "enabled": true,
+      "niche": "mitoloji",
+      "customNiche": "",
+      "language": "en",
+      "voice": "en-US-GuyNeural",
+      "speechRate": "+10%",
+      "tone": "komik",
+      "character": "gizemli",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": true,
+      "visualStyle": "ai-anime",
+      "music": "gizemli",
+      "musicVolume": "0.12",
+      "subtitles": "kelime",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "time": "22:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "12:00"
+        ],
+        "seconds": 45
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun"
+    },
+    "brief": {
+      "konu": "Mitoloji ve Efsaneler",
+      "dil": "English",
+      "ton": "Hafif mizahi, espri içeren ama bilgiyi bozmayan.",
+      "karakter": "Yüzü pek görünmeyen, fısıltıyla sır anlatan gizemli bir figür.",
+      "gorselStil": "YZ görsel – anime",
+      "cocukIcerigi": false,
+      "ekTalimat": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun"
+    },
+    "recentTitles": []
+  }
+]

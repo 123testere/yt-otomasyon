@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "YT Otomasyon",
+    "slug": "yt-otomasyon",
+    "scheme": "ytotomasyon",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E1015",
+    "android": {
+      "package": "com.delikurt.ytotomasyon",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "backgroundColor": "#0E1015",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-notifications",
+        { "color": "#FF5A5F" }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

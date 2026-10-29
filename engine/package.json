@@ -1,0 +1,17 @@
+{
+  "name": "yt-otomasyon-engine",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "sync": "node src/sync.js",
+    "produce": "node src/produce.js",
+    "validate": "node src/validate.js",
+    "kanal-bagla": "node src/connect-channel.js",
+    "yonetici-yap": "node src/make-admin.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0",
+    "googleapis": "^144.0.0"
+  }
+}

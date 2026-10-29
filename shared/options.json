@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "timezone": "Europe/Istanbul",
+
+  "niches": [
+    { "id": "tarih", "label": "Tarih", "categoryId": "27" },
+    { "id": "bilim", "label": "Bilim", "categoryId": "28" },
+    { "id": "uzay", "label": "Uzay ve Astronomi", "categoryId": "28" },
+    { "id": "teknoloji", "label": "Teknoloji ve Yapay Zekâ", "categoryId": "28" },
+    { "id": "gizem", "label": "Gizem ve Çözülmemiş Olaylar", "categoryId": "24" },
+    { "id": "korku", "label": "Korku Hikâyeleri", "categoryId": "24" },
+    { "id": "mitoloji", "label": "Mitoloji ve Efsaneler", "categoryId": "27" },
+    { "id": "biyografi", "label": "Biyografi", "categoryId": "27" },
+    { "id": "psikoloji", "label": "Psikoloji", "categoryId": "27" },
+    { "id": "felsefe", "label": "Felsefe", "categoryId": "27" },
+    { "id": "motivasyon", "label": "Motivasyon ve Kişisel Gelişim", "categoryId": "22" },
+    { "id": "finans", "label": "Ekonomi ve Finans", "categoryId": "27" },
+    { "id": "doga", "label": "Doğa ve Hayvanlar", "categoryId": "15" },
+    { "id": "cografya", "label": "Ülkeler ve Coğrafya", "categoryId": "19" },
+    { "id": "ilginc", "label": "İlginç Bilgiler", "categoryId": "27" },
+    { "id": "masal", "label": "Masallar (Çocuk)", "categoryId": "24", "madeForKids": true },
+    { "id": "ozel", "label": "Özel (kendim yazacağım)", "categoryId": "22", "custom": true }
+  ],
+
+  "languages": [
+    { "id": "tr", "label": "Türkçe", "wpm": 115, "voices": [
+      { "id": "tr-TR-AhmetNeural", "label": "Ahmet (erkek)" },
+      { "id": "tr-TR-EmelNeural", "label": "Emel (kadın)" }
+    ]},
+    { "id": "en", "label": "English", "wpm": 150, "voices": [
+      { "id": "en-US-GuyNeural", "label": "Guy (US, erkek)" },
+      { "id": "en-US-ChristopherNeural", "label": "Christopher (US, erkek)" },
+      { "id": "en-US-JennyNeural", "label": "Jenny (US, kadın)" },
+      { "id": "en-US-AriaNeural", "label": "Aria (US, kadın)" },
+      { "id": "en-GB-RyanNeural", "label": "Ryan (UK, erkek)" },
+      { "id": "en-GB-SoniaNeural", "label": "Sonia (UK, kadın)" }
+    ]},
+    { "id": "de", "label": "Deutsch", "wpm": 125, "voices": [
+      { "id": "de-DE-ConradNeural", "label": "Conrad (erkek)" },
+      { "id": "de-DE-KatjaNeural", "label": "Katja (kadın)" }
+    ]},
+    { "id": "es", "label": "Español", "wpm": 150, "voices": [
+      { "id": "es-ES-AlvaroNeural", "label": "Álvaro (erkek)" },
+      { "id": "es-ES-ElviraNeural", "label": "Elvira (kadın)" }
+    ]},
+    { "id": "fr", "label": "Français", "wpm": 145, "voices": [
+      { "id": "fr-FR-HenriNeural", "label": "Henri (erkek)" },
+      { "id": "fr-FR-DeniseNeural", "label": "Denise (kadın)" }
+    ]},
+    { "id": "pt", "label": "Português (BR)", "wpm": 145, "voices": [
+      { "id": "pt-BR-AntonioNeural", "label": "Antônio (erkek)" },
+      { "id": "pt-BR-FranciscaNeural", "label": "Francisca (kadın)" }
+    ]}
+  ],
+
+  "speechRates": [
+    { "id": "-10%", "label": "Yavaş" },
+    { "id": "+0%", "label": "Normal" },
+    { "id": "+10%", "label": "Hızlı" }
+  ],
+
+  "tones": [
+    { "id": "belgesel", "label": "Ciddi belgesel", "hint": "Ağırbaşlı, bilgi dolu, belgesel anlatıcısı gibi." },
+    { "id": "samimi", "label": "Samimi sohbet", "hint": "İzleyiciyle konuşur gibi, sıcak ve doğal." },
+    { "id": "heyecanli", "label": "Heyecanlı", "hint": "Enerjik, merak uyandıran, hızlı tempolu." },
+    { "id": "gerilim", "label": "Gizemli / gerilimli", "hint": "Yavaş açılan, merak ve gerilim kuran anlatım." },
+    { "id": "komik", "label": "Eğlenceli / esprili", "hint": "Hafif mizahi, espri içeren ama bilgiyi bozmayan." },
+    { "id": "sakin", "label": "Sakin / huzurlu", "hint": "Yumuşak, dinlendirici, acele etmeyen." },
+    { "id": "egitici", "label": "Öğretmen gibi", "hint": "Adım adım, sade, örneklerle açıklayan." }
+  ],
+
+  "characters": [
+    { "id": "yok", "label": "Karakter yok (sadece ses)" },
+    { "id": "bilge-dede", "label": "Bilge dede", "persona": "Yıllarını kitaplara vermiş, tatlı dilli yaşlı bir hikâye anlatıcısı.", "prompt": "kind elderly storyteller man with white beard and round glasses, warm smile, wearing a knitted vest, cozy library background" },
+    { "id": "masal-nine", "label": "Masalcı nine", "persona": "Torunlarına masal anlatan sevecen bir nine.", "prompt": "lovely grandmother with grey hair bun and headscarf, warm smile, cozy living room background" },
+    { "id": "genc-bilimci", "label": "Genç bilim insanı", "persona": "Meraklı, enerjik, her şeyi deneyle açıklayan genç bir bilim insanı.", "prompt": "young female scientist with glasses and lab coat, curious friendly expression, laboratory background" },
+    { "id": "profesor", "label": "Tarihçi profesör", "persona": "Ders verir gibi anlatan ama sıkmayan bir tarih profesörü.", "prompt": "middle aged history professor with tweed jacket and short grey beard, confident expression, old maps background" },
+    { "id": "gizemli", "label": "Gizemli anlatıcı", "persona": "Yüzü pek görünmeyen, fısıltıyla sır anlatan gizemli bir figür.", "prompt": "mysterious hooded narrator, face half in shadow, candle light, dark atmospheric background" },
+    { "id": "robot", "label": "Sevimli robot", "persona": "İnsanları anlamaya çalışan, esprili, sevimli bir robot.", "prompt": "cute friendly round robot with big glowing eyes, futuristic soft background" },
+    { "id": "kasif", "label": "Maceracı kâşif", "persona": "Dünyayı gezmiş, her yerden hikâye toplamış bir kâşif.", "prompt": "adventurous explorer with safari hat and backpack, confident smile, jungle background" },
+    { "id": "ozel", "label": "Özel (kendim tarif edeceğim)", "custom": true }
+  ],
+
+  "visualStyles": [
+    { "id": "stok-video", "label": "Stok video (gerçek çekim)", "source": "pexels-video" },
+    { "id": "stok-foto", "label": "Stok fotoğraf + yakınlaşma", "source": "pexels-photo" },
+    { "id": "ai-gercekci", "label": "YZ görsel – gerçekçi", "source": "ai", "suffix": "photorealistic, natural lighting, highly detailed, 35mm photo" },
+    { "id": "ai-sinematik", "label": "YZ görsel – sinematik", "source": "ai", "suffix": "cinematic film still, dramatic lighting, wide shot, color graded" },
+    { "id": "ai-anime", "label": "YZ görsel – anime", "source": "ai", "suffix": "anime style illustration, vibrant colors, detailed background" },
+    { "id": "ai-yagliboya", "label": "YZ görsel – yağlı boya", "source": "ai", "suffix": "classical oil painting, visible brush strokes, museum quality" },
+    { "id": "ai-suluboya", "label": "YZ görsel – suluboya", "source": "ai", "suffix": "soft watercolor illustration, paper texture, pastel colors" },
+    { "id": "ai-cizgiroman", "label": "YZ görsel – çizgi roman", "source": "ai", "suffix": "comic book illustration, bold ink lines, halftone shading" },
+    { "id": "ai-3d", "label": "YZ görsel – 3D animasyon", "source": "ai", "suffix": "3d animated movie style render, soft lighting, cute stylized" },
+    { "id": "ai-minimal", "label": "YZ görsel – minimal", "source": "ai", "suffix": "minimalist flat vector illustration, clean shapes, limited palette" }
+  ],
+
+  "musicMoods": [
+    { "id": "yok", "label": "Müzik yok" },
+    { "id": "epik", "label": "Epik" },
+    { "id": "gizemli", "label": "Gizemli" },
+    { "id": "huzurlu", "label": "Huzurlu" },
+    { "id": "neseli", "label": "Neşeli" },
+    { "id": "duygusal", "label": "Duygusal" },
+    { "id": "gerilim", "label": "Gerilim" },
+    { "id": "lofi", "label": "Lo-fi" }
+  ],
+
+  "musicVolumes": [
+    { "id": "0.07", "label": "Çok kısık" },
+    { "id": "0.12", "label": "Kısık" },
+    { "id": "0.2", "label": "Orta" }
+  ],
+
+  "subtitleModes": [
+    { "id": "yok", "label": "Altyazı yok" },
+    { "id": "klasik", "label": "Klasik (alt satır)" },
+    { "id": "kelime", "label": "Kelime kelime (büyük, ortada)" }
+  ],
+
+  "subtitleColors": [
+    { "id": "beyaz", "label": "Beyaz", "primary": "&H00FFFFFF", "outline": "&H00000000" },
+    { "id": "sari", "label": "Sarı", "primary": "&H0000E5FF", "outline": "&H00000000" },
+    { "id": "yesil", "label": "Yeşil", "primary": "&H0066FF66", "outline": "&H00000000" }
+  ],
+
+  "longMinutes": [
+    { "id": 5, "label": "5 dakika" },
+    { "id": 8, "label": "8 dakika" },
+    { "id": 10, "label": "10 dakika" },
+    { "id": 15, "label": "15 dakika" },
+    { "id": 20, "label": "20 dakika" }
+  ],
+
+  "shortSeconds": [
+    { "id": 30, "label": "30 saniye" },
+    { "id": 45, "label": "45 saniye" },
+    { "id": 60, "label": "60 saniye" }
+  ],
+
+  "weekdays": [
+    { "id": 1, "label": "Pzt" },
+    { "id": 2, "label": "Sal" },
+    { "id": 3, "label": "Çar" },
+    { "id": 4, "label": "Per" },
+    { "id": 5, "label": "Cum" },
+    { "id": 6, "label": "Cmt" },
+    { "id": 0, "label": "Paz" }
+  ],
+
+  "publishTimes": ["08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
+
+  "privacies": [
+    { "id": "public", "label": "Herkese açık" },
+    { "id": "unlisted", "label": "Liste dışı" },
+    { "id": "private", "label": "Gizli" }
+  ],
+
+  "defaults": {
+    "enabled": false,
+    "niche": "ilginc",
+    "customNiche": "",
+    "language": "tr",
+    "voice": "tr-TR-AhmetNeural",
+    "speechRate": "+0%",
+    "tone": "samimi",
+    "character": "yok",
+    "customCharacter": "",
+    "characterOnScreen": true,
+    "identityLocked": false,
+    "visualStyle": "ai-sinematik",
+    "music": "yok",
+    "musicVolume": "0.12",
+    "subtitles": "klasik",
+    "subtitleColor": "beyaz",
+    "long": { "days": [2, 5], "time": "18:00", "minutes": 8 },
+    "shorts": { "times": ["12:00"], "seconds": 45 },
+    "privacy": "public",
+    "aiDisclosure": true,
+    "hashtags": "",
+    "extraInstructions": ""
+  }
+}

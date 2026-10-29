@@ -1,0 +1,64 @@
+name: Video üret ve yükle
+
+on:
+  push:
+    branches: [main]
+    paths: ['queue/**']
+  schedule:
+    - cron: '41 */2 * * *' # her 2 saatte bir: yarım kalan / kota bekleyen işler
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kuyrukta iş var mı?
+        id: check
+        run: |
+          if ls queue/*.json >/dev/null 2>&1; then echo "has=1" >> "$GITHUB_OUTPUT"; else echo "Kuyruk boş."; fi
+      - if: steps.check.outputs.has
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+      - if: steps.check.outputs.has
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - if: steps.check.outputs.has
+        name: Araçları kur
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-core > /dev/null
+          pip install -q -r engine/py/requirements.txt
+          cd engine && npm ci
+      - if: steps.check.outputs.has
+        run: node src/produce.js
+        working-directory: engine
+        env:
+          PYTHON: python
+          TIME_BUDGET_MIN: 300
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
+      - if: always() && steps.check.outputs.has
+        name: Kuyruk durumunu kaydet
+        run: |
+          git config user.name "otomasyon-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A queue done failed
+          git diff --cached --quiet && exit 0
+          git commit -m "kuyruk: işlenen videolar"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

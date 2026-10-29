@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2026-10-30_TEST_KANALI_short1",
+    "channelId": "TEST_KANALI",
+    "type": "short",
+    "publishAt": "2026-10-30T09:00:00.000Z",
+    "targetWords": 113
+  },
+  {
+    "id": "2026-10-30_TEST_KANALI_long1",
+    "channelId": "TEST_KANALI",
+    "type": "long",
+    "publishAt": "2026-10-30T19:00:00.000Z",
+    "targetWords": 1200
+  },
+  {
+    "id": "2026-10-31_TEST_KANALI_short1",
+    "channelId": "TEST_KANALI",
+    "type": "short",
+    "publishAt": "2026-10-31T09:00:00.000Z",
+    "targetWords": 113
+  },
+  {
+    "id": "2026-10-31_TEST_KANALI_long1",
+    "channelId": "TEST_KANALI",
+    "type": "long",
+    "publishAt": "2026-10-31T19:00:00.000Z",
+    "targetWords": 1200
+  }
+]
