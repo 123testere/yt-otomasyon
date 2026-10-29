@@ -23,11 +23,24 @@
       "expo-status-bar",
       [
         "expo-notifications",
-        { "color": "#FF5A5F" }
+        {
+          "color": "#FF5A5F"
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": false
-    }
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "241c50c8-958d-4243-9cc3-92db903ea37e"
+      }
+    },
+    "owner": "burak-kaan"
   }
 }
