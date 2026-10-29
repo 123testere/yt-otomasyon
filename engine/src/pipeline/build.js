@@ -30,7 +30,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   const seedBase = seedFor(job.id);
   const visuals = [];
   for (const [i, scene] of job.scenes.entries()) {
-    visuals.push(await sceneVisual(scene, i, { settings, fmt, dir, used, seedBase }));
+    visuals.push(await sceneVisual(scene, i, { settings, fmt, dir, used, seedBase, previous: visuals }));
   }
 
   console.log('  sahneler render ediliyor…');
