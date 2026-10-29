@@ -7,7 +7,8 @@ let initialized = false;
 
 // GitHub Actions'ta FIREBASE_SERVICE_ACCOUNT (JSON metni), bilgisayarda secrets/service-account.json kullanılır.
 function credentials() {
-  if (process.env.FIREBASE_SERVICE_ACCOUNT) return JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+  // Windows'tan kopyalanan değerlerin başında görünmez BOM karakteri olabilir.
+  if (process.env.FIREBASE_SERVICE_ACCOUNT) return JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT.replace(/^﻿/, ''));
   const file = path.join(SECRETS_DIR, 'service-account.json');
   if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, 'utf8'));
   throw new Error('Firebase servis hesabı bulunamadı: FIREBASE_SERVICE_ACCOUNT ortam değişkeni veya secrets/service-account.json gerekli.');
