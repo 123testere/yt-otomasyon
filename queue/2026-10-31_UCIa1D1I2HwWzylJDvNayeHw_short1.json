@@ -1,0 +1,48 @@
+{
+  "id": "2026-10-31_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-31T05:00:00.000Z",
+  "topic": "Kleopatra ile Keops Piramidi arasındaki zaman farkı",
+  "title": "Kleopatra Piramitlere Değil Bize Daha Yakın",
+  "hookText": "Zaman yanılgısı",
+  "description": "Kleopatra yaşadığında Keops Piramidi yaklaşık 2500 yıllıktı. Bizimle arasındaki fark ise yaklaşık 2000 yıl. Tarihin zaman ölçeği sandığımızdan çok daha şaşırtıcı.\n\n#kleopatra #piramitler #tarih #ilginçbilgiler",
+  "tags": ["kleopatra", "keops piramidi", "antik mısır", "tarih", "ilginç tarih bilgileri", "piramitler", "zaman", "antik dünya"],
+  "scenes": [
+    {
+      "narration": "Evlat, Kleopatra'nın piramitleri yapanlara mı yoksa bize mi daha yakın yaşadığını hiç düşündün mü?",
+      "visual": {
+        "query": "egypt pyramids sunset",
+        "prompt": "great pyramids of giza at golden sunset, wide shot, long shadows"
+      }
+    },
+    {
+      "narration": "Büyük Keops Piramidi yaklaşık 4500 yıl önce, MÖ 2500'lü yıllarda inşa edildi.",
+      "visual": {
+        "query": "ancient pyramid construction",
+        "prompt": "workers hauling huge stone blocks up a pyramid under a bright desert sun"
+      }
+    },
+    {
+      "narration": "Kleopatra ise MÖ 69 ile 30 yılları arasında yaşadı. Yani piramit zaten yaklaşık 2500 yıllık bir yapıydı.",
+      "visual": {
+        "query": "ancient egyptian queen",
+        "prompt": "an egyptian queen in a golden headdress standing before an ancient pyramid at dusk"
+      }
+    },
+    {
+      "narration": "Kleopatra'dan bugüne ise yaklaşık 2000 yıl geçti. Evet, doğru okudun, aradaki fark piramitten bize olandan daha kısa.",
+      "visual": {
+        "query": "hourglass desert sand",
+        "prompt": "an old hourglass half buried in desert sand with pyramids in the distance"
+      }
+    },
+    {
+      "narration": "Zaman, sandığımızdan çok daha uzun bir yol. Sence başka hangi tarihi yanlış hayal ediyoruz? Yorumlara yaz, videoyu beğen ve abone ol.",
+      "visual": {
+        "query": "old library books",
+        "prompt": "an old wise storyteller's candlelit study full of dusty books and ancient scrolls"
+      }
+    }
+  ]
+}
