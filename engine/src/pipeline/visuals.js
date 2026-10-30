@@ -81,6 +81,8 @@ async function aiImageWithRetry(prompt, opts, dest) {
 export async function sceneVisual(scene, i, { settings, fmt, dir, used, seedBase, previous = [] }) {
   const style = pick(options.visualStyles, settings.visualStyle) ?? options.visualStyles[0];
   const base = path.join(dir, `gorsel-${String(i).padStart(3, '0')}`);
+  // Hareketli grafik stili dış görsel kullanmaz; zemini Remotion çizer (klasik şablon için düz zemin dosyası).
+  if (style.source === 'motion') return { ...(await plainBackground(fmt, `${base}.png`)), motionBg: true };
   const ai = () => aiImageWithRetry(`${scene.visual.prompt}, ${style.suffix ?? 'cinematic, detailed'}`,
     { ...fmt, seed: seedBase + i }, `${base}.jpg`).then((file) => ({ kind: 'image', file }));
   const q = scene.visual.query;

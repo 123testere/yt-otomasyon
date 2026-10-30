@@ -1,6 +1,7 @@
 import {
-  AbsoluteFill, Html5Audio, Img, interpolate, Loop, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig,
+  AbsoluteFill, Html5Audio, Img, interpolate, Loop, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig,
 } from 'remotion';
+import { AnimatedBackground, MotionScene } from './Motion.jsx';
 import { linearTiming, TransitionSeries } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
@@ -25,7 +26,8 @@ function KenBurns({ src, index, duration }) {
   );
 }
 
-function SceneVisual({ scene, index }) {
+function SceneVisual({ scene, index, accent }) {
+  if (scene.kind === 'none') return <AnimatedBackground accent={accent} seed={index} />;
   if (scene.kind === 'video') {
     const clipFrames = Math.max(1, scene.clipFrames ?? scene.duration);
     return (
@@ -40,7 +42,7 @@ function SceneVisual({ scene, index }) {
 }
 
 // Geçişler sahneleri üst üste bindirir; her sahneyi geçiş kadar uzatarak anlatımla senkron kalınır.
-function Scenes({ scenes }) {
+function Scenes({ scenes, accent }) {
   const presentations = [fade(), slide({ direction: 'from-right' }), fade(), slide({ direction: 'from-bottom' })];
   return (
     <TransitionSeries>
@@ -48,7 +50,7 @@ function Scenes({ scenes }) {
         const last = i === scenes.length - 1;
         const items = [
           <TransitionSeries.Sequence key={`s${i}`} durationInFrames={scene.duration + (last ? 0 : TRANSITION)}>
-            <SceneVisual scene={scene} index={i} />
+            <SceneVisual scene={scene} index={i} accent={accent} />
           </TransitionSeries.Sequence>,
         ];
         if (!last) {
@@ -173,14 +175,19 @@ function ProgressBar({ color }) {
 }
 
 export function VideoComposition(props) {
-  const { scenes, words, narration, music, musicVolume, badge, captions, captionColor, hookText, portrait, lang } = props;
+  const { scenes, motions = [], words, narration, music, musicVolume, badge, captions, captionColor, hookText, portrait, lang } = props;
   const { durationInFrames } = useVideoConfig();
   const musicVol = (f) => musicVolume * interpolate(f, [0, 60, durationInFrames - 90, durationInFrames], [0, 1, 1, 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
-      <Scenes scenes={scenes} />
+      <Scenes scenes={scenes} accent={captionColor} />
       <AbsoluteFill style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55))' }} />
+      {motions.map((m, i) => (
+        <Sequence key={i} from={m.from} durationInFrames={m.duration}>
+          <MotionScene motion={m.motion} accent={captionColor} lang={lang} portrait={portrait} />
+        </Sequence>
+      ))}
       <Badge badge={badge} words={words} portrait={portrait} />
       <Captions words={words} mode={captions} color={captionColor} portrait={portrait} lang={lang} />
       <Hook text={hookText} portrait={portrait} color={captionColor} lang={lang} />

@@ -92,6 +92,7 @@
   ],
 
   "visualStyles": [
+    { "id": "hareketli-grafik", "label": "Hareketli grafik (kodla animasyon)", "source": "motion" },
     { "id": "stok-video", "label": "Stok video (gerçek çekim)", "source": "pexels-video" },
     { "id": "stok-foto", "label": "Stok fotoğraf + yakınlaşma", "source": "pexels-photo" },
     { "id": "ai-gercekci", "label": "YZ görsel – gerçekçi", "source": "ai", "suffix": "photorealistic, natural lighting, highly detailed, 35mm photo" },

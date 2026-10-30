@@ -26,9 +26,10 @@ const ANGLES = ['', ', close-up detail shot', ', wide establishing shot', ', dra
 
 async function planShots(job, narrated, fmt, { settings, dir, used, seedBase }) {
   const shots = [];
+  const motionOnly = pick(options.visualStyles, settings.visualStyle)?.source === 'motion';
   for (const [i, scene] of job.scenes.entries()) {
     const { start, duration } = narrated.scenes[i];
-    const count = Math.min(MAX_SHOTS_PER_SCENE, Math.max(1, Math.round(duration / SHOT_SEC[job.type])));
+    const count = motionOnly ? 1 : Math.min(MAX_SHOTS_PER_SCENE, Math.max(1, Math.round(duration / SHOT_SEC[job.type])));
     for (let j = 0; j < count; j++) {
       const variant = { ...scene, visual: { ...scene.visual, prompt: `${scene.visual.prompt}${ANGLES[j]}` } };
       const visual = await sceneVisual(variant, shots.length, {

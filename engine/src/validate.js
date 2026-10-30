@@ -9,6 +9,30 @@ const WORD_TOLERANCE = 0.3;
 
 const countWords = (text) => text.trim().split(/\s+/).filter(Boolean).length;
 
+const str = (v, max) => typeof v === 'string' && v.trim().length > 0 && v.length <= max;
+const optStr = (v, max) => v === undefined || str(v, max);
+
+// Sahnedeki hareketli grafik verisi (remotion/src/Motion.jsx bileşenleri) geçerli mi?
+export function motionErrors(m) {
+  if (m === undefined) return [];
+  if (!m || typeof m !== 'object') return ['motion bir nesne olmalı'];
+  const checks = {
+    stat: () => (str(String(m.value ?? ''), 12) ? [] : ['stat.value 1-12 karakter']).concat(optStr(m.label, 40) ? [] : ['stat.label en fazla 40 karakter']),
+    timeline: () => (Array.isArray(m.items) && m.items.length >= 2 && m.items.length <= 4
+      && m.items.every((it) => str(String(it?.year ?? ''), 10) && str(it?.label, 40)) ? [] : ['timeline.items 2-4 öğe, her biri {year ≤10, label ≤40}']),
+    compare: () => (['left', 'right'].every((k) => str(m[k]?.title, 30) && str(String(m[k]?.value ?? ''), 14))
+      ? [] : ['compare.left/right {title ≤30, value ≤14} olmalı']),
+    list: () => (Array.isArray(m.items) && m.items.length >= 2 && m.items.length <= 4 && m.items.every((it) => str(it, 45))
+      && optStr(m.title, 30) ? [] : ['list.items 2-4 madde (≤45 karakter), title ≤30']),
+    title: () => (str(m.text, 60) && optStr(m.sub, 60) ? [] : ['title.text ≤60, sub ≤60']),
+    question: () => (str(m.text, 80) ? [] : ['question.text 1-80 karakter']),
+    quote: () => (str(m.text, 140) && optStr(m.author, 40) ? [] : ['quote.text ≤140, author ≤40']),
+    icon: () => (str(m.emoji, 8) && optStr(m.text, 30) ? [] : ['icon.emoji (tek emoji), text ≤30']),
+  };
+  const check = checks[m.type];
+  return check ? check() : [`motion.type şunlardan biri olmalı: ${Object.keys(checks).join(', ')}`];
+}
+
 // Başlıkları büyük/küçük harf, noktalama ve boşluk farkını yok sayarak karşılaştırır.
 export const normalizeTitle = (t = '') => t.toLocaleLowerCase('tr').replace(/[^\p{L}\p{N}]/gu, '');
 
@@ -73,6 +97,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
     req(typeof s.visual?.query === 'string' && s.visual.query.trim(), `sahne ${i + 1}: visual.query eksik`);
     req(typeof s.visual?.prompt === 'string' && s.visual.prompt.trim(), `sahne ${i + 1}: visual.prompt eksik`);
     if (typeof s.narration === 'string') req(countWords(s.narration) <= 90, `sahne ${i + 1}: 90 kelimeden uzun, böl`);
+    for (const err of motionErrors(s.visual?.motion)) errors.push(`sahne ${i + 1}: ${err}`);
   });
 
   const slot = needed?.find((n) => n.id === job.id);

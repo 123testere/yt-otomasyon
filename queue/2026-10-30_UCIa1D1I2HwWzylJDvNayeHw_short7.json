@@ -1,0 +1,53 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short7",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-30T08:00:00.000Z",
+  "topic": "Çin Seddi'nin uzaydan çıplak gözle görünmemesi",
+  "title": "Çin Seddi Uzaydan Görünür mü? Cevap Hayır",
+  "hookText": "Bir efsane çöküyor",
+  "description": "Çin Seddi'nin uzaydan görüldüğü yaygın bir yanlış. Sur 21.196 kilometre uzun ama çok dar ve rengi toprağa yakın. Çin'in ilk astronotu Yang Liwei de 2003'te onu göremediğini söyledi.\n\n#çinseddi #tarih #uzay #yanlışbilinenler",
+  "tags": ["çin seddi", "çin seddi uzaydan görünür mü", "yang liwei", "yanlış bilinenler", "tarih", "uzay", "ilginç bilgiler", "çin"],
+  "scenes": [
+    {
+      "narration": "Evlat, Çin Seddi'nin uzaydan çıplak gözle göründüğünü mutlaka duymuşsundur. Kötü haber: bu doğru değil.",
+      "visual": {
+        "query": "Great Wall of China",
+        "prompt": "the great wall of china winding over misty mountains at sunrise",
+        "motion": { "type": "title", "text": "Uzaydan görünmüyor", "sub": "Çin Seddi efsanesi" }
+      }
+    },
+    {
+      "narration": "Sur gerçekten çok uzun. 2012'de açıklanan ölçüme göre toplam uzunluğu 21.196 kilometre.",
+      "visual": {
+        "query": "Great Wall aerial",
+        "prompt": "aerial view of an endless stone wall across green hills",
+        "motion": { "type": "stat", "value": "21.196 KM", "label": "Toplam uzunluk" }
+      }
+    },
+    {
+      "narration": "Ama çoğu yerde genişliği sadece birkaç metre. Rengi de etrafındaki toprakla neredeyse aynı.",
+      "visual": {
+        "query": "Great Wall close",
+        "prompt": "close-up of weathered stone bricks of an ancient wall blending into dry earth",
+        "motion": { "type": "list", "title": "Neden görünmüyor?", "items": ["Çok dar", "Toprakla aynı renk", "Yörünge çok uzak"] }
+      }
+    },
+    {
+      "narration": "Çin'in ilk astronotu Yang Liwei bile 2003'teki uçuşunda Seddi göremediğini söyledi.",
+      "visual": {
+        "query": "earth from space",
+        "prompt": "planet earth seen from orbit with a small spacecraft window frame",
+        "motion": { "type": "icon", "emoji": "🚀", "text": "2003 uçuşu" }
+      }
+    },
+    {
+      "narration": "Sence yıllardır yanlış bilinen başka hangi bilgi var? Yorumlara yaz, beğenmeyi ve abone olmayı unutma.",
+      "visual": {
+        "query": "question mark",
+        "prompt": "a glowing question mark over a starry night sky",
+        "motion": { "type": "question", "text": "Başka hangi bilgi yanlış biliniyor?" }
+      }
+    }
+  ]
+}

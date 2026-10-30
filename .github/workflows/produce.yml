@@ -47,7 +47,7 @@ jobs:
         name: Araçları kur
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-noto-core > /dev/null
+          sudo apt-get install -y -qq ffmpeg fonts-noto-core fonts-noto-color-emoji > /dev/null
           pip install -q -r engine/py/requirements.txt
           (cd engine && npm ci)
           (cd remotion && npm ci && npx remotion browser ensure)

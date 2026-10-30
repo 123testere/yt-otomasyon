@@ -43,20 +43,27 @@ export async function renderWithRemotion({ job, settings, fmt, narrated, shots, 
       const from = Math.round(shot.start * FPS);
       const to = Math.round((shot.start + shot.duration) * FPS);
       const v = shot.visual;
-      scenes.push({
+      scenes.push(v.motionBg ? { kind: 'none', duration: Math.max(1, to - from) } : {
         kind: v.kind,
         src: stage.add(v.file),
         duration: Math.max(1, to - from),
         clipFrames: v.kind === 'video' ? Math.max(1, Math.round((await probeDuration(v.file)) * FPS)) : undefined,
       });
     }
+    // Claude'un sahneye yazdığı hareketli grafik, sahnenin anlatım süresi boyunca ekranda kalır.
+    const motions = job.scenes.flatMap((scene, i) => {
+      if (!scene.visual?.motion) return [];
+      const s = narrated.scenes[i];
+      const from = Math.round(s.start * FPS);
+      return [{ from, duration: Math.max(1, Math.round((s.start + s.duration) * FPS) - from), motion: scene.visual.motion }];
+    });
     const words = narrated.scenes.flatMap((s, i) => alignWords(job.scenes[i].narration, s.words))
       .map(({ t, d, text }) => ({ t, d, text }));
 
     const props = {
       fps: FPS, width: fmt.w, height: fmt.h, portrait: fmt.portrait, lang: settings.language,
       durationInFrames: Math.max(1, Math.round(narrated.total * FPS)),
-      scenes, words,
+      scenes, motions, words,
       narration: stage.add(narrated.narration),
       music: stage.add(music?.file),
       musicVolume: Number(settings.musicVolume),
