@@ -34,15 +34,15 @@ async function remotion(args) {
 
 const accentOf = (settings) => (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
 
-export async function renderWithRemotion({ job, settings, fmt, narrated, visuals, badge, music, dir }) {
+export async function renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir }) {
   const stage = stager(job.id);
   try {
-    // Sahne sınırlarını kümülatif saniyeden kareye çevir; yuvarlama hatası birikmesin.
+    // Çekim sınırlarını kümülatif saniyeden kareye çevir; yuvarlama hatası birikmesin.
     const scenes = [];
-    for (const [i, s] of narrated.scenes.entries()) {
-      const from = Math.round(s.start * FPS);
-      const to = Math.round((s.start + s.duration) * FPS);
-      const v = visuals[i];
+    for (const shot of shots) {
+      const from = Math.round(shot.start * FPS);
+      const to = Math.round((shot.start + shot.duration) * FPS);
+      const v = shot.visual;
       scenes.push({
         kind: v.kind,
         src: stage.add(v.file),

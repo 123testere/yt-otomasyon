@@ -5,6 +5,9 @@ import path from 'node:path';
 import { downloadVoiceSample } from '../lib/voice.js';
 import { PY_DIR } from '../lib/paths.js';
 import { run } from '../lib/util.js';
+import { spellNumbersTr } from '../lib/numbers-tr.js';
+
+const spokenText = (text, language) => (language === 'tr' ? spellNumbersTr(text) : text);
 
 const PYTHON = process.env.PYTHON ?? 'python3';
 let installed = false;
@@ -34,7 +37,7 @@ export async function cloneNarrate(job, settings, dir) {
   await ensureChatterbox();
 
   const textsFile = path.join(dir, 'klon-metin.json');
-  await fs.writeFile(textsFile, JSON.stringify(job.scenes.map((s) => s.narration.trim())));
+  await fs.writeFile(textsFile, JSON.stringify(job.scenes.map((s) => spokenText(s.narration.trim(), settings.language))));
   const outDir = path.join(dir, 'klon');
   await fs.mkdir(outDir, { recursive: true });
   const started = Date.now();
@@ -43,10 +46,11 @@ export async function cloneNarrate(job, settings, dir) {
   return job.scenes.map((_, i) => path.join(outDir, `${String(i).padStart(3, '0')}.wav`));
 }
 
-// Chatterbox kelime zamanı vermez; kelimeler konuşma süresine uzunluklarına göre dağıtılır.
-export function proportionalWords(narration, voicedSec) {
+// Chatterbox kelime zamanı vermez; kelimeler konuşma süresine okunuş uzunluklarına göre dağıtılır
+// ("1096" ekranda kısa ama "bin doksan altı" diye uzun okunur).
+export function proportionalWords(narration, voicedSec, spokenLength = (t) => t.length) {
   const tokens = narration.trim().split(/\s+/).filter(Boolean);
-  const weights = tokens.map((t) => t.length + 1);
+  const weights = tokens.map((t) => spokenLength(t) + 1);
   const total = weights.reduce((a, b) => a + b, 0);
   let t = 0;
   return tokens.map((w, i) => {

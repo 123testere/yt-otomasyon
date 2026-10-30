@@ -18,6 +18,28 @@ async function characterImage(channelId, settings, cacheDir) {
   }
 }
 
+// İzleyici ilgisi için görüntü sık değişmeli: Shorts'ta ~3,5 sn, uzun videoda ~6 sn'de bir yeni çekim.
+// Aynı sahnenin çekimleri farklı kamera açılarıyla istenir ki tekrar gibi görünmesin.
+const SHOT_SEC = { short: 3.5, long: 6 };
+const MAX_SHOTS_PER_SCENE = 4;
+const ANGLES = ['', ', close-up detail shot', ', wide establishing shot', ', dramatic low angle shot'];
+
+async function planShots(job, narrated, fmt, { settings, dir, used, seedBase }) {
+  const shots = [];
+  for (const [i, scene] of job.scenes.entries()) {
+    const { start, duration } = narrated.scenes[i];
+    const count = Math.min(MAX_SHOTS_PER_SCENE, Math.max(1, Math.round(duration / SHOT_SEC[job.type])));
+    for (let j = 0; j < count; j++) {
+      const variant = { ...scene, visual: { ...scene.visual, prompt: `${scene.visual.prompt}${ANGLES[j]}` } };
+      const visual = await sceneVisual(variant, shots.length, {
+        settings, fmt, dir, used, seedBase, previous: shots.map((s) => s.visual),
+      });
+      shots.push({ visual, start: start + (duration * j) / count, duration: duration / count });
+    }
+  }
+  return shots;
+}
+
 export async function buildVideo(job, settings, { workDir, cacheDir }) {
   const fmt = formatFor(job.type);
   const dir = path.join(workDir, job.id);
@@ -29,10 +51,9 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   console.log('  görseller…');
   const used = new Set();
   const seedBase = seedFor(job.id);
-  const visuals = [];
-  for (const [i, scene] of job.scenes.entries()) {
-    visuals.push(await sceneVisual(scene, i, { settings, fmt, dir, used, seedBase, previous: visuals }));
-  }
+  const shots = await planShots(job, narrated, fmt, { settings, dir, used, seedBase });
+  const visuals = shots.map((s) => s.visual);
+  console.log(`  ${job.scenes.length} sahne, ${shots.length} çekim`);
 
   const charSrc = await characterImage(job.channelId, settings, cacheDir);
   const placement = characterPlacement(fmt);
@@ -45,7 +66,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (settings.template === 'animasyonlu' && remotionAvailable()) {
     console.log('  animasyonlu render (Remotion)…');
     try {
-      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, visuals, badge, music, dir });
+      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir });
     } catch (e) {
       console.warn(`  Remotion render başarısız, klasik yönteme geçiliyor: ${e.message}`);
     }
@@ -54,8 +75,8 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (!videoPath) {
     console.log('  sahneler render ediliyor…');
     const clips = [];
-    for (const [i, visual] of visuals.entries()) {
-      clips.push(await renderSceneClip(visual, i, narrated.scenes[i].duration, fmt, dir));
+    for (const [i, shot] of shots.entries()) {
+      clips.push(await renderSceneClip(shot.visual, i, shot.duration, fmt, dir));
     }
     const subtitles = await writeSubtitles({
       jobScenes: job.scenes, narrated, settings, fmt,

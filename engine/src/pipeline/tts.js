@@ -3,6 +3,10 @@ import path from 'node:path';
 import { PY_DIR } from '../lib/paths.js';
 import { probeDuration, retry, run } from '../lib/util.js';
 import { cloneNarrate, proportionalWords, useClone } from './clone.js';
+import { spellNumbersTr } from '../lib/numbers-tr.js';
+
+// Seslendirme motorlarına gidecek metin; Türkçede rakamlar okunuşlarına çevrilir.
+export const spokenText = (text, language) => (language === 'tr' ? spellNumbersTr(text) : text);
 
 const SCENE_GAP_SEC = 0.35;
 const PYTHON = process.env.PYTHON ?? 'python3';
@@ -36,12 +40,13 @@ export async function narrate(job, settings, dir) {
     const base = path.join(dir, `ses-${String(i).padStart(3, '0')}`);
     const { raw, words } = cloned
       ? { raw: cloned[i], words: null }
-      : await edgeScene(scene.narration.trim(), settings, base);
+      : await edgeScene(spokenText(scene.narration.trim(), settings.language), settings, base);
 
     const filters = [cloned && tempo !== 1 ? `atempo=${tempo}` : null, `apad=pad_dur=${SCENE_GAP_SEC}`].filter(Boolean);
     await run('ffmpeg', ['-y', '-v', 'error', '-i', raw, '-af', filters.join(','), '-ar', '48000', '-ac', '2', `${base}.wav`]);
     const duration = await probeDuration(`${base}.wav`);
-    const sceneWords = words ?? proportionalWords(scene.narration, Math.max(0.5, duration - SCENE_GAP_SEC));
+    const sceneWords = words ?? proportionalWords(scene.narration, Math.max(0.5, duration - SCENE_GAP_SEC),
+      (token) => spokenText(token, settings.language).length);
     results.push({ wav: `${base}.wav`, start: offset, duration, words: sceneWords.map((w) => ({ ...w, t: w.t + offset })) });
     offset += duration;
   }
