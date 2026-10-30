@@ -24,10 +24,13 @@ export function SessionProvider({ children }) {
 
   useEffect(() => {
     if (!isAdmin) return undefined;
-    // Motor her senkronizasyonda güncel seçenekleri buraya yazar; yoksa uygulamadaki kopya kullanılır.
+    // Motor her senkronizasyonda güncel seçenekleri buraya yazar. Sunucudaki liste eskiyse (yeni bir
+    // seçenek henüz senkronlanmadıysa) eksik alanlar uygulamadaki kopyadan tamamlanır.
     return onSnapshot(doc(db, 'meta', 'options'), (snap) => {
       const json = snap.data()?.json;
-      if (json) setOptions(JSON.parse(json));
+      if (!json) return;
+      const remote = JSON.parse(json);
+      setOptions({ ...defaultOptions, ...remote, defaults: { ...defaultOptions.defaults, ...remote.defaults } });
     }, () => {});
   }, [isAdmin]);
 

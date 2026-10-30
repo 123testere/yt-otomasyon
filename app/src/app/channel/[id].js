@@ -129,7 +129,7 @@ export default function ChannelSettings() {
               <ChoiceChips items={options.voiceSources} value={s.voiceSource} onChange={(voiceSource) => set({ voiceSource })} disabled={locked} />
             </>
           ) : null}
-          {s.voiceSource === 'klon' ? (
+          {s.voiceSource === 'klon' && options.cloneScopes ? (
             <>
               <Label hint={options.cloneScopes.find((c) => c.id === s.cloneScope)?.hint}>Kendi sesim hangi videolarda?</Label>
               <ChoiceChips items={options.cloneScopes} value={s.cloneScope} onChange={(cloneScope) => set({ cloneScope })} />
