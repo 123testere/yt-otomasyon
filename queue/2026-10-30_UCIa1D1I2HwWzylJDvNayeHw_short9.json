@@ -1,0 +1,53 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short9",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-30T10:00:00.000Z",
+  "topic": "Ayasofya'nın kubbesinin çöküp yeniden yapılması",
+  "title": "Ayasofya'nın Kubbesi 558'de Çöktü",
+  "hookText": "Kubbe çöktü!",
+  "description": "Ayasofya 537'de tamamlandı. Kubbesi 558'deki depremlerden sonra çöktü ve 562'de daha yüksek olarak yeniden yapıldı. Yaklaşık bin yıl dünyanın en büyük katedrali olarak kaldı.\n\n#ayasofya #tarih #istanbul #bizans",
+  "tags": ["ayasofya", "ayasofya kubbesi", "bizans", "istanbul tarihi", "jüstinyen", "tarih", "ilginç bilgiler", "mimari"],
+  "scenes": [
+    {
+      "narration": "Evlat, Ayasofya'nın o dev kubbesi bir zamanlar tamamen çöktü. Peki nasıl oldu da bugün hâlâ ayakta?",
+      "visual": {
+        "query": "Hagia Sophia",
+        "prompt": "the hagia sophia in istanbul at golden hour",
+        "motion": { "type": "title", "text": "Kubbe çöktü", "sub": "Ayasofya'nın sırrı" }
+      }
+    },
+    {
+      "narration": "Ayasofya 537 yılında, sadece beş yılda tamamlandı. Bu, o çağ için inanılmaz bir hızdı.",
+      "visual": {
+        "query": "Hagia Sophia interior",
+        "prompt": "vast byzantine interior with golden mosaics and light beams",
+        "motion": { "type": "stat", "value": "537", "label": "Ayasofya tamamlandı" }
+      }
+    },
+    {
+      "narration": "Ama 558'de, art arda gelen depremlerin ardından ana kubbe çöktü.",
+      "visual": {
+        "query": "Hagia Sophia dome",
+        "prompt": "a massive byzantine dome seen from below",
+        "motion": { "type": "timeline", "items": [{ "year": "537", "label": "Tamamlandı" }, { "year": "558", "label": "Kubbe çöktü" }, { "year": "562", "label": "Yeniden yapıldı" }], "highlight": 1 }
+      }
+    },
+    {
+      "narration": "Kubbe 562'de daha yüksek ve daha sağlam olarak yeniden yapıldı. Ayasofya yaklaşık bin yıl dünyanın en büyük katedrali olarak kaldı.",
+      "visual": {
+        "query": "Hagia Sophia exterior",
+        "prompt": "hagia sophia with its domes and minarets under a clear sky",
+        "motion": { "type": "icon", "emoji": "🏛️", "text": "Bin yıl zirvede" }
+      }
+    },
+    {
+      "narration": "Sence başka hangi yapı bu kadar ayakta kalmayı başardı? Yorumlara yaz, beğenmeyi ve abone olmayı unutma.",
+      "visual": {
+        "query": "Istanbul skyline",
+        "prompt": "istanbul skyline with historic mosques at sunset",
+        "motion": { "type": "question", "text": "Başka hangi yapı bu kadar dayandı?" }
+      }
+    }
+  ]
+}

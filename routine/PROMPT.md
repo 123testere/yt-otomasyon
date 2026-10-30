@@ -36,7 +36,7 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 
 ## Görsel alanları (her sahne için)
 
-- `visual.query`: Stok video/foto aramak için **İngilizce**, 2-4 kelimelik somut arama ifadesi (ör. `ancient roman soldiers`, `stormy ocean night`). Soyut kavram yazma.
+- `visual.query`: Fotoğraf arşivlerinde (Wikimedia Commons, NASA, Pexels) aranacak **İngilizce**, 2-4 kelimelik somut ifade. Sahnede belirli bir yer, yapı, kişi, olay veya nesne geçiyorsa **özel adını** yaz (ör. `Hagia Sophia dome`, `Great Wall of China`, `Apollo 11 launch`, `Mimar Sinan`); arşivlerde gerçek fotoğrafı böyle bulunur. Genel sahnelerde somut nesne yaz (`stormy ocean night`). Soyut kavram yazma.
 - `visual.prompt`: Yapay zekâ görseli için **İngilizce**, tek cümlelik sahne tarifi: özne, ortam, ışık, kamera açısı. Stil kelimesi ekleme (stil otomatik eklenir). Gerçek kişilerin yüzünü, marka logosunu ve yazı içeren görseli isteme.
 - Ardışık sahnelerin görselleri birbirinden farklı olsun.
 

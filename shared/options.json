@@ -65,9 +65,29 @@
   ],
 
   "speechRates": [
+    { "id": "-20%", "label": "Çok yavaş" },
     { "id": "-10%", "label": "Yavaş" },
     { "id": "+0%", "label": "Normal" },
-    { "id": "+10%", "label": "Hızlı" }
+    { "id": "+10%", "label": "Hızlı" },
+    { "id": "+20%", "label": "Çok hızlı" }
+  ],
+
+  "voiceStyles": [
+    { "id": "sakin", "label": "Sakin", "hint": "Düz, kararlı, belgesel anlatımı.",
+      "elevenlabs": { "stability": 1.0, "similarity_boost": 0.8, "style": 0.0 },
+      "chatterbox": { "exaggeration": 0.3, "cfg_weight": 0.5 } },
+    { "id": "dengeli", "label": "Dengeli", "hint": "Doğal, sohbet havasında.",
+      "elevenlabs": { "stability": 0.5, "similarity_boost": 0.8, "style": 0.25 },
+      "chatterbox": { "exaggeration": 0.5, "cfg_weight": 0.5 } },
+    { "id": "etkileyici", "label": "Etkileyici", "hint": "Duygulu, vurgulu, heyecanlı; Shorts için ideal.",
+      "elevenlabs": { "stability": 0.0, "similarity_boost": 0.8, "style": 0.6 },
+      "chatterbox": { "exaggeration": 0.8, "cfg_weight": 0.3 } }
+  ],
+
+  "voicePitches": [
+    { "id": "-8Hz", "label": "Kalın" },
+    { "id": "+0Hz", "label": "Normal" },
+    { "id": "+8Hz", "label": "İnce" }
   ],
 
   "tones": [
@@ -93,7 +113,7 @@
   ],
 
   "visualStyles": [
-    { "id": "hareketli-grafik", "label": "Hareketli grafik (kodla animasyon)", "source": "motion" },
+    { "id": "hareketli-grafik", "label": "Hareketli grafik + konu fotoğrafları", "source": "motion" },
     { "id": "stok-video", "label": "Stok video (gerçek çekim)", "source": "pexels-video" },
     { "id": "stok-foto", "label": "Stok fotoğraf + yakınlaşma", "source": "pexels-photo" },
     { "id": "ai-gercekci", "label": "YZ görsel – gerçekçi", "source": "ai", "suffix": "photorealistic, natural lighting, highly detailed, 35mm photo" },
@@ -179,6 +199,8 @@
     "language": "tr",
     "voice": "tr-TR-AhmetNeural",
     "speechRate": "+0%",
+    "voiceStyle": "dengeli",
+    "voicePitch": "+0Hz",
     "voiceSource": "hazir",
     "cloneScope": "shorts",
     "elevenVoiceId": "",

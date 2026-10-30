@@ -1,7 +1,8 @@
 """Chatterbox Multilingual ile örnek sesten klonlanmış seslendirme üretir (CPU).
 
-Kullanım: python clone_tts.py <ornek-ses.wav> <dil> <metinler.json> <cikti-klasoru>
+Kullanım: python clone_tts.py <ornek-ses.wav> <dil> <metinler.json> <cikti-klasoru> [ayarlar-json]
 metinler.json: ["birinci sahne metni", "ikinci sahne metni", ...]
+ayarlar-json: '{"exaggeration": 0.5, "cfg_weight": 0.5}' (uygulamadaki "Ses ifadesi")
 Her metin için <cikti-klasoru>/000.wav, 001.wav ... yazar; ilerlemeyi satır satır JSON basar.
 """
 import json
@@ -13,7 +14,8 @@ import torchaudio as ta
 from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 
 
-def main(ref, lang, texts_file, out_dir):
+def main(ref, lang, texts_file, out_dir, params_json="{}"):
+    params = json.loads(params_json)
     torch.set_num_threads(max(1, torch.get_num_threads()))
     started = time.time()
     try:
@@ -27,7 +29,7 @@ def main(ref, lang, texts_file, out_dir):
         texts = json.load(f)
     for i, text in enumerate(texts):
         t0 = time.time()
-        wav = model.generate(text, language_id=lang, audio_prompt_path=ref)
+        wav = model.generate(text, language_id=lang, audio_prompt_path=ref, **params)
         ta.save(f"{out_dir}/{i:03d}.wav", wav, model.sr)
         print(json.dumps({
             "event": "scene", "i": i,
@@ -37,4 +39,4 @@ def main(ref, lang, texts_file, out_dir):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:5])
+    main(*sys.argv[1:6])

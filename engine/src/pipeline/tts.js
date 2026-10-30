@@ -5,6 +5,7 @@ import { probeDuration, retry, run } from '../lib/util.js';
 import { cloneNarrate, proportionalWords, voiceInScope } from './clone.js';
 import { elevenScene } from './elevenlabs.js';
 import { spellNumbersTr } from '../lib/numbers-tr.js';
+import { voiceStyleOf } from '../lib/options.js';
 
 const SCENE_GAP_SEC = 0.35;
 const PYTHON = process.env.PYTHON ?? 'python3';
@@ -15,7 +16,8 @@ export const spokenText = (text, language) => (language === 'tr' ? spellNumbersT
 async function edgeScene(text, settings, base) {
   await fs.writeFile(`${base}.txt`, text);
   await retry(
-    () => run(PYTHON, [path.join(PY_DIR, 'tts.py'), `${base}.txt`, settings.voice, settings.speechRate, `${base}.mp3`, `${base}.json`]),
+    () => run(PYTHON, [path.join(PY_DIR, 'tts.py'), `${base}.txt`, settings.voice, settings.speechRate,
+      `${base}.mp3`, `${base}.json`, settings.voicePitch ?? '+0Hz']),
     { label: 'seslendirme', delayMs: 5000 },
   );
   return { raw: `${base}.mp3`, words: JSON.parse(await fs.readFile(`${base}.json`, 'utf8')) };
@@ -33,7 +35,8 @@ async function ownVoice(job, settings, dir, tempo) {
       const scenes = [];
       for (const [i, scene] of job.scenes.entries()) {
         scenes.push(await retry(
-          () => elevenScene(spokenText(scene.narration.trim(), settings.language), { voiceId, speed: tempo }, `${sceneBase(dir, i)}-el.mp3`),
+          () => elevenScene(spokenText(scene.narration.trim(), settings.language),
+            { voiceId, speed: tempo, voiceSettings: voiceStyleOf(settings).elevenlabs }, `${sceneBase(dir, i)}-el.mp3`),
           { label: `ElevenLabs sahne ${i + 1}`, tries: 2, delayMs: 5000 },
         ));
       }

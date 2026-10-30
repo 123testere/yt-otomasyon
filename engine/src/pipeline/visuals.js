@@ -81,8 +81,6 @@ async function aiImageWithRetry(prompt, opts, dest) {
 export async function sceneVisual(scene, i, { settings, fmt, dir, used, seedBase, previous = [] }) {
   const style = pick(options.visualStyles, settings.visualStyle) ?? options.visualStyles[0];
   const base = path.join(dir, `gorsel-${String(i).padStart(3, '0')}`);
-  // Hareketli grafik stili dış görsel kullanmaz; zemini Remotion çizer (klasik şablon için düz zemin dosyası).
-  if (style.source === 'motion') return { ...(await plainBackground(fmt, `${base}.png`)), motionBg: true };
   const ai = () => aiImageWithRetry(`${scene.visual.prompt}, ${style.suffix ?? 'cinematic, detailed'}`,
     { ...fmt, seed: seedBase + i }, `${base}.jpg`).then((file) => ({ kind: 'image', file }));
   const q = scene.visual.query;
@@ -98,6 +96,8 @@ export async function sceneVisual(scene, i, { settings, fmt, dir, used, seedBase
     'pexels-video': [video, photo, ...archives, ai],
     'pexels-photo': [photo, ...archives, ai],
     ai: [ai, photo, ...archives],
+    // Hareketli grafik: grafiklerin arkasında konuyla ilgili gerçek fotoğraflar (anahtarsız arşivler önce).
+    motion: [...archives, photo, video],
   }[style.source];
 
   for (const attempt of chain) {
@@ -112,7 +112,8 @@ export async function sceneVisual(scene, i, { settings, fmt, dir, used, seedBase
     console.warn(`  sahne ${i + 1}: önceki bir sahnenin görseli kullanılıyor`);
     return reusable[i % reusable.length];
   }
-  return { ...(await plainBackground(fmt, `${base}.png`)), plain: true };
+  // Hiç görsel yoksa: hareketli grafik stilinde Remotion akan renk zemini çizer, diğerlerinde düz zemin.
+  return { ...(await plainBackground(fmt, `${base}.png`)), plain: true, motionBg: style.source === 'motion' };
 }
 
 export function seedFor(jobId) {

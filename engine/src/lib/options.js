@@ -41,6 +41,11 @@ export function characterOf(settings) {
   return c;
 }
 
+// "Ses ifadesi" seçimi; eski kanallarda yoksa "dengeli".
+export function voiceStyleOf(settings) {
+  return pick(options.voiceStyles ?? [], settings.voiceStyle) ?? pick(options.voiceStyles ?? [], 'dengeli') ?? {};
+}
+
 export function targetWords(settings, type) {
   const wpm = languageOf(settings).wpm;
   return type === 'short'

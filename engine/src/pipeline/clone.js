@@ -3,6 +3,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { downloadVoiceSample } from '../lib/voice.js';
+import { voiceStyleOf } from '../lib/options.js';
 import { PY_DIR } from '../lib/paths.js';
 import { run } from '../lib/util.js';
 import { spellNumbersTr } from '../lib/numbers-tr.js';
@@ -42,7 +43,8 @@ export async function cloneNarrate(job, settings, dir) {
   const outDir = path.join(dir, 'klon');
   await fs.mkdir(outDir, { recursive: true });
   const started = Date.now();
-  await run(PYTHON, [path.join(PY_DIR, 'clone_tts.py'), ref, settings.language, textsFile, outDir]);
+  await run(PYTHON, [path.join(PY_DIR, 'clone_tts.py'), ref, settings.language, textsFile, outDir,
+    JSON.stringify(voiceStyleOf(settings).chatterbox ?? {})]);
   console.log(`  kendi sesinle seslendirme ${Math.round((Date.now() - started) / 60000)} dk sürdü`);
   return job.scenes.map((_, i) => path.join(outDir, `${String(i).padStart(3, '0')}.wav`));
 }

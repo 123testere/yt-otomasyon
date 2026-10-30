@@ -27,7 +27,7 @@ function charsToWords(alignment) {
   return words.map(({ t, end, w }) => ({ t, d: Math.max(0.05, end - t), w }));
 }
 
-export async function elevenScene(text, { voiceId, speed = 1 }, dest) {
+export async function elevenScene(text, { voiceId, speed = 1, voiceSettings = {} }, dest) {
   const key = process.env.ELEVENLABS_API_KEY;
   if (!key) throw new Error('ELEVENLABS_API_KEY tanımlı değil');
   if (!voiceId) throw new Error('ElevenLabs ses kimliği girilmemiş');
@@ -37,10 +37,13 @@ export async function elevenScene(text, { voiceId, speed = 1 }, dest) {
     const res = await fetch(`${API}/text-to-speech/${voiceId}/with-timestamps?output_format=mp3_44100_128`, {
       method: 'POST',
       headers: { 'xi-api-key': key, 'Content-Type': 'application/json' },
-      // Hız sadece değiştiyse gönderilir; bazı modeller bu ayarı tanımayıp isteği reddedebilir.
+      // Uygulamadaki "Ses ifadesi" (kararlılık/stil) ve konuşma hızı. Hız sadece değiştiyse gönderilir.
       body: JSON.stringify({
         text, model_id: model,
-        ...(speed !== 1 ? { voice_settings: { speed: Math.min(1.2, Math.max(0.7, speed)) } } : {}),
+        voice_settings: {
+          ...voiceSettings,
+          ...(speed !== 1 ? { speed: Math.min(1.2, Math.max(0.7, speed)) } : {}),
+        },
       }),
       signal: AbortSignal.timeout(180_000),
     });
@@ -57,6 +60,7 @@ export async function elevenScene(text, { voiceId, speed = 1 }, dest) {
     }
     const data = await res.json();
     await fs.writeFile(dest, Buffer.from(data.audio_base64, 'base64'));
+    if (workingModel !== model) console.log(`  ElevenLabs modeli: ${model}`);
     workingModel = model;
     return { raw: dest, words: charsToWords(data.alignment ?? data.normalized_alignment) };
   }

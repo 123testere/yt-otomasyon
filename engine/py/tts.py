@@ -1,6 +1,6 @@
 """edge-tts ile tek bir metni seslendirir; ses dosyası + kelime zamanlamaları (JSON) üretir.
 
-Kullanım: python tts.py <metin.txt> <ses-kimliği> <hız> <çıktı.mp3> <kelimeler.json>
+Kullanım: python tts.py <metin.txt> <ses-kimliği> <hız> <çıktı.mp3> <kelimeler.json> [perde]
 """
 import asyncio
 import json
@@ -9,10 +9,10 @@ import sys
 import edge_tts
 
 
-async def main(text_file, voice, rate, out_mp3, out_json):
+async def main(text_file, voice, rate, out_mp3, out_json, pitch="+0Hz"):
     with open(text_file, encoding="utf-8") as f:
         text = f.read()
-    communicate = edge_tts.Communicate(text, voice, rate=rate, boundary="WordBoundary")
+    communicate = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, boundary="WordBoundary")
     words = []
     with open(out_mp3, "wb") as audio:
         async for chunk in communicate.stream():
@@ -29,4 +29,4 @@ async def main(text_file, voice, rate, out_mp3, out_json):
 
 
 if __name__ == "__main__":
-    asyncio.run(main(*sys.argv[1:6]))
+    asyncio.run(main(*sys.argv[1:7]))

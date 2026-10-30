@@ -151,8 +151,20 @@ export default function ChannelSettings() {
           ) : null}
           <Label hint={s.voiceSource === 'klon' ? 'Kendi sesin kullanılamadığında yedek olarak bu ses okunur.' : null}>Seslendirme sesi</Label>
           <ChoiceChips items={language.voices} value={s.voice} onChange={(voice) => set({ voice })} disabled={locked} />
-          <Label>Konuşma hızı</Label>
+          <Label hint="Bütün ses kaynaklarında uygulanır.">Konuşma hızı</Label>
           <ChoiceChips items={options.speechRates} value={s.speechRate} onChange={(speechRate) => set({ speechRate })} disabled={locked} />
+          {options.voiceStyles && s.voiceSource !== 'hazir' ? (
+            <>
+              <Label hint={options.voiceStyles.find((v) => v.id === s.voiceStyle)?.hint ?? 'Kendi sesinin duygu yoğunluğu.'}>Ses ifadesi</Label>
+              <ChoiceChips items={options.voiceStyles} value={s.voiceStyle ?? 'dengeli'} onChange={(voiceStyle) => set({ voiceStyle })} />
+            </>
+          ) : null}
+          {options.voicePitches && (s.voiceSource ?? 'hazir') === 'hazir' ? (
+            <>
+              <Label hint="Sadece hazır seste geçerli.">Ses perdesi</Label>
+              <ChoiceChips items={options.voicePitches} value={s.voicePitch ?? '+0Hz'} onChange={(voicePitch) => set({ voicePitch })} />
+            </>
+          ) : null}
         </Section>
 
         <Section title="Karakter">
