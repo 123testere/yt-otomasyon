@@ -25,8 +25,9 @@ async function ensureChatterbox() {
   installed = true;
 }
 
-export function useClone(settings, type) {
-  return settings.voiceSource === 'klon' && (settings.cloneScope === 'hepsi' || type === 'short');
+// Kendi ses (Chatterbox veya ElevenLabs) bu video türünde kullanılacak mı?
+export function voiceInScope(settings, type) {
+  return ['klon', 'elevenlabs'].includes(settings.voiceSource) && (settings.cloneScope === 'hepsi' || type === 'short');
 }
 
 // Her sahne için ham WAV dosyalarını döndürür (sırayla).

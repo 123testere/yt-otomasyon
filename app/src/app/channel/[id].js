@@ -129,15 +129,24 @@ export default function ChannelSettings() {
               <ChoiceChips items={options.voiceSources} value={s.voiceSource} onChange={(voiceSource) => set({ voiceSource })} disabled={locked} />
             </>
           ) : null}
-          {s.voiceSource === 'klon' && options.cloneScopes ? (
+          {['klon', 'elevenlabs'].includes(s.voiceSource) && options.cloneScopes ? (
             <>
               <Label hint={options.cloneScopes.find((c) => c.id === s.cloneScope)?.hint}>Kendi sesim hangi videolarda?</Label>
               <ChoiceChips items={options.cloneScopes} value={s.cloneScope} onChange={(cloneScope) => set({ cloneScope })} />
-              <Dim style={{ marginTop: 8, color: channel?.hasVoiceSample ? colors.ok : colors.warn }}>
-                {channel?.hasVoiceSample
-                  ? 'Ses örneğin yüklü.'
-                  : 'Bu kanal için ses örneği yok. Yüklenene kadar hazır ses kullanılır.'}
-              </Dim>
+            </>
+          ) : null}
+          {s.voiceSource === 'klon' ? (
+            <Dim style={{ marginTop: 8, color: channel?.hasVoiceSample ? colors.ok : colors.warn }}>
+              {channel?.hasVoiceSample
+                ? 'Ses örneğin yüklü.'
+                : 'Bu kanal için ses örneği yok. Yüklenene kadar hazır ses kullanılır.'}
+            </Dim>
+          ) : null}
+          {s.voiceSource === 'elevenlabs' ? (
+            <>
+              <Label hint="ElevenLabs → Voices → sesin → ID. Kredi biterse video hazır sesle üretilir.">ElevenLabs ses kimliği</Label>
+              <Field value={s.elevenVoiceId ?? ''} onChangeText={(elevenVoiceId) => set({ elevenVoiceId })}
+                placeholder="ör. qLnVd55Hf2R5L8dmdHoH" autoCapitalize="none" editable={!locked} />
             </>
           ) : null}
           <Label hint={s.voiceSource === 'klon' ? 'Kendi sesin kullanılamadığında yedek olarak bu ses okunur.' : null}>Seslendirme sesi</Label>

@@ -2,14 +2,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { PY_DIR } from '../lib/paths.js';
 import { probeDuration, retry, run } from '../lib/util.js';
-import { cloneNarrate, proportionalWords, useClone } from './clone.js';
+import { cloneNarrate, proportionalWords, voiceInScope } from './clone.js';
+import { elevenScene } from './elevenlabs.js';
 import { spellNumbersTr } from '../lib/numbers-tr.js';
-
-// Seslendirme motorlarına gidecek metin; Türkçede rakamlar okunuşlarına çevrilir.
-export const spokenText = (text, language) => (language === 'tr' ? spellNumbersTr(text) : text);
 
 const SCENE_GAP_SEC = 0.35;
 const PYTHON = process.env.PYTHON ?? 'python3';
+
+// Seslendirme motorlarına gidecek metin; Türkçede rakamlar okunuşlarına çevrilir.
+export const spokenText = (text, language) => (language === 'tr' ? spellNumbersTr(text) : text);
 
 async function edgeScene(text, settings, base) {
   await fs.writeFile(`${base}.txt`, text);
@@ -20,29 +21,47 @@ async function edgeScene(text, settings, base) {
   return { raw: `${base}.mp3`, words: JSON.parse(await fs.readFile(`${base}.json`, 'utf8')) };
 }
 
-// Her sahneyi ayrı seslendirir; böylece sahne süreleri ve kelime zamanları kesin bilinir.
-// Kanal "kendi sesim" seçtiyse Chatterbox, aksi halde (veya o başarısız olursa) hazır ses kullanılır.
-export async function narrate(job, settings, dir) {
-  let cloned = null;
-  if (useClone(settings, job.type)) {
-    try {
-      cloned = await cloneNarrate(job, settings, dir);
-    } catch (e) {
-      console.warn(`  kendi sesinle seslendirme başarısız, hazır sese geçiliyor: ${e.message}`);
+const sceneBase = (dir, i) => path.join(dir, `ses-${String(i).padStart(3, '0')}`);
+
+// Kanalın seçtiği kendi ses kaynağıyla bütün sahneleri seslendirir. Biri bile başarısız olursa null döner;
+// o zaman video baştan sona hazır sesle okunur (aynı videoda iki farklı ses olmasın).
+async function ownVoice(job, settings, dir, tempo) {
+  if (!voiceInScope(settings, job.type)) return null;
+  try {
+    if (settings.voiceSource === 'elevenlabs') {
+      const voiceId = settings.elevenVoiceId?.trim() || process.env.ELEVENLABS_VOICE_ID;
+      const scenes = [];
+      for (const [i, scene] of job.scenes.entries()) {
+        scenes.push(await retry(
+          () => elevenScene(spokenText(scene.narration.trim(), settings.language), { voiceId, speed: tempo }, `${sceneBase(dir, i)}-el.mp3`),
+          { label: `ElevenLabs sahne ${i + 1}`, tries: 2, delayMs: 5000 },
+        ));
+      }
+      return { scenes, retime: false };
     }
+    if (settings.voiceSource === 'klon') {
+      const files = await cloneNarrate(job, settings, dir);
+      // Chatterbox hız ayarı desteklemez; kanalın konuşma hızı sonradan uygulanır.
+      return { scenes: files.map((raw) => ({ raw, words: null })), retime: true };
+    }
+  } catch (e) {
+    console.warn(`  kendi sesinle seslendirme başarısız, hazır sese geçiliyor: ${e.message}`);
   }
-  // Chatterbox hız ayarı desteklemez; kanalın konuşma hızı sonradan uygulanır.
+  return null;
+}
+
+// Her sahne ayrı seslendirilir; böylece sahne süreleri ve kelime zamanları kesin bilinir.
+export async function narrate(job, settings, dir) {
   const tempo = 1 + parseInt(settings.speechRate, 10) / 100;
+  const own = await ownVoice(job, settings, dir, tempo);
 
   const results = [];
   let offset = 0;
   for (const [i, scene] of job.scenes.entries()) {
-    const base = path.join(dir, `ses-${String(i).padStart(3, '0')}`);
-    const { raw, words } = cloned
-      ? { raw: cloned[i], words: null }
-      : await edgeScene(spokenText(scene.narration.trim(), settings.language), settings, base);
+    const base = sceneBase(dir, i);
+    const { raw, words } = own?.scenes[i] ?? await edgeScene(spokenText(scene.narration.trim(), settings.language), settings, base);
 
-    const filters = [cloned && tempo !== 1 ? `atempo=${tempo}` : null, `apad=pad_dur=${SCENE_GAP_SEC}`].filter(Boolean);
+    const filters = [own?.retime && tempo !== 1 ? `atempo=${tempo}` : null, `apad=pad_dur=${SCENE_GAP_SEC}`].filter(Boolean);
     await run('ffmpeg', ['-y', '-v', 'error', '-i', raw, '-af', filters.join(','), '-ar', '48000', '-ac', '2', `${base}.wav`]);
     const duration = await probeDuration(`${base}.wav`);
     const sceneWords = words ?? proportionalWords(scene.narration, Math.max(0.5, duration - SCENE_GAP_SEC),
@@ -55,5 +74,5 @@ export async function narrate(job, settings, dir) {
   await fs.writeFile(list, results.map((r) => `file '${path.basename(r.wav)}'`).join('\n'));
   const narration = path.join(dir, 'anlatim.wav');
   await run('ffmpeg', ['-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', narration]);
-  return { scenes: results, narration, total: offset, cloned: Boolean(cloned) };
+  return { scenes: results, narration, total: offset, voice: own ? settings.voiceSource : 'hazir' };
 }

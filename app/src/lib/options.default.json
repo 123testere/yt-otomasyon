@@ -55,12 +55,13 @@
 
   "voiceSources": [
     { "id": "hazir", "label": "Hazır ses", "hint": "Microsoft sesleri. Ücretsiz ve hızlı." },
-    { "id": "klon", "label": "Kendi sesim", "hint": "Chatterbox ile senin sesin. Ücretsiz ama yavaş." }
+    { "id": "klon", "label": "Kendi sesim (Chatterbox)", "hint": "Ücretsiz ama yavaş: Shorts ~15 dk, uzun video 2-3 saat." },
+    { "id": "elevenlabs", "label": "Kendi sesim (ElevenLabs)", "hint": "En kaliteli ve hızlı; ücretli. Shorts ≈ 700, 8 dk video ≈ 7.000 kredi." }
   ],
 
   "cloneScopes": [
-    { "id": "shorts", "label": "Sadece Shorts", "hint": "Shorts senin sesinle (~15 dk), uzun videolar hazır sesle." },
-    { "id": "hepsi", "label": "Tüm videolar", "hint": "Uzun videolar da senin sesinle; her biri 2-3 saat sürer." }
+    { "id": "shorts", "label": "Sadece Shorts", "hint": "Shorts senin sesinle, uzun videolar hazır sesle." },
+    { "id": "hepsi", "label": "Tüm videolar", "hint": "Uzun videolar da senin sesinle (daha uzun sürer / daha çok kredi)." }
   ],
 
   "speechRates": [
@@ -180,6 +181,7 @@
     "speechRate": "+0%",
     "voiceSource": "hazir",
     "cloneScope": "shorts",
+    "elevenVoiceId": "",
     "tone": "samimi",
     "character": "yok",
     "customCharacter": "",
