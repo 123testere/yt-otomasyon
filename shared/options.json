@@ -53,6 +53,16 @@
     ]}
   ],
 
+  "voiceSources": [
+    { "id": "hazir", "label": "Hazır ses", "hint": "Microsoft sesleri. Ücretsiz ve hızlı." },
+    { "id": "klon", "label": "Kendi sesim", "hint": "Chatterbox ile senin sesin. Ücretsiz ama yavaş." }
+  ],
+
+  "cloneScopes": [
+    { "id": "shorts", "label": "Sadece Shorts", "hint": "Shorts senin sesinle (~15 dk), uzun videolar hazır sesle." },
+    { "id": "hepsi", "label": "Tüm videolar", "hint": "Uzun videolar da senin sesinle; her biri 2-3 saat sürer." }
+  ],
+
   "speechRates": [
     { "id": "-10%", "label": "Yavaş" },
     { "id": "+0%", "label": "Normal" },
@@ -167,6 +177,8 @@
     "language": "tr",
     "voice": "tr-TR-AhmetNeural",
     "speechRate": "+0%",
+    "voiceSource": "hazir",
+    "cloneScope": "shorts",
     "tone": "samimi",
     "character": "yok",
     "customCharacter": "",

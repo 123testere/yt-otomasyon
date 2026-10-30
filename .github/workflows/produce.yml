@@ -37,6 +37,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      # Kendi sesle seslendirme (Chatterbox) modeli ~2 GB; her çalıştırmada yeniden inmesin.
+      - if: steps.check.outputs.has
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-chatterbox-v3
       - if: steps.check.outputs.has
         name: Araçları kur
         run: |

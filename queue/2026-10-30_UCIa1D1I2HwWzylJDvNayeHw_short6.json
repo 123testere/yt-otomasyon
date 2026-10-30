@@ -1,0 +1,48 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short6",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-30T07:00:00.000Z",
+  "topic": "Oxford Üniversitesi'nin Aztek İmparatorluğu'ndan eski olması",
+  "title": "Oxford, Aztek İmparatorluğu'ndan Daha Eski",
+  "hookText": "Tarih ters dönüyor",
+  "description": "Oxford'da eğitim 1096 yılında başladı. Aztek başkenti Tenochtitlan ise 1325'te kuruldu. Yani Oxford, Aztek İmparatorluğu'ndan daha eski.\n\n#tarih #oxford #aztekler #ilginçbilgiler",
+  "tags": ["oxford üniversitesi", "aztek imparatorluğu", "tenochtitlan", "tarih", "ilginç bilgiler", "tarihi gerçekler", "orta çağ", "eğitim tarihi"],
+  "scenes": [
+    {
+      "narration": "Evlat, sence hangisi daha eski? Oxford Üniversitesi mi, yoksa Aztek İmparatorluğu mu?",
+      "visual": {
+        "query": "Oxford University",
+        "prompt": "gothic stone college buildings of an old english university at golden hour"
+      }
+    },
+    {
+      "narration": "Cevap çoğu insanı şaşırtıyor. Oxford'da eğitim 1096 yılında başlamıştı bile.",
+      "visual": {
+        "query": "medieval scholars",
+        "prompt": "medieval scholars in robes reading manuscripts in a candlelit stone hall"
+      }
+    },
+    {
+      "narration": "Aztek başkenti Tenochtitlan ise ancak 1325 yılında, bir gölün ortasındaki adada kuruldu.",
+      "visual": {
+        "query": "Tenochtitlan",
+        "prompt": "ancient aztec city built on a lake with temples and canals, aerial view at sunrise"
+      }
+    },
+    {
+      "narration": "Yani Oxford'da dersler başladığında, Aztek başkenti henüz yoktu. Aradaki fark iki yüz yılı aşıyor.",
+      "visual": {
+        "query": "aztec pyramid",
+        "prompt": "a great aztec stepped pyramid with priests climbing the stairs, dramatic sky"
+      }
+    },
+    {
+      "narration": "Daha fazla tarih şaşkınlığı için videoyu beğen ve kanala abone ol. Sence başka hangi ikili bizi şaşırtır? Yorumlara yaz.",
+      "visual": {
+        "query": "old library books",
+        "prompt": "an ancient library with towering shelves of leather books and dust in the light"
+      }
+    }
+  ]
+}

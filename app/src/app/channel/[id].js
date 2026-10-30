@@ -123,7 +123,24 @@ export default function ChannelSettings() {
         </Card>
 
         <Section title="Ses">
-          <Label>Seslendirme sesi</Label>
+          {options.voiceSources ? (
+            <>
+              <Label hint={options.voiceSources.find((v) => v.id === s.voiceSource)?.hint}>Ses kaynağı</Label>
+              <ChoiceChips items={options.voiceSources} value={s.voiceSource} onChange={(voiceSource) => set({ voiceSource })} disabled={locked} />
+            </>
+          ) : null}
+          {s.voiceSource === 'klon' ? (
+            <>
+              <Label hint={options.cloneScopes.find((c) => c.id === s.cloneScope)?.hint}>Kendi sesim hangi videolarda?</Label>
+              <ChoiceChips items={options.cloneScopes} value={s.cloneScope} onChange={(cloneScope) => set({ cloneScope })} />
+              <Dim style={{ marginTop: 8, color: channel?.hasVoiceSample ? colors.ok : colors.warn }}>
+                {channel?.hasVoiceSample
+                  ? 'Ses örneğin yüklü.'
+                  : 'Bu kanal için ses örneği yok. Yüklenene kadar hazır ses kullanılır.'}
+              </Dim>
+            </>
+          ) : null}
+          <Label hint={s.voiceSource === 'klon' ? 'Kendi sesin kullanılamadığında yedek olarak bu ses okunur.' : null}>Seslendirme sesi</Label>
           <ChoiceChips items={language.voices} value={s.voice} onChange={(voice) => set({ voice })} disabled={locked} />
           <Label>Konuşma hızı</Label>
           <ChoiceChips items={options.speechRates} value={s.speechRate} onChange={(speechRate) => set({ speechRate })} disabled={locked} />

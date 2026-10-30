@@ -24,7 +24,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   fs.mkdirSync(dir, { recursive: true });
 
   console.log('  seslendirme…');
-  const narrated = await narrate(job.scenes, settings, dir);
+  const narrated = await narrate(job, settings, dir);
 
   console.log('  görseller…');
   const used = new Set();
