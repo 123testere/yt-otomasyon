@@ -2,9 +2,9 @@
   {
     "id": "TEST_KANALI",
     "title": "Test Kanalı (silinecek)",
-    "enabled": true,
+    "enabled": false,
     "settings": {
-      "enabled": true,
+      "enabled": false,
       "niche": "mitoloji",
       "customNiche": "",
       "language": "en",
@@ -24,12 +24,12 @@
         "days": [
           1
         ],
-        "time": "22:00",
+        "time": "18:00",
         "minutes": 8
       },
       "shorts": {
         "times": [
-          "12:00"
+          "18:00"
         ],
         "seconds": 45
       },
@@ -48,5 +48,60 @@
       "ekTalimat": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun"
     },
     "recentTitles": []
+  },
+  {
+    "id": "UCIa1D1I2HwWzylJDvNayeHw",
+    "title": "Burak kaan Gürer",
+    "enabled": true,
+    "settings": {
+      "enabled": true,
+      "niche": "tarih",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+10%",
+      "tone": "belgesel",
+      "character": "bilge-dede",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": true,
+      "visualStyle": "ai-anime",
+      "music": "gizemli",
+      "musicVolume": "0.2",
+      "subtitles": "kelime",
+      "subtitleColor": "yesil",
+      "long": {
+        "days": [
+          1
+        ],
+        "time": "08:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "08:00"
+        ],
+        "seconds": 45
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
+    },
+    "brief": {
+      "konu": "Tarih",
+      "dil": "Türkçe",
+      "ton": "Ağırbaşlı, bilgi dolu, belgesel anlatıcısı gibi.",
+      "karakter": "Yıllarını kitaplara vermiş, tatlı dilli yaşlı bir hikâye anlatıcısı.",
+      "gorselStil": "YZ görsel – anime",
+      "cocukIcerigi": false,
+      "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
+    },
+    "recentTitles": [
+      "600 Yıldır Kimsenin Okuyamadığı Kitap",
+      "Mimar Sinan Ustalık Eserini 80 Yaşında Yaptı",
+      "3 Kalbi ve Mavi Kanı Olan Canlı",
+      "3 Kalbi ve Mavi Kanı Olan Canlı"
+    ]
   }
 ]
