@@ -45,7 +45,10 @@ export async function elevenScene(text, { voiceId, speed = 1 }, dest) {
       signal: AbortSignal.timeout(180_000),
     });
     if (res.status === 400 || res.status === 422) {
-      lastError = new Error(`ElevenLabs ${model} reddetti: ${(await res.text()).slice(0, 200)}`);
+      const body = await res.text();
+      // Anahtar hatası her modelde aynı olur; diğer modelleri denemeye gerek yok.
+      if (/invalid_api_key|authentication/i.test(body)) throw new Error(`ElevenLabs API anahtarı geçersiz: ${body.slice(0, 200)}`);
+      lastError = new Error(`ElevenLabs ${model} reddetti: ${body.slice(0, 200)}`);
       continue;
     }
     if (!res.ok) {
