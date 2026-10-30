@@ -56,6 +56,10 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   req(Array.isArray(job.tags) && job.tags.every((t) => typeof t === 'string'), 'tags metin dizisi olmalı');
   if (Array.isArray(job.tags)) req(job.tags.join(',').length <= 450, 'tags toplamı 450 karakteri geçmemeli');
   req(typeof job.topic === 'string' && job.topic.trim(), 'topic (kısa konu özeti) eksik');
+  if (job.hookText !== undefined) {
+    req(typeof job.hookText === 'string' && job.hookText.trim() && job.hookText.length <= 40 && !/\n/.test(job.hookText),
+      'hookText tek satır, 1-40 karakter olmalı');
+  }
 
   if (job.type === 'long') {
     req(typeof job.thumbnailText === 'string' && job.thumbnailText.trim() && job.thumbnailText.length <= 40,

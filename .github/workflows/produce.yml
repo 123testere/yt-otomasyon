@@ -30,7 +30,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: engine/package-lock.json
+          cache-dependency-path: |
+            engine/package-lock.json
+            remotion/package-lock.json
       - if: steps.check.outputs.has
         uses: actions/setup-python@v5
         with:
@@ -41,7 +43,8 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-noto-core > /dev/null
           pip install -q -r engine/py/requirements.txt
-          cd engine && npm ci
+          (cd engine && npm ci)
+          (cd remotion && npm ci && npx remotion browser ensure)
       - if: steps.check.outputs.has
         run: node src/produce.js
         working-directory: engine

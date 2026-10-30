@@ -4,3 +4,7 @@ secrets/
 *.log
 .env
 .DS_Store
+
+# Remotion: render sırasında kopyalanan geçici dosyalar
+remotion/public/*
+!remotion/public/.gitkeep

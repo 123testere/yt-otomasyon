@@ -1,0 +1,55 @@
+{
+  "id": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short5",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-10-30T07:00:00.000Z",
+  "topic": "Balın neden bozulmadığı",
+  "title": "Binlerce Yıl Bozulmayan Tek Yiyecek",
+  "hookText": "Asla bozulmuyor",
+  "description": "Bal neredeyse hiç bozulmaz. Az su, yüksek asit ve arıların eklediği bir enzim mikropların yaşamasına izin vermez.\n\n#bal #ilginçbilgiler #bilim #arılar",
+  "tags": ["bal", "bal neden bozulmaz", "ilginç bilgiler", "bilim", "arılar", "mısır mezarları", "doğa", "yiyecekler"],
+  "scenes": [
+    {
+      "narration": "Evlat, mutfağında binlerce yıl bozulmadan kalabilen bir yiyecek var. Üstelik doğru saklanırsa neredeyse hiç bozulmaz.",
+      "visual": {
+        "query": "honey jar",
+        "prompt": "a glass jar of golden honey glowing in warm sunlight on a rustic wooden table"
+      }
+    },
+    {
+      "narration": "Arkeologların Mısır mezarlarında binlerce yıllık bal kavanozları bulduğu anlatılır.",
+      "visual": {
+        "query": "egyptian tomb",
+        "prompt": "ancient egyptian tomb chamber with clay jars and hieroglyphs lit by torchlight"
+      }
+    },
+    {
+      "narration": "Sırrı şu: Balın içinde çok az su vardır. Mikroplar susuz kalınca çoğalamaz.",
+      "visual": {
+        "query": "honey dripping",
+        "prompt": "thick honey slowly dripping from a wooden dipper, macro shot"
+      }
+    },
+    {
+      "narration": "Bal ayrıca asidiktir. Arılar bala bir enzim ekler ve bu enzim az miktarda hidrojen peroksit üretir.",
+      "visual": {
+        "query": "bees honeycomb",
+        "prompt": "honey bees working on a golden honeycomb, close-up, soft natural light"
+      }
+    },
+    {
+      "narration": "Yani bal, kendi kendini koruyan doğal bir kalkan gibidir. Kristalleşmesi ise bozulduğu anlamına gelmez.",
+      "visual": {
+        "query": "crystallized honey",
+        "prompt": "crystallized creamy honey in a jar next to liquid golden honey, kitchen setting"
+      }
+    },
+    {
+      "narration": "Peki sen dolabında en uzun ne sakladın? Yorumlara yaz.",
+      "visual": {
+        "query": "kitchen pantry jars",
+        "prompt": "a cozy kitchen pantry shelf full of jars and honey, warm evening light"
+      }
+    }
+  ]
+}

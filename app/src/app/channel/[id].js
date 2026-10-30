@@ -168,6 +168,12 @@ export default function ChannelSettings() {
         </Section>
 
         <Section title="Görsel">
+          {options.templates ? (
+            <>
+              <Label hint={options.templates.find((t) => t.id === s.template)?.hint}>Video şablonu</Label>
+              <ChoiceChips items={options.templates} value={s.template} onChange={(template) => set({ template })} />
+            </>
+          ) : null}
           <Label>Görsel stili</Label>
           <ChoiceChips items={options.visualStyles} value={s.visualStyle} onChange={(visualStyle) => set({ visualStyle })} />
         </Section>

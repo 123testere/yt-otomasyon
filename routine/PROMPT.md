@@ -37,15 +37,20 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 - `visual.prompt`: Yapay zekâ görseli için **İngilizce**, tek cümlelik sahne tarifi: özne, ortam, ışık, kamera açısı. Stil kelimesi ekleme (stil otomatik eklenir). Gerçek kişilerin yüzünü, marka logosunu ve yazı içeren görseli isteme.
 - Ardışık sahnelerin görselleri birbirinden farklı olsun.
 
-## Başlık, açıklama, etiketler
+## Başlık, kanca, açıklama, etiketler
 
-- `title`: En fazla 70 karakter tercih et (sınır 100). Merak uyandırsın ama yalan vaat etmesin (clickbait yok). `<` ve `>` kullanma.
-  Her video kendi konusuna özel bir başlık alır. Kanalın önceki başlıklarını (`recentTitles` ve `done/`) **tekrarlama**, aynı kalıbı art arda kullanma (ör. her başlık "…Biliyor Muydunuz?" diye bitmesin). Doğrulayıcı tekrar eden başlığı reddeder.
+- `title`: **40-60 karakter** hedefle (sınır 100). Kanıtlanmış kurallar:
+  - **Merak boşluğu** aç ama cevabı verme: "600 Yıldır Kimsenin Okuyamadığı Kitap" ✓, "Voynich El Yazması Hakkında Bilgiler" ✗.
+  - Mümkünse **somut bir rakam** kullan (yıl, sayı, süre). Rakamlar tıklanma oranını artırır.
+  - Anahtar kelime ilk 3-4 kelimede olsun (aramada ve kesik başlıkta görünsün).
+  - Yalan vaat, abartılı büyük harf, emoji yığını yok. Videoda olmayan bir şeyi vaat etme.
+  - Her video kendi konusuna özel bir başlık alır. Kanalın önceki başlıklarını (`recentTitles` ve `done/`) **tekrarlama**, aynı kalıbı art arda kullanma (ör. her başlık "…Biliyor Muydunuz?" diye bitmesin). Doğrulayıcı tekrar eden başlığı reddeder. `<` ve `>` kullanma.
+- `hookText`: Videonun **ilk 2,5 saniyesinde** ekranda dev harflerle beliren kanca yazısı. 2-5 kelime, en fazla 40 karakter. Başlığı tekrarlamaz, ilk cümleyi destekler ve izleyiciyi durdurur (ör. "3 kalp, mavi kan", "Kimse okuyamıyor"). Shorts ve uzun video için her zaman yaz.
 - `description`: 2-4 cümlelik özet, ardından konuyla ilgili 3-5 hashtag. `<` ve `>` kullanma.
 - `tags`: 8-15 arası arama ifadesi, kanal dilinde.
 - Uzun video için ayrıca:
-  - `thumbnailText`: Küçük resimdeki büyük yazı, 2-4 kelime, en fazla 40 karakter, başlığı tekrar etmesin.
-  - `thumbnailPrompt`: Küçük resim arka planı için İngilizce, tek odak noktalı, dramatik bir görsel tarifi.
+  - `thumbnailText`: Küçük resimdeki dev yazı. **2-4 kelime**, en fazla 25 karakter idealdir (sınır 40). Başlığı tekrar etmez, onu tamamlar: başlık soruyu sorar, kapak duyguyu verir (ör. başlık "600 Yıldır Kimsenin Okuyamadığı Kitap", kapak "ŞİFRE ÇÖZÜLMEDİ"). Son kelime sarı yazılır; en vurucu kelimeyi sona koy.
+  - `thumbnailPrompt`: Küçük resim arka planı için İngilizce, **tek odak noktalı**, yüksek kontrastlı, dramatik bir görsel tarifi. Odak nesneyi kadrajın **sağ yarısına** koy (sol yarıda yazı olacak). Görselde yazı isteme.
 - `topic`: Konunun kanal dilinde 5-10 kelimelik özeti (tekrarı önlemek için kayıtta tutulur).
 
 ## Dosya formatı
@@ -58,6 +63,7 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
   "publishAt": "2026-10-30T15:00:00.000Z",
   "topic": "Truva atının gerçekten var olup olmadığı",
   "title": "Truva Atı Gerçekten Var Mıydı?",
+  "hookText": "Belki hiç olmadı",
   "description": "…",
   "tags": ["truva atı", "antik tarih"],
   "thumbnailText": "GERÇEK Mİ?",

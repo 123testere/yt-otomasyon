@@ -7,6 +7,7 @@ import { aiImage, sceneVisual, seedFor } from './visuals.js';
 import { writeSubtitles } from './subtitles.js';
 import { characterPlacement, formatFor, makeCharacterBadge, pickMusic, renderFinal, renderSceneClip } from './render.js';
 import { makeThumbnail } from './thumbnail.js';
+import { remotionAvailable, renderWithRemotion, thumbnailWithRemotion } from './remotion.js';
 
 async function characterImage(channelId, settings, cacheDir) {
   try {
@@ -33,30 +34,40 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
     visuals.push(await sceneVisual(scene, i, { settings, fmt, dir, used, seedBase, previous: visuals }));
   }
 
-  console.log('  sahneler render ediliyor…');
-  const clips = [];
-  for (const [i, visual] of visuals.entries()) {
-    clips.push(await renderSceneClip(visual, i, narrated.scenes[i].duration, fmt, dir));
-  }
-
   const charSrc = await characterImage(job.channelId, settings, cacheDir);
   const placement = characterPlacement(fmt);
   const badge = charSrc && settings.characterOnScreen
     ? await makeCharacterBadge(charSrc, placement.size, path.join(dir, 'rozet.png'))
     : null;
-
-  const subtitles = await writeSubtitles({
-    jobScenes: job.scenes, narrated, settings, fmt,
-    sideMargin: badge && !fmt.portrait ? placement.sideMargin : 60,
-    file: path.join(dir, 'altyazi.ass'),
-  });
-
-  console.log('  son kurgu…');
   const music = await pickMusic(settings.music, dir);
-  const videoPath = await renderFinal({
-    clips, narration: narrated.narration, total: narrated.total, subtitles, badge, placement,
-    music: music?.file, musicVolume: settings.musicVolume, dir,
-  });
+
+  let videoPath = null;
+  if (settings.template === 'animasyonlu' && remotionAvailable()) {
+    console.log('  animasyonlu render (Remotion)…');
+    try {
+      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, visuals, badge, music, dir });
+    } catch (e) {
+      console.warn(`  Remotion render başarısız, klasik yönteme geçiliyor: ${e.message}`);
+    }
+  }
+
+  if (!videoPath) {
+    console.log('  sahneler render ediliyor…');
+    const clips = [];
+    for (const [i, visual] of visuals.entries()) {
+      clips.push(await renderSceneClip(visual, i, narrated.scenes[i].duration, fmt, dir));
+    }
+    const subtitles = await writeSubtitles({
+      jobScenes: job.scenes, narrated, settings, fmt,
+      sideMargin: badge && !fmt.portrait ? placement.sideMargin : 60,
+      file: path.join(dir, 'altyazi.ass'),
+    });
+    console.log('  son kurgu…');
+    videoPath = await renderFinal({
+      clips, narration: narrated.narration, total: narrated.total, subtitles, badge, placement,
+      music: music?.file, musicVolume: settings.musicVolume, dir,
+    });
+  }
 
   let thumbnailPath = null;
   if (job.type === 'long') {
@@ -70,8 +81,15 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
       console.warn(`  kapak görseli üretilemedi, sahne görseli kullanılacak: ${e.message}`);
     }
     if (background) {
-      const thumbBadge = charSrc ? await makeCharacterBadge(charSrc, 420, path.join(dir, 'kapak-rozet.png')) : null;
-      thumbnailPath = await makeThumbnail({ background, text: job.thumbnailText, locale: settings.language, badge: thumbBadge, dir });
+      const thumbBadge = charSrc ? await makeCharacterBadge(charSrc, 440, path.join(dir, 'kapak-rozet.png')) : null;
+      if (remotionAvailable()) {
+        try {
+          thumbnailPath = await thumbnailWithRemotion({ jobId: job.id, background, text: job.thumbnailText, badge: thumbBadge, settings, dir });
+        } catch (e) {
+          console.warn(`  Remotion kapak başarısız, klasik kapak üretiliyor: ${e.message}`);
+        }
+      }
+      thumbnailPath ??= await makeThumbnail({ background, text: job.thumbnailText, locale: settings.language, badge: thumbBadge, dir });
     }
   }
 

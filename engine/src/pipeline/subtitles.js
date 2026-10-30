@@ -4,7 +4,7 @@ import { options, pick } from '../lib/options.js';
 const norm = (s) => s.toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 
 // edge-tts kelimeleri noktalama içermez; metindeki orijinal kelimelerle eşleştirip noktalamayı geri kazanır.
-function alignWords(narration, words) {
+export function alignWords(narration, words) {
   const tokens = narration.trim().split(/\s+/);
   let j = 0;
   return words.map((w) => {

@@ -118,9 +118,14 @@
   ],
 
   "subtitleColors": [
-    { "id": "beyaz", "label": "Beyaz", "primary": "&H00FFFFFF", "outline": "&H00000000" },
-    { "id": "sari", "label": "Sarı", "primary": "&H0000E5FF", "outline": "&H00000000" },
-    { "id": "yesil", "label": "Yeşil", "primary": "&H0066FF66", "outline": "&H00000000" }
+    { "id": "beyaz", "label": "Beyaz", "primary": "&H00FFFFFF", "outline": "&H00000000", "css": "#4DD8FF" },
+    { "id": "sari", "label": "Sarı", "primary": "&H0000E5FF", "outline": "&H00000000", "css": "#FFE600" },
+    { "id": "yesil", "label": "Yeşil", "primary": "&H0066FF66", "outline": "&H00000000", "css": "#66FF66" }
+  ],
+
+  "templates": [
+    { "id": "animasyonlu", "label": "Animasyonlu (Remotion)", "hint": "Geçişler, zıplayan altyazı, kanca yazısı. Render daha uzun sürer." },
+    { "id": "klasik", "label": "Klasik (hızlı)", "hint": "Sade yakınlaşma ve altyazı. En hızlı üretim." }
   ],
 
   "longMinutes": [
@@ -168,6 +173,7 @@
     "characterOnScreen": true,
     "identityLocked": false,
     "visualStyle": "ai-sinematik",
+    "template": "animasyonlu",
     "music": "yok",
     "musicVolume": "0.12",
     "subtitles": "klasik",
