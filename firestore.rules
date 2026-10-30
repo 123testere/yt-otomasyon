@@ -11,6 +11,11 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // Klon ses örnekleri: yalnızca sunucu okur/yazar.
+    match /voices/{id} {
+      allow read, write: if false;
+    }
+
     match /admins/{uid} {
       allow read: if request.auth != null && request.auth.uid == uid;
     }
