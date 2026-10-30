@@ -1,0 +1,49 @@
+name: Senaryoları al
+
+# Claude rutini senaryoları claude/... dalına gönderir (bulut rutinleri genelde main'e doğrudan
+# yazamaz). Bu iş akışı sadece queue/ dosyalarını main'e alır, dalı siler ve üretimi başlatır.
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['queue/**']
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Kuyruk dosyalarını main'e al
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "otomasyon-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$BRANCH"
+          # Sadece queue/ altında yeni eklenen dosyalar; config veya kod değişiklikleri alınmaz.
+          files=$(git diff --name-only --diff-filter=A "origin/main...origin/$BRANCH" -- 'queue/*.json')
+          if [ -z "$files" ]; then echo "Yeni senaryo yok."; exit 0; fi
+          git checkout "origin/$BRANCH" -- $files
+          node engine/src/validate.js || echo "Uyarı: doğrulamadan geçmeyen dosyalar üretimde 'geçersiz' olarak işaretlenecek."
+          git add $files
+          git commit -m "içerik: $(echo "$files" | wc -l) senaryo ($BRANCH)"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          git push origin --delete "$BRANCH" || true
+      - name: Üretimi başlat
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run produce.yml --ref main

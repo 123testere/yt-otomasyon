@@ -4,50 +4,18 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ensurePortrait } from './lib/character.js';
 import { db } from './lib/firebase.js';
-import { options, resolveSettings, characterOf, nicheOf, targetWords, pick } from './lib/options.js';
-import { addDays, dateInTz, weekday, zonedToUtc } from './lib/time.js';
-import { CONFIG_DIR, DONE_DIR, FAILED_DIR, QUEUE_DIR } from './lib/paths.js';
+import { options, resolveSettings, characterOf, nicheOf, pick } from './lib/options.js';
+import { neededJobs } from './lib/plan.js';
+import { CONFIG_DIR } from './lib/paths.js';
 import { stableJson } from './lib/util.js';
 
-const TZ = options.timezone;
-const MIN_LEAD_MS = 60 * 60 * 1000; // yayına 1 saatten az kalmışsa o slotu atla
 const RECENT_TITLES = 80;
-
-function existingJobIds() {
-  const ids = new Set();
-  for (const dir of [QUEUE_DIR, DONE_DIR, FAILED_DIR]) {
-    if (!fs.existsSync(dir)) continue;
-    for (const f of fs.readdirSync(dir)) if (f.endsWith('.json')) ids.add(f.slice(0, -5));
-  }
-  return ids;
-}
 
 function writeIfChanged(file, content) {
   if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === content) return false;
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, content);
   return true;
-}
-
-function slotsFor(channel, dates, now) {
-  const s = channel.settings;
-  const slots = [];
-  for (const date of dates) {
-    if (s.long.days.includes(weekday(date))) {
-      slots.push({ type: 'long', idx: 1, date, time: s.long.time });
-    }
-    [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
-  }
-  return slots
-    .map((slot) => ({ ...slot, publishAt: zonedToUtc(slot.date, slot.time, TZ) }))
-    .filter((slot) => slot.publishAt.getTime() - now.getTime() > MIN_LEAD_MS)
-    .map((slot) => ({
-      id: `${slot.date}_${channel.id}_${slot.type}${slot.idx}`,
-      channelId: channel.id,
-      type: slot.type,
-      publishAt: slot.publishAt.toISOString(),
-      targetWords: targetWords(s, slot.type),
-    }));
 }
 
 async function main() {
@@ -100,16 +68,7 @@ async function main() {
     await ensurePortrait(c.id, c.settings).catch((e) => console.warn(`${c.id} karakter yüzü: ${e.message}`));
   }
 
-  const today = dateInTz(now, TZ);
-  const dates = [today, addDays(today, 1)];
-  const existing = existingJobIds();
-  for (const v of videosSnap.docs) existing.add(v.id);
-
-  const needed = channels
-    .filter((c) => c.enabled)
-    .flatMap((c) => slotsFor(c, dates, now))
-    .filter((job) => !existing.has(job.id))
-    .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
+  const needed = neededJobs(channels, { now, extraExisting: videosSnap.docs.map((v) => v.id) });
 
   const changedChannels = writeIfChanged(path.join(CONFIG_DIR, 'channels.json'), stableJson(channels));
   const changedNeeded = writeIfChanged(path.join(CONFIG_DIR, 'needed.json'), stableJson(needed));
