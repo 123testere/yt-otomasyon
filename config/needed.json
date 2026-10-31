@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "2026-11-02_UCIa1D1I2HwWzylJDvNayeHw_long1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "long",
+    "publishAt": "2026-11-02T05:00:00.000Z",
+    "targetWords": 920
+  },
+  {
+    "id": "2026-11-02_UCIa1D1I2HwWzylJDvNayeHw_short1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "short",
+    "publishAt": "2026-11-02T05:00:00.000Z",
+    "targetWords": 86
+  }
+]
