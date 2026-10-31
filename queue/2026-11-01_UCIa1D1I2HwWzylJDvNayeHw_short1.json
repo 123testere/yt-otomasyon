@@ -1,0 +1,65 @@
+{
+  "id": "2026-11-01_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-01T05:00:00.000Z",
+  "topic": "Göbeklitepe'nin piramitlerden çok daha eski olması",
+  "title": "Piramitlerden 7000 Yıl Eski Tapınak Şanlıurfa'da",
+  "hookText": "Tarihi yeniden yazan tepe",
+  "description": "Şanlıurfa'daki Göbeklitepe yaklaşık 11000 yıllık. Keops Piramidi'nden kabaca 7000 yıl daha eski olan bu yapıyı, araştırmacılara göre avcı toplayıcılar inşa etti. İnsanlık tarihine bakışımızı değiştiren bir keşif.\n\n#göbeklitepe #şanlıurfa #tarih #ilginçbilgiler",
+  "tags": [
+    "göbeklitepe",
+    "şanlıurfa",
+    "dünyanın en eski tapınağı",
+    "tarih",
+    "ilginç tarih bilgileri",
+    "neolitik",
+    "arkeoloji",
+    "keops piramidi"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, dünyanın en eski tapınaklarından biri sence nerede? Cevap, Şanlıurfa'da, binlerce yıl boyunca bir tepenin altında saklıydı.",
+      "visual": {
+        "query": "Göbekli Tepe",
+        "prompt": "a rounded hill in a dry anatolian landscape at dawn, wide shot, soft golden light"
+      }
+    },
+    {
+      "narration": "Göbeklitepe yaklaşık 11000 yıl önce, yani milattan önce 9500 civarında kuruldu. Keops Piramidi'nden yaklaşık 7000 yıl daha eski.",
+      "visual": {
+        "query": "Göbekli Tepe pillars",
+        "prompt": "carved stone pillars arranged in a circle inside an ancient excavation, low angle, warm light",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Göbeklitepe",
+            "value": "9500"
+          },
+          "right": {
+            "title": "Keops Piramidi",
+            "value": "2500"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Üstelik araştırmacılara göre onu kuranlar avcı toplayıcılardı. Tekerlek, yazı ve çömlek yokken, tonlarca ağırlıktaki T biçimli taş sütunları diktiler.",
+      "visual": {
+        "query": "T-shaped stone pillars",
+        "prompt": "a group of prehistoric people raising a huge T-shaped stone pillar with ropes, dusk, wide shot"
+      }
+    },
+    {
+      "narration": "Demek ki tapınaklar, kentlerden önce gelmiş olabilir. Sence insanlar önce mi yerleşti, yoksa inanç mı onları bir araya getirdi? Yorumlara yaz, videoyu beğen ve abone ol.",
+      "visual": {
+        "query": "ancient stone circle",
+        "prompt": "an old storyteller's candlelit study with maps and scrolls of ancient sites, warm light",
+        "motion": {
+          "type": "question",
+          "text": "İnanç mı önce geldi, kent mi?"
+        }
+      }
+    }
+  ]
+}
