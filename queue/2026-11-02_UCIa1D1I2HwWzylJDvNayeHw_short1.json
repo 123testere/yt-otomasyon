@@ -1,0 +1,79 @@
+{
+  "id": "2026-11-02_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-02T05:00:00.000Z",
+  "topic": "Yerebatan Sarnıcı'ndaki 336 sütun ve Medusa başları",
+  "title": "İstanbul'un Altında 336 Sütunlu Gizli Saray",
+  "hookText": "Şehrin altındaki orman",
+  "description": "İstanbul'daki Yerebatan Sarnıcı, Bizans İmparatoru Iustinianos döneminde 532 civarında yapıldı. 336 sütunla ayakta duran bu devasa su deposunun iki sütununun altında Medusa başları bulunuyor.\n\n#yerebatansarnıcı #istanbul #bizans #tarih",
+  "tags": [
+    "yerebatan sarnıcı",
+    "istanbul",
+    "bizans",
+    "medusa başı",
+    "iustinianos",
+    "336 sütun",
+    "gizemli yapılar",
+    "tarih",
+    "ilginç tarih bilgileri"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, İstanbul'un tam altında 336 sütunun dizildiği devasa bir salon olduğunu biliyor muydun? Üstelik bu yapı bir saray değil, bir su deposu.",
+      "visual": {
+        "query": "Basilica Cistern",
+        "prompt": "rows of ancient stone columns reflected in dark water under dim lights, wide shot",
+        "motion": {
+          "type": "stat",
+          "value": "336",
+          "label": "sütun"
+        }
+      }
+    },
+    {
+      "narration": "Yerebatan Sarnıcı, kaynaklara göre Bizans İmparatoru Iustinianos döneminde, yaklaşık 532 yılında yapıldı. Amaç, şehre su depolamaktı. Ayasofya'ya da yakın bir noktada duruyor.",
+      "visual": {
+        "query": "Basilica Cistern Istanbul",
+        "prompt": "a vast underground vaulted hall with columns and a shallow water floor, warm lamps",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "532",
+              "label": "Yapım dönemi"
+            },
+            {
+              "year": "2026",
+              "label": "Bugün"
+            }
+          ],
+          "highlight": 0
+        }
+      }
+    },
+    {
+      "narration": "Sütunların çoğu, başka yapılardan getirilmiş parçalar. Ama en çok merak uyandıranı, iki sütunun altında duran Medusa başları. Biri yan, diğeri ters çevrilmiş şekilde duruyor.",
+      "visual": {
+        "query": "Medusa head Basilica Cistern",
+        "prompt": "a carved stone Medusa head at the base of a column in dim water, close-up, dramatic light",
+        "motion": {
+          "type": "title",
+          "text": "2 Medusa başı",
+          "sub": "Biri yan, biri ters"
+        }
+      }
+    },
+    {
+      "narration": "Neden öyle konulduklarını kesin bilmiyoruz. Bazı anlatılara göre koruyucu bir sembol, bazılarına göre sadece yer ölçüsü içindi. Sence hangisi doğru? Bir daha izle, ipuçlarını yakala.",
+      "visual": {
+        "query": "Medusa column base",
+        "prompt": "mysterious stone face half submerged in dark water under soft spotlight",
+        "motion": {
+          "type": "question",
+          "text": "Neden ters çevrildi?"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "id": "2026-11-02_UCIa1D1I2HwWzylJDvNayeHw_long1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "long",
+  "publishAt": "2026-11-02T05:00:00.000Z",
+  "topic": "Rosetta Taşı ve Mısır hiyeroglifinin çözülüşü",
+  "title": "1400 Yıl Susan Dil: Rosetta Taşı Her Şeyi Değiştirdi",
+  "hookText": "Kimse okuyamıyordu",
+  "description": "Yaklaşık 1400 yıl boyunca Mısır hiyeroglifleri okunamadı. 1799'da bulunan Rosetta Taşı ve Jean-François Champollion'un çalışmaları bu sessizliği bozdu. Bu videoda taşın hikâyesini ve hiyeroglifin nasıl çözüldüğünü anlatıyorum.\n\n#rosettataşı #hiyeroglif #mısır #tarih",
+  "tags": [
+    "rosetta taşı",
+    "hiyeroglif",
+    "antik mısır",
+    "champollion",
+    "mısır hiyerogliflerinin çözülmesi",
+    "british museum",
+    "napolyon mısır seferi",
+    "antik diller",
+    "tarih belgeseli",
+    "arkeoloji",
+    "thomas young"
+  ],
+  "thumbnailText": "TAŞ KONUŞTU",
+  "thumbnailPrompt": "ancient dark stone slab covered in carved hieroglyphs and Greek letters, dramatic side light, dark background, object on the right half of the frame",
+  "scenes": [
+    {
+      "narration": "Evlat, bir milletin yazısı düşün. Tapınak duvarlarına, mezarlara, dev sütunlara kazınmış ama tek bir kişi bile okuyamıyor. Mısır yazısı tam 1400 yıl boyunca işte böyle sustu.",
+      "visual": {
+        "query": "Egyptian hieroglyphs temple wall",
+        "prompt": "ancient temple wall covered with carved hieroglyphs lit by a torch, close-up, dark atmosphere",
+        "motion": {
+          "type": "stat",
+          "value": "1400",
+          "label": "yıl okunamayan yazı"
+        }
+      }
+    },
+    {
+      "narration": "Sonra bir gün, bir avuç asker kazı yaparken siyah bir taş buldu. Bu taş, kaybolmuş bir dünyanın kapısını açacaktı. Bugün hikâyesini birlikte dinleyeceğiz.",
+      "visual": {
+        "query": "Rosetta Stone",
+        "prompt": "a dark carved stone slab lying in desert sand at sunrise, wide shot"
+      }
+    },
+    {
+      "narration": "Önce kısa bir hatırlatma yapayım. Hiyeroglif, Eski Mısır'ın kutsal yazısıdır. Resim gibi görünen işaretlerle yazılır ve yüzyıllar boyunca tapınaklarda, mezarlarda kullanıldı.",
+      "visual": {
+        "query": "hieroglyphs papyrus",
+        "prompt": "close-up of colorful painted hieroglyph symbols on an old papyrus, warm light",
+        "motion": {
+          "type": "title",
+          "text": "Kutsal yazı: hiyeroglif",
+          "sub": "Eski Mısır'ın resimli yazısı"
+        }
+      }
+    },
+    {
+      "narration": "Zamanla Mısır'da Grekçe yaygınlaştı, sonra Roma ve Hristiyanlık geldi. Hiyeroglifi kullanan rahipler azaldı. Bilinen en son tarihli hiyeroglif yazıtı, 394 yılında Philae Tapınağı'na kazındı.",
+      "visual": {
+        "query": "Philae temple Egypt",
+        "prompt": "Philae temple on an island in the Nile at golden hour, wide shot",
+        "motion": {
+          "type": "stat",
+          "value": "394",
+          "label": "son tarihli hiyeroglif yazıtı"
+        }
+      }
+    },
+    {
+      "narration": "Ondan sonra bu yazıyı okuyabilen kimse kalmadı. Avrupalı gezginler Mısır'a gitti, duvarlardaki işaretlere baktı ama anlamını çözemedi. Üstelik bazıları bunların sadece sembol olduğunu sanıyordu.",
+      "visual": {
+        "query": "Karnak temple columns",
+        "prompt": "tall ancient columns covered with hieroglyphs seen from below, dusk light"
+      }
+    },
+    {
+      "narration": "Sıra 1798'e geldi. Napolyon, ordusuyla birlikte Mısır'a çıktı. Yanında sadece askerler değil, onlarca bilim insanı, ressam ve mühendis de vardı. Amaçları ülkeyi hem ele geçirmek hem incelemekti.",
+      "visual": {
+        "query": "Napoleon Egypt campaign",
+        "prompt": "a French army camp near the pyramids with scholars sketching monuments, late 18th century, wide shot",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "1798",
+              "label": "Napolyon Mısır'da"
+            },
+            {
+              "year": "1799",
+              "label": "Taş bulundu"
+            }
+          ],
+          "highlight": 0
+        }
+      }
+    },
+    {
+      "narration": "Temmuz 1799'da Nil Deltası'nda, Reşid, yani eski adıyla Rosetta kasabasının yakınında, Fransız askerleri eski bir kalenin duvarını onarıyordu. İşte o sırada yazılarla kaplı bir taş buldular.",
+      "visual": {
+        "query": "Rashid Rosetta Nile delta",
+        "prompt": "old fort walls near the Nile delta with soldiers working, hot afternoon light"
+      }
+    },
+    {
+      "narration": "Taş kara renkli bir kayaydı. Boyu yaklaşık 112 santimetre, ağırlığı ise yaklaşık 760 kiloydu. Üzerinde üç ayrı bölüm vardı ve her biri farklı bir yazıyla yazılmıştı.",
+      "visual": {
+        "query": "Rosetta Stone British Museum",
+        "prompt": "the Rosetta Stone displayed in a museum case, close-up with soft spotlight",
+        "motion": {
+          "type": "stat",
+          "value": "760 kg",
+          "label": "taşın yaklaşık ağırlığı"
+        }
+      }
+    },
+    {
+      "narration": "Üstte hiyeroglif vardı. Ortada demotik denen, günlük işlerde kullanılan sade bir Mısır yazısı. Altta ise Eski Yunanca. Yunancayı okuyabilen âlimler vardı, işte bütün hikâye burada başlıyor.",
+      "visual": {
+        "query": "Rosetta Stone inscription",
+        "prompt": "detail of three bands of different scripts carved on a dark stone, raking light",
+        "motion": {
+          "type": "list",
+          "title": "Taştaki 3 yazı",
+          "items": [
+            "Hiyeroglif",
+            "Demotik",
+            "Eski Yunanca"
+          ]
+        }
+      }
+    },
+    {
+      "narration": "Yunanca bölümü okununca ortaya şaşırtıcı ama sıradan bir şey çıktı. Bu bir kral fermanıydı. Metin, milattan önce 196 yılında Mısır rahiplerinin Kral Beşinci Ptolemaios için çıkardığı bir kararı anlatıyordu.",
+      "visual": {
+        "query": "Ptolemy V",
+        "prompt": "ancient Greek scribe writing on a scroll in a temple hall, warm lamplight",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "196",
+              "label": "Milattan önce: ferman"
+            },
+            {
+              "year": "1799",
+              "label": "Taş bulundu"
+            }
+          ],
+          "highlight": 0
+        }
+      }
+    },
+    {
+      "narration": "Yani taşın içeriği, tarihin en heyecan verici sırlarından biri değildi. Önemli olan, aynı metnin üç yazıyla tekrarlanmasıydı. Bu da bir tür eşleştirme sözlüğü demekti.",
+      "visual": {
+        "query": "stone tablet carving",
+        "prompt": "scholar comparing two columns of text under a lamp, close shot",
+        "motion": {
+          "type": "title",
+          "text": "Aynı metin, üç yazı",
+          "sub": "Bir tür anahtar"
+        }
+      }
+    },
+    {
+      "narration": "Fransızlar taşın önemini hemen anladı. Üzerinden kalıplar ve baskılar çıkardılar, kopyalarını bilim insanlarına gönderdiler. Ama savaşın kaderi başka türlü yazıldı ve Fransa Mısır'daki savaşı kaybetti.",
+      "visual": {
+        "query": "Battle of the Nile",
+        "prompt": "old sailing warships in battle at sea at dusk, dramatic sky"
+      }
+    },
+    {
+      "narration": "1801'de yapılan anlaşmayla taş İngilizlere geçti. 1802'den beri Londra'daki British Museum'da sergileniyor. Üstelik müzenin en çok ziyaret edilen eserlerinden biri olduğu söylenir.",
+      "visual": {
+        "query": "British Museum",
+        "prompt": "the facade of the British Museum with columns at dawn, wide shot",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "1801",
+              "label": "Taş İngilizlere geçti"
+            },
+            {
+              "year": "1802",
+              "label": "British Museum"
+            }
+          ],
+          "highlight": 1
+        }
+      }
+    },
+    {
+      "narration": "Gelelim çözüm işine. Önce demotik bölümle uğraşıldı. İsveçli diplomat Johan Åkerblad, bu bölümdeki bazı kişi adlarını ve harfleri tanıdı. Küçük ama önemli bir adımdı.",
+      "visual": {
+        "query": "old manuscript letters",
+        "prompt": "a scholar's desk with handwritten notes and a magnifying glass, candlelight"
+      }
+    },
+    {
+      "narration": "Sonra İngiliz bilgin Thomas Young sahneye çıktı. Young, hiyeroglif bölümünde bazı işaretlerin bir oval çerçeve içine alındığını fark etti. Bu çerçevelere bugün kartuş diyoruz.",
+      "visual": {
+        "query": "Egyptian cartouche",
+        "prompt": "close-up of a carved oval cartouche with hieroglyphs on stone, side light",
+        "motion": {
+          "type": "title",
+          "text": "Kartuş: kralın adı çerçevede",
+          "sub": "Oval bir halka"
+        }
+      }
+    },
+    {
+      "narration": "Young, kartuşların kral adı taşıdığını ve birinin Ptolemaios olduğunu doğru tahmin etti. Hiyeroglifin yalnızca resimlerden oluşmadığını, ses değeri de taşıyabileceğini sezdi. Ancak yolun çoğu hâlâ önündeydi.",
+      "visual": {
+        "query": "Thomas Young scholar",
+        "prompt": "19th century study room with a scholar reading by candlelight, moody light"
+      }
+    },
+    {
+      "narration": "Asıl dev adımı Fransız dilbilimci Jean-François Champollion attı. Henüz çocukken Mısır'a tutulmuştu. Çok dil öğrendi, özellikle de Kıptice, yani Eski Mısır dilinin torunu sayılan dili öğrendi.",
+      "visual": {
+        "query": "Jean-François Champollion",
+        "prompt": "a young scholar surrounded by stacks of old books and Egyptian drawings, warm light"
+      }
+    },
+    {
+      "narration": "Philae'den getirilen bir dikilitaşta, Kleopatra adının geçtiği bir kartuş vardı. Champollion bunu Ptolemaios kartuşuyla karşılaştırdı ve ortak harflerin aynı işaretlerle yazıldığını gördü.",
+      "visual": {
+        "query": "Philae obelisk",
+        "prompt": "an ancient stone obelisk with carved cartouches in a garden, soft daylight",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Ptolemaios",
+            "value": "kartuş"
+          },
+          "right": {
+            "title": "Kleopatra",
+            "value": "kartuş"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Böylece hiyeroglifin harf gibi ses de verebildiğini kanıtladı. Üstelik Kıptice bilgisi sayesinde, işaretlerin eski Mısır dilindeki sözcükleri temsil ettiğini de anladı. Taşın sırrı çözülmeye başlamıştı.",
+      "visual": {
+        "query": "hieroglyph alphabet chart",
+        "prompt": "a hand tracing hieroglyph signs on a paper beside a notebook, warm lamp light"
+      }
+    },
+    {
+      "narration": "Rivayete göre Champollion, çözümü bulduğunda heyecandan bayılmış. Bu hikâye çok anlatılır ama ayrıntılarını bilemiyoruz. Bildiğimiz şey şu: Eylül 1822'de bulgularını yayımladı.",
+      "visual": {
+        "query": "Champollion portrait",
+        "prompt": "a lone scholar leaning over a desk covered with papers at night, dramatic light",
+        "motion": {
+          "type": "stat",
+          "value": "1822",
+          "label": "Champollion bulgularını açıkladı"
+        }
+      }
+    },
+    {
+      "narration": "Artık sadece Rosetta Taşı değil, bütün Mısır tapınakları konuşabiliyordu. Bilim insanları kral listelerini, mezar metinlerini ve dua yazılarını okumaya başladı. Adeta sessiz bir kütüphanenin kapısı açıldı.",
+      "visual": {
+        "query": "Karnak hieroglyphs",
+        "prompt": "hieroglyph reliefs on a temple wall lit by warm light, wide shot"
+      }
+    },
+    {
+      "narration": "Bu çalışmalar Egiptoloji denen yeni bir bilim dalının doğmasına yol açtı. Bugün piramitlerin içindeki yazılar, rahiplerin dualarının ve firavunların unvanlarının büyük kısmı bu sayede okunabiliyor.",
+      "visual": {
+        "query": "Egyptology excavation",
+        "prompt": "archaeologists excavating near a pyramid with brushes and tools, bright daylight"
+      }
+    },
+    {
+      "narration": "Peki neden bu kadar zordu? Çünkü hiyeroglifte bazı işaretler bir sesi, bazıları bir sözcüğü, bazıları ise sadece anlamı belirtmek için kullanılır. Hepsi aynı metinde iç içe geçer, bu yüzden tahminle okumak neredeyse imkânsızdı.",
+      "visual": {
+        "query": "hieroglyph symbols",
+        "prompt": "close-up of varied carved hieroglyph symbols birds and eyes on sandstone, side light"
+      }
+    },
+    {
+      "narration": "Yıllarca biri çıkıp işaretlerin sadece birer sembol olduğunu söyledi. Bu yanlış inanç, çözümü geciktirdi. Rosetta Taşı ise bunun tersini gösterdi: işaretlerin çoğu gerçek bir dili, sesleriyle birlikte yazıyordu.",
+      "visual": {
+        "query": "ancient scholar myth",
+        "prompt": "a puzzled scholar staring at a wall of hieroglyphs, dim light"
+      }
+    },
+    {
+      "narration": "Champollion yıllarca çalıştı, defterlerini işaretlerle doldurdu. Çünkü çözüm tek bir parlak fikirle değil, sabırla geldi. Yüzlerce kez deneme yaptı, eşleştirdi, yanlışlarını eledi.",
+      "visual": {
+        "query": "scholar notebooks hieroglyph",
+        "prompt": "a desk full of handwritten notebooks and hieroglyph sketches under candlelight, warm tones"
+      }
+    },
+    {
+      "narration": "Bu arada taşın kendisi de eksik bir parçaydı. Üst kısmı kırıktı, hiyeroglif bölümünün büyük kısmı kayıptı. Buna rağmen elde kalan metin, bu işi çözmeye yetti. Bazen küçük bir ipucu yeter.",
+      "visual": {
+        "query": "broken stone fragment",
+        "prompt": "a broken stone slab with partial carved text, macro shot, raking light"
+      }
+    },
+    {
+      "narration": "Taşın bir de bugün hâlâ süren tartışması var. Mısır, taşın ülkesine geri verilmesini defalarca istedi. Müze ise taşı kendi koleksiyonunda tutuyor. Sence bu eserler nerede durmalı?",
+      "visual": {
+        "query": "Rosetta Stone museum visitors",
+        "prompt": "visitors gathered around a glass case displaying an ancient stone in a museum hall",
+        "motion": {
+          "type": "question",
+          "text": "Eserler nerede sergilenmeli?"
+        }
+      }
+    },
+    {
+      "narration": "Rosetta Taşı bize bir şey öğretti. Bir dil yok olabilir ama anahtarı bulunursa yeniden konuşabilir. Bazen binlerce yıllık bir sırrı, sıradan bir fermanın üç kopyası çözer.",
+      "visual": {
+        "query": "Egyptian hieroglyphs closeup",
+        "prompt": "glowing hieroglyph symbols on an ancient wall, mysterious light, low angle"
+      }
+    },
+    {
+      "narration": "Bu hikâye hoşuna gittiyse yorumlara hangi eski yazının çözülmesini merak ettiğini yaz. Videoyu beğenmeyi ve kanala abone olmayı unutma. Bir sonraki videoda görüşmek üzere, evlat.",
+      "visual": {
+        "query": "old library books",
+        "prompt": "an old library with warm lamp light and shelves of ancient books, wide shot"
+      }
+    }
+  ]
+}
