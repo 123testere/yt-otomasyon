@@ -68,7 +68,7 @@
       "speechRate": "+10%",
       "voiceStyle": "etkileyici",
       "voicePitch": "+0Hz",
-      "voiceSource": "elevenlabs",
+      "voiceSource": "klon",
       "cloneScope": "hepsi",
       "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
       "tone": "belgesel",
