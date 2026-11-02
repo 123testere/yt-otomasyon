@@ -1,0 +1,69 @@
+{
+  "id": "2026-11-03_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-03T05:00:00.000Z",
+  "topic": "Çinlilerin kağıt parayı Avrupa'dan önce kullanması",
+  "title": "Kağıt Parayı 1000 Yıl Önce Çinliler Kullandı",
+  "hookText": "Kağıt para, bin yıl önce",
+  "description": "Kaynaklara göre kağıt para Çin'de Song Hanedanı döneminde, yaklaşık on birinci yüzyılda yaygınlaştı. Avrupalı gezgin Marco Polo ise yüzyıllar sonra bu uygulamayı görüp şaşırdı.\n\n#kağıtpara #çin #tarih #songhanedanı",
+  "tags": [
+    "kağıt para",
+    "çin tarihi",
+    "song hanedanı",
+    "marco polo",
+    "paranın tarihi",
+    "ilginç tarih bilgileri",
+    "tarih",
+    "para nasıl icat edildi"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, cüzdanındaki kağıt paranın aslında yaklaşık 1000 yıllık bir fikir olduğunu biliyor muydun? Peki bunu ilk kim akıl etti?",
+      "visual": {
+        "query": "ancient Chinese banknote",
+        "prompt": "an old paper banknote with faded ink lying on a wooden table, soft candlelight, close-up",
+        "motion": {
+          "type": "stat",
+          "value": "1000 yıl",
+          "label": "kağıt paranın yaşı"
+        }
+      }
+    },
+    {
+      "narration": "Kaynaklara göre Çin'de Song Hanedanı döneminde, yaklaşık on birinci yüzyılda, kağıt para yaygınlaştı. Ağır bakır paraları taşımak zordu, tüccarlar da hafif bir çözüm aradı.",
+      "visual": {
+        "query": "Song dynasty China",
+        "prompt": "a busy medieval Chinese market street with merchants carrying heavy strings of coins, warm light",
+        "motion": {
+          "type": "compare",
+          "left": { "title": "Bakır para", "value": "Ağır" },
+          "right": { "title": "Kağıt para", "value": "Hafif" }
+        }
+      }
+    },
+    {
+      "narration": "Yüzyıllar sonra Venedikli gezgin Marco Polo Çin'e gitti. Anlattığına göre, değersiz görünen kağıt parçalarının altın gibi kabul edilmesine şaşırmıştı.",
+      "visual": {
+        "query": "Marco Polo",
+        "prompt": "a medieval traveler in a Chinese marketplace looking curiously at a piece of paper, dusk light",
+        "motion": {
+          "type": "title",
+          "text": "Kağıt, altın gibi",
+          "sub": "Marco Polo şaşırdı"
+        }
+      }
+    },
+    {
+      "narration": "Düşünsene, bir kağıdın değeri üzerindeki yazıya duyulan güvenden geliyor. Sence para gerçekten neye değer? Yorumlara yaz, videoyu beğen, kanala abone ol.",
+      "visual": {
+        "query": "old paper money",
+        "prompt": "a hand holding a single old banknote against a dark background, dramatic side light",
+        "motion": {
+          "type": "question",
+          "text": "Para gerçekten neye değer?"
+        }
+      }
+    }
+  ]
+}
