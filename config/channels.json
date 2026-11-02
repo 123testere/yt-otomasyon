@@ -185,13 +185,43 @@
       "ekTalimat": null
     },
     "recentTitles": [
+      "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
       "Wer erntet die meisten Kirschen in Europa? 🍒"
     ],
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 0,
-      "table": []
+      "lastMatch": 1,
+      "table": [
+        {
+          "name": "Türkei",
+          "points": 10
+        },
+        {
+          "name": "Griechenland",
+          "points": 7
+        },
+        {
+          "name": "Spanien",
+          "points": 5
+        },
+        {
+          "name": "Italien",
+          "points": 4
+        },
+        {
+          "name": "Ukraine",
+          "points": 3
+        },
+        {
+          "name": "Polen",
+          "points": 2
+        },
+        {
+          "name": "Bulgarien",
+          "points": 1
+        }
+      ]
     }
   }
 ]
