@@ -8,11 +8,27 @@ import { notify } from './lib/notify.js';
 import { resolveSettings } from './lib/options.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './lib/paths.js';
 import { buildVideo } from './pipeline/build.js';
+import { run } from './lib/util.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
 
 const MAX_ATTEMPTS = 3;
 const TIME_BUDGET_MS = Number(process.env.TIME_BUDGET_MIN ?? 300) * 60 * 1000;
+
+// Uygulamadaki video listesi için küçük kapak: varsa YouTube küçük resmi, yoksa videonun içinden bir kare.
+// Firestore'da saklanır; videolar gizliyken YouTube kapakları dışarıya açık olmadığı için.
+async function previewImage({ videoPath, thumbnailPath, duration }, dest) {
+  try {
+    const args = thumbnailPath
+      ? ['-i', thumbnailPath]
+      : ['-ss', String(Math.max(1, duration * 0.4).toFixed(1)), '-i', videoPath];
+    await run('ffmpeg', ['-y', '-v', 'error', ...args, '-frames:v', '1', '-vf', 'scale=270:-2', '-q:v', '6', dest]);
+    return fs.readFileSync(dest).toString('base64');
+  } catch (e) {
+    console.warn(`  önizleme resmi alınamadı: ${e.message}`);
+    return null;
+  }
+}
 
 function move(file, toDir) {
   fs.mkdirSync(toDir, { recursive: true });
@@ -86,7 +102,10 @@ async function main() {
 
     try {
       const built = await buildVideo(job, settings, { workDir, cacheDir });
-      await ref.update({ status: 'uploading', duration: Math.round(built.duration), updatedAt: new Date() });
+      await ref.update({
+        status: 'uploading', duration: Math.round(built.duration),
+        preview: await previewImage(built, path.join(workDir, `${job.id}-onizleme.jpg`)), updatedAt: new Date(),
+      });
 
       const secret = (await firestore.doc(`secrets/${job.channelId}`).get()).data();
       if (!secret?.refreshToken) throw new AuthError('Kanalın yükleme izni yok; kanalı yeniden bağla');

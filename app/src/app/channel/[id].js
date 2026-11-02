@@ -33,6 +33,8 @@ export default function ChannelSettings() {
   const [dirty, setDirty] = useState(false);
   const [saving, setSaving] = useState(false);
   const [portrait, setPortrait] = useState(null);
+  // Sadece bu ekranda değiştirilen ayarlar kaydedilir; açık kalmış eski bir form diğer ayarları ezmesin.
+  const [changed, setChanged] = useState(() => new Set());
 
   useEffect(() => onSnapshot(doc(db, 'channels', id), (snap) => {
     const data = snap.data();
@@ -47,6 +49,7 @@ export default function ChannelSettings() {
 
   const set = (patch) => {
     setS((cur) => ({ ...cur, ...patch }));
+    setChanged((cur) => new Set([...cur, ...Object.keys(patch)]));
     setDirty(true);
   };
   const setLong = (patch) => set({ long: { ...s.long, ...patch } });
@@ -75,7 +78,9 @@ export default function ChannelSettings() {
     if (character?.custom && !s.customCharacter.trim()) return Alert.alert('Eksik bilgi', 'Özel karakter seçtin; karakteri tarif et.');
     setSaving(true);
     try {
-      await updateDoc(doc(db, 'channels', id), { settings: s });
+      const updates = Object.fromEntries([...changed].map((key) => [`settings.${key}`, s[key]]));
+      if (Object.keys(updates).length) await updateDoc(doc(db, 'channels', id), updates);
+      setChanged(new Set());
       setDirty(false);
       router.back();
     } catch (e) {

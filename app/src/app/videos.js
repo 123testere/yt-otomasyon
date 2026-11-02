@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { FlatList, Linking, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Image, Linking, StyleSheet, Text, View } from 'react-native';
 import { collection, doc, limit, onSnapshot, orderBy, query, updateDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import { Button, Card, ChoiceChips, colors, Dim, Screen, StatusBadge } from '../components/ui';
@@ -17,6 +17,17 @@ const matches = (filter, status) => ({
   uploaded: status === 'uploaded',
   problem: ['error', 'invalid', 'paused'].includes(status),
 })[filter];
+
+// Motorun kaydettiği küçük kapak; yoksa (eski videolar) YouTube'un kapak resmi.
+function Thumb({ video }) {
+  const short = video.type === 'short';
+  const size = short ? { width: 72, height: 128 } : { width: 128, height: 72 };
+  const uri = video.preview
+    ? `data:image/jpeg;base64,${video.preview}`
+    : video.youtubeId ? `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg` : null;
+  if (!uri) return <View style={[st.thumb, size]} />;
+  return <Image source={{ uri }} style={[st.thumb, size]} resizeMode="cover" />;
+}
 
 export default function Videos() {
   const [videos, setVideos] = useState([]);
@@ -50,14 +61,19 @@ export default function Videos() {
         ListEmptyComponent={<Dim>Bu filtrede video yok.</Dim>}
         renderItem={({ item: v }) => (
           <Card>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 6 }}>
-              <Dim>{channels[v.channelId] ?? v.channelId} · {v.type === 'short' ? 'Shorts' : 'Uzun'}</Dim>
-              <StatusBadge status={v.status} />
+            <View style={{ flexDirection: 'row', gap: 12 }}>
+              <Thumb video={v} />
+              <View style={{ flex: 1 }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 6, gap: 6 }}>
+                  <Dim style={{ flex: 1 }} numberOfLines={1}>{channels[v.channelId] ?? v.channelId} · {v.type === 'short' ? 'Shorts' : 'Uzun'}</Dim>
+                  <StatusBadge status={v.status} />
+                </View>
+                <Text style={st.title} numberOfLines={3}>{v.title}</Text>
+                {v.publishAt ? (
+                  <Dim style={{ marginTop: 4 }}>Yayın: {v.publishAt.toDate().toLocaleString('tr-TR')}</Dim>
+                ) : null}
+              </View>
             </View>
-            <Text style={st.title}>{v.title}</Text>
-            {v.publishAt ? (
-              <Dim style={{ marginTop: 4 }}>Yayın: {v.publishAt.toDate().toLocaleString('tr-TR')}</Dim>
-            ) : null}
             {v.error ? <Text style={st.error} numberOfLines={4}>{v.error}</Text> : null}
             {v.warning ? <Dim style={{ marginTop: 4, color: colors.warn }}>{v.warning}</Dim> : null}
             <View style={{ flexDirection: 'row', gap: 10, marginTop: 10 }}>
@@ -80,5 +96,6 @@ export default function Videos() {
 
 const st = StyleSheet.create({
   title: { color: colors.text, fontSize: 16, fontWeight: '700' },
+  thumb: { borderRadius: 10, backgroundColor: colors.cardHi },
   error: { color: colors.err, marginTop: 6, fontSize: 12 },
 });
