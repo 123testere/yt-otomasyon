@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "2026-11-04_UCIa1D1I2HwWzylJDvNayeHw_short1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "short",
+    "publishAt": "2026-11-04T05:00:00.000Z",
+    "targetWords": 86
+  },
+  {
+    "id": "2026-11-04_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "type": "short",
+    "publishAt": "2026-11-04T05:00:00.000Z",
+    "targetWords": 94,
+    "format": "duell",
+    "season": 1,
+    "match": 2,
+    "total": 30,
+    "final": false,
+    "eveOfFinal": false
+  }
+]
