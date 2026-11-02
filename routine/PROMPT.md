@@ -13,6 +13,44 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/` altındaki yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
 8. Bitirirken kaç senaryo yazdığını ve başlıklarını tek satırlık bir liste halinde özetle.
 
+## Flaggenduell kanalları (`brief.format` = `"flaggenduell"`)
+
+Bu kanallar belgesel değil, **veriyle ülke yarışı** yayınlar. Video kodla çizilir; sen sadece konuyu seçip Almanca anlatımı yazarsın. Aşağıdaki "Konu seçimi", "Yazım kuralları", "Görsel alanları" ve "Hareketli grafikler" bölümleri bu kanallar için **geçerli değildir**; `scenes` yazma.
+
+Dosya formatı:
+```json
+{
+  "id": "…", "channelId": "…", "type": "short", "format": "duell", "publishAt": "…",
+  "topic": "Kirschen",
+  "title": "Wer erntet die meisten Kirschen in Europa? 🍒",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer gewinnt?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": ["flaggenduell", "europa", "länder vergleich", "kirschen"],
+  "duell": {
+    "topicId": "kirschen",
+    "why": ["Kalte Winter", "Heiße, trockene Sommer", "Riesige Anbauflächen"],
+    "script": { "intro": "…", "nodata": "…", "rounds": "…", "final": "…", "winner": "…", "why": "…", "table": "…" }
+  }
+}
+```
+
+Kurallar:
+- **Konu:** `config/duell-standings.json` içindeki konulardan, bu kanalın `done/` ve `queue/` dosyalarında `duell.topicId` olarak **hiç kullanılmamış** birini seç. Kazananlar çeşitlensin: Türkiye çok kazanıyor, araya Almanya, Fransa, İspanya, İtalya, Ukrayna, Polonya, Sırbistan kazanan konuları serpiştir. Aynı ülke art arda iki maç kazanmasın.
+- **Sayılar:** SADECE `duell-standings.json`'daki değerleri kullan: `top` listesi (Almanca ülke adları ve ton), `noData`, `countries`. Asla tahmin etme. Yuvarlarken "über", "knapp", "rund" de. Oran veya fark hesaplarsan doğru hesapla (ör. 726.500 / 124.010 ≈ 5,9 → "fast sechsmal so viel").
+- **Okunuş güvenliği:** Büyük sayıları "726 Tausend", "4,4 Millionen", "knapp 3000" gibi yaz; binlik ayırıcı nokta kullanma.
+- **Dil ve ton:** Almanca, hızlı ve heyecanlı bir spor yorumcusu gibi; kısa cümleler. Toplam **90-120 kelime** (yaklaşık 45 saniye). İfadeleri her maçta değiştir, kalıp tekrarlama.
+- **Bölümler** (video bu sırayla akar):
+  - `intro`: Soru ve yarışın başladığını anlatan kanca (ör. "46 Länder fallen in den Trichter – nur eine Flagge kommt durch!").
+  - `nodata`: Verisi olmayan ülke sayısı ilk turda elenir.
+  - `rounds`: Elemeler ve 3. olanın finali kaçırması (2. ile 3. arasındaki farkı söyle).
+  - `final`: 1. ile 2. karşı karşıya.
+  - `winner`: Kazanan, değeri ve karşılaştırma.
+  - `why`: Neden kazandı; genel, doğrulanabilir coğrafya, iklim veya tarım nedenleri. Kesin olmayan rakam verme.
+  - `table`: Sezon tablosuna atıf ve "Schreib dein Thema in die Kommentare!" benzeri bir çağrı.
+- `why` dizisi: 2-3 kısa Almanca gerekçe, her biri en fazla 40 karakter.
+- `title`: Almanca, en fazla 70 karakter, **kazananı söylemez**, merak uyandırır, sonunda konunun emojisi olabilir.
+- `description`: 1-2 cümle ve `#flaggenduell #europa #länder #shorts`. Kaynak notu motor tarafından otomatik eklenir.
+- `hookText` yazma.
+
 ## Konu seçimi
 
 - `recentTitles` içindeki konuları **tekrarlama**. Aynı konunun farklı açısı ancak açıkça yeni bir bilgi katıyorsa olur.

@@ -5,6 +5,7 @@
     "enabled": false,
     "settings": {
       "enabled": false,
+      "contentFormat": "belgesel",
       "niche": "mitoloji",
       "customNiche": "",
       "language": "en",
@@ -45,6 +46,7 @@
       "extraInstructions": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun"
     },
     "brief": {
+      "format": "belgesel",
       "konu": "Mitoloji ve Efsaneler",
       "dil": "English",
       "ton": "Hafif mizahi, espri içeren ama bilgiyi bozmayan.",
@@ -61,6 +63,7 @@
     "enabled": true,
     "settings": {
       "enabled": true,
+      "contentFormat": "belgesel",
       "niche": "tarih",
       "customNiche": "",
       "language": "tr",
@@ -101,6 +104,7 @@
       "extraInstructions": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
     },
     "brief": {
+      "format": "belgesel",
       "konu": "Tarih",
       "dil": "Türkçe",
       "ton": "Ağırbaşlı, bilgi dolu, belgesel anlatıcısı gibi.",
@@ -125,5 +129,61 @@
       "3 Kalbi ve Mavi Kanı Olan Canlı",
       "3 Kalbi ve Mavi Kanı Olan Canlı"
     ]
+  },
+  {
+    "id": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "title": "Flaggenduell | Länder im Duell",
+    "enabled": true,
+    "settings": {
+      "enabled": true,
+      "contentFormat": "flaggenduell",
+      "niche": "cografya",
+      "customNiche": "",
+      "language": "de",
+      "voice": "de-DE-ConradNeural",
+      "speechRate": "+10%",
+      "voiceStyle": "etkileyici",
+      "voicePitch": "+0Hz",
+      "voiceSource": "elevenlabs",
+      "cloneScope": "hepsi",
+      "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
+      "tone": "heyecanli",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": true,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "epik",
+      "musicVolume": "0.12",
+      "subtitles": "kelime",
+      "subtitleColor": "sari",
+      "long": {
+        "days": [],
+        "time": "18:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "20:00"
+        ],
+        "seconds": 45
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": ""
+    },
+    "brief": {
+      "format": "flaggenduell",
+      "konu": "Ülkeler ve Coğrafya",
+      "dil": "Deutsch",
+      "ton": "Enerjik, merak uyandıran, hızlı tempolu.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": false,
+      "ekTalimat": null
+    },
+    "recentTitles": []
   }
 ]

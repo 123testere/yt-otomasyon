@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { CONFIG_DIR, DONE_DIR, QUEUE_DIR } from './lib/paths.js';
+import { CONFIG_DIR, DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -31,6 +31,25 @@ export function motionErrors(m) {
   };
   const check = checks[m.type];
   return check ? check() : [`motion.type şunlardan biri olmalı: ${Object.keys(checks).join(', ')}`];
+}
+
+const DUELL_PHASES = ['intro', 'nodata', 'rounds', 'final', 'winner', 'why', 'table'];
+const DUELL_TOPIC_IDS = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'shared', 'duell-topics.json'), 'utf8')).map((t) => t.id));
+
+// Flaggenduell senaryosu: katalogdaki bir konu, 7 bölümlük anlatım, 2-3 kısa gerekçe.
+function duellErrors(d) {
+  if (!d || typeof d !== 'object') return ['duell nesnesi eksik'];
+  const errors = [];
+  if (!DUELL_TOPIC_IDS.has(d.topicId)) errors.push(`duell.topicId katalogda yok: ${d.topicId}`);
+  for (const p of DUELL_PHASES) {
+    if (!str(d.script?.[p], 400)) errors.push(`duell.script.${p} eksik veya çok uzun`);
+  }
+  const words = DUELL_PHASES.reduce((n, p) => n + countWords(d.script?.[p] ?? ''), 0);
+  if (words < 75 || words > 135) errors.push(`duell anlatımı ${words} kelime; 45 sn için 75-135 arası olmalı`);
+  if (!Array.isArray(d.why) || d.why.length < 2 || d.why.length > 3 || !d.why.every((w) => str(w, 40))) {
+    errors.push('duell.why 2-3 madde, her biri en fazla 40 karakter');
+  }
+  return errors;
 }
 
 // Başlıkları büyük/küçük harf, noktalama ve boşluk farkını yok sayarak karşılaştırır.
@@ -89,6 +108,11 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
     req(typeof job.thumbnailText === 'string' && job.thumbnailText.trim() && job.thumbnailText.length <= 40,
       'thumbnailText 1-40 karakter olmalı');
     req(typeof job.thumbnailPrompt === 'string' && job.thumbnailPrompt.trim(), 'thumbnailPrompt eksik');
+  }
+
+  if (job.format === 'duell') {
+    errors.push(...duellErrors(job.duell));
+    return errors;
   }
 
   req(Array.isArray(job.scenes) && job.scenes.length > 0, 'scenes boş olamaz');

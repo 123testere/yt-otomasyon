@@ -1,0 +1,24 @@
+{
+  "id": "2026-11-02_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-02T17:00:00.000Z",
+  "topic": "Kirschen",
+  "title": "Wer erntet die meisten Kirschen in Europa? 🍒",
+  "description": "46 Länder fallen in den Trichter, echte Daten entscheiden – nur eine Flagge kommt durch. Hättest du richtig getippt?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": ["flaggenduell", "europa", "länder vergleich", "kirschen", "landwirtschaft", "ranking", "europa daten", "länderduell"],
+  "duell": {
+    "topicId": "kirschen",
+    "why": ["Kalte Winter", "Heiße, trockene Sommer", "Riesige Anbauflächen in Anatolien"],
+    "script": {
+      "intro": "Welches Land in Europa erntet die meisten Kirschen? 46 Länder fallen in den Trichter – nur eine Flagge kommt durch!",
+      "nodata": "Zuerst fliegen 13 Länder raus: keine Kirschdaten, keine Chance.",
+      "rounds": "Jetzt wird es eng! Die kleinen Erzeuger stürzen ab, und Spanien verpasst das Finale um knapp 3000 Tonnen!",
+      "final": "Finale! Türkei gegen Griechenland – das große Nachbarschaftsduell!",
+      "winner": "Und der Sieger ist die Türkei! Über 726 Tausend Tonnen, fast sechsmal so viel wie Griechenland!",
+      "why": "Warum? Kirschen lieben kalte Winter und heiße, trockene Sommer – und genau das bietet Anatolien.",
+      "table": "Die Saisontabelle läuft! Welches Duell kommt als Nächstes? Schreib dein Thema in die Kommentare!"
+    }
+  }
+}

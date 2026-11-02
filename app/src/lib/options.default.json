@@ -2,6 +2,11 @@
   "version": 1,
   "timezone": "Europe/Istanbul",
 
+  "contentFormats": [
+    { "id": "belgesel", "label": "Belgesel / bilgi", "hint": "Claude konu seçer, anlatır; görseller ve grafiklerle." },
+    { "id": "flaggenduell", "label": "Flaggenduell (ülke yarışı)", "hint": "46 Avrupa ülkesi gerçek veriyle hunide yarışır. Almanca." }
+  ],
+
   "niches": [
     { "id": "tarih", "label": "Tarih", "categoryId": "27" },
     { "id": "bilim", "label": "Bilim", "categoryId": "28" },
@@ -194,6 +199,7 @@
 
   "defaults": {
     "enabled": false,
+    "contentFormat": "belgesel",
     "niche": "ilginc",
     "customNiche": "",
     "language": "tr",

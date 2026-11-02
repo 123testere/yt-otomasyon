@@ -8,6 +8,7 @@ import { writeSubtitles } from './subtitles.js';
 import { characterPlacement, formatFor, makeCharacterBadge, pickMusic, renderFinal, renderSceneClip } from './render.js';
 import { makeThumbnail } from './thumbnail.js';
 import { remotionAvailable, renderWithRemotion, thumbnailWithRemotion } from './remotion.js';
+import { buildDuell } from '../league/build-duell.js';
 
 async function characterImage(channelId, settings, cacheDir) {
   try {
@@ -41,6 +42,7 @@ async function planShots(job, narrated, fmt, { settings, dir, used, seedBase }) 
 }
 
 export async function buildVideo(job, settings, { workDir, cacheDir }) {
+  if (job.format === 'duell') return buildDuell(job, settings, { workDir });
   const fmt = formatFor(job.type);
   const dir = path.join(workDir, job.id);
   fs.mkdirSync(dir, { recursive: true });

@@ -38,7 +38,7 @@ export async function faoStandings(itemCode, countries = COUNTRY_SETS.world) {
 
 export async function renderMatch({
   id, topic, standings, script, settings, music, out,
-  format = 'league', countries = COUNTRY_SETS.world, brand = 'ÜLKELER LİGİ', season = 1, match = 1,
+  format = 'league', countries = COUNTRY_SETS.world, brand = 'ÜLKELER LİGİ', season = 1, match = 1, table: seasonTable,
 }) {
   const { composition, phases: phaseOrder } = FORMATS[format];
   const dir = path.join(path.dirname(out), id);
@@ -62,7 +62,8 @@ export async function renderMatch({
       return { type, from, duration: Math.max(1, Math.round((s.start + s.duration) * FPS) - from) };
     });
     const words = narrated.scenes.flatMap((s, i) => alignWords(job.scenes[i].narration, s.words)).map(({ t, d, text }) => ({ t, d, text }));
-    const table = standings.ranked.slice(0, POINTS.length).map((c, i) => ({ iso2: c.iso2, name: c.name, points: POINTS[i] }));
+    // Sezon tablosu verilmediyse (ilk maç / önizleme) bu maçın puanları gösterilir.
+    const table = seasonTable ?? standings.ranked.slice(0, POINTS.length).map((c, i) => ({ iso2: c.iso2, name: c.name, points: POINTS[i] }));
     const props = {
       fps: FPS, width: 1080, height: 1920, durationInFrames: Math.round(narrated.total * FPS),
       lang: settings.language, brand, match, phases, words,

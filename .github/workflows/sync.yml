@@ -15,7 +15,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,6 +25,13 @@ jobs:
           cache-dependency-path: engine/package-lock.json
       - run: npm ci
         working-directory: engine
+      # Flaggenduell sıralamaları için FAOSTAT toplu verisi (~34 MB); ay bazında önbellekte tutulur.
+      - id: month
+        run: echo "m=$(date +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/faostat
+          key: faostat-${{ steps.month.outputs.m }}
       - run: node src/sync.js
         working-directory: engine
         env:

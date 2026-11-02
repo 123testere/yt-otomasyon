@@ -47,6 +47,7 @@ async function main() {
         settings,
         // Claude'un senaryo yazarken bakacağı okunabilir özet:
         brief: {
+          format: settings.contentFormat ?? 'belgesel',
           konu: niche.custom ? settings.customNiche : niche.label,
           dil: pick(options.languages, settings.language).label,
           ton: pick(options.tones, settings.tone)?.hint,
@@ -62,6 +63,12 @@ async function main() {
       };
     })
     .sort((a, b) => a.id.localeCompare(b.id));
+
+  // Flaggenduell kanalı varsa Claude'un bakacağı veri sıralamalarını (haftada bir) tazele.
+  if (channels.some((c) => c.enabled && c.settings.contentFormat === 'flaggenduell')) {
+    const { refreshStandings } = await import('./league/catalog.js');
+    if (await refreshStandings()) console.log('Flaggenduell sıralamaları güncellendi.');
+  }
 
   // Karakter yüzlerini video üretiminden önce hazırla ki uygulamada önizlenebilsin.
   for (const c of channels) {

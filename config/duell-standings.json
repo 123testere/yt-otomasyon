@@ -1,0 +1,1125 @@
+{
+  "generatedAt": "2026-11-02T07:07:23.127Z",
+  "topics": {
+    "kirschen": {
+      "question": "Wer erntet die meisten Kirschen?",
+      "label": "Kirschen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 33,
+      "noData": 13,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 726500
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 124010
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 121060
+        },
+        {
+          "name": "Italien",
+          "tonnes": 80670
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 55700
+        },
+        {
+          "name": "Polen",
+          "tonnes": 51000
+        }
+      ]
+    },
+    "aepfel": {
+      "question": "Wer erntet die meisten Äpfel?",
+      "label": "Äpfel",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 40,
+      "noData": 6,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 4420185
+        },
+        {
+          "name": "Polen",
+          "tonnes": 3384500
+        },
+        {
+          "name": "Italien",
+          "tonnes": 2398540
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 1964030
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 1150900
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 871990
+        }
+      ]
+    },
+    "birnen": {
+      "question": "Wer erntet die meisten Birnen?",
+      "label": "Birnen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 39,
+      "noData": 7,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 630500
+        },
+        {
+          "name": "Italien",
+          "tonnes": 436570
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 323000
+        },
+        {
+          "name": "Belgien",
+          "tonnes": 268770
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 222020
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 151870
+        }
+      ]
+    },
+    "aprikosen": {
+      "question": "Wer erntet die meisten Aprikosen?",
+      "label": "Aprikosen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 26,
+      "noData": 20,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 1269000
+        },
+        {
+          "name": "Italien",
+          "tonnes": 240080
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 155570
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 122410
+        },
+        {
+          "name": "Armenien",
+          "tonnes": 98696
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 82760
+        }
+      ]
+    },
+    "pfirsiche": {
+      "question": "Wer erntet die meisten Pfirsiche?",
+      "label": "Pfirsiche und Nektarinen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 28,
+      "noData": 18,
+      "top": [
+        {
+          "name": "Spanien",
+          "tonnes": 1376900
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 1179041
+        },
+        {
+          "name": "Italien",
+          "tonnes": 1092160
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 773390
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 236720
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 66709
+        }
+      ]
+    },
+    "erdbeeren": {
+      "question": "Wer erntet die meisten Erdbeeren?",
+      "label": "Erdbeeren",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 38,
+      "noData": 8,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 606254
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 323540
+        },
+        {
+          "name": "Polen",
+          "tonnes": 173400
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 135710
+        },
+        {
+          "name": "Italien",
+          "tonnes": 123850
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 120350
+        }
+      ]
+    },
+    "himbeeren": {
+      "question": "Wer erntet die meisten Himbeeren?",
+      "label": "Himbeeren",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 34,
+      "noData": 12,
+      "top": [
+        {
+          "name": "Serbien",
+          "tonnes": 94026
+        },
+        {
+          "name": "Polen",
+          "tonnes": 76900
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 33600
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 33420
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 30230
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 15708
+        }
+      ]
+    },
+    "heidelbeeren": {
+      "question": "Wer erntet die meisten Heidelbeeren?",
+      "label": "Heidelbeeren",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 24,
+      "noData": 22,
+      "top": [
+        {
+          "name": "Polen",
+          "tonnes": 62000
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 60950
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 22850
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 15090
+        },
+        {
+          "name": "Italien",
+          "tonnes": 10360
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 8621
+        }
+      ]
+    },
+    "trauben": {
+      "question": "Wer erntet die meisten Weintrauben?",
+      "label": "Weintrauben",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 34,
+      "noData": 12,
+      "top": [
+        {
+          "name": "Italien",
+          "tonnes": 7637640
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 5387270
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 4747450
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 3468000
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 1059770
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 917890
+        }
+      ]
+    },
+    "wassermelonen": {
+      "question": "Wer erntet die meisten Wassermelonen?",
+      "label": "Wassermelonen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 27,
+      "noData": 19,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 3198000
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 1222710
+        },
+        {
+          "name": "Italien",
+          "tonnes": 723590
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 509180
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 339709
+        },
+        {
+          "name": "Albanien",
+          "tonnes": 278086
+        }
+      ]
+    },
+    "kiwis": {
+      "question": "Wer erntet die meisten Kiwis?",
+      "label": "Kiwis",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 12,
+      "noData": 34,
+      "top": [
+        {
+          "name": "Italien",
+          "tonnes": 463910
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 342330
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 92249
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 50760
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 31320
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 29640
+        }
+      ]
+    },
+    "orangen": {
+      "question": "Wer erntet die meisten Orangen?",
+      "label": "Orangen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 14,
+      "noData": 32,
+      "top": [
+        {
+          "name": "Spanien",
+          "tonnes": 2904940
+        },
+        {
+          "name": "Italien",
+          "tonnes": 1807320
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 1610000
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 880190
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 353710
+        },
+        {
+          "name": "Zypern",
+          "tonnes": 16030
+        }
+      ]
+    },
+    "zitronen": {
+      "question": "Wer erntet die meisten Zitronen?",
+      "label": "Zitronen und Limetten",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 13,
+      "noData": 33,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 1730000
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 919510
+        },
+        {
+          "name": "Italien",
+          "tonnes": 431590
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 109700
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 40200
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 14330
+        }
+      ]
+    },
+    "tomaten": {
+      "question": "Wer erntet die meisten Tomaten?",
+      "label": "Tomaten",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 42,
+      "noData": 4,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 14617000
+        },
+        {
+          "name": "Italien",
+          "tonnes": 6022790
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 4574280
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 1762480
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 1470500
+        },
+        {
+          "name": "Polen",
+          "tonnes": 1018700
+        }
+      ]
+    },
+    "kartoffeln": {
+      "question": "Wer erntet die meisten Kartoffeln?",
+      "label": "Kartoffeln",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 42,
+      "noData": 4,
+      "top": [
+        {
+          "name": "Ukraine",
+          "tonnes": 21128900
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 12703300
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 9237460
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 6900000
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 6366750
+        },
+        {
+          "name": "Polen",
+          "tonnes": 5920170
+        }
+      ]
+    },
+    "mais": {
+      "question": "Wer erntet den meisten Mais?",
+      "label": "Mais",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 33,
+      "noData": 13,
+      "top": [
+        {
+          "name": "Ukraine",
+          "tonnes": 26863740
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 14670620
+        },
+        {
+          "name": "Polen",
+          "tonnes": 9223230
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 8100000
+        },
+        {
+          "name": "Rumänien",
+          "tonnes": 5971850
+        },
+        {
+          "name": "Ungarn",
+          "tonnes": 5297730
+        }
+      ]
+    },
+    "weizen": {
+      "question": "Wer erntet den meisten Weizen?",
+      "label": "Weizen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 40,
+      "noData": 6,
+      "top": [
+        {
+          "name": "Frankreich",
+          "tonnes": 26606940
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 22441110
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 20800000
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 18526700
+        },
+        {
+          "name": "Polen",
+          "tonnes": 12183620
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 11146000
+        }
+      ]
+    },
+    "zwiebeln": {
+      "question": "Wer erntet die meisten Zwiebeln?",
+      "label": "Zwiebeln und Schalotten (trocken)",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 40,
+      "noData": 6,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 2632000
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 1803300
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 1390760
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 849400
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 848440
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 778580
+        }
+      ]
+    },
+    "gurken": {
+      "question": "Wer erntet die meisten Gurken?",
+      "label": "Gurken und Gewürzgurken",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 40,
+      "noData": 6,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 1742900
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 850000
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 757790
+        },
+        {
+          "name": "Polen",
+          "tonnes": 417900
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 416000
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 284890
+        }
+      ]
+    },
+    "paprika": {
+      "question": "Wer erntet die meisten Paprika?",
+      "label": "Paprika und Chilis (grün)",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 32,
+      "noData": 14,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 3428038
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 1518610
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 406630
+        },
+        {
+          "name": "Polen",
+          "tonnes": 267400
+        },
+        {
+          "name": "Nordmazedonien",
+          "tonnes": 247476
+        },
+        {
+          "name": "Italien",
+          "tonnes": 234830
+        }
+      ]
+    },
+    "karotten": {
+      "question": "Wer erntet die meisten Karotten?",
+      "label": "Karotten und Speiserüben",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 41,
+      "noData": 5,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 895209
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 862713
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 850580
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 796700
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 662380
+        },
+        {
+          "name": "Polen",
+          "tonnes": 559400
+        }
+      ]
+    },
+    "kohl": {
+      "question": "Wer erntet den meisten Kohl?",
+      "label": "Kohl",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 41,
+      "noData": 5,
+      "top": [
+        {
+          "name": "Ukraine",
+          "tonnes": 1560400
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 912839
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 698840
+        },
+        {
+          "name": "Polen",
+          "tonnes": 607000
+        },
+        {
+          "name": "Italien",
+          "tonnes": 412680
+        },
+        {
+          "name": "Rumänien",
+          "tonnes": 289460
+        }
+      ]
+    },
+    "oliven": {
+      "question": "Wer erntet die meisten Oliven?",
+      "label": "Oliven",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 14,
+      "noData": 32,
+      "top": [
+        {
+          "name": "Spanien",
+          "tonnes": 8310250
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 3750000
+        },
+        {
+          "name": "Italien",
+          "tonnes": 2299660
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 1340820
+        },
+        {
+          "name": "Albanien",
+          "tonnes": 146726
+        },
+        {
+          "name": "Kroatien",
+          "tonnes": 54410
+        }
+      ]
+    },
+    "haselnuesse": {
+      "question": "Wer erntet die meisten Haselnüsse?",
+      "label": "Haselnüsse (mit Schale)",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 20,
+      "noData": 26,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 717000
+        },
+        {
+          "name": "Italien",
+          "tonnes": 120520
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 75698
+        },
+        {
+          "name": "Georgien",
+          "tonnes": 43600
+        },
+        {
+          "name": "Polen",
+          "tonnes": 9800
+        },
+        {
+          "name": "Serbien",
+          "tonnes": 8910
+        }
+      ]
+    },
+    "walnuesse": {
+      "question": "Wer erntet die meisten Walnüsse?",
+      "label": "Walnüsse (mit Schale)",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 28,
+      "noData": 18,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 426000
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 106900
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 96910
+        },
+        {
+          "name": "Rumänien",
+          "tonnes": 52700
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 27710
+        },
+        {
+          "name": "Bosnien und Herzegowina",
+          "tonnes": 26042
+        }
+      ]
+    },
+    "mandeln": {
+      "question": "Wer erntet die meisten Mandeln?",
+      "label": "Mandeln (mit Schale)",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 16,
+      "noData": 30,
+      "top": [
+        {
+          "name": "Spanien",
+          "tonnes": 369700
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 200000
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 90760
+        },
+        {
+          "name": "Italien",
+          "tonnes": 74960
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 30780
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 3579
+        }
+      ]
+    },
+    "sonnenblumen": {
+      "question": "Wer erntet die meisten Sonnenblumenkerne?",
+      "label": "Sonnenblumenkerne",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 26,
+      "noData": 20,
+      "top": [
+        {
+          "name": "Ukraine",
+          "tonnes": 10955940
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 2195000
+        },
+        {
+          "name": "Ungarn",
+          "tonnes": 1798950
+        },
+        {
+          "name": "Bulgarien",
+          "tonnes": 1644740
+        },
+        {
+          "name": "Rumänien",
+          "tonnes": 1508000
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 1479770
+        }
+      ]
+    },
+    "soja": {
+      "question": "Wer erntet die meisten Sojabohnen?",
+      "label": "Sojabohnen",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 26,
+      "noData": 20,
+      "top": [
+        {
+          "name": "Ukraine",
+          "tonnes": 6635180
+        },
+        {
+          "name": "Italien",
+          "tonnes": 1125580
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 398540
+        },
+        {
+          "name": "Serbien",
+          "tonnes": 346808
+        },
+        {
+          "name": "Rumänien",
+          "tonnes": 316760
+        },
+        {
+          "name": "Ungarn",
+          "tonnes": 258890
+        }
+      ]
+    },
+    "milch": {
+      "question": "Wer produziert die meiste Kuhmilch?",
+      "label": "Rohmilch (Kuh)",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 41,
+      "noData": 5,
+      "top": [
+        {
+          "name": "Deutschland",
+          "tonnes": 33777780
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 24204280
+        },
+        {
+          "name": "Türkei",
+          "tonnes": 21040442
+        },
+        {
+          "name": "Polen",
+          "tonnes": 16039610
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 15939048
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 14348210
+        }
+      ]
+    },
+    "eier": {
+      "question": "Wer produziert die meisten Eier?",
+      "label": "Hühnereier",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 23,
+      "noData": 23,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 1322193
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 997458
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 884100
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 842000
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 666100
+        },
+        {
+          "name": "Portugal",
+          "tonnes": 145011
+        }
+      ]
+    },
+    "honig": {
+      "question": "Wer produziert den meisten Honig?",
+      "label": "Naturhonig",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 25,
+      "noData": 21,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 95492
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 53490
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 33181
+        },
+        {
+          "name": "Deutschland",
+          "tonnes": 31800
+        },
+        {
+          "name": "Italien",
+          "tonnes": 21857
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 20034
+        }
+      ]
+    },
+    "haehnchen": {
+      "question": "Wer produziert das meiste Hähnchenfleisch?",
+      "label": "Hähnchenfleisch",
+      "year": 2024,
+      "source": "FAOSTAT – Crops and livestock products (FAO)",
+      "countries": 46,
+      "withData": 39,
+      "noData": 7,
+      "top": [
+        {
+          "name": "Türkei",
+          "tonnes": 2512131
+        },
+        {
+          "name": "Polen",
+          "tonnes": 2433020
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 1852000
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 1517910
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 1245830
+        },
+        {
+          "name": "Italien",
+          "tonnes": 1134090
+        }
+      ]
+    }
+  }
+}

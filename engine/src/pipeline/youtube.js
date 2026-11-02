@@ -27,7 +27,8 @@ const MAX_DESCRIPTION = 4900;
 // Lisans gereği kaynak gösterilmesi gereken görseller açıklamanın sonuna eklenir (YouTube sınırını aşmadan).
 function withCredits(description, credits, language) {
   if (!credits?.length) return description;
-  let text = `${description}\n\n${language === 'tr' ? 'Müzik ve görsel kaynakları' : 'Music and image credits'}:`;
+  const heading = { tr: 'Müzik ve görsel kaynakları', de: 'Quellen' }[language] ?? 'Sources and credits';
+  let text = `${description}\n\n${heading}:`;
   for (const line of credits) {
     if (text.length + line.length + 3 > MAX_DESCRIPTION) break;
     text += `\n• ${line}`;

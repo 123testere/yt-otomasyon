@@ -37,6 +37,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - if: steps.check.outputs.has
+        id: month
+        run: echo "m=$(date +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - if: steps.check.outputs.has
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/faostat
+          key: faostat-${{ steps.month.outputs.m }}
       # Kendi sesle seslendirme (Chatterbox) modeli ~2 GB; her çalıştırmada yeniden inmesin.
       - if: steps.check.outputs.has
         uses: actions/cache@v4

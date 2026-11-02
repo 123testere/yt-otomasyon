@@ -96,6 +96,8 @@ async function main() {
         warning: yt.thumbnailWarning, updatedAt: new Date() });
       move(file, DONE_DIR);
       console.log(`✓ ${yt.url}`);
+      // Flaggenduell: maç yayınlandıktan sonra sezon tablosu kalıcı olarak güncellenir.
+      if (built.leagueUpdate) await firestore.doc(`leagues/${job.channelId}`).set(built.leagueUpdate);
       // İlk yayından sonra ses ve karakter kilitlenir; kanal kimliği videodan videoya değişmesin.
       if (!settings.identityLocked) {
         await firestore.doc(`channels/${job.channelId}`).update({ 'settings.identityLocked': true });

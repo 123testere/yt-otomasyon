@@ -95,6 +95,12 @@ export default function ChannelSettings() {
         </Card>
 
         <Section title="İçerik">
+          {options.contentFormats ? (
+            <>
+              <Label hint={options.contentFormats.find((f) => f.id === (s.contentFormat ?? 'belgesel'))?.hint}>İçerik formatı</Label>
+              <ChoiceChips items={options.contentFormats} value={s.contentFormat ?? 'belgesel'} onChange={(contentFormat) => set({ contentFormat })} />
+            </>
+          ) : null}
           <Label>Kanal konusu</Label>
           <ChoiceChips items={options.niches} value={s.niche} onChange={(niche) => set({ niche })} />
           {niche?.custom ? (
