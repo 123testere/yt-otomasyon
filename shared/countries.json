@@ -1,0 +1,1172 @@
+[
+ {
+  "iso2": "af",
+  "iso3": "AFG",
+  "m49": 4,
+  "name": "Afganistan"
+ },
+ {
+  "iso2": "de",
+  "iso3": "DEU",
+  "m49": 276,
+  "name": "Almanya"
+ },
+ {
+  "iso2": "us",
+  "iso3": "USA",
+  "m49": 840,
+  "name": "Amerika Birleşik Devletleri"
+ },
+ {
+  "iso2": "ad",
+  "iso3": "AND",
+  "m49": 20,
+  "name": "Andorra"
+ },
+ {
+  "iso2": "ao",
+  "iso3": "AGO",
+  "m49": 24,
+  "name": "Angola"
+ },
+ {
+  "iso2": "ag",
+  "iso3": "ATG",
+  "m49": 28,
+  "name": "Antigua ve Barbuda"
+ },
+ {
+  "iso2": "ar",
+  "iso3": "ARG",
+  "m49": 32,
+  "name": "Arjantin"
+ },
+ {
+  "iso2": "al",
+  "iso3": "ALB",
+  "m49": 8,
+  "name": "Arnavutluk"
+ },
+ {
+  "iso2": "au",
+  "iso3": "AUS",
+  "m49": 36,
+  "name": "Avustralya"
+ },
+ {
+  "iso2": "at",
+  "iso3": "AUT",
+  "m49": 40,
+  "name": "Avusturya"
+ },
+ {
+  "iso2": "az",
+  "iso3": "AZE",
+  "m49": 31,
+  "name": "Azerbaycan"
+ },
+ {
+  "iso2": "bs",
+  "iso3": "BHS",
+  "m49": 44,
+  "name": "Bahamalar"
+ },
+ {
+  "iso2": "bh",
+  "iso3": "BHR",
+  "m49": 48,
+  "name": "Bahreyn"
+ },
+ {
+  "iso2": "bd",
+  "iso3": "BGD",
+  "m49": 50,
+  "name": "Bangladeş"
+ },
+ {
+  "iso2": "bb",
+  "iso3": "BRB",
+  "m49": 52,
+  "name": "Barbados"
+ },
+ {
+  "iso2": "by",
+  "iso3": "BLR",
+  "m49": 112,
+  "name": "Belarus"
+ },
+ {
+  "iso2": "be",
+  "iso3": "BEL",
+  "m49": 56,
+  "name": "Belçika"
+ },
+ {
+  "iso2": "bz",
+  "iso3": "BLZ",
+  "m49": 84,
+  "name": "Belize"
+ },
+ {
+  "iso2": "bj",
+  "iso3": "BEN",
+  "m49": 204,
+  "name": "Benin"
+ },
+ {
+  "iso2": "ae",
+  "iso3": "ARE",
+  "m49": 784,
+  "name": "Birleşik Arap Emirlikleri"
+ },
+ {
+  "iso2": "gb",
+  "iso3": "GBR",
+  "m49": 826,
+  "name": "Birleşik Krallık"
+ },
+ {
+  "iso2": "bo",
+  "iso3": "BOL",
+  "m49": 68,
+  "name": "Bolivya"
+ },
+ {
+  "iso2": "ba",
+  "iso3": "BIH",
+  "m49": 70,
+  "name": "Bosna-Hersek"
+ },
+ {
+  "iso2": "bw",
+  "iso3": "BWA",
+  "m49": 72,
+  "name": "Botsvana"
+ },
+ {
+  "iso2": "br",
+  "iso3": "BRA",
+  "m49": 76,
+  "name": "Brezilya"
+ },
+ {
+  "iso2": "bn",
+  "iso3": "BRN",
+  "m49": 96,
+  "name": "Brunei"
+ },
+ {
+  "iso2": "bg",
+  "iso3": "BGR",
+  "m49": 100,
+  "name": "Bulgaristan"
+ },
+ {
+  "iso2": "bf",
+  "iso3": "BFA",
+  "m49": 854,
+  "name": "Burkina Faso"
+ },
+ {
+  "iso2": "bi",
+  "iso3": "BDI",
+  "m49": 108,
+  "name": "Burundi"
+ },
+ {
+  "iso2": "bt",
+  "iso3": "BTN",
+  "m49": 64,
+  "name": "Butan"
+ },
+ {
+  "iso2": "cv",
+  "iso3": "CPV",
+  "m49": 132,
+  "name": "Cabo Verde"
+ },
+ {
+  "iso2": "dz",
+  "iso3": "DZA",
+  "m49": 12,
+  "name": "Cezayir"
+ },
+ {
+  "iso2": "dj",
+  "iso3": "DJI",
+  "m49": 262,
+  "name": "Cibuti"
+ },
+ {
+  "iso2": "ci",
+  "iso3": "CIV",
+  "m49": 384,
+  "name": "Côte d’Ivoire"
+ },
+ {
+  "iso2": "td",
+  "iso3": "TCD",
+  "m49": 148,
+  "name": "Çad"
+ },
+ {
+  "iso2": "cz",
+  "iso3": "CZE",
+  "m49": 203,
+  "name": "Çekya"
+ },
+ {
+  "iso2": "cn",
+  "iso3": "CHN",
+  "m49": 156,
+  "name": "Çin"
+ },
+ {
+  "iso2": "do",
+  "iso3": "DOM",
+  "m49": 214,
+  "name": "Dominik Cumhuriyeti"
+ },
+ {
+  "iso2": "dm",
+  "iso3": "DMA",
+  "m49": 212,
+  "name": "Dominika"
+ },
+ {
+  "iso2": "ec",
+  "iso3": "ECU",
+  "m49": 218,
+  "name": "Ekvador"
+ },
+ {
+  "iso2": "gq",
+  "iso3": "GNQ",
+  "m49": 226,
+  "name": "Ekvator Ginesi"
+ },
+ {
+  "iso2": "sv",
+  "iso3": "SLV",
+  "m49": 222,
+  "name": "El Salvador"
+ },
+ {
+  "iso2": "id",
+  "iso3": "IDN",
+  "m49": 360,
+  "name": "Endonezya"
+ },
+ {
+  "iso2": "er",
+  "iso3": "ERI",
+  "m49": 232,
+  "name": "Eritre"
+ },
+ {
+  "iso2": "am",
+  "iso3": "ARM",
+  "m49": 51,
+  "name": "Ermenistan"
+ },
+ {
+  "iso2": "ee",
+  "iso3": "EST",
+  "m49": 233,
+  "name": "Estonya"
+ },
+ {
+  "iso2": "sz",
+  "iso3": "SWZ",
+  "m49": 748,
+  "name": "Esvatini"
+ },
+ {
+  "iso2": "et",
+  "iso3": "ETH",
+  "m49": 231,
+  "name": "Etiyopya"
+ },
+ {
+  "iso2": "ma",
+  "iso3": "MAR",
+  "m49": 504,
+  "name": "Fas"
+ },
+ {
+  "iso2": "fj",
+  "iso3": "FJI",
+  "m49": 242,
+  "name": "Fiji"
+ },
+ {
+  "iso2": "ph",
+  "iso3": "PHL",
+  "m49": 608,
+  "name": "Filipinler"
+ },
+ {
+  "iso2": "ps",
+  "iso3": "PSE",
+  "m49": 275,
+  "name": "Filistin Bölgeleri"
+ },
+ {
+  "iso2": "fi",
+  "iso3": "FIN",
+  "m49": 246,
+  "name": "Finlandiya"
+ },
+ {
+  "iso2": "fr",
+  "iso3": "FRA",
+  "m49": 250,
+  "name": "Fransa"
+ },
+ {
+  "iso2": "ga",
+  "iso3": "GAB",
+  "m49": 266,
+  "name": "Gabon"
+ },
+ {
+  "iso2": "gm",
+  "iso3": "GMB",
+  "m49": 270,
+  "name": "Gambiya"
+ },
+ {
+  "iso2": "gh",
+  "iso3": "GHA",
+  "m49": 288,
+  "name": "Gana"
+ },
+ {
+  "iso2": "gn",
+  "iso3": "GIN",
+  "m49": 324,
+  "name": "Gine"
+ },
+ {
+  "iso2": "gw",
+  "iso3": "GNB",
+  "m49": 624,
+  "name": "Gine-Bissau"
+ },
+ {
+  "iso2": "gd",
+  "iso3": "GRD",
+  "m49": 308,
+  "name": "Grenada"
+ },
+ {
+  "iso2": "gt",
+  "iso3": "GTM",
+  "m49": 320,
+  "name": "Guatemala"
+ },
+ {
+  "iso2": "gy",
+  "iso3": "GUY",
+  "m49": 328,
+  "name": "Guyana"
+ },
+ {
+  "iso2": "za",
+  "iso3": "ZAF",
+  "m49": 710,
+  "name": "Güney Afrika"
+ },
+ {
+  "iso2": "kr",
+  "iso3": "KOR",
+  "m49": 410,
+  "name": "Güney Kore"
+ },
+ {
+  "iso2": "ss",
+  "iso3": "SSD",
+  "m49": 728,
+  "name": "Güney Sudan"
+ },
+ {
+  "iso2": "ge",
+  "iso3": "GEO",
+  "m49": 268,
+  "name": "Gürcistan"
+ },
+ {
+  "iso2": "ht",
+  "iso3": "HTI",
+  "m49": 332,
+  "name": "Haiti"
+ },
+ {
+  "iso2": "hr",
+  "iso3": "HRV",
+  "m49": 191,
+  "name": "Hırvatistan"
+ },
+ {
+  "iso2": "in",
+  "iso3": "IND",
+  "m49": 356,
+  "name": "Hindistan"
+ },
+ {
+  "iso2": "nl",
+  "iso3": "NLD",
+  "m49": 528,
+  "name": "Hollanda"
+ },
+ {
+  "iso2": "hn",
+  "iso3": "HND",
+  "m49": 340,
+  "name": "Honduras"
+ },
+ {
+  "iso2": "iq",
+  "iso3": "IRQ",
+  "m49": 368,
+  "name": "Irak"
+ },
+ {
+  "iso2": "ir",
+  "iso3": "IRN",
+  "m49": 364,
+  "name": "İran"
+ },
+ {
+  "iso2": "ie",
+  "iso3": "IRL",
+  "m49": 372,
+  "name": "İrlanda"
+ },
+ {
+  "iso2": "es",
+  "iso3": "ESP",
+  "m49": 724,
+  "name": "İspanya"
+ },
+ {
+  "iso2": "il",
+  "iso3": "ISR",
+  "m49": 376,
+  "name": "İsrail"
+ },
+ {
+  "iso2": "se",
+  "iso3": "SWE",
+  "m49": 752,
+  "name": "İsveç"
+ },
+ {
+  "iso2": "ch",
+  "iso3": "CHE",
+  "m49": 756,
+  "name": "İsviçre"
+ },
+ {
+  "iso2": "it",
+  "iso3": "ITA",
+  "m49": 380,
+  "name": "İtalya"
+ },
+ {
+  "iso2": "is",
+  "iso3": "ISL",
+  "m49": 352,
+  "name": "İzlanda"
+ },
+ {
+  "iso2": "jm",
+  "iso3": "JAM",
+  "m49": 388,
+  "name": "Jamaika"
+ },
+ {
+  "iso2": "jp",
+  "iso3": "JPN",
+  "m49": 392,
+  "name": "Japonya"
+ },
+ {
+  "iso2": "kh",
+  "iso3": "KHM",
+  "m49": 116,
+  "name": "Kamboçya"
+ },
+ {
+  "iso2": "cm",
+  "iso3": "CMR",
+  "m49": 120,
+  "name": "Kamerun"
+ },
+ {
+  "iso2": "ca",
+  "iso3": "CAN",
+  "m49": 124,
+  "name": "Kanada"
+ },
+ {
+  "iso2": "me",
+  "iso3": "MNE",
+  "m49": 499,
+  "name": "Karadağ"
+ },
+ {
+  "iso2": "qa",
+  "iso3": "QAT",
+  "m49": 634,
+  "name": "Katar"
+ },
+ {
+  "iso2": "kz",
+  "iso3": "KAZ",
+  "m49": 398,
+  "name": "Kazakistan"
+ },
+ {
+  "iso2": "ke",
+  "iso3": "KEN",
+  "m49": 404,
+  "name": "Kenya"
+ },
+ {
+  "iso2": "cy",
+  "iso3": "CYP",
+  "m49": 196,
+  "name": "Kıbrıs"
+ },
+ {
+  "iso2": "kg",
+  "iso3": "KGZ",
+  "m49": 417,
+  "name": "Kırgızistan"
+ },
+ {
+  "iso2": "ki",
+  "iso3": "KIR",
+  "m49": 296,
+  "name": "Kiribati"
+ },
+ {
+  "iso2": "co",
+  "iso3": "COL",
+  "m49": 170,
+  "name": "Kolombiya"
+ },
+ {
+  "iso2": "km",
+  "iso3": "COM",
+  "m49": 174,
+  "name": "Komorlar"
+ },
+ {
+  "iso2": "cg",
+  "iso3": "COG",
+  "m49": 178,
+  "name": "Kongo - Brazavil"
+ },
+ {
+  "iso2": "cd",
+  "iso3": "COD",
+  "m49": 180,
+  "name": "Kongo - Kinşasa"
+ },
+ {
+  "iso2": "cr",
+  "iso3": "CRI",
+  "m49": 188,
+  "name": "Kosta Rika"
+ },
+ {
+  "iso2": "kw",
+  "iso3": "KWT",
+  "m49": 414,
+  "name": "Kuveyt"
+ },
+ {
+  "iso2": "kp",
+  "iso3": "PRK",
+  "m49": 408,
+  "name": "Kuzey Kore"
+ },
+ {
+  "iso2": "mk",
+  "iso3": "MKD",
+  "m49": 807,
+  "name": "Kuzey Makedonya"
+ },
+ {
+  "iso2": "cu",
+  "iso3": "CUB",
+  "m49": 192,
+  "name": "Küba"
+ },
+ {
+  "iso2": "la",
+  "iso3": "LAO",
+  "m49": 418,
+  "name": "Laos"
+ },
+ {
+  "iso2": "ls",
+  "iso3": "LSO",
+  "m49": 426,
+  "name": "Lesotho"
+ },
+ {
+  "iso2": "lv",
+  "iso3": "LVA",
+  "m49": 428,
+  "name": "Letonya"
+ },
+ {
+  "iso2": "lr",
+  "iso3": "LBR",
+  "m49": 430,
+  "name": "Liberya"
+ },
+ {
+  "iso2": "ly",
+  "iso3": "LBY",
+  "m49": 434,
+  "name": "Libya"
+ },
+ {
+  "iso2": "li",
+  "iso3": "LIE",
+  "m49": 438,
+  "name": "Liechtenstein"
+ },
+ {
+  "iso2": "lt",
+  "iso3": "LTU",
+  "m49": 440,
+  "name": "Litvanya"
+ },
+ {
+  "iso2": "lb",
+  "iso3": "LBN",
+  "m49": 422,
+  "name": "Lübnan"
+ },
+ {
+  "iso2": "lu",
+  "iso3": "LUX",
+  "m49": 442,
+  "name": "Lüksemburg"
+ },
+ {
+  "iso2": "hu",
+  "iso3": "HUN",
+  "m49": 348,
+  "name": "Macaristan"
+ },
+ {
+  "iso2": "mg",
+  "iso3": "MDG",
+  "m49": 450,
+  "name": "Madagaskar"
+ },
+ {
+  "iso2": "mw",
+  "iso3": "MWI",
+  "m49": 454,
+  "name": "Malavi"
+ },
+ {
+  "iso2": "mv",
+  "iso3": "MDV",
+  "m49": 462,
+  "name": "Maldivler"
+ },
+ {
+  "iso2": "my",
+  "iso3": "MYS",
+  "m49": 458,
+  "name": "Malezya"
+ },
+ {
+  "iso2": "ml",
+  "iso3": "MLI",
+  "m49": 466,
+  "name": "Mali"
+ },
+ {
+  "iso2": "mt",
+  "iso3": "MLT",
+  "m49": 470,
+  "name": "Malta"
+ },
+ {
+  "iso2": "mh",
+  "iso3": "MHL",
+  "m49": 584,
+  "name": "Marshall Adaları"
+ },
+ {
+  "iso2": "mu",
+  "iso3": "MUS",
+  "m49": 480,
+  "name": "Mauritius"
+ },
+ {
+  "iso2": "mx",
+  "iso3": "MEX",
+  "m49": 484,
+  "name": "Meksika"
+ },
+ {
+  "iso2": "eg",
+  "iso3": "EGY",
+  "m49": 818,
+  "name": "Mısır"
+ },
+ {
+  "iso2": "fm",
+  "iso3": "FSM",
+  "m49": 583,
+  "name": "Mikronezya"
+ },
+ {
+  "iso2": "mn",
+  "iso3": "MNG",
+  "m49": 496,
+  "name": "Moğolistan"
+ },
+ {
+  "iso2": "md",
+  "iso3": "MDA",
+  "m49": 498,
+  "name": "Moldova"
+ },
+ {
+  "iso2": "mc",
+  "iso3": "MCO",
+  "m49": 492,
+  "name": "Monako"
+ },
+ {
+  "iso2": "mr",
+  "iso3": "MRT",
+  "m49": 478,
+  "name": "Moritanya"
+ },
+ {
+  "iso2": "mz",
+  "iso3": "MOZ",
+  "m49": 508,
+  "name": "Mozambik"
+ },
+ {
+  "iso2": "mm",
+  "iso3": "MMR",
+  "m49": 104,
+  "name": "Myanmar (Burma)"
+ },
+ {
+  "iso2": "na",
+  "iso3": "NAM",
+  "m49": 516,
+  "name": "Namibya"
+ },
+ {
+  "iso2": "nr",
+  "iso3": "NRU",
+  "m49": 520,
+  "name": "Nauru"
+ },
+ {
+  "iso2": "np",
+  "iso3": "NPL",
+  "m49": 524,
+  "name": "Nepal"
+ },
+ {
+  "iso2": "ne",
+  "iso3": "NER",
+  "m49": 562,
+  "name": "Nijer"
+ },
+ {
+  "iso2": "ng",
+  "iso3": "NGA",
+  "m49": 566,
+  "name": "Nijerya"
+ },
+ {
+  "iso2": "ni",
+  "iso3": "NIC",
+  "m49": 558,
+  "name": "Nikaragua"
+ },
+ {
+  "iso2": "no",
+  "iso3": "NOR",
+  "m49": 578,
+  "name": "Norveç"
+ },
+ {
+  "iso2": "cf",
+  "iso3": "CAF",
+  "m49": 140,
+  "name": "Orta Afrika Cumhuriyeti"
+ },
+ {
+  "iso2": "uz",
+  "iso3": "UZB",
+  "m49": 860,
+  "name": "Özbekistan"
+ },
+ {
+  "iso2": "pk",
+  "iso3": "PAK",
+  "m49": 586,
+  "name": "Pakistan"
+ },
+ {
+  "iso2": "pw",
+  "iso3": "PLW",
+  "m49": 585,
+  "name": "Palau"
+ },
+ {
+  "iso2": "pa",
+  "iso3": "PAN",
+  "m49": 591,
+  "name": "Panama"
+ },
+ {
+  "iso2": "pg",
+  "iso3": "PNG",
+  "m49": 598,
+  "name": "Papua Yeni Gine"
+ },
+ {
+  "iso2": "py",
+  "iso3": "PRY",
+  "m49": 600,
+  "name": "Paraguay"
+ },
+ {
+  "iso2": "pe",
+  "iso3": "PER",
+  "m49": 604,
+  "name": "Peru"
+ },
+ {
+  "iso2": "pl",
+  "iso3": "POL",
+  "m49": 616,
+  "name": "Polonya"
+ },
+ {
+  "iso2": "pt",
+  "iso3": "PRT",
+  "m49": 620,
+  "name": "Portekiz"
+ },
+ {
+  "iso2": "ro",
+  "iso3": "ROU",
+  "m49": 642,
+  "name": "Romanya"
+ },
+ {
+  "iso2": "rw",
+  "iso3": "RWA",
+  "m49": 646,
+  "name": "Ruanda"
+ },
+ {
+  "iso2": "ru",
+  "iso3": "RUS",
+  "m49": 643,
+  "name": "Rusya"
+ },
+ {
+  "iso2": "kn",
+  "iso3": "KNA",
+  "m49": 659,
+  "name": "Saint Kitts ve Nevis"
+ },
+ {
+  "iso2": "lc",
+  "iso3": "LCA",
+  "m49": 662,
+  "name": "Saint Lucia"
+ },
+ {
+  "iso2": "vc",
+  "iso3": "VCT",
+  "m49": 670,
+  "name": "Saint Vincent ve Grenadinler"
+ },
+ {
+  "iso2": "ws",
+  "iso3": "WSM",
+  "m49": 882,
+  "name": "Samoa"
+ },
+ {
+  "iso2": "sm",
+  "iso3": "SMR",
+  "m49": 674,
+  "name": "San Marino"
+ },
+ {
+  "iso2": "st",
+  "iso3": "STP",
+  "m49": 678,
+  "name": "Sao Tome ve Principe"
+ },
+ {
+  "iso2": "sn",
+  "iso3": "SEN",
+  "m49": 686,
+  "name": "Senegal"
+ },
+ {
+  "iso2": "sc",
+  "iso3": "SYC",
+  "m49": 690,
+  "name": "Seyşeller"
+ },
+ {
+  "iso2": "rs",
+  "iso3": "SRB",
+  "m49": 688,
+  "name": "Sırbistan"
+ },
+ {
+  "iso2": "sl",
+  "iso3": "SLE",
+  "m49": 694,
+  "name": "Sierra Leone"
+ },
+ {
+  "iso2": "sg",
+  "iso3": "SGP",
+  "m49": 702,
+  "name": "Singapur"
+ },
+ {
+  "iso2": "sk",
+  "iso3": "SVK",
+  "m49": 703,
+  "name": "Slovakya"
+ },
+ {
+  "iso2": "si",
+  "iso3": "SVN",
+  "m49": 705,
+  "name": "Slovenya"
+ },
+ {
+  "iso2": "sb",
+  "iso3": "SLB",
+  "m49": 90,
+  "name": "Solomon Adaları"
+ },
+ {
+  "iso2": "so",
+  "iso3": "SOM",
+  "m49": 706,
+  "name": "Somali"
+ },
+ {
+  "iso2": "lk",
+  "iso3": "LKA",
+  "m49": 144,
+  "name": "Sri Lanka"
+ },
+ {
+  "iso2": "sd",
+  "iso3": "SDN",
+  "m49": 729,
+  "name": "Sudan"
+ },
+ {
+  "iso2": "sr",
+  "iso3": "SUR",
+  "m49": 740,
+  "name": "Surinam"
+ },
+ {
+  "iso2": "sy",
+  "iso3": "SYR",
+  "m49": 760,
+  "name": "Suriye"
+ },
+ {
+  "iso2": "sa",
+  "iso3": "SAU",
+  "m49": 682,
+  "name": "Suudi Arabistan"
+ },
+ {
+  "iso2": "cl",
+  "iso3": "CHL",
+  "m49": 152,
+  "name": "Şili"
+ },
+ {
+  "iso2": "tj",
+  "iso3": "TJK",
+  "m49": 762,
+  "name": "Tacikistan"
+ },
+ {
+  "iso2": "tz",
+  "iso3": "TZA",
+  "m49": 834,
+  "name": "Tanzanya"
+ },
+ {
+  "iso2": "th",
+  "iso3": "THA",
+  "m49": 764,
+  "name": "Tayland"
+ },
+ {
+  "iso2": "tw",
+  "iso3": "TWN",
+  "m49": 158,
+  "name": "Tayvan"
+ },
+ {
+  "iso2": "tl",
+  "iso3": "TLS",
+  "m49": 626,
+  "name": "Timor-Leste"
+ },
+ {
+  "iso2": "tg",
+  "iso3": "TGO",
+  "m49": 768,
+  "name": "Togo"
+ },
+ {
+  "iso2": "to",
+  "iso3": "TON",
+  "m49": 776,
+  "name": "Tonga"
+ },
+ {
+  "iso2": "tt",
+  "iso3": "TTO",
+  "m49": 780,
+  "name": "Trinidad ve Tobago"
+ },
+ {
+  "iso2": "tn",
+  "iso3": "TUN",
+  "m49": 788,
+  "name": "Tunus"
+ },
+ {
+  "iso2": "tv",
+  "iso3": "TUV",
+  "m49": 798,
+  "name": "Tuvalu"
+ },
+ {
+  "iso2": "tr",
+  "iso3": "TUR",
+  "m49": 792,
+  "name": "Türkiye"
+ },
+ {
+  "iso2": "tm",
+  "iso3": "TKM",
+  "m49": 795,
+  "name": "Türkmenistan"
+ },
+ {
+  "iso2": "ug",
+  "iso3": "UGA",
+  "m49": 800,
+  "name": "Uganda"
+ },
+ {
+  "iso2": "ua",
+  "iso3": "UKR",
+  "m49": 804,
+  "name": "Ukrayna"
+ },
+ {
+  "iso2": "om",
+  "iso3": "OMN",
+  "m49": 512,
+  "name": "Umman"
+ },
+ {
+  "iso2": "uy",
+  "iso3": "URY",
+  "m49": 858,
+  "name": "Uruguay"
+ },
+ {
+  "iso2": "jo",
+  "iso3": "JOR",
+  "m49": 400,
+  "name": "Ürdün"
+ },
+ {
+  "iso2": "vu",
+  "iso3": "VUT",
+  "m49": 548,
+  "name": "Vanuatu"
+ },
+ {
+  "iso2": "va",
+  "iso3": "VAT",
+  "m49": 336,
+  "name": "Vatikan"
+ },
+ {
+  "iso2": "ve",
+  "iso3": "VEN",
+  "m49": 862,
+  "name": "Venezuela"
+ },
+ {
+  "iso2": "vn",
+  "iso3": "VNM",
+  "m49": 704,
+  "name": "Vietnam"
+ },
+ {
+  "iso2": "ye",
+  "iso3": "YEM",
+  "m49": 887,
+  "name": "Yemen"
+ },
+ {
+  "iso2": "nz",
+  "iso3": "NZL",
+  "m49": 554,
+  "name": "Yeni Zelanda"
+ },
+ {
+  "iso2": "gr",
+  "iso3": "GRC",
+  "m49": 300,
+  "name": "Yunanistan"
+ },
+ {
+  "iso2": "zm",
+  "iso3": "ZMB",
+  "m49": 894,
+  "name": "Zambiya"
+ },
+ {
+  "iso2": "zw",
+  "iso3": "ZWE",
+  "m49": 716,
+  "name": "Zimbabve"
+ }
+]

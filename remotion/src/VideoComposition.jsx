@@ -91,7 +91,7 @@ const stroke = (px) => ({
 });
 
 // Kelime kelime: aktif kelime renkli ve hafif büyür. Klasik: satır satır beyaz yazı.
-function Captions({ words, mode, color, portrait, lang }) {
+export function Captions({ words, mode, color, portrait, lang, bottomOverride }) {
   const frame = useCurrentFrame();
   const { fps, height } = useVideoConfig();
   if (mode === 'yok' || !words.length) return null;
@@ -104,7 +104,7 @@ function Captions({ words, mode, color, portrait, lang }) {
   const enter = spring({ frame: frame - Math.round(group[0].t * fps), fps, config: { damping: 14, stiffness: 180 } });
 
   const size = karaoke ? (portrait ? 92 : 76) : (portrait ? 60 : 50);
-  const bottom = karaoke ? (portrait ? height * 0.3 : 110) : (portrait ? 330 : 60);
+  const bottom = bottomOverride ?? (karaoke ? (portrait ? height * 0.3 : 110) : (portrait ? 330 : 60));
   return (
     <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: bottom }}>
       <div style={{
