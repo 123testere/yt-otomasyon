@@ -30,7 +30,7 @@ export async function refreshStandings({ force = false } = {}) {
     topics[t.id] = {
       question: t.question, label: t.label, year: s.year, source: s.source,
       countries: COUNTRY_SETS.europe.length, withData: s.ranked.length, noData: s.noData.length,
-      top: s.ranked.slice(0, 6).map((c) => ({ name: c.name, tonnes: Math.round(c.value) })),
+      top: s.ranked.slice(0, 7).map((c) => ({ name: c.name, tonnes: Math.round(c.value) })),
     };
   }
   fs.writeFileSync(STANDINGS_FILE, stableJson({ generatedAt: new Date().toISOString(), topics }));

@@ -38,7 +38,7 @@ export async function faoStandings(itemCode, countries = COUNTRY_SETS.world) {
 
 export async function renderMatch({
   id, topic, standings, script, settings, music, out,
-  format = 'league', countries = COUNTRY_SETS.world, brand = 'ÜLKELER LİGİ', season = 1, match = 1, table: seasonTable,
+  format = 'league', countries = COUNTRY_SETS.world, brand = 'ÜLKELER LİGİ', season = 1, match = 1, table: seasonTable, extra = {},
 }) {
   const { composition, phases: phaseOrder } = FORMATS[format];
   const dir = path.join(path.dirname(out), id);
@@ -66,7 +66,7 @@ export async function renderMatch({
     const table = seasonTable ?? standings.ranked.slice(0, POINTS.length).map((c, i) => ({ iso2: c.iso2, name: c.name, points: POINTS[i] }));
     const props = {
       fps: FPS, width: 1080, height: 1920, durationInFrames: Math.round(narrated.total * FPS),
-      lang: settings.language, brand, match, phases, words,
+      lang: settings.language, brand, season, match, phases, words, ...extra,
       flags: `${id}/flags`, narration: `${id}/anlatim.wav`, music: music ? `${id}/muzik.mp3` : null, musicVolume: 0.1,
       data: {
         question: topic.question, emoji: topic.emoji, unit: topic.unit, why: topic.why ?? [], season, table,

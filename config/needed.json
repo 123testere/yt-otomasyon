@@ -1,16 +1,1 @@
-[
-  {
-    "id": "2026-11-02_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
-    "type": "short",
-    "publishAt": "2026-11-02T17:00:00.000Z",
-    "targetWords": 94
-  },
-  {
-    "id": "2026-11-03_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
-    "type": "short",
-    "publishAt": "2026-11-03T17:00:00.000Z",
-    "targetWords": 94
-  }
-]
+[]

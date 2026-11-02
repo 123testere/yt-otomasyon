@@ -112,6 +112,11 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
 
   if (job.format === 'duell') {
     errors.push(...duellErrors(job.duell));
+    const slot = needed?.find((n) => n.id === job.id);
+    if (slot?.match) {
+      req(typeof job.title === 'string' && job.title.startsWith(`Duell ${slot.match}/${slot.total}`),
+        `title "Duell ${slot.match}/${slot.total}: …" ile başlamalı`);
+    }
     return errors;
   }
 

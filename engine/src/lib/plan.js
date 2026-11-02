@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import { options, targetWords } from './options.js';
 import { addDays, dateInTz, weekday, zonedToUtc } from './time.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './paths.js';
+import { matchFor } from './league.js';
 
 const TZ = options.timezone;
 const MIN_LEAD_MS = 60 * 60 * 1000; // yayına 1 saatten az kalmışsa o slotu atla
@@ -35,6 +36,10 @@ function slotsFor(channel, dates, now) {
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
       targetWords: targetWords(s, slot.type),
+      // Flaggenduell: sezon ve maç numarası yayın gününden hesaplanır (motor da aynısını kullanır).
+      ...(s.contentFormat === 'flaggenduell'
+        ? { format: 'duell', ...(matchFor(slot.date, channel.league?.calendarStart ?? slot.date) ?? {}) }
+        : {}),
     }));
 }
 

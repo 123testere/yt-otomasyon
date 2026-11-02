@@ -6,7 +6,7 @@ import { ensurePortrait } from './lib/character.js';
 import { db } from './lib/firebase.js';
 import { options, resolveSettings, characterOf, nicheOf, pick } from './lib/options.js';
 import { neededJobs } from './lib/plan.js';
-import { CONFIG_DIR } from './lib/paths.js';
+import { CONFIG_DIR, ROOT } from './lib/paths.js';
 import { stableJson } from './lib/util.js';
 
 const RECENT_TITLES = 80;
@@ -63,6 +63,18 @@ async function main() {
       };
     })
     .sort((a, b) => a.id.localeCompare(b.id));
+
+  // Flaggenduell kanallarında sezon takvimi ve güncel puan tablosu (Claude anlatımda kullanır, plan maç numarasını hesaplar).
+  const euroNames = Object.fromEntries(JSON.parse(fs.readFileSync(path.join(ROOT, 'shared', 'europe-coe.json'), 'utf8')).map((c) => [c.iso2, c.name]));
+  for (const c of channels.filter((ch) => ch.settings.contentFormat === 'flaggenduell')) {
+    const lg = (await firestore.doc(`leagues/${c.id}`).get()).data();
+    if (!lg) continue;
+    c.league = {
+      calendarStart: lg.calendarStart, season: lg.season ?? 1, lastMatch: lg.lastMatch ?? 0,
+      table: Object.entries(lg.points ?? {}).sort((a, b) => b[1] - a[1]).slice(0, 10)
+        .map(([iso2, points]) => ({ name: euroNames[iso2] ?? iso2, points })),
+    };
+  }
 
   // Flaggenduell kanalı varsa Claude'un bakacağı veri sıralamalarını (haftada bir) tazele.
   if (channels.some((c) => c.enabled && c.settings.contentFormat === 'flaggenduell')) {

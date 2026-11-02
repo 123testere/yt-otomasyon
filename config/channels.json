@@ -137,7 +137,7 @@
     "settings": {
       "enabled": true,
       "contentFormat": "flaggenduell",
-      "niche": "cografya",
+      "niche": "ilginc",
       "customNiche": "",
       "language": "de",
       "voice": "de-DE-ConradNeural",
@@ -154,7 +154,7 @@
       "identityLocked": true,
       "visualStyle": "ai-sinematik",
       "template": "animasyonlu",
-      "music": "epik",
+      "music": "neseli",
       "musicVolume": "0.12",
       "subtitles": "kelime",
       "subtitleColor": "sari",
@@ -165,7 +165,7 @@
       },
       "shorts": {
         "times": [
-          "20:00"
+          "08:00"
         ],
         "seconds": 45
       },
@@ -176,7 +176,7 @@
     },
     "brief": {
       "format": "flaggenduell",
-      "konu": "Ülkeler ve Coğrafya",
+      "konu": "İlginç Bilgiler",
       "dil": "Deutsch",
       "ton": "Enerjik, merak uyandıran, hızlı tempolu.",
       "karakter": null,
@@ -184,6 +184,14 @@
       "cocukIcerigi": false,
       "ekTalimat": null
     },
-    "recentTitles": []
+    "recentTitles": [
+      "Wer erntet die meisten Kirschen in Europa? 🍒"
+    ],
+    "league": {
+      "calendarStart": "2026-11-03",
+      "season": 1,
+      "lastMatch": 0,
+      "table": []
+    }
   }
 ]

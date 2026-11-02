@@ -229,13 +229,35 @@ function WhyOverlay({ tl, frame, fps, data }) {
   );
 }
 
-function TableOverlay({ tl, frame, fps, data, flags }) {
+// Sezon finalinde tablo bölümünün ikinci yarısında sezon şampiyonu açıklanır.
+function ChampionOverlay({ frame, fps, data, flags }) {
+  const champ = data.table[0];
+  const s = pop(frame, fps);
+  return (
+    <>
+      <Confetti frame={frame} />
+      <div style={{ position: 'absolute', top: 400, left: 60, right: 60, textAlign: 'center', padding: '30px 20px', borderRadius: 32, background: 'rgba(11,18,48,0.94)', border: `6px solid ${GOLD}`, transform: `scale(${s})` }}>
+        <div style={{ fontFamily: display, fontSize: 92, color: GOLD, ...outline(8) }}>SAISONSIEGER {data.season}</div>
+        <div style={{ fontSize: 130, marginTop: 6 }}>👑</div>
+        <Ball iso2={champ.iso2} flags={flags} size={250} style={{ margin: '0 auto' }} look={Math.sin(frame / 8)} />
+        <div style={{ fontFamily: display, fontSize: 90, color: WHITE, marginTop: 16, ...outline(8) }}>{champ.name.toLocaleUpperCase('de')}</div>
+        <div style={{ fontFamily: display, fontSize: 64, color: GOLD }}>{champ.points} PUNKTE</div>
+      </div>
+    </>
+  );
+}
+
+function TableOverlay({ tl, frame, fps, data, flags, final, eveOfFinal }) {
   const { P } = tl;
   if (frame < P.table.from) return null;
   const f = frame - P.table.from;
+  const reveal = Math.round(P.table.duration * 0.45);
+  if (final && f >= reveal) return <ChampionOverlay frame={f - reveal} fps={fps} data={data} flags={flags} />;
   return (
     <div style={{ position: 'absolute', top: 400, left: 90, right: 90, padding: 26, borderRadius: 28, background: 'rgba(11,18,48,0.92)', border: `4px solid ${GOLD}` }}>
-      <div style={{ textAlign: 'center', fontFamily: display, fontSize: 64, color: GOLD, marginBottom: 14 }}>SAISON {data.season} · TABELLE</div>
+      <div style={{ textAlign: 'center', fontFamily: display, fontSize: 64, color: GOLD, marginBottom: 14 }}>
+        {final ? `ENDSTAND SAISON ${data.season}` : `SAISON ${data.season} · TABELLE`}
+      </div>
       {data.table.slice(0, 5).map((r, i) => {
         const s = pop(f, fps, i * 4);
         return (
@@ -247,13 +269,15 @@ function TableOverlay({ tl, frame, fps, data, flags }) {
           </div>
         );
       })}
-      <div style={{ textAlign: 'center', fontFamily: display, fontSize: 44, color: WHITE, marginTop: 10 }}>DEIN THEMA IN DIE KOMMENTARE 👇</div>
+      <div style={{ textAlign: 'center', fontFamily: display, fontSize: 44, color: eveOfFinal ? RED : WHITE, marginTop: 10 }}>
+        {eveOfFinal ? 'MORGEN: DAS GROSSE FINALE! 🏆' : 'DEIN THEMA IN DIE KOMMENTARE 👇'}
+      </div>
     </div>
   );
 }
 
 export function Duell(props) {
-  const { phases, data, flags, words, narration, music, musicVolume, brand, match } = props;
+  const { phases, data, flags, words, narration, music, musicVolume, brand, match, season = 1, total = 30, seasonFinal = false, eveOfFinal = false } = props;
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const tl = useTimeline({ phases, data });
@@ -266,8 +290,8 @@ export function Duell(props) {
   return (
     <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 20%, #22348A 0%, ${NAVY} 62%, #050816 100%)` }}>
       <div style={{ position: 'absolute', top: 60, left: 0, right: 0, display: 'flex', justifyContent: 'center' }}>
-        <div style={{ background: GOLD, color: NAVY, fontFamily: display, fontSize: 50, padding: '6px 30px', borderRadius: 12, letterSpacing: 2 }}>
-          {brand} · DUELL {match}
+        <div style={{ background: seasonFinal ? RED : GOLD, color: seasonFinal ? WHITE : NAVY, fontFamily: display, fontSize: 46, padding: '6px 28px', borderRadius: 12, letterSpacing: 2 }}>
+          {seasonFinal ? `SAISONFINALE · DUELL ${match}/${total}` : `${brand} · SAISON ${season} · DUELL ${match}/${total}`}
         </div>
       </div>
       <div style={{ position: 'absolute', top: 150, left: 50, right: 50, textAlign: 'center', fontFamily: display, fontSize: 70, lineHeight: 1.02, ...outline(7) }}>
@@ -293,7 +317,7 @@ export function Duell(props) {
       <FinalValues tl={tl} frame={frame} data={data} />
       <WinnerOverlay tl={tl} frame={frame} fps={fps} data={data} />
       <WhyOverlay tl={tl} frame={frame} fps={fps} data={data} />
-      <TableOverlay tl={tl} frame={frame} fps={fps} data={data} flags={flags} />
+      <TableOverlay tl={tl} frame={frame} fps={fps} data={data} flags={flags} final={seasonFinal} eveOfFinal={eveOfFinal} />
       <Captions words={words} mode="kelime" color={GOLD} portrait lang="de" bottomOverride={400} />
       {narration ? <Html5Audio src={staticFile(narration)} /> : null}
       {music ? <Html5Audio src={staticFile(music)} volume={musicVol} loop /> : null}
