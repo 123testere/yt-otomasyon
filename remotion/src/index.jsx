@@ -2,6 +2,7 @@ import { Composition, registerRoot, Still } from 'remotion';
 import { VideoComposition } from './VideoComposition.jsx';
 import { Thumbnail } from './Thumbnail.jsx';
 import { League } from './League.jsx';
+import { Duell } from './Duell.jsx';
 
 // Süre ve boyut motorun gönderdiği props'tan gelir (engine/src/pipeline/remotion.js).
 const fromProps = ({ props }) => ({
@@ -23,6 +24,8 @@ function Root() {
       <Composition id="Video" component={VideoComposition} defaultProps={demoVideo}
         calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
       <Composition id="League" component={League} defaultProps={{ phases: [], data: null, words: [], fps: 30, width: 1080, height: 1920, durationInFrames: 150 }}
+        calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
+      <Composition id="Duell" component={Duell} defaultProps={{ phases: [], data: null, words: [], fps: 30, width: 1080, height: 1920, durationInFrames: 150 }}
         calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
       <Still id="Thumb" component={Thumbnail} width={1280} height={720}
         defaultProps={{ background: null, text: 'KAPAK YAZISI', badge: null, lang: 'tr', accent: '#FFE600' }} />

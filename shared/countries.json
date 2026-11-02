@@ -222,6 +222,12 @@
   "name": "Çin"
  },
  {
+  "iso2": "dk",
+  "iso3": "DNK",
+  "m49": 208,
+  "name": "Danimarka"
+ },
+ {
   "iso2": "do",
   "iso3": "DOM",
   "m49": 214,
@@ -309,7 +315,7 @@
   "iso2": "ps",
   "iso3": "PSE",
   "m49": 275,
-  "name": "Filistin Bölgeleri"
+  "name": "Filistin"
  },
  {
   "iso2": "fi",
@@ -1030,12 +1036,6 @@
   "iso3": "THA",
   "m49": 764,
   "name": "Tayland"
- },
- {
-  "iso2": "tw",
-  "iso3": "TWN",
-  "m49": 158,
-  "name": "Tayvan"
  },
  {
   "iso2": "tl",

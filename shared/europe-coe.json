@@ -1,0 +1,278 @@
+[
+ {
+  "iso2": "al",
+  "iso3": "ALB",
+  "m49": 8,
+  "name": "Albanien"
+ },
+ {
+  "iso2": "ad",
+  "iso3": "AND",
+  "m49": 20,
+  "name": "Andorra"
+ },
+ {
+  "iso2": "am",
+  "iso3": "ARM",
+  "m49": 51,
+  "name": "Armenien"
+ },
+ {
+  "iso2": "az",
+  "iso3": "AZE",
+  "m49": 31,
+  "name": "Aserbaidschan"
+ },
+ {
+  "iso2": "be",
+  "iso3": "BEL",
+  "m49": 56,
+  "name": "Belgien"
+ },
+ {
+  "iso2": "ba",
+  "iso3": "BIH",
+  "m49": 70,
+  "name": "Bosnien und Herzegowina"
+ },
+ {
+  "iso2": "bg",
+  "iso3": "BGR",
+  "m49": 100,
+  "name": "Bulgarien"
+ },
+ {
+  "iso2": "dk",
+  "iso3": "DNK",
+  "m49": 208,
+  "name": "Dänemark"
+ },
+ {
+  "iso2": "de",
+  "iso3": "DEU",
+  "m49": 276,
+  "name": "Deutschland"
+ },
+ {
+  "iso2": "ee",
+  "iso3": "EST",
+  "m49": 233,
+  "name": "Estland"
+ },
+ {
+  "iso2": "fi",
+  "iso3": "FIN",
+  "m49": 246,
+  "name": "Finnland"
+ },
+ {
+  "iso2": "fr",
+  "iso3": "FRA",
+  "m49": 250,
+  "name": "Frankreich"
+ },
+ {
+  "iso2": "ge",
+  "iso3": "GEO",
+  "m49": 268,
+  "name": "Georgien"
+ },
+ {
+  "iso2": "gr",
+  "iso3": "GRC",
+  "m49": 300,
+  "name": "Griechenland"
+ },
+ {
+  "iso2": "ie",
+  "iso3": "IRL",
+  "m49": 372,
+  "name": "Irland"
+ },
+ {
+  "iso2": "is",
+  "iso3": "ISL",
+  "m49": 352,
+  "name": "Island"
+ },
+ {
+  "iso2": "it",
+  "iso3": "ITA",
+  "m49": 380,
+  "name": "Italien"
+ },
+ {
+  "iso2": "hr",
+  "iso3": "HRV",
+  "m49": 191,
+  "name": "Kroatien"
+ },
+ {
+  "iso2": "lv",
+  "iso3": "LVA",
+  "m49": 428,
+  "name": "Lettland"
+ },
+ {
+  "iso2": "li",
+  "iso3": "LIE",
+  "m49": 438,
+  "name": "Liechtenstein"
+ },
+ {
+  "iso2": "lt",
+  "iso3": "LTU",
+  "m49": 440,
+  "name": "Litauen"
+ },
+ {
+  "iso2": "lu",
+  "iso3": "LUX",
+  "m49": 442,
+  "name": "Luxemburg"
+ },
+ {
+  "iso2": "mt",
+  "iso3": "MLT",
+  "m49": 470,
+  "name": "Malta"
+ },
+ {
+  "iso2": "mc",
+  "iso3": "MCO",
+  "m49": 492,
+  "name": "Monaco"
+ },
+ {
+  "iso2": "me",
+  "iso3": "MNE",
+  "m49": 499,
+  "name": "Montenegro"
+ },
+ {
+  "iso2": "nl",
+  "iso3": "NLD",
+  "m49": 528,
+  "name": "Niederlande"
+ },
+ {
+  "iso2": "mk",
+  "iso3": "MKD",
+  "m49": 807,
+  "name": "Nordmazedonien"
+ },
+ {
+  "iso2": "no",
+  "iso3": "NOR",
+  "m49": 578,
+  "name": "Norwegen"
+ },
+ {
+  "iso2": "at",
+  "iso3": "AUT",
+  "m49": 40,
+  "name": "Österreich"
+ },
+ {
+  "iso2": "pl",
+  "iso3": "POL",
+  "m49": 616,
+  "name": "Polen"
+ },
+ {
+  "iso2": "pt",
+  "iso3": "PRT",
+  "m49": 620,
+  "name": "Portugal"
+ },
+ {
+  "iso2": "md",
+  "iso3": "MDA",
+  "m49": 498,
+  "name": "Republik Moldau"
+ },
+ {
+  "iso2": "ro",
+  "iso3": "ROU",
+  "m49": 642,
+  "name": "Rumänien"
+ },
+ {
+  "iso2": "sm",
+  "iso3": "SMR",
+  "m49": 674,
+  "name": "San Marino"
+ },
+ {
+  "iso2": "se",
+  "iso3": "SWE",
+  "m49": 752,
+  "name": "Schweden"
+ },
+ {
+  "iso2": "ch",
+  "iso3": "CHE",
+  "m49": 756,
+  "name": "Schweiz"
+ },
+ {
+  "iso2": "rs",
+  "iso3": "SRB",
+  "m49": 688,
+  "name": "Serbien"
+ },
+ {
+  "iso2": "sk",
+  "iso3": "SVK",
+  "m49": 703,
+  "name": "Slowakei"
+ },
+ {
+  "iso2": "si",
+  "iso3": "SVN",
+  "m49": 705,
+  "name": "Slowenien"
+ },
+ {
+  "iso2": "es",
+  "iso3": "ESP",
+  "m49": 724,
+  "name": "Spanien"
+ },
+ {
+  "iso2": "cz",
+  "iso3": "CZE",
+  "m49": 203,
+  "name": "Tschechien"
+ },
+ {
+  "iso2": "tr",
+  "iso3": "TUR",
+  "m49": 792,
+  "name": "Türkei"
+ },
+ {
+  "iso2": "ua",
+  "iso3": "UKR",
+  "m49": 804,
+  "name": "Ukraine"
+ },
+ {
+  "iso2": "hu",
+  "iso3": "HUN",
+  "m49": 348,
+  "name": "Ungarn"
+ },
+ {
+  "iso2": "gb",
+  "iso3": "GBR",
+  "m49": 826,
+  "name": "Vereinigtes Königreich"
+ },
+ {
+  "iso2": "cy",
+  "iso3": "CYP",
+  "m49": 196,
+  "name": "Zypern"
+ }
+]

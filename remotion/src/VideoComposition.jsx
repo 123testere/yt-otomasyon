@@ -103,7 +103,11 @@ export function Captions({ words, mode, color, portrait, lang, bottomOverride })
   const group = groups[gi];
   const enter = spring({ frame: frame - Math.round(group[0].t * fps), fps, config: { damping: 14, stiffness: 180 } });
 
-  const size = karaoke ? (portrait ? 92 : 76) : (portrait ? 60 : 50);
+  // Uzun kelimeler (ör. Almanca "Nachbarschaftsduell") satıra sığsın diye yazı küçülür.
+  const longest = Math.max(...group.map((w) => w.text.length));
+  const available = (portrait ? 1080 : 1920) * 0.86;
+  const base = karaoke ? (portrait ? 92 : 76) : (portrait ? 60 : 50);
+  const size = Math.min(base, Math.floor(available / (longest * 0.72)));
   const bottom = bottomOverride ?? (karaoke ? (portrait ? height * 0.3 : 110) : (portrait ? 330 : 60));
   return (
     <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: bottom }}>
