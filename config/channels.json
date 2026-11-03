@@ -114,6 +114,7 @@
       "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
     },
     "recentTitles": [
+      "1513'te Çizilen Piri Reis Haritasının Sırrı",
       "Kağıt Parayı 1000 Yıl Önce Çinliler Kullandı",
       "İstanbul'un Altında 336 Sütunlu Gizli Saray",
       "1400 Yıl Susan Dil: Rosetta Taşı Her Şeyi Değiştirdi",
@@ -185,16 +186,25 @@
       "ekTalimat": null
     },
     "recentTitles": [
+      "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
       "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
       "Wer erntet die meisten Kirschen in Europa? 🍒"
     ],
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 1,
+      "lastMatch": 2,
       "table": [
         {
           "name": "Türkei",
+          "points": 15
+        },
+        {
+          "name": "Ukraine",
+          "points": 10
+        },
+        {
+          "name": "Frankreich",
           "points": 10
         },
         {
@@ -206,15 +216,19 @@
           "points": 5
         },
         {
+          "name": "Polen",
+          "points": 5
+        },
+        {
           "name": "Italien",
           "points": 4
         },
         {
-          "name": "Ukraine",
-          "points": 3
+          "name": "Deutschland",
+          "points": 4
         },
         {
-          "name": "Polen",
+          "name": "Vereinigtes Königreich",
           "points": 2
         },
         {
