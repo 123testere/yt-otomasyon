@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-04_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-04T05:00:00.000Z",
+  "topic": "Piri Reis haritasının ceylan derisine çizilmesi ve 1929'da bulunması",
+  "title": "1513'te Çizilen Piri Reis Haritasının Sırrı",
+  "hookText": "Ceylan derisinde dünya",
+  "description": "Piri Reis haritası 1513'te ceylan derisine çizildi ve 1929'da Topkapı Sarayı'nda bulundu. Kaynaklara göre Piri Reis, eski haritalardan yararlanarak bu eseri hazırladı.\n\n#pirireis #harita #osmanlı #tarih",
+  "tags": [
+    "piri reis haritası",
+    "piri reis",
+    "osmanlı denizciliği",
+    "topkapı sarayı",
+    "eski haritalar",
+    "gelibolu",
+    "ceylan derisi",
+    "tarih"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, 1513'te çizilen bir harita bugün hâlâ tartışılıyor. Peki bir Osmanlı kaptanı dünyayı nasıl bu kadar ayrıntılı çizdi?",
+      "visual": {
+        "query": "Piri Reis map",
+        "prompt": "an old hand-drawn nautical map on parchment with ships and coastlines, candlelit table, close-up",
+        "motion": { "type": "stat", "value": "1513", "label": "haritanın çizildiği yıl" }
+      }
+    },
+    {
+      "narration": "Harita ceylan derisine çizildi ve imzası Piri Reis'e ait. Kaynaklara göre Gelibolu'da, çeşitli eski haritalardan ve denizci anlatımlarından yararlanarak hazırladı.",
+      "visual": {
+        "query": "Gallipoli harbor",
+        "prompt": "a sixteenth century Ottoman captain bending over parchment charts in a harbor room, warm lamplight"
+      }
+    },
+    {
+      "narration": "Eser yüzyıllar boyunca unutuldu. 1929'da İstanbul'da Topkapı Sarayı'nda bulundu. Bugün elimizdeki parça, haritanın yalnızca bir bölümü.",
+      "visual": {
+        "query": "Topkapı Palace",
+        "prompt": "a dusty palace storeroom with rolled parchments on wooden shelves, shaft of light, wide shot",
+        "motion": { "type": "timeline", "items": [{ "year": "1513", "label": "Çizildi" }, { "year": "1929", "label": "Bulundu" }], "highlight": 1 }
+      }
+    },
+    {
+      "narration": "Sence başka hangi eski haritalar henüz gün yüzüne çıkmadı? Yorumlara yaz, videoyu beğen, kanala abone ol.",
+      "visual": {
+        "query": "old world map",
+        "prompt": "a weathered old world map unrolled on a dark table, dramatic side light",
+        "motion": { "type": "question", "text": "Hangi harita henüz kayıp?" }
+      }
+    }
+  ]
+}

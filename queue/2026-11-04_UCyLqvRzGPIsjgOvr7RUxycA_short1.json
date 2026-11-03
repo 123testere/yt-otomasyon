@@ -1,0 +1,24 @@
+{
+  "id": "2026-11-04_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-04T05:00:00.000Z",
+  "topic": "Weizen",
+  "title": "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Welches Land ist die Weizen-Macht Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": ["flaggenduell", "europa", "länder vergleich", "weizen", "landwirtschaft", "ranking", "europa daten", "länderduell"],
+  "duell": {
+    "topicId": "weizen",
+    "why": ["Fruchtbare Böden", "Mildes Klima", "Riesige Ackerflächen"],
+    "script": {
+      "intro": "Wer erntet den meisten Weizen in Europa? 46 Länder stürmen in den Trichter – nur eine Flagge überlebt!",
+      "nodata": "Sechs Länder haben keine Weizendaten und fliegen sofort raus!",
+      "rounds": "Jetzt wird es hart! Die Kleinen kippen reihenweise um, und die Türkei verpasst das Finale um rund 1,6 Millionen Tonnen!",
+      "final": "Finale! Frankreich gegen die Ukraine – zwei Weizen-Giganten, nur ein Platz ganz oben!",
+      "winner": "Und der Sieger ist Frankreich! Über 26 Millionen Tonnen, mehr als 4 Millionen Tonnen vor der Ukraine!",
+      "why": "Warum? Fruchtbare Böden, mildes Klima und riesige Ackerflächen machen Frankreich zur Getreidekammer Europas.",
+      "table": "Die Saisontabelle läuft: Die Türkei führt mit 10 Punkten. Schreib dein Thema in die Kommentare!"
+    }
+  }
+}
