@@ -11,6 +11,7 @@ const TZ = options.timezone;
 const MIN_LEAD_MS = 60 * 60 * 1000; // yayına 1 saatten az kalmışsa o slotu atla
 const CLIPS_PER_LONG = 3; // bir uzun videodan çıkan en fazla kesit Shorts
 const CLIP_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+const VOTE_OPEN_MS = 6 * 60 * 60 * 1000; // oylama en az 6 saat açık kalır
 
 export function existingJobIds() {
   const ids = new Set();
@@ -84,6 +85,24 @@ function attachClips(slots, channels) {
   return slots;
 }
 
+// Yorum oylaması: yayınlanmış ve en az 6 saat geçmiş, henüz kullanılmamış her oylama sıradaki
+// bağımsız Shorts'a ya da uzun videoya verilir (kesit Shorts konusunu uzun videodan aldığı için almaz).
+function attachVotes(slots, channels, now) {
+  for (const c of channels.filter((ch) => ch.oylamalar?.length)) {
+    const used = new Set(channelJobs(c.id).map((j) => j.oylama?.kaynak).filter(Boolean));
+    const pending = c.oylamalar
+      .filter((o) => !used.has(o.kaynak) && Date.parse(o.yayin) + VOTE_OPEN_MS <= now.getTime())
+      .sort((a, b) => a.yayin.localeCompare(b.yayin));
+    for (const slot of slots.filter((s) => s.channelId === c.id && !s.clipOf)) {
+      const o = pending.shift();
+      if (!o) break;
+      const kazanan = o.oyA > o.oyB ? 'a' : o.oyB > o.oyA ? 'b' : null;
+      slot.oylama = { kaynak: o.kaynak, a: o.a, b: o.b, oyA: o.oyA, oyB: o.oyB, kazanan };
+    }
+  }
+  return slots;
+}
+
 // Bugün ve yarın için, açık kanalların henüz yazılmamış video slotları.
 export function neededJobs(channels, { now = new Date(), extraExisting = [] } = {}) {
   const today = dateInTz(now, TZ);
@@ -95,5 +114,5 @@ export function neededJobs(channels, { now = new Date(), extraExisting = [] } = 
     .flatMap((c) => slotsFor(c, dates, now))
     .filter((job) => !existing.has(job.id))
     .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
-  return attachClips(jobs, channels);
+  return attachVotes(attachClips(jobs, channels), channels, now);
 }

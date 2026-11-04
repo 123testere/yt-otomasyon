@@ -6,8 +6,8 @@ import { display } from './fonts.js';
 function fitSize(text, available, lineCount) {
   const longest = Math.max(...text.split('\n').map((l) => l.length), 4);
   const byWidth = available / (longest * 0.48);
-  const byHeight = 560 / lineCount;
-  return Math.floor(Math.max(90, Math.min(230, byWidth, byHeight)));
+  const byHeight = 600 / lineCount;
+  return Math.floor(Math.max(100, Math.min(260, byWidth, byHeight)));
 }
 
 function wrap(text, maxChars = 9, maxLines = 3) {
@@ -36,9 +36,16 @@ export function Thumbnail({ background, text, badge, lang, accent }) {
           fontFamily: display, fontSize: fitSize(content, available, lines.length), lineHeight: 1.0, color: '#fff',
           WebkitTextStroke: '9px #000', paintOrder: 'stroke fill', textShadow: '0 10px 30px rgba(0,0,0,0.8)',
         }}>
-          {lines.map((line, i) => (
-            <div key={i} style={{ color: i === lines.length - 1 ? accent : '#fff' }}>{line}</div>
-          ))}
+          {lines.map((line, i) => {
+            // Son satır vurgu kutusunda: en vurucu kelime tek bakışta okunur.
+            const last = i === lines.length - 1 && lines.length > 1;
+            return (
+              <div key={i} style={last ? {
+                display: 'inline-block', color: '#111', backgroundColor: accent, WebkitTextStroke: '0',
+                padding: '0 18px 6px', marginTop: 10, borderRadius: 12, transform: 'rotate(-2deg)', textShadow: 'none',
+              } : { color: '#fff' }}>{line}</div>
+            );
+          })}
         </div>
       </AbsoluteFill>
       {badge ? (

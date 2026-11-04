@@ -76,6 +76,7 @@ function cizimErrors(job) {
   if (!Array.isArray(job.baslikKart) || job.baslikKart.length !== 2 || !job.baslikKart.every((l) => str(l, 22))) {
     errors.push('baslikKart 2 satır olmalı, her biri en fazla 22 karakter');
   }
+  if (job.type === 'short' && job.kapanis === undefined) errors.push('Shorts\'ta kapanis {a, b} oylama kartı olmalı');
   if (job.kapanis !== undefined && !(str(job.kapanis?.a, 18) && str(job.kapanis?.b, 18) && optStr(job.kapanis?.soru, 30))) {
     errors.push('kapanis {a ≤18, b ≤18, soru ≤30} olmalı');
   }
@@ -203,6 +204,11 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
     req(job.type === slot.type && job.channelId === slot.channelId, 'type/channelId needed.json ile uyuşmuyor');
     if (slot.clipOf) errors.push(...clipErrors(job, slot.clipOf));
     if (slot.format === 'cizim') req(job.format === 'cizim', 'bu kanal çizim formatında: "format": "cizim" olmalı');
+    if (slot.oylama) {
+      req(job.oylama?.kaynak === slot.oylama.kaynak, `bu video "${slot.oylama.kaynak}" oylamasının konusu: oylama.kaynak yazılmalı`);
+      req(['a', 'b'].includes(job.oylama?.secilen), 'oylama.secilen "a" ya da "b" olmalı');
+      if (slot.oylama.kazanan) req(job.oylama?.secilen === slot.oylama.kazanan, `oylamayı "${slot.oylama.kazanan}" kazandı; o konuyu yaz`);
+    }
   }
   return errors;
 }

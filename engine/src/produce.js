@@ -8,6 +8,7 @@ import { notify } from './lib/notify.js';
 import { resolveSettings } from './lib/options.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './lib/paths.js';
 import { buildVideo } from './pipeline/build.js';
+import { frameFromVideo, makeShortCover } from './pipeline/cover.js';
 import { run } from './lib/util.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
@@ -115,6 +116,17 @@ async function main() {
 
     try {
       const built = await buildVideo(job, settings, { workDir, cacheDir });
+      // Shorts'a da dev kanca yazılı küçük resim (yüklenemezse video yine yayınlanır).
+      if (job.type === 'short' && !built.thumbnailPath) {
+        try {
+          const dir = path.join(workDir, `${job.id}-kapak`);
+          fs.mkdirSync(dir, { recursive: true });
+          const background = await frameFromVideo(built.videoPath, path.join(dir, 'kare.jpg'));
+          built.thumbnailPath = await makeShortCover({ job, settings, background, dir });
+        } catch (e) {
+          console.warn(`  Shorts kapağı üretilemedi: ${e.message}`);
+        }
+      }
       await ref.update({
         status: 'uploading', duration: Math.round(built.duration),
         preview: await previewImage(built, path.join(workDir, `${job.id}-onizleme.jpg`)), updatedAt: new Date(),

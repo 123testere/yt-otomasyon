@@ -292,7 +292,7 @@ export function EncyclopediaThumb({ text, sub, cizim, lang }) {
     }
     const lines = satirlar(String(text ?? '').toLocaleUpperCase(lang), 9, 3);
     const longest = Math.max(...lines.map((l) => l.length), 3);
-    const size = Math.floor(Math.max(70, Math.min(150, 470 / (longest * 0.62), 380 / lines.length)));
+    const size = Math.floor(Math.max(80, Math.min(190, 500 / (longest * 0.6), 460 / lines.length)));
     const top = 360 - ((lines.length - 1) * size * 1.05) / 2 - (sub ? 30 : 0);
     lines.forEach((l, k) => yazi(ctx, l, 1000, top + k * size * 1.05 + size * 0.35, size, { c: k === 0 ? K.lamba : K.kagit }));
     if (sub) yazi(ctx, sub, 1000, top + lines.length * size * 1.05 + 30, 40, { c: K.kagit, w: 500, it: true });

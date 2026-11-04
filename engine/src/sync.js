@@ -10,6 +10,7 @@ import { CONFIG_DIR, ROOT } from './lib/paths.js';
 import { stableJson } from './lib/util.js';
 import { google } from 'googleapis';
 import { oauthClient } from './pipeline/youtube.js';
+import { countVotes } from './lib/votes.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -63,6 +64,7 @@ async function main() {
   const channelsSnap = await firestore.collection('channels').get();
   const youtube = {};
   for (const doc of channelsSnap.docs) youtube[doc.id] = await youtubeInfo(firestore, doc);
+  const votes = await countVotes(firestore, now);
   const channels = channelsSnap.docs
     .map((doc) => {
       const data = doc.data();
@@ -90,6 +92,8 @@ async function main() {
           ...(titlesByChannel[doc.id] ?? []).sort((a, b) => b.at - a.at).map((t) => t.title),
           ...(youtube[doc.id]?.titles ?? []),
         ])].slice(0, RECENT_TITLES),
+        // Yorum oylamaları (Shorts sonundaki A/B kartı): planlayıcı kazananı sıradaki videoya verir.
+        oylamalar: votes[doc.id] ?? [],
       };
     })
     .sort((a, b) => a.id.localeCompare(b.id));

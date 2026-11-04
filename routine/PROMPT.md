@@ -96,11 +96,21 @@ for (const [x, yil, ad, k] of [[300, '1841', 'Joseph Nason', 0], [700, '1857', '
 **Diğer alanlar:**
 - `ifade` (isteğe bağlı, her sahne): Nur Bey'in yüzü: `anlatiyor` (varsayılan), `merakli`, `saskin`, `gulumsuyor`, `kahkaha`, `dusunceli`, `endiseli`, `gururlu`. Cümlenin duygusuna göre seç.
 - `baslikKart`: Shorts'ta üstte, uzun videoda girişte duran iki satırlık başlık (her satır ≤22 karakter); ikinci satır lamba renginde vurgulanır. Merak uyandıran soru: `["Simidin ortası", "neden delik?"]`.
-- `kapanis` (Shorts, isteğe bağlı): Son sahnede çıkan seçmeli soru kartı: `{"soru": "Sırada hangisi olsun?", "a": "Saat", "b": "Petek"}` (a ve b ≤18, soru ≤30). Son sahnenin anlatımı bu soruyu sorar; son sahneye çizim olarak `txt('?', MX, 420, 200, { c: K.ak })` yeter.
+- `kapanis` (Shorts, zorunlu; aşağıdaki "Yorum oylaması"na bak): Son sahnede çıkan seçmeli soru kartı: `{"soru": "Sırada hangisi olsun?", "a": "Saat", "b": "Petek"}` (a ve b ≤18, soru ≤30). Son sahnenin anlatımı bu soruyu sorar; son sahneye çizim olarak `txt('?', MX, 420, 200, { c: K.ak })` yeter.
 - Uzun video: İlk sahneler **giriş**tir (gece zemininde, `baslikKart` başlığıyla). Her bölümün ilk sahnesine `"bolum": {"no": "Bölüm I", "ust": "1840'lar – 1870'ler", "ad": "Konuşamayan tel"}` yaz (ad ≤32). İlk sahnede `bolum` olmaz. 5-7 bölüm.
 - Uzun video kapağı: `thumbnailText` (2-3 kelime, ilk satır lamba renginde: "22 YIL YASAK"), `kapakAlt` (isteğe bağlı küçük italik satır: "İstanbul · 1886–1908") ve `kapakCizim`: **300 × 420** alanında, kalın çizgili (`w: 8`) tek nesne (ör. üstü çizili telefon). Kapakta çizim kendiliğinden kâğıt renginde çizilir.
 
 **Kesit Shorts'ta:** Kaynak uzun videonun sahnelerindeki `cizim` kodlarını aynen kopyalayabilirsin; alan ölçüsü aynıdır.
+
+## Yorum oylaması (`needed.json` öğesinde `oylama` varsa)
+
+Shorts'ların sonundaki "Sırada hangisi olsun? A / B" kartına izleyiciler yorumla oy verir; sistem oyları sayar ve sonucu sıradaki videoya verir.
+- `oylama.kazanan` `"a"` ya da `"b"` ise videoyu **o seçeneğin konusunda** yaz (`oylama.a` / `oylama.b`). Kazanan yoksa (oy yok ya da eşit) iki seçenekten birini sen seç.
+- Dosyaya `"oylama": {"kaynak": "<oylama.kaynak>", "secilen": "a" | "b"}` yaz.
+- Oy geldiyse (`oyA + oyB > 0`) ilk ya da ikinci cümlede izleyiciye bunu söyle: "Yorumlarda siz seçtiniz: …". Oy yoksa söyleme.
+- Kanca yine ilk cümlede olmalı; seçim cümlesi kancayı geciktirmesin.
+
+**Kapanış kartı (`kapanis`):** Çizim formatındaki her Shorts'ta `kapanis` yaz. `a` ve `b` **gerçekten yapılabilecek, daha önce yapılmamış** iki konu adı olsun (kısa: "Saat", "Kalorifer peteği"). Kanalın konusuna ve Türkiye bağlantısı kuralına uysun. Son sahnenin anlatımı bu iki seçeneği sorup "Yorumlara A ya da B yazın" desin.
 
 ## Uzun videodan kesit Shorts (`needed.json` öğesinde `clipOf` varsa)
 

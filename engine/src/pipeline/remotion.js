@@ -141,3 +141,16 @@ export async function encyclopediaThumbnail({ job, settings, dir }) {
   await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
   return jpg;
 }
+
+// Tek kare (küçük resim): görsel dosyası public/ altına kopyalanır, props'taki `background` onu gösterir.
+export async function remotionStill(id, props, png, jobId) {
+  const stage = stager(jobId);
+  try {
+    const propsFile = `${png}.props.json`;
+    fs.writeFileSync(propsFile, JSON.stringify({ ...props, background: stage.add(props.background) }));
+    await remotion(['still', ENTRY, id, png, `--props=${propsFile}`]);
+    return png;
+  } finally {
+    stage.cleanup();
+  }
+}
