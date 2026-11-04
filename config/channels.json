@@ -114,6 +114,7 @@
       "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
     },
     "recentTitles": [
+      "Pompeii'yi Haritadan Silen 79 Yılındaki Patlama",
       "1513'te Çizilen Piri Reis Haritasının Sırrı",
       "Kağıt Parayı 1000 Yıl Önce Çinliler Kullandı",
       "İstanbul'un Altında 336 Sütunlu Gizli Saray",
@@ -186,6 +187,7 @@
       "ekTalimat": null
     },
     "recentTitles": [
+      "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
       "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
       "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
       "Wer erntet die meisten Kirschen in Europa? 🍒"
@@ -193,7 +195,7 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 2,
+      "lastMatch": 3,
       "table": [
         {
           "name": "Türkei",
@@ -201,23 +203,27 @@
         },
         {
           "name": "Ukraine",
-          "points": 10
+          "points": 15
+        },
+        {
+          "name": "Polen",
+          "points": 12
         },
         {
           "name": "Frankreich",
           "points": 10
         },
         {
-          "name": "Griechenland",
-          "points": 7
+          "name": "Serbien",
+          "points": 10
         },
         {
           "name": "Spanien",
-          "points": 5
+          "points": 8
         },
         {
-          "name": "Polen",
-          "points": 5
+          "name": "Griechenland",
+          "points": 7
         },
         {
           "name": "Italien",
@@ -229,11 +235,7 @@
         },
         {
           "name": "Vereinigtes Königreich",
-          "points": 2
-        },
-        {
-          "name": "Bulgarien",
-          "points": 1
+          "points": 4
         }
       ]
     }
