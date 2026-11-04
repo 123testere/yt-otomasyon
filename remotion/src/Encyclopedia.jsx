@@ -1,259 +1,306 @@
-// Lamba Altında — "Ansiklopedi" teması: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası.
-// Renkler kanalın paletinden (Claude Youtube/kanal/lamba-altinda/PALET.md); Nur Bey nurbey.js ile kodla çizilir.
-import { useLayoutEffect, useRef } from 'react';
+// Lamba Altında — "Ansiklopedi" teması. Eski elle yapılan videolarla aynı düzen (Claude Youtube/projeler):
+// Shorts: gece zemini, üstte iki satır başlık, ortada kâğıt kartta çizim, ilerleme çubuğu, altta Nur Bey ve altyazı kutusu.
+// Uzun video: giriş gece zemininde; sonra kâğıt sayfa, solda Nur Bey, sağda bölüm başlığı ve çizim, altta altyazı kutusu.
+// Sahne çizimleri senaryodaki `cizim` kodundan gelir (shared/cizim.js kiti); Nur Bey nurbey.js ile çizilir.
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
-  AbsoluteFill, Html5Audio, Img, interpolate, Loop, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig,
+  AbsoluteFill, continueRender, delayRender, Html5Audio, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig,
 } from 'remotion';
-import { linearTiming, TransitionSeries } from '@remotion/transitions';
-import { fade } from '@remotion/transitions/fade';
-import { slide } from '@remotion/transitions/slide';
 import { drawNurBey } from './nurbey.js';
-import { serif } from './fonts.js';
-import { MotionScene, MotionTheme } from './Motion.jsx';
-import { Captions } from './VideoComposition.jsx';
+import { serif, serifReady } from './fonts.js';
+import { ALAN, KAPAK_ALAN, PALET as K, derle, eo, h, kit, pr } from '../../shared/cizim.js';
 
-export const PALET = {
-  kagit: '#F3EAD7', kagitGolge: '#E6DBC4', murekkep: '#2B2A33', soluk: '#6B6252', gece: '#1E1C24',
-  lamba: '#E8A33D', amberKoyu: '#9A5B12', bordo: '#7A2E24', pirinc: '#B8893B', teknikMavi: '#1F2B57',
+const GECIS = 0.35; // sahneler arası yumuşak geçiş (sn)
+const SAYFA_GECIS = 0.6; // girişten kâğıt sayfaya geçiş (sn)
+
+// Shorts (1080x1920) — bagimsiz.js ölçüleri.
+const S = { kart: { x: 40, y: 400, w: 1000, h: 740 }, cizim: { x: 40, y: 420, s: 1 }, nur: { x: 190, y: 1540, s: 0.74 } };
+// Uzun video (1920x1080) — sahneler.js ölçüleri; cilt çizgisi x=600.
+const L = {
+  cilt: 600, nur: { x: 300, y: 1000, s: 0.95 },
+  cizim: { x: 800, y: 250, s: 0.9 }, // 900x630, sağ sayfa
+  giris: { x: 960, y: 470, s: 0.62 }, // gece zemininde, başlığın altında
 };
 
-const TRANSITION = 12;
-const HOOK_FRAMES = 75;
-const CILT = 600;
-const MOTION_MAX_SEC = 4; // grafik en fazla bu kadar kalır, sonra levha görünür // yatay düzende sol sayfa ile sağ sayfa arasındaki cilt çizgisi
-
-// Yerleşim: yatayda Nur Bey sol sayfada, levha ve grafikler sağ sayfada. Dikeyde levha üstte, Nur Bey altında.
-export const LAYOUT = {
-  landscape: {
-    plate: { left: 680, top: 90, width: 1160, height: 640 },
-    nur: { x: 300, y: 1000, s: 0.95, yon: 1 },
-    stage: '90px 70px 330px 680px',
-    captions: { bottom: 70, padLeft: CILT },
-  },
-  portrait: {
-    plate: { left: 70, top: 290, width: 940, height: 660 },
-    nur: { x: 820, y: 1300, s: 0.72, yon: -1 },
-    stage: '290px 70px 900px',
-    captions: { bottom: 420, padLeft: 0 },
-  },
-};
-
-// Deterministik titreme (nurbey.js ile aynı): saniyede 6 "kaynama".
-const h = (n) => { const v = Math.sin(n * 127.1) * 43758.5453; return v - Math.floor(v); };
-const wob = (i, t, a) => (h(i * 13.7 + Math.floor(t * 6) * 7.3) - 0.5) * 2 * a;
-
-// Kâğıt: gren, satır çizgileri, kenar kararması; yatayda cilt çizgisi.
-export function Paper({ night = false }) {
-  const ref = useRef(null);
-  const { width, height } = useVideoConfig();
-  useLayoutEffect(() => {
-    const ctx = ref.current.getContext('2d');
-    ctx.fillStyle = night ? PALET.gece : PALET.kagit;
-    ctx.fillRect(0, 0, width, height);
-    for (let i = 0; i < 9000; i++) {
-      ctx.fillStyle = night ? `rgba(255,240,210,${h(i * 7.7) * 0.035})` : `rgba(90,70,40,${h(i * 7.7) * 0.06})`;
-      ctx.fillRect(h(i) * width, h(i * 3.1) * height, 2, 2);
-    }
-    if (night) return;
-    ctx.strokeStyle = 'rgba(43,42,51,0.07)';
-    ctx.lineWidth = 1;
-    for (let y = 60; y < height; y += 34) { ctx.beginPath(); ctx.moveTo(40, y); ctx.lineTo(width - 40, y); ctx.stroke(); }
-    const g = ctx.createRadialGradient(width / 2, height / 2, Math.min(width, height) * 0.35, width / 2, height / 2, Math.max(width, height) * 0.75);
-    g.addColorStop(0, 'rgba(0,0,0,0)');
-    g.addColorStop(1, 'rgba(80,55,20,.25)');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, width, height);
-    if (width > height) {
-      ctx.strokeStyle = 'rgba(43,42,51,.25)';
-      ctx.lineWidth = 1.5;
-      ctx.beginPath(); ctx.moveTo(CILT, 70); ctx.lineTo(CILT, height - 70); ctx.stroke();
-    }
-  }, [night, width, height]);
-  return <canvas ref={ref} width={width} height={height} style={{ position: 'absolute', inset: 0 }} />;
+function grain(ctx, w, hh, gece, n) {
+  for (let i = 0; i < n; i++) {
+    ctx.fillStyle = gece ? `rgba(255,240,210,${h(i * 7.7) * 0.04})` : `rgba(90,70,40,${h(i * 7.7) * 0.06})`;
+    ctx.fillRect(h(i) * w, h(i * 3.1) * hh, 2, 2);
+  }
 }
 
-// Titreyen mürekkep çerçeve (SVG), kenar boyunca her 40 pikselde bir nokta.
-function InkFrame({ width, height, t, color = PALET.murekkep, seed = 0 }) {
-  const pts = [];
-  const edge = (x0, y0, x1, y1) => {
-    const n = Math.max(2, Math.round(Math.hypot(x1 - x0, y1 - y0) / 40));
-    for (let i = 0; i < n; i++) pts.push([x0 + ((x1 - x0) * i) / n, y0 + ((y1 - y0) * i) / n]);
-  };
-  edge(0, 0, width, 0); edge(width, 0, width, height); edge(width, height, 0, height); edge(0, height, 0, 0);
-  const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${(x + wob(i + seed, t, 1.6)).toFixed(1)},${(y + wob(i + seed + 91, t, 1.6)).toFixed(1)}`).join(' ') + 'Z';
-  return (
-    <svg width={width + 20} height={height + 20} style={{ position: 'absolute', left: -10, top: -10, overflow: 'visible' }}>
-      <path d={d} transform="translate(10 10)" fill="none" stroke={color} strokeWidth={3.4} strokeLinejoin="round" />
-    </svg>
-  );
+function geceZemin(ctx, W, H) {
+  ctx.fillStyle = K.gece; ctx.fillRect(0, 0, W, H); grain(ctx, W, H, true, 9000);
 }
 
-// Fotoğraf ya da çizim, kâğıda basılmış levha gibi: sepya, kâğıtla çarpılır, yavaş yakınlaşır.
-function Plate({ scene, index, box, duration }) {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  if (scene.kind === 'none') return null;
-  const p = interpolate(frame, [0, duration], [0, 1], { extrapolateRight: 'clamp' });
-  const scale = index % 2 ? 1.08 - 0.08 * p : 1 + 0.08 * p;
-  const media = {
-    width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${scale})`,
-    filter: 'grayscale(1) sepia(0.35) contrast(1.15) brightness(1.03)', mixBlendMode: 'multiply',
-  };
-  return (
-    <AbsoluteFill>
-      <div style={{ position: 'absolute', ...box }}>
-        <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', backgroundColor: PALET.kagitGolge }}>
-          {scene.kind === 'video' ? (
-            <Loop durationInFrames={Math.max(1, scene.clipFrames ?? scene.duration)}>
-              <OffthreadVideo src={staticFile(scene.src)} muted style={media} />
-            </Loop>
-          ) : <Img src={staticFile(scene.src)} style={media} />}
-        </div>
-        <InkFrame width={box.width} height={box.height} t={frame / fps} seed={index * 17} />
-        <div style={{ position: 'absolute', left: 0, top: box.height + 14, fontFamily: serif, fontStyle: 'italic', fontWeight: 500, fontSize: 30, color: PALET.soluk }}>
-          Şekil {index + 1}
-        </div>
-      </div>
-    </AbsoluteFill>
-  );
+function sayfaZemin(ctx, W, H, cilt) {
+  ctx.fillStyle = K.kagit; ctx.fillRect(0, 0, W, H); grain(ctx, W, H, false, 9000);
+  ctx.strokeStyle = 'rgba(43,42,51,0.06)'; ctx.lineWidth = 1;
+  for (let y = 60; y < H; y += 34) { ctx.beginPath(); ctx.moveTo(40, y); ctx.lineTo(W - 40, y); ctx.stroke(); }
+  const g = ctx.createRadialGradient(W / 2, H / 2, H * 0.35, W / 2, H / 2, H);
+  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(80,55,20,.25)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  if (cilt) { ctx.strokeStyle = 'rgba(43,42,51,.25)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(cilt, 70); ctx.lineTo(cilt, H - 70); ctx.stroke(); }
 }
 
-function Plates({ scenes, box }) {
-  const presentations = [slide({ direction: 'from-right' }), fade()];
-  return (
-    <TransitionSeries>
-      {scenes.flatMap((scene, i) => {
-        const last = i === scenes.length - 1;
-        const items = [
-          <TransitionSeries.Sequence key={`s${i}`} durationInFrames={scene.duration + (last ? 0 : TRANSITION)}>
-            <Plate scene={scene} index={i} box={box} duration={scene.duration + TRANSITION} />
-          </TransitionSeries.Sequence>,
-        ];
-        if (!last) {
-          items.push(<TransitionSeries.Transition key={`t${i}`} presentation={presentations[i % presentations.length]}
-            timing={linearTiming({ durationInFrames: TRANSITION })} />);
-        }
-        return items;
-      })}
-    </TransitionSeries>
-  );
+function kartZemin(ctx, k) {
+  ctx.save(); ctx.beginPath(); ctx.roundRect(k.x, k.y, k.w, k.h, 18); ctx.clip();
+  ctx.fillStyle = K.kagit; ctx.fillRect(k.x, k.y, k.w, k.h);
+  ctx.translate(k.x, k.y); grain(ctx, k.w, k.h, false, 5000);
+  ctx.strokeStyle = 'rgba(43,42,51,.06)'; ctx.lineWidth = 1;
+  for (let y = 40; y < k.h; y += 36) { ctx.beginPath(); ctx.moveTo(24, y); ctx.lineTo(k.w - 24, y); ctx.stroke(); }
+  const g = ctx.createRadialGradient(k.w / 2, k.h / 2, k.h * 0.3, k.w / 2, k.h / 2, k.h);
+  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(80,55,20,.25)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, k.w, k.h);
+  ctx.restore();
 }
 
-// Ekrandaki grafiğe göre Nur Bey'in ifadesi; grafik varken ona işaret eder.
-const IFADE_OF = { stat: 'saskin', question: 'merakli', compare: 'merakli', quote: 'dusunceli', title: 'gururlu', icon: 'gulumsuyor' };
+function yazi(ctx, s, x, y, size, { c = K.m, a = 1, al = 'center', w = 700, it = false } = {}) {
+  if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha *= a; ctx.fillStyle = c; ctx.font = `${it ? 'italic ' : ''}${w} ${size}px ${serif}`;
+  ctx.textAlign = al; ctx.textBaseline = 'alphabetic'; ctx.fillText(s, x, y); ctx.restore();
+}
 
-export function NurBey({ x, y, s, yon, ifade = 'anlatiyor', poz = 'dik', konusuyor = false, isik = null, t }) {
-  const ref = useRef(null);
-  const { width, height } = useVideoConfig();
-  useLayoutEffect(() => {
-    const ctx = ref.current.getContext('2d');
-    ctx.clearRect(0, 0, width, height);
-    drawNurBey(ctx, { x, y, s, yon, t, ifade, poz, konusuyor, isik, koni: true });
+// Bir sahnenin çizimini yerine koyar. Hata olursa o sahne boş kalır, video yine çıkar.
+function sahneCiz(ctx, fn, yer, t, u, a, gece) {
+  if (!fn || a <= 0) return;
+  ctx.save(); ctx.globalAlpha *= a; ctx.translate(yer.x, yer.y); ctx.scale(yer.s, yer.s);
+  ctx.beginPath(); ctx.rect(-20, -20, ALAN.w + 40, ALAN.h + 40); ctx.clip();
+  try { fn(kit(ctx, t, { font: serif, gece }), u); } catch { /* hatalı çizim: sahne boş */ }
+  ctx.restore();
+}
+
+// Aktif sahne ve bir önceki (geçiş için).
+function sahneDurumu(scenes, t) {
+  let i = 0;
+  for (let k = 0; k < scenes.length; k++) if (t >= scenes[k].t0) i = k;
+  const gecis = i > 0 ? pr(t, scenes[i].t0, scenes[i].t0 + GECIS) : 1;
+  return { i, gecis };
+}
+
+// Altyazı: cümle sonlarında ya da karakter sınırında bölünen kelime grupları.
+function altyaziGruplari(words, maxChars) {
+  const groups = [];
+  let cur = [];
+  for (const w of words) {
+    const len = cur.reduce((n, x) => n + x.text.length + 1, 0);
+    if (cur.length && len + w.text.length > maxChars) { groups.push(cur); cur = []; }
+    cur.push(w);
+    if (/[.!?…:]$/.test(w.text)) { groups.push(cur); cur = []; }
+  }
+  if (cur.length) groups.push(cur);
+  return groups.map((g, i) => ({ t0: g[0].t, metin: g.map((w) => w.text).join(' '), next: groups[i + 1]?.[0].t }));
+}
+
+function satirla(ctx, metin, size, maxW) {
+  ctx.font = `700 ${size}px ${serif}`;
+  const sat = [];
+  let cur = '';
+  for (const w of metin.split(' ')) {
+    const tr = `${cur} ${w}`.trim();
+    if (ctx.measureText(tr).width > maxW && cur) { sat.push(cur); cur = w; } else cur = tr;
+  }
+  if (cur) sat.push(cur);
+  return sat;
+}
+
+function kapanisKarti(ctx, u, kapanis, T) {
+  const a = eo(pr(u, 0, 0.5)), k = S.kart;
+  ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(30,28,36,.94)';
+  ctx.beginPath(); ctx.roundRect(k.x, k.y - 200, k.w, k.h + 200, 18); ctx.fill(); ctx.restore();
+  yazi(ctx, kapanis.soru || 'Sırada hangisi olsun?', 540, 330, 70, { c: K.kagit, a });
+  [[kapanis.a, 290], [kapanis.b, 790]].forEach(([s, x], i) => {
+    const b = eo(pr(u, 0.3 + i * 0.25, 0.8 + i * 0.25));
+    ctx.save(); ctx.globalAlpha = b; ctx.strokeStyle = K.lamba; ctx.lineWidth = 5; ctx.fillStyle = 'rgba(232,163,61,.12)';
+    ctx.beginPath(); ctx.roundRect(x - 220, 520, 440, 320, 30); ctx.fill(); ctx.stroke(); ctx.restore();
+    yazi(ctx, i ? 'B' : 'A', x, 640, 90, { c: K.lamba, a: b });
+    yazi(ctx, String(s ?? ''), x, 760, String(s ?? '').length > 10 ? 46 : 62, { c: K.kagit, a: b });
   });
-  return <canvas ref={ref} width={width} height={height} style={{ position: 'absolute', inset: 0 }} />;
+  yazi(ctx, 'Yorumlara yazın', 540, 960, 66, { c: K.lamba, a: eo(pr(u, 1, 1.5)) });
+  const o = eo(pr(u, 1.2, 1.8)), dx = Math.sin(T * 5) * 8;
+  const kt = kit(ctx, T, { font: serif });
+  yazi(ctx, 'yorum düğmesi', 820, 1250, 36, { c: K.kagit, a: o, w: 500, it: true });
+  ctx.save(); ctx.globalAlpha = o;
+  kt.ink([[860 + dx, 1280], [940 + dx, 1320], [1000 + dx, 1360]], { w: 8, c: K.lamba, amp: 0.5 });
+  kt.ink([[962 + dx, 1328], [1004 + dx, 1362], [952 + dx, 1376]], { w: 8, c: K.lamba, amp: 0.5 });
+  ctx.restore();
 }
 
-function Narrator({ words, motions, layout, hook }) {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const t = frame / fps;
-  const speaking = words.some((w) => t >= w.t && t < w.t + w.d + 0.05);
-  const motion = motions.find((m) => frame >= m.from && frame < m.from + m.duration)?.motion;
-  const ifade = hook ? 'merakli' : (motion ? IFADE_OF[motion.type] ?? 'anlatiyor' : 'anlatiyor');
-  return <NurBey {...layout.nur} t={t} ifade={ifade} poz={motion ? 'isaret' : 'dik'} konusuyor={speaking} isik={hook ? 1 : null} />;
+function kisaKare(ctx, p, t, d) {
+  const { scenes, fns, words, baslik, kapanis } = p;
+  geceZemin(ctx, 1080, 1920);
+  const son = scenes.length - 1;
+  const kT = kapanis && son > 0 ? scenes[son].t0 : Infinity;
+  const ba = t < kT ? 1 : 1 - pr(t, kT, kT + 0.4);
+  yazi(ctx, baslik?.[0] ?? '', 540, 230, 76, { c: K.kagit, a: ba });
+  yazi(ctx, baslik?.[1] ?? '', 540, 322, 76, { c: K.lamba, a: ba });
+  kartZemin(ctx, S.kart);
+  const k = S.kart;
+  ctx.save(); ctx.beginPath(); ctx.roundRect(k.x, k.y, k.w, k.h, 18); ctx.clip();
+  const { i, gecis } = sahneDurumu(scenes, t);
+  if (gecis < 1 && i > 0) sahneCiz(ctx, fns[i - 1], S.cizim, t, t - scenes[i - 1].t0, 1 - gecis, false);
+  sahneCiz(ctx, fns[i], S.cizim, t, Math.max(0, t - scenes[i].t0), gecis, false);
+  ctx.restore();
+  ctx.save(); ctx.strokeStyle = 'rgba(184,137,59,.6)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.roundRect(k.x, k.y, k.w, k.h, 18); ctx.stroke(); ctx.restore();
+  const bitis = Number.isFinite(kT) ? kT : d;
+  ctx.fillStyle = 'rgba(243,234,215,.15)'; ctx.fillRect(k.x, k.y + k.h + 18, k.w, 8);
+  ctx.fillStyle = K.lamba; ctx.fillRect(k.x, k.y + k.h + 18, k.w * Math.min(1, t / bitis), 8);
+  if (t >= kT) kapanisKarti(ctx, t - kT, kapanis, t);
+  const ifade = t >= kT ? 'merakli' : scenes[i].ifade || 'anlatiyor';
+  const konusuyor = words.some((w) => t >= w.t && t < w.t + w.d + 0.05);
+  drawNurBey(ctx, { ...S.nur, t, ifade, konusuyor, isik: 0.9, koni: true });
+  if (t < kT) {
+    const g = altyaziGruplari(words, 70).find((q) => t >= q.t0 && (q.next === undefined || t < q.next));
+    if (g) {
+      const sat = satirla(ctx, g.metin, 54, 600).slice(0, 3);
+      const y0 = 1320 - (sat.length - 1) * 34;
+      ctx.save(); ctx.fillStyle = 'rgba(30,28,36,.78)'; ctx.beginPath(); ctx.roundRect(400, y0 - 60, 640, sat.length * 68 + 36, 14); ctx.fill(); ctx.restore();
+      sat.forEach((r, j) => yazi(ctx, r, 420, y0 + j * 68, 54, { c: K.kagit, al: 'left' }));
+    }
+  }
 }
 
-// İlk 2,5 sn: gece zemini, lamba ışığında soru (paletin kuralı: kanca ve kapanış gece zemininde, vurgu lamba ışığı).
-function NightHook({ text, portrait, lang }) {
-  const frame = useCurrentFrame();
-  if (frame > HOOK_FRAMES) return null;
-  const out = interpolate(frame, [HOOK_FRAMES - 12, HOOK_FRAMES], [1, 0], { extrapolateLeft: 'clamp' });
-  const rise = interpolate(frame, [0, 14], [30, 0], { extrapolateRight: 'clamp' });
-  const box = portrait ? { left: 70, right: 70, top: 300, height: 720 } : { left: 680, right: 70, top: 90, height: 640 };
+function uzunKare(ctx, p, t) {
+  const { scenes, fns, words, baslik } = p;
+  const ilkBolum = scenes.findIndex((s) => s.bolum);
+  const sayfaT = ilkBolum >= 0 ? scenes[ilkBolum].t0 : 0;
+  const sayfa = ilkBolum < 0 ? 1 : pr(t, sayfaT, sayfaT + SAYFA_GECIS);
+  const { i, gecis } = sahneDurumu(scenes, t);
+  const girisSahne = (k) => ilkBolum > 0 && k < ilkBolum;
+
+  geceZemin(ctx, 1920, 1080);
+  // Giriş: gece zemininde başlık ve kâğıt renginde çizim.
+  if (sayfa < 1) {
+    ctx.save(); ctx.globalAlpha = 1 - sayfa;
+    yazi(ctx, baslik?.[0] ?? '', 1270, 330, 92, { c: K.kagit });
+    yazi(ctx, baslik?.[1] ?? '', 1270, 450, 92, { c: K.lamba });
+    if (girisSahne(i)) {
+      if (gecis < 1 && i > 0) sahneCiz(ctx, fns[i - 1], L.giris, t, t - scenes[i - 1].t0, 1 - gecis, true);
+      sahneCiz(ctx, fns[i], L.giris, t, Math.max(0, t - scenes[i].t0), gecis, true);
+    }
+    ctx.restore();
+  }
+  if (sayfa > 0) {
+    ctx.save(); ctx.globalAlpha = sayfa;
+    sayfaZemin(ctx, 1920, 1080, L.cilt);
+    // Bölüm başlığı: o ana kadarki son bölüm.
+    let b = null, bT = 0;
+    for (let k = 0; k <= i; k++) if (scenes[k].bolum) { b = scenes[k].bolum; bT = scenes[k].t0; }
+    if (b) {
+      const u = t - bT, a = eo(pr(u, 0.2, 1.2));
+      yazi(ctx, [b.no, b.ust].filter(Boolean).join(' · '), 640, 112, 30, { c: K.s, a, w: 500, it: true, al: 'left' });
+      yazi(ctx, b.ad ?? '', 640, 186, 68, { a, al: 'left' });
+      const kt = kit(ctx, t, { font: serif });
+      ctx.save(); ctx.globalAlpha *= a; kt.ink(kt.ln([640, 210], [640 + 560 * eo(pr(u, 0.6, 1.8)), 210], 10), { w: 2.4, c: K.ak, seed: 900 }); ctx.restore();
+    }
+    if (!girisSahne(i)) {
+      if (gecis < 1 && i > 0 && !girisSahne(i - 1)) sahneCiz(ctx, fns[i - 1], L.cizim, t, t - scenes[i - 1].t0, 1 - gecis, false);
+      sahneCiz(ctx, fns[i], L.cizim, t, Math.max(0, t - scenes[i].t0), gecis, false);
+    }
+    ctx.restore();
+  }
+  const konusuyor = words.some((w) => t >= w.t && t < w.t + w.d + 0.05);
+  drawNurBey(ctx, { ...L.nur, t, ifade: scenes[i].ifade || 'anlatiyor', konusuyor, isik: 0.9, koni: true });
+
+  const g = altyaziGruplari(words, 80).find((q) => t >= q.t0 && (q.next === undefined || t < q.next));
+  if (g) {
+    const sat = satirla(ctx, g.metin, 46, 1000).slice(0, 2);
+    if (sayfa >= 1) {
+      const hh = sat.length * 60 + 36, y0 = 1060 - hh;
+      ctx.save(); ctx.fillStyle = 'rgba(251,246,234,.92)'; ctx.strokeStyle = 'rgba(43,42,51,.25)'; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.roundRect(690, y0, 1080, hh, 12); ctx.fill(); ctx.stroke(); ctx.restore();
+      sat.forEach((r, j) => yazi(ctx, r, 1230, y0 + 58 + j * 60, 46, { c: K.m }));
+    } else {
+      sat.forEach((r, j) => yazi(ctx, r, 1270, 1000 - (sat.length - 1 - j) * 56, 44, { c: K.kagit, w: 500 }));
+    }
+  }
+}
+
+// Lora yüklenene kadar render bekler; sonra tuval yeniden çizilir.
+function useFontReady() {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const handle = delayRender('Lora');
+    serifReady.then(() => { setReady(true); continueRender(handle); });
+  }, []);
+  return ready;
+}
+
+// Görsel sahneleri (ara sıra): çizim alanında, kâğıda basılmış levha gibi.
+function Levha({ scene, yer, a }) {
+  if (!scene?.img || a <= 0) return null;
+  const w = ALAN.w * yer.s, hh = ALAN.h * yer.s;
   return (
-    <AbsoluteFill style={{ opacity: out }}>
-      <Paper night />
-      {text ? (
-        <div style={{ position: 'absolute', ...box, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{
-            fontFamily: serif, fontWeight: 700, fontSize: portrait ? 104 : 112, lineHeight: 1.1, textAlign: 'center',
-            color: PALET.lamba, transform: `translateY(${rise}px)`, opacity: interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' }),
-          }}>
-            {text.toLocaleUpperCase(lang).replace(/\?$/, '')}{/\?$/.test(text) ? '?' : ''}
-          </div>
-        </div>
-      ) : null}
-    </AbsoluteFill>
+    <div style={{ position: 'absolute', left: yer.x + 20, top: yer.y + 20, width: w - 40, height: hh - 40, opacity: a, overflow: 'hidden',
+      border: `3px solid ${K.m}`, backgroundColor: K.kg }}>
+      <Img src={staticFile(scene.img)} style={{
+        width: '100%', height: '100%', objectFit: 'cover',
+        filter: 'grayscale(1) sepia(0.35) contrast(1.15) brightness(1.03)', mixBlendMode: 'multiply',
+      }} />
+    </div>
   );
 }
-
-const paperMotionTheme = {
-  fg: PALET.murekkep, onAccent: PALET.kagit, card: PALET.kagitGolge, cardBorder: 'rgba(43,42,51,0.35)', dotBorder: PALET.murekkep,
-  outline: () => ({}), display: serif, body: serif, upper: false, glow: false,
-  backdrop: () => <Paper />,
-  stage: { portrait: LAYOUT.portrait.stage, landscape: LAYOUT.landscape.stage },
-};
 
 export function Encyclopedia(props) {
-  const { scenes, words, narration, music, musicVolume, captions, hookText, portrait, lang } = props;
-  const { fps, durationInFrames } = useVideoConfig();
-  const layout = portrait ? LAYOUT.portrait : LAYOUT.landscape;
-  const motions = (props.motions ?? []).map((m) => ({ ...m, duration: Math.min(m.duration, MOTION_MAX_SEC * fps) }));
+  const { scenes, narration, music, musicVolume, portrait } = props;
   const frame = useCurrentFrame();
-  const hooking = Boolean(hookText) && frame <= HOOK_FRAMES;
+  const { fps, width, height, durationInFrames } = useVideoConfig();
+  const ref = useRef(null);
+  const ready = useFontReady();
+  const t = frame / fps;
+  const fns = useMemo(() => scenes.map((s) => {
+    try { return s.cizim ? derle(s.cizim) : null; } catch { return null; }
+  }), [scenes]);
+  useLayoutEffect(() => {
+    const ctx = ref.current.getContext('2d');
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
+    if (portrait) kisaKare(ctx, { ...props, fns }, t, durationInFrames / fps);
+    else uzunKare(ctx, { ...props, fns }, t);
+  }, [ready, frame, props, fns]);
+  const { i, gecis } = sahneDurumu(scenes, t);
+  const ilkBolum = scenes.findIndex((s) => s.bolum);
+  const yer = portrait ? S.cizim : (ilkBolum > 0 && i < ilkBolum ? L.giris : L.cizim);
   const musicVol = (f) => musicVolume * interpolate(f, [0, 60, durationInFrames - 90, durationInFrames], [0, 1, 1, 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   return (
-    <AbsoluteFill style={{ backgroundColor: PALET.kagit }}>
-      <Paper />
-      <Plates scenes={scenes} box={layout.plate} />
-      <MotionTheme.Provider value={paperMotionTheme}>
-        {motions.map((m, i) => (
-          <Sequence key={i} from={m.from} durationInFrames={m.duration}>
-            <MotionScene motion={m.motion} accent={PALET.amberKoyu} lang={lang} portrait={portrait} />
-          </Sequence>
-        ))}
-      </MotionTheme.Provider>
-      <NightHook text={hookText} portrait={portrait} lang={lang} />
-      <Narrator words={words} motions={motions} layout={layout} hook={hooking} />
-      {/* Gece zemininde mürekkep yazı okunmaz; kanca sırasında altyazı yok. */}
-      {hooking ? null : <Captions words={words} mode={captions} color={PALET.amberKoyu} portrait={portrait} lang={lang}
-        bottomOverride={layout.captions.bottom}
-        look={{ font: serif, color: PALET.murekkep, upper: false, size: portrait ? 76 : 58, padLeft: layout.captions.padLeft }} />}
+    <AbsoluteFill style={{ backgroundColor: K.gece }}>
+      <canvas ref={ref} width={width} height={height} style={{ position: 'absolute', inset: 0 }} />
+      <Levha scene={scenes[i]} yer={yer} a={gecis} />
       {narration ? <Html5Audio src={staticFile(narration)} /> : null}
       {music ? <Html5Audio src={staticFile(music)} volume={musicVol} loop /> : null}
     </AbsoluteFill>
   );
 }
 
-// Kapak (1280x720): gece zemini, sağda sepya levha, solda lamba ışığında Nur Bey ve büyük yazı; son satır lamba ışığı renginde.
-export function EncyclopediaThumb({ background, text, lang }) {
-  const lines = wrapWords(String(text ?? '').toLocaleUpperCase(lang), 12, 3);
-  const longest = Math.max(...lines.map((l) => l.length), 4);
-  const size = Math.floor(Math.max(70, Math.min(120, 600 / (longest * 0.62), 330 / lines.length)));
-  const box = { left: 660, top: 70, width: 560, height: 560 };
-  return (
-    <AbsoluteFill>
-      <Paper night />
-      {background ? (
-        <div style={{ position: 'absolute', ...box, transform: 'rotate(2deg)', backgroundColor: PALET.kagit, padding: 18, boxSizing: 'border-box' }}>
-          <Img src={staticFile(background)} style={{
-            width: '100%', height: '100%', objectFit: 'cover',
-            filter: 'grayscale(1) sepia(0.35) contrast(1.2)', mixBlendMode: 'multiply',
-          }} />
-        </div>
-      ) : null}
-      <NurBey x={190} y={700} s={0.62} yon={1} t={0.4} ifade="saskin" isik={1} />
-      <div style={{ position: 'absolute', left: 50, top: 50, width: 600, fontFamily: serif, fontWeight: 700, fontSize: size, lineHeight: 1.05 }}>
-        {lines.map((line, i) => (
-          <div key={i} style={{ color: i === lines.length - 1 ? PALET.lamba : PALET.kagit }}>{line}</div>
-        ))}
-      </div>
-    </AbsoluteFill>
-  );
+// Kapak (1280x720): gece zemini, solda lamba ışığında Nur Bey, ortada kâğıt renginde çizim, sağda büyük yazı.
+export function EncyclopediaThumb({ text, sub, cizim, lang }) {
+  const ref = useRef(null);
+  const ready = useFontReady();
+  const fn = useMemo(() => { try { return cizim ? derle(cizim) : null; } catch { return null; } }, [cizim]);
+  useLayoutEffect(() => {
+    const ctx = ref.current.getContext('2d');
+    geceZemin(ctx, 1280, 720);
+    const g = ctx.createRadialGradient(240, 420, 20, 240, 420, 640);
+    g.addColorStop(0, 'rgba(232,163,61,.28)'); g.addColorStop(1, 'rgba(232,163,61,0)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, 1280, 720);
+    drawNurBey(ctx, { x: 210, y: 690, s: 0.95, t: 0.4, ifade: 'saskin', isik: 1, koni: true });
+    if (fn) {
+      ctx.save(); ctx.translate(470, 160);
+      ctx.beginPath(); ctx.rect(-10, -10, KAPAK_ALAN.w + 20, KAPAK_ALAN.h + 20); ctx.clip();
+      try { fn(kit(ctx, 0.4, { font: serif, gece: true, alan: KAPAK_ALAN }), 10); } catch { /* çizimsiz kapak */ }
+      ctx.restore();
+    }
+    const lines = satirlar(String(text ?? '').toLocaleUpperCase(lang), 9, 3);
+    const longest = Math.max(...lines.map((l) => l.length), 3);
+    const size = Math.floor(Math.max(70, Math.min(150, 470 / (longest * 0.62), 380 / lines.length)));
+    const top = 360 - ((lines.length - 1) * size * 1.05) / 2 - (sub ? 30 : 0);
+    lines.forEach((l, k) => yazi(ctx, l, 1000, top + k * size * 1.05 + size * 0.35, size, { c: k === 0 ? K.lamba : K.kagit }));
+    if (sub) yazi(ctx, sub, 1000, top + lines.length * size * 1.05 + 30, 40, { c: K.kagit, w: 500, it: true });
+  }, [ready, fn, text, sub, lang]);
+  return <canvas ref={ref} width={1280} height={720} />;
 }
 
-function wrapWords(text, maxChars, maxLines) {
+function satirlar(text, maxChars, maxLines) {
   const lines = [];
   for (const word of text.split(/\s+/).filter(Boolean)) {
     const last = lines.at(-1);

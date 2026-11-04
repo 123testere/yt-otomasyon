@@ -7,5 +7,7 @@ export const body = loadMontserrat('normal', { weights: ['800'], subsets: ['lati
 import { loadFont as loadLora } from '@remotion/google-fonts/Lora';
 
 // Lamba Altında (ansiklopedi teması): tek serif aile, düz ve italik.
-export const serif = loadLora('normal', { weights: ['500', '700'], subsets: ['latin', 'latin-ext'] }).fontFamily;
-loadLora('italic', { weights: ['500'], subsets: ['latin', 'latin-ext'] });
+const lora = loadLora('normal', { weights: ['500', '700'], subsets: ['latin', 'latin-ext'] });
+export const serif = lora.fontFamily;
+// Tuval (canvas) yazıları için: font yüklenmeden çizilirse yedek yazı tipi görünür.
+export const serifReady = Promise.all([lora.waitUntilDone(), loadLora('italic', { weights: ['500'], subsets: ['latin', 'latin-ext'] }).waitUntilDone()]);

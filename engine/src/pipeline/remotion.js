@@ -36,7 +36,7 @@ async function remotion(args) {
 
 const accentOf = (settings) => (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
 
-export async function renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir, theme = null }) {
+export async function renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir }) {
   const stage = stager(job.id);
   try {
     // Çekim sınırlarını kümülatif saniyeden kareye çevir; yuvarlama hatası birikmesin.
@@ -77,22 +77,21 @@ export async function renderWithRemotion({ job, settings, fmt, narrated, shots, 
     const propsFile = path.join(dir, 'remotion-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));
     const out = path.join(dir, 'video.mp4');
-    // Ansiklopedi teması kendi kompozisyonunda (remotion/src/Encyclopedia.jsx).
-    await remotion(['render', ENTRY, theme === 'ansiklopedi' ? 'Ansiklopedi' : 'Video', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    await remotion(['render', ENTRY, 'Video', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
     return out;
   } finally {
     stage.cleanup();
   }
 }
 
-export async function thumbnailWithRemotion({ jobId, background, text, badge, settings, dir, theme = null }) {
+export async function thumbnailWithRemotion({ jobId, background, text, badge, settings, dir }) {
   const stage = stager(`${jobId}-kapak`);
   try {
-    const props = { background: stage.add(background), badge: stage.add(badge), text, lang: settings.language, accent: accentOf(settings), theme };
+    const props = { background: stage.add(background), badge: stage.add(badge), text, lang: settings.language, accent: accentOf(settings) };
     const propsFile = path.join(dir, 'kapak-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));
     const png = path.join(dir, 'kapak.png');
-    await remotion(['still', ENTRY, theme === 'ansiklopedi' ? 'AnsiklopediThumb' : 'Thumb', png, `--props=${propsFile}`]);
+    await remotion(['still', ENTRY, 'Thumb', png, `--props=${propsFile}`]);
     // YouTube küçük resim sınırı 2 MB; JPEG'e çevir.
     const jpg = path.join(dir, 'kapak.jpg');
     await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
@@ -100,4 +99,45 @@ export async function thumbnailWithRemotion({ jobId, background, text, badge, se
   } finally {
     stage.cleanup();
   }
+}
+
+// Çizim formatı (Lamba Altında): sahneler senaryodaki `cizim` kodundan çizilir (remotion/src/Encyclopedia.jsx).
+export async function renderEncyclopedia({ job, settings, fmt, narrated, images, music, dir }) {
+  const stage = stager(job.id);
+  try {
+    const words = narrated.scenes.flatMap((s, i) => alignWords(job.scenes[i].narration, s.words))
+      .map(({ t, d, text }) => ({ t, d, text }));
+    const props = {
+      fps: FPS, width: fmt.w, height: fmt.h, portrait: fmt.portrait, lang: settings.language,
+      durationInFrames: Math.max(1, Math.round(narrated.total * FPS)),
+      scenes: job.scenes.map((s, i) => ({
+        t0: narrated.scenes[i].start, cizim: s.cizim ?? null, ifade: s.ifade ?? null, bolum: s.bolum ?? null,
+        img: stage.add(images[i]?.file),
+      })),
+      words,
+      narration: stage.add(narrated.narration),
+      music: stage.add(music?.file),
+      musicVolume: Number(settings.musicVolume),
+      baslik: job.baslikKart ?? null,
+      kapanis: job.kapanis ?? null,
+    };
+    const propsFile = path.join(dir, 'remotion-props.json');
+    fs.writeFileSync(propsFile, JSON.stringify(props));
+    const out = path.join(dir, 'video.mp4');
+    await remotion(['render', ENTRY, 'Ansiklopedi', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    return out;
+  } finally {
+    stage.cleanup();
+  }
+}
+
+export async function encyclopediaThumbnail({ job, settings, dir }) {
+  const props = { text: job.thumbnailText, sub: job.kapakAlt ?? null, cizim: job.kapakCizim ?? null, lang: settings.language };
+  const propsFile = path.join(dir, 'kapak-props.json');
+  fs.writeFileSync(propsFile, JSON.stringify(props));
+  const png = path.join(dir, 'kapak.png');
+  await remotion(['still', ENTRY, 'AnsiklopediThumb', png, `--props=${propsFile}`]);
+  const jpg = path.join(dir, 'kapak.jpg');
+  await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
+  return jpg;
 }

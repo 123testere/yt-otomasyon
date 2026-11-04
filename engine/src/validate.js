@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { CONFIG_DIR, DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
+import { KAPAK_ALAN, cizimHatasi } from '../../shared/cizim.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -48,6 +49,42 @@ function duellErrors(d) {
   if (words < 75 || words > 135) errors.push(`duell anlatımı ${words} kelime; 45 sn için 75-135 arası olmalı`);
   if (!Array.isArray(d.why) || d.why.length < 2 || d.why.length > 3 || !d.why.every((w) => str(w, 40))) {
     errors.push('duell.why 2-3 madde, her biri en fazla 40 karakter');
+  }
+  return errors;
+}
+
+const IFADELER = ['anlatiyor', 'merakli', 'saskin', 'gulumsuyor', 'kahkaha', 'dusunceli', 'endiseli', 'gururlu'];
+
+// Çizim formatı (Lamba Altında): sahne çizimleri çalışmalı, görsel sahneler az olmalı, kart başlığı ve bölümler doğru olmalı.
+function cizimErrors(job) {
+  const errors = [];
+  const scenes = Array.isArray(job.scenes) ? job.scenes : [];
+  scenes.forEach((s, i) => {
+    if (s.cizim !== undefined) {
+      const err = cizimHatasi(s.cizim);
+      if (err) errors.push(`sahne ${i + 1} cizim: ${err}`);
+    } else if (!(str(s.visual?.query, 80) && str(s.visual?.prompt, 300))) {
+      errors.push(`sahne ${i + 1}: cizim ya da visual {query, prompt} olmalı`);
+    }
+    if (s.ifade !== undefined && !IFADELER.includes(s.ifade)) errors.push(`sahne ${i + 1}: ifade şunlardan biri olmalı: ${IFADELER.join(', ')}`);
+    if (s.bolum !== undefined && !(str(s.bolum?.no, 20) && str(s.bolum?.ad, 32) && optStr(s.bolum?.ust, 40))) {
+      errors.push(`sahne ${i + 1}: bolum {no ≤20, ad ≤32, ust ≤40} olmalı`);
+    }
+  });
+  const gorsel = scenes.filter((s) => s.cizim === undefined).length;
+  if (gorsel > Math.ceil(scenes.length / 4)) errors.push(`${gorsel} sahne görselli; en fazla dörtte biri görsel olabilir, gerisi çizim`);
+  if (!Array.isArray(job.baslikKart) || job.baslikKart.length !== 2 || !job.baslikKart.every((l) => str(l, 22))) {
+    errors.push('baslikKart 2 satır olmalı, her biri en fazla 22 karakter');
+  }
+  if (job.kapanis !== undefined && !(str(job.kapanis?.a, 18) && str(job.kapanis?.b, 18) && optStr(job.kapanis?.soru, 30))) {
+    errors.push('kapanis {a ≤18, b ≤18, soru ≤30} olmalı');
+  }
+  if (job.type === 'long') {
+    if (!scenes.slice(1).some((s) => s.bolum)) errors.push('uzun videoda bölümler olmalı: giriş sahnelerinden sonra ilk bölümün sahnesine bolum ekle');
+    if (scenes[0]?.bolum) errors.push('ilk sahne giriş (gece zemini) olmalı; bolum ilk sahnede olamaz');
+    const err = cizimHatasi(job.kapakCizim, 6, { alan: KAPAK_ALAN });
+    if (err) errors.push(`kapakCizim: ${err}`);
+    if (!optStr(job.kapakAlt, 40)) errors.push('kapakAlt en fazla 40 karakter');
   }
   return errors;
 }
@@ -129,7 +166,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   if (job.type === 'long') {
     req(typeof job.thumbnailText === 'string' && job.thumbnailText.trim() && job.thumbnailText.length <= 40,
       'thumbnailText 1-40 karakter olmalı');
-    req(typeof job.thumbnailPrompt === 'string' && job.thumbnailPrompt.trim(), 'thumbnailPrompt eksik');
+    if (job.format !== 'cizim') req(typeof job.thumbnailPrompt === 'string' && job.thumbnailPrompt.trim(), 'thumbnailPrompt eksik');
   }
 
   if (job.format === 'duell') {
@@ -143,8 +180,14 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   }
 
   req(Array.isArray(job.scenes) && job.scenes.length > 0, 'scenes boş olamaz');
+  const cizim = job.format === 'cizim';
+  if (cizim) errors.push(...cizimErrors(job));
   (job.scenes ?? []).forEach((s, i) => {
     req(typeof s.narration === 'string' && s.narration.trim(), `sahne ${i + 1}: narration eksik`);
+    if (cizim) {
+      if (typeof s.narration === 'string') req(countWords(s.narration) <= 90, `sahne ${i + 1}: 90 kelimeden uzun, böl`);
+      return;
+    }
     req(typeof s.visual?.query === 'string' && s.visual.query.trim(), `sahne ${i + 1}: visual.query eksik`);
     req(typeof s.visual?.prompt === 'string' && s.visual.prompt.trim(), `sahne ${i + 1}: visual.prompt eksik`);
     if (typeof s.narration === 'string') req(countWords(s.narration) <= 90, `sahne ${i + 1}: 90 kelimeden uzun, böl`);
@@ -159,6 +202,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
     req(words >= min && words <= max, `toplam ${words} kelime; hedef ${slot.targetWords} (${min}-${max} arası olmalı)`);
     req(job.type === slot.type && job.channelId === slot.channelId, 'type/channelId needed.json ile uyuşmuyor');
     if (slot.clipOf) errors.push(...clipErrors(job, slot.clipOf));
+    if (slot.format === 'cizim') req(job.format === 'cizim', 'bu kanal çizim formatında: "format": "cizim" olmalı');
   }
   return errors;
 }

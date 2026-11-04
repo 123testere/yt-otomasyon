@@ -9,6 +9,7 @@ import { characterPlacement, formatFor, makeCharacterBadge, pickMusic, renderFin
 import { makeThumbnail } from './thumbnail.js';
 import { remotionAvailable, renderWithRemotion, thumbnailWithRemotion } from './remotion.js';
 import { buildDuell } from '../league/build-duell.js';
+import { buildCizim } from './build-cizim.js';
 
 async function characterImage(channelId, settings, cacheDir) {
   try {
@@ -43,6 +44,7 @@ async function planShots(job, narrated, fmt, { settings, dir, used, seedBase }) 
 
 export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (job.format === 'duell') return buildDuell(job, settings, { workDir });
+  if (job.format === 'cizim') return buildCizim(job, settings, { workDir });
   const fmt = formatFor(job.type);
   const dir = path.join(workDir, job.id);
   fs.mkdirSync(dir, { recursive: true });
@@ -57,8 +59,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   const visuals = shots.map((s) => s.visual);
   console.log(`  ${job.scenes.length} sahne, ${shots.length} çekim`);
 
-  const theme = pick(options.visualStyles, settings.visualStyle)?.theme ?? null;
-  const charSrc = theme ? null : await characterImage(job.channelId, settings, cacheDir);
+  const charSrc = await characterImage(job.channelId, settings, cacheDir);
   const placement = characterPlacement(fmt);
   const badge = charSrc && settings.characterOnScreen
     ? await makeCharacterBadge(charSrc, placement.size, path.join(dir, 'rozet.png'))
@@ -69,7 +70,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (settings.template === 'animasyonlu' && remotionAvailable()) {
     console.log('  animasyonlu render (Remotion)…');
     try {
-      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir, theme });
+      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir });
     } catch (e) {
       console.warn(`  Remotion render başarısız, klasik yönteme geçiliyor: ${e.message}`);
     }
@@ -108,7 +109,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
       const thumbBadge = charSrc ? await makeCharacterBadge(charSrc, 440, path.join(dir, 'kapak-rozet.png')) : null;
       if (remotionAvailable()) {
         try {
-          thumbnailPath = await thumbnailWithRemotion({ jobId: job.id, background, text: job.thumbnailText, badge: thumbBadge, settings, dir, theme });
+          thumbnailPath = await thumbnailWithRemotion({ jobId: job.id, background, text: job.thumbnailText, badge: thumbBadge, settings, dir });
         } catch (e) {
           console.warn(`  Remotion kapak başarısız, klasik kapak üretiliyor: ${e.message}`);
         }

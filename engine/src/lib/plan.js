@@ -2,7 +2,7 @@
 // Bağımlılıksızdır: hem sync (Firestore'dan sonra) hem de bulut rutini (npm install olmadan) kullanır.
 import fs from 'node:fs';
 import path from 'node:path';
-import { options, targetWords } from './options.js';
+import { options, pick, targetWords } from './options.js';
 import { addDays, dateInTz, weekday, zonedToUtc } from './time.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './paths.js';
 import { matchFor } from './league.js';
@@ -43,6 +43,8 @@ function slotsFor(channel, dates, now) {
       ...(s.contentFormat === 'flaggenduell'
         ? { format: 'duell', ...(matchFor(slot.date, channel.league?.calendarStart ?? slot.date) ?? {}) }
         : {}),
+      // Ansiklopedi stili: sahneler kodla çizilir (routine/PROMPT.md → Çizim formatı).
+      ...(pick(options.visualStyles, s.visualStyle)?.theme === 'ansiklopedi' ? { format: 'cizim' } : {}),
     }));
 }
 
