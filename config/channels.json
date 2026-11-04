@@ -61,6 +61,68 @@
     "oylamalar": []
   },
   {
+    "id": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "title": "gecici",
+    "enabled": false,
+    "settings": {
+      "enabled": false,
+      "contentFormat": "belgesel",
+      "niche": "ilginc",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "hazir",
+      "cloneScope": "shorts",
+      "elevenVoiceId": "",
+      "tone": "samimi",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": false,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "yok",
+      "musicVolume": "0.12",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          2,
+          5
+        ],
+        "time": "18:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "12:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": ""
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "İlginç Bilgiler",
+      "dil": "Türkçe",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": false,
+      "ekTalimat": null,
+      "videoSayisi": 0
+    },
+    "recentTitles": [],
+    "oylamalar": []
+  },
+  {
     "id": "UCIa1D1I2HwWzylJDvNayeHw",
     "title": "Burak kaan Gürer",
     "enabled": true,
