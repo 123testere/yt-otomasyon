@@ -36,6 +36,8 @@ jobs:
         working-directory: engine
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       - name: Değişiklikleri kaydet
         run: |
           git config user.name "otomasyon-bot"

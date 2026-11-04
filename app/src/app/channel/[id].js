@@ -264,6 +264,8 @@ export default function ChannelSettings() {
             <>
               <Label hint="Kesit: haftanın uzun videosundan en fazla 3 Shorts; kalan günler bağımsız yazılır.">Shorts kaynağı</Label>
               <ChoiceChips items={options.shortsSources} value={s.shorts.source ?? 'bagimsiz'} onChange={(source) => setShorts({ source })} />
+              <Label hint="Seçmezsen ses ayarındaki genel hız kullanılır.">Shorts konuşma hızı</Label>
+              <ChoiceChips items={options.speechRates} value={s.shorts.speechRate ?? s.speechRate} onChange={(speechRate) => setShorts({ speechRate })} />
             </>
           ) : null}
         </Section>

@@ -8,8 +8,35 @@ import { options, resolveSettings, characterOf, nicheOf, pick } from './lib/opti
 import { neededJobs } from './lib/plan.js';
 import { CONFIG_DIR, ROOT } from './lib/paths.js';
 import { stableJson } from './lib/util.js';
+import { google } from 'googleapis';
+import { oauthClient } from './pipeline/youtube.js';
 
 const RECENT_TITLES = 80;
+const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
+
+// Kanalın YouTube'daki son 50 başlığı (elle yüklenenler dahil) ve toplam video sayısı; günde bir okunur (~2 kota birimi).
+// Senaryo yazarı bu konuları tekrarlamaz.
+async function youtubeInfo(firestore, doc) {
+  const saved = doc.data().youtube ?? null;
+  if (saved?.fetchedAt?.toMillis?.() > Date.now() - YOUTUBE_TTL_MS) return saved;
+  try {
+    const secret = (await firestore.doc(`secrets/${doc.id}`).get()).data();
+    if (!secret?.refreshToken) return saved;
+    const auth = oauthClient();
+    auth.setCredentials({ refresh_token: secret.refreshToken });
+    const yt = google.youtube({ version: 'v3', auth });
+    const channel = (await yt.channels.list({ part: ['contentDetails'], mine: true })).data.items?.[0];
+    const uploads = channel?.contentDetails?.relatedPlaylists?.uploads;
+    if (!uploads) return saved;
+    const { data } = await yt.playlistItems.list({ part: ['snippet'], playlistId: uploads, maxResults: 50 });
+    const info = { titles: (data.items ?? []).map((i) => i.snippet.title), videoCount: data.pageInfo?.totalResults ?? 0, fetchedAt: new Date() };
+    await doc.ref.update({ youtube: info });
+    return info;
+  } catch (e) {
+    console.warn(`${doc.id} YouTube başlıkları okunamadı: ${e.message}`);
+    return saved;
+  }
+}
 
 function writeIfChanged(file, content) {
   if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === content) return false;
@@ -34,6 +61,8 @@ async function main() {
   }
 
   const channelsSnap = await firestore.collection('channels').get();
+  const youtube = {};
+  for (const doc of channelsSnap.docs) youtube[doc.id] = await youtubeInfo(firestore, doc);
   const channels = channelsSnap.docs
     .map((doc) => {
       const data = doc.data();
@@ -55,11 +84,12 @@ async function main() {
           gorselStil: pick(options.visualStyles, settings.visualStyle)?.label,
           cocukIcerigi: Boolean(niche.madeForKids),
           ekTalimat: settings.extraInstructions || null,
+          videoSayisi: youtube[doc.id]?.videoCount ?? null,
         },
-        recentTitles: (titlesByChannel[doc.id] ?? [])
-          .sort((a, b) => b.at - a.at)
-          .slice(0, RECENT_TITLES)
-          .map((t) => t.title),
+        recentTitles: [...new Set([
+          ...(titlesByChannel[doc.id] ?? []).sort((a, b) => b.at - a.at).map((t) => t.title),
+          ...(youtube[doc.id]?.titles ?? []),
+        ])].slice(0, RECENT_TITLES),
       };
     })
     .sort((a, b) => a.id.localeCompare(b.id));

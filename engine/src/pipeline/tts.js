@@ -81,6 +81,8 @@ async function ownVoice(job, settings, dir, tempo) {
 
 // Her sahne ayrı seslendirilir; böylece sahne süreleri ve kelime zamanları kesin bilinir.
 export async function narrate(job, settings, dir) {
+  // Shorts'a ayrı konuşma hızı seçilmişse o kullanılır.
+  if (job.type === 'short' && settings.shorts?.speechRate) settings = { ...settings, speechRate: settings.shorts.speechRate };
   const tempo = 1 + parseInt(settings.speechRate, 10) / 100;
   const own = await ownVoice(job, settings, dir, tempo);
 
