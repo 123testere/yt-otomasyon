@@ -38,7 +38,8 @@
         "times": [
           "18:00"
         ],
-        "seconds": 45
+        "seconds": 45,
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -53,9 +54,11 @@
       "karakter": "Yüzü pek görünmeyen, fısıltıyla sır anlatan gizemli bir figür.",
       "gorselStil": "YZ görsel – anime",
       "cocukIcerigi": false,
-      "ekTalimat": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun"
+      "ekTalimat": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun",
+      "videoSayisi": null
     },
-    "recentTitles": []
+    "recentTitles": [],
+    "oylamalar": []
   },
   {
     "id": "UCIa1D1I2HwWzylJDvNayeHw",
@@ -96,7 +99,8 @@
         "times": [
           "08:00"
         ],
-        "seconds": 45
+        "seconds": 45,
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -111,7 +115,8 @@
       "karakter": "Yıllarını kitaplara vermiş, tatlı dilli yaşlı bir hikâye anlatıcısı.",
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
-      "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
+      "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
+      "videoSayisi": 249
     },
     "recentTitles": [
       "Pompeii'yi Haritadan Silen 79 Yılındaki Patlama",
@@ -129,8 +134,135 @@
       "600 Yıldır Kimsenin Okuyamadığı Kitap",
       "Mimar Sinan Ustalık Eserini 80 Yaşında Yaptı",
       "3 Kalbi ve Mavi Kanı Olan Canlı",
-      "3 Kalbi ve Mavi Kanı Olan Canlı"
-    ]
+      "Yeni Başlayanlar İçin Yapay Zeka ile Video Ür",
+      "Yapay Zeka ile Youtube Kanalınızı Büyütün  Pa",
+      "Abone Sayısı Artıyor Ama İzlenmeler Düşüyor!",
+      "Yapay Zekanın Geleceği ve Video İçerik Üretim",
+      "Video Stratejisi ve Senaryo Yazımında Yapay Z",
+      "Videonuz İçin Mükemmel Kanca ve Strateji Nası",
+      "Yapay Zeka ile İş Fikirleri ve Para Kazanma Y",
+      "Metinden Görsele Yapay Zeka ile Video Üretimi",
+      "Hızlı Viral Odaklı Tarih ve Tarif Videoları İ",
+      "90 Aboneye Ulaşmanın Sırları ve İzlenme Sayıl",
+      "2026 kpss lisans ön lisans ortaöğretim #kodlamasaati #nocode #reactnative #mobiluygulama #kpss",
+      "Quiz master 2026 kpss çıkmış sorularına çalışmak için bir numara indir ve bilgini test et",
+      "App Ads Txt Uyarısından Kurtulun | Developer Rehberi",
+      "Kod Yazmadan Mobil Uygulama Sebastian run, OnSpace.ai,Dualite.dev",
+      "YouTube Küçük Resim Nasıl Hazırlanır Kolay Yönte",
+      "Videon Patlasın İstiyorsan Kapağı BÖYLE Yap! 🚀🔥",
+      "Aynı Prompt, 3 Farklı Sonuç Tile, Rork ve Onspace Karşı Karşıya!",
+      "Burak kaan Gürer kanalı canlı yayında",
+      "Subhaneke okuyanlar parmak kaldırsın yorumlara",
+      "Sizin ekonomi nasıl yorumlara alalım",
+      "Ice Destruction ASMR  Abd",
+      "Ice Destruction ASMR iran",
+      "Ice Destruction ASMR israil",
+      "Ice Destruction ASMR Çin",
+      "Ice Destruction ASMR Ukrayna",
+      "Satisfying Jello Cutting Experiment You Have to See!",
+      "Sığınmacılar Gerçekten Gitmeli mi? Şaşırtan Cevap!",
+      "Belediye hizmet veriyormu sorusuna muhteşem cevap",
+      "Bu kargaşada herşey karıştı",
+      "Pek bir gür cıkıyor bizim hurdacının alırım dedimmi alır haa",
+      "Sokakta En İlginç Anlar Kamerada!",
+      "Herkesin pazartesi ve bu cuma düğünlere bekliyoruz",
+      "sizin neden sevgiliniz yok",
+      "Bir kilo demir mi daha ağır bir kilo pamuk mu siz cevap verin ?",
+      "Beyin göçü nedir bir de böyle dinleyin"
+    ],
+    "oylamalar": []
+  },
+  {
+    "id": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "title": "Lamba Altında",
+    "enabled": true,
+    "settings": {
+      "enabled": true,
+      "contentFormat": "belgesel",
+      "niche": "ozel",
+      "customNiche": "Günlük hayattaki ürünler ve icatlar: nasıl yapıldı, ne zaman ortaya çıktı, nasıl çalışıyor",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "elevenlabs",
+      "cloneScope": "hepsi",
+      "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
+      "tone": "samimi",
+      "character": "ozel",
+      "customCharacter": "Nur Bey: yaklaşık yüz yıllık, pirinçten yapılmış eski bir masa lambası. Sıcak, nostaljik, izleyiciyle akran gibi konuşan bilge bir anlatıcı. (Brass antique desk lamp character, warm glow, vintage encyclopedia illustration)",
+      "characterOnScreen": true,
+      "identityLocked": false,
+      "visualStyle": "ansiklopedi",
+      "template": "animasyonlu",
+      "music": "huzurlu",
+      "musicVolume": "0.2",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          1
+        ],
+        "time": "19:00",
+        "minutes": 10
+      },
+      "shorts": {
+        "times": [
+          "19:00"
+        ],
+        "seconds": 45,
+        "source": "uzundan",
+        "speechRate": "+10%"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme."
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "Günlük hayattaki ürünler ve icatlar: nasıl yapıldı, ne zaman ortaya çıktı, nasıl çalışıyor",
+      "dil": "Türkçe",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": "Nur Bey: yaklaşık yüz yıllık, pirinçten yapılmış eski bir masa lambası. Sıcak, nostaljik, izleyiciyle akran gibi konuşan bilge bir anlatıcı. (Brass antique desk lamp character, warm glow, vintage encyclopedia illustration)",
+      "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
+      "cocukIcerigi": false,
+      "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
+      "videoSayisi": 29
+    },
+    "recentTitles": [
+      "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
+      "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
+      "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
+      "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
+      "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
+      "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
+      "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
+      "Bay Watson, buraya gelin",
+      "Aynı Gün Patent Ofisine Giden İki Adam: Telefon Kimin? 📞 #shorts",
+      "Telefonun hikâyesi burada bitmiyor ☎️ Bu hikâyenin bir de gölgede kalan kahramanı var",
+      "Telefonun Gerçek Mucidi 10 Doları Ödeyemedi! 📞 #shorts",
+      "Ankara'ya doğru yola çıkan siyah bir otomobil… 🚗 Devrim'in hikayesini hep yarım bilirsiz: \"benzini",
+      "29 Ekim 1961: Devrim otomobilinin benzini bitti 🇹🇷 #shorts",
+      "Grizu nedir? ⛏️ Kömür madenlerinde biriken, renksiz ve kokusuz metan gazı (CH₄)",
+      "Grizu nedir? Madenciyi ilk kim korudu? ⛏️ #shorts",
+      "Telefon İstanbul'a ilk ne zaman geldi? ☎️ 1881'de Soğukçeşme'deki Posta ve Telgraf Nezareti ile",
+      "Cebinizdeki telefonun dedesi bir zamanlar duvarda asılı dururdu",
+      "Telefon İstanbul'a Neden Yıllarca Gelemedi? #shorts",
+      "'Mr. Watson, Buraya Gelin' Cümlesinin Gerçek Hikayesi",
+      "Isırılmış elma logosu Alan Turing'e bir saygı mı? 🍎 Çoğu kişi öyle sanıyor ama logoyu çizen",
+      "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
+      "İnce belli çay bardağını hepimiz tanırız, peki onu kim icat etti? ☕ Bilinen en eski izlerden biri",
+      "İnce Belli Çay Bardağı Nereden Çıktı? Bilinmeyen Hikâyesi",
+      "Saatleri ileri almayı bir böcek meraklısı önerdi ⏰ #shorts",
+      "Kalorifer peteği aslında bir sera için icat edildi 🔥 #shorts",
+      "İstanbul'un ilk elektriği bugün bir müzede duruyor #shorts",
+      "Edison bir savaşı kaybetti. Rakibi bir şelaleydi. #shorts",
+      "Şarj aletiniz 1831'de doğdu ⚡ #shorts",
+      "Akımların Savaşı Hangi Lambayı Evine Soktu? Gerçek Hikaye!"
+    ],
+    "oylamalar": []
   },
   {
     "id": "UCyLqvRzGPIsjgOvr7RUxycA",
@@ -169,7 +301,8 @@
         "times": [
           "08:00"
         ],
-        "seconds": 45
+        "seconds": 45,
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -184,7 +317,8 @@
       "karakter": null,
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
-      "ekTalimat": null
+      "ekTalimat": null,
+      "videoSayisi": 3
     },
     "recentTitles": [
       "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
@@ -192,6 +326,7 @@
       "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
       "Wer erntet die meisten Kirschen in Europa? 🍒"
     ],
+    "oylamalar": [],
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
