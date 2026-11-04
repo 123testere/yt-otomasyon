@@ -1,0 +1,37 @@
+{
+  "id": "2026-11-05_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-05T05:00:00.000Z",
+  "topic": "Himbeeren",
+  "title": "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Himbeer-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": [
+    "flaggenduell",
+    "europa",
+    "länder vergleich",
+    "himbeeren",
+    "landwirtschaft",
+    "ranking",
+    "europa daten",
+    "länderduell"
+  ],
+  "duell": {
+    "topicId": "himbeeren",
+    "why": [
+      "Kühle, feuchte Hügel",
+      "Viele Familienbetriebe",
+      "Lange Himbeer-Tradition"
+    ],
+    "script": {
+      "intro": "Welches Land pflückt die meisten Himbeeren Europas? 46 Flaggen springen in den Trichter – nur eine kommt durch!",
+      "nodata": "Zwölf Länder haben keine Himbeerdaten und sind sofort raus!",
+      "rounds": "Jetzt wird gesiebt! Eine Flagge nach der anderen fliegt raus, und die Ukraine verpasst das Finale um rund 43 Tausend Tonnen!",
+      "final": "Finale! Serbien gegen Polen – Duell der Beerenprofis, nur einer steht ganz oben!",
+      "winner": "Serbien holt den Sieg! Über 94 Tausend Tonnen, gut 17 Tausend Tonnen mehr als Polen!",
+      "why": "Warum Serbien? Kühle, feuchte Hügel und viele kleine Familienbetriebe sind ideal für Himbeeren.",
+      "table": "Die Saisontabelle bleibt spannend: Die Türkei führt mit 15 Punkten. Schreib dein Thema in die Kommentare!"
+    }
+  }
+}

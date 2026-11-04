@@ -1,0 +1,73 @@
+{
+  "id": "2026-11-05_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-05T05:00:00.000Z",
+  "topic": "Pompeii'nin Vezüv patlamasıyla küllerin altında kalması",
+  "title": "Pompeii'yi Haritadan Silen 79 Yılındaki Patlama",
+  "hookText": "Bir şehir silindi",
+  "description": "Milattan sonra 79'da Vezüv Yanardağı patladı ve Pompeii kül ile hafif taş tabakasının altında kaldı. 1748'de başlayan kazılar antik Roma yaşamını gün yüzüne çıkardı.\n\n#pompeii #vezüv #romaimparatorluğu #tarih",
+  "tags": [
+    "pompeii",
+    "vezüv yanardağı",
+    "antik roma",
+    "pompeii kazıları",
+    "yanardağ patlaması",
+    "kayıp şehir",
+    "antik kentler",
+    "tarih"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, koca bir şehir küllerin altında kaldı ve yüzyıllarca unutuldu. Nasıl oldu da Pompeii haritadan silindi?",
+      "visual": {
+        "query": "Mount Vesuvius",
+        "prompt": "a smoking volcano rising over a Roman coastal town at dusk, wide shot, dramatic sky",
+        "motion": {
+          "type": "stat",
+          "value": "79",
+          "label": "Vezüv'ün patladığı yıl"
+        }
+      }
+    },
+    {
+      "narration": "Milattan sonra 79'da Vezüv Yanardağı patladı. Gökyüzünden yağan kül ve hafif taş parçaları kenti kısa sürede kalın bir tabakayla örttü. Antik kaynaklar o günleri dehşetle anlatır.",
+      "visual": {
+        "query": "Pompeii ruins Vesuvius",
+        "prompt": "a thick cloud of ash and falling pumice over a Roman street, people running, low angle"
+      }
+    },
+    {
+      "narration": "Ama küller her şeyi korudu. 1748'de başlayan kazılarda evler, duvar resimleri ve sokaklar neredeyse olduğu gibi çıktı. Bugün Pompeii, antik Roma yaşamını gösteren en önemli yerlerden biri.",
+      "visual": {
+        "query": "Pompeii excavation street",
+        "prompt": "an excavated Roman street with stone paving and painted walls in warm afternoon light",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "79",
+              "label": "Patlama"
+            },
+            {
+              "year": "1748",
+              "label": "Kazılar başladı"
+            }
+          ],
+          "highlight": 1
+        }
+      }
+    },
+    {
+      "narration": "Sence başka hangi kentler hâlâ toprağın altında saklanıyor? Yorumlara yaz, videoyu beğen, kanala abone ol.",
+      "visual": {
+        "query": "archaeological excavation site",
+        "prompt": "archaeologists brushing soil from ancient stones at an excavation at golden hour",
+        "motion": {
+          "type": "question",
+          "text": "Hangi kent hâlâ toprak altında?"
+        }
+      }
+    }
+  ]
+}
