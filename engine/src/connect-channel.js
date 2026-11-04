@@ -50,7 +50,8 @@ async function main() {
   const redirectUri = `http://127.0.0.1:${server.address().port}`;
   const oauth = new google.auth.OAuth2(clientId, clientSecret, redirectUri);
 
-  const authUrl = oauth.generateAuthUrl({ access_type: 'offline', prompt: 'consent', scope: SCOPES });
+  // Her seferinde hesap seçtirir; kanallar farklı Google hesaplarında olabilir.
+  const authUrl = oauth.generateAuthUrl({ access_type: 'offline', prompt: 'select_account consent', scope: SCOPES });
   console.log('Tarayıcı açılıyor. Açılmazsa bu adresi kopyala:\n' + authUrl + '\n');
   openBrowser(authUrl);
 
