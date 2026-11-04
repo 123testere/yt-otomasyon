@@ -28,8 +28,10 @@ function stager(jobId) {
   };
 }
 
+// CLI doğrudan Node ile çalıştırılır (npx Windows'ta .cmd olduğu için spawn edilemiyor).
 async function remotion(args) {
-  await run('npx', ['remotion', ...args, '--log=error'], { cwd: DIR });
+  const cli = path.join(DIR, 'node_modules', '@remotion', 'cli', 'remotion-cli.js');
+  await run(process.execPath, [cli, ...args, '--log=error'], { cwd: DIR });
 }
 
 const accentOf = (settings) => (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;

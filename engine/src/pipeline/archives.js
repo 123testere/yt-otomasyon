@@ -25,8 +25,10 @@ function choose(items, used, fmt) {
   return chosen;
 }
 
+// Arşiv alanlarında HTML olabiliyor (ör. <div class='fn'>); YouTube açıklamada < > kabul etmez.
+const plain = (s) => String(s ?? '').replace(/<[^>]*>/g, '').replace(/[<>]/g, '').replace(/\s+/g, ' ').trim();
 const creditLine = ({ title, author, license, url }) =>
-  `"${title}" – ${author || 'bilinmeyen yazar'}, ${license} (${url})`;
+  `"${plain(title)}" – ${plain(author) || 'bilinmeyen yazar'}, ${plain(license)} (${url})`;
 
 export async function wikimedia(query, fmt, dest, used) {
   const width = fmt.portrait ? 1080 : 1920;

@@ -84,7 +84,7 @@ function findJob(id) {
   return null;
 }
 
-const wordsOf = (text) => text.toLocaleLowerCase('tr').match(/[p{L}p{N}]+/gu) ?? [];
+const wordsOf = (text) => text.toLocaleLowerCase('tr').match(/[\p{L}\p{N}]+/gu) ?? [];
 
 // Kesit uzun videodan gelmeli: kelimelerinin en az %60'ı kaynak anlatımda geçmeli.
 function clipErrors(job, sourceId) {
@@ -158,6 +158,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
     const max = Math.round(slot.targetWords * (1 + WORD_TOLERANCE));
     req(words >= min && words <= max, `toplam ${words} kelime; hedef ${slot.targetWords} (${min}-${max} arası olmalı)`);
     req(job.type === slot.type && job.channelId === slot.channelId, 'type/channelId needed.json ile uyuşmuyor');
+    if (slot.clipOf) errors.push(...clipErrors(job, slot.clipOf));
   }
   return errors;
 }

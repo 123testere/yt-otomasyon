@@ -19,7 +19,8 @@ export const PALET = {
 
 const TRANSITION = 12;
 const HOOK_FRAMES = 75;
-const CILT = 600; // yatay düzende sol sayfa ile sağ sayfa arasındaki cilt çizgisi
+const CILT = 600;
+const MOTION_MAX_SEC = 4; // grafik en fazla bu kadar kalır, sonra levha görünür // yatay düzende sol sayfa ile sağ sayfa arasındaki cilt çizgisi
 
 // Yerleşim: yatayda Nur Bey sol sayfada, levha ve grafikler sağ sayfada. Dikeyde levha üstte, Nur Bey altında.
 export const LAYOUT = {
@@ -30,8 +31,8 @@ export const LAYOUT = {
     captions: { bottom: 70, padLeft: CILT },
   },
   portrait: {
-    plate: { left: 70, top: 290, width: 940, height: 720 },
-    nur: { x: 820, y: 1370, s: 0.72, yon: -1 },
+    plate: { left: 70, top: 290, width: 940, height: 660 },
+    nur: { x: 820, y: 1300, s: 0.72, yon: -1 },
     stage: '290px 70px 900px',
     captions: { bottom: 420, padLeft: 0 },
   },
@@ -194,9 +195,10 @@ const paperMotionTheme = {
 };
 
 export function Encyclopedia(props) {
-  const { scenes, motions = [], words, narration, music, musicVolume, captions, hookText, portrait, lang } = props;
-  const { durationInFrames } = useVideoConfig();
+  const { scenes, words, narration, music, musicVolume, captions, hookText, portrait, lang } = props;
+  const { fps, durationInFrames } = useVideoConfig();
   const layout = portrait ? LAYOUT.portrait : LAYOUT.landscape;
+  const motions = (props.motions ?? []).map((m) => ({ ...m, duration: Math.min(m.duration, MOTION_MAX_SEC * fps) }));
   const frame = useCurrentFrame();
   const hooking = Boolean(hookText) && frame <= HOOK_FRAMES;
   const musicVol = (f) => musicVolume * interpolate(f, [0, 60, durationInFrames - 90, durationInFrames], [0, 1, 1, 0],
