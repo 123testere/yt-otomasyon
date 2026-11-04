@@ -63,60 +63,59 @@
   {
     "id": "UCEG9D-Kia1iw6-duhqlSlcg",
     "title": "gecici",
-    "enabled": false,
+    "enabled": true,
     "settings": {
-      "enabled": false,
+      "enabled": true,
       "contentFormat": "belgesel",
-      "niche": "ilginc",
+      "niche": "doga",
       "customNiche": "",
-      "language": "tr",
-      "voice": "tr-TR-AhmetNeural",
+      "language": "en",
+      "voice": "en-US-GuyNeural",
       "speechRate": "+0%",
-      "voiceStyle": "dengeli",
+      "voiceStyle": "etkileyici",
       "voicePitch": "+0Hz",
-      "voiceSource": "hazir",
+      "voiceSource": "elevenlabs",
       "cloneScope": "shorts",
       "elevenVoiceId": "",
-      "tone": "samimi",
+      "tone": "belgesel",
       "character": "yok",
       "customCharacter": "",
       "characterOnScreen": true,
-      "identityLocked": false,
-      "visualStyle": "ai-sinematik",
+      "identityLocked": true,
+      "visualStyle": "ai-gercekci",
       "template": "animasyonlu",
-      "music": "yok",
-      "musicVolume": "0.12",
-      "subtitles": "klasik",
-      "subtitleColor": "beyaz",
+      "music": "gerilim",
+      "musicVolume": "0.2",
+      "subtitles": "kelime",
+      "subtitleColor": "yesil",
       "long": {
-        "days": [
-          2,
-          5
-        ],
+        "days": [],
         "time": "18:00",
         "minutes": 8
       },
       "shorts": {
         "times": [
-          "12:00"
+          "14:00",
+          "19:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz"
+        "source": "bagimsiz",
+        "speechRate": "+20%"
       },
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": ""
+      "extraInstructions": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun "
     },
     "brief": {
       "format": "belgesel",
-      "konu": "İlginç Bilgiler",
-      "dil": "Türkçe",
-      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "konu": "Doğa ve Hayvanlar",
+      "dil": "English",
+      "ton": "Ağırbaşlı, bilgi dolu, belgesel anlatıcısı gibi.",
       "karakter": null,
-      "gorselStil": "YZ görsel – sinematik",
+      "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
-      "ekTalimat": null,
+      "ekTalimat": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
       "videoSayisi": 0
     },
     "recentTitles": [],
@@ -255,7 +254,7 @@
       "character": "ozel",
       "customCharacter": "Nur Bey: yaklaşık yüz yıllık, pirinçten yapılmış eski bir masa lambası. Sıcak, nostaljik, izleyiciyle akran gibi konuşan bilge bir anlatıcı. (Brass antique desk lamp character, warm glow, vintage encyclopedia illustration)",
       "characterOnScreen": true,
-      "identityLocked": false,
+      "identityLocked": true,
       "visualStyle": "ansiklopedi",
       "template": "animasyonlu",
       "music": "huzurlu",
@@ -271,7 +270,8 @@
       },
       "shorts": {
         "times": [
-          "19:00"
+          "19:00",
+          "12:00"
         ],
         "seconds": 45,
         "source": "uzundan",
