@@ -6,6 +6,7 @@ import { Duell } from './Duell.jsx';
 import { AppIcon } from './AppIcon.jsx';
 import { Encyclopedia, EncyclopediaThumb } from './Encyclopedia.jsx';
 import { ShortCover } from './ShortCover.jsx';
+import { Avatar, Banner } from './Brand.jsx';
 
 // Süre ve boyut motorun gönderdiği props'tan gelir (engine/src/pipeline/remotion.js).
 const fromProps = ({ props }) => ({
@@ -36,6 +37,10 @@ function Root() {
         defaultProps={{ background: null, text: 'KAPAK YAZISI', lang: 'tr' }} />
       <Still id="ShortCover" component={ShortCover} width={1080} height={1920}
         defaultProps={{ background: null, text: 'KANCA YAZISI', badge: null, lang: 'tr', accent: '#FFE600', theme: null }} />
+      <Still id="Banner" component={Banner} width={2560} height={1440}
+        defaultProps={{ title: 'Kanal adı', tagline: '', accent: '#FFE600', theme: null }} />
+      <Still id="Avatar" component={Avatar} width={800} height={800}
+        defaultProps={{ title: 'Kanal adı', accent: '#FFE600', theme: null }} />
       <Still id="AppIcon" component={AppIcon} width={1024} height={1024} defaultProps={{ variant: 'full' }} />
       <Still id="Thumb" component={Thumbnail} width={1280} height={720}
         defaultProps={{ background: null, text: 'KAPAK YAZISI', badge: null, lang: 'tr', accent: '#FFE600' }} />

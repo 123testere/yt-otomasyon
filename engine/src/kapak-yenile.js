@@ -7,7 +7,7 @@ import { google } from 'googleapis';
 import { db } from './lib/firebase.js';
 import { options, pick, resolveSettings } from './lib/options.js';
 import { DONE_DIR } from './lib/paths.js';
-import { oauthClient } from './pipeline/youtube.js';
+import { authFor } from './pipeline/youtube.js';
 import { makeShortCover } from './pipeline/cover.js';
 import { wikimedia } from './pipeline/archives.js';
 import { aiImage } from './pipeline/visuals.js';
@@ -22,9 +22,7 @@ const clients = {};
 async function youtubeFor(channelId) {
   if (clients[channelId]) return clients[channelId];
   const secret = (await firestore.doc(`secrets/${channelId}`).get()).data();
-  const auth = oauthClient();
-  auth.setCredentials({ refresh_token: secret.refreshToken });
-  return (clients[channelId] = google.youtube({ version: 'v3', auth }));
+  return (clients[channelId] = google.youtube({ version: 'v3', auth: authFor(secret) }));
 }
 
 async function background(job, fmt, dir) {

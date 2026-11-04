@@ -9,7 +9,8 @@ import { neededJobs } from './lib/plan.js';
 import { CONFIG_DIR, ROOT } from './lib/paths.js';
 import { stableJson } from './lib/util.js';
 import { google } from 'googleapis';
-import { oauthClient } from './pipeline/youtube.js';
+import { authFor } from './pipeline/youtube.js';
+import { updateStats } from './lib/stats.js';
 import { countVotes } from './lib/votes.js';
 
 const RECENT_TITLES = 80;
@@ -23,9 +24,7 @@ async function youtubeInfo(firestore, doc) {
   try {
     const secret = (await firestore.doc(`secrets/${doc.id}`).get()).data();
     if (!secret?.refreshToken) return saved;
-    const auth = oauthClient();
-    auth.setCredentials({ refresh_token: secret.refreshToken });
-    const yt = google.youtube({ version: 'v3', auth });
+    const yt = google.youtube({ version: 'v3', auth: authFor(secret) });
     const channel = (await yt.channels.list({ part: ['contentDetails'], mine: true })).data.items?.[0];
     const uploads = channel?.contentDetails?.relatedPlaylists?.uploads;
     if (!uploads) return saved;
@@ -63,7 +62,10 @@ async function main() {
 
   const channelsSnap = await firestore.collection('channels').get();
   const youtube = {};
-  for (const doc of channelsSnap.docs) youtube[doc.id] = await youtubeInfo(firestore, doc);
+  for (const doc of channelsSnap.docs) {
+    youtube[doc.id] = await youtubeInfo(firestore, doc);
+    await updateStats(firestore, doc, now).catch((e) => console.warn(`${doc.id} istatistik: ${e.message}`));
+  }
   const votes = await countVotes(firestore, now);
   const channels = channelsSnap.docs
     .map((doc) => {
@@ -122,6 +124,11 @@ async function main() {
   }
 
   const needed = neededJobs(channels, { now, extraExisting: videosSnap.docs.map((v) => v.id) });
+
+  // Uygulamadan gelen kanal kurulum isteği varsa iş akışı Remotion'u kurup engine/src/kurulum.js'i çalıştırır.
+  const setupPending = channelsSnap.docs.some((d) => d.data().settings?.kurulum?.istek
+    && d.data().settings.kurulum.istek !== d.data().kurulumSonuc?.istek);
+  if (setupPending && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kurulum=1\n');
 
   const changedChannels = writeIfChanged(path.join(CONFIG_DIR, 'channels.json'), stableJson(channels));
   const changedNeeded = writeIfChanged(path.join(CONFIG_DIR, 'needed.json'), stableJson(needed));

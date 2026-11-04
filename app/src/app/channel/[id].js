@@ -97,6 +97,12 @@ export default function ChannelSettings() {
         <Card>
           <Toggle label="Otomasyon açık" value={s.enabled} onChange={(enabled) => set({ enabled })} />
           <Dim style={{ marginTop: 6 }}>Kapalıyken bu kanal için video üretilmez ve yüklenmez.</Dim>
+          <View style={{ flexDirection: 'row', gap: 8, marginTop: 12 }}>
+            <Button kind="secondary" title="Kanal kimliği" style={{ flex: 1 }}
+              onPress={() => router.push(`/kurulum?kanal=${id}&adim=kimlik`)} />
+            <Button kind="secondary" title="Yeniden bağla" style={{ flex: 1 }}
+              onPress={() => router.push(`/kurulum?kanal=${id}&adim=bagla`)} />
+          </View>
         </Card>
 
         <Section title="İçerik">

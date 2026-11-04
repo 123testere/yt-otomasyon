@@ -5,10 +5,20 @@ import { nicheOf } from '../lib/options.js';
 export class QuotaError extends Error {}
 export class AuthError extends Error {}
 
-export function oauthClient() {
-  const { YT_CLIENT_ID, YT_CLIENT_SECRET } = process.env;
-  if (!YT_CLIENT_ID || !YT_CLIENT_SECRET) throw new Error('YT_CLIENT_ID / YT_CLIENT_SECRET tanımlı değil');
-  return new google.auth.OAuth2(YT_CLIENT_ID, YT_CLIENT_SECRET);
+// "desktop": bilgisayardan bağlanan kanallar (connect-channel.js). "tv": uygulamadan cihaz koduyla bağlananlar.
+export function oauthClient(kind = 'desktop') {
+  const [id, secret] = kind === 'tv'
+    ? [process.env.YT_TV_CLIENT_ID, process.env.YT_TV_CLIENT_SECRET]
+    : [process.env.YT_CLIENT_ID, process.env.YT_CLIENT_SECRET];
+  if (!id || !secret) throw new Error(`${kind === 'tv' ? 'YT_TV_CLIENT_ID / YT_TV_CLIENT_SECRET' : 'YT_CLIENT_ID / YT_CLIENT_SECRET'} tanımlı değil`);
+  return new google.auth.OAuth2(id, secret);
+}
+
+// secrets/{kanal} kaydından yetkili istemci.
+export function authFor(secret) {
+  const auth = oauthClient(secret.client);
+  auth.setCredentials({ refresh_token: secret.refreshToken });
+  return auth;
 }
 
 function classify(e) {
@@ -36,9 +46,8 @@ function withCredits(description, credits, language) {
   return text.replace(/[<>]/g, '');
 }
 
-export async function upload({ refreshToken, job, settings, videoPath, thumbnailPath, credits }) {
-  const auth = oauthClient();
-  auth.setCredentials({ refresh_token: refreshToken });
+export async function upload({ secret, job, settings, videoPath, thumbnailPath, credits }) {
+  const auth = authFor(secret);
   const yt = google.youtube({ version: 'v3', auth });
 
   const niche = nicheOf(settings);

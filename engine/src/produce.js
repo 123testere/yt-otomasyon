@@ -134,7 +134,7 @@ async function main() {
 
       const secret = (await firestore.doc(`secrets/${job.channelId}`).get()).data();
       if (!secret?.refreshToken) throw new AuthError('Kanalın yükleme izni yok; kanalı yeniden bağla');
-      const yt = await upload({ refreshToken: secret.refreshToken, job: await withFullVideoLink(job, settings), settings, ...built });
+      const yt = await upload({ secret, job: await withFullVideoLink(job, settings), settings, ...built });
 
       await ref.update({ status: 'uploaded', youtubeId: yt.videoId, url: yt.url, scheduled: yt.scheduled,
         warning: yt.thumbnailWarning, updatedAt: new Date() });

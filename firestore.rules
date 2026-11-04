@@ -7,8 +7,13 @@ service cloud.firestore {
     }
 
     // Kanal yükleme izinleri: yalnızca sunucu (GitHub Actions) okur, uygulama asla göremez.
+    // Uygulama, cihaz koduyla bağladığı kanalın iznini yalnızca yazabilir (okuyamaz).
     match /secrets/{id} {
-      allow read, write: if false;
+      allow read, delete: if false;
+      allow create, update: if isAdmin()
+        && request.resource.data.keys().hasOnly(['refreshToken', 'client', 'updatedAt'])
+        && request.resource.data.client == 'tv'
+        && request.resource.data.refreshToken is string;
     }
 
     // Klon ses örnekleri: yalnızca sunucu okur/yazar.
@@ -24,11 +29,14 @@ service cloud.firestore {
       allow read: if isAdmin();
     }
 
-    // Uygulama kanal bilgilerini okur, yalnızca ayarlarını değiştirebilir.
+    // Uygulama kanal bilgilerini okur ve ayarlarını değiştirir; uygulamadan bağlanan kanalın kaydını açar/yeniler.
     match /channels/{id} {
       allow read: if isAdmin();
+      allow create: if isAdmin()
+        && request.resource.data.keys().hasOnly(['title', 'thumbnail', 'connectedAt', 'needsReconnect', 'settings', 'fromApp']);
       allow update: if isAdmin()
-        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['settings']);
+        && request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(['settings', 'title', 'thumbnail', 'connectedAt', 'needsReconnect', 'fromApp']);
     }
 
     // Uygulama videoları izler; hatalı olanı "yeniden dene" diye işaretleyebilir.

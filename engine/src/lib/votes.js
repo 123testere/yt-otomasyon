@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { google } from 'googleapis';
-import { oauthClient } from '../pipeline/youtube.js';
+import { authFor } from '../pipeline/youtube.js';
 import { DONE_DIR } from './paths.js';
 
 const WINDOW_MS = 4 * 24 * 60 * 60 * 1000;
@@ -59,9 +59,7 @@ export async function countVotes(firestore, now = new Date()) {
       if (!clients[job.channelId]) {
         const secret = (await firestore.doc(`secrets/${job.channelId}`).get()).data();
         if (!secret?.refreshToken) continue;
-        const auth = oauthClient();
-        auth.setCredentials({ refresh_token: secret.refreshToken });
-        clients[job.channelId] = google.youtube({ version: 'v3', auth });
+        clients[job.channelId] = google.youtube({ version: 'v3', auth: authFor(secret) });
       }
       const { data } = await clients[job.channelId].commentThreads.list({
         part: ['snippet'], videoId: video.youtubeId, maxResults: 100, order: 'time', textFormat: 'plainText',

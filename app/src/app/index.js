@@ -62,9 +62,14 @@ export default function Home() {
       <Stack.Screen
         options={{
           headerRight: () => (
-            <Pressable onPress={() => router.push('/videos')} hitSlop={10}>
-              <Text style={{ color: colors.accent, fontWeight: '700', fontSize: 15 }}>Videolar</Text>
-            </Pressable>
+            <View style={{ flexDirection: 'row', gap: 18 }}>
+              <Pressable onPress={() => router.push('/istatistik')} hitSlop={10}>
+                <Text style={{ color: colors.accent, fontWeight: '700', fontSize: 15 }}>İstatistik</Text>
+              </Pressable>
+              <Pressable onPress={() => router.push('/videos')} hitSlop={10}>
+                <Text style={{ color: colors.accent, fontWeight: '700', fontSize: 15 }}>Videolar</Text>
+              </Pressable>
+            </View>
           ),
         }}
       />
@@ -84,10 +89,7 @@ export default function Home() {
         {channels?.length === 0 ? (
           <Card>
             <Title>Henüz kanal yok</Title>
-            <Dim style={{ marginTop: 8, lineHeight: 20 }}>
-              Kanal bağlamak için bilgisayarda bir kez çalıştır:
-            </Dim>
-            <Text selectable style={st.code}>cd engine{'\n'}npm run kanal-bagla</Text>
+            <Dim style={{ marginTop: 8, lineHeight: 20 }}>Aşağıdaki "Yeni kanal kur" ile ilk kanalını oluşturup bağla.</Dim>
           </Card>
         ) : null}
 
@@ -106,13 +108,23 @@ export default function Home() {
               {' · '}Haftada {c.settings?.long?.days?.length ?? 0} uzun
               {' · '}Günde {c.settings?.shorts?.times?.length ?? 0} Shorts
             </Dim>
+            {c.istatistik?.haftalik ? (
+              <Dim style={{ marginTop: 4 }}>
+                Son 7 gün: {Math.round(c.istatistik.haftalik.izlenme).toLocaleString('tr-TR')} izlenme
+                {c.istatistik.toplam ? ` · ${c.istatistik.toplam.abone.toLocaleString('tr-TR')} abone` : ''}
+              </Dim>
+            ) : null}
             {c.needsReconnect ? (
-              <Text style={{ color: colors.err, marginTop: 8 }}>
-                Kanal izni düştü — bilgisayarda "npm run kanal-bagla" ile yeniden bağla.
-              </Text>
+              <View style={{ marginTop: 8 }}>
+                <Text style={{ color: colors.err }}>Kanal izni düştü.</Text>
+                <Button kind="secondary" title="Yeniden bağla" style={{ marginTop: 8 }}
+                  onPress={() => router.push(`/kurulum?kanal=${c.id}&adim=bagla`)} />
+              </View>
             ) : null}
           </Card>
         ))}
+
+        <Button title="+ Yeni kanal kur" onPress={() => router.push('/kurulum')} style={{ marginBottom: 8 }} />
 
         <Text style={st.section}>Son olaylar</Text>
         {events.length === 0 ? <Dim>Henüz bir şey olmadı.</Dim> : null}
