@@ -98,6 +98,8 @@ export async function sceneVisual(scene, i, { settings, fmt, dir, used, seedBase
     ai: [ai, photo, ...archives],
     // Hareketli grafik: grafiklerin arkasında konuyla ilgili gerçek fotoğraflar (anahtarsız arşivler önce).
     motion: [...archives, photo, video],
+    // Ansiklopedi: arşivdeki gravür ve patent çizimleri; Remotion bunları kâğıda basılmış levha gibi gösterir.
+    plate: [...archives, ai, photo],
   }[style.source];
 
   for (const attempt of chain) {

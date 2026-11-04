@@ -4,6 +4,7 @@ import { Thumbnail } from './Thumbnail.jsx';
 import { League } from './League.jsx';
 import { Duell } from './Duell.jsx';
 import { AppIcon } from './AppIcon.jsx';
+import { Encyclopedia, EncyclopediaThumb } from './Encyclopedia.jsx';
 
 // Süre ve boyut motorun gönderdiği props'tan gelir (engine/src/pipeline/remotion.js).
 const fromProps = ({ props }) => ({
@@ -24,10 +25,14 @@ function Root() {
     <>
       <Composition id="Video" component={VideoComposition} defaultProps={demoVideo}
         calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
+      <Composition id="Ansiklopedi" component={Encyclopedia} defaultProps={{ ...demoVideo, captions: 'klasik' }}
+        calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
       <Composition id="League" component={League} defaultProps={{ phases: [], data: null, words: [], fps: 30, width: 1080, height: 1920, durationInFrames: 150 }}
         calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
       <Composition id="Duell" component={Duell} defaultProps={{ phases: [], data: null, words: [], fps: 30, width: 1080, height: 1920, durationInFrames: 150 }}
         calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
+      <Still id="AnsiklopediThumb" component={EncyclopediaThumb} width={1280} height={720}
+        defaultProps={{ background: null, text: 'KAPAK YAZISI', lang: 'tr' }} />
       <Still id="AppIcon" component={AppIcon} width={1024} height={1024} defaultProps={{ variant: 'full' }} />
       <Still id="Thumb" component={Thumbnail} width={1280} height={720}
         defaultProps={{ background: null, text: 'KAPAK YAZISI', badge: null, lang: 'tr', accent: '#FFE600' }} />

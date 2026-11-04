@@ -91,7 +91,8 @@ const stroke = (px) => ({
 });
 
 // Kelime kelime: aktif kelime renkli ve hafif büyür. Klasik: satır satır beyaz yazı.
-export function Captions({ words, mode, color, portrait, lang, bottomOverride }) {
+// look: başka bir temanın altyazı görünümü (yazı tipi, renk, kontursuz, boyut, soldan boşluk).
+export function Captions({ words, mode, color, portrait, lang, bottomOverride, look }) {
   const frame = useCurrentFrame();
   const { fps, height } = useVideoConfig();
   if (mode === 'yok' || !words.length) return null;
@@ -106,21 +107,22 @@ export function Captions({ words, mode, color, portrait, lang, bottomOverride })
   // Uzun kelimeler (ör. Almanca "Nachbarschaftsduell") satıra sığsın diye yazı küçülür.
   const longest = Math.max(...group.map((w) => w.text.length));
   const available = (portrait ? 1080 : 1920) * 0.86;
-  const base = karaoke ? (portrait ? 92 : 76) : (portrait ? 60 : 50);
+  const base = look?.size ?? (karaoke ? (portrait ? 92 : 76) : (portrait ? 60 : 50));
   const size = Math.min(base, Math.floor(available / (longest * 0.72)));
   const bottom = bottomOverride ?? (karaoke ? (portrait ? height * 0.3 : 110) : (portrait ? 330 : 60));
   return (
-    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: bottom }}>
+    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: bottom, paddingLeft: look?.padLeft ?? 0 }}>
       <div style={{
-        maxWidth: '86%', textAlign: 'center', fontFamily: body, fontSize: size, lineHeight: 1.15, color: '#fff',
-        transform: `scale(${0.85 + 0.15 * enter})`, opacity: enter, ...stroke(karaoke ? 10 : 7),
+        maxWidth: '86%', textAlign: 'center', fontFamily: look?.font ?? body, fontWeight: look ? 700 : undefined,
+        fontSize: size, lineHeight: 1.15, color: look?.color ?? '#fff',
+        transform: `scale(${0.85 + 0.15 * enter})`, opacity: enter, ...(look ? {} : stroke(karaoke ? 10 : 7)),
       }}>
         {group.map((w, i) => {
           const active = karaoke && t >= w.t && t < w.t + Math.max(w.d, 0.15);
-          const text = karaoke ? w.text.toLocaleUpperCase(lang) : w.text;
+          const text = karaoke && look?.upper !== false ? w.text.toLocaleUpperCase(lang) : w.text;
           return (
             <span key={i} style={{
-              color: active ? color : '#fff',
+              color: active ? color : (look?.color ?? '#fff'),
               display: 'inline-block', margin: '0 0.22em',
               transform: active ? 'scale(1.12)' : 'none',
             }}>{text}</span>

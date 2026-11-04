@@ -128,7 +128,8 @@
     { "id": "ai-suluboya", "label": "YZ görsel – suluboya", "source": "ai", "suffix": "soft watercolor illustration, paper texture, pastel colors" },
     { "id": "ai-cizgiroman", "label": "YZ görsel – çizgi roman", "source": "ai", "suffix": "comic book illustration, bold ink lines, halftone shading" },
     { "id": "ai-3d", "label": "YZ görsel – 3D animasyon", "source": "ai", "suffix": "3d animated movie style render, soft lighting, cute stylized" },
-    { "id": "ai-minimal", "label": "YZ görsel – minimal", "source": "ai", "suffix": "minimalist flat vector illustration, clean shapes, limited palette" }
+    { "id": "ai-minimal", "label": "YZ görsel – minimal", "source": "ai", "suffix": "minimalist flat vector illustration, clean shapes, limited palette" },
+    { "id": "ansiklopedi", "label": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)", "source": "plate", "theme": "ansiklopedi", "suffix": "vintage encyclopedia engraving, black ink line drawing, patent drawing, cross-section diagram, plain cream paper background" }
   ],
 
   "musicMoods": [
@@ -179,6 +180,11 @@
     { "id": 60, "label": "60 saniye" }
   ],
 
+  "shortsSources": [
+    { "id": "bagimsiz", "label": "Bağımsız senaryo" },
+    { "id": "uzundan", "label": "Haftanın uzun videosundan kesit" }
+  ],
+
   "weekdays": [
     { "id": 1, "label": "Pzt" },
     { "id": 2, "label": "Sal" },
@@ -222,7 +228,7 @@
     "subtitles": "klasik",
     "subtitleColor": "beyaz",
     "long": { "days": [2, 5], "time": "18:00", "minutes": 8 },
-    "shorts": { "times": ["12:00"], "seconds": 45 },
+    "shorts": { "times": ["12:00"], "seconds": 45, "source": "bagimsiz" },
     "privacy": "public",
     "aiDisclosure": true,
     "hashtags": "",

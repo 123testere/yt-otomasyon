@@ -75,6 +75,28 @@ export function usedTitles(channelId, excludeId) {
   return titles;
 }
 
+// Kesit Shorts'un kaynağı olan uzun videonun senaryosu (kuyrukta ya da yüklenmiş).
+function findJob(id) {
+  for (const dir of [QUEUE_DIR, DONE_DIR]) {
+    const file = path.join(dir, `${id}.json`);
+    if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, 'utf8'));
+  }
+  return null;
+}
+
+const wordsOf = (text) => text.toLocaleLowerCase('tr').match(/[p{L}p{N}]+/gu) ?? [];
+
+// Kesit uzun videodan gelmeli: kelimelerinin en az %60'ı kaynak anlatımda geçmeli.
+function clipErrors(job, sourceId) {
+  if (job.derivedFrom !== sourceId) return [`bu Shorts "${sourceId}" uzun videosunun kesiti: derivedFrom = "${sourceId}" olmalı`];
+  const source = findJob(sourceId);
+  if (!source) return [`kaynak uzun video bulunamadı: ${sourceId} (önce onu queue/ içine yaz)`];
+  const pool = new Set(source.scenes.flatMap((s) => wordsOf(s.narration)));
+  const words = (job.scenes ?? []).flatMap((s) => wordsOf(s.narration ?? ''));
+  const share = words.length ? words.filter((w) => pool.has(w)).length / words.length : 0;
+  return share >= 0.6 ? [] : [`kesit anlatımının yalnızca %${Math.round(share * 100)}'i uzun videodan; en az %60 olmalı`];
+}
+
 export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   const errors = [];
   const req = (cond, msg) => { if (!cond) errors.push(msg); };

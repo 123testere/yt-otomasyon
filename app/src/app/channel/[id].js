@@ -260,6 +260,12 @@ export default function ChannelSettings() {
           <MultiChips items={timeItems} values={s.shorts.times} onChange={(times) => setShorts({ times })} max={3} />
           <Label>Süre</Label>
           <ChoiceChips items={options.shortSeconds} value={s.shorts.seconds} onChange={(seconds) => setShorts({ seconds })} />
+          {options.shortsSources ? (
+            <>
+              <Label hint="Kesit: haftanın uzun videosundan en fazla 3 Shorts; kalan günler bağımsız yazılır.">Shorts kaynağı</Label>
+              <ChoiceChips items={options.shortsSources} value={s.shorts.source ?? 'bagimsiz'} onChange={(source) => setShorts({ source })} />
+            </>
+          ) : null}
         </Section>
 
         <Section title="Yayın">

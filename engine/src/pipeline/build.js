@@ -57,7 +57,8 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   const visuals = shots.map((s) => s.visual);
   console.log(`  ${job.scenes.length} sahne, ${shots.length} çekim`);
 
-  const charSrc = await characterImage(job.channelId, settings, cacheDir);
+  const theme = pick(options.visualStyles, settings.visualStyle)?.theme ?? null;
+  const charSrc = theme ? null : await characterImage(job.channelId, settings, cacheDir);
   const placement = characterPlacement(fmt);
   const badge = charSrc && settings.characterOnScreen
     ? await makeCharacterBadge(charSrc, placement.size, path.join(dir, 'rozet.png'))
@@ -68,7 +69,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (settings.template === 'animasyonlu' && remotionAvailable()) {
     console.log('  animasyonlu render (Remotion)…');
     try {
-      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir });
+      videoPath = await renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir, theme });
     } catch (e) {
       console.warn(`  Remotion render başarısız, klasik yönteme geçiliyor: ${e.message}`);
     }
@@ -107,7 +108,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
       const thumbBadge = charSrc ? await makeCharacterBadge(charSrc, 440, path.join(dir, 'kapak-rozet.png')) : null;
       if (remotionAvailable()) {
         try {
-          thumbnailPath = await thumbnailWithRemotion({ jobId: job.id, background, text: job.thumbnailText, badge: thumbBadge, settings, dir });
+          thumbnailPath = await thumbnailWithRemotion({ jobId: job.id, background, text: job.thumbnailText, badge: thumbBadge, settings, dir, theme });
         } catch (e) {
           console.warn(`  Remotion kapak başarısız, klasik kapak üretiliyor: ${e.message}`);
         }

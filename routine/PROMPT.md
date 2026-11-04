@@ -56,6 +56,17 @@ Kurallar:
 - `description`: 1-2 cümle ve `#flaggenduell #europa #länder #shorts`. Kaynak notu motor tarafından otomatik eklenir.
 - `hookText` yazma.
 
+## Uzun videodan kesit Shorts (`needed.json` öğesinde `clipOf` varsa)
+
+Bu Shorts bağımsız değildir; `clipOf` id'li uzun videonun bir bölümünden kurgulanır ve izleyiciyi uzun videoya çağırır.
+- Kaynak senaryoyu `queue/<clipOf>.json` ya da `done/<clipOf>.json` içinde oku. Kaynak da bu turda yazılacaksa (`needed.json`'da) **önce onu yaz**.
+- Aynı uzun videodan daha önce çıkmış kesitleri bul (`queue/` ve `done/` içinde `derivedFrom` değeri aynı olanlar) ve **farklı bir bölüm** seç: kendi başına anlaşılır, en çarpıcı bilgi ya da hikâye.
+- Dosyaya `"derivedFrom": "<clipOf>"` yaz.
+- Anlatım büyük ölçüde uzun videonun cümlelerinden gelir (doğrulayıcı kelimelerin en az %60'ının kaynakta geçmesini ister). Shorts'a uysun diye kısaltabilir, sırasını değiştirebilirsin.
+- İlk cümle yeni bir kanca olabilir. Son cümle hikâyenin tamamının kanaldaki uzun videoda olduğunu söyler ve izleyiciye seçmeli bir soru sorar. Açıklamaya bağlantıyı motor ekler.
+- Başlık kesite özgü ve yeni olsun, uzun videonun başlığını tekrar etme. `hookText` yaz.
+- Görsel alanları ve hareketli grafikler normal kurallara göre yazılır; uzun videodaki uygun `visual.query` değerlerini yeniden kullanabilirsin.
+
 ## Konu seçimi
 
 - `recentTitles` içindeki konuları **tekrarlama**. Aynı konunun farklı açısı ancak açıkça yeni bir bilgi katıyorsa olur.
@@ -82,6 +93,7 @@ Kurallar:
 - `visual.query`: Fotoğraf arşivlerinde (Wikimedia Commons, NASA, Pexels) aranacak **İngilizce**, 2-4 kelimelik somut ifade. Sahnede belirli bir yer, yapı, kişi, olay veya nesne geçiyorsa **özel adını** yaz (ör. `Hagia Sophia dome`, `Great Wall of China`, `Apollo 11 launch`, `Mimar Sinan`); arşivlerde gerçek fotoğrafı böyle bulunur. Genel sahnelerde somut nesne yaz (`stormy ocean night`). Soyut kavram yazma.
 - `visual.prompt`: Yapay zekâ görseli için **İngilizce**, tek cümlelik sahne tarifi: özne, ortam, ışık, kamera açısı. Stil kelimesi ekleme (stil otomatik eklenir). Gerçek kişilerin yüzünü, marka logosunu ve yazı içeren görseli isteme.
 - Ardışık sahnelerin görselleri birbirinden farklı olsun.
+- `brief.gorselStil` "Ansiklopedi" ise görseller eski bir ansiklopedide basılı levha gibi gösterilir. `visual.query` için arşivde gravür, patent çizimi, eski reklam ya da tarihi fotoğraf olarak bulunabilecek ifadeler seç (ör. `telephone patent drawing 1876`, `tea glass engraving`, `Galata Bridge 1890 photograph`). `visual.prompt` sade bir nesne veya kesit tarifi olsun (ör. `cross-section of a light bulb`). Anlatıcı karakter ekranda kodla çizilir; görsellerde onu tarif etme.
 
 ## Hareketli grafikler (`visual.motion`)
 

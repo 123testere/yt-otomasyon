@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { db } from './firebase.js';
-import { characterOf } from './options.js';
+import { characterOf, options, pick } from './options.js';
 import { hashSeed } from './util.js';
 import { aiImage } from '../pipeline/visuals.js';
 
@@ -15,6 +15,8 @@ const keyOf = (character) => `${character.id}|${character.prompt}`;
 export async function ensurePortrait(channelId, settings, outDir = os.tmpdir()) {
   const character = characterOf(settings);
   if (!character) return null;
+  // Ansiklopedi stilinde karakter (Nur Bey) Remotion'da kodla çizilir; yapay zekâ portresi gerekmez.
+  if (pick(options.visualStyles, settings.visualStyle)?.theme) return null;
 
   const ref = db().doc(`characters/${channelId}`);
   const saved = (await ref.get()).data();

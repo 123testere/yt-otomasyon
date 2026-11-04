@@ -35,6 +35,19 @@ function move(file, toDir) {
   fs.renameSync(file, path.join(toDir, path.basename(file)));
 }
 
+const FULL_VIDEO = { tr: 'Videonun tamamı', de: 'Ganzes Video', en: 'Full video' };
+
+// Uzun videodan kesit Shorts: açıklamaya uzun videonun bağlantısı (yüklenmişse) eklenir.
+async function withFullVideoLink(job, settings) {
+  if (!job.derivedFrom) return job;
+  const url = (await db().doc(`videos/${job.derivedFrom}`).get()).data()?.url;
+  if (!url) return job;
+  const label = FULL_VIDEO[settings.language] ?? FULL_VIDEO.en;
+  return { ...job, description: `${label}: ${url}
+
+${job.description}` };
+}
+
 async function main() {
   const started = Date.now();
   const firestore = db();
@@ -109,7 +122,7 @@ async function main() {
 
       const secret = (await firestore.doc(`secrets/${job.channelId}`).get()).data();
       if (!secret?.refreshToken) throw new AuthError('Kanalın yükleme izni yok; kanalı yeniden bağla');
-      const yt = await upload({ refreshToken: secret.refreshToken, job, settings, ...built });
+      const yt = await upload({ refreshToken: secret.refreshToken, job: await withFullVideoLink(job, settings), settings, ...built });
 
       await ref.update({ status: 'uploaded', youtubeId: yt.videoId, url: yt.url, scheduled: yt.scheduled,
         warning: yt.thumbnailWarning, updatedAt: new Date() });

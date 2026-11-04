@@ -34,7 +34,7 @@ async function remotion(args) {
 
 const accentOf = (settings) => (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
 
-export async function renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir }) {
+export async function renderWithRemotion({ job, settings, fmt, narrated, shots, badge, music, dir, theme = null }) {
   const stage = stager(job.id);
   try {
     // Çekim sınırlarını kümülatif saniyeden kareye çevir; yuvarlama hatası birikmesin.
@@ -75,21 +75,22 @@ export async function renderWithRemotion({ job, settings, fmt, narrated, shots, 
     const propsFile = path.join(dir, 'remotion-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));
     const out = path.join(dir, 'video.mp4');
-    await remotion(['render', ENTRY, 'Video', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    // Ansiklopedi teması kendi kompozisyonunda (remotion/src/Encyclopedia.jsx).
+    await remotion(['render', ENTRY, theme === 'ansiklopedi' ? 'Ansiklopedi' : 'Video', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
     return out;
   } finally {
     stage.cleanup();
   }
 }
 
-export async function thumbnailWithRemotion({ jobId, background, text, badge, settings, dir }) {
+export async function thumbnailWithRemotion({ jobId, background, text, badge, settings, dir, theme = null }) {
   const stage = stager(`${jobId}-kapak`);
   try {
-    const props = { background: stage.add(background), badge: stage.add(badge), text, lang: settings.language, accent: accentOf(settings) };
+    const props = { background: stage.add(background), badge: stage.add(badge), text, lang: settings.language, accent: accentOf(settings), theme };
     const propsFile = path.join(dir, 'kapak-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));
     const png = path.join(dir, 'kapak.png');
-    await remotion(['still', ENTRY, 'Thumb', png, `--props=${propsFile}`]);
+    await remotion(['still', ENTRY, theme === 'ansiklopedi' ? 'AnsiklopediThumb' : 'Thumb', png, `--props=${propsFile}`]);
     // YouTube küçük resim sınırı 2 MB; JPEG'e çevir.
     const jpg = path.join(dir, 'kapak.jpg');
     await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
