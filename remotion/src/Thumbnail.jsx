@@ -42,7 +42,7 @@ export function Thumbnail({ background, text, badge, lang, accent }) {
             return (
               <div key={i} style={last ? {
                 display: 'inline-block', color: '#111', backgroundColor: accent, WebkitTextStroke: '0',
-                padding: '0 18px 6px', marginTop: 10, borderRadius: 12, transform: 'rotate(-2deg)', textShadow: 'none',
+                padding: '0 18px 6px', marginTop: '0.16em', // Ş, Ç, Y gibi alt uzantılar kutuya değmesin borderRadius: 12, transform: 'rotate(-2deg)', textShadow: 'none',
               } : { color: '#fff' }}>{line}</div>
             );
           })}

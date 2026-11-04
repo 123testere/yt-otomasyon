@@ -54,10 +54,10 @@ export function ShortCover({ background, text, badge, lang, accent, theme }) {
           const last = i === lines.length - 1 && lines.length > 1;
           return (
             <div key={i} style={{
-              fontFamily: font, fontWeight: paper ? 700 : 400, fontSize: size, lineHeight: 1.02, textAlign: 'center',
+              fontFamily: font, fontWeight: paper ? 700 : 400, fontSize: size, lineHeight: 1.12, textAlign: 'center',
               color: last ? '#111' : ink,
               backgroundColor: last ? hot : 'transparent',
-              padding: last ? '4px 26px 10px' : 0, borderRadius: last ? 16 : 0, marginTop: last ? 18 : 0,
+              padding: last ? '4px 26px 10px' : 0, borderRadius: last ? 16 : 0, marginTop: last ? Math.round(size * 0.18) : 0,
               transform: last ? 'rotate(-2deg)' : 'none',
               WebkitTextStroke: last ? '0' : `${Math.round(size / 16)}px #000`, paintOrder: 'stroke fill',
               textShadow: last ? 'none' : '0 10px 30px rgba(0,0,0,0.8)',
