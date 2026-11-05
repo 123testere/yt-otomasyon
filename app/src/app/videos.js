@@ -76,8 +76,16 @@ export default function Videos() {
             </View>
             {v.error ? <Text style={st.error} numberOfLines={4}>{v.error}</Text> : null}
             {v.warning ? <Dim style={{ marginTop: 4, color: colors.warn }}>{v.warning}</Dim> : null}
+            {v.instagram ? (
+              <Dim style={{ marginTop: 4, color: v.instagram.durum === 'hata' ? colors.err : v.instagram.durum === 'yayinlandi' ? colors.ok : colors.dim }}>
+                Instagram: {{ bekliyor: 'yayın saatinde paylaşılacak', yayinlandi: 'paylaşıldı', hata: `gönderilemedi — ${v.instagram.hata ?? ''}` }[v.instagram.durum]}
+              </Dim>
+            ) : null}
             <View style={{ flexDirection: 'row', gap: 10, marginTop: 10 }}>
               {v.url ? <Button kind="secondary" title="YouTube'da aç" onPress={() => Linking.openURL(v.url)} style={{ flex: 1 }} /> : null}
+              {v.instagram?.permalink ? (
+                <Button kind="secondary" title="Instagram'da aç" onPress={() => Linking.openURL(v.instagram.permalink)} style={{ flex: 1 }} />
+              ) : null}
               {v.status === 'error' ? (
                 <Button
                   title={v.retry ? 'Sırada' : 'Yeniden dene'}

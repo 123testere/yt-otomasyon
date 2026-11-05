@@ -12,6 +12,7 @@ import { google } from 'googleapis';
 import { authFor } from './pipeline/youtube.js';
 import { updateStats } from './lib/stats.js';
 import { countVotes } from './lib/votes.js';
+import { publishDueReels } from './lib/instagram-queue.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -67,6 +68,7 @@ async function main() {
     await updateStats(firestore, doc, now).catch((e) => console.warn(`${doc.id} istatistik: ${e.message}`));
   }
   const votes = await countVotes(firestore, now);
+  await publishDueReels(firestore, now).catch((e) => console.warn(`Instagram: ${e.message}`));
   const channels = channelsSnap.docs
     .map((doc) => {
       const data = doc.data();

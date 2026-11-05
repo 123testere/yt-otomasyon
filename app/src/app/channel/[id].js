@@ -285,6 +285,16 @@ export default function ChannelSettings() {
           <Label hint="Her açıklamanın sonuna eklenir.">Sabit hashtag'ler</Label>
           <Field value={s.hashtags} onChangeText={(hashtags) => set({ hashtags })} placeholder="#tarih #belgesel" autoCapitalize="none" />
         </Section>
+
+        <Section title="Instagram">
+          <Toggle label="Shorts'ları Instagram'a Reels olarak da gönder" value={Boolean(s.instagram?.enabled)}
+            onChange={(enabled) => set({ instagram: { ...(s.instagram ?? {}), enabled } })} />
+          <Dim style={{ marginTop: 4 }}>
+            {s.instagram?.kullanici
+              ? `Bağlı hesap: @${s.instagram.kullanici}. Reels, YouTube'daki yayın saatinde (en geç bir saat içinde) paylaşılır.`
+              : 'Bu kanala henüz Instagram hesabı bağlanmadı.'}
+          </Dim>
+        </Section>
       </ScrollView>
 
       <View style={st.footer}>

@@ -9,6 +9,7 @@ import { resolveSettings } from './lib/options.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './lib/paths.js';
 import { buildVideo } from './pipeline/build.js';
 import { frameFromVideo, makeShortCover } from './pipeline/cover.js';
+import { queueForInstagram } from './lib/instagram-queue.js';
 import { run } from './lib/util.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
@@ -140,6 +141,8 @@ async function main() {
         warning: yt.thumbnailWarning, updatedAt: new Date() });
       move(file, DONE_DIR);
       console.log(`✓ ${yt.url}`);
+      // Instagram açık kanallarda Shorts, yayın saatinde Reels olarak da paylaşılır (senkronizasyon gönderir).
+      await queueForInstagram(firestore, await withFullVideoLink(job, settings), settings, built.videoPath);
       // Flaggenduell: maç yayınlandıktan sonra sezon tablosu kalıcı olarak güncellenir.
       if (built.leagueUpdate) await firestore.doc(`leagues/${job.channelId}`).set(built.leagueUpdate);
       // İlk yayından sonra ses ve karakter kilitlenir; kanal kimliği videodan videoya değişmesin.

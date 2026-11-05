@@ -37,6 +37,7 @@ jobs:
         working-directory: engine
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          GH_TOKEN: ${{ github.token }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TV_CLIENT_ID: ${{ secrets.YT_TV_CLIENT_ID }}
@@ -50,6 +51,7 @@ jobs:
           (cd engine && node src/kurulum.js)
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          GH_TOKEN: ${{ github.token }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TV_CLIENT_ID: ${{ secrets.YT_TV_CLIENT_ID }}
