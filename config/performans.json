@@ -1,0 +1,651 @@
+{
+  "UCEG9D-Kia1iw6-duhqlSlcg": {
+    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "title": "Untold Vault",
+    "hafta": "2026-W45",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde değerlendirilecek kadar izlenen video yok."
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-05T07:12:24.487Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [],
+    "videolar": []
+  },
+  "UCIa1D1I2HwWzylJDvNayeHw": {
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "title": "Burak kaan Gürer",
+    "hafta": "2026-W45",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde 3 video değerlendirildi: 2 iyi, 1 normal, 0 zayıf.",
+      "En iyisi “Mimar Sinan Ustalık Eserini 80 Yaşında Yaptı” (ortalamanın 189 katı). Konu ilgi gördü: video ortalamanın üstünde gösterildi.",
+      "2 videoda açılış zayıf: izleyici ilk saniyelerde gidiyor."
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-05T07:12:28.670Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [
+      {
+        "terim": "cs 1.5 nasıl indirilir",
+        "izlenme": 24
+      },
+      {
+        "terim": "age of empires 2 türkçe yapma",
+        "izlenme": 10
+      },
+      {
+        "terim": "counter strike 1.5 nasıl indirilir",
+        "izlenme": 8
+      },
+      {
+        "terim": "age of empires 2 nasıl indirilir",
+        "izlenme": 3
+      },
+      {
+        "terim": "burak güngör",
+        "izlenme": 2
+      },
+      {
+        "terim": "kleopatra",
+        "izlenme": 2
+      },
+      {
+        "terim": "cleopatra",
+        "izlenme": 1
+      },
+      {
+        "terim": "counter strike 1.5",
+        "izlenme": 1
+      },
+      {
+        "terim": "cs 1.3 nasıl indirilir",
+        "izlenme": 1
+      },
+      {
+        "terim": "cs 1.5",
+        "izlenme": 1
+      }
+    ],
+    "videolar": [
+      {
+        "baslik": "1513'te Çizilen Piri Reis Haritasının Sırrı",
+        "tip": "short",
+        "yayin": "2026-11-04",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Kağıt Parayı 1000 Yıl Önce Çinliler Kullandı",
+        "tip": "short",
+        "yayin": "2026-11-03",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "İstanbul'un Altında 336 Sütunlu Gizli Saray",
+        "tip": "short",
+        "yayin": "2026-11-02",
+        "izlenme7": 1,
+        "tutma": 12.29,
+        "kancaOran": 1,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "1400 Yıl Susan Dil: Rosetta Taşı Her Şeyi Değiştirdi",
+        "tip": "long",
+        "yayin": "2026-11-02",
+        "izlenme7": 51,
+        "tutma": 36.92,
+        "kancaOran": 0.843,
+        "tutma30": 0.442,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Mimar Sinan Ustalık Eserini 80 Yaşında Yaptı",
+        "tip": "short",
+        "yayin": "2026-11-01",
+        "izlenme7": 1133,
+        "tutma": 42.39,
+        "kancaOran": 0.383,
+        "tutma30": 0.3,
+        "tiklanma7": null,
+        "etiket": "iyi",
+        "nedenler": [
+          "İzlemeyi seçen %38 (ortalama %47): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Piramitlerden 7000 Yıl Eski Tapınak Şanlıurfa'da",
+        "tip": "short",
+        "yayin": "2026-11-01",
+        "izlenme7": 6,
+        "tutma": 32.43,
+        "kancaOran": 1,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "600 Yıldır Kimsenin Okuyamadığı Kitap",
+        "tip": "short",
+        "yayin": "2026-10-31",
+        "izlenme7": 211,
+        "tutma": 34.59,
+        "kancaOran": 0.251,
+        "tutma30": 0.151,
+        "tiklanma7": null,
+        "etiket": "iyi",
+        "nedenler": [
+          "İzlemeyi seçen %25 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %34,6 (kanal ortalaması %47,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:07 civarında.",
+          "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Kleopatra Piramitlere Değil Bize Daha Yakın",
+        "tip": "short",
+        "yayin": "2026-10-31",
+        "izlenme7": 11,
+        "tutma": 190.14,
+        "kancaOran": 0.091,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Ayasofya'nın Kubbesi 558'de Çöktü",
+        "tip": "short",
+        "yayin": "2026-10-30",
+        "izlenme7": 3,
+        "tutma": 55.38000000000001,
+        "kancaOran": 0.667,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Çin Seddi Uzaydan Görünmüyor: İşte Nedeni",
+        "tip": "short",
+        "yayin": "2026-10-30",
+        "izlenme7": 5,
+        "tutma": 41.3,
+        "kancaOran": 0.6,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Çin Seddi Uzaydan Görünür mü? Cevap Hayır",
+        "tip": "short",
+        "yayin": "2026-10-30",
+        "izlenme7": 6,
+        "tutma": 63.96999999999999,
+        "kancaOran": 0.333,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Oxford, Aztek İmparatorluğu'ndan Daha Eski",
+        "tip": "short",
+        "yayin": "2026-10-30",
+        "izlenme7": 4,
+        "tutma": 60.22,
+        "kancaOran": 0.75,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Binlerce Yıl Bozulmayan Tek Yiyecek",
+        "tip": "short",
+        "yayin": "2026-10-30",
+        "izlenme7": 45,
+        "tutma": 53.07999999999999,
+        "kancaOran": 0.178,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "3 Kalbi ve Mavi Kanı Olan Canlı",
+        "tip": "short",
+        "yayin": "2026-10-29",
+        "izlenme7": 37,
+        "tutma": 41.36,
+        "kancaOran": 0.27,
+        "tutma30": 0.2,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      }
+    ]
+  },
+  "UCPtL84Agfh5hzoTQqE4jD0w": {
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "title": "Lamba Altında",
+    "hafta": "2026-W45",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde 9 video değerlendirildi: 0 iyi, 8 normal, 1 zayıf.",
+      "En zayıfı “Telefonun Gerçek Mucidi 10 Doları Ödeyemedi! 📞 #shorts”. İzlemeyi seçen %30 (ortalama %46): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+      "3 videoda izleyici ortada kopuyor: anlatım sıkılaştırılmalı."
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-05T07:12:43.087Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [
+      {
+        "terim": "alan turing",
+        "izlenme": 6
+      },
+      {
+        "terim": "yukarıda lamba aşağıda telefon",
+        "izlenme": 6
+      },
+      {
+        "terim": "mob farmı nasıl yapılır",
+        "izlenme": 3
+      },
+      {
+        "terim": "buz devri",
+        "izlenme": 2
+      },
+      {
+        "terim": "fabrika",
+        "izlenme": 2
+      },
+      {
+        "terim": "jon snow edit",
+        "izlenme": 2
+      },
+      {
+        "terim": "srk 125 r",
+        "izlenme": 2
+      },
+      {
+        "terim": "yeraltı son bölüm",
+        "izlenme": 2
+      },
+      {
+        "terim": "ahtapot",
+        "izlenme": 1
+      },
+      {
+        "terim": "aleksey batrakov",
+        "izlenme": 1
+      }
+    ],
+    "videolar": [
+      {
+        "baslik": "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
+        "tip": "short",
+        "yayin": "2026-11-03",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
+        "tip": "long",
+        "yayin": "2026-11-02",
+        "izlenme7": 0,
+        "tutma": 0,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
+        "tip": "short",
+        "yayin": "2026-11-02",
+        "izlenme7": 689,
+        "tutma": 89.43,
+        "kancaOran": 0.322,
+        "tutma30": 0.797,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [
+          "İzlemeyi seçen %32 (ortalama %46): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %89,4 (ortalama %61,4): izleyici sonuna kadar kaldı."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Aynı Gün Patent Ofisine Giden İki Adam: Telefon Kimin? 📞 #shorts",
+        "tip": "short",
+        "yayin": "2026-10-31",
+        "izlenme7": 739,
+        "tutma": 67.18,
+        "kancaOran": 0.345,
+        "tutma30": 0.561,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %35 (ortalama %46): ilk saniyelerde kaydırılıyor, kanca zayıf."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Telefonun Gerçek Mucidi 10 Doları Ödeyemedi! 📞 #shorts",
+        "tip": "short",
+        "yayin": "2026-10-30",
+        "izlenme7": 260,
+        "tutma": 76.03,
+        "kancaOran": 0.304,
+        "tutma30": 0.658,
+        "tiklanma7": null,
+        "etiket": "zayif",
+        "nedenler": [
+          "İzlemeyi seçen %30 (ortalama %46): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %76 (ortalama %61,4): izleyici sonuna kadar kaldı."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "29 Ekim 1961: Devrim otomobilinin benzini bitti 🇹🇷 #shorts",
+        "tip": "short",
+        "yayin": "2026-10-28",
+        "izlenme7": 1258,
+        "tutma": 86.46,
+        "kancaOran": 0.485,
+        "tutma30": 0.816,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %49 (ortalama %42): açılış güçlü.",
+          "Ortalama izlenme %86,5 (ortalama %61,4): izleyici sonuna kadar kaldı."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Grizu nedir? Madenciyi ilk kim korudu? ⛏️ #shorts",
+        "tip": "short",
+        "yayin": "2026-10-28",
+        "izlenme7": 746,
+        "tutma": 60.08,
+        "kancaOran": 0.426,
+        "tutma30": 0.604,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Telefon İstanbul'a Neden Yıllarca Gelemedi? #shorts",
+        "tip": "short",
+        "yayin": "2026-10-27",
+        "izlenme7": 1221,
+        "tutma": 34.51,
+        "kancaOran": 0.411,
+        "tutma30": 0.195,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "Ortalama izlenme %34,5 (kanal ortalaması %64,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "'Mr. Watson, Buraya Gelin' Cümlesinin Gerçek Hikayesi",
+        "tip": "long",
+        "yayin": "2026-10-26",
+        "izlenme7": 5,
+        "tutma": 3.7800000000000002,
+        "kancaOran": 0.8,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Isırılmış elma logosu Alan Turing'e bir saygı mı? 🍎 Çoğu kişi öyle sanıyor ama logoyu çizen",
+        "tip": "short",
+        "yayin": "2026-10-26",
+        "izlenme7": 1320,
+        "tutma": 62.8,
+        "kancaOran": 0.598,
+        "tutma30": 0.591,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %60 (ortalama %42): açılış güçlü."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "İnce belli çay bardağını hepimiz tanırız, peki onu kim icat etti? ☕ Bilinen en eski izlerden biri",
+        "tip": "short",
+        "yayin": "2026-10-25",
+        "izlenme7": 1205,
+        "tutma": 48.71,
+        "kancaOran": 0.573,
+        "tutma30": 0.35,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %57 (ortalama %42): açılış güçlü.",
+          "Ortalama izlenme %48,7 (kanal ortalaması %64,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:05 civarında."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Saatleri ileri almayı bir böcek meraklısı önerdi ⏰ #shorts",
+        "tip": "short",
+        "yayin": "2026-10-23",
+        "izlenme7": 1250,
+        "tutma": 72.13,
+        "kancaOran": 0.601,
+        "tutma30": 0.63,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %60 (ortalama %42): açılış güçlü."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Kalorifer peteği aslında bir sera için icat edildi 🔥 #shorts",
+        "tip": "short",
+        "yayin": "2026-10-23",
+        "izlenme7": 1307,
+        "tutma": 37.09,
+        "kancaOran": 0.553,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %55 (ortalama %42): açılış güçlü.",
+          "Ortalama izlenme %37,1 (kanal ortalaması %64,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:09 civarında."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "İstanbul'un ilk elektriği bugün bir müzede duruyor #shorts",
+        "tip": "short",
+        "yayin": "2026-10-21",
+        "izlenme7": 195,
+        "tutma": 54.14,
+        "kancaOran": 0.364,
+        "tutma30": 0.48,
+        "tiklanma7": null,
+        "etiket": "zayif",
+        "nedenler": [
+          "İzlemeyi seçen %36 (ortalama %46): ilk saniyelerde kaydırılıyor, kanca zayıf."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Edison bir savaşı kaybetti. Rakibi bir şelaleydi. #shorts",
+        "tip": "short",
+        "yayin": "2026-10-21",
+        "izlenme7": 538,
+        "tutma": 65.6,
+        "kancaOran": 0.394,
+        "tutma30": 0.587,
+        "tiklanma7": null,
+        "etiket": "zayif",
+        "nedenler": [
+          "Kapak, kanca ve izlenme süresi normal: video az kişiye gösterilmiş. Sorun büyük olasılıkla konu ya da yayın saati."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Şarj aletiniz 1831'de doğdu ⚡ #shorts",
+        "tip": "short",
+        "yayin": "2026-10-21",
+        "izlenme7": 1194,
+        "tutma": 47.06,
+        "kancaOran": 0.561,
+        "tutma30": 0.332,
+        "tiklanma7": null,
+        "etiket": "normal",
+        "nedenler": [
+          "İzlemeyi seçen %56 (ortalama %42): açılış güçlü.",
+          "Ortalama izlenme %47,1 (kanal ortalaması %64,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:08 civarında.",
+          "1000 izlenmede 3,4 abone (ortalama 1,4): kanala bağladı."
+        ],
+        "deney": null
+      },
+      {
+        "baslik": "Akımların Savaşı Hangi Lambayı Evine Soktu? Gerçek Hikaye!",
+        "tip": "long",
+        "yayin": "2026-10-21",
+        "izlenme7": 16,
+        "tutma": 14.49,
+        "kancaOran": 0.625,
+        "tutma30": 0.455,
+        "tiklanma7": null,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      }
+    ]
+  },
+  "UCyLqvRzGPIsjgOvr7RUxycA": {
+    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "title": "Flaggenduell | Länder im Duell",
+    "hafta": "2026-W45",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde değerlendirilecek kadar izlenen video yok."
+    ],
+    "deney": {
+      "id": "muzik-seviye",
+      "tip": "short",
+      "ad": "Müzik seviyesi: şimdiki mi, bir kademe kısık mı?",
+      "hipotez": "Müzik biraz kısılınca anlatım daha net duyulur, izleyici daha uzun kalır.",
+      "A": "Şimdiki seviye",
+      "B": "Bir kademe kısık",
+      "baslangic": "2026-11-05T07:12:56.886Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [
+      {
+        "terim": "countries bordering china",
+        "izlenme": 2
+      }
+    ],
+    "videolar": [
+      {
+        "baslik": "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
+        "tip": "short",
+        "yayin": "2026-11-04",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "baslik": "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
+        "tip": "short",
+        "yayin": "2026-11-03",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      }
+    ]
+  }
+}

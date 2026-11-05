@@ -44,7 +44,16 @@
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun"
+      "extraInstructions": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
     },
     "brief": {
       "format": "belgesel",
@@ -55,8 +64,11 @@
       "gorselStil": "YZ görsel – anime",
       "cocukIcerigi": false,
       "ekTalimat": "Hızlı olsun konuşmalar hook cumleler kesinlikle olmalı görseller kaliteli olsun",
-      "videoSayisi": null
+      "videoSayisi": null,
+      "dersler": []
     },
+    "oynatmaListeleri": [],
+    "deney": null,
     "recentTitles": [],
     "oylamalar": []
   },
@@ -105,7 +117,16 @@
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun "
+      "extraInstructions": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
     },
     "brief": {
       "format": "belgesel",
@@ -116,7 +137,18 @@
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
       "ekTalimat": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
-      "videoSayisi": 4
+      "videoSayisi": 4,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
       "Electric Eel: The 860-Volt Fish That Isn't an Eel",
@@ -171,7 +203,16 @@
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle"
+      "extraInstructions": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
     },
     "brief": {
       "format": "belgesel",
@@ -182,7 +223,18 @@
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
       "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
-      "videoSayisi": 250
+      "videoSayisi": 250,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
       "Gordion Düğümünü Kılıçla Kesen İskender'in Hikâyesi",
@@ -286,6 +338,15 @@
       "aiDisclosure": true,
       "hashtags": "",
       "extraInstructions": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      },
       "instagram": {
         "enabled": true,
         "kullanici": "lamba.altinda"
@@ -300,7 +361,18 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
-      "videoSayisi": 33
+      "videoSayisi": 33,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
       "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
@@ -382,7 +454,16 @@
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": ""
+      "extraInstructions": "",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
     },
     "brief": {
       "format": "flaggenduell",
@@ -393,7 +474,18 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 4
+      "videoSayisi": 4,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "muzik-seviye",
+      "tip": "short",
+      "ad": "Müzik seviyesi: şimdiki mi, bir kademe kısık mı?",
+      "hipotez": "Müzik biraz kısılınca anlatım daha net duyulur, izleyici daha uzun kalır.",
+      "A": "Şimdiki seviye",
+      "B": "Bir kademe kısık",
+      "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
       "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
