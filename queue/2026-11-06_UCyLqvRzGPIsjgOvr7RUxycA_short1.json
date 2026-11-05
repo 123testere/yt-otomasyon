@@ -1,0 +1,37 @@
+{
+  "id": "2026-11-06_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-06T05:00:00.000Z",
+  "topic": "Oliven",
+  "title": "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Oliven-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": [
+    "flaggenduell",
+    "europa",
+    "länder vergleich",
+    "oliven",
+    "landwirtschaft",
+    "ranking",
+    "europa daten",
+    "länderduell"
+  ],
+  "duell": {
+    "topicId": "oliven",
+    "why": [
+      "Heiße, trockene Sommer",
+      "Milde Winter",
+      "Riesige Olivenhaine"
+    ],
+    "script": {
+      "intro": "Welches Land erntet die meisten Oliven Europas? 46 Flaggen rutschen in den Trichter – nur eine kommt durch!",
+      "nodata": "32 Länder haben keine Olivendaten und fliegen sofort raus. Nur 14 bleiben im Rennen!",
+      "rounds": "Jetzt wird gesiebt! Eine Flagge nach der anderen verschwindet, und Italien verpasst das Finale um rund 1,5 Millionen Tonnen!",
+      "final": "Finale! Spanien gegen die Türkei – Olivenhain gegen Olivenhain, nur einer bleibt oben!",
+      "winner": "Spanien holt den Sieg! Über 8,3 Millionen Tonnen – mehr als doppelt so viel wie die Türkei!",
+      "why": "Warum Spanien? Heiße, trockene Sommer, milde Winter und riesige Olivenhaine, vor allem in Andalusien.",
+      "table": "Vor diesem Duell führten die Türkei und die Ukraine mit je 15 Punkten – jetzt mischt Spanien die Tabelle auf! Schreib dein Thema in die Kommentare!"
+    }
+  }
+}

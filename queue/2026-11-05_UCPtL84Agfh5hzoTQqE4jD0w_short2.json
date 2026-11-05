@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-05T16:00:00.000Z",
+  "topic": "Fermuarın ayakkabı için tasarlanması ve 1913'te sağlam hale gelmesi",
+  "title": "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
+  "hookText": "Ceket için değilmiş",
+  "description": "Eşyaların Hikayesi #31\nFermuarın atası 1893'te ayakkabı için patentlendi. Sağlam fermuarı ise 1913'te Gideon Sundback geliştirdi.\n\n#fermuar #icatlar #eşyalarınhikayesi #shorts",
+  "tags": [
+    "fermuar",
+    "fermuar nasıl icat edildi",
+    "whitcomb judson",
+    "gideon sundback",
+    "icatlar",
+    "eşyaların hikayesi",
+    "fermuarın tarihi",
+    "lamba altında"
+  ],
+  "baslikKart": [
+    "Fermuar önce",
+    "hangi eşya içindi?"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Asansör",
+    "b": "Buzdolabı"
+  },
+  "scenes": [
+    {
+      "narration": "Fermuar ilk kez ceket için değil, ayakkabı için tasarlandı.",
+      "ifade": "saskin",
+      "cizim": "ink([[320, 300], [420, 300], [430, 470], [640, 480], [690, 560], [320, 560]], { close: true, fill: '#EFE4CB', w: 4, seed: 1, pp: eo(pr(u, 0, .8)) });\nfor (let i = 0; i < 6; i++) ink(ln([360, 330 + i * 32], [410, 330 + i * 32], 3), { w: 4, c: K.bordo, seed: 100 + i, pp: eo(pr(u, .8 + i * .1, 1.3 + i * .1)) });\netk('ayakkabı', 500, 650, eo(pr(u, 1, 1.6)), { size: 46 });"
+    },
+    {
+      "narration": "Whitcomb Judson, 1893'te bir kenetleme kilidinin patentini aldı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(320, 170, 360, 420), { close: true, fill: '#FBF6EA', w: 4, seed: 2, pp: eo(pr(u, 0, .7)) });\nfor (let i = 0; i < 6; i++) { const y = 230 + i * 55, a = eo(pr(u, .5 + i * .1, 1 + i * .1));\n  ink(ln([440, y], [490, y], 3), { w: 5, seed: 110 + i, pp: a }); ink(ln([510, y], [560, y], 3), { w: 5, seed: 120 + i, pp: a }); }\ntxt('1893', 500, 650, 60, { c: K.ak, a: eo(pr(u, 1, 1.6)) });"
+    },
+    {
+      "narration": "Ama düzgün çalışmıyordu, sık sık açılıp takılıyordu.",
+      "ifade": "endiseli",
+      "cizim": "for (let i = 0; i < 6; i++) { const y = 200 + i * 60, o = i > 2 ? Math.sin(T * 5 + i) * 18 * eo(pr(u, .6, 1.2)) : 0;\n  ink(ln([420, y], [480 - o, y], 3), { w: 6, seed: 130 + i, pp: eo(pr(u, i * .08, .6 + i * .08)) });\n  ink(ln([520 + o, y + (i > 2 ? 14 : 0)], [580 + o, y + (i > 2 ? 14 : 0)], 3), { w: 6, seed: 140 + i, pp: eo(pr(u, i * .08, .6 + i * .08)) }); }\netk('takılıyor', 500, 640, eo(pr(u, 1, 1.6)), { size: 46, c: K.bordo });"
+    },
+    {
+      "narration": "1913'te Gideon Sundback dişleri sıklaştırıp sağlam fermuarı yaptı.",
+      "ifade": "gururlu",
+      "cizim": "for (let i = 0; i < 12; i++) { const y = 150 + i * 40, a = eo(pr(u, i * .06, .5 + i * .06));\n  ink(kutu(440, y, 50, 20), { close: true, fill: K.pirinc, w: 3, seed: 150 + i, pp: a });\n  ink(kutu(510, y + 20, 50, 20), { close: true, fill: K.pirinc, w: 3, seed: 170 + i, pp: a }); }\ntxt('1913', 740, 380, 72, { c: K.ak, a: eo(pr(u, 1, 1.6)) });\netk('Gideon Sundback', 500, 650, eo(pr(u, 1.2, 1.8)), { size: 44 });"
+    },
+    {
+      "narration": "Zipper adı ise 1923'te lastik çizme reklamıyla yayıldı.",
+      "ifade": "merakli",
+      "cizim": "ink([[380, 160], [620, 160], [620, 440], [700, 500], [700, 580], [380, 580]], { close: true, fill: '#3E4A63', w: 4, seed: 3, pp: eo(pr(u, 0, .8)) });\nink(ln([500, 160], [500, 580], 14), { w: 5, c: K.pirinc, seed: 4, pp: eo(pr(u, .6, 1.2)) });\nconst k = 160 + 420 * eo(pr(u, 1, 1.9));\nink(kutu(480, k, 40, 50), { close: true, fill: K.pirinc, w: 3, seed: 5, pp: eo(pr(u, .8, 1.2)) });\ntxt('zip!', 200, 330, 64, { c: K.ak, a: eo(pr(u, 1.6, 2.2)) });"
+    },
+    {
+      "narration": "Sonra ceketlere, pantolonlara, çantalara kadar her yere girdi.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink([[330, 220], [670, 220], [720, 330], [720, 560], [280, 560], [280, 330]], { close: true, fill: '#EFE4CB', w: 4, seed: 6, pp: eo(pr(u, 0, .8)) });\nink(ln([500, 220], [500, 560], 14), { w: 5, c: K.pirinc, seed: 7, pp: eo(pr(u, .6, 1.3)) });\nfor (let i = 0; i < 3; i++) ink(kutu(330 + i * 150, 600, 60, 36), { close: true, fill: '#EFE4CB', w: 3, seed: 8 + i, pp: eo(pr(u, 1 + i * .2, 1.6 + i * .2)) });\netk('ceket', 500, 150, eo(pr(u, .8, 1.3)), { size: 42 });"
+    },
+    {
+      "narration": "Yarın akşam: termos. Sırada hangisi olsun, asansör mü buzdolabı mı? Yorumlara A ya da B yazın.",
+      "ifade": "merakli",
+      "cizim": "txt('?', MX, 420, 200, { c: K.ak, a: eo(pr(u, .3, 1)) });"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "2026-11-05_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-05T11:00:00.000Z",
+  "topic": "The peacock mantis shrimp's record-breaking club strike",
+  "title": "Mantis Shrimp: The 50 mph Punch That Cracks Glass",
+  "hookText": "Fastest punch alive",
+  "description": "The peacock mantis shrimp swings its club at about 23 meters per second underwater. See how it scores in our attack and defense ratings.\n\n#mantisshrimp #animals #nature #shorts",
+  "tags": [
+    "mantis shrimp",
+    "peacock mantis shrimp",
+    "fastest punch",
+    "animal attacks",
+    "ocean animals",
+    "animal comparison",
+    "nature facts",
+    "sea creatures"
+  ],
+  "scenes": [
+    {
+      "narration": "A shrimp the size of your hand throws the fastest punch in the animal kingdom.",
+      "visual": {
+        "query": "peacock mantis shrimp",
+        "prompt": "a vividly colored peacock mantis shrimp raising its club claw on a coral reef, macro shot, sharp light"
+      }
+    },
+    {
+      "narration": "The peacock mantis shrimp whips its club forward at about 23 meters per second, roughly 50 miles per hour, and it does that underwater.",
+      "visual": {
+        "query": "mantis shrimp strike",
+        "prompt": "a mantis shrimp claw striking forward underwater with a trail of bubbles, side view, high speed look",
+        "motion": {
+          "type": "stat",
+          "value": "23 m/s",
+          "label": "Club strike speed"
+        }
+      }
+    },
+    {
+      "narration": "The acceleration is over ten thousand times gravity, so fast that the water boils into tiny bubbles around the claw.",
+      "visual": {
+        "query": "cavitation bubbles water",
+        "prompt": "tiny glowing bubbles collapsing in dark water near a shrimp claw, macro, dramatic light"
+      }
+    },
+    {
+      "narration": "When those bubbles collapse, they create a second shockwave, so even a near miss can stun its prey.",
+      "visual": {
+        "query": "shockwave underwater",
+        "prompt": "a ripple shockwave spreading through clear blue water around a small crab, close shot"
+      }
+    },
+    {
+      "narration": "It smashes snail shells and crab armor, and large ones have been known to crack aquarium glass.",
+      "visual": {
+        "query": "crab shell broken",
+        "prompt": "a cracked snail shell and crab on sand next to a mantis shrimp burrow, underwater close up"
+      }
+    },
+    {
+      "narration": "Attack score: ten out of ten. Defense score: only four, because it hides in a burrow and relies on its punch.",
+      "visual": {
+        "query": "mantis shrimp burrow",
+        "prompt": "a mantis shrimp peeking out of a rocky burrow on the seabed, eyes visible, soft light",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Attack",
+            "value": "10/10"
+          },
+          "right": {
+            "title": "Defense",
+            "value": "4/10"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Would you bet on this tiny fighter against a crab? Comment your pick, and follow for more animal showdowns.",
+      "visual": {
+        "query": "crab versus shrimp",
+        "prompt": "a small crab facing a colorful shrimp on a reef floor, dramatic side light",
+        "motion": {
+          "type": "question",
+          "text": "Would you bet on the shrimp?"
+        }
+      }
+    }
+  ]
+}

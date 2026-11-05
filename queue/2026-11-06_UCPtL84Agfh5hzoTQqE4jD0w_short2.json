@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-06T16:00:00.000Z",
+  "topic": "James Dewar'ın 1892'de termosun atası vakumlu kabı yapması",
+  "title": "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
+  "hookText": "Çay için değilmiş",
+  "description": "Eşyaların Hikayesi #33\n1892'de James Dewar çift cidarlı vakumlu kabı soğuk sıvıları saklamak için yaptı. Termos ticari olarak 1904'te satışa çıktı.\n\n#termos #icatlar #eşyalarınhikayesi #shorts",
+  "tags": [
+    "termos",
+    "termos nasıl icat edildi",
+    "james dewar",
+    "icatlar",
+    "eşyaların hikayesi",
+    "vakumlu kap",
+    "termosun tarihi",
+    "lamba altında"
+  ],
+  "baslikKart": [
+    "Termos çay için",
+    "icat edilmedi"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Şemsiye",
+    "b": "Ayna"
+  },
+  "scenes": [
+    {
+      "narration": "Termos çayı sıcak tutmak için değil, çok soğuk sıvıları saklamak için icat edildi.",
+      "ifade": "saskin",
+      "cizim": "ink(kutu(410, 200, 180, 380), { close: true, fill: '#EFE4CB', w: 4, seed: 1, pp: eo(pr(u, 0, .8)) });\nink(kutu(430, 150, 140, 50), { close: true, fill: K.pirinc, w: 4, seed: 2, pp: eo(pr(u, .6, 1.1)) });\nfor (let i = 0; i < 4; i++) { const a = eo(pr(u, 1 + i * .15, 1.6 + i * .15));\n  ink(ln([740, 330 + i * 40], [800, 330 + i * 40], 3), { w: 4, c: K.mavi, seed: 220 + i, pp: a });\n  ink(ln([770, 310 + i * 40], [770, 350 + i * 40], 3), { w: 4, c: K.mavi, seed: 230 + i, pp: a }); }\netk('soğuk', 770, 520, eo(pr(u, 1.4, 2)), { size: 44 });"
+    },
+    {
+      "narration": "İskoç bilim insanı James Dewar bu kabı 1892'de yaptı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(ell(500, 330, 150, 150, 36), { w: 4, seed: 3, pp: eo(pr(u, 0, .8)) });\nink(ell(500, 330, 100, 100, 36), { w: 4, seed: 4, pp: eo(pr(u, .4, 1.1)) });\nink(ln([430, 190], [430, 120], 4), { w: 4, seed: 5, pp: eo(pr(u, .8, 1.2)) }); ink(ln([570, 190], [570, 120], 4), { w: 4, seed: 6, pp: eo(pr(u, .8, 1.2)) });\ntxt('1892', 500, 600, 66, { c: K.ak, a: eo(pr(u, 1.2, 1.8)) });\netk('James Dewar', 500, 665, eo(pr(u, 1.5, 2)), { size: 40 });"
+    },
+    {
+      "narration": "Çift cidarlı kabın arasındaki havayı çekince ısı geçemedi.",
+      "ifade": "merakli",
+      "cizim": "ink(kutu(360, 190, 280, 380), { close: true, fill: '#FBF6EA', w: 4, seed: 7, pp: eo(pr(u, 0, .7)) });\nink(kutu(410, 240, 180, 330), { close: true, fill: '#EFE4CB', w: 4, seed: 8, pp: eo(pr(u, .4, 1.1)) });\nconst a = eo(pr(u, 1, 1.7));\nok([250, 380], [345, 380], { c: K.bordo, pp: a, seed: 240 });\nink(ln([350, 345], [370, 415], 4), { w: 6, c: K.bordo, seed: 241, pp: a });\ncizgiEtiket('boşluk', [385, 300], [690, 280], eo(pr(u, 1.4, 2)), { size: 42 });"
+    },
+    {
+      "narration": "Dewar buluşunu patentlemedi, termos 1904'te Almanya'da satışa çıktı.",
+      "ifade": "dusunceli",
+      "cizim": "ink(ln([140, 380], [860, 380], 20), { w: 4, pp: eo(pr(u, 0, 1)) });\nfor (const [x, yil, ad, k] of [[300, '1892', 'Dewar', 0], [700, '1904', 'Almanya', 1]]) { const a = eo(pr(u, .4 + k * 1.2, 1 + k * 1.2));\n  ctx.save(); ctx.globalAlpha = a; ctx.beginPath(); ctx.arc(x, 380, 18, 0, 7); ctx.fillStyle = k ? K.ak : K.s; ctx.fill(); ctx.restore();\n  txt(yil, x, 320, 64, { a, c: k ? K.ak : K.s }); etk(ad, x, 460, a, { size: 40 }); }"
+    },
+    {
+      "narration": "Thermos adı, Yunanca sıcak anlamına gelen sözden türetildi.",
+      "ifade": "anlatiyor",
+      "cizim": "txt('THERMOS', 500, 330, 96, { c: K.bordo, a: eo(pr(u, 0, .8)) });\nink(ln([200, 360], [800, 360], 16), { w: 4, seed: 9, pp: eo(pr(u, .5, 1.2)) });\netk('Yunanca: therme = sıcak', 500, 460, eo(pr(u, 1, 1.7)), { size: 46 });\nfor (let i = 0; i < 3; i++) { const q = []; for (let j = 0; j <= 8; j++) q.push([420 + i * 80 + Math.sin(j + T * 3 + i) * 10, 600 - j * 20]);\n  ink(q, { w: 3.4, c: K.s, seed: 250 + i, pp: eo(pr(u, 1.4 + i * .1, 2)), amp: .4 }); }"
+    },
+    {
+      "narration": "Bizde de piknikte, yolculukta, nöbette çay hep termosla taşınır.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(kutu(300, 260, 120, 300), { close: true, fill: '#EFE4CB', w: 4, seed: 10, pp: eo(pr(u, 0, .7)) });\nink(kutu(310, 220, 100, 40), { close: true, fill: K.pirinc, w: 4, seed: 11, pp: eo(pr(u, .5, 1)) });\nconst a = eo(pr(u, 1, 1.7));\nink(kutu(580, 420, 110, 130), { close: true, fill: '#FBF6EA', w: 4, seed: 12, pp: a });\nink(ell(700, 485, 40, 40, 20, -Math.PI / 2, Math.PI / 2), { w: 4, seed: 13, pp: a });\nink(ell(635, 400, 60, 12, 20), { close: true, fill: '#B5432F', w: 3, seed: 14, pp: a });\netk('çay', 635, 610, a, { size: 46 });"
+    },
+    {
+      "narration": "Sizde termosta çay mı olur kahve mi? Sırada hangisi olsun, şemsiye mi ayna mı? Yorumlara A ya da B yazın.",
+      "ifade": "merakli",
+      "cizim": "txt('?', MX, 420, 200, { c: K.ak, a: eo(pr(u, .3, 1)) });"
+    }
+  ]
+}

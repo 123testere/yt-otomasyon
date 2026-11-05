@@ -1,0 +1,96 @@
+{
+  "id": "2026-11-06_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-06T11:00:00.000Z",
+  "topic": "Cheetah and peregrine falcon speed comparison",
+  "title": "Cheetah vs Peregrine Falcon: The Fastest Animal Ever",
+  "hookText": "Land vs sky speed duel",
+  "description": "The cheetah is the fastest land animal, but the peregrine falcon is far faster in a dive. Compare their speeds and scores.\n\n#cheetah #peregrinefalcon #animals #shorts",
+  "tags": [
+    "cheetah",
+    "peregrine falcon",
+    "fastest animal",
+    "animal speed",
+    "animal comparison",
+    "cheetah vs falcon",
+    "nature facts",
+    "wildlife"
+  ],
+  "scenes": [
+    {
+      "narration": "The fastest animal on land meets the fastest animal in the sky. Who wins?",
+      "visual": {
+        "query": "cheetah running",
+        "prompt": "a cheetah sprinting across golden savanna grass with dust trailing, low angle, sharp motion"
+      }
+    },
+    {
+      "narration": "A cheetah can reach around 100 kilometers per hour, and it speeds up from a standstill within just a few seconds.",
+      "visual": {
+        "query": "cheetah sprint",
+        "prompt": "a cheetah mid-stride with all four feet off the ground, side view, savanna sunrise",
+        "motion": {
+          "type": "stat",
+          "value": "~100 km/h",
+          "label": "Cheetah top speed"
+        }
+      }
+    },
+    {
+      "narration": "But that speed is a short burst. The chase usually lasts only a few hundred meters before the cat is exhausted.",
+      "visual": {
+        "query": "cheetah resting",
+        "prompt": "a tired cheetah panting in the grass after a chase, close shot, warm light"
+      }
+    },
+    {
+      "narration": "The peregrine falcon folds its wings and dives, in a move called a stoop, at over three hundred kilometers per hour.",
+      "visual": {
+        "query": "peregrine falcon dive",
+        "prompt": "a peregrine falcon diving steeply with wings tucked against a bright sky, dramatic angle",
+        "motion": {
+          "type": "stat",
+          "value": "300+ km/h",
+          "label": "Falcon stoop speed"
+        }
+      }
+    },
+    {
+      "narration": "Its nostrils have small bony cones that help it breathe at that speed, and it strikes prey in midair.",
+      "visual": {
+        "query": "peregrine falcon",
+        "prompt": "a peregrine falcon perched on a cliff edge, head turned, sharp feather detail"
+      }
+    },
+    {
+      "narration": "Speed score: cheetah nine, falcon ten. Endurance score: cheetah three, falcon seven.",
+      "visual": {
+        "query": "falcon versus cheetah",
+        "prompt": "a split scene with a cheetah on grass below and a falcon high in the sky above, wide shot",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Cheetah",
+            "value": "9 / 3"
+          },
+          "right": {
+            "title": "Falcon",
+            "value": "10 / 7"
+          }
+        }
+      }
+    },
+    {
+      "narration": "In a straight dive, the falcon wins. But on the ground, nothing beats the cheetah. Who gets your vote?",
+      "visual": {
+        "query": "savanna sky hawk",
+        "prompt": "a hawk soaring above an open savanna at dusk, wide shot, warm sky",
+        "motion": {
+          "type": "question",
+          "text": "Who gets your vote?"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-06_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-06T05:00:00.000Z",
+  "topic": "Gordion düğümü ve Büyük İskender'in düğümü kesmesi",
+  "title": "Gordion Düğümünü Kılıçla Kesen İskender'in Hikâyesi",
+  "hookText": "Düğümü kim çözdü?",
+  "description": "Anadolu'daki Gordion'da bir düğüm vardı ve onu çözene Asya'nın hükümdarlığı vaat edilirdi. Anlatıya göre Büyük İskender milattan önce 333 civarında düğümü kesti.\n\n#gordion #büyükiskender #frigya #tarih",
+  "tags": [
+    "gordion düğümü",
+    "büyük iskender",
+    "gordion",
+    "frigya",
+    "polatlı",
+    "kral gordias",
+    "antik anadolu",
+    "tarih"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, Anadolu'da öyle bir düğüm vardı ki onu çözene bütün Asya'nın hükümdarlığı vaat edilirdi.",
+      "visual": {
+        "query": "Gordion Anatolia",
+        "prompt": "an ancient knotted rope on a wooden cart yoke in an old Anatolian hall, warm torchlight",
+        "motion": {
+          "type": "question",
+          "text": "Düğümü kim çözebildi?"
+        }
+      }
+    },
+    {
+      "narration": "Gordion adlı bu kent, Frigya krallığının başkentiydi ve bugün Ankara'nın Polatlı ilçesinde bulunur.",
+      "visual": {
+        "query": "Gordion Polatli",
+        "prompt": "ancient burial mounds on a wide Anatolian plain under a pale sky, wide shot"
+      }
+    },
+    {
+      "narration": "Efsaneye göre kral Gordias'ın arabası tapınakta duruyordu ve boyunduruğu eşsiz bir düğümle bağlıydı.",
+      "visual": {
+        "query": "ancient wooden cart",
+        "prompt": "an ancient wooden ox cart tied with an intricate rope knot inside a stone temple, shafts of light"
+      }
+    },
+    {
+      "narration": "Kehanet şöyleydi: Düğümü çözen kişi Asya'ya hükmedecekti.",
+      "visual": {
+        "query": "ancient oracle",
+        "prompt": "a robed priest pointing at a huge rope knot in dim temple light, low angle",
+        "motion": {
+          "type": "title",
+          "text": "Çözene Asya vaat edildi"
+        }
+      }
+    },
+    {
+      "narration": "Milattan önce 333 civarında Büyük İskender geldi ve düğümü kılıcıyla ikiye böldü.",
+      "visual": {
+        "query": "Alexander the Great statue",
+        "prompt": "a young ancient warrior king drawing a sword toward a rope knot, dramatic side light",
+        "motion": {
+          "type": "stat",
+          "value": "333",
+          "label": "Milattan önce, yaklaşık"
+        }
+      }
+    },
+    {
+      "narration": "Bazı anlatılar kılıç yerine boyunduruk çivisini çıkardığını söyler, kesin olanı bilmiyoruz.",
+      "visual": {
+        "query": "ancient bronze pin",
+        "prompt": "a hand pulling a wooden pin out of an ancient yoke, close shot, torch light"
+      }
+    },
+    {
+      "narration": "Sence düğümü kesmek hile mi, akıllıca bir çözüm mü? Yorumlara yaz, videoyu beğen, kanala abone ol.",
+      "visual": {
+        "query": "rope knot cut",
+        "prompt": "a sliced thick rope with frayed ends lying on stone, dramatic light",
+        "motion": {
+          "type": "question",
+          "text": "Hile mi, akıllı çözüm mü?"
+        }
+      }
+    }
+  ]
+}

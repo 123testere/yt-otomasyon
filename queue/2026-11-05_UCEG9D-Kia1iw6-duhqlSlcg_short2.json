@@ -1,0 +1,94 @@
+{
+  "id": "2026-11-05_UCEG9D-Kia1iw6-duhqlSlcg_short2",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-05T16:00:00.000Z",
+  "topic": "Orca versus great white shark compared",
+  "title": "Orca vs Great White Shark: Who Rules the Sea?",
+  "hookText": "Apex predator showdown",
+  "description": "Orcas and great white sharks are both apex predators, but off South Africa the orcas have been seen hunting sharks. Here is the comparison.\n\n#orca #greatwhiteshark #animals #shorts",
+  "tags": [
+    "orca vs great white",
+    "orca",
+    "great white shark",
+    "apex predator",
+    "animal comparison",
+    "ocean animals",
+    "killer whale",
+    "animal showdown"
+  ],
+  "scenes": [
+    {
+      "narration": "Which is the real king of the ocean, the orca or the great white shark?",
+      "visual": {
+        "query": "orca great white",
+        "prompt": "an orca and a great white shark swimming toward each other in deep blue water, cinematic wide shot"
+      }
+    },
+    {
+      "narration": "An adult male orca can reach about eight meters and several tons, far bigger than a typical great white of four to five meters.",
+      "visual": {
+        "query": "orca size",
+        "prompt": "a huge male orca with a tall dorsal fin surfacing beside a small boat for scale, daylight",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Orca",
+            "value": "~8 m"
+          },
+          "right": {
+            "title": "Great white",
+            "value": "~5 m"
+          }
+        }
+      }
+    },
+    {
+      "narration": "The great white has powerful jaws and sharp serrated teeth, an ambush hunter that strikes from below.",
+      "visual": {
+        "query": "great white shark teeth",
+        "prompt": "a great white shark rising from the deep with open jaws toward the camera, dramatic light"
+      }
+    },
+    {
+      "narration": "But orcas hunt in family groups, talk with sound, and plan together, a huge advantage in a fight.",
+      "visual": {
+        "query": "orca pod",
+        "prompt": "a pod of orcas swimming in formation near the surface of a calm sea, aerial view"
+      }
+    },
+    {
+      "narration": "Off South Africa, orcas have been documented killing great whites, and sharks have fled the area after orcas showed up.",
+      "visual": {
+        "query": "South Africa ocean shark",
+        "prompt": "a lone great white shark swimming away over a sandy seabed with kelp, moody light"
+      }
+    },
+    {
+      "narration": "Attack score: orca nine, shark eight. Defense score: orca eight, shark only four.",
+      "visual": {
+        "query": "orca attack",
+        "prompt": "an orca breaching the water surface with spray, powerful pose, golden hour",
+        "motion": {
+          "type": "list",
+          "title": "Our ratings",
+          "items": [
+            "Orca: attack 9, defense 8",
+            "Shark: attack 8, defense 4"
+          ]
+        }
+      }
+    },
+    {
+      "narration": "The orca wins on brains and teamwork. Do you agree, or would you back the shark? Tell us in the comments.",
+      "visual": {
+        "query": "orca fin sunset",
+        "prompt": "an orca dorsal fin cutting through calm water at sunset, silhouette",
+        "motion": {
+          "type": "question",
+          "text": "Orca or great white?"
+        }
+      }
+    }
+  ]
+}

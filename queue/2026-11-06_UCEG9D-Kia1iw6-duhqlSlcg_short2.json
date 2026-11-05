@@ -1,0 +1,96 @@
+{
+  "id": "2026-11-06_UCEG9D-Kia1iw6-duhqlSlcg_short2",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-06T16:00:00.000Z",
+  "topic": "Electric eel's 860-volt discharge and why it is a knifefish",
+  "title": "Electric Eel: The 860-Volt Fish That Isn't an Eel",
+  "hookText": "Not even an eel",
+  "description": "The electric eel is not a true eel but a knifefish, and a record discharge of 860 volts was measured in 2019. Meet its scores.\n\n#electriceel #animals #nature #shorts",
+  "tags": [
+    "electric eel",
+    "860 volts",
+    "knifefish",
+    "animal attacks",
+    "amazon river",
+    "animal comparison",
+    "nature facts",
+    "shocking animals"
+  ],
+  "scenes": [
+    {
+      "narration": "This animal is called an eel, but it is not an eel at all.",
+      "visual": {
+        "query": "electric eel",
+        "prompt": "an electric eel swimming through murky Amazon river water, side view, dim light"
+      }
+    },
+    {
+      "narration": "The electric eel is a knifefish that lives in the rivers of South America, and it can grow over two meters long.",
+      "visual": {
+        "query": "Amazon river South America",
+        "prompt": "a murky tropical river in the Amazon basin, morning mist, wide shot",
+        "motion": {
+          "type": "icon",
+          "emoji": "⚡",
+          "text": "Knifefish, not an eel"
+        }
+      }
+    },
+    {
+      "narration": "Most of its body is made of cells that work like tiny batteries, stacked in a row to build voltage.",
+      "visual": {
+        "query": "electric eel body",
+        "prompt": "a long dark fish body with faint electric blue light running along it, cinematic close up"
+      }
+    },
+    {
+      "narration": "In 2019, scientists measured a discharge of up to 860 volts from one electric eel, the strongest ever recorded from an animal.",
+      "visual": {
+        "query": "860 volts",
+        "prompt": "bright blue electric arcs lighting up dark river water around a fish, dramatic",
+        "motion": {
+          "type": "stat",
+          "value": "860 V",
+          "label": "Record discharge"
+        }
+      }
+    },
+    {
+      "narration": "It can even leap partly out of the water to press its body on a threat and send the shock straight in.",
+      "visual": {
+        "query": "eel leaping water",
+        "prompt": "an electric eel arching out of the water toward a hand held above it, splash, tense moment"
+      }
+    },
+    {
+      "narration": "Attack score: nine out of ten. Defense score: seven, because few predators dare touch it.",
+      "visual": {
+        "query": "eel shock",
+        "prompt": "electric blue glow around a dark fish in murky water, low angle",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Attack",
+            "value": "9/10"
+          },
+          "right": {
+            "title": "Defense",
+            "value": "7/10"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Would you ever swim near one? Comment your answer and follow for more wild showdowns.",
+      "visual": {
+        "query": "river swimming",
+        "prompt": "a calm tropical river with a lone canoe at sunset, wide shot",
+        "motion": {
+          "type": "question",
+          "text": "Would you swim near one?"
+        }
+      }
+    }
+  ]
+}
