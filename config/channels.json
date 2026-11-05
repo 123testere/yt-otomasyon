@@ -62,7 +62,7 @@
   },
   {
     "id": "UCEG9D-Kia1iw6-duhqlSlcg",
-    "title": "gecici",
+    "title": "Untold Vault",
     "enabled": true,
     "settings": {
       "enabled": true,
@@ -116,9 +116,14 @@
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
       "ekTalimat": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
-      "videoSayisi": 0
+      "videoSayisi": 4
     },
-    "recentTitles": [],
+    "recentTitles": [
+      "Electric Eel: The 860-Volt Fish That Isn't an Eel",
+      "Cheetah vs Peregrine Falcon: The Fastest Animal Ever",
+      "Orca vs Great White Shark: Who Rules the Sea?",
+      "Mantis Shrimp: The 50 mph Punch That Cracks Glass"
+    ],
     "oylamalar": []
   },
   {
@@ -177,9 +182,10 @@
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
       "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
-      "videoSayisi": 249
+      "videoSayisi": 250
     },
     "recentTitles": [
+      "Gordion Düğümünü Kılıçla Kesen İskender'in Hikâyesi",
       "Pompeii'yi Haritadan Silen 79 Yılındaki Patlama",
       "1513'te Çizilen Piri Reis Haritasının Sırrı",
       "Kağıt Parayı 1000 Yıl Önce Çinliler Kullandı",
@@ -228,8 +234,7 @@
       "Sokakta En İlginç Anlar Kamerada!",
       "Herkesin pazartesi ve bu cuma düğünlere bekliyoruz",
       "sizin neden sevgiliniz yok",
-      "Bir kilo demir mi daha ağır bir kilo pamuk mu siz cevap verin ?",
-      "Beyin göçü nedir bir de böyle dinleyin"
+      "Bir kilo demir mi daha ağır bir kilo pamuk mu siz cevap verin ?"
     ],
     "oylamalar": []
   },
@@ -280,7 +285,11 @@
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme."
+      "extraInstructions": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
+      "instagram": {
+        "enabled": true,
+        "kullanici": "lamba.altinda"
+      }
     },
     "brief": {
       "format": "belgesel",
@@ -291,9 +300,14 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
-      "videoSayisi": 29
+      "videoSayisi": 33
     },
     "recentTitles": [
+      "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
+      "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
+      "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
+      "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
+      "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
       "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
       "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
       "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
@@ -314,7 +328,6 @@
       "Telefon İstanbul'a Neden Yıllarca Gelemedi? #shorts",
       "'Mr. Watson, Buraya Gelin' Cümlesinin Gerçek Hikayesi",
       "Isırılmış elma logosu Alan Turing'e bir saygı mı? 🍎 Çoğu kişi öyle sanıyor ama logoyu çizen",
-      "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
       "İnce belli çay bardağını hepimiz tanırız, peki onu kim icat etti? ☕ Bilinen en eski izlerden biri",
       "İnce Belli Çay Bardağı Nereden Çıktı? Bilinmeyen Hikâyesi",
       "Saatleri ileri almayı bir böcek meraklısı önerdi ⏰ #shorts",
@@ -380,9 +393,10 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 3
+      "videoSayisi": 4
     },
     "recentTitles": [
+      "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
       "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
       "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
       "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
@@ -392,11 +406,15 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 3,
+      "lastMatch": 4,
       "table": [
         {
           "name": "Türkei",
-          "points": 15
+          "points": 22
+        },
+        {
+          "name": "Spanien",
+          "points": 18
         },
         {
           "name": "Ukraine",
@@ -408,14 +426,18 @@
         },
         {
           "name": "Frankreich",
-          "points": 10
+          "points": 11
         },
         {
           "name": "Serbien",
           "points": 10
         },
         {
-          "name": "Spanien",
+          "name": "Italien",
+          "points": 9
+        },
+        {
+          "name": "Portugal",
           "points": 8
         },
         {
@@ -423,15 +445,7 @@
           "points": 7
         },
         {
-          "name": "Italien",
-          "points": 4
-        },
-        {
           "name": "Deutschland",
-          "points": 4
-        },
-        {
-          "name": "Vereinigtes Königreich",
           "points": 4
         }
       ]
