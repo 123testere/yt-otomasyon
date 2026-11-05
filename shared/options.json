@@ -232,6 +232,12 @@
     "privacy": "public",
     "aiDisclosure": true,
     "hashtags": "",
-    "extraInstructions": ""
-  }
+    "extraInstructions": "",
+    "optimizasyon": {
+      "deneyler": true, "kapakDegistir": true, "baslikDegistir": true,
+      "altyazi": true, "ceviri": true, "oynatmaListesi": true, "yorumCevap": false
+    }
+  },
+
+  "ceviriDilleri": { "tr": ["en"], "de": ["en"], "en": ["es"] }
 }

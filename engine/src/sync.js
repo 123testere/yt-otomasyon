@@ -13,6 +13,8 @@ import { authFor } from './pipeline/youtube.js';
 import { updateStats } from './lib/stats.js';
 import { countVotes } from './lib/votes.js';
 import { publishDueReels } from './lib/instagram-queue.js';
+import { aktifDersler, optimizeChannel } from './lib/optimize.js';
+import { collectComments, postReplies } from './lib/comments.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -30,12 +32,25 @@ async function youtubeInfo(firestore, doc) {
     const uploads = channel?.contentDetails?.relatedPlaylists?.uploads;
     if (!uploads) return saved;
     const { data } = await yt.playlistItems.list({ part: ['snippet'], playlistId: uploads, maxResults: 50 });
-    const info = { titles: (data.items ?? []).map((i) => i.snippet.title), videoCount: data.pageInfo?.totalResults ?? 0, fetchedAt: new Date() };
+    // Kanalın oynatma listeleri: senaryo yazarı videoyu uygun listeye koyar (yoksa yeni liste adı önerir).
+    const lists = await yt.playlists.list({ part: ['snippet'], mine: true, maxResults: 50 }).catch(() => null);
+    const info = {
+      titles: (data.items ?? []).map((i) => i.snippet.title), videoCount: data.pageInfo?.totalResults ?? 0,
+      playlists: (lists?.data.items ?? []).map((p) => p.snippet.title), fetchedAt: new Date(),
+    };
     await doc.ref.update({ youtube: info });
     return info;
   } catch (e) {
     console.warn(`${doc.id} YouTube başlıkları okunamadı: ${e.message}`);
     return saved;
+  }
+}
+
+function readJson(file, fallback) {
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    return fallback;
   }
 }
 
@@ -61,12 +76,19 @@ async function main() {
     (titlesByChannel[channelId] ??= []).push({ title, at: createdAt?.toMillis?.() ?? 0 });
   }
 
-  const channelsSnap = await firestore.collection('channels').get();
   const youtube = {};
-  for (const doc of channelsSnap.docs) {
+  const performans = readJson(path.join(CONFIG_DIR, 'performans.json'), {});
+  let kapakIsi = false;
+  for (const doc of (await firestore.collection('channels').get()).docs) {
     youtube[doc.id] = await youtubeInfo(firestore, doc);
     await updateStats(firestore, doc, now).catch((e) => console.warn(`${doc.id} istatistik: ${e.message}`));
+    // Optimizasyon (günde bir): video ölçüleri, teşhis, deneyler, haftalık rapor.
+    const o = await optimizeChannel(firestore, doc, now).catch((e) => console.warn(`${doc.id} optimizasyon: ${e.stack ?? e.message}`));
+    if (o?.ozet) performans[doc.id] = o.ozet;
+    if (o?.kapakIsi) kapakIsi = true;
   }
+  // Optimizasyon kanal kayıtlarını güncelledi (deney, dersler); güncel hali okunur.
+  const channelsSnap = await firestore.collection('channels').get();
   const votes = await countVotes(firestore, now);
   await publishDueReels(firestore, now).catch((e) => console.warn(`Instagram: ${e.message}`));
   const channels = channelsSnap.docs
@@ -91,7 +113,12 @@ async function main() {
           cocukIcerigi: Boolean(niche.madeForKids),
           ekTalimat: settings.extraInstructions || null,
           videoSayisi: youtube[doc.id]?.videoCount ?? null,
+          // Kanalın kendi verisinden öğrenilmiş kurallar (deneyler ve haftalık analiz); senaryo yazarı uyar.
+          dersler: aktifDersler(data),
         },
+        oynatmaListeleri: youtube[doc.id]?.playlists ?? [],
+        // Süren A/B deneyi: planlayıcı videoları kollara dağıtır.
+        deney: settings.optimizasyon?.deneyler !== false ? data.optimizasyon?.deney ?? null : null,
         recentTitles: [...new Set([
           ...(titlesByChannel[doc.id] ?? []).sort((a, b) => b.at - a.at).map((t) => t.title),
           ...(youtube[doc.id]?.titles ?? []),
@@ -131,6 +158,18 @@ async function main() {
   const setupPending = channelsSnap.docs.some((d) => d.data().settings?.kurulum?.istek
     && d.data().settings.kurulum.istek !== d.data().kurulumSonuc?.istek);
   if (setupPending && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kurulum=1\n');
+  // Zayıf kapak denemesi (yeni kapak çizmek Remotion ister): iş akışı engine/src/kapak-dene.js'i çalıştırır.
+  if (kapakIsi && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kapak=1\n');
+  writeIfChanged(path.join(CONFIG_DIR, 'performans.json'), stableJson(performans));
+
+  // Yorumlara otomatik cevap (açık kanallarda): rutinin yazdığı cevapları gönder, cevapsızları topla.
+  const gonderilen = await postReplies(firestore).catch((e) => console.warn(`yorum cevapları: ${e.message}`));
+  if (gonderilen) console.log(`${gonderilen} yorum cevaplandı.`);
+  const yorumlar = await collectComments(firestore, channels, now).catch((e) => {
+    console.warn(`yorumlar: ${e.message}`);
+    return [];
+  });
+  writeIfChanged(path.join(CONFIG_DIR, 'yorumlar.json'), stableJson(yorumlar));
 
   const changedChannels = writeIfChanged(path.join(CONFIG_DIR, 'channels.json'), stableJson(channels));
   const changedNeeded = writeIfChanged(path.join(CONFIG_DIR, 'needed.json'), stableJson(needed));

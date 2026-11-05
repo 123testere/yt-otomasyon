@@ -5,13 +5,49 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 ## Adımlar
 
 1. `main` dalının en güncel halinde olduğundan emin ol (`git checkout main && git pull`).
-2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa hiçbir şey yapmadan bitir.
+2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa senaryo yazma ama aşağıdaki "Haftalık rapor" ve "Yorum cevapları" işlerine yine bak; onlar da yoksa bitir.
 3. `config/needed.json` dosyasını oku. Her öğe yazılması gereken bir video: `id`, `channelId`, `type` (`long` / `short`), `publishAt`, `targetWords`.
 4. `config/channels.json` içinden ilgili kanalı bul. `brief` alanı kanalın konusu, dili, tonu, anlatıcı karakteri ve ek talimatlarıdır. `recentTitles` daha önce yapılmış videolardır; `done/` klasöründeki dosyalar da aynı kanalın önceki senaryolarıdır.
 5. Her iş için `queue/<id>.json` dosyasını aşağıdaki formatta yaz. `queue/`, `done/` veya `failed/` içinde aynı id zaten varsa atla.
 6. `node engine/src/validate.js` çalıştır. Hata varsa dosyayı düzelt ve tekrar çalıştır, hepsi ✓ olana kadar devam et.
-7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/` altındaki yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
+7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/` ve `cevaplar/` altındaki yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
 8. Bitirirken kaç senaryo yazdığını ve başlıklarını tek satırlık bir liste halinde özetle.
+
+## Optimizasyon (her senaryoda)
+
+Sistem her videonun izlenme, tıklanma ve izleyici tutma verisini ölçer; kanallar kendi verisinden öğrenir.
+- **Dersler:** `brief.dersler` kanalın kendi deneylerinden ve haftalık analizden çıkan kurallardır. Hepsine uy; aşağıdaki genel kurallarla çelişirse ders geçerlidir.
+- **Deney:** `needed.json` öğesinde `deney` varsa video bir A/B deneyine girer. `deney.talimat` varsa ona **kesinlikle** uy (doğrulayıcı kontrol eder) ve dosyaya `"deney": {"id": "<deney.id>", "kol": "<deney.kol>"}` yaz. Talimat yoksa (süre, müzik, saat deneyleri) sadece `deney` alanını yaz; gerisini sistem yapar. Deneyden bağımsız her şeyi her zamanki gibi en iyi şekilde yaz; sadece denenen değişken farklı olsun.
+- **Çeviriler:** `needed.json` öğesinde `ceviriDilleri` varsa (ör. `["en"]`) her dil için `"ceviriler": {"en": {"title": "…", "description": "…"}}` yaz. Çeviri doğal ve o dildeki izleyicinin arayacağı kelimelerle olsun (kelimesi kelimesine değil); hashtag ve `<` `>` yazma. YouTube yabancı izleyiciye başlığı kendi dilinde gösterir.
+- **Oynatma listesi:** `"oynatmaListesi": "…"` yaz (≤60 karakter). Kanalın mevcut listeleri `config/channels.json` → `oynatmaListeleri` alanındadır; konu birine uyuyorsa **aynen** o adı yaz, uymuyorsa geniş bir tema adı ver (ör. "Mutfaktaki Eşyaların Hikayesi", "Osmanlı'nın Bilinmeyenleri"). Her videoya ayrı liste açma; 4-8 tema listesi hedefle.
+- **Başlık:** En fazla 70 karakter (telefonda kesilmesin, ideal 40-60). Doğrulayıcı 70'i geçeni reddeder.
+- **Açıklamanın ilk iki satırı** aramada görünen kısımdır: biri videonun anahtar kelimesiyle başlayan, en az 30 karakterlik tam bir cümle olsun (ilk satır kısa bir seri etiketi olabilir). Hashtag ya da bağlantıyla başlama.
+- **Uzun video ek alanları:**
+  - `thumbnailText` en fazla 4 kelime ve 25 karakter (küçük ekranda okunmalı).
+  - `thumbnailTextAlt`: Yedek kapak yazısı (≤4 kelime, ≤25 karakter), asıl kapaktan **farklı bir açı** (ör. asıl "22 YIL YASAK", yedek "SULTAN İSTEMEDİ"). Kapak az tıklanırsa sistem bunu dener.
+  - `titleAlt`: Yedek başlık (≤70 karakter), asıl başlıktan farklı bir merak kalıbı. Kapak denemesi de tutmazsa sistem bunu dener.
+  - **Bölümler:** Uzun videoda her bölümün ilk sahnesine `"bolum": {"ad": "…"}` yaz (çizim formatında zaten `{no, ust, ad}` yazılıyor). 4-7 bölüm; sistem açıklamaya YouTube bölüm zaman damgalarını (00:00 Giriş, 01:12 …) kendisi ekler.
+
+## Haftalık rapor (`config/performans.json`)
+
+`config/performans.json` her kanalın son videolarının ölçülerini ve otomatik teşhisini içerir. Bir kanalda `raporGerekli: true` ise o kanal için `analiz/<channelId>.json` yaz (varsa üzerine yaz):
+```json
+{ "hafta": "<performans.json'daki hafta>", "ozet": ["3-5 madde"], "dersler": ["0-3 yeni kural"] }
+```
+- `ozet`: Uygulamada görünen yorumlu rapor, Türkçe. Ham sayıları tekrarlamak yerine **nedenini** söyle: hangi videolar neden iyi/zayıf gitti, iyi gidenlerin ortak noktası ne (konu türü, kanca kalıbı, başlık kalıbı, Türkiye bağlantısı), zayıfların ortak sorunu ne. Her madde 1-2 cümle. Süren deneyin durumuna ve arama terimlerine değin.
+- `dersler`: Veriden **açıkça** çıkan, senaryo yazarken uygulanabilir yeni kurallar (ör. "Mutfak eşyası konuları teknoloji konularından iki kat izleniyor: haftada en az iki mutfak konusu seç."). Tek videoya bakarak ders çıkarma; en az 2-3 videonun desteklediği örüntüler. `dersler` listesinde zaten olanı tekrar yazma. Emin değilsen boş bırak.
+- Videolar `etiket: "az-veri"` ya da `"erken"` ise onlar hakkında hüküm verme.
+
+## Yorum cevapları (`config/yorumlar.json`)
+
+Dosyada yorum varsa (yalnızca "Yorumlara otomatik cevap" açık kanallar listelenir), hepsine tek bir `cevaplar/<YYYY-MM-DD-HHMM>.json` dosyasında cevap yaz:
+```json
+[{ "channelId": "…", "videoId": "…", "commentId": "…", "metin": "…" }]
+```
+- Kanalın karakterinin (`brief.karakter`) ağzından, kanalın dilinde, samimi ve kısa (1-2 cümle, en fazla 300 karakter). Yorumcuya adıyla hitap etmek zorunda değilsin.
+- Soruya cevap ver, teşekkür et ya da yorumu bir sonraki videoya bağla. Bağlantı, hashtag, reklam, abone ol yalvarması yok.
+- Hakaret, spam, siyasi kavga ya da cevap verilmemesi gereken yorumları **listeye koyma** (atla).
+- Emin olmadığın bilgiyi cevapta verme.
 
 ## Flaggenduell kanalları (`brief.format` = `"flaggenduell"`)
 

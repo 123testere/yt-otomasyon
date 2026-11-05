@@ -12,6 +12,8 @@ import { frameFromVideo, makeShortCover } from './pipeline/cover.js';
 import { queueForInstagram } from './lib/instagram-queue.js';
 import { run } from './lib/util.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
+import { bolumSatirlari, uploadExtras } from './pipeline/extras.js';
+import { deneyAyari } from './lib/deney.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
 
 const MAX_ATTEMPTS = 3;
@@ -102,7 +104,8 @@ async function main() {
     if ((prev.attempts ?? 0) >= MAX_ATTEMPTS) continue;
 
     const channelSnap = await firestore.doc(`channels/${job.channelId}`).get();
-    const settings = resolveSettings(channelSnap.data()?.settings);
+    // Müzik deneyinin B kolu bir kademe kısık müzikle üretilir.
+    const settings = deneyAyari(job, resolveSettings(channelSnap.data()?.settings));
     if (!channelSnap.exists || !settings.enabled) {
       await ref.set({ channelId: job.channelId, title: job.title, type: job.type, status: 'paused', updatedAt: new Date() }, { merge: true });
       continue;
@@ -135,12 +138,25 @@ async function main() {
 
       const secret = (await firestore.doc(`secrets/${job.channelId}`).get()).data();
       if (!secret?.refreshToken) throw new AuthError('Kanalın yükleme izni yok; kanalı yeniden bağla');
-      const yt = await upload({ secret, job: await withFullVideoLink(job, settings), settings, ...built });
+      // Uzun videoda bölüm zaman damgaları açıklamaya eklenir (aramada bölümler ayrı görünür).
+      const linked = await withFullVideoLink(job, settings);
+      const bolumler = bolumSatirlari(job, built.sahneZaman, settings.language);
+      const uploadJob = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
+      const yt = await upload({ secret, job: uploadJob, settings, ...built });
 
       await ref.update({ status: 'uploaded', youtubeId: yt.videoId, url: yt.url, scheduled: yt.scheduled,
-        warning: yt.thumbnailWarning, updatedAt: new Date() });
+        warning: yt.thumbnailWarning, sahneZaman: built.sahneZaman ?? null, deney: job.deney ?? null, updatedAt: new Date() });
       move(file, DONE_DIR);
       console.log(`✓ ${yt.url}`);
+      // Altyazı, başka dillerde başlık, oynatma listesi: başarısız olsa da video yayında kalır.
+      try {
+        const hashtags = [settings.hashtags?.trim(), job.type === 'short' ? '#shorts' : ''].filter(Boolean).join(' ');
+        const ekstra = await uploadExtras({ secret, job, settings, videoId: yt.videoId, srt: built.srt, hashtags });
+        await ref.update({ ekstralar: { ...ekstra, bolumler: Boolean(bolumler) } });
+        if (ekstra.izinEksik) await firestore.doc(`channels/${job.channelId}`).update({ izinEksik: true });
+      } catch (e) {
+        console.warn(`  ekstralar: ${e.message}`);
+      }
       // Instagram açık kanallarda Shorts, yayın saatinde Reels olarak da paylaşılır (senkronizasyon gönderir).
       await queueForInstagram(firestore, await withFullVideoLink(job, settings), settings, built.videoPath);
       // Flaggenduell: maç yayınlandıktan sonra sezon tablosu kalıcı olarak güncellenir.

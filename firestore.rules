@@ -53,6 +53,11 @@ service cloud.firestore {
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['regenerate']);
     }
 
+    // Video başına performans ve teşhis (optimizasyon); yalnızca sunucu yazar.
+    match /perf/{id} {
+      allow read: if isAdmin();
+    }
+
     match /events/{id} {
       allow read, delete: if isAdmin();
     }

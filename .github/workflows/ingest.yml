@@ -5,7 +5,7 @@ name: Senaryoları al
 on:
   push:
     branches: ['claude/**']
-    paths: ['queue/**']
+    paths: ['queue/**', 'analiz/**', 'cevaplar/**']
 
 permissions:
   contents: write
@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: 22
       - name: Kuyruk dosyalarını main'e al
+        id: al
         env:
           BRANCH: ${{ github.ref_name }}
         run: |
@@ -36,14 +37,20 @@ jobs:
           git fetch origin "$BRANCH"
           # Sadece queue/ altında yeni eklenen dosyalar; config veya kod değişiklikleri alınmaz.
           files=$(git diff --name-only --diff-filter=A "origin/main...origin/$BRANCH" -- 'queue/*.json')
-          if [ -z "$files" ]; then echo "Yeni senaryo yok."; exit 0; fi
-          git checkout "origin/$BRANCH" -- $files
-          node engine/src/validate.js || echo "Uyarı: doğrulamadan geçmeyen dosyalar üretimde 'geçersiz' olarak işaretlenecek."
-          git add $files
-          git commit -m "içerik: $(echo "$files" | wc -l) senaryo ($BRANCH)"
+          # Haftalık yorumlu rapor (analiz/) ve yorum cevapları (cevaplar/) da alınır.
+          extra=$(git diff --name-only --diff-filter=AM "origin/main...origin/$BRANCH" -- 'analiz/*.json' 'cevaplar/*.json')
+          if [ -z "$files$extra" ]; then echo "Yeni dosya yok."; git push origin --delete "$BRANCH" || true; exit 0; fi
+          git checkout "origin/$BRANCH" -- $files $extra
+          if [ -n "$files" ]; then
+            echo "uret=1" >> "$GITHUB_OUTPUT"
+            node engine/src/validate.js || echo "Uyarı: doğrulamadan geçmeyen dosyalar üretimde 'geçersiz' olarak işaretlenecek."
+          fi
+          git add $files $extra
+          git commit -m "içerik: $(echo -n "$files" | grep -c .) senaryo, $(echo -n "$extra" | grep -c .) rapor/cevap ($BRANCH)"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
           git push origin --delete "$BRANCH" || true
       - name: Üretimi başlat
+        if: steps.al.outputs.uret
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run produce.yml --ref main

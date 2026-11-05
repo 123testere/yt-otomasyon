@@ -16,6 +16,7 @@ export function resolveSettings(settings = {}) {
     ...settings,
     long: { ...d.long, ...(settings.long ?? {}) },
     shorts: { ...d.shorts, ...(settings.shorts ?? {}) },
+    optimizasyon: { ...d.optimizasyon, ...(settings.optimizasyon ?? {}) },
   };
   const language = pick(options.languages, s.language) ?? options.languages[0];
   s.language = language.id;

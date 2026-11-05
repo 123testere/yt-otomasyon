@@ -44,6 +44,7 @@ function Gate() {
       <Stack.Screen name="login" options={{ headerShown: false }} />
       <Stack.Screen name="videos" options={{ title: 'Videolar' }} />
       <Stack.Screen name="istatistik" options={{ title: 'İstatistik' }} />
+      <Stack.Screen name="optimizasyon" options={{ title: 'Optimizasyon' }} />
       <Stack.Screen name="kurulum" options={{ title: 'Yeni kanal' }} />
       <Stack.Screen name="channel/[id]" options={{ title: 'Kanal ayarları' }} />
     </Stack>

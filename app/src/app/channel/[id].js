@@ -12,8 +12,20 @@ function withDefaults(settings, defaults) {
     ...settings,
     long: { ...defaults.long, ...(settings?.long ?? {}) },
     shorts: { ...defaults.shorts, ...(settings?.shorts ?? {}) },
+    optimizasyon: { ...OPT_VARSAYILAN, ...(defaults.optimizasyon ?? {}), ...(settings?.optimizasyon ?? {}) },
   };
 }
+
+const OPT_VARSAYILAN = { deneyler: true, kapakDegistir: true, baslikDegistir: true, altyazi: true, ceviri: true, oynatmaListesi: true, yorumCevap: false };
+const OPT_ANAHTARLAR = [
+  ['deneyler', 'Haftalık A/B deneyleri', 'Her hafta tek bir şey denenir (kanca, başlık kalıbı, süre, müzik, saat); kazanan kalıcı olur.'],
+  ['kapakDegistir', 'Az tıklanan kapağı otomatik değiştir', 'Tıklanma kanal ortalamasının çok altındaysa yedek kapak denenir; kötüyse eskisi geri gelir.'],
+  ['baslikDegistir', 'Gerekirse başlığı da değiştir', 'Yeni kapak da tutmazsa yedek başlık denenir; kötüyse eski başlık geri gelir.'],
+  ['altyazi', 'Altyazı dosyası yükle', 'Anlatım metninden kusursuz altyazı; aramada ve önerilerde yardımcı olur.'],
+  ['ceviri', 'Başka dillerde başlık ve açıklama', 'Yabancı izleyici başlığı kendi dilinde görür.'],
+  ['oynatmaListesi', 'Videoları oynatma listelerine ekle', 'Konuya göre listeler; izleyici kanalda kalır.'],
+  ['yorumCevap', 'Yorumlara otomatik cevap', 'Karakterin ağzından kısa cevaplar (günde bir, kanal başına en fazla 10). Herkese açık görünür.'],
+];
 
 function Section({ title, children }) {
   return (
@@ -294,6 +306,22 @@ export default function ChannelSettings() {
               ? `Bağlı hesap: @${s.instagram.kullanici}. Reels, YouTube'daki yayın saatinde (en geç bir saat içinde) paylaşılır.`
               : 'Bu kanala henüz Instagram hesabı bağlanmadı.'}
           </Dim>
+        </Section>
+
+        <Section title="Optimizasyon">
+          {OPT_ANAHTARLAR.map(([key, label, hint]) => (
+            <View key={key} style={{ marginTop: 6 }}>
+              <Toggle label={label} value={Boolean(s.optimizasyon[key])}
+                onChange={(v) => set({ optimizasyon: { ...s.optimizasyon, [key]: v } })} />
+              <Dim style={{ fontSize: 12 }}>{hint}</Dim>
+            </View>
+          ))}
+          {channel?.izinEksik || channel?.optimizasyon?.reachIzin === false ? (
+            <Text style={{ color: colors.warn, fontSize: 12, marginTop: 10 }}>
+              Tıklanma oranı, altyazı ve başlık değiştirme için kanalın yeni izinlerle bilgisayardan yeniden bağlanması gerekiyor
+              (engine klasöründe: npm run kanal-bagla).
+            </Text>
+          ) : null}
         </Section>
       </ScrollView>
 

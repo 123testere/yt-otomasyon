@@ -3,7 +3,30 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { options, pick } from '../lib/options.js';
 import { probeDuration, run } from '../lib/util.js';
-import { remotionStill } from './remotion.js';
+import { encyclopediaThumbnail, remotionStill } from './remotion.js';
+import { aiImage } from './visuals.js';
+import { wikimedia } from './archives.js';
+
+// Uzun video küçük resmini istenen yazıyla yeniden çizer (kapak denemesi ve geri alma için).
+// Aynı tohumla aynı arka plan gelir; sadece yazı değişir.
+export async function uzunKapak({ job, settings, dir, text }) {
+  fs.mkdirSync(dir, { recursive: true });
+  if (job.format === 'cizim') return encyclopediaThumbnail({ job: { ...job, thumbnailText: text }, settings, dir });
+  const style = pick(options.visualStyles, settings.visualStyle);
+  let bg = null;
+  try {
+    bg = await aiImage(`${job.thumbnailPrompt}, ${style?.suffix ?? 'cinematic'}, eye-catching youtube thumbnail`,
+      { w: 1280, h: 720, seed: 999 }, path.join(dir, 'arka.jpg'));
+  } catch {
+    const query = job.scenes?.find((s) => s.visual?.query)?.visual.query;
+    if (query) bg = (await wikimedia(query, { w: 1280, h: 720, portrait: false }, path.join(dir, 'arka.jpg'), new Set()).catch(() => null))?.file ?? null;
+  }
+  const accent = (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
+  const png = await remotionStill('Thumb', { background: bg, text, badge: null, lang: settings.language, accent }, path.join(dir, 'kapak.png'), `${job.id}-deneme`);
+  const jpg = path.join(dir, 'kapak.jpg');
+  await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
+  return jpg;
+}
 
 // Kapakta yazacak kanca: Flaggenduell'de soru + maç rozeti, çizim formatında başlık kartı, diğerlerinde kanca yazısı.
 export function coverText(job) {

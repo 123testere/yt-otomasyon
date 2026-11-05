@@ -124,6 +124,7 @@ export default function Home() {
           </Card>
         ))}
 
+        <Button title="Optimizasyon ve haftalık rapor" kind="secondary" onPress={() => router.push('/optimizasyon')} style={{ marginBottom: 8 }} />
         <Button title="+ Yeni kanal kur" onPress={() => router.push('/kurulum')} style={{ marginBottom: 8 }} />
 
         <Text style={st.section}>Son olaylar</Text>

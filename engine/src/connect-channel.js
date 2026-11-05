@@ -10,9 +10,13 @@ import { db } from './lib/firebase.js';
 import { options } from './lib/options.js';
 import { SECRETS_DIR } from './lib/paths.js';
 
+// youtube: yükleme, okuma, başlık/kapak değiştirme, oynatma listesi
+// youtube.force-ssl: altyazı yükleme ve yorum cevaplama
+// yt-analytics.readonly: kapak tıklanma oranı (YouTube Reporting API); telefondan bağlamada bu izin verilemiyor
 const SCOPES = [
-  'https://www.googleapis.com/auth/youtube.upload',
-  'https://www.googleapis.com/auth/youtube.readonly',
+  'https://www.googleapis.com/auth/youtube',
+  'https://www.googleapis.com/auth/youtube.force-ssl',
+  'https://www.googleapis.com/auth/yt-analytics.readonly',
 ];
 
 function loadClient() {
@@ -74,6 +78,8 @@ async function main() {
     thumbnail: channel.snippet.thumbnails?.default?.url ?? null,
     connectedAt: new Date(),
     needsReconnect: false,
+    izinEksik: false,
+    optimizasyon: { reachIzin: null }, // yeni izinle tıklanma raporu bir sonraki senkronizasyonda denenir
     ...(existing.exists ? {} : { settings: options.defaults }),
   }, { merge: true });
   await firestore.doc(`secrets/${channel.id}`).set({ refreshToken: tokens.refresh_token, updatedAt: new Date() });

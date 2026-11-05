@@ -6,6 +6,18 @@ import { narrate } from './tts.js';
 import { sceneVisual, seedFor } from './visuals.js';
 import { formatFor, pickMusic } from './render.js';
 import { encyclopediaThumbnail, renderEncyclopedia } from './remotion.js';
+import { srtOf } from './extras.js';
+
+// Sahne başlangıçları (bölüm zaman damgaları ve teşhisteki kopuş noktası için) ve altyazı dosyası.
+export function anlatimBilgisi(job, narrated) {
+  let srt = null;
+  try {
+    srt = srtOf(job, narrated);
+  } catch (e) {
+    console.warn(`  altyazı dosyası hazırlanamadı: ${e.message}`);
+  }
+  return { sahneZaman: narrated.scenes.map((s) => Math.round(s.start * 10) / 10), srt };
+}
 
 export async function buildCizim(job, settings, { workDir }) {
   const fmt = formatFor(job.type);
@@ -32,5 +44,5 @@ export async function buildCizim(job, settings, { workDir }) {
   const thumbnailPath = job.type === 'long' ? await encyclopediaThumbnail({ job, settings, dir }) : null;
 
   const credits = [...new Set([music?.credit, ...images.map((v) => v?.credit)].filter(Boolean))];
-  return { videoPath, thumbnailPath, duration: narrated.total, credits };
+  return { videoPath, thumbnailPath, duration: narrated.total, credits, ...anlatimBilgisi(job, narrated) };
 }

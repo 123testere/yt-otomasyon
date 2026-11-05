@@ -6,6 +6,7 @@ import { options, pick, targetWords } from './options.js';
 import { addDays, dateInTz, weekday, zonedToUtc } from './time.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './paths.js';
 import { matchFor } from './league.js';
+import { altSaat, deneyBul } from './deney.js';
 
 const TZ = options.timezone;
 const MIN_LEAD_MS = 60 * 60 * 1000; // yayına 1 saatten az kalmışsa o slotu atla
@@ -46,6 +47,9 @@ function slotsFor(channel, dates, now) {
         : {}),
       // Ansiklopedi stili: sahneler kodla çizilir (routine/PROMPT.md → Çizim formatı).
       ...(pick(options.visualStyles, s.visualStyle)?.theme === 'ansiklopedi' ? { format: 'cizim' } : {}),
+      // Başka dillerde başlık/açıklama (YouTube yabancı izleyiciye kendi dilinde gösterir).
+      ...(s.optimizasyon?.ceviri !== false && s.contentFormat !== 'flaggenduell' && options.ceviriDilleri?.[s.language]?.length
+        ? { ceviriDilleri: options.ceviriDilleri[s.language] } : {}),
     }));
 }
 
@@ -103,6 +107,29 @@ function attachVotes(slots, channels, now) {
   return slots;
 }
 
+// Deney: kanalın süren deneyi varsa o türdeki her yeni video az olan kola (A/B) verilir.
+// Süre deneyinin B kolu %25 kısa yazılır, saat deneyinin B kolu alternatif saatte yayınlanır.
+function attachExperiments(slots, channels, now) {
+  for (const c of channels.filter((ch) => ch.deney?.id && ch.settings.optimizasyon?.deneyler !== false)) {
+    const d = deneyBul(c.deney.id);
+    if (!d) continue;
+    const count = { A: 0, B: 0 };
+    for (const j of channelJobs(c.id)) if (j.deney?.id === d.id && count[j.deney.kol] !== undefined) count[j.deney.kol]++;
+    for (const slot of slots.filter((s) => s.channelId === c.id && s.type === c.deney.tip)) {
+      const kol = count.B < count.A ? 'B' : 'A';
+      if (d.id === 'yayin-saati' && kol === 'B') {
+        const at = zonedToUtc(slot.id.slice(0, 10), altSaat(c.settings.shorts.times[0]), TZ);
+        if (at.getTime() - now.getTime() <= MIN_LEAD_MS) continue; // alternatif saat geçmişse bu slot deneye girmez
+        slot.publishAt = at.toISOString();
+      }
+      if (d.id === 'sure-kisa' && kol === 'B') slot.targetWords = Math.round(slot.targetWords * 0.75);
+      count[kol]++;
+      slot.deney = { id: d.id, kol, ...(d[kol].talimat ? { talimat: d[kol].talimat } : {}) };
+    }
+  }
+  return slots;
+}
+
 // Bugün ve yarın için, açık kanalların henüz yazılmamış video slotları.
 export function neededJobs(channels, { now = new Date(), extraExisting = [] } = {}) {
   const today = dateInTz(now, TZ);
@@ -114,5 +141,6 @@ export function neededJobs(channels, { now = new Date(), extraExisting = [] } = 
     .flatMap((c) => slotsFor(c, dates, now))
     .filter((job) => !existing.has(job.id))
     .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
-  return attachVotes(attachClips(jobs, channels), channels, now);
+  return attachExperiments(attachVotes(attachClips(jobs, channels), channels, now), channels, now)
+    .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
 }

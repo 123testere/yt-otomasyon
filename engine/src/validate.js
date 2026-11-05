@@ -5,6 +5,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { CONFIG_DIR, DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
 import { KAPAK_ALAN, cizimHatasi } from '../../shared/cizim.js';
+import { deneyHatalari } from './lib/deney.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -135,6 +136,57 @@ function clipErrors(job, sourceId) {
   return share >= 0.6 ? [] : [`kesit anlatımının yalnızca %${Math.round(share * 100)}'i uzun videodan; en az %60 olmalı`];
 }
 
+// Optimizasyon alanları (hepsi isteğe bağlı; yazılmışsa biçimi doğru olmalı).
+function ekAlanHatalari(job) {
+  const errors = [];
+  if (job.ceviriler !== undefined) {
+    if (!job.ceviriler || typeof job.ceviriler !== 'object' || Array.isArray(job.ceviriler)) {
+      errors.push('ceviriler {dil: {title, description}} olmalı');
+    } else {
+      for (const [dil, c] of Object.entries(job.ceviriler)) {
+        if (!/^[a-z]{2}$/.test(dil)) errors.push(`ceviriler: "${dil}" iki harfli dil kodu olmalı`);
+        if (!str(c?.title, 100) || /[<>]/.test(c?.title ?? '')) errors.push(`ceviriler.${dil}.title 1-100 karakter olmalı, < > olmadan`);
+        if (!str(c?.description, 4500) || /[<>]/.test(c?.description ?? '')) errors.push(`ceviriler.${dil}.description 1-4500 karakter olmalı, < > olmadan`);
+      }
+    }
+  }
+  if (!optStr(job.oynatmaListesi, 60) || /[<>]/.test(job.oynatmaListesi ?? '')) errors.push('oynatmaListesi en fazla 60 karakter, < > olmadan');
+  if (!optStr(job.thumbnailTextAlt, 40)) errors.push('thumbnailTextAlt en fazla 40 karakter');
+  if (!optStr(job.titleAlt, 100) || /[<>]/.test(job.titleAlt ?? '')) errors.push('titleAlt en fazla 100 karakter, < > olmadan');
+  return errors;
+}
+
+const kelimeSay = (t) => String(t ?? '').trim().split(/\s+/).filter(Boolean).length;
+
+// Yeni yazılan senaryoya (needed.json'daki slot) uygulanan kurallar: kuyruktaki eski işleri geçersiz kılmaz.
+function slotHatalari(job, slot) {
+  const errors = [...deneyHatalari(job, slot.deney)];
+  if (typeof job.title === 'string' && job.title.length > 70) {
+    errors.push(`başlık ${job.title.length} karakter; telefonda kesilmemesi için en fazla 70 (ideal 40-60)`);
+  }
+  // Aramada açıklamanın ilk iki satırı görünür (seri etiketi "Eşyaların Hikayesi #12" gibi kısa bir satır olabilir).
+  const ilkIki = String(job.description ?? '').trim().split('\n').map((l) => l.trim()).filter(Boolean).slice(0, 2);
+  if (!ilkIki.some((l) => l.length >= 30 && !/^(#|http)/.test(l))) {
+    errors.push('açıklamanın ilk iki satırından biri aramada görünen, anahtar kelimeyle başlayan, en az 30 karakterlik bir cümle olmalı');
+  }
+  if (job.type === 'long') {
+    if (kelimeSay(job.thumbnailText) > 4 || String(job.thumbnailText ?? '').length > 25) {
+      errors.push('thumbnailText en fazla 4 kelime ve 25 karakter olmalı (küçük ekranda okunmalı)');
+    }
+    if (!str(job.thumbnailTextAlt, 25) || kelimeSay(job.thumbnailTextAlt) > 4) {
+      errors.push('thumbnailTextAlt (yedek kapak yazısı, ≤4 kelime, ≤25 karakter) eksik');
+    } else if (job.thumbnailTextAlt.trim().toLocaleLowerCase('tr') === String(job.thumbnailText).trim().toLocaleLowerCase('tr')) {
+      errors.push('thumbnailTextAlt asıl kapak yazısından farklı olmalı');
+    }
+    if (!str(job.titleAlt, 70)) errors.push('titleAlt (yedek başlık, ≤70 karakter) eksik');
+    else if (normalizeTitle(job.titleAlt) === normalizeTitle(job.title)) errors.push('titleAlt asıl başlıktan farklı olmalı');
+  }
+  for (const dil of slot.ceviriDilleri ?? []) {
+    if (!job.ceviriler?.[dil]) errors.push(`ceviriler.${dil} eksik: başlık ve açıklamanın ${dil} çevirisi yazılmalı`);
+  }
+  return errors;
+}
+
 export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   const errors = [];
   const req = (cond, msg) => { if (!cond) errors.push(msg); };
@@ -164,6 +216,8 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
       'hookText tek satır, 1-40 karakter olmalı');
   }
 
+  errors.push(...ekAlanHatalari(job));
+
   if (job.type === 'long') {
     req(typeof job.thumbnailText === 'string' && job.thumbnailText.trim() && job.thumbnailText.length <= 40,
       'thumbnailText 1-40 karakter olmalı');
@@ -177,6 +231,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
       req(typeof job.title === 'string' && job.title.startsWith(`Duell ${slot.match}/${slot.total}`),
         `title "Duell ${slot.match}/${slot.total}: …" ile başlamalı`);
     }
+    if (slot) errors.push(...deneyHatalari(job, slot.deney));
     return errors;
   }
 
@@ -189,6 +244,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
       if (typeof s.narration === 'string') req(countWords(s.narration) <= 90, `sahne ${i + 1}: 90 kelimeden uzun, böl`);
       return;
     }
+    if (s.bolum !== undefined && !(str(s.bolum?.ad, 32) && optStr(s.bolum?.no, 20))) errors.push(`sahne ${i + 1}: bolum {ad ≤32} olmalı`);
     req(typeof s.visual?.query === 'string' && s.visual.query.trim(), `sahne ${i + 1}: visual.query eksik`);
     req(typeof s.visual?.prompt === 'string' && s.visual.prompt.trim(), `sahne ${i + 1}: visual.prompt eksik`);
     if (typeof s.narration === 'string') req(countWords(s.narration) <= 90, `sahne ${i + 1}: 90 kelimeden uzun, böl`);
@@ -196,6 +252,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   });
 
   const slot = needed?.find((n) => n.id === job.id);
+  if (slot) errors.push(...slotHatalari(job, slot));
   if (slot && Array.isArray(job.scenes)) {
     const words = job.scenes.reduce((sum, s) => sum + countWords(s.narration ?? ''), 0);
     const min = Math.round(slot.targetWords * (1 - WORD_TOLERANCE));

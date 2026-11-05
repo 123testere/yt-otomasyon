@@ -9,7 +9,7 @@ import { characterPlacement, formatFor, makeCharacterBadge, pickMusic, renderFin
 import { makeThumbnail } from './thumbnail.js';
 import { remotionAvailable, renderWithRemotion, thumbnailWithRemotion } from './remotion.js';
 import { buildDuell } from '../league/build-duell.js';
-import { buildCizim } from './build-cizim.js';
+import { anlatimBilgisi, buildCizim } from './build-cizim.js';
 
 async function characterImage(channelId, settings, cacheDir) {
   try {
@@ -119,5 +119,5 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   }
 
   const credits = [...new Set([music?.credit, ...visuals.map((v) => v.credit)].filter(Boolean))];
-  return { videoPath, thumbnailPath, duration: narrated.total, credits };
+  return { videoPath, thumbnailPath, duration: narrated.total, credits, ...anlatimBilgisi(job, narrated) };
 }
