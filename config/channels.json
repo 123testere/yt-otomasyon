@@ -191,14 +191,15 @@
           1
         ],
         "time": "08:00",
-        "minutes": 8
+        "minutes": 5
       },
       "shorts": {
         "times": [
           "08:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz"
+        "source": "bagimsiz",
+        "speechRate": "+20%"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -211,7 +212,7 @@
         "altyazi": true,
         "ceviri": true,
         "oynatmaListesi": true,
-        "yorumCevap": false
+        "yorumCevap": true
       }
     },
     "brief": {
@@ -319,11 +320,9 @@
       "subtitles": "klasik",
       "subtitleColor": "beyaz",
       "long": {
-        "days": [
-          1
-        ],
+        "days": [],
         "time": "19:00",
-        "minutes": 10
+        "minutes": 8
       },
       "shorts": {
         "times": [
@@ -331,8 +330,8 @@
           "12:00"
         ],
         "seconds": 45,
-        "source": "uzundan",
-        "speechRate": "+10%"
+        "source": "bagimsiz",
+        "speechRate": "+20%"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -345,7 +344,7 @@
         "altyazi": true,
         "ceviri": true,
         "oynatmaListesi": true,
-        "yorumCevap": false
+        "yorumCevap": true
       },
       "instagram": {
         "enabled": true,
@@ -409,7 +408,17 @@
       "Şarj aletiniz 1831'de doğdu ⚡ #shorts",
       "Akımların Savaşı Hangi Lambayı Evine Soktu? Gerçek Hikaye!"
     ],
-    "oylamalar": []
+    "oylamalar": [
+      {
+        "kaynak": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
+        "a": "Pil",
+        "b": "Gözlük",
+        "oyA": 2,
+        "oyB": 0,
+        "yayin": "2026-11-05T09:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "UCyLqvRzGPIsjgOvr7RUxycA",
@@ -462,7 +471,7 @@
         "altyazi": true,
         "ceviri": true,
         "oynatmaListesi": true,
-        "yorumCevap": false
+        "yorumCevap": true
       }
     },
     "brief": {
