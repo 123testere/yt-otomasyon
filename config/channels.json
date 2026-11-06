@@ -137,7 +137,7 @@
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
       "ekTalimat": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
-      "videoSayisi": 4,
+      "videoSayisi": 6,
       "dersler": []
     },
     "oynatmaListeleri": [],
@@ -157,6 +157,93 @@
       "Cheetah vs Peregrine Falcon: The Fastest Animal Ever",
       "Orca vs Great White Shark: Who Rules the Sea?",
       "Mantis Shrimp: The 50 mph Punch That Cracks Glass"
+    ],
+    "oylamalar": []
+  },
+  {
+    "id": "UCFw3Wdyus0HVhykB0uYahWg",
+    "title": "Bölüm Bölüm",
+    "enabled": true,
+    "settings": {
+      "enabled": true,
+      "contentFormat": "dizi",
+      "niche": "animasyon",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "hazir",
+      "cloneScope": "shorts",
+      "elevenVoiceId": "",
+      "tone": "samimi",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": true,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "epik",
+      "musicVolume": "0.1",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          2,
+          5
+        ],
+        "time": "20:00",
+        "minutes": 4
+      },
+      "shorts": {
+        "times": [
+          "19:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "#zincirli #animasyon #dizi",
+      "extraInstructions": "",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      },
+      "dizi": "zincirli"
+    },
+    "brief": {
+      "format": "dizi",
+      "konu": "Animasyon / dizi",
+      "dil": "Türkçe",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": false,
+      "ekTalimat": null,
+      "videoSayisi": 2,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-06T10:59:27.327Z"
+    },
+    "recentTitles": [
+      "Ölmesine 3 saniye vardı… ⚔️ #shorts",
+      "Zincirli · Bölüm 1: Üç Saniye",
+      "Zincirli · Bölüm 1: Üç Saniye | Çöp Adam Animasyon"
     ],
     "oylamalar": []
   },
@@ -226,10 +313,21 @@
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
       "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
-      "videoSayisi": 250,
+      "videoSayisi": 251,
       "dersler": []
     },
-    "oynatmaListeleri": [],
+    "oynatmaListeleri": [
+      "Anadolu'nun Bilinmeyenleri",
+      "Ss",
+      "HAYATİ İNANÇ",
+      "Mount blade 2 Bannerlord Günlükleri",
+      "java scrip temel giriş",
+      "HİNT PAKİSTAN KORE ENDONEZYA  TÜM KLİPER",
+      "Medival 2 total war seri",
+      "Mount Blade War Band OTTOMAN #DeliKurt",
+      "UEFA CHAMPION LEGUE MAÇLARI BAŞLADI GALATASARAYLA",
+      "gamer"
+    ],
     "deney": {
       "id": "kanca-soru",
       "tip": "short",
@@ -289,8 +387,7 @@
       "Pek bir gür cıkıyor bizim hurdacının alırım dedimmi alır haa",
       "Sokakta En İlginç Anlar Kamerada!",
       "Herkesin pazartesi ve bu cuma düğünlere bekliyoruz",
-      "sizin neden sevgiliniz yok",
-      "Bir kilo demir mi daha ağır bir kilo pamuk mu siz cevap verin ?"
+      "sizin neden sevgiliniz yok"
     ],
     "oylamalar": []
   },
@@ -363,10 +460,13 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
-      "videoSayisi": 33,
+      "videoSayisi": 35,
       "dersler": []
     },
-    "oynatmaListeleri": [],
+    "oynatmaListeleri": [
+      "Bina ve Şehir İcatları",
+      "Elektriğin Hikayesi"
+    ],
     "deney": {
       "id": "kanca-soru",
       "tip": "short",
@@ -383,14 +483,14 @@
       "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
       "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
       "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
+      "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
+      "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
       "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
       "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
       "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
       "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
       "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
       "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
-      "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
-      "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
       "Bay Watson, buraya gelin",
       "Aynı Gün Patent Ofisine Giden İki Adam: Telefon Kimin? 📞 #shorts",
       "Telefonun hikâyesi burada bitmiyor ☎️ Bu hikâyenin bir de gölgede kalan kahramanı var",
@@ -431,6 +531,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-05T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
+        "a": "Ütü",
+        "b": "Pusula",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-06T09:00:00.000Z"
       }
     ]
   },
@@ -497,7 +606,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 4,
+      "videoSayisi": 5,
       "dersler": []
     },
     "oynatmaListeleri": [],
