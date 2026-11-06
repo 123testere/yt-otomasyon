@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "2026-11-07_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "long",
+    "publishAt": "2026-11-07T15:00:00.000Z",
+    "targetWords": 340,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 2
+    }
+  }
+]
