@@ -151,6 +151,8 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "Arctic Tern vs Bar-tailed Godwit: Who Flies Farther?",
+      "Polar Bear vs Grizzly Bear: Which One Is Bigger?",
       "Electric Eel: The 860-Volt Fish That Isn't an Eel",
       "Cheetah vs Peregrine Falcon: The Fastest Animal Ever",
       "Orca vs Great White Shark: Who Rules the Sea?",
@@ -238,6 +240,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Dünyanın En Eski Barış Antlaşması Anadolu'da Çıktı",
       "Gordion Düğümünü Kılıçla Kesen İskender'in Hikâyesi",
       "Pompeii'yi Haritadan Silen 79 Yılındaki Patlama",
       "1513'te Çizilen Piri Reis Haritasının Sırrı",
@@ -374,6 +377,8 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
+      "İlk Pil Neden Bir Yığın Madeni Paraya Benziyordu?",
       "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
       "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
       "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
@@ -506,6 +511,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 5/30: Wer erntet die meisten Weintrauben? 🍇",
       "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
       "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
       "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
@@ -516,15 +522,23 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 4,
+      "lastMatch": 5,
       "table": [
         {
           "name": "Türkei",
-          "points": 22
+          "points": 26
         },
         {
           "name": "Spanien",
-          "points": 18
+          "points": 25
+        },
+        {
+          "name": "Italien",
+          "points": 19
+        },
+        {
+          "name": "Frankreich",
+          "points": 16
         },
         {
           "name": "Ukraine",
@@ -535,28 +549,20 @@
           "points": 12
         },
         {
-          "name": "Frankreich",
-          "points": 11
-        },
-        {
           "name": "Serbien",
           "points": 10
         },
         {
-          "name": "Italien",
-          "points": 9
-        },
-        {
           "name": "Portugal",
-          "points": 8
+          "points": 10
         },
         {
           "name": "Griechenland",
-          "points": 7
+          "points": 8
         },
         {
           "name": "Deutschland",
-          "points": 4
+          "points": 7
         }
       ]
     }
