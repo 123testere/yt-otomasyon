@@ -10,6 +10,7 @@ import { makeThumbnail } from './thumbnail.js';
 import { remotionAvailable, renderWithRemotion, thumbnailWithRemotion } from './remotion.js';
 import { buildDuell } from '../league/build-duell.js';
 import { anlatimBilgisi, buildCizim } from './build-cizim.js';
+import { buildDizi } from './build-dizi.js';
 
 async function characterImage(channelId, settings, cacheDir) {
   try {
@@ -45,6 +46,7 @@ async function planShots(job, narrated, fmt, { settings, dir, used, seedBase }) 
 export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (job.format === 'duell') return buildDuell(job, settings, { workDir });
   if (job.format === 'cizim') return buildCizim(job, settings, { workDir });
+  if (job.format === 'dizi') return buildDizi(job, settings, { workDir });
   const fmt = formatFor(job.type);
   const dir = path.join(workDir, job.id);
   fs.mkdirSync(dir, { recursive: true });

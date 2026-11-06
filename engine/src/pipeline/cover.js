@@ -6,11 +6,13 @@ import { probeDuration, run } from '../lib/util.js';
 import { encyclopediaThumbnail, remotionStill } from './remotion.js';
 import { aiImage } from './visuals.js';
 import { wikimedia } from './archives.js';
+import { diziKapak } from './build-dizi.js';
 
 // Uzun video küçük resmini istenen yazıyla yeniden çizer (kapak denemesi ve geri alma için).
 // Aynı tohumla aynı arka plan gelir; sadece yazı değişir.
 export async function uzunKapak({ job, settings, dir, text }) {
   fs.mkdirSync(dir, { recursive: true });
+  if (job.format === 'dizi') return diziKapak({ job, dir, text });
   if (job.format === 'cizim') return encyclopediaThumbnail({ job: { ...job, thumbnailText: text }, settings, dir });
   const style = pick(options.visualStyles, settings.visualStyle);
   let bg = null;

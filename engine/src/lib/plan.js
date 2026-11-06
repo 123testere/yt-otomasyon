@@ -13,6 +13,9 @@ const MIN_LEAD_MS = 60 * 60 * 1000; // yayına 1 saatten az kalmışsa o slotu a
 const CLIPS_PER_LONG = 3; // bir uzun videodan çıkan en fazla kesit Shorts
 const CLIP_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
 const VOTE_OPEN_MS = 6 * 60 * 60 * 1000; // oylama en az 6 saat açık kalır
+// Dizi: konuşma satırlarının kelime hızı (duraklar, aksiyon ve kartlar dahil dakikada ~85 kelime).
+const DIZI_KELIME_DK = 85;
+const DIZI_SHORTS_KELIME = 80;
 
 export function existingJobIds() {
   const ids = new Set();
@@ -23,10 +26,28 @@ export function existingJobIds() {
   return ids;
 }
 
-function slotsFor(channel, dates, now) {
+// Dizi kanalı: bölümler uzun video günlerinde; her bölümün Shorts'u ertesi gün, Shorts saatinde.
+// O gün dizinin aynı türde bir videosu zaten varsa (ör. elle yüklenmiş bölüm) slot açılmaz.
+function diziSlotlari(channel, dates) {
   const s = channel.settings;
   const slots = [];
+  const dolu = new Set(channelJobs(channel.id).filter((j) => j.format === 'dizi' && j.publishAt)
+    .map((j) => `${j.type}:${dateInTz(new Date(j.publishAt), TZ)}`));
   for (const date of dates) {
+    if (s.long.days.includes(weekday(date)) && !dolu.has(`long:${date}`)) slots.push({ type: 'long', idx: 1, date, time: s.long.time });
+    const dun = addDays(date, -1);
+    if (s.long.days.includes(weekday(dun)) && !dolu.has(`short:${date}`)) {
+      slots.push({ type: 'short', idx: 1, date, time: [...s.shorts.times].sort()[0], kaynak: `${dun}_${channel.id}_long1` });
+    }
+  }
+  return slots;
+}
+
+function slotsFor(channel, dates, now) {
+  const s = channel.settings;
+  const dizi = s.contentFormat === 'dizi';
+  const slots = dizi ? diziSlotlari(channel, dates) : [];
+  for (const date of dizi ? [] : dates) {
     if (s.long.days.includes(weekday(date))) {
       slots.push({ type: 'long', idx: 1, date, time: s.long.time });
     }
@@ -40,7 +61,8 @@ function slotsFor(channel, dates, now) {
       channelId: channel.id,
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
-      targetWords: targetWords(s, slot.type),
+      targetWords: dizi ? (slot.type === 'long' ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : DIZI_SHORTS_KELIME) : targetWords(s, slot.type),
+      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak, dikey: true } : {}) } : {}),
       // Flaggenduell: sezon ve maç numarası yayın gününden hesaplanır (motor da aynısını kullanır).
       ...(s.contentFormat === 'flaggenduell'
         ? { format: 'duell', ...(matchFor(slot.date, channel.league?.calendarStart ?? slot.date) ?? {}) }
@@ -70,7 +92,7 @@ function channelJobs(channelId) {
 // "Uzun videodan kesit" seçili kanalda her Shorts, yayınından önceki 7 gün içinde çıkan son uzun videoya bağlanır.
 // Kesit hakkı dolmuşsa ya da uzun video yoksa Shorts bağımsız yazılır. Aynı turda yazılacak uzun video da kaynak olabilir.
 function attachClips(slots, channels) {
-  for (const c of channels.filter((ch) => ch.settings.shorts?.source === 'uzundan')) {
+  for (const c of channels.filter((ch) => ch.settings.shorts?.source === 'uzundan' && ch.settings.contentFormat !== 'dizi')) {
     const jobs = channelJobs(c.id);
     const longs = [...jobs, ...slots.filter((s) => s.channelId === c.id)]
       .filter((j) => j.type === 'long')
@@ -92,7 +114,7 @@ function attachClips(slots, channels) {
 // Yorum oylaması: yayınlanmış ve en az 6 saat geçmiş, henüz kullanılmamış her oylama sıradaki
 // bağımsız Shorts'a ya da uzun videoya verilir (kesit Shorts konusunu uzun videodan aldığı için almaz).
 function attachVotes(slots, channels, now) {
-  for (const c of channels.filter((ch) => ch.oylamalar?.length)) {
+  for (const c of channels.filter((ch) => ch.oylamalar?.length && ch.settings.contentFormat !== 'dizi')) {
     const used = new Set(channelJobs(c.id).map((j) => j.oylama?.kaynak).filter(Boolean));
     const pending = c.oylamalar
       .filter((o) => !used.has(o.kaynak) && Date.parse(o.yayin) + VOTE_OPEN_MS <= now.getTime())
@@ -110,7 +132,7 @@ function attachVotes(slots, channels, now) {
 // Deney: kanalın süren deneyi varsa o türdeki her yeni video az olan kola (A/B) verilir.
 // Süre deneyinin B kolu %25 kısa yazılır, saat deneyinin B kolu alternatif saatte yayınlanır.
 function attachExperiments(slots, channels, now) {
-  for (const c of channels.filter((ch) => ch.deney?.id && ch.settings.optimizasyon?.deneyler !== false)) {
+  for (const c of channels.filter((ch) => ch.deney?.id && ch.settings.optimizasyon?.deneyler !== false && ch.settings.contentFormat !== 'dizi')) {
     const d = deneyBul(c.deney.id);
     if (!d) continue;
     const count = { A: 0, B: 0 };
@@ -130,6 +152,24 @@ function attachExperiments(slots, channels, now) {
   return slots;
 }
 
+// Dizi bölüm numarası: kanalın bu dizideki son bölümünden devam eder (queue/ + done/ + bu turdaki slotlar).
+// Shorts kaynağı olan bölümün numarasını alır; kaynak bölüm hiç yazılmamışsa Shorts slotu düşer.
+function attachDizi(slots, channels) {
+  const dusen = new Set();
+  for (const c of channels.filter((ch) => ch.settings.contentFormat === 'dizi')) {
+    const jobs = channelJobs(c.id).filter((j) => j.format === 'dizi' && j.dizi === c.settings.dizi);
+    let son = Math.max(c.settings.diziBaslangic ?? 0, ...jobs.filter((j) => j.type === 'long').map((j) => j.bolum?.no ?? 0));
+    const kendi = slots.filter((s) => s.channelId === c.id).sort((a, b) => a.publishAt.localeCompare(b.publishAt));
+    for (const slot of kendi.filter((s) => s.type === 'long')) slot.bolum = { no: ++son };
+    for (const slot of kendi.filter((s) => s.type === 'short')) {
+      const kaynak = kendi.find((s) => s.id === slot.clipOf) ?? jobs.find((j) => j.id === slot.clipOf);
+      if (!kaynak?.bolum?.no) { dusen.add(slot.id); continue; }
+      slot.bolum = { no: kaynak.bolum.no };
+    }
+  }
+  return slots.filter((s) => !dusen.has(s.id));
+}
+
 // Bugün ve yarın için, açık kanalların henüz yazılmamış video slotları.
 export function neededJobs(channels, { now = new Date(), extraExisting = [] } = {}) {
   const today = dateInTz(now, TZ);
@@ -141,6 +181,6 @@ export function neededJobs(channels, { now = new Date(), extraExisting = [] } = 
     .flatMap((c) => slotsFor(c, dates, now))
     .filter((job) => !existing.has(job.id))
     .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
-  return attachExperiments(attachVotes(attachClips(jobs, channels), channels, now), channels, now)
+  return attachExperiments(attachVotes(attachClips(attachDizi(jobs, channels), channels), channels, now), channels, now)
     .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
 }

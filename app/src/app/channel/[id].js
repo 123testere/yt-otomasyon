@@ -122,6 +122,12 @@ export default function ChannelSettings() {
             <>
               <Label hint={options.contentFormats.find((f) => f.id === (s.contentFormat ?? 'belgesel'))?.hint}>İçerik formatı</Label>
               <ChoiceChips items={options.contentFormats} value={s.contentFormat ?? 'belgesel'} onChange={(contentFormat) => set({ contentFormat })} />
+              {s.contentFormat === 'dizi' && options.diziler ? (
+                <>
+                  <Label hint={options.diziler.find((d) => d.id === s.dizi)?.hint}>Yayındaki dizi</Label>
+                  <ChoiceChips items={options.diziler} value={s.dizi} onChange={(dizi) => set({ dizi })} />
+                </>
+              ) : null}
             </>
           ) : null}
           <Label>Kanal konusu</Label>

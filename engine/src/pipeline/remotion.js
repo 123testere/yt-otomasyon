@@ -154,3 +154,23 @@ export async function remotionStill(id, props, png, jobId) {
     stage.cleanup();
   }
 }
+
+// Animasyonlu dizi bölümü (remotion/src/Dizi.jsx): mekân ve karakterler kodla çizilir.
+export async function renderDizi({ job, dir, ses, music, musicVolume, boyut = { width: 1080, height: 1920 }, props: extra }) {
+  const stage = stager(job.id);
+  try {
+    const props = {
+      fps: FPS, ...boyut, durationInFrames: Math.max(1, Math.round(ses.total * FPS)),
+      scenes: ses.scenes, words: ses.words,
+      narration: stage.add(ses.narration), music: stage.add(music?.file), musicVolume,
+      ...extra,
+    };
+    const propsFile = path.join(dir, 'remotion-props.json');
+    fs.writeFileSync(propsFile, JSON.stringify(props));
+    const out = path.join(dir, 'video.mp4');
+    await remotion(['render', ENTRY, 'Dizi', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    return out;
+  } finally {
+    stage.cleanup();
+  }
+}

@@ -1,0 +1,949 @@
+{
+ "id": "zincirli_b01_UCFw3Wdyus0HVhykB0uYahWg",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "bolum": {
+  "no": 1,
+  "ad": "Üç Saniye"
+ },
+ "title": "Zincirli · Bölüm 1: Üç Saniye",
+ "description": "Ailesi elinden alınan demircinin oğlu Arın, 15 yıl sonra arenada yenilmez şampiyonun karşısında. Ölmesine üç saniye var.\n\n#zincirli #çöpadam #animasyon #dizi",
+ "tags": [
+  "çöp adam",
+  "animasyon dizi",
+  "gladyatör",
+  "arena"
+ ],
+ "topic": "Arın'ın kaçırılışı ve arenadaki ilk büyük dövüşü",
+ "muzik": "epik",
+ "muzikSeviye": 0.1,
+ "kapanis": {
+  "baslik": "DEVAMI",
+  "sonraki": "Bölüm 2: Kızıl Loca — Yakında",
+  "soru": "Sence Arın kardeşi Su'yu bulabilecek mi?"
+ },
+ "scenes": [
+  {
+   "kisim": "Soğuk Açılış",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "aciklama": "Arın kumda sırtüstü yatıyor, kılıcı uzağa savrulmuş. Kargan iki eliyle kılıcını havaya kaldırıyor. Tribünler ayakta. Ağır çekim.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.33,
+     "poz": "yerde",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "esya": "kilic",
+     "poz": "kilic-kaldir",
+     "ifade": "kizgin"
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.86,
+     "aci": 1.5
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ölmeme üç saniye vardı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kalabalık adımı bilmiyordu. Kral adımı bilmiyordu. Karşımdaki dev de bilmiyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ama ben onlara adımı öğretmeye geldim."
+    }
+   ]
+  },
+  {
+   "kisim": "Demirci'nin Oğlu",
+   "mekan": "koy-gunduz",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "kart": {
+    "ust": "15 YIL ÖNCE",
+    "alt": "Birinci Kısım · Demirci'nin Oğlu"
+   },
+   "kartSn": 2.8,
+   "aciklama": "Köy meydanı. Demir, oğluna tahta kılıçla ders veriyor. Su gülerek koşuşturuyor.",
+   "kadraj": [
+    {
+     "id": "demir",
+     "x": 0.36,
+     "esya": "tahta-kilic"
+    },
+    {
+     "id": "arin-cocuk",
+     "x": 0.56,
+     "yon": -1,
+     "esya": "tahta-kilic",
+     "poz": "blok"
+    },
+    {
+     "id": "su",
+     "hareket": {
+      "x0": 1.05,
+      "x1": 0.8,
+      "sure": 4,
+      "kos": true
+     },
+     "adimlar": [
+      {
+       "sn": 4.2,
+       "poz": "el-salla",
+       "yon": -1
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "demir",
+     "metin": "Kılıcı sıkma Arın. Kuş tutar gibi tut.",
+     "poz": "saldir",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "kim": "arin-cocuk",
+     "metin": "Ama baba, düşerse?",
+     "ifade": "saskin"
+    },
+    {
+     "kim": "demir",
+     "metin": "Düşen kılıç kalkar. Asıl düşmemesi gereken, senin gözün.",
+     "poz": "dur"
+    },
+    {
+     "kim": "demir",
+     "metin": "Bir gün biri seni yere serecek. O an korkma, bekle. Herkes en çok, kazandığını sandığı an açık verir.",
+     "poz": "dusun"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O gün bu sözün ne anlama geldiğini bilmiyordum."
+    }
+   ]
+  },
+  {
+   "mekan": "koy-yangin",
+   "aciklama": "Gece. Tepede meşaleler belirir.",
+   "kadraj": [
+    {
+     "id": "leyla",
+     "x": 0.25
+    },
+    {
+     "id": "demir",
+     "x": 0.47
+    },
+    {
+     "id": "arin-cocuk",
+     "x": 0.68,
+     "yon": -1
+    },
+    {
+     "id": "su",
+     "x": 0.78,
+     "yon": -1
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "leyla",
+     "metin": "Demir! Tepede ateşler var!",
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "kim": "demir",
+     "metin": "Arın, kardeşini al. Ahıra saklanın. Ne duyarsanız duyun, çıkmayın!",
+     "poz": "isaret",
+     "ifade": "kizgin"
+    }
+   ]
+  },
+  {
+   "mekan": "koy-yangin",
+   "sure": 7,
+   "aciklama": "Evlerin pencereleri turuncuya boyanıyor. Siluetler koşuşuyor. Demir kılıcıyla kapının önünde duruyor.",
+   "kadraj": [
+    {
+     "id": "akinci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.3,
+      "sure": 3
+     }
+    },
+    {
+     "id": "demir",
+     "x": 0.6,
+     "yon": -1,
+     "esya": "kilic",
+     "poz": "blok",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O gece köyümüz yandı. Babam kapının önünden hiç ayrılmadı.",
+     "once": 1
+    }
+   ]
+  },
+  {
+   "mekan": "koy-yangin",
+   "aciklama": "Ahırın kapısı açılıyor. Yüzü yara izli, siyah pelerinli bir adam fenerini kaldırıyor.",
+   "kadraj": [
+    {
+     "id": "sungur",
+     "hareket": {
+      "x0": 0.1,
+      "x1": 0.45,
+      "sure": 2.5
+     },
+     "esya": "fener"
+    },
+    {
+     "id": "arin-cocuk",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "diz-cok",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sungur",
+     "metin": "Bak hele… demircinin yavrusu. Bunu satarız.",
+     "ifade": "supheli",
+     "once": 1.5
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O yüzü unutmadım. On beş yıl boyunca, her gece."
+    }
+   ]
+  },
+  {
+   "kisim": "Zincirler",
+   "mekan": "kervan",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Zincirler"
+   },
+   "aciklama": "Toz içinde bir kervan. Bilekleri zincirli çocuklar yürüyor. Arın en arkada.",
+   "kadraj": [
+    {
+     "id": "akinci",
+     "hareket": {
+      "x0": 0.45,
+      "x1": 1.1,
+      "sure": 12
+     },
+     "esya": null
+    },
+    {
+     "id": "arin-cocuk",
+     "hareket": {
+      "x0": 0.05,
+      "x1": 0.6,
+      "sure": 12
+     },
+     "adimlar": [
+      {
+       "sn": 12,
+       "poz": "zincirli"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kardeşimi başka bir kervana bindirdiler. Bir daha görmedim."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Beni bir arena sahibine sattılar. Fiyatım iki çuval tuzdu."
+    }
+   ]
+  },
+  {
+   "mekan": "tas-ocagi",
+   "aciklama": "Taş ocağı. Mevsimler geçiyor; Arın her sahnede biraz daha büyüyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "hareket": {
+      "x0": 0.15,
+      "x1": 0.7,
+      "sure": 9
+     },
+     "poz": "tasi",
+     "esya": "tas"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İlk yıl taş taşıdım. Beşinci yıl taş kırdım. Onuncu yıl, taş gibi oldum."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "Zindan. Yaşlı, tek gözlü bir adam ekmeğini ikiye bölüp Arın'a uzatıyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.35
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "diz-cok"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Elin titriyor evlat. Korkudan mı, öfkeden mi?",
+     "poz": "isaret"
+    },
+    {
+     "kim": "arin",
+     "metin": "İkisinden de.",
+     "ifade": "kizgin"
+    },
+    {
+     "kim": "toros",
+     "metin": "Öfke kılıcı ağırlaştırır. Korku ayağını hafifletir. Sen ikisini yer değiştir, yeter.",
+     "poz": "dusun"
+    }
+   ]
+  },
+  {
+   "kisim": "Arenanın Yolu",
+   "mekan": "avlu",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Arenanın Yolu"
+   },
+   "aciklama": "Toros tahta kılıçla Arın'ı defalarca yere seriyor. Arın her seferinde kalkıyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.36,
+     "esya": "tahta-kilic",
+     "adimlar": [
+      {
+       "sn": 3.3,
+       "poz": "kilic-savur"
+      },
+      {
+       "sn": 3.9,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "arin",
+     "x": 0.6,
+     "yon": -1,
+     "esya": "tahta-kilic",
+     "adimlar": [
+      {
+       "sn": 2.8,
+       "poz": "saldir",
+       "x": 0.52
+      },
+      {
+       "sn": 3.6,
+       "poz": "dus",
+       "x": 0.62,
+       "darbe": true
+      },
+      {
+       "sn": 4.8,
+       "poz": "kalk"
+      },
+      {
+       "sn": 5.8,
+       "poz": "dur"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Yine yerdesin.",
+     "once": 3
+    },
+    {
+     "kim": "arin",
+     "metin": "Yine kalkıyorum."
+    },
+    {
+     "kim": "toros",
+     "metin": "Güzel. Arenada kimse sana kaç kez düştüğünü sormaz. Son kez kalkıp kalkmadığına bakar."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 0.8,
+   "aciklama": "Kısa geçişler: Arın ilk dövüşünü, sonra ikincisini, üçüncüsünü kazanıyor. Tribünler her seferinde daha çok bağırıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "sn": 0,
+       "poz": "saldir"
+      },
+      {
+       "sn": 1.2,
+       "poz": "zafer"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "On dokuz dövüş. On dokuz kez kalktım.",
+     "once": 1
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 0.6,
+   "aciklama": "Kral locası. Kral Moran ayağa kalkıyor.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.45,
+     "poz": "isaret"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "siluetGibi": true
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Yarın şampiyonumuz Kargan, kırk birinci zaferi için çıkacak! Rakibi… şu zincirli köle!",
+     "poz": "isaret"
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "Dövüş gecesi. Toros, Arın'ın omzuna elini koyuyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4
+    },
+    {
+     "id": "arin",
+     "x": 0.6,
+     "yon": -1,
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Kargan'ı kimse yenemedi Arın. Çünkü kimse onu yeterince bekleyemedi."
+    }
+   ]
+  },
+  {
+   "kisim": "Dövüş",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Dövüş"
+   },
+   "aciklama": "Kapılar açılıyor. Kum, güneş, binlerce kişi. Kargan, Arın'ın iki katı boyunda.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "hareket": {
+      "x0": -0.05,
+      "x1": 0.3,
+      "sure": 4.5
+     },
+     "esya": "kilic+kalkan"
+    },
+    {
+     "id": "kargan",
+     "hareket": {
+      "x0": 1.08,
+      "x1": 0.68,
+      "sure": 4.5
+     },
+     "esya": "kilic",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Zincirin hâlâ bileğinde. Seni öldürdüğümde de orada kalsın.",
+     "once": 2.4
+    },
+    {
+     "kim": "arin",
+     "metin": "O zincir, kim olduğumu unutmamam için.",
+     "ifade": "kizgin"
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 8,
+   "aciklama": "Kargan saldırıyor; Arın eğilerek kaçıyor. İkinci darbe kalkanına iniyor, kalkan ikiye ayrılıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.32,
+     "esya": "kilic+kalkan",
+     "adimlar": [
+      {
+       "sn": 0.9,
+       "poz": "egil"
+      },
+      {
+       "sn": 1.6,
+       "poz": "dur"
+      },
+      {
+       "sn": 2.6,
+       "poz": "blok",
+       "sarsinti": true
+      },
+      {
+       "sn": 3,
+       "esya": "kilic",
+       "poz": "darbe"
+      },
+      {
+       "sn": 3.9,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.66,
+     "yon": -1,
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "sn": 0.5,
+       "poz": "kilic-savur",
+       "x": 0.55
+      },
+      {
+       "sn": 1.6,
+       "poz": "dur"
+      },
+      {
+       "sn": 2.2,
+       "poz": "kilic-savur",
+       "x": 0.48
+      },
+      {
+       "sn": 3,
+       "poz": "dur",
+       "x": 0.6
+      }
+     ]
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kirik-kalkan",
+     "x": 0.2,
+     "aci": 0.3,
+     "gorun": 3
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Çok güçlüydü. Her darbesi bir duvar gibiydi.",
+     "once": 4.2
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Arın bir kez vuruyor ama Kargan kılıcı havada yakalıyor. Bir tekme, Arın kumda yuvarlanıyor, kılıcı uzağa uçuyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "sn": 0.4,
+       "poz": "saldir",
+       "x": 0.48
+      },
+      {
+       "sn": 1.2,
+       "poz": "darbe",
+       "x": 0.34,
+       "esya": null,
+       "darbe": true
+      },
+      {
+       "sn": 1.6,
+       "poz": "dus"
+      },
+      {
+       "sn": 2.3,
+       "poz": "yerde"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "sn": 0.8,
+       "poz": "blok"
+      },
+      {
+       "sn": 1.2,
+       "poz": "saldir"
+      },
+      {
+       "sn": 1.9,
+       "poz": "eller-belde"
+      }
+     ]
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.86,
+     "aci": 1.5,
+     "ucus": {
+      "x0": 0.45,
+      "sn0": 1.2,
+      "sn1": 2.1
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Kalk bakalım, demircinin oğlu!",
+     "once": 2.6,
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 0.9,
+   "sure": 3,
+   "aciklama": "Arın şaşkın: Kargan bunu nereden biliyor? Locada, kralın yanında siyah pelerinli bir adam gülümsüyor.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4
+    },
+    {
+     "id": "sungur",
+     "x": 0.62,
+     "yon": -1,
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "aciklama": "Açılıştaki kare. Kargan kılıcını kaldırıyor. Ağır çekim, ses kesiliyor; babasının ve Toros'un sesi yankılanıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.33,
+     "poz": "yerde",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "esya": "kilic",
+     "poz": "kilic-kaldir",
+     "ifade": "kizgin"
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.86,
+     "aci": 1.5
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ölmeme üç saniye vardı."
+    },
+    {
+     "kim": "demir",
+     "metin": "Herkes en çok, kazandığını sandığı an açık verir."
+    },
+    {
+     "kim": "toros",
+     "metin": "Son kez kalkıp kalkmadığına bakar."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir… İki…"
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 5,
+   "aciklama": "Kargan kılıcını indirirken Arın yana yuvarlanıyor. Kılıç kuma saplanıyor. Arın bileğindeki zinciri Kargan'ın koluna dolayıp çekiyor; dev dizlerinin üstüne çöküyor. Arın kumdaki kılıcı alıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.33,
+     "poz": "yerde",
+     "adimlar": [
+      {
+       "sn": 0.3,
+       "poz": "kalk",
+       "x": 0.4
+      },
+      {
+       "sn": 1,
+       "poz": "saldir",
+       "x": 0.42
+      },
+      {
+       "sn": 2.6,
+       "poz": "dur",
+       "esya": "kilic",
+       "x": 0.46
+      },
+      {
+       "sn": 3,
+       "poz": "saldir"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "esya": "kilic",
+     "poz": "kilic-kaldir",
+     "adimlar": [
+      {
+       "sn": 0.2,
+       "poz": "kilic-savur"
+      },
+      {
+       "sn": 0.6,
+       "poz": "dur",
+       "esya": null
+      },
+      {
+       "sn": 1.6,
+       "poz": "diz-cok",
+       "darbe": true,
+       "ifade": "korkmus"
+      }
+     ]
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.5,
+     "aci": 3.14,
+     "gorun": 0.6,
+     "kaybol": 2.6
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 1,
+    "bitis": 2.6
+   }
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 0,
+   "aciklama": "Kılıcın ucu Kargan'ın boğazının önünde duruyor. Arena tamamen sessiz. Arın kılıcı kuma bırakıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.44,
+     "esya": "kilic",
+     "poz": "saldir",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.56,
+     "yon": -1,
+     "poz": "diz-cok",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Bitir işimi.",
+     "once": 1.2
+    },
+    {
+     "kim": "arin",
+     "metin": "Hayır. Senin efendin de, benim efendim de aynı adam. Düşmanım sen değilsin.",
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "kisim": "Yüzleşme",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kart": {
+    "ust": "BEŞİNCİ KISIM",
+    "alt": "Yüzleşme"
+   },
+   "aciklama": "Bir an sessizlik. Sonra bütün arena aynı ismi bağırıyor: Arın!",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "poz": "zafer"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "diz-cok"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O gün kalabalık adımı öğrendi.",
+     "once": 0.8
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 0.5,
+   "aciklama": "Arın locaya dönüyor. Kralın yanındaki adam başlığını indiriyor: yüzünde yara izi.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.38,
+     "ifade": "saskin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.6,
+     "yon": -1,
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sungur",
+     "metin": "Demircinin yavrusu… büyümüşsün."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 0.7,
+   "aciklama": "Arın locayı işaret ediyor. Kral Moran'ın gülümsemesi donuyor; muhafızlar kılıçlarını çekiyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "muhafiz",
+     "hareket": {
+      "x0": 1.08,
+      "x1": 0.78,
+      "sure": 3
+     },
+     "yon": -1
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Seni on beş yıl aradım, Sungur. Şimdi sıra sende."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zincirim hâlâ bileğimdeydi. Ama artık beni değil, onları bağlıyordu."
+    }
+   ]
+  }
+ ],
+ "publishAt": "2026-11-06T05:47:50.627Z",
+ "thumbnailText": "ÜÇ SANİYE"
+}

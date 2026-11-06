@@ -1,0 +1,318 @@
+{
+  "id": "karacam-saati",
+  "ad": "Karaçam'ın Saati",
+  "stil": "cop",
+  "toplam": 30,
+  "tur": "gizem / gerilim (kan ve vahşet yok, 13+)",
+  "ozet": "Karadeniz dağlarında, sisin hiç kalkmadığı Karaçam köyü. Meydandaki saat kulesi 1986'da bir gece 03:17'de durdu; o gece köyün en küçüğü, 9 yaşındaki Yusuf kayboldu ve köy bunu hiç konuşmadı. İstanbul'dan yaz tatili için ninesinin yanına gelen 16 yaşındaki Elif, geldiği ilk gece saatin yeniden çaldığını duyar.",
+  "gercek": "Yazarın bilmesi gereken sır (izleyiciye ancak 25-30. bölümlerde açılır): 1986'da muhtar Rıza'nın babası Hüsnü Ağa, köyün altındaki eski bakır madeninin girişini gizlemek için saat kulesinin bodrumundaki geçidi kapattırdı. Yusuf o gece kuleye girip geçitte mahsur kaldı; Kâzım (Yusuf'un ağabeyi) sesini duydu ama kimse ona inanmadı, 'deli' damgası o geceden kaldı. Yusuf aslında ölmedi: başka bir çıkıştan çıkıp aşağı köydeki bir ailenin yanında büyüdü, hafızası bulanık. Saati 40 yıl sonra yeniden kuran, köye dönen yetişkin Yusuf'tur (köye 'Öğretmen Selim' adıyla gelmiştir, 12. bölümde tanıtılır). Hatice Nine o gece Yusuf'u kuleye giderken gördüğünü kimseye söylemedi; suçluluğunu taşıyor. Muhtar Rıza babasının sırrını biliyor ve madeni satmak isteyen şirketle gizlice görüşüyor.",
+  "kurallar": [
+    "Her bölüm tek bir küçük ilerleme getirir ve bir merak kancasıyla biter (yeni ipucu, ses, kapı, kişi).",
+    "Hikâyeyi Elif anlatır (anlatici satırları Elif'in iç sesi gibidir, birinci tekil şahıs).",
+    "Bölümler kendi içinde anlaşılır olmalı: ilk satır kısa bir 'önceki bölümde' özetidir (1. bölüm hariç).",
+    "Saat 03:17 ve saat tıkırtısı tekrar eden motiftir. Kulenin saati her zaman 03:17'yi gösterir; 30. bölümde ilk kez ilerler.",
+    "Korku tekinsizlikten gelir: sis, ses, boş sokak, yarım kalmış cümle. Ölüm, kan, şiddet sahnesi yok.",
+    "Karakterlerin konuşma tarzı sabittir: Nine 'kuzum, kızım' der ve konuyu değiştirir; Muhtar kibar ve resmi; Kâzım kısa, kesik, bilmece gibi; Can esprili ve korkak; Elif meraklı ve inatçı."
+  ],
+  "karakterler": {
+    "elif": {
+      "ad": "Elif",
+      "renk": "#7FB8E8",
+      "ten": "#E9BC96",
+      "sac": "#3A2418",
+      "sacStil": "atkuyrugu",
+      "goz": "#5A3A22",
+      "kiyafet": "#2F4A6A",
+      "kiyafet2": "#D8D0C0",
+      "yas": "genc",
+      "cinsiyet": "k",
+      "seed": 2,
+      "ses": {
+        "voice": "tr-TR-EmelNeural",
+        "rate": "+6%",
+        "pitch": "+12Hz"
+      },
+      "kim": "16 yaşında, İstanbullu, meraklı ve inatçı; hikâyenin anlatıcısı."
+    },
+    "nine": {
+      "ad": "Hatice Nine",
+      "renk": "#E8A3A0",
+      "ten": "#D9A882",
+      "sac": "#7A2E3A",
+      "sacStil": "basortusu",
+      "kas": "#8A8A8A",
+      "goz": "#3A2A1E",
+      "kiyafet": "#4A3A30",
+      "kiyafet2": "#8A6A4A",
+      "yas": "yasli",
+      "cinsiyet": "k",
+      "seed": 5,
+      "ses": {
+        "voice": "tr-TR-EmelNeural",
+        "rate": "-12%",
+        "pitch": "-28Hz"
+      },
+      "kim": "Elif'in ninesi; sevecen, dualı, bir şey saklıyor.",
+      "aksesuar": "baston"
+    },
+    "muhtar": {
+      "ad": "Muhtar Rıza",
+      "renk": "#C9B27A",
+      "ten": "#D2A07A",
+      "sac": "#2A2420",
+      "sacStil": "kisa",
+      "goz": "#2A1A10",
+      "kiyafet": "#3A3A44",
+      "kiyafet2": "#B8B0A0",
+      "yas": "orta",
+      "cinsiyet": "e",
+      "sakal": "biyik",
+      "sapka": "kasket",
+      "sapkaRenk": "#2E2E34",
+      "seed": 8,
+      "ses": {
+        "voice": "tr-TR-AhmetNeural",
+        "rate": "-4%",
+        "pitch": "-12Hz"
+      },
+      "kim": "Köyün muhtarı; kibar, sakin, fazla sakin."
+    },
+    "kazim": {
+      "ad": "Deli Kâzım",
+      "renk": "#A8C98A",
+      "ten": "#C8946C",
+      "sac": "#9A9A9A",
+      "sacStil": "dagnik",
+      "goz": "#4A4A3A",
+      "kiyafet": "#4A4030",
+      "kiyafet2": "#6A5A40",
+      "yas": "yasli",
+      "cinsiyet": "e",
+      "sakal": "kirli",
+      "seed": 11,
+      "ses": {
+        "voice": "tr-TR-AhmetNeural",
+        "rate": "-14%",
+        "pitch": "-30Hz"
+      },
+      "kim": "Köyün 'delisi'; Yusuf'un ağabeyi; bilmece gibi konuşur.",
+      "aksesuar": "fener"
+    },
+    "can": {
+      "ad": "Can",
+      "renk": "#F2C46A",
+      "ten": "#D8A47C",
+      "sac": "#1E140E",
+      "sacStil": "kisa",
+      "goz": "#3A2414",
+      "kiyafet": "#6A2E24",
+      "kiyafet2": "#3A3A3A",
+      "yas": "genc",
+      "cinsiyet": "e",
+      "seed": 14,
+      "ses": {
+        "voice": "tr-TR-AhmetNeural",
+        "rate": "+8%",
+        "pitch": "+22Hz"
+      },
+      "kim": "15 yaşında köylü çocuk; esprili, korkak ama sadık.",
+      "aksesuar": "bere"
+    },
+    "selim": {
+      "ad": "Öğretmen Selim",
+      "renk": "#B8A8E0",
+      "ten": "#DDB08C",
+      "sac": "#3A2A20",
+      "sacStil": "kisa",
+      "goz": "#2A2A3A",
+      "kiyafet": "#2E3A2E",
+      "kiyafet2": "#C8C0B0",
+      "yas": "orta",
+      "cinsiyet": "e",
+      "gozluk": true,
+      "seed": 17,
+      "ses": {
+        "voice": "tr-TR-AhmetNeural",
+        "rate": "+0%",
+        "pitch": "+0Hz"
+      },
+      "kim": "Köye yeni atanan öğretmen (12. bölümden itibaren); nazik, dalgın; aslında kayıp Yusuf."
+    },
+    "yabanci": {
+      "ad": "???",
+      "renk": "#2A2A2A",
+      "sacStil": "kisa",
+      "sac": "#111111",
+      "aksesuar": "fener",
+      "yas": "orta",
+      "cinsiyet": "e",
+      "siluet": true,
+      "seed": 21,
+      "ses": {
+        "voice": "tr-TR-AhmetNeural",
+        "rate": "-10%",
+        "pitch": "-20Hz"
+      },
+      "kim": "Kim olduğu bilinmeyen fenerli kişi (siluet). Kimliği açılınca o karakterin id'si kullanılır."
+    }
+  },
+  "anlatici": {
+    "ses": {
+      "voice": "tr-TR-EmelNeural",
+      "rate": "-4%",
+      "pitch": "+4Hz"
+    }
+  },
+  "bolumler": [
+    {
+      "no": 1,
+      "ad": "Saat Çaldı",
+      "ozet": "Elif köye gelir; nine onu sevinçle karşılar ama meydandaki saat kulesinden bahsedince susar. Gece 03:17'de 40 yıldır duran saat çalar. Elif pencereden kulenin önünde bir fener ışığı görür."
+    },
+    {
+      "no": 2,
+      "ad": "Kâzım'ın Uyarısı",
+      "ozet": "Sabah köylüler saatin çaldığını inkâr eder. Kuyu başında Deli Kâzım Elif'e 'Saat kimin için çaldı, onu sor' der ve kaçar."
+    },
+    {
+      "no": 3,
+      "ad": "Kuyudaki Not",
+      "ozet": "Elif ve Can kuyunun kenarında taşın altına sıkıştırılmış eski bir not bulur: '03:17 — beni unutmayın. Y.'"
+    },
+    {
+      "no": 4,
+      "ad": "Ninenin Sandığı",
+      "ozet": "Elif ninenin sandığında kilitli bir çekmece görür; nine 'ona dokunma kuzum' der, sesi titrer."
+    },
+    {
+      "no": 5,
+      "ad": "1986 Fotoğrafı",
+      "ozet": "Sandıktan düşen fotoğrafta köy çocukları ve kulenin önünde gülümseyen küçük bir oğlan var; arkasında 'Yusuf, Mayıs 1986' yazıyor."
+    },
+    {
+      "no": 6,
+      "ad": "Muhtarın Yalanı",
+      "ozet": "Muhtar Rıza köyde hiç Yusuf adında bir çocuk olmadığını söyler. Can, muhtarın elinin titrediğini fark eder."
+    },
+    {
+      "no": 7,
+      "ad": "Kulenin Anahtarı",
+      "ozet": "Kâzım Elif'e paslı bir anahtar verir: 'Kule kapısı değil. Aşağısı.'"
+    },
+    {
+      "no": 8,
+      "ad": "Sisin İçindeki Ses",
+      "ozet": "Gece sisin içinde biri Elif'in adını fısıldar; ses kuleden gelir. Can korkudan kaçar, Elif yalnız kalır."
+    },
+    {
+      "no": 9,
+      "ad": "Kulenin Kapısı",
+      "ozet": "Elif kulenin kapısını açık bulur. İçeride dişliler yeni yağlanmıştır: biri saati gerçekten kurmuştur."
+    },
+    {
+      "no": 10,
+      "ad": "Duvardaki İsimler",
+      "ozet": "Kule duvarında çakıyla kazınmış çocuk isimleri; en altta 'Yusuf' ve yanına yeni kazınmış bir çizgi."
+    },
+    {
+      "no": 11,
+      "ad": "Ninenin Rüyası",
+      "ozet": "Nine uykusunda 'Gitme Yusuf, kuleye gitme' diye sayıklar. Elif ilk kez nineden şüphelenir."
+    },
+    {
+      "no": 12,
+      "ad": "Yeni Öğretmen",
+      "ozet": "Köye yeni öğretmen Selim gelir; kibar ve dalgın. Kuleye bakarken gözleri dolar ama 'Buraları ilk kez görüyorum' der."
+    },
+    {
+      "no": 13,
+      "ad": "Can'ın Sırrı",
+      "ozet": "Can, dedesinden duyduğu bir şeyi itiraf eder: 1986'da kulenin altında bir geçit kapatılmış."
+    },
+    {
+      "no": 14,
+      "ad": "Kapatılan Geçit",
+      "ozet": "Elif ve Can kule bodrumunda yeni örülmüş gibi duran bir duvar bulur; arkasından rüzgâr sesi gelir."
+    },
+    {
+      "no": 15,
+      "ad": "Muhtarın Misafiri",
+      "ozet": "Gece muhtarın evine şehirden siyah bir araba gelir; Can konuşmanın bir kısmını duyar: 'Maden', 'satış', 'kimse bilmeyecek'."
+    },
+    {
+      "no": 16,
+      "ad": "Hüsnü Ağa",
+      "ozet": "Elif muhtarın babası Hüsnü Ağa'nın 1986'da kuleyi 'tamir için' kapattırdığını öğrenir."
+    },
+    {
+      "no": 17,
+      "ad": "Kâzım'ın Gecesi",
+      "ozet": "Kâzım ilk kez açık konuşur: 'O gece kardeşimin sesini duydum. Yerin altından. Kimse inanmadı.'"
+    },
+    {
+      "no": 18,
+      "ad": "Kayıp Defter",
+      "ozet": "Okulda Selim'in masasında çocuk el yazısıyla dolu eski bir defter; kapakta 'Y.K. 3. sınıf' yazıyor."
+    },
+    {
+      "no": 19,
+      "ad": "Ninenin İtirafı",
+      "ozet": "Nine sonunda anlatır: o gece Yusuf'u kuleye koşarken görmüş, durdurmamış, kimseye söylememiş."
+    },
+    {
+      "no": 20,
+      "ad": "03:17 İkinci Kez",
+      "ozet": "Saat yeniden 03:17'de çalar. Elif kuleye koşar ve kapıdan çıkan gözlüklü bir siluet görür."
+    },
+    {
+      "no": 21,
+      "ad": "Gözlüklü Siluet",
+      "ozet": "Elif sabah Selim'in ayakkabılarında kule bodrumundaki kırmızı çamuru görür."
+    },
+    {
+      "no": 22,
+      "ad": "Madenin Haritası",
+      "ozet": "Muhtarın ahırında eski bir maden haritası; kule ile aşağı köy arasında ikinci bir çıkış işaretli."
+    },
+    {
+      "no": 23,
+      "ad": "Aşağı Köy",
+      "ozet": "Elif ve Can aşağı köye iner; yaşlı bir kadın 1986 baharında ormanda bulup büyüttüğü bir oğlandan bahseder."
+    },
+    {
+      "no": 24,
+      "ad": "Selim'in Annesi",
+      "ozet": "Yaşlı kadın oğlanın adını söyler: 'Selim koyduk adını. Kendi adını hatırlamıyordu.'"
+    },
+    {
+      "no": 25,
+      "ad": "Kâzım ve Selim",
+      "ozet": "Kâzım, Selim'le meydanda karşılaşır; uzun süre bakışırlar. Kâzım fısıldar: 'Yusuf?'"
+    },
+    {
+      "no": 26,
+      "ad": "Muhtarın Planı",
+      "ozet": "Muhtar maden satışı için kulenin yıkılacağını duyurur; köy ikiye bölünür."
+    },
+    {
+      "no": 27,
+      "ad": "Duvarın Arkası",
+      "ozet": "Elif, Can, Kâzım ve Selim bodrumdaki duvarı açar; geçitte 1986'dan kalma küçük bir ayakkabı bulurlar."
+    },
+    {
+      "no": 28,
+      "ad": "Hatırlamak",
+      "ozet": "Selim geçitte her şeyi hatırlar; saati, Kâzım'ın onu duyacağını umarak yeniden kurduğunu itiraf eder."
+    },
+    {
+      "no": 29,
+      "ad": "Köy Meydanı",
+      "ozet": "Elif bütün köyü meydana toplar; muhtar Rıza babasının sırrını kabul etmek zorunda kalır. Satış iptal olur."
+    },
+    {
+      "no": 30,
+      "ad": "Saati Kim Kurdu?",
+      "ozet": "Kâzım ve Yusuf birlikte saati kurar; saat 40 yıl sonra ilk kez 03:18'i gösterir. Nine Yusuf'a sarılır. Son sahnede Elif İstanbul'a dönerken otobüs camında sisin içinde başka bir kulenin ışığı görünür."
+    }
+  ]
+}

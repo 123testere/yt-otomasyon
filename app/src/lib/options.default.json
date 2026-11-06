@@ -4,7 +4,13 @@
 
   "contentFormats": [
     { "id": "belgesel", "label": "Belgesel / bilgi", "hint": "Claude konu seçer, anlatır; görseller ve grafiklerle." },
-    { "id": "flaggenduell", "label": "Flaggenduell (ülke yarışı)", "hint": "46 Avrupa ülkesi gerçek veriyle hunide yarışır. Almanca." }
+    { "id": "flaggenduell", "label": "Flaggenduell (ülke yarışı)", "hint": "46 Avrupa ülkesi gerçek veriyle hunide yarışır. Almanca." },
+    { "id": "dizi", "label": "Animasyon dizisi", "hint": "Çöp adam karakterli dizi: uzun video günlerinde bir bölüm, ertesi gün o bölümün hızlı Shorts'u. Karakter sesleri ElevenLabs." }
+  ],
+
+  "diziler": [
+    { "id": "zincirli", "label": "Zincirli", "hint": "Köyü yakılan demircinin oğlu Arın'ın arenadan özgürlüğe destanı. Yatay bölümler." },
+    { "id": "karacam-saati", "label": "Karaçam'ın Saati", "hint": "Saati 03:17'de duran gizemli köy. Dikey Shorts bölümleri." }
   ],
 
   "niches": [
@@ -14,6 +20,7 @@
     { "id": "teknoloji", "label": "Teknoloji ve Yapay Zekâ", "categoryId": "28" },
     { "id": "gizem", "label": "Gizem ve Çözülmemiş Olaylar", "categoryId": "24" },
     { "id": "korku", "label": "Korku Hikâyeleri", "categoryId": "24" },
+    { "id": "animasyon", "label": "Animasyon / dizi", "categoryId": "1" },
     { "id": "mitoloji", "label": "Mitoloji ve Efsaneler", "categoryId": "27" },
     { "id": "biyografi", "label": "Biyografi", "categoryId": "27" },
     { "id": "psikoloji", "label": "Psikoloji", "categoryId": "27" },
@@ -167,7 +174,7 @@
   ],
 
   "longMinutes": [
-    { "id": 5, "label": "5 dakika" },
+    { "id": 3, "label": "3 dakika" }, { "id": 4, "label": "4 dakika" }, { "id": 5, "label": "5 dakika" },
     { "id": 8, "label": "8 dakika" },
     { "id": 10, "label": "10 dakika" },
     { "id": 15, "label": "15 dakika" },

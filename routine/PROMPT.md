@@ -6,7 +6,7 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 
 1. `main` dalının en güncel halinde olduğundan emin ol (`git checkout main && git pull`).
 2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa senaryo yazma ama aşağıdaki "Haftalık rapor" ve "Yorum cevapları" işlerine yine bak; onlar da yoksa bitir.
-3. `config/needed.json` dosyasını oku. Her öğe yazılması gereken bir video: `id`, `channelId`, `type` (`long` / `short`), `publishAt`, `targetWords`.
+3. `config/needed.json` dosyasını oku. Her öğe yazılması gereken bir video: `id`, `channelId`, `type` (`long` / `short`), `publishAt`, `targetWords`. `format` varsa (`duell`, `cizim`, `dizi`) o formatın aşağıdaki bölümüne göre yaz.
 4. `config/channels.json` içinden ilgili kanalı bul. `brief` alanı kanalın konusu, dili, tonu, anlatıcı karakteri ve ek talimatlarıdır. `recentTitles` daha önce yapılmış videolardır; `done/` klasöründeki dosyalar da aynı kanalın önceki senaryolarıdır.
 5. Her iş için `queue/<id>.json` dosyasını aşağıdaki formatta yaz. `queue/`, `done/` veya `failed/` içinde aynı id zaten varsa atla.
 6. `node engine/src/validate.js` çalıştır. Hata varsa dosyayı düzelt ve tekrar çalıştır, hepsi ✓ olana kadar devam et.
@@ -92,6 +92,76 @@ Kurallar:
 - `description`: 1-2 cümle ve `#flaggenduell #europa #länder #shorts`. Kaynak notu motor tarafından otomatik eklenir.
 - `hookText` yazma.
 
+## Dizi formatı (`needed.json` öğesinde `"format": "dizi"` varsa)
+
+Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon dizisi** yayınlar. Görüntü kodla çizilir, her satırı konuşan karakter kendi sesiyle okur (ElevenLabs). Sen bölümün senaryosunu sahne sahne, saniye saniye yazarsın. Aşağıdaki "Konu seçimi", "Görsel alanları", "Hareketli grafikler" bölümleri ve `narration` / `visual` / `hookText` / `thumbnailPrompt` alanları bu kanal için **geçerli değildir**.
+
+**Önce oku:**
+- `diziler/<dizi>.json` (`needed.json` → `dizi`): dizinin özeti, `kurallar`, `karakterler` (id, görünüş, kim olduğu) ve `bolumler` (sezon planı: her bölümün `ozet` ve `son` cümlesi). Yazacağın bölüm `needed.json` → `bolum.no`. O bölümün planına uy; planda olmayan büyük olay ekleme, küçük ara sahneler ekleyebilirsin.
+- Önceki bölümler: `done/` ve `queue/` içinde aynı kanalın `"format": "dizi"` dosyaları. Son bölümün nasıl bittiğini oku; yeni bölüm oradan devam eder. Karakterlerin konuşma tarzı, tekrar eden sözler ve olaylar tutarlı kalmalı.
+- Örnek: `diziler/ornek/zincirli-b1.json` (onaylanmış uzun bölüm) ve `diziler/ornek/zincirli-b1-shorts.json` (onaylanmış Shorts). Yapıyı ve tempoyu bunlardan al.
+
+**Uzun bölüm (`type: long`):**
+- 3-4 dakika: satırlardaki toplam kelime `targetWords` ±%30 (doğrulayıcı kontrol eder). 18-26 sahne.
+- Yapı: **Soğuk açılış** (bölümün en gerilimli anından 10-20 saniye, ilk sahnede `"kisim": "Soğuk Açılış"`), sonra 3-5 kısım. Her kısmın ilk sahnesinde `kisim` (YouTube bölüm adı olur) ve `kart` (`{"ust": "BİRİNCİ KISIM", "alt": "Demirci'nin Oğlu"}`) olur. Son sahne bölüm planındaki `son` ile biten bir cliffhanger.
+- Anlatıcı dizinin `anlatici.id` karakteridir (Zincirli'de yetişkin Arın, birinci tekil şahıs). Anlatıcı satırı `"kim": "anlatici"`. Diyaloglar karakter id'siyle (`"kim": "toros"`). Kısa, ağır, akılda kalan cümleler; bir satır en fazla 220 karakter, çoğu 4-14 kelime.
+- Şiddet gösterilmez: kan ve ölüm yok, dövüşler silahsızlandırma ya da bağışlamayla biter.
+- `kapanis`: `{"baslik": "DEVAMI", "sonraki": "Bölüm <no+1>: <sonraki bölümün adı> — Yakında", "soru": "<izleyiciye seçmeli soru>"}`. Son bölümde `sonraki` "Sezon finali" olur.
+- Kapak: `thumbnailText` (2-3 kelime, ≤25 karakter, bölümün duygusu: "ÜÇ SANİYE", "YARIM BİLEZİK") ve `"kapak": {"sahne": <sahne sırası, 0'dan>, "sn": <sahnenin kaçıncı saniyesi>}`. Kapak sahnesinde karakterler **sağ yarıda** dursun (x ≥ 0,55; yazı solda), en dramatik poz olsun (kılıç kaldırmış dev, yerde kahraman, kırık zincir).
+- `titleAlt` ve `thumbnailTextAlt` de yazılır (yukarıdaki optimizasyon kuralları). Başlık kalıbı: `"<Dizi adı> · Bölüm <no>: <bölüm adı>"` ya da merak uyandıran bir cümle + bölüm etiketi; ≤70 karakter.
+- `oynatmaListesi`: dizinin adı ve sezonu ("Zincirli · 1. Sezon").
+
+**Shorts (`type: short`, `clipOf` dolu):** Bölümün **hızlı, merak uyandıran kısa hali**; bölümü izlemeye çağırır.
+- `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.12`, `bolum` kaynak bölümle aynı.
+- 25-50 saniye, 6-9 sahne, 50-110 kelime. Satırların en az %60'ı kaynak bölümden gelir (kısaltabilirsin).
+- Kurgu: (1) İlk saniyede kanca: bölümün en gerilimli karesi + tek cümle ("Ölmeme üç saniye vardı."). (2) 2-3 sahnede hızlı geçmiş. (3) Bölümün en iyi 2-3 anı. (4) **Doruk noktasında kes**: sonucu gösterme; son sahne hareketin ortasında biter (`sure` ile 1-2 sn aksiyon). (5) `kapanis`: `{"baslik": "NE OLDU?", "sonraki": "Tamamı kanalda: <Dizi> · Bölüm <no>", "soru": "<seçmeli soru>"}`.
+- Dikey ekranda yatay kadraj kullanma: karakterleri x 0,2-0,8 arasına yerleştir, yerde yatan karakter ekran dışına taşmasın.
+- Başlık kısa, merak uyandıran ve bölüm başlığından farklı ("Ölmesine 3 saniye vardı… ⚔️"); `#shorts` yazma (motor ekler). Açıklamanın ilk satırı izleyiciye soru, bölüm bağlantısını motor ekler.
+
+**Dosya alanları:**
+```json
+{
+  "id": "…", "channelId": "…", "type": "long", "publishAt": "…",
+  "format": "dizi", "dizi": "zincirli", "bolum": {"no": 2, "ad": "Kızıl Loca"},
+  "title": "…", "titleAlt": "…", "description": "…", "tags": ["…"], "topic": "…",
+  "thumbnailText": "KIZIL LOCA", "thumbnailTextAlt": "…", "kapak": {"sahne": 0, "sn": 2},
+  "oynatmaListesi": "Zincirli · 1. Sezon", "muzik": "epik", "muzikSeviye": 0.1,
+  "kapanis": {"baslik": "DEVAMI", "sonraki": "Bölüm 3: Yarım Bilezik — Yakında", "soru": "…"},
+  "scenes": [
+    {
+      "kisim": "Soğuk Açılış", "kart": {"ust": "…", "alt": "…"},
+      "mekan": "arena", "zaman": "gece", "efektler": ["agir-cekim"], "kalabalik": 1,
+      "aciklama": "Transkript için: sahnede ne oluyor (kamera, hareket).",
+      "kadraj": [
+        {"id": "arin", "x": 0.6, "yon": -1, "poz": "dur", "ifade": "kizgin", "esya": "kilic",
+         "hareket": {"x0": 1.05, "x1": 0.6, "sure": 2, "kos": true},
+         "adimlar": [{"sn": 1.2, "poz": "saldir", "x": 0.5}, {"sn": 1.8, "poz": "darbe", "esya": null, "darbe": true}]}
+      ],
+      "nesneler": [{"tip": "kilic", "x": 0.9, "aci": 1.5, "ucus": {"x0": 0.5, "sn0": 1.8, "sn1": 2.5}}],
+      "zincir": {"a": "arin", "b": "kargan", "sn": 0.8},
+      "sure": 3,
+      "satirlar": [
+        {"kim": "anlatici", "metin": "…"},
+        {"kim": "kargan", "metin": "…", "ifade": "gulumsuyor", "once": 0.4}
+      ]
+    }
+  ]
+}
+```
+- `mekan`: destan mekânları `koy-gunduz`, `koy-yangin`, `kervan`, `tas-ocagi`, `zindan`, `avlu`, `arena`, `loca`; köy mekânları `meydan`, `kuyu`, `ev-ic`, `orman`, `yol`, `kule-ic`. Listede olmayan bir yer için en yakınını seç (saray salonu → `loca` ya da `kule-ic`, demirhane → `ev-ic`, dağ yolu → `yol`).
+- `zaman`: `gece`, `gunduz`, `safak` (köy mekânlarında). `efektler`: `agir-cekim`, `beyaz-cakma` (darbe/geçiş), `sis`, `yagmur`, `simsek`, `titreyen-isik`, `ruzgar`. `kalabalik` (arena tribünü) 0-1.
+- `kadraj`: en fazla 4 karakter, `id` dizinin `karakterler` listesinden. `x` 0-1 (yatayda konum), `yon` 1 sağa / -1 sola bakar. Karakterler birbirine bakacak şekilde yerleşsin.
+- `poz`: `dur`, `yuru`, `kos`, `isaret`, `korku`, `dusun`, `el-salla`, `omuz`, `eller-belde`, `egil`, `kilic-kaldir`, `kilic-savur`, `saldir`, `blok`, `darbe`, `dus`, `yerde`, `kalk`, `zincirli`, `diz-cok`, `zafer`, `tasi`.
+- `esya`: `kilic`, `kalkan`, `kilic+kalkan`, `tahta-kilic`, `mesale`, `fener`, `baston`, `tas` (ya da adımda `null`: elden düşer).
+- `ifade`: `notr`, `endiseli`, `gulumsuyor`, `uzgun`, `korkmus`, `saskin`, `kizgin`, `dusunceli`, `supheli`, `fisilti`.
+- `hareket`: sahne başında `x0`'dan `x1`'e yürür (`kos: true` koşar); -0,3 ile 1,3 arası ekrana girip çıkmayı sağlar.
+- `adimlar`: sahnenin `sn`. saniyesinde poz/konum/eşya/ifade değişimi; `darbe: true` kırmızı çarpma ve sarsıntı, `sarsinti: true` ekran sarsıntısı. Dövüşleri adım adım kurgula: saldır → blok → darbe → düş → kalk.
+- `nesneler`: yerdeki `kilic`, `kalkan`, `kirik-kalkan`; `ucus` havada uçarak oraya düşer, `gorun` / `kaybol` saniyeleri.
+- `zincir`: iki karakter arasında `sn` saniyede fırlayan zincir (Arın'ın imza hamlesi).
+- `sure`: konuşmasız aksiyon sahnesinin en az süresi (sn). Konuşmasız sahneye mutlaka yaz.
+- Satırda `once`: satırdan önce sessiz bekleme (aksiyonun görünmesi için). Satırda rakam yerine yazı tercih et ("on beş yıl"); `( ) * # [ ] < >` kullanma.
+- `muzik`: `epik`, `gerilim`, `gizemli`, `duygusal`, `huzurlu` (bölümün duygusu); `muzikSeviye` 0,08-0,14.
+
 ## Çizim formatı (`needed.json` öğesinde `"format": "cizim"` varsa)
 
 Bu kanalın videoları stok görselle değil, **kodla mürekkep çizimiyle** yapılır (eski bir ansiklopedi sayfası; anlatıcı Nur Bey lambası ekranda kendiliğinden çizilir). Her sahnenin görüntüsünü sen `cizim` alanına JavaScript olarak yazarsın. Dosyaya `"format": "cizim"` yaz. Bu formatta `visual.motion` ve `thumbnailPrompt` kullanılmaz; `hookText` yerine `baslikKart` yazılır.
@@ -148,7 +218,7 @@ Shorts'ların sonundaki "Sırada hangisi olsun? A / B" kartına izleyiciler yoru
 
 **Kapanış kartı (`kapanis`):** Çizim formatındaki her Shorts'ta `kapanis` yaz. `a` ve `b` **gerçekten yapılabilecek, daha önce yapılmamış** iki konu adı olsun (kısa: "Saat", "Kalorifer peteği"). Kanalın konusuna ve Türkiye bağlantısı kuralına uysun. Son sahnenin anlatımı bu iki seçeneği sorup "Yorumlara A ya da B yazın" desin.
 
-## Uzun videodan kesit Shorts (`needed.json` öğesinde `clipOf` varsa)
+## Uzun videodan kesit Shorts (`needed.json` öğesinde `clipOf` varsa; dizi formatında değil)
 
 Bu Shorts bağımsız değildir; `clipOf` id'li uzun videonun bir bölümünden kurgulanır ve izleyiciyi uzun videoya çağırır.
 - Kaynak senaryoyu `queue/<clipOf>.json` ya da `done/<clipOf>.json` içinde oku. Kaynak da bu turda yazılacaksa (`needed.json`'da) **önce onu yaz**.

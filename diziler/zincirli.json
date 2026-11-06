@@ -1,0 +1,320 @@
+{
+ "id": "zincirli",
+ "ad": "Zincirli",
+ "stil": "cop",
+ "format": "yatay",
+ "tur": "destan / aksiyon (kan ve vahşet gösterilmez; saldırı ışık ve siluetle anlatılır)",
+ "ozet": "Dağ köyünde demircinin oğlu Arın, 9 yaşındayken Kara Sungur'un akıncıları köyü yakınca kaçırılıp köle olarak satılır. 15 yıl taş ocağında ve arenada yaşar; yaşlı gladyatör Toros ona sabrı öğretir. Arenada yenilmez şampiyon Kargan'la dövüşür ve son saniyede kazanır; kralın locasında ailesinin katili Sungur'u görür.",
+ "kurallar": [
+  "Her bölüm soğuk açılışla başlar: hikâyenin en gerilimli anından 15-20 saniyelik bir kare, sonra geriye dönüş.",
+  "Bölüm 4-6 kısımdan oluşur; her kısım bir ara kartla açılır (ör. 'BİRİNCİ KISIM · Demirci'nin Oğlu').",
+  "Arın (yetişkin) anlatıcıdır ve birinci tekil şahısla konuşur; kısa, ağır, akılda kalan cümleler.",
+  "Şiddet gösterilmez: ölüm ve kan yok; saldırılar alev ışığı, siluet ve sesle anlatılır. Dövüşler bağışlama ya da silahsızlandırmayla biter.",
+  "Her bölüm bir cliffhanger ve izleyiciye seçmeli bir soruyla biter.",
+  "Tekrar eden sözler: 'Herkes en çok, kazandığını sandığı an açık verir.' (Demir) ve 'Son kez kalkıp kalkmadığına bakar.' (Toros)."
+ ],
+ "karakterler": {
+  "arin": {
+   "ad": "Arın",
+   "renk": "#B4283A",
+   "atki": false,
+   "kusak": "#B4283A",
+   "zincir": true,
+   "sacStil": "kisa",
+   "sac": "#2A1A10",
+   "yas": "genc",
+   "cinsiyet": "e",
+   "seed": 3,
+   "ses": {
+    "eleven": "qLnVd55Hf2R5L8dmdHoH"
+   },
+   "kim": "Kahraman; 24 yaşında gladyatör, bileğinde kırık zincir. Hikâyenin anlatıcısı (kanal sahibinin sesi)."
+  },
+  "arin-cocuk": {
+   "ad": "Küçük Arın",
+   "renk": "#B4283A",
+   "atki": false,
+   "sacStil": "kisa",
+   "sac": "#2A1A10",
+   "yas": "genc",
+   "olcek": 0.62,
+   "seed": 4,
+   "ses": {
+    "eleven": "C2jG96AELxzEOpRw8N5m",
+    "speed": 1.08
+   },
+   "kim": "Arın 9 yaşında."
+  },
+  "demir": {
+   "ad": "Demir",
+   "renk": "#5A3A1E",
+   "atki": false,
+   "onluk": "#6A4428",
+   "sacStil": "kisa",
+   "sac": "#1E140E",
+   "sakal": "sakal",
+   "kalin": 1.2,
+   "seed": 6,
+   "ses": {
+    "eleven": "Qinv0VWOWA2tKLNbP7xp"
+   },
+   "kim": "Arın'ın babası, köyün demircisi."
+  },
+  "leyla": {
+   "ad": "Leyla",
+   "renk": "#8A4A6A",
+   "sacStil": "basortusu",
+   "sac": "#6A3A5A",
+   "yas": "orta",
+   "cinsiyet": "k",
+   "seed": 7,
+   "ses": {
+    "eleven": "i0MwGlmJMVRT2teAFS3N"
+   },
+   "kim": "Arın'ın annesi."
+  },
+  "su": {
+   "ad": "Su",
+   "renk": "#E2B23C",
+   "sacStil": "orgu",
+   "sac": "#3A2418",
+   "cinsiyet": "k",
+   "olcek": 0.52,
+   "seed": 8,
+   "ses": {
+    "eleven": "C2jG96AELxzEOpRw8N5m",
+    "speed": 1.12
+   },
+   "kim": "Arın'ın küçük kız kardeşi."
+  },
+  "sungur": {
+   "ad": "Kara Sungur",
+   "renk": "#141418",
+   "atki": false,
+   "pelerin": "#141418",
+   "sapka": "baslik",
+   "yaraIzi": true,
+   "sacStil": "kisa",
+   "sac": "#141414",
+   "seed": 9,
+   "ses": {
+    "eleven": "AMjkpTkYyZF0aFQa3oLV"
+   },
+   "kim": "Akıncıların başı; yüzünde yara izi, siyah pelerin."
+  },
+  "toros": {
+   "ad": "Yaşlı Toros",
+   "renk": "#8A8070",
+   "atki": false,
+   "sacStil": "dagnik",
+   "sac": "#D8D8D8",
+   "sakal": "sakal",
+   "sakalRenk": "#E8E8E8",
+   "gozBandi": true,
+   "yas": "yasli",
+   "seed": 10,
+   "ses": {
+    "eleven": "MuOq11XzQTthwLhmGZ2V"
+   },
+   "kim": "Eski gladyatör, Arın'ın akıl hocası; tek gözlü."
+  },
+  "kargan": {
+   "ad": "Kargan",
+   "renk": "#3A3A44",
+   "atki": false,
+   "sapka": "migfer",
+   "sacStil": "kel",
+   "olcek": 1.28,
+   "kalin": 1.6,
+   "kusak": "#2A2A30",
+   "seed": 12,
+   "ses": {
+    "eleven": "waEMM0EdseMf8IGzvYc6"
+   },
+   "kim": "40 dövüştür yenilmemiş arena şampiyonu; dev."
+  },
+  "kral": {
+   "ad": "Kral Moran",
+   "renk": "#5A1E6A",
+   "atki": false,
+   "pelerin": "#5A1E6A",
+   "sapka": "tac",
+   "sacStil": "kisa",
+   "sac": "#3A2A1A",
+   "sakal": "biyik",
+   "seed": 13,
+   "ses": {
+    "eleven": "bbnzyQpbvnDaCct77O9l"
+   },
+   "kim": "Arenanın sahibi kral."
+  },
+  "akinci": {
+   "ad": "Akıncı",
+   "renk": "#2A2A2A",
+   "siluet": true,
+   "sacStil": "kisa",
+   "seed": 15,
+   "esya": "mesale",
+   "ses": {
+    "eleven": "AMjkpTkYyZF0aFQa3oLV"
+   },
+   "kim": "Siluet akıncı (konuşmaz)."
+  },
+  "muhafiz": {
+   "ad": "Muhafız",
+   "renk": "#5A4A3A",
+   "atki": false,
+   "sapka": "migfer",
+   "boynuz": false,
+   "sapkaRenk": "#8A8070",
+   "sacStil": "kel",
+   "seed": 16,
+   "esya": "kilic",
+   "ses": {
+    "eleven": "bbnzyQpbvnDaCct77O9l"
+   },
+   "kim": "Arena muhafızı."
+  },
+  "su-genc": {
+   "ad": "Su",
+   "renk": "#E2B23C",
+   "sacStil": "orgu",
+   "sac": "#3A2418",
+   "cinsiyet": "k",
+   "seed": 18,
+   "ses": {
+    "eleven": "C2jG96AELxzEOpRw8N5m"
+   },
+   "kim": "Arın'ın kız kardeşi, 21 yaşında; 15 yıldır kralın sarayında hizmetkâr. Bileğinde bakır bileziğin yarısı."
+  }
+ },
+ "anlatici": {
+  "id": "arin",
+  "ses": {
+   "eleven": "qLnVd55Hf2R5L8dmdHoH"
+  }
+ },
+ "toplam": 20,
+ "bolumler": [
+  {
+   "no": 1,
+   "ad": "Üç Saniye",
+   "ozet": "Köy yakılır, Arın satılır; 15 yıl sonra arenada Kargan'ı son saniyede yener ve bağışlar. Locada kralın yanında Kara Sungur'u görür.",
+   "son": "Arın locayı işaret eder; muhafızlar kılıç çeker. Soru: Su yaşıyor mu?"
+  },
+  {
+   "no": 2,
+   "ad": "Kızıl Loca",
+   "ozet": "Muhafızlar Arın'ı yakalar. Kral Moran onu öldürtmek yerine kalabalığın sevgisini görüp 'şampiyonum' ilan eder. Arın, Sungur'un kralın sağ kolu olduğunu öğrenir. Toros öfkesini dizginlemesini söyler.",
+   "son": "Gece zindana Sungur gelir: 'Kız kardeşin yaşıyor.'"
+  },
+  {
+   "no": 3,
+   "ad": "Yarım Bilezik",
+   "ozet": "Sungur, Su'nun bakır bileziğinin yarısını gösterir. Şartı: bir sonraki dövüşte yere düşecek ve kalkmayacak. Toros: 'Ben sana kalkmamayı öğretmedim.' Bağışlanan Kargan zindanda Arın'a borçlu olduğunu söyler.",
+   "son": "Bir sonraki rakibin adı duyurulur: Kargan."
+  },
+  {
+   "no": 4,
+   "ad": "İkinci Kez",
+   "ozet": "Arın ve Kargan yeniden arenada. İkisi de birbirini korumaya çalışırken dövüşüyormuş gibi yapar. Kralın gözü bunu fark eder.",
+   "son": "Kral ikisinin zincirlerini birbirine bağlatır: 'Yarın birlikte kazanır ya da birlikte düşersiniz.'"
+  },
+  {
+   "no": 5,
+   "ad": "Çifte Zincir",
+   "ozet": "Zincirle bağlı Arın ve Kargan beş muhafıza karşı. Birlikte hareket etmeyi öğrenirler; Kargan da çocukken satılmış bir köy çocuğudur. Kimseye zarar vermeden muhafızları silahsızlandırırlar.",
+   "son": "Zindana döndüklerinde Toros'un hücresi boştur."
+  },
+  {
+   "no": 6,
+   "ad": "Tek Göz",
+   "ozet": "Toros'un geçmişi: Sungur'la gençken aynı akıncı birliğindeydiler; Toros köy yakmayı reddedince gözünü ve özgürlüğünü kaybetti. Toros, Arın'a zindanın altındaki eski su kanalını anlatır.",
+   "son": "Toros: 'Ben gelemem. Biri kapıyı tutmalı.'"
+  },
+  {
+   "no": 7,
+   "ad": "Su Kanalı",
+   "ozet": "Kaçış gecesi. Arın ve Kargan kanala iner; Toros muhafızları oyalar. Kanalın çıkışı demir parmaklıkla kapatılmıştır; Arın geri dönmeyi seçer çünkü Su sarayda.",
+   "son": "Sabah ilan edilir: Toros yarın arenada Arın'la dövüşecek."
+  },
+  {
+   "no": 8,
+   "ad": "Akıl Hocası",
+   "ozet": "Arın akıl hocasıyla dövüşmeye zorlanır. Toros kasten düşer; Arın kılıcını kuma bırakır. Kalabalık bağışlama ister, kral bağışlar ama Toros'u bir tüccara satar.",
+   "son": "Tüccarın kervanı saraya mal taşıyan kervandır. Toros, Arın'a göz kırpar."
+  },
+  {
+   "no": 9,
+   "ad": "Şampiyonun Dileği",
+   "ozet": "Kral, şampiyonuna bir dilek hakkı verir. Arın Sungur'la teke tek dövüş ister. Kral kabul eder ama Sungur'a gizlice bir plan fısıldar.",
+   "son": "Loca merdiveninde su taşıyan bir genç kız Arın'a bakar; bileğinde yarım bakır bilezik."
+  },
+  {
+   "no": 10,
+   "ad": "Saraydaki Kız",
+   "ozet": "Su'nun gözünden 15 yıl: sarayda hizmetkâr olarak büyüdü, abisinin öldüğünü sandı. Arenadaki şampiyonu görünce tanır ama belli edemez.",
+   "son": "Sungur, Su'ya bir şişe verir: 'Şampiyonun akşam yemeğine.'"
+  },
+  {
+   "no": 11,
+   "ad": "Zehir",
+   "ozet": "Su yemeği zindana getirir. Arın bileziğin yarısını görür; iki yarım birleşir. Su şişeyi boşaltmaz, ikisi fısıltıyla konuşur.",
+   "son": "Karanlıkta Sungur'un gülümsemesi: her şeyi duymuştur."
+  },
+  {
+   "no": 12,
+   "ad": "Pazarlık",
+   "ozet": "Sungur, Su'yu rehin alır. Arın'a son şart: teke tek dövüşü kaybedecek. Kargan ve zindandaki gladyatörler sessizce bir plan kurar.",
+   "son": "Dövüş sabahı: arena tıklım tıklım, Su kralın locasında zincirli."
+  },
+  {
+   "no": 13,
+   "ad": "Gölge Dövüşü",
+   "ozet": "Arın ve Sungur arenada. Sungur hile yapar; kumun altına gizlenmiş zincir Arın'ı düşürür. Arın kaybetmeyi oynuyormuş gibi zaman kazanır.",
+   "son": "Arın'ın kılıcı ortadan ikiye kırılır."
+  },
+  {
+   "no": 14,
+   "ad": "Babanın Dersi",
+   "ozet": "Demir'in sesi yankılanır: 'Herkes en çok, kazandığını sandığı an açık verir.' Arın, Sungur'u silahsızlandırır ama ona zarar vermez. Kral muhafızlara emir verir.",
+   "son": "Arenanın bütün kapıları aynı anda kapanır."
+  },
+  {
+   "no": 15,
+   "ad": "Kapılar",
+   "ozet": "Kargan ve gladyatörler isyan eder; kimseye zarar vermeden kapıları açarlar. Arın locaya tırmanır.",
+   "son": "Locada Su yoktur; sadece kırık bir zincir kalmıştır."
+  },
+  {
+   "no": 16,
+   "ad": "Kızıl Gece",
+   "ozet": "Sarayda arayış. Toros geri döner: tüccarı ikna etmiş, sarayın gizli geçitlerini öğrenmiştir. Su'yu kralın kulesinde bulurlar.",
+   "son": "Kulenin penceresinden görülür: Sungur, Su'yu atına bindirip dağ yoluna sürüyor."
+  },
+  {
+   "no": 17,
+   "ad": "Dağ Yolu",
+   "ozet": "Takip. Arın, Kargan ve Toros, Sungur'un izini 15 yıl önceki köyün yoluna kadar sürer.",
+   "son": "Yanmış köyün demirhanesinde bir fener yanıyor."
+  },
+  {
+   "no": 18,
+   "ad": "Demirhane",
+   "ozet": "Arın babasının demirhanesinde Sungur'la yüzleşir. Sungur gerçeği söyler: köyü yakma emrini Kral Moran vermişti, çünkü Demir krala kılıç dövmeyi reddetmişti. Sungur Su'yu bırakır ve teslim olur.",
+   "son": "Tepede meşaleler: kralın ordusu köyü sarmıştır."
+  },
+  {
+   "no": 19,
+   "ad": "Son Kalkış",
+   "ozet": "Köyün eski komşuları, kaçan gladyatörler ve Kargan Arın'ın yanında durur. Arın savaş yerine krala teke tek dövüş teklif eder; kalabalığın önünde reddedemez.",
+   "son": "Kral kılıcını çeker: 'Yarın, şafakta.'"
+  },
+  {
+   "no": 20,
+   "ad": "Zincir Kırılır",
+   "ozet": "Sezon finali. Şafakta Arın kralla dövüşür; kralı silahsızlandırır ama öldürmez, halkın önünde tacını kuma bırakır. Arın bileğindeki zinciri demirhanede kırar; Su'yla köyü yeniden kurmaya başlar.",
+   "son": "Uzakta yeni bir kervan görünür. Soru: İkinci sezonda ne olsun?"
+  }
+ ]
+}

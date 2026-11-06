@@ -121,7 +121,7 @@ async function main() {
     try {
       const built = await buildVideo(job, settings, { workDir, cacheDir });
       // Shorts'a da dev kanca yazılı küçük resim (yüklenemezse video yine yayınlanır).
-      if (job.type === 'short' && !built.thumbnailPath) {
+      if (job.type === 'short' && !built.thumbnailPath && job.format !== 'dizi') {
         try {
           const dir = path.join(workDir, `${job.id}-kapak`);
           fs.mkdirSync(dir, { recursive: true });
@@ -140,12 +140,15 @@ async function main() {
       if (!secret?.refreshToken) throw new AuthError('Kanalın yükleme izni yok; kanalı yeniden bağla');
       // Uzun videoda bölüm zaman damgaları açıklamaya eklenir (aramada bölümler ayrı görünür).
       const linked = await withFullVideoLink(job, settings);
-      const bolumler = bolumSatirlari(job, built.sahneZaman, settings.language);
+      // Dizi bölümünde YouTube bölümleri transkriptin kısımlarından gelir.
+      const bolumler = job.format === 'dizi' ? built.bolumlerMetni ?? null : bolumSatirlari(job, built.sahneZaman, settings.language);
       const uploadJob = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
       const yt = await upload({ secret, job: uploadJob, settings, ...built });
 
       await ref.update({ status: 'uploaded', youtubeId: yt.videoId, url: yt.url, scheduled: yt.scheduled,
-        warning: yt.thumbnailWarning, sahneZaman: built.sahneZaman ?? null, deney: job.deney ?? null, updatedAt: new Date() });
+        warning: yt.thumbnailWarning, sahneZaman: built.sahneZaman ?? null, deney: job.deney ?? null,
+        ...(job.format === 'dizi' ? { dizi: job.dizi, bolum: job.bolum ?? null, transkript: built.transkript ?? null, derivedFrom: job.derivedFrom ?? null } : {}),
+        updatedAt: new Date() });
       move(file, DONE_DIR);
       console.log(`✓ ${yt.url}`);
       // Altyazı, başka dillerde başlık, oynatma listesi: başarısız olsa da video yayında kalır.

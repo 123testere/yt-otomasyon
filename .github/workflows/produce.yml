@@ -51,6 +51,13 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: hf-chatterbox-v3
+      # Dizi karakter sesleri (ElevenLabs): aynı satır tekrar seslendirilmesin (bölümün Shorts'u satırları yeniden kullanır).
+      - if: steps.check.outputs.has
+        uses: actions/cache@v4
+        with:
+          path: .cache/eleven
+          key: eleven-${{ github.run_id }}
+          restore-keys: eleven-
       - if: steps.check.outputs.has
         name: Araçları kur
         run: |

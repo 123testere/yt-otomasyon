@@ -6,6 +6,9 @@ import { pathToFileURL } from 'node:url';
 import { CONFIG_DIR, DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
 import { KAPAK_ALAN, cizimHatasi } from '../../shared/cizim.js';
 import { deneyHatalari } from './lib/deney.js';
+import { POZLAR, ESYALAR } from '../../shared/cop.js';
+import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../shared/dizi.js';
+import { DESTAN_MEKANLAR } from '../../shared/mekan-destan.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -87,6 +90,125 @@ function cizimErrors(job) {
     const err = cizimHatasi(job.kapakCizim, 6, { alan: KAPAK_ALAN });
     if (err) errors.push(`kapakCizim: ${err}`);
     if (!optStr(job.kapakAlt, 40)) errors.push('kapakAlt en fazla 40 karakter');
+  }
+  return errors;
+}
+
+// Dizi formatı (Bölüm Bölüm): sahneler kodla çizilir, satırlar karakter sesleriyle okunur.
+const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR];
+const DIZI_EFEKTLER = [...EFEKTLER, 'agir-cekim', 'beyaz-cakma'];
+const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan'];
+const sayi01 = (v) => typeof v === 'number' && v >= 0 && v <= 1;
+const ekranX = (v) => typeof v === 'number' && v >= -0.3 && v <= 1.3; // ekrana girip çıkma
+const sn = (v) => typeof v === 'number' && v >= 0 && v <= 60;
+
+function diziYukleGuvenli(id) {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(ROOT, 'diziler', `${id}.json`), 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+export const diziSatirlari = (job) => (job?.scenes ?? []).flatMap((s) => s.satirlar ?? []);
+
+function diziErrors(job, slot) {
+  const errors = [];
+  const dizi = typeof job.dizi === 'string' ? diziYukleGuvenli(job.dizi) : null;
+  if (!dizi) return [`dizi bulunamadı: diziler/${job.dizi}.json`];
+  const kisiler = new Set(Object.keys(dizi.karakterler ?? {}));
+  if (!(Number.isInteger(job.bolum?.no) && job.bolum.no > 0 && str(job.bolum?.ad, 32))) errors.push('bolum {no (tam sayı), ad ≤32} olmalı');
+  if (slot?.bolum?.no && job.bolum?.no !== slot.bolum.no) errors.push(`bu ${slot.bolum.no}. bölüm: bolum.no = ${slot.bolum.no} olmalı`);
+  if (slot?.dizi && job.dizi !== slot.dizi) errors.push(`bu kanalın dizisi "${slot.dizi}": dizi = "${slot.dizi}" olmalı`);
+  const scenes = Array.isArray(job.scenes) ? job.scenes : [];
+  if (!scenes.length) errors.push('scenes boş olamaz');
+  scenes.forEach((sc, i) => {
+    const e = (m) => errors.push(`sahne ${i + 1}: ${m}`);
+    if (!DIZI_MEKANLAR.includes(sc.mekan)) e(`mekan şunlardan biri olmalı: ${DIZI_MEKANLAR.join(', ')}`);
+    if (sc.zaman !== undefined && !ZAMANLAR.includes(sc.zaman)) e(`zaman şunlardan biri olmalı: ${ZAMANLAR.join(', ')}`);
+    if (sc.efektler !== undefined && !(Array.isArray(sc.efektler) && sc.efektler.every((x) => DIZI_EFEKTLER.includes(x)))) e(`efektler şunlardan olmalı: ${DIZI_EFEKTLER.join(', ')}`);
+    if (sc.kalabalik !== undefined && !sayi01(sc.kalabalik)) e('kalabalik 0-1 arası sayı olmalı');
+    if (sc.kisim !== undefined && !str(sc.kisim, 32)) e('kisim ≤32 karakter olmalı');
+    if (sc.kart !== undefined && !(str(sc.kart?.ust, 30) && optStr(sc.kart?.alt, 40))) e('kart {ust ≤30, alt ≤40} olmalı');
+    if (sc.sure !== undefined && !(typeof sc.sure === 'number' && sc.sure > 0 && sc.sure <= 12)) e('sure 0-12 sn olmalı');
+    if (!optStr(sc.aciklama, 300)) e('aciklama ≤300 karakter');
+    const kadraj = Array.isArray(sc.kadraj) ? sc.kadraj : [];
+    if (sc.kadraj !== undefined && !Array.isArray(sc.kadraj)) e('kadraj bir dizi olmalı');
+    if (kadraj.length > 4) e('kadrajda en fazla 4 karakter olabilir');
+    const poz = (p, yer) => { if (p !== undefined && p !== null && !POZLAR.includes(p)) e(`${yer}: poz şunlardan biri olmalı: ${POZLAR.join(', ')}`); };
+    const esya = (x, yer) => { if (x !== undefined && x !== null && !ESYALAR.includes(x)) e(`${yer}: esya şunlardan biri olmalı (ya da null): ${ESYALAR.join(', ')}`); };
+    const ifade = (x, yer) => { if (x !== undefined && x !== null && !DIZI_IFADELER.includes(x)) e(`${yer}: ifade şunlardan biri olmalı: ${DIZI_IFADELER.join(', ')}`); };
+    for (const k of kadraj) {
+      const yer = `kadraj "${k?.id}"`;
+      if (!kisiler.has(k?.id)) { e(`${yer}: dizide böyle karakter yok (${[...kisiler].join(', ')})`); continue; }
+      if (k.x !== undefined && !sayi01(k.x)) e(`${yer}: x 0-1 arası olmalı`);
+      if (k.yon !== undefined && ![1, -1].includes(k.yon)) e(`${yer}: yon 1 (sağa bakar) ya da -1 (sola bakar)`);
+      poz(k.poz, yer); esya(k.esya, yer); ifade(k.ifade, yer);
+      if (k.hareket !== undefined && !(ekranX(k.hareket?.x0) && ekranX(k.hareket?.x1) && (k.hareket.sure === undefined || sn(k.hareket.sure)))) e(`${yer}: hareket {x0, x1 (-0,3 ile 1,3 arası), sure} olmalı`);
+      if (k.adimlar !== undefined) {
+        if (!Array.isArray(k.adimlar)) e(`${yer}: adimlar bir dizi olmalı`);
+        else for (const a of k.adimlar) {
+          if (!sn(a?.sn)) e(`${yer}: her adımda sn (sahne başından saniye) olmalı`);
+          if (a?.x !== undefined && !sayi01(a.x)) e(`${yer}: adım x 0-1 arası olmalı`);
+          poz(a?.poz, yer); esya(a?.esya, yer); ifade(a?.ifade, yer);
+        }
+      }
+    }
+    for (const n of sc.nesneler ?? []) {
+      if (!DIZI_NESNELER.includes(n?.tip)) e(`nesne tipi şunlardan biri olmalı: ${DIZI_NESNELER.join(', ')}`);
+      else if (!sayi01(n.x)) e('nesne x 0-1 arası olmalı');
+    }
+    if (sc.zincir !== undefined && !(kadraj.some((k) => k.id === sc.zincir?.a) && kadraj.some((k) => k.id === sc.zincir?.b) && sn(sc.zincir?.sn))) {
+      e('zincir {a, b (kadrajdaki karakterler), sn} olmalı');
+    }
+    if (sc.satirlar !== undefined && !Array.isArray(sc.satirlar)) e('satirlar bir dizi olmalı');
+    if (!(sc.satirlar?.length) && !sc.sure) e('konuşmasız sahneye sure yaz');
+    for (const s of Array.isArray(sc.satirlar) ? sc.satirlar : []) {
+      if (s?.kim !== undefined && s.kim !== 'anlatici' && !kisiler.has(s.kim)) e(`satır: kim "${s.kim}" dizide yok`);
+      if (!str(s?.metin, 220)) e('satır metni 1-220 karakter olmalı');
+      else if (/[<>*_#[\]()]/.test(s.metin)) e('satır metninde < > * _ # [ ] ( ) olamaz (seslendirilir)');
+      if (s?.once !== undefined && !(typeof s.once === 'number' && s.once >= 0 && s.once <= 5)) e('satır once 0-5 sn olmalı');
+      ifade(s?.ifade, 'satır'); poz(s?.poz, 'satır');
+    }
+  });
+  if (!(str(job.kapanis?.baslik, 20) && optStr(job.kapanis?.sonraki, 50) && optStr(job.kapanis?.soru, 70))) {
+    errors.push('kapanis {baslik ≤20, sonraki ≤50, soru ≤70} olmalı');
+  }
+  if (job.muzikSeviye !== undefined && !(typeof job.muzikSeviye === 'number' && job.muzikSeviye >= 0 && job.muzikSeviye <= 0.3)) errors.push('muzikSeviye 0-0,3 arası');
+  const kelime = diziSatirlari(job).reduce((n, s) => n + countWords(String(s?.metin ?? '')), 0);
+  if (job.type === 'long') {
+    if (!scenes[0]?.kisim) errors.push('ilk sahne bir kısımla başlamalı (ör. "kisim": "Soğuk Açılış")');
+    if (scenes.filter((s) => s.kisim).length < 3) errors.push('bölümde en az 3 kısım olmalı (YouTube bölümleri bunlardan çıkar)');
+    if (job.kapak !== undefined && !(Number.isInteger(job.kapak?.sahne) && job.kapak.sahne >= 0 && job.kapak.sahne < scenes.length && sn(job.kapak?.sn ?? 0))) {
+      errors.push('kapak {sahne (sahne sırası, 0\'dan), sn} olmalı');
+    }
+    if (job.dikey || job.acilis === false) errors.push('uzun bölümde dikey ve acilis yazma');
+  } else {
+    if (job.dikey !== true) errors.push('Shorts\'ta "dikey": true olmalı');
+    if (job.acilis !== false) errors.push('Shorts\'ta "acilis": false olmalı (ilk saniyeden kanca)');
+    if (!(typeof job.hiz === 'number' && job.hiz >= 1 && job.hiz <= 1.2)) errors.push('Shorts\'ta hiz 1-1,2 arası olmalı (önerilen 1,12)');
+    if (scenes.length > 10) errors.push(`Shorts'ta ${scenes.length} sahne var; en fazla 10`);
+    if (kelime > 130) errors.push(`Shorts'ta ${kelime} kelime var; 60 saniyeyi geçmemesi için en fazla 130`);
+  }
+  if (slot) {
+    const min = Math.round(slot.targetWords * (1 - WORD_TOLERANCE));
+    const max = Math.round(slot.targetWords * (1 + WORD_TOLERANCE));
+    if (job.type === 'long' && (kelime < min || kelime > max)) errors.push(`satırlarda toplam ${kelime} kelime; hedef ${slot.targetWords} (${min}-${max} arası olmalı)`);
+    if (job.type === 'short' && kelime < 40) errors.push(`Shorts'ta ${kelime} kelime; en az 40`);
+    if (job.type !== slot.type || job.channelId !== slot.channelId) errors.push('type/channelId needed.json ile uyuşmuyor');
+    if (slot.clipOf) {
+      if (job.derivedFrom !== slot.clipOf) errors.push(`bu Shorts "${slot.clipOf}" bölümünün kısa hali: derivedFrom = "${slot.clipOf}" olmalı`);
+      else {
+        const kaynak = findJob(slot.clipOf);
+        if (!kaynak) errors.push(`kaynak bölüm bulunamadı: ${slot.clipOf}`);
+        else {
+          const havuz = new Set(diziSatirlari(kaynak).flatMap((s) => wordsOf(s.metin ?? '')));
+          const w = diziSatirlari(job).flatMap((s) => wordsOf(s.metin ?? ''));
+          const pay = w.length ? w.filter((x) => havuz.has(x)).length / w.length : 0;
+          if (pay < 0.6) errors.push(`Shorts satırlarının yalnızca %${Math.round(pay * 100)}'i bölümden; en az %60 olmalı (bölümün en iyi anlarından kurgula)`);
+        }
+      }
+    }
   }
   return errors;
 }
@@ -221,7 +343,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   if (job.type === 'long') {
     req(typeof job.thumbnailText === 'string' && job.thumbnailText.trim() && job.thumbnailText.length <= 40,
       'thumbnailText 1-40 karakter olmalı');
-    if (job.format !== 'cizim') req(typeof job.thumbnailPrompt === 'string' && job.thumbnailPrompt.trim(), 'thumbnailPrompt eksik');
+    if (job.format !== 'cizim' && job.format !== 'dizi') req(typeof job.thumbnailPrompt === 'string' && job.thumbnailPrompt.trim(), 'thumbnailPrompt eksik');
   }
 
   if (job.format === 'duell') {
@@ -235,7 +357,15 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
     return errors;
   }
 
+  if (job.format === 'dizi') {
+    const slot = needed?.find((n) => n.id === job.id);
+    errors.push(...diziErrors(job, slot));
+    if (slot) errors.push(...slotHatalari(job, slot));
+    return errors;
+  }
+
   req(Array.isArray(job.scenes) && job.scenes.length > 0, 'scenes boş olamaz');
+  if (needed?.find((n) => n.id === job.id)?.format === 'dizi') errors.push('bu kanal dizi formatında: "format": "dizi" olmalı');
   const cizim = job.format === 'cizim';
   if (cizim) errors.push(...cizimErrors(job));
   (job.scenes ?? []).forEach((s, i) => {

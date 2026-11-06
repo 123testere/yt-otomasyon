@@ -8,3 +8,4 @@ secrets/
 # Remotion: render sırasında kopyalanan geçici dosyalar
 remotion/public/*
 !remotion/public/.gitkeep
+.cache/

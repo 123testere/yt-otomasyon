@@ -1,0 +1,333 @@
+{
+ "id": "zincirli_b01_s1_UCFw3Wdyus0HVhykB0uYahWg",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "derivedFrom": "zincirli_b01_UCFw3Wdyus0HVhykB0uYahWg",
+ "bolum": {
+  "no": 1,
+  "ad": "Üç Saniye"
+ },
+ "muzik": "epik",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 1",
+  "soru": "Sence Arın kurtulabildi mi?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "kargan",
+     "x": 0.24,
+     "yon": 1,
+     "esya": "kilic",
+     "poz": "kilic-kaldir",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ölmeme üç saniye vardı."
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.1,
+     "aci": 1.5
+    }
+   ]
+  },
+  {
+   "kisim": "Geçmiş",
+   "mekan": "koy-yangin",
+   "kadraj": [
+    {
+     "id": "sungur",
+     "hareket": {
+      "x0": 0.05,
+      "x1": 0.38,
+      "sure": 1.5
+     },
+     "esya": "fener"
+    },
+    {
+     "id": "arin-cocuk",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "diz-cok",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "On beş yıl önce köyümü yaktılar."
+    },
+    {
+     "kim": "sungur",
+     "metin": "Bak hele… demircinin yavrusu. Bunu satarız.",
+     "ifade": "supheli"
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "kadraj": [
+    {
+     "id": "arin-cocuk",
+     "hareket": {
+      "x0": 0.1,
+      "x1": 0.6,
+      "sure": 4
+     },
+     "adimlar": [
+      {
+       "sn": 4,
+       "poz": "zincirli"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beni bir arena sahibine sattılar. Fiyatım iki çuval tuzdu."
+    }
+   ]
+  },
+  {
+   "mekan": "avlu",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "esya": "tahta-kilic",
+     "adimlar": [
+      {
+       "sn": 0.2,
+       "poz": "kilic-savur"
+      },
+      {
+       "sn": 0.8,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "arin",
+     "x": 0.7,
+     "yon": -1,
+     "esya": "tahta-kilic",
+     "adimlar": [
+      {
+       "sn": 0.6,
+       "poz": "dus",
+       "darbe": true
+      },
+      {
+       "sn": 2.5,
+       "poz": "kalk"
+      },
+      {
+       "sn": 3.5,
+       "poz": "dur"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Güzel. Arenada kimse sana kaç kez düştüğünü sormaz. Son kez kalkıp kalkmadığına bakar.",
+     "once": 0.4
+    }
+   ]
+  },
+  {
+   "kisim": "Dövüş",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": -1,
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "sn": 0.2,
+       "poz": "saldir",
+       "x": 0.42
+      },
+      {
+       "sn": 0.9,
+       "poz": "darbe",
+       "x": 0.36,
+       "esya": null,
+       "darbe": true
+      },
+      {
+       "sn": 1.3,
+       "poz": "dus"
+      },
+      {
+       "sn": 1.9,
+       "poz": "yerde"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.26,
+     "yon": 1,
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "sn": 0.5,
+       "poz": "blok"
+      },
+      {
+       "sn": 0.9,
+       "poz": "saldir"
+      },
+      {
+       "sn": 1.5,
+       "poz": "eller-belde"
+      }
+     ]
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.1,
+     "aci": 1.5,
+     "ucus": {
+      "x0": 0.42,
+      "sn0": 0.9,
+      "sn1": 1.7
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Kalk bakalım, demircinin oğlu!",
+     "once": 1.9,
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "kisim": "Son An",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.24,
+     "yon": 1,
+     "esya": "kilic",
+     "poz": "kilic-kaldir",
+     "ifade": "kizgin"
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.1,
+     "aci": 1.5
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "demir",
+     "metin": "Herkes en çok, kazandığını sandığı an açık verir."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir… İki…"
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 1.6,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": -1,
+     "poz": "yerde",
+     "adimlar": [
+      {
+       "sn": 0.15,
+       "poz": "kalk",
+       "x": 0.5
+      },
+      {
+       "sn": 0.7,
+       "poz": "saldir"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.26,
+     "yon": 1,
+     "esya": "kilic",
+     "poz": "kilic-kaldir",
+     "adimlar": [
+      {
+       "sn": 0.1,
+       "poz": "kilic-savur",
+       "sarsinti": true
+      }
+     ]
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.8
+   }
+  }
+ ],
+ "publishAt": "2026-11-06T06:11:17.923Z",
+ "title": "Ölmesine 3 saniye vardı… ⚔️ #shorts",
+ "description": "",
+ "tags": [],
+ "topic": "Arın'ın kaçırılışı ve arenadaki ilk büyük dövüşü"
+}
