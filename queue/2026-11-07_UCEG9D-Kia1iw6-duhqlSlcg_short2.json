@@ -1,0 +1,119 @@
+{
+  "id": "2026-11-07_UCEG9D-Kia1iw6-duhqlSlcg_short2",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-07T16:00:00.000Z",
+  "topic": "Arctic tern versus bar-tailed godwit migration distance",
+  "title": "Arctic Tern vs Bar-tailed Godwit: Who Flies Farther?",
+  "hookText": "70,000 km every year",
+  "description": "The Arctic tern can fly up to about 70,000 kilometers a year, while the bar-tailed godwit holds the record for the longest known non-stop bird flight. Compare their scores.\n\n#arctictern #bartailedgodwit #migration #shorts",
+  "tags": [
+    "arctic tern",
+    "bar-tailed godwit",
+    "bird migration",
+    "longest migration",
+    "animal comparison",
+    "bird facts",
+    "nature facts",
+    "wildlife"
+  ],
+  "ceviriler": {
+    "es": {
+      "title": "Charrán ártico vs aguja colipinta: ¿quién vuela más?",
+      "description": "El charrán ártico puede volar hasta unos 70.000 kilómetros al año, y la aguja colipinta tiene el récord del vuelo sin escalas más largo conocido en un ave. Compara sus puntuaciones.\n\n#charranartico #agujacolipinta #migracion #shorts"
+    }
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "B"
+  },
+  "scenes": [
+    {
+      "narration": "An Arctic tern can fly up to about 70,000 kilometers in a single year, nearly twice around the Earth.",
+      "visual": {
+        "query": "Arctic tern flying",
+        "prompt": "a small white Arctic tern with a black cap flying over icy blue water, sharp detail",
+        "motion": {
+          "type": "stat",
+          "value": "~70,000 km",
+          "label": "Arctic tern, per year"
+        }
+      }
+    },
+    {
+      "narration": "It travels from the Arctic to Antarctica and back, chasing endless summer daylight.",
+      "visual": {
+        "query": "Antarctica ice sea",
+        "prompt": "a bright polar sea with floating ice under a low summer sun, wide shot",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "Summer",
+              "label": "Arctic"
+            },
+            {
+              "year": "Summer",
+              "label": "Antarctica"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "narration": "Its rival is the bar-tailed godwit, which holds the record for the longest known non-stop flight by a bird.",
+      "visual": {
+        "query": "bar-tailed godwit",
+        "prompt": "a bar-tailed godwit with a long bill standing on a muddy shore at dawn, close shot"
+      }
+    },
+    {
+      "narration": "In 2022, a young godwit was tracked flying more than 13,000 kilometers from Alaska to Tasmania in about 11 days without landing.",
+      "visual": {
+        "query": "Alaska to Tasmania",
+        "prompt": "a lone shorebird flying over a vast dark ocean at dusk, wide aerial view",
+        "motion": {
+          "type": "stat",
+          "value": "13,000+ km",
+          "label": "Godwit, non-stop"
+        }
+      }
+    },
+    {
+      "narration": "The tern wins on total distance. The godwit wins on a single push without rest.",
+      "visual": {
+        "query": "migrating birds sky",
+        "prompt": "two birds flying side by side across an orange sky, silhouette, wide shot"
+      }
+    },
+    {
+      "narration": "Scores: yearly distance, tern 10, godwit 8. Non-stop endurance, tern 6, godwit 10.",
+      "visual": {
+        "query": "bird migration map",
+        "prompt": "a glowing world map with two long curved flight routes, dark background",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Arctic tern",
+            "value": "10 / 6"
+          },
+          "right": {
+            "title": "Godwit",
+            "value": "8 / 10"
+          }
+        }
+      }
+    },
+    {
+      "narration": "While flying, the godwit lives on stored body fat and reportedly even shrinks some of its organs. Which one is the greater traveler?",
+      "visual": {
+        "query": "shorebird flock",
+        "prompt": "a flock of shorebirds lifting off from a wet shoreline at sunrise",
+        "motion": {
+          "type": "question",
+          "text": "Which one is the greater traveler?"
+        }
+      }
+    }
+  ]
+}

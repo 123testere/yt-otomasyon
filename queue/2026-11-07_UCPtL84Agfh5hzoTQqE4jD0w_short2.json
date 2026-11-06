@@ -1,0 +1,87 @@
+{
+  "id": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-07T16:00:00.000Z",
+  "topic": "Elisha Otis'in 1854'te asansör emniyet mandalını gösterisi",
+  "title": "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
+  "hookText": "İpi kestirdi, düşmedi",
+  "description": "Eşyaların Hikayesi #35\nAsansör güvenli hale 1854'te geldi: Elisha Otis, New York'ta kalabalığın önünde ipin kesilmesini istedi ve emniyet mandalı platformu tuttu.\n\n#asansör #icatlar #eşyalarınhikayesi #shorts",
+  "tags": [
+    "asansör",
+    "asansör tarihi",
+    "elisha otis",
+    "emniyet mandalı",
+    "asansör nasıl çalışır",
+    "icatlar",
+    "eşyaların hikayesi",
+    "lamba altında"
+  ],
+  "oynatmaListesi": "Bina ve Şehir İcatları",
+  "baslikKart": [
+    "İpi kesildi ama",
+    "asansör düşmedi"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Gözlük",
+    "b": "Çatal"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "He Had the Elevator Rope Cut in Front of a Crowd: 1854",
+      "description": "Elevators became safe in 1854, when Elisha Otis had the rope cut in front of a crowd in New York and a safety catch held the platform.\n\n#elevator #inventions #history #shorts"
+    }
+  },
+  "oylama": {
+    "kaynak": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "secilen": "a"
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "B"
+  },
+  "scenes": [
+    {
+      "narration": "Bir ip kopsa bile düşmeyen asansör fikri 1854'te New York'ta herkesin önünde denendi.",
+      "ifade": "saskin",
+      "cizim": "ink(kutu(380, 100, 240, 520), { close: true, fill: '#EFE4CB', w: 4, seed: 1, pp: eo(pr(u, 0, .7)) });\nconst y = 280 + Math.sin(T * 2) * 8 * eo(pr(u, .8, 1.2));\nink(ln([500, 100], [500, y], 10), { w: 4, seed: 2, pp: eo(pr(u, .3, .9)) });\nink(kutu(420, y, 160, 170), { close: true, fill: K.pirinc, w: 4, seed: 3, pp: eo(pr(u, .5, 1.1)) });\ntxt('1854', 800, 340, 90, { c: K.ak, a: eo(pr(u, 1, 1.6)) });"
+    },
+    {
+      "narration": "Mucit Elisha Otis, kalabalığın önünde yüksekte bir platforma çıktı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(340, 240, 320, 30), { close: true, fill: K.pirinc, w: 4, seed: 4, pp: eo(pr(u, 0, .6)) });\nink(ell(500, 190, 20, 20, 14), { close: true, fill: '#EFE4CB', w: 4, seed: 5, pp: eo(pr(u, .5, .9)) });\nink(ln([500, 210], [500, 240], 4), { w: 6, seed: 6, pp: eo(pr(u, .6, 1)) });\nfor (let i = 0; i < 9; i++) ink(ell(220 + i * 70, 560 + h(i) * 20, 14, 14, 10), { close: true, fill: '#E6DBC4', w: 3, seed: 20 + i, pp: eo(pr(u, .9 + i * .05, 1.3 + i * .05)) });\netk('kalabalık', 500, 660, eo(pr(u, 1.3, 1.9)), { size: 38 });"
+    },
+    {
+      "narration": "Sonra platformu tutan ipin kesilmesini istedi.",
+      "ifade": "merakli",
+      "cizim": "ink(ln([500, 100], [500, 300], 10), { w: 4, seed: 7, pp: eo(pr(u, 0, .6)) });\nconst a = eo(pr(u, .8, 1.3));\nink(ln([500, 300], [500 + a * 40, 300 + a * 70], 6), { w: 4, seed: 8, pp: a });\ntxt('✂', 560, 300, 90, { c: K.bordo, a: eo(pr(u, .7, 1.1)) });\netk('ip kesildi', 500, 600, eo(pr(u, 1.2, 1.8)), { size: 46 });"
+    },
+    {
+      "narration": "Platform kısa bir mesafe indi ve durdu, çünkü rayların yanındaki mandallar devreye girdi.",
+      "ifade": "saskin",
+      "cizim": "ink(ln([320, 120], [320, 620], 12), { w: 5, seed: 9, pp: eo(pr(u, 0, .6)) });\nink(ln([680, 120], [680, 620], 12), { w: 5, seed: 10, pp: eo(pr(u, 0, .6)) });\nfor (let i = 0; i < 12; i++) { ink(ln([320, 140 + i * 40], [345, 150 + i * 40], 2), { w: 4, seed: 30 + i, pp: eo(pr(u, .2 + i * .03, .6)) }); ink(ln([680, 140 + i * 40], [655, 150 + i * 40], 2), { w: 4, seed: 50 + i, pp: eo(pr(u, .2 + i * .03, .6)) }); }\nconst d = 50 * eo(pr(u, 1, 1.4));\nink(kutu(380, 300 + d, 240, 40), { close: true, fill: K.pirinc, w: 4, seed: 11, pp: eo(pr(u, .5, 1)) });\ncizgiEtiket('mandal', [345, 270], [200, 200], eo(pr(u, 1.4, 2)), { size: 40 });"
+    },
+    {
+      "narration": "Rivayete göre Otis kalabalığa dönüp her şeyin yolunda olduğunu söyledi.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(kutu(340, 400, 320, 30), { close: true, fill: K.pirinc, w: 4, seed: 12, pp: eo(pr(u, 0, .6)) });\nink(ell(500, 350, 20, 20, 14), { close: true, fill: '#EFE4CB', w: 4, seed: 13, pp: eo(pr(u, .4, .8)) });\nink(ln([500, 370], [500, 400], 4), { w: 6, seed: 14, pp: eo(pr(u, .5, .9)) });\nink(ln([500, 385], [570, 350 - Math.sin(T * 5) * 12], 5), { w: 5, seed: 15, pp: eo(pr(u, .7, 1.1)) });\netk('Her şey yolunda, beyler', 500, 600, eo(pr(u, 1.1, 1.7)), { size: 40 });"
+    },
+    {
+      "narration": "Bu güvenlik mandalı, yüksek binalarda asansör kullanılmasının önünü açtı.",
+      "ifade": "gururlu",
+      "cizim": "for (let i = 0; i < 7; i++) ink(kutu(380, 120 + i * 70, 240, 70), { close: true, fill: i % 2 ? '#EFE4CB' : '#E6DBC4', w: 3.4, seed: 60 + i, pp: eo(pr(u, i * .08, .4 + i * .08)) });\nconst y = 130 + (Math.sin(T * 1.5) * .5 + .5) * 360 * eo(pr(u, 1, 1.4));\nink(kutu(450, y, 100, 60), { close: true, fill: K.pirinc, w: 4, seed: 70, pp: eo(pr(u, 1, 1.4)) });\netk('yüksek bina', 800, 620, eo(pr(u, 1.3, 1.9)), { size: 40 });"
+    },
+    {
+      "narration": "Bugünkü asansörlerde de ip koparsa fren tutacak şekilde tasarlanır.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(kutu(380, 220, 240, 300), { close: true, fill: '#EFE4CB', w: 4, seed: 71, pp: eo(pr(u, 0, .6)) });\nink(ln([500, 100], [500, 300], 8), { w: 4, seed: 72, pp: eo(pr(u, .3, .9)) });\nink(kutu(430, 300, 140, 120), { close: true, fill: K.pirinc, w: 4, seed: 73, pp: eo(pr(u, .5, 1)) });\ncizgiEtiket('fren', [430, 420], [230, 560], eo(pr(u, 1.3, 1.9)), { size: 44 });\ncizgiEtiket('ip', [500, 180], [780, 150], eo(pr(u, 1.1, 1.7)), { size: 44 });"
+    },
+    {
+      "narration": "Sırada hangisi olsun, gözlük mü çatal mı? Yorumlara A ya da B yazın.",
+      "ifade": "merakli",
+      "cizim": "txt('?', MX, 420, 200, { c: K.ak, a: eo(pr(u, .3, 1)) });"
+    }
+  ]
+}

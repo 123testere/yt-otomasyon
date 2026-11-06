@@ -1,0 +1,106 @@
+{
+  "id": "2026-11-07_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-07T11:00:00.000Z",
+  "topic": "Polar bear versus grizzly bear size, speed and cold survival",
+  "title": "Polar Bear vs Grizzly Bear: Which One Is Bigger?",
+  "hookText": "Giant bear showdown",
+  "description": "The polar bear is the largest land carnivore, but the grizzly is the faster sprinter. See how the two bears score on size, speed and cold survival.\n\n#polarbear #grizzlybear #animals #shorts",
+  "tags": [
+    "polar bear",
+    "grizzly bear",
+    "polar bear vs grizzly",
+    "biggest bear",
+    "bear comparison",
+    "animal facts",
+    "wildlife",
+    "nature"
+  ],
+  "ceviriler": {
+    "es": {
+      "title": "Oso polar vs oso grizzly: ¿cuál es más grande?",
+      "description": "El oso polar es el mayor carnívoro terrestre, pero el grizzly corre más rápido. Mira cómo puntúan los dos osos en tamaño, velocidad y supervivencia en el frío.\n\n#osopolar #osogrizzly #animales #shorts"
+    }
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "A"
+  },
+  "scenes": [
+    {
+      "narration": "Which bear would win a size contest, the polar bear or the grizzly?",
+      "visual": {
+        "query": "polar bear grizzly",
+        "prompt": "a polar bear on snow facing a grizzly bear on rocky ground, split composition, dramatic light"
+      }
+    },
+    {
+      "narration": "The polar bear is the largest land carnivore on Earth, and big males can weigh around 700 kilograms.",
+      "visual": {
+        "query": "polar bear Arctic",
+        "prompt": "a huge male polar bear walking across Arctic sea ice, low angle, cold blue light",
+        "motion": {
+          "type": "stat",
+          "value": "~700 kg",
+          "label": "Big male polar bear"
+        }
+      }
+    },
+    {
+      "narration": "A large grizzly is smaller, with big males usually staying under 400 kilograms.",
+      "visual": {
+        "query": "grizzly bear",
+        "prompt": "a large grizzly bear standing in a mountain river, side view, soft morning light",
+        "motion": {
+          "type": "stat",
+          "value": "<400 kg",
+          "label": "Big male grizzly"
+        }
+      }
+    },
+    {
+      "narration": "On land, though, the grizzly is the faster sprinter, reaching about 50 kilometers per hour in a short burst.",
+      "visual": {
+        "query": "grizzly bear running",
+        "prompt": "a grizzly bear sprinting across an open meadow, motion blur, mountain background"
+      }
+    },
+    {
+      "narration": "The polar bear is built for the Arctic, with thick fat, dense fur, and the ability to swim for many hours between ice floes.",
+      "visual": {
+        "query": "polar bear swimming",
+        "prompt": "a polar bear swimming in dark icy water near floating ice, wide shot"
+      }
+    },
+    {
+      "narration": "Scores: size, polar bear 10, grizzly 7. Speed, polar bear 6, grizzly 8. Cold survival, polar bear 10, grizzly 5.",
+      "visual": {
+        "query": "bear footprints snow",
+        "prompt": "two sets of giant bear tracks in fresh snow side by side, top view",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Polar bear",
+            "value": "10/6/10"
+          },
+          "right": {
+            "title": "Grizzly",
+            "value": "7/8/5"
+          }
+        }
+      }
+    },
+    {
+      "narration": "In the wild they rarely meet, but as the climate warms, some of their ranges are starting to overlap. Which bear gets your vote?",
+      "visual": {
+        "query": "Arctic tundra bear",
+        "prompt": "a lone bear on a wide tundra under a pale sky, wide shot",
+        "motion": {
+          "type": "question",
+          "text": "Which bear gets your vote?"
+        }
+      }
+    }
+  ]
+}

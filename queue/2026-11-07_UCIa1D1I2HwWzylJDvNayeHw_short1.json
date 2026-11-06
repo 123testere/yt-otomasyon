@@ -1,0 +1,109 @@
+{
+  "id": "2026-11-07_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-07T05:00:00.000Z",
+  "topic": "Kadeş Antlaşması ve Hattuşa tabletleri",
+  "title": "Dünyanın En Eski Barış Antlaşması Anadolu'da Çıktı",
+  "hookText": "Barış tableti Çorum'da",
+  "description": "Kadeş Antlaşması, bilinen en eski yazılı barış antlaşmalarından biridir ve metni Anadolu'da, Hitit başkenti Hattuşa'da bulundu. Milattan önce 1259 civarında Mısır ile Hititler savaşı bitirdi.\n\n#kadeşantlaşması #hititler #hattuşa #tarih",
+  "tags": [
+    "kadeş antlaşması",
+    "hititler",
+    "hattuşa",
+    "boğazkale",
+    "ikinci ramses",
+    "en eski barış antlaşması",
+    "antik anadolu",
+    "tarih"
+  ],
+  "oynatmaListesi": "Anadolu'nun Bilinmeyenleri",
+  "ceviriler": {
+    "en": {
+      "title": "The World's Oldest Peace Treaty Was Found in Turkey",
+      "description": "The Treaty of Kadesh is one of the oldest known written peace treaties, and its text was found in Anatolia, in the Hittite capital Hattusa. Around 1259 BCE, Egypt and the Hittites ended their war on paper.\n\n#kadesh #hittites #hattusa #history"
+    }
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "A"
+  },
+  "scenes": [
+    {
+      "narration": "Bilinen en eski yazılı barış antlaşmalarından biri neden Anadolu'da bulundu, bilir misin evlat?",
+      "visual": {
+        "query": "Hattusa ruins",
+        "prompt": "ancient stone gate ruins of a Hittite city on a hill in central Anatolia, golden hour",
+        "motion": {
+          "type": "question",
+          "text": "Barış antlaşması neden burada?"
+        }
+      }
+    },
+    {
+      "narration": "Mısır Firavunu İkinci Ramses ile Hitit Kralı Üçüncü Hattuşili, milattan önce 1259 civarında savaşa son verdi.",
+      "visual": {
+        "query": "Ramesses II statue",
+        "prompt": "a colossal stone statue of an ancient Egyptian king under a pale sky, low angle"
+      }
+    },
+    {
+      "narration": "Antlaşma, iki devletin birbirine saldırmayacağını ve düşmana karşı yardımlaşacağını yazıyordu.",
+      "visual": {
+        "query": "cuneiform clay tablet",
+        "prompt": "a clay tablet covered in cuneiform writing resting on dark cloth, warm side light",
+        "motion": {
+          "type": "list",
+          "title": "Antlaşmanın sözü",
+          "items": [
+            "Saldırmama",
+            "Düşmana karşı yardım"
+          ]
+        }
+      }
+    },
+    {
+      "narration": "Metin, Hitit başkenti Hattuşa'da, bugünkü Çorum'un Boğazkale ilçesinde kil tabletler üzerinde bulundu.",
+      "visual": {
+        "query": "Bogazkale Hattusa",
+        "prompt": "excavated stone foundations of an ancient Anatolian capital on a green hillside, wide shot"
+      }
+    },
+    {
+      "narration": "Tabletlerden biri İstanbul Arkeoloji Müzelerinde duruyor, bir kopyası da New York'taki Birleşmiş Milletler binasında asılı.",
+      "visual": {
+        "query": "Istanbul Archaeology Museum",
+        "prompt": "a stone museum building facade in Istanbul with a courtyard, soft daylight",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Aslı",
+            "value": "İstanbul"
+          },
+          "right": {
+            "title": "Kopyası",
+            "value": "New York"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Yani barışın en eski sözleşmelerinden birini, bu topraklar bugüne taşıdı.",
+      "visual": {
+        "query": "Anatolia landscape",
+        "prompt": "a wide Anatolian plain with rolling hills at sunset, warm light"
+      }
+    },
+    {
+      "narration": "Videoyu beğen, yorum yaz, kanala abone ol; sırada hangi antlaşmanın hikâyesini anlatayım?",
+      "visual": {
+        "query": "old library books",
+        "prompt": "a candle-lit shelf of old leather books, close shot",
+        "motion": {
+          "type": "question",
+          "text": "Sırada hangi antlaşma?"
+        }
+      }
+    }
+  ]
+}

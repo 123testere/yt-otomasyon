@@ -1,0 +1,87 @@
+{
+  "id": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-07T09:00:00.000Z",
+  "topic": "Volta pilinin 1800'de çinko ve bakır disk yığınıyla icadı",
+  "title": "İlk Pil Neden Bir Yığın Madeni Paraya Benziyordu?",
+  "hookText": "Pilin atası bir yığın",
+  "description": "Eşyaların Hikayesi #34\nİlk pil, 1800'de Alessandro Volta'nın üst üste dizdiği çinko ve bakır disklerdi. Pil sözcüğü de yığın anlamına gelen Fransızca pile kelimesinden gelir.\n\n#pil #volta #icatlar #eşyalarınhikayesi #shorts",
+  "tags": [
+    "pil",
+    "ilk pil",
+    "volta pili",
+    "alessandro volta",
+    "pil nasıl çalışır",
+    "icatlar",
+    "eşyaların hikayesi",
+    "lamba altında"
+  ],
+  "oynatmaListesi": "Elektriğin Hikayesi",
+  "baslikKart": [
+    "İlk pil neden",
+    "yığına benziyordu?"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Mikrodalga fırın",
+    "b": "Diş fırçası"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "Why Did the First Battery Look Like a Pile of Coins?",
+      "description": "The first battery was a stack of zinc and copper discs that Alessandro Volta built in 1800. The word pil in Turkish comes from the French pile, which means a stack.\n\n#battery #volta #inventions #shorts"
+    }
+  },
+  "oylama": {
+    "kaynak": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "secilen": "a"
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "A"
+  },
+  "scenes": [
+    {
+      "narration": "Cebinizdeki pilin atası neden madeni para yığınına benziyordu? Yorumlarda siz seçtiniz: pil.",
+      "ifade": "merakli",
+      "cizim": "for (let i = 0; i < 6; i++) ink(ell(500, 560 - i * 34, 120, 20, 24), { close: true, fill: i % 2 ? '#B87333' : '#C9C9C0', w: 3.4, seed: 1 + i, pp: eo(pr(u, i * .08, .4 + i * .08)) });\ntxt('?', 800, 360, 160, { c: K.ak, a: eo(pr(u, .9, 1.5)) });\netk('madeni para yığını gibi', 500, 640, eo(pr(u, 1, 1.6)), { size: 40 });"
+    },
+    {
+      "narration": "İtalyan Alessandro Volta, 1800'de çinko ve bakır diskleri üst üste dizdi.",
+      "ifade": "anlatiyor",
+      "cizim": "for (let i = 0; i < 6; i++) ink(ell(500, 560 - i * 34, 120, 20, 24), { close: true, fill: i % 2 ? '#B87333' : '#C9C9C0', w: 3.4, seed: 10 + i, pp: eo(pr(u, i * .08, .4 + i * .08)) });\ntxt('1800', 800, 260, 80, { c: K.ak, a: eo(pr(u, .9, 1.5)) });\ncizgiEtiket('çinko', [380, 530], [220, 600], eo(pr(u, 1, 1.5)), { size: 40 });\ncizgiEtiket('bakır', [620, 496], [790, 600], eo(pr(u, 1.2, 1.7)), { size: 40 });"
+    },
+    {
+      "narration": "Araya tuzlu suya batırılmış kumaş parçaları koydu.",
+      "ifade": "anlatiyor",
+      "cizim": "for (let i = 0; i < 5; i++) { ink(ell(500, 560 - i * 70, 120, 20, 24), { close: true, fill: i % 2 ? '#B87333' : '#C9C9C0', w: 3.4, seed: 20 + i, pp: eo(pr(u, i * .08, .4 + i * .08)) });\n  ink(kutu(390, 524 - i * 70, 220, 14), { close: true, fill: '#BFD4DA', w: 3, seed: 40 + i, pp: eo(pr(u, .5 + i * .1, 1 + i * .1)) }); }\ncizgiEtiket('tuzlu suya batmış kumaş', [610, 456], [760, 330], eo(pr(u, 1.4, 2)), { size: 38 });"
+    },
+    {
+      "narration": "Yığının iki ucunu bir telle birleştirince sürekli bir elektrik akımı aktı.",
+      "ifade": "saskin",
+      "cizim": "for (let i = 0; i < 7; i++) ink(ell(500, 560 - i * 34, 120, 20, 24), { close: true, fill: i % 2 ? '#B87333' : '#C9C9C0', w: 3.4, seed: 50 + i, pp: eo(pr(u, i * .08, .4 + i * .08)) });\nconst tel = [[500, 322], [500, 250], [220, 250], [220, 600], [500, 600], [500, 580]];\nink(tel, { w: 5, c: K.bordo, seed: 70, pp: eo(pr(u, .3, 1.2)) });\nfor (let k = 0; k < 5; k++) { const ph = (T * .5 + k * .2) % 1, y = 250 + ph * 350; ctx.save(); ctx.globalAlpha = eo(pr(u, 1.2, 1.6)); ctx.beginPath(); ctx.arc(220, y, 9, 0, 7); ctx.fillStyle = K.ak; ctx.fill(); ctx.restore(); }\netk('akım', 120, 430, eo(pr(u, 1.3, 1.9)), { size: 44 });"
+    },
+    {
+      "narration": "Fransızcada yığın anlamına gelen pile adı verildi; bizim pil sözcüğümüz de oradan gelir.",
+      "ifade": "gulumsuyor",
+      "cizim": "txt('pile', 500, 300, 140, { c: K.ak, a: eo(pr(u, 0, .7)) });\nok([500, 360], [500, 470], { c: K.bordo, pp: eo(pr(u, .7, 1.2)) });\ntxt('pil', 500, 590, 120, { a: eo(pr(u, 1.2, 1.8)) });\netk('yığın', 780, 300, eo(pr(u, .6, 1.2)), { size: 44 });"
+    },
+    {
+      "narration": "Disk eklendikçe gerilim arttı.",
+      "ifade": "gururlu",
+      "cizim": "for (let n = 0; n < 8; n++) ink(ell(500, 580 - n * 44, 100, 16, 22), { close: true, fill: n % 2 ? '#B87333' : '#C9C9C0', w: 3.2, seed: 80 + n, pp: eo(pr(u, n * .12, .4 + n * .12)) });\nok([800, 560], [800, 240], { c: K.bordo, pp: eo(pr(u, 1.2, 2)) });\netk('gerilim', 800, 620, eo(pr(u, 1.4, 2)), { size: 44 });"
+    },
+    {
+      "narration": "Bugünkü pillerde malzeme değişti ama ilke aynı: iki farklı madde ve aralarında akan yük.",
+      "ifade": "dusunceli",
+      "cizim": "ink(kutu(300, 300, 400, 200), { close: true, fill: '#EFE4CB', w: 4, seed: 100, pp: eo(pr(u, 0, .7)) });\nink(kutu(700, 370, 40, 60), { close: true, fill: K.pirinc, w: 4, seed: 101, pp: eo(pr(u, .5, 1)) });\ntxt('+', 640, 400, 80, { c: K.bordo, a: eo(pr(u, .8, 1.3)) });\ntxt('−', 360, 400, 80, { c: K.mavi, a: eo(pr(u, .8, 1.3)) });\nfor (let k = 0; k < 6; k++) { const x = 400 + ((T * 80 + k * 40) % 240); ctx.save(); ctx.globalAlpha = eo(pr(u, 1, 1.5)); ctx.beginPath(); ctx.arc(x, 400, 8, 0, 7); ctx.fillStyle = K.ak; ctx.fill(); ctx.restore(); }\netk('aynı ilke, yeni malzeme', 500, 600, eo(pr(u, 1.2, 1.8)), { size: 40 });"
+    },
+    {
+      "narration": "Sırada hangisi olsun, mikrodalga fırın mı diş fırçası mı? Yorumlara A ya da B yazın.",
+      "ifade": "merakli",
+      "cizim": "txt('?', MX, 420, 200, { c: K.ak, a: eo(pr(u, .3, 1)) });"
+    }
+  ]
+}

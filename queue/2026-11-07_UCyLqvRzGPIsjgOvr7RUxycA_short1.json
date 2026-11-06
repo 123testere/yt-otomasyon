@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-07_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-07T05:00:00.000Z",
+  "topic": "Weintrauben",
+  "title": "Duell 5/30: Wer erntet die meisten Weintrauben? 🍇",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Trauben-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": [
+    "flaggenduell",
+    "europa",
+    "länder vergleich",
+    "weintrauben",
+    "landwirtschaft",
+    "ranking",
+    "europa daten",
+    "länderduell"
+  ],
+  "duell": {
+    "topicId": "trauben",
+    "why": [
+      "Sonnige Hänge",
+      "Uralte Wein-Tradition",
+      "Reben von den Alpen bis Sizilien"
+    ],
+    "script": {
+      "intro": "Welches Land erntet die meisten Weintrauben Europas? 46 Flaggen fallen in den Trichter – nur eine kommt durch!",
+      "nodata": "Zwölf Länder haben keine Traubendaten und fliegen sofort raus!",
+      "rounds": "Jetzt wird gesiebt! Flagge um Flagge verschwindet, und Frankreich verpasst das Finale um rund 640 Tausend Tonnen!",
+      "final": "Finale! Italien gegen Spanien – zwei Weinriesen, nur einer holt die Krone!",
+      "winner": "Italien gewinnt! Über 7,6 Millionen Tonnen, fast anderthalbmal so viel wie Spanien!",
+      "why": "Warum Italien? Sonnige Hänge und eine uralte Wein-Tradition – von den Alpen bis nach Sizilien wachsen Reben.",
+      "table": "In der Saisontabelle führt weiter die Türkei mit 22 Punkten. Schreib dein Thema in die Kommentare!"
+    }
+  },
+  "deney": {
+    "id": "muzik-seviye",
+    "kol": "A"
+  }
+}
