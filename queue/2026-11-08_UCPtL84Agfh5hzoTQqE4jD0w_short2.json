@@ -1,0 +1,83 @@
+{
+  "id": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-08T16:00:00.000Z",
+  "topic": "Çatalhöyük'te bulunan cilalı obsidyen aynalar ve aynanın gelişimi",
+  "title": "Çatalhöyük'te Bulunan 8000 Yıllık Ayna Cam Değildi",
+  "hookText": "8000 yıllık ayna taşı",
+  "description": "Eşyaların Hikayesi #37\nÇatalhöyük'te ayna olarak kullanıldığı düşünülen cilalı obsidyen parçaları bulundu; yaklaşık 8000 yıllıklar. Sonra bronz ve bakır aynalar, ardından camın arkasına metal kaplanan aynalar geldi.\n\n#ayna #çatalhöyük #icatlar #eşyalarınhikayesi #shorts",
+  "tags": [
+    "ayna",
+    "aynanın tarihi",
+    "çatalhöyük",
+    "obsidyen ayna",
+    "ilk ayna",
+    "ayna nasıl icat edildi",
+    "icatlar",
+    "eşyaların hikayesi",
+    "lamba altında"
+  ],
+  "oynatmaListesi": "Anadolu'nun Eşyaları",
+  "baslikKart": [
+    "8000 yıllık ayna",
+    "taştan yapılmıştı"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Kalem",
+    "b": "Makas"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "The 8,000-Year-Old Mirror From Çatalhöyük Was Not Glass",
+      "description": "Polished obsidian pieces believed to be mirrors were found at Çatalhöyük and are about 8,000 years old. Bronze and copper mirrors followed, then glass backed with metal.\n\n#mirror #catalhoyuk #inventions #shorts"
+    }
+  },
+  "oylama": {
+    "kaynak": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "secilen": "b"
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "B"
+  },
+  "scenes": [
+    {
+      "narration": "Çatalhöyük'te, ayna olarak kullanıldığı düşünülen cilalı obsidyen parçaları bulundu; yaklaşık 8000 yıllıklar.",
+      "ifade": "merakli",
+      "cizim": "for(let i=0;i<5;i++)ink(kutu(180+i*130,430-(i%2)*40,100,120+(i%2)*40),{close:true,fill:'#E6DBC4',w:3.2,seed:1+i,pp:eo(pr(u,i*.1,.5+i*.1))});txt('8000',500,250,130,{c:K.ak,a:eo(pr(u,.7,1.3))});etk('Çatalhöyük',500,620,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "Obsidyen volkanik camdır; iyice cilalanınca koyu ve puslu bir yansıma verir.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(ell(500,380,170,200,36),{close:true,fill:'#2E2E34',w:4,seed:6,pp:eo(pr(u,0,.8))});ink(ell(500,380,130,160,28,3.6,5.2),{w:5,c:'#D8D8DE',seed:7,pp:eo(pr(u,.7,1.3))});etk('cilalı obsidyen',500,640,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "Sonra parlatılmış bronz ve bakır aynalar yayıldı; Mısır'da ve Mezopotamya'da kullanıldılar.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(ell(500,330,150,150,36),{close:true,fill:'#C28A3E',w:4,seed:8,pp:eo(pr(u,0,.8))});ink(kutu(480,480,40,170),{close:true,fill:'#A9772F',w:3.6,seed:9,pp:eo(pr(u,.5,1))});ctx.save();ctx.globalAlpha=.5+.4*Math.sin(T*2);ink(ell(450,290,50,30,16,3.6,5.4),{w:5,c:'#FBF6EA',seed:10});ctx.restore();etk('bronz ayna',500,680,eo(pr(u,1,1.5)),{size:40});"
+    },
+    {
+      "narration": "Camın arkasına metal kaplayan aynalar ise rivayete göre Venedik'te ün kazandı ve uzun süre pahalı bir lükstü.",
+      "ifade": "gururlu",
+      "cizim": "ink(kutu(330,200,340,420),{close:true,fill:'#DCE8EC',w:4.4,seed:11,pp:eo(pr(u,0,.8))});for(let i=0;i<3;i++)ink(ln([380+i*70,250],[560+i*70-60,560],6),{w:4,c:'#FBF6EA',seed:12+i,pp:eo(pr(u,.6+i*.2,1.2+i*.2))});etk('Venedik',500,670,eo(pr(u,1,1.5)),{size:44});txt('pahalı',MX,150,50,{c:K.ak,a:eo(pr(u,1.4,2))});"
+    },
+    {
+      "narration": "Bugünkü aynalarda camın arkasına ince bir metal tabaka sürülür.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(260,300,480,60),{close:true,fill:'#CFE3EA',w:3.6,seed:15,pp:eo(pr(u,0,.7))});ink(kutu(260,360,480,18),{close:true,fill:'#B8B8BE',w:3.6,seed:16,pp:eo(pr(u,.5,1))});cizgiEtiket('cam',[300,330],[160,220],eo(pr(u,.8,1.3)),{size:40});cizgiEtiket('ince metal tabaka',[640,370],[780,500],eo(pr(u,1.1,1.7)),{size:40});"
+    },
+    {
+      "narration": "Yansıma, ışığın pürüzsüz yüzeyden düzgünce geri dönmesidir.",
+      "ifade": "dusunceli",
+      "cizim": "ink(ln([140,560],[860,560],12),{w:6,seed:17,pp:eo(pr(u,0,.7))});ok([200,200],[470,550],{pp:eo(pr(u,.5,1.2)),c:K.ak,seed:18});ok([530,550],[800,200],{pp:eo(pr(u,1.1,1.8)),c:K.ak,seed:19});etk('ışık',200,170,eo(pr(u,.6,1.1)),{size:40});etk('yansıma',820,170,eo(pr(u,1.4,1.9)),{size:40});"
+    },
+    {
+      "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: kalem mi, makas mı?",
+      "ifade": "merakli",
+      "cizim": "txt('?',MX,420,200,{c:K.ak,a:eo(pr(u,0,.6))});txt('A',260,560,90,{c:K.s,a:eo(pr(u,.5,1))});txt('B',740,560,90,{c:K.s,a:eo(pr(u,.8,1.3))});"
+    }
+  ]
+}

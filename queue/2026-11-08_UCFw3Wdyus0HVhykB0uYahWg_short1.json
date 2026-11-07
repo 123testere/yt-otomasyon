@@ -1,0 +1,239 @@
+{
+  "id": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_short1",
+  "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+  "type": "short",
+  "format": "dizi",
+  "dizi": "zincirli",
+  "dikey": true,
+  "acilis": false,
+  "hiz": 1.12,
+  "derivedFrom": "2026-11-07_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "bolum": {
+    "no": 2,
+    "ad": "Kızıl Loca"
+  },
+  "publishAt": "2026-11-08T16:00:00.000Z",
+  "muzik": "gerilim",
+  "muzikSeviye": 0.12,
+  "kapanis": {
+    "baslik": "NE OLDU?",
+    "sonraki": "Tamamı kanalda: Zincirli · Bölüm 2",
+    "soru": "Sence Su gerçekten yaşıyor mu?"
+  },
+  "title": "Kral onu neden öldürtmedi? 👑",
+  "description": "Beş kılıç, bir kral ve bir fısıltı. Sence Arın bu geceyi nasıl atlatacak?",
+  "tags": [
+    "zincirli",
+    "çöp adam",
+    "animasyon",
+    "gladyatör",
+    "kral",
+    "dizi"
+  ],
+  "topic": "Arın şampiyon ilan edilir ve gece zindanda bir sır duyar",
+  "ceviriler": {
+    "en": {
+      "title": "Why didn't the king kill him? 👑",
+      "description": "Five swords, a king and a whisper. How will Arin survive this night?"
+    }
+  },
+  "scenes": [
+    {
+      "kisim": "Kanca",
+      "mekan": "arena",
+      "kalabalik": 1,
+      "efektler": [
+        "agir-cekim"
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.5,
+          "poz": "dur",
+          "ifade": "endiseli"
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.3,
+          "yon": 1,
+          "esya": "kilic",
+          "poz": "saldir"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Etrafımda beş kılıç vardı."
+        }
+      ]
+    },
+    {
+      "mekan": "loca",
+      "kalabalik": 1,
+      "kadraj": [
+        {
+          "id": "kral",
+          "x": 0.4,
+          "poz": "isaret",
+          "ifade": "dusunceli"
+        },
+        {
+          "id": "sungur",
+          "x": 0.65,
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kral elini kaldırdı. Arena nefesini tuttu."
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "sure": 2,
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "dur",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Tribünler ayaktaydı. Ölüm istemiyorlardı."
+        }
+      ]
+    },
+    {
+      "mekan": "loca",
+      "kalabalik": 1,
+      "kadraj": [
+        {
+          "id": "kral",
+          "x": 0.4,
+          "poz": "isaret",
+          "ifade": "gulumsuyor"
+        },
+        {
+          "id": "sungur",
+          "x": 0.65,
+          "yon": -1,
+          "ifade": "kizgin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kral",
+          "metin": "Halk seni seviyor demircinin oğlu. Bir kralın en çok korktuğu şey budur."
+        },
+        {
+          "kim": "kral",
+          "metin": "Arın, arenanın şampiyonudur!",
+          "poz": "isaret"
+        }
+      ]
+    },
+    {
+      "kisim": "Zindan",
+      "mekan": "zindan",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "toros",
+          "x": 0.64,
+          "yon": -1,
+          "ifade": "endiseli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Locayı neden işaret ettin evlat?"
+        },
+        {
+          "kim": "arin",
+          "metin": "Kralın yanındaki adam köyümü yaktı."
+        },
+        {
+          "kim": "toros",
+          "metin": "Kara Sungur. Kralın sağ kolu."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "sungur",
+          "hareket": {
+            "x0": 1.1,
+            "x1": 0.66,
+            "sure": 2
+          },
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Uyumuyorsun."
+        },
+        {
+          "kim": "arin",
+          "metin": "Sen!",
+          "poz": "saldir"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "sure": 2.2,
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "sungur",
+          "x": 0.6,
+          "yon": -1,
+          "poz": "egil",
+          "ifade": "fisilti"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Kız kardeşin yaşıyor.",
+          "ifade": "fisilti"
+        }
+      ]
+    }
+  ]
+}

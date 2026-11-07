@@ -1,0 +1,753 @@
+{
+  "id": "2026-11-07_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+  "type": "long",
+  "publishAt": "2026-11-07T15:00:00.000Z",
+  "format": "dizi",
+  "dizi": "zincirli",
+  "bolum": {
+    "no": 2,
+    "ad": "Kızıl Loca"
+  },
+  "title": "Zincirli · Bölüm 2: Kızıl Loca",
+  "titleAlt": "Kral Onu Neden Öldürtmedi? Zincirli Bölüm 2",
+  "description": "Arın'ın etrafında beş kılıç, locada bir kral. Kalabalığın sesi bir kölenin kaderini değiştirebilir mi? Zincirli, çöp adam animasyonuyla anlatılan bir destan.\n\n#zincirli #çöpadam #animasyon #dizi",
+  "tags": [
+    "zincirli",
+    "çöp adam",
+    "animasyon dizi",
+    "gladyatör",
+    "arena",
+    "kızıl loca",
+    "destan",
+    "bölüm bölüm"
+  ],
+  "topic": "Arın şampiyon ilan edilir ve Sungur'un kralın sağ kolu olduğunu öğrenir",
+  "thumbnailText": "KIZIL LOCA",
+  "thumbnailTextAlt": "KRAL KORKTU",
+  "kapak": {
+    "sahne": 0,
+    "sn": 1.5
+  },
+  "oynatmaListesi": "Zincirli · 1. Sezon",
+  "muzik": "gerilim",
+  "muzikSeviye": 0.1,
+  "kapanis": {
+    "baslik": "DEVAMI",
+    "sonraki": "Bölüm 3: Yarım Bilezik — Yakında",
+    "soru": "Sence Sungur doğruyu mu söylüyor?"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "Chained · Episode 2: The Red Box",
+      "description": "Five swords surround Arin and a king raises his hand. Can the crowd's voice change a slave's fate? Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+    }
+  },
+  "scenes": [
+    {
+      "kisim": "Soğuk Açılış",
+      "mekan": "arena",
+      "kalabalik": 1,
+      "efektler": [
+        "agir-cekim"
+      ],
+      "aciklama": "Arın kumun ortasında, etrafı kılıçlı muhafızlarla çevrili. Locada kral elini havaya kaldırmış. Ağır çekim.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "poz": "dur",
+          "ifade": "endiseli"
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.55,
+          "yon": -1,
+          "esya": "kilic",
+          "poz": "saldir"
+        },
+        {
+          "id": "kargan",
+          "x": 0.78,
+          "yon": -1,
+          "poz": "diz-cok",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Etrafımda beş kılıç vardı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kral elini kaldırdı. Arena nefesini tuttu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Ve bu hikâyenin en tehlikeli anı, henüz başlamamıştı."
+        }
+      ]
+    },
+    {
+      "kisim": "Kralın Kararı",
+      "mekan": "arena",
+      "kalabalik": 1,
+      "kart": {
+        "ust": "BİRİNCİ KISIM",
+        "alt": "Kralın Kararı"
+      },
+      "kartSn": 2.8,
+      "efektler": [
+        "beyaz-cakma"
+      ],
+      "aciklama": "Birkaç dakika öncesi. Arın locayı işaret etmiş, muhafızlar kılıç çekmiş, koşarak yaklaşıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "isaret",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "muhafiz",
+          "hareket": {
+            "x0": 1.1,
+            "x1": 0.62,
+            "sure": 2.5,
+            "kos": true
+          },
+          "yon": -1,
+          "esya": "kilic"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "muhafiz",
+          "metin": "Kımıldama, köle!",
+          "poz": "saldir",
+          "ifade": "kizgin"
+        },
+        {
+          "kim": "arin",
+          "metin": "Elimde kılıç yok.",
+          "poz": "dur"
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "aciklama": "Kargan ağır ağır kalkar ve Arın'ın önüne geçer. Muhafızlar duraksar.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "kargan",
+          "hareket": {
+            "x0": 0.9,
+            "x1": 0.5,
+            "sure": 2
+          },
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.75,
+          "yon": -1,
+          "esya": "kilic"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kargan",
+          "metin": "Ona dokunmayın. Bu adam beni bağışladı."
+        },
+        {
+          "kim": "muhafiz",
+          "metin": "Kral karar verecek.",
+          "ifade": "endiseli"
+        }
+      ]
+    },
+    {
+      "mekan": "loca",
+      "kalabalik": 0.8,
+      "aciklama": "Locada kral ve Sungur. Sungur kralın kulağına eğilmiş, Kral kalabalığa bakıyor.",
+      "kadraj": [
+        {
+          "id": "kral",
+          "x": 0.38,
+          "ifade": "dusunceli"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Majesteleri, cezası bellidir."
+        },
+        {
+          "kim": "kral",
+          "metin": "Bekle. Kalabalığın sesini duymuyor musun?",
+          "ifade": "supheli"
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "sure": 3,
+      "aciklama": "Kral kalabalığa bakıyor, kalabalık krala.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "dur",
+          "ifade": "endiseli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kral kalabalığa baktı. Kalabalık krala baktı. Arenada tek bir şey kalmıştı: korku."
+        }
+      ]
+    },
+    {
+      "mekan": "loca",
+      "kalabalik": 1,
+      "aciklama": "Sungur kralın yanında eğilmiş, kral elini kaldırıp onu susturuyor.",
+      "kadraj": [
+        {
+          "id": "kral",
+          "x": 0.38,
+          "ifade": "supheli"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "kizgin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Majesteleri, bir köleyi bu kadar yükseltmek tehlikelidir."
+        },
+        {
+          "kim": "kral",
+          "metin": "Tehlike, gözümün önünde olduğunda tehlike olmaz."
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "sure": 3,
+      "aciklama": "Tribünler ayakta, kollar havada. Kalabalık Arın'ın adını bağırıyor. Kargan diz çökmüş, ona bakıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "kargan",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "diz-cok",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Tribünler ayaktaydı. Ölüm istemiyorlardı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Adımı haykırıyorlardı.",
+          "once": 0.4
+        }
+      ]
+    },
+    {
+      "mekan": "loca",
+      "kalabalik": 1,
+      "aciklama": "Kral ayağa kalkar, kalabalığa elini açar. Sungur'un yüzü sertleşir.",
+      "kadraj": [
+        {
+          "id": "kral",
+          "x": 0.4,
+          "poz": "isaret",
+          "ifade": "gulumsuyor"
+        },
+        {
+          "id": "sungur",
+          "x": 0.64,
+          "yon": -1,
+          "ifade": "kizgin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kral",
+          "metin": "Halk seni seviyor demircinin oğlu. Bir kralın en çok korktuğu şey budur."
+        },
+        {
+          "kim": "kral",
+          "metin": "Öldürsem isyan çıkar. O hâlde yaşa. Arın, arenanın şampiyonudur!",
+          "poz": "isaret"
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "sure": 3,
+      "aciklama": "Arın kalabalığa bakıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "dur",
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kral beni öldüremezdi. Ama gözünü de benden ayırmayacaktı."
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "efektler": [
+        "beyaz-cakma"
+      ],
+      "aciklama": "Arena patlıyor. Arın şaşkın, muhafızlar kılıçlarını indiriyor, Kargan başını eğiyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "zafer",
+          "ifade": "saskin"
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.7,
+          "yon": -1,
+          "esya": null
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Ölümden bir ilanla kurtulmuştum."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Ama kralların hediyesi çoğu zaman bir tuzaktır.",
+          "once": 0.4
+        }
+      ]
+    },
+    {
+      "kisim": "Sağ Kol",
+      "mekan": "zindan",
+      "kart": {
+        "ust": "İKİNCİ KISIM",
+        "alt": "Sağ Kol"
+      },
+      "kartSn": 2.8,
+      "aciklama": "Zindan hücresi. Arın duvara yaslanmış, Toros karşısında oturuyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "dusun",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "toros",
+          "x": 0.64,
+          "yon": -1,
+          "ifade": "endiseli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Locayı neden işaret ettin evlat?"
+        },
+        {
+          "kim": "arin",
+          "metin": "Kralın yanındaki adam köyümü yaktı. Yüzünde yara izi var."
+        },
+        {
+          "kim": "toros",
+          "metin": "Kara Sungur. Kralın sağ kolu.",
+          "once": 0.8
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Arın hücrede, Toros bileğindeki zinciri inceliyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "dusunceli"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "dusun"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Kral beni neden bağışladı? Korktuğu için mi?"
+        },
+        {
+          "kim": "toros",
+          "metin": "Kralların merhameti çoğu zaman hesaptır. Şampiyon olmak, altın kaplamalı yeni bir zincirdir."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Arın yumruğunu duvara dayıyor. Toros omzuna elini koyuyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "eller-belde",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "On beş yıl aramıştım onu. Meğer aynı çatının altındaymışız."
+        },
+        {
+          "kim": "arin",
+          "metin": "Gidip karşısına çıkacağım!",
+          "ifade": "kizgin"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Toros sakin, Arın ayakta.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Sungur bir yere kaçmıyor. Sen de acele etme."
+        },
+        {
+          "kim": "arin",
+          "metin": "On beş yıl yetmedi mi bekleyişe?",
+          "ifade": "uzgun"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Toros ağır ağır konuşuyor, Arın dinliyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "dusunceli"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "isaret"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Öfke kılıcı ağırlaştırır dedim. Şimdi zinciri de ağırlaştırıyor."
+        },
+        {
+          "kim": "toros",
+          "metin": "Düşmanını tanıyorsun. Şimdi onu bekle. Son kez kalkıp kalkmadığına bakar."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "zaman": "gece",
+      "aciklama": "Kargan hücre aralığından fısıldıyor.",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "ifade": "endiseli"
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": -1,
+          "ifade": "fisilti"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kargan",
+          "metin": "Bu gece uyuma, demircinin oğlu. Sungur kimseyi boşuna ziyaret etmez.",
+          "ifade": "fisilti"
+        }
+      ]
+    },
+    {
+      "kisim": "Gece Ziyareti",
+      "mekan": "zindan",
+      "zaman": "gece",
+      "kart": {
+        "ust": "ÜÇÜNCÜ KISIM",
+        "alt": "Gece Ziyareti"
+      },
+      "kartSn": 2.8,
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Gece. Arın tek başına, zincirli bileğine bakıyor. Meşale titriyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "dusun",
+          "ifade": "uzgun"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "O gece uyuyamadım. Zincirin sesi kulağımda yankılanıyordu."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Sungur yaklaşırken meşale titriyor. Arın nefesini tutuyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.36,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "sungur",
+          "x": 0.64,
+          "yon": -1,
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Sana bir şey söyleyeceğim. Bir kez söylerim, iyi dinle."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kalbim kulaklarımda çarpıyordu."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Pelerin sürüklenen bir ses. Meşalenin ışığı titriyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Ayak sesleri duydum. Muhafız adımı değildi. Bu adım, bir pelerin sürüklüyordu."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Kapı gıcırdayarak açılır. Siyah pelerinli Sungur içeri girer, kapının önünde durur.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.36,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "sungur",
+          "hareket": {
+            "x0": 1.1,
+            "x1": 0.68,
+            "sure": 2.5
+          },
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Uyumuyorsun."
+        },
+        {
+          "kim": "arin",
+          "metin": "Sen!",
+          "poz": "saldir",
+          "ifade": "kizgin"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Sungur yaklaşır, Arın'ın zinciri gerilir ama ulaşamaz.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "saldir",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Bugün arenada gözlerini gördüm. Demir'in gözleri."
+        },
+        {
+          "kim": "arin",
+          "metin": "Babamın adını ağzına alma.",
+          "once": 0.3
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "sure": 4,
+      "aciklama": "Sungur eğilir, fısıldar. Arın donakalır.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "sungur",
+          "x": 0.6,
+          "yon": -1,
+          "poz": "egil",
+          "ifade": "fisilti"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Kız kardeşin yaşıyor.",
+          "ifade": "fisilti"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "sure": 3,
+      "aciklama": "Sungur çıkar. Arın dizlerinin üstüne çöker.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "diz-cok",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "On beş yıldır ilk kez zincirimin ağırlığını hissetmedim. Sonra hissettim. Hem de çok daha ağır."
+        }
+      ]
+    }
+  ]
+}

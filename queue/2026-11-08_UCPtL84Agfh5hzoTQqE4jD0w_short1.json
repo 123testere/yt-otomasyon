@@ -1,0 +1,93 @@
+{
+  "id": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-08T09:00:00.000Z",
+  "topic": "Ütünün kömürlü tavadan elektrikli ütüye gelişimi",
+  "title": "Ütünün Atası Kızgın Kömür Dolu Bir Tavaydı",
+  "hookText": "Ütü bir zamanlar tavaydı",
+  "description": "Eşyaların Hikayesi #36\nİlk ütüler içine kor konan metal tavalardı; sonra ocakta ısıtılan demir ütüler geldi. 1882'de Henry Seely elektrikli ütünün patentini aldı, termostat ise sonradan eklendi.\n\n#ütü #icatlar #eşyalarınhikayesi #shorts",
+  "tags": [
+    "ütü",
+    "ütünün tarihi",
+    "kömürlü ütü",
+    "elektrikli ütü",
+    "henry seely",
+    "ütü nasıl icat edildi",
+    "icatlar",
+    "eşyaların hikayesi",
+    "lamba altında"
+  ],
+  "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+  "baslikKart": [
+    "Ütünün atası neden",
+    "kömür tavasıydı?"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Tost makinesi",
+    "b": "Çamaşır makinesi"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "The Iron's Ancestor Was a Pan Full of Hot Coals",
+      "description": "The first irons were metal pans filled with hot coals, followed by heavy irons heated on the stove. In 1882 Henry Seely patented the electric iron, and the thermostat came later.\n\n#iron #inventions #history #shorts"
+    }
+  },
+  "oylama": {
+    "kaynak": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "secilen": "a"
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "A"
+  },
+  "scenes": [
+    {
+      "narration": "Ütünün atası neden kızgın kömür dolu bir tavaydı? Yorumlarda siz seçtiniz: ütü.",
+      "ifade": "merakli",
+      "cizim": "ink(ell(500,430,230,50,28),{close:true,fill:'#8A7A66',w:3.6,seed:1,pp:eo(pr(u,0,.6))});ink(ln([720,410],[900,340],8),{w:6,seed:2,pp:eo(pr(u,.4,.9))});for(let i=0;i<9;i++){const x=340+i*40,y=402+Math.sin(T*3+i)*4;ctx.save();ctx.globalAlpha=eo(pr(u,.6+i*.05,1.1))*.9;ctx.beginPath();ctx.arc(x,y,14,0,7);ctx.fillStyle=i%2?'#D9532B':'#E8A13A';ctx.fill();ctx.restore();}\ntxt('?',500,230,150,{c:K.ak,a:eo(pr(u,1,1.6))});"
+    },
+    {
+      "narration": "İlk ütüler, içine kor konan metal tavalardı. Kumaşın üstünde gezdirilirdi.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(160,520,680,50),{close:true,fill:'#EFE4CB',w:3.2,seed:3,pp:eo(pr(u,0,.6))});ctx.save();ctx.translate(Math.sin(T*1.6)*120,0);ink(ell(500,470,150,34,24),{close:true,fill:'#8A7A66',w:3.6,seed:4,pp:eo(pr(u,.2,.8))});ink(ln([640,456],[790,400],8),{w:6,seed:5,pp:eo(pr(u,.4,.9))});for(let i=0;i<5;i++){ctx.beginPath();ctx.arc(420+i*40,452+Math.sin(T*3+i)*3,11,0,7);ctx.fillStyle=i%2?'#D9532B':'#E8A13A';ctx.fill();}ctx.restore();\netk('kor dolu tava',500,640,eo(pr(u,.8,1.4)),{size:40});"
+    },
+    {
+      "narration": "Sonra ocakta ısıtılan ağır demir ütüler geldi. Biri soğuyunca sıradaki ocaktan alınırdı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink([[250,520],[720,520],[800,440],[690,350],[300,350]],{close:true,fill:'#8E8F93',w:3.6,seed:6,pp:eo(pr(u,0,.7))});ink(ell(500,330,110,40,24,3.14,6.28),{w:7,seed:7,pp:eo(pr(u,.3,.9))});ink(kutu(180,590,560,40),{close:true,fill:'#6B5B4B',w:3.4,seed:8,pp:eo(pr(u,.5,1))});for(let k=0;k<4;k++){const ph=(T*.8+k*.25)%1;ctx.save();ctx.globalAlpha=(1-ph)*.9*eo(pr(u,.8,1.3));ink([[860,560],[880-k*10,520-ph*80],[850,470-ph*120]],{w:4,c:K.bordo,seed:20+k,amp:.4});ctx.restore();}\netk('ocakta ısınır',700,640,eo(pr(u,1,1.5)),{size:40,al:'left'});"
+    },
+    {
+      "narration": "Türkiye'de de kömürlü ütüler uzun yıllar kullanıldı. Külü ve isi kumaşa bulaşabilirdi.",
+      "ifade": "endiseli",
+      "cizim": "ink([[250,520],[720,520],[800,440],[690,350],[300,350]],{close:true,fill:'#8E8F93',w:3.6,seed:9,pp:eo(pr(u,0,.7))});ink(ell(500,330,110,40,24,3.14,6.28),{w:7,seed:10,pp:eo(pr(u,.3,.9))});for(let i=0;i<12;i++){const ph=(T*.5+h(i))%1;ctx.save();ctx.globalAlpha=(1-ph)*eo(pr(u,.6,1));ctx.beginPath();ctx.arc(340+h(i+5)*320,330-ph*160,5,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();}\nink(ell(560,590,70,24,20),{close:true,fill:'#B0A99B',w:3,seed:11,pp:eo(pr(u,1,1.6))});etk('kül lekesi',800,600,eo(pr(u,1.2,1.8)),{size:40});"
+    },
+    {
+      "narration": "1882'de New Yorklu Henry Seely, elektrikli ütünün patentini aldı.",
+      "ifade": "gururlu",
+      "cizim": "ink([[250,520],[720,520],[800,440],[690,350],[300,350]],{close:true,fill:'#8E8F93',w:3.6,seed:12,pp:eo(pr(u,0,.7))});ink(ell(500,330,110,40,24,3.14,6.28),{w:7,seed:13,pp:eo(pr(u,.3,.9))});ink([[800,440],[900,400],[900,260],[780,200]],{w:5,c:K.bordo,seed:14,pp:eo(pr(u,.5,1.4))});txt('1882',500,200,110,{c:K.ak,a:eo(pr(u,.8,1.4))});etk('Henry Seely',500,620,eo(pr(u,1.2,1.8)),{size:44});"
+    },
+    {
+      "narration": "Söylenir ki ilk elektrikli ütülerde ısıyı ayarlayan bir düğme yoktu.",
+      "ifade": "saskin",
+      "cizim": "ink([[250,520],[720,520],[800,440],[690,350],[300,350]],{close:true,fill:'#8E8F93',w:3.6,seed:15,pp:eo(pr(u,0,.7))});ink(ell(500,330,110,40,24,3.14,6.28),{w:7,seed:16,pp:eo(pr(u,.3,.9))});ink(ell(500,445,34,34,20),{close:true,w:4,seed:17,pp:eo(pr(u,.4,.9))});ink(ln([456,401],[544,489],8),{w:7,c:K.bordo,seed:18,pp:eo(pr(u,.9,1.4))});etk('ısı düğmesi yok',500,620,eo(pr(u,1.1,1.7)),{size:44});"
+    },
+    {
+      "narration": "Isıyı ayarlayan termostat sonradan geldi; kumaşı yakma korkusu azaldı.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#FBF6EA',w:4,seed:19,pp:eo(pr(u,0,.7))});for(let i=0;i<9;i++){const a=-2.4+i*.6;ink(ln([500+Math.cos(a)*150,380+Math.sin(a)*150],[500+Math.cos(a)*125,380+Math.sin(a)*125],3),{w:3.4,seed:30+i,pp:eo(pr(u,.3+i*.05,.8))});}const a=-2.4+Math.sin(T*1.2)*.5+1.2;ink(ln([500,380],[500+Math.cos(a)*115,380+Math.sin(a)*115],6),{w:6,c:K.bordo,seed:40,pp:eo(pr(u,.6,1.1))});\netk('termostat',500,640,eo(pr(u,1,1.5)),{size:44});"
+    },
+    {
+      "narration": "Bugün buharlı ütü, ısıyı ve nemi birleştirir.",
+      "ifade": "anlatiyor",
+      "cizim": "ink([[250,520],[720,520],[800,440],[690,350],[300,350]],{close:true,fill:'#8E8F93',w:3.6,seed:21,pp:eo(pr(u,0,.7))});ink(ell(500,330,110,40,24,3.14,6.28),{w:7,seed:22,pp:eo(pr(u,.3,.9))});for(let k=0;k<5;k++){const ph=(T*.6+k*.2)%1;ctx.save();ctx.globalAlpha=(1-ph)*eo(pr(u,.7,1.2));const q=[];for(let i=0;i<=8;i++)q.push([320+k*90+Math.sin(i*.9+T*3+k)*14,330-i*14-ph*50]);ink(q,{w:4,c:K.mavi,seed:50+k,amp:.4});ctx.restore();}\netk('buhar',500,640,eo(pr(u,1,1.5)),{size:44});"
+    },
+    {
+      "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: tost makinesi mi, çamaşır makinesi mi?",
+      "ifade": "merakli",
+      "cizim": "txt('?',MX,420,200,{c:K.ak,a:eo(pr(u,0,.6))});txt('A',260,560,90,{c:K.s,a:eo(pr(u,.5,1))});txt('B',740,560,90,{c:K.s,a:eo(pr(u,.8,1.3))});"
+    }
+  ]
+}

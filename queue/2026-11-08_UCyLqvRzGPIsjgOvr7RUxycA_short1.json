@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-08_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-08T05:00:00.000Z",
+  "topic": "Kartoffeln",
+  "title": "Duell 6/30: Wer erntet die meisten Kartoffeln? 🥔",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Kartoffel-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": [
+    "flaggenduell",
+    "europa",
+    "länder vergleich",
+    "kartoffeln",
+    "landwirtschaft",
+    "ranking",
+    "europa daten",
+    "länderduell"
+  ],
+  "duell": {
+    "topicId": "kartoffeln",
+    "why": [
+      "Riesige Ackerflächen",
+      "Fruchtbare Schwarzerde"
+    ],
+    "script": {
+      "intro": "Welches Land erntet die meisten Kartoffeln Europas? 46 Flaggen fallen in den Trichter – nur eine kommt durch!",
+      "nodata": "Vier Länder haben keine Kartoffeldaten und fliegen sofort raus!",
+      "rounds": "Jetzt wird gesiebt! Flagge um Flagge verschwindet, und Frankreich verpasst das Finale um rund 3,5 Millionen Tonnen!",
+      "final": "Finale! Ukraine gegen Deutschland – zwei Kartoffelriesen, nur einer holt die Krone!",
+      "winner": "Die Ukraine gewinnt! Über 21 Millionen Tonnen, gut anderthalbmal so viel wie Deutschland!",
+      "why": "Warum die Ukraine? Riesige Ackerflächen und fruchtbare Schwarzerde – ideale Bedingungen für Kartoffeln.",
+      "table": "In der Saisontabelle führt weiter die Türkei mit 26 Punkten. Schreib dein Thema in die Kommentare!"
+    }
+  },
+  "deney": {
+    "id": "muzik-seviye",
+    "kol": "B"
+  }
+}

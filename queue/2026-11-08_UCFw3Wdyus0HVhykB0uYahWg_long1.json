@@ -1,0 +1,644 @@
+{
+  "id": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+  "type": "long",
+  "publishAt": "2026-11-08T15:00:00.000Z",
+  "format": "dizi",
+  "dizi": "zincirli",
+  "bolum": {
+    "no": 3,
+    "ad": "Yarım Bilezik"
+  },
+  "title": "Zincirli · Bölüm 3: Yarım Bilezik",
+  "titleAlt": "Kardeşi İçin Düşmek Zorunda Mı? Zincirli Bölüm 3",
+  "description": "Kız kardeşinin yarım bileziği karşısında Arın çok zor bir seçimle karşı karşıya: yere düşmek ve bir daha kalkmamak. Zincirli, çöp adam animasyonuyla anlatılan bir destan.\n\n#zincirli #çöpadam #animasyon #dizi",
+  "tags": [
+    "zincirli",
+    "çöp adam",
+    "animasyon dizi",
+    "gladyatör",
+    "yarım bilezik",
+    "kardeşlik",
+    "destan",
+    "bölüm bölüm"
+  ],
+  "topic": "Sungur Arın'dan bilerek yenilmesini ister ve sonraki rakip Kargan olur",
+  "thumbnailText": "YARIM BİLEZİK",
+  "thumbnailTextAlt": "KALKMAYACAK",
+  "kapak": {
+    "sahne": 0,
+    "sn": 1.5
+  },
+  "oynatmaListesi": "Zincirli · 1. Sezon",
+  "muzik": "duygusal",
+  "muzikSeviye": 0.1,
+  "kapanis": {
+    "baslik": "DEVAMI",
+    "sonraki": "Bölüm 4: İkinci Kez — Yakında",
+    "soru": "Sence Arın yere düşmeli mi?"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "Chained · Episode 3: Half a Bracelet",
+      "description": "Faced with half of his sister's bracelet, Arin must make a terrible choice: fall and never get up. Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+    }
+  },
+  "scenes": [
+    {
+      "kisim": "Soğuk Açılış",
+      "mekan": "arena",
+      "kalabalik": 1,
+      "efektler": [
+        "agir-cekim"
+      ],
+      "aciklama": "Arın kumda yerde, Kargan karşısında kılıcını kaldırmış. Arın kalkmak için elini kuma bastırıyor ama kalkmıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.33,
+          "poz": "yerde",
+          "ifade": "uzgun"
+        },
+        {
+          "id": "kargan",
+          "x": 0.56,
+          "yon": -1,
+          "esya": "kilic",
+          "poz": "kilic-kaldir",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Yere düşmeliydim. Bir daha da kalkmamalıydım."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kardeşimin hayatı buna bağlıydı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Arenanın bütün gürültüsü sustu. Bir tek bileziğin sesi kaldı."
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "efektler": [
+        "agir-cekim"
+      ],
+      "sure": 3,
+      "aciklama": "Kargan kılıcı indirmeden Arın'a bakıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.33,
+          "poz": "yerde",
+          "ifade": "uzgun"
+        },
+        {
+          "id": "kargan",
+          "x": 0.56,
+          "yon": -1,
+          "esya": "kilic",
+          "poz": "kilic-kaldir",
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kargan kılıcını indirmeden önce bana baktı. Gözlerinde öfke yoktu, bir soru vardı."
+        }
+      ]
+    },
+    {
+      "kisim": "Yarım Bilezik",
+      "mekan": "zindan",
+      "kart": {
+        "ust": "BİRİNCİ KISIM",
+        "alt": "Yarım Bilezik"
+      },
+      "kartSn": 2.8,
+      "efektler": [
+        "beyaz-cakma",
+        "titreyen-isik"
+      ],
+      "aciklama": "Bir gün önce. Sungur zindanda, avucunda yarım bir bakır bilezik tutuyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.36,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Bunu tanıyor musun?"
+        },
+        {
+          "kim": "arin",
+          "metin": "Babamın Su için dövdüğü bilezik…",
+          "ifade": "saskin"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Sungur bileziği Arın'a gösterir, sonra geri çeker.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "saldir",
+          "ifade": "endiseli"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "isaret",
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "sungur",
+          "metin": "Yarısı bende, yarısı hâlâ onda. Kız kardeşin sağ."
+        },
+        {
+          "kim": "sungur",
+          "metin": "Şartım basit: bir sonraki dövüşte yere düşeceksin. Ve kalkmayacaksın.",
+          "once": 0.4
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "sure": 3,
+      "aciklama": "Bakır bilezik meşalenin ışığında parlıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "dur",
+          "ifade": "uzgun"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Bileziği iki parmağıyla tutuyordu. Sanki dünyanın en kolay kırılan şeyiydi."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Arın bileziğe uzanır, Sungur geri çekilir.",
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "saldir",
+          "ifade": "endiseli"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Su'yu bir kez göreyim, sonra ne istersen."
+        },
+        {
+          "kim": "sungur",
+          "metin": "Önce sözünü tut. Kimseye de söyleme. Toros'a bile."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Arın zinciri sıkıyor, sesi kısık.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "dur",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "sungur",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Neden?"
+        },
+        {
+          "kim": "sungur",
+          "metin": "Kral senden korkuyor. Sen düşünce o rahatlar, ben de seni kardeşinle buluştururum."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "sure": 3,
+      "aciklama": "Sungur çıkar, kapı kapanır. Arın tek başına kalır, bileğindeki zincire bakar.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "dusun",
+          "ifade": "uzgun"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Gitti. Ama bileziğin soğuk ışığı gözümde kaldı."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Toros Arın'a bakıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "ifade": "dusunceli"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "isaret"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Bir dövüşçünün tek gerçek silahı sabırdır. Sen kalkmayı öğrendin, doğru anda kalkmayı da öğreneceksin."
+        }
+      ]
+    },
+    {
+      "kisim": "Akıl Hocası",
+      "mekan": "zindan",
+      "kart": {
+        "ust": "İKİNCİ KISIM",
+        "alt": "Akıl Hocası"
+      },
+      "kartSn": 2.8,
+      "aciklama": "Sabaha karşı. Arın Toros'a her şeyi anlatır.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "poz": "dur",
+          "ifade": "endiseli"
+        },
+        {
+          "id": "toros",
+          "x": 0.64,
+          "yon": -1,
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Su'yu kurtarabilirim. Tek yapmam gereken yere düşmek."
+        },
+        {
+          "kim": "toros",
+          "metin": "Ben sana kalkmamayı öğretmedim evlat."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Toros ayağa kalkar, Arın'ın omzuna elini koyar.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "poz": "dur",
+          "ifade": "uzgun"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "isaret"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Kalkmamak ölmektir. Sözünü tutacağını sanıyorsan, o adamı tanımıyorsun."
+        },
+        {
+          "kim": "arin",
+          "metin": "O zaman ne yapayım?",
+          "ifade": "endiseli"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Arın düşünceli, Toros sakin.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "ifade": "endiseli"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Kalkmazsam Su'yu görürüm. Kalkarsam onu kaybederim."
+        },
+        {
+          "kim": "toros",
+          "metin": "İkisi de tuzak olabilir. Sungur'un sözüne değil, kendi sözüne güven."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Toros düşünceli, ses alçak.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.4,
+          "ifade": "dusunceli"
+        },
+        {
+          "id": "toros",
+          "x": 0.62,
+          "yon": -1,
+          "poz": "dusun"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Bilmiyorum. Ama babanın sözünü hatırla."
+        },
+        {
+          "kim": "toros",
+          "metin": "Herkes en çok, kazandığını sandığı an açık verir.",
+          "once": 0.3
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Arın ve Kargan arasındaki parmaklık.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "ifade": "endiseli"
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": -1,
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Seni yenmek istemiyorum Kargan."
+        },
+        {
+          "kim": "kargan",
+          "metin": "Ben de seni."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bu yüzden ikimiz de korkuyorduk."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Kargan parmaklığa yaslanmış.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "ifade": "saskin"
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": -1,
+          "ifade": "endiseli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kargan",
+          "metin": "Kralın bana verdiği son emir, seni bitirmek. Ben bu emri duymamış sayıyorum."
+        }
+      ]
+    },
+    {
+      "kisim": "Borç",
+      "mekan": "zindan",
+      "kart": {
+        "ust": "ÜÇÜNCÜ KISIM",
+        "alt": "Borç"
+      },
+      "kartSn": 2.8,
+      "efektler": [
+        "titreyen-isik"
+      ],
+      "aciklama": "Bitişik hücre. Kargan, demir parmaklıkların ardından Arın'a bakıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "poz": "dur",
+          "ifade": "notr"
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": -1,
+          "poz": "dusun",
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kargan",
+          "metin": "Beni bağışladın. Kırk dövüş boyunca kimse bunu yapmadı."
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 0.4,
+      "sure": 3,
+      "aciklama": "Boş arena, gün ışığı.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.45,
+          "poz": "dur",
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Ertesi gün arenada bir savaşa değil, bir seçime çıkacaktık."
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 0.4,
+      "sure": 3,
+      "aciklama": "Şafak. Arenanın kapısı açılıyor, tribünler yavaş yavaş doluyor.",
+      "kadraj": [
+        {
+          "id": "muhafiz",
+          "x": 0.5
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Gün doğarken muhafızlar kapıyı açtı. Halat gibi gergin bir sessizlik vardı."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "aciklama": "Kargan ağır ağır konuşuyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "ifade": "saskin"
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": -1,
+          "poz": "isaret"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kargan",
+          "metin": "Sana borçluyum demircinin oğlu. Gerekirse düşerim, gerekirse kalkarım."
+        },
+        {
+          "kim": "arin",
+          "metin": "Bu hile, Kargan. Seni de içine çeker.",
+          "ifade": "endiseli"
+        }
+      ]
+    },
+    {
+      "mekan": "arena",
+      "kalabalik": 1,
+      "sure": 3,
+      "aciklama": "Arena. İlancı yüksek sesle seslenir. Tribünler uğulduyor.",
+      "kadraj": [
+        {
+          "id": "muhafiz",
+          "x": 0.5,
+          "poz": "isaret"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "muhafiz",
+          "metin": "Yarın şampiyon Arın'ın rakibi belli oldu!"
+        },
+        {
+          "kim": "muhafiz",
+          "metin": "Kargan!",
+          "once": 0.5
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "efektler": [
+        "agir-cekim"
+      ],
+      "sure": 3,
+      "aciklama": "İki hücrenin parmaklıkları arasından Arın ve Kargan göz göze gelir. Sessizlik.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.35,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "İkimiz de aynı adı duyduk. İkimiz de sustuk."
+        }
+      ]
+    }
+  ]
+}

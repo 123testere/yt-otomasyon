@@ -1,0 +1,110 @@
+{
+  "id": "2026-11-08_UCEG9D-Kia1iw6-duhqlSlcg_short2",
+  "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+  "type": "short",
+  "publishAt": "2026-11-08T16:00:00.000Z",
+  "topic": "Saltwater crocodile record bite force and weak jaw-opening muscles",
+  "title": "Saltwater Crocodile: The Strongest Bite Ever Measured",
+  "hookText": "3,700 psi bite force",
+  "description": "A 2012 study measured the saltwater crocodile bite at about 3,700 psi, the strongest recorded in a living animal. See why its bite is so powerful and where it is weak.\n\n#crocodile #bitepower #animals #shorts",
+  "tags": [
+    "saltwater crocodile",
+    "bite force",
+    "strongest bite",
+    "crocodile facts",
+    "animal comparison",
+    "reptiles",
+    "nature facts",
+    "wildlife"
+  ],
+  "ceviriler": {
+    "es": {
+      "title": "Cocodrilo marino: la mordida más fuerte jamás medida",
+      "description": "Un estudio de 2012 midió la mordida del cocodrilo marino en unos 3.700 psi, la más fuerte registrada en un animal vivo. Descubre por qué es tan potente y dónde es débil.\n\n#cocodrilo #mordida #animales #shorts"
+    }
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "B"
+  },
+  "scenes": [
+    {
+      "narration": "A saltwater crocodile bit down at about 3,700 pounds per square inch in a 2012 study, the strongest bite ever recorded in a living animal.",
+      "visual": {
+        "query": "saltwater crocodile",
+        "prompt": "a large saltwater crocodile with its jaws open in murky water, close shot",
+        "motion": {
+          "type": "stat",
+          "value": "~3,700 psi",
+          "label": "Saltwater crocodile bite"
+        }
+      }
+    },
+    {
+      "narration": "A human bite is only around one hundred and fifty pounds per square inch, so the crocodile bites roughly twenty times harder.",
+      "visual": {
+        "query": "human bite force",
+        "prompt": "a close view of a crocodile mouth full of conical teeth against a dark river background",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Human",
+            "value": "~150 psi"
+          },
+          "right": {
+            "title": "Croc",
+            "value": "~3,700 psi"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Its jaws are packed with powerful closing muscles, and its conical teeth are built to grip and hold, not to chew.",
+      "visual": {
+        "query": "crocodile teeth",
+        "prompt": "the conical teeth of a crocodile lined along a closed jaw, sharp detail"
+      }
+    },
+    {
+      "narration": "An adult can reach about five meters in length and weigh over a tonne, and it ambushes prey from the water's edge.",
+      "visual": {
+        "query": "crocodile ambush",
+        "prompt": "a crocodile lurking just below the surface with only its eyes showing, dusk light"
+      }
+    },
+    {
+      "narration": "Yet the muscles that open its jaw are surprisingly weak. A strong person could reportedly hold a smaller crocodile's mouth shut with their hands.",
+      "visual": {
+        "query": "crocodile jaw",
+        "prompt": "a crocodile resting on a riverbank with its mouth closed, side view"
+      }
+    },
+    {
+      "narration": "Scores: bite force, crocodile 10. Opening strength, crocodile 3. Ambush skill, crocodile 9.",
+      "visual": {
+        "query": "crocodile scores",
+        "prompt": "a dark background with a glowing crocodile outline and three score bars",
+        "motion": {
+          "type": "list",
+          "title": "Crocodile scores",
+          "items": [
+            "Bite force 10",
+            "Jaw opening 3",
+            "Ambush skill 9"
+          ]
+        }
+      }
+    },
+    {
+      "narration": "So the strongest bite on Earth has a hidden weakness. Which animal do you think comes closest to it?",
+      "visual": {
+        "query": "river predator",
+        "prompt": "a crocodile gliding through a misty river at sunrise, wide shot",
+        "motion": {
+          "type": "question",
+          "text": "Which animal comes closest?"
+        }
+      }
+    }
+  ]
+}

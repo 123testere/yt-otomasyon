@@ -1,0 +1,106 @@
+{
+  "id": "2026-11-08_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-08T05:00:00.000Z",
+  "topic": "Kapalıçarşı'nın İç Bedesten'den doğan tarihi",
+  "title": "560 Yıllık Alışveriş Merkezi İstanbul'un Göbeğinde",
+  "hookText": "560 yıldır açık",
+  "description": "Kapalıçarşı, İstanbul'da yaklaşık 560 yıl önce Fatih Sultan Mehmet döneminde yaptırılan İç Bedesten'in çevresinde büyüdü. Bugün hâlâ binlerce dükkânıyla dünyanın en eski ve en büyük kapalı çarşılarından biri sayılıyor.\n\n#kapalıçarşı #istanbul #osmanlı #tarih",
+  "tags": [
+    "kapalıçarşı",
+    "iç bedesten",
+    "fatih sultan mehmet",
+    "istanbul tarihi",
+    "osmanlı çarşısı",
+    "en eski kapalı çarşı",
+    "istanbul",
+    "tarih"
+  ],
+  "oynatmaListesi": "Osmanlı'nın Bilinmeyenleri",
+  "ceviriler": {
+    "en": {
+      "title": "The 560-Year-Old Shopping Mall in the Heart of Istanbul",
+      "description": "The Grand Bazaar in Istanbul grew around the Inner Bedesten, built about 560 years ago under Mehmed the Conqueror. It is still counted among the oldest and largest covered markets in the world.\n\n#grandbazaar #istanbul #ottoman #history"
+    }
+  },
+  "deney": {
+    "id": "kanca-soru",
+    "kol": "B"
+  },
+  "scenes": [
+    {
+      "narration": "Yaklaşık 560 yıllık bir alışveriş merkezi, hâlâ İstanbul'un göbeğinde açık: Kapalıçarşı.",
+      "visual": {
+        "query": "Grand Bazaar Istanbul",
+        "prompt": "a vaulted arcade of the Grand Bazaar in Istanbul with warm hanging lamps, wide shot",
+        "motion": {
+          "type": "stat",
+          "value": "~560 yıl",
+          "label": "Kapalıçarşı"
+        }
+      }
+    },
+    {
+      "narration": "Çekirdeği, Fatih Sultan Mehmet döneminde yaptırılan İç Bedesten'dir. Kaynaklara göre değerli kumaşlar ve mücevherler burada saklanıp satılırdı.",
+      "visual": {
+        "query": "Inner Bedesten Istanbul",
+        "prompt": "a thick stone domed hall with iron doors in old Istanbul, soft daylight"
+      }
+    },
+    {
+      "narration": "Zamanla çevresine sokaklar, hanlar ve dükkânlar eklendi. Bugün yaklaşık altmış sokağı ve binlerce dükkânı olduğu söylenir.",
+      "visual": {
+        "query": "Grand Bazaar aerial",
+        "prompt": "an aerial view of a huge covered bazaar with many domes and narrow lanes, golden hour",
+        "motion": {
+          "type": "list",
+          "title": "Bugün",
+          "items": [
+            "Yaklaşık 60 sokak",
+            "Binlerce dükkân"
+          ]
+        }
+      }
+    },
+    {
+      "narration": "Eskiden her sokak bir zanaata ayrılırdı. Kuyumcular, halıcılar ve kalpakçılar kendi sokaklarında toplanırdı.",
+      "visual": {
+        "query": "Grand Bazaar jewelers",
+        "prompt": "glittering gold jewelry displayed in a lit shop window in an old bazaar, close shot"
+      }
+    },
+    {
+      "narration": "Bazı sokak adları bugün hâlâ o zanaatları anlatır. Yangınlar ve depremler çarşıyı defalarca yıktı, her seferinde yeniden yapıldı.",
+      "visual": {
+        "query": "Grand Bazaar Istanbul entrance",
+        "prompt": "an old stone gate entrance to a covered market with crowds, warm light",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "15. yy",
+              "label": "İç Bedesten"
+            },
+            {
+              "year": "Bugün",
+              "label": "Hâlâ açık"
+            }
+          ],
+          "highlight": 1
+        }
+      }
+    },
+    {
+      "narration": "Sence bir çarşı bu kadar uzun yıl nasıl ayakta kalır? Videoyu beğen, yorum yaz ve kanala abone ol, evlat.",
+      "visual": {
+        "query": "old market lamps",
+        "prompt": "hanging brass lanterns glowing inside a vaulted bazaar, close shot",
+        "motion": {
+          "type": "question",
+          "text": "Çarşı nasıl ayakta kaldı?"
+        }
+      }
+    }
+  ]
+}
