@@ -1,0 +1,23 @@
+{
+ "id": "ornek_kaan_s1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-07T16:00:00.000Z",
+ "topic": "Perplexity'nin 7/24 çalışan yapay zekâ ajanları Teammates",
+ "title": "Yapay Zekâ Artık Sen Uyurken Çalışıyor 🤖",
+ "hookText": "Sen uyurken çalışıyor",
+ "description": "Perplexity, 5 Kasım'da Teammates'i duyurdu: projeleri planlayan, takip eden ve 7/24 arka planda çalışan yapay zekâ ajanları. Sıradaki adım ne olabilir?\n\nKaynak: Perplexity blog, The Verge\n\n#yapayzeka #perplexity #aiajan",
+ "tags": ["yapay zeka", "yapay zeka haberleri", "perplexity", "teammates", "ai ajan", "yapay zeka ajanı", "ai haberleri", "teknoloji haberleri"],
+ "scenes": [
+  { "narration": "Artık yapay zekâya soru sormuyorsun. Ona iş veriyorsun ve o, sen uyurken çalışıyor.",
+    "visual": { "query": "robot working night office", "prompt": "a glowing humanoid AI assistant working at a desk in a dark empty office at night, city lights through windows", "motion": { "type": "title", "text": "Sen uyurken çalışıyor", "sub": "Yapay zekâ ajanları" } } },
+  { "narration": "Perplexity, 5 Kasım'da Teammates'i duyurdu. Uzun projeleri planlayan, takip eden ve seninle Slack'te çalışan yapay zekâ ajanları.",
+    "visual": { "query": "Perplexity AI logo", "prompt": "futuristic team of holographic AI agents around a project board, blue neon light", "motion": { "type": "icon", "emoji": "🤖", "text": "Perplexity Teammates" } } },
+  { "narration": "Bu ajanlar gece gündüz arka planda çalışıyor. Hata ayıklıyor, veriyi analiz ediyor, testleri yönetiyor ve sadece karar gerektiğinde sana dönüyor.",
+    "visual": { "query": "data dashboard screen", "prompt": "multiple computer screens showing code, charts and test results updating automatically in a dark room", "motion": { "type": "list", "title": "7/24 yaptıkları", "items": ["Hata ayıklama", "Veri analizi", "Test yönetimi"] } } },
+  { "narration": "Şimdilik sadece aylık 200 dolarlık Max aboneliğinde var.",
+    "visual": { "query": "subscription price laptop", "prompt": "close-up of a laptop screen with a premium subscription page glowing in the dark", "motion": { "type": "stat", "value": "$200", "label": "aylık Max aboneliği" } } },
+  { "narration": "Peki sırada ne var? Belki çok yakında bir ekibin yarısı insan, yarısı yapay zekâ olacak. Sen olsan hangi işini bir yapay zekâya devrederdin? Yorumlara yaz.",
+    "visual": { "query": "human and robot team", "prompt": "a human and a robot sitting side by side at a meeting table, half the team humans half AI, cinematic", "motion": { "type": "question", "text": "Hangi işini yapay zekâya devrederdin?" } } }
+ ]
+}
