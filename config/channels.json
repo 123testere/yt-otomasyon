@@ -137,7 +137,7 @@
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
       "ekTalimat": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
-      "videoSayisi": 6,
+      "videoSayisi": 8,
       "dersler": []
     },
     "oynatmaListeleri": [],
@@ -234,10 +234,12 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 2,
+      "videoSayisi": 5,
       "dersler": []
     },
-    "oynatmaListeleri": [],
+    "oynatmaListeleri": [
+      "Zincirli · 1. Sezon"
+    ],
     "deney": {
       "id": "kanca-soru",
       "tip": "short",
@@ -323,10 +325,11 @@
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
       "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
-      "videoSayisi": 251,
+      "videoSayisi": 252,
       "dersler": []
     },
     "oynatmaListeleri": [
+      "Osmanlı'nın Bilinmeyenleri",
       "Anadolu'nun Bilinmeyenleri",
       "Ss",
       "HAYATİ İNANÇ",
@@ -397,8 +400,133 @@
       "Bu kargaşada herşey karıştı",
       "Pek bir gür cıkıyor bizim hurdacının alırım dedimmi alır haa",
       "Sokakta En İlginç Anlar Kamerada!",
-      "Herkesin pazartesi ve bu cuma düğünlere bekliyoruz",
-      "sizin neden sevgiliniz yok"
+      "Herkesin pazartesi ve bu cuma düğünlere bekliyoruz"
+    ],
+    "oylamalar": []
+  },
+  {
+    "id": "UCJUP2lYvMuhcif8FavIXuYA",
+    "title": "Kaan AI Lab",
+    "enabled": true,
+    "settings": {
+      "enabled": true,
+      "contentFormat": "belgesel",
+      "niche": "teknoloji",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+20%",
+      "voiceStyle": "etkileyici",
+      "voicePitch": "+0Hz",
+      "voiceSource": "elevenlabs",
+      "cloneScope": "hepsi",
+      "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
+      "tone": "heyecanli",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": false,
+      "identityLocked": false,
+      "visualStyle": "hareketli-grafik",
+      "template": "animasyonlu",
+      "music": "gerilim",
+      "musicVolume": "0.08",
+      "subtitles": "kelime",
+      "subtitleColor": "sari",
+      "long": {
+        "days": [],
+        "time": "18:00",
+        "minutes": 5
+      },
+      "shorts": {
+        "times": [
+          "10:00",
+          "19:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "#yapayzeka #yapayzekahaberleri #ai",
+      "extraInstructions": "Günlük yapay zekâ haberleri kanalı. Her Shorts son 48 saatin gerçek bir yapay zekâ haberini anlatır: önce web araması yap, haberi en az bir güvenilir kaynaktan doğrula, tarih ve şirket adlarını doğru yaz; doğrulayamadığın haberi kullanma. Açıklamaya haberin kaynağını (site adı) yaz. İlk cümle çok güçlü bir kanca olsun (şaşırtıcı iddia ya da soru). Haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir' sorusuyla merak uyandır: olası sonuçları spekülasyon olduğunu belli ederek ('olabilir', 'bekleniyor') söyle. Kısa, hızlı, enerjik cümleler. Aynı gün iki Shorts farklı haberler olsun; aynı haberi tekrar yapma (recentTitles). Abone ve beğeni konu hakkındaki görüşlerini de bildirmelerini işte\n",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "Teknoloji ve Yapay Zekâ",
+      "dil": "Türkçe",
+      "ton": "Enerjik, merak uyandıran, hızlı tempolu.",
+      "karakter": null,
+      "gorselStil": "Hareketli grafik + konu fotoğrafları",
+      "cocukIcerigi": false,
+      "ekTalimat": "Günlük yapay zekâ haberleri kanalı. Her Shorts son 48 saatin gerçek bir yapay zekâ haberini anlatır: önce web araması yap, haberi en az bir güvenilir kaynaktan doğrula, tarih ve şirket adlarını doğru yaz; doğrulayamadığın haberi kullanma. Açıklamaya haberin kaynağını (site adı) yaz. İlk cümle çok güçlü bir kanca olsun (şaşırtıcı iddia ya da soru). Haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir' sorusuyla merak uyandır: olası sonuçları spekülasyon olduğunu belli ederek ('olabilir', 'bekleniyor') söyle. Kısa, hızlı, enerjik cümleler. Aynı gün iki Shorts farklı haberler olsun; aynı haberi tekrar yapma (recentTitles). Abone ve beğeni konu hakkındaki görüşlerini de bildirmelerini işte\n",
+      "videoSayisi": 150,
+      "dersler": []
+    },
+    "oynatmaListeleri": [
+      "Google AI Studio ile 30 Günde 30 Uygulama Serisi"
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-07T10:19:21.363Z"
+    },
+    "recentTitles": [
+      "Endless transitons",
+      "Cash Calculator mobil uygulama #vibecoding #mobiluygulama #cursor",
+      "MARATON BİTTİ, DEVRİM BAŞLIYOR! 🚀|30 Günde 30 Yapay Zeka Uygulaması - Gün-30 final #reklam",
+      "30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini #bitcoin #vibecoding",
+      "KAMERAYA SON! 🎭|30 Günde 30 Yapay Zeka Uygulaması - Gün-29  #reklam #googleaıstudio #gemini",
+      "The_Takeaway|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini  #vibecoding",
+      "GÜNDE 1 SAATTE KİTAP YAZIN! 📚|30 Günde 30 Yapay Zeka Uygulaması - Gün-28  #reklam #googleaıstudio",
+      "The_Climax|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "The_Hook|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini #vibecoding",
+      "BU SES BENİM DEĞİL! 🎙️|30 Günde 30 Yapay Zeka Uygulaması - Gün-27  #reklam #googleaıstudio #gemini",
+      "The_Hook|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "The_Takeaway|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "MONTAJ YAPMAYI BIRAKIN! 🎬|30 Günde 30 Yapay Zeka Uygulaması - Gün -26 #reklam #googleaıstudio",
+      "Yapay Zeka ve Prompter ile Viral İçerik Üretm.mp4|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam",
+      "Kapak Fotoğrafının Gücü İzlenmeleri Patlatma.mp4|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam",
+      "25. Gün Sosyal Medyada Viral Video Üretimi |30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam",
+      "Google Studio ile Proje Geliştirme ve Video İ.mp4|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam",
+      "Veri Odaklı YouTube Kanalı Yönetimi ile Büyüm.mp4|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam",
+      "Abone Olmazsanız İzlenmeler Düşer! Kanalın Ge.mp4|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam",
+      "ALGORİTMAYI ELE GEÇİRİN! 🚀|30 Günde 30 Yapay Zeka Uygulaması - Gün-25  #reklam #googleaıstudio",
+      "AJANSLARA PARA VERMEYİN! 🎨|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "OYUN YAPMAK ARTIK BEDAVA! 🎮|30 Günde 30 Yapay Zeka Uygulaması - Gün-23  #reklam #googleaıstudio",
+      "Oyun_Geliştirme_Devrimi|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "Gerçekçi_Grafikler_Bedava|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "Yapay_Zeka_Desteği|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "Uygulamanızdan_Para_Kazanın|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "KOD YAZMADAN UYGULAMA YAPIN! 📱|30 Günde 30 Yapay Zeka Uygulaması - Gün-22  #reklam  #rork",
+      "Yazılım_Öğrenmeyi_Bırakın!|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "Sürükle_Bırak_ile_Uygulama|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "Vibe coding araçlarını deniyorum Rork,Tile,Onspace  #reklam #vibecoding #rork #onsapace #tile",
+      "Yapay Zeka Kodlama Araçlarının Hız ve Perform  #reklam #googleaıstudio #gemini #bitcoin #vibecoding",
+      "On Space Uygulamasıyla Subway Surf Tarzı Oyun. #reklam #googleaıstudio #gemini #csgo #chatgpt #borsa",
+      "Tile ve Diğer Yapay Zeka Araçlarında  -   #reklam #googleaıstudio #gemini #chatgpt #bitcoin",
+      "Yapay Zeka Kodlama Araçlarında Hız,   #reklam #googleaıstudio #gemini #bitcoin #vibecoding #csgo",
+      "Yapay Zeka Kodlama Araçlarında Karşılaşıla  #reklam  #googleaıstudio  #bitcoin #vibecoding #chatgpt",
+      "Mobil Oyunlarda Oynanabilirlik ve Tasarım   #reklam #googleaıstudio #gemini #csgo #borsa #altcoins",
+      "Rork Tile ile Subway Surf Tarzı Oyunu yapma#reklam #googleaıstudio #gemini #csgo #bitcoin #chatgpt",
+      "Yapay Zeka ile Mobil Oyun Kodlama Deneyimi #reklam #googleaıstudio #gemini #bitcoin #vibecoding #csg",
+      "Ücretsiz Yapay Zeka Kodlama Araçlarıyla  #reklam #googleaıstudio #gemini #bitcoin #vibecoding",
+      "Yapay_Zekayı_Asistanınız_Yapın|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio",
+      "Mesleğiniz_Yok_mu_Olacak|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
+      "Geleceğin_En_Güçlü_İşleri|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini"
     ],
     "oylamalar": []
   },
@@ -471,10 +599,12 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
-      "videoSayisi": 35,
+      "videoSayisi": 37,
       "dersler": []
     },
     "oynatmaListeleri": [
+      "Anadolu'nun Eşyaları",
+      "Evdeki Eşyaların Hikayesi",
       "Bina ve Şehir İcatları",
       "Elektriğin Hikayesi"
     ],
@@ -496,6 +626,7 @@
       "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
       "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
       "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
+      "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
       "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
       "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
       "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
@@ -503,7 +634,6 @@
       "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
       "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
       "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
-      "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
       "Bay Watson, buraya gelin",
       "Aynı Gün Patent Ofisine Giden İki Adam: Telefon Kimin? 📞 #shorts",
       "Telefonun hikâyesi burada bitmiyor ☎️ Bu hikâyenin bir de gölgede kalan kahramanı var",
@@ -562,8 +692,128 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-06T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "İlk Pil Neden Bir Yığın Madeni Paraya Benziyordu?",
+        "a": "Mikrodalga fırın",
+        "b": "Diş fırçası",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-07T09:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "UCxWquu5-pogg4RKdmpKkawQ",
+    "title": "BKG STUDİO",
+    "enabled": false,
+    "settings": {
+      "enabled": false,
+      "contentFormat": "dizi",
+      "niche": "teknoloji",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+20%",
+      "voiceStyle": "etkileyici",
+      "voicePitch": "-8Hz",
+      "voiceSource": "hazir",
+      "cloneScope": "hepsi",
+      "elevenVoiceId": "",
+      "tone": "komik",
+      "character": "genc-bilimci",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": false,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "huzurlu",
+      "musicVolume": "0.2",
+      "subtitles": "kelime",
+      "subtitleColor": "sari",
+      "long": {
+        "days": [
+          0
+        ],
+        "time": "10:00",
+        "minutes": 3
+      },
+      "shorts": {
+        "times": [
+          "08:00",
+          "18:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "İzleyiciye videonun başinda merak uyandir sorular la başla videoyu sonuna kadar izle sonuncusu muhteşem en iyisi sonuncusu gibi abone ve beğeni iste",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": true
+      }
+    },
+    "brief": {
+      "format": "dizi",
+      "konu": "Teknoloji ve Yapay Zekâ",
+      "dil": "Türkçe",
+      "ton": "Hafif mizahi, espri içeren ama bilgiyi bozmayan.",
+      "karakter": "Meraklı, enerjik, her şeyi deneyle açıklayan genç bir bilim insanı.",
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": false,
+      "ekTalimat": "İzleyiciye videonun başinda merak uyandir sorular la başla videoyu sonuna kadar izle sonuncusu muhteşem en iyisi sonuncusu gibi abone ve beğeni iste",
+      "videoSayisi": 28,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-07T10:19:21.363Z"
+    },
+    "recentTitles": [
+      "Do you remember enjoying another game this much?",
+      "You will not be able to enjoy this game with one hand.",
+      "Are you ready for a fast game experience with no time limit?",
+      "Are you ready for the endless loop",
+      "I'm addicted to fast games",
+      "Either you're fast, you win or you're doomed to lose, let's show your strength #shorts",
+      "Are you ready for sudden changes like a chameleon #shorts",
+      "Is it possible to stop?",
+      "He who is careful and fast sees the final #shorts",
+      "Nothing is as easy as it seems try it and see",
+      "I think we caught the harmony",
+      "Aren't skins really cool?",
+      "It's like dancing in colors",
+      "It's not easy to beat this score",
+      "PLAY NOW DOWNLOAD",
+      "Which is your favorite pattern?",
+      "What is your highest score?",
+      "Bu oyunu hala denemedin mi ?",
+      "Hızlı akıcı bir oyun deneyimi mi istiyorsun o zaman hemen indir ve oyun deneyiminj yasa",
+      "Aradığın macera ise hemen indir ve maceraya sen de katıl :)",
+      "Hala denemedin mi :)",
+      "Skorumu geçecek var mı aranızda hadi bakalım",
+      "En yüksek skora bu videoyu sabitleyelim :)",
+      "Siz kaçıncı bölüme kadar geldiniz :)",
+      "Kesinlikle denemelisiniz",
+      "HEMEN İNDİR OYN BASLA #https://play.google.com/store/apps/details?id=com.BKGGAME.EndlessTransitions",
+      "Endless Transitions",
+      "Endless Transitions."
+    ],
+    "oylamalar": []
   },
   {
     "id": "UCyLqvRzGPIsjgOvr7RUxycA",
@@ -617,6 +867,9 @@
         "ceviri": true,
         "oynatmaListesi": true,
         "yorumCevap": true
+      },
+      "instagram": {
+        "enabled": false
       }
     },
     "brief": {
@@ -628,7 +881,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 5,
+      "videoSayisi": 6,
       "dersler": []
     },
     "oynatmaListeleri": [],
