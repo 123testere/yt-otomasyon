@@ -151,6 +151,8 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "Saltwater Crocodile: The Strongest Bite Ever Measured",
+      "Blue Whale vs African Elephant: Who Is Heavier?",
       "Arctic Tern vs Bar-tailed Godwit: Who Flies Farther?",
       "Polar Bear vs Grizzly Bear: Which One Is Bigger?",
       "Electric Eel: The 860-Volt Fish That Isn't an Eel",
@@ -246,6 +248,9 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Kral onu neden öldürtmedi? 👑",
+      "Zincirli · Bölüm 3: Yarım Bilezik",
+      "Zincirli · Bölüm 2: Kızıl Loca",
       "Ölmesine 3 saniye vardı… ⚔️ #shorts",
       "Zincirli · Bölüm 1: Üç Saniye",
       "Zincirli · Bölüm 1: Üç Saniye | Çöp Adam Animasyon"
@@ -343,6 +348,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "560 Yıllık Alışveriş Merkezi İstanbul'un Göbeğinde",
       "Dünyanın En Eski Barış Antlaşması Anadolu'da Çıktı",
       "Gordion Düğümünü Kılıçla Kesen İskender'in Hikâyesi",
       "Pompeii'yi Haritadan Silen 79 Yılındaki Patlama",
@@ -482,6 +488,8 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Çatalhöyük'te Bulunan 8000 Yıllık Ayna Cam Değildi",
+      "Ütünün Atası Kızgın Kömür Dolu Bir Tavaydı",
       "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
       "İlk Pil Neden Bir Yığın Madeni Paraya Benziyordu?",
       "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
@@ -634,6 +642,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 6/30: Wer erntet die meisten Kartoffeln? 🥔",
       "Duell 5/30: Wer erntet die meisten Weintrauben? 🍇",
       "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
       "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
@@ -645,31 +654,35 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 5,
+      "lastMatch": 6,
       "table": [
         {
           "name": "Türkei",
-          "points": 26
+          "points": 30
         },
         {
           "name": "Spanien",
           "points": 25
         },
         {
+          "name": "Ukraine",
+          "points": 25
+        },
+        {
+          "name": "Frankreich",
+          "points": 21
+        },
+        {
           "name": "Italien",
           "points": 19
         },
         {
-          "name": "Frankreich",
-          "points": 16
-        },
-        {
-          "name": "Ukraine",
-          "points": 15
-        },
-        {
           "name": "Polen",
-          "points": 12
+          "points": 14
+        },
+        {
+          "name": "Deutschland",
+          "points": 14
         },
         {
           "name": "Serbien",
@@ -682,10 +695,6 @@
         {
           "name": "Griechenland",
           "points": 8
-        },
-        {
-          "name": "Deutschland",
-          "points": 7
         }
       ]
     }
