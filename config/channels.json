@@ -699,8 +699,17 @@
         "a": "Mikrodalga fırın",
         "b": "Diş fırçası",
         "oyA": 0,
-        "oyB": 0,
+        "oyB": 1,
         "yayin": "2026-11-07T09:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+        "baslik": "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
+        "a": "Gözlük",
+        "b": "Çatal",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-07T16:00:00.000Z"
       }
     ]
   },
