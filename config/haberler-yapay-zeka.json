@@ -1,6 +1,6 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-08T06:21:48.034Z",
+  "guncellendi": "2026-11-08T06:45:46.264Z",
   "pencereSaat": 48,
   "haberler": [
     {
@@ -313,14 +313,6 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-06T08:00:00.000Z",
       "ozet": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-      "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-06T06:28:32.000Z",
-      "ozet": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
       "kullanildi": false
     }
   ]
