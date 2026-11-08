@@ -148,7 +148,8 @@
     { "id": "neseli", "label": "Neşeli" },
     { "id": "duygusal", "label": "Duygusal" },
     { "id": "gerilim", "label": "Gerilim" },
-    { "id": "lofi", "label": "Lo-fi" }
+    { "id": "lofi", "label": "Lo-fi" },
+    { "id": "oyun", "label": "Oyun / 8-bit" }
   ],
 
   "musicVolumes": [

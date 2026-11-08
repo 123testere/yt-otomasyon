@@ -134,6 +134,10 @@ function diziErrors(job, slot) {
     if (sc.sure !== undefined && !(typeof sc.sure === 'number' && sc.sure > 0 && sc.sure <= 12)) e('sure 0-12 sn olmalı');
     if (!optStr(sc.aciklama, 300)) e('aciklama ≤300 karakter');
     if (sc.buyukYazi !== undefined && !(str(sc.buyukYazi?.ust, 14) && optStr(sc.buyukYazi?.alt, 30))) e('buyukYazi {ust ≤14, alt ≤30} olmalı');
+    if (sc.sira !== undefined && !(Number.isInteger(sc.sira?.no) && sc.sira.no >= 1 && sc.sira.no <= 10 && str(sc.sira?.ad, 28) && optStr(sc.sira?.tur, 30)
+      && (sc.sira.maddeler === undefined || (Array.isArray(sc.sira.maddeler) && sc.sira.maddeler.length <= 3 && sc.sira.maddeler.every((m) => str(m, 24)))))) {
+      e('sira {no 1-10, ad ≤28, tur ≤30, maddeler: en fazla 3 madde, her biri ≤24} olmalı');
+    }
     if (sc.veri !== undefined && !(Array.isArray(sc.veri) && sc.veri.length >= 2 && sc.veri.length <= 8 && sc.veri.every((v) => typeof v === 'number' && v > 0))) e('veri 2-8 pozitif sayı olmalı');
     const kadraj = Array.isArray(sc.kadraj) ? sc.kadraj : [];
     if (sc.kadraj !== undefined && !Array.isArray(sc.kadraj)) e('kadraj bir dizi olmalı');

@@ -114,7 +114,7 @@ export async function seslendir(job, dizi, dir) {
       t0, d: t - t0, mekan: sc.mekan, zaman: sc.zaman ?? 'gece', efektler: sc.efektler ?? [], saat: sc.saat ?? '03:17',
       kalabalik: sc.kalabalik ?? null, kart: sc.kart ?? null, kartSn, kadraj: sc.kadraj ?? [], nesneler: sc.nesneler ?? [],
       zincir: sc.zincir ?? null, cizim: sc.cizim ?? null, ozet: Boolean(sc.ozet), satirlar,
-      buyukYazi: sc.buyukYazi ?? null, veri: sc.veri ?? null,
+      buyukYazi: sc.buyukYazi ?? null, veri: sc.veri ?? null, sira: sc.sira ?? null,
     });
   }
   parcalar.push(sessiz(path.join(dir, 'son.wav'), KAPANIS_SN));
@@ -203,14 +203,14 @@ export async function buildDizi(job, settings, { workDir }) {
   const dizi = diziYukle(job.dizi);
   console.log('  seslendirme (karakter sesleri)…');
   const ses = await seslendir(job, dizi, dir);
-  const muzik = job.muzik ?? (settings.music && settings.music !== 'yok' ? settings.music : dizi.muzik ?? 'gerilim');
+  const muzik = job.muzik ?? dizi.muzik ?? (settings.music && settings.music !== 'yok' ? settings.music : 'gerilim');
   const music = await pickMusic(muzik, dir);
   console.log(`  ${job.scenes.length} sahne, ${Math.round(ses.total)} sn — animasyon render (Remotion)…`);
   const no = job.bolum.no;
   const saat = (dizi.format === 'yatay' ? settings.long?.time : settings.shorts?.times?.[0]) ?? '19:00';
   const yatay = (job.format === 'dizi' && job.dikey) ? false : dizi.format === 'yatay';
   const videoPath = await renderDizi({
-    job, dir, ses, music, musicVolume: Number(job.muzikSeviye ?? settings.musicVolume ?? 0.12),
+    job, dir, ses, music, musicVolume: Number(job.muzikSeviye ?? dizi.muzikSeviye ?? settings.musicVolume ?? 0.12),
     boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
     props: {
       acilis: job.acilis !== false, stil: dizi.stil ?? 'yuz', dizi: { ad: dizi.ad }, bolum: { no, toplam: dizi.toplam ?? null, ad: job.bolum.ad }, karakterler: dizi.karakterler,

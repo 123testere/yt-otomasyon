@@ -3,12 +3,50 @@
   "artist": "Kevin MacLeod (incompetech.com)",
   "license": "Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/",
   "moods": {
-    "epik": ["Five Armies", "Impact Prelude", "Volatile Reaction"],
-    "gizemli": ["Lightless Dawn", "Darkest Child", "Investigations"],
-    "huzurlu": ["Floating Cities", "Meditation Impromptu 01", "Dreamy Flashback"],
-    "neseli": ["Carefree", "Wallpaper", "Fluffing a Duck", "Sneaky Snitch"],
-    "duygusal": ["Heartbreaking", "Sad Trio"],
-    "gerilim": ["Hitman", "The Descent", "Crypto"],
-    "lofi": ["Lobby Time", "Local Forecast - Elevator"]
+    "epik": [
+      "Five Armies",
+      "Impact Prelude",
+      "Volatile Reaction"
+    ],
+    "gizemli": [
+      "Lightless Dawn",
+      "Darkest Child",
+      "Investigations"
+    ],
+    "huzurlu": [
+      "Floating Cities",
+      "Meditation Impromptu 01",
+      "Dreamy Flashback"
+    ],
+    "neseli": [
+      "Carefree",
+      "Wallpaper",
+      "Fluffing a Duck",
+      "Sneaky Snitch"
+    ],
+    "duygusal": [
+      "Heartbreaking",
+      "Sad Trio"
+    ],
+    "gerilim": [
+      "Hitman",
+      "The Descent",
+      "Crypto"
+    ],
+    "lofi": [
+      "Lobby Time",
+      "Local Forecast - Elevator"
+    ],
+    "oyun": [
+      "Pixelland",
+      "Itty Bitty 8 Bit",
+      "Arcadia",
+      "Voxel Revolution",
+      "Raving Energy",
+      "Funk Game Loop",
+      "Digital Lemonade",
+      "Overworld",
+      "8bit Dungeon Level"
+    ]
   }
 }

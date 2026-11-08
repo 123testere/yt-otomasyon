@@ -146,6 +146,73 @@ function nesneCiz(ctx, n, u, W, yer, s) {
   ctx.restore();
 }
 
+const SIRA_RENK = { 1: '#FFC23A', 2: '#D8DEE8', 3: '#E0884A' };
+
+function siraKarti(ctx, s, u, W, H, yatay) {
+  const renk = SIRA_RENK[s.no] ?? (s.no % 2 ? '#3EE0FF' : '#FF3EA5');
+  const n = (s.maddeler ?? []).length;
+  const [x0, y0, kw, kh] = yatay ? [W * 0.2, H * 0.08, W * 0.6, 340 + n * 105] : [80, 590, W - 160, 350 + n * 115];
+  const a = eo(pr(u, 0, 0.35));
+  const pop = 1 + (1 - eo(pr(u, 0, 0.45))) * 0.25;
+  ctx.save();
+  ctx.translate(x0 + kw / 2, y0 + kh / 2); ctx.scale(pop, pop); ctx.translate(-(x0 + kw / 2), -(y0 + kh / 2));
+  ctx.globalAlpha = a;
+  ctx.fillStyle = 'rgba(8,6,20,.82)'; ctx.beginPath(); ctx.roundRect(x0, y0, kw, kh, 36); ctx.fill();
+  ctx.lineWidth = 8; ctx.strokeStyle = renk; ctx.shadowColor = renk; ctx.shadowBlur = 30; ctx.stroke(); ctx.shadowBlur = 0;
+  // Sıra numarası rozeti
+  const rx = x0 + (yatay ? 150 : 140);
+  const ry = y0 + (yatay ? 150 : 150);
+  const rr = yatay ? 105 : 100;
+  ctx.fillStyle = renk; ctx.beginPath(); ctx.arc(rx, ry, rr, 0, Math.PI * 2); ctx.fill();
+  ctx.font = `900 ${rr * 1.15}px ${serif}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#0A0814'; ctx.fillText(`#${s.no}`, rx, ry + rr * 0.06);
+  // Oyunun adı (sığmazsa küçülür)
+  const tx = rx + rr + 40;
+  const tw = x0 + kw - 40 - tx;
+  let boy = yatay ? 92 : 80;
+  ctx.font = `900 ${boy}px ${serif}`;
+  while (ctx.measureText(s.ad).width > tw && boy > 40) { boy -= 4; ctx.font = `900 ${boy}px ${serif}`; }
+  ctx.textAlign = 'left'; ctx.fillStyle = '#FFFFFF'; ctx.fillText(s.ad, tx, ry - (s.tur ? boy * 0.3 : 0));
+  if (s.tur) { ctx.font = `italic 500 ${yatay ? 44 : 40}px ${serif}`; ctx.fillStyle = renk; ctx.fillText(s.tur, tx, ry + boy * 0.55); }
+  ctx.restore();
+  // Geri sayım çubuğu (dikey): 5 · 4 · 3 · 2 · 1, geçilenler sönük, sıradaki parlak
+  if (!yatay) {
+    const toplam = s.toplam ?? 5;
+    const cy = 1640;
+    const ar = 150;
+    for (let k = toplam; k >= 1; k--) {
+      const cx = W / 2 + (toplam - k - (toplam - 1) / 2) * ar;
+      const simdi = k === s.no;
+      const gecti = k > s.no;
+      const rr = simdi ? 58 * (1 + Math.sin(u * 6) * 0.05) : 40;
+      ctx.save(); ctx.globalAlpha = a * (gecti ? 0.45 : simdi ? 1 : 0.25);
+      ctx.fillStyle = simdi ? renk : gecti ? (SIRA_RENK[k] ?? '#8A8AA8') : '#2A2A40';
+      ctx.beginPath(); ctx.arc(cx, cy, rr, 0, Math.PI * 2); ctx.fill();
+      ctx.font = `900 ${rr}px ${serif}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillStyle = simdi ? '#0A0814' : '#F4F0E8'; ctx.fillText(String(k), cx, cy + 3);
+      ctx.restore();
+    }
+  }
+  // Özellikler: tek tek belirir
+  const maddeler = s.maddeler ?? [];
+  const my0 = y0 + (yatay ? 330 : 340);
+  const ara = yatay ? 105 : 115;
+  const mboy = yatay ? 56 : 54;
+  maddeler.forEach((m, k) => {
+    const b = eo(pr(u, 0.7 + k * 0.8, 1.1 + k * 0.8)) * a;
+    if (b <= 0) return;
+    const y = my0 + k * ara;
+    const kx = x0 + 70 - (1 - b) * 40;
+    ctx.save(); ctx.globalAlpha = b;
+    ctx.fillStyle = renk; ctx.beginPath(); ctx.roundRect(kx, y - mboy * 0.55, mboy * 1.1, mboy * 1.1, 12); ctx.fill();
+    ctx.strokeStyle = '#0A0814'; ctx.lineWidth = 7; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.beginPath(); ctx.moveTo(kx + mboy * 0.25, y); ctx.lineTo(kx + mboy * 0.48, y + mboy * 0.25); ctx.lineTo(kx + mboy * 0.88, y - mboy * 0.25); ctx.stroke();
+    ctx.font = `700 ${mboy}px ${serif}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = '#F4F0E8';
+    ctx.fillText(m, kx + mboy * 1.5, y + 2);
+    ctx.restore();
+  });
+}
+
 export function kare(ctx, p, t, dur, fns) {
   const { scenes, words, karakterler = {}, dizi, bolum, kapanis } = p;
   const W = p.width ?? 1080;
@@ -254,6 +321,9 @@ export function kare(ctx, p, t, dur, fns) {
     if (sc.buyukYazi.alt) yazi(ctx, sc.buyukYazi.alt, W / 2, cy + (yatay ? 80 : 76), yatay ? 56 : 54, { a, w: 700 });
   }
 
+  // Sıralama kartı: dev sıra numarası, oyunun adı ve sırayla beliren özellikler
+  if (sc.sira && kartBitti) siraKarti(ctx, sc.sira, u, W, H, yatay);
+
   // Ara kart (ör. "15 YIL ÖNCE", "BİRİNCİ KISIM · Demirci'nin Oğlu")
   const ks = sc.kartSn ?? 2.2;
   const kartVar = sc.kart && u < ks;
@@ -302,7 +372,9 @@ export function kare(ctx, p, t, dur, fns) {
     const a = eo(pr(v, 0, 0.5));
     ctx.save(); ctx.globalAlpha = a * 0.85; ctx.fillStyle = '#04060C'; ctx.fillRect(0, 0, W, H); ctx.restore();
     const cy = yatay ? H * 0.32 : 720;
-    yazi(ctx, kapanis.baslik ?? 'DEVAMI', W / 2, cy, 110, { c: RENK.altin, a });
+    const bas = kapanis.baslik ?? 'DEVAMI';
+    ctx.save(); ctx.font = `700 110px ${serif}`; const bw = ctx.measureText(bas).width; ctx.restore();
+    yazi(ctx, bas, W / 2, cy, Math.min(110, Math.floor((110 * W * 0.9) / Math.max(1, bw))), { c: RENK.altin, a });
     yazi(ctx, kapanis.sonraki ?? '', W / 2, cy + 110, 62, { a });
     if (kapanis.soru) {
       const sat = satirla(ctx, kapanis.soru, 60, yatay ? 1400 : 880, false).slice(0, 3);

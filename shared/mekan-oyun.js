@@ -2,7 +2,7 @@
 // garaj (evde kurulan stüdyo), ofis (oyun stüdyosu), oyun-salonu (atari salonu), fuar (oyun fuarı sahnesi), grafik (satış grafiği)
 import { h } from './dizi.js';
 
-export const OYUN_MEKANLAR = ['garaj', 'ofis', 'oyun-salonu', 'fuar', 'grafik'];
+export const OYUN_MEKANLAR = ['garaj', 'ofis', 'oyun-salonu', 'fuar', 'grafik', 'siralama'];
 
 const NEON = ['#FF3EA5', '#3EE0FF', '#FFE03E', '#7CFF5A', '#A86BFF'];
 
@@ -188,6 +188,26 @@ export function oyunMekan(ctx, ad, o = {}) {
     ctx.fillStyle = '#1E1E2A'; ctx.fillRect(0, yer, W, H - yer);
     ctx.fillStyle = '#3A3A5A'; ctx.fillRect(0, yer, W, 8);
     kalabalik(ctx, W, H * (dikey ? 0.62 : 0.66), t, hey);
+  } else if (ad === 'siralama') {
+    // Sıralama sahnesi: dönen ışık huzmeleri, uçuşan piksel konfetiler, alt kısımda kürsü
+    const g = ctx.createRadialGradient(W / 2, H * 0.45, 20, W / 2, H * 0.45, Math.max(W, H) * 0.8);
+    g.addColorStop(0, '#2A1A4A'); g.addColorStop(1, '#06040E');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    ctx.save(); ctx.translate(W / 2, H * 0.45); ctx.rotate(t * 0.15);
+    for (let k = 0; k < 12; k++) {
+      ctx.rotate((Math.PI * 2) / 12);
+      ctx.fillStyle = k % 2 ? 'rgba(168,107,255,.07)' : 'rgba(62,224,255,.06)';
+      ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(-W * 0.12, -Math.max(W, H)); ctx.lineTo(W * 0.12, -Math.max(W, H)); ctx.closePath(); ctx.fill();
+    }
+    ctx.restore();
+    for (let k = 0; k < 40; k++) {
+      const x = (h(k) * W + Math.sin(t + k) * 20) % W;
+      const y = (h(k * 3) * H + t * (40 + h(k * 5) * 60)) % H;
+      ctx.fillStyle = NEON[k % NEON.length]; ctx.globalAlpha = 0.5; ctx.fillRect(x, y, 10, 10);
+    }
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = '#120C22'; ctx.fillRect(0, yer, W, H - yer);
+    ctx.fillStyle = '#3A2A6A'; ctx.fillRect(0, yer, W, 6);
   } else if (ad === 'grafik') {
     // Satış grafiği: ızgara üzerinde yükselen çubuklar ve ok
     dikdortgen(ctx, 0, 0, W, H, '#0A1424');
