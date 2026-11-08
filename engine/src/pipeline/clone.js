@@ -32,6 +32,22 @@ export function voiceInScope(settings, type) {
 }
 
 // Her sahne için ham WAV dosyalarını döndürür (sırayla).
+// Dizi satırları için: verilen metinleri kanalın ses örneğiyle tek seferde seslendirir (model bir kez yüklenir).
+export async function klonSatirlari(channelId, texts, language, dir, style = {}) {
+  const sample = await downloadVoiceSample(channelId, path.join(dir, 'ornek.mp3'));
+  const ref = path.join(dir, 'ornek.wav');
+  await run('ffmpeg', ['-y', '-v', 'error', '-i', sample, '-ac', '1', '-ar', '24000', ref]);
+  await ensureChatterbox();
+  const textsFile = path.join(dir, 'klon-metin.json');
+  await fs.writeFile(textsFile, JSON.stringify(texts.map((t) => spokenText(t.trim(), language))));
+  const outDir = path.join(dir, 'klon');
+  await fs.mkdir(outDir, { recursive: true });
+  const started = Date.now();
+  await run(PYTHON, [path.join(PY_DIR, 'clone_tts.py'), ref, language, textsFile, outDir, JSON.stringify(style)]);
+  console.log(`  kendi sesinle (Chatterbox) ${texts.length} satır ${Math.round((Date.now() - started) / 60000)} dk`);
+  return texts.map((_, i) => path.join(outDir, `${String(i).padStart(3, '0')}.wav`));
+}
+
 export async function cloneNarrate(job, settings, dir) {
   const sample = await downloadVoiceSample(job.channelId, path.join(dir, 'ornek.mp3'));
   const ref = path.join(dir, 'ornek.wav');

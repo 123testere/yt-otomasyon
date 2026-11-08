@@ -28,6 +28,10 @@ jobs:
           path: .cache/eleven
           key: eleven-${{ github.run_id }}
           restore-keys: eleven-
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-chatterbox-v3
       - name: Araçları kur
         run: |
           sudo apt-get update -qq

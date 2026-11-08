@@ -11,7 +11,8 @@
   "diziler": [
     { "id": "zincirli", "label": "Zincirli", "hint": "Köyü yakılan demircinin oğlu Arın'ın arenadan özgürlüğe destanı. Yatay bölümler." },
     { "id": "karacam-saati", "label": "Karaçam'ın Saati", "hint": "Saati 03:17'de duran gizemli köy. Dikey Shorts bölümleri." },
-    { "id": "oyun-hikayeleri", "label": "Oyun Hikâyeleri (Top 5)", "hint": "Her gün Top 5 oyun listesi Shorts'u; çöp adam animasyonu, sıralama kartları." }
+    { "id": "oyun-hikayeleri", "label": "Oyun Hikâyeleri (Top 5)", "hint": "Her gün Top 5 oyun listesi Shorts'u; çöp adam animasyonu, sıralama kartları." },
+    { "id": "para-top5", "label": "Money & Business Top 5 (EN)", "hint": "İngilizce günlük Top 5: para kazanma, iş kurma, motivasyon; kendi sesin (Chatterbox)." }
   ],
 
   "niches": [
@@ -23,6 +24,7 @@
     { "id": "korku", "label": "Korku Hikâyeleri", "categoryId": "24" },
     { "id": "animasyon", "label": "Animasyon / dizi", "categoryId": "1" },
     { "id": "oyun", "label": "Video Oyunları", "categoryId": "20" },
+    { "id": "is-para", "label": "Para, İş Kurma ve Motivasyon", "categoryId": "27" },
     { "id": "mitoloji", "label": "Mitoloji ve Efsaneler", "categoryId": "27" },
     { "id": "biyografi", "label": "Biyografi", "categoryId": "27" },
     { "id": "psikoloji", "label": "Psikoloji", "categoryId": "27" },

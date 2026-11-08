@@ -213,7 +213,13 @@ function siraKarti(ctx, s, u, W, H, yatay) {
   });
 }
 
+const METIN = {
+  tr: { bolum: 'BÖLÜM', bolumK: 'Bölüm', onceki: 'Önceki bölümde…', yorum: 'Yorumlara yaz 👇', devami: 'DEVAMI' },
+  en: { bolum: 'EP', bolumK: 'Episode', onceki: 'Previously…', yorum: 'Comment below 👇', devami: 'TO BE CONTINUED' },
+};
+
 export function kare(ctx, p, t, dur, fns) {
+  const M = METIN[p.dil] ?? METIN.tr;
   const { scenes, words, karakterler = {}, dizi, bolum, kapanis } = p;
   const W = p.width ?? 1080;
   const H = p.height ?? 1920;
@@ -302,10 +308,10 @@ export function kare(ctx, p, t, dur, fns) {
   // Üst rozet: dizi adı ve bölüm
   const acilisSn = p.acilis === false ? 0 : KART_SN;
   const kartBitti = t > acilisSn;
-  const rozet = `${(dizi?.ad ?? '').toLocaleUpperCase('tr')}${bolum?.toplam ? ` · ${bolum.no}/${bolum.toplam}` : bolum?.no ? ` · BÖLÜM ${bolum.no}` : ''}`;
+  const rozet = `${(dizi?.ad ?? '').toLocaleUpperCase(p.dil ?? 'tr')}${p.rozetNo === false ? '' : bolum?.toplam ? ` · ${bolum.no}/${bolum.toplam}` : bolum?.no ? ` · ${M.bolum} ${bolum.no}` : ''}`;
   if (yatay) yazi(ctx, rozet, 50, 70, 34, { c: RENK.altin, a: kartBitti ? 0.85 : 0, al: 'left' });
   else yazi(ctx, rozet, 540, 150, 40, { c: RENK.altin, a: kartBitti ? 0.9 : 0 });
-  if (sc.ozet && kartBitti) yazi(ctx, 'Önceki bölümde…', W / 2, yatay ? 140 : 220, 44, { it: true, w: 500, a: 0.85 });
+  if (sc.ozet && kartBitti) yazi(ctx, M.onceki, W / 2, yatay ? 140 : 220, 44, { it: true, w: 500, a: 0.85 });
 
   // Dev yazı (ör. "30 MİLYON" / "kopya sattı"): sahne boyunca görünür, karakterlerin üstünde
   if (sc.buyukYazi && kartBitti) {
@@ -349,7 +355,7 @@ export function kare(ctx, p, t, dur, fns) {
     ctx.save(); ctx.fillStyle = 'rgba(6,8,16,.72)'; ctx.beginPath(); ctx.roundRect((W - genis) / 2 - 40, y0, genis + 80, hh, 22); ctx.fill(); ctx.restore();
     let y = y0 + boyut + 14;
     if (!anlatici) {
-      yazi(ctx, (def.ad ?? g.konusan).toLocaleUpperCase('tr'), (W - genis) / 2, y, boyut * 0.7, { c: acikRenk(def.renk), al: 'left', golge: false });
+      yazi(ctx, (def.ad ?? g.konusan).toLocaleUpperCase(p.dil ?? 'tr'), (W - genis) / 2, y, boyut * 0.7, { c: acikRenk(def.renk), al: 'left', golge: false });
       y += boyut;
     }
     sat.forEach((s, j) => yazi(ctx, s, W / 2, y + j * satH, boyut, { it: anlatici, w: anlatici ? 500 : 700 }));
@@ -361,8 +367,8 @@ export function kare(ctx, p, t, dur, fns) {
     ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(4,6,12,.86)'; ctx.fillRect(0, 0, W, H); ctx.restore();
     const b = eo(pr(t, 0.1, 0.8)) * a;
     const cy = H / 2 - (yatay ? 40 : 200);
-    yazi(ctx, (dizi?.ad ?? '').toLocaleUpperCase('tr'), W / 2, cy, yatay ? 120 : 96, { c: RENK.altin, a: b });
-    yazi(ctx, `Bölüm ${bolum?.no ?? ''}`, W / 2, cy + (yatay ? 110 : 140), 70, { a: eo(pr(t, 0.5, 1.1)) * a, w: 500 });
+    yazi(ctx, (dizi?.ad ?? '').toLocaleUpperCase(p.dil ?? 'tr'), W / 2, cy, yatay ? 120 : 96, { c: RENK.altin, a: b });
+    yazi(ctx, `${M.bolumK} ${bolum?.no ?? ''}`, W / 2, cy + (yatay ? 110 : 140), 70, { a: eo(pr(t, 0.5, 1.1)) * a, w: 500 });
     yazi(ctx, bolum?.ad ?? '', W / 2, cy + (yatay ? 200 : 250), 64, { a: eo(pr(t, 0.8, 1.4)) * a, it: true, w: 500 });
   }
 
@@ -372,14 +378,14 @@ export function kare(ctx, p, t, dur, fns) {
     const a = eo(pr(v, 0, 0.5));
     ctx.save(); ctx.globalAlpha = a * 0.85; ctx.fillStyle = '#04060C'; ctx.fillRect(0, 0, W, H); ctx.restore();
     const cy = yatay ? H * 0.32 : 720;
-    const bas = kapanis.baslik ?? 'DEVAMI';
+    const bas = kapanis.baslik ?? M.devami;
     ctx.save(); ctx.font = `700 110px ${serif}`; const bw = ctx.measureText(bas).width; ctx.restore();
     yazi(ctx, bas, W / 2, cy, Math.min(110, Math.floor((110 * W * 0.9) / Math.max(1, bw))), { c: RENK.altin, a });
     yazi(ctx, kapanis.sonraki ?? '', W / 2, cy + 110, 62, { a });
     if (kapanis.soru) {
       const sat = satirla(ctx, kapanis.soru, 60, yatay ? 1400 : 880, false).slice(0, 3);
       sat.forEach((s, j) => yazi(ctx, s, W / 2, cy + 280 + j * 76, 60, { a: eo(pr(v, 0.5, 1)) }));
-      yazi(ctx, 'Yorumlara yaz 👇', W / 2, cy + 340 + sat.length * 76, 50, { c: RENK.altin, a: eo(pr(v, 0.9, 1.4)), w: 500 });
+      yazi(ctx, M.yorum, W / 2, cy + 340 + sat.length * 76, 50, { c: RENK.altin, a: eo(pr(v, 0.9, 1.4)), w: 500 });
     }
   }
 }

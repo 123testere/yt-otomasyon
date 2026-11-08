@@ -6,7 +6,7 @@ import { KAS, cl, elips, eo, h, kirpma, sekil, ton } from './dizi.js';
 
 export const POZLAR = ['dur', 'yuru', 'kos', 'isaret', 'korku', 'dusun', 'el-salla', 'omuz', 'eller-belde', 'egil',
   'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi'];
-export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket'];
+export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta'];
 
 const COP = { bas: 58, kalca: -215, omuz: -372, kol1: 92, kol2: 88, bacak1: 110, bacak2: 108 };
 const GOVDE = '#F3EAD7';
@@ -239,6 +239,24 @@ function esyaCiz(ctx, esya, el, aci, t, seed) {
     ctx.beginPath(); ctx.arc(-34, -70, 14, Math.PI * 0.5, Math.PI * 1.5); ctx.stroke(); ctx.beginPath(); ctx.arc(34, -70, 14, -Math.PI * 0.5, Math.PI * 0.5); ctx.stroke();
     ctx.fillRect(-6, -30, 12, 22); ctx.fillStyle = '#8A6A2A'; ctx.fillRect(-24, -10, 48, 14); ctx.strokeRect(-24, -10, 48, 14);
     ctx.fillStyle = 'rgba(255,255,255,' + (0.4 + Math.sin(t * 4) * 0.3) + ')'; ctx.fillRect(-20, -82, 8, 30);
+    ctx.restore();
+  }
+  if (esya === 'para') {
+    ctx.save(); ctx.translate(el[0], el[1] - 14); ctx.rotate(-0.15);
+    for (let k = 0; k < 4; k++) {
+      ctx.fillStyle = k % 2 ? '#5AA85A' : '#4A984A'; ctx.strokeStyle = HAT; ctx.lineWidth = 4;
+      ctx.fillRect(-40, -12 - k * 9, 80, 30); ctx.strokeRect(-40, -12 - k * 9, 80, 30);
+    }
+    ctx.fillStyle = '#D8F0C8'; ctx.beginPath(); ctx.arc(0, -24, 9, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#C8A83A'; ctx.fillRect(-8, -42, 16, 40);
+    ctx.restore();
+  }
+  if (esya === 'canta') {
+    ctx.save(); ctx.translate(el[0], el[1]);
+    ctx.strokeStyle = HAT; ctx.lineWidth = 5;
+    ctx.beginPath(); ctx.roundRect(-16, 0, 32, 16, 6); ctx.stroke();
+    ctx.fillStyle = '#4A2E1A'; ctx.beginPath(); ctx.roundRect(-46, 14, 92, 64, 8); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#C8A83A'; ctx.fillRect(-6, 36, 12, 10);
     ctx.restore();
   }
   if (esya === 'disket') {

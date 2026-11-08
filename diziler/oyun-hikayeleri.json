@@ -101,5 +101,6 @@
   "Özellikler ve rakamlar doğrulanabilir olmalı (çıkış yılı, oyuncu sayısı, satış rakamı, tür). Emin olmadığın rakamı yazma; rakam yerine nitelik yaz ('Ortak oyun', 'Açık dünya'). Satış/oyuncu rakamlarını 'milyon+' gibi alt sınırla ver.",
   "Toplam 70-110 kelime (yaklaşık 40-50 saniye). muzik ve muzikSeviye yazma (dizi varsayılanı kullanılır).",
   "Başlık: '… 5 Oyun 🎮' kalıbında, merak uyandıran, ≤60 karakter; açıklamanın ilk satırı listedeki 5 oyunun adını içersin (aramada bulunur) ve izleyiciye soru sorsun."
- ]
+ ],
+ "rozetNo": false
 }

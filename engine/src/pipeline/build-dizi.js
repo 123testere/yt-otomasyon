@@ -13,6 +13,7 @@ import { alignWords } from './subtitles.js';
 import { pickMusic } from './render.js';
 import { remotionStill, renderDizi } from './remotion.js';
 import { elevenScene } from './elevenlabs.js';
+import { klonSatirlari, proportionalWords } from './clone.js';
 
 export const DIZI_DIR = path.join(ROOT, 'diziler');
 const PY = process.env.PYTHON ?? 'python3';
@@ -41,7 +42,8 @@ function sessiz(file, sn) {
 }
 
 // Rakamlar okunuşuyla seslendirilir, altyazıda rakam kalsın diye kelimeler geri toplanır.
-function rakamGrupla(metin, words) {
+function rakamGrupla(metin, words, dil = 'tr') {
+  if (dil !== 'tr') return words;
   if (!/\d/.test(metin)) return words;
   const tokens = metin.trim().split(/\s+/);
   const counts = tokens.map((t) => spellNumbersTr(t).split(/\s+/).filter(Boolean).length);
@@ -54,8 +56,14 @@ function rakamGrupla(metin, words) {
   });
 }
 
-async function satirSesi(metin, ses, base) {
-  const okunus = spellNumbersTr(metin);
+// Döner: { words: [{t, d, w}], file } (file: ffmpeg'e verilecek ham ses)
+async function satirSesi(metin, ses, base, dil = 'tr', klonWav = null) {
+  const okunus = dil === 'tr' ? spellNumbersTr(metin) : metin;
+  if (ses.klon) {
+    // Chatterbox kelime zamanı vermez; kelimeler satırın süresine okunuş uzunluğuyla dağıtılır.
+    if (!klonWav) throw new Error('klon sesi üretilmedi');
+    return { words: proportionalWords(metin, await probeDuration(klonWav)), file: klonWav };
+  }
   if (ses.eleven) {
     fs.mkdirSync(ELEVEN_CACHE, { recursive: true });
     const key = crypto.createHash('sha1').update(JSON.stringify([okunus, ses.eleven, ses.speed ?? 1, ses.ayar ?? null])).digest('hex');
@@ -67,12 +75,12 @@ async function satirSesi(metin, ses, base) {
       fs.writeFileSync(json, JSON.stringify(r.words));
     }
     fs.copyFileSync(mp3, `${base}.mp3`);
-    return JSON.parse(fs.readFileSync(json, 'utf8'));
+    return { words: JSON.parse(fs.readFileSync(json, 'utf8')), file: `${base}.mp3` };
   }
   fs.writeFileSync(`${base}.txt`, okunus);
   await retry(() => run(PY, [path.join(ROOT, 'engine', 'py', 'tts.py'), `${base}.txt`, ses.voice, ses.rate ?? '+0%', `${base}.mp3`, `${base}.json`, ses.pitch ?? '+0Hz']),
     { label: 'seslendirme', delayMs: 5000 });
-  return JSON.parse(fs.readFileSync(`${base}.json`, 'utf8'));
+  return { words: JSON.parse(fs.readFileSync(`${base}.json`, 'utf8')), file: `${base}.mp3` };
 }
 
 const sesOf = (dizi, kim) => (kim === 'anlatici' ? dizi.anlatici?.ses : dizi.karakterler[kim]?.ses) ?? dizi.anlatici.ses;
@@ -87,6 +95,16 @@ export async function seslendir(job, dizi, dir) {
   const words = [];
   const scenes = [];
   const sil = (ad, sn) => { parcalar.push(sessiz(path.join(dir, ad), sn)); t += sn; };
+  const dil = dizi.dil ?? 'tr';
+  // Kendi ses (Chatterbox) kullanan satırlar önceden, tek seferde seslendirilir.
+  const klonlar = new Map();
+  const klonMetin = job.scenes.flatMap((sc) => sc.satirlar ?? []).filter((s) => sesOf(dizi, s.kim ?? 'anlatici').klon).map((s) => s.metin.trim());
+  if (klonMetin.length) {
+    const kdir = path.join(dir, 'klon-is'); fs.mkdirSync(kdir, { recursive: true });
+    const dosyalar = await klonSatirlari(job.channelId, klonMetin, dil, kdir, dizi.anlatici?.ses?.ayar ?? {});
+    klonMetin.forEach((m, k) => klonlar.set(`${k}`, dosyalar[k]));
+  }
+  let klonSira = 0;
   for (const [i, sc] of job.scenes.entries()) {
     const t0 = t;
     const kartSn = sc.kart ? sc.kartSn ?? ARA_KART_SN : 0;
@@ -96,12 +114,13 @@ export async function seslendir(job, dizi, dir) {
       if (s.once) sil(`o${i}-${j}.wav`, s.once);
       const kim = s.kim ?? 'anlatici';
       const base = path.join(dir, `s${String(i).padStart(2, '0')}-${String(j).padStart(2, '0')}`);
-      const raw = await satirSesi(s.metin.trim(), sesOf(dizi, kim), base);
+      const ses = sesOf(dizi, kim);
+      const { words: raw, file: girdi } = await satirSesi(s.metin.trim(), ses, base, dil, ses.klon ? klonlar.get(`${klonSira++}`) : null);
       const son = j === sc.satirlar.length - 1;
       const filtre = [hiz !== 1 ? `atempo=${hiz}` : null, `apad=pad_dur=${son ? sahneArasi : satirArasi}`].filter(Boolean).join(',');
-      await run('ffmpeg', ['-y', '-v', 'error', '-i', `${base}.mp3`, '-af', filtre, '-ar', '48000', '-ac', '2', `${base}.wav`]);
+      await run('ffmpeg', ['-y', '-v', 'error', '-i', girdi, '-af', filtre, '-ar', '48000', '-ac', '2', `${base}.wav`]);
       const d = await probeDuration(`${base}.wav`);
-      const hizali = alignWords(s.metin, rakamGrupla(s.metin, raw));
+      const hizali = alignWords(s.metin, rakamGrupla(s.metin, raw, dil));
       for (const w of hizali) words.push({ t: t + w.t / hiz, d: w.d / hiz, text: w.text, konusan: kim });
       satirlar.push({ kim, t0: t, t1: t + d, ifade: s.ifade ?? null, poz: s.poz ?? null, metin: s.metin });
       parcalar.push(`${base}.wav`);
@@ -213,6 +232,7 @@ export async function buildDizi(job, settings, { workDir }) {
     job, dir, ses, music, musicVolume: Number(job.muzikSeviye ?? dizi.muzikSeviye ?? settings.musicVolume ?? 0.12),
     boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
     props: {
+      dil: dizi.dil ?? 'tr', rozetNo: dizi.rozetNo !== false,
       acilis: job.acilis !== false, stil: dizi.stil ?? 'yuz', dizi: { ad: dizi.ad }, bolum: { no, toplam: dizi.toplam ?? null, ad: job.bolum.ad }, karakterler: dizi.karakterler,
       kapanis: job.kapanis ? {
         baslik: job.kapanis.baslik ?? 'DEVAMI', soru: job.kapanis.soru ?? null,

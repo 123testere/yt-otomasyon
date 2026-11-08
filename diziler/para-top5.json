@@ -1,0 +1,33 @@
+{
+ "id": "para-top5",
+ "ad": "Untold Vault",
+ "dil": "en",
+ "rozetNo": false,
+ "stil": "cop",
+ "format": "yatay",
+ "muzik": "epik",
+ "muzikSeviye": 0.05,
+ "tur": "Top 5 lists about money, motivation and starting a business (stick-figure animation)",
+ "ozet": "Daily Top 5 countdown Shorts in English: ways to make money, business ideas, habits of successful people, mistakes that keep people broke, lessons from founders. Narrated by the channel owner (own cloned voice), fast and energetic.",
+ "kurallar": [
+  "Everything must be realistic and verifiable: no get-rich-quick promises, no guaranteed income claims, no fake statistics. Use cautious wording ('can', 'many people', 'often').",
+  "No financial, legal or investment advice for specific products, stocks or crypto; no naming of scams or pyramid schemes as opportunities.",
+  "Real people and companies may be mentioned only with well-known, verifiable facts; never invent quotes."
+ ],
+ "yazim": [
+  "Write EVERYTHING in English: title, description, tags, lines, cards (buyukYazi, sira, kapanis). Example structure: diziler/ornek/oyun-top5-shorts.json (same scene structure, but in English and on this channel's topics).",
+  "Topic patterns: '5 side hustles you can start with $0', '5 habits of self-made millionaires', '5 business ideas for 2026', '5 money mistakes that keep you broke', '5 skills that pay more than a degree', '5 lessons from [famous founder]', '5 small businesses that make the most profit'. Never repeat a list or the same five items (check done/ and recentTitles).",
+  "Scene 1 hook: mekan 'garaj', 'ofis' or 'fuar'; buyukYazi {ust: 'TOP 5', alt: short theme ≤30}; the 'girisimci' character walks in with esya 'canta' or 'para'. One strong hook sentence + 'Let's count down!'.",
+  "Scenes 2-6: mekan 'siralama', sira {no: 5→1, ad: item name ≤28, tur: short category ≤30, maddeler: exactly 3 short points ≤24 each}. Narration: 1-2 short punchy sentences per item ('Number five: …'). Number one gets efektler ['beyaz-cakma'] and 'And number one…'. No kadraj on siralama scenes.",
+  "Last scene: mekan 'fuar', kalabalik 1, 'girisimci' in zafer pose with esya 'kupa' or 'para'; ask viewers which one they would pick and to subscribe. kapanis {baslik: 'YOUR #1?', sonraki: short call to action (e.g. 'Most voted wins a deep dive'), soru: list-specific question}.",
+  "Use 'grafik' (with veri) only for the hook if the topic is about growth or income. Total 70-110 words (about 40-50 seconds). Do not write muzik or muzikSeviye.",
+  "Title: curiosity-driven, ≤60 characters, ends with one emoji (💰, 🚀, 🧠). First description line names the topic with keywords and asks a question; then 3-5 hashtags like #money #business #motivation #sidehustle."
+ ],
+ "anlatici": { "id": "anlatici", "ses": { "klon": true } },
+ "karakterler": {
+  "girisimci": { "ad": "Founder", "renk": "#1E2A44", "kusak": "#C8A83A", "sacStil": "kisa", "sac": "#2A1A10", "seed": 31, "kim": "Ambitious entrepreneur in a dark suit." },
+  "calisan": { "ad": "Worker", "renk": "#6A6A72", "kusak": "#3A6ACA", "sacStil": "dagnik", "sac": "#3A2A1A", "gozluk": true, "seed": 32, "kim": "Tired 9-to-5 employee." },
+  "yatirimci": { "ad": "Investor", "renk": "#22242C", "kusak": "#8A1A1A", "sacStil": "kel", "sakal": "biyik", "kalin": 1.15, "seed": 33, "kim": "Wealthy investor." },
+  "ogrenci": { "ad": "Student", "renk": "#C84A7A", "kusak": "#C84A7A", "sacStil": "atkuyrugu", "sac": "#5A2A1A", "cinsiyet": "k", "olcek": 0.85, "seed": 34, "kim": "Young student starting out." }
+ }
+}
