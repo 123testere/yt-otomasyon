@@ -3,88 +3,64 @@
   "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
   "type": "short",
   "publishAt": "2026-11-08T05:00:00.000Z",
-  "topic": "Kapalıçarşı'nın İç Bedesten'den doğan tarihi",
-  "title": "560 Yıllık Alışveriş Merkezi İstanbul'un Göbeğinde",
-  "hookText": "560 yıldır açık",
-  "description": "Kapalıçarşı, İstanbul'da yaklaşık 560 yıl önce Fatih Sultan Mehmet döneminde yaptırılan İç Bedesten'in çevresinde büyüdü. Bugün hâlâ binlerce dükkânıyla dünyanın en eski ve en büyük kapalı çarşılarından biri sayılıyor.\n\n#kapalıçarşı #istanbul #osmanlı #tarih",
+  "topic": "Rosetta Taşı ve Mısır hiyeroglifinin çözülmesi",
+  "title": "Hiyeroglifleri Çözen Taş: 1799'da Bulundu",
+  "hookText": "Bu taş sırrı açtı",
+  "description": "Rosetta Taşı 1799'da Mısır'da bulundu ve aynı metni üç yazıyla taşıyordu. Bu sayede Champollion 1822'de hiyeroglifleri çözdü. Antik Mısır'ın dilinin yeniden okunmasını sağlayan o taşın hikâyesi.\n\n#rosettataşı #hiyeroglif #mısır #tarih",
   "tags": [
-    "kapalıçarşı",
-    "iç bedesten",
-    "fatih sultan mehmet",
-    "istanbul tarihi",
-    "osmanlı çarşısı",
-    "en eski kapalı çarşı",
-    "istanbul",
-    "tarih"
+    "rosetta taşı",
+    "hiyeroglif",
+    "antik mısır",
+    "champollion",
+    "tarih",
+    "ilginç tarih bilgileri",
+    "yazı tarihi",
+    "british museum"
   ],
-  "oynatmaListesi": "Osmanlı'nın Bilinmeyenleri",
-  "ceviriler": {
-    "en": {
-      "title": "The 560-Year-Old Shopping Mall in the Heart of Istanbul",
-      "description": "The Grand Bazaar in Istanbul grew around the Inner Bedesten, built about 560 years ago under Mehmed the Conqueror. It is still counted among the oldest and largest covered markets in the world.\n\n#grandbazaar #istanbul #ottoman #history"
-    }
-  },
-  "deney": {
-    "id": "kanca-soru",
-    "kol": "B"
-  },
   "scenes": [
     {
-      "narration": "Yaklaşık 560 yıllık bir alışveriş merkezi, hâlâ İstanbul'un göbeğinde açık: Kapalıçarşı.",
+      "narration": "Evlat, binlerce yıl okunamayan bir yazıyı tek bir taş nasıl çözdü dersin? Hikâye, 1799 yılında Mısır'da, Rosetta kenti yakınlarında başlıyor.",
       "visual": {
-        "query": "Grand Bazaar Istanbul",
-        "prompt": "a vaulted arcade of the Grand Bazaar in Istanbul with warm hanging lamps, wide shot",
+        "query": "Rosetta Stone",
+        "prompt": "an ancient dark stone slab covered in inscriptions lying in a sandy fortress ruin, warm light, close-up",
         "motion": {
           "type": "stat",
-          "value": "~560 yıl",
-          "label": "Kapalıçarşı"
+          "value": "1799",
+          "label": "Rosetta Taşı bulundu"
         }
       }
     },
     {
-      "narration": "Çekirdeği, Fatih Sultan Mehmet döneminde yaptırılan İç Bedesten'dir. Kaynaklara göre değerli kumaşlar ve mücevherler burada saklanıp satılırdı.",
+      "narration": "Taşın üstünde aynı metin üç farklı yazıyla duruyordu: hiyeroglif, demotik ve Yunanca. Yunancayı okuyabilen bilginler, ötekilerin anahtarını elde ettiler.",
       "visual": {
-        "query": "Inner Bedesten Istanbul",
-        "prompt": "a thick stone domed hall with iron doors in old Istanbul, soft daylight"
-      }
-    },
-    {
-      "narration": "Zamanla çevresine sokaklar, hanlar ve dükkânlar eklendi. Bugün yaklaşık altmış sokağı ve binlerce dükkânı olduğu söylenir.",
-      "visual": {
-        "query": "Grand Bazaar aerial",
-        "prompt": "an aerial view of a huge covered bazaar with many domes and narrow lanes, golden hour",
+        "query": "Rosetta Stone inscription",
+        "prompt": "three bands of different ancient scripts carved on a stone slab, raking light, macro shot",
         "motion": {
           "type": "list",
-          "title": "Bugün",
+          "title": "Üç yazı",
           "items": [
-            "Yaklaşık 60 sokak",
-            "Binlerce dükkân"
+            "Hiyeroglif",
+            "Demotik",
+            "Yunanca"
           ]
         }
       }
     },
     {
-      "narration": "Eskiden her sokak bir zanaata ayrılırdı. Kuyumcular, halıcılar ve kalpakçılar kendi sokaklarında toplanırdı.",
+      "narration": "Yıllarca uğraşıldı. Sonunda Fransız bilgin Champollion, 1822'de hiyeroglif işaretlerinin hem sesi hem anlamı gösterdiğini ortaya koydu.",
       "visual": {
-        "query": "Grand Bazaar jewelers",
-        "prompt": "glittering gold jewelry displayed in a lit shop window in an old bazaar, close shot"
-      }
-    },
-    {
-      "narration": "Bazı sokak adları bugün hâlâ o zanaatları anlatır. Yangınlar ve depremler çarşıyı defalarca yıktı, her seferinde yeniden yapıldı.",
-      "visual": {
-        "query": "Grand Bazaar Istanbul entrance",
-        "prompt": "an old stone gate entrance to a covered market with crowds, warm light",
+        "query": "Champollion",
+        "prompt": "a scholar at a candlelit desk copying hieroglyph signs onto paper, warm light, over-the-shoulder view",
         "motion": {
           "type": "timeline",
           "items": [
             {
-              "year": "15. yy",
-              "label": "İç Bedesten"
+              "year": "1799",
+              "label": "Taş bulundu"
             },
             {
-              "year": "Bugün",
-              "label": "Hâlâ açık"
+              "year": "1822",
+              "label": "Yazı çözüldü"
             }
           ],
           "highlight": 1
@@ -92,13 +68,13 @@
       }
     },
     {
-      "narration": "Sence bir çarşı bu kadar uzun yıl nasıl ayakta kalır? Videoyu beğen, yorum yaz ve kanala abone ol, evlat.",
+      "narration": "Bugün taş Londra'daki British Museum'da duruyor. Sence kaybolmuş başka hangi yazıyı bir gün okuyabiliriz? Yorumlara yaz, videoyu beğen ve abone ol.",
       "visual": {
-        "query": "old market lamps",
-        "prompt": "hanging brass lanterns glowing inside a vaulted bazaar, close shot",
+        "query": "British Museum",
+        "prompt": "an old storyteller's study with scrolls, a magnifying glass and a small stone tablet, warm light",
         "motion": {
           "type": "question",
-          "text": "Çarşı nasıl ayakta kaldı?"
+          "text": "Hangi kayıp yazı çözülsün?"
         }
       }
     }
