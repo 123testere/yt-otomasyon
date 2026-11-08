@@ -28,5 +28,162 @@
       "kol": "B",
       "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
     }
+  },
+  {
+    "id": "2026-11-09_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "type": "short",
+    "publishAt": "2026-11-09T05:00:00.000Z",
+    "targetWords": 94,
+    "format": "duell",
+    "season": 1,
+    "match": 7,
+    "total": 30,
+    "final": false,
+    "eveOfFinal": false,
+    "deney": {
+      "id": "muzik-seviye",
+      "kol": "A"
+    }
+  },
+  {
+    "id": "2026-11-09_UCJUP2lYvMuhcif8FavIXuYA_short1",
+    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+    "type": "short",
+    "publishAt": "2026-11-09T07:00:00.000Z",
+    "targetWords": 86,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "A",
+      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
+    }
+  },
+  {
+    "id": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-09T09:00:00.000Z",
+    "targetWords": 86,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+      "a": "Mikrodalga fırın",
+      "b": "Diş fırçası",
+      "oyA": 0,
+      "oyB": 1,
+      "kazanan": "b"
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "A",
+      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
+    }
+  },
+  {
+    "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "type": "short",
+    "publishAt": "2026-11-09T11:00:00.000Z",
+    "targetWords": 113,
+    "ceviriDilleri": [
+      "es"
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "A",
+      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
+    }
+  },
+  {
+    "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "long",
+    "publishAt": "2026-11-09T15:00:00.000Z",
+    "targetWords": 340,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 4
+    }
+  },
+  {
+    "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short2",
+    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "type": "short",
+    "publishAt": "2026-11-09T16:00:00.000Z",
+    "targetWords": 113,
+    "ceviriDilleri": [
+      "es"
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
+  },
+  {
+    "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_short1",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "short",
+    "publishAt": "2026-11-09T16:00:00.000Z",
+    "targetWords": 80,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "clipOf": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 3
+    }
+  },
+  {
+    "id": "2026-11-09_UCJUP2lYvMuhcif8FavIXuYA_short2",
+    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+    "type": "short",
+    "publishAt": "2026-11-09T16:00:00.000Z",
+    "targetWords": 86,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
+  },
+  {
+    "id": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-09T16:00:00.000Z",
+    "targetWords": 86,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+      "a": "Gözlük",
+      "b": "Çatal",
+      "oyA": 0,
+      "oyB": 0,
+      "kazanan": null
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
   }
 ]
