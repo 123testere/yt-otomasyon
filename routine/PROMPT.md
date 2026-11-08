@@ -102,6 +102,12 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 - Örnek: `diziler/ornek/zincirli-b1.json` (onaylanmış uzun bölüm) ve `diziler/ornek/zincirli-b1-shorts.json` (onaylanmış Shorts). Yapıyı ve tempoyu bunlardan al.
 - Dizi dosyasında `yazim` varsa (ör. `diziler/oyun-hikayeleri.json`: her gün Top 5 liste Shorts'u) **önce ona uy**; aşağıdaki hikâye kuralları (sezon planı, cliffhanger, soğuk açılış) o dizide geçerli değildir.
 
+**Fragman Shorts'u (`needed.json` öğesinde `"fragman": true`):** Bölüm yayınlanmadan **bir gün önce** çıkar ve izleyiciyi yarınki bölüme çağırır. Kaynak bölüm (`clipOf`) aynı turda yazılıyorsa **önce bölümü yaz**, fragmanı onun satırlarından kur.
+- `"fragman": true`, `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.12`, `bolum` kaynak bölümle aynı. 20-40 saniye, 5-8 sahne, satırların en az %60'ı bölümden.
+- Kurgu: en çarpıcı soru ya da tehdit cümlesiyle aç; bölümden 3-4 kısa, gerilimli an (yeni karakter, sır, dövüşün başı) art arda; **sonucu, kazananı ve son sahneyi asla gösterme**. Son sahne bölümün en büyük sorusunda kesilir.
+- `kapanis`: `{"baslik": "YARIN 20:00", "sonraki": "<Dizi> · Bölüm <no>: <ad>", "soru": "<tahmin sorusu, ör. Sence Su'yu bulabilecek mi?>"}` (saat kanalın uzun video saatidir).
+- Başlık merak uyandırır ve "yarın" vurgusu taşır (ör. "Yarın her şey değişiyor… ⚔️"); açıklamanın ilk satırı izleyiciye tahmin sorusu sorar, bağlantı eklenmez.
+
 **Bağımsız dizi Shorts'u (`type: short`, `clipOf` yok):** Kendi başına bir video; `"dikey": true`, `"acilis": false`, `"hiz": 1.05`, `bolum` needed.json'daki gibi (`{"no": <slot.bolum.no>, "ad": "<kısa konu>"}`). Kurgu dizinin `yazim` kurallarından gelir; `derivedFrom` yazma.
 
 **Uzun bölüm (`type: long`):**

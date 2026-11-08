@@ -43,6 +43,13 @@ function diziSlotlari(channel, dates) {
   }
   for (const date of dates) {
     if (s.long.days.includes(weekday(date)) && !dolu.has(`long:${date}`)) slots.push({ type: 'long', idx: 1, date, time: s.long.time });
+    // Fragman: bölümden bir gün önce, gelecek bölümün merak uyandıran anları (sonu verilmez)
+    const yarin = addDays(date, 1);
+    if (s.diziFragman !== false && s.long.days.includes(weekday(yarin))) {
+      // İki Shorts saati varsa kesit ilkinde, fragman ikincisinde (ör. 12:00 kesit, 21:00 fragman)
+      const saatler = [...s.shorts.times].sort();
+      slots.push({ type: 'short', idx: 2, date, time: saatler[1] ?? saatler[0], kaynak: `${yarin}_${channel.id}_long1`, fragman: true });
+    }
     const dun = addDays(date, -1);
     if (s.long.days.includes(weekday(dun)) && !dolu.has(`short:${date}`)) {
       slots.push({ type: 'short', idx: 1, date, time: [...s.shorts.times].sort()[0], kaynak: `${dun}_${channel.id}_long1` });
@@ -70,7 +77,7 @@ function slotsFor(channel, dates, now) {
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
       targetWords: dizi ? (slot.type === 'long' ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : DIZI_SHORTS_KELIME) : targetWords(s, slot.type),
-      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
+      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
       // Flaggenduell: sezon ve maç numarası yayın gününden hesaplanır (motor da aynısını kullanır).
       ...(s.contentFormat === 'flaggenduell'
         ? { format: 'duell', ...(matchFor(slot.date, channel.league?.calendarStart ?? slot.date) ?? {}) }

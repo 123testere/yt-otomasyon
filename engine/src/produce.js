@@ -43,7 +43,8 @@ const FULL_VIDEO = { tr: 'Videonun tamamı', de: 'Ganzes Video', en: 'Full video
 
 // Uzun videodan kesit Shorts: açıklamaya uzun videonun bağlantısı (yüklenmişse) eklenir.
 async function withFullVideoLink(job, settings) {
-  if (!job.derivedFrom) return job;
+  // Fragman bölümden önce yayınlanır; bölüm o an henüz gizli olduğu için bağlantı eklenmez.
+  if (!job.derivedFrom || job.fragman) return job;
   const url = (await db().doc(`videos/${job.derivedFrom}`).get()).data()?.url;
   if (!url) return job;
   const label = FULL_VIDEO[settings.language] ?? FULL_VIDEO.en;

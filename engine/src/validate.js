@@ -203,8 +203,9 @@ function diziErrors(job, slot) {
     if (job.type === 'long' && (kelime < min || kelime > max)) errors.push(`satırlarda toplam ${kelime} kelime; hedef ${slot.targetWords} (${min}-${max} arası olmalı)`);
     if (job.type === 'short' && kelime < 40) errors.push(`Shorts'ta ${kelime} kelime; en az 40`);
     if (job.type !== slot.type || job.channelId !== slot.channelId) errors.push('type/channelId needed.json ile uyuşmuyor');
+    if (slot.fragman && job.fragman !== true) errors.push('bu Shorts gelecek bölümün fragmanı: "fragman": true yaz ve bölümün sonunu verme');
     if (slot.clipOf) {
-      if (job.derivedFrom !== slot.clipOf) errors.push(`bu Shorts "${slot.clipOf}" bölümünün kısa hali: derivedFrom = "${slot.clipOf}" olmalı`);
+      if (job.derivedFrom !== slot.clipOf) errors.push(`bu Shorts "${slot.clipOf}" bölümünün ${slot.fragman ? 'fragmanı' : 'kısa hali'}: derivedFrom = "${slot.clipOf}" olmalı`);
       else {
         const kaynak = findJob(slot.clipOf);
         if (!kaynak) errors.push(`kaynak bölüm bulunamadı: ${slot.clipOf}`);
