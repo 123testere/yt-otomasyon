@@ -1,23 +1,5 @@
 [
   {
-    "id": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_short2",
-    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
-    "type": "short",
-    "publishAt": "2026-11-08T18:00:00.000Z",
-    "targetWords": 80,
-    "format": "dizi",
-    "dizi": "zincirli",
-    "clipOf": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
-    "fragman": true,
-    "dikey": true,
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 4
-    }
-  },
-  {
     "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short1",
     "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
     "type": "short",
