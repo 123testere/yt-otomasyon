@@ -21,6 +21,7 @@
     { "id": "gizem", "label": "Gizem ve Çözülmemiş Olaylar", "categoryId": "24" },
     { "id": "korku", "label": "Korku Hikâyeleri", "categoryId": "24" },
     { "id": "animasyon", "label": "Animasyon / dizi", "categoryId": "1" },
+    { "id": "oyun", "label": "Video Oyunları", "categoryId": "20" },
     { "id": "mitoloji", "label": "Mitoloji ve Efsaneler", "categoryId": "27" },
     { "id": "biyografi", "label": "Biyografi", "categoryId": "27" },
     { "id": "psikoloji", "label": "Psikoloji", "categoryId": "27" },
