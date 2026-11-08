@@ -133,7 +133,7 @@ export async function seslendir(job, dizi, dir) {
       t0, d: t - t0, mekan: sc.mekan, zaman: sc.zaman ?? 'gece', efektler: sc.efektler ?? [], saat: sc.saat ?? '03:17',
       kalabalik: sc.kalabalik ?? null, kart: sc.kart ?? null, kartSn, kadraj: sc.kadraj ?? [], nesneler: sc.nesneler ?? [],
       zincir: sc.zincir ?? null, cizim: sc.cizim ?? null, ozet: Boolean(sc.ozet), satirlar,
-      buyukYazi: sc.buyukYazi ?? null, veri: sc.veri ?? null, sira: sc.sira ?? null,
+      buyukYazi: sc.buyukYazi ?? null, veri: sc.veri ?? null, sira: sc.sira ?? null, haber: sc.haber ?? null,
     });
   }
   parcalar.push(sessiz(path.join(dir, 'son.wav'), KAPANIS_SN));

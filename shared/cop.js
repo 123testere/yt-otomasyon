@@ -347,10 +347,27 @@ export function cop(ctx, def, o) {
   if (def.sacStil === 'basortusu') {
     sekil(ctx, [[bx - 74, by + 56], [bx - 76, by - 20], [bx - 42, by - 74], [bx + 30, by - 78], [bx + 72, by - 32], [bx + 74, by + 44], [bx + 30, by + 86], [bx - 34, by + 88]], { fill: def.sac, w: 6 });
   }
-  ctx.beginPath(); ctx.arc(bx, by, COP.bas, 0, Math.PI * 2);
-  ctx.fillStyle = GOVDE; ctx.fill(); ctx.lineWidth = 6; ctx.strokeStyle = HAT; ctx.stroke();
-  sacVeSapka(ctx, def, bx, by);
-  yuz(ctx, def, bx + 14, by, { ifade, agiz, t, seed });
+  if (def.robot) {
+    // Robot kafası: metal kutu, anten ışığı, parlayan gözler, konuşurken yanıp sönen ağız LED'i
+    const r = COP.bas;
+    ctx.lineWidth = 6; ctx.strokeStyle = HAT;
+    ctx.beginPath(); ctx.moveTo(bx, by - r); ctx.lineTo(bx, by - r - 34); ctx.stroke();
+    ctx.fillStyle = Math.sin(t * 5 + seed) > 0 ? '#FF4A4A' : '#7A2A2A'; ctx.beginPath(); ctx.arc(bx, by - r - 40, 9, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = def.renk ?? '#B8C4D0'; ctx.beginPath(); ctx.roundRect(bx - r, by - r, r * 2, r * 2, 18); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#10161E'; ctx.beginPath(); ctx.roundRect(bx - r * 0.72, by - r * 0.45, r * 1.44, r * 0.6, 10); ctx.fill();
+    const goz = kirpma(t, seed * 7.1) > 0.5 ? 0.25 : 1;
+    ctx.fillStyle = '#3EE0FF'; ctx.shadowColor = '#3EE0FF'; ctx.shadowBlur = 14;
+    for (const dx of [-0.32, 0.36]) { ctx.beginPath(); ctx.ellipse(bx + dx * r + 10, by - r * 0.15, 9, 9 * goz, 0, 0, Math.PI * 2); ctx.fill(); }
+    ctx.shadowBlur = 0;
+    const ac = cl(agiz);
+    ctx.fillStyle = ac > 0.06 ? '#3EE0FF' : '#2A3A48';
+    ctx.fillRect(bx - r * 0.35 + 10, by + r * 0.42 - ac * 6, r * 0.7, 8 + ac * 12);
+  } else {
+    ctx.beginPath(); ctx.arc(bx, by, COP.bas, 0, Math.PI * 2);
+    ctx.fillStyle = GOVDE; ctx.fill(); ctx.lineWidth = 6; ctx.strokeStyle = HAT; ctx.stroke();
+    sacVeSapka(ctx, def, bx, by);
+    yuz(ctx, def, bx + 14, by, { ifade, agiz, t, seed });
+  }
 
   const kol = kolNokta(omuz, p.on[0], p.on[1]);
   uzuv(ctx, kol, kalinlik, GOVDE);

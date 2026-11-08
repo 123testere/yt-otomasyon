@@ -10,6 +10,7 @@ import { agizAcikligi, karakter, mekan } from '../../shared/dizi.js';
 import { cop } from '../../shared/cop.js';
 import { DESTAN_MEKANLAR, destanMekan } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR, oyunMekan } from '../../shared/mekan-oyun.js';
+import { TEKNO_MEKANLAR, teknoMekan } from '../../shared/mekan-tekno.js';
 import { ALAN, derle, eo, h, kit, pr } from '../../shared/cizim.js';
 
 const KART_SN = 2.4; // açılış kartı
@@ -148,6 +149,55 @@ function nesneCiz(ctx, n, u, W, yer, s) {
 
 const SIRA_RENK = { 1: '#FFC23A', 2: '#D8DEE8', 3: '#E0884A' };
 
+// Haber kartı: üstte etiket (ör. SON DAKİKA), çok satırlı başlık, kaynak ve tarih, sırayla beliren maddeler
+function haberKarti(ctx, hb, u, W, H, yatay) {
+  const renk = hb.renk ?? '#3EE0FF';
+  const a = eo(pr(u, 0, 0.35));
+  const n = (hb.maddeler ?? []).length;
+  ctx.save();
+  ctx.font = `900 ${yatay ? 76 : 70}px ${serif}`;
+  const kw = yatay ? W * 0.62 : W - 160;
+  const kx = (W - kw) / 2;
+  const satirlar = [];
+  for (const kelime of String(hb.baslik).split(/\s+/)) {
+    const son = satirlar.at(-1);
+    if (son && ctx.measureText(`${son} ${kelime}`).width <= kw - 100) satirlar[satirlar.length - 1] = `${son} ${kelime}`;
+    else satirlar.push(kelime);
+  }
+  const bs = satirlar.slice(0, 3);
+  const satH = yatay ? 86 : 80;
+  const ky = yatay ? H * 0.08 : 590;
+  const kh = 150 + bs.length * satH + 70 + n * (yatay ? 92 : 100) + 30;
+  ctx.globalAlpha = a;
+  ctx.translate(0, (1 - a) * 40);
+  ctx.fillStyle = 'rgba(6,10,22,.86)'; ctx.beginPath(); ctx.roundRect(kx, ky, kw, kh, 30); ctx.fill();
+  ctx.lineWidth = 6; ctx.strokeStyle = renk; ctx.shadowColor = renk; ctx.shadowBlur = 24; ctx.stroke(); ctx.shadowBlur = 0;
+  // Etiket hapı (yanıp söner)
+  const et = hb.etiket ?? 'SON DAKİKA';
+  ctx.font = `800 40px ${serif}`;
+  const ew = ctx.measureText(et).width + 70;
+  ctx.fillStyle = '#E8283A'; ctx.beginPath(); ctx.roundRect(kx + 40, ky - 30, ew, 64, 32); ctx.fill();
+  ctx.fillStyle = Math.sin(u * 7) > 0 ? '#FFFFFF' : '#FFB0B8'; ctx.beginPath(); ctx.arc(kx + 72, ky + 2, 9, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#FFFFFF'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText(et, kx + 94, ky + 3);
+  // Başlık
+  ctx.font = `900 ${yatay ? 76 : 70}px ${serif}`; ctx.textBaseline = 'alphabetic'; ctx.fillStyle = '#FFFFFF';
+  bs.forEach((s, k) => ctx.fillText(s, kx + 50, ky + 120 + k * satH));
+  // Kaynak
+  const kyKaynak = ky + 120 + bs.length * satH + 10;
+  if (hb.kaynak) { ctx.font = `italic 500 ${yatay ? 42 : 40}px ${serif}`; ctx.fillStyle = renk; ctx.fillText(hb.kaynak, kx + 50, kyKaynak); }
+  ctx.restore();
+  (hb.maddeler ?? []).forEach((m, k) => {
+    const b = eo(pr(u, 0.8 + k * 0.8, 1.2 + k * 0.8)) * a;
+    if (b <= 0) return;
+    const y = kyKaynak + 80 + k * (yatay ? 92 : 100);
+    ctx.save(); ctx.globalAlpha = b;
+    ctx.fillStyle = renk; ctx.beginPath(); ctx.arc(kx + 70 - (1 - b) * 30, y - 14, 12, 0, Math.PI * 2); ctx.fill();
+    ctx.font = `700 ${yatay ? 50 : 48}px ${serif}`; ctx.fillStyle = '#F4F0E8'; ctx.textAlign = 'left';
+    ctx.fillText(m, kx + 100 - (1 - b) * 30, y);
+    ctx.restore();
+  });
+}
+
 function siraKarti(ctx, s, u, W, H, yatay) {
   const renk = SIRA_RENK[s.no] ?? (s.no % 2 ? '#3EE0FF' : '#FF3EA5');
   const n = (s.maddeler ?? []).length;
@@ -242,7 +292,9 @@ export function kare(ctx, p, t, dur, fns) {
 
   ctx.save();
   if (sars) ctx.translate((h(Math.floor(t * 30)) - 0.5) * sars, (h(Math.floor(t * 30) + 7) - 0.5) * sars);
-  if (OYUN_MEKANLAR.includes(sc.mekan)) {
+  if (TEKNO_MEKANLAR.includes(sc.mekan)) {
+    teknoMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d) });
+  } else if (OYUN_MEKANLAR.includes(sc.mekan)) {
     oyunMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, veri: sc.veri });
   } else if (DESTAN_MEKANLAR.includes(sc.mekan)) {
     destanMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5 });
@@ -319,8 +371,9 @@ export function kare(ctx, p, t, dur, fns) {
     const zip = 1 + (1 - eo(pr(u, 0.15, 0.5))) * 0.4;
     const cy = yatay ? H * 0.3 : 690;
     ctx.save(); ctx.translate(W / 2, cy); ctx.scale(zip, zip); ctx.translate(-W / 2, -cy);
-    const boy = yatay ? 130 : 120;
-    ctx.font = `900 ${boy}px ${serif}`; ctx.textAlign = 'center'; ctx.lineJoin = 'round';
+    let boy = yatay ? 130 : 120;
+    ctx.font = `900 ${boy}px ${serif}`;
+    while (ctx.measureText(sc.buyukYazi.ust).width > W * 0.9 && boy > 50) { boy -= 6; ctx.font = `900 ${boy}px ${serif}`; } ctx.textAlign = 'center'; ctx.lineJoin = 'round';
     ctx.globalAlpha = a; ctx.lineWidth = boy * 0.14; ctx.strokeStyle = '#000'; ctx.strokeText(sc.buyukYazi.ust, W / 2, cy);
     ctx.fillStyle = '#FFC23A'; ctx.fillText(sc.buyukYazi.ust, W / 2, cy);
     ctx.restore();
@@ -329,6 +382,7 @@ export function kare(ctx, p, t, dur, fns) {
 
   // Sıralama kartı: dev sıra numarası, oyunun adı ve sırayla beliren özellikler
   if (sc.sira && kartBitti) siraKarti(ctx, sc.sira, u, W, H, yatay);
+  if (sc.haber && kartBitti) haberKarti(ctx, sc.haber, u, W, H, yatay);
 
   // Ara kart (ör. "15 YIL ÖNCE", "BİRİNCİ KISIM · Demirci'nin Oğlu")
   const ks = sc.kartSn ?? 2.2;

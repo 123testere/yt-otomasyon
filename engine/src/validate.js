@@ -6,10 +6,12 @@ import { pathToFileURL } from 'node:url';
 import { CONFIG_DIR, DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
 import { KAPAK_ALAN, cizimHatasi } from '../../shared/cizim.js';
 import { deneyHatalari } from './lib/deney.js';
+import { haberLinkleri } from './lib/haberler.js';
 import { POZLAR, ESYALAR } from '../../shared/cop.js';
 import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../shared/dizi.js';
 import { DESTAN_MEKANLAR } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
+import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -96,7 +98,7 @@ function cizimErrors(job) {
 }
 
 // Dizi formatı (Bölüm Bölüm): sahneler kodla çizilir, satırlar karakter sesleriyle okunur.
-const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR, ...OYUN_MEKANLAR];
+const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR, ...OYUN_MEKANLAR, ...TEKNO_MEKANLAR];
 const DIZI_EFEKTLER = [...EFEKTLER, 'agir-cekim', 'beyaz-cakma'];
 const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan'];
 const sayi01 = (v) => typeof v === 'number' && v >= 0 && v <= 1;
@@ -137,6 +139,10 @@ function diziErrors(job, slot) {
     if (sc.sira !== undefined && !(Number.isInteger(sc.sira?.no) && sc.sira.no >= 1 && sc.sira.no <= 10 && str(sc.sira?.ad, 28) && optStr(sc.sira?.tur, 30)
       && (sc.sira.maddeler === undefined || (Array.isArray(sc.sira.maddeler) && sc.sira.maddeler.length <= 3 && sc.sira.maddeler.every((m) => str(m, 24)))))) {
       e('sira {no 1-10, ad ≤28, tur ≤30, maddeler: en fazla 3 madde, her biri ≤24} olmalı');
+    }
+    if (sc.haber !== undefined && !(str(sc.haber?.baslik, 70) && optStr(sc.haber?.etiket, 22) && optStr(sc.haber?.kaynak, 40)
+      && (sc.haber.maddeler === undefined || (Array.isArray(sc.haber.maddeler) && sc.haber.maddeler.length <= 3 && sc.haber.maddeler.every((m) => str(m, 30)))))) {
+      e('haber {baslik ≤70, etiket ≤22, kaynak ≤40, maddeler: en fazla 3 madde, her biri ≤30} olmalı');
     }
     if (sc.veri !== undefined && !(Array.isArray(sc.veri) && sc.veri.length >= 2 && sc.veri.length <= 8 && sc.veri.every((v) => typeof v === 'number' && v > 0))) e('veri 2-8 pozitif sayı olmalı');
     const kadraj = Array.isArray(sc.kadraj) ? sc.kadraj : [];
@@ -289,8 +295,17 @@ function ekAlanHatalari(job) {
 const kelimeSay = (t) => String(t ?? '').trim().split(/\s+/).filter(Boolean).length;
 
 // Yeni yazılan senaryoya (needed.json'daki slot) uygulanan kurallar: kuyruktaki eski işleri geçersiz kılmaz.
-function slotHatalari(job, slot) {
+function slotHatalari(job, slot, { haberKontrol = false } = {}) {
   const errors = [...deneyHatalari(job, slot.deney)];
+  // Haber kanalı: video, haber listesindeki gerçek bir habere dayanmalı (uydurma haber olmasın).
+  if (slot.haberAkisi) {
+    if (!/^https?:\/\/\S+$/.test(job.kaynakLink ?? '') || !str(job.kaynak, 40)) {
+      errors.push(`haber kanalı: kaynak (site adı) ve kaynakLink (haberin bağlantısı) yazılmalı; haberi config/haberler-${slot.haberAkisi}.json listesinden seç`);
+    } else if (haberKontrol) {
+      const linkler = haberLinkleri(slot.haberAkisi);
+      if (linkler && !linkler.has(job.kaynakLink)) errors.push(`kaynakLink config/haberler-${slot.haberAkisi}.json listesinde yok; listedeki bir haberi seç ve bağlantıyı aynen kopyala`);
+    }
+  }
   if (typeof job.title === 'string' && job.title.length > 70) {
     errors.push(`başlık ${job.title.length} karakter; telefonda kesilmemesi için en fazla 70 (ideal 40-60)`);
   }
@@ -317,7 +332,7 @@ function slotHatalari(job, slot) {
   return errors;
 }
 
-export function validateJob(job, { fileId, needed, takenTitles } = {}) {
+export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = false } = {}) {
   const errors = [];
   const req = (cond, msg) => { if (!cond) errors.push(msg); };
 
@@ -368,7 +383,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   if (job.format === 'dizi') {
     const slot = needed?.find((n) => n.id === job.id);
     errors.push(...diziErrors(job, slot));
-    if (slot) errors.push(...slotHatalari(job, slot));
+    if (slot) errors.push(...slotHatalari(job, slot, { haberKontrol }));
     return errors;
   }
 
@@ -390,7 +405,7 @@ export function validateJob(job, { fileId, needed, takenTitles } = {}) {
   });
 
   const slot = needed?.find((n) => n.id === job.id);
-  if (slot) errors.push(...slotHatalari(job, slot));
+  if (slot) errors.push(...slotHatalari(job, slot, { haberKontrol }));
   if (slot && Array.isArray(job.scenes)) {
     const words = job.scenes.reduce((sum, s) => sum + countWords(s.narration ?? ''), 0);
     const min = Math.round(slot.targetWords * (1 - WORD_TOLERANCE));
@@ -424,7 +439,7 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
       const job = JSON.parse(fs.readFileSync(path.join(QUEUE_DIR, f), 'utf8'));
       const takenTitles = usedTitles(job.channelId, job.id);
       for (const t of queuedTitles[job.channelId] ?? []) takenTitles.add(t);
-      errors = validateJob(job, { fileId: f.slice(0, -5), needed, takenTitles });
+      errors = validateJob(job, { fileId: f.slice(0, -5), needed, takenTitles, haberKontrol: true });
       (queuedTitles[job.channelId] ??= []).push(normalizeTitle(job.title));
     } catch (e) {
       errors = [`JSON okunamadı: ${e.message}`];

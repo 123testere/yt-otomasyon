@@ -242,7 +242,7 @@ Bu Shorts bağımsız değildir; `clipOf` id'li uzun videonun bir bölümünden 
 
 ## Konu seçimi
 
-- **Güncel haber kanalları** (`brief.ekTalimat` güncel/günlük haber istiyorsa): Konuyu bilgine göre değil, **web araması** yaparak seç (son 48 saat). Haberi en az bir güvenilir kaynaktan (resmî duyuru, büyük haber sitesi) doğrula; tarih, şirket, ürün adı ve sayıları kaynaktaki gibi yaz. Doğrulayamadığın ya da 48 saatten eski haberi kullanma. Geleceğe dair kısımlar açıkça tahmin olarak söylenir ("olabilir", "bekleniyor"). Açıklamaya kaynağın adını yaz.
+- **Güncel haber kanalları** (`needed.json` öğesinde `haberAkisi` varsa): Haberi **`config/haberler-<haberAkisi>.json`** listesinden seç (`plan.js` bu listeyi her çalıştığında güvenilir kaynakların RSS akışlarından son 48 saat için tazeler). `kullanildi: true` olanları ve aynı gün başka Shorts'ta seçtiğin haberi alma; Türkiye'deki izleyicinin en çok merak edeceği, büyük şirket/ürün/çığır açan gelişme haberlerini tercih et. Dosyaya `"kaynak": "<site adı>"` ve `"kaynakLink": "<listedeki link, aynen>"` yaz (doğrulayıcı listede olmayan bağlantıyı reddeder). Web araması yapabiliyorsan bağlantıyı açıp ayrıntıyı doğrula; yapamıyorsan **sadece başlık ve özetteki bilgiyi** kullan, eklemeler uydurma. Geleceğe dair kısımlar açıkça tahmin olarak söylenir ("olabilir", "bekleniyor"). Açıklamaya kaynağın adını ve bağlantısını yaz. Liste boşsa o slotu yazma.
 - `recentTitles` içindeki konuları **tekrarlama**. Aynı konunun farklı açısı ancak açıkça yeni bir bilgi katıyorsa olur.
 - Aynı kanalın aynı günkü Shorts'u ile uzun videosu farklı konularda olsun.
 - Gerçek, doğrulanabilir bilgi kullan. Emin olmadığın tarih, sayı veya alıntı uydurma. Tartışmalı konularda "kaynaklara göre", "rivayete göre" gibi ifadeler kullan.

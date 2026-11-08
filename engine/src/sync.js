@@ -15,6 +15,7 @@ import { countVotes } from './lib/votes.js';
 import { publishDueReels } from './lib/instagram-queue.js';
 import { aktifDersler, optimizeChannel } from './lib/optimize.js';
 import { collectComments, postReplies } from './lib/comments.js';
+import { akislariTazele } from './lib/haberler.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -153,6 +154,7 @@ async function main() {
   }
 
   const needed = neededJobs(channels, { now, extraExisting: videosSnap.docs.map((v) => v.id) });
+  await akislariTazele(channels, { now }).catch((e) => console.warn(`Haber akışı: ${e.message}`));
 
   // Uygulamadan gelen kanal kurulum isteği varsa iş akışı Remotion'u kurup engine/src/kurulum.js'i çalıştırır.
   const setupPending = channelsSnap.docs.some((d) => d.data().settings?.kurulum?.istek

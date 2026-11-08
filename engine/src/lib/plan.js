@@ -77,6 +77,8 @@ function slotsFor(channel, dates, now) {
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
       targetWords: dizi ? (slot.type === 'long' ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : DIZI_SHORTS_KELIME) : targetWords(s, slot.type),
+      // Haber kanalı: konu config/haberler-<akış>.json listesinden seçilir, kaynak bağlantısı zorunlu.
+      ...(s.haberAkisi ? { haberAkisi: s.haberAkisi } : {}),
       ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
       // Flaggenduell: sezon ve maç numarası yayın gününden hesaplanır (motor da aynısını kullanır).
       ...(s.contentFormat === 'flaggenduell'
