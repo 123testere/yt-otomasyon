@@ -1,0 +1,46 @@
+{
+ "id": "ornek_oyun_minecraft",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-09T05:00:00.000Z",
+ "bolum": { "no": 1, "ad": "Minecraft" },
+ "title": "Tek Başına Yaptığı Oyunu 2,5 Milyar Dolara Sattı 🎮",
+ "description": "Minecraft'ın hikâyesi: tek bir programcının boş zamanlarında yazdığı oyun nasıl tarihin en çok satan oyunu oldu? Sence bir oyunu efsane yapan grafik mi, özgürlük mü?\n\n#minecraft #oyun #videooyunları #gaming",
+ "tags": ["minecraft", "minecraft hikayesi", "oyun hikayeleri", "video oyunları", "notch", "mojang", "microsoft", "gaming"],
+ "topic": "Minecraft'ın tek kişilik projeden 2,5 milyar dolarlık satışa hikâyesi",
+ "muzik": "epik",
+ "muzikSeviye": 0.08,
+ "kapanis": { "baslik": "SENCE?", "sonraki": "Her gün yeni bir oyun hikâyesi", "soru": "Bir oyunu efsane yapan grafik mi, özgürlük mü?" },
+ "scenes": [
+  { "kisim": "Kanca", "mekan": "grafik", "veri": [1, 2, 4, 7, 12], "buyukYazi": { "ust": "2,5 MİLYAR $", "alt": "tek bir oyun" },
+    "satirlar": [{ "kim": "anlatici", "metin": "Tek başına yaptığı bir oyunu iki buçuk milyar dolara sattı." }] },
+  { "mekan": "garaj", "buyukYazi": { "ust": "2009" },
+    "kadraj": [{ "id": "gelistirici", "x": 0.62, "yon": -1, "poz": "dusun", "ifade": "dusunceli" }],
+    "satirlar": [{ "kim": "anlatici", "metin": "2009'da İsveçli programcı Markus Persson, boş zamanlarında bloklardan oluşan küçük bir oyun yazdı." }] },
+  { "mekan": "garaj",
+    "kadraj": [{ "id": "gelistirici", "x": 0.62, "yon": -1, "poz": "dur", "ifade": "gulumsuyor", "esya": "disket", "adimlar": [{ "sn": 1.6, "poz": "isaret" }] }],
+    "satirlar": [{ "kim": "anlatici", "metin": "Grafikleri basitti, bir hedefi bile yoktu. Ama oyuncular istedikleri her şeyi inşa edebiliyordu." }] },
+  { "mekan": "oyun-salonu",
+    "kadraj": [
+      { "id": "oyuncu", "hareket": { "x0": -0.1, "x1": 0.35, "sure": 1.6, "kos": true }, "esya": "oyun-kolu", "ifade": "saskin" },
+      { "id": "oyuncu-2", "hareket": { "x0": 1.1, "x1": 0.68, "sure": 1.6, "kos": true }, "esya": "oyun-kolu", "ifade": "gulumsuyor" }
+    ],
+    "satirlar": [{ "kim": "anlatici", "metin": "Oyun daha bitmeden satılmaya başladı ve kulaktan kulağa dünyaya yayıldı." }] },
+  { "mekan": "ofis", "buyukYazi": { "ust": "2014", "alt": "Microsoft kapıyı çaldı" },
+    "kadraj": [
+      { "id": "patron", "hareket": { "x0": 1.1, "x1": 0.7, "sure": 1.4 }, "ifade": "gulumsuyor", "adimlar": [{ "sn": 1.6, "poz": "el-salla" }] },
+      { "id": "gelistirici", "x": 0.3, "yon": 1, "poz": "dur", "ifade": "saskin" }
+    ],
+    "satirlar": [{ "kim": "anlatici", "metin": "2014'te Microsoft kapıyı çaldı ve oyunun şirketini iki buçuk milyar dolara satın aldı." }] },
+  { "mekan": "grafik", "veri": [2, 5, 9, 15, 22, 30], "buyukYazi": { "ust": "300 MİLYON+", "alt": "satış" },
+    "satirlar": [{ "kim": "anlatici", "metin": "Bugün Minecraft, 300 milyonu aşan satışla tarihin en çok satan oyunu." }] },
+  { "mekan": "fuar", "kalabalik": 1,
+    "kadraj": [{ "id": "gelistirici", "x": 0.5, "yon": 1, "poz": "zafer", "esya": "kupa", "ifade": "gulumsuyor" }],
+    "satirlar": [{ "kim": "anlatici", "metin": "Peki sence bir oyunu efsane yapan grafik mi, yoksa özgürlük mü? Yorumlara yaz, abone olmayı da unutma!" }] }
+ ]
+}

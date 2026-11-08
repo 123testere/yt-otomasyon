@@ -9,6 +9,7 @@ import { serif, serifReady } from './fonts.js';
 import { agizAcikligi, karakter, mekan } from '../../shared/dizi.js';
 import { cop } from '../../shared/cop.js';
 import { DESTAN_MEKANLAR, destanMekan } from '../../shared/mekan-destan.js';
+import { OYUN_MEKANLAR, oyunMekan } from '../../shared/mekan-oyun.js';
 import { ALAN, derle, eo, h, kit, pr } from '../../shared/cizim.js';
 
 const KART_SN = 2.4; // açılış kartı
@@ -168,7 +169,9 @@ export function kare(ctx, p, t, dur, fns) {
 
   ctx.save();
   if (sars) ctx.translate((h(Math.floor(t * 30)) - 0.5) * sars, (h(Math.floor(t * 30) + 7) - 0.5) * sars);
-  if (DESTAN_MEKANLAR.includes(sc.mekan)) {
+  if (OYUN_MEKANLAR.includes(sc.mekan)) {
+    oyunMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, veri: sc.veri });
+  } else if (DESTAN_MEKANLAR.includes(sc.mekan)) {
     destanMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5 });
   } else {
     mekan(ctx, sc.mekan, { W, H, t, zaman: sc.zaman, efektler: ef, saat: sc.saat, kamera: u / Math.max(1, sc.d) });
@@ -236,6 +239,20 @@ export function kare(ctx, p, t, dur, fns) {
   if (yatay) yazi(ctx, rozet, 50, 70, 34, { c: RENK.altin, a: kartBitti ? 0.85 : 0, al: 'left' });
   else yazi(ctx, rozet, 540, 150, 40, { c: RENK.altin, a: kartBitti ? 0.9 : 0 });
   if (sc.ozet && kartBitti) yazi(ctx, 'Önceki bölümde…', W / 2, yatay ? 140 : 220, 44, { it: true, w: 500, a: 0.85 });
+
+  // Dev yazı (ör. "30 MİLYON" / "kopya sattı"): sahne boyunca görünür, karakterlerin üstünde
+  if (sc.buyukYazi && kartBitti) {
+    const a = eo(pr(u, 0.15, 0.55));
+    const zip = 1 + (1 - eo(pr(u, 0.15, 0.5))) * 0.4;
+    const cy = yatay ? H * 0.3 : 690;
+    ctx.save(); ctx.translate(W / 2, cy); ctx.scale(zip, zip); ctx.translate(-W / 2, -cy);
+    const boy = yatay ? 130 : 120;
+    ctx.font = `900 ${boy}px ${serif}`; ctx.textAlign = 'center'; ctx.lineJoin = 'round';
+    ctx.globalAlpha = a; ctx.lineWidth = boy * 0.14; ctx.strokeStyle = '#000'; ctx.strokeText(sc.buyukYazi.ust, W / 2, cy);
+    ctx.fillStyle = '#FFC23A'; ctx.fillText(sc.buyukYazi.ust, W / 2, cy);
+    ctx.restore();
+    if (sc.buyukYazi.alt) yazi(ctx, sc.buyukYazi.alt, W / 2, cy + (yatay ? 80 : 76), yatay ? 56 : 54, { a, w: 700 });
+  }
 
   // Ara kart (ör. "15 YIL ÖNCE", "BİRİNCİ KISIM · Demirci'nin Oğlu")
   const ks = sc.kartSn ?? 2.2;

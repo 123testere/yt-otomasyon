@@ -1,0 +1,23 @@
+{
+ "id": "oyun-hikayeleri",
+ "ad": "Oyun Hikâyeleri",
+ "stil": "cop",
+ "format": "yatay",
+ "tur": "belgesel / oyun dünyası (gerçek olaylar, çöp adam animasyonuyla anlatılır)",
+ "ozet": "Video oyunlarının gerçek hikâyeleri: bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler. Anlatıcı kanal sahibi; karakterler olayı canlandırır.",
+ "kurallar": [
+  "Sadece doğrulanabilir bilgi: tarih, satış rakamı, şirket ve kişi adları kaynaklardaki gibi; emin olmadığını yazma.",
+  "Gerçek kişilere uydurma söz söyletme: diyalog yerine anlatıcı anlatır, karakterler canlandırır.",
+  "İlk sahne bir kanca: en şaşırtıcı rakam ya da olay, buyukYazi ile ekranda.",
+  "Rakamlar ve yıllar buyukYazi ile ekrana gelir; satış artışı grafik mekânında veri ile gösterilir.",
+  "Oyun karakterleri, logolar ve oyunların kendi görselleri çizilmez; mekân ve çöp adamlarla anlatılır."
+ ],
+ "anlatici": { "id": "anlatici", "ses": { "eleven": "qLnVd55Hf2R5L8dmdHoH", "speed": 1.15 } },
+ "karakterler": {
+  "gelistirici": { "ad": "Geliştirici", "renk": "#3A6ACA", "kusak": "#3A6ACA", "sacStil": "dagnik", "sac": "#3A2A1A", "gozluk": true, "seed": 21, "ses": { "eleven": "Qinv0VWOWA2tKLNbP7xp" }, "kim": "Hikâyenin geliştiricisi (genel çöp adam; gerçek kişinin yerine geçer, konuşmaz ya da genel cümleler kurar)." },
+  "gelistirici-2": { "ad": "Tasarımcı", "renk": "#C84A7A", "kusak": "#C84A7A", "sacStil": "atkuyrugu", "sac": "#5A2A1A", "cinsiyet": "k", "seed": 22, "ses": { "eleven": "i0MwGlmJMVRT2teAFS3N" }, "kim": "Ekip arkadaşı, tasarımcı." },
+  "patron": { "ad": "Yönetici", "renk": "#22242C", "kusak": "#8A1A1A", "sacStil": "kisa", "sac": "#141414", "sakal": "biyik", "kalin": 1.15, "seed": 23, "ses": { "eleven": "bbnzyQpbvnDaCct77O9l" }, "kim": "Büyük şirket yöneticisi, yatırımcı." },
+  "oyuncu": { "ad": "Oyuncu", "renk": "#E2B23C", "kusak": "#E2B23C", "sacStil": "kisa", "sac": "#2A1A10", "sapka": "kasket", "sapkaRenk": "#C83A3A", "olcek": 0.7, "seed": 24, "ses": { "eleven": "C2jG96AELxzEOpRw8N5m", "speed": 1.08 }, "kim": "Genç oyuncu; hayranları temsil eder." },
+  "oyuncu-2": { "ad": "Oyuncu", "renk": "#4AA86A", "kusak": "#4AA86A", "sacStil": "uzun", "sac": "#1A1210", "cinsiyet": "k", "olcek": 0.72, "seed": 25, "ses": { "eleven": "C2jG96AELxzEOpRw8N5m" }, "kim": "Genç oyuncu." }
+ }
+}

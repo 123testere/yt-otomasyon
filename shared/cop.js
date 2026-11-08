@@ -6,7 +6,7 @@ import { KAS, cl, elips, eo, h, kirpma, sekil, ton } from './dizi.js';
 
 export const POZLAR = ['dur', 'yuru', 'kos', 'isaret', 'korku', 'dusun', 'el-salla', 'omuz', 'eller-belde', 'egil',
   'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi'];
-export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas'];
+export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket'];
 
 const COP = { bas: 58, kalca: -215, omuz: -372, kol1: 92, kol2: 88, bacak1: 110, bacak2: 108 };
 const GOVDE = '#F3EAD7';
@@ -223,6 +223,30 @@ function esyaCiz(ctx, esya, el, aci, t, seed) {
     ctx.lineWidth = 9; ctx.strokeStyle = '#6A4428'; ctx.lineCap = 'round';
     ctx.beginPath(); ctx.moveTo(el[0], el[1] - 10); ctx.lineTo(el[0] + 14, 0); ctx.stroke();
     ctx.beginPath(); ctx.arc(el[0] - 12, el[1] - 10, 12, Math.PI, 0); ctx.stroke();
+  }
+  if (esya === 'oyun-kolu') {
+    ctx.save(); ctx.translate(el[0], el[1] - 6);
+    ctx.fillStyle = '#2A2A34'; ctx.strokeStyle = HAT; ctx.lineWidth = 5;
+    ctx.beginPath(); ctx.roundRect(-44, -20, 88, 40, 20); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#D8D8E0'; ctx.fillRect(-32, -4, 20, 7); ctx.fillRect(-25.5, -11, 7, 21);
+    for (const [bx, by, c] of [[22, -6, '#E84A4A'], [32, 4, '#4AA8E8'], [12, 4, '#7CD84A']]) { ctx.fillStyle = c; ctx.beginPath(); ctx.arc(bx, by, 5.5, 0, Math.PI * 2); ctx.fill(); }
+    ctx.restore();
+  }
+  if (esya === 'kupa') {
+    ctx.save(); ctx.translate(el[0], el[1] - 10);
+    ctx.fillStyle = '#F2C23A'; ctx.strokeStyle = HAT; ctx.lineWidth = 5;
+    ctx.beginPath(); ctx.moveTo(-34, -90); ctx.lineTo(34, -90); ctx.quadraticCurveTo(30, -36, 0, -28); ctx.quadraticCurveTo(-30, -36, -34, -90); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.arc(-34, -70, 14, Math.PI * 0.5, Math.PI * 1.5); ctx.stroke(); ctx.beginPath(); ctx.arc(34, -70, 14, -Math.PI * 0.5, Math.PI * 0.5); ctx.stroke();
+    ctx.fillRect(-6, -30, 12, 22); ctx.fillStyle = '#8A6A2A'; ctx.fillRect(-24, -10, 48, 14); ctx.strokeRect(-24, -10, 48, 14);
+    ctx.fillStyle = 'rgba(255,255,255,' + (0.4 + Math.sin(t * 4) * 0.3) + ')'; ctx.fillRect(-20, -82, 8, 30);
+    ctx.restore();
+  }
+  if (esya === 'disket') {
+    ctx.save(); ctx.translate(el[0], el[1] - 30); ctx.rotate(-0.2);
+    ctx.fillStyle = '#2A4A9A'; ctx.strokeStyle = HAT; ctx.lineWidth = 5;
+    ctx.fillRect(-30, -30, 60, 60); ctx.strokeRect(-30, -30, 60, 60);
+    ctx.fillStyle = '#C8CCD4'; ctx.fillRect(-16, -30, 32, 20); ctx.fillStyle = '#F2F2EA'; ctx.fillRect(-22, 4, 44, 22);
+    ctx.restore();
   }
   if (esya === 'tas') {
     sekil(ctx, [[el[0] - 60, el[1] - 10], [el[0] - 40, el[1] - 70], [el[0] + 30, el[1] - 80], [el[0] + 70, el[1] - 30], [el[0] + 50, el[1] + 10]], { fill: '#8A8478', w: 6 });

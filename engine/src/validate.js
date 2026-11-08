@@ -9,6 +9,7 @@ import { deneyHatalari } from './lib/deney.js';
 import { POZLAR, ESYALAR } from '../../shared/cop.js';
 import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../shared/dizi.js';
 import { DESTAN_MEKANLAR } from '../../shared/mekan-destan.js';
+import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -95,7 +96,7 @@ function cizimErrors(job) {
 }
 
 // Dizi formatı (Bölüm Bölüm): sahneler kodla çizilir, satırlar karakter sesleriyle okunur.
-const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR];
+const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR, ...OYUN_MEKANLAR];
 const DIZI_EFEKTLER = [...EFEKTLER, 'agir-cekim', 'beyaz-cakma'];
 const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan'];
 const sayi01 = (v) => typeof v === 'number' && v >= 0 && v <= 1;
@@ -132,6 +133,8 @@ function diziErrors(job, slot) {
     if (sc.kart !== undefined && !(str(sc.kart?.ust, 30) && optStr(sc.kart?.alt, 40))) e('kart {ust ≤30, alt ≤40} olmalı');
     if (sc.sure !== undefined && !(typeof sc.sure === 'number' && sc.sure > 0 && sc.sure <= 12)) e('sure 0-12 sn olmalı');
     if (!optStr(sc.aciklama, 300)) e('aciklama ≤300 karakter');
+    if (sc.buyukYazi !== undefined && !(str(sc.buyukYazi?.ust, 14) && optStr(sc.buyukYazi?.alt, 30))) e('buyukYazi {ust ≤14, alt ≤30} olmalı');
+    if (sc.veri !== undefined && !(Array.isArray(sc.veri) && sc.veri.length >= 2 && sc.veri.length <= 8 && sc.veri.every((v) => typeof v === 'number' && v > 0))) e('veri 2-8 pozitif sayı olmalı');
     const kadraj = Array.isArray(sc.kadraj) ? sc.kadraj : [];
     if (sc.kadraj !== undefined && !Array.isArray(sc.kadraj)) e('kadraj bir dizi olmalı');
     if (kadraj.length > 4) e('kadrajda en fazla 4 karakter olabilir');
