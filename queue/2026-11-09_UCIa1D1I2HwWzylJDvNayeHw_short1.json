@@ -1,0 +1,79 @@
+{
+  "id": "2026-11-09_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-09T05:00:00.000Z",
+  "topic": "Lidyalıların dünyanın ilk paralarını basması",
+  "title": "İlk Parayı Anadolu'da Bastılar: Lidya",
+  "hookText": "İlk para Anadolu'dan",
+  "description": "Lidyalılar, bugünkü Manisa yakınlarındaki Sardes'te milattan önce yedinci yüzyılda ilk madeni paraları bastı. Kral Krezus ise saf altın ve gümüş paralarla anılır. Paranın Anadolu'daki doğuş hikâyesi.\n\n#lidya #ilkpara #sardes #tarih",
+  "tags": [
+    "lidya",
+    "ilk para",
+    "sardes",
+    "krezus",
+    "anadolu tarihi",
+    "tarih",
+    "ilginç tarih bilgileri",
+    "madeni para"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, cebindeki paranın ilk atası nerede doğdu sence? Cevap Anadolu'da, bugünkü Manisa yakınlarındaki Sardes kentinde.",
+      "visual": {
+        "query": "Sardis ruins",
+        "prompt": "ancient ruined columns of Sardis in western Anatolia at golden hour, wide shot",
+        "motion": {
+          "type": "question",
+          "text": "İlk para nerede basıldı?"
+        }
+      }
+    },
+    {
+      "narration": "Lidyalılar, milattan önce yedinci yüzyılda altın ve gümüş karışımı elektrondan küçük, damgalı madeni paralar bastılar. Ağırlık ve değer artık üstündeki damgayla güvence altındaydı.",
+      "visual": {
+        "query": "Lydian electrum coin",
+        "prompt": "an ancient electrum coin with a lion stamp on a worn stone surface, macro shot, warm light",
+        "motion": {
+          "type": "stat",
+          "value": "7. yüzyıl",
+          "label": "Milattan önce"
+        }
+      }
+    },
+    {
+      "narration": "Sonra Kral Krezus zamanında, saf altın ve saf gümüşten ayrı paralar çıktı. Zenginliği sözlere bile girdi: Krezus kadar zengin.",
+      "visual": {
+        "query": "Croesus Lydia king",
+        "prompt": "a wealthy ancient king's treasure room with gold coins in heaps, torchlight, wide shot",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Elektron",
+            "value": "Karışım"
+          },
+          "right": {
+            "title": "Krezus",
+            "value": "Saf maden"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Kısacası ticaretin dilini değiştiren icat, Anadolu topraklarından yayıldı. Peki sence para olmasaydı dünya nasıl olurdu? Yorumlara yaz, videoyu beğen ve abone ol.",
+      "visual": {
+        "query": "ancient coins",
+        "prompt": "an old storyteller's study with a table of ancient coins and a map of Anatolia, warm light",
+        "motion": {
+          "type": "list",
+          "title": "Paradan önce",
+          "items": [
+            "Takas",
+            "Tartı",
+            "Güven sorunu"
+          ]
+        }
+      }
+    }
+  ]
+}

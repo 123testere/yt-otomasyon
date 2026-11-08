@@ -1,0 +1,82 @@
+{
+  "id": "2026-11-08_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "publishAt": "2026-11-08T05:00:00.000Z",
+  "topic": "Rosetta Taşı ve Mısır hiyeroglifinin çözülmesi",
+  "title": "Hiyeroglifleri Çözen Taş: 1799'da Bulundu",
+  "hookText": "Bu taş sırrı açtı",
+  "description": "Rosetta Taşı 1799'da Mısır'da bulundu ve aynı metni üç yazıyla taşıyordu. Bu sayede Champollion 1822'de hiyeroglifleri çözdü. Antik Mısır'ın dilinin yeniden okunmasını sağlayan o taşın hikâyesi.\n\n#rosettataşı #hiyeroglif #mısır #tarih",
+  "tags": [
+    "rosetta taşı",
+    "hiyeroglif",
+    "antik mısır",
+    "champollion",
+    "tarih",
+    "ilginç tarih bilgileri",
+    "yazı tarihi",
+    "british museum"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, binlerce yıl okunamayan bir yazıyı tek bir taş nasıl çözdü dersin? Hikâye, 1799 yılında Mısır'da, Rosetta kenti yakınlarında başlıyor.",
+      "visual": {
+        "query": "Rosetta Stone",
+        "prompt": "an ancient dark stone slab covered in inscriptions lying in a sandy fortress ruin, warm light, close-up",
+        "motion": {
+          "type": "stat",
+          "value": "1799",
+          "label": "Rosetta Taşı bulundu"
+        }
+      }
+    },
+    {
+      "narration": "Taşın üstünde aynı metin üç farklı yazıyla duruyordu: hiyeroglif, demotik ve Yunanca. Yunancayı okuyabilen bilginler, ötekilerin anahtarını elde ettiler.",
+      "visual": {
+        "query": "Rosetta Stone inscription",
+        "prompt": "three bands of different ancient scripts carved on a stone slab, raking light, macro shot",
+        "motion": {
+          "type": "list",
+          "title": "Üç yazı",
+          "items": [
+            "Hiyeroglif",
+            "Demotik",
+            "Yunanca"
+          ]
+        }
+      }
+    },
+    {
+      "narration": "Yıllarca uğraşıldı. Sonunda Fransız bilgin Champollion, 1822'de hiyeroglif işaretlerinin hem sesi hem anlamı gösterdiğini ortaya koydu.",
+      "visual": {
+        "query": "Champollion",
+        "prompt": "a scholar at a candlelit desk copying hieroglyph signs onto paper, warm light, over-the-shoulder view",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "1799",
+              "label": "Taş bulundu"
+            },
+            {
+              "year": "1822",
+              "label": "Yazı çözüldü"
+            }
+          ],
+          "highlight": 1
+        }
+      }
+    },
+    {
+      "narration": "Bugün taş Londra'daki British Museum'da duruyor. Sence kaybolmuş başka hangi yazıyı bir gün okuyabiliriz? Yorumlara yaz, videoyu beğen ve abone ol.",
+      "visual": {
+        "query": "British Museum",
+        "prompt": "an old storyteller's study with scrolls, a magnifying glass and a small stone tablet, warm light",
+        "motion": {
+          "type": "question",
+          "text": "Hangi kayıp yazı çözülsün?"
+        }
+      }
+    }
+  ]
+}

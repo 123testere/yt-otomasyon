@@ -1,0 +1,317 @@
+{
+  "id": "2026-11-09_UCIa1D1I2HwWzylJDvNayeHw_long1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "long",
+  "publishAt": "2026-11-09T05:00:00.000Z",
+  "topic": "Kadeş Antlaşması ve Hititlerle Mısır arasındaki ilk barış",
+  "title": "İlk Barış Antlaşması Anadolu Kilinde Yazıldı",
+  "titleAlt": "Hitit Kralı ile Firavun Barış İçin Neden Yemin Etti?",
+  "hookText": "İlk barış sözü",
+  "thumbnailText": "İLK BARIŞ SÖZÜ",
+  "thumbnailTextAlt": "FİRAVUN GERİ ADIM ATTI",
+  "thumbnailPrompt": "ancient clay tablet with cuneiform writing glowing in candlelight on the right side, dark background, high contrast, dramatic",
+  "oynatmaListesi": "Anadolu'nun Bilinmeyen Tarihi",
+  "description": "Kadeş Antlaşması, bilinen ilk büyük barış antlaşmalarından biri olarak anılır. Hititlerle Mısır arasında yaklaşık milattan önce 1259'da yapılan bu antlaşmanın hikâyesini, Kadeş Savaşı'ndan Hattuşa'daki tablete kadar anlattık.\n\n#kadeşantlaşması #hititler #ilkbarış #tarih",
+  "tags": [
+    "kadeş antlaşması",
+    "hititler",
+    "ilk barış antlaşması",
+    "II. Ramses",
+    "hattuşa",
+    "antik mısır",
+    "kadeş savaşı",
+    "tarih belgeseli",
+    "anadolu tarihi",
+    "çivi yazısı"
+  ],
+  "scenes": [
+    {
+      "narration": "Evlat, tarihteki ilk barış antlaşmasını kim imzaladı dersin? İki dev imparatorluk, birbirini yok etmek yerine bir tablete yemin ettiler. Üstelik o tabletin bir kopyası bugün New York'ta, Birleşmiş Milletler binasında duruyor.",
+      "visual": {
+        "query": "Kadesh treaty tablet",
+        "prompt": "an ancient clay tablet with cuneiform writing on a dark table in candlelight, close-up, dramatic light",
+        "motion": {
+          "type": "title",
+          "text": "İlk barış antlaşması",
+          "sub": "Kadeş, yaklaşık 3280 yıl önce"
+        }
+      }
+    },
+    {
+      "narration": "Bu hikâye Anadolu'da, bugünkü Çorum yakınlarındaki Hattuşa'da başlıyor. Orası, Hititlerin başkentiydi. Hititler o çağın en güçlü devletlerinden biriydi. Güneyde ise firavunların Mısır'ı vardı. İki devlet, Suriye'nin zengin topraklarında karşı karşıya geldi.",
+      "visual": {
+        "query": "Hattusa",
+        "prompt": "the stone ruins and walls of Hattusa on a Anatolian hillside, golden hour, wide shot",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Hitit",
+            "value": "Anadolu"
+          },
+          "right": {
+            "title": "Mısır",
+            "value": "Nil"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Bugün size bu hikâyeyi dört bölümde anlatacağım. Önce savaşın nasıl çıktığını, sonra bir tabletin nasıl bulunduğunu, ardından antlaşmanın içinde neler yazdığını ve en sonunda bugüne ne bıraktığını göreceğiz. Merakla izleyin.",
+      "visual": {
+        "query": "ancient scroll map",
+        "prompt": "an old map of the ancient Near East spread on a wooden desk with a lamp, warm light, top-down view"
+      }
+    },
+    {
+      "narration": "Önce savaşın kendisi. Milattan önce 1274 yılında, Orontes Nehri kıyısındaki Kadeş'te iki ordu çarpıştı. Kaynaklara göre binlerce savaş arabası sahadaydı. Mısır'ın başında ünlü II. Ramses, Hitit tarafında ise Kral Muvatalli vardı.",
+      "visual": {
+        "query": "Battle of Kadesh relief",
+        "prompt": "ancient stone relief of chariots charging in battle, raking light, close-up",
+        "motion": {
+          "type": "timeline",
+          "items": [
+            {
+              "year": "1274",
+              "label": "Kadeş Savaşı"
+            },
+            {
+              "year": "1259",
+              "label": "Barış antlaşması"
+            }
+          ],
+          "highlight": 0
+        }
+      },
+      "bolum": {
+        "ad": "Kadeş Savaşı"
+      }
+    },
+    {
+      "narration": "Savaş arabaları o çağın tankıydı. Kaynaklara göre Hitit arabaları üç kişi taşıyordu, Mısır arabaları ise iki. Hızlı Mısır arabaları ile ağır ama güçlü Hitit arabaları, Kadeş'in ovasında kıyasıya karşılaştı.",
+      "visual": {
+        "query": "ancient war chariot",
+        "prompt": "an ancient wooden war chariot with horses on a dusty plain, side view, golden light"
+      }
+    },
+    {
+      "narration": "Ramses, önce yanlış bilgiyle pusuya düşürüldü. Kendi anlatısına göre ise ordusunu toparladı ve tek başına zafer kazandı. Tapınak duvarlarına kendisini böyle kazıttı. Ama tarihçiler bu hikâyeye ihtiyatla bakıyor.",
+      "visual": {
+        "query": "Ramesseum relief Kadesh",
+        "prompt": "Egyptian temple wall relief of a pharaoh in a chariot with a drawn bow, warm light, low angle"
+      }
+    },
+    {
+      "narration": "Çünkü Hitit kaynaklarında bambaşka bir hava var. Savaş sonunda Mısır'ın Kadeş'e giremediği, bölgenin Hititlerin elinde kaldığı düşünülüyor. Yani iki taraf da kendini galip ilan etti. Ortada kesin bir kazanan yoktu.",
+      "visual": {
+        "query": "ancient chariot wheels",
+        "prompt": "broken ancient wooden chariot wheels in desert dust after a battle, dusk, wide shot",
+        "motion": {
+          "type": "quote",
+          "text": "Her iki taraf da zafer iddia etti.",
+          "author": "Tarihçilerin ortak yorumu"
+        }
+      }
+    },
+    {
+      "narration": "Sence galip kim? Yorumlara yaz, sonra kalın, çünkü asıl ilginç kısım şimdi geliyor. Savaştan sonra yıllarca bu iki devlet birbirinden korkarak yaşadı. Sınırlar sürekli gergindi ve her an yeni bir savaş çıkabilirdi.",
+      "visual": {
+        "query": "ancient border fortress",
+        "prompt": "a lone stone fortress watching over a barren border valley at dusk, wide shot",
+        "motion": {
+          "type": "question",
+          "text": "Kadeş'te kim kazandı sence?"
+        }
+      }
+    },
+    {
+      "narration": "Bu arada Hititlerde taht değişmişti. Kral olan Hattuşili, yeğeni III. Murşili'yi tahttan indirerek yönetimi ele geçirmişti. Böyle bir kral için dış tehditleri azaltmak, yeni iktidarını sağlamlaştırmanın yoluydu.",
+      "visual": {
+        "query": "Hittite king relief",
+        "prompt": "a carved stone relief of a Hittite king with a pointed cap, side light, close-up"
+      }
+    },
+    {
+      "narration": "Gerilim, Hititlerde yeni bir kral tahta çıkınca değişti. Adı III. Hattuşili idi. Üstelik doğuda Asur gibi yeni bir güç yükseliyordu. Hem Mısır hem Hitit için barış, birdenbire ciddi bir ihtiyaca dönüştü.",
+      "visual": {
+        "query": "Assyrian relief",
+        "prompt": "Assyrian stone relief of warriors marching, side light, close-up",
+        "motion": {
+          "type": "stat",
+          "value": "1259",
+          "label": "Barış yılı"
+        }
+      },
+      "bolum": {
+        "ad": "Barışa Giden Yol"
+      }
+    },
+    {
+      "narration": "Mısır tarafında da Ramses'in kendi hesapları vardı. Ordusunu yıllardır sınırda tutmak çok pahalıydı. Delta bölgesinde kurduğu yeni başkent Pi-Ramses'i güvende tutmak, tapınaklar yaptırmak için de huzura ihtiyacı vardı.",
+      "visual": {
+        "query": "ancient Egyptian temple construction",
+        "prompt": "workers building a huge Egyptian temple with scaffolding and ramps, warm dusty light, wide shot"
+      }
+    },
+    {
+      "narration": "Mektuplar gidip gelmeye başladı. Hitit kraliçesi Puduhepa bu yazışmalarda önemli bir rol oynadı. O devirde diplomasinin dili Akadcaydı ve tabletler kilin üzerine çivi yazısıyla kazınıyordu.",
+      "visual": {
+        "query": "cuneiform letter clay",
+        "prompt": "a hand pressing a reed stylus into wet clay tablet, workshop, warm light, close-up"
+      }
+    },
+    {
+      "narration": "Sonunda iki taraf anlaştı. Antlaşma yaklaşık milattan önce 1259 yılında yapıldı. Aynı metin iki dilde yazıldı: Hititler kil tablete çivi yazısıyla, Mısırlılar ise tapınak duvarlarına hiyeroglifle kazıdı.",
+      "visual": {
+        "query": "Karnak temple hieroglyphs",
+        "prompt": "hieroglyphic inscriptions carved on a massive temple wall at Karnak, sunlight, wide shot",
+        "motion": {
+          "type": "compare",
+          "left": {
+            "title": "Hititler",
+            "value": "Kil tablet"
+          },
+          "right": {
+            "title": "Mısırlılar",
+            "value": "Tapınak duvarı"
+          }
+        }
+      }
+    },
+    {
+      "narration": "Şimdi tabletin bulunuşuna gelelim. Hattuşa'daki kazılar 1906'da Alman arkeolog Hugo Winckler ile hızlandı. Kralın arşivinden binlerce tablet çıktı. Aralarında bu antlaşmanın Akadca yazılmış Hitit kopyası da vardı.",
+      "visual": {
+        "query": "Hugo Winckler Boğazköy excavation",
+        "prompt": "archaeologists carefully brushing clay tablets in an excavation trench in Anatolia, early twentieth century feel, warm light",
+        "motion": {
+          "type": "stat",
+          "value": "1906",
+          "label": "Tablet Hattuşa'da bulundu"
+        }
+      },
+      "bolum": {
+        "ad": "Tabletin Bulunuşu"
+      }
+    },
+    {
+      "narration": "Böylece Mısır duvarındaki yazıyla Hitit tabletindeki yazı yan yana okunabildi. Bilim insanları iki metnin birbirini doğruladığını gördü. Tarihte ilk kez aynı antlaşmanın iki tarafın kendi kayıtlarıyla elimizde olması, çok nadir bir şans.",
+      "visual": {
+        "query": "museum clay tablet display",
+        "prompt": "a museum display case with an ancient clay tablet softly lit, dark room, close-up"
+      }
+    },
+    {
+      "narration": "Bugün tablet İstanbul Arkeoloji Müzelerinde sergileniyor. Evlat, bir düşün: Çok yakınında, Sultanahmet'in hemen yanında, üç bin yıldan eski bir barış sözü duruyor. Yolun düşerse uğra ve o kil parçasının karşısında bir an dur.",
+      "visual": {
+        "query": "Istanbul Archaeology Museums",
+        "prompt": "the neoclassical facade of the Istanbul Archaeology Museums in soft daylight, wide shot",
+        "motion": {
+          "type": "icon",
+          "emoji": "🏛️",
+          "text": "İstanbul Arkeoloji Müzeleri"
+        }
+      }
+    },
+    {
+      "narration": "Peki antlaşmada neler yazıyordu? Önce, iki devletin bundan sonra birbirine saldırmayacağı. Sonra, üçüncü bir düşman bir tarafa saldırırsa diğerinin ona yardım edeceği. Yani bu, aynı zamanda bir savunma ittifakıydı.",
+      "visual": {
+        "query": "ancient allied armies",
+        "prompt": "two ancient armies standing side by side under banners at dawn, wide shot",
+        "motion": {
+          "type": "list",
+          "title": "Antlaşmanın maddeleri",
+          "items": [
+            "Saldırmama sözü",
+            "Karşılıklı yardım",
+            "Kaçakların iadesi"
+          ]
+        }
+      },
+      "bolum": {
+        "ad": "Antlaşmanın İçi"
+      }
+    },
+    {
+      "narration": "Antlaşmanın kendisi de çok düzenliydi. Bir giriş, tarafların kimliği, geçmiş savaşın özeti, sonra maddeler, sonra tanrıların şahitliği ve sonunda sözü bozanlara kutsal lanet geliyordu. Bugünkü sözleşmelerin ataları, kil üzerinde yazılmıştı.",
+      "visual": {
+        "query": "cuneiform tablet lines",
+        "prompt": "close-up of neatly ruled lines of cuneiform on a clay tablet, raking light"
+      }
+    },
+    {
+      "narration": "Metinde kaçakların iadesine dair maddeler de vardı. Hatta iki ülke ahitlerine tanrıları şahit tuttu. Binlerce tanrı ve tanrıça, antlaşmanın tanıkları olarak yazıldı. Sözü bozanı onların cezalandıracağına inanıyorlardı.",
+      "visual": {
+        "query": "ancient gods statues",
+        "prompt": "rows of carved ancient stone deities in a temple of Hattusa, torchlight, low angle"
+      }
+    },
+    {
+      "narration": "Antlaşma kâğıt üzerinde kalmadı. Kaynaklara göre aradan yıllar geçince Ramses, bir Hitit prensesiyle evlendi. Bu evlilik iki sarayı akraba yaptı ve barışı sağlamlaştırdı. Mektuplar yüzyıllık bir dostluğun izlerini taşıyor.",
+      "visual": {
+        "query": "ancient royal wedding",
+        "prompt": "an ancient royal procession bringing a bride into a palace courtyard, warm light, wide shot",
+        "motion": {
+          "type": "stat",
+          "value": "1245",
+          "label": "Yaklaşık evlilik yılı"
+        }
+      }
+    },
+    {
+      "narration": "Barış gerçekten tuttu mu? Kaynaklara göre iki devlet arasında uzun bir huzur dönemi yaşandı. Hitit devleti yaklaşık milattan önce 1180 civarında yıkılana kadar iki ülke birbirine bir daha ciddi şekilde saldırmadı. Bu, o çağ için çok uzun bir süre.",
+      "visual": {
+        "query": "ancient peaceful trade route",
+        "prompt": "a caravan of traders walking along a dusty ancient road at sunrise, wide shot",
+        "motion": {
+          "type": "stat",
+          "value": "70+ yıl",
+          "label": "Uzun süren huzur"
+        }
+      }
+    },
+    {
+      "narration": "Şimdi bugüne bırakılanlara bakalım. Birleşmiş Milletler binasında, New York'ta, bu antlaşmanın bir kopyası sergileniyor. Antlaşmanın böyle bir yerde durması, barışın insanlık tarihindeki eski bir dava olduğunu hatırlatıyor.",
+      "visual": {
+        "query": "United Nations headquarters New York",
+        "prompt": "the United Nations headquarters building facing the East River at sunrise, wide shot",
+        "motion": {
+          "type": "title",
+          "text": "Barış eski bir söz",
+          "sub": "New York'da bir kopyası var"
+        }
+      },
+      "bolum": {
+        "ad": "Bugüne Kalan"
+      }
+    },
+    {
+      "narration": "Hattuşa kenti de bugün unutulmuş değil. 1986'da UNESCO Dünya Mirası Listesine alındı. Kral kapısı, aslanlı kapı, tapınaklar ve devasa surlar hâlâ ayakta. Anadolu'da hâlâ bu kadar eski bir devlet merkezinin duvarlarına dokunabilirsiniz.",
+      "visual": {
+        "query": "Hattusa Lion Gate",
+        "prompt": "the Lion Gate of Hattusa with two carved stone lions, bright sky, low angle",
+        "motion": {
+          "type": "stat",
+          "value": "1986",
+          "label": "UNESCO Dünya Mirası"
+        }
+      }
+    },
+    {
+      "narration": "Üstelik bu antlaşma, iki tarafın kendi diliyle ve karşılıklı yazıldığı ilk büyük metinlerden biri. Bugünkü diplomasinin pek çok alışkanlığı, yani karşılıklı yeminler, şahitler ve kopyalar, yaklaşık 3000 yıl önce çoktan ortada vardı.",
+      "visual": {
+        "query": "ancient diplomacy tablets",
+        "prompt": "two identical clay tablets side by side on a wooden table, soft light, top-down view"
+      }
+    },
+    {
+      "narration": "İşte böylece iki imparatorluğun, kılıç yerine kil ve mürekkeple verdiği sözün hikâyesini bitirdik. Sence barış mı daha zor, savaş mı? Cevabını yorumlara yaz. Hikâyeyi sevdiysen videoyu beğen, kanala abone ol, birlikte daha nice sırrı açalım.",
+      "visual": {
+        "query": "old storyteller study",
+        "prompt": "an old storyteller's candlelit study with books, maps and a small clay tablet, warm light",
+        "motion": {
+          "type": "question",
+          "text": "Barış mı zor, savaş mı?"
+        }
+      }
+    }
+  ]
+}
