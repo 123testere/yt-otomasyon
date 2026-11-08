@@ -126,3 +126,13 @@ export async function uploadExtras({ secret, job, settings, videoId, srt, hashta
   return { ...sonuc, izinEksik };
 }
 
+
+// Kesit Shorts'una kanal sahibinin yorumu: uzun videonun/bölümün bağlantısı (Shorts'tan uzun videoya geçişi artırır).
+// API yorumu sabitleyemez; kanal sahibinin yorumu yine de üstte görünür.
+export async function baglantiYorumu({ secret, videoId, metin }) {
+  const yt = google.youtube({ version: 'v3', auth: authFor(secret) });
+  await yt.commentThreads.insert({
+    part: ['snippet'],
+    requestBody: { snippet: { videoId, topLevelComment: { snippet: { textOriginal: metin } } } },
+  });
+}

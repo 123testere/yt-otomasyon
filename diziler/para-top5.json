@@ -21,13 +21,55 @@
   "Scenes 2-6: mekan 'siralama', sira {no: 5→1, ad: item name ≤28, tur: short category ≤30, maddeler: exactly 3 short points ≤24 each}. Narration: 1-2 short punchy sentences per item ('Number five: …'). Number one gets efektler ['beyaz-cakma'] and 'And number one…'. No kadraj on siralama scenes.",
   "Last scene: mekan 'fuar', kalabalik 1, 'girisimci' in zafer pose with esya 'kupa' or 'para'; ask viewers which one they would pick and to subscribe. kapanis {baslik: 'YOUR #1?', sonraki: short call to action (e.g. 'Most voted wins a deep dive'), soru: list-specific question}.",
   "Use 'grafik' (with veri) only for the hook if the topic is about growth or income. Total 70-110 words (about 40-50 seconds). Do not write muzik or muzikSeviye.",
-  "Title: curiosity-driven, ≤60 characters, ends with one emoji (💰, 🚀, 🧠). First description line names the topic with keywords and asks a question; then 3-5 hashtags like #money #business #motivation #sidehustle."
+  "Title: curiosity-driven, ≤60 characters, ends with one emoji (💰, 🚀, 🧠). First description line names the topic with keywords and asks a question; then 3-5 hashtags like #money #business #motivation #sidehustle.",
+  "LONG VIDEO (type long, weekly on Saturday): 8-10 minute Top 10 in English (horizontal). Structure: 1) Intro scene (kisim 'Intro', mekan 'fuar' or 'ofis', buyukYazi {ust: 'TOP 10'}, hook + \"Let's count down!\"). 2) For each rank: a 'siralama' scene (sira {no, ad, tur, maddeler: 3}) with 2-3 sentences, then one illustration scene (mekan 'garaj', 'ofis', 'grafik' with veri, or 'fuar'; characters girisimci/calisan/yatirimci/ogrenci; buyukYazi for a number) with 2-4 sentences: a concrete example, how to start, a realistic caveat. 3) Four chapters via kisim: 'Intro', '10-7', '6-4', '3-1'. 4) Closing: 'fuar', question + subscribe call. Write 'hiz': 1.1. Total words targetWords ±30%. thumbnailText (≤4 words, e.g. 'START WITH $0') and kapak {sahne: an illustration scene with characters on the right half, not a siralama scene}. titleAlt and thumbnailTextAlt are required."
  ],
- "anlatici": { "id": "anlatici", "ses": { "klon": true } },
+ "anlatici": {
+  "id": "anlatici",
+  "ses": {
+   "klon": true
+  }
+ },
  "karakterler": {
-  "girisimci": { "ad": "Founder", "renk": "#1E2A44", "kusak": "#C8A83A", "sacStil": "kisa", "sac": "#2A1A10", "seed": 31, "kim": "Ambitious entrepreneur in a dark suit." },
-  "calisan": { "ad": "Worker", "renk": "#6A6A72", "kusak": "#3A6ACA", "sacStil": "dagnik", "sac": "#3A2A1A", "gozluk": true, "seed": 32, "kim": "Tired 9-to-5 employee." },
-  "yatirimci": { "ad": "Investor", "renk": "#22242C", "kusak": "#8A1A1A", "sacStil": "kel", "sakal": "biyik", "kalin": 1.15, "seed": 33, "kim": "Wealthy investor." },
-  "ogrenci": { "ad": "Student", "renk": "#C84A7A", "kusak": "#C84A7A", "sacStil": "atkuyrugu", "sac": "#5A2A1A", "cinsiyet": "k", "olcek": 0.85, "seed": 34, "kim": "Young student starting out." }
+  "girisimci": {
+   "ad": "Founder",
+   "renk": "#1E2A44",
+   "kusak": "#C8A83A",
+   "sacStil": "kisa",
+   "sac": "#2A1A10",
+   "seed": 31,
+   "kim": "Ambitious entrepreneur in a dark suit."
+  },
+  "calisan": {
+   "ad": "Worker",
+   "renk": "#6A6A72",
+   "kusak": "#3A6ACA",
+   "sacStil": "dagnik",
+   "sac": "#3A2A1A",
+   "gozluk": true,
+   "seed": 32,
+   "kim": "Tired 9-to-5 employee."
+  },
+  "yatirimci": {
+   "ad": "Investor",
+   "renk": "#22242C",
+   "kusak": "#8A1A1A",
+   "sacStil": "kel",
+   "sakal": "biyik",
+   "kalin": 1.15,
+   "seed": 33,
+   "kim": "Wealthy investor."
+  },
+  "ogrenci": {
+   "ad": "Student",
+   "renk": "#C84A7A",
+   "kusak": "#C84A7A",
+   "sacStil": "atkuyrugu",
+   "sac": "#5A2A1A",
+   "cinsiyet": "k",
+   "olcek": 0.85,
+   "seed": 34,
+   "kim": "Young student starting out."
+  }
  }
 }

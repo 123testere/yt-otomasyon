@@ -24,11 +24,51 @@
   "Son sahne: izleyiciye seçmeli soru ve yorum çağrısı ('Sen olsan…? Yorumlara yaz, takipte kal!'). kapanis {baslik: 'SENCE?', sonraki: 'Her gün yapay zekâ gündemi', soru: habere özel soru}.",
   "Başlık ≤60 karakter, merak uyandıran, sonunda 🤖 ya da ⚡; açıklamanın ilk satırı haberin özü (anahtar kelimeyle), ikinci satır 'Kaynak: <site> <bağlantı>', sonra 3-5 hashtag. muzik ve muzikSeviye yazma."
  ],
- "anlatici": { "id": "anlatici", "ses": { "eleven": "qLnVd55Hf2R5L8dmdHoH", "speed": 1.2 } },
+ "anlatici": {
+  "id": "anlatici",
+  "ses": {
+   "klon": true
+  }
+ },
  "karakterler": {
-  "arastirmaci": { "ad": "Araştırmacı", "renk": "#E8E8F0", "kusak": "#3EE0FF", "sacStil": "dagnik", "sac": "#2A1A10", "gozluk": true, "seed": 41, "kim": "Yapay zekâ araştırmacısı (beyaz önlük)." },
-  "robot": { "ad": "Robot", "robot": true, "renk": "#B8C4D0", "kusak": "#3EE0FF", "seed": 42, "kim": "Yapay zekâyı temsil eden robot." },
-  "ceo": { "ad": "Şirket Yöneticisi", "renk": "#22242C", "kusak": "#A86BFF", "sacStil": "kisa", "sac": "#141414", "kalin": 1.1, "seed": 43, "kim": "Teknoloji şirketi yöneticisi (genel karakter, gerçek kişi değil)." },
-  "kullanici": { "ad": "Kullanıcı", "renk": "#4AA86A", "kusak": "#4AA86A", "sacStil": "atkuyrugu", "sac": "#5A2A1A", "cinsiyet": "k", "olcek": 0.85, "seed": 44, "kim": "Sıradan kullanıcı." }
+  "arastirmaci": {
+   "ad": "Araştırmacı",
+   "renk": "#E8E8F0",
+   "kusak": "#3EE0FF",
+   "sacStil": "dagnik",
+   "sac": "#2A1A10",
+   "gozluk": true,
+   "seed": 41,
+   "kim": "Yapay zekâ araştırmacısı (beyaz önlük)."
+  },
+  "robot": {
+   "ad": "Robot",
+   "robot": true,
+   "renk": "#B8C4D0",
+   "kusak": "#3EE0FF",
+   "seed": 42,
+   "kim": "Yapay zekâyı temsil eden robot."
+  },
+  "ceo": {
+   "ad": "Şirket Yöneticisi",
+   "renk": "#22242C",
+   "kusak": "#A86BFF",
+   "sacStil": "kisa",
+   "sac": "#141414",
+   "kalin": 1.1,
+   "seed": 43,
+   "kim": "Teknoloji şirketi yöneticisi (genel karakter, gerçek kişi değil)."
+  },
+  "kullanici": {
+   "ad": "Kullanıcı",
+   "renk": "#4AA86A",
+   "kusak": "#4AA86A",
+   "sacStil": "atkuyrugu",
+   "sac": "#5A2A1A",
+   "cinsiyet": "k",
+   "olcek": 0.85,
+   "seed": 44,
+   "kim": "Sıradan kullanıcı."
+  }
  }
 }

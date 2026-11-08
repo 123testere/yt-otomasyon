@@ -12,7 +12,7 @@ import { frameFromVideo, makeShortCover } from './pipeline/cover.js';
 import { queueForInstagram } from './lib/instagram-queue.js';
 import { run } from './lib/util.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
-import { bolumSatirlari, uploadExtras } from './pipeline/extras.js';
+import { baglantiYorumu, bolumSatirlari, uploadExtras } from './pipeline/extras.js';
 import { deneyAyari } from './lib/deney.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
 
@@ -160,6 +160,19 @@ async function main() {
         if (ekstra.izinEksik) await firestore.doc(`channels/${job.channelId}`).update({ izinEksik: true });
       } catch (e) {
         console.warn(`  ekstralar: ${e.message}`);
+      }
+      // Kesit Shorts'u: altına uzun videonun bağlantısıyla kanal yorumu
+      if (job.type === 'short' && job.derivedFrom && !job.fragman) {
+        try {
+          const kaynak = (await firestore.doc(`videos/${job.derivedFrom}`).get()).data();
+          if (kaynak?.url) {
+            const ad = job.format === 'dizi' && job.bolum?.no ? `Bölüm ${job.bolum.no}` : 'Videonun';
+            const metin = settings.language === 'tr' ? `▶ ${ad} tamamı burada: ${kaynak.url}` : `▶ Watch the full video: ${kaynak.url}`;
+            await baglantiYorumu({ secret, videoId: yt.videoId, metin });
+          }
+        } catch (e) {
+          console.warn(`  bağlantı yorumu: ${e.message}`);
+        }
       }
       // Instagram açık kanallarda Shorts, yayın saatinde Reels olarak da paylaşılır (senkronizasyon gönderir).
       await queueForInstagram(firestore, await withFullVideoLink(job, settings), settings, built.videoPath);

@@ -6,7 +6,7 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT } from '../lib/paths.js';
+import { DONE_DIR, QUEUE_DIR, ROOT } from '../lib/paths.js';
 import { probeDuration, retry, run } from '../lib/util.js';
 import { spellNumbersTr } from '../lib/numbers-tr.js';
 import { alignWords } from './subtitles.js';
@@ -57,7 +57,7 @@ function rakamGrupla(metin, words, dil = 'tr') {
 }
 
 // Döner: { words: [{t, d, w}], file } (file: ffmpeg'e verilecek ham ses)
-async function satirSesi(metin, ses, base, dil = 'tr', klonWav = null) {
+async function satirSesi(metin, ses, base, dil = 'tr', klonWav = null, sadeceOnbellek = false) {
   const okunus = dil === 'tr' ? spellNumbersTr(metin) : metin;
   if (ses.klon) {
     // Chatterbox kelime zamanı vermez; kelimeler satırın süresine okunuş uzunluğuyla dağıtılır.
@@ -70,6 +70,8 @@ async function satirSesi(metin, ses, base, dil = 'tr', klonWav = null) {
     const mp3 = path.join(ELEVEN_CACHE, `${key}.mp3`);
     const json = path.join(ELEVEN_CACHE, `${key}.json`);
     if (!fs.existsSync(mp3) || !fs.existsSync(json)) {
+      // Derlemede yeni ses üretilmez (kredi harcanmasın); önbellekte yoksa iş durur.
+      if (sadeceOnbellek) throw new Error(`derleme: satırın sesi önbellekte yok, kredi harcamamak için durduruldu ("${metin.slice(0, 40)}…")`);
       const r = await retry(() => elevenScene(okunus, { voiceId: ses.eleven, speed: ses.speed ?? 1, voiceSettings: ses.ayar ?? {} }, mp3),
         { label: 'ElevenLabs', tries: 2, delayMs: 5000 });
       fs.writeFileSync(json, JSON.stringify(r.words));
@@ -115,7 +117,7 @@ export async function seslendir(job, dizi, dir) {
       const kim = s.kim ?? 'anlatici';
       const base = path.join(dir, `s${String(i).padStart(2, '0')}-${String(j).padStart(2, '0')}`);
       const ses = sesOf(dizi, kim);
-      const { words: raw, file: girdi } = await satirSesi(s.metin.trim(), ses, base, dil, ses.klon ? klonlar.get(`${klonSira++}`) : null);
+      const { words: raw, file: girdi } = await satirSesi(s.metin.trim(), ses, base, dil, ses.klon ? klonlar.get(`${klonSira++}`) : null, Boolean(job.sadeceOnbellek));
       const son = j === sc.satirlar.length - 1;
       const filtre = [hiz !== 1 ? `atempo=${hiz}` : null, `apad=pad_dur=${son ? sahneArasi : satirArasi}`].filter(Boolean).join(',');
       await run('ffmpeg', ['-y', '-v', 'error', '-i', girdi, '-af', filtre, '-ar', '48000', '-ac', '2', `${base}.wav`]);
@@ -197,13 +199,14 @@ function kapakSatirlari(text) {
 // Sesten bağımsız çizilir; kapak denemesi (kapak-dene.js) yedek yazıyla aynı kareyi yeniden üretir.
 export async function diziKapak({ job, dir, text }) {
   fs.mkdirSync(dir, { recursive: true });
+  if (Array.isArray(job.derleme) && !job.scenes?.length) job = derlemeKur(job);
   const dizi = diziYukle(job.dizi);
   const k = Math.min(Math.max(0, job.kapak?.sahne ?? 0), job.scenes.length - 1);
   const sc = job.scenes[k];
   const sahne = {
     t0: 0, d: 30, mekan: sc.mekan, zaman: sc.zaman ?? 'gece', efektler: (sc.efektler ?? []).filter((e) => e !== 'beyaz-cakma'),
     saat: sc.saat ?? '03:17', kalabalik: sc.kalabalik ?? null, kart: null, kartSn: 0, kadraj: sc.kadraj ?? [],
-    nesneler: sc.nesneler ?? [], zincir: null, cizim: null, ozet: false, satirlar: [],
+    nesneler: sc.nesneler ?? [], zincir: null, cizim: null, ozet: false, satirlar: [], veri: sc.veri ?? null,
   };
   const yatay = dizi.format === 'yatay' && !job.dikey;
   const png = await remotionStill(yatay ? 'DiziKareYatay' : 'DiziKare', {
@@ -216,7 +219,37 @@ export async function diziKapak({ job, dir, text }) {
   return jpg;
 }
 
+// Haftalık "Tek Parça": bölümlerin sahneleri art arda; her bölümün başında kart ve YouTube bölümü olacak kısım adı.
+export function derlemeKur(job) {
+  const bolumler = job.derleme.map((id) => {
+    for (const dir of [DONE_DIR, QUEUE_DIR]) {
+      const f = path.join(dir, `${id}.json`);
+      if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+    }
+    throw new Error(`derleme: bölüm bulunamadı (${id})`);
+  });
+  const scenes = bolumler.flatMap((b) => b.scenes.map((sc, i) => {
+    const { kisim, kart, ...gerisi } = sc;
+    return i === 0
+      ? { ...gerisi, kisim: `Bölüm ${b.bolum.no}: ${b.bolum.ad}`, kart: { ust: `BÖLÜM ${b.bolum.no}`, alt: b.bolum.ad }, kartSn: 2.4 }
+      : gerisi;
+  }));
+  const ilk = bolumler[0].bolum.no;
+  const son = bolumler.at(-1).bolum.no;
+  return {
+    ...job, scenes, sadeceOnbellek: true, acilis: true,
+    bolum: { no: ilk, ad: `Bölüm ${ilk}-${son} · Tek Parça` },
+    kapanis: bolumler.at(-1).kapanis ?? job.kapanis,
+    // Kapak: son bölümün kapak sahnesi (derlemedeki sırasına kaydırılarak)
+    kapak: job.kapak ?? (bolumler.at(-1).kapak
+      ? { ...bolumler.at(-1).kapak, sahne: scenes.length - bolumler.at(-1).scenes.length + bolumler.at(-1).kapak.sahne }
+      : { sahne: 0, sn: 2 }),
+    muzik: job.muzik ?? bolumler[0].muzik, muzikSeviye: job.muzikSeviye ?? bolumler[0].muzikSeviye,
+  };
+}
+
 export async function buildDizi(job, settings, { workDir }) {
+  if (Array.isArray(job.derleme)) job = derlemeKur(job);
   const dir = path.join(workDir, job.id);
   fs.mkdirSync(dir, { recursive: true });
   const dizi = diziYukle(job.dizi);

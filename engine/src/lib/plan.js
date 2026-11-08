@@ -42,6 +42,8 @@ function diziSlotlari(channel, dates) {
     return slots;
   }
   for (const date of dates) {
+    // Haftalık "Tek Parça": son 7 günün bölümleri tek videoda (ses önbellekten, kredi harcamaz)
+    if (Number.isInteger(s.diziDerleme) && weekday(date) === s.diziDerleme) slots.push({ type: 'long', idx: 2, date, time: s.long.time, derleme: true });
     if (s.long.days.includes(weekday(date)) && !dolu.has(`long:${date}`)) slots.push({ type: 'long', idx: 1, date, time: s.long.time });
     // Fragman: bölümden bir gün önce, gelecek bölümün merak uyandıran anları (sonu verilmez)
     const yarin = addDays(date, 1);
@@ -79,7 +81,7 @@ function slotsFor(channel, dates, now) {
       targetWords: dizi ? (slot.type === 'long' ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : DIZI_SHORTS_KELIME) : targetWords(s, slot.type),
       // Haber kanalı: konu config/haberler-<akış>.json listesinden seçilir, kaynak bağlantısı zorunlu.
       ...(s.haberAkisi ? { haberAkisi: s.haberAkisi } : {}),
-      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
+      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.derleme ? { derleme: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
       // Flaggenduell: sezon ve maç numarası yayın gününden hesaplanır (motor da aynısını kullanır).
       ...(s.contentFormat === 'flaggenduell'
         ? { format: 'duell', ...(matchFor(slot.date, channel.league?.calendarStart ?? slot.date) ?? {}) }
@@ -182,7 +184,18 @@ function attachDizi(slots, channels) {
       for (const slot of kendi) slot.bolum = { no: ++son };
       continue;
     }
-    for (const slot of kendi.filter((s) => s.type === 'long')) slot.bolum = { no: ++son };
+    for (const slot of kendi.filter((s) => s.type === 'long' && !s.derleme)) slot.bolum = { no: ++son };
+    // Derleme: yayınından önceki 7 gün içindeki bölümler (derleme olmayan uzun videolar)
+    for (const slot of kendi.filter((s) => s.derleme)) {
+      const at = Date.parse(slot.publishAt);
+      const bolumler = [...jobs, ...kendi].filter((j) => j.type === 'long' && !j.derleme && j.bolum?.no
+        && Date.parse(j.publishAt) < at && at - Date.parse(j.publishAt) <= 7 * 24 * 3600 * 1000)
+        .sort((a, b) => a.bolum.no - b.bolum.no);
+      if (bolumler.length < 2) { dusen.add(slot.id); continue; }
+      slot.derleme = bolumler.map((j) => j.id);
+      slot.bolum = { no: bolumler[0].bolum.no, son: bolumler.at(-1).bolum.no };
+      slot.targetWords = 0;
+    }
     for (const slot of kendi.filter((s) => s.type === 'short')) {
       const kaynak = kendi.find((s) => s.id === slot.clipOf) ?? jobs.find((j) => j.id === slot.clipOf);
       if (!kaynak?.bolum?.no) { dusen.add(slot.id); continue; }

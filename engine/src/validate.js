@@ -380,6 +380,20 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
     return errors;
   }
 
+  if (job.format === 'dizi' && (Array.isArray(job.derleme) || needed?.find((n) => n.id === job.id)?.derleme)) {
+    // Haftalık derleme: sahneler motor tarafından bölümlerden kurulur; sadece yayın bilgileri kontrol edilir
+    const slot = needed?.find((n) => n.id === job.id);
+    if (!Array.isArray(job.derleme) || job.derleme.length < 2) errors.push('derleme: birleştirilecek bölüm id listesi (en az 2) olmalı');
+    else {
+      if (slot?.derleme && JSON.stringify(job.derleme) !== JSON.stringify(slot.derleme)) errors.push(`derleme needed.json'daki listeyle aynı olmalı: ${JSON.stringify(slot.derleme)}`);
+      for (const id of job.derleme) if (!findJob(id)) errors.push(`derlemedeki bölüm bulunamadı: ${id}`);
+    }
+    if (job.scenes !== undefined) errors.push('derlemede scenes yazma (bölümlerden otomatik kurulur)');
+    if (typeof job.dizi !== 'string') errors.push('dizi eksik');
+    if (job.type !== 'long') errors.push('derleme uzun video olmalı');
+    if (slot) errors.push(...slotHatalari(job, slot, { haberKontrol }));
+    return errors;
+  }
   if (job.format === 'dizi') {
     const slot = needed?.find((n) => n.id === job.id);
     errors.push(...diziErrors(job, slot));

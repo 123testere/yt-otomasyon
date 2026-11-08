@@ -15,8 +15,7 @@
  "anlatici": {
   "id": "anlatici",
   "ses": {
-   "eleven": "qLnVd55Hf2R5L8dmdHoH",
-   "speed": 1.15
+   "klon": true
   }
  },
  "karakterler": {
@@ -100,7 +99,9 @@
   "Son sahne: mekan 'fuar', kalabalik 1, oyuncu kupa ile zafer pozunda; 'Senin listende birinci hangisi? Yorumlara yaz, abone olmayı unutma!'. kapanis {baslik: 'SENİN 1 NUMARAN?', sonraki: kısa çağrı (ör. 'Yorumlarda en çok yazılan kazanır'), soru: listeye özel seçmeli soru}.",
   "Özellikler ve rakamlar doğrulanabilir olmalı (çıkış yılı, oyuncu sayısı, satış rakamı, tür). Emin olmadığın rakamı yazma; rakam yerine nitelik yaz ('Ortak oyun', 'Açık dünya'). Satış/oyuncu rakamlarını 'milyon+' gibi alt sınırla ver.",
   "Toplam 70-110 kelime (yaklaşık 40-50 saniye). muzik ve muzikSeviye yazma (dizi varsayılanı kullanılır).",
-  "Başlık: '… 5 Oyun 🎮' kalıbında, merak uyandıran, ≤60 karakter; açıklamanın ilk satırı listedeki 5 oyunun adını içersin (aramada bulunur) ve izleyiciye soru sorsun."
+  "Başlık: '… 5 Oyun 🎮' kalıbında, merak uyandıran, ≤60 karakter; açıklamanın ilk satırı listedeki 5 oyunun adını içersin (aramada bulunur) ve izleyiciye soru sorsun.",
+  "UZUN VİDEO (type long, haftada 2): 8-10 dakikalık Top 10 (yatay). Yapı: 1) Giriş sahnesi (kisim 'Giriş', mekan 'fuar' ya da 'oyun-salonu', buyukYazi {ust: 'TOP 10'}, kanca + 'Sondan başlıyoruz!'). 2) Her sıra için önce 'siralama' sahnesi (sira {no, ad, tur, maddeler: 3}, toplam 10) ve anlatım 2-3 cümle; ardından aynı oyun için 1 canlandırma sahnesi (mekan 'garaj', 'ofis', 'oyun-salonu' ya da 'grafik'; karakterler, varsa rakam için buyukYazi) ve 2-4 cümle: oyunun hikâyesi, neden sevildiği, doğrulanabilir bir rakam ya da ilginç bilgi. 3) kisim ile 4 bölüm: 'Giriş', '10-7', '6-4', '3-1' (her grubun ilk sahnesinde kisim). 4) Kapanış: 'fuar', oyuncu kupayla; seçmeli soru ve abone çağrısı. 'hiz': 1.1 yaz. Toplam kelime targetWords ±%30. thumbnailText ('EN İYİ 10', 'BUNLARI OYNA' gibi ≤4 kelime) ve kapak {sahne: karakterlerin sağ yarıda durduğu bir canlandırma sahnesi, siralama sahnesi değil}. titleAlt ve thumbnailTextAlt zorunlu.",
+  "Shorts uzun video günlerinde (çarşamba, cumartesi) o günün Top 10'unun ilk 5'inden (5→1) kurulur; diğer günler bağımsız Top 5."
  ],
  "rozetNo": false
 }

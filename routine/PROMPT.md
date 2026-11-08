@@ -102,6 +102,15 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 - Örnek: `diziler/ornek/zincirli-b1.json` (onaylanmış uzun bölüm) ve `diziler/ornek/zincirli-b1-shorts.json` (onaylanmış Shorts). Yapıyı ve tempoyu bunlardan al.
 - Dizi dosyasında `yazim` varsa (ör. `diziler/oyun-hikayeleri.json`: her gün Top 5 liste Shorts'u) **önce ona uy**; aşağıdaki hikâye kuralları (sezon planı, cliffhanger, soğuk açılış) o dizide geçerli değildir.
 
+**Haftalık "Tek Parça" derleme (`needed.json` öğesinde `derleme` listesi varsa):** O haftanın bölümleri tek uzun videoda birleştirilir; sahneleri motor kendisi kurar, sen **sadece yayın bilgilerini** yazarsın. `scenes` yazma.
+```json
+{ "id": "…", "channelId": "…", "type": "long", "publishAt": "…", "format": "dizi", "dizi": "<needed.dizi>",
+  "derleme": <needed.derleme listesi, aynen>, "bolum": <needed.bolum, aynen>,
+  "title": "Zincirli · Bölüm 4-6 Tek Parça | …", "titleAlt": "…", "description": "…", "tags": ["…"], "topic": "…",
+  "thumbnailText": "TEK PARÇA", "thumbnailTextAlt": "…", "oynatmaListesi": "Zincirli · 1. Sezon", "ceviriler": { … } }
+```
+- Başlık bölüm aralığını ve "Tek Parça" ifadesini içerir; açıklamanın ilk satırı o haftanın hikâyesini 1-2 cümlede özetler (bölümleri izlemeyenler için merak uyandırır, sonu vermez).
+
 **Fragman Shorts'u (`needed.json` öğesinde `"fragman": true`):** Bölüm yayınlanmadan **bir gün önce** çıkar ve izleyiciyi yarınki bölüme çağırır. Kaynak bölüm (`clipOf`) aynı turda yazılıyorsa **önce bölümü yaz**, fragmanı onun satırlarından kur.
 - `"fragman": true`, `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.12`, `bolum` kaynak bölümle aynı. 20-40 saniye, 5-8 sahne, satırların en az %60'ı bölümden.
 - Kurgu: en çarpıcı soru ya da tehdit cümlesiyle aç; bölümden 3-4 kısa, gerilimli an (yeni karakter, sır, dövüşün başı) art arda; **sonucu, kazananı ve son sahneyi asla gösterme**. Son sahne bölümün en büyük sorusunda kesilir.
