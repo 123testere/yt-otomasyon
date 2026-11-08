@@ -1,8 +1,48 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-08T07:26:25.121Z",
+  "guncellendi": "2026-11-08T15:17:44.216Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Honor, gimbal kameralı telefonunu yeniliyor: Robot Phone 2 yolda",
+      "link": "https://www.donanimhaber.com/honor-gimbal-kamerali-telefonunu-yeniliyor-robot-phone-2-yolda--212619",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-08T14:00:00.000Z",
+      "ozet": "Honor, hareketli gimbal kamera sistemine sahip sıra dışı akıllı telefonunun devam modelini geliştiriyor. Robot Phone 2'nin 2027'nin ikinci çeyreğinde piyasaya çıkabileceği belirtiliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
+      "link": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-08T12:00:00.000Z",
+      "ozet": "The New York Times has added a beta feature to its Cooking app that helps readers swap ingredients or adjust recipes to suit their needs. It mostly hits the mark.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Claude artık finans yardımcınız oluyor",
+      "link": "https://www.donanimhaber.com/claude-personal-finance-tanitildi--212635",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-08T11:30:00.000Z",
+      "ozet": "Claude Personal Finance adındaki yeni yapay zekâ finans yardımcınız, varlık hesaplarınızı analiz ederek tavsiyeler veriyor ödemeler konusunda uyarılar yapıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "11 milyon dolarlık Nvidia yongası çalındı",
+      "link": "https://www.donanimhaber.com/buyuk-nvidia-soygunu--212634",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-08T10:30:00.000Z",
+      "ozet": "ABD’de sunucular için sipariş verilen yaklaşık 11 milyon dolarlık 6 palet Nvidia donanımı teslim alınıp bilinmeyen bir yere nakledildi. Hırsızlık 15 gün sonra fark edildi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "World Models Will Soon Be Inescapable. Here’s What You Need to Know",
+      "link": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-08T10:00:00.000Z",
+      "ozet": "Moving AI from text to 3D space, world models simulate real-world physics to teach robots and autonomous cars how to navigate reality.",
+      "kullanildi": false
+    },
     {
       "baslik": "After the midterms, things are looking rocky for Elon Musk and data centers",
       "link": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
@@ -188,14 +228,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Ekranlı ve mikrofonlu akıllı yüzük: Aina AI Ring",
-      "link": "https://www.donanimhaber.com/aina-ai-ring-tanitildi-ekranli-akilli-yuzuk-neler-sunuyor--212567",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-06T17:44:00.000Z",
-      "ozet": "Aina, sıra dışı bir akıllı yüzük tanıttı. Geleneksel akıllı yüzüklerden farklı olarak, küçük bir ekran, joystick, mikrofon ve hatta hoparlör bulunuyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
       "link": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
       "kaynak": "Ars Technica",
@@ -249,70 +281,6 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-06T15:54:47.000Z",
       "ozet": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Claude Artık Harcamalarınızı Analiz Edebiliyor: İşte Yeni Kişisel Finans Özelliği!",
-      "link": "https://www.webtekno.com/claude-artik-harcamalarinizi-analiz-edebiliyor-h228467.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-06T14:41:22.000Z",
-      "ozet": "Anthropic, kullanıcıların banka hesaplarını bağlayarak harcamalarını analiz etmesini sağlayan yeni \"Kişisel Finans\" aracını duyurdu.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
-      "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-06T14:10:00.000Z",
-      "ozet": "Amazon said that the feature will roll out to millions of users in coming weeks.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Tesla Cybertruck İçin Yolun Sonu: Üretim Resmen Sona Eriyor!",
-      "link": "https://www.webtekno.com/tesla-cybertruck-icin-yolun-sonu-h228454.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-06T13:31:23.000Z",
-      "ozet": "Tesla, düşen satışların ardından Cybertruck üretimini durdurarak fabrikada sürücüsüz robotaksi Cybercab için yer açacağını açıkladı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Underdog shows off a 32MB speech model in new demo",
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-06T13:02:16.000Z",
-      "ozet": "Despite its small size, Underdog's new model can generate both speech and music.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Physicl raises $10M to make the digital world real enough for robots",
-      "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-06T13:00:00.000Z",
-      "ozet": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nothing, Yeni Yapay Zekâ Cihazını Duyurdu: İlk Görsel Geldi",
-      "link": "https://www.webtekno.com/nothing-ekransiz-yapay-zeka-cihazi-h228445.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-06T12:17:17.000Z",
-      "ozet": "Nothing, ekranı olmayan ilk bağımsız yapay zekâ cihazını aralık ayında piyasaya süreceğini duyurdu.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-06T10:00:00.000Z",
-      "ozet": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "link": "https://openai.com/index/partnering-with-hacktron",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-06T08:00:00.000Z",
-      "ozet": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
       "kullanildi": false
     }
   ]

@@ -1,42 +1,5 @@
 [
   {
-    "id": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long2",
-    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
-    "type": "long",
-    "publishAt": "2026-11-08T15:00:00.000Z",
-    "targetWords": 0,
-    "format": "dizi",
-    "dizi": "zincirli",
-    "derleme": [
-      "zincirli_b01_UCFw3Wdyus0HVhykB0uYahWg",
-      "2026-11-07_UCFw3Wdyus0HVhykB0uYahWg_long1"
-    ],
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 1,
-      "son": 2
-    }
-  },
-  {
-    "id": "2026-11-08_UCJUP2lYvMuhcif8FavIXuYA_short1",
-    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
-    "type": "short",
-    "publishAt": "2026-11-08T16:00:00.000Z",
-    "targetWords": 80,
-    "haberAkisi": "yapay-zeka",
-    "format": "dizi",
-    "dizi": "yz-gundem",
-    "dikey": true,
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 1
-    }
-  },
-  {
     "id": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_short2",
     "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
     "type": "short",
@@ -116,7 +79,7 @@
       "en"
     ],
     "bolum": {
-      "no": 2
+      "no": 1
     }
   },
   {
