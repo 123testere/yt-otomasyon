@@ -1,0 +1,327 @@
+{
+  "akis": "yapay-zeka",
+  "guncellendi": "2026-11-08T06:21:48.034Z",
+  "pencereSaat": 48,
+  "haberler": [
+    {
+      "baslik": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "link": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-07T22:07:22.000Z",
+      "ozet": "On Equity, we unpacked what the midterms mean for the tech industry.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "link": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-07T21:17:08.000Z",
+      "ozet": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Siri AI'a kullanım sınırı geliyor: Sınırsız erişim ücretli olacak!",
+      "link": "https://www.donanimhaber.com/siri-ai-a-kullanim-siniri-geliyor-sinirsiz-erisim-ucretli-olacak--212613",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-07T19:00:00.000Z",
+      "ozet": "Apple, dördüncü çeyrek sonuçlarını açıkladığı sırada, Siri AI için gelecekte kullanım sınırı olacağını, daha kapsamlı erişim için ücret ödeme seçeneği sunulacağını doğruladı. İşte ayrıntılar:",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Gemini Omni 1.2 Flash duyuruldu: Daha uzun ve tutarlı videolar",
+      "link": "https://www.donanimhaber.com/gemini-omni-1-2-flash-duyuruldu-daha-uzun-ve-tutarli-videolar--212600",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-07T18:00:00.000Z",
+      "ozet": "15 saniyeye kadar video oluşturabilen model, aşamalı düzenleme, daha tutarlı sahneler ve gelişmiş ses üretimi özellikleriyle geliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google için yapay zeka paradoksa dönüştü",
+      "link": "https://www.donanimhaber.com/google-icin-yapay-zeka-paradoksa-donustu--212606",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-07T16:30:00.000Z",
+      "ozet": "Google yapay zeka aramalarında büyüme kaydederken reklam gelirlerinde yavaşlama yaşıyor. Şirket, yüz milyarlarca dolarlık yatırımlarının karşılığını henüz alamıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-07T15:50:00.000Z",
+      "ozet": "Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicken again?\" Yes, I should meal plan more, but I don't, so this is where I'm at. A nightly battle in which the chicken usually wins. Recently, my best […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The US let Nvidia sell chips to an empty office in China",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-07T15:43:45.000Z",
+      "ozet": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI broke the cybersecurity world. What’s next?",
+      "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-07T15:00:00.000Z",
+      "ozet": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re going to hear him say […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Alphabet'ten Qualcomm'a dev yatırım: Hedef yapay zeka veri merkezleri",
+      "link": "https://www.donanimhaber.com/alphabet-qualcomm-a-548-milyon-dolar-yatirimla-destek-verdi--212616",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-07T15:00:00.000Z",
+      "ozet": "Alphabet'in Qualcomm'a yaklaşık 548 milyon dolarlık yatırım yaptığı bildirildi. İşte yapay zeka veri merkezlerine yönelirken çip sektöründe yeni bir rekabet alanı oluşturacak yatırımın ayrıntıları:",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Android Auto'da sonsuz arama döngüsü: Gemini çıldırttı!",
+      "link": "https://www.donanimhaber.com/android-auto-da-sonsuz-arama-dongusu-gemini-cildirtti--212609",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-07T13:30:00.000Z",
+      "ozet": "Bazı Android Auto kullanıcıları, kişinin adını belirtmelerine rağmen sistemin sürekli olarak kimi aramak veya kime mesaj göndermek istediğini sorduğunu ifade ediyor. Google, sorunu araştırıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Why a new report on Anthropic automating AI development is alarming researchers",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-07T12:30:00.000Z",
+      "ozet": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apps for Caregivers Get a Dose of AI, but That Might Not Be Enough",
+      "link": "https://www.wired.com/story/apps-for-caregivers-get-a-dose-of-ai-but-that-might-not-be-enough/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-07T11:00:00.000Z",
+      "ozet": "The apps and platforms that help family caregivers manage their loved ones’ needs are becoming more capable, but the broader issue of caregivers’ well-being remains unsolved.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Crusoe sells troubled Wyoming data center project to Google",
+      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-07T01:40:28.000Z",
+      "ozet": "The deal highlights the challenges of developing massive AI data centers.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-06T23:46:18.000Z",
+      "ozet": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-06T23:00:44.000Z",
+      "ozet": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "link": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T22:53:46.000Z",
+      "ozet": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ABD'deki seçimler teknoloji şirketlerine ağır darbe indirdi: Bir günde 2 trilyon dolar kayıp",
+      "link": "https://www.donanimhaber.com/abd-deki-secimler-teknoloji-sirketlerine-agir-darbe-indirdi--212588",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-06T20:20:00.000Z",
+      "ozet": "Trump'ın partisinin bu haftaki seçimlerde hezimete uğraması teknoloji şirketlerine de büyük darbe indirdi. Planlanan veri merkezi ve yapay zekâ yatırımları tehlikeye girince hisseler çakıldı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "All the latest updates on AI data centers",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-06T20:02:22.000Z",
+      "ozet": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment. Data centers were a major bipartisan issue ahead […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T18:44:38.000Z",
+      "ozet": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T18:44:20.000Z",
+      "ozet": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Free Chinese AI Models Are Getting Scary Good at Hacking",
+      "link": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-06T18:43:43.000Z",
+      "ozet": "An experiment in which AI models were asked to break into simulated networks showed the hacking skills of DeepSeek and GLM to be not far behind OpenAI’s most advanced cyber model, which isn’t public.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+      "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-06T18:10:10.000Z",
+      "ozet": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the Muse app. Meta says you can create a new space by […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "How a Blue Wave midterm might reshape the AI industry",
+      "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T18:00:00.000Z",
+      "ozet": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Ekranlı ve mikrofonlu akıllı yüzük: Aina AI Ring",
+      "link": "https://www.donanimhaber.com/aina-ai-ring-tanitildi-ekranli-akilli-yuzuk-neler-sunuyor--212567",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-06T17:44:00.000Z",
+      "ozet": "Aina, sıra dışı bir akıllı yüzük tanıttı. Geleneksel akıllı yüzüklerden farklı olarak, küçük bir ekran, joystick, mikrofon ve hatta hoparlör bulunuyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+      "link": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-06T17:43:02.000Z",
+      "ozet": "Meta won't force Facebook page owners to allow AI training on linked content.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "After the midterms, is the AI industry in for a rough two years?",
+      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T17:23:52.000Z",
+      "ozet": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI is the new dating dealbreaker",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-06T17:00:00.000Z",
+      "ozet": "When Irene moved to San Francisco last year, she started using dating apps as a way to meet new people, get to know her new city, and connect with others who care about the things she does. After the 25-year-old analyst downloaded Hinge and started swiping, she noticed a trend. \"Hinge has a prompt where […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Big Tech lost big in the 2026 election",
+      "link": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-06T16:38:02.000Z",
+      "ozet": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even harder for the folks trying to build them. On this episode of The Vergecast, Nilay and David […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Could potential AI clones of GTA VI force a quicker official port?",
+      "link": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-06T16:19:12.000Z",
+      "ozet": "A former Rockstar tech director thinks the developer is facing new time pressures.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI Companies Really, Really Want to Buy Your Work Files and Emails",
+      "link": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-06T16:00:00.000Z",
+      "ozet": "Data brokers are collecting all sorts of internal corporate files to help train AI models. Not everyone is thrilled.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+      "link": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T15:54:47.000Z",
+      "ozet": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Claude Artık Harcamalarınızı Analiz Edebiliyor: İşte Yeni Kişisel Finans Özelliği!",
+      "link": "https://www.webtekno.com/claude-artik-harcamalarinizi-analiz-edebiliyor-h228467.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-06T14:41:22.000Z",
+      "ozet": "Anthropic, kullanıcıların banka hesaplarını bağlayarak harcamalarını analiz etmesini sağlayan yeni \"Kişisel Finans\" aracını duyurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+      "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T14:10:00.000Z",
+      "ozet": "Amazon said that the feature will roll out to millions of users in coming weeks.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Tesla Cybertruck İçin Yolun Sonu: Üretim Resmen Sona Eriyor!",
+      "link": "https://www.webtekno.com/tesla-cybertruck-icin-yolun-sonu-h228454.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-06T13:31:23.000Z",
+      "ozet": "Tesla, düşen satışların ardından Cybertruck üretimini durdurarak fabrikada sürücüsüz robotaksi Cybercab için yer açacağını açıkladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Underdog shows off a 32MB speech model in new demo",
+      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T13:02:16.000Z",
+      "ozet": "Despite its small size, Underdog's new model can generate both speech and music.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Physicl raises $10M to make the digital world real enough for robots",
+      "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T13:00:00.000Z",
+      "ozet": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nothing, Yeni Yapay Zekâ Cihazını Duyurdu: İlk Görsel Geldi",
+      "link": "https://www.webtekno.com/nothing-ekransiz-yapay-zeka-cihazi-h228445.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-06T12:17:17.000Z",
+      "ozet": "Nothing, ekranı olmayan ilk bağımsız yapay zekâ cihazını aralık ayında piyasaya süreceğini duyurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-06T10:00:00.000Z",
+      "ozet": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "link": "https://openai.com/index/partnering-with-hacktron",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-06T08:00:00.000Z",
+      "ozet": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-06T06:28:32.000Z",
+      "ozet": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+      "kullanildi": false
+    }
+  ]
+}

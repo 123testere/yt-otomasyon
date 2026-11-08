@@ -78,46 +78,44 @@
     "enabled": true,
     "settings": {
       "enabled": true,
-      "contentFormat": "belgesel",
-      "niche": "doga",
+      "contentFormat": "dizi",
+      "niche": "is-para",
       "customNiche": "",
       "language": "en",
       "voice": "en-US-GuyNeural",
       "speechRate": "+0%",
       "voiceStyle": "etkileyici",
       "voicePitch": "+0Hz",
-      "voiceSource": "elevenlabs",
-      "cloneScope": "shorts",
+      "voiceSource": "klon",
+      "cloneScope": "hepsi",
       "elevenVoiceId": "",
-      "tone": "belgesel",
+      "tone": "heyecanli",
       "character": "yok",
       "customCharacter": "",
       "characterOnScreen": true,
       "identityLocked": true,
       "visualStyle": "ai-gercekci",
       "template": "animasyonlu",
-      "music": "gerilim",
-      "musicVolume": "0.2",
+      "music": "epik",
+      "musicVolume": "0.05",
       "subtitles": "kelime",
       "subtitleColor": "yesil",
       "long": {
         "days": [],
         "time": "18:00",
-        "minutes": 8
+        "minutes": 5
       },
       "shorts": {
         "times": [
-          "14:00",
-          "19:00"
+          "08:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz",
-        "speechRate": "+20%"
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
-      "hashtags": "",
-      "extraInstructions": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
+      "hashtags": "#money #business #motivation #sidehustle",
+      "extraInstructions": "Daily Top 5 countdown Shorts about making money, starting a business and motivation. English only. Follow diziler/para-top5.json (yazim and kurallar).",
       "optimizasyon": {
         "deneyler": true,
         "kapakDegistir": true,
@@ -126,17 +124,19 @@
         "ceviri": true,
         "oynatmaListesi": true,
         "yorumCevap": false
-      }
+      },
+      "diziShorts": "bagimsiz",
+      "dizi": "para-top5"
     },
     "brief": {
-      "format": "belgesel",
-      "konu": "Doğa ve Hayvanlar",
+      "format": "dizi",
+      "konu": "Para, İş Kurma ve Motivasyon",
       "dil": "English",
-      "ton": "Ağırbaşlı, bilgi dolu, belgesel anlatıcısı gibi.",
+      "ton": "Enerjik, merak uyandıran, hızlı tempolu.",
       "karakter": null,
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
-      "ekTalimat": "Karşılaştırma ve saldırma puanı gibi puanlar da oluşturun ",
+      "ekTalimat": "Daily Top 5 countdown Shorts about making money, starting a business and motivation. English only. Follow diziler/para-top5.json (yazim and kurallar).",
       "videoSayisi": 8,
       "dersler": []
     },
@@ -205,7 +205,8 @@
       },
       "shorts": {
         "times": [
-          "19:00"
+          "12:00",
+          "21:00"
         ],
         "seconds": 45,
         "source": "bagimsiz"
@@ -265,8 +266,8 @@
     "enabled": true,
     "settings": {
       "enabled": true,
-      "contentFormat": "belgesel",
-      "niche": "tarih",
+      "contentFormat": "dizi",
+      "niche": "oyun",
       "customNiche": "",
       "language": "tr",
       "voice": "tr-TR-AhmetNeural",
@@ -276,36 +277,34 @@
       "voiceSource": "klon",
       "cloneScope": "hepsi",
       "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
-      "tone": "samimi",
-      "character": "bilge-dede",
+      "tone": "heyecanli",
+      "character": "yok",
       "customCharacter": "",
-      "characterOnScreen": true,
-      "identityLocked": true,
-      "visualStyle": "hareketli-grafik",
+      "characterOnScreen": false,
+      "identityLocked": false,
+      "visualStyle": "ai-sinematik",
       "template": "animasyonlu",
-      "music": "gerilim",
-      "musicVolume": "0.2",
+      "music": "oyun",
+      "musicVolume": "0.05",
       "subtitles": "kelime",
       "subtitleColor": "yesil",
       "long": {
-        "days": [
-          1
-        ],
-        "time": "08:00",
+        "days": [],
+        "time": "18:00",
         "minutes": 5
       },
       "shorts": {
         "times": [
-          "08:00"
+          "08:00",
+          "18:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz",
-        "speechRate": "+20%"
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
-      "hashtags": "",
-      "extraInstructions": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
+      "hashtags": "#oyun #videooyunları #gaming #oyunönerisi",
+      "extraInstructions": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
       "optimizasyon": {
         "deneyler": true,
         "kapakDegistir": true,
@@ -314,21 +313,24 @@
         "ceviri": true,
         "oynatmaListesi": true,
         "yorumCevap": true
-      }
+      },
+      "diziShorts": "bagimsiz",
+      "dizi": "oyun-hikayeleri"
     },
     "brief": {
-      "format": "belgesel",
-      "konu": "Tarih",
+      "format": "dizi",
+      "konu": "Video Oyunları",
       "dil": "Türkçe",
-      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
-      "karakter": "Yıllarını kitaplara vermiş, tatlı dilli yaşlı bir hikâye anlatıcısı.",
-      "gorselStil": "Hareketli grafik + konu fotoğrafları",
+      "ton": "Enerjik, merak uyandıran, hızlı tempolu.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
-      "ekTalimat": "Merak edici bir soru Sor ve izleyiciyi videoya cek merak uyandir yorumlar yazmalarını ve kanala abone olmalarını video yu beğenmelerini soyle",
-      "videoSayisi": 252,
+      "ekTalimat": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
+      "videoSayisi": 254,
       "dersler": []
     },
     "oynatmaListeleri": [
+      "Anadolu'nun Bilinmeyen Tarihi",
       "Osmanlı'nın Bilinmeyenleri",
       "Anadolu'nun Bilinmeyenleri",
       "Ss",
@@ -351,6 +353,8 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "İlk Parayı Anadolu'da Bastılar: Lidya",
+      "İlk Barış Antlaşması Anadolu Kilinde Yazıldı",
       "560 Yıllık Alışveriş Merkezi İstanbul'un Göbeğinde",
       "Dünyanın En Eski Barış Antlaşması Anadolu'da Çıktı",
       "Gordion Düğümünü Kılıçla Kesen İskender'in Hikâyesi",
@@ -398,9 +402,7 @@
       "Sığınmacılar Gerçekten Gitmeli mi? Şaşırtan Cevap!",
       "Belediye hizmet veriyormu sorusuna muhteşem cevap",
       "Bu kargaşada herşey karıştı",
-      "Pek bir gür cıkıyor bizim hurdacının alırım dedimmi alır haa",
-      "Sokakta En İlginç Anlar Kamerada!",
-      "Herkesin pazartesi ve bu cuma düğünlere bekliyoruz"
+      "Pek bir gür cıkıyor bizim hurdacının alırım dedimmi alır haa"
     ],
     "oylamalar": []
   },
@@ -410,7 +412,7 @@
     "enabled": true,
     "settings": {
       "enabled": true,
-      "contentFormat": "belgesel",
+      "contentFormat": "dizi",
       "niche": "teknoloji",
       "customNiche": "",
       "language": "tr",
@@ -429,7 +431,7 @@
       "visualStyle": "hareketli-grafik",
       "template": "animasyonlu",
       "music": "gerilim",
-      "musicVolume": "0.08",
+      "musicVolume": "0.05",
       "subtitles": "kelime",
       "subtitleColor": "sari",
       "long": {
@@ -448,7 +450,7 @@
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "#yapayzeka #yapayzekahaberleri #ai",
-      "extraInstructions": "Günlük yapay zekâ haberleri kanalı. Her Shorts son 48 saatin gerçek bir yapay zekâ haberini anlatır: önce web araması yap, haberi en az bir güvenilir kaynaktan doğrula, tarih ve şirket adlarını doğru yaz; doğrulayamadığın haberi kullanma. Açıklamaya haberin kaynağını (site adı) yaz. İlk cümle çok güçlü bir kanca olsun (şaşırtıcı iddia ya da soru). Haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir' sorusuyla merak uyandır: olası sonuçları spekülasyon olduğunu belli ederek ('olabilir', 'bekleniyor') söyle. Kısa, hızlı, enerjik cümleler. Aynı gün iki Shorts farklı haberler olsun; aynı haberi tekrar yapma (recentTitles). Abone ve beğeni konu hakkındaki görüşlerini de bildirmelerini işte\n",
+      "extraInstructions": "Günlük yapay zekâ haberleri. Haberi config/haberler-yapay-zeka.json listesinden seç (kaynak ve kaynakLink zorunlu), diziler/yz-gundem.json kurallarına uy. Güçlü kancayla başla, haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir?' merakını tahmin olarak söyle.",
       "optimizasyon": {
         "deneyler": true,
         "kapakDegistir": true,
@@ -457,17 +459,20 @@
         "ceviri": true,
         "oynatmaListesi": true,
         "yorumCevap": false
-      }
+      },
+      "diziShorts": "bagimsiz",
+      "haberAkisi": "yapay-zeka",
+      "dizi": "yz-gundem"
     },
     "brief": {
-      "format": "belgesel",
+      "format": "dizi",
       "konu": "Teknoloji ve Yapay Zekâ",
       "dil": "Türkçe",
       "ton": "Enerjik, merak uyandıran, hızlı tempolu.",
       "karakter": null,
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
-      "ekTalimat": "Günlük yapay zekâ haberleri kanalı. Her Shorts son 48 saatin gerçek bir yapay zekâ haberini anlatır: önce web araması yap, haberi en az bir güvenilir kaynaktan doğrula, tarih ve şirket adlarını doğru yaz; doğrulayamadığın haberi kullanma. Açıklamaya haberin kaynağını (site adı) yaz. İlk cümle çok güçlü bir kanca olsun (şaşırtıcı iddia ya da soru). Haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir' sorusuyla merak uyandır: olası sonuçları spekülasyon olduğunu belli ederek ('olabilir', 'bekleniyor') söyle. Kısa, hızlı, enerjik cümleler. Aynı gün iki Shorts farklı haberler olsun; aynı haberi tekrar yapma (recentTitles). Abone ve beğeni konu hakkındaki görüşlerini de bildirmelerini işte\n",
+      "ekTalimat": "Günlük yapay zekâ haberleri. Haberi config/haberler-yapay-zeka.json listesinden seç (kaynak ve kaynakLink zorunlu), diziler/yz-gundem.json kurallarına uy. Güçlü kancayla başla, haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir?' merakını tahmin olarak söyle.",
       "videoSayisi": 150,
       "dersler": []
     },
@@ -626,11 +631,11 @@
       "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
       "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
       "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
+      "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
       "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
       "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
       "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
       "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
-      "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
       "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
       "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
       "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",

@@ -1,17 +1,18 @@
 [
   {
-    "id": "2026-11-08_UCJUP2lYvMuhcif8FavIXuYA_short1",
-    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+    "id": "2026-11-08_UCIa1D1I2HwWzylJDvNayeHw_short2",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
     "type": "short",
-    "publishAt": "2026-11-08T07:00:00.000Z",
-    "targetWords": 86,
+    "publishAt": "2026-11-08T15:00:00.000Z",
+    "targetWords": 80,
+    "format": "dizi",
+    "dizi": "oyun-hikayeleri",
+    "dikey": true,
     "ceviriDilleri": [
       "en"
     ],
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "A",
-      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
+    "bolum": {
+      "no": 1
     }
   },
   {
@@ -19,14 +20,50 @@
     "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
     "type": "short",
     "publishAt": "2026-11-08T16:00:00.000Z",
-    "targetWords": 86,
+    "targetWords": 80,
+    "haberAkisi": "yapay-zeka",
+    "format": "dizi",
+    "dizi": "yz-gundem",
+    "dikey": true,
     "ceviriDilleri": [
       "en"
     ],
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "B",
-      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    "bolum": {
+      "no": 1
+    }
+  },
+  {
+    "id": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_short2",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "short",
+    "publishAt": "2026-11-08T18:00:00.000Z",
+    "targetWords": 80,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "clipOf": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "fragman": true,
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 4
+    }
+  },
+  {
+    "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "type": "short",
+    "publishAt": "2026-11-09T05:00:00.000Z",
+    "targetWords": 80,
+    "format": "dizi",
+    "dizi": "para-top5",
+    "dikey": true,
+    "ceviriDilleri": [
+      "es"
+    ],
+    "bolum": {
+      "no": 1
     }
   },
   {
@@ -51,14 +88,33 @@
     "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
     "type": "short",
     "publishAt": "2026-11-09T07:00:00.000Z",
-    "targetWords": 86,
+    "targetWords": 80,
+    "haberAkisi": "yapay-zeka",
+    "format": "dizi",
+    "dizi": "yz-gundem",
+    "dikey": true,
     "ceviriDilleri": [
       "en"
     ],
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "A",
-      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
+    "bolum": {
+      "no": 2
+    }
+  },
+  {
+    "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_short1",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "short",
+    "publishAt": "2026-11-09T09:00:00.000Z",
+    "targetWords": 80,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "clipOf": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 3
     }
   },
   {
@@ -86,21 +142,6 @@
     }
   },
   {
-    "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
-    "type": "short",
-    "publishAt": "2026-11-09T11:00:00.000Z",
-    "targetWords": 113,
-    "ceviriDilleri": [
-      "es"
-    ],
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "A",
-      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
-    }
-  },
-  {
     "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
     "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
     "type": "long",
@@ -116,35 +157,19 @@
     }
   },
   {
-    "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short2",
-    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "id": "2026-11-09_UCIa1D1I2HwWzylJDvNayeHw_short2",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
     "type": "short",
-    "publishAt": "2026-11-09T16:00:00.000Z",
-    "targetWords": 113,
-    "ceviriDilleri": [
-      "es"
-    ],
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "B",
-      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
-    }
-  },
-  {
-    "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_short1",
-    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
-    "type": "short",
-    "publishAt": "2026-11-09T16:00:00.000Z",
+    "publishAt": "2026-11-09T15:00:00.000Z",
     "targetWords": 80,
     "format": "dizi",
-    "dizi": "zincirli",
-    "clipOf": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "dizi": "oyun-hikayeleri",
     "dikey": true,
     "ceviriDilleri": [
       "en"
     ],
     "bolum": {
-      "no": 3
+      "no": 2
     }
   },
   {
@@ -152,14 +177,16 @@
     "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
     "type": "short",
     "publishAt": "2026-11-09T16:00:00.000Z",
-    "targetWords": 86,
+    "targetWords": 80,
+    "haberAkisi": "yapay-zeka",
+    "format": "dizi",
+    "dizi": "yz-gundem",
+    "dikey": true,
     "ceviriDilleri": [
       "en"
     ],
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "B",
-      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    "bolum": {
+      "no": 3
     }
   },
   {
