@@ -100,6 +100,9 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 - `diziler/<dizi>.json` (`needed.json` → `dizi`): dizinin özeti, `kurallar`, `karakterler` (id, görünüş, kim olduğu) ve `bolumler` (sezon planı: her bölümün `ozet` ve `son` cümlesi). Yazacağın bölüm `needed.json` → `bolum.no`. O bölümün planına uy; planda olmayan büyük olay ekleme, küçük ara sahneler ekleyebilirsin.
 - Önceki bölümler: `done/` ve `queue/` içinde aynı kanalın `"format": "dizi"` dosyaları. Son bölümün nasıl bittiğini oku; yeni bölüm oradan devam eder. Karakterlerin konuşma tarzı, tekrar eden sözler ve olaylar tutarlı kalmalı.
 - Örnek: `diziler/ornek/zincirli-b1.json` (onaylanmış uzun bölüm) ve `diziler/ornek/zincirli-b1-shorts.json` (onaylanmış Shorts). Yapıyı ve tempoyu bunlardan al.
+- Dizi dosyasında `yazim` varsa (ör. `diziler/oyun-hikayeleri.json`: her gün Top 5 liste Shorts'u) **önce ona uy**; aşağıdaki hikâye kuralları (sezon planı, cliffhanger, soğuk açılış) o dizide geçerli değildir.
+
+**Bağımsız dizi Shorts'u (`type: short`, `clipOf` yok):** Kendi başına bir video; `"dikey": true`, `"acilis": false`, `"hiz": 1.05`, `bolum` needed.json'daki gibi (`{"no": <slot.bolum.no>, "ad": "<kısa konu>"}`). Kurgu dizinin `yazim` kurallarından gelir; `derivedFrom` yazma.
 
 **Uzun bölüm (`type: long`):**
 - 3-4 dakika: satırlardaki toplam kelime `targetWords` ±%30 (doğrulayıcı kontrol eder). 18-26 sahne.
@@ -148,11 +151,13 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
   ]
 }
 ```
-- `mekan`: destan mekânları `koy-gunduz`, `koy-yangin`, `kervan`, `tas-ocagi`, `zindan`, `avlu`, `arena`, `loca`; köy mekânları `meydan`, `kuyu`, `ev-ic`, `orman`, `yol`, `kule-ic`. Listede olmayan bir yer için en yakınını seç (saray salonu → `loca` ya da `kule-ic`, demirhane → `ev-ic`, dağ yolu → `yol`).
+- `mekan`: destan mekânları `koy-gunduz`, `koy-yangin`, `kervan`, `tas-ocagi`, `zindan`, `avlu`, `arena`, `loca`; köy mekânları `meydan`, `kuyu`, `ev-ic`, `orman`, `yol`, `kule-ic`; oyun mekânları `garaj` (evde stüdyo), `ofis` (oyun stüdyosu), `oyun-salonu` (atari salonu), `fuar` (oyun fuarı sahnesi, `kalabalik` ile), `grafik` (yükselen satış grafiği, `veri`: 2-8 artan sayı), `siralama` (Top 5 kartı için).
+- `buyukYazi`: `{"ust": "2,5 MİLYAR $", "alt": "tek bir oyun"}` sahne boyunca ekranda dev sarı yazı (ust ≤14, alt ≤30). Rakam ve yıl vurgusu için.
+- `sira`: `{"no": 5, "ad": "Valheim", "tur": "Viking hayatta kalma", "maddeler": ["…", "…", "…"]}` sıralama kartı (no 1-10, ad ≤28, tur ≤30, en fazla 3 madde ≤24); altta 5-4-3-2-1 geri sayım çubuğu kendiliğinden çizilir. Listede olmayan bir yer için en yakınını seç (saray salonu → `loca` ya da `kule-ic`, demirhane → `ev-ic`, dağ yolu → `yol`).
 - `zaman`: `gece`, `gunduz`, `safak` (köy mekânlarında). `efektler`: `agir-cekim`, `beyaz-cakma` (darbe/geçiş), `sis`, `yagmur`, `simsek`, `titreyen-isik`, `ruzgar`. `kalabalik` (arena tribünü) 0-1.
 - `kadraj`: en fazla 4 karakter, `id` dizinin `karakterler` listesinden. `x` 0-1 (yatayda konum), `yon` 1 sağa / -1 sola bakar. Karakterler birbirine bakacak şekilde yerleşsin.
 - `poz`: `dur`, `yuru`, `kos`, `isaret`, `korku`, `dusun`, `el-salla`, `omuz`, `eller-belde`, `egil`, `kilic-kaldir`, `kilic-savur`, `saldir`, `blok`, `darbe`, `dus`, `yerde`, `kalk`, `zincirli`, `diz-cok`, `zafer`, `tasi`.
-- `esya`: `kilic`, `kalkan`, `kilic+kalkan`, `tahta-kilic`, `mesale`, `fener`, `baston`, `tas` (ya da adımda `null`: elden düşer).
+- `esya`: `kilic`, `kalkan`, `kilic+kalkan`, `tahta-kilic`, `mesale`, `fener`, `baston`, `tas`, `oyun-kolu`, `kupa`, `disket` (ya da adımda `null`: elden düşer).
 - `ifade`: `notr`, `endiseli`, `gulumsuyor`, `uzgun`, `korkmus`, `saskin`, `kizgin`, `dusunceli`, `supheli`, `fisilti`.
 - `hareket`: sahne başında `x0`'dan `x1`'e yürür (`kos: true` koşar); -0,3 ile 1,3 arası ekrana girip çıkmayı sağlar.
 - `adimlar`: sahnenin `sn`. saniyesinde poz/konum/eşya/ifade değişimi; `darbe: true` kırmızı çarpma ve sarsıntı, `sarsinti: true` ekran sarsıntısı. Dövüşleri adım adım kurgula: saldır → blok → darbe → düş → kalk.

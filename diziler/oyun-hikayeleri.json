@@ -4,7 +4,7 @@
  "stil": "cop",
  "format": "yatay",
  "tur": "belgesel / oyun dünyası (gerçek olaylar, çöp adam animasyonuyla anlatılır)",
- "ozet": "Video oyunlarının gerçek hikâyeleri: bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler. Anlatıcı kanal sahibi; karakterler olayı canlandırır.",
+ "ozet": "Video oyunları üzerine her gün iki Top 5 liste Shorts'u: aynı türdeki ya da aynı temadaki 5 oyun, sondan birinciye, her birinin öne çıkan özellikleriyle. Anlatıcı kanal sahibi (kendi sesi), hızlı ve enerjik.",
  "kurallar": [
   "Sadece doğrulanabilir bilgi: tarih, satış rakamı, şirket ve kişi adları kaynaklardaki gibi; emin olmadığını yazma.",
   "Gerçek kişilere uydurma söz söyletme: diyalog yerine anlatıcı anlatır, karakterler canlandırır.",
@@ -92,5 +92,14 @@
   }
  },
  "muzik": "oyun",
- "muzikSeviye": 0.05
+ "muzikSeviye": 0.05,
+ "yazim": [
+  "Her video bir Top 5 listesi (örnek: diziler/ornek/oyun-top5-shorts.json; yapıyı aynen izle). Konu kalıpları: 'X'i sevenlerin oynaması gereken 5 oyun', 'En iyi 5 [tür] oyunu', 'Arkadaşlarla oynanacak en iyi 5 oyun', 'Bedava en iyi 5 oyun', 'En zor 5 oyun', 'Telefonda en iyi 5 [tür]', 'Tarihin en çok satan 5 oyunu'. Aynı listeyi ya da aynı oyun beşlisini tekrar etme (done/ ve recentTitles).",
+  "Sahne 1 kanca: mekan 'oyun-salonu', 'fuar' ya da 'ofis'; buyukYazi {ust: 'TOP 5', alt: kısa tema}; bir oyuncu karakteri koşarak girer (oyun-kolu). Tek cümlelik kanca + 'Sondan başlıyoruz!'.",
+  "Sahne 2-6: mekan 'siralama', sira {no: 5→1, ad: oyunun adı, tur: kısa tür (≤30), maddeler: tam 3 kısa özellik (her biri ≤24 karakter)}. Anlatım 1-2 kısa cümle: 'Beşinci sırada X.' + en çarpıcı özelliği. Birinci sırada efektler ['beyaz-cakma'] ve 'Ve birinci sırada…'. Sahnede kadraj yazma (kart ekranı kaplar).",
+  "Son sahne: mekan 'fuar', kalabalik 1, oyuncu kupa ile zafer pozunda; 'Senin listende birinci hangisi? Yorumlara yaz, abone olmayı unutma!'. kapanis {baslik: 'SENİN 1 NUMARAN?', sonraki: kısa çağrı (ör. 'Yorumlarda en çok yazılan kazanır'), soru: listeye özel seçmeli soru}.",
+  "Özellikler ve rakamlar doğrulanabilir olmalı (çıkış yılı, oyuncu sayısı, satış rakamı, tür). Emin olmadığın rakamı yazma; rakam yerine nitelik yaz ('Ortak oyun', 'Açık dünya'). Satış/oyuncu rakamlarını 'milyon+' gibi alt sınırla ver.",
+  "Toplam 70-110 kelime (yaklaşık 40-50 saniye). muzik ve muzikSeviye yazma (dizi varsayılanı kullanılır).",
+  "Başlık: '… 5 Oyun 🎮' kalıbında, merak uyandıran, ≤60 karakter; açıklamanın ilk satırı listedeki 5 oyunun adını içersin (aramada bulunur) ve izleyiciye soru sorsun."
+ ]
 }

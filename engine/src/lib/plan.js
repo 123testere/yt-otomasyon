@@ -33,6 +33,14 @@ function diziSlotlari(channel, dates) {
   const slots = [];
   const dolu = new Set(channelJobs(channel.id).filter((j) => j.format === 'dizi' && j.publishAt)
     .map((j) => `${j.type}:${dateInTz(new Date(j.publishAt), TZ)}`));
+  // Bağımsız Shorts (ör. her gün Top 5 listesi): her Shorts saatinde ayrı bir video, bölüme bağlı değil.
+  if (s.diziShorts === 'bagimsiz') {
+    for (const date of dates) {
+      if (s.long.days.includes(weekday(date))) slots.push({ type: 'long', idx: 1, date, time: s.long.time });
+      [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
+    }
+    return slots;
+  }
   for (const date of dates) {
     if (s.long.days.includes(weekday(date)) && !dolu.has(`long:${date}`)) slots.push({ type: 'long', idx: 1, date, time: s.long.time });
     const dun = addDays(date, -1);
@@ -62,7 +70,7 @@ function slotsFor(channel, dates, now) {
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
       targetWords: dizi ? (slot.type === 'long' ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : DIZI_SHORTS_KELIME) : targetWords(s, slot.type),
-      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak, dikey: true } : {}) } : {}),
+      ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
       // Flaggenduell: sezon ve maç numarası yayın gününden hesaplanır (motor da aynısını kullanır).
       ...(s.contentFormat === 'flaggenduell'
         ? { format: 'duell', ...(matchFor(slot.date, channel.league?.calendarStart ?? slot.date) ?? {}) }
@@ -158,8 +166,13 @@ function attachDizi(slots, channels) {
   const dusen = new Set();
   for (const c of channels.filter((ch) => ch.settings.contentFormat === 'dizi')) {
     const jobs = channelJobs(c.id).filter((j) => j.format === 'dizi' && j.dizi === c.settings.dizi);
-    let son = Math.max(c.settings.diziBaslangic ?? 0, ...jobs.filter((j) => j.type === 'long').map((j) => j.bolum?.no ?? 0));
+    const bagimsiz = c.settings.diziShorts === 'bagimsiz';
+    let son = Math.max(c.settings.diziBaslangic ?? 0, ...jobs.filter((j) => bagimsiz || j.type === 'long').map((j) => j.bolum?.no ?? 0));
     const kendi = slots.filter((s) => s.channelId === c.id).sort((a, b) => a.publishAt.localeCompare(b.publishAt));
+    if (bagimsiz) {
+      for (const slot of kendi) slot.bolum = { no: ++son };
+      continue;
+    }
     for (const slot of kendi.filter((s) => s.type === 'long')) slot.bolum = { no: ++son };
     for (const slot of kendi.filter((s) => s.type === 'short')) {
       const kaynak = kendi.find((s) => s.id === slot.clipOf) ?? jobs.find((j) => j.id === slot.clipOf);

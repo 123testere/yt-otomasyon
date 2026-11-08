@@ -10,7 +10,8 @@
 
   "diziler": [
     { "id": "zincirli", "label": "Zincirli", "hint": "Köyü yakılan demircinin oğlu Arın'ın arenadan özgürlüğe destanı. Yatay bölümler." },
-    { "id": "karacam-saati", "label": "Karaçam'ın Saati", "hint": "Saati 03:17'de duran gizemli köy. Dikey Shorts bölümleri." }
+    { "id": "karacam-saati", "label": "Karaçam'ın Saati", "hint": "Saati 03:17'de duran gizemli köy. Dikey Shorts bölümleri." },
+    { "id": "oyun-hikayeleri", "label": "Oyun Hikâyeleri (Top 5)", "hint": "Her gün Top 5 oyun listesi Shorts'u; çöp adam animasyonu, sıralama kartları." }
   ],
 
   "niches": [
