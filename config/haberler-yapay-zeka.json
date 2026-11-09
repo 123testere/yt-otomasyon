@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-09T00:56:55.818Z",
+  "guncellendi": "2026-11-09T08:02:00.504Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
+      "link": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-09T08:00:00.000Z",
+      "ozet": "As data center protests break out across Europe, a mismatched band of campaigners is trying to block Google from building a sprawling new facility east of London.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "NVIDIA, CEO’su Jensen Huang Hakkında Casusluk İddiaları Nedeniyle Soruşturma Başlattı",
+      "link": "https://www.webtekno.com/nvidia-ceo-jensen-huang-casusluk-iddialari-nedeniyle-sorusturma-baslatti-h228509.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-09T07:29:32.000Z",
+      "ozet": "NVIDIA, CEO’su Jensen Huang’ın Çin casusu olduğu belirlenen bir yöneticiyle ilişkisi nedeniyle şirket içi soruşturma başlattığını duyurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+      "link": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T05:26:29.000Z",
+      "ozet": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
+      "kullanildi": false
+    },
     {
       "baslik": "Here’s the full text of Jensen Huang’s memo to Nvidia",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
@@ -201,14 +225,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-07T11:00:00.000Z",
       "ozet": "The apps and platforms that help family caregivers manage their loved ones’ needs are becoming more capable, but the broader issue of caregivers’ well-being remains unsolved.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Crusoe sells troubled Wyoming data center project to Google",
-      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-07T01:40:28.000Z",
-      "ozet": "The deal highlights the challenges of developing massive AI data centers.",
       "kullanildi": false
     }
   ]

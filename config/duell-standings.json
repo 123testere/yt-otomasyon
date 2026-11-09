@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T07:07:23.127Z",
+  "generatedAt": "2026-11-09T08:04:29.600Z",
   "topics": {
     "kirschen": {
       "question": "Wer erntet die meisten Kirschen?",
@@ -33,6 +33,10 @@
         {
           "name": "Polen",
           "tonnes": 51000
+        },
+        {
+          "name": "Bulgarien",
+          "tonnes": 50440
         }
       ]
     },
@@ -68,6 +72,10 @@
         {
           "name": "Deutschland",
           "tonnes": 871990
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 545080
         }
       ]
     },
@@ -103,6 +111,10 @@
         {
           "name": "Frankreich",
           "tonnes": 151870
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 145400
         }
       ]
     },
@@ -138,6 +150,10 @@
         {
           "name": "Frankreich",
           "tonnes": 82760
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 45200
         }
       ]
     },
@@ -173,6 +189,10 @@
         {
           "name": "Aserbaidschan",
           "tonnes": 66709
+        },
+        {
+          "name": "Armenien",
+          "tonnes": 61609
         }
       ]
     },
@@ -208,6 +228,10 @@
         {
           "name": "Deutschland",
           "tonnes": 120350
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 98703
         }
       ]
     },
@@ -243,6 +267,10 @@
         {
           "name": "Vereinigtes Königreich",
           "tonnes": 15708
+        },
+        {
+          "name": "Bosnien und Herzegowina",
+          "tonnes": 12609
         }
       ]
     },
@@ -278,6 +306,10 @@
         {
           "name": "Frankreich",
           "tonnes": 8621
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 6910
         }
       ]
     },
@@ -313,6 +345,10 @@
         {
           "name": "Portugal",
           "tonnes": 917890
+        },
+        {
+          "name": "Griechenland",
+          "tonnes": 777210
         }
       ]
     },
@@ -348,6 +384,10 @@
         {
           "name": "Albanien",
           "tonnes": 278086
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 210100
         }
       ]
     },
@@ -383,6 +423,10 @@
         {
           "name": "Spanien",
           "tonnes": 29640
+        },
+        {
+          "name": "Georgien",
+          "tonnes": 900
         }
       ]
     },
@@ -418,6 +462,10 @@
         {
           "name": "Zypern",
           "tonnes": 16030
+        },
+        {
+          "name": "Albanien",
+          "tonnes": 15369
         }
       ]
     },
@@ -453,6 +501,10 @@
         {
           "name": "Frankreich",
           "tonnes": 14330
+        },
+        {
+          "name": "Albanien",
+          "tonnes": 6404
         }
       ]
     },
@@ -488,6 +540,10 @@
         {
           "name": "Polen",
           "tonnes": 1018700
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 870986
         }
       ]
     },
@@ -523,6 +579,10 @@
         {
           "name": "Polen",
           "tonnes": 5920170
+        },
+        {
+          "name": "Vereinigtes Königreich",
+          "tonnes": 5515533
         }
       ]
     },
@@ -558,6 +618,10 @@
         {
           "name": "Ungarn",
           "tonnes": 5297730
+        },
+        {
+          "name": "Serbien",
+          "tonnes": 5107309
         }
       ]
     },
@@ -593,6 +657,10 @@
         {
           "name": "Vereinigtes Königreich",
           "tonnes": 11146000
+        },
+        {
+          "name": "Rumänien",
+          "tonnes": 9290880
         }
       ]
     },
@@ -628,6 +696,10 @@
         {
           "name": "Frankreich",
           "tonnes": 778580
+        },
+        {
+          "name": "Polen",
+          "tonnes": 676800
         }
       ]
     },
@@ -663,6 +735,10 @@
         {
           "name": "Deutschland",
           "tonnes": 284890
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 215868
         }
       ]
     },
@@ -698,6 +774,10 @@
         {
           "name": "Italien",
           "tonnes": 234830
+        },
+        {
+          "name": "Serbien",
+          "tonnes": 190883
         }
       ]
     },
@@ -733,6 +813,10 @@
         {
           "name": "Polen",
           "tonnes": 559400
+        },
+        {
+          "name": "Niederlande",
+          "tonnes": 539190
         }
       ]
     },
@@ -768,6 +852,10 @@
         {
           "name": "Rumänien",
           "tonnes": 289460
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 276150
         }
       ]
     },
@@ -803,6 +891,10 @@
         {
           "name": "Kroatien",
           "tonnes": 54410
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 28200
         }
       ]
     },
@@ -838,6 +930,10 @@
         {
           "name": "Serbien",
           "tonnes": 8910
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 8450
         }
       ]
     },
@@ -873,6 +969,10 @@
         {
           "name": "Bosnien und Herzegowina",
           "tonnes": 26042
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 20060
         }
       ]
     },
@@ -908,6 +1008,10 @@
         {
           "name": "Aserbaidschan",
           "tonnes": 3579
+        },
+        {
+          "name": "Frankreich",
+          "tonnes": 2180
         }
       ]
     },
@@ -943,6 +1047,10 @@
         {
           "name": "Frankreich",
           "tonnes": 1479770
+        },
+        {
+          "name": "Spanien",
+          "tonnes": 831610
         }
       ]
     },
@@ -978,6 +1086,10 @@
         {
           "name": "Ungarn",
           "tonnes": 258890
+        },
+        {
+          "name": "Kroatien",
+          "tonnes": 255080
         }
       ]
     },
@@ -1013,6 +1125,10 @@
         {
           "name": "Niederlande",
           "tonnes": 14348210
+        },
+        {
+          "name": "Italien",
+          "tonnes": 13185340
         }
       ]
     },
@@ -1048,6 +1164,10 @@
         {
           "name": "Portugal",
           "tonnes": 145011
+        },
+        {
+          "name": "Aserbaidschan",
+          "tonnes": 120903
         }
       ]
     },
@@ -1083,6 +1203,10 @@
         {
           "name": "Frankreich",
           "tonnes": 20034
+        },
+        {
+          "name": "Serbien",
+          "tonnes": 14664
         }
       ]
     },
@@ -1118,6 +1242,10 @@
         {
           "name": "Italien",
           "tonnes": 1134090
+        },
+        {
+          "name": "Ukraine",
+          "tonnes": 1120200
         }
       ]
     }

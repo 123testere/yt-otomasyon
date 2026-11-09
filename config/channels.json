@@ -139,7 +139,7 @@
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
       "ekTalimat": "Daily Top 5 countdown Shorts about making money, starting a business and motivation. English only. Follow diziler/para-top5.json (yazim and kurallar).",
-      "videoSayisi": 8,
+      "videoSayisi": 10,
       "dersler": []
     },
     "oynatmaListeleri": [],
@@ -153,6 +153,7 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "5 Money Mistakes That Keep You Broke 🧠",
       "5 Side Hustles You Can Start With $0 💰",
       "Saltwater Crocodile: The Strongest Bite Ever Measured",
       "Blue Whale vs African Elephant: Who Is Heavier?",
@@ -234,7 +235,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 5,
+      "videoSayisi": 7,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -250,6 +251,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Kral yalanı nasıl anladı? ⛓️",
       "Zincirli · Bölüm 4: İkinci Kez",
       "Kral onu neden öldürtmedi? 👑",
       "Zincirli · Bölüm 3: Yarım Bilezik",
@@ -281,7 +283,7 @@
       "character": "yok",
       "customCharacter": "",
       "characterOnScreen": false,
-      "identityLocked": false,
+      "identityLocked": true,
       "visualStyle": "ai-sinematik",
       "template": "animasyonlu",
       "music": "oyun",
@@ -328,7 +330,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
-      "videoSayisi": 254,
+      "videoSayisi": 255,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -355,6 +357,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Bedava Oynayabileceğin En İyi 5 Oyun 🎮",
       "İlk Parayı Anadolu'da Bastılar: Lidya",
       "İlk Barış Antlaşması Anadolu Kilinde Yazıldı",
       "560 Yıllık Alışveriş Merkezi İstanbul'un Göbeğinde",
@@ -403,8 +406,7 @@
       "Satisfying Jello Cutting Experiment You Have to See!",
       "Sığınmacılar Gerçekten Gitmeli mi? Şaşırtan Cevap!",
       "Belediye hizmet veriyormu sorusuna muhteşem cevap",
-      "Bu kargaşada herşey karıştı",
-      "Pek bir gür cıkıyor bizim hurdacının alırım dedimmi alır haa"
+      "Bu kargaşada herşey karıştı"
     ],
     "oylamalar": []
   },
@@ -606,7 +608,7 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
-      "videoSayisi": 37,
+      "videoSayisi": 40,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -625,6 +627,8 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Çamaşır Makinesi: Haftanın En Yorucu Günü Nasıl Bitti?",
+      "Gözlüğün Kulak Sapı 400 Yıldan Fazla Sonra Geldi",
       "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
       "Çatalhöyük'te Bulunan 8000 Yıllık Ayna Cam Değildi",
       "Ütünün Atası Kızgın Kömür Dolu Bir Tavaydı",
@@ -916,7 +920,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 6,
+      "videoSayisi": 8,
       "dersler": []
     },
     "oynatmaListeleri": [],
@@ -930,6 +934,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 8/30: Wer erntet den meisten Mais? 🌽",
       "Duell 7/30: Wer produziert die meiste Milch? 🥛",
       "Duell 6/30: Wer erntet die meisten Kartoffeln? 🥔",
       "Duell 5/30: Wer erntet die meisten Weintrauben? 🍇",
@@ -943,22 +948,22 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 7,
+      "lastMatch": 8,
       "table": [
         {
           "name": "Türkei",
+          "points": 39
+        },
+        {
+          "name": "Ukraine",
           "points": 35
         },
         {
           "name": "Frankreich",
-          "points": 28
+          "points": 35
         },
         {
           "name": "Spanien",
-          "points": 25
-        },
-        {
-          "name": "Ukraine",
           "points": 25
         },
         {
@@ -966,16 +971,16 @@
           "points": 24
         },
         {
+          "name": "Polen",
+          "points": 23
+        },
+        {
           "name": "Italien",
           "points": 20
         },
         {
-          "name": "Polen",
-          "points": 18
-        },
-        {
           "name": "Serbien",
-          "points": 10
+          "points": 11
         },
         {
           "name": "Portugal",
