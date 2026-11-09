@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-08T20:30:47.161Z",
+  "guncellendi": "2026-11-09T00:56:55.818Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-08T22:54:50.000Z",
+      "ozet": "On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Directors announcing the investigation, Huang sent a memo to Nvidia employees acknowledging the affair. You can read the full text below. To my […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia'da casusluk skandalı! CEO Jensen Huang hakkında soruşturma",
+      "link": "https://www.donanimhaber.com/nvidia-da-casusluk-krizi-ceo-jensen-huang-hakkinda-sorusturma--212641",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-08T22:05:44.000Z",
+      "ozet": "Nvidia CEO'su Jensen Huang, Çin adına casusluk yaptığı öne sürülen bir kadınla ilişkisi olduğunu kabul etti. Şirket, iddialar üzerine bağımsız bir soruşturma başlattı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "link": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-08T21:00:11.000Z",
+      "ozet": "In a memo to the company, Huang admitted that he had an affair.",
+      "kullanildi": false
+    },
     {
       "baslik": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
@@ -185,30 +209,6 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-07T01:40:28.000Z",
       "ozet": "The deal highlights the challenges of developing massive AI data centers.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-06T23:46:18.000Z",
-      "ozet": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "China reportedly recruited AI exec to spy on Jensen Huang",
-      "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-06T23:00:44.000Z",
-      "ozet": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
-      "link": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-06T22:53:46.000Z",
-      "ozet": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
       "kullanildi": false
     }
   ]

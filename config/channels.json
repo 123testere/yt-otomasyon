@@ -153,6 +153,7 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "5 Side Hustles You Can Start With $0 💰",
       "Saltwater Crocodile: The Strongest Bite Ever Measured",
       "Blue Whale vs African Elephant: Who Is Heavier?",
       "Arctic Tern vs Bar-tailed Godwit: Who Flies Farther?",
@@ -249,6 +250,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Zincirli · Bölüm 4: İkinci Kez",
       "Kral onu neden öldürtmedi? 👑",
       "Zincirli · Bölüm 3: Yarım Bilezik",
       "Zincirli · Bölüm 2: Kızıl Loca",
@@ -623,6 +625,7 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
       "Çatalhöyük'te Bulunan 8000 Yıllık Ayna Cam Değildi",
       "Ütünün Atası Kızgın Kömür Dolu Bir Tavaydı",
       "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
@@ -927,6 +930,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 7/30: Wer produziert die meiste Milch? 🥛",
       "Duell 6/30: Wer erntet die meisten Kartoffeln? 🥔",
       "Duell 5/30: Wer erntet die meisten Weintrauben? 🍇",
       "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
@@ -939,11 +943,15 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 6,
+      "lastMatch": 7,
       "table": [
         {
           "name": "Türkei",
-          "points": 30
+          "points": 35
+        },
+        {
+          "name": "Frankreich",
+          "points": 28
         },
         {
           "name": "Spanien",
@@ -954,20 +962,16 @@
           "points": 25
         },
         {
-          "name": "Frankreich",
-          "points": 21
+          "name": "Deutschland",
+          "points": 24
         },
         {
           "name": "Italien",
-          "points": 19
+          "points": 20
         },
         {
           "name": "Polen",
-          "points": 14
-        },
-        {
-          "name": "Deutschland",
-          "points": 14
+          "points": 18
         },
         {
           "name": "Serbien",

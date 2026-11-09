@@ -1,53 +1,5 @@
 [
   {
-    "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
-    "type": "short",
-    "publishAt": "2026-11-09T05:00:00.000Z",
-    "targetWords": 80,
-    "format": "dizi",
-    "dizi": "para-top5",
-    "dikey": true,
-    "ceviriDilleri": [
-      "es"
-    ],
-    "bolum": {
-      "no": 1
-    }
-  },
-  {
-    "id": "2026-11-09_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
-    "type": "short",
-    "publishAt": "2026-11-09T05:00:00.000Z",
-    "targetWords": 94,
-    "format": "duell",
-    "season": 1,
-    "match": 7,
-    "total": 30,
-    "final": false,
-    "eveOfFinal": false,
-    "deney": {
-      "id": "muzik-seviye",
-      "kol": "A"
-    }
-  },
-  {
-    "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
-    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
-    "type": "long",
-    "publishAt": "2026-11-09T15:00:00.000Z",
-    "targetWords": 425,
-    "format": "dizi",
-    "dizi": "zincirli",
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 4
-    }
-  },
-  {
     "id": "2026-11-09_UCJUP2lYvMuhcif8FavIXuYA_short1",
     "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
     "type": "short",
@@ -65,27 +17,20 @@
     }
   },
   {
-    "id": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "id": "2026-11-10_UCJUP2lYvMuhcif8FavIXuYA_short1",
+    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
     "type": "short",
-    "publishAt": "2026-11-09T16:00:00.000Z",
-    "targetWords": 86,
-    "format": "cizim",
+    "publishAt": "2026-11-10T16:00:00.000Z",
+    "targetWords": 80,
+    "haberAkisi": "yapay-zeka",
+    "format": "dizi",
+    "dizi": "yz-gundem",
+    "dikey": true,
     "ceviriDilleri": [
       "en"
     ],
-    "oylama": {
-      "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-      "a": "Mikrodalga fırın",
-      "b": "Diş fırçası",
-      "oyA": 0,
-      "oyB": 1,
-      "kazanan": "b"
-    },
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "A",
-      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
+    "bolum": {
+      "no": 2
     }
   }
 ]
