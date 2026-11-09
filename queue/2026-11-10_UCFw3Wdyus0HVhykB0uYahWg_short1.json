@@ -1,0 +1,216 @@
+{
+ "id": "2026-11-10_UCFw3Wdyus0HVhykB0uYahWg_short1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "derivedFrom": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "bolum": {
+  "no": 4,
+  "ad": "İkinci Kez"
+ },
+ "publishAt": "2026-11-10T09:00:00.000Z",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 4",
+  "soru": "Zincirli ikili birlikte kazanır mı?"
+ },
+ "title": "Kral yalanı nasıl anladı? ⛓️",
+ "description": "Kral sahte bir dövüşü nasıl fark etti? Sence Arın ve Kargan zincirle nasıl kurtulacak?",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "gladyatör",
+  "kral",
+  "dizi"
+ ],
+ "topic": "Kral sahte dövüşü fark eder ve Arın'la Kargan'ı zincirler",
+ "ceviriler": {
+  "en": {
+   "title": "How did the king know it was fake? ⛓️",
+   "description": "How did the king spot a staged fight? How will Arin and Kargan escape when they are chained together?"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "saldir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "blok",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kılıçlarımız çarpıştı ama ikimiz de vurmuyorduk."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "blok",
+     "esya": "kilic+kalkan",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "kilic-savur",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kargan ilk hamleyi yaptı. Kılıcı kulağımın yanından geçti."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dus",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "kilic-kaldir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir adım, bir darbe, bir blok. Kalabalık alkışlıyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Durun! Kargan, kırk dövüşte hiç kaçırmadın. Bugün üç kere kaçırdın."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 2,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkimiz de yakalandığımızı biliyorduk."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.8
+   },
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Yarın birlikte kazanır ya da birlikte düşersiniz."
+    }
+   ]
+  }
+ ]
+}

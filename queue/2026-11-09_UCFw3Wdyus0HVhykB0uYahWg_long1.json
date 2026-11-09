@@ -1,0 +1,744 @@
+{
+ "id": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-09T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "bolum": {
+  "no": 4,
+  "ad": "İkinci Kez"
+ },
+ "title": "Zincirli · Bölüm 4: İkinci Kez",
+ "titleAlt": "Kral Sahte Dövüşü Nasıl Anladı? Zincirli Bölüm 4",
+ "description": "Arın ve Kargan arenada sahte bir dövüş sergiliyor, ama kralın gözünden hiçbir şey kaçmıyor. Zincirli, çöp adam animasyonuyla anlatılan bir destan.\n\n#zincirli #çöpadam #animasyon #dizi",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon dizi",
+  "gladyatör",
+  "sahte dövüş",
+  "kargan",
+  "arın",
+  "destan",
+  "bölüm bölüm"
+ ],
+ "topic": "Arın ve Kargan sahte bir dövüş yapar, kral fark eder ve zincirlerini birbirine bağlatır",
+ "thumbnailText": "SAHTE DÖVÜŞ",
+ "thumbnailTextAlt": "ZİNCİRLER BAĞLANDI",
+ "kapak": {
+  "sahne": 0,
+  "sn": 1.5
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.1,
+ "kapanis": {
+  "baslik": "DEVAMI",
+  "sonraki": "Bölüm 5: Çifte Zincir — Yakında",
+  "soru": "Sence zincirli ikili kazanabilir mi?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Chained · Episode 4: The Second Time",
+   "description": "Arin and Kargan stage a fake duel in the arena, but nothing escapes the king's eye. Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Soğuk Açılış",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "aciklama": "Arın ve Kargan kılıç kılıca. İkisi de vurmuyormuş gibi yavaş hareket ediyor, kral locadan izliyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "saldir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "blok",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kılıçlarımız çarpıştı ama ikimiz de vurmuyorduk."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tribünler çılgına döndü. Kral ise hiç kıpırdamadı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir dövüşü yalan olarak yapmak, gerçek dövüşten çok daha zordu."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 3,
+   "aciklama": "Loca yakın çekim: Kral kaşlarını çatmış, gözleri ellerde.",
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kralın gözleri kılıçlara değil, ellerimize bakıyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kral her zaman ellere bakardı. Gözlerden çok ellerin yalan söylediğini düşünürdü."
+    }
+   ]
+  },
+  {
+   "kisim": "Gün Doğarken",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Gün Doğarken"
+   },
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Arın ve Kargan hücrelerinin parmaklıkları arasından fısıldaşıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "poz": "dur",
+     "ifade": "fisilti"
+    },
+    {
+     "id": "kargan",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "fisilti"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O gece gözümü kırpmadım. Kargan da kırpmadı."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Dövüşü gerçek gibi göstermeliyiz. Kral bir yalanı kokusundan tanır.",
+     "ifade": "fisilti"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zindanın duvarlarından su damlıyordu. Her damla, sabaha kalan zamandan bir parça gibiydi."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "İkisi birbirine bakıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Bana vuracaksın, ben de sana. Ama hiçbiri acıtmayacak."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Kırk dövüşte hiç böyle bir şey yapmadım.",
+     "once": 0.3
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kargan'ın elleri titriyordu. Dev bir adamın korkusunu ilk kez gördüm."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Toros karanlıktan sesleniyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "poz": "dur",
+     "ifade": "notr"
+    },
+    {
+     "id": "toros",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Gerçeği taklit etmek, gerçekten dövüşmekten zordur. Zayıf olan acele eder."
+    },
+    {
+     "kim": "toros",
+     "metin": "Kralın gözü keskindir. Ama keskin göz de çoğu zaman sadece ayrıntıya bakar."
+    },
+    {
+     "kim": "arin",
+     "metin": "Ayrıntıyı biz yönetiriz."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "zaman": "safak",
+   "kalabalik": 0.6,
+   "sure": 3,
+   "aciklama": "Arena kapısı açılıyor, gün ışığı kuma vuruyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "poz": "yuru",
+     "ifade": "endiseli",
+     "hareket": {
+      "x0": 0.15,
+      "x1": 0.45,
+      "sure": 2.5
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kapı açıldı. Kum ayaklarımın altında ılıktı. Ellerim ise buz gibi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tribünler bizi bekliyordu. Üstte kralın kırmızı locası, yanında da Sungur vardı."
+    }
+   ]
+  },
+  {
+   "kisim": "Sahte Dövüş",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Sahte Dövüş"
+   },
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Kargan ilk hamleyi yapar, kılıcı Arın'ın kulağının yanından geçer.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "blok",
+     "esya": "kilic+kalkan",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "kilic-savur",
+     "esya": "kilic",
+     "ifade": "endiseli",
+     "adimlar": [
+      {
+       "sn": 0.8,
+       "poz": "saldir"
+      },
+      {
+       "sn": 1.6,
+       "poz": "kilic-kaldir"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "muhafiz",
+     "metin": "Başlayın!"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kargan ilk hamleyi yaptı. Kılıcı kulağımın yanından geçti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tek bir hata, ikimizin de sonu olabilirdi."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "aciklama": "Kalkan darbesi, Arın bir adım geri sürünür.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "blok",
+     "esya": "kilic+kalkan",
+     "ifade": "endiseli",
+     "adimlar": [
+      {
+       "sn": 0.6,
+       "poz": "darbe",
+       "darbe": true
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "saldir",
+     "esya": "kilic",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kalkanımla karşıladım, o da geri çekildi. Kalabalık bunu ustalık sandı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Aramızdaki mesafeyi santim santim ayarlıyorduk."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Kargan fısıldar, Arın yan gözle bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "saldir",
+     "esya": "kilic",
+     "ifade": "fisilti"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "esya": "kilic",
+     "ifade": "fisilti"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Sol tarafa düş. Yavaş.",
+     "ifade": "fisilti"
+    },
+    {
+     "kim": "arin",
+     "metin": "Çok yavaş değil.",
+     "ifade": "fisilti"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu yalanın içindeki en gerçek şey, birbirimize duyduğumuz güvendi."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 3,
+   "aciklama": "Arın dengesini kaybedip düşer gibi yapar, kum havalanır.",
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dus",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "kilic-kaldir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir adım, bir darbe, bir blok. Her şey tam olması gerektiği gibiydi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kum havalandı, kalabalık nefesini tuttu."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Tribünler ayakta, ama loca sessiz.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "kalk",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kalabalık bizi alkışlıyordu. Ama alkışın arasında kralın sesi yoktu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Birkaç hamle daha. Hepsi ölçülü, hepsi sessiz bir anlaşmanın parçasıydı."
+    }
+   ]
+  },
+  {
+   "kisim": "Kralın Gözü",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Kralın Gözü"
+   },
+   "mekan": "loca",
+   "kalabalik": 1,
+   "aciklama": "Kral ayağa kalkar, eliyle dövüşü durdurur.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Durun!"
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 1,
+   "aciklama": "Kral Sungur'a döner.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "supheli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Kargan, kırk dövüşte hiç kaçırmadın. Bugün üç kere kaçırdın."
+    },
+    {
+     "kim": "sungur",
+     "metin": "Efendim, belki yorulmuştur.",
+     "once": 0.3
+    },
+    {
+     "kim": "kral",
+     "metin": "Bir şampiyon kaçırmaz. Kaçırıyorsa bunu isteyerek yapıyordur."
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 1,
+   "aciklama": "Kralın sesi alçalır, tehdit dolu.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Yorulan şampiyon olmaz. Yalan söyleyen şampiyon ise hiç olmaz."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kral oturduğu yerden doğrulmuştu. Bu kötüye işaretti."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 3,
+   "aciklama": "Arın ve Kargan göz göze gelir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kargan bana baktı. Ben ona baktım. İkimiz de yakalandığımızı biliyorduk."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kral bir şeyin kokusunu almıştı. Biz de bunu anlamıştık."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Arın kılıcı kaldırarak kralı selamlar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Bu dövüş gerçekti, majesteleri."
+    },
+    {
+     "kim": "kral",
+     "metin": "Gerçek mi? O zaman bunu kanıtlarsınız.",
+     "once": 0.3
+    }
+   ]
+  },
+  {
+   "kisim": "Çifte Zincir",
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Çifte Zincir"
+   },
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Muhafızlar ağır zincirlerle arenaya girer.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "yuru",
+     "esya": "mesale",
+     "hareket": {
+      "x0": 1.2,
+      "x1": 0.85,
+      "sure": 1.5
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Muhafızlar iki ağır zincir getirdi. Birini benim bileğime, diğerini Kargan'ın bileğine taktılar."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zincir soğuktu. Bileğimin ağırlığı bir anda iki katına çıktı."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "aciklama": "Zincir Arın ile Kargan arasında gerilir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.8
+   },
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Zincirlerinizi birbirine bağlatıyorum. Yarın birlikte kazanır ya da birlikte düşersiniz."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Seninle düşersem de kalkarsam da, yanındayım demircinin oğlu.",
+     "once": 0.5
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 3,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "aciklama": "Zincir kumda çınlar, iki gölge yan yana.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zincirin sesi arenada çınladı. Sanki dövüş yeni başlıyordu."
+    }
+   ]
+  }
+ ]
+}

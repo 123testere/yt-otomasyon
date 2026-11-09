@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-10_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-10T09:00:00.000Z",
+ "bolum": {
+  "no": 1,
+  "ad": "Top 5"
+ },
+ "title": "Bedava Oynayabileceğin En İyi 5 Oyun 🎮",
+ "description": "Bedava oynanan en iyi 5 oyun: Fortnite, Dota 2, League of Legends, Valorant ve Apex Legends. Senin listende birinci hangisi? Yorumlara yaz!\n\n#bedavaoyun #oyunönerisi #videooyunları #gaming",
+ "tags": [
+  "bedava oyunlar",
+  "en iyi ücretsiz oyunlar",
+  "free to play",
+  "fortnite",
+  "dota 2",
+  "league of legends",
+  "valorant",
+  "apex legends",
+  "oyun önerisi"
+ ],
+ "topic": "Ücretsiz oynanabilen en iyi 5 çok oyunculu oyun",
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Bu listede birinci hangisi olmalı?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "The 5 Best Free Games You Can Play Right Now 🎮",
+   "description": "The 5 best free-to-play games: Fortnite, Dota 2, League of Legends, Valorant and Apex Legends. Which is number one on your list? Tell us in the comments!\n\n#freegames #gaming #videogames #top5"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Bedava oyunlar"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cüzdanını açmadan saatlerce oynayabileceğin 5 oyun var. Sondan başlıyoruz!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Apex Legends",
+    "tur": "Battle royale",
+    "maddeler": [
+     "2019'da çıktı",
+     "3 kişilik takımlar",
+     "Kahraman yetenekleri"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Apex Legends. Üçer kişilik takımlarla son kalan olmaya çalışıyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Valorant",
+    "tur": "Taktiksel nişancı",
+    "maddeler": [
+     "2020'de çıktı",
+     "5'e 5 taktik",
+     "Ajan yetenekleri"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Valorant. Beşe beş taktik savaşları ve yetenekli ajanlar seni bekliyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "League of Legends",
+    "tur": "MOBA",
+    "maddeler": [
+     "2009'dan beri oynanıyor",
+     "5'e 5 takım",
+     "100+ şampiyon"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada League of Legends. 2009'dan beri oynanıyor ve yüzden fazla şampiyonu var."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Dota 2",
+    "tur": "MOBA",
+    "maddeler": [
+     "2013'te çıktı",
+     "Valve yapımı",
+     "Büyük turnuvalar"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Dota 2. Valve yapımı bu oyunda büyük turnuvalar düzenleniyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Fortnite",
+    "tur": "Battle royale",
+    "maddeler": [
+     "2017'de çıktı",
+     "Yapı kurma",
+     "Yüz milyonlarca oyuncu"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada Fortnite! 2017'de çıktı ve yüz milyonlarca oyuncuya ulaştı."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Senin listende birinci hangisi? Yorumlara yaz, abone olmayı unutma!"
+    }
+   ]
+  }
+ ]
+}

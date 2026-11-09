@@ -1,0 +1,355 @@
+{
+ "id": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "long",
+ "format": "cizim",
+ "publishAt": "2026-11-10T17:00:00.000Z",
+ "topic": "Çamaşır makinesinin kazandan otomatik makineye uzanan tarihi",
+ "title": "Çamaşır Makinesi: Haftanın En Yorucu Günü Nasıl Bitti?",
+ "titleAlt": "Çamaşır Günü Takvimden Nasıl Silindi? 1908'den Bugüne",
+ "hookText": "Çamaşır günü bir gün sürerdi",
+ "description": "Eşyaların Hikayesi #40\nÇamaşır makinesinin hikâyesi: kazanda kaynayan suyun ve yıkama tahtasının günlerinden, 1851'de tamburlu patente, 1908'de elektrikli makineye, 1937'de otomatik makineye uzanan yolculuk.\n\nYorumlarda siz seçtiniz: çamaşır makinesi. Sırada hangisi olsun? Buzdolabı mı, elektrik süpürgesi mi?\n\n#çamaşırmakinesi #icatlar #eşyalarınhikayesi",
+ "tags": [
+  "çamaşır makinesi",
+  "çamaşır makinesinin tarihi",
+  "çamaşır makinesi kim icat etti",
+  "ilk çamaşır makinesi",
+  "çamaşır günü",
+  "elektrikli çamaşır makinesi",
+  "otomatik çamaşır makinesi",
+  "eşyaların hikayesi",
+  "lamba altında",
+  "icatlar"
+ ],
+ "thumbnailText": "BÜTÜN GÜN SÜRERDİ",
+ "thumbnailTextAlt": "KOL YERİNE MOTOR",
+ "kapakAlt": "1851 – 1937",
+ "kapakCizim": "ink(kutu(40,50,220,320),{close:true,fill:'#E9E3D6',w:8,seed:1,pp:eo(pr(u,0,.6))});ink(ell(150,220,75,75,28),{close:true,fill:'#CFE0EA',w:8,seed:2,pp:eo(pr(u,.3,.9))});ink(ell(150,220,40,40,20,0,6.28*Math.min(1,u/2)),{w:8,seed:4,c:K.s});ink(ln([75,100],[140,100],4),{w:8,seed:3,pp:eo(pr(u,.5,1))});ink(ell(215,100,16,16,16),{close:true,fill:'#D9D2C0',w:8,seed:5,pp:eo(pr(u,.7,1.1))});",
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "baslikKart": [
+  "Çamaşır günü neden",
+  "bir gün sürerdi?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Buzdolabı",
+  "b": "Elektrik süpürgesi"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "The Washing Machine: How the Hardest Day of the Week Came to an End",
+   "description": "The story of the washing machine: from boiling pots and washboards to a drum patent in 1851, the electric machine of 1908 and the automatic machine of 1937.\n\n#washingmachine #inventions #history"
+  }
+ },
+ "oylama": {
+  "kaynak": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "b"
+ },
+ "scenes": [
+  {
+   "narration": "Eskiden çamaşır yıkamak, haftanın en yorucu gününü doldururdu. Yorumlarda siz seçtiniz: bugün çamaşır makinesinin hikâyesini anlatıyorum.",
+   "ifade": "merakli",
+   "cizim": "ink([[290, 420], [710, 420], [670, 540], [330, 540]],{close:true,fill:\"#C9A27A\",w:3.4,seed:4041,pp:eo(pr(u,0.0,0.55))});\n{const q=[];for(let i=0;i<=20;i++)q.push([310+i*(690-310)/20,436+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:4042,amp:.3});ctx.restore();}\nink(ln([100, 230],[900, 230],8),{w:4,c:K.m,seed:4043,pp:eo(pr(u,0.28,0.83))});\nctx.save();ctx.translate(220,230);ctx.rotate(Math.sin(T*2+4044)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#F0E6D2',w:3,seed:4044,pp:eo(pr(u,0.48,1.03))});ctx.restore();\nctx.save();ctx.translate(400,230);ctx.rotate(Math.sin(T*2+4045)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#C9D3EA',w:3,seed:4045,pp:eo(pr(u,0.76,1.31))});ctx.restore();\nctx.save();ctx.translate(580,230);ctx.rotate(Math.sin(T*2+4046)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#E8B64A',w:3,seed:4046,pp:eo(pr(u,1.04,1.59))});ctx.restore();\nctx.save();ctx.translate(760,230);ctx.rotate(Math.sin(T*2+4047)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#EFE4CB',w:3,seed:4047,pp:eo(pr(u,1.32,1.87))});ctx.restore();\netk(\"çamaşır günü\",500,640,eo(pr(u,1.6,2.15)),{size:46,al:'center'});"
+  },
+  {
+   "narration": "Bir düğmeye basıyoruz, sonrasını unutuyoruz. Oysa bu sessiz makinenin arkasında yüzyıllık bir emek var.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(350,180,300,380),{close:true,fill:'#E9E3D6',w:3.4,seed:4081,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,390,95,95,28),{close:true,fill:'#CFE0EA',w:5,seed:4082,pp:eo(pr(u,0.28,0.83))});\nink(ell(500,390,60,60,28),{close:true,fill:'#EFE4CB',w:3,seed:4083,pp:eo(pr(u,0.56,1.11))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,390],[500+Math.cos(a)*55,390+Math.sin(a)*55],4),{w:4.4,c:K.s,seed:4084+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(400,220,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:4085,pp:eo(pr(u,0.84,1.39))});\nink(ell(450,220,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:4086,pp:eo(pr(u,1.12,1.67))});\nink(ln([540, 220],[610, 220],8),{w:6,c:K.m,seed:4087,pp:eo(pr(u,1.4,1.95))});"
+  },
+  {
+   "narration": "Gelin, çamaşırın kazanda kaynadığı günlerden başlayalım.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink([[370, 270], [630, 270], [600, 410], [400, 410]],{close:true,fill:\"#6B5B4B\",w:3.4,seed:4121,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,270,130,24,28),{close:true,fill:'#8A7A66',w:3.4,seed:4122,pp:eo(pr(u,0.28,0.83))});\nink(ln([370, 270],[325, 300],8),{w:5,c:K.m,seed:4123,pp:eo(pr(u,0.56,1.11))});\nink(ln([630, 270],[675, 300],8),{w:5,c:K.m,seed:4124,pp:eo(pr(u,0.76,1.31))});\nfor(let i=0;i<4;i++){const f=Math.sin(T*9+i*2)*10,xx=500+(i-1.5)*34;ctx.save();ctx.globalAlpha=eo(pr(u,.3,.8));ink([[xx-16,440],[xx+f,440-50-i%2*18],[xx+16,440]],{close:true,fill:i%2?'#D9532B':'#E8A13A',w:2.6,seed:4125+i,amp:.6});ctx.restore();}\nfor(let k=0;k<3;k++){const ph=(T*.7+k*.31)%1;ctx.save();ctx.globalAlpha=(1-ph)*.8*eo(pr(u,.6,1.1));ink([[460+k*34,240],[460+k*34+Math.sin(T*3+k)*10,240-40-ph*40],[460+k*34,240-90-ph*60]],{w:3.6,c:K.s,seed:4126+k,amp:.4});ctx.restore();}"
+  },
+  {
+   "narration": "Çamaşır makinesini sadece bir eşya olarak görmek kolay. Oysa o, evdeki zamanın yeniden dağıtıldığı yerdi.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,360,190,190,28),{close:true,fill:'#EFE4CB',w:5,seed:4161,pp:eo(pr(u,0.0,0.55))});\n{const a=T*1.5,b=T*.125;ink(ln([500,360],[500+Math.sin(a)*190*.8,360-Math.cos(a)*190*.8],4),{w:5,seed:3});ink(ln([500,360],[500+Math.sin(b)*190*.5,360-Math.cos(b)*190*.5],4),{w:8,c:K.ak,seed:4});}\netk(\"zaman\",500,640,eo(pr(u,0.28,0.83)),{size:46,al:'center'});"
+  },
+  {
+   "narration": "Yüzyıllar boyunca çamaşır elde yıkandı. Çoğu evde işin başı, ocak üstündeki büyük bir kazandı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink([[370, 260], [630, 260], [600, 400], [400, 400]],{close:true,fill:\"#6B5B4B\",w:3.4,seed:4201,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,260,130,24,28),{close:true,fill:'#8A7A66',w:3.4,seed:4202,pp:eo(pr(u,0.28,0.83))});\nink(ln([370, 260],[325, 290],8),{w:5,c:K.m,seed:4203,pp:eo(pr(u,0.56,1.11))});\nink(ln([630, 260],[675, 290],8),{w:5,c:K.m,seed:4204,pp:eo(pr(u,0.76,1.31))});\nfor(let i=0;i<4;i++){const f=Math.sin(T*9+i*2)*10,xx=500+(i-1.5)*34;ctx.save();ctx.globalAlpha=eo(pr(u,.3,.8));ink([[xx-16,430],[xx+f,430-50-i%2*18],[xx+16,430]],{close:true,fill:i%2?'#D9532B':'#E8A13A',w:2.6,seed:4205+i,amp:.6});ctx.restore();}\nfor(let k=0;k<3;k++){const ph=(T*.7+k*.31)%1;ctx.save();ctx.globalAlpha=(1-ph)*.8*eo(pr(u,.6,1.1));ink([[460+k*34,230],[460+k*34+Math.sin(T*3+k)*10,230-40-ph*40],[460+k*34,230-90-ph*60]],{w:3.6,c:K.s,seed:4206+k,amp:.4});ctx.restore();}",
+   "bolum": {
+    "no": "Bölüm I",
+    "ust": "Makineden önce",
+    "ad": "Kazanda ve teknede"
+   }
+  },
+  {
+   "narration": "Suyu ısıtmak için odun yakılır, kazan taşınırdı. Sadece su hazırlamak bile saatler alırdı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(430,540,80,18,28),{close:true,fill:'#A67C52',w:3.4,seed:4241,pp:eo(pr(u,0.0,0.55))});\nink(ell(570,540,80,18,28),{close:true,fill:'#A67C52',w:3.4,seed:4242,pp:eo(pr(u,0.28,0.83))});\nfor(let i=0;i<4;i++){const f=Math.sin(T*9+i*2)*10,xx=500+(i-1.5)*34;ctx.save();ctx.globalAlpha=eo(pr(u,.3,.8));ink([[xx-16,520],[xx+f,520-50-i%2*18],[xx+16,520]],{close:true,fill:i%2?'#D9532B':'#E8A13A',w:2.6,seed:4243+i,amp:.6});ctx.restore();}\nink(ell(500,260,110,110,28),{close:true,fill:'#EFE4CB',w:5,seed:4244,pp:eo(pr(u,0.56,1.11))});\n{const a=T*1.5,b=T*.125;ink(ln([500,260],[500+Math.sin(a)*110*.8,260-Math.cos(a)*110*.8],4),{w:5,seed:3});ink(ln([500,260],[500+Math.sin(b)*110*.5,260-Math.cos(b)*110*.5],4),{w:8,c:K.ak,seed:4});}\netk(\"saatler\",500,640,eo(pr(u,0.84,1.39)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Sabunun yetmediği evlerde, odun külünden süzülen su kiri çözmek için kullanılırdı.",
+   "ifade": "dusunceli",
+   "cizim": "ink([[320, 520], [500, 330], [680, 520]],{close:true,fill:\"#C9C2B2\",w:3.4,seed:4281,pp:eo(pr(u,0.0,0.55))});\netk(\"odun külü\",500,600,eo(pr(u,0.28,0.83)),{size:44,al:'center'});\nfor(let k=0;k<4;k++){const ph=(T*.8+k*.27)%1;ctx.save();ctx.globalAlpha=eo(pr(u,.4,.9))*(1-ph*.4);ctx.beginPath();ctx.arc(380+k*80,150+ph*80,9,0,7);ctx.fillStyle='#7FA6BF';ctx.fill();ctx.restore();}"
+  },
+  {
+   "narration": "Çamaşırlar teknede ovulur, taşlara ya da tahtalara vurulurdu. Bu iş kolları çok yorardı. Soğuk kış günlerinde daha da zorlaşırdı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink([[290, 400], [710, 400], [670, 520], [330, 520]],{close:true,fill:\"#C9A27A\",w:3.4,seed:4321,pp:eo(pr(u,0.0,0.55))});\n{const q=[];for(let i=0;i<=20;i++)q.push([310+i*(690-310)/20,416+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:4322,amp:.3});ctx.restore();}\nink(ln([300,330],[500+Math.sin(T*4)*60,390],6),{w:8,seed:61,pp:eo(pr(u,.6,1))});ink(ln([700,330],[500-Math.sin(T*4)*60,390],6),{w:8,seed:62,pp:eo(pr(u,.8,1.2))});"
+  },
+  {
+   "narration": "Yakındaki çeşmenin ya da akarsuyun başında toplanıp yıkamak da yaygındı.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(380,200,240,60),{close:true,fill:'#8E8F93',w:3.4,seed:4361,pp:eo(pr(u,0.0,0.55))});\nink(ln([500, 260],[500, 300],8),{w:12,c:K.m,seed:4362,pp:eo(pr(u,0.28,0.83))});\nfor(let k=0;k<1;k++){const ph=(T*.8+k*.27)%1;ctx.save();ctx.globalAlpha=eo(pr(u,.4,.9))*(1-ph*.4);ctx.beginPath();ctx.arc(500+k*0,320+ph*80,9,0,7);ctx.fillStyle='#7FA6BF';ctx.fill();ctx.restore();}\n{const q=[];for(let i=0;i<=20;i++)q.push([200+i*(800-200)/20,520+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:4363,amp:.3});ctx.restore();}\n{const q=[];for(let i=0;i<=20;i++)q.push([200+i*(800-200)/20,570+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:4364,amp:.3});ctx.restore();}\netk(\"çeşme başı\",500,640,eo(pr(u,0.48,1.03)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Anadolu'da pek çok evde çamaşır günü bütün ailenin işiydi. Komşular birbirine el verirdi.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(160,340,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:4401,pp:eo(pr(u,0.0,0.55))});\nink([[140, 340], [270, 250], [400, 340]],{close:true,fill:\"#B5432F\",w:3.4,seed:4402,pp:eo(pr(u,0.28,0.83))});\nink(kutu(245,420,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:4403,pp:eo(pr(u,0.56,1.11))});\nink(kutu(600,340,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:4404,pp:eo(pr(u,0.84,1.39))});\nink([[580, 340], [710, 250], [840, 340]],{close:true,fill:\"#B5432F\",w:3.4,seed:4405,pp:eo(pr(u,1.12,1.67))});\nink(kutu(685,420,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:4406,pp:eo(pr(u,1.4,1.95))});\nink(ln([400, 420],[590, 420],8),{w:6,c:K.m,seed:4407,pp:eo(pr(u,1.68,2.23))});\netk(\"komşular\",500,320,eo(pr(u,1.88,2.43)),{size:44,al:'center'});\netk(\"çamaşır günü\",500,640,eo(pr(u,2.18,2.73)),{size:46,al:'center'});"
+  },
+  {
+   "narration": "Yıkanan çamaşır güneşte ve rüzgârda kurutulurdu. Beyazlar için güneş, doğal bir ağartıcı sayılırdı. Yağmur yağarsa bütün iş ertelenirdi.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([100, 420],[900, 420],8),{w:4,c:K.m,seed:4441,pp:eo(pr(u,0.0,0.55))});\nctx.save();ctx.translate(220,420);ctx.rotate(Math.sin(T*2+4442)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#F0E6D2',w:3,seed:4442,pp:eo(pr(u,0.2,0.75))});ctx.restore();\nctx.save();ctx.translate(400,420);ctx.rotate(Math.sin(T*2+4443)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#C9D3EA',w:3,seed:4443,pp:eo(pr(u,0.48,1.03))});ctx.restore();\nctx.save();ctx.translate(580,420);ctx.rotate(Math.sin(T*2+4444)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#E8B64A',w:3,seed:4444,pp:eo(pr(u,0.76,1.31))});ctx.restore();\nctx.save();ctx.translate(760,420);ctx.rotate(Math.sin(T*2+4445)*.08);ink(kutu(-45,0,90,140),{close:true,fill:'#EFE4CB',w:3,seed:4445,pp:eo(pr(u,1.04,1.59))});ctx.restore();\nink(ell(790,150,60,60,28),{close:true,fill:'#E8B64A',w:3.4,seed:4446,pp:eo(pr(u,1.32,1.87))});\nfor(let i=0;i<8;i++){const a=i*.785+T;ink(ln([790+Math.cos(a)*80,150+Math.sin(a)*80],[790+Math.cos(a)*105,150+Math.sin(a)*105],3),{w:4,c:K.lamba,seed:50+i,pp:eo(pr(u,.5,1))});}"
+  },
+  {
+   "narration": "On dokuzuncu yüzyılda oluklu yıkama tahtası yaygınlaştı. Kiri ovmak biraz daha kolay oldu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(410,240,180,240),{close:true,fill:'#C9A27A',w:3.4,seed:4481,pp:eo(pr(u,0.0,0.55))});\nink(ln([430, 280],[570, 280],8),{w:4,c:K.s,seed:4482,pp:eo(pr(u,0.28,0.83))});\nink(ln([430, 312],[570, 312],8),{w:4,c:K.s,seed:4483,pp:eo(pr(u,0.48,1.03))});\nink(ln([430, 344],[570, 344],8),{w:4,c:K.s,seed:4484,pp:eo(pr(u,0.68,1.23))});\nink(ln([430, 376],[570, 376],8),{w:4,c:K.s,seed:4485,pp:eo(pr(u,0.88,1.43))});\nink(ln([430, 408],[570, 408],8),{w:4,c:K.s,seed:4486,pp:eo(pr(u,1.08,1.63))});\nink(ln([430, 440],[570, 440],8),{w:4,c:K.s,seed:4487,pp:eo(pr(u,1.28,1.83))});\netk(\"1800'ler\",800,600,eo(pr(u,1.48,2.03)),{size:46,al:'center'});"
+  },
+  {
+   "narration": "Ama su, sabun ve emek aynı kaldı. Çamaşır yine bir yük olarak ortada duruyordu.",
+   "ifade": "dusunceli",
+   "cizim": "ink([[150, 430], [450, 430], [410, 550], [190, 550]],{close:true,fill:\"#C9A27A\",w:3.4,seed:4521,pp:eo(pr(u,0.0,0.55))});\n{const q=[];for(let i=0;i<=20;i++)q.push([170+i*(430-170)/20,446+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:4522,amp:.3});ctx.restore();}\nink([[590, 280], [850, 280], [820, 420], [620, 420]],{close:true,fill:\"#6B5B4B\",w:3.4,seed:4523,pp:eo(pr(u,0.28,0.83))});\nink(ell(720,280,130,24,28),{close:true,fill:'#8A7A66',w:3.4,seed:4524,pp:eo(pr(u,0.56,1.11))});\nink(ln([590, 280],[545, 310],8),{w:5,c:K.m,seed:4525,pp:eo(pr(u,0.84,1.39))});\nink(ln([850, 280],[895, 310],8),{w:5,c:K.m,seed:4526,pp:eo(pr(u,1.04,1.59))});\nfor(let k=0;k<3;k++){const ph=(T*.7+k*.31)%1;ctx.save();ctx.globalAlpha=(1-ph)*.8*eo(pr(u,.6,1.1));ink([[680+k*34,250],[680+k*34+Math.sin(T*3+k)*10,250-40-ph*40],[680+k*34,250-90-ph*60]],{w:3.6,c:K.s,seed:4527+k,amp:.4});ctx.restore();}\netk(\"su · sabun · emek\",500,640,eo(pr(u,1.24,1.79)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "İlk makine fikirleri, elle çevrilen tahta tamburlara dayanıyordu. Fikir basitti: çamaşırı suyla birlikte döndürmek.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(250,300,320,220),{close:true,fill:'#C9A27A',w:3.4,seed:4561,pp:eo(pr(u,0.0,0.55))});\nink(ln([250, 340],[570, 340],8),{w:4,c:K.s,seed:4562,pp:eo(pr(u,0.28,0.83))});\nink(ln([250, 480],[570, 480],8),{w:4,c:K.s,seed:4563,pp:eo(pr(u,0.48,1.03))});\nink(ell(740,410,60,60,28),{close:true,fill:'#C9A27A',w:3.4,seed:4564,pp:eo(pr(u,0.68,1.23))});\nink(ell(740,410,33.0,33.0,28),{close:true,fill:'#EFE4CB',w:3.4,seed:4565,pp:eo(pr(u,0.96,1.51))});\n{const a=T*3;ink(ln([740,410],[740+Math.cos(a)*60*1.5,410+Math.sin(a)*60*1.5],4),{w:8,c:K.ak,seed:4566,pp:eo(pr(u,.6,1))});ctx.beginPath();ctx.arc(740+Math.cos(a)*60*1.5,410+Math.sin(a)*60*1.5,14,0,7);ctx.fillStyle=K.ak;ctx.fill();}\nink(ln([570, 410],[680, 410],8),{w:8,c:K.m,seed:4567,pp:eo(pr(u,1.24,1.79))});",
+   "bolum": {
+    "no": "Bölüm II",
+    "ust": "1800'ler",
+    "ad": "Çevirmeli makineler"
+   }
+  },
+  {
+   "narration": "1851'de James King'in tamburlu bir makine için patent aldığı söylenir.",
+   "ifade": "anlatiyor",
+   "cizim": "txt(\"1851\",500,260,170,{c:K.ak,a:eo(pr(u,0.0,0.55))});\nink(ell(500,470,110,110,28),{close:true,fill:'#C9A27A',w:3.4,seed:4601,pp:eo(pr(u,0.3,0.85))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,470],[500+Math.cos(a)*100,470+Math.sin(a)*100],4),{w:4.4,c:K.s,seed:4602+i,amp:.3,pp:eo(pr(u,.5,1))});}\netk(\"tamburlu makine\",500,640,eo(pr(u,0.58,1.13)),{size:42,al:'center'});"
+  },
+  {
+   "narration": "Bir kolu çeviriyordunuz, tambur dönüyor, çamaşır suyun içinde sürtünerek yıkanıyordu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(400,400,130,130,28),{close:true,fill:'#C9A27A',w:3.4,seed:4641,pp:eo(pr(u,0.0,0.55))});\nfor(let i=0;i<4;i++){const a=T*3+i*6.283/4;ink(ln([400,400],[400+Math.cos(a)*120,400+Math.sin(a)*120],4),{w:4.4,c:K.s,seed:4642+i,amp:.3,pp:eo(pr(u,.5,1))});}\n{const q=[];for(let i=0;i<=20;i++)q.push([250+i*(550-250)/20,470+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:4643,amp:.3});ctx.restore();}\nink(ell(740,400,60,60,28),{close:true,fill:'#C9A27A',w:3.4,seed:4644,pp:eo(pr(u,0.28,0.83))});\nink(ell(740,400,33.0,33.0,28),{close:true,fill:'#EFE4CB',w:3.4,seed:4645,pp:eo(pr(u,0.56,1.11))});\n{const a=T*3;ink(ln([740,400],[740+Math.cos(a)*60*1.5,400+Math.sin(a)*60*1.5],4),{w:8,c:K.ak,seed:4646,pp:eo(pr(u,.6,1))});ctx.beginPath();ctx.arc(740+Math.cos(a)*60*1.5,400+Math.sin(a)*60*1.5,14,0,7);ctx.fillStyle=K.ak;ctx.fill();}\nink(ln([530, 400],[680, 400],8),{w:8,c:K.m,seed:4647,pp:eo(pr(u,0.84,1.39))});"
+  },
+  {
+   "narration": "Tahta tamburlu makineler bir fıçıya benziyordu. İçindeki kanatlar çamaşırı suya batırıp çıkarırdı.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(340,240,320,320),{close:true,fill:'#C9A27A',w:3.4,seed:4681,pp:eo(pr(u,0.0,0.55))});\nink(ln([340, 330],[660, 330],8),{w:4,c:K.s,seed:4682,pp:eo(pr(u,0.28,0.83))});\nink(ln([340, 470],[660, 470],8),{w:4,c:K.s,seed:4683,pp:eo(pr(u,0.48,1.03))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,400],[500+Math.cos(a)*110,400+Math.sin(a)*110],4),{w:4.4,c:K.s,seed:4684+i,amp:.3,pp:eo(pr(u,.5,1))});}\netk(\"kanatlar\",830,400,eo(pr(u,0.68,1.23)),{size:42,al:'center'});"
+  },
+  {
+   "narration": "Islak çamaşırı sıkmak için ise iki silindirli sıkıcılar çıktı. Çamaşır aralarından geçerek suyunu bırakırdı. Böylece kollar bir iş daha az yapıyordu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500,180,70,70,28),{close:true,fill:'#8E8F93',w:3.4,seed:4721,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,260,70,70,28),{close:true,fill:'#8E8F93',w:3.4,seed:4722,pp:eo(pr(u,0.28,0.83))});\nctx.save();ctx.globalAlpha=eo(pr(u,.6,1.2));ctx.fillStyle='#F0E6D2';ctx.fillRect(500-30,220-8,60,300*Math.min(1,u/3));ctx.restore();\nink(ln([570, 180],[660, 100],8),{w:8,c:K.m,seed:4723,pp:eo(pr(u,0.56,1.11))});\nfor(let k=0;k<3;k++){const ph=(T*.8+k*.27)%1;ctx.save();ctx.globalAlpha=eo(pr(u,.4,.9))*(1-ph*.4);ctx.beginPath();ctx.arc(400+k*100,590+ph*80,9,0,7);ctx.fillStyle='#7FA6BF';ctx.fill();ctx.restore();}\netk(\"sıkıcı\",800,300,eo(pr(u,0.76,1.31)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Sıkıcılar elleri kurtarıyordu ama parmaklar için riskliydi. Yine de çok yaygınlaştılar.",
+   "ifade": "endiseli",
+   "cizim": "ink(ell(420,220,70,70,28),{close:true,fill:'#8E8F93',w:3.4,seed:4761,pp:eo(pr(u,0.0,0.55))});\nink(ell(420,300,70,70,28),{close:true,fill:'#8E8F93',w:3.4,seed:4762,pp:eo(pr(u,0.28,0.83))});\nctx.save();ctx.globalAlpha=eo(pr(u,.6,1.2));ctx.fillStyle='#F0E6D2';ctx.fillRect(420-30,260-8,60,300*Math.min(1,u/3));ctx.restore();\nink(ln([490, 220],[580, 140],8),{w:8,c:K.m,seed:4763,pp:eo(pr(u,0.56,1.11))});\ntxt(\"!\",780,400,260,{c:K.bordo,a:eo(pr(u,0.76,1.31))});"
+  },
+  {
+   "narration": "Bu icatların çoğu o dönemde pek tutmadı. Su ısıtmak ve çevirmek hâlâ emek isterdi.",
+   "ifade": "dusunceli",
+   "cizim": "ink([[200, 300], [460, 300], [430, 440], [230, 440]],{close:true,fill:\"#6B5B4B\",w:3.4,seed:4801,pp:eo(pr(u,0.0,0.55))});\nink(ell(330,300,130,24,28),{close:true,fill:'#8A7A66',w:3.4,seed:4802,pp:eo(pr(u,0.28,0.83))});\nink(ln([200, 300],[155, 330],8),{w:5,c:K.m,seed:4803,pp:eo(pr(u,0.56,1.11))});\nink(ln([460, 300],[505, 330],8),{w:5,c:K.m,seed:4804,pp:eo(pr(u,0.76,1.31))});\nfor(let i=0;i<4;i++){const f=Math.sin(T*9+i*2)*10,xx=330+(i-1.5)*34;ctx.save();ctx.globalAlpha=eo(pr(u,.3,.8));ink([[xx-16,470],[xx+f,470-50-i%2*18],[xx+16,470]],{close:true,fill:i%2?'#D9532B':'#E8A13A',w:2.6,seed:4805+i,amp:.6});ctx.restore();}\nink(ell(730,430,80,80,28),{close:true,fill:'#C9A27A',w:3.4,seed:4806,pp:eo(pr(u,0.96,1.51))});\nink(ell(730,430,44.0,44.0,28),{close:true,fill:'#EFE4CB',w:3.4,seed:4807,pp:eo(pr(u,1.24,1.79))});\n{const a=T*3;ink(ln([730,430],[730+Math.cos(a)*80*1.5,430+Math.sin(a)*80*1.5],4),{w:8,c:K.ak,seed:4808,pp:eo(pr(u,.6,1))});ctx.beginPath();ctx.arc(730+Math.cos(a)*80*1.5,430+Math.sin(a)*80*1.5,14,0,7);ctx.fillStyle=K.ak;ctx.fill();}"
+  },
+  {
+   "narration": "Yine de fikir yerleşti: çamaşırı kendimiz ovmak yerine bir düzeneğe ovdurmak.",
+   "ifade": "gururlu",
+   "cizim": "etk(\"elle\",230,300,eo(pr(u,0.0,0.55)),{size:52,al:'center'});\nink(ln([320, 320],[620, 320],8),{w:6,c:K.m,seed:4841,pp:eo(pr(u,0.3,0.85))});\nink(ln([580, 290],[630, 320],8),{w:6,c:K.m,seed:4842,pp:eo(pr(u,0.5,1.05))});\nink(ln([580, 350],[630, 320],8),{w:6,c:K.m,seed:4843,pp:eo(pr(u,0.7,1.25))});\netk(\"düzenek\",780,300,eo(pr(u,0.9,1.45)),{size:52,al:'center'});\nink(kutu(700,380,160,200),{close:true,fill:'#E9E3D6',w:3.4,seed:4844,pp:eo(pr(u,1.2,1.75))});\nink(ell(780,500,25,25,28),{close:true,fill:'#CFE0EA',w:5,seed:4845,pp:eo(pr(u,1.48,2.03))});\nink(ell(780,500,-10,-10,28),{close:true,fill:'#EFE4CB',w:3,seed:4846,pp:eo(pr(u,1.76,2.31))});\nink(ell(750,420,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:4847,pp:eo(pr(u,2.04,2.59))});\nink(ell(800,420,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:4848,pp:eo(pr(u,2.32,2.87))});\nink(ln([750, 420],[820, 420],8),{w:6,c:K.m,seed:4849,pp:eo(pr(u,2.6,3.15))});"
+  },
+  {
+   "narration": "Yani makine vardı ama gücü hâlâ insanın koluydu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500,380,100,100,28),{close:true,fill:'#C9A27A',w:3.4,seed:4881,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,380,55.00000000000001,55.00000000000001,28),{close:true,fill:'#EFE4CB',w:3.4,seed:4882,pp:eo(pr(u,0.28,0.83))});\n{const a=T*3;ink(ln([500,380],[500+Math.cos(a)*100*1.5,380+Math.sin(a)*100*1.5],4),{w:8,c:K.ak,seed:4883,pp:eo(pr(u,.6,1))});ctx.beginPath();ctx.arc(500+Math.cos(a)*100*1.5,380+Math.sin(a)*100*1.5,14,0,7);ctx.fillStyle=K.ak;ctx.fill();}\netk(\"kol gücü\",500,620,eo(pr(u,0.56,1.11)),{size:50,al:'center'});"
+  },
+  {
+   "narration": "Asıl dönüm noktası elektrikti. Evlere girmeye başlayan elektrik, motoru çamaşır kazanına bağladı. Kolun yerini bir motor aldı, iş de birden hızlandı.",
+   "ifade": "saskin",
+   "cizim": "ink([[330, 200], [290, 290], [325, 290], [300, 370], [375, 260], [338, 260], [370, 200]],{close:true,fill:\"#E8B64A\",w:3.4,seed:4921,pp:eo(pr(u,0.0,0.55))});\nink(ell(560,400,110,110,28),{close:true,fill:'#C9A27A',w:3.4,seed:4922,pp:eo(pr(u,0.28,0.83))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([560,400],[560+Math.cos(a)*100,400+Math.sin(a)*100],4),{w:4.4,c:K.s,seed:4923+i,amp:.3,pp:eo(pr(u,.5,1))});}",
+   "bolum": {
+    "no": "Bölüm III",
+    "ust": "1900'ler",
+    "ad": "Elektrik girince"
+   }
+  },
+  {
+   "narration": "Elektrik her yerde yoktu. Makineler önce elektriği olan şehirlerdeki evlerde görüldü.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(140,360,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:4961,pp:eo(pr(u,0.0,0.55))});\nink([[120, 360], [250, 270], [380, 360]],{close:true,fill:\"#B5432F\",w:3.4,seed:4962,pp:eo(pr(u,0.28,0.83))});\nink(kutu(225,440,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:4963,pp:eo(pr(u,0.56,1.11))});\nink(kutu(600,360,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:4964,pp:eo(pr(u,0.84,1.39))});\nink([[580, 360], [710, 270], [840, 360]],{close:true,fill:\"#B5432F\",w:3.4,seed:4965,pp:eo(pr(u,1.12,1.67))});\nink(kutu(685,440,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:4966,pp:eo(pr(u,1.4,1.95))});\nink([[630, 160], [590, 250], [625, 250], [600, 330], [675, 220], [638, 220], [670, 160]],{close:true,fill:\"#E8B64A\",w:3.4,seed:4967,pp:eo(pr(u,1.68,2.23))});\netk(\"elektrik var\",710,640,eo(pr(u,1.96,2.51)),{size:40,al:'center'});\netk(\"henüz yok\",250,640,eo(pr(u,2.26,2.81)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "1908'de Chicago'da Thor adlı bir makine satışa çıktı. Çoğu kaynak bunu ilk elektrikli çamaşır makinesi olarak anar.",
+   "ifade": "anlatiyor",
+   "cizim": "txt(\"1908\",500,250,170,{c:K.ak,a:eo(pr(u,0.0,0.55))});\netk(\"Thor · Chicago\",500,360,eo(pr(u,0.3,0.85)),{size:56,al:'center'});\nink(kutu(420,420,160,200),{close:true,fill:'#E9E3D6',w:3.4,seed:5001,pp:eo(pr(u,0.6,1.15))});\nink(ell(500,540,25,25,28),{close:true,fill:'#CFE0EA',w:5,seed:5002,pp:eo(pr(u,0.88,1.43))});\nink(ell(500,540,-10,-10,28),{close:true,fill:'#EFE4CB',w:3,seed:5003,pp:eo(pr(u,1.16,1.71))});\nink(ell(470,460,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5004,pp:eo(pr(u,1.44,1.99))});\nink(ell(520,460,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5005,pp:eo(pr(u,1.72,2.27))});\nink(ln([470, 460],[540, 460],8),{w:6,c:K.m,seed:5006,pp:eo(pr(u,2.0,2.55))});"
+  },
+  {
+   "narration": "Artık kolu çeviren insan değil, bir motordu.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(430,380,110,110,28),{close:true,fill:'#8E8F93',w:3.4,seed:5041,pp:eo(pr(u,0.0,0.55))});\nfor(let i=0;i<4;i++){const a=T*3+i*6.283/4;ink(ln([430,380],[430+Math.cos(a)*100,380+Math.sin(a)*100],4),{w:4.4,c:K.s,seed:5042+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink([[660, 260], [620, 350], [655, 350], [630, 430], [705, 320], [668, 320], [700, 260]],{close:true,fill:\"#E8B64A\",w:3.4,seed:5043,pp:eo(pr(u,0.28,0.83))});"
+  },
+  {
+   "narration": "Ama bazı ilk makinelerde açık motor ile su yan yana çalışırdı. Güvenlik uzun süre sorun oldu.",
+   "ifade": "endiseli",
+   "cizim": "ink(ell(330,380,100,100,28),{close:true,fill:'#8E8F93',w:3.4,seed:5081,pp:eo(pr(u,0.0,0.55))});\n{const q=[];for(let i=0;i<=20;i++)q.push([480+i*(800-480)/20,420+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:5082,amp:.3});ctx.restore();}\nink([[600, 140], [560, 230], [595, 230], [570, 310], [645, 200], [608, 200], [640, 140]],{close:true,fill:\"#E8B64A\",w:3.4,seed:5083,pp:eo(pr(u,0.28,0.83))});\ntxt(\"!\",860,330,200,{c:K.bordo,a:eo(pr(u,0.56,1.11))});"
+  },
+  {
+   "narration": "Zamanla motor kapalı bir gövdeye alındı ve makineler daha güvenli hale geldi. Böylece su sıçraması riski azaldı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(300,250,400,300),{close:true,fill:'#E9E3D6',w:3.4,seed:5121,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,400,90,90,28),{close:true,fill:'#8E8F93',w:3.4,seed:5122,pp:eo(pr(u,0.28,0.83))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,400],[500+Math.cos(a)*80,400+Math.sin(a)*80],4),{w:4.4,c:K.s,seed:5123+i,amp:.3,pp:eo(pr(u,.5,1))});}\netk(\"kapalı gövde\",500,620,eo(pr(u,0.56,1.11)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "O yıllarda bir çamaşır makinesi pahalı bir mal sayılırdı. Çoğu aile uzun süre elle yıkamaya devam etti.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(190,220,220,300),{close:true,fill:'#E9E3D6',w:3.4,seed:5161,pp:eo(pr(u,0.0,0.55))});\nink(ell(300,390,55,55,28),{close:true,fill:'#CFE0EA',w:5,seed:5162,pp:eo(pr(u,0.28,0.83))});\nink(ell(300,390,20,20,28),{close:true,fill:'#EFE4CB',w:3,seed:5163,pp:eo(pr(u,0.56,1.11))});\nink(ell(240,260,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5164,pp:eo(pr(u,0.84,1.39))});\nink(ell(290,260,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5165,pp:eo(pr(u,1.12,1.67))});\nink(ln([300, 260],[370, 260],8),{w:6,c:K.m,seed:5166,pp:eo(pr(u,1.4,1.95))});\netk(\"pahalı\",300,590,eo(pr(u,1.6,2.15)),{size:44,al:'center'});\nink([[570, 400], [870, 400], [830, 520], [610, 520]],{close:true,fill:\"#C9A27A\",w:3.4,seed:5167,pp:eo(pr(u,1.9,2.45))});\n{const q=[];for(let i=0;i<=20;i++)q.push([590+i*(850-590)/20,416+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:5168,amp:.3});ctx.restore();}\netk(\"elle\",720,590,eo(pr(u,2.18,2.73)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Makineler, çamaşır işini üstlenenlere saatlerce zaman kazandırdı.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(500,340,170,170,28),{close:true,fill:'#EFE4CB',w:5,seed:5201,pp:eo(pr(u,0.0,0.55))});\n{const a=T*1.5,b=T*.125;ink(ln([500,340],[500+Math.sin(a)*170*.8,340-Math.cos(a)*170*.8],4),{w:5,seed:3});ink(ln([500,340],[500+Math.sin(b)*170*.5,340-Math.cos(b)*170*.5],4),{w:8,c:K.ak,seed:4});}\netk(\"kazanılan zaman\",500,610,eo(pr(u,0.28,0.83)),{size:48,al:'center'});"
+  },
+  {
+   "narration": "Yine de çamaşırı doldurmak, suyu boşaltmak ve sıkmak için biri makinenin başında beklemek zorundaydı.",
+   "ifade": "endiseli",
+   "cizim": "ink(kutu(510,190,260,340),{close:true,fill:'#E9E3D6',w:3.4,seed:5241,pp:eo(pr(u,0.0,0.55))});\nink(ell(640,380,75,75,28),{close:true,fill:'#CFE0EA',w:5,seed:5242,pp:eo(pr(u,0.28,0.83))});\nink(ell(640,380,40,40,28),{close:true,fill:'#EFE4CB',w:3,seed:5243,pp:eo(pr(u,0.56,1.11))});\nink(ell(560,230,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5244,pp:eo(pr(u,0.84,1.39))});\nink(ell(610,230,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5245,pp:eo(pr(u,1.12,1.67))});\nink(ln([660, 230],[730, 230],8),{w:6,c:K.m,seed:5246,pp:eo(pr(u,1.4,1.95))});\nink(ell(250,310,26,26,28),{close:true,fill:'#EFE4CB',w:3.4,seed:5247,pp:eo(pr(u,1.6,2.15))});\nink(ln([250, 336],[250, 430],8),{w:6,c:K.m,seed:5248,pp:eo(pr(u,1.88,2.43))});\nink(ln([250, 360],[300, 390],8),{w:5,c:K.m,seed:5249,pp:eo(pr(u,2.08,2.63))});\nink(ln([250, 360],[200, 390],8),{w:5,c:K.m,seed:5250,pp:eo(pr(u,2.28,2.83))});\nink(ln([250, 430],[220, 490],8),{w:5,c:K.m,seed:5251,pp:eo(pr(u,2.48,3.03))});\nink(ln([250, 430],[280, 490],8),{w:5,c:K.m,seed:5252,pp:eo(pr(u,2.68,3.23))});\netk(\"bekleyen\",250,610,eo(pr(u,2.88,3.43)),{size:42,al:'center'});"
+  },
+  {
+   "narration": "Kıpırdamadan makinenin başında beklemek, kimsenin hayali değildi.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(300,290,26,26,28),{close:true,fill:'#EFE4CB',w:3.4,seed:5281,pp:eo(pr(u,0.0,0.55))});\nink(ln([300, 316],[300, 410],8),{w:6,c:K.m,seed:5282,pp:eo(pr(u,0.28,0.83))});\nink(ln([300, 340],[350, 370],8),{w:5,c:K.m,seed:5283,pp:eo(pr(u,0.48,1.03))});\nink(ln([300, 340],[250, 370],8),{w:5,c:K.m,seed:5284,pp:eo(pr(u,0.68,1.23))});\nink(ln([300, 410],[270, 470],8),{w:5,c:K.m,seed:5285,pp:eo(pr(u,0.88,1.43))});\nink(ln([300, 410],[330, 470],8),{w:5,c:K.m,seed:5286,pp:eo(pr(u,1.08,1.63))});\ntxt(\"?\",640,380,240,{c:K.ak,a:eo(pr(u,1.28,1.83))});\nink(ell(820,160,70,70,28),{close:true,fill:'#EFE4CB',w:5,seed:5287,pp:eo(pr(u,1.58,2.13))});\n{const a=T*1.5,b=T*.125;ink(ln([820,160],[820+Math.sin(a)*70*.8,160-Math.cos(a)*70*.8],4),{w:5,seed:3});ink(ln([820,160],[820+Math.sin(b)*70*.5,160-Math.cos(b)*70*.5],4),{w:8,c:K.ak,seed:4});}",
+   "bolum": {
+    "no": "Bölüm IV",
+    "ust": "1930'lar",
+    "ad": "Otomatik makine"
+   }
+  },
+  {
+   "narration": "1937'de Amerikan Bendix şirketi, yıkamayı, durulamayı ve sıkmayı kendi başına yapan bir makineyi piyasaya sürdü.",
+   "ifade": "anlatiyor",
+   "cizim": "txt(\"1937\",500,210,150,{c:K.ak,a:eo(pr(u,0.0,0.55))});\nink(kutu(385,320,230,300),{close:true,fill:'#E9E3D6',w:3.4,seed:5321,pp:eo(pr(u,0.3,0.85))});\nink(ell(500,490,60,60,28),{close:true,fill:'#CFE0EA',w:5,seed:5322,pp:eo(pr(u,0.58,1.13))});\nink(ell(500,490,25,25,28),{close:true,fill:'#EFE4CB',w:3,seed:5323,pp:eo(pr(u,0.86,1.41))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,490],[500+Math.cos(a)*20,490+Math.sin(a)*20],4),{w:4.4,c:K.s,seed:5324+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(435,360,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5325,pp:eo(pr(u,1.14,1.69))});\nink(ell(485,360,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5326,pp:eo(pr(u,1.42,1.97))});\nink(ln([505, 360],[575, 360],8),{w:6,c:K.m,seed:5327,pp:eo(pr(u,1.7,2.25))});\netk(\"Bendix\",830,600,eo(pr(u,1.9,2.45)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Önden doldurulan bir tambur suyu alıp boşaltabiliyordu. Çamaşırı döndürürken yukarıdan aşağıya düşürerek yıkıyordu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(320,140,360,460),{close:true,fill:'#E9E3D6',w:3.4,seed:5361,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,390,125,125,28),{close:true,fill:'#CFE0EA',w:5,seed:5362,pp:eo(pr(u,0.28,0.83))});\nink(ell(500,390,90,90,28),{close:true,fill:'#EFE4CB',w:3,seed:5363,pp:eo(pr(u,0.56,1.11))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,390],[500+Math.cos(a)*85,390+Math.sin(a)*85],4),{w:4.4,c:K.s,seed:5364+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(370,180,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5365,pp:eo(pr(u,0.84,1.39))});\nink(ell(420,180,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5366,pp:eo(pr(u,1.12,1.67))});\nink(ln([570, 180],[640, 180],8),{w:6,c:K.m,seed:5367,pp:eo(pr(u,1.4,1.95))});\nfor(let k=0;k<3;k++){const ph=(T*.8+k*.27)%1;ctx.save();ctx.globalAlpha=eo(pr(u,.4,.9))*(1-ph*.4);ctx.beginPath();ctx.arc(400+k*100,640+ph*80,9,0,7);ctx.fillStyle='#C9D3EA';ctx.fill();ctx.restore();}"
+  },
+  {
+   "narration": "Programı seçip çamaşırı bırakıyordunuz. Makine döngüleri kendi sırasıyla uyguluyordu. Artık makine, sizin yerinize düşünüyordu.",
+   "ifade": "gulumsuyor",
+   "cizim": "etk(\"yıka\",200,330,eo(pr(u,0.0,0.55)),{size:56,al:'center'});\nink(ln([280, 320],[400, 320],8),{w:6,c:K.m,seed:5401,pp:eo(pr(u,0.3,0.85))});\netk(\"durula\",500,330,eo(pr(u,0.5,1.05)),{size:56,al:'center'});\nink(ln([590, 320],[710, 320],8),{w:6,c:K.m,seed:5402,pp:eo(pr(u,0.8,1.35))});\netk(\"sık\",830,330,eo(pr(u,1.0,1.55)),{size:56,al:'center'});\nink(ell(500,520,70,70,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5403,pp:eo(pr(u,1.3,1.85))});"
+  },
+  {
+   "narration": "Bu yalnızca zaman kazancı değildi. Çamaşır için ayrılan zaman kısaldı.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(330,360,150,150,28),{close:true,fill:'#EFE4CB',w:5,seed:5441,pp:eo(pr(u,0.0,0.55))});\n{const a=T*1.5,b=T*.125;ink(ln([330,360],[330+Math.sin(a)*150*.8,360-Math.cos(a)*150*.8],4),{w:5,seed:3});ink(ln([330,360],[330+Math.sin(b)*150*.5,360-Math.cos(b)*150*.5],4),{w:8,c:K.ak,seed:4});}\nink(ln([520, 360],[700, 360],8),{w:8,c:K.m,seed:5442,pp:eo(pr(u,0.28,0.83))});\ntxt(\"kısa\",780,380,70,{c:K.ak,a:eo(pr(u,0.48,1.03))});"
+  },
+  {
+   "narration": "Savaş yılları üretimi yavaşlattı. Sonrasında makineler evlerde çoğalmaya başladı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([120, 380],[880, 380],8),{w:4,c:K.m,seed:5481,pp:eo(pr(u,0.0,0.55))});\nctx.save();ctx.globalAlpha=eo(pr(u,0.4,1.0));ctx.beginPath();ctx.arc(240,380,16,0,7);ctx.fillStyle=K.s;ctx.fill();ctx.restore();\ntxt(\"1940'lar\",240,320,64,{a:eo(pr(u,0.4,1.0))});etk(\"Savaş yılları\",240,460,eo(pr(u,0.6,1.2)),{size:38});\nctx.save();ctx.globalAlpha=eo(pr(u,1.3,1.9));ctx.beginPath();ctx.arc(760,380,16,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();\ntxt(\"sonras\\u0131\",760,320,64,{a:eo(pr(u,1.3,1.9))});etk(\"Evlerde yaygın\",760,460,eo(pr(u,1.5,2.1)),{size:38});"
+  },
+  {
+   "narration": "Üstten dolumlu modeller de yaygınlaştı; bu iki tasarım bugün de yan yana duruyor.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(180,210,240,320),{close:true,fill:'#E9E3D6',w:3.4,seed:5521,pp:eo(pr(u,0.0,0.55))});\nink(ell(300,390,65,65,28),{close:true,fill:'#CFE0EA',w:5,seed:5522,pp:eo(pr(u,0.28,0.83))});\nink(ell(300,390,30,30,28),{close:true,fill:'#EFE4CB',w:3,seed:5523,pp:eo(pr(u,0.56,1.11))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([300,390],[300+Math.cos(a)*25,390+Math.sin(a)*25],4),{w:4.4,c:K.s,seed:5524+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(230,250,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5525,pp:eo(pr(u,0.84,1.39))});\nink(ell(280,250,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5526,pp:eo(pr(u,1.12,1.67))});\nink(ln([310, 250],[380, 250],8),{w:6,c:K.m,seed:5527,pp:eo(pr(u,1.4,1.95))});\nink(kutu(560,210,240,320),{close:true,fill:'#E9E3D6',w:3.4,seed:5528,pp:eo(pr(u,1.6,2.15))});\nink(ln([560, 260],[800, 260],8),{w:6,c:K.m,seed:5529,pp:eo(pr(u,1.88,2.43))});\nink(ell(680,400,60,60,28),{close:true,fill:'#CFE0EA',w:3.4,seed:5530,pp:eo(pr(u,2.08,2.63))});"
+  },
+  {
+   "narration": "Deterjanlar da değişti. Sabun yerine makineler için üretilen toz ve sıvı ürünler geldi.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(250,300,200,260),{close:true,fill:'#C9D3EA',w:3.4,seed:5561,pp:eo(pr(u,0.0,0.55))});\nink(kutu(580,330,120,230),{close:true,fill:'#EFE4CB',w:3.4,seed:5562,pp:eo(pr(u,0.28,0.83))});\netk(\"toz\",350,620,eo(pr(u,0.56,1.11)),{size:42,al:'center'});\netk(\"sıvı\",640,620,eo(pr(u,0.86,1.41)),{size:42,al:'center'});"
+  },
+  {
+   "narration": "Türkiye'de de makineler önce büyük şehirlerde, sonra her yerde evlere girdi.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(100,380,180,130),{close:true,fill:'#EFE4CB',w:3.4,seed:5601,pp:eo(pr(u,0.0,0.55))});\nink([[80, 380], [190, 290], [300, 380]],{close:true,fill:\"#B5432F\",w:3.4,seed:5602,pp:eo(pr(u,0.28,0.83))});\nink(kutu(165,430,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:5603,pp:eo(pr(u,0.56,1.11))});\nink(kutu(400,380,180,130),{close:true,fill:'#EFE4CB',w:3.4,seed:5604,pp:eo(pr(u,0.84,1.39))});\nink([[380, 380], [490, 290], [600, 380]],{close:true,fill:\"#B5432F\",w:3.4,seed:5605,pp:eo(pr(u,1.12,1.67))});\nink(kutu(465,430,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:5606,pp:eo(pr(u,1.4,1.95))});\nink(kutu(700,380,180,130),{close:true,fill:'#EFE4CB',w:3.4,seed:5607,pp:eo(pr(u,1.68,2.23))});\nink([[680, 380], [790, 290], [900, 380]],{close:true,fill:\"#B5432F\",w:3.4,seed:5608,pp:eo(pr(u,1.96,2.51))});\nink(kutu(765,430,50,80),{close:true,fill:'#C9A27A',w:3.4,seed:5609,pp:eo(pr(u,2.24,2.79))});\nink(kutu(435,115,110,130),{close:true,fill:'#E9E3D6',w:3.4,seed:5610,pp:eo(pr(u,2.52,3.07))});\nink(ell(490,200,0,0,28),{close:true,fill:'#CFE0EA',w:5,seed:5611,pp:eo(pr(u,2.8,3.35))});\nink(ell(490,200,-35,-35,28),{close:true,fill:'#EFE4CB',w:3,seed:5612,pp:eo(pr(u,3.08,3.63))});\nink(ell(485,155,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5613,pp:eo(pr(u,3.36,3.91))});\nink(ell(535,155,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5614,pp:eo(pr(u,3.64,4.19))});\nink(ln([435, 155],[505, 155],8),{w:6,c:K.m,seed:5615,pp:eo(pr(u,3.92,4.47))});",
+   "bolum": {
+    "no": "Bölüm V",
+    "ust": "Türkiye'de",
+    "ad": "Takvimden silinen çamaşır günü"
+   }
+  },
+  {
+   "narration": "Birçok evde çift kazanlı makineler vardı: biri yıkar, diğeri sıkardı. Çamaşırı elle bir kazandan ötekine taşırdınız.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(150,260,300,260),{close:true,fill:'#E9E3D6',w:3.4,seed:5641,pp:eo(pr(u,0.0,0.55))});\nink(kutu(550,260,300,260),{close:true,fill:'#E9E3D6',w:3.4,seed:5642,pp:eo(pr(u,0.28,0.83))});\nink(ell(300,390,90,90,28),{close:true,fill:'#CFE0EA',w:3.4,seed:5643,pp:eo(pr(u,0.56,1.11))});\nink(ell(700,390,90,90,28),{close:true,fill:'#CFE0EA',w:3.4,seed:5644,pp:eo(pr(u,0.84,1.39))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([300,390],[300+Math.cos(a)*80,390+Math.sin(a)*80],4),{w:4.4,c:K.s,seed:5645+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ln([440, 200],[560, 200],8),{w:6,c:K.m,seed:5646,pp:eo(pr(u,1.12,1.67))});\netk(\"yıka\",300,590,eo(pr(u,1.32,1.87)),{size:42,al:'center'});\netk(\"sık\",700,590,eo(pr(u,1.62,2.17)),{size:42,al:'center'});"
+  },
+  {
+   "narration": "Makine yalnızca çamaşırı değil, günlerin ritmini de değiştirdi. Bazı evlerde pazartesi çamaşır, salı ütü gibi düzenler eskidi.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(160,260,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:5681,pp:eo(pr(u,0.0,0.55))});\nink(kutu(390,260,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:5682,pp:eo(pr(u,0.28,0.83))});\nink(kutu(620,260,220,160),{close:true,fill:'#EFE4CB',w:3.4,seed:5683,pp:eo(pr(u,0.56,1.11))});\netk(\"Pzt\",270,350,eo(pr(u,0.84,1.39)),{size:48,al:'center'});\netk(\"Salı\",500,350,eo(pr(u,1.14,1.69)),{size:48,al:'center'});\netk(\"Çarş\",730,350,eo(pr(u,1.44,1.99)),{size:48,al:'center'});\netk(\"çamaşır\",270,480,eo(pr(u,1.74,2.29)),{size:40,al:'center'});\netk(\"ütü\",500,480,eo(pr(u,2.04,2.59)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "Sonra tam otomatikler yaygınlaştı. Çamaşır günü, sessizce takvimden silindi.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(230,230,540,380),{close:true,fill:'#EFE4CB',w:3.4,seed:5721,pp:eo(pr(u,0.0,0.55))});\nfor(let i=1;i<4;i++){ink(ln([230,230+i*95],[770,230+i*95],8),{w:3,c:K.s,seed:40+i,pp:eo(pr(u,i*.1,.6))});}for(let i=1;i<7;i++){ink(ln([230+i*77,230],[230+i*77,610],8),{w:3,c:K.s,seed:50+i,pp:eo(pr(u,i*.08,.6))});}ink(ln([260,260],[740,580],8),{w:9,c:K.bordo,seed:90,pp:eo(pr(u,1,1.6))});"
+  },
+  {
+   "narration": "Bugün birçok kişi için çamaşır, akşam yatmadan önce başlatılan bir işlem. Sabaha kadar beklemeyen, sessizce biten bir iş.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(760,170,70,70,28),{close:true,fill:'#F3E7A0',w:3.4,seed:5761,pp:eo(pr(u,0.0,0.55))});\nink(ell(790,150,60,60,28),{close:true,fill:'#F3EAD7',w:3.4,seed:5762,pp:eo(pr(u,0.28,0.83))});\nink(kutu(255,235,250,330),{close:true,fill:'#E9E3D6',w:3.4,seed:5763,pp:eo(pr(u,0.56,1.11))});\nink(ell(380,420,70,70,28),{close:true,fill:'#CFE0EA',w:5,seed:5764,pp:eo(pr(u,0.84,1.39))});\nink(ell(380,420,35,35,28),{close:true,fill:'#EFE4CB',w:3,seed:5765,pp:eo(pr(u,1.12,1.67))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([380,420],[380+Math.cos(a)*30,420+Math.sin(a)*30],4),{w:4.4,c:K.s,seed:5766+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(305,275,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5767,pp:eo(pr(u,1.4,1.95))});\nink(ell(355,275,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5768,pp:eo(pr(u,1.68,2.23))});\nink(ln([395, 275],[465, 275],8),{w:6,c:K.m,seed:5769,pp:eo(pr(u,1.96,2.51))});"
+  },
+  {
+   "narration": "Modern makinede ağırlık algılayan sensörler var. Çamaşırın miktarına göre su ve süre ayarlanır.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(270,190,300,380),{close:true,fill:'#E9E3D6',w:3.4,seed:5801,pp:eo(pr(u,0.0,0.55))});\nink(ell(420,400,95,95,28),{close:true,fill:'#CFE0EA',w:5,seed:5802,pp:eo(pr(u,0.28,0.83))});\nink(ell(420,400,60,60,28),{close:true,fill:'#EFE4CB',w:3,seed:5803,pp:eo(pr(u,0.56,1.11))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([420,400],[420+Math.cos(a)*55,400+Math.sin(a)*55],4),{w:4.4,c:K.s,seed:5804+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(320,230,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5805,pp:eo(pr(u,0.84,1.39))});\nink(ell(370,230,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5806,pp:eo(pr(u,1.12,1.67))});\nink(ln([460, 230],[530, 230],8),{w:6,c:K.m,seed:5807,pp:eo(pr(u,1.4,1.95))});\nink(ln([630, 300],[760, 230],8),{w:5,c:K.mavi,seed:5808,pp:eo(pr(u,1.6,2.15))});\netk(\"sensör\",800,215,eo(pr(u,1.8,2.35)),{size:42,al:'center'});",
+   "bolum": {
+    "no": "Bölüm VI",
+    "ust": "Bugün",
+    "ad": "Bugünkü makine"
+   }
+  },
+  {
+   "narration": "Tambur dakikada yüzlerce devir atıyor ve suyu çamaşırdan çekiyor.",
+   "ifade": "saskin",
+   "cizim": "ink(kutu(340,170,320,400),{close:true,fill:'#E9E3D6',w:3.4,seed:5841,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,390,105,105,28),{close:true,fill:'#CFE0EA',w:5,seed:5842,pp:eo(pr(u,0.28,0.83))});\nink(ell(500,390,70,70,28),{close:true,fill:'#EFE4CB',w:3,seed:5843,pp:eo(pr(u,0.56,1.11))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([500,390],[500+Math.cos(a)*65,390+Math.sin(a)*65],4),{w:4.4,c:K.s,seed:5844+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(390,210,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5845,pp:eo(pr(u,0.84,1.39))});\nink(ell(440,210,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5846,pp:eo(pr(u,1.12,1.67))});\nink(ln([550, 210],[620, 210],8),{w:6,c:K.m,seed:5847,pp:eo(pr(u,1.4,1.95))});\nfor(let k=0;k<5;k++){const ph=(T*.8+k*.27)%1;ctx.save();ctx.globalAlpha=eo(pr(u,.4,.9))*(1-ph*.4);ctx.beginPath();ctx.arc(300+k*100,640+ph*80,9,0,7);ctx.fillStyle='#C9D3EA';ctx.fill();ctx.restore();}"
+  },
+  {
+   "narration": "Enerji ve su tüketimi yıllar içinde azaldı. Etiketler artık bunu sınıf olarak gösteriyor. Bu, hem cüzdana hem doğaya yarıyor.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(220,520,100,80),{close:true,fill:'#B8D2A6',w:3.4,seed:5881,pp:eo(pr(u,0.0,0.55))});\nink(kutu(360,460,100,140),{close:true,fill:'#C9D3B0',w:3.4,seed:5882,pp:eo(pr(u,0.28,0.83))});\nink(kutu(500,400,100,200),{close:true,fill:'#E8D890',w:3.4,seed:5883,pp:eo(pr(u,0.56,1.11))});\nink(kutu(640,340,100,260),{close:true,fill:'#E8B64A',w:3.4,seed:5884,pp:eo(pr(u,0.84,1.39))});\netk(\"etiket\",500,650,eo(pr(u,1.12,1.67)),{size:38,al:'center'});"
+  },
+  {
+   "narration": "Bazı modeller telefondan bile başlatılabiliyor.",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(400,200,200,360),{close:true,fill:'#E9E3D6',w:3.4,seed:5921,pp:eo(pr(u,0.0,0.55))});\nink(ell(500,500,20,20,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5922,pp:eo(pr(u,0.28,0.83))});\n{const q=[];for(let i=0;i<=20;i++)q.push([300+i*(700-300)/20,150+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#5C7F96',seed:5923,amp:.3});ctx.restore();}\netk(\"uzaktan\",500,640,eo(pr(u,0.56,1.11)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "Sessiz çalışan modeller de var. Gece çalıştırınca komşuyu uyandırmıyor.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(780,170,60,60,28),{close:true,fill:'#F3E7A0',w:3.4,seed:5961,pp:eo(pr(u,0.0,0.55))});\nink(ell(805,150,52,52,28),{close:true,fill:'#F3EAD7',w:3.4,seed:5962,pp:eo(pr(u,0.28,0.83))});\nink(kutu(280,240,240,320),{close:true,fill:'#E9E3D6',w:3.4,seed:5963,pp:eo(pr(u,0.56,1.11))});\nink(ell(400,420,65,65,28),{close:true,fill:'#CFE0EA',w:5,seed:5964,pp:eo(pr(u,0.84,1.39))});\nink(ell(400,420,30,30,28),{close:true,fill:'#EFE4CB',w:3,seed:5965,pp:eo(pr(u,1.12,1.67))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([400,420],[400+Math.cos(a)*25,420+Math.sin(a)*25],4),{w:4.4,c:K.s,seed:5966+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(ell(330,280,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5967,pp:eo(pr(u,1.4,1.95))});\nink(ell(380,280,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:5968,pp:eo(pr(u,1.68,2.23))});\nink(ln([410, 280],[480, 280],8),{w:6,c:K.m,seed:5969,pp:eo(pr(u,1.96,2.51))});\netk(\"sessiz\",400,650,eo(pr(u,2.16,2.71)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "Bir de yıkama ve kurutmayı birleştiren makineler çıktı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(230,250,200,260),{close:true,fill:'#E9E3D6',w:3.4,seed:6001,pp:eo(pr(u,0.0,0.55))});\nink(ell(330,400,45,45,28),{close:true,fill:'#CFE0EA',w:5,seed:6002,pp:eo(pr(u,0.28,0.83))});\nink(ell(330,400,10,10,28),{close:true,fill:'#EFE4CB',w:3,seed:6003,pp:eo(pr(u,0.56,1.11))});\nink(ell(280,290,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:6004,pp:eo(pr(u,0.84,1.39))});\nink(ell(330,290,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:6005,pp:eo(pr(u,1.12,1.67))});\nink(ln([320, 290],[390, 290],8),{w:6,c:K.m,seed:6006,pp:eo(pr(u,1.4,1.95))});\nink(ell(330,390,60,60,28),{close:true,fill:'#CFE0EA',w:3.4,seed:6007,pp:eo(pr(u,1.6,2.15))});\nfor(let i=0;i<3;i++){const a=T*3+i*6.283/3;ink(ln([330,390],[330+Math.cos(a)*55,390+Math.sin(a)*55],4),{w:4.4,c:K.s,seed:6008+i,amp:.3,pp:eo(pr(u,.5,1))});}\nink(kutu(580,250,200,260),{close:true,fill:'#E9E3D6',w:3.4,seed:6009,pp:eo(pr(u,1.88,2.43))});\nink(ell(680,400,45,45,28),{close:true,fill:'#CFE0EA',w:5,seed:6010,pp:eo(pr(u,2.16,2.71))});\nink(ell(680,400,10,10,28),{close:true,fill:'#EFE4CB',w:3,seed:6011,pp:eo(pr(u,2.44,2.99))});\nink(ell(630,290,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:6012,pp:eo(pr(u,2.72,3.27))});\nink(ell(680,290,18,18,28),{close:true,fill:'#D9D2C0',w:3.4,seed:6013,pp:eo(pr(u,3.0,3.55))});\nink(ln([670, 290],[740, 290],8),{w:6,c:K.m,seed:6014,pp:eo(pr(u,3.28,3.83))});\nfor(let k=0;k<3;k++){const ph=(T*.7+k*.31)%1;ctx.save();ctx.globalAlpha=(1-ph)*.8*eo(pr(u,.6,1.1));ink([[660+k*34,230],[660+k*34+Math.sin(T*3+k)*10,230-40-ph*40],[660+k*34,230-90-ph*60]],{w:3.6,c:K.s,seed:6015+k,amp:.4});ctx.restore();}\netk(\"yıka\",330,600,eo(pr(u,3.48,4.03)),{size:40,al:'center'});\netk(\"kurut\",680,600,eo(pr(u,3.78,4.33)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "Buna rağmen temel fikir değişmedi: su, deterjan ve dönen bir tambur.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,360,170,170,28),{close:true,fill:'#CFE0EA',w:5,seed:6041,pp:eo(pr(u,0.0,0.55))});\nfor(let i=0;i<4;i++){const a=T*3+i*6.283/4;ink(ln([500,360],[500+Math.cos(a)*160,360+Math.sin(a)*160],4),{w:4.4,c:K.s,seed:6042+i,amp:.3,pp:eo(pr(u,.5,1))});}\netk(\"su · deterjan · tambur\",500,620,eo(pr(u,0.28,0.83)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Bir zamanlar bütün bir günü alan iş, bugün bir düğmeye basmakla başlıyor. Ve işte bu yüzden bu makineye hâlâ çok şey borçluyuz.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500,360,110,110,28),{close:true,fill:'#E9E3D6',w:5,seed:6081,pp:eo(pr(u,0.0,0.55))});\nctx.save();ctx.globalAlpha=eo(pr(u,.6,1));ctx.beginPath();ctx.arc(500,360,36+Math.sin(T*4)*4,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();\netk(\"bir düğme\",500,620,eo(pr(u,0.28,0.83)),{size:48,al:'center'});"
+  },
+  {
+   "narration": "Çamaşırı elle yıkadığınız bir dönemi hatırlıyor musunuz? Ya da bir büyüğünüzden dinlediniz mi? Yorumlara yazın.",
+   "ifade": "merakli",
+   "cizim": "ink([[190, 450], [470, 450], [430, 570], [230, 570]],{close:true,fill:\"#C9A27A\",w:3.4,seed:6121,pp:eo(pr(u,0.0,0.55))});\n{const q=[];for(let i=0;i<=20;i++)q.push([210+i*(450-210)/20,466+Math.sin(i*.9+T*3)*8]);ctx.save();ctx.globalAlpha=eo(pr(u,.3,.9));ink(q,{w:5,c:'#7FA6BF',seed:6122,amp:.3});ctx.restore();}\ntxt(\"?\",730,420,250,{c:K.ak,a:eo(pr(u,0.28,0.83))});"
+  },
+  {
+   "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: buzdolabı mı, elektrik süpürgesi mi?",
+   "ifade": "merakli",
+   "cizim": "txt(\"?\",500,380,220,{c:K.ak,a:eo(pr(u,0.0,0.55))});\ntxt(\"A\",260,590,90,{c:K.s,a:eo(pr(u,0.3,0.85))});\ntxt(\"B\",740,590,90,{c:K.s,a:eo(pr(u,0.6,1.15))});"
+  },
+  {
+   "narration": "Hikâyeler bitmez, eşyalar anlatmaya devam eder. Bir sonraki lambada görüşürüz.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(500,330,130,130,28),{close:true,fill:'#F3E7A0',w:3.4,seed:6201,pp:eo(pr(u,0.0,0.55))});\nctx.save();ctx.globalAlpha=.25+.1*Math.sin(T*3);ctx.beginPath();ctx.arc(500,330,190,0,7);ctx.fillStyle=K.lamba;ctx.fill();ctx.restore();\netk(\"Nur Bey\",500,620,eo(pr(u,0.28,0.83)),{size:50,al:'center'});"
+  }
+ ]
+}

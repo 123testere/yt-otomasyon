@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-10_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-10T05:00:00.000Z",
+ "bolum": {
+  "no": 2,
+  "ad": "Top 5"
+ },
+ "title": "5 Money Mistakes That Keep You Broke 🧠",
+ "description": "Money mistakes that keep you broke are often small and easy to miss. Here are five common ones, from no budget to lifestyle inflation. Which have you made?\n\n#money #moneymistakes #business #motivation",
+ "tags": [
+  "money mistakes",
+  "stay broke",
+  "budgeting",
+  "emergency fund",
+  "debt",
+  "lifestyle inflation",
+  "personal finance",
+  "money tips",
+  "financial habits"
+ ],
+ "topic": "Five common money mistakes that keep people broke",
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted wins a deep dive",
+  "soru": "Which money mistake hits hardest?"
+ },
+ "ceviriler": {
+  "es": {
+   "title": "5 errores de dinero que te mantienen sin un centavo 🧠",
+   "description": "Los errores de dinero que te mantienen sin un centavo suelen ser pequeños y fáciles de pasar por alto. Aquí tienes cinco comunes. ¿Cuáles has cometido?\n\n#dinero #erroresdedinero #negocios #motivacion"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "garaj",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Mistakes that keep you broke"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "canta",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Five money mistakes could be keeping you broke, and number one catches almost everyone. Let's count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "No Spending Plan",
+    "tur": "Money without a map",
+    "maddeler": [
+     "Money just vanishes",
+     "No tracking",
+     "Surprise bills"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: spending without a plan. If you never track your money, it often disappears."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Forgotten Subscriptions",
+    "tur": "Small leaks",
+    "maddeler": [
+     "Unused apps",
+     "Old memberships",
+     "Add up fast"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: forgotten subscriptions. Small monthly charges can quietly add up."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "No Emergency Savings",
+    "tur": "One bill away",
+    "maddeler": [
+     "Car repair",
+     "Medical bill",
+     "Job loss"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: no emergency savings. One surprise bill can then turn into debt."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "High-Interest Debt",
+    "tur": "The interest trap",
+    "maddeler": [
+     "Credit cards",
+     "Late fees",
+     "Growing balance"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: high-interest debt. Interest can make a balance grow faster than you expect."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Lifestyle Inflation",
+    "tur": "Spend more, keep less",
+    "maddeler": [
+     "Raise equals upgrade",
+     "Bigger bills",
+     "Same stress"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: lifestyle inflation. Many people spend more every time they earn more."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Which mistake have you made? Comment below, and subscribe!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-10_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-10T05:00:00.000Z",
+ "topic": "Mais",
+ "title": "Duell 8/30: Wer erntet den meisten Mais? 🌽",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Mais-König Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "mais",
+  "landwirtschaft",
+  "ranking",
+  "europa daten",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "mais",
+  "why": [
+   "Fruchtbare Schwarzerde",
+   "Riesige Ackerflächen",
+   "Warme Sommer"
+  ],
+  "script": {
+   "intro": "Wer erntet den meisten Mais Europas? 46 Flaggen rutschen in den Trichter – nur eine kommt durch!",
+   "nodata": "Dreizehn Länder haben keine Maisdaten und sind sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Eine Flagge nach der anderen fliegt raus, und Polen verpasst das Finale um gut 5 Millionen Tonnen!",
+   "final": "Finale! Die Ukraine gegen Frankreich – wer hat die goldenen Kolben?",
+   "winner": "Die Ukraine gewinnt! Über 26 Millionen Tonnen, knapp doppelt so viel wie Frankreich!",
+   "why": "Warum die Ukraine? Fruchtbare Schwarzerde, riesige Felder und warme Sommer.",
+   "table": "In der Saisontabelle stand die Ukraine bisher bei 25 Punkten – jetzt kommen neue dazu. Schreib dein Thema in die Kommentare!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "B"
+ }
+}

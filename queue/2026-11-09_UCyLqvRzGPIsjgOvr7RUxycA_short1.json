@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-09_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-09T05:00:00.000Z",
+ "topic": "Milch",
+ "title": "Duell 7/30: Wer produziert die meiste Milch? 🥛",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Milch-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "milch",
+  "landwirtschaft",
+  "ranking",
+  "europa daten",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "milch",
+  "why": [
+   "Viel saftiges Grünland",
+   "Mildes, feuchtes Klima",
+   "Große Milchviehbetriebe"
+  ],
+  "script": {
+   "intro": "Welches Land melkt die meiste Milch Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "Fünf Länder haben keine Milchdaten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Flagge um Flagge verschwindet, und die Türkei verpasst das Finale um gut 3 Millionen Tonnen!",
+   "final": "Finale! Deutschland gegen Frankreich – zwei Milchriesen, nur einer holt die Krone!",
+   "winner": "Deutschland gewinnt! Über 33 Millionen Tonnen, rund 40 Prozent mehr als Frankreich!",
+   "why": "Warum Deutschland? Viel Grünland, mildes Klima und riesige Milchviehbetriebe.",
+   "table": "Die Saisontabelle bleibt spannend: Die Türkei führte bisher mit 30 Punkten. Schreib dein Thema in die Kommentare!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "A"
+ }
+}

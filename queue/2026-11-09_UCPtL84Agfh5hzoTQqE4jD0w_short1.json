@@ -1,0 +1,87 @@
+{
+ "id": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-09T16:00:00.000Z",
+ "topic": "Diş fırçasının misvaktan naylon kıllara uzanan tarihi",
+ "title": "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
+ "hookText": "Fırça önce bir daldı",
+ "description": "Eşyaların Hikayesi #38\nDiş fırçasının hikâyesi: misvaktan 1498'de Çin'de kıllı fırçaya, 1938'de naylon kıllara uzanır. Rivayete göre seri üretim İngiltere'de 1780 dolaylarında başladı.\n\n#dişfırçası #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "diş fırçası",
+  "diş fırçasının tarihi",
+  "misvak",
+  "naylon diş fırçası",
+  "diş fırçası kim icat etti",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "baslikKart": [
+  "Atalarımız dişini",
+  "neyle fırçalıyordu?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Tarak",
+  "b": "Şemsiye"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Our Ancestors Cleaned Their Teeth With a Twig: The First Brush, 1498",
+   "description": "The story of the toothbrush: from the chewing twig called miswak to bristle brushes in 1498 China and nylon bristles in 1938. By tradition, mass production began in England around 1780.\n\n#toothbrush #inventions #history #shorts"
+  }
+ },
+ "oylama": {
+  "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "b"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "scenes": [
+  {
+   "narration": "Atalarımız dişlerini neyle fırçalıyordu? Yorumlarda siz seçtiniz: diş fırçası.",
+   "ifade": "merakli",
+   "cizim": "ink(ln([220, 470],[760, 330],8),{w:16,c:'#A67C52',seed:41,pp:eo(pr(u,0.0,0.55))});\nink(ln([760, 330],[800, 318],8),{w:10,c:'#A67C52',seed:42,pp:eo(pr(u,0.2,0.75))});\ntxt(\"?\",500,260,200,{c:K.ak,a:eo(pr(u,0.4,0.95))});"
+  },
+  {
+   "narration": "Misvak, Osmanlı topraklarında da kullanılan bir ağaç dalıdır.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([220, 480],[780, 350],8),{w:16,c:'#A67C52',seed:81,pp:eo(pr(u,0.0,0.55))});\nfor(let i=0;i<5;i++)ink(ln([780,350],[830+i*8,330+i*14],4),{w:3,c:'#A67C52',seed:70+i,pp:eo(pr(u,.7,1.1))});\netk(\"misvak\",500,600,eo(pr(u,0.2,0.75)),{size:46,al:'center'});"
+  },
+  {
+   "narration": "Kıllı fırçanın ilk izleri 1498 civarında Çin'de görülür.",
+   "ifade": "anlatiyor",
+   "cizim": "txt(\"1498\",500,300,170,{c:K.ak,a:eo(pr(u,0.0,0.55))});\nink(kutu(250,440,380,40),{close:true,fill:'#E9E3D6',w:3.4,seed:121,pp:eo(pr(u,0.3,0.85))});\nink(kutu(630,426,100,54),{close:true,fill:'#E9E3D6',w:3.4,seed:122,pp:eo(pr(u,0.58,1.13))});\nink(ln([638, 426],[638, 382],8),{w:4,c:K.s,seed:123,pp:eo(pr(u,0.86,1.41))});\nink(ln([649, 426],[649, 382],8),{w:4,c:K.s,seed:124,pp:eo(pr(u,1.06,1.61))});\nink(ln([660, 426],[660, 382],8),{w:4,c:K.s,seed:125,pp:eo(pr(u,1.26,1.81))});\nink(ln([671, 426],[671, 382],8),{w:4,c:K.s,seed:126,pp:eo(pr(u,1.46,2.01))});\nink(ln([682, 426],[682, 382],8),{w:4,c:K.s,seed:127,pp:eo(pr(u,1.66,2.21))});\nink(ln([693, 426],[693, 382],8),{w:4,c:K.s,seed:128,pp:eo(pr(u,1.86,2.41))});\nink(ln([704, 426],[704, 382],8),{w:4,c:K.s,seed:129,pp:eo(pr(u,2.06,2.61))});\nink(ln([715, 426],[715, 382],8),{w:4,c:K.s,seed:130,pp:eo(pr(u,2.26,2.81))});\netk(\"Çin\",500,610,eo(pr(u,2.46,3.01)),{size:46,al:'center'});"
+  },
+  {
+   "narration": "Sapı kemik ya da bambuydu, kılları ise hayvan kılı.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(240,380,380,40),{close:true,fill:'#F3E9CF',w:3.4,seed:161,pp:eo(pr(u,0.0,0.55))});\nink(kutu(620,366,100,54),{close:true,fill:'#F3E9CF',w:3.4,seed:162,pp:eo(pr(u,0.28,0.83))});\nink(ln([628, 366],[628, 322],8),{w:4,c:K.s,seed:163,pp:eo(pr(u,0.56,1.11))});\nink(ln([639, 366],[639, 322],8),{w:4,c:K.s,seed:164,pp:eo(pr(u,0.76,1.31))});\nink(ln([650, 366],[650, 322],8),{w:4,c:K.s,seed:165,pp:eo(pr(u,0.96,1.51))});\nink(ln([661, 366],[661, 322],8),{w:4,c:K.s,seed:166,pp:eo(pr(u,1.16,1.71))});\nink(ln([672, 366],[672, 322],8),{w:4,c:K.s,seed:167,pp:eo(pr(u,1.36,1.91))});\nink(ln([683, 366],[683, 322],8),{w:4,c:K.s,seed:168,pp:eo(pr(u,1.56,2.11))});\nink(ln([694, 366],[694, 322],8),{w:4,c:K.s,seed:169,pp:eo(pr(u,1.76,2.31))});\nink(ln([705, 366],[705, 322],8),{w:4,c:K.s,seed:170,pp:eo(pr(u,1.96,2.51))});\netk(\"kemik ya da bambu sap\",330,520,eo(pr(u,2.16,2.71)),{size:38,al:'center'});\netk(\"hayvan kılı\",760,250,eo(pr(u,2.46,3.01)),{size:38,al:'center'});"
+  },
+  {
+   "narration": "Rivayete göre William Addis 1780 dolaylarında İngiltere'de fırçaları seri üretmeye başladı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([120, 380],[880, 380],8),{w:4,c:K.m,seed:201,pp:eo(pr(u,0.0,0.55))});\nctx.save();ctx.globalAlpha=eo(pr(u,0.4,1.0));ctx.beginPath();ctx.arc(240,380,16,0,7);ctx.fillStyle=K.s;ctx.fill();ctx.restore();\ntxt(\"1498\",240,320,64,{a:eo(pr(u,0.4,1.0))});etk(\"Çin\",240,460,eo(pr(u,0.6,1.2)),{size:38});\nctx.save();ctx.globalAlpha=eo(pr(u,1.3,1.9));ctx.beginPath();ctx.arc(760,380,16,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();\ntxt(\"1780\",760,320,64,{a:eo(pr(u,1.3,1.9))});etk(\"İngiltere\",760,460,eo(pr(u,1.5,2.1)),{size:38});"
+  },
+  {
+   "narration": "1938'de kıllar naylona dönüştü. Fırça artık daha dayanıklı ve hijyenikti.",
+   "ifade": "gulumsuyor",
+   "cizim": "txt(\"1938\",500,260,150,{c:K.ak,a:eo(pr(u,0.0,0.55))});\nink(kutu(250,430,380,40),{close:true,fill:'#CFE0EA',w:3.4,seed:241,pp:eo(pr(u,0.3,0.85))});\nink(kutu(630,416,100,54),{close:true,fill:'#CFE0EA',w:3.4,seed:242,pp:eo(pr(u,0.58,1.13))});\nink(ln([638, 416],[638, 372],8),{w:4,c:K.s,seed:243,pp:eo(pr(u,0.86,1.41))});\nink(ln([649, 416],[649, 372],8),{w:4,c:K.s,seed:244,pp:eo(pr(u,1.06,1.61))});\nink(ln([660, 416],[660, 372],8),{w:4,c:K.s,seed:245,pp:eo(pr(u,1.26,1.81))});\nink(ln([671, 416],[671, 372],8),{w:4,c:K.s,seed:246,pp:eo(pr(u,1.46,2.01))});\nink(ln([682, 416],[682, 372],8),{w:4,c:K.s,seed:247,pp:eo(pr(u,1.66,2.21))});\nink(ln([693, 416],[693, 372],8),{w:4,c:K.s,seed:248,pp:eo(pr(u,1.86,2.41))});\nink(ln([704, 416],[704, 372],8),{w:4,c:K.s,seed:249,pp:eo(pr(u,2.06,2.61))});\nink(ln([715, 416],[715, 372],8),{w:4,c:K.s,seed:250,pp:eo(pr(u,2.26,2.81))});\netk(\"naylon kıl\",760,360,eo(pr(u,2.46,3.01)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "Yani dişlerimizi temizleyen fırça, yarım bin yıldan eski bir fikir.",
+   "ifade": "gururlu",
+   "cizim": "txt(\"500+\",500,340,200,{c:K.ak,a:eo(pr(u,0.0,0.55))});\netk(\"yıllık fikir\",500,470,eo(pr(u,0.3,0.85)),{size:56,al:'center'});\nink(kutu(250,560,380,40),{close:true,fill:'#E9E3D6',w:3.4,seed:281,pp:eo(pr(u,0.6,1.15))});\nink(kutu(630,546,100,54),{close:true,fill:'#E9E3D6',w:3.4,seed:282,pp:eo(pr(u,0.88,1.43))});\nink(ln([638, 546],[638, 502],8),{w:4,c:K.s,seed:283,pp:eo(pr(u,1.16,1.71))});\nink(ln([649, 546],[649, 502],8),{w:4,c:K.s,seed:284,pp:eo(pr(u,1.36,1.91))});\nink(ln([660, 546],[660, 502],8),{w:4,c:K.s,seed:285,pp:eo(pr(u,1.56,2.11))});\nink(ln([671, 546],[671, 502],8),{w:4,c:K.s,seed:286,pp:eo(pr(u,1.76,2.31))});\nink(ln([682, 546],[682, 502],8),{w:4,c:K.s,seed:287,pp:eo(pr(u,1.96,2.51))});\nink(ln([693, 546],[693, 502],8),{w:4,c:K.s,seed:288,pp:eo(pr(u,2.16,2.71))});\nink(ln([704, 546],[704, 502],8),{w:4,c:K.s,seed:289,pp:eo(pr(u,2.36,2.91))});\nink(ln([715, 546],[715, 502],8),{w:4,c:K.s,seed:290,pp:eo(pr(u,2.56,3.11))});"
+  },
+  {
+   "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: tarak mı, şemsiye mi?",
+   "ifade": "merakli",
+   "cizim": "txt(\"?\",500,380,220,{c:K.ak,a:eo(pr(u,0.0,0.55))});\ntxt(\"A\",260,590,90,{c:K.s,a:eo(pr(u,0.3,0.85))});\ntxt(\"B\",740,590,90,{c:K.s,a:eo(pr(u,0.6,1.15))});"
+  }
+ ]
+}

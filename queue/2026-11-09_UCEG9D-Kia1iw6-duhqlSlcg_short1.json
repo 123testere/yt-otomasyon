@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-09_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-09T05:00:00.000Z",
+ "bolum": {
+  "no": 1,
+  "ad": "Top 5"
+ },
+ "title": "5 Side Hustles You Can Start With $0 💰",
+ "description": "Looking for side hustles you can start with $0? Here are five realistic ideas, from pet sitting to freelance writing. Which one would you try first?\n\n#sidehustle #money #business #motivation",
+ "tags": [
+  "side hustles",
+  "start with $0",
+  "make extra money",
+  "pet sitting",
+  "reselling",
+  "tutoring",
+  "freelance writing",
+  "money tips",
+  "business ideas"
+ ],
+ "topic": "Five side hustles you can start with zero money",
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted wins a deep dive",
+  "soru": "Which side hustle would you start?"
+ },
+ "ceviriler": {
+  "es": {
+   "title": "5 trabajos extra que puedes empezar con $0 💰",
+   "description": "¿Buscas trabajos extra que puedas empezar con $0? Aquí tienes cinco ideas realistas, del cuidado de mascotas a la redacción freelance. ¿Cuál probarías primero?\n\n#trabajoextra #dinero #negocios #motivacion"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "garaj",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Side hustles for $0"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "canta",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Want extra income without spending a dollar? Here are five side hustles you can start with zero. Let's count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Pet Sitting",
+    "tur": "Local service",
+    "maddeler": [
+     "Walk dogs",
+     "Feed pets",
+     "Local trust"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: pet sitting. Neighbors often need someone to walk or feed their pets."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Reselling",
+    "tur": "Sell what you own",
+    "maddeler": [
+     "Declutter",
+     "List online",
+     "Start small"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: reselling. Clear out your closet and list items online."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Tutoring",
+    "tur": "Teach what you know",
+    "maddeler": [
+     "Know a subject",
+     "Online or local",
+     "Flexible hours"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: tutoring. If you know a subject well, someone may pay to learn it."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Freelance Writing",
+    "tur": "Words for hire",
+    "maddeler": [
+     "Blog posts",
+     "Product pages",
+     "Just a laptop"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: freelance writing. Businesses always need words, and a laptop can be enough."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Skill-Based Services",
+    "tur": "Use what you have",
+    "maddeler": [
+     "Design or editing",
+     "Repairs",
+     "Start with one client"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: selling a skill you already have. Many people start by helping one local customer."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Which one would you try first? Comment below, and subscribe!"
+    }
+   ]
+  }
+ ]
+}

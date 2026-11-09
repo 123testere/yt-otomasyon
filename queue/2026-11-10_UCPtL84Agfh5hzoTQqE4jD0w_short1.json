@@ -1,0 +1,88 @@
+{
+ "id": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-10T16:00:00.000Z",
+ "topic": "Gözlüğün ortaçağda icadı ve kulak saplarının çok sonra gelişi",
+ "title": "Gözlüğün Kulak Sapı 400 Yıldan Fazla Sonra Geldi",
+ "hookText": "İlk gözlükte sap yoktu",
+ "description": "Eşyaların Hikayesi #39\nGözlüğün hikâyesi: 1286 dolaylarında İtalya'da ilk gözlükler yapıldı, kulak sapları ise 1700'lerde Edward Scarlett'e atfedilir.\n\n#gözlük #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "gözlük",
+  "gözlüğün tarihi",
+  "gözlük kim icat etti",
+  "ilk gözlük",
+  "kulak sapı",
+  "İbnü'l-Heysem",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "baslikKart": [
+  "Gözlüğün kulak sapı",
+  "neden geç geldi?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Kalem",
+  "b": "Anahtar"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Eyeglasses Got Ear Pieces Over 400 Years Later",
+   "description": "The story of eyeglasses: the first pairs were made in Italy around 1286, while ear pieces are attributed to Edward Scarlett in the early 1700s.\n\n#eyeglasses #inventions #history #shorts"
+  }
+ },
+ "oylama": {
+  "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "scenes": [
+  {
+   "narration": "Gözlük 1286 dolaylarında icat edildi, ama kulak sapları ancak 1700'lerde geldi.",
+   "ifade": "saskin",
+   "cizim": "txt(\"1286\",500,230,170,{c:K.ak,a:eo(pr(u,0.0,0.55))});\nink(ell(395,450,90,90,28),{close:true,fill:'#DDEBF2',w:5,seed:441,pp:eo(pr(u,0.3,0.85))});\nink(ell(605,450,90,90,28),{close:true,fill:'#DDEBF2',w:5,seed:442,pp:eo(pr(u,0.58,1.13))});\nink(ln([485, 442],[515, 442],8),{w:6,c:K.m,seed:443,pp:eo(pr(u,0.86,1.41))});"
+  },
+  {
+   "narration": "Ondan önce okuyanlar, yazının üstüne konan cam yarım küreleri kullanırdı.",
+   "ifade": "anlatiyor",
+   "cizim": "for(let i=0;i<5;i++)ink(ln([220,380+i*34],[780,380+i*34],8),{w:3.4,c:K.s,seed:90+i,pp:eo(pr(u,i*.15,.6+i*.15))});\nink([[360, 400], [400, 330], [500, 300], [600, 330], [640, 400]],{close:true,fill:\"#DDEBF2\",w:3.4,seed:481,pp:eo(pr(u,0.0,0.55))});\netk(\"okuma taşı\",500,610,eo(pr(u,0.28,0.83)),{size:44,al:'center'});"
+  },
+  {
+   "narration": "Işığın gözde nasıl çalıştığını, on birinci yüzyılda İbnü'l-Heysem kitabında anlattı.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(560,350,170,100,28),{close:true,fill:'#EFE4CB',w:3.4,seed:521,pp:eo(pr(u,0.0,0.55))});\nink(ell(560,350,50,50,28),{close:true,fill:'#5C7F96',w:3.4,seed:522,pp:eo(pr(u,0.28,0.83))});\nink(ln([160, 250],[400, 330],8),{w:5,c:K.m,seed:523,pp:eo(pr(u,0.56,1.11))});\nink(ln([160, 450],[400, 370],8),{w:5,c:K.m,seed:524,pp:eo(pr(u,0.76,1.31))});\netk(\"ışık\",160,230,eo(pr(u,0.96,1.51)),{size:42,al:'center'});\netk(\"İbnü'l-Heysem · 1000'ler\",500,600,eo(pr(u,1.26,1.81)),{size:40,al:'center'});"
+  },
+  {
+   "narration": "Bu bilgi Avrupa'ya ulaştı ve İtalya'da ilk gözlükler yapıldı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([200, 400],[780, 400],8),{w:6,c:K.m,seed:561,pp:eo(pr(u,0.0,0.55))});\nink(ln([740, 370],[790, 400],8),{w:6,c:K.m,seed:562,pp:eo(pr(u,0.2,0.75))});\nink(ln([740, 430],[790, 400],8),{w:6,c:K.m,seed:563,pp:eo(pr(u,0.4,0.95))});\netk(\"bilgi\",250,350,eo(pr(u,0.6,1.15)),{size:44,al:'center'});\netk(\"İtalya\",760,350,eo(pr(u,0.9,1.45)),{size:44,al:'center'});\nink(ell(435,520,50,50,28),{close:true,fill:'#DDEBF2',w:5,seed:564,pp:eo(pr(u,1.2,1.75))});\nink(ell(565,520,50,50,28),{close:true,fill:'#DDEBF2',w:5,seed:565,pp:eo(pr(u,1.48,2.03))});\nink(ln([485, 512],[515, 512],8),{w:6,c:K.m,seed:566,pp:eo(pr(u,1.76,2.31))});"
+  },
+  {
+   "narration": "İki camı perçinle birleştirdiler. Gözlük burnun üstünde tutulurdu.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(420,380,100,100,28),{close:true,fill:'#DDEBF2',w:5,seed:601,pp:eo(pr(u,0.0,0.55))});\nink(ell(580,380,100,100,28),{close:true,fill:'#DDEBF2',w:5,seed:602,pp:eo(pr(u,0.28,0.83))});\nink(ell(500,350,12,12,28),{close:true,fill:'#8A7A66',w:3.4,seed:603,pp:eo(pr(u,0.56,1.11))});\nink(ln([500, 350],[500, 200],8),{w:6,c:K.m,seed:604,pp:eo(pr(u,0.84,1.39))});\netk(\"perçin\",500,160,eo(pr(u,1.04,1.59)),{size:42,al:'center'});"
+  },
+  {
+   "narration": "Kulak saplı gözlük, 1700'lerin ilk yarısında Edward Scarlett'e atfedilir.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(405,380,80,80,28),{close:true,fill:'#DDEBF2',w:5,seed:641,pp:eo(pr(u,0.0,0.55))});\nink(ell(595,380,80,80,28),{close:true,fill:'#DDEBF2',w:5,seed:642,pp:eo(pr(u,0.28,0.83))});\nink(ln([485, 372],[515, 372],8),{w:6,c:K.m,seed:643,pp:eo(pr(u,0.56,1.11))});\nink(ln([325, 360],[245, 440],8),{w:6,c:K.m,seed:644,pp:eo(pr(u,0.76,1.31))});\nink(ln([675, 360],[755, 440],8),{w:6,c:K.m,seed:645,pp:eo(pr(u,0.96,1.51))});\netk(\"kulak sapı\",500,600,eo(pr(u,1.16,1.71)),{size:46,al:'center'});\ntxt(\"1700'ler\",500,170,110,{c:K.ak,a:eo(pr(u,1.46,2.01))});"
+  },
+  {
+   "narration": "Kısacası, gözlük sandığımızdan çok daha eski bir icat.",
+   "ifade": "gururlu",
+   "cizim": "ink(ln([120, 380],[880, 380],8),{w:4,c:K.m,seed:681,pp:eo(pr(u,0.0,0.55))});\nctx.save();ctx.globalAlpha=eo(pr(u,0.4,1.0));ctx.beginPath();ctx.arc(240,380,16,0,7);ctx.fillStyle=K.s;ctx.fill();ctx.restore();\ntxt(\"1286\",240,320,64,{a:eo(pr(u,0.4,1.0))});etk(\"Gözlük\",240,460,eo(pr(u,0.6,1.2)),{size:38});\nctx.save();ctx.globalAlpha=eo(pr(u,1.3,1.9));ctx.beginPath();ctx.arc(760,380,16,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();\ntxt(\"1700'ler\",760,320,64,{a:eo(pr(u,1.3,1.9))});etk(\"Kulak sapı\",760,460,eo(pr(u,1.5,2.1)),{size:38});"
+  },
+  {
+   "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: kalem mi, anahtar mı?",
+   "ifade": "merakli",
+   "cizim": "txt(\"?\",500,380,220,{c:K.ak,a:eo(pr(u,0.0,0.55))});\ntxt(\"A\",260,590,90,{c:K.s,a:eo(pr(u,0.3,0.85))});\ntxt(\"B\",740,590,90,{c:K.s,a:eo(pr(u,0.6,1.15))});"
+  }
+ ]
+}
