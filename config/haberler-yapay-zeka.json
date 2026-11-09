@@ -1,8 +1,232 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-09T08:02:00.504Z",
+  "guncellendi": "2026-11-09T18:52:18.315Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T18:09:52.000Z",
+      "ozet": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Instagram’s Effect Builder makes new filters from AI prompts",
+      "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T18:07:23.000Z",
+      "ozet": "After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents who are over 18, it has a prompt box for describing your filter idea to the chatbot, with an option to attach style […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Meta releases Muse Ember, a new lightweight model for agent execution",
+      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T18:00:00.000Z",
+      "ozet": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The future of AI hinges on… Jensen Huang’s sex life?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T17:36:08.000Z",
+      "ozet": "I would prefer that these people's sex lives were none of my business but I guess we have to talk about Jensen Huang and the National Security Incident. Who could have guessed that the guy who was out here signing titties might not have great judgment about how to behave around women? Alice Huang - […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Claude Code is accidentally exposing secrets all over GitHub",
+      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-09T17:24:26.000Z",
+      "ozet": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nancy Pelosi’s replacement is ready to regulate AI",
+      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-09T17:05:43.000Z",
+      "ozet": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy. I spoke with Wiener on Friday, only a…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T16:56:54.000Z",
+      "ozet": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "DeepSeek’in AI ajan platformu günlük 1,54 milyon kullanıcıya ulaştı",
+      "link": "https://www.donanimhaber.com/deepseek-harness-gunluk-1-54-milyon-aktif-kullaniciya-ulasti--212688",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T16:25:00.000Z",
+      "ozet": "DeepSeek'in açık kaynaklı yapay zeka ajanı Harness, üç aydan kısa sürede 1,54 milyon günlük aktif kullanıcıya ulaştı. Platform günde 92 trilyon token tüketiyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Medium’s new TK app brings AI assistance directly into the writing process",
+      "link": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T16:12:28.000Z",
+      "ozet": "Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T15:50:38.000Z",
+      "ozet": "Asked about AI executives' warnings about their models' safety on 60 Minutes, Trump said, \"I think that the risk is not nearly as real as it- as they talk, and I think the risk can be managed, and it's managed.\" He claimed the DOJ is managing that risk, saying, \"We had a situation where somebody […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Disney and Adobe are building generative AI tools together",
+      "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T15:38:56.000Z",
+      "ozet": "The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX conference, and it will see Adobe providing Disney with early access to its latest technologies for everything from Disney's theme parks and cruise line to […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Hold up — I had a great time talking to the RIAA guy",
+      "link": "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T15:30:00.000Z",
+      "ozet": "Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA. This conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic, veri merkezleri için doğal gaz jeneratörü satın aldı",
+      "link": "https://www.donanimhaber.com/anthropic-veri-merkezleri-icin-dogal-gaz-jeneratoru-satin-aldi--212678",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T15:28:00.000Z",
+      "ozet": "Anthropic, veri merkezlerinin enerji ihtiyacını karşılamak için 1,7 GW kapasiteli doğal gaz jeneratörleri satın aldı. Anlaşmanın bedeli 3,4 milyar doları buluyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia CEO's affair becomes a national security problem",
+      "link": "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-09T15:23:20.000Z",
+      "ozet": "Nvidia is probing whether Chinese intelligence targeted its CEO through an affair.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang Hired a PR Firm Known for Handling Sex Scandals Last Year",
+      "link": "https://www.wired.com/story/nvidia-ceo-jensen-huang-hired-a-pr-firm-known-for-handling-sex-scandals-last-year/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-09T14:30:56.000Z",
+      "ozet": "The Nvidia CEO began working with consultants from Heller as early as October 2025, around the same time he was first linked to a suspected Chinese spy.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jonathan Kanter is using AI to take on Big Tech",
+      "link": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T14:30:00.000Z",
+      "ozet": "When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight in the private sector, and with a perhaps unexpected tool: AI. Alongside former acting Antitrust Division chief Doha Mekki, Kanter recently launched a […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
+      "link": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T14:00:00.000Z",
+      "ozet": "Automattic aims to compete with the likes of Lovable with Spacefast.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "BYD’den araçtan inmeden şarj: Kabloyu robot kol takıyor",
+      "link": "https://www.donanimhaber.com/byd-den-aractan-inmeden-sarj-kabloyu-robot-kol-takiyor--212663",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T14:00:00.000Z",
+      "ozet": "BYD, sürücünün kablo takmasına gerek bırakmayan robotik şarj sistemini gösterdi. Şarj kapağını açıp fişi takan robot kolun kullanıldığı gösterimde, 1.000 kW güce ulaşıldığı bildirildi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Samsung, Yapay Zekâ Özellikleri İçin \"Galaxy AI Premium\" Aboneliğini Sunmaya Hazırlanıyor: İşte Fiyatı!",
+      "link": "https://www.webtekno.com/samsung-galaxy-ai-premium-aboneligini-sunmaya-hazirlaniyor-h228574.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-09T13:53:50.000Z",
+      "ozet": "Samsung, Galaxy AI için aylık 4,99 dolarlık Premium abonelik ve kullanım limitleri getirmeye hazırlanıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "İngiltere'nin en büyük bankaları AI ajanlarını yasakladı: Kontrolden çıkabilirler!",
+      "link": "https://www.donanimhaber.com/ingiltere-nin-en-buyuk-bankalari-yapay-zeka-ajanlarini-yasakladi--212670",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T13:43:00.000Z",
+      "ozet": "Yapay zekâ ajanlarının kontrolden çıkıp onaylanmamış işlemler yaptığı vakaların artması bankaları harekete geçirdi. İngiltere'nin en büyük bankaları, AI ajanlarının hesaplara erişmesini yasakladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Amazon Gülümseten Kasım'da haftanın öne çıkan fırsatları!",
+      "link": "https://www.donanimhaber.com/amazon-gulumseten-kasim-da-haftanin-one-cikan-indirimleri-9-kasim--212671",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T13:30:44.000Z",
+      "ozet": "Amazon'da Gülümseten Kasım indirimlerinde bu hafta kaçırmamanız gereken indirimleri bir araya getirdik. Telefondan bilgisayara, televizyondan robot süpürgeye pek çok üründe indirimler var.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Microsoft'tan sıra dışı patent: Canlı konuşmaları yapay zeka değiştirecek",
+      "link": "https://www.donanimhaber.com/deepfake-doyut-atliyor-microsoft-canli-konusmalari-degistirecek--212666",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T13:22:00.000Z",
+      "ozet": "Microsoft, canlı yayınlardaki konuşmaları yapay zekayla değiştirebilen bir sistem için patent başvurusu yaptı. Teknoloji, konuşmacının dudak hareketlerini de düzenleyebiliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Innovating with AI in the special chemicals industry",
+      "link": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-09T13:00:00.000Z",
+      "ozet": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the practical realities of bringing products to market. For specialty chemicals manufacturer Lubrizol, digital transformation is all about giving researchers the tools to test ideas faster, ",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Çin’den Nvidia CEO’su Jensen Huang hakkındaki casusluk iddialarına yanıt geldi",
+      "link": "https://www.donanimhaber.com/cin-nvidia-ceo-suna-yonelik-casusluk-iddialarini-yalanladi--212664",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T12:40:00.000Z",
+      "ozet": "Çin, Nvidia CEO’su Jensen Huang’ın Çin adına casusluk yapan bir kadınla ilişkisi olduğu iddialarını reddetti. Olay, ABD-Çin ilişkilerinde yeni bir gerilim yaratabilir.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zeka çiplerini soğutmak için elmas kullanılacak: Bakırdan 5 kat daha iyi",
+      "link": "https://www.donanimhaber.com/yapay-zeka-ciplerini-sogutmak-icin-elmas-kullanilacak--212667",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T12:21:00.000Z",
+      "ozet": "Diamond Foundry, bakırdan en az 5 kat daha iyi ısı ileten tek kristal elmas kullanarak dünyanın ilk 200 mm wafer'ını üretti. Teknoloji, yapay zeka çiplerinin soğutulmasında kullanılabilir.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Samsung, Galaxy AI Premium planını test ediyor: Aylık 5 dolar!",
+      "link": "https://www.donanimhaber.com/samsung-galaxy-ai-premium-planini-test-ediyor--212659",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T11:39:00.000Z",
+      "ozet": "Samsung, aylık 4.99 dolar fiyatla sunulacak Galaxy AI Premium planını test ediyor. Ücretsiz Galaxy AI seçeneği de olacak ancak kullanım sınırlarına tabi olacak. İşte detaylar:",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Authors Can Defend Against AI Allegations With ‘Paper Trail’ Tools. Is It Enough?",
+      "link": "https://www.wired.com/story/authors-can-defend-against-ai-allegations-with-paper-trail-tools/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-09T11:00:00.000Z",
+      "ozet": "As the publishing industry wrestles with paranoia over the provenance of manuscripts, writers are caught in an impossible bind.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apple, Siri'yi yapay zeka ajanına dönüştürmek için harekete geçti",
+      "link": "https://www.donanimhaber.com/apple-siri-yi-yapay-zeka-ajanina-donusturmek-icin-harekete-gecti--212648",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T08:20:00.000Z",
+      "ozet": "Apple, Siri'yi üçüncü taraf uygulamalarda işlem yapabilen ve uzun süreli görevleri kullanıcı adına yürütebilen bir yapay zeka ajanına dönüştürmeye hazırlanıyor.",
+      "kullanildi": false
+    },
     {
       "baslik": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
       "link": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
@@ -20,7 +244,7 @@
       "kullanildi": false
     },
     {
-      "baslik": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+      "baslik": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s ‘about a 50-50’",
       "link": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-09T05:26:29.000Z",
@@ -52,7 +276,7 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+      "baslik": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
       "kaynak": "The Verge",
       "tarih": "2026-11-08T20:22:39.000Z",
@@ -76,51 +300,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Google Mesajlar, yeni ana sayfa tasarımını test ediyor",
-      "link": "https://www.donanimhaber.com/google-mesajlar-yeni-ana-sayfa-tasarimini-test-ediyor--212629",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-08T16:00:00.000Z",
-      "ozet": "Google Mesajlar, sabitlenmiş sohbet avatarları, alt bölüme taşınan arama çubuğu ve yeni Gemini kısayoluyla Android ana sayfasında kapsamlı bir tasarımı test ediyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI, 1,25 trilyon dolar değerlemeye ulaştı, 11 milyar dolar topladı",
-      "link": "https://www.donanimhaber.com/openai-1-25-trilyon-dolar-degerlemeye-ulasti--212631",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-08T15:30:00.000Z",
-      "ozet": "ChatGPT geliştiricisi OpenAI, 1,25 trilyon dolar değerlemeye ulaştığı yeni yatırım turunda 11 milyar dolar topladı. Turun önümüzdeki haftalarda 20 milyar dolara ulaşması bekleniyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Honor, gimbal kameralı telefonunu yeniliyor: Robot Phone 2 yolda",
-      "link": "https://www.donanimhaber.com/honor-gimbal-kamerali-telefonunu-yeniliyor-robot-phone-2-yolda--212619",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-08T14:00:00.000Z",
-      "ozet": "Honor, hareketli gimbal kamera sistemine sahip sıra dışı akıllı telefonunun devam modelini geliştiriyor. Robot Phone 2'nin 2027'nin ikinci çeyreğinde piyasaya çıkabileceği belirtiliyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
       "link": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/",
       "kaynak": "Wired",
       "tarih": "2026-11-08T12:00:00.000Z",
       "ozet": "The New York Times has added a beta feature to its Cooking app that helps readers swap ingredients or adjust recipes to suit their needs. It mostly hits the mark.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Claude artık finans yardımcınız oluyor",
-      "link": "https://www.donanimhaber.com/claude-personal-finance-tanitildi--212635",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-08T11:30:00.000Z",
-      "ozet": "Claude Personal Finance adındaki yeni yapay zekâ finans yardımcınız, varlık hesaplarınızı analiz ederek tavsiyeler veriyor ödemeler konusunda uyarılar yapıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "11 milyon dolarlık Nvidia yongası çalındı",
-      "link": "https://www.donanimhaber.com/buyuk-nvidia-soygunu--212634",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-08T10:30:00.000Z",
-      "ozet": "ABD’de sunucular için sipariş verilen yaklaşık 11 milyon dolarlık 6 palet Nvidia donanımı teslim alınıp bilinmeyen bir yere nakledildi. Hırsızlık 15 gün sonra fark edildi.",
       "kullanildi": false
     },
     {
@@ -145,86 +329,6 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-07T21:17:08.000Z",
       "ozet": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Siri AI'a kullanım sınırı geliyor: Sınırsız erişim ücretli olacak!",
-      "link": "https://www.donanimhaber.com/siri-ai-a-kullanim-siniri-geliyor-sinirsiz-erisim-ucretli-olacak--212613",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-07T19:00:00.000Z",
-      "ozet": "Apple, dördüncü çeyrek sonuçlarını açıkladığı sırada, Siri AI için gelecekte kullanım sınırı olacağını, daha kapsamlı erişim için ücret ödeme seçeneği sunulacağını doğruladı. İşte ayrıntılar:",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Gemini Omni 1.2 Flash duyuruldu: Daha uzun ve tutarlı videolar",
-      "link": "https://www.donanimhaber.com/gemini-omni-1-2-flash-duyuruldu-daha-uzun-ve-tutarli-videolar--212600",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-07T18:00:00.000Z",
-      "ozet": "15 saniyeye kadar video oluşturabilen model, aşamalı düzenleme, daha tutarlı sahneler ve gelişmiş ses üretimi özellikleriyle geliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google için yapay zeka paradoksa dönüştü",
-      "link": "https://www.donanimhaber.com/google-icin-yapay-zeka-paradoksa-donustu--212606",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-07T16:30:00.000Z",
-      "ozet": "Google yapay zeka aramalarında büyüme kaydederken reklam gelirlerinde yavaşlama yaşıyor. Şirket, yüz milyarlarca dolarlık yatırımlarının karşılığını henüz alamıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
-      "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-07T15:50:00.000Z",
-      "ozet": "Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicken again?\" Yes, I should meal plan more, but I don't, so this is where I'm at. A nightly battle in which the chicken usually wins. Recently, my best […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The US let Nvidia sell chips to an empty office in China",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-07T15:43:45.000Z",
-      "ozet": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI broke the cybersecurity world. What’s next?",
-      "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-07T15:00:00.000Z",
-      "ozet": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re going to hear him say […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Alphabet'ten Qualcomm'a dev yatırım: Hedef yapay zeka veri merkezleri",
-      "link": "https://www.donanimhaber.com/alphabet-qualcomm-a-548-milyon-dolar-yatirimla-destek-verdi--212616",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-07T15:00:00.000Z",
-      "ozet": "Alphabet'in Qualcomm'a yaklaşık 548 milyon dolarlık yatırım yaptığı bildirildi. İşte yapay zeka veri merkezlerine yönelirken çip sektöründe yeni bir rekabet alanı oluşturacak yatırımın ayrıntıları:",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Android Auto'da sonsuz arama döngüsü: Gemini çıldırttı!",
-      "link": "https://www.donanimhaber.com/android-auto-da-sonsuz-arama-dongusu-gemini-cildirtti--212609",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-07T13:30:00.000Z",
-      "ozet": "Bazı Android Auto kullanıcıları, kişinin adını belirtmelerine rağmen sistemin sürekli olarak kimi aramak veya kime mesaj göndermek istediğini sorduğunu ifade ediyor. Google, sorunu araştırıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Why a new report on Anthropic automating AI development is alarming researchers",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-07T12:30:00.000Z",
-      "ozet": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apps for Caregivers Get a Dose of AI, but That Might Not Be Enough",
-      "link": "https://www.wired.com/story/apps-for-caregivers-get-a-dose-of-ai-but-that-might-not-be-enough/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-07T11:00:00.000Z",
-      "ozet": "The apps and platforms that help family caregivers manage their loved ones’ needs are becoming more capable, but the broader issue of caregivers’ well-being remains unsolved.",
       "kullanildi": false
     }
   ]

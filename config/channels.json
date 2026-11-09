@@ -670,24 +670,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
-        "a": "Pil",
-        "b": "Gözlük",
-        "oyA": 2,
-        "oyB": 0,
-        "yayin": "2026-11-05T09:00:00.000Z"
-      },
-      {
-        "kaynak": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
-        "a": "Asansör",
-        "b": "Buzdolabı",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-05T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
         "a": "Ütü",
@@ -740,6 +722,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-08T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
+        "a": "Tarak",
+        "b": "Şemsiye",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-09T16:00:00.000Z"
       }
     ]
   },
