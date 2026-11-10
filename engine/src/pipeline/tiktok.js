@@ -83,6 +83,8 @@ export async function ttDurum(tt, publishId) {
 
 // TikTok açıklaması: başlık + hashtag'ler (TikTok'ta 2200 karakter sınırı)
 export function ttAciklama(job) {
-  const etiketler = (job.description?.match(/#[\p{L}\p{N}_]+/gu) ?? []).slice(0, 8).join(' ');
-  return `${job.title.trim()} ${etiketler}`.trim().slice(0, 2200);
+  // Sadece harf içeren etiketler (seri numarası "#38" ve TikTok'ta anlamsız "#shorts" alınmaz)
+  const etiketler = (job.description?.match(/#[\p{L}\p{N}_]+/gu) ?? [])
+    .filter((e) => /\p{L}/u.test(e) && e.toLowerCase() !== '#shorts').slice(0, 6);
+  return `${job.title.trim()} ${[...etiketler, '#fyp'].join(' ')}`.trim().slice(0, 2200);
 }
