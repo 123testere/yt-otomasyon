@@ -1,8 +1,40 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-10T07:26:12.152Z",
+  "guncellendi": "2026-11-10T09:56:34.663Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Google’dan yapay zeka için iki yeni çip: TPU 8tx ve TPU 8i Max",
+      "link": "https://www.donanimhaber.com/google-dan-yapay-zeka-icin-iki-yeni-cip-tpu-8tx-ve-tpu-8i-max--212701",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-10T09:24:00.000Z",
+      "ozet": "Google, yapay zeka için TPU 8tx ve TPU 8i Max çiplerini tanıttı. Yeni donanımlar, hassas verilerde güvenliği ve milyonlarca tokenlık bağlamlarda işlem performansını artırmayı hedefliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Closing the AI guidance gap in education",
+      "link": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-10T09:00:00.000Z",
+      "ozet": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Boşta duran ekran kartları para kazandırabilir: İlginç Microsoft patenti",
+      "link": "https://www.donanimhaber.com/bosta-duran-ekran-kartlari-para-kazandirabilir--212699",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-10T07:29:37.000Z",
+      "ozet": "Microsoft'un yeni patent başvurusu, oyuncuların boşta duran ekran kartlarını yapay zeka eğitimi için paylaşarak para veya çeşitli ödüller kazanabileceği bir sistemi ortaya koydu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Otter AI can now follow conversations across 30+ languages",
+      "link": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T07:00:00.000Z",
+      "ozet": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
+      "kullanildi": false
+    },
     {
       "baslik": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
       "link": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
@@ -353,14 +385,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-09T11:00:00.000Z",
       "ozet": "As the publishing industry wrestles with paranoia over the provenance of manuscripts, writers are caught in an impossible bind.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple, Siri'yi yapay zeka ajanına dönüştürmek için harekete geçti",
-      "link": "https://www.donanimhaber.com/apple-siri-yi-yapay-zeka-ajanina-donusturmek-icin-harekete-gecti--212648",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-09T08:20:00.000Z",
-      "ozet": "Apple, Siri'yi üçüncü taraf uygulamalarda işlem yapabilen ve uzun süreli görevleri kullanıcı adına yürütebilen bir yapay zeka ajanına dönüştürmeye hazırlanıyor.",
       "kullanildi": false
     },
     {

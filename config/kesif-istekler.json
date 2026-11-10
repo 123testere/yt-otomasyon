@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "UCUWG17RpxXBZ4avKIqPX6CQ",
+    "ad": "Day One Films",
+    "firsat": {
+      "motor": "dizi-cop",
+      "kanalId": "UCUWG17RpxXBZ4avKIqPX6CQ",
+      "dil": "en",
+      "puan": 8,
+      "maliyet": "Ücretsiz (Microsoft İngilizce ses ya da Chatterbox), günde 1 Shorts",
+      "konsept": "Sessiz ve kısa anlatımlı motivasyon animasyonları: bir karakter, bir alışkanlık, bir dönüşüm.",
+      "renkler": [
+        "#111827",
+        "#F97316",
+        "#F9FAFB"
+      ],
+      "neden": "43 günde 94 bin abone; 'DISCIPLINE' 6 milyon. Basit karakterli (ay başlı) motivasyon kısa filmleri: Day 1 → Day 30 dönüşümü, alarm saati, sessiz anlatım ve güçlü tek cümleler.",
+      "tur": "short",
+      "kanalAdlari": [
+        "Day Zero Stories",
+        "One Habit Films",
+        "Stickman Discipline"
+      ],
+      "bizimAci": "Çöp adam karakterimizle 'Day 1 vs Day 100' dönüşüm hikâyeleri; her film tek bir alışkanlık (erken kalkmak, telefonu bırakmak, para biriktirmek). Untold Vault'un motivasyon tarafını besler; İngilizce reklam geliri yüksek.",
+      "risk": "Motivasyon nişi kalabalık; görsel kimlik (renk, karakter) ayırt edici olmalı.",
+      "ornekKonu": "Day 1 vs Day 100: The Phone"
+    },
+    "not": "Türk olsun sakar olsun",
+    "tekrar": false,
+    "oncekiBaslik": null
+  },
+  {
+    "id": "UCvjVNERFGBh9SRGma5Q9Oow",
+    "ad": "Dili Olsa da Söylese",
+    "firsat": {
+      "motor": "dizi-cop",
+      "kanalId": "UCvjVNERFGBh9SRGma5Q9Oow",
+      "dil": "tr",
+      "puan": 9,
+      "maliyet": "Ücretsiz (Microsoft ya da Chatterbox ses), günde 1-2 Shorts",
+      "konsept": "Eşyaların ağzından hayat hikâyeleri: doğduğu yer, sahipleriyle anılar, dünyayı nasıl değiştirdi. Çöp adam evi, okul, mutfak mekânları; eşya karakterleri.",
+      "renkler": [
+        "#F4C95D",
+        "#E07A5F",
+        "#3D405B"
+      ],
+      "neden": "21 günlük kanal, günde ~840 bin izlenme. 'X Olarak Doğdun' kalıbı: bir eşya kendi hayatını izleyiciye ikinci tekil şahısla anlatıyor (doğduğu fabrika, sahibi, eskiyip atılması). Duygusal + nostaljik + 1 dakika.",
+      "tur": "short",
+      "kanalAdlari": [
+        "Eşya Dile Geldi",
+        "Ben Bir Eşyaydım",
+        "Hayatım Eşya"
+      ],
+      "bizimAci": "Eşyalar konuşuyor ama gerçek tarihle: 'Çay Bardağı Olarak Doğdun… 1938'de Paşabahçe'de'. Lamba Altında'nın araştırma gücü + duygusal ikinci şahıs anlatım. Her bölüm sonunda eşyanın gerçek bir bilgisini veririz.",
+      "risk": "Kalıp kısa sürede çok kopyalanabilir; özgünlüğü gerçek tarih bilgisiyle korumalıyız. Çocuk içeriği sayılmamalı (hedef yetişkin nostalji).",
+      "ornekKonu": "Çay Bardağı Olarak Doğdun"
+    },
+    "not": "İngilizce olarakyap",
+    "tekrar": false,
+    "oncekiBaslik": null
+  }
+]
