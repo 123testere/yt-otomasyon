@@ -1,8 +1,136 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-09T18:52:18.315Z",
+  "guncellendi": "2026-11-10T02:11:12.832Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Anthropic reportedly plans to move forward with IPO plans",
+      "link": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T01:27:12.000Z",
+      "ozet": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
+      "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-10T00:28:49.000Z",
+      "ozet": "During Paramount Skydance's latest earnings call, CEO David Ellison said \"it's hard to imagine\" AI won't have a bigger impact on the film industry than CGI. In response to a question about the company's outlook for AI, Ellison said: \"I think when you zoom out and look at production, AI really has the potential to […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang’s Troubles Leave the AI Industry Reeling",
+      "link": "https://www.wired.com/story/jensen-huangs-troubles-leaves-the-ai-industry-reeling/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-10T00:18:19.000Z",
+      "ozet": "With a big checkbook and sought-after chips, Nvidia’s CEO had his thumb on the world of AI. An extramarital affair with a suspected Chinese spy may put all of that at risk.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "What could China get from Jensen Huang?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T23:51:58.000Z",
+      "ozet": "It's difficult to overstate Nvidia's power in today's AI landscape. The company's chips are the bedrock upon which advanced AI technology in the US is being built, and demand has consistently outpaced supply for years. Nvidia has also been an influential investor in a wide range of up-and-coming AI companies in recent years, with about […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Here’s what Trump said he knew about Jensen Huang",
+      "link": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T23:47:46.000Z",
+      "ozet": "President Trump held a White House press briefing earlier today and responded to several questions about his knowledge of Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. Huang said this weekend that he had been \"​​unfaithful\" to his wife, and the company has opened an investigation into Huang. Recent articles from The New […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago",
+      "link": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T23:28:37.000Z",
+      "ozet": "The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T23:07:59.000Z",
+      "ozet": "The leather-jacketed CEO of Nvidia, Jensen Huang, has acknowledged an affair with Megaspeed exec Alice Huang, spurring an investigation by his company and intense discussions worldwide. Recent reporting noted that since last year, US intelligence reports had identified Alice Huang (no relation) as not only the exec for an AI compute company renting access to […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
+      "link": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T22:46:09.000Z",
+      "ozet": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The race is on to sue Nvidia",
+      "link": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T22:23:42.000Z",
+      "ozet": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
+      "link": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T20:09:06.000Z",
+      "ozet": "The Nvidia CEO also pulled out of an Anthropic event earlier.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The backlash about data centers might really just be about electricity",
+      "link": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-09T19:35:33.000Z",
+      "ozet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It’s also where…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "link": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-09T19:24:51.000Z",
+      "ozet": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
+      "link": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T19:09:58.000Z",
+      "ozet": "After publishing a support article in early September outlining usage limits for some Apple Intelligence features, the company has updated Logic Pro with an option to \"Buy More Usage\" for a one-time purchase price of $49.99, as spotted by 9to5Mac. It has a built-in AI assistant to do things like \"start a new song, set […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-09T19:00:00.000Z",
+      "ozet": "Anthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on \"daunting\" technical challenges. The company claims the new models show improvements in coding, reasoning, and vision, and can generate outputs faster than the 5.1 versions of the Fable and Mythos models. Claude Fable […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ChatGPT Enterprise now available in AWS Marketplace",
+      "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-09T19:00:00.000Z",
+      "ozet": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI Günlükleri: Yapay zekâ dünyasında bu hafta (9 Kasım 2026)",
+      "link": "https://www.donanimhaber.com/yapay-zeka-dunyasinda-bu-hafta-9-kasim-2026--212676",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-09T18:58:00.000Z",
+      "ozet": "Yapay zekâ dünyasında bu hafta neler yaşandı; yeni neler tanıtıldı? \"AI Günlükleri\" serimizde, hızla büyüyen bu alanda neler olup bittiğini haftalık olarak kayıt altına almaya devam ediyoruz.",
+      "kullanildi": false
+    },
     {
       "baslik": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
       "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
@@ -56,7 +184,7 @@
       "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-09T16:56:54.000Z",
-      "ozet": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "ozet": "Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.",
       "kullanildi": false
     },
     {
@@ -92,14 +220,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Hold up — I had a great time talking to the RIAA guy",
-      "link": "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-09T15:30:00.000Z",
-      "ozet": "Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA. This conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Anthropic, veri merkezleri için doğal gaz jeneratörü satın aldı",
       "link": "https://www.donanimhaber.com/anthropic-veri-merkezleri-icin-dogal-gaz-jeneratoru-satin-aldi--212678",
       "kaynak": "DonanımHaber",
@@ -121,14 +241,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-09T14:30:56.000Z",
       "ozet": "The Nvidia CEO began working with consultants from Heller as early as October 2025, around the same time he was first linked to a suspected Chinese spy.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jonathan Kanter is using AI to take on Big Tech",
-      "link": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-09T14:30:00.000Z",
-      "ozet": "When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight in the private sector, and with a perhaps unexpected tool: AI. Alongside former acting Antitrust Division chief Doha Mekki, Kanter recently launched a […]",
       "kullanildi": false
     },
     {
@@ -188,6 +300,14 @@
       "kullanildi": false
     },
     {
+      "baslik": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "link": "https://openai.com/index/control-room",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-09T13:00:00.000Z",
+      "ozet": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Çin’den Nvidia CEO’su Jensen Huang hakkındaki casusluk iddialarına yanıt geldi",
       "link": "https://www.donanimhaber.com/cin-nvidia-ceo-suna-yonelik-casusluk-iddialarini-yalanladi--212664",
       "kaynak": "DonanımHaber",
@@ -236,6 +356,22 @@
       "kullanildi": false
     },
     {
+      "baslik": "CodeRabbit scales agentic software development and ships 20x more",
+      "link": "https://openai.com/index/coderabbit-codex-daybreak",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-09T08:00:00.000Z",
+      "ozet": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Kuken Industries searches 70 years of drawings in minutes",
+      "link": "https://openai.com/index/kuken",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-09T08:00:00.000Z",
+      "ozet": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+      "kullanildi": false
+    },
+    {
       "baslik": "NVIDIA, CEO’su Jensen Huang Hakkında Casusluk İddiaları Nedeniyle Soruşturma Başlattı",
       "link": "https://www.webtekno.com/nvidia-ceo-jensen-huang-casusluk-iddialari-nedeniyle-sorusturma-baslatti-h228509.html",
       "kaynak": "Webtekno",
@@ -249,14 +385,6 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-09T05:26:29.000Z",
       "ozet": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Here’s the full text of Jensen Huang’s memo to Nvidia",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-08T22:54:50.000Z",
-      "ozet": "On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Directors announcing the investigation, Huang sent a memo to Nvidia employees acknowledging the affair. You can read the full text below. To my […]",
       "kullanildi": false
     },
     {
@@ -276,30 +404,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-08T20:22:39.000Z",
-      "ozet": "Nvidia has announced that it is opening an investigation into CEO Jensen Huang and his relationship with Megaspeed executive Alice Huang, who was reportedly recruited by China's Ministry of State Security to spy on the company. A statement posted by the board of directors reads: The NVIDIA Board is initiating an independent investigation in light […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple is racing to make Siri more agentic",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-08T19:18:19.000Z",
-      "ozet": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the company has no illusions that it's […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Elvis and Eminem rights holders are suing Suno",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-08T17:23:19.000Z",
-      "ozet": "Suno is facing yet another pair of lawsuits. A group of rights holders of Elvis Presley's music and the publisher of some of Eminem's biggest records are suing the AI music company, claiming it illegally generates music and lyrics that mimic those artists. The lawyers in the Presley suit claim that Suno has violated Tennessee's […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
       "link": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/",
       "kaynak": "Wired",
@@ -313,22 +417,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-08T10:00:00.000Z",
       "ozet": "Moving AI from text to 3D space, world models simulate real-world physics to teach robots and autonomous cars how to navigate reality.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "After the midterms, things are looking rocky for Elon Musk and data centers",
-      "link": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-07T22:07:22.000Z",
-      "ozet": "On Equity, we unpacked what the midterms mean for the tech industry.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
-      "link": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-07T21:17:08.000Z",
-      "ozet": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
       "kullanildi": false
     }
   ]

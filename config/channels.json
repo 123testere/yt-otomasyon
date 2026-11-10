@@ -153,6 +153,7 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "5 Habits Many Successful Founders Share 🧠",
       "5 Money Mistakes That Keep You Broke 🧠",
       "5 Side Hustles You Can Start With $0 💰",
       "Saltwater Crocodile: The Strongest Bite Ever Measured",
@@ -357,6 +358,8 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Arkadaşlarla Oynanacak En İyi 10 Oyun 🎮",
+      "Arkadaşlarla Oynanacak Zirvedeki 5 Oyun 🎮",
       "Bedava Oynayabileceğin En İyi 5 Oyun 🎮",
       "İlk Parayı Anadolu'da Bastılar: Lidya",
       "İlk Barış Antlaşması Anadolu Kilinde Yazıldı",
@@ -627,6 +630,7 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Kurşun Kalemin İçinde Neden Kurşun Yok?",
       "Çamaşır Makinesi: Haftanın En Yorucu Günü Nasıl Bitti?",
       "Gözlüğün Kulak Sapı 400 Yıldan Fazla Sonra Geldi",
       "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
@@ -925,6 +929,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 9/30: Wer erntet die meisten Orangen? 🍊",
       "Duell 8/30: Wer erntet den meisten Mais? 🌽",
       "Duell 7/30: Wer produziert die meiste Milch? 🥛",
       "Duell 6/30: Wer erntet die meisten Kartoffeln? 🥔",
@@ -939,11 +944,15 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 8,
+      "lastMatch": 9,
       "table": [
         {
           "name": "Türkei",
-          "points": 39
+          "points": 44
+        },
+        {
+          "name": "Spanien",
+          "points": 35
         },
         {
           "name": "Ukraine",
@@ -954,8 +963,8 @@
           "points": 35
         },
         {
-          "name": "Spanien",
-          "points": 25
+          "name": "Italien",
+          "points": 27
         },
         {
           "name": "Deutschland",
@@ -966,20 +975,16 @@
           "points": 23
         },
         {
-          "name": "Italien",
-          "points": 20
+          "name": "Portugal",
+          "points": 13
+        },
+        {
+          "name": "Griechenland",
+          "points": 12
         },
         {
           "name": "Serbien",
           "points": 11
-        },
-        {
-          "name": "Portugal",
-          "points": 10
-        },
-        {
-          "name": "Griechenland",
-          "points": 8
         }
       ]
     }
