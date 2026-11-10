@@ -1,1 +1,10 @@
-{ "hafta": "2026-W45", "ozet": ["En çok izlenen iki video (Mimar Sinan 1133, Gizemli kitap 211 izlenme) Türkiye bağlantılı ya da gizem vaat eden konular; ortalamanın çok üstünde gösterildi.", "Bu iki videoda da izleyicilerin ancak %25-38'i izlemeyi seçti: konu ilgi çekiyor ama açılış cümlesi kaydırmayı durduramıyor.", "Uzun video (Rosetta Taşı) 51 izlenme ve %84 kanca oranıyla normal seyrediyor; Shorts kadar keşfedilmiyor.", "Birçok yeni video henüz az veri veya erken aşamada olduğu için onlar hakkında hüküm vermiyorum.", "Arama terimlerinde oyunla ilgili aramalar (cs 1.5, age of empires) öne çıkıyor; bunlar kanal konusuyla ilgisiz eski içeriklerden geliyor."], "dersler": [] }
+{
+ "hafta": "2026-W46",
+ "ozet": [
+  "Mimar Sinan kısası 1139 izlenme ve %2,8 tıklanmayla kanalın açık farkla en iyisi; kişi adı ve rakamı (80 yaşında) başlıkta öne çıkaran, Türkiye bağlantılı anlatım işe yarıyor.",
+  "600 yıldır okunamayan kitap videosu da %1,8 tıklanma aldı ama izlemeyi seçen oranı %25; kapak ve başlık çekiyor, açılış cümlesi vaadi karşılamıyor.",
+  "Her iki iyi videoda izleyici 6-7. saniyede kopuyor: giriş cümlesinden sonra bilgiyi hemen somut bir rakama bağlamak gerekiyor.",
+  "Diğer kısaların çoğu az veriyle değerlendirilemedi; kanca-soru deneyi sürüyor."
+ ],
+ "dersler": []
+}

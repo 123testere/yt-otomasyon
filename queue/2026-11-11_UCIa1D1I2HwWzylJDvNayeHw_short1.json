@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-11_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-11T09:00:00.000Z",
+ "bolum": {
+  "no": 2,
+  "ad": "Top 5"
+ },
+ "title": "Arkadaşlarla Oynanacak Zirvedeki 5 Oyun 🎮",
+ "description": "Arkadaşlarla oynamanın zirvesi: Left 4 Dead 2, Terraria, Stardew Valley, Minecraft ve Mario Kart 8 Deluxe. Senin listende birinci hangisi? Tam 10 oyunluk liste kanalda!\n\n#arkadaşlarlaoyun #oyunönerisi #top5 #gaming",
+ "tags": [
+  "arkadaşlarla oynanacak oyunlar",
+  "en iyi 5 oyun",
+  "co-op oyunlar",
+  "minecraft",
+  "mario kart",
+  "terraria",
+  "stardew valley",
+  "left 4 dead 2"
+ ],
+ "topic": "Arkadaşlarla oynanacak oyunların ilk beşi",
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "Top 5 Games to Play With Friends 🎮",
+   "description": "The top 5 games to play with friends: Left 4 Dead 2, Terraria, Stardew Valley, Minecraft and Mario Kart 8 Deluxe. Which one is your number one?"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Tam liste kanalda",
+  "soru": "Birinci hangisi olmalı?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Arkadaşlarla oyun"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Arkadaşlarla oynanacak en iyi oyunların zirvesi burada. Sondan başlıyoruz!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Left 4 Dead 2",
+    "tur": "Zombi hayatta kalma",
+    "maddeler": [
+     "2009 çıkışlı",
+     "4 kişilik ekip",
+     "Valve yapımı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Left 4 Dead 2. Dört kişilik ekiple zombilerden kaçıyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Terraria",
+    "tur": "2D macera ve inşa",
+    "maddeler": [
+     "2011 çıkışlı",
+     "Ortak dünyada macera",
+     "Dev patron savaşları"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Terraria. İki boyutlu dünyada arkadaşlarla kazıyor ve inşa ediyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Stardew Valley",
+    "tur": "Çiftlik hayatı",
+    "maddeler": [
+     "2016 çıkışlı",
+     "Tek kişi geliştirdi",
+     "2018'de ortak mod"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Stardew Valley. Tek kişinin yaptığı çiftlik, artık arkadaşlarla ortak."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Minecraft",
+    "tur": "Sandbox",
+    "maddeler": [
+     "2011 tam sürüm",
+     "300 milyon+ satış",
+     "Sonsuz yaratıcılık"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Minecraft. 300 milyondan fazla sattı, arkadaşlarla yaratmak sana kalmış."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Mario Kart 8 Deluxe",
+    "tur": "Yarış oyunu",
+    "maddeler": [
+     "2017 Switch çıkışı",
+     "Aynı ekranda 4 kişi",
+     "60 milyon+ satış"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada Mario Kart 8 Deluxe! Aynı ekranda dört kişi yarışıyor, 60 milyondan fazla sattı."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tam 10 oyunluk liste kanalda! Senin birincin hangisi? Yorumlara yaz, abone ol!"
+    }
+   ]
+  }
+ ]
+}

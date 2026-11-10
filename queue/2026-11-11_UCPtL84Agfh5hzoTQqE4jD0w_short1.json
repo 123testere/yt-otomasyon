@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-11_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-11T16:00:00.000Z",
+ "topic": "Kurşun kalemin içinde aslında kurşun değil grafit olması",
+ "title": "Kurşun Kalemin İçinde Neden Kurşun Yok?",
+ "hookText": "Kurşun yok!",
+ "description": "Eşyaların Hikayesi #41\nKurşun kalemin içinde kurşun yok: uçtaki gri madde grafittir ve 1795'te kille karıştırılarak kalem ucu yapılmıştır.\n\n#kurşunkalem #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "kurşun kalem",
+  "kurşun kalemde kurşun var mı",
+  "grafit",
+  "kalemin tarihi",
+  "conté",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Why Is There No Lead in a Lead Pencil?",
+   "description": "A lead pencil contains no lead: the gray core is graphite, and in 1795 Nicolas-Jacques Conté mixed it with clay to make pencil leads."
+  }
+ },
+ "baslikKart": [
+  "Kurşun kalemde",
+  "kurşun yok"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Makas",
+  "b": "Cetvel"
+ },
+ "oylama": {
+  "kaynak": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "scenes": [
+  {
+   "narration": "Kurşun kalemin içinde neden hiç kurşun yok?",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(260,320,380,70),{close:true,fill:'#E8B64A',w:4,seed:1,pp:eo(pr(u,0,.7))});\nink([[640,320],[740,355],[640,390]],{close:true,fill:'#EFE4CB',w:4,seed:2,pp:eo(pr(u,.5,1))});\nink([[715,343],[745,355],[715,367]],{close:true,fill:K.m,w:3,seed:3,pp:eo(pr(u,.9,1.2))});\nink(kutu(200,320,60,70),{close:true,fill:K.bordo,w:4,seed:4,pp:eo(pr(u,.3,.8))});\ntxt('?',MX,200,150,{c:K.ak,a:eo(pr(u,1,1.5))});"
+  },
+  {
+   "narration": "Uçtaki gri madde grafit, yani karbonun bir türü.",
+   "ifade": "anlatiyor",
+   "cizim": "for(let r=0;r<3;r++)for(let c=0;c<4;c++){const x=300+c*130+(r%2)*65,y=300+r*105;ink(ell(x,y,48,48,6),{close:true,w:3.4,seed:10+r*4+c,pp:eo(pr(u,r*.2+c*.1,r*.2+c*.1+.6))});}\ntxt('C',MX,150,90,{c:K.ak,a:eo(pr(u,1,1.6))});\netk('grafit',MX,640,eo(pr(u,1.2,1.8)),{size:46});"
+  },
+  {
+   "narration": "Söylenene göre grafit, 1500'lerde İngiltere'de Borrowdale yakınlarında bulundu.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ln([140,400],[860,400],20),{w:4,pp:eo(pr(u,0,.8))});\nconst a=eo(pr(u,.6,1.3));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(300,400,18,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();\ntxt('1500\\'ler',300,320,64,{a,c:K.ak});\netk('Borrowdale',700,330,eo(pr(u,1.2,1.9)),{size:46});\netk('İngiltere',700,480,eo(pr(u,1.4,2)),{size:40});"
+  },
+  {
+   "narration": "Parlak gri rengi kurşuna benzediği için kurşun sanıldı.",
+   "ifade": "saskin",
+   "cizim": "ink(kutu(180,300,260,150),{close:true,fill:'#CFCFCF',w:4,seed:20,pp:eo(pr(u,0,.7))});\nink(kutu(560,300,260,150),{close:true,fill:'#555',w:4,seed:21,pp:eo(pr(u,.4,1.1))});\netk('kurşun',310,520,eo(pr(u,.8,1.4)),{size:44});\netk('grafit',690,520,eo(pr(u,1,1.6)),{size:44});\ntxt('=?',MX,230,110,{c:K.ak,a:eo(pr(u,1.3,1.9))});"
+  },
+  {
+   "narration": "Grafit adı, Yunanca yazmak anlamına gelen graphein sözünden geliyor.",
+   "ifade": "gulumsuyor",
+   "cizim": "txt('graphein',MX,330,100,{c:K.bordo,a:eo(pr(u,0,.8))});\nink(ln([200,370],[800,370],16),{w:4,seed:30,pp:eo(pr(u,.5,1.2))});\netk('Yunanca: yazmak',MX,470,eo(pr(u,1,1.7)),{size:50});"
+  },
+  {
+   "narration": "1795'te Fransız Nicolas-Jacques Conté grafiti kille karıştırıp pişirdi.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(300,430,110,70,24),{close:true,fill:'#EFE4CB',w:4,seed:40,pp:eo(pr(u,0,.7))});\netk('grafit',300,560,eo(pr(u,.4,1)),{size:40});\nink(ell(700,430,110,70,24),{close:true,fill:'#B88A5A',w:4,seed:41,pp:eo(pr(u,.3,1))});\netk('kil',700,560,eo(pr(u,.8,1.4)),{size:40});\nok([420,430],[580,430],{pp:eo(pr(u,1.2,1.8)),seed:42});\ntxt('1795',MX,230,90,{c:K.ak,a:eo(pr(u,1.4,2))});\netk('Conté',MX,320,eo(pr(u,1.6,2.1)),{size:46});"
+  },
+  {
+   "narration": "Kil ne kadar çoksa kalem o kadar sert oluyor.",
+   "ifade": "merakli",
+   "cizim": "for(let i=0;i<3;i++){const y=250+i*110,l=180+i*160;ink(kutu(220,y,l,50),{close:true,fill:i==0?'#555':i==1?'#8A8A8A':'#BDBDBD',w:3.4,seed:50+i,pp:eo(pr(u,i*.3,i*.3+.7))});}\netk('az kil: yumuşak',720,275,eo(pr(u,.4,1)),{size:38});\netk('çok kil: sert',720,495,eo(pr(u,1.2,1.8)),{size:38});"
+  },
+  {
+   "narration": "Bizde hâlâ kurşun kalem deriz, içinde kurşun olmasa da.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(260,330,380,60),{close:true,fill:'#E8B64A',w:4,seed:60,pp:eo(pr(u,0,.7))});\nink([[640,330],[730,360],[640,390]],{close:true,fill:'#EFE4CB',w:4,seed:61,pp:eo(pr(u,.4,.9))});\ntxt('kurşun kalem',MX,230,80,{c:K.bordo,a:eo(pr(u,.8,1.3))});\nink(ln([260,200],[740,200],12),{w:6,c:K.bordo,seed:62,pp:eo(pr(u,1.4,1.9))});"
+  },
+  {
+   "narration": "Sırada hangisi olsun, makas mı cetvel mi? Yorumlara A ya da B yazın.",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,420,200,{c:K.ak,a:eo(pr(u,.3,1))});"
+  }
+ ]
+}

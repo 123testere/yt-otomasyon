@@ -1,0 +1,577 @@
+{
+ "id": "2026-11-11_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "publishAt": "2026-11-11T15:00:00.000Z",
+ "hiz": 1.1,
+ "bolum": {
+  "no": 3,
+  "ad": "Top 10"
+ },
+ "title": "Arkadaşlarla Oynanacak En İyi 10 Oyun 🎮",
+ "titleAlt": "Arkadaşınla Kavga Çıkaran 10 Oyun",
+ "topic": "Arkadaşlarla oynanacak en iyi 10 oyun",
+ "description": "Arkadaşlarla oynanacak en iyi oyunlar: Among Us, Overcooked 2, Fall Guys, Rocket League, It Takes Two, Left 4 Dead 2, Terraria, Stardew Valley, Minecraft ve Mario Kart 8 Deluxe. Senin listende birinci hangisi?\n\n#arkadaşlarlaoyun #oyunönerisi #top10 #gaming",
+ "tags": [
+  "arkadaşlarla oynanacak oyunlar",
+  "en iyi 10 oyun",
+  "co-op oyunlar",
+  "çok oyunculu oyunlar",
+  "oyun önerisi",
+  "among us",
+  "minecraft",
+  "mario kart",
+  "it takes two",
+  "top 10 oyun"
+ ],
+ "thumbnailText": "ARKADAŞLA OYNA",
+ "thumbnailTextAlt": "KAVGA ÇIKARAN 10",
+ "kapak": {
+  "sahne": 20,
+  "sn": 2
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "10 Best Games to Play With Friends 🎮",
+   "description": "The best games to play with friends: Among Us, Overcooked 2, Fall Guys, Rocket League, It Takes Two, Left 4 Dead 2, Terraria, Stardew Valley, Minecraft and Mario Kart 8 Deluxe. Which one is your number one?"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Arkadaşlarla en çok hangisini oynarsın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Giriş",
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "TOP 10",
+    "alt": "Arkadaşlarla oyun"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Hangi oyunu açınca arkadaşınla kavga edersin, hangisinde kahkahadan yerlere yatarsın? Bugün arkadaşlarla oynanacak en iyi 10 oyunu sıralıyoruz. Sondan başlıyoruz!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 10,
+    "ad": "Among Us",
+    "tur": "Sosyal çıkarım",
+    "maddeler": [
+     "2018 çıkışlı",
+     "4 ile 15 oyuncu",
+     "Kim sahtekâr?"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Onuncu sırada Among Us. Bir uzay gemisinde mürettebatın arasına gizlenmiş sahtekârı bulmaya çalışıyorsun. Ama herkes herkesten şüpheleniyor. Üstelik oyun ücretsiz bir mobil sürümle de geniş kitlelere ulaştı."
+    }
+   ],
+   "kisim": "10-7"
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "2018'de çıkan oyun, 2020'de patladı. Sesli sohbette \"sahtekâr sensin!\" diye bağıran bir arkadaş grubu, tam da bu oyunun sahnesi. Dostluğu sınayan bir oyun. Her tartışma yeni bir sürpriz getiriyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2020",
+    "alt": "patladığı yıl"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 9,
+    "ad": "Overcooked 2",
+    "tur": "Mutfak kaosu",
+    "maddeler": [
+     "2018 çıkışlı",
+     "Aynı anda 4 kişi",
+     "Ortak sipariş yetiştir"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dokuzuncu sırada Overcooked 2. Dört kişi küçücük bir mutfakta sipariş yetiştiriyor. Yanan yemekler, uçuşan tabaklar ve bolca bağırış. Birlikte oynaması çok eğlenceli."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Mutfaklar sürekli değişiyor ve ekip iş bölümü yapmazsa sipariş zamanında çıkmıyor. Oyun bittiğinde ya daha yakın arkadaş oluyorsun ya da küsüyorsun. Ortak çalışma ruhunu ölçmek isteyen herkes için birebir."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 8,
+    "ad": "Fall Guys",
+    "tur": "Eleme yarışı",
+    "maddeler": [
+     "2020 çıkışlı",
+     "60 oyuncu",
+     "2022'den beri bedava"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sekizinci sırada Fall Guys. Altmış oyuncu engelli pistlerde yarışıyor ve her turda biri eleniyor. Tek hedef, sonda tacı almak. Kostümlü, tombul karakterler yarışırken kahkaha garanti."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun 2020'de çıktı, 2022'den beri de bedava. Arkadaşlarınla takım kurup finale girmek hem komik hem gergin. Düşe kalka kazanmak ayrı bir keyif. Bir arkadaşın seni itip düşürürse intikam turu başlıyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "60 OYUNCU",
+    "alt": "tek bir taç"
+   },
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 7,
+    "ad": "Rocket League",
+    "tur": "Arabalı futbol",
+    "maddeler": [
+     "2015 çıkışlı",
+     "3'e 3 maçlar",
+     "2020'den beri bedava"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yedinci sırada Rocket League. Roketli arabalarla futbol oynuyorsun. Kurallar çok basit ama ustalaşmak oldukça zor. Araçlar sadece sürmekle kalmıyor, havada zıplayıp topa vurabiliyor."
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçe üç maçlarda ekip oyunu şart. Gol atınca kendinden geçiyorsun, kaçırınca arkadaşın sana küsüyor. Yine de herkes bir maç daha diyor. Her maç kısa sürüyor, bu yüzden bir tur daha demek çok kolay."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 6,
+    "ad": "It Takes Two",
+    "tur": "İkili macera",
+    "maddeler": [
+     "2021 çıkışlı",
+     "Tam iki oyuncu",
+     "Yılın Oyunu ödülü"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Altıncı sırada It Takes Two. Bu oyunu tek başına açamazsın, tam iki kişi gerekiyor. Hikâye, ayrılmanın eşiğindeki bir çiftin etrafında dönüyor. Mekanikleri ve hikâyesi birbirine bağlı, bu yüzden ortak oynamak şart."
+    }
+   ],
+   "kisim": "6-4"
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun 2021'de The Game Awards'ta Yılın Oyunu seçildi. Her bölümde farklı bir mekanik çıkıyor ve ikiniz birlikte çözmek zorundasınız. Bir arkadaşınla baştan sona oynamak ayrı bir anı bırakıyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2021",
+    "alt": "Yılın Oyunu"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Left 4 Dead 2",
+    "tur": "Zombi hayatta kalma",
+    "maddeler": [
+     "2009 çıkışlı",
+     "4 kişilik ekip",
+     "Valve yapımı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Left 4 Dead 2. Dört kişilik bir ekiple zombi kalabalığından kaçıp güvenli odaya ulaşmaya çalışıyorsun. Her oyuncunun farklı bir rolü var ve ekipten kopan hemen zor duruma düşüyor."
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun 2009'da çıktı ve bugün bile oynayanı var. Birbirini kurtarmazsan bölümü bitiremezsin. Tam bir ekip sınavı. Arkadaşlarla birlikte bağırıp çağırmak oyunun parçası."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Terraria",
+    "tur": "2D macera ve inşa",
+    "maddeler": [
+     "2011 çıkışlı",
+     "Ortak dünyada macera",
+     "Dev patron savaşları"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Terraria. İki boyutlu bir dünyada kazıyor, ev yapıyor ve canavar avlıyorsun. Hepsini arkadaşlarınla ortak bir dünyada. Dünyayı kazdıkça yeni malzemeler çıkıyor, bu da inşayı çeşitlendiriyor."
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Terraria 2011'de çıktı ve güncellemeleri yıllarca sürdü. Arkadaşlarla dev patronlara birlikte girmek ayrı bir keyif. Birlikte ev kurmak ve patronlara karşı strateji yapmak hoş bir ortak hedef sağlıyor."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Stardew Valley",
+    "tur": "Çiftlik hayatı",
+    "maddeler": [
+     "2016 çıkışlı",
+     "Tek kişi geliştirdi",
+     "2018'de ortak mod"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Stardew Valley. Çiftlik kuruyor, ekin ekiyor, köylülerle dost oluyorsun. Sakin ama bağımlılık yapıyor. Balık tutmaktan madene girmeye kadar yapılacak onlarca iş var."
+    }
+   ],
+   "kisim": "3-1"
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunu tek başına Eric Barone geliştirdi ve 2016'da çıktı. Çok oyunculu mod 2018'de geldi, artık çiftliği arkadaşlarınla paylaşabiliyorsun. Arkadaşlarla görev paylaşmak ritmi yumuşatıyor ve oyunu iyice keyifli yapıyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "TEK KİŞİ",
+    "alt": "geliştirdi"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Minecraft",
+    "tur": "Sandbox",
+    "maddeler": [
+     "2011 tam sürüm",
+     "300 milyon+ satış",
+     "Sonsuz yaratıcılık"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Minecraft. Bloklardan evler, kaleler, koca şehirler yapıyorsun. Arkadaşlarınla aynı dünyada hayatta kalmak ya da yaratmak sana kalmış. Aynı dünyada birlikte inşa etmek ya da maceraya çıkmak mümkün."
+    }
+   ]
+  },
+  {
+   "mekan": "grafik",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Minecraft 2011'de tam sürümüyle çıktı. Bugüne kadar 300 milyondan fazla sattı ve tarihin en çok satan oyunu olarak anılıyor. Çocuklardan yetişkinlere kadar geniş bir kitle oynuyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "300 MİLYON+",
+    "alt": "satış"
+   },
+   "veri": [
+    10,
+    18,
+    30,
+    48,
+    70,
+    95
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Mario Kart 8 Deluxe",
+    "tur": "Yarış oyunu",
+    "maddeler": [
+     "2017 Switch çıkışı",
+     "Aynı ekranda 4 kişi",
+     "60 milyon+ satış"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada Mario Kart 8 Deluxe! Aynı ekranda dört kişi yarışıyor. Hızlı, renkli ve herkesin kolayca öğrenebildiği bir oyun. Yarış pistleri renkli, kontroller de basit olduğu için herkes hemen oyuna giriyor."
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "2017'de Switch için çıktı ve 60 milyondan fazla sattı. Son turda geçilmek insanı küstürür ama yine de bir tur daha diyorsun. Küçük farklarla biten yarışlar, kanepede aile ve arkadaş buluşmalarının vazgeçilmezi."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "60 MİLYON+",
+    "alt": "satış"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Senin listende birinci hangisi? Yorumlara yaz, videoyu beğenmeyi ve kanala abone olmayı unutma!"
+    }
+   ]
+  }
+ ]
+}

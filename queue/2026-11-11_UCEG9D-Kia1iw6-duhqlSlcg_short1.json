@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-11_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-11T05:00:00.000Z",
+ "bolum": {
+  "no": 3,
+  "ad": "Top 5"
+ },
+ "title": "5 Habits Many Successful Founders Share 🧠",
+ "description": "Which money and business habits do many successful founders share? Reading, tracking money, saving first, learning from failure and starting small. Which one will you pick first?\n\n#money #business #motivation #habits",
+ "tags": [
+  "founder habits",
+  "success habits",
+  "money habits",
+  "business tips",
+  "motivation",
+  "top 5",
+  "entrepreneur",
+  "self improvement"
+ ],
+ "topic": "Five habits many successful founders share",
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "5 hábitos que comparten muchos fundadores exitosos 🧠",
+   "description": "¿Qué hábitos de dinero y negocios comparten muchos fundadores exitosos? Leer, controlar el dinero, ahorrar primero, aprender de los fracasos y empezar pequeño. ¿Cuál elegirías primero?"
+  }
+ },
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted wins a deep dive",
+  "soru": "Which habit would you start first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Founder habits"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "canta",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Many successful founders share these five habits, and you can start them today. Let us count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Daily reading",
+    "tur": "Learning",
+    "maddeler": [
+     "Books and podcasts",
+     "Even 20 minutes",
+     "Ideas from others"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: reading. Many founders learn from books and podcasts every day."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Tracking money",
+    "tur": "Money basics",
+    "maddeler": [
+     "Write down spending",
+     "Weekly money check",
+     "Spot leaks early"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: tracking your money. Know what comes in and goes out first."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Saving first",
+    "tur": "Money basics",
+    "maddeler": [
+     "Pay yourself first",
+     "Small amounts count",
+     "Builds a safety net"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: saving first. Set some money aside the moment you get paid."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Learning from failure",
+    "tur": "Mindset",
+    "maddeler": [
+     "Review what went wrong",
+     "Adjust and retry",
+     "Setbacks are normal"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: learning from failure. Setbacks are common, and smart founders treat them as lessons."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Starting small",
+    "tur": "Action",
+    "maddeler": [
+     "Test your idea",
+     "Begin before perfect",
+     "Improve as you go"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one… starting before you feel ready. Small steps beat perfect plans."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Which habit would you start first? Comment below and subscribe!"
+    }
+   ]
+  }
+ ]
+}

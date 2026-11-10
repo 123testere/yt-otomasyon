@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-11_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-11T05:00:00.000Z",
+ "topic": "Orangen",
+ "title": "Duell 9/30: Wer erntet die meisten Orangen? 🍊",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Orangen-König Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "orangen",
+  "landwirtschaft",
+  "ranking",
+  "europa daten",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "orangen",
+  "why": [
+   "Milde Winter",
+   "Viel Sonne",
+   "Riesige Plantagen"
+  ],
+  "script": {
+   "intro": "Wer erntet die meisten Orangen Europas? 46 Flaggen rutschen in den Trichter – nur eine kommt durch!",
+   "nodata": "Zweiunddreißig Länder haben keine Orangendaten und sind sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Flagge um Flagge fliegt raus, und die Türkei verpasst das Finale um knapp 200 Tausend Tonnen!",
+   "final": "Finale! Spanien gegen Italien – wer hat die saftigsten Früchte?",
+   "winner": "Spanien gewinnt! Über 2,9 Millionen Tonnen, gut anderthalbmal so viel wie Italien!",
+   "why": "Warum Spanien? Milde Winter, viel Sonne und riesige Plantagen an der Mittelmeerküste.",
+   "table": "In der Saisontabelle führt weiter die Türkei mit 39 Punkten, Spanien rückt näher. Schreib dein Thema in die Kommentare!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "A"
+ }
+}

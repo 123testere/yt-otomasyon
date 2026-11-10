@@ -1,1 +1,10 @@
-{ "hafta": "2026-W45", "ozet": ["Videoların çoğu normal seviyede; açılışı güçlü olanlar (elma logosu, çay bardağı, saat, şarj aleti, Devrim otomobili) %49-60 izlemeyi seçme oranına ulaştı, ancak bunlarda izleyici ortada kopuyor.", "Kancası zayıf videolar (Telefonun mucidi, Telefon İstanbul'a, İstanbul'un ilk elektriği) izlemeyi seçme oranında %30-36'da kaldı; ortak nokta açılışta somut bir merak yerine genel bir iddia olması.", "Eti videosu %89 ve Devrim otomobili %86 ile sona kadar izlendi: Türkiye bağlantılı, kısa hikâye anlatan videolar izleyiciyi sonuna kadar tutuyor.", "Telefon konusu üç videoda işlendi ve ortalama ya da zayıf kaldı; aynı konuyu yeniden işlemek yerine yeni konuya geçmek daha mantıklı.", "Kanca soru deneyi sürüyor, sonuç için daha fazla veri gerekiyor."], "dersler": [] }
+{
+ "hafta": "2026-W46",
+ "ozet": [
+  "Ayakkabı bağcığı ucu (%14,3 tıklanma) ve fermuar (%3,6) başlıkta somut bir nesne ve şaşırtıcı bir ayrıntı vaat ettiği için tıklandı; tıklanması %0-1 kalan termos, fincan kulpu ve kibrit başlıkları genel bir iddia gibi okundu.",
+  "Fermuar videosu %108 ile sonuna kadar izlendi; kısa, tek fikirli ve tarihli (1893) hikâyeler izleyiciyi tutuyor. Bağcık ucu, düdüklü tencere ve telefon İstanbul videolarında ise izleyici 6-8. saniye civarında kopuyor: ilk cümle kancası iyi ama ikinci cümle bilgiyi yavaşlatıyor.",
+  "Eti hikâyesinin üç sürümünden biri zayıf, ikisi normal çıktı; aynı konuyu yeniden işlemek fark yaratmadı, yeni konuya geçmek daha verimli.",
+  "Kanca-soru deneyi sürüyor; kollar henüz erken, hüküm verilmedi."
+ ],
+ "dersler": []
+}
