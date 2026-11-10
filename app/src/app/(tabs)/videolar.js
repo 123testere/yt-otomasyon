@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { FlatList, Image, Linking, StyleSheet, Text, View } from 'react-native';
 import { collection, doc, limit, onSnapshot, orderBy, query, updateDoc } from 'firebase/firestore';
-import { db } from '../lib/firebase';
-import { Button, Card, ChoiceChips, colors, Dim, Screen, StatusBadge } from '../components/ui';
+import { db } from '../../lib/firebase';
+import { Button, Card, ChoiceChips, colors, Dim, Screen, StatusBadge } from '../../components/ui';
 
 const FILTERS = [
   { id: 'all', label: 'Hepsi' },

@@ -36,13 +36,14 @@ function Gate() {
       screenOptions={{
         headerStyle: { backgroundColor: colors.bg },
         headerTintColor: colors.text,
-        headerTitleStyle: { fontWeight: '700' },
+        headerTitleStyle: { fontWeight: '800' },
+        headerShadowVisible: false,
         contentStyle: { backgroundColor: colors.bg },
       }}
     >
-      <Stack.Screen name="index" options={{ title: 'Kanallar' }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="login" options={{ headerShown: false }} />
-      <Stack.Screen name="videos" options={{ title: 'Videolar' }} />
+      <Stack.Screen name="sosyal/[id]" options={{ title: 'Kanal' }} />
       <Stack.Screen name="istatistik" options={{ title: 'İstatistik' }} />
       <Stack.Screen name="optimizasyon" options={{ title: 'Optimizasyon' }} />
       <Stack.Screen name="kurulum" options={{ title: 'Yeni kanal' }} />

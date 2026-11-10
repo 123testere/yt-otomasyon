@@ -1,17 +1,98 @@
 import { ActivityIndicator, Pressable, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 
 export const colors = {
-  bg: '#0E1015',
-  card: '#171A22',
-  cardHi: '#1F2330',
-  border: '#2A2F3D',
-  text: '#F2F4F8',
-  dim: '#9AA3B5',
-  accent: '#FF5A5F',
-  ok: '#3DDC97',
-  warn: '#FFB547',
-  err: '#FF6B6B',
+  bg: '#0A0B10',
+  card: '#13151D',
+  cardHi: '#1C1F2B',
+  border: '#242838',
+  text: '#F4F5FA',
+  dim: '#8E95A8',
+  accent: '#7C5CFF',
+  accent2: '#22D3EE',
+  ok: '#34D399',
+  warn: '#FBBF24',
+  err: '#F87171',
 };
+
+// Platform renkleri ve kısa adları
+export const PLATFORM = {
+  yt: { ad: 'YouTube', renk: '#FF3B30', ikon: '▶' },
+  ig: { ad: 'Instagram', renk: '#E1306C', ikon: '◎' },
+  tt: { ad: 'TikTok', renk: '#25F4EE', ikon: '♪' },
+  fb: { ad: 'Facebook', renk: '#1877F2', ikon: 'f' },
+};
+
+export const sayi = (n) => (n == null ? '—' : n >= 10000 ? `${(n / 1000).toLocaleString('tr-TR', { maximumFractionDigits: 1 })}B` : Math.round(n).toLocaleString('tr-TR'));
+
+// Büyük gösterge kutusu
+export function Kpi({ etiket, deger, alt, renk = colors.text, style }) {
+  return (
+    <View style={[s.kpi, style]}>
+      <Text style={[s.kpiDeger, { color: renk }]} numberOfLines={1}>{deger}</Text>
+      <Text style={s.kpiEtiket} numberOfLines={1}>{etiket}</Text>
+      {alt ? <Text style={s.kpiAlt} numberOfLines={1}>{alt}</Text> : null}
+    </View>
+  );
+}
+
+// Basit çubuk grafik (son günler vb.)
+export function Bars({ veri = [], renk = colors.accent, yukseklik = 56, vurguSon = true }) {
+  const max = Math.max(1, ...veri.map((v) => v ?? 0));
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'flex-end', height: yukseklik, gap: 2 }}>
+      {veri.map((v, i) => (
+        <View key={i} style={{ flex: 1, height: Math.max(2, ((v ?? 0) / max) * yukseklik), borderRadius: 3,
+          backgroundColor: renk, opacity: vurguSon && i === veri.length - 1 ? 1 : 0.55 }} />
+      ))}
+    </View>
+  );
+}
+
+// 24 saatlik dağılım (izleyicilerin aktif olduğu / rakiplerin yayın yaptığı saatler)
+export function Heat24({ veri, renk = colors.accent2, etiket }) {
+  if (!veri?.length) return null;
+  const max = Math.max(1, ...veri);
+  const enIyi = veri.indexOf(max);
+  return (
+    <View style={{ marginTop: 6 }}>
+      {etiket ? <Text style={s.kpiEtiket}>{etiket} · en yoğun {String(enIyi).padStart(2, '0')}:00</Text> : null}
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', height: 48, gap: 2, marginTop: 6 }}>
+        {veri.map((v, h) => (
+          <View key={h} style={{ flex: 1, height: Math.max(3, (v / max) * 48), borderRadius: 2, backgroundColor: renk, opacity: 0.25 + 0.75 * (v / max) }} />
+        ))}
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 3 }}>
+        {['00', '06', '12', '18', '23'].map((x) => <Text key={x} style={s.kpiAlt}>{x}</Text>)}
+      </View>
+    </View>
+  );
+}
+
+export function Section({ children, sag }) {
+  return (
+    <View style={s.section}>
+      <Text style={s.sectionText}>{children}</Text>
+      {sag ?? null}
+    </View>
+  );
+}
+
+export function Pill({ label, renk = colors.accent, dolu }) {
+  return (
+    <View style={[s.pill, { borderColor: renk, backgroundColor: dolu ? renk : 'transparent' }]}>
+      <Text style={{ color: dolu ? colors.bg : renk, fontSize: 11, fontWeight: '800' }}>{label}</Text>
+    </View>
+  );
+}
+
+export function PlatformBadge({ p, aktif = true }) {
+  const x = PLATFORM[p];
+  return (
+    <View style={[s.pbadge, { backgroundColor: aktif ? x.renk : colors.cardHi }]}>
+      <Text style={{ color: aktif ? '#fff' : colors.dim, fontSize: 11, fontWeight: '900' }}>{x.ikon}</Text>
+    </View>
+  );
+}
 
 export function Screen({ children, style }) {
   return <View style={[s.screen, style]}>{children}</View>;
@@ -138,12 +219,20 @@ export function StatusBadge({ status }) {
 
 const s = StyleSheet.create({
   screen: { flex: 1, backgroundColor: colors.bg },
-  card: { backgroundColor: colors.card, borderRadius: 14, padding: 16, borderWidth: 1, borderColor: colors.border, marginBottom: 12 },
-  title: { color: colors.text, fontSize: 18, fontWeight: '700' },
+  card: { backgroundColor: colors.card, borderRadius: 20, padding: 16, borderWidth: 1, borderColor: colors.border, marginBottom: 12 },
+  kpi: { flex: 1, backgroundColor: colors.card, borderRadius: 18, padding: 14, borderWidth: 1, borderColor: colors.border },
+  kpiDeger: { fontSize: 22, fontWeight: '800', letterSpacing: -0.5 },
+  kpiEtiket: { color: colors.dim, fontSize: 12, fontWeight: '600', marginTop: 2 },
+  kpiAlt: { color: colors.dim, fontSize: 10, marginTop: 2 },
+  section: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 18, marginBottom: 10 },
+  sectionText: { color: colors.text, fontSize: 17, fontWeight: '800', letterSpacing: -0.3 },
+  pill: { borderWidth: 1, borderRadius: 999, paddingHorizontal: 8, paddingVertical: 2, alignSelf: 'flex-start' },
+  pbadge: { width: 22, height: 22, borderRadius: 7, alignItems: 'center', justifyContent: 'center', marginRight: 4 },
+  title: { color: colors.text, fontSize: 18, fontWeight: '800', letterSpacing: -0.3 },
   label: { color: colors.text, fontSize: 15, fontWeight: '600' },
   hint: { color: colors.dim, fontSize: 12, marginTop: 2 },
   dim: { color: colors.dim, fontSize: 13 },
-  button: { borderRadius: 12, paddingVertical: 14, alignItems: 'center', justifyContent: 'center' },
+  button: { borderRadius: 14, paddingVertical: 14, alignItems: 'center', justifyContent: 'center' },
   buttonText: { color: colors.text, fontSize: 15, fontWeight: '700' },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   chip: { paddingHorizontal: 12, paddingVertical: 8, borderRadius: 999, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.card },

@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Stack, useRouter } from 'expo-router';
+import { useRouter } from 'expo-router';
 import { signOut } from 'firebase/auth';
 import { collection, limit, onSnapshot, orderBy, query } from 'firebase/firestore';
-import { auth, db } from '../lib/firebase';
-import { useSession } from '../lib/session';
-import { Button, Card, colors, Dim, Screen, Title } from '../components/ui';
+import { auth, db } from '../../lib/firebase';
+import { useSession } from '../../lib/session';
+import { Button, Card, colors, Dim, Screen, Title } from '../../components/ui';
 
 // Ücretsiz YouTube API kotasıyla günde yaklaşık bu kadar video yüklenebilir.
 const FREE_DAILY_UPLOADS = 6;
@@ -59,20 +59,6 @@ export default function Home() {
 
   return (
     <Screen>
-      <Stack.Screen
-        options={{
-          headerRight: () => (
-            <View style={{ flexDirection: 'row', gap: 18 }}>
-              <Pressable onPress={() => router.push('/istatistik')} hitSlop={10}>
-                <Text style={{ color: colors.accent, fontWeight: '700', fontSize: 15 }}>İstatistik</Text>
-              </Pressable>
-              <Pressable onPress={() => router.push('/videos')} hitSlop={10}>
-                <Text style={{ color: colors.accent, fontWeight: '700', fontSize: 15 }}>Videolar</Text>
-              </Pressable>
-            </View>
-          ),
-        }}
-      />
       <ScrollView contentContainerStyle={{ padding: 16 }}>
         <Card style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <View>
@@ -124,6 +110,7 @@ export default function Home() {
           </Card>
         ))}
 
+        <Button title="Kanal istatistikleri (YouTube)" kind="secondary" onPress={() => router.push('/istatistik')} style={{ marginBottom: 8 }} />
         <Button title="Optimizasyon ve haftalık rapor" kind="secondary" onPress={() => router.push('/optimizasyon')} style={{ marginBottom: 8 }} />
         <Button title="+ Yeni kanal kur" onPress={() => router.push('/kurulum')} style={{ marginBottom: 8 }} />
 
