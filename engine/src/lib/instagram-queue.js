@@ -5,7 +5,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { IgIzinHatasi, caption, dropHeld, fetchHeld, holdForInstagram, igSaglik, publishReel } from '../pipeline/instagram.js';
+import { IgIzinHatasi, caption, dropHeld, fetchHeld, holdForInstagram, igSaglik, igTokenYenile, publishReel } from '../pipeline/instagram.js';
 import { notify } from './notify.js';
 
 const MAX_TRIES = 3;
@@ -60,6 +60,8 @@ export async function instagramSaglik(firestore) {
     const bekleyen = (await firestore.collection('videos').where('channelId', '==', k.id).get()).docs
       .filter((d) => ['bekliyor', 'izin-hatasi'].includes(d.data().instagram?.durum)).length;
     try {
+      const yeni = await igTokenYenile(ig);
+      if (yeni) { await firestore.doc(`secrets/ig_${k.id}`).update({ token: yeni, updatedAt: new Date() }); ig.token = yeni; console.log(`Instagram ${k.id}: token yenilendi.`); }
       await igSaglik(ig);
       const n = await baglantiDuzeldi(firestore, k.id);
       if (n) console.log(`Instagram ${k.id}: bağlantı düzeldi, ${n} Reels yeniden sırada.`);

@@ -6,7 +6,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { run, sleep } from '../lib/util.js';
 
-const GRAPH = 'https://graph.facebook.com/v23.0';
+// Facebook girişli token (EAA…) graph.facebook.com, Instagram girişli token (IGAA…) graph.instagram.com kullanır.
+const graphOf = (token) => (String(token).startsWith('IG') ? 'https://graph.instagram.com/v23.0' : 'https://graph.facebook.com/v23.0');
 const RELEASE = 'instagram-bekleyen';
 const CAPTION_MAX = 2200;
 
@@ -18,13 +19,23 @@ const izinHatasiMi = (e) => [190, 10, 102, 200].includes(e.code) || /blocked|on 
 
 async function graph(method, url, token, params = {}) {
   const qs = new URLSearchParams({ ...params, access_token: token });
-  const res = await fetch(`${GRAPH}/${url}?${qs}`, { method });
+  const res = await fetch(`${graphOf(token)}/${url}?${qs}`, { method });
   const data = await res.json();
   if (data.error) {
     const msg = `Instagram: ${data.error.error_user_msg || data.error.message}`;
     throw izinHatasiMi(data.error) ? new IgIzinHatasi(msg) : new Error(msg);
   }
   return data;
+}
+
+// Instagram girişli token 60 gün geçerlidir; 30 günden eskiyse yenilenir (yeni token döner, yoksa null).
+export async function igTokenYenile({ token, updatedAt }) {
+  if (!String(token).startsWith('IG')) return null;
+  const yas = Date.now() - (updatedAt?.toMillis?.() ?? 0);
+  if (yas < 30 * 24 * 3600 * 1000) return null;
+  const r = await (await fetch(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${encodeURIComponent(token)}`)).json();
+  if (r.error || !r.access_token) throw new IgIzinHatasi(`Instagram token yenilenemedi: ${r.error?.message ?? 'yanıt yok'}`);
+  return r.access_token;
 }
 
 // Bağlantı sağlam mı? (paylaşım yapmadan, sadece okuma)
