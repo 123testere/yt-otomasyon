@@ -1,8 +1,16 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-10T05:38:14.919Z",
+  "guncellendi": "2026-11-10T07:26:12.152Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
+      "link": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-10T07:00:00.000Z",
+      "ozet": "A researcher’s trawl through publicly available code found private information was at risk across multiple departments.",
+      "kullanildi": false
+    },
     {
       "baslik": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
       "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
@@ -393,14 +401,6 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-09T05:26:29.000Z",
       "ozet": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia'da casusluk skandalı! CEO Jensen Huang hakkında soruşturma",
-      "link": "https://www.donanimhaber.com/nvidia-da-casusluk-krizi-ceo-jensen-huang-hakkinda-sorusturma--212641",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-08T22:05:44.000Z",
-      "ozet": "Nvidia CEO'su Jensen Huang, Çin adına casusluk yaptığı öne sürülen bir kadınla ilişkisi olduğunu kabul etti. Şirket, iddialar üzerine bağımsız bir soruşturma başlattı.",
       "kullanildi": false
     },
     {
