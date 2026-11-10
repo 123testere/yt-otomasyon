@@ -683,15 +683,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
-        "a": "Şemsiye",
-        "b": "Ayna",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-06T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "İlk Pil Neden Bir Yığın Madeni Paraya Benziyordu?",
         "a": "Mikrodalga fırın",
@@ -735,6 +726,24 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-09T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+        "baslik": "Çamaşır Makinesi: Haftanın En Yorucu Günü Nasıl Bitti?",
+        "a": "Buzdolabı",
+        "b": "Elektrik süpürgesi",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-10T17:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Gözlüğün Kulak Sapı 400 Yıldan Fazla Sonra Geldi",
+        "a": "Kalem",
+        "b": "Anahtar",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-10T16:00:00.000Z"
       }
     ]
   },
