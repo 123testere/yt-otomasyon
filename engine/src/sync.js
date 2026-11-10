@@ -16,6 +16,7 @@ import { publishDueReels, publishDueTiktok } from './lib/instagram-queue.js';
 import { aktifDersler, optimizeChannel } from './lib/optimize.js';
 import { collectComments, postReplies } from './lib/comments.js';
 import { akislariTazele } from './lib/haberler.js';
+import { sosyalGuncelle } from './lib/sosyal.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -93,6 +94,7 @@ async function main() {
   const votes = await countVotes(firestore, now);
   await publishDueReels(firestore, now).catch((e) => console.warn(`Instagram: ${e.message}`));
   await publishDueTiktok(firestore, now).catch((e) => console.warn(`TikTok: ${e.message}`));
+  await sosyalGuncelle(firestore, now).catch((e) => console.warn(`Sosyal istatistik: ${e.message}`));
   const channels = channelsSnap.docs
     .map((doc) => {
       const data = doc.data();

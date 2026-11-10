@@ -57,6 +57,15 @@ service cloud.firestore {
     match /perf/{id} {
       allow read: if isAdmin();
     }
+    // Instagram / TikTok / Facebook istatistikleri ve rakip analizleri (sunucu yazar, uygulama okur)
+    match /sosyal/{id} {
+      allow read: if isAdmin();
+    }
+    match /rakip/{id} {
+      allow read: if isAdmin();
+      // Uygulamadan elle rakip ekleme: sadece rakipler listesi
+      allow update: if isAdmin() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['elle']);
+    }
 
     match /events/{id} {
       allow read, delete: if isAdmin();
