@@ -10,12 +10,26 @@ const GRAPH = 'https://graph.facebook.com/v23.0';
 const RELEASE = 'instagram-bekleyen';
 const CAPTION_MAX = 2200;
 
+// Bağlantı/izin hatası (token geçersiz, uygulama engellendi, izin geri alındı): tekrar denemek işe yaramaz,
+// kullanıcı Meta tarafında düzeltene kadar video bekletilir ve hemen haber verilir.
+export class IgIzinHatasi extends Error {}
+
+const izinHatasiMi = (e) => [190, 10, 102, 200].includes(e.code) || /blocked|on behalf of user|permission|session|expired|OAuth/i.test(e.message ?? '');
+
 async function graph(method, url, token, params = {}) {
   const qs = new URLSearchParams({ ...params, access_token: token });
   const res = await fetch(`${GRAPH}/${url}?${qs}`, { method });
   const data = await res.json();
-  if (data.error) throw new Error(`Instagram: ${data.error.error_user_msg || data.error.message}`);
+  if (data.error) {
+    const msg = `Instagram: ${data.error.error_user_msg || data.error.message}`;
+    throw izinHatasiMi(data.error) ? new IgIzinHatasi(msg) : new Error(msg);
+  }
   return data;
+}
+
+// Bağlantı sağlam mı? (paylaşım yapmadan, sadece okuma)
+export async function igSaglik({ userId, token }) {
+  await graph('GET', `${userId}/content_publishing_limit`, token, { fields: 'quota_usage' });
 }
 
 export function caption(job) {
