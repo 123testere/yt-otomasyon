@@ -1,0 +1,45 @@
+{
+  "kaynak": "2026-11-10T05:35:48.717Z",
+  "ozet": [
+    "Bu nişte patlayan videoların neredeyse hepsi UZUN: 17-39 dakika. NasılBuldular kanalının 20-40 dakikalık 'X Nasıl Buldular?' videoları kendi ortalamasının 40-120 katı izleniyor.",
+    "Kazanan kalıp 'icat + insan dramı': mucidin başına gelen şaşırtıcı olay başlığın ikinci yarısında (gemiden kayboldu, kendi şirketinden kovuldu, çöpe atılan taştan atom bombasına).",
+    "İzleyici sıradan, herkesin bildiği büyük nesneleri seçiyor: dizel motor, traktör, demir, cam, uranyum, tuvalet, viski. Bizim küçük ev eşyalarımız (kurşun kalem, termos) Shorts için iyi ama uzun video için 'dünyayı değiştiren' ölçek daha çok tıklanıyor.",
+    "Patlayan videolar hafta içi öğlen yayınlanmış (12:00-15:00 arası yoğun; 13:00 en sık). Bizim uzun videomuz 20:00'de.",
+    "Kapakların tamamı renkli ve doygun; bizim krem kâğıt/mürekkep kapaklarımız küçük ekranda soluk kalıyor."
+  ],
+  "kapak": [
+    "Parlak, doygun renkli çizim sahnesi (gökyüzü mavisi, ateş turuncusu, yeşil tarla); arka plan dolu, boş alan yok.",
+    "Ön planda nesneye tepki veren bir karakter (şaşkın/heyecanlı çocuk ya da mucit), yüz büyük ve görünür.",
+    "Dev sarı yazı, kalın siyah dış hatla, soru biçiminde: '<Nesne> Nasıl Buldular?' / 'İlk Cam?' / 'Kim Nasıl Buldu?' (2-4 kelime).",
+    "İkinci başarılı stil: gerçekçi yaşlı mucit portresi + zarif serif büyük başlık ('Tuvaletin Tarihi', 'Viskinin Tarihi'), sıcak loş ışık.",
+    "Nesnenin kendisi kadrajın büyük kısmını kaplıyor (motor, traktör, kristal)."
+  ],
+  "baslik": [
+    "'<Nesne> Nasıl Buldular?' ya da '<Nesne>'yi Kim Buldu' + iki nokta / devamında dramatik olay.",
+    "Mucidin trajik ya da ironik sonu başlıkta: 'Bir Gece Gemiden Kayboldu', 'Kendi Şirketinden Kovuldu', 'Çöpe Atılan Taştan…'.",
+    "'İnanılmaz Hikâye', 'Gizemli Tarihi', 'İğrenç Tarihi' gibi duygu kelimeleri; bazen tek emoji.",
+    "Uzun başlıklar (60-90 karakter) sorun değil; anahtar nesne her zaman ilk kelimelerde."
+  ],
+  "icerik": [
+    "Süre: patlayanlar 17-39 dk. 8 dakikalık videolar bu nişte tavsiye edilmiyor, YouTube uzun ve derin anlatımı öne çıkarıyor.",
+    "Yapı: nesnenin bugünkü hali → ilk ilkel versiyon → mucit(ler)in hikâyesi ve başlarına gelenler → dünyayı nasıl değiştirdi.",
+    "Shorts tarafında 'X Nasıl İcat Edildi? 😳' kalıbı (Farklı Tv) iyi çalışıyor; bizim Shorts başlıklarımız zaten benzer.",
+    "Yayın: hafta içi 12:00-15:00."
+  ],
+  "bizimFark": [
+    "Uzun videolarımız 6-8 dakika; rakiplerde patlayanlar 17+ dakika. Uzun videoyu 15-20 dakikaya çıkarmalıyız (Nur Bey anlatımı bu derinliği taşır).",
+    "Kapaklarımız krem kâğıt üzerinde soluk mürekkep; renkli, dolu, karakterli ve sarı soru yazılı kapağa geçmeliyiz (Nur Bey lambası + parlak nesne).",
+    "Başlıklarda insan dramı yok; mucidin başına gelen şaşırtıcı olayı başlığa koymalıyız.",
+    "Uzun video saati 20:00 yerine 13:00 denenmeli."
+  ],
+  "fikirler": [
+    { "konu": "Buzdolabı", "neden": "Dünyayı değiştiren büyük nesne + mucit dramı kalıbı (Dizel/Traktör)", "bizimAci": "Buzdolabından önce Osmanlı'da Uludağ'dan İstanbul'a kar taşıyan karcılar; buz nasıl saklanırdı", "format": "long", "baslikOnerisi": "Buzdolabını Kim Buldu? Osmanlı Karı Dağdan Taşıyordu", "kapakYazisi": "KAR TAŞIYORDU" },
+    { "konu": "Çay bardağı ve semaver", "neden": "Gündelik ama herkesin bildiği nesne, 'Gizemli Tarihi' kalıbı", "bizimAci": "Türkiye'nin ince belli bardağı nereden geldi, Rize çayından önce ne içiyorduk", "format": "long", "baslikOnerisi": "İnce Belli Çay Bardağının Gizemli Hikâyesi: 1930'lardan Bugüne", "kapakYazisi": "NEDEN İNCE BELLİ?" },
+    { "konu": "Ampul", "neden": "Edison/Tesla dramı, 'kim buldu' tartışması tıklanıyor", "bizimAci": "Edison'dan önce ampulü yapan 20'den fazla mucit; İstanbul'a ilk elektriğin gelişi", "format": "long", "baslikOnerisi": "Ampulü Edison Bulmadı: Unutulan 20 Mucit", "kapakYazisi": "EDİSON DEĞİL" },
+    { "konu": "Sabun", "neden": "'İğrenç Tarihi' kalıbı (Tuvalet) hijyen konularında patlıyor", "bizimAci": "Hayvan yağı ve kül; Osmanlı'da Nablus ve Girit sabunu, hamam kültürü", "format": "long", "baslikOnerisi": "Sabunun İğrenç Tarihi: Hayvan Yağından Hamama", "kapakYazisi": "HAYVAN YAĞI?" },
+    { "konu": "Saat", "neden": "Büyük ölçekli icat + dahi mucit", "bizimAci": "Takiyüddin'in İstanbul rasathanesi ve mekanik saatleri, Avrupa'yla yarış", "format": "long", "baslikOnerisi": "Saati Kim Buldu? İstanbul'da Avrupa'dan Önce Yapılan Saatler", "kapakYazisi": "AVRUPA'DAN ÖNCE" },
+    { "konu": "Diş macunu", "neden": "Diş fırçası Shorts'umuzun devamı; hijyen ve 'iğrenç' merakı", "bizimAci": "Mısır'da yanmış yumurta kabuğu, Osmanlı'da misvak ve tuz", "format": "short", "baslikOnerisi": "İlk Diş Macunu Yanmış Yumurta Kabuğuydu 😳", "kapakYazisi": "YUMURTA KABUĞU" },
+    { "konu": "Şemsiye", "neden": "'X Nasıl İcat Edildi? 😳' Shorts kalıbı", "bizimAci": "Önce güneş için icat edildi; erkeklerin şemsiye taşıması alay konusuydu", "format": "short", "baslikOnerisi": "Şemsiye Taşıyan Erkeklerle Neden Alay Ediliyordu?", "kapakYazisi": "ALAY EDİLDİ" },
+    { "konu": "Konserve", "neden": "Savaş + icat dramı (Dizel, Uranyum)", "bizimAci": "Napolyon'un ordusu için icat edildi ama açacağı 50 yıl sonra geldi", "format": "short", "baslikOnerisi": "Konserve İcat Edildi, Açacağı 50 Yıl Sonra Geldi", "kapakYazisi": "50 YIL AÇILMADI" }
+  ]
+}
