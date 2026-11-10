@@ -167,6 +167,17 @@ async function main() {
   if (fs.existsSync(iyiDir) && fs.readdirSync(iyiDir).some((f) => f.endsWith('.json'))) kapakIsi = true;
   if (kapakIsi && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kapak=1\n');
   writeIfChanged(path.join(CONFIG_DIR, 'performans.json'), stableJson(performans));
+  // Claude'un rakip analizleri (analiz/rakip-<kanal>.json) uygulamada görünsün diye Firestore'a aktarılır.
+  const analizDir = path.join(ROOT, 'analiz');
+  for (const f of fs.existsSync(analizDir) ? fs.readdirSync(analizDir).filter((n) => /^rakip-.+\.json$/.test(n)) : []) {
+    try {
+      const rapor = JSON.parse(fs.readFileSync(path.join(analizDir, f), 'utf8'));
+      const ref = firestore.doc(`rakip/${f.slice(6, -5)}`);
+      if ((await ref.get()).data()?.rapor?.kaynak !== rapor.kaynak) await ref.set({ rapor, raporAt: now }, { merge: true });
+    } catch (e) {
+      console.warn(`rakip raporu ${f}: ${e.message}`);
+    }
+  }
 
   // Yorumlara otomatik cevap (açık kanallarda): rutinin yazdığı cevapları gönder, cevapsızları topla.
   const gonderilen = await postReplies(firestore).catch((e) => console.warn(`yorum cevapları: ${e.message}`));
