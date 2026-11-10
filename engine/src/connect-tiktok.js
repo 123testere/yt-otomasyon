@@ -20,7 +20,7 @@ const verifier = crypto.randomBytes(48).toString('base64url').slice(0, 64);
 const challenge = crypto.createHash('sha256').update(verifier).digest('hex');
 const state = crypto.randomBytes(12).toString('hex');
 const url = `https://www.tiktok.com/v2/auth/authorize/?${new URLSearchParams({
-  client_key: app.clientKey, scope: 'user.info.basic,video.upload,video.publish', response_type: 'code',
+  client_key: app.clientKey, scope: 'user.info.basic,user.info.stats,video.list,video.upload,video.publish', response_type: 'code',
   redirect_uri: app.redirectUri, state, code_challenge: challenge, code_challenge_method: 'S256',
 })}`;
 
