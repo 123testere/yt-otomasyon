@@ -1,8 +1,120 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-10T17:54:37.894Z",
+  "guncellendi": "2026-11-10T23:26:54.653Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
+      "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-10T22:35:01.000Z",
+      "ozet": "Amazon's roaming Ring Robotics devices will debut in late 2026 and early 2027.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI, ChatGPT'yi işletmeler için yeni bir platforma dönüştürüyor",
+      "link": "https://www.donanimhaber.com/openai-chatgpt-yi-isletmeler-icin-bir-platforma-donusturuyoro--212740",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-10T21:15:00.000Z",
+      "ozet": "OpenAI, işletmelerin ChatGPT üzerindeki profillerini yönetmesine, müşteri etkileşimlerini analiz etmesine ve kullanıcılarla iletişim kurmasına olanak tanıyan Businesses in ChatGPT platformunu duyurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "link": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-10T21:12:59.000Z",
+      "ozet": "Researcher finds 35,000 Grok Build apps wide open to anyone who looked for them.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T21:08:52.000Z",
+      "ozet": "OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+      "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T20:52:13.000Z",
+      "ozet": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "What happens to mathematics when AI becomes an oracle?",
+      "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-10T20:30:01.000Z",
+      "ozet": "Mathematician Steven Strogatz discusses his new book, Big Math: The Hidden Codes That Run Our World .",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google’ın en güçlü yapay zekası kullanıma açıldı: İşte Gemini 4 Carbon",
+      "link": "https://www.donanimhaber.com/google-gemini-4-carbon-modelini-kullanima-sundu-iste-ozellikleri--212739",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-10T20:26:38.000Z",
+      "ozet": "Google, bugüne kadarki en güçlü yapay zeka modeli Gemini 4 Carbon'u kullanıma sundu. Yeni model, karmaşık kodlama, siber güvenlik ve bilimsel araştırmalarda öne çıkıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "All 7 Anthropic founders will each cash out about $250M in IPO",
+      "link": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T19:57:52.000Z",
+      "ozet": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+      "link": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T19:23:34.000Z",
+      "ozet": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The US is winning the AI race. Jensen Huang could have blown it",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-10T19:04:05.000Z",
+      "ozet": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy with presidents, CEOs, and all manner of important people. He also wears a cool leather jacket. Which makes […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "PSI is trying to make a business out of AI-driven scientific discovery",
+      "link": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T19:03:52.000Z",
+      "ozet": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Gemini Intelligence: New features, on more devices",
+      "link": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "kaynak": "Google",
+      "tarih": "2026-11-10T19:00:00.000Z",
+      "ozet": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+      "link": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T18:49:52.000Z",
+      "ozet": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ChatGPT is getting verified AI ‘Business Agents’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-10T18:00:00.000Z",
+      "ozet": "ChatGPT is going to let you chat with verified \"Business Agents\" that represent a brand to help you with things like comparison shopping. The feature, available first to \"eligible\" e-commerce and online service businesses in the US, is launching as part of a suite of business-focused features in ChatGPT being announced today in beta. You […]",
+      "kullanildi": false
+    },
     {
       "baslik": "İlk kez bir robot uzayda kendi başına yapı inşa etti",
       "link": "https://www.donanimhaber.com/ilk-kez-bir-robot-uzayda-yapi-insa-etti--212715",
@@ -12,11 +124,27 @@
       "kullanildi": false
     },
     {
+      "baslik": "The indie game community is in disarray over AI and Big Walk",
+      "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-10T17:32:47.000Z",
+      "ozet": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a statement saying it \"sparingly\" used AI in the \"final stretch\" of the game's development to \"help work through difficult […]",
+      "kullanildi": false
+    },
+    {
       "baslik": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
       "link": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-10T17:30:00.000Z",
       "ozet": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic has its own AI-powered office suite now",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-10T17:30:00.000Z",
+      "ozet": "For years, Anthropic has been known for its focus on enterprise and coding tools that attract high-flying corporate clients, inspiring competing frontier labs - like OpenAI, SpaceXSI, and Meta - to copy its strategies. Earlier this year, Claude Code went through its own particular hype cycle. And now, Anthropic is trying to expand its footprint […]",
       "kullanildi": false
     },
     {
@@ -196,6 +324,14 @@
       "kullanildi": false
     },
     {
+      "baslik": "Ring, known for its doorbell cameras, launches a home security drone and an enterprise security robot",
+      "link": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-10T13:30:00.000Z",
+      "ozet": "Amazon-owned Ring is pushing into robotics with the launch of a home security drone and a rolling robot designed to patrol and protect businesses.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Hands-on with Ring’s new AI drone camera for your home",
       "link": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
       "kaynak": "The Verge",
@@ -292,6 +428,14 @@
       "kullanildi": false
     },
     {
+      "baslik": "Introducing Businesses in ChatGPT",
+      "link": "https://openai.com/index/introducing-businesses-chatgpt",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-10T10:00:00.000Z",
+      "ozet": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Google’dan yapay zeka için iki yeni çip: TPU 8tx ve TPU 8i Max",
       "link": "https://www.donanimhaber.com/google-dan-yapay-zeka-icin-iki-yeni-cip-tpu-8tx-ve-tpu-8i-max--212701",
       "kaynak": "DonanımHaber",
@@ -337,150 +481,6 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-10T07:00:00.000Z",
       "ozet": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
-      "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-10T05:01:00.000Z",
-      "ozet": "DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic reportedly plans to move forward with IPO plans",
-      "link": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-10T01:27:12.000Z",
-      "ozet": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
-      "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-10T00:28:49.000Z",
-      "ozet": "During Paramount Skydance's latest earnings call, CEO David Ellison said \"it's hard to imagine\" AI won't have a bigger impact on the film industry than CGI. In response to a question about the company's outlook for AI, Ellison said: \"I think when you zoom out and look at production, AI really has the potential to […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’s Troubles Leave the AI Industry Reeling",
-      "link": "https://www.wired.com/story/jensen-huangs-troubles-leaves-the-ai-industry-reeling/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-10T00:18:19.000Z",
-      "ozet": "With a big checkbook and sought-after chips, Nvidia’s CEO had his thumb on the world of AI. An extramarital affair with a suspected Chinese spy may put all of that at risk.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "What could China get from Jensen Huang?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-09T23:51:58.000Z",
-      "ozet": "It's difficult to overstate Nvidia's power in today's AI landscape. The company's chips are the bedrock upon which advanced AI technology in the US is being built, and demand has consistently outpaced supply for years. Nvidia has also been an influential investor in a wide range of up-and-coming AI companies in recent years, with about […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Here’s what Trump said he knew about Jensen Huang",
-      "link": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-09T23:47:46.000Z",
-      "ozet": "President Trump held a White House press briefing earlier today and responded to several questions about his knowledge of Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. Huang said this weekend that he had been \"​​unfaithful\" to his wife, and the company has opened an investigation into Huang. Recent articles from The New […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago",
-      "link": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T23:28:37.000Z",
-      "ozet": "The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-09T23:07:59.000Z",
-      "ozet": "The leather-jacketed CEO of Nvidia, Jensen Huang, has acknowledged an affair with Megaspeed exec Alice Huang, spurring an investigation by his company and intense discussions worldwide. Recent reporting noted that since last year, US intelligence reports had identified Alice Huang (no relation) as not only the exec for an AI compute company renting access to […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
-      "link": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T22:46:09.000Z",
-      "ozet": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The race is on to sue Nvidia",
-      "link": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T22:23:42.000Z",
-      "ozet": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
-      "link": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T20:09:06.000Z",
-      "ozet": "The Nvidia CEO also pulled out of an Anthropic event earlier.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The backlash about data centers might really just be about electricity",
-      "link": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-09T19:35:33.000Z",
-      "ozet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It’s also where…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic releases new Mythos and Fable models amid RSI concerns",
-      "link": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T19:24:51.000Z",
-      "ozet": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "ChatGPT Enterprise now available in AWS Marketplace",
-      "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-09T19:00:00.000Z",
-      "ozet": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI Günlükleri: Yapay zekâ dünyasında bu hafta (9 Kasım 2026)",
-      "link": "https://www.donanimhaber.com/yapay-zeka-dunyasinda-bu-hafta-9-kasim-2026--212676",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-09T18:58:00.000Z",
-      "ozet": "Yapay zekâ dünyasında bu hafta neler yaşandı; yeni neler tanıtıldı? \"AI Günlükleri\" serimizde, hızla büyüyen bu alanda neler olup bittiğini haftalık olarak kayıt altına almaya devam ediyoruz.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T18:09:52.000Z",
-      "ozet": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta releases Muse Ember, a new lightweight model for agent execution",
-      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-09T18:00:00.000Z",
-      "ozet": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Claude Code is accidentally exposing secrets all over GitHub",
-      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-09T17:24:26.000Z",
-      "ozet": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
       "kullanildi": false
     }
   ]
