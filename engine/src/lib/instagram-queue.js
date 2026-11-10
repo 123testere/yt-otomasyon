@@ -7,14 +7,27 @@ import os from 'node:os';
 import path from 'node:path';
 import { IgIzinHatasi, caption, dropHeld, fetchHeld, holdForInstagram, igSaglik, igTokenYenile, publishReel } from '../pipeline/instagram.js';
 import { notify } from './notify.js';
+import { TtIzinHatasi, ttAciklama, ttPaylas, ttYenile } from '../pipeline/tiktok.js';
 
 const MAX_TRIES = 3;
 const UYARI_ARASI_MS = 12 * 60 * 60 * 1000; // aynı bağlantı sorunu için en fazla 12 saatte bir bildirim
 
-// Üretimden: YouTube yüklemesinden sonra (yalnızca Instagram'ı açık kanalların Shorts'ları).
+// Üretimden: YouTube yüklemesinden sonra (Instagram ve/veya TikTok'u açık kanalların Shorts'ları).
+// Video GitHub'daki bekleme sürümüne bir kez konur; iki platform da işini bitirince silinir.
 export async function queueForInstagram(firestore, job, settings, videoPath) {
-  if (job.type !== 'short' || !settings.instagram?.enabled) return;
+  if (job.type !== 'short') return;
   const ref = firestore.doc(`videos/${job.id}`);
+  if (settings.tiktok?.enabled) {
+    try {
+      if (!(await firestore.doc(`secrets/tt_${job.channelId}`).get()).exists) throw new Error('Kanalın TikTok hesabı bağlı değil');
+      await holdForInstagram(job.id, videoPath);
+      await ref.update({ tiktok: { durum: 'bekliyor', yayin: new Date(job.publishAt), aciklama: ttAciklama(job), mod: settings.tiktok.mod ?? 'taslak', deneme: 0 } });
+    } catch (e) {
+      await ref.update({ tiktok: { durum: 'hata', hata: e.message.slice(0, 300) } });
+      await notify({ level: 'error', title: 'TikTok sırasına alınamadı', body: `${job.title}: ${e.message.slice(0, 150)}`, channelId: job.channelId, videoId: job.id });
+    }
+  }
+  if (!settings.instagram?.enabled) return;
   try {
     if (!(await firestore.doc(`secrets/ig_${job.channelId}`).get()).exists) throw new Error('Kanalın Instagram hesabı bağlı değil');
     await holdForInstagram(job.id, videoPath);
@@ -98,7 +111,7 @@ export async function publishDueReels(firestore, now = new Date()) {
           await doc.ref.update({ 'instagram.hikayeDurum': `hata: ${e.message.slice(0, 200)}` });
         }
       }
-      await dropHeld(doc.id);
+      if (!['bekliyor', 'izin-hatasi'].includes(v.tiktok?.durum)) await dropHeld(doc.id);
       const gecikme = Math.round((now.getTime() - v.instagram.yayin.toMillis()) / 60000);
       console.log(`✓ Instagram: ${v.title} ${r.permalink} (${gecikme} dk gecikme)`);
       await notify({ title: 'Instagram\'da yayınlandı', body: v.title, channelId: v.channelId, videoId: doc.id });
@@ -116,9 +129,61 @@ export async function publishDueReels(firestore, now = new Date()) {
       await doc.ref.update({ 'instagram.deneme': deneme, 'instagram.hata': e.message.slice(0, 300), 'instagram.durum': bitti ? 'hata' : 'bekliyor' });
       console.warn(`✗ Instagram ${doc.id} (${deneme}. deneme): ${e.message}`);
       if (bitti) {
-        await dropHeld(doc.id);
+        if (!['bekliyor', 'izin-hatasi'].includes(v.tiktok?.durum)) await dropHeld(doc.id);
         await notify({ level: 'error', title: 'Instagram\'a gönderilemedi', body: `${v.title}: ${e.message.slice(0, 150)}`, channelId: v.channelId, videoId: doc.id });
       }
+    } finally {
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
+  }
+}
+
+// TikTok: yayın saati gelen videolar gönderilir. 'taslak' modunda TikTok gelen kutusuna düşer (kullanıcı paylaşır),
+// 'direkt' modunda herkese açık yayınlanır. Bağlantı/izin hatasında video bekler ve hemen haber verilir.
+export async function publishDueTiktok(firestore, now = new Date()) {
+  const snap = await firestore.collection('videos').where('tiktok.durum', '==', 'bekliyor').get();
+  if (snap.empty) return;
+  const app = (await firestore.doc('secrets/tiktok_app').get()).data();
+  const bozuk = new Set();
+  for (const doc of snap.docs) {
+    const v = doc.data();
+    if (v.tiktok.yayin.toMillis() > now.getTime() || bozuk.has(v.channelId)) continue;
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'tt-'));
+    const sref = firestore.doc(`secrets/tt_${v.channelId}`);
+    try {
+      let tt = (await sref.get()).data();
+      if (!tt || !app) throw new TtIzinHatasi('Kanalın TikTok hesabı bağlı değil');
+      const yeni = await ttYenile(app, tt);
+      if (yeni) { await sref.update({ ...yeni, updatedAt: new Date() }); tt = { ...tt, ...yeni }; }
+      const file = await fetchHeld(doc.id, dir);
+      const r = await ttPaylas(tt, file, { mod: v.tiktok.mod, baslik: v.tiktok.aciklama });
+      const taslak = v.tiktok.mod !== 'direkt';
+      await doc.ref.update({ 'tiktok.durum': taslak ? 'taslak-gonderildi' : 'yayinlandi', 'tiktok.publishId': r.publishId, 'tiktok.at': now, 'tiktok.hata': null });
+      if (!['bekliyor', 'izin-hatasi'].includes(v.instagram?.durum)) await dropHeld(doc.id);
+      await firestore.doc(`channels/${v.channelId}`).set({ tiktokHata: null }, { merge: true });
+      console.log(`✓ TikTok (${taslak ? 'taslak' : 'yayın'}): ${v.title}`);
+      await notify({
+        title: taslak ? 'TikTok: paylaşmaya hazır' : 'TikTok\'ta yayınlandı',
+        body: taslak ? `${v.title} — TikTok bildirimini aç, açıklamayı yapıştır ve paylaş.` : v.title,
+        channelId: v.channelId, videoId: doc.id,
+      });
+    } catch (e) {
+      if (e instanceof TtIzinHatasi) {
+        bozuk.add(v.channelId);
+        await doc.ref.update({ 'tiktok.durum': 'izin-hatasi', 'tiktok.hata': e.message.slice(0, 300) });
+        const cref = firestore.doc(`channels/${v.channelId}`);
+        const onceki = (await cref.get()).data()?.tiktokHata;
+        await cref.set({ tiktokHata: { mesaj: e.message.slice(0, 300), at: new Date() } }, { merge: true });
+        if (!onceki?.at || Date.now() - onceki.at.toMillis() >= UYARI_ARASI_MS) {
+          await notify({ level: 'error', title: 'TikTok bağlantısı çalışmıyor', body: `Videolar bekletiliyor. Hesabı yeniden bağla (node src/connect-tiktok.js). Hata: ${e.message.slice(0, 120)}`, channelId: v.channelId });
+        }
+        console.warn(`✗ TikTok ${doc.id}: bağlantı hatası: ${e.message}`);
+        continue;
+      }
+      const deneme = (v.tiktok.deneme ?? 0) + 1;
+      await doc.ref.update({ 'tiktok.deneme': deneme, 'tiktok.hata': e.message.slice(0, 300), 'tiktok.durum': deneme >= MAX_TRIES ? 'hata' : 'bekliyor' });
+      console.warn(`✗ TikTok ${doc.id} (${deneme}. deneme): ${e.message}`);
+      if (deneme >= MAX_TRIES) await notify({ level: 'error', title: 'TikTok\'a gönderilemedi', body: `${v.title}: ${e.message.slice(0, 150)}`, channelId: v.channelId, videoId: doc.id });
     } finally {
       fs.rmSync(dir, { recursive: true, force: true });
     }

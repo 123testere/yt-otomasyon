@@ -12,7 +12,7 @@ import { google } from 'googleapis';
 import { authFor } from './pipeline/youtube.js';
 import { updateStats } from './lib/stats.js';
 import { countVotes } from './lib/votes.js';
-import { publishDueReels } from './lib/instagram-queue.js';
+import { publishDueReels, publishDueTiktok } from './lib/instagram-queue.js';
 import { aktifDersler, optimizeChannel } from './lib/optimize.js';
 import { collectComments, postReplies } from './lib/comments.js';
 import { akislariTazele } from './lib/haberler.js';
@@ -92,6 +92,7 @@ async function main() {
   const channelsSnap = await firestore.collection('channels').get();
   const votes = await countVotes(firestore, now);
   await publishDueReels(firestore, now).catch((e) => console.warn(`Instagram: ${e.message}`));
+  await publishDueTiktok(firestore, now).catch((e) => console.warn(`TikTok: ${e.message}`));
   const channels = channelsSnap.docs
     .map((doc) => {
       const data = doc.data();
