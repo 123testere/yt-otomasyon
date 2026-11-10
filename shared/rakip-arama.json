@@ -1,33 +1,74 @@
 {
   "_aciklama": "Rakip taraması: her kanal için YouTube'da aranacak kelimeler (son 120 günün en çok izlenen videoları), dil/bölge ve elle eklenen rakip kanal kimlikleri. Uygulamadan da rakip eklenebilir (channels/<id>.rakipler).",
   "UCPtL84Agfh5hzoTQqE4jD0w": {
-    "dil": "tr", "bolge": "TR",
-    "kelimeler": ["eşyaların hikayesi", "bu nasıl icat edildi", "ilk kim buldu", "nesnelerin tarihi", "icatların hikayesi"],
+    "dil": "tr",
+    "bolge": "TR",
+    "kelimeler": [
+      "eşyaların hikayesi",
+      "bu nasıl icat edildi",
+      "ilk kim buldu",
+      "nesnelerin tarihi",
+      "icatların hikayesi"
+    ],
     "elle": []
   },
   "UCFw3Wdyus0HVhykB0uYahWg": {
-    "dil": "tr", "bolge": "TR",
-    "kelimeler": ["çöp adam animasyon", "animasyon dizi türkçe", "gladyatör animasyon", "çizgi film hikaye türkçe", "animasyon hikaye bölüm"],
+    "dil": "tr",
+    "bolge": "TR",
+    "kelimeler": [
+      "çöp adam hikaye",
+      "çöp adam animasyon türkçe",
+      "animasyon dizi bölüm",
+      "animasyonlu hikaye türkçe",
+      "destan animasyon"
+    ],
     "elle": []
   },
   "UCIa1D1I2HwWzylJDvNayeHw": {
-    "dil": "tr", "bolge": "TR",
-    "kelimeler": ["en iyi 10 oyun", "en iyi 5 oyun", "oyun önerileri", "en çok satan oyunlar", "oynamanız gereken oyunlar"],
+    "dil": "tr",
+    "bolge": "TR",
+    "kelimeler": [
+      "en iyi 10 oyun",
+      "en iyi 5 oyun",
+      "oyun önerileri",
+      "en çok satan oyunlar",
+      "oynamanız gereken oyunlar"
+    ],
     "elle": []
   },
   "UCEG9D-Kia1iw6-duhqlSlcg": {
-    "dil": "en", "bolge": "US",
-    "kelimeler": ["top 5 side hustles", "business ideas 2026", "money habits of millionaires", "how to make money online", "top 10 business ideas"],
+    "dil": "en",
+    "bolge": "US",
+    "kelimeler": [
+      "top 5 side hustles",
+      "business ideas 2026",
+      "money habits of millionaires",
+      "how to make money online",
+      "top 10 business ideas"
+    ],
     "elle": []
   },
   "UCJUP2lYvMuhcif8FavIXuYA": {
-    "dil": "tr", "bolge": "TR",
-    "kelimeler": ["yapay zeka haberleri", "yapay zeka gelişmeleri", "chatgpt yeni özellik", "yapay zeka gündem", "ai haberleri türkçe"],
+    "dil": "tr",
+    "bolge": "TR",
+    "kelimeler": [
+      "yapay zeka haberleri",
+      "yapay zeka gelişmeleri",
+      "chatgpt yeni özellik",
+      "yapay zeka gündem",
+      "ai haberleri türkçe"
+    ],
     "elle": []
   },
   "UCyLqvRzGPIsjgOvr7RUxycA": {
-    "dil": "de", "bolge": "DE",
-    "kelimeler": ["länder vergleich", "welches land hat die meisten", "europa ranking länder", "länder im vergleich shorts"],
+    "dil": "de",
+    "bolge": "DE",
+    "kelimeler": [
+      "länder vergleich",
+      "welches land hat die meisten",
+      "europa ranking länder",
+      "länder im vergleich shorts"
+    ],
     "elle": []
   }
 }

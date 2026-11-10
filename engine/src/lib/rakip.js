@@ -20,6 +20,9 @@ const sure = (iso = '') => {
   return (+(m[1] ?? 0)) * 3600 + (+(m[2] ?? 0)) * 60 + (+(m[3] ?? 0));
 };
 const medyan = (a) => { const s = [...a].sort((x, y) => x - y); return s.length ? s[Math.floor(s.length / 2)] : 0; };
+// Kanalın dilinde mi? Latin dışı alfabeli başlıklar ve farklı ses dili elenir (ör. İngilizce kanala Hintçe rakip gelmesin).
+const LATIN_DISI = /[ऀ-ॿ؀-ۿЀ-ӿ฀-๿一-鿿぀-ヿ가-힯]/;
+const dilUyumlu = (v, dil) => !LATIN_DISI.test(v.baslik) && (!v.ses || v.ses.toLowerCase().startsWith(dil));
 const saatTR = (iso) => (new Date(iso).getUTCHours() + 3) % 24;
 const gunTR = (iso) => new Date(new Date(iso).getTime() + 3 * 3600000).getUTCDay();
 
@@ -77,7 +80,11 @@ export async function rakipTara({ auth, kanalId, ayar, elle = [], now = new Date
         yorum: Number(v.statistics.commentCount ?? 0), sure: sure(v.contentDetails.duration), yayin: v.snippet.publishedAt,
         aciklama: (v.snippet.description ?? '').slice(0, 400), etiketler: (v.snippet.tags ?? []).slice(0, 12),
         kapak: v.snippet.thumbnails?.medium?.url ?? v.snippet.thumbnails?.default?.url,
+        ses: v.snippet.defaultAudioLanguage ?? v.snippet.defaultLanguage ?? null,
       }));
+      // Kanalın videolarının çoğu bizim dilimizde değilse rakip sayılmaz (elle eklenenler hariç)
+      const uyumlu = veriler.filter((v) => dilUyumlu(v, ayar.dil));
+      if (!elle.includes(c.id) && uyumlu.length < veriler.length * 0.6) { log(`  ${c.snippet.title}: dil uyumsuz, atlandı`); continue; }
       const med = medyan(veriler.map((v) => v.izlenme));
       rakipler.push({
         id: c.id, ad: c.snippet.title, abone: Number(c.statistics.subscriberCount ?? 0), videoSayisi: Number(c.statistics.videoCount ?? 0),
@@ -86,7 +93,8 @@ export async function rakipTara({ auth, kanalId, ayar, elle = [], now = new Date
       });
       for (const v of veriler) {
         const kat = med ? v.izlenme / med : 0;
-        if (kat >= PATLAMA_KAT && now - Date.parse(v.yayin) <= 150 * DAY) {
+        // Film/derleme gibi 45 dakikayı aşanlar ve başka dildekiler alınmaz
+        if (kat >= PATLAMA_KAT && now - Date.parse(v.yayin) <= 150 * DAY && v.sure <= 45 * 60 && dilUyumlu(v, ayar.dil)) {
           patlayanlar.push({ ...v, rakip: c.snippet.title, rakipId: c.id, kat: Math.round(kat * 10) / 10, tur: v.sure > 180 ? 'long' : 'short', saat: saatTR(v.yayin), gun: gunTR(v.yayin) });
         }
       }
