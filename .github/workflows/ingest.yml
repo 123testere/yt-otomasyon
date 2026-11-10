@@ -5,7 +5,7 @@ name: Senaryoları al
 on:
   push:
     branches: ['claude/**']
-    paths: ['queue/**', 'analiz/**', 'cevaplar/**', 'iyilestirme/**']
+    paths: ['queue/**', 'analiz/**', 'cevaplar/**', 'iyilestirme/**', 'kesif/**', 'diziler/kesif-*.json']
 
 permissions:
   contents: write
@@ -38,10 +38,11 @@ jobs:
           # Sadece queue/ altında yeni eklenen dosyalar; config veya kod değişiklikleri alınmaz.
           files=$(git diff --name-only --diff-filter=A "origin/main...origin/$BRANCH" -- 'queue/*.json')
           # Haftalık yorumlu rapor (analiz/) ve yorum cevapları (cevaplar/) da alınır.
-          extra=$(git diff --name-only --diff-filter=AM "origin/main...origin/$BRANCH" -- 'analiz/*.json' 'cevaplar/*.json' 'iyilestirme/*.json')
+          extra=$(git diff --name-only --diff-filter=AM "origin/main...origin/$BRANCH" -- 'analiz/*.json' 'cevaplar/*.json' 'iyilestirme/*.json' 'kesif/*/*.json' 'diziler/kesif-*.json')
           if [ -z "$files$extra" ]; then echo "Yeni dosya yok."; git push origin --delete "$BRANCH" || true; exit 0; fi
           git checkout "origin/$BRANCH" -- $files $extra
           if echo "$extra" | grep -q '^iyilestirme/'; then echo "iyilestir=1" >> "$GITHUB_OUTPUT"; fi
+          if echo "$extra" | grep -q '^kesif/'; then echo "kesif=1" >> "$GITHUB_OUTPUT"; fi
           if [ -n "$files" ]; then
             echo "uret=1" >> "$GITHUB_OUTPUT"
             node engine/src/validate.js || echo "Uyarı: doğrulamadan geçmeyen dosyalar üretimde 'geçersiz' olarak işaretlenecek."
@@ -56,6 +57,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run produce.yml --ref main
       # Günlük iyileştirme dosyası geldiyse senkronizasyon hemen çalışıp kapak/başlık değişikliklerini uygular.
+      # Keşif pilot senaryosu geldiyse örnek video üretilir (hiçbir kanala yüklenmez)
+      - name: Keşif örneğini üret
+        if: steps.al.outputs.kesif
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kesif-ornek.yml --ref main
       - name: İyileştirmeleri uygula
         if: steps.al.outputs.iyilestir
         env:

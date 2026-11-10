@@ -1,0 +1,45 @@
+name: Keşif taraması
+
+# Haftada bir (cumartesi): yeni açılmış ve hızla büyüyen animasyon kanalları (fırsatlar).
+on:
+  schedule:
+    - cron: '37 17 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  tara:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          (cd engine && npm ci --omit=dev)
+      - run: node src/kesif-tara.js
+        working-directory: engine
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TV_CLIENT_ID: ${{ secrets.YT_TV_CLIENT_ID }}
+          YT_TV_CLIENT_SECRET: ${{ secrets.YT_TV_CLIENT_SECRET }}
+      - name: Kaydet
+        run: |
+          git config user.name "otomasyon-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/kesif.json config/kesif.jpg
+          git diff --cached --quiet && exit 0
+          git commit -m "keşif: haftalık tarama"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

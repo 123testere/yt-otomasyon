@@ -1,0 +1,60 @@
+{
+  "kaynak": "2026-11-10T07:12:11.150Z",
+  "firsatlar": [
+    {
+      "kanalId": "UCvjVNERFGBh9SRGma5Q9Oow", "puan": 9, "dil": "tr", "motor": "dizi-cop", "tur": "short",
+      "neden": "21 günlük kanal, günde ~840 bin izlenme. 'X Olarak Doğdun' kalıbı: bir eşya kendi hayatını izleyiciye ikinci tekil şahısla anlatıyor (doğduğu fabrika, sahibi, eskiyip atılması). Duygusal + nostaljik + 1 dakika.",
+      "bizimAci": "Eşyalar konuşuyor ama gerçek tarihle: 'Çay Bardağı Olarak Doğdun… 1938'de Paşabahçe'de'. Lamba Altında'nın araştırma gücü + duygusal ikinci şahıs anlatım. Her bölüm sonunda eşyanın gerçek bir bilgisini veririz.",
+      "risk": "Kalıp kısa sürede çok kopyalanabilir; özgünlüğü gerçek tarih bilgisiyle korumalıyız. Çocuk içeriği sayılmamalı (hedef yetişkin nostalji).",
+      "konsept": "Eşyaların ağzından hayat hikâyeleri: doğduğu yer, sahipleriyle anılar, dünyayı nasıl değiştirdi. Çöp adam evi, okul, mutfak mekânları; eşya karakterleri.",
+      "kanalAdlari": ["Eşya Dile Geldi", "Ben Bir Eşyaydım", "Hayatım Eşya"],
+      "ornekKonu": "Çay Bardağı Olarak Doğdun",
+      "renkler": ["#F4C95D", "#E07A5F", "#3D405B"],
+      "maliyet": "Ücretsiz (Microsoft ya da Chatterbox ses), günde 1-2 Shorts"
+    },
+    {
+      "kanalId": "UCUWG17RpxXBZ4avKIqPX6CQ", "puan": 8, "dil": "en", "motor": "dizi-cop", "tur": "short",
+      "neden": "43 günde 94 bin abone; 'DISCIPLINE' 6 milyon. Basit karakterli (ay başlı) motivasyon kısa filmleri: Day 1 → Day 30 dönüşümü, alarm saati, sessiz anlatım ve güçlü tek cümleler.",
+      "bizimAci": "Çöp adam karakterimizle 'Day 1 vs Day 100' dönüşüm hikâyeleri; her film tek bir alışkanlık (erken kalkmak, telefonu bırakmak, para biriktirmek). Untold Vault'un motivasyon tarafını besler; İngilizce reklam geliri yüksek.",
+      "risk": "Motivasyon nişi kalabalık; görsel kimlik (renk, karakter) ayırt edici olmalı.",
+      "konsept": "Sessiz ve kısa anlatımlı motivasyon animasyonları: bir karakter, bir alışkanlık, bir dönüşüm.",
+      "kanalAdlari": ["Day Zero Stories", "One Habit Films", "Stickman Discipline"],
+      "ornekKonu": "Day 1 vs Day 100: The Phone",
+      "renkler": ["#111827", "#F97316", "#F9FAFB"],
+      "maliyet": "Ücretsiz (Microsoft İngilizce ses ya da Chatterbox), günde 1 Shorts"
+    },
+    {
+      "kanalId": "UCa3SumhkKZRz6KymwxpZsPg", "puan": 7, "dil": "en", "motor": "dizi-cop", "tur": "long",
+      "neden": "32 günlük kanal; 'How a poor boy destroyed Lay's' 6,2 milyon izlenme. 19 dakikalık animasyonlu 'sıfırdan imparatorluğa' iş hikâyeleri; çok yüksek reklam geliri (finans/iş).",
+      "bizimAci": "Untold Vault'a uzun format olarak eklenebilir ya da ayrı kanal: dünyadan ve Türkiye'den gerçek kuruluş hikâyeleri (Ülker, Koç, Nike, Dyson) çöp adam animasyonuyla.",
+      "risk": "Uzun video üretimi daha uzun sürer; gerçek kişi/şirket bilgilerinin doğru olması şart.",
+      "konsept": "Zero-to-empire business stories, animated.",
+      "kanalAdlari": ["Empire From Zero", "Rags to Riches Toons", "Founder Stories"],
+      "ornekKonu": "How a Broke Salesman Built McDonald's Into an Empire",
+      "renkler": ["#0F172A", "#FACC15", "#22C55E"],
+      "maliyet": "Ücretsiz ses; haftada 1-2 uzun video"
+    },
+    {
+      "kanalId": "UCZDmrAO-bnBxU4_LiH40CjA", "puan": 6, "dil": "en", "motor": "dizi-cop", "tur": "long",
+      "neden": "40 günde 65 bin abone; 'Zombie Outbreak: 30 Days Locked Inside a School' 2 milyon. Basit 2D karakterlerle birinci şahıs hayatta kalma hikâyeleri, 8-9 dakika, 'DAY 1 / DAY 30' kapakları.",
+      "bizimAci": "Çöp adam karakterle 'X gün boyunca Y'de mahsur kaldım' hikâyeleri; tek mekân (okul, market, metro) ve gerilimli günlük bölümler. Bölüm Bölüm'ün dizi tecrübesi işe yarar.",
+      "risk": "Korku/şiddet sınırı; YouTube'un reklam uyumluluğu için kan yok, gerilim var.",
+      "konsept": "Survival diaries: day-by-day animated stories.",
+      "kanalAdlari": ["30 Days Trapped", "Survival Diary Toons", "Locked In Stories"],
+      "ornekKonu": "I Was Locked Inside a Mall for 30 Days",
+      "renkler": ["#1F2937", "#DC2626", "#E5E7EB"],
+      "maliyet": "Ücretsiz ses; haftada 2 uzun video"
+    },
+    {
+      "kanalId": "UC6SMANr0NH7I8wsHGkF-oKw", "puan": 5, "dil": "en", "motor": "dizi-cop", "tur": "short",
+      "neden": "7 ayda 100 bin abone; 'It wasn't the atomic bomb that made Japan surrender' 8 milyon. Kısa savaş/tarih 'gerçek sebep' anlatımları, asker figürleri ve büyük yazı.",
+      "bizimAci": "Osmanlı ve dünya tarihinden 'gerçek sebep' Shorts'ları; çöp adam askerler, arena/kervan/köy mekânları.",
+      "risk": "Harita çizimi motorumuzda yok; tarihi doğruluk hassas.",
+      "konsept": "The real reason behind famous historical events, animated in 60 seconds.",
+      "kanalAdlari": ["Real Reason History", "History Unboxed", "60 Second Wars"],
+      "ornekKonu": "The Real Reason the Ottomans Took Constantinople in 1453",
+      "renkler": ["#3F2E1E", "#D97706", "#F5F5F4"],
+      "maliyet": "Ücretsiz ses, günde 1 Shorts"
+    }
+  ]
+}

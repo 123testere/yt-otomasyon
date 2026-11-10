@@ -9,6 +9,7 @@ import { authFor } from '../pipeline/youtube.js';
 import { remotionStill } from '../pipeline/remotion.js';
 import { options, pick, resolveSettings } from './options.js';
 import { run } from './util.js';
+import { ROOT } from './paths.js';
 
 // YouTube anahtar kelimeleri boşlukla ayrılır; çok kelimeliler tırnak içinde olmalı.
 const keywords = (text) => String(text ?? '').split(',').map((k) => k.trim()).filter(Boolean)
@@ -36,6 +37,14 @@ export async function applySetup(firestore, doc) {
   const theme = pick(options.visualStyles, settings.visualStyle)?.theme ?? null;
   const accent = (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
   const brand = { title: data.title, tagline: kurulum.slogan ?? '', accent, theme };
+  // Keşiften başlatılan kanal: dizinin ana karakteri ve renk paletiyle banner / profil resmi
+  if (kurulum.renkler) Object.assign(brand, { renkler: kurulum.renkler, accent: kurulum.renkler[1] ?? accent, theme: null });
+  if (settings.contentFormat === 'dizi' && settings.dizi) {
+    try {
+      const d = JSON.parse(fs.readFileSync(path.join(ROOT, 'diziler', `${settings.dizi}.json`), 'utf8'));
+      brand.karakter = d.karakterler[kurulum.anaKarakter] ?? Object.values(d.karakterler)[0];
+    } catch { /* dizi dosyası yoksa yazılı kimlik */ }
+  }
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'kurulum-'));
   const yt = google.youtube({ version: 'v3', auth: authFor(secret) });
   try {

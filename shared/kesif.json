@@ -1,0 +1,19 @@
+{
+  "_aciklama": "Keşif: yeni açılmış (≤ 365 gün) ve hızla büyüyen animasyon kanalları. Aramalar son 60 günün en çok izlenen videolarında yapılır.",
+  "maxYasGun": 365,
+  "minGunlukIzlenme": 3000,
+  "aramalar": [
+    { "q": "stick figure animation story", "dil": "en", "bolge": "US" },
+    { "q": "animated history explained", "dil": "en", "bolge": "US" },
+    { "q": "whiteboard animation story", "dil": "en", "bolge": "US" },
+    { "q": "animated documentary", "dil": "en", "bolge": "GB" },
+    { "q": "2d animation storytime", "dil": "en", "bolge": "US" },
+    { "q": "çöp adam animasyon hikaye", "dil": "tr", "bolge": "TR" },
+    { "q": "animasyonlu anlatım tarih", "dil": "tr", "bolge": "TR" },
+    { "q": "animasyon hikaye türkçe", "dil": "tr", "bolge": "TR" },
+    { "q": "animierte geschichte erklärt", "dil": "de", "bolge": "DE" },
+    { "q": "historia animada explicada", "dil": "es", "bolge": "MX" },
+    { "q": "animação história explicada", "dil": "pt", "bolge": "BR" },
+    { "q": "infographic animation facts", "dil": "en", "bolge": "US" }
+  ]
+}

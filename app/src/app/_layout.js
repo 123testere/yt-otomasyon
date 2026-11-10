@@ -44,6 +44,7 @@ function Gate() {
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="login" options={{ headerShown: false }} />
       <Stack.Screen name="sosyal/[id]" options={{ title: 'Kanal' }} />
+      <Stack.Screen name="kesif/[id]" options={{ title: 'Fırsat' }} />
       <Stack.Screen name="istatistik" options={{ title: 'İstatistik' }} />
       <Stack.Screen name="optimizasyon" options={{ title: 'Optimizasyon' }} />
       <Stack.Screen name="kurulum" options={{ title: 'Yeni kanal' }} />

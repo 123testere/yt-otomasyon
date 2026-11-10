@@ -17,6 +17,7 @@ import { aktifDersler, optimizeChannel } from './lib/optimize.js';
 import { collectComments, postReplies } from './lib/comments.js';
 import { akislariTazele } from './lib/haberler.js';
 import { sosyalGuncelle } from './lib/sosyal.js';
+import { kesifEsitle } from './lib/kesif-esitle.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -169,6 +170,8 @@ async function main() {
   if (fs.existsSync(iyiDir) && fs.readdirSync(iyiDir).some((f) => f.endsWith('.json'))) kapakIsi = true;
   if (kapakIsi && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kapak=1\n');
   writeIfChanged(path.join(CONFIG_DIR, 'performans.json'), stableJson(performans));
+  // Keşif: Claude'un fırsat değerlendirmesi (analiz/kesif.json) uygulamaya; "Örnek yap" istekleri rutine (config/kesif-istekler.json)
+  await kesifEsitle(firestore, now).catch((e) => console.warn(`keşif: ${e.message}`));
   // Claude'un rakip analizleri (analiz/rakip-<kanal>.json) uygulamada görünsün diye Firestore'a aktarılır.
   const analizDir = path.join(ROOT, 'analiz');
   for (const f of fs.existsSync(analizDir) ? fs.readdirSync(analizDir).filter((n) => /^rakip-.+\.json$/.test(n)) : []) {

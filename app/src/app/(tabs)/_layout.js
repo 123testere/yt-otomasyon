@@ -23,6 +23,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="kanallar" options={{ title: 'Kanallar', tabBarIcon: ikon('▦') }} />
       <Tabs.Screen name="videolar" options={{ title: 'Videolar', tabBarIcon: ikon('▶') }} />
       <Tabs.Screen name="rakipler" options={{ title: 'Rakipler', tabBarIcon: ikon('⚑') }} />
+      <Tabs.Screen name="kesif" options={{ title: 'Keşif', tabBarIcon: ikon('✦') }} />
     </Tabs>
   );
 }

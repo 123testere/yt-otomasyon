@@ -10,7 +10,7 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 4. `config/channels.json` içinden ilgili kanalı bul. `brief` alanı kanalın konusu, dili, tonu, anlatıcı karakteri ve ek talimatlarıdır. `recentTitles` daha önce yapılmış videolardır; `done/` klasöründeki dosyalar da aynı kanalın önceki senaryolarıdır.
 5. Her iş için `queue/<id>.json` dosyasını aşağıdaki formatta yaz. `queue/`, `done/` veya `failed/` içinde aynı id zaten varsa atla.
 6. `node engine/src/validate.js` çalıştır. Hata varsa dosyayı düzelt ve tekrar çalıştır, hepsi ✓ olana kadar devam et.
-7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/`, `cevaplar/` ve `iyilestirme/` altındaki yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
+7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/`, `cevaplar/`, `iyilestirme/`, `kesif/` altındaki ve `diziler/kesif-*.json` yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
 8. Bitirirken kaç senaryo yazdığını ve başlıklarını tek satırlık bir liste halinde özetle.
 
 ## Optimizasyon (her senaryoda)
@@ -69,6 +69,22 @@ Yazacağın dosya: `analiz/rakip-<kanalId>.json`
 - `fikirler`: 6-10 tane. Rakibin videosunun **kopyası değil**: aynı merak alanına bizim araştırmamız, anlatıcımız ve kanal kimliğimizle yeni bir açı. Aynı konuyu birebir anlatacaksan farklı bir soru sor ya da farklı bir bağlantı kur.
 - **Senaryo yazarken:** O kanalın `analiz/rakip-<kanalId>.json` dosyasını oku. Konu seçerken önce `fikirler` listesinden (daha önce kullanılmamış olanlardan) seç, kapak ve başlıkta `kapak`/`baslik` kalıplarını uygula, `bizimFark` maddelerini düzelt. Rakibin başlığını, kapak yazısını ya da metnini **aynen kullanma**.
 - Rakip verisindeki yayın saatleri (`saatDagilimi`) haftalık raporda yayın saati önerisi için kullanılır; saat değişikliği önerini `ozet`e yaz.
+
+## Keşif: yeni kanal fırsatları (`config/kesif.json`, `config/kesif.jpg`)
+
+Haftalık tarama, son 1 yılda açılıp hızla büyüyen animasyon kanallarını bulur. `config/kesif.json` dosyasının `guncellendi` tarihi `analiz/kesif.json` içindeki `kaynak`tan yeniyse değerlendir.
+- `config/kesif.jpg`: her adayın en çok izlenen videosunun kapağı, 4 sütunlu ızgarada `sira` sırasıyla.
+- **Ele:** Gerçek animasyon olmayanları (gerçek çekim, oyun videosu, reklam), **bizim araçlarımızla üretilemeyenleri** (3D, karmaşık karakter animasyonu, Roblox), dublaj/parodi ve telifli karakter kullananları, çocuklara yönelik içerikleri.
+- Bizim araçlarımız: `dizi-cop` (çöp adam karakterler, mekânlar, sıralama/haber kartları, dev yazı), `cizim` (ansiklopedi mürekkep çizimi), `hareketli-grafik`, YZ görselli anlatım. Fırsatı bunlardan biriyle **özgün** şekilde yapabilmeliyiz.
+- `analiz/kesif.json` yaz: `{ "kaynak": "<guncellendi>", "firsatlar": [ { "kanalId", "puan" (1-10), "dil", "motor", "tur" (short|long), "neden", "bizimAci", "risk", "konsept", "kanalAdlari" (3 öneri), "ornekKonu", "renkler" (3 hex: koyu zemin, vurgu, açık), "maliyet" } ] }`. En fazla 6 fırsat, puana göre sıralı. Puan: izlenme hızı + para potansiyeli (İngilizce iş/finans > İngilizce genel > Türkçe) + üretilebilirlik + özgünlük payı.
+
+## Keşif örneği (`config/kesif-istekler.json` doluysa)
+
+Kullanıcı uygulamada bir fırsata "Örnek yap" dedi. Her istek için **özgün** bir pilot hazırla (fırsatın `konsept`, `bizimAci`, `renkler`, `ornekKonu` alanları rehberdir; `not` varsa kullanıcının isteğidir; `tekrar: true` ise önceki örnekten **farklı bir açı** dene):
+1. `diziler/kesif-<kısa-ad>.json`: dizi dosyası (`diziler/oyun-hikayeleri.json` ve `diziler/para-top5.json` örneklerindeki alanlar): `id` (dosya adıyla aynı), `ad` (kanal adı önerisi), `dil`, `stil: "cop"`, `format` ("yatay" uzun, dikey Shorts için de "yatay" yaz; Shorts'ta `dikey: true` iş dosyasında), `rozetNo: false`, `muzik`, `muzikSeviye: 0.06`, `kurallar`, `yazim`, `anlatici`, `karakterler` (özgün isim, renk ve aksesuarlar; fırsat kanalının karakterlerini **kopyalama**). Örnek için ses: `anlatici.ses` = Microsoft sesi (`{"voice": "tr-TR-AhmetNeural"}`, İngilizce için `{"voice": "en-US-AndrewNeural"}`; kanal başlarsa sonra değiştirilebilir).
+2. `kesif/<kanalId>/pilot.json`: dizi formatında **tek video** (yukarıdaki "Dizi formatı" kurallarıyla; `format: "dizi"`, `dizi: "kesif-<kısa-ad>"`, `channelId: "KESIF"`, `type` fırsatın türü; Shorts ise `dikey: true, acilis: false, hiz: 1.05`), başlık, açıklama, etiketler; `bolum: {"no": 1, "ad": "…"}`.
+3. `kesif/<kanalId>/kimlik.json`: `{ "kanalAdlari": [3], "slogan": "≤30", "aciklama": "kanal açıklaması (dilinde, 2-4 cümle)", "etiketler": [8-12], "renkler": [3 hex], "anaKarakter": "<karakter id>", "dizi": "kesif-<kısa-ad>", "ayarlar": { "language": "tr|en|…", "niche": "animasyon", "shortsTimes": ["12:00"], "longDays": [], "longTime": "18:00", "minutes": 8, "music": "epik", "hashtags": "#…" } }`. Yayın saatlerini fırsat kanalının ve dil bölgesinin izleyici saatine göre seç.
+- Dosyaları yazdıktan sonra `node engine/src/validate.js` pilotu kontrol etmez; yine de pilotu diziErrors kurallarına uygun yaz (mekân/poz/eşya listeleri). Sistem pilotu render edip uygulamada gösterir; **hiçbir kanala yüklenmez**.
 
 ## Haftalık rapor (`config/performans.json`)
 

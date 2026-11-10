@@ -33,10 +33,10 @@ service cloud.firestore {
     match /channels/{id} {
       allow read: if isAdmin();
       allow create: if isAdmin()
-        && request.resource.data.keys().hasOnly(['title', 'thumbnail', 'connectedAt', 'needsReconnect', 'settings', 'fromApp']);
+        && request.resource.data.keys().hasOnly(['title', 'thumbnail', 'connectedAt', 'needsReconnect', 'settings', 'fromApp', 'kesifKaynak']);
       allow update: if isAdmin()
         && request.resource.data.diff(resource.data).affectedKeys()
-          .hasOnly(['settings', 'title', 'thumbnail', 'connectedAt', 'needsReconnect', 'fromApp']);
+          .hasOnly(['settings', 'title', 'thumbnail', 'connectedAt', 'needsReconnect', 'fromApp', 'kesifKaynak']);
     }
 
     // Uygulama videoları izler; hatalı olanı "yeniden dene" diye işaretleyebilir.
@@ -59,6 +59,18 @@ service cloud.firestore {
     }
     // Instagram / TikTok / Facebook istatistikleri ve rakip analizleri (sunucu yazar, uygulama okur)
     match /sosyal/{id} {
+      allow read: if isAdmin();
+    }
+    // Keşif fırsatları: uygulama sadece isteği (durum, not) yazar; video ve görseller sunucudan gelir
+    match /kesif/{id} {
+      allow read: if isAdmin();
+      allow update: if isAdmin() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['durum', 'istekNot', 'istekAt'])
+        && request.resource.data.durum in ['ornek-istendi', 'reddedildi', 'baslatiliyor'];
+    }
+    match /kesifVideo/{id} {
+      allow read: if isAdmin();
+    }
+    match /kesifGorsel/{id} {
       allow read: if isAdmin();
     }
     match /rakip/{id} {

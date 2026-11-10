@@ -177,9 +177,17 @@ export default function Kurulum() {
         {mesaj ? <Card><Text style={{ color: colors.ok }}>{mesaj}</Text></Card> : null}
         {adim === 'olustur' ? <Olustur onNext={() => setAdim('bagla')} /> : null}
         {adim === 'bagla' ? (
-          <Bagla onConnected={(c) => {
+          <Bagla onConnected={async (c) => {
             setKanal(c.id);
             setMesaj(`"${c.title}" ${c.isNew ? 'bağlandı' : 'yeniden bağlandı'}.`);
+            // Keşiften başlatılan kanal: format, takvim ve kimlik sunucuda otomatik kurulur
+            if (params.kesif) {
+              await updateDoc(doc(db, 'channels', c.id), { kesifKaynak: String(params.kesif) });
+              await updateDoc(doc(db, 'kesif', String(params.kesif)), { durum: 'baslatiliyor' }).catch(() => {});
+              setMesaj(`"${c.title}" bağlandı. Format, yayın takvimi, kanal açıklaması ve banner otomatik kuruluyor; birkaç saat içinde tamamlanır.`);
+              setTimeout(() => router.replace('/'), 2500);
+              return;
+            }
             if (tekAdim) router.back(); else setAdim('kimlik');
           }} />
         ) : null}
