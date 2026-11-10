@@ -89,7 +89,8 @@ const sesOf = (dizi, kim) => (kim === 'anlatici' ? dizi.anlatici?.ses : dizi.kar
 
 export async function seslendir(job, dizi, dir) {
   // Shorts kesiti: açılış kartı yok (ilk saniyeden kanca), anlatım hızlandırılır (hiz), aralar kısalır.
-  const acilis = job.acilis === false ? 0 : KART_SN;
+  // Açılış kartı sadece açıkça istenirse (acilis: true): izleyici ilk saniyeden aksiyon ve ses görmeli.
+  const acilis = job.acilis === true ? KART_SN : 0;
   const hiz = job.hiz ?? 1;
   const [satirArasi, sahneArasi] = hiz > 1 ? [0.1, 0.18] : [SATIR_ARASI, SAHNE_ARASI];
   const parcalar = acilis ? [sessiz(path.join(dir, 'bas.wav'), acilis)] : [];
@@ -209,10 +210,18 @@ export async function diziKapak({ job, dir, text }) {
     nesneler: sc.nesneler ?? [], zincir: null, cizim: null, ozet: false, satirlar: [], veri: sc.veri ?? null,
   };
   const yatay = dizi.format === 'yatay' && !job.dikey;
+  // Küçük ekranda okunsun: karakterler büyütülüp sağ yarıya toplanır (yazı solda)
+  if (yatay && !job.kapak?.dogal) {
+    const yerler = [[0.72], [0.6, 0.86], [0.56, 0.74, 0.92], [0.55, 0.68, 0.81, 0.94]][Math.min(3, Math.max(0, sahne.kadraj.length - 1))];
+    sahne.kadraj = sahne.kadraj.slice(0, 4).map((k, i) => ({
+      ...k, x: yerler[i], hareket: undefined, olcek: (k.olcek ?? 1) * (sahne.kadraj.length > 2 ? 1.3 : 1.5),
+      adimlar: (k.adimlar ?? []).map(({ x, ...a }) => a),
+    }));
+  }
   const png = await remotionStill(yatay ? 'DiziKareYatay' : 'DiziKare', {
     ...(yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 }),
     scenes: [sahne], words: [], stil: dizi.stil ?? 'yuz', karakterler: dizi.karakterler, dizi: { ad: '' }, bolum: {},
-    kapanis: null, acilis: false, t: Number(job.kapak?.sn ?? 1.5), dur: 30, kapakYazi: kapakSatirlari(text),
+    kapanis: null, acilis: false, t: Number(job.kapak?.sn ?? 1.5), dur: 30, kapakYazi: kapakSatirlari(text), kapakVurgu: true,
   }, path.join(dir, 'kapak.png'), `${job.id}-kapak`);
   const jpg = path.join(dir, 'kapak.jpg');
   await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-vf', 'scale=1280:-2', '-q:v', '3', jpg]);
@@ -237,7 +246,7 @@ export function derlemeKur(job) {
   const ilk = bolumler[0].bolum.no;
   const son = bolumler.at(-1).bolum.no;
   return {
-    ...job, scenes, sadeceOnbellek: true, acilis: true,
+    ...job, scenes, sadeceOnbellek: true, acilis: false,
     bolum: { no: ilk, ad: `Bölüm ${ilk}-${son} · Tek Parça` },
     kapanis: bolumler.at(-1).kapanis ?? job.kapanis,
     // Kapak: son bölümün kapak sahnesi (derlemedeki sırasına kaydırılarak)
@@ -266,7 +275,7 @@ export async function buildDizi(job, settings, { workDir }) {
     boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
     props: {
       dil: dizi.dil ?? 'tr', rozetNo: dizi.rozetNo !== false,
-      acilis: job.acilis !== false, stil: dizi.stil ?? 'yuz', dizi: { ad: dizi.ad }, bolum: { no, toplam: dizi.toplam ?? null, ad: job.bolum.ad }, karakterler: dizi.karakterler,
+      acilis: job.acilis === true, stil: dizi.stil ?? 'yuz', dizi: { ad: dizi.ad }, bolum: { no, toplam: dizi.toplam ?? null, ad: job.bolum.ad }, karakterler: dizi.karakterler,
       kapanis: job.kapanis ? {
         baslik: job.kapanis.baslik ?? 'DEVAMI', soru: job.kapanis.soru ?? null,
         sonraki: job.kapanis.sonraki ?? (dizi.toplam && no >= dizi.toplam ? 'Sezon finali' : `Bölüm ${no + 1} yakında`),

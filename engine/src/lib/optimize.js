@@ -17,7 +17,8 @@ const DAY = 24 * HOUR;
 const PERF_ARALIK = 20 * HOUR;
 const REACH_TEKRAR = 3 * DAY; // izin yoksa 3 günde bir yeniden denenir (kanal yeniden bağlanınca kendiliğinden başlar)
 const MAX_DERS = 12;
-const KAPAK = { minYas: 3, maxYas: 30, minGosterim: 500, oran: 0.6 };
+// Kapak denemesi: 2 günden sonra, en az 100 gösterimle; tıklanma %3'ün ya da kanal medyanının %60'ının altındaysa.
+const KAPAK = { minYas: 2, maxYas: 30, minGosterim: 100, oran: 0.6, mutlak: 3 };
 export const ANALIZ_DIR = path.join(ROOT, 'analiz');
 
 // ISO hafta: "2026-W45" (İstanbul saatine göre)
@@ -71,7 +72,7 @@ export function kapakAdayi(p, perfs, job, settings, now) {
   const yas = (now.getTime() - new Date(p.yayin?.toDate?.() ?? p.yayin).getTime()) / DAY;
   if (yas < KAPAK.minYas || yas > KAPAK.maxYas || (p.gosterim7 ?? 0) < KAPAK.minGosterim || p.tiklanma7 == null) return false;
   const m = medyan(perfs.filter((q) => q.tip === 'long' && q.youtubeId !== p.youtubeId).map((q) => q.tiklanma7));
-  return Boolean(m) && p.tiklanma7 < m * KAPAK.oran;
+  return p.tiklanma7 < KAPAK.mutlak || (Boolean(m) && p.tiklanma7 < m * KAPAK.oran);
 }
 
 // Claude rutininin pazartesi yazdığı yorumlu rapor: analiz/<kanalId>.json { hafta, ozet: [..], dersler: [..] }
@@ -207,6 +208,8 @@ export function performansOzeti(doc, opt, perfs, hafta) {
     dersler: (opt.dersler ?? []).map((d) => d.metin),
     aramaTerimleri: (opt.aramalar ?? []).slice(0, 10),
     videolar: [...perfs].sort((a, b) => tarih(b.yayin).localeCompare(tarih(a.yayin))).slice(0, 20).map((p) => ({
+      youtubeId: p.youtubeId, jobId: p.jobId ?? null, gosterim7: p.gosterim7 ?? null,
+      kapakDeneme: p.kapakDeneme?.durum ?? null, sonIyilestirme: p.iyilestirmeler?.at(-1)?.tarih ?? null,
       baslik: p.baslik, tip: p.tip, yayin: tarih(p.yayin), izlenme7: p.izlenme7, tutma: p.tutma, kancaOran: p.kancaOran,
       tutma30: p.tutma30, tiklanma7: p.tiklanma7 ?? null, etiket: p.teshis?.etiket, nedenler: p.teshis?.nedenler?.map((n) => n.metin) ?? [],
       deney: p.deneyId ? `${p.deneyId}/${p.kol}` : null,

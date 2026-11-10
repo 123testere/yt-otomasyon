@@ -484,11 +484,25 @@ export function DiziKare(props) {
     const ctx = ref.current.getContext('2d');
     kare(ctx, { words: [], ...props, width: W, height: H }, props.t ?? 4, props.dur ?? 60, fns);
     // Kapak yazısı: sol tarafta dev, kalın, iki renkli satırlar (karakterler sağ yarıda durur)
+    // Kapak vurgusu: karakterlerin arkasında sıcak ışık, kenarlarda karartma (küçük ekranda öne çıksın)
+    if (props.kapakVurgu) {
+      ctx.save();
+      ctx.globalCompositeOperation = 'multiply';
+      const v = ctx.createRadialGradient(W * 0.72, H * 0.5, H * 0.2, W * 0.6, H * 0.5, W * 0.75);
+      v.addColorStop(0, 'rgba(255,255,255,1)'); v.addColorStop(1, 'rgba(40,30,50,1)');
+      ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+      ctx.globalCompositeOperation = 'screen';
+      const g = ctx.createRadialGradient(W * 0.74, H * 0.42, 10, W * 0.74, H * 0.42, H * 0.6);
+      g.addColorStop(0, 'rgba(255,140,60,.35)'); g.addColorStop(1, 'rgba(255,140,60,0)');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+      ctx.restore();
+    }
     if (props.kapakYazi?.length) {
       const satirlar = props.kapakYazi;
       const boy = Math.min(H * 0.26, (W * 0.5) / Math.max(...satirlar.map((s) => s.length)) * 1.6);
       const y0 = H / 2 - ((satirlar.length - 1) * boy * 1.02) / 2 + boy * 0.35;
-      ctx.save(); ctx.fillStyle = 'rgba(0,0,0,.35)'; ctx.fillRect(0, 0, W * 0.55, H); ctx.restore();
+      { const pg = ctx.createLinearGradient(0, 0, W * 0.62, 0); pg.addColorStop(0, 'rgba(0,0,0,.62)'); pg.addColorStop(0.7, 'rgba(0,0,0,.35)'); pg.addColorStop(1, 'rgba(0,0,0,0)');
+        ctx.save(); ctx.fillStyle = pg; ctx.fillRect(0, 0, W * 0.62, H); ctx.restore(); }
       satirlar.forEach((s, i) => {
         ctx.save(); ctx.font = `900 ${boy}px ${serif}`; ctx.textAlign = 'left'; ctx.lineJoin = 'round';
         ctx.lineWidth = boy * 0.12; ctx.strokeStyle = '#000'; ctx.strokeText(s, W * 0.04, y0 + i * boy * 1.02);

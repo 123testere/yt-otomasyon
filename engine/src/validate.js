@@ -195,7 +195,7 @@ function diziErrors(job, slot) {
     if (job.kapak !== undefined && !(Number.isInteger(job.kapak?.sahne) && job.kapak.sahne >= 0 && job.kapak.sahne < scenes.length && sn(job.kapak?.sn ?? 0))) {
       errors.push('kapak {sahne (sahne sırası, 0\'dan), sn} olmalı');
     }
-    if (job.dikey || job.acilis === false) errors.push('uzun bölümde dikey ve acilis yazma');
+    if (job.dikey) errors.push('uzun bölümde dikey yazma');
   } else {
     if (job.dikey !== true) errors.push('Shorts\'ta "dikey": true olmalı');
     if (job.acilis !== false) errors.push('Shorts\'ta "acilis": false olmalı (ilk saniyeden kanca)');

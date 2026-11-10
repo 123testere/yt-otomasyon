@@ -10,16 +10,16 @@ import { FieldValue } from 'firebase-admin/firestore';
 import { google } from 'googleapis';
 import { db } from './lib/firebase.js';
 import { resolveSettings } from './lib/options.js';
-import { DONE_DIR } from './lib/paths.js';
+import { DONE_DIR, ROOT } from './lib/paths.js';
 import { notify } from './lib/notify.js';
 import { aralikCtr } from './lib/reach.js';
 import { authFor } from './pipeline/youtube.js';
 import { uzunKapak } from './pipeline/cover.js';
 
 const DAY = 86400000;
-const MIN_GUN = 4;
+const MIN_GUN = 3;
 const MAX_GUN = 14;
-const MIN_GOSTERIM = 200;
+const MIN_GOSTERIM = 80;
 
 const gunNo = (d) => new Date(d).toISOString().slice(0, 10).replace(/-/g, '');
 const gunFarki = (a, b) => (Date.parse(`${b.slice(0, 4)}-${b.slice(4, 6)}-${b.slice(6)}`) - Date.parse(`${a.slice(0, 4)}-${a.slice(4, 6)}-${a.slice(6)}`)) / DAY;
@@ -126,5 +126,44 @@ for (const d of snap.docs) {
     if (izin) await firestore.doc(`channels/${p.channelId}`).update({ izinEksik: true });
   }
 }
+// Günlük iyileştirme: Claude rutininin zayıf uzun videolar için yazdığı yeni başlık / kapak yazısı (iyilestirme/*.json).
+// Dosya: [{ youtubeId, title?, thumbnailText?, kapak?: {sahne, sn}, neden }]. Uygulanınca dosya silinir (iş akışı commit eder).
+const IYI_DIR = path.join(ROOT, 'iyilestirme');
+const iyiDosyalar = fs.existsSync(IYI_DIR) ? fs.readdirSync(IYI_DIR).filter((f) => f.endsWith('.json')) : [];
+for (const f of iyiDosyalar) {
+  let liste = [];
+  try { liste = JSON.parse(fs.readFileSync(path.join(IYI_DIR, f), 'utf8')); } catch (e) { console.warn(`✗ ${f}: ${e.message}`); }
+  for (const x of Array.isArray(liste) ? liste : []) {
+    try {
+      const p = (await firestore.doc(`perf/${x.youtubeId}`).get()).data();
+      if (!p) throw new Error('video ölçüsü bulunamadı');
+      const job = p.jobId ? jobOf(p.jobId) : null;
+      const settings = resolveSettings((await firestore.doc(`channels/${p.channelId}`).get()).data()?.settings);
+      const yt = google.youtube({ version: 'v3', auth: authFor((await firestore.doc(`secrets/${p.channelId}`).get()).data()) });
+      const yapilan = [];
+      if (x.thumbnailText && job) {
+        await kapakKoy(yt, p, { ...job, kapak: x.kapak ?? job.kapak }, settings, x.thumbnailText, `iyilestirme-${Date.now()}`);
+        yapilan.push(`kapak “${x.thumbnailText}”`);
+      }
+      let eskiBaslik = null;
+      if (x.title && x.title.length <= 100 && !/[<>]/.test(x.title)) {
+        eskiBaslik = await baslikKoy(yt, x.youtubeId, x.title);
+        yapilan.push(`başlık “${x.title}”`);
+      }
+      if (!yapilan.length) continue;
+      await firestore.doc(`perf/${x.youtubeId}`).update({
+        iyilestirmeler: FieldValue.arrayUnion({ tarih: now.toISOString(), title: x.title ?? null, eskiBaslik, thumbnailText: x.thumbnailText ?? null, neden: x.neden ?? null, onceCtr: p.tiklanma7 ?? null, onceTutma: p.tutma ?? null }),
+      });
+      const metin = `“${p.baslik}”: ${yapilan.join(' ve ')} olarak güncellendi${x.neden ? ` (${x.neden})` : ''}.`;
+      await firestore.doc(`channels/${p.channelId}`).update({ 'optimizasyon.degisiklikler': FieldValue.arrayUnion({ tarih: now.toISOString(), metin, youtubeId: x.youtubeId }) });
+      await notify({ title: 'Video iyileştirildi', body: metin.slice(0, 180), channelId: p.channelId });
+      console.log(`✓ iyileştirme ${x.youtubeId}: ${yapilan.join(', ')}`);
+    } catch (e) {
+      console.warn(`✗ iyileştirme ${x.youtubeId}: ${e.message}`);
+    }
+  }
+  fs.rmSync(path.join(IYI_DIR, f));
+}
+
 fs.rmSync(work, { recursive: true, force: true });
 process.exit(0);

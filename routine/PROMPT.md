@@ -5,12 +5,12 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 ## Adımlar
 
 1. `main` dalının en güncel halinde olduğundan emin ol (`git checkout main && git pull`).
-2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa senaryo yazma ama aşağıdaki "Haftalık rapor" ve "Yorum cevapları" işlerine yine bak; onlar da yoksa bitir.
+2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa senaryo yazma ama aşağıdaki "Günlük iyileştirme", "Haftalık rapor" ve "Yorum cevapları" işlerine yine bak; onlar da yoksa bitir.
 3. `config/needed.json` dosyasını oku. Her öğe yazılması gereken bir video: `id`, `channelId`, `type` (`long` / `short`), `publishAt`, `targetWords`. `format` varsa (`duell`, `cizim`, `dizi`) o formatın aşağıdaki bölümüne göre yaz.
 4. `config/channels.json` içinden ilgili kanalı bul. `brief` alanı kanalın konusu, dili, tonu, anlatıcı karakteri ve ek talimatlarıdır. `recentTitles` daha önce yapılmış videolardır; `done/` klasöründeki dosyalar da aynı kanalın önceki senaryolarıdır.
 5. Her iş için `queue/<id>.json` dosyasını aşağıdaki formatta yaz. `queue/`, `done/` veya `failed/` içinde aynı id zaten varsa atla.
 6. `node engine/src/validate.js` çalıştır. Hata varsa dosyayı düzelt ve tekrar çalıştır, hepsi ✓ olana kadar devam et.
-7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/` ve `cevaplar/` altındaki yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
+7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/`, `cevaplar/` ve `iyilestirme/` altındaki yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
 8. Bitirirken kaç senaryo yazdığını ve başlıklarını tek satırlık bir liste halinde özetle.
 
 ## Optimizasyon (her senaryoda)
@@ -21,12 +21,31 @@ Sistem her videonun izlenme, tıklanma ve izleyici tutma verisini ölçer; kanal
 - **Çeviriler:** `needed.json` öğesinde `ceviriDilleri` varsa (ör. `["en"]`) her dil için `"ceviriler": {"en": {"title": "…", "description": "…"}}` yaz. Çeviri doğal ve o dildeki izleyicinin arayacağı kelimelerle olsun (kelimesi kelimesine değil); hashtag ve `<` `>` yazma. YouTube yabancı izleyiciye başlığı kendi dilinde gösterir.
 - **Oynatma listesi:** `"oynatmaListesi": "…"` yaz (≤60 karakter). Kanalın mevcut listeleri `config/channels.json` → `oynatmaListeleri` alanındadır; konu birine uyuyorsa **aynen** o adı yaz, uymuyorsa geniş bir tema adı ver (ör. "Mutfaktaki Eşyaların Hikayesi", "Osmanlı'nın Bilinmeyenleri"). Her videoya ayrı liste açma; 4-8 tema listesi hedefle.
 - **Başlık:** En fazla 70 karakter (telefonda kesilmesin, ideal 40-60). Doğrulayıcı 70'i geçeni reddeder.
+- **Uzun video başlığı (tıklanma için en önemli kural):** Kanalı hiç tanımayan birine bir **vaat ya da merak** sunmalı; seri/dizi adı ve bölüm numarası **sona** gider. ✗ "Zincirli · Bölüm 4: İkinci Kez" → ✓ "Kral Sahte Dövüşü Fark Etti ve İkisini Zincirle Bağlattı | Zincirli 4". ✗ "Eşyaların Hikayesi #12: Çay Bardağı" → ✓ "İnce Belli Çay Bardağı Neden Bu Şekilde? Cevabı 1930'larda". Belgesel/ansiklopedi konularında insanların **arayacağı soruyu** başa koy ("… Nasıl Doğdu?", "… Neden …?").
+- **Uzun video kapağı:** `thumbnailText` en fazla **3 kelime**, duygu ya da çatışma ("İHANET", "SON ŞANS", "YASAKLANDI"); başlığı tekrar etmez. Dizi formatında `kapak.sahne` en dramatik **karakterli** sahne olsun (dövüş, yüzleşme, şok anı); motor karakterleri büyütüp sağa alır.
+- **İlk 30 saniye (uzun videoda izleyicinin çoğu burada gidiyor):** Video **ilk saniyede konuşmayla ve aksiyonla** başlar; giriş, selam, uzun başlık kartı yok. İlk 2 cümle izleyiciye **ne göreceğini/öğreneceğini vaat eder** ve bir soru açar ("Bu tencere bir zamanlar kemik yumuşatmak için icat edildi. Peki nasıl oldu da her mutfağa girdi?"). Dizi bölümlerinde soğuk açılış en gerilimli an, en fazla 15 saniye, sonunda soru. Çizim formatında giriş sahneleri en fazla 2 cümle; ilk bölüm kartı 20. saniyeden önce gelir.
 - **Açıklamanın ilk iki satırı** aramada görünen kısımdır: biri videonun anahtar kelimesiyle başlayan, en az 30 karakterlik tam bir cümle olsun (ilk satır kısa bir seri etiketi olabilir). Hashtag ya da bağlantıyla başlama.
 - **Uzun video ek alanları:**
   - `thumbnailText` en fazla 4 kelime ve 25 karakter (küçük ekranda okunmalı).
   - `thumbnailTextAlt`: Yedek kapak yazısı (≤4 kelime, ≤25 karakter), asıl kapaktan **farklı bir açı** (ör. asıl "22 YIL YASAK", yedek "SULTAN İSTEMEDİ"). Kapak az tıklanırsa sistem bunu dener.
   - `titleAlt`: Yedek başlık (≤70 karakter), asıl başlıktan farklı bir merak kalıbı. Kapak denemesi de tutmazsa sistem bunu dener.
   - **Bölümler:** Uzun videoda her bölümün ilk sahnesine `"bolum": {"ad": "…"}` yaz (çizim formatında zaten `{no, ust, ad}` yazılıyor). 4-7 bölüm; sistem açıklamaya YouTube bölüm zaman damgalarını (00:00 Giriş, 01:12 …) kendisi ekler.
+
+## Günlük iyileştirme (her çalıştırmada, `config/performans.json`)
+
+İzlenmeleri yukarı taşımak senin görevin. Her çalıştırmada her kanalın `videolar` listesindeki **uzun videolara** bak (`tip: "long"`, yayın 2-21 gün önce):
+- **Zayıf tıklanma:** `tiklanma7` < 3 (ve `gosterim7` ≥ 50) → yeni başlık + yeni kapak yazısı yaz.
+- **Zayıf tutma:** `tutma` < 25 ya da `kancaOran` düşük → başlık/kapak videonun vaat ettiğinden farklı bir şey vaat ediyor olabilir; vaadi videonun gerçek içeriğine yaklaştıran yeni başlık yaz.
+- Aynı videoya en fazla **3 günde bir** dokun (`sonIyilestirme` tarihine bak); `kapakDeneme` "deneniyor" ya da "baslik-deneniyor" ise o videoya dokunma (sistem A/B ölçüyor).
+- Videonun senaryosunu `done/<jobId>.json` içinde oku; başlık ve kapak **gerçek içeriğe** dayanmalı, yalan vaat yok.
+
+Yazacağın dosya: `iyilestirme/<YYYY-MM-DD-HHMM>.json`
+```json
+[{ "youtubeId": "…", "title": "Yeni başlık (≤70, kurallara uygun)", "thumbnailText": "≤3 KELİME", "kapak": {"sahne": 7, "sn": 2}, "neden": "tıklanma %0,9; seri adı başta, vaat yok" }]
+```
+- `title` ve `thumbnailText` isteğe bağlı (sadece değiştirmek istediğini yaz). `kapak` sadece dizi formatında, farklı bir sahne seçmek için.
+- Bir çalıştırmada en fazla 6 video. Hiçbir video eşiklerin altında değilse dosya yazma.
+- Sistem değişikliği YouTube'da uygular, eski değeri ve önceki tıklanmayı kaydeder; sonraki günlerde `tiklanma7` yükselmediyse farklı bir açı dene (aynı kalıbı tekrarlama). Bir değişiklik tuttuysa (tıklanma ya da izlenme arttıysa) bunu haftalık raporda `dersler`e yaz.
 
 ## Haftalık rapor (`config/performans.json`)
 

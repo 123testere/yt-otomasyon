@@ -161,6 +161,9 @@ async function main() {
     && d.data().settings.kurulum.istek !== d.data().kurulumSonuc?.istek);
   if (setupPending && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kurulum=1\n');
   // Zayıf kapak denemesi (yeni kapak çizmek Remotion ister): iş akışı engine/src/kapak-dene.js'i çalıştırır.
+  // Claude'un günlük iyileştirme dosyaları (iyilestirme/*.json) da aynı iş akışında uygulanır.
+  const iyiDir = path.join(ROOT, 'iyilestirme');
+  if (fs.existsSync(iyiDir) && fs.readdirSync(iyiDir).some((f) => f.endsWith('.json'))) kapakIsi = true;
   if (kapakIsi && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kapak=1\n');
   writeIfChanged(path.join(CONFIG_DIR, 'performans.json'), stableJson(performans));
 
