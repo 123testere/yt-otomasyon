@@ -81,9 +81,15 @@ async function facebook(fb) {
       break;
     } catch { /* bu metrik yok, sonrakini dene */ }
   }
-  const gonderiler = ((await graph(fbGraph, `${fb.pageId}/posts?fields=id,message,created_time,permalink_url,shares,reactions.summary(true),comments.summary(true)&limit=20`, fb.token)).data ?? [])
+  let gonderiler = [];
+  const eksik = [];
+  try {
+  gonderiler = ((await graph(fbGraph, `${fb.pageId}/posts?fields=id,message,created_time,permalink_url,shares,reactions.summary(true),comments.summary(true)&limit=20`, fb.token)).data ?? [])
     .map((p) => ({ id: p.id, baslik: (p.message ?? '').split('\n')[0].slice(0, 90), at: p.created_time, permalink: p.permalink_url, begeni: p.reactions?.summary?.total_count ?? 0, yorum: p.comments?.summary?.total_count ?? 0, paylasim: p.shares?.count ?? 0 }));
-  return { sayfa: sayfa.name, takipci: sayfa.followers_count ?? sayfa.fan_count ?? null, erisim28, videolar: gonderiler, eksikIzinler: [] };
+  } catch (e) {
+    if (/pages_read_user_content/.test(e.message)) eksik.push('pages_read_user_content');
+  }
+  return { sayfa: sayfa.name, takipci: sayfa.followers_count ?? sayfa.fan_count ?? null, erisim28, videolar: gonderiler, eksikIzinler: eksik };
 }
 
 // Senkronizasyondan: bağlı her platformun istatistiğini (6 saatte bir) günceller.
