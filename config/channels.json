@@ -139,10 +139,12 @@
       "gorselStil": "YZ görsel – gerçekçi",
       "cocukIcerigi": false,
       "ekTalimat": "Daily Top 5 countdown Shorts about making money, starting a business and motivation. English only. Follow diziler/para-top5.json (yazim and kurallar).",
-      "videoSayisi": 10,
+      "videoSayisi": 11,
       "dersler": []
     },
-    "oynatmaListeleri": [],
+    "oynatmaListeleri": [
+      "Top 5 Money & Business"
+    ],
     "deney": {
       "id": "kanca-soru",
       "tip": "short",
@@ -259,7 +261,10 @@
       "Zincirli · Bölüm 2: Kızıl Loca",
       "Ölmesine 3 saniye vardı… ⚔️ #shorts",
       "Zincirli · Bölüm 1: Üç Saniye",
-      "Zincirli · Bölüm 1: Üç Saniye | Çöp Adam Animasyon"
+      "Kral Sahte Dövüşü Fark Etti ve İkisini Zincirle Bağlattı | Zincirli 4",
+      "Kız Kardeşi Yaşıyor… Ama Kaybetmesi Şartıyla | Zincirli 3",
+      "Ailesinin Katili Kralın Yanında Oturuyordu | Zincirli 2",
+      "15 Yıl Köle Kaldı, Yenilmez Şampiyonu Son Saniyede Devirdi | Zincirli 1"
     ],
     "oylamalar": []
   },
@@ -331,10 +336,11 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
-      "videoSayisi": 255,
+      "videoSayisi": 257,
       "dersler": []
     },
     "oynatmaListeleri": [
+      "En İyi Oyun Listeleri",
       "Anadolu'nun Bilinmeyen Tarihi",
       "Osmanlı'nın Bilinmeyenleri",
       "Anadolu'nun Bilinmeyenleri",
@@ -407,9 +413,7 @@
       "Ice Destruction ASMR Çin",
       "Ice Destruction ASMR Ukrayna",
       "Satisfying Jello Cutting Experiment You Have to See!",
-      "Sığınmacılar Gerçekten Gitmeli mi? Şaşırtan Cevap!",
-      "Belediye hizmet veriyormu sorusuna muhteşem cevap",
-      "Bu kargaşada herşey karıştı"
+      "Sığınmacılar Gerçekten Gitmeli mi? Şaşırtan Cevap!"
     ],
     "oylamalar": []
   },
@@ -573,8 +577,8 @@
         "days": [
           2
         ],
-        "time": "20:00",
-        "minutes": 8
+        "time": "13:00",
+        "minutes": 10
       },
       "shorts": {
         "times": [
@@ -600,6 +604,11 @@
       "instagram": {
         "enabled": true,
         "kullanici": "lamba.altinda"
+      },
+      "tiktok": {
+        "kullanici": null,
+        "mod": "taslak",
+        "enabled": true
       }
     },
     "brief": {
@@ -611,7 +620,7 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
-      "videoSayisi": 40,
+      "videoSayisi": 41,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -915,7 +924,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 8,
+      "videoSayisi": 9,
       "dersler": []
     },
     "oynatmaListeleri": [],
