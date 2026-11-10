@@ -164,7 +164,8 @@ export async function publishDueTiktok(firestore, now = new Date()) {
       console.log(`✓ TikTok (${taslak ? 'taslak' : 'yayın'}): ${v.title}`);
       await notify({
         title: taslak ? 'TikTok: paylaşmaya hazır' : 'TikTok\'ta yayınlandı',
-        body: taslak ? `${v.title} — TikTok bildirimini aç, açıklamayı yapıştır ve paylaş.` : v.title,
+        body: taslak ? `TikTok gelen kutundaki taslağı aç, şu açıklamayı yapıştır ve paylaş:
+${v.tiktok.aciklama}` : v.title,
         channelId: v.channelId, videoId: doc.id,
       });
     } catch (e) {
