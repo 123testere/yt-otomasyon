@@ -41,10 +41,11 @@ export function caption(job) {
 }
 
 // Videoyu doğrudan yükler (herkese açık bir adres gerekmez), işlenmesini bekler ve paylaşır.
-export async function publishReel({ userId, token }, videoPath, text) {
-  const container = await graph('POST', `${userId}/media`, token, {
-    media_type: 'REELS', upload_type: 'resumable', caption: text, share_to_feed: 'true', thumb_offset: '1000',
-  });
+// tur: 'REELS' (varsayılan) ya da 'STORIES' (hikâye; açıklama yazısı kullanılmaz).
+export async function publishReel({ userId, token }, videoPath, text, tur = 'REELS') {
+  const container = await graph('POST', `${userId}/media`, token, tur === 'STORIES'
+    ? { media_type: 'STORIES', upload_type: 'resumable' }
+    : { media_type: 'REELS', upload_type: 'resumable', caption: text, share_to_feed: 'true', thumb_offset: '1000' });
   const size = fs.statSync(videoPath).size;
   const up = await fetch(container.uri ?? `https://rupload.facebook.com/ig-api-upload/v23.0/${container.id}`, {
     method: 'POST',
@@ -60,7 +61,7 @@ export async function publishReel({ userId, token }, videoPath, text) {
     await sleep(10_000);
   }
   const { id } = await graph('POST', `${userId}/media_publish`, token, { creation_id: container.id });
-  const { permalink } = await graph('GET', id, token, { fields: 'permalink' });
+  const { permalink } = await graph('GET', id, token, { fields: 'permalink' }).catch(() => ({ permalink: null }));
   return { mediaId: id, permalink };
 }
 

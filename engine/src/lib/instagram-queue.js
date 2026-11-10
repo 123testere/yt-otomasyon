@@ -87,6 +87,15 @@ export async function publishDueReels(firestore, now = new Date()) {
       const file = await fetchHeld(doc.id, dir);
       const r = await publishReel(ig, file, v.instagram.caption);
       await doc.ref.update({ 'instagram.durum': 'yayinlandi', 'instagram.permalink': r.permalink, 'instagram.at': now, 'instagram.hata': null });
+      // İstenirse aynı video hikâyede de paylaşılır (videos/{id}.instagram.hikaye: true)
+      if (v.instagram.hikaye) {
+        try {
+          await publishReel(ig, file, null, 'STORIES');
+          await doc.ref.update({ 'instagram.hikayeDurum': 'yayinlandi' });
+        } catch (e) {
+          await doc.ref.update({ 'instagram.hikayeDurum': `hata: ${e.message.slice(0, 200)}` });
+        }
+      }
       await dropHeld(doc.id);
       const gecikme = Math.round((now.getTime() - v.instagram.yayin.toMillis()) / 60000);
       console.log(`✓ Instagram: ${v.title} ${r.permalink} (${gecikme} dk gecikme)`);
