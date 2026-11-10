@@ -74,7 +74,13 @@ async function tiktok(firestore, kanalId) {
 async function facebook(fb) {
   const sayfa = await graph(fbGraph, `${fb.pageId}?fields=name,followers_count,fan_count`, fb.token);
   let erisim28 = null;
-  try { erisim28 = (await graph(fbGraph, `${fb.pageId}/insights?metric=page_impressions_unique&period=days_28`, fb.token)).data?.[0]?.values?.at(-1)?.value ?? null; } catch { /* izin yok */ }
+  // Meta sayfa metriklerinin adı değişti; sırayla denenir
+  for (const m of ['page_total_media_view_unique', 'page_media_view', 'page_impressions_unique']) {
+    try {
+      erisim28 = (await graph(fbGraph, `${fb.pageId}/insights?metric=${m}&period=days_28`, fb.token)).data?.[0]?.values?.at(-1)?.value ?? null;
+      break;
+    } catch { /* bu metrik yok, sonrakini dene */ }
+  }
   const gonderiler = ((await graph(fbGraph, `${fb.pageId}/posts?fields=id,message,created_time,permalink_url,shares,reactions.summary(true),comments.summary(true)&limit=20`, fb.token)).data ?? [])
     .map((p) => ({ id: p.id, baslik: (p.message ?? '').split('\n')[0].slice(0, 90), at: p.created_time, permalink: p.permalink_url, begeni: p.reactions?.summary?.total_count ?? 0, yorum: p.comments?.summary?.total_count ?? 0, paylasim: p.shares?.count ?? 0 }));
   return { sayfa: sayfa.name, takipci: sayfa.followers_count ?? sayfa.fan_count ?? null, erisim28, videolar: gonderiler, eksikIzinler: [] };
