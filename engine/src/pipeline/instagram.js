@@ -54,24 +54,40 @@ export function caption(job) {
 // Videoyu doğrudan yükler (herkese açık bir adres gerekmez), işlenmesini bekler ve paylaşır.
 // tur: 'REELS' (varsayılan) ya da 'STORIES' (hikâye; açıklama yazısı kullanılmaz).
 export async function publishReel({ userId, token }, videoPath, text, tur = 'REELS') {
-  const container = await graph('POST', `${userId}/media`, token, tur === 'STORIES'
-    ? { media_type: 'STORIES', upload_type: 'resumable' }
-    : { media_type: 'REELS', upload_type: 'resumable', caption: text, share_to_feed: 'true', thumb_offset: '1000' });
   const size = fs.statSync(videoPath).size;
-  const up = await fetch(container.uri ?? `https://rupload.facebook.com/ig-api-upload/v23.0/${container.id}`, {
-    method: 'POST',
-    headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(size) },
-    body: fs.readFileSync(videoPath),
-  });
-  if (!up.ok) throw new Error(`Instagram yükleme HTTP ${up.status}: ${(await up.text()).slice(0, 200)}`);
-  for (let i = 0; i < 60; i++) {
-    const { status_code: status, status: detail } = await graph('GET', container.id, token, { fields: 'status_code,status' });
-    if (status === 'FINISHED') break;
-    if (status === 'ERROR' || status === 'EXPIRED') throw new Error(`Instagram videoyu işleyemedi: ${detail ?? status}`);
-    if (i === 59) throw new Error('Instagram videoyu 10 dakikada işleyemedi');
-    await sleep(10_000);
+  const veri = fs.readFileSync(videoPath);
+  // Yükleme ve işleme adımı Instagram tarafında ara sıra geçici hata verir ("ProcessingFailedError"):
+  // her denemede yeni bir taslak açılıp baştan yüklenir. Yayınlama (media_publish) yalnızca bir kez çağrılır.
+  let containerId = null;
+  let son = null;
+  for (let deneme = 1; deneme <= 4 && !containerId; deneme++) {
+    try {
+      const container = await graph('POST', `${userId}/media`, token, tur === 'STORIES'
+        ? { media_type: 'STORIES', upload_type: 'resumable' }
+        : { media_type: 'REELS', upload_type: 'resumable', caption: text, share_to_feed: 'true', thumb_offset: '1000' });
+      const up = await fetch(container.uri ?? `https://rupload.facebook.com/ig-api-upload/v23.0/${container.id}`, {
+        method: 'POST',
+        headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(size) },
+        body: veri,
+      });
+      if (!up.ok) throw new Error(`Instagram yükleme HTTP ${up.status}: ${(await up.text()).slice(0, 200)}`);
+      for (let i = 0; i < 60; i++) {
+        const { status_code: status, status: detail } = await graph('GET', container.id, token, { fields: 'status_code,status' });
+        if (status === 'FINISHED') break;
+        if (status === 'ERROR' || status === 'EXPIRED') throw new Error(`Instagram videoyu işleyemedi: ${detail ?? status}`);
+        if (i === 59) throw new Error('Instagram videoyu 10 dakikada işleyemedi');
+        await sleep(10_000);
+      }
+      containerId = container.id;
+    } catch (e) {
+      if (e instanceof IgIzinHatasi) throw e;
+      son = e;
+      console.warn(`  Instagram yükleme denemesi ${deneme}/4: ${e.message}`);
+      if (deneme < 4) await sleep(20_000 * deneme);
+    }
   }
-  const { id } = await graph('POST', `${userId}/media_publish`, token, { creation_id: container.id });
+  if (!containerId) throw son;
+  const { id } = await graph('POST', `${userId}/media_publish`, token, { creation_id: containerId });
   const { permalink } = await graph('GET', id, token, { fields: 'permalink' }).catch(() => ({ permalink: null }));
   return { mediaId: id, permalink };
 }
