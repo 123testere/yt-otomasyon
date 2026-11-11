@@ -441,7 +441,7 @@
       "character": "yok",
       "customCharacter": "",
       "characterOnScreen": false,
-      "identityLocked": false,
+      "identityLocked": true,
       "visualStyle": "hareketli-grafik",
       "template": "animasyonlu",
       "music": "gerilim",
@@ -505,6 +505,7 @@
       "baslangic": "2026-11-07T10:19:21.363Z"
     },
     "recentTitles": [
+      "Yapay Zekâ Kontrolden Çıkarsa 35 Saniyede Kapanacak 🤖",
       "Endless transitons",
       "Cash Calculator mobil uygulama #vibecoding #mobiluygulama #cursor",
       "MARATON BİTTİ, DEVRİM BAŞLIYOR! 🚀|30 Günde 30 Yapay Zeka Uygulaması - Gün-30 final #reklam",
@@ -691,15 +692,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
-        "a": "Gözlük",
-        "b": "Çatal",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-07T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "Ütünün Atası Kızgın Kömür Dolu Bir Tavaydı",
         "a": "Tost makinesi",
@@ -743,6 +735,15 @@
         "oyA": 0,
         "oyB": 1,
         "yayin": "2026-11-10T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-11_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Kurşun Kalemin İçinde Neden Kurşun Yok?",
+        "a": "Makas",
+        "b": "Cetvel",
+        "oyA": 1,
+        "oyB": 0,
+        "yayin": "2026-11-11T16:00:00.000Z"
       }
     ]
   },
