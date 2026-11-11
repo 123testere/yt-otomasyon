@@ -1,9 +1,9 @@
 [
   {
-    "id": "2026-11-11_UCJUP2lYvMuhcif8FavIXuYA_short1",
+    "id": "2026-11-12_UCJUP2lYvMuhcif8FavIXuYA_short1",
     "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
     "type": "short",
-    "publishAt": "2026-11-11T16:00:00.000Z",
+    "publishAt": "2026-11-12T16:00:00.000Z",
     "targetWords": 80,
     "haberAkisi": "yapay-zeka",
     "format": "dizi",
@@ -22,10 +22,10 @@
     }
   },
   {
-    "id": "2026-11-11_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "id": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short2",
     "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
     "type": "short",
-    "publishAt": "2026-11-11T16:00:00.000Z",
+    "publishAt": "2026-11-12T16:00:00.000Z",
     "targetWords": 86,
     "format": "cizim",
     "ceviriDilleri": [
@@ -43,52 +43,6 @@
       "id": "kanca-soru",
       "kol": "A",
       "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
-    }
-  },
-  {
-    "id": "2026-11-12_UCJUP2lYvMuhcif8FavIXuYA_short1",
-    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
-    "type": "short",
-    "publishAt": "2026-11-12T16:00:00.000Z",
-    "targetWords": 80,
-    "haberAkisi": "yapay-zeka",
-    "format": "dizi",
-    "dizi": "yz-gundem",
-    "dikey": true,
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 2
-    },
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "B",
-      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
-    }
-  },
-  {
-    "id": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
-    "type": "short",
-    "publishAt": "2026-11-12T16:00:00.000Z",
-    "targetWords": 86,
-    "format": "cizim",
-    "ceviriDilleri": [
-      "en"
-    ],
-    "oylama": {
-      "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
-      "a": "Buzdolabı",
-      "b": "Elektrik süpürgesi",
-      "oyA": 0,
-      "oyB": 0,
-      "kazanan": null
-    },
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "B",
-      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
     }
   }
 ]
