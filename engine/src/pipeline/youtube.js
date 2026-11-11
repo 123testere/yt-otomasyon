@@ -95,7 +95,9 @@ export async function upload({ secret, job, settings, videoPath, thumbnailPath, 
       await yt.thumbnails.set({ videoId, media: { mimeType: 'image/jpeg', body: fs.createReadStream(thumbnailPath) } });
     } catch (e) {
       // Kanal telefonla doğrulanmamışsa özel küçük resim yüklenemez; video yine de yayında kalır.
-      thumbnailWarning = `Küçük resim yüklenemedi: ${e.message}`;
+      // Shorts'ta özel kapak zaten akışta görünmez: izin hatası uyarı sayılmaz (her gün tekrarlayan gürültü olmasın).
+      const izin = /permission|forbidden/i.test(e.message);
+      thumbnailWarning = job.type === 'short' && izin ? null : `Küçük resim yüklenemedi: ${e.message}`;
     }
   }
   return { videoId, url: `https://youtu.be/${videoId}`, scheduled: Boolean(status.publishAt), thumbnailWarning };
