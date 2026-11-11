@@ -134,13 +134,18 @@ export default function KesifDetay() {
         {k.hata ? <Card style={{ borderColor: colors.err }}><Text style={{ color: colors.err }}>{k.hata}</Text></Card> : null}
 
         <Section>Karar</Section>
-        {['ornek-istendi', 'ornek-yazildi', 'ornek-hazirlaniyor'].includes(k.durum) ? (
+        {k.durum === 'ornek-tekrar' || k.durum === 'ornek-hazirlaniyor' ? (
+          <Card><Dim>Örnek video üretiliyor (10-20 dakika). Hazır olunca bildirim gelir.</Dim></Card>
+        ) : ['ornek-istendi', 'ornek-yazildi'].includes(k.durum) ? (
           <Card><Dim>Örnek isteği alındı. Claude bu gece pilot senaryoyu ve kanal kimliğini yazar; video hazır olunca bildirim gelir.</Dim></Card>
         ) : k.durum === 'baslatiliyor' || k.durum === 'baslatildi' ? (
           <Card><Dim>Bu fırsattan kanal kuruldu{k.kanal ? '' : ' (kuruluyor)'}.</Dim></Card>
         ) : (
           <>
             <TextInput value={not} onChangeText={setNot} placeholder="İsteğe bağlı not (ör. daha komik olsun, Türk karakterler)" placeholderTextColor={colors.dim} style={st.input} multiline />
+            {k.durum === 'ornek-hata' ? (
+              <Button title="↻ Tekrar dene (hemen)" onPress={() => istek('ornek-tekrar')} style={{ marginTop: 10 }} />
+            ) : null}
             {k.ornek ? (
               <>
                 <Button title="🚀 Kanalı başlat" onPress={() => router.push(`/kurulum?kesif=${id}`)} style={{ marginTop: 10 }} />

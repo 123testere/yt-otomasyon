@@ -81,7 +81,8 @@ async function satirSesi(metin, ses, base, dil = 'tr', klonWav = null, sadeceOnb
   }
   fs.writeFileSync(`${base}.txt`, okunus);
   await retry(() => run(PY, [path.join(ROOT, 'engine', 'py', 'tts.py'), `${base}.txt`, ses.voice, ses.rate ?? '+0%', `${base}.mp3`, `${base}.json`, ses.pitch ?? '+0Hz']),
-    { label: 'seslendirme', delayMs: 5000 });
+    // Microsoft ses servisi GitHub sunucularında ara sıra cevap vermiyor: artan aralıklarla 5 deneme (~2,5 dk)
+    { label: 'seslendirme', tries: 5, delayMs: 15000 });
   return { words: JSON.parse(fs.readFileSync(`${base}.json`, 'utf8')), file: `${base}.mp3` };
 }
 

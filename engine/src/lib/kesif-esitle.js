@@ -24,6 +24,8 @@ export async function kesifEsitle(firestore, now = new Date()) {
     id: d.id, ad: d.data().aday?.ad ?? null, firsat: d.data().firsat ?? null, not: d.data().istekNot ?? null,
     tekrar: Boolean(d.data().ornek), oncekiBaslik: d.data().ornek?.baslik ?? null,
   }));
+  // "Tekrar dene": mevcut pilot Claude'u beklemeden yeniden üretilir (iş akışı kesif-ornek.yml'i tetikler)
+  if (docs.some((d) => d.data().durum === 'ornek-tekrar') && process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'kesif=1\n');
   const dosya = path.join(CONFIG_DIR, 'kesif-istekler.json');
   const icerik = `${JSON.stringify(istekler, null, 2)}\n`;
   if (!fs.existsSync(dosya) || fs.readFileSync(dosya, 'utf8') !== icerik) fs.writeFileSync(dosya, icerik);

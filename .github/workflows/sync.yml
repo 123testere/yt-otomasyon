@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: repo-write
@@ -42,6 +43,11 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TV_CLIENT_ID: ${{ secrets.YT_TV_CLIENT_ID }}
           YT_TV_CLIENT_SECRET: ${{ secrets.YT_TV_CLIENT_SECRET }}
+      # Keşif "Tekrar dene": mevcut pilot yeniden üretilir
+      - if: steps.sync.outputs.kesif
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kesif-ornek.yml --ref main
       # Uygulamadaki kanal kurulum sihirbazı: banner ve profil fotoğrafı Remotion ile çizilir.
       - if: steps.sync.outputs.kurulum
         name: Kanal kurulumu

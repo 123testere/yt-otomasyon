@@ -9,10 +9,19 @@ import { notify } from './lib/notify.js';
 import { resolveSettings } from './lib/options.js';
 import { ROOT } from './lib/paths.js';
 import { run } from './lib/util.js';
+import { execFileSync } from 'node:child_process';
 import { buildVideo } from './pipeline/build.js';
 import { remotionStill } from './pipeline/remotion.js';
 
-const PARCA = 700_000; // base64 karakter (Firestore belge sınırı 1 MB)
+const PARCA = 700_000;
+// Dile göre varsayılan Microsoft sesleri: [erkek, kadın]
+const SESLER = {
+  tr: ['tr-TR-AhmetNeural', 'tr-TR-EmelNeural'], en: ['en-US-AndrewNeural', 'en-US-JennyNeural'],
+  de: ['de-DE-ConradNeural', 'de-DE-KatjaNeural'], es: ['es-MX-JorgeNeural', 'es-MX-DaliaNeural'],
+  pt: ['pt-BR-AntonioNeural', 'pt-BR-FranciscaNeural'], fr: ['fr-FR-HenriNeural', 'fr-FR-DeniseNeural'],
+};
+const kesifVerisi = new Map();
+const k0 = (id) => kesifVerisi.get(id); // base64 karakter (Firestore belge sınırı 1 MB)
 const firestore = db();
 const KESIF_DIR = path.join(ROOT, 'kesif');
 
@@ -28,7 +37,20 @@ async function isle(id) {
   const klasor = path.join(KESIF_DIR, id);
   const job = JSON.parse(fs.readFileSync(path.join(klasor, 'pilot.json'), 'utf8'));
   const kimlik = JSON.parse(fs.readFileSync(path.join(klasor, 'kimlik.json'), 'utf8'));
-  const dizi = JSON.parse(fs.readFileSync(path.join(ROOT, 'diziler', `${job.dizi}.json`), 'utf8'));
+  const diziDosya = path.join(ROOT, 'diziler', `${job.dizi}.json`);
+  const dizi = JSON.parse(fs.readFileSync(diziDosya, 'utf8'));
+  // Güvence: dizinin dili fırsatın dilidir; Microsoft sesleri o dilde değilse o dilin sesine çevrilir
+  dizi.dil = dizi.dil ?? k0(id)?.firsat?.dil ?? 'tr';
+  let duzeldi = false;
+  const sesDuzelt = (ses) => {
+    if (!ses?.voice || ses.voice.toLowerCase().startsWith(`${dizi.dil}-`)) return ses;
+    duzeldi = true;
+    const kadin = /Jenny|Aria|Emel|Katja|Dalia|Francisca|Sonia|Libby|Ava|Emma|Elvira|Amala/i.test(ses.voice);
+    return { ...ses, voice: SESLER[dizi.dil]?.[kadin ? 1 : 0] ?? ses.voice };
+  };
+  if (dizi.anlatici?.ses) dizi.anlatici.ses = sesDuzelt(dizi.anlatici.ses);
+  for (const c of Object.values(dizi.karakterler ?? {})) if (c.ses) c.ses = sesDuzelt(c.ses);
+  if (duzeldi) { fs.writeFileSync(diziDosya, JSON.stringify(dizi, null, 1)); console.log(`  sesler ${dizi.dil} diline göre düzeltildi`); }
   await ref.set({ durum: 'ornek-hazirlaniyor', hata: null }, { merge: true });
   const work = fs.mkdtempSync(path.join(os.tmpdir(), 'kesif-'));
   try {
@@ -69,10 +91,25 @@ async function isle(id) {
 
 const hedef = process.argv[2];
 const ids = hedef ? [hedef] : (fs.existsSync(KESIF_DIR) ? fs.readdirSync(KESIF_DIR) : []);
+// Pilot dosyasının git'e girdiği an (Claude yeni pilotu yazdı mı?)
+const pilotZamani = (id) => {
+  try {
+    return Number(execFileSync('git', ['log', '-1', '--format=%ct', '--', `kesif/${id}/pilot.json`], { cwd: ROOT }).toString().trim()) * 1000;
+  } catch {
+    return 0;
+  }
+};
+
 for (const id of ids) {
   if (!fs.existsSync(path.join(KESIF_DIR, id, 'pilot.json'))) continue;
-  const durum = (await firestore.doc(`kesif/${id}`).get()).data()?.durum;
-  if (!hedef && !['ornek-yazildi', 'ornek-istendi'].includes(durum)) continue;
+  const k = (await firestore.doc(`kesif/${id}`).get()).data() ?? {};
+  kesifVerisi.set(id, k);
+  if (!hedef) {
+    // 'ornek-tekrar': mevcut pilot yeniden üretilir (ör. ses servisi aksadıysa).
+    // 'ornek-istendi': sadece Claude isteğe göre YENİ pilot yazdıysa (eski pilot tekrar üretilmez).
+    const yeniPilot = pilotZamani(id) > (k.istekAt?.toMillis?.() ?? 0);
+    if (!(k.durum === 'ornek-tekrar' || k.durum === 'ornek-yazildi' || (k.durum === 'ornek-istendi' && yeniPilot))) continue;
+  }
   await isle(id);
 }
 process.exit(0);

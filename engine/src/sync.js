@@ -18,6 +18,7 @@ import { collectComments, postReplies } from './lib/comments.js';
 import { akislariTazele } from './lib/haberler.js';
 import { sosyalGuncelle } from './lib/sosyal.js';
 import { kesifEsitle } from './lib/kesif-esitle.js';
+import { saatleriYaz } from './lib/sosyal-saatler.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -96,6 +97,7 @@ async function main() {
   await publishDueReels(firestore, now).catch((e) => console.warn(`Instagram: ${e.message}`));
   await publishDueTiktok(firestore, now).catch((e) => console.warn(`TikTok: ${e.message}`));
   await sosyalGuncelle(firestore, now).catch((e) => console.warn(`Sosyal istatistik: ${e.message}`));
+  await saatleriYaz(firestore, now).catch((e) => console.warn(`sosyal saatler: ${e.message}`));
   const channels = channelsSnap.docs
     .map((doc) => {
       const data = doc.data();

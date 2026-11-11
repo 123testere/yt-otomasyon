@@ -18,7 +18,7 @@ async function edgeScene(text, settings, base) {
   await retry(
     () => run(PYTHON, [path.join(PY_DIR, 'tts.py'), `${base}.txt`, settings.voice, settings.speechRate,
       `${base}.mp3`, `${base}.json`, settings.voicePitch ?? '+0Hz']),
-    { label: 'seslendirme', delayMs: 5000 },
+    { label: 'seslendirme', tries: 5, delayMs: 15000 },
   );
   return { raw: `${base}.mp3`, words: JSON.parse(await fs.readFile(`${base}.json`, 'utf8')) };
 }

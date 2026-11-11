@@ -14,6 +14,7 @@ import { run } from './lib/util.js';
 import { AuthError, QuotaError, upload } from './pipeline/youtube.js';
 import { baglantiYorumu, bolumSatirlari, uploadExtras } from './pipeline/extras.js';
 import { deneyAyari } from './lib/deney.js';
+import { saatleriYaz } from './lib/sosyal-saatler.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
 
 const MAX_ATTEMPTS = 3;
@@ -205,7 +206,10 @@ async function main() {
   }
 }
 
-main().catch((e) => {
+// Instagram/TikTok bekleyen yayın saatleri (Apps Script zamanlayıcısı okur)
+const sonra = () => saatleriYaz(db()).catch((e) => console.warn(`sosyal saatler: ${e.message}`));
+
+main().then(sonra).catch((e) => {
   console.error(e);
   process.exit(1);
 });

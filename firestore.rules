@@ -65,7 +65,7 @@ service cloud.firestore {
     match /kesif/{id} {
       allow read: if isAdmin();
       allow update: if isAdmin() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['durum', 'istekNot', 'istekAt'])
-        && request.resource.data.durum in ['ornek-istendi', 'reddedildi', 'baslatiliyor'];
+        && request.resource.data.durum in ['ornek-istendi', 'ornek-tekrar', 'reddedildi', 'baslatiliyor'];
     }
     match /kesifVideo/{id} {
       allow read: if isAdmin();

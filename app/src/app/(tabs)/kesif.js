@@ -11,6 +11,7 @@ export const DURUM = {
   'ornek-istendi': { label: 'Örnek bu gece yazılacak', renk: colors.warn },
   'ornek-yazildi': { label: 'Örnek hazırlanıyor', renk: colors.warn },
   'ornek-hazirlaniyor': { label: 'Örnek hazırlanıyor', renk: colors.warn },
+  'ornek-tekrar': { label: 'Yeniden üretiliyor', renk: colors.warn },
   'ornek-hazir': { label: 'Örnek hazır', renk: colors.ok },
   'ornek-hata': { label: 'Örnek üretilemedi', renk: colors.err },
   baslatiliyor: { label: 'Kanal kuruluyor', renk: colors.accent2 },
