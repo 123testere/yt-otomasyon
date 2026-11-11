@@ -1,0 +1,50 @@
+{
+ "id": "2026-11-12_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-12T16:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "bolum": { "no": 1, "ad": "Kontrol Odası" },
+ "deney": { "id": "kanca-soru", "kol": "A" },
+ "kaynak": "Webtekno",
+ "kaynakLink": "https://www.webtekno.com/openai-kontrolden-cikan-yapay-zekalari-durduracak-bir-sistem-gelistirdi-h228737.html",
+ "topic": "OpenAI'ın araştırma modellerini 35 saniyede durduran Kontrol Odası sistemi",
+ "title": "Yapay Zekâ Kontrolden Çıkarsa 35 Saniyede Kapanacak 🤖",
+ "description": "OpenAI Kontrol Odası: araştırma modellerini güvenlik riski anında 35 saniyede durdurabilen acil durdurma sistemi duyuruldu. Sence yeterli mi?\nKaynak: Webtekno https://www.webtekno.com/openai-kontrolden-cikan-yapay-zekalari-durduracak-bir-sistem-gelistirdi-h228737.html\n\n#yapayzeka #openai #yapayzekahaberleri",
+ "tags": ["yapay zeka", "yapay zeka haberleri", "openai", "kontrol odası", "yapay zeka güvenliği", "ai haberleri", "teknoloji haberleri", "chatgpt"],
+ "ceviriler": {
+  "en": {
+   "title": "If AI Goes Rogue, This Shuts It Down in 35 Seconds 🤖",
+   "description": "OpenAI announced Control Room, an emergency stop system that can halt its research models within 35 seconds when a safety risk appears. Is that enough?\nSource: Webtekno"
+  }
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "kapanis": { "baslik": "SENCE?", "sonraki": "Her gün yapay zekâ gündemi", "soru": "35 saniye yeterli mi, yoksa çok mu geç?" },
+ "scenes": [
+  { "kisim": "Kanca", "mekan": "sunucu", "buyukYazi": { "ust": "35 SANİYE" },
+    "kadraj": [{ "id": "robot", "hareket": { "x0": 1.1, "x1": 0.6, "sure": 1.2, "kos": true }, "ifade": "saskin" }],
+    "satirlar": [{ "kim": "anlatici", "metin": "Bir yapay zekâ kontrolden çıkarsa onu kim durduracak?" }] },
+  { "mekan": "yz-lab",
+    "haber": { "etiket": "SON DAKİKA", "baslik": "OpenAI'dan acil durdurma sistemi: Kontrol Odası", "kaynak": "Webtekno · 11 Kasım", "maddeler": ["Adı: Kontrol Odası", "Güvenlik riskinde devrede", "35 saniyede durduruyor"] },
+    "satirlar": [{ "kim": "anlatici", "metin": "OpenAI bunun için Kontrol Odası adlı bir acil durdurma sistemi duyurdu." }] },
+  { "mekan": "sunucu",
+    "kadraj": [
+      { "id": "arastirmaci", "x": 0.3, "yon": 1, "poz": "isaret", "ifade": "endiseli" },
+      { "id": "robot", "x": 0.7, "yon": -1, "poz": "dur", "adimlar": [{ "sn": 1.6, "poz": "diz-cok", "sarsinti": true }] }
+    ],
+    "satirlar": [{ "kim": "anlatici", "metin": "Sistem, araştırma modellerini bir güvenlik riski anında 35 saniye içinde durdurabiliyor." }] },
+  { "mekan": "gelecek", "buyukYazi": { "ust": "SIRADA NE VAR?" },
+    "kadraj": [{ "id": "kullanici", "x": 0.5, "yon": 1, "poz": "dusun", "ifade": "dusunceli" }],
+    "satirlar": [{ "kim": "anlatici", "metin": "Peki bu neyi değiştirebilir? Belki yakında her güçlü yapay zekânın böyle bir acil freni olması beklenecek." }] },
+  { "mekan": "yz-lab",
+    "kadraj": [
+      { "id": "kullanici", "x": 0.33, "yon": 1, "poz": "el-salla", "ifade": "gulumsuyor" },
+      { "id": "robot", "x": 0.68, "yon": -1, "poz": "omuz" }
+    ],
+    "satirlar": [{ "kim": "anlatici", "metin": "Sence 35 saniye yeterli mi, yoksa çok mu geç? Yorumlara yaz, takipte kal!" }] }
+ ]
+}

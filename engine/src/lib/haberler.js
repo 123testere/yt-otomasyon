@@ -110,6 +110,11 @@ export async function haberleriTopla(akis, { now = new Date(), log = console.log
     .slice(0, 60)
     .map((h) => ({ ...h, kullanildi: kullanildi.has(h.link) }));
   const veri = { akis, guncellendi: now.toISOString(), pencereSaat: PENCERE / SAAT, haberler };
+  // Hiç haber alınamadıysa (ör. ağ erişimi olmayan ortam) mevcut liste korunur; boş listeyle üzerine yazılmaz.
+  if (!haberler.length && fs.existsSync(haberDosyasi(akis))) {
+    log(`  haber akışı "${akis}": kaynaklara ulaşılamadı, mevcut liste korunuyor.`);
+    return JSON.parse(fs.readFileSync(haberDosyasi(akis), 'utf8'));
+  }
   fs.mkdirSync(CONFIG_DIR, { recursive: true });
   fs.writeFileSync(haberDosyasi(akis), `${JSON.stringify(veri, null, 2)}\n`);
   return veri;
@@ -119,6 +124,13 @@ export async function haberleriTopla(akis, { now = new Date(), log = console.log
 export async function akislariTazele(channels, opts = {}) {
   const akislar = [...new Set(channels.filter((c) => c.enabled && c.settings?.haberAkisi).map((c) => c.settings.haberAkisi))];
   for (const a of akislar) {
+    // Liste 3 saatten yeniyse yeniden çekilmez (gece rutini senkronizasyonun hazırladığı listeyi kullanır)
+    if (opts.tazeYeter) {
+      try {
+        const m = JSON.parse(fs.readFileSync(haberDosyasi(a), 'utf8'));
+        if (m.haberler?.length && Date.now() - Date.parse(m.guncellendi) < 3 * SAAT) continue;
+      } catch { /* dosya yok: çek */ }
+    }
     const v = await haberleriTopla(a, opts);
     (opts.log ?? console.log)(`Haber akışı "${a}": ${v.haberler.length} haber (son ${v.pencereSaat} saat).`);
   }
