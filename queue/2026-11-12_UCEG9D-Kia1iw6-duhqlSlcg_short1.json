@@ -1,0 +1,188 @@
+{
+ "id": "2026-11-12_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-12T05:00:00.000Z",
+ "bolum": {
+  "no": 4,
+  "ad": "Top 5"
+ },
+ "title": "5 Skills You Can Learn Online and Get Paid For 🚀",
+ "description": "Which online skills can lead to real work? Here are 5 skills you can learn from home: video editing, copywriting, graphic design, web development and sales. Which would you pick?\n\n#money #business #sidehustle #skills #motivation",
+ "tags": [
+  "online skills",
+  "skills to learn",
+  "make money online",
+  "side hustle",
+  "video editing",
+  "copywriting",
+  "web development",
+  "top 5",
+  "business",
+  "motivation"
+ ],
+ "topic": "5 skills you can learn online that people pay for",
+ "ceviriler": {
+  "es": {
+   "title": "5 habilidades que puedes aprender online y cobrar 🚀",
+   "description": "¿Qué habilidades online pueden llevarte a trabajos reales? Edición de video, copywriting, diseño gráfico, desarrollo web y ventas. ¿Cuál elegirías?\n\n#dinero #negocios #habilidades #motivacion"
+  }
+ },
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted gets a deep dive",
+  "soru": "Which skill would you learn first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "garaj",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Skills you can learn online"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "canta",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Want a skill people actually pay for? Here are five you can learn online. Let's count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Sales",
+    "tur": "People skill",
+    "maddeler": [
+     "Every business needs it",
+     "Learn by talking",
+     "Practice on small deals"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: sales. Every business needs someone who can talk to customers, and you can practice it anywhere."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Graphic Design",
+    "tur": "Creative skill",
+    "maddeler": [
+     "Logos and social posts",
+     "Free apps to start",
+     "Build a portfolio"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: graphic design. Logos and social posts are a good start, and many free apps let you practice."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Copywriting",
+    "tur": "Writing skill",
+    "maddeler": [
+     "Words that sell",
+     "Ads and emails",
+     "Start with samples"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: copywriting. Businesses need words that sell, from ads to emails. Write a few samples and show them."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Web Development",
+    "tur": "Tech skill",
+    "maddeler": [
+     "Sites for local shops",
+     "Many free courses",
+     "Learn at your pace"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: web development. Small shops need websites, and plenty of free courses can get you started."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Video Editing",
+    "tur": "Creative skill",
+    "maddeler": [
+     "Short video demand",
+     "Free tools to start",
+     "Show your best clips"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: video editing! Short videos are everywhere, and creators often need help cutting them."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Which one would you pick first? Tell us in the comments and subscribe for more!"
+    }
+   ]
+  }
+ ]
+}

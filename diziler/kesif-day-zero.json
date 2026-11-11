@@ -1,0 +1,54 @@
+{
+ "id": "kesif-day-zero",
+ "ad": "Day Zero Stories",
+ "dil": "en",
+ "rozetNo": false,
+ "stil": "cop",
+ "format": "yatay",
+ "muzikSeviye": 0.06,
+ "muzik": "duygusal",
+ "tur": "Short motivation films: one clumsy character, one habit, Day 1 vs Day 100 (stick-figure animation)",
+ "ozet": "Mert is a clumsy but determined guy from Turkey. Each film follows one habit (phone, sleep, saving money) from a messy Day 1 to a calmer Day 100. Short, warm, funny and honest.",
+ "kurallar": [
+  "No fake statistics, no income or health promises; the story is fictional and light.",
+  "Mert always fails in a funny way first, then improves a little; never mocks real people.",
+  "Natural English, short sentences, one idea per scene."
+ ],
+ "yazim": [
+  "6 scenes, 70-100 words, vertical Shorts. Day 1, a clumsy Day 3 or 10, Day 30, Day 100, then a closing question."
+ ],
+ "anlatici": {
+  "id": "anlatici",
+  "ses": {
+   "voice": "en-US-AndrewNeural"
+  }
+ },
+ "karakterler": {
+  "mert": {
+   "ad": "Mert",
+   "renk": "#F97316",
+   "kusak": "#F97316",
+   "sacStil": "dagnik",
+   "sac": "#1A1210",
+   "sakal": "biyik",
+   "seed": 41,
+   "ses": {
+    "voice": "en-US-AndrewNeural"
+   },
+   "kim": "Clumsy, determined guy from Turkey with a mustache and an orange shirt."
+  },
+  "anne": {
+   "ad": "Mom",
+   "renk": "#8A4A6A",
+   "sacStil": "basortusu",
+   "sac": "#6A3A5A",
+   "yas": "orta",
+   "cinsiyet": "k",
+   "seed": 42,
+   "ses": {
+    "voice": "en-US-JennyNeural"
+   },
+   "kim": "Mert's mother."
+  }
+ }
+}

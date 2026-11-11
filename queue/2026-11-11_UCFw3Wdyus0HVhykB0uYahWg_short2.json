@@ -1,0 +1,285 @@
+{
+ "id": "2026-11-11_UCFw3Wdyus0HVhykB0uYahWg_short2",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "fragman": true,
+ "derivedFrom": "2026-11-12_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "publishAt": "2026-11-11T18:00:00.000Z",
+ "bolum": {
+  "no": 5,
+  "ad": "Çifte Zincir"
+ },
+ "title": "Yarın iki zincirli adam, beş silahlı muhafıza karşı… ⛓️",
+ "description": "Sence zincirle birbirine bağlı iki gladyatör beş silahlı muhafızı yenebilir mi? Cevap yarın akşam yeni bölümde.",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "gladyatör",
+  "fragman",
+  "dizi"
+ ],
+ "topic": "Zincirli Bölüm 5 fragmanı: Arın ve Kargan beş muhafıza karşı",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "YARIN 18:00",
+  "sonraki": "Zincirli · Bölüm 5: Çifte Zincir",
+  "soru": "Sence zincirli ikili beş muhafızı yenebilir mi?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Tomorrow: two chained men vs five armed guards… ⛓️",
+   "description": "Can two gladiators chained together beat five armed guards? Find out tomorrow evening in the new episode."
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.6
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beş muhafız aynı anda üstümüze yürüdü."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Ben sağa gidiyorum, sen sola. Böyle olmaz."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Zincir bir ip gibidir. İkiniz de çekerseniz kopar. İkiniz de taşırsanız bağ olur."
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "supheli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Beş muhafız, iki zincirli adam. Bakalım kim kimi sürükleyecek."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "kizgin",
+     "esya": "kilic",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.8,
+      "sure": 1.2
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Karşımıza beş muhafız çıktı, her biri kılıçlı."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dus",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "kilic-kaldir",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.6
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zincir bileğimi çekti, Kargan'ın ağırlığıyla yere kapaklandım."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sure": 1.5,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "yerde",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "diz-cok",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "kilic-savur",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kum ağzımdaydı. Kılıçlar tepemizdeydi."
+    }
+   ]
+  }
+ ]
+}

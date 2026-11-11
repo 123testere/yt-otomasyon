@@ -1,0 +1,40 @@
+{
+ "kanalAdlari": [
+  "Things Talk",
+  "I Was an Object",
+  "Object Stories"
+ ],
+ "slogan": "Every object has a story.",
+ "aciklama": "Everyday objects tell their own life stories in under a minute. True history, told in second person, with one surprising fact at the end. New short every day.",
+ "etiketler": [
+  "object stories",
+  "everyday objects",
+  "history shorts",
+  "nostalgia",
+  "inventions",
+  "did you know",
+  "stickman",
+  "animation",
+  "shorts",
+  "history of things"
+ ],
+ "renkler": [
+  "#F4C95D",
+  "#E07A5F",
+  "#3D405B"
+ ],
+ "anaKarakter": "ogrenci",
+ "dizi": "kesif-esya-konusuyor",
+ "ayarlar": {
+  "language": "en",
+  "niche": "animasyon",
+  "shortsTimes": [
+   "15:00"
+  ],
+  "longDays": [],
+  "longTime": "18:00",
+  "minutes": 8,
+  "music": "huzurlu",
+  "hashtags": "#history #objects #shorts"
+ }
+}

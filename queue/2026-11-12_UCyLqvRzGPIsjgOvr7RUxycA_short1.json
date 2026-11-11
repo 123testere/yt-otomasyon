@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-12_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-12T05:00:00.000Z",
+ "topic": "Heidelbeeren",
+ "title": "Duell 10/30: Wer erntet die meisten Heidelbeeren? 🫐",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Heidelbeer-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "heidelbeeren",
+  "landwirtschaft",
+  "ranking",
+  "europa daten",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "heidelbeeren",
+  "why": [
+   "Saure, sandige Böden",
+   "Kühle Winter",
+   "Riesige Plantagen"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Heidelbeeren Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "22 Länder haben keine Heidelbeerdaten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Flagge um Flagge verschwindet, und Portugal verpasst das Finale um gut 38 Tausend Tonnen!",
+   "final": "Finale! Polen gegen Spanien – und es wird richtig knapp!",
+   "winner": "Polen gewinnt! Rund 62 Tausend Tonnen, nur gut eintausend Tonnen vor Spanien!",
+   "why": "Warum Polen? Saure, sandige Böden, kühle Winter und riesige Plantagen.",
+   "table": "In der Saisontabelle führt die Türkei weiter mit 44 Punkten. Schreib dein Thema in die Kommentare!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "B"
+ }
+}

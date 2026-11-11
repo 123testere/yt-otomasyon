@@ -1,0 +1,55 @@
+{
+ "id": "kesif-esya-konusuyor",
+ "ad": "Things Talk",
+ "dil": "en",
+ "rozetNo": false,
+ "stil": "cop",
+ "format": "yatay",
+ "muzikSeviye": 0.06,
+ "muzik": "huzurlu",
+ "tur": "Everyday objects tell their own life story, second person, with verified history (stick-figure animation)",
+ "ozet": "Each film speaks to the viewer as an everyday object (\"You were born in a mine…\"): where it came from, who used it, how it changed the world, and one true surprising fact at the end. Adult nostalgia tone.",
+ "kurallar": [
+  "Only verifiable history; dates and names must be well known. If unsure, write \"around\" or leave it out.",
+  "Second person narration: \"You were born…\". Warm, nostalgic, slightly funny; never childish.",
+  "No brand logos; no real people speaking."
+ ],
+ "yazim": [
+  "6 scenes, 70-100 words, vertical Shorts. Birth, discovery, first owner, long life, one true fact, closing question about the next object."
+ ],
+ "anlatici": {
+  "id": "anlatici",
+  "ses": {
+   "voice": "en-US-AndrewNeural"
+  }
+ },
+ "karakterler": {
+  "ogrenci": {
+   "ad": "Student",
+   "renk": "#E07A5F",
+   "kusak": "#E07A5F",
+   "sacStil": "atkuyrugu",
+   "sac": "#5A2A1A",
+   "cinsiyet": "k",
+   "olcek": 0.85,
+   "seed": 51,
+   "ses": {
+    "voice": "en-US-JennyNeural"
+   },
+   "kim": "A student who owns the object."
+  },
+  "usta": {
+   "ad": "Craftsman",
+   "renk": "#3D405B",
+   "kusak": "#F4C95D",
+   "sacStil": "kisa",
+   "sac": "#3A2A1A",
+   "sakal": "biyik",
+   "seed": 52,
+   "ses": {
+    "voice": "en-US-GuyNeural"
+   },
+   "kim": "Workshop craftsman."
+  }
+ }
+}

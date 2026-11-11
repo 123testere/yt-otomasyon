@@ -1,0 +1,163 @@
+{
+ "id": "kesif_day_zero_pilot",
+ "channelId": "KESIF",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "kesif-day-zero",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-12T12:00:00.000Z",
+ "bolum": {
+  "no": 1,
+  "ad": "The Phone"
+ },
+ "title": "Day 1 vs Day 100: Mert and the Phone 📱",
+ "description": "What happens when a clumsy guy tries to put his phone down for 100 days? Follow Mert from a messy Day 1 to a calmer Day 100.\n\n#motivation #habits #animation #shorts",
+ "tags": [
+  "day 1 vs day 100",
+  "habits",
+  "phone addiction",
+  "motivation",
+  "stickman",
+  "animation",
+  "self improvement",
+  "discipline"
+ ],
+ "topic": "Mert tries to put his phone down for 100 days",
+ "kapanis": {
+  "baslik": "DAY 1 TODAY?",
+  "sonraki": "One habit, 100 days",
+  "soru": "Which habit is your Day 1?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ev-ic",
+   "zaman": "safak",
+   "buyukYazi": {
+    "ust": "DAY 1",
+    "alt": "Mert vs his phone"
+   },
+   "kadraj": [
+    {
+     "id": "mert",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Day one. Mert picks up his phone just to check the time. An hour later, he is still scrolling."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "kadraj": [
+    {
+     "id": "mert",
+     "x": 0.5,
+     "yon": -1,
+     "poz": "dus",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "anne",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Day three. He trips over the charger and drops the phone into his breakfast."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "kadraj": [
+    {
+     "id": "mert",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Day ten. He hides the phone in a drawer, then spends an hour looking for it."
+    }
+   ]
+  },
+  {
+   "mekan": "yol",
+   "zaman": "gunduz",
+   "kadraj": [
+    {
+     "id": "mert",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.6,
+      "sure": 2
+     },
+     "poz": "yuru",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Day thirty. He walks outside without it. He still bumps into a pole, but now he sees the sky."
+    }
+   ]
+  },
+  {
+   "mekan": "grafik",
+   "buyukYazi": {
+    "ust": "DAY 100",
+    "alt": "Same Mert, calmer mind"
+   },
+   "veri": [
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Day one hundred. Same Mert, calmer mind. He reads a book, calls his mom, and sleeps on time."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "zaman": "gece",
+   "kadraj": [
+    {
+     "id": "mert",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Small habits start clumsy. Which habit will be your Day one? Tell us in the comments!"
+    }
+   ]
+  }
+ ]
+}

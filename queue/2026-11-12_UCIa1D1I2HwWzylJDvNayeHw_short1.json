@@ -1,0 +1,186 @@
+{
+ "id": "2026-11-12_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-12T09:00:00.000Z",
+ "bolum": {
+  "no": 4,
+  "ad": "Top 5"
+ },
+ "title": "Dostlarla Kahkaha Attıracak 5 Oyun 🎮",
+ "description": "Arkadaşlarla kahkaha atmak için hangi oyunları oynamalı? Among Us, Overcooked, Fall Guys, Gang Beasts ve It Takes Two bu listede. Senin listende birinci hangisi?\n\n#oyunönerisi #arkadaşlarlaoyun #videooyunları #gaming",
+ "tags": [
+  "arkadaşlarla oynanacak oyunlar",
+  "komik oyunlar",
+  "oyun önerisi",
+  "en iyi 5 oyun",
+  "among us",
+  "overcooked",
+  "fall guys",
+  "it takes two"
+ ],
+ "topic": "Arkadaşlarla oynarken kahkaha attıran 5 ortak oyun",
+ "ceviriler": {
+  "en": {
+   "title": "5 Games That Will Make You Laugh With Friends 🎮",
+   "description": "Which games are best for laughing with friends? Among Us, Overcooked, Fall Guys, Gang Beasts and It Takes Two make this list. Which is your number one?\n\n#gaming #gamerecommendations #coop #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Bu listede birinci hangisi olmalı?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Dostlarla kahkaha"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu beş oyunla arkadaşlarınla gülmekten ağlayacaksın. Sondan başlıyoruz!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Gang Beasts",
+    "tur": "Komik dövüş",
+    "maddeler": [
+     "Sallanan karakterler",
+     "Ortak oynanış",
+     "Kaos garanti"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Gang Beasts. Karakterler jöle gibi sallanıyor ve her kavga komediye dönüşüyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Fall Guys",
+    "tur": "Eğlenceli yarış",
+    "maddeler": [
+     "60 oyunculu maçlar",
+     "Engelli parkurlar",
+     "Renkli kaos"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Fall Guys. Altmış oyuncu engelli parkurlarda yarışıyor ve düşenler en çok güldürenler."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Overcooked",
+    "tur": "Mutfak kaosu",
+    "maddeler": [
+     "Birlikte yemek yap",
+     "Yetiştirme telaşı",
+     "Takım çalışması"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Overcooked. Birlikte yemek yapıyorsun ama mutfak sürekli kaosa dönüyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Among Us",
+    "tur": "Sosyal çıkarım",
+    "maddeler": [
+     "Aranızda bir sahtekâr",
+     "Toplantı ve oylama",
+     "Telefonda da var"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Among Us. Aranızda bir sahtekâr var ve toplantılarda herkes birbirini suçluyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "It Takes Two",
+    "tur": "İkili macera",
+    "maddeler": [
+     "Sadece iki kişiyle",
+     "Ortak oynanış şart",
+     "Her bölüm değişik"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada It Takes Two! Tamamen iki kişilik bir macera ve her bölümde oynanış değişiyor."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Senin listende birinci hangisi? Yorumlara yaz, abone olmayı unutma!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "kanalAdlari": [
+  "Day Zero Stories",
+  "One Habit Films",
+  "Clumsy Discipline"
+ ],
+ "slogan": "One habit. One hundred days.",
+ "aciklama": "Short animated stories about small habits and big changes. Follow Mert, a clumsy guy from Turkey, from a messy Day 1 to a calmer Day 100. New short every day.",
+ "etiketler": [
+  "motivation",
+  "habits",
+  "discipline",
+  "day 1 vs day 100",
+  "self improvement",
+  "stickman",
+  "animation",
+  "shorts",
+  "productivity",
+  "mindset"
+ ],
+ "renkler": [
+  "#111827",
+  "#F97316",
+  "#F9FAFB"
+ ],
+ "anaKarakter": "mert",
+ "dizi": "kesif-day-zero",
+ "ayarlar": {
+  "language": "en",
+  "niche": "animasyon",
+  "shortsTimes": [
+   "16:00"
+  ],
+  "longDays": [],
+  "longTime": "18:00",
+  "minutes": 8,
+  "music": "duygusal",
+  "hashtags": "#motivation #habits #shorts"
+ }
+}

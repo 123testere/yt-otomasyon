@@ -1,0 +1,905 @@
+{
+ "id": "2026-11-12_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-12T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "bolum": {
+  "no": 5,
+  "ad": "Çifte Zincir"
+ },
+ "title": "Zincirli Bir Dev, Beş Muhafıza Karşı: Kimse Yaralanmadan Kazandılar",
+ "titleAlt": "Bir Zincirle Bağlı İki Köle Beş Kılıcı Nasıl Yendi? | Zincirli 5",
+ "description": "Zincirle birbirine bağlanan iki gladyatör, beş silahlı muhafızı kimseye zarar vermeden nasıl yendi? Arın ve Kargan'ın hikâyesinde Kargan'ın saklı geçmişi ortaya çıkıyor. Zincirli, çöp adam animasyonuyla anlatılan bir destandır.\n\n#zincirli #çöpadam #animasyon #dizi",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon dizi",
+  "gladyatör",
+  "arena",
+  "kargan",
+  "arın",
+  "destan",
+  "bölüm bölüm"
+ ],
+ "topic": "Zincirle bağlı Arın ve Kargan beş muhafızı silahsızlandırır, Toros'un hücresi boş çıkar",
+ "thumbnailText": "ÇİFTE ZİNCİR",
+ "thumbnailTextAlt": "BOŞ HÜCRE",
+ "kapak": {
+  "sahne": 14,
+  "sn": 1
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "muzik": "epik",
+ "muzikSeviye": 0.1,
+ "kapanis": {
+  "baslik": "DEVAMI",
+  "sonraki": "Bölüm 6: Tek Göz — Yakında",
+  "soru": "Sence Toros nereye gitti?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Two Chained Fighters vs Five Guards: Nobody Got Hurt | Chained 5",
+   "description": "Chained together at the wrists, two gladiators face five armed guards and win without hurting anyone. Arin and Kargan learn to move as one, and Kargan reveals his hidden past. Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Soğuk Açılış",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "aciklama": "Zincirli iki dövüşçü kumda, muhafızlar kılıçla yaklaşıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dus",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.6
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beş muhafız aynı anda üstümüze yürüdü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zincir bileğimi çekti, Kargan'ın ağırlığıyla yere kapaklandım."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kum ağzımdaydı. Kılıçlar tepemizdeydi."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 2,
+   "aciklama": "Kamera iki zincirli gölgeye yaklaşır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yerde",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "diz-cok",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu hikâyenin buraya nasıl geldiğini anlatayım."
+    }
+   ]
+  },
+  {
+   "kisim": "Zincirin Ağırlığı",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Zincirin Ağırlığı"
+   },
+   "mekan": "zindan",
+   "aciklama": "Zindanda iki zincirli adam yürümeye çalışıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zincirle ilk adımımız bir çuval gibi düşmekle bitti."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Ben sağa gidiyorum, sen sola. Böyle olmaz.",
+     "once": 0.4
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kargan bir dağ kadar güçlüydü ama zinciri taşımayı bilmiyordu. Ben hafiftim ama çekmeyi biliyordum. İkimiz de yarım adamdık."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "Muhafız parmaklıktan seslenir.",
+   "kadraj": [
+    {
+     "id": "muhafiz",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin",
+     "esya": "mesale"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "muhafiz",
+     "metin": "Sessiz olun! Sabah dövüşe çıkacaksınız."
+    },
+    {
+     "kim": "arin",
+     "metin": "Çıkacağız.",
+     "once": 0.3
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "Arın ve Kargan yan yana, adımlarını sayarak ilerliyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Aynı ayakla başlayacağız. Sen say, ben yürürüm."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Bir. İki. Üç. Yavaş.",
+     "once": 0.3
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir gece boyunca düştük, kalktık, yeniden düştük."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Toros hücre parmaklığından iki öğrenciyi izliyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Zincir bir ip gibidir. İkiniz de çekerseniz kopar. İkiniz de taşırsanız bağ olur."
+    },
+    {
+     "kim": "toros",
+     "metin": "Son kez kalkıp kalkmadığına bakar.",
+     "once": 0.4
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "sure": 3,
+   "zaman": "gece",
+   "aciklama": "İki gölge uyumlu adım atıyor, zincir artık gerilmiyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Şafağa doğru adımlarımız tek ses çıkarıyordu."
+    }
+   ]
+  },
+  {
+   "kisim": "Köy Çocuğu",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Kargan'ın Hikâyesi"
+   },
+   "mekan": "zindan",
+   "zaman": "safak",
+   "aciklama": "Kargan duvara yaslanmış, zincir kumda uzanıyor.",
+   "kadraj": [
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Benim de bir köyüm vardı. Annem sabahları fırın yakardı."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Çocukken beni bir kervana sattılar.",
+     "once": 0.5
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "safak",
+   "aciklama": "Kargan zincirine bakıyor, Arın dinliyor.",
+   "kadraj": [
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "egil",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kırk dövüş kazanmış dev, bir köy çocuğuydu."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Kırk kez kazandım ama hiç eve dönmedim.",
+     "once": 0.4
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O sabah ikimiz de tek bir şeyi anladık: korku, zincirden daha ağırdı."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "safak",
+   "aciklama": "Arın elini Kargan'a uzatır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Ben de demircinin oğluyum. İkimiz de aynı yangından kaçtık."
+    },
+    {
+     "kim": "kargan",
+     "metin": "O zaman bu zinciri birlikte taşırız.",
+     "once": 0.4
+    }
+   ]
+  },
+  {
+   "kisim": "Beş Muhafız",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Beş Muhafız"
+   },
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Arena kapısı açılır, kral locada.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kapı açıldığında tribünler uğuldadı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Karşımıza beş muhafız çıktı, her biri kılıçlı."
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 1,
+   "aciklama": "Kral kolunu kaldırır, Sungur yanında durur.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "supheli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Beş muhafız, iki zincirli adam. Bakalım kim kimi sürükleyecek."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "İki dövüşçü fısıldaşır, muhafızlar yaklaşır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.9,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Kalkanı sen taşı. Ben zinciri yönlendireyim."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Anlaştık. Ama beni çekersen bırakmam.",
+     "once": 0.3
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Beş muhafız yaklaştı. Her adımları kumda ölçülüydü. Kral bu dövüşü uzatmayacaktı."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Ilk muhafız saldırır, Arın ve Kargan aynı anda sağa kayar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "blok",
+     "ifade": "kizgin",
+     "esya": "kalkan"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin",
+     "esya": "kilic",
+     "hareket": {
+      "x0": 1.2,
+      "x1": 0.85,
+      "sure": 1
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kargan sağa kaydı, ben aynı anda ona uydum."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zincir gerildi ve muhafızın kılıcı kumda kaldı.",
+     "once": 0.3
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "aciklama": "Zincir bir muhafızın kılıcına dolanır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "kilic-savur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.78,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.95,
+     "yon": -1,
+     "poz": "darbe",
+     "ifade": "saskin"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.5
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zinciri kılıç gibi kullandık. Kimsenin canını yakmadan kılıçları elinden aldık."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Şimdi sola!",
+     "once": 0.2
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Kargan Arın'ı yukarı kaldırır, zincir iki muhafızın bileğine dolanır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "kilic-savur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "darbe",
+     "ifade": "saskin"
+    }
+   ],
+   "zincir": {
+    "a": "arin",
+    "b": "kargan",
+    "sn": 0.5
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci ve üçüncü muhafız birlikte saldırdı. Kargan beni yukarı kaldırdı, ben de zinciri bileklerine doladım."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kılıçlar ellerinden uçtu ve kumda döndü.",
+     "once": 0.3
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Son iki muhafız sendeler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "saldir",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "blok",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Son ikisi senin!"
+    },
+    {
+     "kim": "arin",
+     "metin": "Sen çek, ben dolarım.",
+     "once": 0.2
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncüyü sendeleterek, beşincisini sarsmadan silahsızlandırdık."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 2,
+   "aciklama": "Kılıçlar kuma saplanmış, muhafızlar geri çekilir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.8,
+     "aci": 1.2
+    },
+    {
+     "tip": "kilic",
+     "x": 0.9,
+     "aci": 1.6
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci kılıç da yere düştü. Kimse yaralanmadı."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "Kalabalık ayağa kalkar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tribünler önce sustu, sonra bir ağızdan haykırdı."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Duydun mu? Bizim adımızı söylüyorlar.",
+     "once": 0.4
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "kalabalik": 1,
+   "aciklama": "Kral kaşlarını çatar, Sungur fısıldar.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sungur",
+     "metin": "Efendim, onlar artık tek vücut gibi."
+    },
+    {
+     "kim": "kral",
+     "metin": "Tek vücut mu? O zaman tek bir zayıflığı vardır.",
+     "once": 0.5
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Arın ve Kargan yorgun, zincirleriyle zindana dönerler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O gece zindana dönerken ilk kez zincir bana ağır gelmedi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sanki iki kişi bir yükü taşımıyordu, bir yük iki kişiyi taşıyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zincir sadece bizi bağlamıyordu. Bizi aynı kalbe bağlıyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Toros'un hücresi boş, kapı aralık.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Toros? Hocam?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hücrenin kapısı aralıktı. İçerisi bomboştu.",
+     "once": 0.5
+    },
+    {
+     "kim": "kargan",
+     "metin": "Sungur mu aldı onu, yoksa kral mı?",
+     "once": 0.4
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "sure": 3,
+   "aciklama": "Boş hücrede yalnız bir fener sallanıyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Duvarda Toros'un fenerinden başka bir iz yoktu."
+    }
+   ]
+  }
+ ]
+}

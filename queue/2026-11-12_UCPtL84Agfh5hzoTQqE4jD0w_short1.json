@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-12T16:00:00.000Z",
+ "topic": "Şemsiyenin güneşlik olarak doğuşu ve katlanır cep şemsiyesi",
+ "title": "Şemsiyenin İlk İşi Yağmurdan Korumak Değildi",
+ "hookText": "İlk işi yağmur değil",
+ "description": "Eşyaların Hikayesi #42\nŞemsiyenin ilk görevi yağmurdan değil güneşten korumaktı; kelimenin kökü de güneşe dayanır. Katlanır cep şemsiyesi ise 1928'de yayıldı.\n\n#şemsiye #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "şemsiye",
+  "şemsiye tarihi",
+  "şemsiye ilk nerede kullanıldı",
+  "şemsiye kelimesi",
+  "katlanır şemsiye",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Şemsiyenin ilk işi",
+  "yağmur değildi"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Anahtar",
+  "b": "Makas"
+ },
+ "oylama": {
+  "kaynak": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "b"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "The Umbrella Was Not Made for Rain at First",
+   "description": "Story of Things #42\nThe first umbrellas were made to block the sun, not the rain, and even the Turkish word comes from the Arabic word for sun. The pocket folding umbrella spread in 1928.\n\n#umbrella #inventions #history #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Şemsiyenin ilk görevi yağmur değildi: binlerce yıl önce yalnızca güneşten korurdu.",
+   "ifade": "saskin",
+   "cizim": "ink(ell(250, 190, 56, 56, 24), { close: true, fill: '#E8B64A', w: 4, seed: 1, pp: eo(pr(u, 0, .5)) });\nfor (let i = 0; i < 8; i++) { const a = i * .785 + T * .4; ink(ln([250 + Math.cos(a) * 70, 190 + Math.sin(a) * 70], [250 + Math.cos(a) * 100, 190 + Math.sin(a) * 100], 4), { w: 4, c: K.ak, seed: 1 + i, pp: eo(pr(u, .3, .9)) }); }\nink(ell(600, 330, 190, 130, 30, Math.PI, Math.PI * 2), { close: true, fill: '#B5432F', w: 4, seed: 20, pp: eo(pr(u, 0.4, 1.1)) });\nink(ln([600, 330], [600, 577], 8), { w: 6, seed: 21, pp: eo(pr(u, 0.8, 1.4)) });\nink(ell(582, 577, 18, 14, 12, 0, Math.PI), { w: 6, seed: 22, pp: eo(pr(u, 1.1, 1.6)) });\netk('güneşlik', 600, 640, eo(pr(u, 1.2, 1.8)), { size: 46 });"
+  },
+  {
+   "narration": "Eski Mısır, Asur ve Çin'de şemsiyeye benzeyen gölgelikler görülür.",
+   "ifade": "merakli",
+   "cizim": "ink(ell(220, 330, 120, 90, 30, Math.PI, Math.PI * 2), { close: true, fill: '#E6DBC4', w: 4, seed: 30, pp: eo(pr(u, 0, 0.7)) });\nink(ln([220, 330], [220, 501], 8), { w: 6, seed: 31, pp: eo(pr(u, 0.4, 1)) });\nink(ell(202, 501, 18, 14, 12, 0, Math.PI), { w: 6, seed: 32, pp: eo(pr(u, 0.7, 1.2)) });\nink(ell(500, 330, 120, 90, 30, Math.PI, Math.PI * 2), { close: true, fill: '#E8B64A', w: 4, seed: 40, pp: eo(pr(u, 0.3, 1)) });\nink(ln([500, 330], [500, 501], 8), { w: 6, seed: 41, pp: eo(pr(u, 0.7, 1.3)) });\nink(ell(482, 501, 18, 14, 12, 0, Math.PI), { w: 6, seed: 42, pp: eo(pr(u, 1, 1.5)) });\nink(ell(780, 330, 120, 90, 30, Math.PI, Math.PI * 2), { close: true, fill: '#B5432F', w: 4, seed: 50, pp: eo(pr(u, 0.6, 1.2999999999999998)) });\nink(ln([780, 330], [780, 501], 8), { w: 6, seed: 51, pp: eo(pr(u, 1, 1.6)) });\nink(ell(762, 501, 18, 14, 12, 0, Math.PI), { w: 6, seed: 52, pp: eo(pr(u, 1.2999999999999998, 1.7999999999999998)) });\netk('Mısır', 220, 640, eo(pr(u, 1, 1.5)), { size: 42 }); etk('Asur', 500, 640, eo(pr(u, 1.2, 1.7)), { size: 42 }); etk('Çin', 780, 640, eo(pr(u, 1.4, 1.9)), { size: 42 });"
+  },
+  {
+   "narration": "Bazı kültürlerde gölgelik, güç ve itibarın işaretiydi.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(500, 380, 220, 150, 30, Math.PI, Math.PI * 2), { close: true, fill: '#7A2E24', w: 4, seed: 60, pp: eo(pr(u, 0, 0.7)) });\nink(ln([500, 380], [500, 665], 8), { w: 6, seed: 61, pp: eo(pr(u, 0.4, 1)) });\nink(ell(482, 665, 18, 14, 12, 0, Math.PI), { w: 6, seed: 62, pp: eo(pr(u, 0.7, 1.2)) });\nink([[420, 190], [440, 120], [470, 170], [500, 100], [530, 170], [560, 120], [580, 190]], { w: 6, c: K.ak, seed: 70, pp: eo(pr(u, 1, 1.6)) });\nink(ln([420, 190], [580, 190], 8), { w: 6, c: K.ak, seed: 71, pp: eo(pr(u, 1.2, 1.7)) });\netk('itibar', 500, 650, eo(pr(u, 1.4, 2)), { size: 46 });"
+  },
+  {
+   "narration": "Çinliler kâğıdı yağla geçirmez hâle getirip yağmurluk şemsiye yaptı, derler.",
+   "ifade": "anlatiyor",
+   "cizim": "for (let i = 0; i < 9; i++) { const ph = (T * .9 + i * .13) % 1, x = 150 + i * 87.5, y = 80 + ph * 420; ctx.save(); ctx.globalAlpha = eo(pr(u, .3, .8)); ink(ln([x, y], [x - 8, y + 30], 3), { w: 4, c: K.mavi, seed: 80 + i, amp: .3 }); ctx.restore(); }\nink(ell(500, 330, 200, 140, 30, Math.PI, Math.PI * 2), { close: true, fill: '#EFE4CB', w: 4, seed: 90, pp: eo(pr(u, 0, 0.7)) });\nink(ln([500, 330], [500, 596], 8), { w: 6, seed: 91, pp: eo(pr(u, 0.4, 1)) });\nink(ell(482, 596, 18, 14, 12, 0, Math.PI), { w: 6, seed: 92, pp: eo(pr(u, 0.7, 1.2)) });\netk('yağlı kâğıt', 500, 650, eo(pr(u, 1.2, 1.8)), { size: 46 });"
+  },
+  {
+   "narration": "Şemsiye sözü bile güneşten gelir: Arapçada şems, güneş demek.",
+   "ifade": "merakli",
+   "cizim": "ink(ell(220, 230, 60, 60, 24), { close: true, fill: '#E8B64A', w: 4, seed: 100, pp: eo(pr(u, 0, .5)) });\nfor (let i = 0; i < 8; i++) { const a = i * .785 + T * .4; ink(ln([220 + Math.cos(a) * 74, 230 + Math.sin(a) * 74], [220 + Math.cos(a) * 104, 230 + Math.sin(a) * 104], 4), { w: 4, c: K.ak, seed: 100 + i, pp: eo(pr(u, .3, .9)) }); }\ntxt('şems', 640, 260, 90, { c: K.ak, a: eo(pr(u, .8, 1.4)) });\nok([300, 330], [560, 330], { c: K.m, pp: eo(pr(u, 1.2, 1.8)) });\netk('= güneş', 640, 400, eo(pr(u, 1.6, 2.2)), { size: 56 });\nink(ell(640, 520, 90, 60, 30, Math.PI, Math.PI * 2), { close: true, fill: '#B5432F', w: 4, seed: 110, pp: eo(pr(u, 2, 2.7)) });\nink(ln([640, 520], [640, 634], 8), { w: 6, seed: 111, pp: eo(pr(u, 2.4, 3)) });\nink(ell(622, 634, 18, 14, 12, 0, Math.PI), { w: 6, seed: 112, pp: eo(pr(u, 2.7, 3.2)) });\n"
+  },
+  {
+   "narration": "İngiltere'de erkeklerin yağmurda şemsiye taşımasına bir dönem tuhaf bakıldığı söylenir.",
+   "ifade": "gulumsuyor",
+   "cizim": "for (let i = 0; i < 9; i++) { const ph = (T * .9 + i * .13) % 1, x = 200 + i * 75, y = 80 + ph * 420; ctx.save(); ctx.globalAlpha = eo(pr(u, .3, .8)); ink(ln([x, y], [x - 8, y + 30], 3), { w: 4, c: K.mavi, seed: 120 + i, amp: .3 }); ctx.restore(); }\nink(ell(500, 340, 190, 130, 30, Math.PI, Math.PI * 2), { close: true, fill: '#2B2A33', w: 4, seed: 130, pp: eo(pr(u, 0.3, 1)) });\nink(ln([500, 340], [500, 587], 8), { w: 6, seed: 131, pp: eo(pr(u, 0.7, 1.3)) });\nink(ell(482, 587, 18, 14, 12, 0, Math.PI), { w: 6, seed: 132, pp: eo(pr(u, 1, 1.5)) });\netk('İngiltere', 500, 650, eo(pr(u, 1.2, 1.8)), { size: 46 });"
+  },
+  {
+   "narration": "Cebe sığan katlanır şemsiye, 1928'de Alman mucit Hans Haupt'la yayıldı.",
+   "ifade": "gururlu",
+   "cizim": "txt('1928', 500, 200, 120, { c: K.ak, a: eo(pr(u, .2, .9)) });\nink(ln([420, 260], [580, 560], 10), { w: 14, c: '#2B2A33', seed: 140, pp: eo(pr(u, .6, 1.3)) });\nink(ell(430, 580, 20, 14, 12, 0, Math.PI), { w: 6, seed: 141, pp: eo(pr(u, 1.2, 1.7)) });\netk('Hans Haupt', 500, 660, eo(pr(u, 1.4, 2)), { size: 46 });"
+  },
+  {
+   "narration": "Yani elinizdeki şemsiye aslında küçük bir gölge makinesi.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(180, 160, 50, 50, 24), { close: true, fill: '#E8B64A', w: 4, seed: 150, pp: eo(pr(u, 0, .5)) });\nfor (let i = 0; i < 8; i++) { const a = i * .785 + T * .4; ink(ln([180 + Math.cos(a) * 64, 160 + Math.sin(a) * 64], [180 + Math.cos(a) * 94, 160 + Math.sin(a) * 94], 4), { w: 4, c: K.ak, seed: 150 + i, pp: eo(pr(u, .3, .9)) }); }\nink(ell(560, 300, 210, 150, 30, Math.PI, Math.PI * 2), { close: true, fill: '#B5432F', w: 4, seed: 160, pp: eo(pr(u, 0.3, 1)) });\nink(ln([560, 300], [560, 585], 8), { w: 6, seed: 161, pp: eo(pr(u, 0.7, 1.3)) });\nink(ell(542, 585, 18, 14, 12, 0, Math.PI), { w: 6, seed: 162, pp: eo(pr(u, 1, 1.5)) });\nink(ell(560, 560, 200, 26, 24), { close: true, fill: '#E6DBC4', w: 3, seed: 170, pp: eo(pr(u, 1.2, 1.8)) });\netk('gölge', 560, 650, eo(pr(u, 1.6, 2.2)), { size: 46 });"
+  },
+  {
+   "narration": "Sırada hangisi olsun, anahtar mı makas mı? Yorumlara A ya da B yazın.",
+   "ifade": "merakli",
+   "cizim": "txt('?', MX, 420, 200, { c: K.ak, a: eo(pr(u, .3, 1)) });"
+  }
+ ]
+}

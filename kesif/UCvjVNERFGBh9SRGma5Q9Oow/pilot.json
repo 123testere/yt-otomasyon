@@ -1,0 +1,156 @@
+{
+ "id": "kesif_esya_pilot",
+ "channelId": "KESIF",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "kesif-esya-konusuyor",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-12T12:00:00.000Z",
+ "bolum": {
+  "no": 1,
+  "ad": "The Pencil"
+ },
+ "title": "You Were Born in a Mine: The Pencil Story ✏️",
+ "description": "Your pencil has no lead inside. Hear the true story of the pencil, told by the pencil itself.\n\n#history #pencil #everydayobjects #shorts",
+ "tags": [
+  "pencil history",
+  "pencil lead",
+  "graphite",
+  "everyday objects",
+  "object stories",
+  "history shorts",
+  "nostalgia"
+ ],
+ "topic": "The pencil tells its life story, from graphite mine to classroom",
+ "kapanis": {
+  "baslik": "NEXT OBJECT?",
+  "sonraki": "Comment an object",
+  "soru": "Which object should speak next?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "tas-ocagi",
+   "buyukYazi": {
+    "ust": "YOU WERE",
+    "alt": "born in a mine"
+   },
+   "kadraj": [
+    {
+     "id": "usta",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "You were born in a mine, and nobody called you a pencil yet."
+    }
+   ]
+  },
+  {
+   "mekan": "tas-ocagi",
+   "kadraj": [
+    {
+     "id": "usta",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "tasi",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "In the 1500s, people in England found a strange black mineral in the ground. It was graphite."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "usta",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "They called it lead, so the name stuck. But there is no lead inside you at all."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "usta",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "ogrenci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Wrapped in wood, you finally became a pencil, and a student picked you up."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "zaman": "gece",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Years of homework, doodles and secret notes. You got shorter every day, and that was your whole purpose."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Next time you sharpen a pencil, you are holding a piece of the earth. Which object should speak next? Tell us below!"
+    }
+   ]
+  }
+ ]
+}
