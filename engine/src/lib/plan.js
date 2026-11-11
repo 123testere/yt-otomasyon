@@ -151,7 +151,7 @@ function attachVotes(slots, channels, now) {
 // Deney: kanalın süren deneyi varsa o türdeki her yeni video az olan kola (A/B) verilir.
 // Süre deneyinin B kolu %25 kısa yazılır, saat deneyinin B kolu alternatif saatte yayınlanır.
 function attachExperiments(slots, channels, now) {
-  for (const c of channels.filter((ch) => ch.deney?.id && ch.settings.optimizasyon?.deneyler !== false && ch.settings.contentFormat !== 'dizi')) {
+  for (const c of channels.filter((ch) => ch.deney?.id && ch.settings.optimizasyon?.deneyler !== false)) {
     const d = deneyBul(c.deney.id);
     if (!d) continue;
     const count = { A: 0, B: 0 };

@@ -158,3 +158,29 @@ test('bölüm zaman damgaları ve altyazı', async () => {
   const srt = srtOf({ scenes: [{ narration: 'Merhaba dünya. Nasılsın?' }] }, narrated);
   assert.equal(srt, '1\n00:00:00,000 --> 00:00:01,000\nMerhaba dünya.\n\n2\n00:00:01,200 --> 00:00:01,700\nNasılsın?\n');
 });
+
+// --- Kimlik sözleşmesi ve sahne analizi ---
+import { kimlikDersiMi } from '../src/lib/optimize.js';
+import { sahneAnalizi } from '../src/lib/sahne-analizi.js';
+
+test('kimlikle ilgili dersler reddedilir, içerik dersleri kabul edilir', () => {
+  assert.equal(kimlikDersiMi('Nur Bey daha esprili konuşsun'), true);
+  assert.equal(kimlikDersiMi('Anlatıcının sesi değişsin'), true);
+  assert.equal(kimlikDersiMi('Kancayı rakamla aç, ilk cümle 10 kelimeyi geçmesin'), false);
+});
+
+test('sahne analizi: uzun anlatımlı sahneler daha çok izleyici kaybettiriyor', () => {
+  const sahne = (k) => ({ mekan: 'ofis', satirlar: [{ kim: 'anlatici', metin: Array(k).fill('kelime').join(' ') }] });
+  const jobs = {}; const zaman = {}; const perfs = [];
+  for (let v = 0; v < 4; v++) {
+    const id = `j${v}`;
+    jobs[id] = { format: 'dizi', scenes: [sahne(5), sahne(30), sahne(5), sahne(30), sahne(5)] };
+    zaman[id] = [0, 10, 20, 30, 40];
+    // 50 sn video: uzun sahnelerde (10-20, 30-40) hızlı düşüş
+    const egri = Array.from({ length: 20 }, (_, i) => { const t = ((i + 1) / 20) * 50; let r = 1; for (let s = 0; s < t; s++) r -= (s >= 10 && s < 20) || (s >= 30 && s < 40) ? 0.03 : 0.005; return r; });
+    perfs.push({ youtubeId: `y${v}`, jobId: id, tip: 'short', sure: 50, egri });
+  }
+  const r = sahneAnalizi(perfs, jobs, zaman);
+  assert.equal(r.yeterli, true);
+  assert.equal(r.enCokKaybettiren[0].ozellik, 'uzun anlatım (25+ kelime)');
+});

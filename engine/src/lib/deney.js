@@ -67,7 +67,10 @@ export function kazananAyari(id, settings) {
 }
 
 const ilkCumle = (job) => {
-  const text = job.format === 'duell' ? job.duell?.script?.intro ?? '' : job.scenes?.[0]?.narration ?? '';
+  // Dizi formatında ilk konuşma satırı (anlatıcı ya da karakter) kancadır
+  const text = job.format === 'duell' ? job.duell?.script?.intro ?? ''
+    : job.format === 'dizi' ? job.scenes?.flatMap((s) => s.satirlar ?? [])[0]?.metin ?? ''
+      : job.scenes?.[0]?.narration ?? '';
   return (text.match(/^[^.!?…]*[.!?…]?/)?.[0] ?? '').trim();
 };
 const kelime = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;

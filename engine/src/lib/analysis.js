@@ -56,7 +56,8 @@ function sahneMetni(job, sahneZaman, sn) {
   if (!job?.scenes?.length || !sahneZaman?.length) return null;
   let idx = 0;
   for (let i = 0; i < sahneZaman.length; i++) if (sahneZaman[i] <= sn) idx = i;
-  const text = job.scenes[idx]?.narration?.trim();
+  const sc = job.scenes[idx];
+  const text = (sc?.narration ?? (sc?.satirlar ?? []).map((s) => s.metin).join(' '))?.trim();
   return text ? (text.length > 90 ? `${text.slice(0, 87)}…` : text) : null;
 }
 

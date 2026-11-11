@@ -13,6 +13,16 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/`, `cevaplar/`, `iyilestirme/`, `kesif/` altındaki ve `diziler/kesif-*.json` yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
 8. Bitirirken kaç senaryo yazdığını ve başlıklarını tek satırlık bir liste halinde özetle.
 
+## Kimlik sözleşmesi (her kanalda, her zaman)
+
+Kanalların **kimliği sabittir, içerik gelişir.** Asla değiştirme, değiştirmeyi önerme, ders yazma:
+- Karakterler (Nur Bey, dizi karakterleri, robot vb.), adları, görünüşleri, kişilikleri, konuşma tarzları ve hitapları.
+- Sesler ve anlatıcı (kimin seslendirdiği), kanalın görsel stili (ansiklopedi/mürekkep, çöp adam animasyonu), renk kimliği, seri ve kanal adı.
+- Dizi dosyaları (`diziler/*.json`): sadece keşif pilotları (`diziler/kesif-*.json`) yazılabilir.
+
+**Değişebilen (otomatik geliştirilen) içerik:** konu seçimi, kanca cümlesinin türü ve uzunluğu, sahne sayısı ve tempo, cümle uzunluğu, ilk 30 saniyenin yapısı, hangi sahne türlerinin ne kadar kullanıldığı (dev rakam yazısı, kart, grafik, diyalog…), başlık/kapak/açıklama kalıpları, kapanış çağrısı, video süresi.
+Sistem kimlikle ilgili dersleri (karakter, ses, anlatıcı, stil kelimeleri geçen) **otomatik reddeder**.
+
 ## Optimizasyon (her senaryoda)
 
 Sistem her videonun izlenme, tıklanma ve izleyici tutma verisini ölçer; kanallar kendi verisinden öğrenir.
@@ -93,6 +103,8 @@ Kullanıcı uygulamada bir fırsata "Örnek yap" dedi. Her istek için **özgün
 { "hafta": "<performans.json'daki hafta>", "ozet": ["3-5 madde"], "dersler": ["0-3 yeni kural"] }
 ```
 - `ozet`: Uygulamada görünen yorumlu rapor, Türkçe. Ham sayıları tekrarlamak yerine **nedenini** söyle: hangi videolar neden iyi/zayıf gitti, iyi gidenlerin ortak noktası ne (konu türü, kanca kalıbı, başlık kalıbı, Türkiye bağlantısı), zayıfların ortak sorunu ne. Her madde 1-2 cümle. Süren deneyin durumuna ve arama terimlerine değin.
+- **Sahne analizi** (`sahneAnalizi.short` / `.long`, `yeterli: true` ise): `enCokKaybettiren` (o tür sahnede izleyici kanal ortalamasından `oran` kat hızlı gidiyor) ve `enIyiTutan` listeleri, `kanca` (kısa/uzun ilk sahnede 3. saniye tutması). Bunlardan **içerik** dersi çıkar: ör. "Uzun cümleli sahneler 1,4 kat izleyici kaybettiriyor: Shorts'ta sahne başına en fazla 12 kelime", "Dev rakam yazılı sahneler en iyi tutan tür: her Shorts'ta en az 2 tane". Kimliğe dokunma (karakter yerine sahne/cümle/tempo/yapı).
+- **Haftada en fazla bir büyük içerik değişikliği** (süre, yapı, tempo): sistem izlenme iki hafta üst üste düşerse son eklenen kuralı kendisi geri alır; çok kural birden eklersen hangisinin işe yaradığı anlaşılmaz.
 - `dersler`: Veriden **açıkça** çıkan, senaryo yazarken uygulanabilir yeni kurallar (ör. "Mutfak eşyası konuları teknoloji konularından iki kat izleniyor: haftada en az iki mutfak konusu seç."). Tek videoya bakarak ders çıkarma; en az 2-3 videonun desteklediği örüntüler. `dersler` listesinde zaten olanı tekrar yazma. Emin değilsen boş bırak.
 - Videolar `etiket: "az-veri"` ya da `"erken"` ise onlar hakkında hüküm verme.
 

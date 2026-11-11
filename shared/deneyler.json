@@ -1,89 +1,149 @@
 [
-  {
-    "id": "kanca-soru",
-    "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
-    "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
-    "olcu": "kanca",
-    "tipler": ["short", "long"],
-    "formatHaric": ["duell"],
-    "A": { "ad": "Soruyla açılış", "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin.", "kontrol": "kancaSoru" },
-    "B": { "ad": "Şaşırtıcı bilgiyle açılış", "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla.", "kontrol": "kancaSoruDegil" },
-    "ders": {
-      "A": "Kancayı soruyla aç: ilk cümlede izleyiciye doğrudan soru sormak bu kanalda daha çok izleyici tutuyor.",
-      "B": "Kancayı şaşırtıcı bir bilgiyle aç (mümkünse rakamla): bu kanalda sorudan daha çok izleyici tutuyor."
-    }
+ {
+  "id": "kanca-soru",
+  "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+  "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+  "olcu": "kanca",
+  "tipler": [
+   "short",
+   "long"
+  ],
+  "formatHaric": [
+   "duell"
+  ],
+  "A": {
+   "ad": "Soruyla açılış",
+   "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin.",
+   "kontrol": "kancaSoru"
   },
-  {
-    "id": "baslik-kalip",
-    "ad": "Başlık kalıbı: soru mu, rakam mı?",
-    "hipotez": "Somut rakam içeren başlıklar soru başlıklarından daha çok tıklanır.",
-    "olcu": "tiklanma",
-    "tipler": ["short", "long"],
-    "formatHaric": ["duell"],
-    "A": { "ad": "Soru başlık", "talimat": "Başlık bir soru olsun ve soru işaretiyle bitsin; rakam kullanma.", "kontrol": "baslikSoru" },
-    "B": { "ad": "Rakamlı başlık", "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre).", "kontrol": "baslikRakam" },
-    "ders": {
-      "A": "Başlıkları soru olarak yaz: bu kanalda rakamlı başlıklardan daha çok tıklanıyor.",
-      "B": "Başlıkta somut bir rakam kullan (yıl, sayı, süre): bu kanalda soru başlıklarından daha çok tıklanıyor."
-    }
+  "B": {
+   "ad": "Şaşırtıcı bilgiyle açılış",
+   "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla.",
+   "kontrol": "kancaSoruDegil"
   },
-  {
-    "id": "sure-kisa",
-    "ad": "Shorts süresi: normal mi, %25 kısa mı?",
-    "hipotez": "Daha kısa Shorts daha yüksek izlenme yüzdesi alır.",
-    "olcu": "tutma",
-    "tipler": ["short"],
-    "formatHaric": ["duell"],
-    "motor": true,
-    "A": { "ad": "Normal süre" },
-    "B": { "ad": "%25 kısa" },
-    "ders": {
-      "A": "Shorts süresi böyle kalsın: kısaltmak izlenme yüzdesini artırmadı.",
-      "B": "Kısa Shorts daha iyi izleniyor: Shorts süresi %25 kısaltıldı."
-    }
-  },
-  {
-    "id": "muzik-seviye",
-    "ad": "Müzik seviyesi: şimdiki mi, bir kademe kısık mı?",
-    "hipotez": "Müzik biraz kısılınca anlatım daha net duyulur, izleyici daha uzun kalır.",
-    "olcu": "tutma",
-    "tipler": ["short", "long"],
-    "formatHaric": [],
-    "motor": true,
-    "A": { "ad": "Şimdiki seviye" },
-    "B": { "ad": "Bir kademe kısık" },
-    "ders": {
-      "A": "Müzik seviyesi böyle kalsın: kısmak izlenmeyi artırmadı.",
-      "B": "Kısık müzik daha iyi izleniyor: müzik bir kademe kısıldı."
-    }
-  },
-  {
-    "id": "kapak-yazi",
-    "ad": "Kapak yazısı: 2 kelime mi, 3-4 kelime mi?",
-    "hipotez": "Kapakta 2 kelime küçük ekranda daha okunur ve daha çok tıklanır.",
-    "olcu": "tiklanma",
-    "tipler": ["long"],
-    "formatHaric": [],
-    "A": { "ad": "2 kelime", "talimat": "thumbnailText tam 2 kelime olsun.", "kontrol": "kapak2" },
-    "B": { "ad": "3-4 kelime", "talimat": "thumbnailText 3 ya da 4 kelime olsun.", "kontrol": "kapak34" },
-    "ders": {
-      "A": "Kapak yazısı 2 kelime olsun: bu kanalda uzun kapak yazılarından daha çok tıklanıyor.",
-      "B": "Kapak yazısı 3-4 kelime olsun: bu kanalda 2 kelimeden daha çok tıklanıyor."
-    }
-  },
-  {
-    "id": "yayin-saati",
-    "ad": "Shorts yayın saati",
-    "hipotez": "Farklı bir yayın saati ilk hafta daha çok izlenme getirir.",
-    "olcu": "izlenme7",
-    "tipler": ["short"],
-    "formatHaric": [],
-    "motor": true,
-    "A": { "ad": "Şimdiki saat" },
-    "B": { "ad": "Alternatif saat" },
-    "ders": {
-      "A": "Shorts yayın saati böyle kalsın: alternatif saat daha az izlendi.",
-      "B": "Alternatif saat daha çok izlendi: Shorts yayın saati değiştirildi."
-    }
+  "ders": {
+   "A": "Kancayı soruyla aç: ilk cümlede izleyiciye doğrudan soru sormak bu kanalda daha çok izleyici tutuyor.",
+   "B": "Kancayı şaşırtıcı bir bilgiyle aç (mümkünse rakamla): bu kanalda sorudan daha çok izleyici tutuyor."
   }
+ },
+ {
+  "id": "baslik-kalip",
+  "ad": "Başlık kalıbı: soru mu, rakam mı?",
+  "hipotez": "Somut rakam içeren başlıklar soru başlıklarından daha çok tıklanır.",
+  "olcu": "tiklanma",
+  "tipler": [
+   "short",
+   "long"
+  ],
+  "formatHaric": [
+   "duell"
+  ],
+  "A": {
+   "ad": "Soru başlık",
+   "talimat": "Başlık bir soru olsun ve soru işaretiyle bitsin; rakam kullanma.",
+   "kontrol": "baslikSoru"
+  },
+  "B": {
+   "ad": "Rakamlı başlık",
+   "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre).",
+   "kontrol": "baslikRakam"
+  },
+  "ders": {
+   "A": "Başlıkları soru olarak yaz: bu kanalda rakamlı başlıklardan daha çok tıklanıyor.",
+   "B": "Başlıkta somut bir rakam kullan (yıl, sayı, süre): bu kanalda soru başlıklarından daha çok tıklanıyor."
+  }
+ },
+ {
+  "id": "sure-kisa",
+  "ad": "Shorts süresi: normal mi, %25 kısa mı?",
+  "hipotez": "Daha kısa Shorts daha yüksek izlenme yüzdesi alır.",
+  "olcu": "tutma",
+  "tipler": [
+   "short"
+  ],
+  "formatHaric": [
+   "duell",
+   "dizi"
+  ],
+  "motor": true,
+  "A": {
+   "ad": "Normal süre"
+  },
+  "B": {
+   "ad": "%25 kısa"
+  },
+  "ders": {
+   "A": "Shorts süresi böyle kalsın: kısaltmak izlenme yüzdesini artırmadı.",
+   "B": "Kısa Shorts daha iyi izleniyor: Shorts süresi %25 kısaltıldı."
+  }
+ },
+ {
+  "id": "muzik-seviye",
+  "ad": "Müzik seviyesi: şimdiki mi, bir kademe kısık mı?",
+  "hipotez": "Müzik biraz kısılınca anlatım daha net duyulur, izleyici daha uzun kalır.",
+  "olcu": "tutma",
+  "tipler": [
+   "short",
+   "long"
+  ],
+  "formatHaric": [
+   "dizi"
+  ],
+  "motor": true,
+  "A": {
+   "ad": "Şimdiki seviye"
+  },
+  "B": {
+   "ad": "Bir kademe kısık"
+  },
+  "ders": {
+   "A": "Müzik seviyesi böyle kalsın: kısmak izlenmeyi artırmadı.",
+   "B": "Kısık müzik daha iyi izleniyor: müzik bir kademe kısıldı."
+  }
+ },
+ {
+  "id": "kapak-yazi",
+  "ad": "Kapak yazısı: 2 kelime mi, 3-4 kelime mi?",
+  "hipotez": "Kapakta 2 kelime küçük ekranda daha okunur ve daha çok tıklanır.",
+  "olcu": "tiklanma",
+  "tipler": [
+   "long"
+  ],
+  "formatHaric": [],
+  "A": {
+   "ad": "2 kelime",
+   "talimat": "thumbnailText tam 2 kelime olsun.",
+   "kontrol": "kapak2"
+  },
+  "B": {
+   "ad": "3-4 kelime",
+   "talimat": "thumbnailText 3 ya da 4 kelime olsun.",
+   "kontrol": "kapak34"
+  },
+  "ders": {
+   "A": "Kapak yazısı 2 kelime olsun: bu kanalda uzun kapak yazılarından daha çok tıklanıyor.",
+   "B": "Kapak yazısı 3-4 kelime olsun: bu kanalda 2 kelimeden daha çok tıklanıyor."
+  }
+ },
+ {
+  "id": "yayin-saati",
+  "ad": "Shorts yayın saati",
+  "hipotez": "Farklı bir yayın saati ilk hafta daha çok izlenme getirir.",
+  "olcu": "izlenme7",
+  "tipler": [
+   "short"
+  ],
+  "formatHaric": [],
+  "motor": true,
+  "A": {
+   "ad": "Şimdiki saat"
+  },
+  "B": {
+   "ad": "Alternatif saat"
+  },
+  "ders": {
+   "A": "Shorts yayın saati böyle kalsın: alternatif saat daha az izlendi.",
+   "B": "Alternatif saat daha çok izlendi: Shorts yayın saati değiştirildi."
+  }
+ }
 ]

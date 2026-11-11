@@ -9,6 +9,11 @@ import { ROOT } from './paths.js';
 import { channelDoneJobs, savePerfs, updatePerf } from './perf.js';
 import { ReachIzinYok, fetchReach, reachUygula } from './reach.js';
 import { haftalikOzet, medyan, teshis } from './analysis.js';
+import { sahneAnalizi } from './sahne-analizi.js';
+
+// Kimlik sözleşmesi: karakterler, sesler, anlatıcı ve görsel kimlik sabittir. Bunlarla ilgili "ders" kabul edilmez.
+export const KIMLIK_YASAK = /karakter|nur bey|anlatıcı|anlatıcının|seslendir|sesi |sesin|ses tonu|görsel stil|çizim stil|stilini|stili |kimli[kğ]|logo|renk palet|seri adı|kanal adı|maskot|lamba figür/i;
+export const kimlikDersiMi = (metin) => KIMLIK_YASAK.test(String(metin));
 import { deneyBul, degerlendir, kazananAyari, sonrakiDeney } from './deney.js';
 import { notify } from './notify.js';
 
@@ -59,7 +64,8 @@ export function dersEkle(dersler, yeni) {
 
 // Senaryo yazarına giden dersler: kullanıcının uygulamadan sildikleri hariç.
 export function aktifDersler(data) {
-  const silinen = new Set(data.settings?.optimizasyon?.silinenDersler ?? []);
+  // Kullanıcının sildikleri + güvenlik freninin geri aldıkları
+  const silinen = new Set([...(data.settings?.optimizasyon?.silinenDersler ?? []), ...(data.optimizasyon?.geriAlinan ?? [])]);
   return (data.optimizasyon?.dersler ?? []).filter((d) => !silinen.has(d.id)).map((d) => d.metin);
 }
 
@@ -172,6 +178,19 @@ export async function optimizeChannel(firestore, doc, now = new Date()) {
   // Haftalık rapor: haftanın ilk çalıştırmasında otomatik özet; Claude'un yorumu gelince eklenir.
   const hafta = haftaOf(now);
   if (opt.rapor?.hafta !== hafta) {
+    // Güvenlik freni: kanal izlenmesi iki hafta üst üste düştüyse son 3 haftada eklenen en yeni ders geri alınır
+    opt.haftalar = [...(opt.haftalar ?? []), { hafta, izlenme: data.istatistik?.haftalik?.izlenme ?? null }].slice(-8);
+    const h = opt.haftalar.slice(-3).map((x) => x.izlenme);
+    if (h.length === 3 && h.every((x) => typeof x === 'number') && h[2] < h[1] && h[1] < h[0]) {
+      const geri = new Set(opt.geriAlinan ?? []);
+      const aday = [...(opt.dersler ?? [])].reverse().find((d) => !geri.has(d.id) && now - Date.parse(d.tarih) <= 21 * DAY);
+      if (aday) {
+        opt.geriAlinan = [...geri, aday.id];
+        const metin = `İzlenme iki hafta üst üste düştü; son eklenen kural geri alındı: “${aday.metin}”`;
+        opt.degisiklikler = [...(opt.degisiklikler ?? []), { tarih: now.toISOString(), metin }].slice(-30);
+        await notify({ title: 'Optimizasyon: kural geri alındı', body: `${data.title}: ${metin}`.slice(0, 180), channelId: doc.id });
+      }
+    }
     const ozet = haftalikOzet(perfs, now);
     opt.rapor = { hafta, olusturuldu: now.toISOString(), otomatik: ozet.satirlar, sayilar: { iyi: ozet.iyi, normal: ozet.normal, zayif: ozet.zayif }, yorum: null };
     await notify({ title: 'Haftalık rapor hazır', body: `${data.title}: ${ozet.satirlar[0]}`, channelId: doc.id });
@@ -180,17 +199,25 @@ export async function optimizeChannel(firestore, doc, now = new Date()) {
   if (claude?.hafta === hafta && opt.rapor.yorumHafta !== hafta && Array.isArray(claude.ozet)) {
     opt.rapor.yorum = claude.ozet.filter((s) => typeof s === 'string').slice(0, 6);
     opt.rapor.yorumHafta = hafta;
-    opt.dersler = dersEkle(opt.dersler ?? [], (claude.dersler ?? []).filter((s) => typeof s === 'string').slice(0, 3)
+    // Kimlikle (karakter, ses, görsel stil) ilgili dersler kabul edilmez
+    opt.dersler = dersEkle(opt.dersler ?? [], (claude.dersler ?? []).filter((s) => typeof s === 'string' && !kimlikDersiMi(s)).slice(0, 3)
       .map((metin, i) => ({ id: `analiz-${hafta}-${i}`, metin: metin.slice(0, 200), kaynak: 'analiz', tarih: now.toISOString() })));
   }
 
   opt.aramalar = r.aramalar ?? opt.aramalar ?? [];
   opt.perfAt = now;
+  // Sahne analizi: hangi tür sahnede izleyici kaybediliyor (Shorts ve uzun video ayrı)
+  const tumZaman = await sahneZamanlari(firestore, perfs.filter((p) => p.jobId).map((p) => p.jobId));
+  const sahne = {
+    short: sahneAnalizi(perfs.filter((p) => p.tip === 'short'), jobs, tumZaman),
+    long: sahneAnalizi(perfs.filter((p) => p.tip === 'long'), jobs, tumZaman),
+  };
+  opt.sahneAnalizi = sahne;
   await doc.ref.update({ optimizasyon: temiz(opt) });
 
   return {
     kapakIsi: perfs.some((p) => p.kapakDeneme && ['bekliyor', 'deneniyor', 'baslik-deneniyor'].includes(p.kapakDeneme.durum)),
-    ozet: performansOzeti(doc, opt, perfs, hafta),
+    ozet: { ...performansOzeti(doc, opt, perfs, hafta), sahneAnalizi: sahne },
   };
 }
 
