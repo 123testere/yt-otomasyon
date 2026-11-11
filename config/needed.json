@@ -14,88 +14,35 @@
     ],
     "bolum": {
       "no": 1
-    }
-  },
-  {
-    "id": "2026-11-11_UCFw3Wdyus0HVhykB0uYahWg_short2",
-    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
-    "type": "short",
-    "publishAt": "2026-11-11T18:00:00.000Z",
-    "targetWords": 80,
-    "format": "dizi",
-    "dizi": "zincirli",
-    "clipOf": "2026-11-12_UCFw3Wdyus0HVhykB0uYahWg_long1",
-    "fragman": true,
-    "dikey": true,
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 5
-    }
-  },
-  {
-    "id": "2026-11-12_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-    "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
-    "type": "short",
-    "publishAt": "2026-11-12T05:00:00.000Z",
-    "targetWords": 80,
-    "format": "dizi",
-    "dizi": "para-top5",
-    "dikey": true,
-    "ceviriDilleri": [
-      "es"
-    ],
-    "bolum": {
-      "no": 4
-    }
-  },
-  {
-    "id": "2026-11-12_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
-    "type": "short",
-    "publishAt": "2026-11-12T05:00:00.000Z",
-    "targetWords": 94,
-    "format": "duell",
-    "season": 1,
-    "match": 10,
-    "total": 30,
-    "final": false,
-    "eveOfFinal": false,
+    },
     "deney": {
-      "id": "muzik-seviye",
-      "kol": "B"
+      "id": "kanca-soru",
+      "kol": "A",
+      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
     }
   },
   {
-    "id": "2026-11-12_UCIa1D1I2HwWzylJDvNayeHw_short1",
-    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "id": "2026-11-11_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
     "type": "short",
-    "publishAt": "2026-11-12T09:00:00.000Z",
-    "targetWords": 80,
-    "format": "dizi",
-    "dizi": "oyun-hikayeleri",
-    "dikey": true,
+    "publishAt": "2026-11-11T16:00:00.000Z",
+    "targetWords": 86,
+    "format": "cizim",
     "ceviriDilleri": [
       "en"
     ],
-    "bolum": {
-      "no": 4
-    }
-  },
-  {
-    "id": "2026-11-12_UCFw3Wdyus0HVhykB0uYahWg_long1",
-    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
-    "type": "long",
-    "publishAt": "2026-11-12T15:00:00.000Z",
-    "targetWords": 425,
-    "format": "dizi",
-    "dizi": "zincirli",
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 5
+    "oylama": {
+      "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+      "a": "Kalem",
+      "b": "Anahtar",
+      "oyA": 0,
+      "oyB": 1,
+      "kazanan": "b"
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "A",
+      "talimat": "İlk cümle izleyiciye doğrudan bir soru sorsun ve soru işaretiyle bitsin."
     }
   },
   {
@@ -113,10 +60,15 @@
     ],
     "bolum": {
       "no": 2
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
     }
   },
   {
-    "id": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "id": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short2",
     "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
     "type": "short",
     "publishAt": "2026-11-12T16:00:00.000Z",
@@ -126,9 +78,9 @@
       "en"
     ],
     "oylama": {
-      "kaynak": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-      "a": "Tarak",
-      "b": "Şemsiye",
+      "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+      "a": "Buzdolabı",
+      "b": "Elektrik süpürgesi",
       "oyA": 0,
       "oyB": 0,
       "kazanan": null

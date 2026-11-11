@@ -25,7 +25,37 @@
       "risk": "Motivasyon nişi kalabalık; görsel kimlik (renk, karakter) ayırt edici olmalı.",
       "ornekKonu": "Day 1 vs Day 100: The Phone"
     },
-    "not": "Türk olsun sakar olsun",
+    "not": null,
+    "tekrar": true,
+    "oncekiBaslik": "Day 1 vs Day 100: Mert and the Phone 📱"
+  },
+  {
+    "id": "UCZDmrAO-bnBxU4_LiH40CjA",
+    "ad": "Nobody Gets In",
+    "firsat": {
+      "motor": "dizi-cop",
+      "kanalId": "UCZDmrAO-bnBxU4_LiH40CjA",
+      "dil": "en",
+      "puan": 6,
+      "maliyet": "Ücretsiz ses; haftada 2 uzun video",
+      "konsept": "Survival diaries: day-by-day animated stories.",
+      "renkler": [
+        "#1F2937",
+        "#DC2626",
+        "#E5E7EB"
+      ],
+      "neden": "40 günde 65 bin abone; 'Zombie Outbreak: 30 Days Locked Inside a School' 2 milyon. Basit 2D karakterlerle birinci şahıs hayatta kalma hikâyeleri, 8-9 dakika, 'DAY 1 / DAY 30' kapakları.",
+      "tur": "long",
+      "kanalAdlari": [
+        "30 Days Trapped",
+        "Survival Diary Toons",
+        "Locked In Stories"
+      ],
+      "bizimAci": "Çöp adam karakterle 'X gün boyunca Y'de mahsur kaldım' hikâyeleri; tek mekân (okul, market, metro) ve gerilimli günlük bölümler. Bölüm Bölüm'ün dizi tecrübesi işe yarar.",
+      "risk": "Korku/şiddet sınırı; YouTube'un reklam uyumluluğu için kan yok, gerilim var.",
+      "ornekKonu": "I Was Locked Inside a Mall for 30 Days"
+    },
+    "not": null,
     "tekrar": false,
     "oncekiBaslik": null
   },
@@ -55,8 +85,8 @@
       "risk": "Kalıp kısa sürede çok kopyalanabilir; özgünlüğü gerçek tarih bilgisiyle korumalıyız. Çocuk içeriği sayılmamalı (hedef yetişkin nostalji).",
       "ornekKonu": "Çay Bardağı Olarak Doğdun"
     },
-    "not": "İngilizce olarakyap",
-    "tekrar": false,
-    "oncekiBaslik": null
+    "not": "Türkçe ve karakteri farklı yap videodaki gibi",
+    "tekrar": true,
+    "oncekiBaslik": "You Were Born in a Mine: The Pencil Story ✏️"
   }
 ]
