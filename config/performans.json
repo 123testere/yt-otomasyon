@@ -20,15 +20,19 @@
     "dersler": [],
     "aramaTerimleri": [
       {
+        "terim": "side hustle",
+        "izlenme": 9
+      },
+      {
         "terim": "tern",
+        "izlenme": 9
+      },
+      {
+        "terim": "polar bear vs grizzly bear",
         "izlenme": 8
       },
       {
         "terim": "elephant size comparison",
-        "izlenme": 7
-      },
-      {
-        "terim": "polar bear vs grizzly bear",
         "izlenme": 7
       },
       {
@@ -44,20 +48,16 @@
         "izlenme": 4
       },
       {
+        "terim": "blue whale size",
+        "izlenme": 4
+      },
+      {
         "terim": "electric eel",
         "izlenme": 4
       },
       {
         "terim": "michael jackson songs",
         "izlenme": 4
-      },
-      {
-        "terim": "belut elektrik",
-        "izlenme": 3
-      },
-      {
-        "terim": "big blue whale",
-        "izlenme": 3
       }
     ],
     "videolar": [
@@ -88,9 +88,9 @@
         "baslik": "5 Side Hustles You Can Start With $0 💰",
         "tip": "short",
         "yayin": "2026-11-09",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
+        "izlenme7": 52,
+        "tutma": 48.28,
+        "kancaOran": 0.288,
         "tutma30": null,
         "tiklanma7": null,
         "etiket": "erken",
@@ -100,60 +100,63 @@
       {
         "youtubeId": "9flkOtZFVy0",
         "jobId": "2026-11-08_UCEG9D-Kia1iw6-duhqlSlcg_short2",
-        "gosterim7": null,
+        "gosterim7": 311,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Saltwater Crocodile: The Strongest Bite Ever Measured",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 188,
-        "tutma": 32.47,
-        "kancaOran": 0.484,
-        "tutma30": 0.242,
-        "tiklanma7": null,
-        "etiket": "erken",
+        "izlenme7": 230,
+        "tutma": 31.03,
+        "kancaOran": 0.465,
+        "tutma30": 0.224,
+        "tiklanma7": 3.22,
+        "etiket": "iyi",
         "nedenler": [
-          "İzlemeyi seçen %48 (ortalama %37): açılış güçlü.",
-          "Ortalama izlenme %32,5 (kanal ortalaması %40,9): izleyici videonun ortasında kopuyor. En büyük kopuş 0:07 civarında: “A saltwater crocodile bit down at about 3,700 pounds per square inch in a 2012 study, t…”."
+          "Tıklanma %3,2 (ortalama %1,4): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %47 (ortalama %38): açılış güçlü.",
+          "Ortalama izlenme %31 (kanal ortalaması %43,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:07 civarında: “A saltwater crocodile bit down at about 3,700 pounds per square inch in a 2012 study, t…”.",
+          "Aramadan gelen izlenme %37: başlıktaki anahtar kelime işe yaradı."
         ],
         "deney": "kanca-soru/B"
       },
       {
         "youtubeId": "-jfrW6woTt8",
         "jobId": "2026-11-08_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-        "gosterim7": null,
+        "gosterim7": 221,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Blue Whale vs African Elephant: Who Is Heavier?",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 157,
-        "tutma": 139.63,
-        "kancaOran": 0.529,
-        "tutma30": 1.402,
-        "tiklanma7": null,
-        "etiket": "erken",
+        "izlenme7": 177,
+        "tutma": 130.57,
+        "kancaOran": 0.52,
+        "tutma30": 1.297,
+        "tiklanma7": 5.88,
+        "etiket": "iyi",
         "nedenler": [
-          "İzlemeyi seçen %53 (ortalama %37): açılış güçlü.",
-          "Ortalama izlenme %139,6 (ortalama %39,9): izleyici sonuna kadar kaldı.",
-          "Aramadan gelen izlenme %39: başlıktaki anahtar kelime işe yaradı."
+          "Tıklanma %5,9 (ortalama %1,4): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %52 (ortalama %38): açılış güçlü.",
+          "Ortalama izlenme %130,6 (ortalama %40,4): izleyici sonuna kadar kaldı.",
+          "Aramadan gelen izlenme %42: başlıktaki anahtar kelime işe yaradı."
         ],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "XC18fF49Gz4",
         "jobId": "2026-11-07_UCEG9D-Kia1iw6-duhqlSlcg_short2",
-        "gosterim7": 50,
+        "gosterim7": 92,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Arctic Tern vs Bar-tailed Godwit: Who Flies Farther?",
         "tip": "short",
         "yayin": "2026-11-07",
-        "izlenme7": 27,
-        "tutma": 59.07,
-        "kancaOran": 0.37,
-        "tutma30": 0.5,
-        "tiklanma7": 2,
+        "izlenme7": 31,
+        "tutma": 51.690000000000005,
+        "kancaOran": 0.387,
+        "tutma30": 0.417,
+        "tiklanma7": 1.09,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": "kanca-soru/B"
@@ -161,17 +164,17 @@
       {
         "youtubeId": "O1khHyEAlpA",
         "jobId": "2026-11-07_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-        "gosterim7": 477,
+        "gosterim7": 668,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Polar Bear vs Grizzly Bear: Which One Is Bigger?",
         "tip": "short",
         "yayin": "2026-11-07",
-        "izlenme7": 36,
-        "tutma": 27.940000000000005,
-        "kancaOran": 0.333,
-        "tutma30": 0.182,
-        "tiklanma7": 1.47,
+        "izlenme7": 41,
+        "tutma": 27.690000000000005,
+        "kancaOran": 0.366,
+        "tutma30": 0.214,
+        "tiklanma7": 1.35,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": "kanca-soru/A"
@@ -179,7 +182,7 @@
       {
         "youtubeId": "Lk0X_vYf-nM",
         "jobId": "2026-11-05_UCEG9D-Kia1iw6-duhqlSlcg_short2",
-        "gosterim7": 871,
+        "gosterim7": 992,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Orca vs Great White Shark: Who Rules the Sea?",
@@ -189,7 +192,7 @@
         "tutma": 39.9,
         "kancaOran": 0.364,
         "tutma30": 0.364,
-        "tiklanma7": 0.92,
+        "tiklanma7": 0.81,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
@@ -197,7 +200,7 @@
       {
         "youtubeId": "dENQV4Gwbf0",
         "jobId": "2026-11-05_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-        "gosterim7": 76,
+        "gosterim7": 85,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Mantis Shrimp: The 50 mph Punch That Cracks Glass",
@@ -210,9 +213,9 @@
         "tiklanma7": 0,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %2): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %11 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf.",
-          "Ortalama izlenme %30,4 (kanal ortalaması %40,9): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında.",
+          "Tıklanma %0 (kanal ortalaması %2,5): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %11 (ortalama %43): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %30,4 (kanal ortalaması %43,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında.",
           "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
         ],
         "deney": null
@@ -220,17 +223,17 @@
       {
         "youtubeId": "VpO2v3s2d20",
         "jobId": "2026-11-06_UCEG9D-Kia1iw6-duhqlSlcg_short1",
-        "gosterim7": 182,
+        "gosterim7": 206,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Cheetah vs Peregrine Falcon: The Fastest Animal Ever",
         "tip": "short",
         "yayin": "2026-11-05",
-        "izlenme7": 62,
-        "tutma": 47.14,
-        "kancaOran": 0.645,
-        "tutma30": 0.35,
-        "tiklanma7": 7.69,
+        "izlenme7": 63,
+        "tutma": 46.48,
+        "kancaOran": 0.651,
+        "tutma30": 0.341,
+        "tiklanma7": 6.8,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
@@ -238,7 +241,7 @@
       {
         "youtubeId": "P-gBIjMIew8",
         "jobId": "2026-11-06_UCEG9D-Kia1iw6-duhqlSlcg_short2",
-        "gosterim7": 306,
+        "gosterim7": 320,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Electric Eel: The 860-Volt Fish That Isn't an Eel",
@@ -248,11 +251,11 @@
         "tutma": 40.88,
         "kancaOran": 0.523,
         "tutma30": 0.273,
-        "tiklanma7": 2.61,
+        "tiklanma7": 2.5,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %2,6 (ortalama %1,5): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %52 (ortalama %37): açılış güçlü.",
+          "Tıklanma %2,5 (ortalama %1,4): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %52 (ortalama %38): açılış güçlü.",
           "Aramadan gelen izlenme %55: başlıktaki anahtar kelime işe yaradı."
         ],
         "deney": null
@@ -260,7 +263,7 @@
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 4,
+        "videoSayisi": 5,
         "yeterli": true,
         "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
         "enCokKaybettiren": [
@@ -268,7 +271,7 @@
             "ozellik": "grafik: stat",
             "sahne": 7,
             "video": 4,
-            "oran": 2.01
+            "oran": 1.88
           }
         ],
         "enIyiTutan": [
@@ -276,26 +279,26 @@
             "ozellik": "sadece görsel",
             "sahne": 11,
             "video": 4,
-            "oran": 0.46
-          },
-          {
-            "ozellik": "son sahne (kapanış)",
-            "sahne": 4,
-            "video": 4,
-            "oran": 0.64
+            "oran": 0.43
           },
           {
             "ozellik": "grafik: question",
             "sahne": 4,
             "video": 4,
-            "oran": 0.64
+            "oran": 0.58
+          },
+          {
+            "ozellik": "son sahne (kapanış)",
+            "sahne": 5,
+            "video": 5,
+            "oran": 0.66
           }
         ],
         "kanca": {
           "kisa": null,
           "uzun": {
-            "video": 4,
-            "tutma3": 126
+            "video": 5,
+            "tutma3": 120
           },
           "aciklama": "ilk sahne ≤10 kelime / >10 kelime iken 3. saniyede izleyicilerin yüzde kaçı kalıyor"
         }
@@ -371,6 +374,24 @@
     ],
     "videolar": [
       {
+        "youtubeId": "FkuXheTS42I",
+        "jobId": "2026-11-10_UCIa1D1I2HwWzylJDvNayeHw_short1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Bedava Oynayabileceğin En İyi 5 Oyun 🎮",
+        "tip": "short",
+        "yayin": "2026-11-10",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
         "youtubeId": "4FSaLNnqmlo",
         "jobId": "2026-11-09_UCIa1D1I2HwWzylJDvNayeHw_long1",
         "gosterim7": null,
@@ -379,9 +400,9 @@
         "baslik": "İlk Barış Antlaşması Anadolu Kilinde Yazıldı",
         "tip": "long",
         "yayin": "2026-11-09",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
+        "izlenme7": 6,
+        "tutma": 2.91,
+        "kancaOran": 0.667,
         "tutma30": null,
         "tiklanma7": null,
         "etiket": "erken",
@@ -398,7 +419,7 @@
         "tip": "short",
         "yayin": "2026-11-09",
         "izlenme7": 0,
-        "tutma": null,
+        "tutma": 0,
         "kancaOran": null,
         "tutma30": null,
         "tiklanma7": null,
@@ -415,9 +436,9 @@
         "baslik": "560 Yıllık Alışveriş Merkezi İstanbul'un Göbeğinde",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 7,
+        "izlenme7": 9,
         "tutma": 17.67,
-        "kancaOran": 0.143,
+        "kancaOran": 0.111,
         "tutma30": null,
         "tiklanma7": 0,
         "etiket": "az-veri",
@@ -487,9 +508,9 @@
         "baslik": "1513'te Çizilen Piri Reis Haritasının Sırrı",
         "tip": "short",
         "yayin": "2026-11-04",
-        "izlenme7": 8,
+        "izlenme7": 9,
         "tutma": 94.12,
-        "kancaOran": 0.375,
+        "kancaOran": 0.333,
         "tutma30": null,
         "tiklanma7": 0,
         "etiket": "az-veri",
@@ -718,24 +739,6 @@
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
-      },
-      {
-        "youtubeId": "n6gCO0N1Mmk",
-        "jobId": "2026-10-30_UCIa1D1I2HwWzylJDvNayeHw_short2",
-        "gosterim7": 39,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "3 Kalbi ve Mavi Kanı Olan Canlı",
-        "tip": "short",
-        "yayin": "2026-10-29",
-        "izlenme7": 38,
-        "tutma": 52.53,
-        "kancaOran": 0.289,
-        "tutma30": 0.364,
-        "tiklanma7": 2.56,
-        "etiket": "az-veri",
-        "nedenler": [],
-        "deney": null
       }
     ],
     "sahneAnalizi": {
@@ -780,16 +783,16 @@
         "izlenme": 8
       },
       {
+        "terim": "eti fabrikası",
+        "izlenme": 8
+      },
+      {
         "terim": "evliya çelebi",
         "izlenme": 8
       },
       {
         "terim": "alan turing",
         "izlenme": 7
-      },
-      {
-        "terim": "eti fabrikası",
-        "izlenme": 5
       },
       {
         "terim": "yukarıda lamba aşağıda telefon",
@@ -814,6 +817,42 @@
     ],
     "videolar": [
       {
+        "youtubeId": "4aZ_VdTV2NI",
+        "jobId": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Çamaşır Makinesi: Haftanın En Yorucu Günü Nasıl Bitti?",
+        "tip": "long",
+        "yayin": "2026-11-10",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "youtubeId": "eAmktkOubu4",
+        "jobId": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Gözlüğün Kulak Sapı 400 Yıldan Fazla Sonra Geldi",
+        "tip": "short",
+        "yayin": "2026-11-10",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": "kanca-soru/B"
+      },
+      {
         "youtubeId": "JaQ8Z5b0ptU",
         "jobId": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "gosterim7": null,
@@ -822,150 +861,156 @@
         "baslik": "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
         "tip": "short",
         "yayin": "2026-11-09",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
-        "tutma30": null,
+        "izlenme7": 162,
+        "tutma": 42.79,
+        "kancaOran": 0.327,
+        "tutma30": 0.302,
         "tiklanma7": null,
         "etiket": "erken",
-        "nedenler": [],
+        "nedenler": [
+          "İzlemeyi seçen %33 (ortalama %54): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %42,8 (kanal ortalaması %57,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında: “Misvak, Osmanlı topraklarında da kullanılan bir ağaç dalıdır.”."
+        ],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "0KATXPSPr2Q",
         "jobId": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "gosterim7": null,
+        "gosterim7": 60,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Çatalhöyük'te Bulunan 8000 Yıllık Ayna Cam Değildi",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 857,
-        "tutma": 39.54,
-        "kancaOran": 0.464,
-        "tutma30": 0.236,
-        "tiklanma7": null,
-        "etiket": "erken",
+        "izlenme7": 992,
+        "tutma": 39.03,
+        "kancaOran": 0.49,
+        "tutma30": 0.235,
+        "tiklanma7": 0,
+        "etiket": "normal",
         "nedenler": [
-          "Ortalama izlenme %39,5 (kanal ortalaması %58,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında: “Çatalhöyük'te, ayna olarak kullanıldığı düşünülen cilalı obsidyen parçaları bulundu; ya…”."
+          "Tıklanma %0 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi.",
+          "Ortalama izlenme %39 (kanal ortalaması %57,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında: “Çatalhöyük'te, ayna olarak kullanıldığı düşünülen cilalı obsidyen parçaları bulundu; ya…”."
         ],
         "deney": "kanca-soru/B"
       },
       {
         "youtubeId": "OLb-KiUM00c",
         "jobId": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": null,
+        "gosterim7": 88,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Ütünün Atası Kızgın Kömür Dolu Bir Tavaydı",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 1003,
-        "tutma": 50.62,
-        "kancaOran": 0.57,
-        "tutma30": 0.435,
-        "tiklanma7": null,
-        "etiket": "erken",
+        "izlenme7": 1023,
+        "tutma": 50.33,
+        "kancaOran": 0.568,
+        "tutma30": 0.434,
+        "tiklanma7": 1.14,
+        "etiket": "normal",
         "nedenler": [],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "jakZ0P1RH-s",
         "jobId": null,
-        "gosterim7": null,
+        "gosterim7": 102,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 95,
-        "tutma": 65.91,
-        "kancaOran": 0.516,
-        "tutma30": 0.571,
-        "tiklanma7": null,
-        "etiket": "az-veri",
-        "nedenler": [],
+        "izlenme7": 112,
+        "tutma": 60.650000000000006,
+        "kancaOran": 0.509,
+        "tutma30": 0.509,
+        "tiklanma7": 2.94,
+        "etiket": "zayif",
+        "nedenler": [
+          "Tıklanma %2,9 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "Kapak, kanca ve izlenme süresi normal: video az kişiye gösterilmiş. Sorun büyük olasılıkla konu ya da yayın saati."
+        ],
         "deney": null
       },
       {
         "youtubeId": "SvPqH85d_tw",
         "jobId": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "gosterim7": 155,
+        "gosterim7": 260,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Asansörün İpini Herkesin Önünde Kestirdi: 1854",
         "tip": "short",
         "yayin": "2026-11-07",
-        "izlenme7": 1057,
-        "tutma": 63.7,
-        "kancaOran": 0.541,
-        "tutma30": 0.536,
-        "tiklanma7": 0.65,
+        "izlenme7": 1066,
+        "tutma": 63.65,
+        "kancaOran": 0.538,
+        "tutma30": 0.535,
+        "tiklanma7": 0.38,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0,7 (kanal ortalaması %1,2): kapak ve başlık izleyiciyi çekmedi."
+          "Tıklanma %0,4 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi."
         ],
         "deney": "kanca-soru/B"
       },
       {
         "youtubeId": "jYE1prHd68A",
         "jobId": "2026-11-07_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": 45,
+        "gosterim7": 78,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "İlk Pil Neden Bir Yığın Madeni Paraya Benziyordu?",
         "tip": "short",
         "yayin": "2026-11-07",
-        "izlenme7": 989,
-        "tutma": 33.59,
-        "kancaOran": 0.567,
-        "tutma30": 0.205,
-        "tiklanma7": 0,
+        "izlenme7": 1038,
+        "tutma": 34.54,
+        "kancaOran": 0.57,
+        "tutma30": 0.215,
+        "tiklanma7": 2.56,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,2): kapak ve başlık izleyiciyi çekmedi.",
-          "Ortalama izlenme %33,6 (kanal ortalaması %58,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında: “Cebinizdeki pilin atası neden madeni para yığınına benziyordu? Yorumlarda siz seçtiniz:…”."
+          "Tıklanma %2,6 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "Ortalama izlenme %34,5 (kanal ortalaması %57,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında: “Cebinizdeki pilin atası neden madeni para yığınına benziyordu? Yorumlarda siz seçtiniz:…”."
         ],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "KJEfN4n7fx0",
         "jobId": null,
-        "gosterim7": 140,
+        "gosterim7": 204,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
         "tip": "short",
         "yayin": "2026-11-07",
-        "izlenme7": 669,
-        "tutma": 46.9,
+        "izlenme7": 671,
+        "tutma": 46.8,
         "kancaOran": 0.577,
-        "tutma30": 0.352,
-        "tiklanma7": 1.43,
+        "tutma30": 0.351,
+        "tiklanma7": 0.98,
         "etiket": "normal",
-        "nedenler": [
-          "Ortalama izlenme %46,9 (kanal ortalaması %58,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:40 civarında."
-        ],
+        "nedenler": [],
         "deney": null
       },
       {
         "youtubeId": "oEl-kdJm4qM",
         "jobId": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "gosterim7": 92,
+        "gosterim7": 128,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Termos Çay İçin Değil, Çok Soğuk Sıvılar İçin Doğdu",
         "tip": "short",
         "yayin": "2026-11-06",
-        "izlenme7": 1022,
-        "tutma": 74.97,
-        "kancaOran": 0.623,
+        "izlenme7": 1027,
+        "tutma": 74.89,
+        "kancaOran": 0.621,
         "tutma30": null,
-        "tiklanma7": 1.09,
+        "tiklanma7": 0.78,
         "etiket": "normal",
         "nedenler": [
-          "İzlemeyi seçen %62 (ortalama %54): açılış güçlü.",
-          "Ortalama izlenme %75 (ortalama %55,7): izleyici sonuna kadar kaldı.",
+          "Tıklanma %0,8 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %62 (ortalama %53): açılış güçlü.",
+          "Ortalama izlenme %74,9 (ortalama %54,1): izleyici sonuna kadar kaldı.",
           "1000 izlenmede 2,9 abone (ortalama 0,8): kanala bağladı."
         ],
         "deney": null
@@ -973,48 +1018,48 @@
       {
         "youtubeId": "xFCBakJct4U",
         "jobId": null,
-        "gosterim7": 26,
+        "gosterim7": 30,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
         "tip": "short",
         "yayin": "2026-11-06",
-        "izlenme7": 1213,
-        "tutma": 33.03,
+        "izlenme7": 1214,
+        "tutma": 32.99,
         "kancaOran": 0.561,
         "tutma30": 0.203,
-        "tiklanma7": 7.69,
+        "tiklanma7": 6.67,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %7,7 (ortalama %1,1): kapak ve başlık işe yaradı.",
-          "Ortalama izlenme %33 (kanal ortalaması %58,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:08 civarında."
+          "Tıklanma %6,7 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "Ortalama izlenme %33 (kanal ortalaması %57,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:08 civarında."
         ],
         "deney": null
       },
       {
         "youtubeId": "tlrvpBMjFpk",
         "jobId": "2026-11-06_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": 87,
+        "gosterim7": 115,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
         "tip": "short",
         "yayin": "2026-11-06",
-        "izlenme7": 1065,
+        "izlenme7": 1070,
         "tutma": 39.31,
-        "kancaOran": 0.472,
+        "kancaOran": 0.47,
         "tutma30": null,
-        "tiklanma7": 1.15,
+        "tiklanma7": 0.87,
         "etiket": "normal",
         "nedenler": [
-          "Ortalama izlenme %39,3 (kanal ortalaması %58,7): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında."
+          "Ortalama izlenme %39,3 (kanal ortalaması %57,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:06 civarında."
         ],
         "deney": null
       },
       {
         "youtubeId": "vNxaKbeomSM",
         "jobId": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "gosterim7": 49,
+        "gosterim7": 56,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
@@ -1027,14 +1072,14 @@
         "tiklanma7": 0,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,2): kapak ve başlık izleyiciyi çekmedi."
+          "Tıklanma %0 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi."
         ],
         "deney": null
       },
       {
         "youtubeId": "7Tv372AhL0I",
         "jobId": null,
-        "gosterim7": 34,
+        "gosterim7": 36,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
@@ -1047,77 +1092,77 @@
         "tiklanma7": 0,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,2): kapak ve başlık izleyiciyi çekmedi."
+          "Tıklanma %0 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi."
         ],
         "deney": null
       },
       {
         "youtubeId": "q1bI_Jhckhc",
         "jobId": "2026-11-05_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": 161,
+        "gosterim7": 176,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
         "tip": "short",
         "yayin": "2026-11-05",
-        "izlenme7": 1036,
-        "tutma": 50.529999999999994,
-        "kancaOran": 0.645,
+        "izlenme7": 1041,
+        "tutma": 51.53,
+        "kancaOran": 0.643,
         "tutma30": null,
-        "tiklanma7": 0.62,
+        "tiklanma7": 0.57,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0,6 (kanal ortalaması %1,2): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %65 (ortalama %54): açılış güçlü."
+          "Tıklanma %0,6 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %64 (ortalama %53): açılış güçlü."
         ],
         "deney": null
       },
       {
         "youtubeId": "Wsu3sFmp7LQ",
         "jobId": null,
-        "gosterim7": 293,
+        "gosterim7": 333,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
         "tip": "short",
         "yayin": "2026-11-04",
-        "izlenme7": 161,
-        "tutma": 157.02,
+        "izlenme7": 164,
+        "tutma": 154.61,
         "kancaOran": 0.36,
         "tutma30": null,
-        "tiklanma7": 3.41,
+        "tiklanma7": 3,
         "etiket": "zayif",
         "nedenler": [
-          "Tıklanma %3,4 (ortalama %1,1): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %36 (ortalama %55): ilk saniyelerde kaydırılıyor, kanca zayıf.",
-          "Ortalama izlenme %157 (ortalama %55,7): izleyici sonuna kadar kaldı."
+          "Tıklanma %3 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %36 (ortalama %54): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %154,6 (ortalama %54,1): izleyici sonuna kadar kaldı."
         ],
         "deney": null
       },
       {
         "youtubeId": "uUhOXv9jmPI",
         "jobId": null,
-        "gosterim7": 1208,
+        "gosterim7": 1292,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
         "tip": "short",
         "yayin": "2026-11-03",
-        "izlenme7": 1389,
-        "tutma": 62.55,
-        "kancaOran": 0.53,
+        "izlenme7": 1405,
+        "tutma": 62.91,
+        "kancaOran": 0.528,
         "tutma30": null,
-        "tiklanma7": 0.58,
+        "tiklanma7": 0.54,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0,6 (kanal ortalaması %1,2): kapak ve başlık izleyiciyi çekmedi."
+          "Tıklanma %0,5 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi."
         ],
         "deney": null
       },
       {
         "youtubeId": "3eb6vZXFLZA",
         "jobId": null,
-        "gosterim7": 314,
+        "gosterim7": 335,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
@@ -1127,7 +1172,7 @@
         "tutma": 3.3099999999999996,
         "kancaOran": 0.6,
         "tutma30": null,
-        "tiklanma7": 0.64,
+        "tiklanma7": 0.9,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
@@ -1135,7 +1180,7 @@
       {
         "youtubeId": "zxARNE3x_eM",
         "jobId": null,
-        "gosterim7": 416,
+        "gosterim7": 483,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
@@ -1145,12 +1190,12 @@
         "tutma": 85.41,
         "kancaOran": 0.317,
         "tutma30": 0.765,
-        "tiklanma7": 1.92,
+        "tiklanma7": 1.66,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %1,9 (ortalama %1,1): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %32 (ortalama %55): ilk saniyelerde kaydırılıyor, kanca zayıf.",
-          "Ortalama izlenme %85,4 (ortalama %55,7): izleyici sonuna kadar kaldı."
+          "Tıklanma %1,7 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %32 (ortalama %54): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %85,4 (ortalama %54,1): izleyici sonuna kadar kaldı."
         ],
         "deney": null
       },
@@ -1173,92 +1218,52 @@
           "İzlemeyi seçen %34 (ortalama %54): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": null
-      },
-      {
-        "youtubeId": "PBCygqfYABM",
-        "jobId": null,
-        "gosterim7": 105,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "Telefonun Gerçek Mucidi 10 Doları Ödeyemedi! 📞 #shorts",
-        "tip": "short",
-        "yayin": "2026-10-30",
-        "izlenme7": 262,
-        "tutma": 76.03,
-        "kancaOran": 0.302,
-        "tutma30": 0.658,
-        "tiklanma7": 0.95,
-        "etiket": "zayif",
-        "nedenler": [
-          "Tıklanma %0,9 (kanal ortalaması %1,7): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %30 (ortalama %54): ilk saniyelerde kaydırılıyor, kanca zayıf.",
-          "Ortalama izlenme %76 (ortalama %61,4): izleyici sonuna kadar kaldı."
-        ],
-        "deney": null
-      },
-      {
-        "youtubeId": "zRXSNHaQ-uo",
-        "jobId": null,
-        "gosterim7": 264,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "29 Ekim 1961: Devrim otomobilinin benzini bitti 🇹🇷 #shorts",
-        "tip": "short",
-        "yayin": "2026-10-28",
-        "izlenme7": 1259,
-        "tutma": 86.34,
-        "kancaOran": 0.485,
-        "tutma30": 0.815,
-        "tiklanma7": 1.14,
-        "etiket": "normal",
-        "nedenler": [
-          "İzlemeyi seçen %49 (ortalama %42): açılış güçlü.",
-          "Ortalama izlenme %86,3 (ortalama %61,4): izleyici sonuna kadar kaldı."
-        ],
-        "deney": null
       }
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 4,
+        "videoSayisi": 5,
         "yeterli": true,
         "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
         "enCokKaybettiren": [
           {
             "ozellik": "ilk sahne (kanca)",
-            "sahne": 4,
-            "video": 4,
-            "oran": 1.77
-          },
-          {
-            "ozellik": "rakam/tarih içeren cümle",
-            "sahne": 4,
-            "video": 4,
-            "oran": 1.63
+            "sahne": 5,
+            "video": 5,
+            "oran": 1.59
           },
           {
             "ozellik": "soru cümlesi",
-            "sahne": 6,
-            "video": 4,
-            "oran": 1.48
+            "sahne": 8,
+            "video": 5,
+            "oran": 1.4
           },
           {
             "ozellik": "son sahne (kapanış)",
-            "sahne": 4,
-            "video": 4,
-            "oran": 1.27
+            "sahne": 5,
+            "video": 5,
+            "oran": 1.31
+          },
+          {
+            "ozellik": "rakam/tarih içeren cümle",
+            "sahne": 7,
+            "video": 5,
+            "oran": 1.26
           }
         ],
         "enIyiTutan": [
           {
             "ozellik": "orta cümle (13-22 kelime)",
-            "sahne": 9,
-            "video": 4,
-            "oran": 0.79
+            "sahne": 10,
+            "video": 5,
+            "oran": 0.84
           }
         ],
         "kanca": {
-          "kisa": null,
+          "kisa": {
+            "video": 1,
+            "tutma3": 104
+          },
           "uzun": {
             "video": 4,
             "tutma3": 112
@@ -1361,10 +1366,10 @@
         "baslik": "Duell 7/30: Wer produziert die meiste Milch? 🥛",
         "tip": "short",
         "yayin": "2026-11-09",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
-        "tutma30": null,
+        "izlenme7": 154,
+        "tutma": 53.64,
+        "kancaOran": 0.571,
+        "tutma30": 0.33,
         "tiklanma7": null,
         "etiket": "erken",
         "nedenler": [],
@@ -1373,25 +1378,27 @@
       {
         "youtubeId": "VPj-HzMARDk",
         "jobId": "2026-11-08_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": null,
+        "gosterim7": 108,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 6/30: Wer erntet die meisten Kartoffeln? 🥔",
         "tip": "short",
         "yayin": "2026-11-08",
-        "izlenme7": 419,
-        "tutma": 57.52,
-        "kancaOran": 0.589,
-        "tutma30": 0.421,
-        "tiklanma7": null,
+        "izlenme7": 424,
+        "tutma": 57.59000000000001,
+        "kancaOran": 0.587,
+        "tutma30": 0.426,
+        "tiklanma7": 0,
         "etiket": "normal",
-        "nedenler": [],
+        "nedenler": [
+          "Tıklanma %0 (kanal ortalaması %1,5): kapak ve başlık izleyiciyi çekmedi."
+        ],
         "deney": "muzik-seviye/B"
       },
       {
         "youtubeId": "plw2KzOvb2g",
         "jobId": "2026-11-07_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": 44,
+        "gosterim7": 53,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 5/30: Wer erntet die meisten Weintrauben? 🍇",
@@ -1401,10 +1408,9 @@
         "tutma": 58.57,
         "kancaOran": 0.551,
         "tutma30": 0.432,
-        "tiklanma7": 6.82,
+        "tiklanma7": 5.66,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %6,8 (ortalama %0,8): kapak ve başlık işe yaradı.",
           "1000 izlenmede 2,7 abone (ortalama 0): kanala bağladı."
         ],
         "deney": "muzik-seviye/A"
@@ -1412,7 +1418,7 @@
       {
         "youtubeId": "-8mWI5rvuc8",
         "jobId": "2026-11-06_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": 113,
+        "gosterim7": 139,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 4/30: Wer erntet die meisten Oliven? 🫒",
@@ -1430,7 +1436,7 @@
       {
         "youtubeId": "41_cpn3Psa4",
         "jobId": "2026-11-05_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": 16,
+        "gosterim7": 20,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 3/30: Wer erntet die meisten Himbeeren? 🍓",
@@ -1443,7 +1449,7 @@
         "tiklanma7": 0,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %2,5): kapak ve başlık izleyiciyi çekmedi.",
+          "Tıklanma %0 (kanal ortalaması %1,5): kapak ve başlık izleyiciyi çekmedi.",
           "1000 izlenmede 7 abone (ortalama 0): kanala bağladı."
         ],
         "deney": null
@@ -1451,7 +1457,7 @@
       {
         "youtubeId": "ObOipJX9xWg",
         "jobId": "2026-11-04_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": 85,
+        "gosterim7": 91,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 2/30: Wer erntet den meisten Weizen? 🌾",
@@ -1461,7 +1467,7 @@
         "tutma": 45.12,
         "kancaOran": 0.75,
         "tutma30": null,
-        "tiklanma7": 3.53,
+        "tiklanma7": 3.3,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
@@ -1469,17 +1475,17 @@
       {
         "youtubeId": "_adZ89WwTYY",
         "jobId": "2026-11-03_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": 66,
+        "gosterim7": 67,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 1/30: Wer erntet die meisten Kirschen? 🍒",
         "tip": "short",
         "yayin": "2026-11-03",
-        "izlenme7": 918,
-        "tutma": 59.23,
+        "izlenme7": 919,
+        "tutma": 59.160000000000004,
         "kancaOran": 0.667,
-        "tutma30": 0.402,
-        "tiklanma7": 1.52,
+        "tutma30": 0.401,
+        "tiklanma7": 1.49,
         "etiket": "iyi",
         "nedenler": [
           "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
@@ -1561,14 +1567,14 @@
     ],
     "videolar": [
       {
-        "youtubeId": "uLXHxY-MpXA",
-        "jobId": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
+        "youtubeId": "dTF7usKFguk",
+        "jobId": "2026-11-10_UCFw3Wdyus0HVhykB0uYahWg_short1",
         "gosterim7": null,
         "kapakDeneme": null,
         "sonIyilestirme": null,
-        "baslik": "Kral Sahte Dövüşü Fark Etti ve İkisini Zincirle Bağlattı | Zincirli 4",
-        "tip": "long",
-        "yayin": "2026-11-09",
+        "baslik": "Kral yalanı nasıl anladı? ⛓️",
+        "tip": "short",
+        "yayin": "2026-11-10",
         "izlenme7": 0,
         "tutma": null,
         "kancaOran": null,
@@ -1579,34 +1585,16 @@
         "deney": null
       },
       {
-        "youtubeId": "kVYrYFzc7Rk",
-        "jobId": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_short1",
+        "youtubeId": "uLXHxY-MpXA",
+        "jobId": "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
         "gosterim7": null,
         "kapakDeneme": null,
         "sonIyilestirme": null,
-        "baslik": "Kral onu neden öldürtmedi? 👑",
-        "tip": "short",
-        "yayin": "2026-11-08",
-        "izlenme7": 1207,
-        "tutma": 50.22,
-        "kancaOran": 0.526,
-        "tutma30": null,
-        "tiklanma7": null,
-        "etiket": "erken",
-        "nedenler": [],
-        "deney": null
-      },
-      {
-        "youtubeId": "B3YEpPCyvLU",
-        "jobId": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
-        "gosterim7": null,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "Kız Kardeşi Yaşıyor… Ama Kaybetmesi Şartıyla | Zincirli 3",
-        "tip": "short",
-        "yayin": "2026-11-08",
+        "baslik": "Kral Sahte Dövüşü Fark Etti ve İkisini Zincirle Bağlattı | Zincirli 4",
+        "tip": "long",
+        "yayin": "2026-11-09",
         "izlenme7": 1,
-        "tutma": 1.92,
+        "tutma": 56.24,
         "kancaOran": 1,
         "tutma30": null,
         "tiklanma7": null,
@@ -1615,19 +1603,55 @@
         "deney": null
       },
       {
+        "youtubeId": "kVYrYFzc7Rk",
+        "jobId": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_short1",
+        "gosterim7": 11,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Kral onu neden öldürtmedi? 👑",
+        "tip": "short",
+        "yayin": "2026-11-08",
+        "izlenme7": 1209,
+        "tutma": 50.29,
+        "kancaOran": 0.527,
+        "tutma30": null,
+        "tiklanma7": 0,
+        "etiket": "normal",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "youtubeId": "B3YEpPCyvLU",
+        "jobId": "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
+        "gosterim7": 221,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Kız Kardeşi Yaşıyor… Ama Kaybetmesi Şartıyla | Zincirli 3",
+        "tip": "short",
+        "yayin": "2026-11-08",
+        "izlenme7": 12,
+        "tutma": 13.95,
+        "kancaOran": 1,
+        "tutma30": 0.083,
+        "tiklanma7": 0.45,
+        "etiket": "az-veri",
+        "nedenler": [],
+        "deney": null
+      },
+      {
         "youtubeId": "99hA4B_gVDE",
         "jobId": "2026-11-07_UCFw3Wdyus0HVhykB0uYahWg_long1",
-        "gosterim7": 1029,
+        "gosterim7": 1169,
         "kapakDeneme": null,
         "sonIyilestirme": "2026-11-10T04:32:12.124Z",
         "baslik": "Ailesinin Katili Kralın Yanında Oturuyordu | Zincirli 2",
         "tip": "short",
         "yayin": "2026-11-07",
-        "izlenme7": 18,
-        "tutma": 17.88,
-        "kancaOran": 0.944,
-        "tutma30": 0.353,
-        "tiklanma7": 1.17,
+        "izlenme7": 23,
+        "tutma": 17,
+        "kancaOran": 0.783,
+        "tutma30": 0.333,
+        "tiklanma7": 1.11,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
@@ -1635,17 +1659,17 @@
       {
         "youtubeId": "gpbK3PUXXPA",
         "jobId": "zincirli_b01_s1_UCFw3Wdyus0HVhykB0uYahWg",
-        "gosterim7": 80,
+        "gosterim7": 88,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Ölmesine 3 saniye vardı… ⚔️ #shorts",
         "tip": "short",
         "yayin": "2026-11-06",
-        "izlenme7": 684,
+        "izlenme7": 685,
         "tutma": 59.77,
-        "kancaOran": 0.503,
+        "kancaOran": 0.504,
         "tutma30": null,
-        "tiklanma7": 3.75,
+        "tiklanma7": 3.41,
         "etiket": "normal",
         "nedenler": [],
         "deney": null
@@ -1653,17 +1677,17 @@
       {
         "youtubeId": "Nw-pdWAIHOE",
         "jobId": "zincirli_b01_UCFw3Wdyus0HVhykB0uYahWg",
-        "gosterim7": 6179,
+        "gosterim7": 6294,
         "kapakDeneme": null,
         "sonIyilestirme": "2026-11-10T04:32:07.952Z",
         "baslik": "15 Yıl Köle Kaldı, Yenilmez Şampiyonu Son Saniyede Devirdi | Zincirli 1",
         "tip": "long",
         "yayin": "2026-11-06",
-        "izlenme7": 118,
-        "tutma": 18.4,
-        "kancaOran": 0.805,
-        "tutma30": 0.337,
-        "tiklanma7": 1.29,
+        "izlenme7": 142,
+        "tutma": 18.21,
+        "kancaOran": 0.676,
+        "tutma30": 0.333,
+        "tiklanma7": 1.3,
         "etiket": "normal",
         "nedenler": [],
         "deney": null
@@ -1671,8 +1695,48 @@
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 2,
-        "yeterli": false
+        "videoSayisi": 3,
+        "yeterli": true,
+        "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
+        "enCokKaybettiren": [
+          {
+            "ozellik": "mekân: arena",
+            "sahne": 14,
+            "video": 3,
+            "oran": 2.5
+          },
+          {
+            "ozellik": "mekân: loca",
+            "sahne": 5,
+            "video": 2,
+            "oran": 1.8
+          }
+        ],
+        "enIyiTutan": [
+          {
+            "ozellik": "mekân: zindan",
+            "sahne": 32,
+            "video": 3,
+            "oran": 0.34
+          },
+          {
+            "ozellik": "karakter diyaloğu",
+            "sahne": 33,
+            "video": 3,
+            "oran": 0.65
+          }
+        ],
+        "kanca": {
+          "kisa": {
+            "video": 1,
+            "tutma3": 106
+          },
+          "uzun": {
+            "video": 2,
+            "tutma3": 87
+          },
+          "aciklama": "ilk sahne ≤10 kelime / >10 kelime iken 3. saniyede izleyicilerin yüzde kaçı kalıyor"
+        }
       },
       "long": {
         "videoSayisi": 0,

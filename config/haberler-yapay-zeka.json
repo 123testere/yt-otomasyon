@@ -1,8 +1,56 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-11T22:44:12.690Z",
+  "guncellendi": "2026-11-12T03:50:45.398Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "link": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-12T03:13:10.000Z",
+      "ozet": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Gilbert + Tobin rethinks the business of law with AI",
+      "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-12T00:00:00.000Z",
+      "ozet": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The unfolding Jensen Huang scandal: a timeline",
+      "link": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-11T23:50:00.000Z",
+      "ozet": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+      "link": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-11T23:28:45.000Z",
+      "ozet": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang accused of having another affair — with an Nvidia exec",
+      "link": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-11T23:17:05.000Z",
+      "ozet": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia is reportedly preparing to fire Jensen Huang",
+      "link": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-11T22:44:36.000Z",
+      "ozet": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from the New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who […]",
+      "kullanildi": false
+    },
     {
       "baslik": "United won’t let your AI agent book your flight",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
@@ -48,7 +96,7 @@
       "link": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-11T19:54:00.000Z",
-      "ozet": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
+      "ozet": "CoreWeave is increasingly asking customers to pay up front, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
       "kullanildi": false
     },
     {
@@ -129,7 +177,7 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-11T16:14:44.000Z",
       "ozet": "Sales of $10 billion represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "The AO3 Shutdown Is Pitting Fanfic Readers Against Authors",
@@ -217,7 +265,7 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-11T13:07:10.000Z",
       "ozet": "Caltech mühendislerinin DARPA desteğiyle geliştirdiği ASTRA, insan müdahalesi olmadan yörüngede bir kafes yapı kurdu. Sistem, büyük uzay yapılarının parçalar hâlinde gönderilip montajının uzayda yapılmasının önünü açıyor.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "OpenAI, Tatil Planlamasını Yapay Zekâya Bırakıyor: Seyahat Girişimini Satın Aldı!",
@@ -396,14 +444,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
-      "link": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-10T18:49:52.000Z",
-      "ozet": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
-      "kullanildi": false
-    },
-    {
       "baslik": "ChatGPT is getting verified AI ‘Business Agents’",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
       "kaynak": "The Verge",
@@ -420,27 +460,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
-      "link": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-10T17:30:00.000Z",
-      "ozet": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Anthropic has its own AI-powered office suite now",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
       "kaynak": "The Verge",
       "tarih": "2026-11-10T17:30:00.000Z",
       "ozet": "For years, Anthropic has been known for its focus on enterprise and coding tools that attract high-flying corporate clients, inspiring competing frontier labs - like OpenAI, SpaceXSI, and Meta - to copy its strategies. Earlier this year, Claude Code went through its own particular hype cycle. And now, Anthropic is trying to expand its footprint […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
-      "link": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-10T17:04:19.000Z",
-      "ozet": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
       "kullanildi": false
     },
     {
@@ -452,35 +476,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-10T16:00:00.000Z",
-      "ozet": "Google is rolling out its latest AI model, Gemini 4 Carbon, to the general public after releasing it to a select group of \"cybersecurity defenders\" two weeks ago. Google claims Carbon is its \"strongest model\" yet, and capable of competing with the very best systems from Anthropic and OpenAI. Google says Gemini 4 Carbon \"pushes […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google broadens its AI hardware portfolio with two new specialized chips",
-      "link": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-10T15:54:08.000Z",
-      "ozet": "Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.",
-      "kullanildi": false
-    },
-    {
       "baslik": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
       "link": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
       "kaynak": "Ars Technica",
       "tarih": "2026-11-10T15:00:39.000Z",
       "ozet": "The new model is up to twice as successful at some tasks.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple, Yapay Zekâ Özellikleri İçin \"50 Dolarlık Paketlerini\" Kullanıma Sundu",
-      "link": "https://www.webtekno.com/apple-yapay-zeka-ozellikleri-icin-50-dolarlik-paketlerini-kullanima-sundu-h228691.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-10T14:11:48.000Z",
-      "ozet": "Apple, Creator Studio uygulamaları için 50 dolarlık tek seferlik yapay zekâ kullanım paketlerini Logic Pro ile başlattı.",
       "kullanildi": false
     }
   ]
