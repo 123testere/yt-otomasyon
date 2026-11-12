@@ -1,0 +1,87 @@
+{
+ "id": "2026-11-13_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-13T07:00:00.000Z",
+ "topic": "Buzdolabının atası olan soğutma makinesi patenti ve ev buzdolaplarının gelişi",
+ "title": "Buzdolabının Atası Telefondan 42 Yıl Önce Patentlendi",
+ "hookText": "Telefondan eski",
+ "description": "Eşyaların Hikayesi #44\nBuzdolabının atası sayılan soğutma makinesinin patenti 1834'te alındı; elektrikli ev buzdolapları ise 1920'lerde satılmaya başladı.\n\n#buzdolabı #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "buzdolabı",
+  "buzdolabı tarihi",
+  "buzdolabını kim icat etti",
+  "soğutma makinesi",
+  "Jacob Perkins",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Buzdolabı telefondan",
+  "42 yıl yaşlı"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Fırın",
+  "b": "Termometre"
+ },
+ "oylama": {
+  "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "The Fridge's Ancestor Was Patented 42 Years Before the Phone",
+   "description": "Story of Things #44\nThe patent for the first cooling machine dates to 1834, while electric home refrigerators began selling in the 1920s."
+  }
+ },
+ "scenes": [
+  {
+   "narration": "İlk soğutma makinesi patenti 1834'te alındı, yani telefondan 42 yıl önce.",
+   "ifade": "saskin",
+   "cizim": "txt('1834', 300, 280, 140, { c: K.ak, a: eo(pr(u, 0, .6)) });\ntxt('1876', 700, 280, 140, { c: K.s, a: eo(pr(u, .8, 1.4)) });\ntxt('telefon', 700, 400, 60, { c: K.s, a: eo(pr(u, 1, 1.5)) });\nok([330, 520], [670, 520], { pp: eo(pr(u, 1.4, 2)) });\netk('42 yıl', 500, 620, eo(pr(u, 1.8, 2.4)), { size: 60 });"
+  },
+  {
+   "narration": "Patent, İngiltere'de Amerikalı mucit Jacob Perkins'e verildi.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500, 280, 70, 70, 28), { close: true, fill: '#EFE4CB', w: 5, seed: 5, pp: eo(pr(u, 0, .6)) });\nink(ln([500, 350], [500, 520], 8), { w: 6, seed: 6, pp: eo(pr(u, .4, 1)) });\nink([[500, 400], [420, 470]], { w: 6, seed: 7, pp: eo(pr(u, .7, 1.1)) });\nink([[500, 400], [580, 470]], { w: 6, seed: 8, pp: eo(pr(u, .7, 1.1)) });\netk('Jacob Perkins', 500, 610, eo(pr(u, 1.2, 1.8)), { size: 50 });"
+  },
+  {
+   "narration": "Makine, buharlaşan bir sıvı sayesinde ısıyı çekiyordu.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(300, 250, 200, 300), { close: true, fill: '#E6DBC4', w: 6, seed: 15, pp: eo(pr(u, 0, .7)) });\nfor (let i = 0; i < 4; i++) { const ph = (T * .5 + i * .25) % 1; ctx.save(); ctx.globalAlpha = (1 - ph); ink([[360 + i * 30, 330 - ph * 80], [370 + i * 30, 300 - ph * 80], [360 + i * 30, 270 - ph * 80]], { w: 4, c: K.mavi, seed: 16 + i }); ctx.restore(); }\nok([700, 400], [540, 400], { pp: eo(pr(u, .8, 1.4)) });\netk('ısı dışarı', 700, 330, eo(pr(u, 1, 1.6)), { size: 46 });\netk('buharlaşan sıvı', 400, 620, eo(pr(u, 1.4, 2)), { size: 44 });"
+  },
+  {
+   "narration": "Yine de evlere girmesi çok sonra oldu: elektrikli ev buzdolapları 1920'lerde satılmaya başladı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([140, 380], [860, 380], 20), { w: 4, pp: eo(pr(u, 0, 1)) });\nfor (const [x, y] of [[260, '1834'], [740, '1920\\'ler']]) { const k = x > 500 ? 1 : 0, a = eo(pr(u, .4 + k * 1.2, 1 + k * 1.2)); ctx.save(); ctx.globalAlpha = a; ctx.beginPath(); ctx.arc(x, 380, 18, 0, 7); ctx.fillStyle = k ? K.ak : K.s; ctx.fill(); ctx.restore(); txt(y, x, 300, 80, { a, c: k ? K.ak : K.s }); }\netk('evlere giriş', 740, 480, eo(pr(u, 1.8, 2.4)), { size: 46 });"
+  },
+  {
+   "narration": "Ondan önce evlerde buz konan ahşap dolaplar vardı; buzu da satıcılar getirirdi.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(300, 220, 260, 380), { close: true, fill: '#C9A878', w: 6, seed: 25, pp: eo(pr(u, 0, .8)) });\nink(ln([300, 410], [560, 410], 10), { w: 5, seed: 26, pp: eo(pr(u, .5, 1)) });\nink(kutu(620, 450, 110, 110), { close: true, fill: '#DCEAF2', w: 5, seed: 27, pp: eo(pr(u, 1, 1.6)) });\nink(kutu(740, 480, 90, 80), { close: true, fill: '#DCEAF2', w: 5, seed: 28, pp: eo(pr(u, 1.2, 1.8)) });\netk('buz', 700, 620, eo(pr(u, 1.5, 2.1)), { size: 48 });"
+  },
+  {
+   "narration": "Osmanlı İstanbul'unda ise dağlardan kar ve buz taşındığı anlatılır.",
+   "ifade": "merakli",
+   "cizim": "ink([[100, 520], [300, 280], [420, 400], [560, 220], [760, 520]], { w: 6, fill: '#EFE4CB', close: true, seed: 35, pp: eo(pr(u, 0, 1)) });\nfor (let i = 0; i < 5; i++) { const x = 150 + ((T * 40 + i * 140) % 700); ink(ell(x, 580 - (x > 400 ? 0 : 0), 22, 22, 12), { close: true, fill: '#DCEAF2', w: 4, seed: 36 + i }); }\netk('dağdan kar', 500, 650, eo(pr(u, 1, 1.6)), { size: 46 });"
+  },
+  {
+   "narration": "Sessizce çalışan o kutu, 190 yıla yakın bir fikrin ürünü.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(380, 180, 240, 420), { close: true, fill: '#F2EEE4', w: 6, seed: 45, pp: eo(pr(u, 0, .8)) });\nink(ln([380, 330], [620, 330], 10), { w: 5, seed: 46, pp: eo(pr(u, .5, 1)) });\nink(ln([595, 220], [595, 290], 4), { w: 8, seed: 47, pp: eo(pr(u, .7, 1.1)) });\nink(ln([595, 370], [595, 460], 4), { w: 8, seed: 48, pp: eo(pr(u, .8, 1.2)) });\netk('190 yıla yakın', 500, 650, eo(pr(u, 1.2, 1.8)), { size: 46 });"
+  },
+  {
+   "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: fırın mı, termometre mi?",
+   "ifade": "merakli",
+   "cizim": "txt('?', 500, 420, 260, { c: K.ak, a: eo(pr(u, 0, .6)) });\netk('A: Fırın', 250, 600, eo(pr(u, .6, 1.2)), { size: 52 });\netk('B: Termometre', 740, 600, eo(pr(u, 1, 1.6)), { size: 52 });"
+  }
+ ]
+}

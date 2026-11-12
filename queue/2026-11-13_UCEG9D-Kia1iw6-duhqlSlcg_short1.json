@@ -1,0 +1,192 @@
+{
+ "id": "2026-11-13_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-13T05:00:00.000Z",
+ "bolum": {
+  "no": 5,
+  "ad": "Top 5"
+ },
+ "title": "5 Easy Habits to Keep More of Your Money 💰",
+ "description": "How can you keep more of your money each month? Here are 5 simple habits: the 24-hour rule, canceling unused subscriptions, cooking at home, automating savings and tracking your spending. Which one will you try first?\n\n#money #savingmoney #personalfinance #motivation #business",
+ "tags": [
+  "save money",
+  "money habits",
+  "how to save money",
+  "personal finance",
+  "budgeting tips",
+  "top 5",
+  "money tips",
+  "frugal living",
+  "financial habits"
+ ],
+ "topic": "5 simple habits to keep more of your money each month",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "5 hábitos fáciles para quedarte con más dinero 💰",
+   "description": "¿Cómo quedarte con más dinero cada mes? 5 hábitos sencillos: la regla de 24 horas, cancelar suscripciones, cocinar en casa, automatizar el ahorro y registrar tus gastos. ¿Cuál probarás primero?\n\n#dinero #ahorro #finanzaspersonales"
+  }
+ },
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted gets a deep dive",
+  "soru": "Which money habit would you start first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Keep more of your money"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "para",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Want to keep more of your money every month? Here are five habits that can help. Let's count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "The 24-Hour Rule",
+    "tur": "Spending habit",
+    "maddeler": [
+     "Wait a day to buy",
+     "Skip impulse buys",
+     "Decide calmly"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: the 24-hour rule. Wait a day before a non-essential purchase, and many impulse buys fade away."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Cancel Unused Subscriptions",
+    "tur": "Quick win",
+    "maddeler": [
+     "Check your statements",
+     "Cancel what you skip",
+     "Small fees add up"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: cancel subscriptions you never use. Small monthly fees add up over a year."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Cook at Home",
+    "tur": "Everyday saving",
+    "maddeler": [
+     "Plan your meals",
+     "Buy only what you use",
+     "Cheaper than takeout"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: cook at home more often. Planning meals can often cost less than takeout."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Automate Savings",
+    "tur": "Set and forget",
+    "maddeler": [
+     "Move cash on payday",
+     "Start small",
+     "Pay yourself first"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: automate your savings. Move a small amount on payday before you can spend it."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Track Your Spending",
+    "tur": "Money awareness",
+    "maddeler": [
+     "Log every cost",
+     "Spot the leaks",
+     "Review once a week"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: track your spending! You can't fix a leak you can't see."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Which habit would you start first? Tell us in the comments and subscribe for more!"
+    }
+   ]
+  }
+ ]
+}

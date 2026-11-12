@@ -1,0 +1,179 @@
+{
+ "id": "2026-11-13_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-13T16:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "bolum": {
+  "no": 3,
+  "ad": "OpenAI Geliri"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "kaynak": "TechCrunch",
+ "kaynakLink": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+ "topic": "OpenAI'ın çeyreklik gelirinin ilk kez 10 milyar doları aştığı bildirildi",
+ "title": "OpenAI'ın Üç Aylık Geliri 10 Milyar Doları Geçti ⚡",
+ "description": "OpenAI'ın çeyreklik gelirinin ilk kez 10 milyar doları aştığı bildirildi; önceki çeyrekte gelir 6,7 milyar dolardı. Sence bu hız sürer mi?\nKaynak: TechCrunch https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/\n\n#yapayzeka #openai #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "openai",
+  "openai geliri",
+  "chatgpt",
+  "ai haberleri",
+  "teknoloji haberleri"
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "OpenAI's Quarterly Revenue Tops $10 Billion ⚡",
+   "description": "OpenAI's quarterly revenue has reportedly crossed $10 billion for the first time, up from $6.7 billion the quarter before. Will this pace last?\nSource: TechCrunch"
+  }
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "kapanis": {
+  "baslik": "SENCE?",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Bu büyüme hızı sürer mi, yavaşlar mı?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "10 MİLYAR $"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.2,
+      "kos": true
+     },
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "OpenAI'ın üç aylık geliri ilk kez 10 milyar doları geçti."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "OpenAI'ın çeyreklik geliri 10 milyar doları aştı",
+    "kaynak": "TechCrunch · 11 Kasım",
+    "maddeler": [
+     "Çeyrek geliri: 10 milyar $",
+     "Önceki çeyrek: 6,7 milyar $",
+     "Artış: neredeyse %50"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "TechCrunch'ın haberine göre bu rakam şirket için bir ilk."
+    }
+   ]
+  },
+  {
+   "mekan": "grafik",
+   "veri": [
+    6.7,
+    10
+   ],
+   "buyukYazi": {
+    "ust": "%50 ARTIŞ",
+    "alt": "6,7'den 10 milyar dolara"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci çeyrekte gelir 6,7 milyar dolardı. Sıçrama neredeyse yüzde 50."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "ceo",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberde rakam için bildirildi deniyor; yani resmî bir açıklama değil, kesin kabul etme."
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "SIRADA NE VAR?"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki bu ne değiştirebilir? Belki yapay zekâ şirketlerinin bu hızla büyüyüp büyüyemeyeceği daha çok tartışılacak."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.33,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sence bu büyüme hızı sürer mi? Yorumlara yaz, takipte kal!"
+    }
+   ]
+  }
+ ]
+}

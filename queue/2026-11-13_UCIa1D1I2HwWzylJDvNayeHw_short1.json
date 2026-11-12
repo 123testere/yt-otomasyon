@@ -1,0 +1,192 @@
+{
+ "id": "2026-11-13_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-13T09:00:00.000Z",
+ "bolum": {
+  "no": 5,
+  "ad": "Top 5"
+ },
+ "title": "Seni Defalarca Öldürecek En Zor 5 Oyun 🎮",
+ "description": "En zor oyunlar hangileri? Super Meat Boy, Cuphead, Celeste, Hollow Knight ve Dark Souls bu listede. Senin listende en zoru hangisi?\n\n#enzoroyunlar #oyunönerisi #videooyunları #gaming",
+ "tags": [
+  "en zor oyunlar",
+  "zor oyunlar",
+  "oyun önerisi",
+  "en iyi 5 oyun",
+  "dark souls",
+  "hollow knight",
+  "celeste",
+  "cuphead",
+  "super meat boy"
+ ],
+ "topic": "Defalarca ölmeyi gerektiren en zor 5 oyun",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "5 Hardest Games That Will Make You Die Again and Again 🎮",
+   "description": "Which games are the hardest? Super Meat Boy, Cuphead, Celeste, Hollow Knight and Dark Souls make this list. Which one is hardest for you?\n\n#hardgames #gaming #gamerecommendations #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Sence listedeki en zor oyun hangisi?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "En zor oyunlar"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu 5 oyunda defalarca ölmek normal, bu işin tadı. Sondan başlıyoruz!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Super Meat Boy",
+    "tur": "Hassas platform",
+    "maddeler": [
+     "2010 çıkışlı",
+     "Saniyelik atlayışlar",
+     "Hızlı yeniden deneme"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Super Meat Boy. Küçük bir karakter, saniyelik atlayışlar ve anında yeniden deneme."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Cuphead",
+    "tur": "Boss savaşı",
+    "maddeler": [
+     "2017 çıkışlı",
+     "Eski çizgi film stili",
+     "Zorlu boss kapışmaları"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Cuphead. Eski çizgi filmleri andıran görüntüsü sevimli, boss savaşları ise zorlu."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Celeste",
+    "tur": "Dağ tırmanışı",
+    "maddeler": [
+     "2018 çıkışlı",
+     "Hassas platform",
+     "Hikâyesiyle sevildi"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Celeste. Bir dağa tırmanırken hem zorlanıyor hem etkileyici bir hikâye yaşıyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Hollow Knight",
+    "tur": "Keşif macerası",
+    "maddeler": [
+     "2017 çıkışlı",
+     "El çizimi dünya",
+     "Zor boss'lar"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Hollow Knight. El çizimi karanlık bir dünya ve ders verici boss'lar."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Dark Souls",
+    "tur": "Aksiyon RPG",
+    "maddeler": [
+     "2011 çıkışlı",
+     "Sabır ister",
+     "Zor ama adil"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada Dark Souls! Zor ama adil olmasıyla ünlendi."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Senin listende en zor oyun hangisi? Yorumlara yaz, abone olmayı unutma!"
+    }
+   ]
+  }
+ ]
+}

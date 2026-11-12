@@ -1,0 +1,494 @@
+{
+ "id": "2026-11-13_UCJUP2lYvMuhcif8FavIXuYA_long1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "long",
+ "publishAt": "2026-11-13T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "hiz": 1.1,
+ "bolum": {
+  "no": 2,
+  "ad": "ASTRA"
+ },
+ "kaynak": "Webtekno",
+ "kaynakLink": "https://www.webtekno.com/uzayda-otonom-yapi-insa-eden-ilk-robot-h228787.html",
+ "topic": "Caltech'in ASTRA sistemi yörüngede otonom kafes yapı kurdu",
+ "title": "Robot Uzayda Tek Başına Yapı Kurdu: ASTRA Ne Değiştirecek?",
+ "titleAlt": "Uzayda İnsansız İnşaat Başladı mı? ASTRA'nın Hikâyesi",
+ "description": "Caltech mühendislerinin DARPA desteğiyle geliştirdiği ASTRA, insan müdahalesi olmadan yörüngede bir kafes yapı kurdu. Büyük uzay yapılarının parça parça gönderilip uzayda monte edilmesi ne anlama geliyor?\nKaynak: Webtekno https://www.webtekno.com/uzayda-otonom-yapi-insa-eden-ilk-robot-h228787.html\n\n#yapayzeka #uzay #robot #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "uzay robotu",
+  "astra",
+  "caltech",
+  "darpa",
+  "uzayda inşaat",
+  "robotik",
+  "teknoloji haberleri"
+ ],
+ "thumbnailText": "UZAYDA İNŞAAT",
+ "thumbnailTextAlt": "İNSANSIZ KURULDU",
+ "kapak": {
+  "sahne": 7,
+  "sn": 1
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.08,
+ "ceviriler": {
+  "en": {
+   "title": "A Robot Built a Structure in Space on Its Own: What Is ASTRA?",
+   "description": "Caltech engineers, with DARPA support, built ASTRA, which assembled a lattice structure in orbit without human intervention. What could this mean for large space structures?\nSource: Webtekno"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENCE?",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Robotlar uzayda inşaat işçisi olur mu?"
+ },
+ "scenes": [
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir robot, uzayda insan eli değmeden bir yapı kurdu. Bu, uzay inşaatının kapısını aralayabilir mi?"
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.2,
+      "kos": true
+     }
+    }
+   ],
+   "kisim": "Kanca",
+   "buyukYazi": {
+    "ust": "UZAYDA İNŞAAT",
+    "alt": "insan müdahalesi yok"
+   }
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bugün uzay teknolojisinden çok ilginç bir haberi konuşacağız. Sonuna kadar kalın, çünkü uzay yapılarının geleceğini anlatacağım."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haber Webtekno'dan. Caltech mühendisleri, DARPA desteğiyle ASTRA adlı bir sistem geliştirdi."
+    }
+   ],
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "Robot uzayda tek başına bir ilki gerçekleştirdi",
+    "kaynak": "Webtekno · 11 Kasım",
+    "maddeler": [
+     "Geliştirici: Caltech",
+     "Destek: DARPA",
+     "Sistem: ASTRA"
+    ]
+   },
+   "kisim": "Haber"
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "ASTRA, insan müdahalesi olmadan yörüngede bir kafes yapı kurdu. Haberin özü bu."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "KAFES YAPI",
+    "alt": "yörüngede, otonom"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Burada önemli olan kelime otonom. Yani robot, adımları bir insan komut verdikçe değil, kendi başına uyguluyor."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Önce şunu netleştirelim: bu haber bir robotun uzayda tek başına bir ilke imza attığını söylüyor. Yani amaç sadece gösteri değil, gerçek bir inşaat yeteneğini denemek."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Uzayda her iş pahalı ve zor. Astronotların dışarı çıkması ciddi hazırlık ve risk demek."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir robot bu işi üstlenebilirse, riskli işlerin bir kısmı insanların yerine makinelere bırakılabilir."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "kisim": "Neden Önemli"
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberdeki en kritik nokta şu: büyük uzay yapıları parçalar hâlinde gönderilip uzayda monte edilebilir."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "PARÇA PARÇA",
+    "alt": "montaj uzayda"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Neden önemli? Çünkü roketlerin taşıyabildiği hacim sınırlı. Çok büyük bir yapıyı tek parça fırlatmak her zaman mümkün olmuyor."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "eller-belde",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Parçalar küçük paketler hâlinde gönderilirse, yörüngede bir araya getirilebilir. İşte ASTRA gibi sistemler bu fikre hizmet ediyor."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kafes yapı bu fikir için iyi bir örnek, çünkü tekrar eden parçalarla büyük bir iskelet oluşturulabilir."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ],
+   "kisim": "Nasıl Çalışır?"
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberin ayrıntılarını Webtekno'da okuyabilirsiniz. Ben burada özette olmayan teknik detayları uydurmak istemiyorum."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ama mantığı basit: önce parçalar yörüngeye çıkıyor, sonra robot onları sırayla yerine yerleştiriyor."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr",
+     "hareket": {
+      "x0": 0.2,
+      "x1": 0.6,
+      "sure": 2
+     }
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bunu şöyle düşünün: yerde bir yapı kurarken vinç, iskele ve işçi kullanırız. Yörüngede bunların hiçbiri yok. Bu yüzden tamamen otonom bir sistem, bu işin zorluğunu iyi gösteriyor."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "eller-belde",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki bu gelecekte neyi değiştirebilir? Şimdi tahmin yürütme zamanı."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "kisim": "Gelecek",
+   "buyukYazi": {
+    "ust": "2030?"
+   }
+  },
+  {
+   "mekan": "gelecek",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Belki ileride daha büyük antenler, teleskoplar ya da uzay istasyonları parça parça kurulabilir. Bunlar yalnızca tahmin, kesin bir şey değil."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Elbette her ilk adım gibi bunun da sınırları var. Bir kafes yapı kurmak, karmaşık bir uzay istasyonu kurmakla aynı şey değil. Yolun uzun olduğunu unutmamak gerek."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yine de bir adımın büyük bir yolculuğu başlatması mümkün. Bugün bir kafes, yarın daha karmaşık yapılar."
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.55,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kaynak olarak Webtekno'nun haberini kullandım; bağlantı açıklamada. Sen ne düşünüyorsun? Robotlar uzayda inşaat işçisi olur mu? Yorumlara yaz, takipte kal!"
+    }
+   ],
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.33,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "notr"
+    }
+   ],
+   "kisim": "Kapanış"
+  }
+ ]
+}

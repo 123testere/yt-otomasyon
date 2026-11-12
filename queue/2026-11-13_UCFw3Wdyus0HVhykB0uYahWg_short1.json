@@ -1,0 +1,274 @@
+{
+ "id": "2026-11-13_UCFw3Wdyus0HVhykB0uYahWg_short1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "derivedFrom": "2026-11-12_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "bolum": {
+  "no": 5,
+  "ad": "Çifte Zincir"
+ },
+ "publishAt": "2026-11-13T09:00:00.000Z",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 5",
+  "soru": "Toros'u kim götürdü: Sungur mu, kral mı?"
+ },
+ "title": "Zincirle bağlıyken beş kılıcı nasıl yendiler? ⛓️",
+ "description": "Bir zincir, iki gladyatör, beş kılıç. Sence Toros'un hücresi neden boş?",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "gladyatör",
+  "arena",
+  "kargan",
+  "dizi"
+ ],
+ "topic": "Zincirle bağlı Arın ve Kargan beş muhafızı silahsızlandırır",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "How Did They Beat Five Swords While Chained Together? ⛓️",
+   "description": "One chain, two gladiators, five swords. Why do you think Toros's cell is empty?"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dus",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.78,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zincirle bağlıyken beş muhafızı nasıl yendik?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Beş muhafız aynı anda üstümüze yürüdü."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Ben sağa gidiyorum, sen sola. Böyle olmaz."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kargan bir dağ kadar güçlüydü ama zinciri taşımayı bilmiyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Zincir bir ip gibidir. İkiniz de çekerseniz kopar. İkiniz de taşırsanız bağ olur."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Kalkanı sen taşı. Ben zinciri yönlendireyim."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Anlaştık. Ama beni çekersen bırakmam."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "kilic-savur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.58,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.78,
+     "yon": -1,
+     "poz": "darbe",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zinciri kılıç gibi kullandık. Kimsenin canını yakmadan kılıçları elinden aldık."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci kılıç da yere düştü. Kimse yaralanmadı."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "sure": 2.2,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ama zindana döndüğümüzde Toros'un hücresi bomboştu."
+    }
+   ]
+  }
+ ]
+}

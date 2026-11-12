@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-13_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-13T16:00:00.000Z",
+ "topic": "Makasın yaylı atasından çapraz makasa ve modern çelik makasa tarihi",
+ "title": "Makasın İlk Hali Çapraz Değildi: 3000 Yıllık Hikâye",
+ "hookText": "Çapraz değildi",
+ "description": "Eşyaların Hikayesi #45\nMakasın ilk hali çapraz değil, tek parça yaylı bir aletti; çapraz makas yaklaşık 100'lerde Roma dünyasında görülür, modern çelik makas 1761'le anılır.\n\n#makas #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "makas",
+  "makas tarihi",
+  "makası kim icat etti",
+  "yaylı makas",
+  "Robert Hinchliffe",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Makasın ilk hali",
+  "çapraz değildi"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Kaşık",
+  "b": "Tava"
+ },
+ "oylama": {
+  "kaynak": "2026-11-11_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "The First Scissors Were Not Crossed: A 3000-Year Story",
+   "description": "Story of Things #45\nThe earliest scissors were a single spring-type piece; crossed blades appear around the year 100 in the Roman world."
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Makasın iki bıçağı neden çaprazlanmış, hiç düşündünüz mü? Yorumlarda siz seçtiniz: makas!",
+   "ifade": "merakli",
+   "cizim": "ink(ln([300, 250], [700, 550], 14), { w: 10, seed: 3, pp: eo(pr(u, 0, .7)) });\nink(ln([700, 250], [300, 550], 14), { w: 10, seed: 4, pp: eo(pr(u, .2, .9)) });\nink(ell(500, 400, 18, 18, 12), { close: true, fill: K.ak, w: 4, seed: 5, pp: eo(pr(u, .8, 1.1)) });\ntxt('?', 800, 220, 160, { c: K.ak, a: eo(pr(u, 1.2, 1.8)) });"
+  },
+  {
+   "narration": "İlk makaslar çapraz değildi; tek parça, yaylı bir alettiler.",
+   "ifade": "anlatiyor",
+   "cizim": "ink([[330, 220], [330, 480], [400, 560], [470, 560], [540, 480], [540, 220]], { w: 9, seed: 10, pp: eo(pr(u, 0, 1)) });\nink(ln([330, 220], [300, 150], 4), { w: 8, seed: 11, pp: eo(pr(u, .8, 1.2)) });\nink(ln([540, 220], [570, 150], 4), { w: 8, seed: 12, pp: eo(pr(u, .9, 1.3)) });\netk('tek parça yay', 440, 640, eo(pr(u, 1.2, 1.8)), { size: 48 });"
+  },
+  {
+   "narration": "Böyle yaylı makaslar en az 3000 yıl öncesine dayanır, derler.",
+   "ifade": "dusunceli",
+   "cizim": "txt('3000', 500, 300, 190, { c: K.ak, a: eo(pr(u, 0, .7)) });\netk('yıl önce', 500, 430, eo(pr(u, .5, 1.1)), { size: 70 });\nink([[360, 560], [360, 620], [420, 650], [480, 620], [480, 560]], { w: 7, seed: 20, pp: eo(pr(u, 1, 1.7)) });"
+  },
+  {
+   "narration": "Ortadan birleşen çapraz makas ise yaklaşık 100'lerde Roma dünyasında görülür, söylenir.",
+   "ifade": "merakli",
+   "cizim": "txt('~100', 500, 200, 110, { c: K.ak, a: eo(pr(u, 0, .6)) });\nink(ln([330, 290], [670, 600], 14), { w: 10, seed: 30, pp: eo(pr(u, .3, 1)) });\nink(ln([670, 290], [330, 600], 14), { w: 10, seed: 31, pp: eo(pr(u, .5, 1.2)) });\nink(ell(500, 445, 18, 18, 12), { close: true, fill: K.ak, w: 4, seed: 32, pp: eo(pr(u, 1.2, 1.5)) });\netk('Roma dünyası', 150, 650, eo(pr(u, 1.4, 2)), { size: 40, al: 'left' });"
+  },
+  {
+   "narration": "Ortadaki küçük pim, iki bıçağı bir eksen etrafında çalıştırır.",
+   "ifade": "anlatiyor",
+   "cizim": "const a = Math.sin(T * 2) * .15;\nctx.save(); ctx.translate(500, 400); ctx.rotate(a); ink(ln([-200, -150], [200, 150], 12), { w: 10, seed: 40 }); ctx.restore();\nctx.save(); ctx.translate(500, 400); ctx.rotate(-a); ink(ln([200, -150], [-200, 150], 12), { w: 10, seed: 41 }); ctx.restore();\nink(ell(500, 400, 18, 18, 12), { close: true, fill: K.ak, w: 4, seed: 42 });\ncizgiEtiket('pim', [500, 400], [700, 590], eo(pr(u, .6, 1.2)));"
+  },
+  {
+   "narration": "Bıçaklar birbirinin yanından kayarken malzemeyi tam o noktada keser.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(150, 330, 700, 70), { close: true, fill: '#FBF6EA', w: 4, seed: 50, pp: eo(pr(u, 0, .6)) });\nconst cx = 150 + eo(pr(u, .6, 2)) * 350;\nink(ln([cx, 280], [cx + 150, 365], 8), { w: 9, seed: 51 });\nink(ln([cx, 450], [cx + 150, 365], 8), { w: 9, seed: 52 });\netk('kesim noktası', 500, 600, eo(pr(u, 1, 1.6)), { size: 46 });"
+  },
+  {
+   "narration": "Modern çelik makas ise 1761'de İngiltere'de Robert Hinchliffe ile anılır.",
+   "ifade": "gururlu",
+   "cizim": "txt('1761', 500, 240, 130, { c: K.ak, a: eo(pr(u, 0, .6)) });\nink(ln([350, 340], [650, 600], 14), { w: 12, c: '#6C7A89', seed: 60, pp: eo(pr(u, .4, 1.1)) });\nink(ln([650, 340], [350, 600], 14), { w: 12, c: '#6C7A89', seed: 61, pp: eo(pr(u, .6, 1.3)) });\netk('Robert Hinchliffe', 500, 665, eo(pr(u, 1.3, 1.9)), { size: 44 });"
+  },
+  {
+   "narration": "Bugün terziden berbere herkesin çekmecesinde bir makas var.",
+   "ifade": "gulumsuyor",
+   "cizim": "for (let i = 0; i < 3; i++) { const x = 220 + i * 280; ink(ln([x - 70, 300], [x + 70, 470], 10), { w: 8, seed: 70 + i * 2, pp: eo(pr(u, i * .4, .7 + i * .4)) }); ink(ln([x + 70, 300], [x - 70, 470], 10), { w: 8, seed: 71 + i * 2, pp: eo(pr(u, i * .4 + .1, .8 + i * .4)) }); }\netk('terzi', 220, 600, eo(pr(u, .6, 1.1)), { size: 44 }); etk('berber', 500, 600, eo(pr(u, 1, 1.5)), { size: 44 }); etk('ev', 780, 600, eo(pr(u, 1.4, 1.9)), { size: 44 });"
+  },
+  {
+   "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: kaşık mı, tava mı?",
+   "ifade": "merakli",
+   "cizim": "txt('?', 500, 420, 260, { c: K.ak, a: eo(pr(u, 0, .6)) });\netk('A: Kaşık', 250, 600, eo(pr(u, .6, 1.2)), { size: 52 });\netk('B: Tava', 750, 600, eo(pr(u, 1, 1.6)), { size: 52 });"
+  }
+ ]
+}
