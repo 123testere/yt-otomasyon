@@ -697,15 +697,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-08_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "Çatalhöyük'te Bulunan 8000 Yıllık Ayna Cam Değildi",
-        "a": "Kalem",
-        "b": "Makas",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-08T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
         "a": "Tarak",
@@ -740,6 +731,24 @@
         "oyA": 1,
         "oyB": 0,
         "yayin": "2026-11-11T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Şemsiyenin İlk İşi Yağmurdan Korumak Değildi",
+        "a": "Anahtar",
+        "b": "Makas",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-12T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+        "baslik": "Anahtarın Hikâyesi: Açılmaz Denen Kilit 67 Yıl Dayandı",
+        "a": "Sabun",
+        "b": "Düğme",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-12T16:00:00.000Z"
       }
     ]
   },
