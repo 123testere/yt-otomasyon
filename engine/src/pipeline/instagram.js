@@ -51,39 +51,61 @@ export function caption(job) {
   return text.slice(0, CAPTION_MAX);
 }
 
-// Videoyu doğrudan yükler (herkese açık bir adres gerekmez), işlenmesini bekler ve paylaşır.
-// tur: 'REELS' (varsayılan) ya da 'STORIES' (hikâye; açıklama yazısı kullanılmaz).
-export async function publishReel({ userId, token }, videoPath, text, tur = 'REELS') {
-  const size = fs.statSync(videoPath).size;
-  const veri = fs.readFileSync(videoPath);
-  // Yükleme ve işleme adımı Instagram tarafında ara sıra geçici hata verir ("ProcessingFailedError"):
-  // her denemede yeni bir taslak açılıp baştan yüklenir. Yayınlama (media_publish) yalnızca bir kez çağrılır.
+// Taslağın (container) işlenmesini bekler. FINISHED olursa true; süre dolarsa false; hata durumunda fırlatır.
+async function islenmesiniBekle(containerId, token, saniye) {
+  for (let gecen = 0; ; gecen += 6) {
+    const { status_code: status, status: detail } = await graph('GET', containerId, token, { fields: 'status_code,status' });
+    if (status === 'FINISHED') return true;
+    if (status === 'ERROR' || status === 'EXPIRED') throw new Error(`Instagram videoyu işleyemedi: ${detail ?? status}`);
+    if (gecen >= saniye) return false;
+    await sleep(6000);
+  }
+}
+
+// Videoyu paylaşır. tur: 'REELS' (varsayılan) ya da 'STORIES' (hikâye; açıklama yazısı kullanılmaz).
+// İki yükleme yolu var:
+//  1) Adresten çekme (video_url): Instagram dosyayı verilen adresten kendisi indirir ve arka planda işler.
+//     Zaman sınırı yoktur; asıl yol budur. `adres` her denemede taze bir geçici adres döndüren fonksiyondur.
+//  2) Doğrudan yükleme (resumable): Instagram videoyu ~30 sn içinde işleyemezse "ProcessingFailedError" (HTTP 400)
+//     döner; işleme süresi video uzunluğuyla arttığından ~30 sn'den uzun videolarda neredeyse hep düşer
+//     (Kasım 2026'da Reels'lerin gitmeme sebebi). Yalnızca yedek yol olarak kalır; 400'den sonra taslak yine de
+//     hazır olabildiği için bir süre durumu yoklanır.
+// Yayınlama (media_publish) yalnızca bir kez çağrılır.
+export async function publishReel({ userId, token }, videoPath, text, tur = 'REELS', { adres = null } = {}) {
+  const ortak = tur === 'STORIES' ? { media_type: 'STORIES' } : { media_type: 'REELS', caption: text, share_to_feed: 'true', thumb_offset: '1000' };
+  const adresten = async () => {
+    const container = await graph('POST', `${userId}/media`, token, { ...ortak, video_url: await adres() });
+    if (!(await islenmesiniBekle(container.id, token, 600))) throw new Error('Instagram videoyu 10 dakikada işleyemedi');
+    return container.id;
+  };
+  const dogrudan = async () => {
+    const veri = fs.readFileSync(videoPath);
+    const container = await graph('POST', `${userId}/media`, token, { ...ortak, upload_type: 'resumable' });
+    const up = await fetch(container.uri ?? `https://rupload.facebook.com/ig-api-upload/v23.0/${container.id}`, {
+      method: 'POST',
+      headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(veri.length) },
+      body: veri,
+    });
+    if (up.ok) {
+      if (!(await islenmesiniBekle(container.id, token, 600))) throw new Error('Instagram videoyu 10 dakikada işleyemedi');
+      return container.id;
+    }
+    const hata = `Instagram yükleme HTTP ${up.status}: ${(await up.text()).slice(0, 200)}`;
+    if (await islenmesiniBekle(container.id, token, 90).catch(() => false)) return container.id;
+    throw new Error(hata);
+  };
+  const yollar = adres ? [['adresten', adresten], ['adresten', adresten], ['doğrudan', dogrudan], ['adresten', adresten]] : [['doğrudan', dogrudan], ['doğrudan', dogrudan], ['doğrudan', dogrudan]];
   let containerId = null;
   let son = null;
-  for (let deneme = 1; deneme <= 4 && !containerId; deneme++) {
+  for (let i = 0; i < yollar.length && !containerId; i++) {
+    const [ad, yol] = yollar[i];
     try {
-      const container = await graph('POST', `${userId}/media`, token, tur === 'STORIES'
-        ? { media_type: 'STORIES', upload_type: 'resumable' }
-        : { media_type: 'REELS', upload_type: 'resumable', caption: text, share_to_feed: 'true', thumb_offset: '1000' });
-      const up = await fetch(container.uri ?? `https://rupload.facebook.com/ig-api-upload/v23.0/${container.id}`, {
-        method: 'POST',
-        headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(size) },
-        body: veri,
-      });
-      if (!up.ok) throw new Error(`Instagram yükleme HTTP ${up.status}: ${(await up.text()).slice(0, 200)}`);
-      for (let i = 0; i < 60; i++) {
-        const { status_code: status, status: detail } = await graph('GET', container.id, token, { fields: 'status_code,status' });
-        if (status === 'FINISHED') break;
-        if (status === 'ERROR' || status === 'EXPIRED') throw new Error(`Instagram videoyu işleyemedi: ${detail ?? status}`);
-        if (i === 59) throw new Error('Instagram videoyu 10 dakikada işleyemedi');
-        await sleep(10_000);
-      }
-      containerId = container.id;
+      containerId = await yol();
     } catch (e) {
       if (e instanceof IgIzinHatasi) throw e;
       son = e;
-      console.warn(`  Instagram yükleme denemesi ${deneme}/4: ${e.message}`);
-      if (deneme < 4) await sleep(20_000 * deneme);
+      console.warn(`  Instagram yükleme denemesi ${i + 1}/${yollar.length} (${ad}): ${e.message}`);
+      if (i < yollar.length - 1) await sleep(15_000 * (i + 1));
     }
   }
   if (!containerId) throw son;
@@ -116,4 +138,20 @@ export async function fetchHeld(jobId, dir) {
 
 export async function dropHeld(jobId) {
   await run('gh', ['release', 'delete-asset', RELEASE, `${jobId}.mp4`, '--yes']).catch(() => {});
+}
+
+// Bekleyen dosyanın geçici, imzalı indirme adresi (yaklaşık 1 saat geçerli, oturum gerektirmez).
+// Depo gizli olsa da Instagram videoyu bu adresten çekebilir.
+export async function heldUrl(jobId) {
+  const repo = process.env.GITHUB_REPOSITORY || (await run('gh', ['repo', 'view', '--json', 'nameWithOwner', '-q', '.nameWithOwner'])).trim();
+  const assetId = (await run('gh', ['api', `repos/${repo}/releases/tags/${RELEASE}`, '-q', `.assets[] | select(.name=="${jobId}.mp4") | .id`])).trim();
+  if (!assetId) throw new Error(`Bekleyen video bulunamadı: ${jobId}.mp4`);
+  const ghToken = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || (await run('gh', ['auth', 'token'])).trim();
+  const res = await fetch(`https://api.github.com/repos/${repo}/releases/assets/${assetId}`, {
+    headers: { Authorization: `Bearer ${ghToken}`, Accept: 'application/octet-stream' },
+    redirect: 'manual',
+  });
+  const url = res.headers.get('location');
+  if (!url) throw new Error(`Bekleyen videonun indirme adresi alınamadı (HTTP ${res.status})`);
+  return url;
 }

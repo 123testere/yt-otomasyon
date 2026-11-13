@@ -5,7 +5,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { IgIzinHatasi, caption, dropHeld, fetchHeld, holdForInstagram, igSaglik, igTokenYenile, publishReel } from '../pipeline/instagram.js';
+import { IgIzinHatasi, caption, dropHeld, fetchHeld, heldUrl, holdForInstagram, igSaglik, igTokenYenile, publishReel } from '../pipeline/instagram.js';
 import { notify } from './notify.js';
 import { TtIzinHatasi, ttAciklama, ttPaylas, ttYenile } from '../pipeline/tiktok.js';
 
@@ -100,12 +100,13 @@ export async function publishDueReels(firestore, now = new Date()) {
       const ig = (await firestore.doc(`secrets/ig_${v.channelId}`).get()).data();
       if (!ig?.token) throw new IgIzinHatasi('Kanalın Instagram hesabı bağlı değil');
       const file = await fetchHeld(doc.id, dir);
-      const r = await publishReel(ig, file, v.instagram.caption);
+      const adres = () => heldUrl(doc.id);
+      const r = await publishReel(ig, file, v.instagram.caption, 'REELS', { adres });
       await doc.ref.update({ 'instagram.durum': 'yayinlandi', 'instagram.permalink': r.permalink, 'instagram.at': now, 'instagram.hata': null });
       // İstenirse aynı video hikâyede de paylaşılır (videos/{id}.instagram.hikaye: true)
       if (v.instagram.hikaye) {
         try {
-          await publishReel(ig, file, null, 'STORIES');
+          await publishReel(ig, file, null, 'STORIES', { adres });
           await doc.ref.update({ 'instagram.hikayeDurum': 'yayinlandi' });
         } catch (e) {
           await doc.ref.update({ 'instagram.hikayeDurum': `hata: ${e.message.slice(0, 200)}` });
