@@ -1,0 +1,619 @@
+{
+ "id": "2026-11-14_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "hiz": 1.1,
+ "publishAt": "2026-11-14T15:00:00.000Z",
+ "bolum": {
+  "no": 7,
+  "ad": "Top 10"
+ },
+ "title": "Tek Kişi ya da Küçük Ekip: Dünyayı Sallayan 10 Oyun 🎮",
+ "titleAlt": "Küçük Ekiplerin Yaptığı 10 Efsane Oyun",
+ "topic": "Tek kişi ya da küçük ekiplerin yaptığı dünyayı sallayan 10 oyun",
+ "description": "Tek kişi ya da küçük ekiplerin yaptığı en iyi 10 oyun: Cave Story, Braid, Papers, Please, Terraria, Undertale, Hollow Knight, Celeste, Vampire Survivors, Stardew Valley ve Minecraft. Senin listende birinci hangisi?\n\n#bağımsızoyunlar #oyunönerisi #top10 #gaming",
+ "tags": [
+  "bağımsız oyunlar",
+  "tek kişi yapılan oyunlar",
+  "küçük ekiple yapılan oyunlar",
+  "en iyi 10 oyun",
+  "indie oyunlar",
+  "stardew valley",
+  "minecraft",
+  "hollow knight",
+  "celeste",
+  "oyun önerisi"
+ ],
+ "thumbnailText": "KÜÇÜK EKİP",
+ "thumbnailTextAlt": "TEK KİŞİ YAPTI",
+ "kapak": {
+  "sahne": 20,
+  "sn": 2
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "One Person or a Tiny Team: 10 Games That Shook the World 🎮",
+   "description": "The best games made by one person or a tiny team: Cave Story, Braid, Papers Please, Terraria, Undertale, Hollow Knight, Celeste, Vampire Survivors, Stardew Valley and Minecraft. Which one is your number one?"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Küçük ekiplerin hangi oyunu en çok sevdin?"
+ },
+ "scenes": [
+  {
+   "kisim": "Giriş",
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "TOP 10",
+    "alt": "Küçük ekip, dev oyun"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tek bir kişi ya da küçük bir ekip, dünyayı sallayan bir oyun yapabilir mi? İşte bunu kanıtlayan on oyun. Kimi odasında tek başına çalıştı, kimi minik bir stüdyoda."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hikâyeleri şaşırtıcı, oyunları efsane. Sondan başlıyoruz!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 10,
+    "ad": "Cave Story",
+    "tur": "Tek kişilik efsane",
+    "maddeler": [
+     "2004 çıkışlı",
+     "Tek kişi yaptı",
+     "Bedava dağıtıldı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Onuncu sırada Cave Story. Japon geliştirici Daisuke Amaya, bu aksiyon macerasını yıllarca tek başına yaptı ve 2004'te bedava yayınladı."
+    }
+   ],
+   "kisim": "10-7"
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Küçük bir mağara dünyasında geçen oyun, internette elden ele yayıldı. Tek bir kişinin hayal gücü, bağımsız oyun dünyasına ilham veren bir klasik doğurdu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kısacası, iyi bir fikir ve sabır büyük bütçenin yerini tutabiliyor. Üstelik bu hikâye, sonrasında gelen birçok bağımsız geliştiriciye cesaret verdi."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2004",
+    "alt": "tek kişi, bedava"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 9,
+    "ad": "Braid",
+    "tur": "Zaman bulmacası",
+    "maddeler": [
+     "2008 çıkışlı",
+     "Zamanı geri sar",
+     "Küçük ekip yaptı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dokuzuncu sırada Braid. Jonathan Blow'un küçük bir ekiple yaptığı bulmaca oyunu, 2008'de çıktı."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Hata mı yaptın? Zamanı geri sar. Bu fikir, bulmaca oyunlarına yepyeni bir bakış getirdi. Üstelik bağımsız oyunların da sanat olabileceği tartışmasını başlattı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kısa bir oyun gibi görünse de aklında uzun süre kalıyor. Tasarımın bu kadar zekice olması, küçük ekiplerin gücünü gösteriyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2008",
+    "alt": "zamanı geri sar"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 8,
+    "ad": "Papers, Please",
+    "tur": "Sınır kapısı simülasyonu",
+    "maddeler": [
+     "2013 çıkışlı",
+     "Lucas Pope yaptı",
+     "Zor kararlar"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sekizinci sırada Papers, Please. Lucas Pope, kurgusal bir ülkenin sınır kapısında çalışan memuru oynatan bu oyunu 2013'te çıkardı."
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "kadraj": [
+    {
+     "id": "gelistirici-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Pasaportları kontrol ediyor, kararlarını veriyorsun. Her karar, bir ailenin kaderini etkileyebiliyor. Yani sıradan görünen bir iş bile oyuncuyu zor seçimlere sürükleyebiliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Çizimi sade, ama hissettirdikleri oldukça ağır. Bir bürokrasi oyununun bu kadar etkileyici olabileceğini kimse beklemezdi."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 7,
+    "ad": "Terraria",
+    "tur": "2D macera ve inşa",
+    "maddeler": [
+     "2011 çıkışlı",
+     "Kaz, inşa et, savaş",
+     "Re-Logic stüdyosu"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yedinci sırada Terraria. 2011'de çıkan oyunda kazıyor, inşa ediyor ve canavarlarla savaşıyorsun. Arkasında Re-Logic adlı küçük bir ekip var."
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sık sık Minecraft'la kıyaslanır, ama iki boyutlu dünyasıyla kendi yolunu çizdi. Yıllar boyunca aldığı güncellemelerle oyuncu topluluğunu hep canlı tuttu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yani bir oyunu büyüten şey, ekibin büyüklüğü değil, topluluğun ilgisi. Oyuncular bu dünyada saatlerce kaybolmaya devam ediyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 6,
+    "ad": "Undertale",
+    "tur": "Rol yapma oyunu",
+    "maddeler": [
+     "2015 çıkışlı",
+     "Toby Fox yaptı",
+     "Savaşmadan bitebilir"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Altıncı sırada Undertale. Toby Fox, bu rol yapma oyununu 2015'te büyük ölçüde tek başına geliştirdi."
+    }
+   ],
+   "kisim": "6-4"
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun, kitle fonlamasıyla duyurulmuştu. En çok konuşulan özelliği de hiç kimseyi öldürmeden bitirebilmek. Böylece rol yapma türünün kurallarını sorgulattı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Basit görünen çizimlerin ardında şaşırtıcı bir derinlik var. Müziği ve esprili diyalogları da oyunun en sevilen yanlarından."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Hollow Knight",
+    "tur": "Keşif macerası",
+    "maddeler": [
+     "2017 çıkışlı",
+     "Team Cherry yaptı",
+     "El çizimi dünya"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Hollow Knight. Avustralyalı küçük stüdyo Team Cherry, el çizimi bu karanlık macerayı 2017'de çıkardı."
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Böceklerin yaşadığı yıkık bir krallıkta gezerken boss'larla uğraşıyorsun. Anlatılanlara göre fikir, bir oyun yarışmasında doğdu. Küçük bir tohum, dev bir hayran kitlesine dönüştü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Zorlayıcı ama keşfetmenin tadı bir o kadar büyük. Her köşede yeni bir sır seni bekliyor."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2017",
+    "alt": "küçük ekip, büyük dünya"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Celeste",
+    "tur": "Dağ tırmanışı",
+    "maddeler": [
+     "2018 çıkışlı",
+     "Küçük ekip yaptı",
+     "Yardım modu var"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Celeste. Maddy Thorson ve Noel Berry'nin 2018'de çıkardığı bu platform oyunu, bir dağa tırmanışı anlatıyor."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "gelistirici-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zor ama bağışlayıcı: istediğin kadar deneyebiliyorsun. Hikâyesi kaygı ve kendini kabul etme üzerine. Yardım modu sayesinde zorlanan oyuncular da sonuna kadar gidebiliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Her düşüşte kendini yeniden denemek, oyunun asıl teması. Bu yüzden oynayan kişi hikâyeyle birlikte kendini de aşıyor."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Vampire Survivors",
+    "tur": "Hayatta kalma",
+    "maddeler": [
+     "2021'de erken erişim",
+     "Luca Galante yaptı",
+     "Basit ve bağımlılık"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Vampire Survivors. Luca Galante'nin geliştirdiği oyun 2021'de erken erişime çıktı ve kısa sürede ses getirdi."
+    }
+   ],
+   "kisim": "3-1"
+  },
+  {
+   "mekan": "oyun-salonu",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Karakter kendiliğinden ateş ediyor, sen sadece hareket ediyorsun. Ekran düşmanla dolarken silahların güçleniyor. Basit bir fikir ve uygun bir fiyatla çok sayıda oyuncuya ulaştı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu kadar sade bir fikrin bu kadar tutması, oyun dünyasında sık görülmez. Küçük bir ekibin cesur bir denemesi, büyük bir akım yarattı."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Stardew Valley",
+    "tur": "Çiftlik simülasyonu",
+    "maddeler": [
+     "2016 çıkışlı",
+     "Eric Barone yaptı",
+     "Her şeyi tek başına"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Stardew Valley. Eric Barone, çiftlik oyununu yıllarca tek başına programladı, çizdi ve müziğini yaptı. Oyun 2016'da çıktı."
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Şehir hayatından kaçıp miras kalan çiftliği çevirmek. Ekin, balık, madencilik ve dostluklar. Yıllar sonra bile yeni güncellemeler almaya devam etti. Rahatlatıcı müzikleriyle uzun süre oynanıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tek bir kişinin emeği, milyonlarca oyuncunun günlük kaçış noktası oldu."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2016",
+    "alt": "tek kişi, koca çiftlik"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Minecraft",
+    "tur": "Hayatta kalma ve inşa",
+    "maddeler": [
+     "2009'da ilk sürüm",
+     "Markus Persson başlattı",
+     "Mojang sonra büyüdü"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada Minecraft! Markus Persson 2009'da ilk sürümünü yayınladı. Küçük bir başlangıçtı."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "patron",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonra oyun dünyayı sardı. 2014'te Microsoft, Mojang'ı yaklaşık 2,5 milyar dolara satın aldı. Bir blok oyunu, küçük bir başlangıçtan tarihin en bilinen oyunlarından biri oldu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bugün milyonlarca oyuncu kendi dünyasını bu oyunda kuruyor. İşte küçük başlangıçların büyüyebileceğinin en güzel örneği."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2,5 MİLYAR $",
+    "alt": "Microsoft, 2014"
+   },
+   "kalabalik": 1
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Küçük ekiplerin büyük işler çıkarabildiğini gördük. Senin listende birinci hangisi? Yorumlara yaz, videoyu beğenmeyi ve kanala abone olmayı unutma!"
+    }
+   ]
+  }
+ ]
+}

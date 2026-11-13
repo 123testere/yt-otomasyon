@@ -1,0 +1,694 @@
+{
+ "id": "kesif_hayatta_kal_pilot",
+ "channelId": "KESIF",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "kesif-hayatta-kal",
+ "publishAt": "2026-11-14T12:00:00.000Z",
+ "bolum": {
+  "no": 1,
+  "ad": "Locked In"
+ },
+ "title": "I Was Locked Inside a Mall for 30 Days 🛍️",
+ "titleAlt": "30 Days Trapped: The Mall Doors Never Opened",
+ "description": "I was locked inside a mall for 30 days. This is my day-by-day diary of rules, allies and the shadows I could not explain. A fictional animated story.\n\n#survival #animation #story #30days",
+ "tags": [
+  "locked in a mall",
+  "30 days trapped",
+  "survival story",
+  "stickman animation",
+  "day by day",
+  "survival diary",
+  "animated story",
+  "mall lockdown"
+ ],
+ "topic": "A narrator spends 30 days trapped in a locked mall with two allies",
+ "thumbnailText": "DAY 30",
+ "thumbnailTextAlt": "WHO IS THERE",
+ "kapak": {
+  "sahne": 18,
+  "sn": 2
+ },
+ "oynatmaListesi": "30 Days Trapped",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.08,
+ "kapanis": {
+  "baslik": "TO BE CONTINUED",
+  "sonraki": "Part 2: The Two Shadows — Coming Soon",
+  "soru": "Who do you think is hiding in the dark?"
+ },
+ "scenes": [
+  {
+   "mekan": "fuar",
+   "kisim": "Soğuk Açılış",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day thirty. The doors are still locked, and something just moved in the dark."
+    },
+    {
+     "kim": "sam",
+     "metin": "I am telling you this diary because I still do not know how it ends, and I need you to know what happened."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kisim": "Birinci Kısım",
+   "kart": {
+    "ust": "PART ONE",
+    "alt": "The Doors Close"
+   },
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Let me go back to the start. It was a normal Friday evening."
+    },
+    {
+     "kim": "sam",
+     "metin": "The mall was loud and busy a minute earlier. Now every voice around me had gone quiet, and the silence felt heavier than any noise."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "kalabalik": 0.5,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "I was buying shoes when the lights flickered and a loud lock clicked."
+    },
+    {
+     "kim": "sam",
+     "metin": "I ran to the nearest door and pulled with all my strength. Nothing moved, not even a little."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Every exit was sealed. My phone had no signal."
+    },
+    {
+     "kim": "sam",
+     "metin": "I told myself to stay calm."
+    },
+    {
+     "kim": "sam",
+     "metin": "I counted the exits twice. Each one had the same metal shutter, and each one was cold under my hands."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "mia",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "mia",
+     "metin": "Hey! Over here! I work at the shop. The system locked the whole building."
+    },
+    {
+     "kim": "sam",
+     "metin": "Mia saved me from panic. I was not alone."
+    },
+    {
+     "kim": "sam",
+     "metin": "She handed me a bottle of water and a granola bar. It was the kindest thing anyone had done for me all day."
+    }
+   ]
+  },
+  {
+   "mekan": "kule-ic",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "mia",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day two. Hunger kicked in, so we raided the food court."
+    },
+    {
+     "kim": "mia",
+     "metin": "Take only what we need. This has to last."
+    },
+    {
+     "kim": "sam",
+     "metin": "The shelves were full, but we did not know how long the lockdown would last. So we counted every can and every box."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "mia",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "We made rules. Ration the food. Sleep in shifts. Never split up."
+    },
+    {
+     "kim": "sam",
+     "metin": "Rule one kept us fair, rule two kept us rested, and rule three kept us alive. We repeated them every morning like a promise."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "kisim": "İkinci Kısım",
+   "kart": {
+    "ust": "PART TWO",
+    "alt": "Rules of the Mall"
+   },
+   "zaman": "gece",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "mia",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day five. We built a camp from sofas and display beds."
+    },
+    {
+     "kim": "mia",
+     "metin": "Not bad. It almost feels like home."
+    },
+    {
+     "kim": "sam",
+     "metin": "We slept on soft mattresses, but I barely closed my eyes. Every small creak made my heart jump."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Then the power started to fail. The mall went dark every night."
+    },
+    {
+     "kim": "sam",
+     "metin": "In the dark, the mall sounded alive. Pipes clicked, vents sighed, and something far away kept tapping."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "zaman": "gece",
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "fisilti"
+    },
+    {
+     "id": "mia",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day eight. A flashlight beam crossed the ceiling. We froze."
+    },
+    {
+     "kim": "sam",
+     "metin": "Mia gripped my sleeve. We held our breath and listened to the footsteps getting closer."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "zaman": "gece",
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "mia",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "ben",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "endiseli",
+     "esya": "fener"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "ben",
+     "metin": "Easy. I am the night guard. I got locked in too."
+    },
+    {
+     "kim": "sam",
+     "metin": "Ben had a radio and a heavy ring of keys."
+    },
+    {
+     "kim": "sam",
+     "metin": "He had been locked in for two days, alone, walking the halls and talking to himself to stay sane."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kisim": "Üçüncü Kısım",
+   "kart": {
+    "ust": "PART THREE",
+    "alt": "The Guard"
+   },
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "ben",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    },
+    {
+     "id": "mia",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "ben",
+     "metin": "The radio only catches static. But the security room has a map of every exit."
+    },
+    {
+     "kim": "mia",
+     "metin": "Then we find one."
+    },
+    {
+     "kim": "sam",
+     "metin": "Maps and keys gave us hope, and hope was the one thing we could not buy in any store."
+    }
+   ]
+  },
+  {
+   "mekan": "kule-ic",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "ben",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "eller-belde",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day twelve. We tried the roof door. It was welded shut by the lockdown."
+    },
+    {
+     "kim": "sam",
+     "metin": "We pushed and pulled and checked every bolt. The lockdown system was built to keep people out, and it worked just as well keeping us in."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "mia",
+     "x": 0.55,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "ben",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day sixteen. Food was running low and tempers were rising."
+    },
+    {
+     "kim": "sam",
+     "metin": "People can be brave for a week. Hunger and fear test them on the second week, and I saw it on every face."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "mia",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "mia",
+     "metin": "We argue, we lose. Let's share the plan again."
+    },
+    {
+     "kim": "sam",
+     "metin": "I felt ashamed of raising my voice. Nobody wanted this, and the real enemy was the locked door, not each other."
+    }
+   ]
+  },
+  {
+   "mekan": "ev-ic",
+   "zaman": "gece",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "mia",
+     "x": 0.55,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "ben",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "We sat together and agreed. Everyone gets a job, and nobody sleeps hungry alone."
+    },
+    {
+     "kim": "sam",
+     "metin": "That night the camp felt warmer than it had in weeks. Small rules, shared food and honest words kept us together."
+    }
+   ]
+  },
+  {
+   "mekan": "yol",
+   "zaman": "gece",
+   "kisim": "Dördüncü Kısım",
+   "kart": {
+    "ust": "PART FOUR",
+    "alt": "One Bar"
+   },
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin",
+     "esya": "fener"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Day twenty-two. The power came back for ten seconds. A phone buzzed with one bar of signal."
+    },
+    {
+     "kim": "sam",
+     "metin": "I held it over my head and walked in a slow circle. Please, I whispered, just one more bar."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "mia",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "mia",
+     "metin": "Send a message! Anything!"
+    },
+    {
+     "kim": "sam",
+     "metin": "I typed with shaking hands: locked in mall, five of us."
+    },
+    {
+     "kim": "sam",
+     "metin": "The message went from sending to sent. Then the screen showed the tiny word delivered. We cried and laughed at the same time."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "kalabalik": 0,
+   "kadraj": [
+    {
+     "id": "sam",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "mia",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "ben",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli",
+     "esya": "fener"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sam",
+     "metin": "Five? We were only three. I looked up, and there were two new shadows near the stairs."
+    },
+    {
+     "kim": "sam",
+     "metin": "Those shadows were not part of our group. Whoever they were, they had been watching us for a long time."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik",
+    "sis"
+   ],
+   "kalabalik": 0,
+   "sure": 3,
+   "kadraj": [
+    {
+     "id": "ben",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "supheli",
+     "esya": "fener"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "ben",
+     "metin": "Who is there?"
+    },
+    {
+     "kim": "sam",
+     "metin": "Nobody answered. Then every light went out."
+    },
+    {
+     "kim": "sam",
+     "metin": "I do not know who was in the dark, or what they wanted. Part two begins with that answer."
+    }
+   ]
+  }
+ ]
+}

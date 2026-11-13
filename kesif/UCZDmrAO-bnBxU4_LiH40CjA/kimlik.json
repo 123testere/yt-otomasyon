@@ -1,0 +1,41 @@
+{
+ "kanalAdlari": [
+  "30 Days Trapped",
+  "Survival Diary Toons",
+  "Locked In Stories"
+ ],
+ "slogan": "Day by day. Door by door.",
+ "aciklama": "Animated first-person survival diaries: 30 days trapped in one place. A mall, a school, a subway. Tense, bloodless and fully fictional. New episodes twice a week.",
+ "etiketler": [
+  "survival",
+  "30 days",
+  "locked in",
+  "animation",
+  "stickman",
+  "story",
+  "survival diary",
+  "mall",
+  "thriller",
+  "mystery"
+ ],
+ "renkler": [
+  "#1F2937",
+  "#DC2626",
+  "#E5E7EB"
+ ],
+ "anaKarakter": "sam",
+ "dizi": "kesif-hayatta-kal",
+ "ayarlar": {
+  "language": "en",
+  "niche": "animasyon",
+  "shortsTimes": [],
+  "longDays": [
+   2,
+   5
+  ],
+  "longTime": "18:00",
+  "minutes": 8,
+  "music": "gerilim",
+  "hashtags": "#survival #animation #story"
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "id": "2026-11-14_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-14T07:00:00.000Z",
+ "topic": "Anahtarın pimli kilit mantığının Mısır'dan Linus Yale'e uzanan yolu",
+ "title": "Kapı Kilidinin Fikri 4000 Yıllık: Mısır'dan Yale'e",
+ "hookText": "4000 yıllık pim",
+ "description": "Eşyaların Hikayesi #46\nKapı kilidinin mantığı yaklaşık 4000 yıl önce Mısır'daki ahşap pimli kilitlere uzanır; modern pimli silindir kilit ise 1861'de Linus Yale Jr. ile patentlendi.\n\n#kilit #anahtar #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "kapı kilidi",
+  "kilit tarihi",
+  "anahtar nasıl çalışır",
+  "pimli kilit",
+  "Linus Yale",
+  "Mısır kilidi",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Kapı kilidinin fikri",
+  "4000 yıl yaşlı"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Pusula",
+  "b": "Mum"
+ },
+ "oylama": {
+  "kaynak": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "The Idea Behind Your Door Lock Is About 4,000 Years Old",
+   "description": "Story of Things #46\nThe idea behind the pin lock goes back to wooden locks in Egypt about 4,000 years ago; the modern pin-tumbler cylinder lock was patented by Linus Yale Jr. in 1861."
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Bugünkü kilitlerin mantığı, yaklaşık 4000 yıl önce Mısır'da ahşaptan kuruldu, derler.",
+   "ifade": "saskin",
+   "cizim": "txt('4000', 500, 330, 150, { c: K.ak, a: eo(pr(u, 0, .6)) });\netk('yıl önce, Mısır', 500, 450, eo(pr(u, .6, 1.2)), { size: 54 });\nink(ln([200, 540], [800, 540], 16), { w: 4, pp: eo(pr(u, .3, 1.2)) });"
+  },
+  {
+   "narration": "O kilitte ahşap bir sürgü, içine düşen küçük ahşap pimlerle yerinde tutulurdu.",
+   "ifade": "anlatiyor",
+   "cizim": "const LIFT = 0;\nink(kutu(180, 300, 640, 70), { close: true, fill: '#C9A878', w: 5, seed: 3, pp: eo(pr(u, 0, .7)) });\nfor (let i = 0; i < 3; i++) ink(kutu(300 + i * 150, 370 + LIFT, 50, 110), { close: true, fill: '#B08A5A', w: 4, seed: 10 + i, pp: eo(pr(u, .3 + i * .2, .9 + i * .2)) });\netk('ahşap sürgü', 500, 240, eo(pr(u, .6, 1.2)), { size: 48 });\netk('pimler', 500, 620, eo(pr(u, 1, 1.6)), { size: 48 });"
+  },
+  {
+   "narration": "Anahtar, o pimleri yukarı iterek sürgüyü serbest bırakırdı.",
+   "ifade": "dusunceli",
+   "cizim": "const LIFT = -eo(pr(u, .8, 1.6)) * 50;\nink(kutu(180, 300, 640, 70), { close: true, fill: '#C9A878', w: 5, seed: 3, pp: eo(pr(u, 0, .7)) });\nfor (let i = 0; i < 3; i++) ink(kutu(300 + i * 150, 370 + LIFT, 50, 110), { close: true, fill: '#B08A5A', w: 4, seed: 10 + i, pp: eo(pr(u, .3 + i * .2, .9 + i * .2)) });\nok([500, 640], [500, 560], { pp: eo(pr(u, .8, 1.4)) });\netk('pimler yukarı', 500, 250, eo(pr(u, 1.2, 1.8)), { size: 48 });"
+  },
+  {
+   "narration": "Romalılar ise demir kilitler yaptı ve anahtarı yüzük gibi parmağa taktı.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500, 380, 130, 130, 36), { w: 14, seed: 40, pp: eo(pr(u, 0, .8)) });\nink(kutu(470, 230, 60, 40), { close: true, fill: '#B5A04A', w: 5, seed: 41, pp: eo(pr(u, .5, 1)) });\nink(ln([500, 270], [500, 330], 6), { w: 6, seed: 42, pp: eo(pr(u, .8, 1.2)) });\netk('Roma: anahtar yüzüğü', 500, 600, eo(pr(u, 1.2, 1.8)), { size: 50 });"
+  },
+  {
+   "narration": "Sonra 1861'de Amerikalı Linus Yale Jr., pimli silindir kilidi patentledi.",
+   "ifade": "anlatiyor",
+   "cizim": "txt('1861', 500, 300, 140, { c: K.ak, a: eo(pr(u, 0, .6)) });\nink(ell(500, 470, 80, 80, 28), { close: true, fill: '#E6DBC4', w: 6, seed: 50, pp: eo(pr(u, .6, 1.3)) });\nink(kutu(485, 450, 30, 60), { close: true, fill: '#6B5A3C', w: 4, seed: 51, pp: eo(pr(u, 1, 1.5)) });\netk('Linus Yale Jr.', 500, 640, eo(pr(u, 1.4, 2)), { size: 48 });"
+  },
+  {
+   "narration": "Bugünkü çoğu kapı kilidi, aynı pim fikrinin küçülmüş halidir.",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(260, 300, 480, 200), { close: true, fill: '#E6DBC4', w: 6, seed: 60, pp: eo(pr(u, 0, .8)) });\nfor (let i = 0; i < 5; i++) { ink(ln([320 + i * 90, 300], [320 + i * 90, 380 + Math.sin(T * 2 + i) * 6], 6), { w: 8, seed: 61 + i, pp: eo(pr(u, .4 + i * .15, .9 + i * .15)) }); }\netk('küçülmüş pimler', 500, 580, eo(pr(u, 1.2, 1.8)), { size: 50 });"
+  },
+  {
+   "narration": "Anahtarın dişleri, pimleri tam doğru yüksekliğe getirir.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(150,420,40,40,20),{close:true,fill:'#EFE4CB',w:6,seed:70,pp:eo(pr(u, 0, 0.8))});\nink(ln([190,420],[450,420],10),{w:7,seed:71,pp:eo(pr(u, 0, 0.8))});\nink([[380,420],[380,470],[410,470],[410,420]],{w:6,seed:72,pp:eo(pr(u, 0.2, 1.0))});\nfor (let i = 0; i < 3; i++) ink(kutu(520 + i * 90, 300, 40, 80 + i * 20), { close: true, fill: '#B08A5A', w: 4, seed: 80 + i, pp: eo(pr(u, 1 + i * .2, 1.6 + i * .2)) });\netk('doğru yükseklik', 700, 560, eo(pr(u, 1.6, 2.2)), { size: 46 });"
+  },
+  {
+   "narration": "Yani her anahtar, aslında küçük bir şifredir.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(250,380,40,40,20),{close:true,fill:'#EFE4CB',w:6,seed:90,pp:eo(pr(u, 0, 0.8))});\nink(ln([290,380],[550,380],10),{w:7,seed:91,pp:eo(pr(u, 0, 0.8))});\nink([[480,380],[480,430],[510,430],[510,380]],{w:6,seed:92,pp:eo(pr(u, 0.2, 1.0))});\ntxt('şifre', 500, 560, 90, { c: K.ak, a: eo(pr(u, 1, 1.6)) });"
+  },
+  {
+   "narration": "Sırada hangisi olsun? Yorumlara A ya da B yazın: pusula mı, mum mu?",
+   "ifade": "merakli",
+   "cizim": "txt('?', 500, 420, 260, { c: K.ak, a: eo(pr(u, 0, .6)) });\netk('A: Pusula', 250, 600, eo(pr(u, .6, 1.2)), { size: 52 });\netk('B: Mum', 750, 600, eo(pr(u, 1, 1.6)), { size: 52 });"
+  }
+ ]
+}

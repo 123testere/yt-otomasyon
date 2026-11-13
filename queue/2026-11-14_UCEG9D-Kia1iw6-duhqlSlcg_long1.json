@@ -1,0 +1,584 @@
+{
+ "id": "2026-11-14_UCEG9D-Kia1iw6-duhqlSlcg_long1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "hiz": 1.1,
+ "publishAt": "2026-11-14T15:00:00.000Z",
+ "bolum": {
+  "no": 7,
+  "ad": "Top 10"
+ },
+ "title": "10 Businesses You Can Start With Almost No Money 💰",
+ "titleAlt": "10 Small Businesses You Can Start From Home This Year",
+ "topic": "10 low-cost small business ideas with realistic ways to start and honest caveats",
+ "description": "Which low-cost business could you start this year? In this Top 10 we count down pet sitting, online tutoring, cleaning services, freelance writing, social media help, bookkeeping, lawn care, video editing, web design and consulting, with a realistic way to start each and the catch you should know about. No results are guaranteed.\n\n#money #business #startup #sidehustle #motivation",
+ "tags": [
+  "low cost business ideas",
+  "small business ideas",
+  "business ideas to start",
+  "start a business with no money",
+  "top 10",
+  "home business ideas",
+  "side business",
+  "entrepreneur tips",
+  "business for beginners",
+  "freelance ideas"
+ ],
+ "thumbnailText": "ALMOST FREE",
+ "thumbnailTextAlt": "NO OFFICE NEEDED",
+ "kapak": {
+  "sahne": 20,
+  "sn": 2
+ },
+ "oynatmaListesi": "Top 10 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "10 negocios que puedes empezar con casi nada de dinero 💰",
+   "description": "¿Qué negocio de bajo costo podrías empezar este año? En este Top 10: cuidado de mascotas, tutorías en línea, limpieza, redacción freelance, redes sociales para comercios, contabilidad, jardinería, edición de video, diseño web y consultoría, con una forma realista de empezar cada uno. No hay resultados garantizados.\n\n#dinero #negocios #emprendimiento"
+  }
+ },
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted gets a deep dive",
+  "soru": "Which of the 10 would you start first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Intro",
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "TOP 10",
+    "alt": "Start with almost nothing"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "canta",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "You do not need an office, a loan or a big team to start these ten businesses. Some need only a laptop, some need only a few tools."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "We will count down, give you a realistic way to start each one, and be honest about the catch. Let's count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 10,
+    "ad": "Pet Sitting",
+    "tur": "Local service",
+    "maddeler": [
+     "Feed and walk pets",
+     "Trust is the product",
+     "Very low startup cost"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number ten: pet sitting. Many people travel and need someone they trust to look after their pets."
+    }
+   ],
+   "kisim": "10-7"
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "ogrenci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "You can start with your own neighborhood. Post in local groups, meet the pet first, and ask for reviews."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "The catch is that the work is hands-on and schedules can be demanding, especially around holidays."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "PET SITTING",
+    "alt": "trust is the product"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 9,
+    "ad": "Online Tutoring",
+    "tur": "Teach what you know",
+    "maddeler": [
+     "Pick one subject",
+     "Teach by video call",
+     "Set your own hours"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number nine: online tutoring. If you know a subject well, you can teach it from anywhere with a laptop."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "calisan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "girisimci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Start with one subject you can explain clearly, like math or a language. Many people begin through a tutoring platform and later find students by word of mouth."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Just remember that results depend on how many students you can find."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 8,
+    "ad": "Cleaning Services",
+    "tur": "Repeat customers",
+    "maddeler": [
+     "Basic supplies",
+     "Local word of mouth",
+     "Reviews build trust"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number eight: cleaning services. The tools are cheap, and happy customers often book again."
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "yatirimci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    },
+    {
+     "id": "girisimci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "A few good supplies and a reliable schedule can be enough to start. Reliability is the real product here. The tradeoff is that it is physical work, so many owners later hire help to grow."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "CLEANING",
+    "alt": "reliability wins"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 7,
+    "ad": "Freelance Writing",
+    "tur": "Words for hire",
+    "maddeler": [
+     "Blogs and websites",
+     "Build a few samples",
+     "Pitch small clients"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number seven: freelance writing. Businesses always need clear words for websites, emails and blogs."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "calisan",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Begin with a few strong samples and pitch small local companies. Pay can be low at first, so many writers focus on one niche they understand well. The upside is that you only need a computer."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 6,
+    "ad": "Social Media Help",
+    "tur": "Help local shops",
+    "maddeler": [
+     "Post for small shops",
+     "Learn free tools",
+     "Monthly clients"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number six: social media help for local shops. Many owners are busy and would rather hand it off."
+    }
+   ],
+   "kisim": "6-4"
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "ogrenci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Pick a few small businesses, plan their posts, and show simple results. Monthly clients give steadier income than one-time jobs. Keep promises realistic, because social media results can vary a lot."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "LOCAL SHOPS",
+    "alt": "they need help"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Bookkeeping",
+    "tur": "Numbers for small firms",
+    "maddeler": [
+     "Track income and costs",
+     "Learn basic software",
+     "Steady monthly work"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: bookkeeping for small businesses. Owners often dislike paperwork, and that creates demand."
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "calisan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "girisimci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "You track income, costs and invoices so the owner can see how the business is doing. You will need to learn basic accounting software and be careful with accuracy."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Trust matters a lot here, because you handle sensitive numbers."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Lawn Care",
+    "tur": "Outdoor service",
+    "maddeler": [
+     "Basic tools",
+     "Neighborhood routes",
+     "Seasonal demand"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: lawn care. People want tidy yards, but not everyone has the time or the tools."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "yatirimci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    },
+    {
+     "id": "girisimci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Start with simple equipment and a few neighbors, then build routes so you can work efficiently. The business is seasonal in many places, so some owners add other services in the off months."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "LAWN CARE",
+    "alt": "build a route"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Video Editing",
+    "tur": "Skill-based freelance",
+    "maddeler": [
+     "Edit for creators",
+     "Learn with free videos",
+     "Your portfolio sells"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: video editing. Creators and brands often need fresh clips more than they can make themselves."
+    }
+   ],
+   "kisim": "3-1"
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "calisan",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Free tutorials can teach the basics. Then you make a small portfolio and share it with creators. Fast turnaround and clear communication can matter as much as your skills."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Web Design",
+    "tur": "Sites for local firms",
+    "maddeler": [
+     "Simple one-page sites",
+     "Show a clear portfolio",
+     "Offer small upkeep"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: web design for local businesses. Plenty of shops still do not have a clear, simple website."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "ogrenci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "You can start with one-page sites that show hours, a map and contact details. Some designers add monthly upkeep as a second service."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "The challenge is finding clients and explaining the value in plain words."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "WEB DESIGN",
+    "alt": "simple works"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Consulting",
+    "tur": "Sell what you know",
+    "maddeler": [
+     "Use your own experience",
+     "Solve one problem",
+     "Reputation grows it"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: consulting in a skill you already have. Experience is something you do not need to buy."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "calisan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "girisimci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Maybe you know marketing, logistics or cooking costs. Package that knowledge as a clear service that solves one problem. It takes time to earn trust, but your reputation becomes the asset."
+    }
+   ],
+   "buyukYazi": {
+    "ust": "YOUR SKILL",
+    "alt": "is the business"
+   }
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "No business is guaranteed, but small starts teach you fast. Which one of these ten would you try first? Tell us in the comments, like the video, and subscribe for more!"
+    }
+   ]
+  }
+ ]
+}

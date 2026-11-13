@@ -1,40 +1,40 @@
 {
  "kanalAdlari": [
-  "Things Talk",
-  "I Was an Object",
-  "Object Stories"
+  "Eşya Dile Geldi",
+  "Ben Bir Eşyaydım",
+  "Hayatım Eşya"
  ],
- "slogan": "Every object has a story.",
- "aciklama": "Everyday objects tell their own life stories in under a minute. True history, told in second person, with one surprising fact at the end. New short every day.",
+ "slogan": "Her eşyanın bir hikâyesi var.",
+ "aciklama": "Gündelik eşyalar kendi hayat hikâyesini bir dakikadan kısa sürede anlatıyor. Doğrulanabilir tarih, ikinci tekil şahıs anlatım ve sonda şaşırtıcı bir bilgi. Her gün yeni bir Shorts.",
  "etiketler": [
-  "object stories",
-  "everyday objects",
-  "history shorts",
-  "nostalgia",
-  "inventions",
-  "did you know",
-  "stickman",
-  "animation",
-  "shorts",
-  "history of things"
+  "eşyaların hikayesi",
+  "çay bardağı",
+  "nostalji",
+  "icatlar",
+  "tarih shorts",
+  "animasyon",
+  "çöp adam",
+  "bunları biliyor muydun",
+  "eşya tarihi",
+  "shorts"
  ],
  "renkler": [
   "#F4C95D",
   "#E07A5F",
   "#3D405B"
  ],
- "anaKarakter": "ogrenci",
- "dizi": "kesif-esya-konusuyor",
+ "anaKarakter": "dede",
+ "dizi": "kesif-dili-olsa",
  "ayarlar": {
-  "language": "en",
+  "language": "tr",
   "niche": "animasyon",
   "shortsTimes": [
-   "15:00"
+   "19:00"
   ],
   "longDays": [],
   "longTime": "18:00",
   "minutes": 8,
   "music": "huzurlu",
-  "hashtags": "#history #objects #shorts"
+  "hashtags": "#eşyalarınhikayesi #nostalji #shorts"
  }
 }

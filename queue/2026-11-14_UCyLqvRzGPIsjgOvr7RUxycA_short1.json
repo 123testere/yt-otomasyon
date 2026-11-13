@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-14_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-14T05:00:00.000Z",
+ "topic": "Pfirsiche",
+ "title": "Duell 12/30: Wer erntet die meisten Pfirsiche? 🍑",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Pfirsich-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "pfirsiche",
+  "nektarinen",
+  "landwirtschaft",
+  "ranking",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "pfirsiche",
+  "why": [
+   "Viel Sonne im Sommer",
+   "Mildes Mittelmeerklima",
+   "Große Obstplantagen"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Pfirsiche Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "18 Länder haben keine Pfirsich-Daten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Flagge um Flagge verschwindet, und Italien verpasst das Finale um gut 86 Tausend Tonnen!",
+   "final": "Finale! Spanien gegen Türkei – ein richtig enges Duell!",
+   "winner": "Spanien gewinnt! Knapp 1,4 Millionen Tonnen, rund 1,2-mal so viel wie die Türkei mit knapp 1,2 Millionen!",
+   "why": "Warum Spanien? Viel Sonne, mildes Mittelmeerklima und große Obstplantagen.",
+   "table": "In der Saisontabelle führt die Türkei weiter mit 51 Punkten. Schreib dein Thema in die Kommentare!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "B"
+ }
+}

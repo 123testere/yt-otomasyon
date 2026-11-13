@@ -1,0 +1,192 @@
+{
+ "id": "2026-11-14_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-14T09:00:00.000Z",
+ "bolum": {
+  "no": 6,
+  "ad": "Top 5"
+ },
+ "title": "Telefonda Zaman Çalan En İyi 5 Oyun 🎮",
+ "description": "Telefonda en çok zaman alan oyunlar hangileri? Candy Crush Saga, Subway Surfers, Clash Royale, Clash of Clans ve Minecraft bu listede. Senin telefonunda en çok hangisi var?\n\n#telefondaoyun #mobiloyun #oyunönerisi #gaming",
+ "tags": [
+  "telefonda oynanacak oyunlar",
+  "en iyi mobil oyunlar",
+  "mobil oyun önerisi",
+  "en iyi 5 oyun",
+  "candy crush",
+  "subway surfers",
+  "clash royale",
+  "clash of clans",
+  "minecraft"
+ ],
+ "topic": "Telefonda en çok oynanan ve bağımlılık yapan 5 mobil oyun",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "5 Best Phone Games That Eat Your Time 🎮",
+   "description": "Which phone games take the most of your time? Candy Crush Saga, Subway Surfers, Clash Royale, Clash of Clans and Minecraft make this list. Which one is on your phone?\n\n#mobilegames #gaming #gamerecommendations #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Telefonda en çok hangisini oynarsın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Telefonda oyun"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Telefonundaki hangi oyun seni saatlerce bırakmıyor? Gel, listeye bakalım ve sondan başlayalım!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Candy Crush Saga",
+    "tur": "Bulmaca",
+    "maddeler": [
+     "2012 çıkışlı",
+     "Şekerleri eşleştir",
+     "Çok sayıda bölüm"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Candy Crush Saga. Şekerleri eşleştirdiğin basit ama bağımlılık yapan bir bulmaca."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Subway Surfers",
+    "tur": "Sonsuz koşu",
+    "maddeler": [
+     "2012 çıkışlı",
+     "Trenlerden kaç",
+     "Hızlı refleks"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Subway Surfers. Trenlerin arasında koşup engellerden kaçıyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Clash Royale",
+    "tur": "Kart ve savaş",
+    "maddeler": [
+     "2016 çıkışlı",
+     "Kısa maçlar",
+     "Kart destesi kur"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Clash Royale. Kısa maçlarda kart destenle rakibi alt ediyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Clash of Clans",
+    "tur": "Strateji",
+    "maddeler": [
+     "2012 çıkışlı",
+     "Köyünü kur",
+     "Klanınla savaş"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Clash of Clans. Köyünü kurup klanınla savaşa giriyorsun."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Minecraft",
+    "tur": "Hayatta kalma ve inşa",
+    "maddeler": [
+     "2011'de mobilde",
+     "Blok blok inşa et",
+     "Yaratıcılık serbest"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada Minecraft! Telefonunda bile bloklarla koca dünyalar kurabiliyorsun."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Senin telefonunda en çok hangisi açık? Yorumlara yaz, abone olmayı unutma!"
+    }
+   ]
+  }
+ ]
+}

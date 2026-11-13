@@ -1,0 +1,192 @@
+{
+ "id": "2026-11-14_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.05,
+ "publishAt": "2026-11-14T05:00:00.000Z",
+ "bolum": {
+  "no": 6,
+  "ad": "Top 5"
+ },
+ "title": "5 Businesses You Can Start With Almost No Money 🚀",
+ "description": "Which low-cost business could you start this year? Pet sitting, online tutoring, cleaning services, social media help for local shops and video editing make this Top 5. Results are never guaranteed, but these need very little to get going.\n\n#money #business #startup #sidehustle #motivation",
+ "tags": [
+  "low cost business ideas",
+  "small business ideas",
+  "business ideas to start",
+  "start a business with no money",
+  "top 5",
+  "side business",
+  "home business ideas",
+  "entrepreneur tips",
+  "business for beginners"
+ ],
+ "topic": "5 low-cost small business ideas you can start from home",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "5 negocios que puedes empezar con casi nada de dinero 🚀",
+   "description": "¿Qué negocio de bajo costo podrías empezar este año? Cuidado de mascotas, tutorías en línea, limpieza, ayuda con redes sociales para comercios locales y edición de video forman este Top 5.\n\n#dinero #negocios #emprendimiento"
+  }
+ },
+ "kapanis": {
+  "baslik": "YOUR #1?",
+  "sonraki": "Most voted gets a deep dive",
+  "soru": "Which business would you start first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "garaj",
+   "buyukYazi": {
+    "ust": "TOP 5",
+    "alt": "Low-cost businesses"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "canta",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Five businesses you can start with almost no money. Let's count down!"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Pet Sitting",
+    "tur": "Local service",
+    "maddeler": [
+     "Feed and walk pets",
+     "Neighbors spread it",
+     "Very low startup cost"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: pet sitting. Busy neighbors often need help with feeding and walking."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Online Tutoring",
+    "tur": "Teach what you know",
+    "maddeler": [
+     "Pick one subject",
+     "Teach by video call",
+     "Set your own hours"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: online tutoring. Teach what you know from anywhere with a laptop."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Cleaning Services",
+    "tur": "Repeat customers",
+    "maddeler": [
+     "Basic supplies",
+     "Local word of mouth",
+     "Reviews build trust"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: cleaning services. Supplies are cheap, and happy customers often rebook."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Social Media Help",
+    "tur": "Help local shops",
+    "maddeler": [
+     "Post for small shops",
+     "Learn free tools",
+     "Monthly clients"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: social media help for local shops. Many owners are busy and welcome the help."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Video Editing",
+    "tur": "Skill-based freelance",
+    "maddeler": [
+     "Edit for creators",
+     "Learn with free videos",
+     "Your portfolio sells"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: video editing! Creators and brands often need fresh clips."
+    }
+   ],
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Which one would you try first? Tell us in the comments and subscribe for more!"
+    }
+   ]
+  }
+ ]
+}

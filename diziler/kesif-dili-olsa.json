@@ -1,0 +1,67 @@
+{
+ "id": "kesif-dili-olsa",
+ "ad": "Dili Olsa da Söylese",
+ "dil": "tr",
+ "rozetNo": false,
+ "stil": "cop",
+ "format": "yatay",
+ "muzikSeviye": 0.06,
+ "muzik": "huzurlu",
+ "tur": "Gündelik eşyalar kendi hayat hikâyesini ikinci tekil şahısla anlatır (çöp adam animasyonu)",
+ "ozet": "Her film izleyiciye bir eşyanın ağzından seslenir (\"Çay bardağı olarak doğdun…\"): nereden geldi, kimler kullandı, hayatı nasıl değiştirdi ve sonunda doğrulanabilir bir bilgi. Yetişkinlere dönük sıcak, nostaljik ton.",
+ "kurallar": [
+  "Sadece doğrulanabilir tarih; emin değilsen 'söylenir', 'derler' de ya da yazma.",
+  "İkinci tekil şahıs anlatım: 'Doğdun…'. Sıcak, nostaljik, hafif esprili; çocuksu değil.",
+  "Marka logosu yok; gerçek kişilere söz söyletme."
+ ],
+ "yazim": [
+  "6 sahne, 70-100 kelime, dikey Shorts. Doğuş, yapılışı, ilk sahibi, uzun ömrü, doğrulanabilir bir bilgi, sıradaki eşyayı soran kapanış."
+ ],
+ "anlatici": {
+  "id": "anlatici",
+  "ses": {
+   "voice": "tr-TR-AhmetNeural"
+  }
+ },
+ "karakterler": {
+  "dede": {
+   "ad": "Dede",
+   "renk": "#7B5E3B",
+   "kusak": "#3D405B",
+   "sacStil": "kel",
+   "sakal": "biyik",
+   "kalin": 1.1,
+   "seed": 61,
+   "ses": {
+    "voice": "tr-TR-AhmetNeural"
+   },
+   "kim": "Çayını yudumlayan sıcak kalpli yaşlı bir dede."
+  },
+  "torun": {
+   "ad": "Torun",
+   "renk": "#E07A5F",
+   "kusak": "#E07A5F",
+   "sacStil": "atkuyrugu",
+   "sac": "#3A2A1A",
+   "cinsiyet": "k",
+   "olcek": 0.8,
+   "seed": 62,
+   "ses": {
+    "voice": "tr-TR-EmelNeural"
+   },
+   "kim": "Meraklı torun."
+  },
+  "usta": {
+   "ad": "Cam Ustası",
+   "renk": "#3D405B",
+   "kusak": "#F4C95D",
+   "sacStil": "kisa",
+   "sac": "#3A2A1A",
+   "seed": 63,
+   "ses": {
+    "voice": "tr-TR-AhmetNeural"
+   },
+   "kim": "Atölyede çalışan usta."
+  }
+ }
+}

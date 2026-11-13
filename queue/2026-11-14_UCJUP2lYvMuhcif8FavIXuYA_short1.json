@@ -1,0 +1,176 @@
+{
+ "id": "2026-11-14_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-14T16:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.12,
+ "bolum": {
+  "no": 4,
+  "ad": "Gemini 4 Arama"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "kaynak": "Google",
+ "kaynakLink": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+ "topic": "Google'ın Gemini 4 Hydrogen modelini Google Arama'ya getirmesi",
+ "title": "Google Arama Yeni Yapay Zekâ Modeline Geçiyor ⚡",
+ "description": "Google, Gemini 4 Hydrogen modelini Google Arama'ya dünya genelinde getirdiğini duyurdu; amaç daha yararlı, görsel ve sezgisel yanıtlar. Sence arama alışkanlıkları değişir mi?\nKaynak: Google https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/\n\n#yapayzeka #google #gemini #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "google arama",
+  "gemini 4",
+  "gemini 4 hydrogen",
+  "ai mode",
+  "google yapay zeka",
+  "teknoloji haberleri"
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "Google Search Is Switching to a New AI Model ⚡",
+   "description": "Google announced it is bringing Gemini 4 Hydrogen to Google Search globally, aiming for more helpful, visual and intuitive responses. Will it change how you search?\nSource: Google"
+  }
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "kapanis": {
+  "baslik": "SENCE?",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Aramada yanıta mı, bağlantıya mı güvenirsin?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "GEMINI 4"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.2,
+      "kos": true
+     },
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Google Arama'ya yeni bir yapay zekâ modeli geldi, peki sence ne değişecek?"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "Google Arama, Gemini 4 Hydrogen ile yükseltiliyor",
+    "kaynak": "Google · 12 Kasım",
+    "maddeler": [
+     "Model: Gemini 4 Hydrogen",
+     "Yer: Google Arama",
+     "Yanıtlar: daha görsel"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Google'ın duyurusuna göre Gemini 4 Hydrogen, dünya genelinde Google Arama'ya geliyor."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kullanici",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Amaç, daha yararlı, daha görsel ve daha sezgisel yanıtlar sunmak."
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "AI MODE",
+    "alt": "karmaşık sorular"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "TechCrunch'a göre yapay zekâ modu, karmaşık soruları daha iyi anlıyor ve ilgili bağlantıları gösteriyor."
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "GELECEK?"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki bu ne değiştirebilir? Belki aramak yerine soru sorup doğrudan yanıt almak daha yaygın hale gelebilir."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.33,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sen olsan aramada bağlantılara mı bakarsın, yoksa yanıta mı güvenirsin? Yorumlara yaz, takipte kal!"
+    }
+   ]
+  }
+ ]
+}

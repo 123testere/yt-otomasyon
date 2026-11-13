@@ -1,41 +1,42 @@
 {
- "id": "kesif_esya_pilot",
+ "id": "kesif_dili_olsa_pilot",
  "channelId": "KESIF",
  "type": "short",
  "format": "dizi",
- "dizi": "kesif-esya-konusuyor",
+ "dizi": "kesif-dili-olsa",
  "dikey": true,
  "acilis": false,
  "hiz": 1.05,
- "publishAt": "2026-11-12T12:00:00.000Z",
+ "publishAt": "2026-11-14T12:00:00.000Z",
  "bolum": {
   "no": 1,
-  "ad": "The Pencil"
+  "ad": "Çay Bardağı"
  },
- "title": "You Were Born in a Mine: The Pencil Story ✏️",
- "description": "Your pencil has no lead inside. Hear the true story of the pencil, told by the pencil itself.\n\n#history #pencil #everydayobjects #shorts",
+ "title": "Çay Bardağı Olarak Doğdun: İnce Belli Hikâyen 🍵",
+ "description": "Çay bardağı dile gelse neler anlatırdı? İnce belli bardağın kumdan sofraya uzanan hikâyesini, bardağın ağzından dinle.\n\n#çaybardağı #nostalji #eşyalarınhikayesi #shorts",
  "tags": [
-  "pencil history",
-  "pencil lead",
-  "graphite",
-  "everyday objects",
-  "object stories",
-  "history shorts",
-  "nostalgia"
+  "çay bardağı",
+  "ince belli bardak",
+  "çay bardağı tarihi",
+  "eşyaların hikayesi",
+  "nostalji",
+  "Paşabahçe",
+  "animasyon",
+  "tarih shorts"
  ],
- "topic": "The pencil tells its life story, from graphite mine to classroom",
+ "topic": "Çay bardağı kendi hayat hikâyesini anlatıyor: kumdan sofraya",
  "kapanis": {
-  "baslik": "NEXT OBJECT?",
-  "sonraki": "Comment an object",
-  "soru": "Which object should speak next?"
+  "baslik": "SIRADA NE?",
+  "sonraki": "Yorumlara bir eşya yaz",
+  "soru": "Hangi eşya konuşsun?"
  },
  "scenes": [
   {
-   "kisim": "Hook",
-   "mekan": "tas-ocagi",
+   "kisim": "Kanca",
+   "mekan": "garaj",
    "buyukYazi": {
-    "ust": "YOU WERE",
-    "alt": "born in a mine"
+    "ust": "ÇAY BARDAĞI",
+    "alt": "olarak doğdun"
    },
    "kadraj": [
     {
@@ -49,48 +50,30 @@
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "You were born in a mine, and nobody called you a pencil yet."
+     "metin": "Çay bardağı olarak doğdun, ama önce bir avuç kumdun."
     }
    ]
   },
   {
-   "mekan": "tas-ocagi",
+   "mekan": "garaj",
    "kadraj": [
     {
      "id": "usta",
      "x": 0.5,
      "yon": 1,
      "poz": "tasi",
-     "ifade": "saskin"
-    }
-   ],
-   "satirlar": [
-    {
-     "kim": "anlatici",
-     "metin": "In the 1500s, people in England found a strange black mineral in the ground. It was graphite."
-    }
-   ]
-  },
-  {
-   "mekan": "ofis",
-   "kadraj": [
-    {
-     "id": "usta",
-     "x": 0.4,
-     "yon": 1,
-     "poz": "isaret",
      "ifade": "dusunceli"
     }
    ],
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "They called it lead, so the name stuck. But there is no lead inside you at all."
+     "metin": "Kum, soda ve kireçtaşı çok yüksek ısıda eriyip cama dönüştü."
     }
    ]
   },
   {
-   "mekan": "ofis",
+   "mekan": "garaj",
    "kadraj": [
     {
      "id": "usta",
@@ -98,19 +81,12 @@
      "yon": 1,
      "poz": "dur",
      "ifade": "gulumsuyor"
-    },
-    {
-     "id": "ogrenci",
-     "x": 0.7,
-     "yon": -1,
-     "poz": "el-salla",
-     "ifade": "gulumsuyor"
     }
    ],
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Wrapped in wood, you finally became a pencil, and a student picked you up."
+     "metin": "Ustalar seni ince belli bir bardak yaptı. Ortası daralınca tutması kolaylaşır, çayın rengi de dışarıdan görünür."
     }
    ]
   },
@@ -119,36 +95,57 @@
    "zaman": "gece",
    "kadraj": [
     {
-     "id": "ogrenci",
-     "x": 0.5,
+     "id": "dede",
+     "x": 0.35,
      "yon": 1,
-     "poz": "dusun",
-     "ifade": "dusunceli"
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "torun",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
     }
    ],
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Years of homework, doodles and secret notes. You got shorter every day, and that was your whole purpose."
+     "metin": "Sonra bir evin tepsisine çıktın. Çay, 1920'lerde Rize'de yetiştirilmeye başlandı, derler. Sen de sofraların vazgeçilmezi oldun."
+    }
+   ]
+  },
+  {
+   "mekan": "meydan",
+   "zaman": "gunduz",
+   "buyukYazi": {
+    "ust": "1934",
+    "alt": "Paşabahçe"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Paşabahçe'nin 1934'te kurulduğu söylenir. Sen de çok sayıda bardaktan biri olarak evlere dağıldın."
     }
    ]
   },
   {
    "mekan": "ev-ic",
+   "zaman": "safak",
    "kadraj": [
     {
-     "id": "ogrenci",
-     "x": 0.5,
+     "id": "dede",
+     "x": 0.4,
      "yon": 1,
      "poz": "zafer",
-     "ifade": "gulumsuyor",
-     "esya": "kupa"
+     "ifade": "gulumsuyor"
     }
    ],
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Next time you sharpen a pencil, you are holding a piece of the earth. Which object should speak next? Tell us below!"
+     "metin": "Kırılana kadar kimbilir kaç sohbete tanık oldun. Sence sıradaki hangi eşya konuşsun? Yorumlara yaz!"
     }
    ]
   }

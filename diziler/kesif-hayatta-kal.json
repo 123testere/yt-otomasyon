@@ -1,0 +1,66 @@
+{
+ "id": "kesif-hayatta-kal",
+ "ad": "30 Days Trapped",
+ "dil": "en",
+ "rozetNo": false,
+ "stil": "cop",
+ "format": "yatay",
+ "muzikSeviye": 0.06,
+ "muzik": "gerilim",
+ "tur": "First-person survival diaries: 30 days trapped in one place (stick-figure animation)",
+ "ozet": "Narrator Sam is trapped inside a shopping mall after the doors lock. Each film follows a day-by-day diary of staying calm, finding allies and solving problems. Tense but bloodless: no gore, no deaths shown.",
+ "kurallar": [
+  "Fictional story only; no real people, brands or real events.",
+  "No blood, no violence; tension comes from darkness, noises, hunger and tough choices.",
+  "Natural English, short sentences, first person, one idea per scene."
+ ],
+ "yazim": [
+  "Long episode: cold open, four parts with cards, a cliffhanger ending."
+ ],
+ "anlatici": {
+  "id": "sam",
+  "ses": {
+   "voice": "en-US-AndrewNeural"
+  }
+ },
+ "karakterler": {
+  "sam": {
+   "ad": "Sam",
+   "renk": "#DC2626",
+   "kusak": "#DC2626",
+   "sacStil": "dagnik",
+   "sac": "#1A1210",
+   "seed": 51,
+   "ses": {
+    "voice": "en-US-AndrewNeural"
+   },
+   "kim": "Narrator, a regular guy in a red hoodie trapped in the mall."
+  },
+  "mia": {
+   "ad": "Mia",
+   "renk": "#2A7AB8",
+   "kusak": "#2A7AB8",
+   "sacStil": "atkuyrugu",
+   "sac": "#5A2A1A",
+   "cinsiyet": "k",
+   "seed": 52,
+   "ses": {
+    "voice": "en-US-JennyNeural"
+   },
+   "kim": "Quick-thinking shop employee who knows the building."
+  },
+  "ben": {
+   "ad": "Ben",
+   "renk": "#6A6A72",
+   "kusak": "#C8A83A",
+   "sacStil": "kel",
+   "sakal": "biyik",
+   "kalin": 1.15,
+   "seed": 53,
+   "ses": {
+    "voice": "en-US-AndrewNeural"
+   },
+   "kim": "Night security guard with a flashlight."
+  }
+ }
+}

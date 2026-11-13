@@ -1,5 +1,5 @@
 {
- "id": "kesif_day_zero_pilot",
+ "id": "kesif_day_zero_pilot_2",
  "channelId": "KESIF",
  "type": "short",
  "format": "dizi",
@@ -7,24 +7,24 @@
  "dikey": true,
  "acilis": false,
  "hiz": 1.05,
- "publishAt": "2026-11-12T12:00:00.000Z",
+ "publishAt": "2026-11-14T12:00:00.000Z",
  "bolum": {
-  "no": 1,
-  "ad": "The Phone"
+  "no": 2,
+  "ad": "The Alarm"
  },
- "title": "Day 1 vs Day 100: Mert and the Phone 📱",
- "description": "What happens when a clumsy guy tries to put his phone down for 100 days? Follow Mert from a messy Day 1 to a calmer Day 100.\n\n#motivation #habits #animation #shorts",
+ "title": "Day 1 vs Day 100: Mert and the 5 AM Alarm ⏰",
+ "description": "Can a clumsy guy learn to wake up early in 100 days? Follow Mert from a messy Day 1 with the alarm to a calmer Day 100.\n\n#motivation #habits #animation #shorts",
  "tags": [
   "day 1 vs day 100",
+  "wake up early",
+  "morning routine",
   "habits",
-  "phone addiction",
   "motivation",
   "stickman",
   "animation",
-  "self improvement",
-  "discipline"
+  "self improvement"
  ],
- "topic": "Mert tries to put his phone down for 100 days",
+ "topic": "Mert tries to wake up at five every day for 100 days",
  "kapanis": {
   "baslik": "DAY 1 TODAY?",
   "sonraki": "One habit, 100 days",
@@ -34,10 +34,10 @@
   {
    "kisim": "Hook",
    "mekan": "ev-ic",
-   "zaman": "safak",
+   "zaman": "gece",
    "buyukYazi": {
     "ust": "DAY 1",
-    "alt": "Mert vs his phone"
+    "alt": "Mert vs the alarm"
    },
    "kadraj": [
     {
@@ -51,72 +51,74 @@
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Day one. Mert picks up his phone just to check the time. An hour later, he is still scrolling."
+     "metin": "Day one. Mert sets his alarm for five. At five, he switches it off and sleeps like a log."
     }
    ]
   },
   {
    "mekan": "ev-ic",
-   "kadraj": [
-    {
-     "id": "mert",
-     "x": 0.5,
-     "yon": -1,
-     "poz": "dus",
-     "ifade": "korkmus"
-    },
-    {
-     "id": "anne",
-     "x": 0.75,
-     "yon": -1,
-     "poz": "korku",
-     "ifade": "saskin"
-    }
-   ],
-   "satirlar": [
-    {
-     "kim": "anlatici",
-     "metin": "Day three. He trips over the charger and drops the phone into his breakfast."
-    }
-   ]
-  },
-  {
-   "mekan": "ev-ic",
+   "zaman": "safak",
    "kadraj": [
     {
      "id": "mert",
      "x": 0.5,
      "yon": 1,
-     "poz": "dusun",
-     "ifade": "dusunceli"
+     "poz": "korku",
+     "ifade": "korkmus"
     }
    ],
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Day ten. He hides the phone in a drawer, then spends an hour looking for it."
+     "metin": "Day three. He wakes up early and brushes his teeth with hair gel."
     }
    ]
   },
   {
-   "mekan": "yol",
+   "mekan": "ev-ic",
    "zaman": "gunduz",
    "kadraj": [
     {
      "id": "mert",
-     "hareket": {
-      "x0": -0.1,
-      "x1": 0.6,
-      "sure": 2
-     },
-     "poz": "yuru",
+     "x": 0.5,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "anne",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "el-salla",
      "ifade": "gulumsuyor"
     }
    ],
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Day thirty. He walks outside without it. He still bumps into a pole, but now he sees the sky."
+     "metin": "Day ten. He gets up on time, then falls asleep on the sofa with his shoes on."
+    }
+   ]
+  },
+  {
+   "mekan": "yol",
+   "zaman": "safak",
+   "kadraj": [
+    {
+     "id": "mert",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.6,
+      "sure": 2.2,
+      "kos": true
+     },
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Day thirty. He jogs outside at sunrise. He is slow, but he sees the sun come up."
     }
    ]
   },
@@ -136,13 +138,13 @@
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Day one hundred. Same Mert, calmer mind. He reads a book, calls his mom, and sleeps on time."
+     "metin": "Day one hundred. Same Mert, calmer mind. He wakes up before the alarm and even has time for breakfast."
     }
    ]
   },
   {
    "mekan": "ev-ic",
-   "zaman": "gece",
+   "zaman": "safak",
    "kadraj": [
     {
      "id": "mert",
@@ -155,7 +157,7 @@
    "satirlar": [
     {
      "kim": "anlatici",
-     "metin": "Small habits start clumsy. Which habit will be your Day one? Tell us in the comments!"
+     "metin": "Big changes start clumsy. Which habit will be your Day one? Tell us in the comments!"
     }
    ]
   }
