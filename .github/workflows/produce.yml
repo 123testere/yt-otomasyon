@@ -91,4 +91,5 @@ jobs:
           git add config/sosyal-saatler.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "kuyruk: işlenen videolar"
-          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          # Senkronizasyon aynı anda config/sosyal-saatler.json yazarsa çakışma olur: bu işin sürümü alınır (saatlik senkronizasyon yeniden üretir).
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; git rebase --abort 2>/dev/null || true; sleep 5; done
