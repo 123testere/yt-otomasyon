@@ -91,6 +91,30 @@ function pozAcilari(ad, t, seed, konusuyor, yasli, pozU = 9) {
   return r;
 }
 
+// --- Yumuşak poz geçişi -------------------------------------------------------------------------
+// Karakter bir pozdan diğerine anında atlamaz: eklem açıları GECIS_SN içinde, hafif bir taşmayla
+// (hedefi biraz geçip yerine oturarak) önceki pozdan yenisine kayar. Görünüş değişmez, yalnızca hareket.
+// Kendi geçiş animasyonu olan pozlar (darbe, düşme, kalkma) ve ani olması gereken çarpma hariç.
+export const GECIS_SN = 0.3;
+const GECISSIZ = ['darbe', 'dus', 'yerde', 'kalk'];
+const tasma = (x) => { const c = 1.4, y = x - 1; return 1 + (c + 1) * y * y * y + c * y * y; }; // 0→1, ~%6 taşar
+const kar = (a, b, k) => a + (b - a) * k;
+
+export function pozKaristir(onceki, yeni, k) {
+  const cift = (ad) => [kar(onceki[ad][0], yeni[ad][0], k), kar(onceki[ad][1], yeni[ad][1], k)];
+  return {
+    on: cift('on'), arka: cift('arka'), onB: cift('onB'), arkaB: cift('arkaB'),
+    egim: kar(onceki.egim, yeni.egim, k), zipla: kar(onceki.zipla, yeni.zipla, k), yatis: kar(onceki.yatis, yeni.yatis, k),
+  };
+}
+
+// gecis: { poz: önceki poz, u: poz değişeli kaç saniye oldu }. Geçiş bittiyse ya da tanımsızsa yeni poz aynen döner.
+export function gecisliPoz(ad, gecis, t, seed, konusuyor, yasli, pozU) {
+  const yeni = pozAcilari(ad, t, seed, konusuyor, yasli, pozU);
+  if (!gecis || gecis.poz === ad || !(gecis.u >= 0 && gecis.u < GECIS_SN) || GECISSIZ.includes(ad) || GECISSIZ.includes(gecis.poz)) return yeni;
+  return pozKaristir(pozAcilari(gecis.poz, t, seed, konusuyor, yasli, 9), yeni, tasma(gecis.u / GECIS_SN));
+}
+
 function sacVeSapka(ctx, def, bx, by) {
   const sac = def.sac ?? '#2A1D16';
   if (['kisa', 'atkuyrugu', 'uzun', 'topuz', 'orgu'].includes(def.sacStil)) {
@@ -280,12 +304,13 @@ function zincirHalka(ctx, a, b, n) {
   }
 }
 
-// o: { x, y (ayak hizası), s, t, poz, pozU, yon (1 sağa, -1 sola bakar), ifade, agiz, solgun, seed, konusuyor, esya }
+// o: { x, y (ayak hizası), s, t, poz, pozU, yon (1 sağa, -1 sola bakar), ifade, agiz, solgun, seed, konusuyor, esya,
+//      gecis: { poz, u } (isteğe bağlı: önceki poz ve değişeli geçen saniye; yumuşak geçiş için) }
 // Döner: ön elin dünya koordinatı (zincir bağlamak için).
 export function cop(ctx, def, o) {
   const { x, y, t = 0, yon = 1, ifade = 'notr', agiz = 0, solgun = 0, seed = 1, konusuyor = false } = o;
   const s = (o.s ?? 1) * (def.olcek ?? 1);
-  const p = pozAcilari(o.poz ?? 'dur', t, seed, konusuyor, def.yas === 'yasli', o.pozU);
+  const p = gecisliPoz(o.poz ?? 'dur', o.gecis, t, seed, konusuyor, def.yas === 'yasli', o.pozU);
   const kalinlik = 15 * (def.kalin ?? 1);
   const arkaRenk = ton(GOVDE, 0.8);
   const esya = o.esya !== undefined ? o.esya : def.esya ?? (['fener', 'baston', 'mesale'].includes(def.aksesuar) ? def.aksesuar : null);
@@ -331,8 +356,10 @@ export function cop(ctx, def, o) {
   }
   uzuv(ctx, bacakNokta(kalca, p.onB[0], p.onB[1]), kalinlik, GOVDE);
 
-  const bx = boyun[0] + Math.sin(p.egim) * COP.bas;
-  const by = boyun[1] - COP.bas * Math.cos(p.egim) + 4;
+  // Konuşurken baş hafifçe sallanır (ağız açıklığıyla birlikte): karakter "canlı" durur
+  const basOyna = konusuyor ? Math.sin(t * 6.3 + seed) * 2.2 + cl(agiz) * 2.5 : 0;
+  const bx = boyun[0] + Math.sin(p.egim) * COP.bas + (konusuyor ? Math.sin(t * 3.1 + seed * 2) * 1.6 : 0);
+  const by = boyun[1] - COP.bas * Math.cos(p.egim) + 4 - basOyna;
   if (def.sacStil === 'uzun' || def.sacStil === 'atkuyrugu' || def.sacStil === 'orgu') {
     ctx.lineCap = 'round';
     const sal = Math.sin(t * 2.5 + seed) * 8;

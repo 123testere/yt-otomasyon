@@ -97,19 +97,22 @@ function durum(k, u, varsayilanX, d) {
   let x = k.x ?? varsayilanX;
   let onceX = x;
   let xT = -9;
-  const st = { poz: k.poz, yon: k.yon, esya: k.esya, ifade: k.ifade, pozT: 0 };
+  // onceki / gecisT: yumuşak poz geçişi için bir önceki poz ve değiştiği an (shared/cop.js → gecisliPoz)
+  const st = { poz: k.poz, yon: k.yon, esya: k.esya, ifade: k.ifade, pozT: 0, onceki: null, gecisT: -9 };
   if (k.hareket) {
-    const ilerle = eo(pr(u, 0, Math.max(0.5, k.hareket.sure ?? d * 0.6)));
+    const yuruSure = Math.max(0.5, k.hareket.sure ?? d * 0.6);
+    const ilerle = eo(pr(u, 0, yuruSure));
     x = k.hareket.x0 + (k.hareket.x1 - k.hareket.x0) * ilerle;
     onceX = x;
     if (ilerle < 1) st.poz = k.hareket.kos ? 'kos' : 'yuru';
+    else { st.onceki = k.hareket.kos ? 'kos' : 'yuru'; st.gecisT = yuruSure; } // yürüyüş bitti: duruşa yumuşak geçiş
     st.yon = st.yon ?? (Math.sign(k.hareket.x1 - k.hareket.x0) || 1);
   }
   let vurgu = null;
   for (const a of k.adimlar ?? []) {
     if (a.sn > u) break;
     if (a.x !== undefined) { onceX = x; x = a.x; xT = a.sn; }
-    if (a.poz !== undefined && a.poz !== st.poz) { st.poz = a.poz; st.pozT = a.sn; }
+    if (a.poz !== undefined && a.poz !== st.poz) { st.onceki = st.poz ?? 'dur'; st.gecisT = a.sn; st.poz = a.poz; st.pozT = a.sn; }
     if (a.yon !== undefined) st.yon = a.yon;
     if (a.esya !== undefined) st.esya = a.esya;
     if (a.ifade !== undefined) st.ifade = a.ifade;
@@ -323,10 +326,12 @@ export function kare(ctx, p, t, dur, fns) {
       const satirYeni = satir?.poz && satir.t0 - sc.t0 >= st.pozT;
       const poz = satirYeni ? satir.poz : st.poz ?? 'dur';
       const pozU = uc - (satirYeni ? satir.t0 - sc.t0 : st.pozT);
+      // Önceki poz ve değişeli geçen süre: satır pozu adım pozunun üstüne geldiyse önceki = adım pozu
+      const gecis = satirYeni ? { poz: st.poz ?? 'dur', u: pozU } : st.onceki ? { poz: st.onceki, u: uc - st.gecisT } : null;
       const yon = st.yon ?? (st.x < 0.5 ? 1 : -1);
       const r = cop(ctx, def, {
         x: st.x * W, y: yer, s: (k.olcek ?? 1) * olcek * (sc.cizim ? 0.75 : 1), yon, t: tc, konusuyor: konus,
-        poz, pozU, ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr', agiz, solgun, seed: def.seed ?? j + 1, esya: st.esya,
+        poz, pozU, gecis, ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr', agiz, solgun, seed: def.seed ?? j + 1, esya: st.esya,
       });
       eller[k.id] = r.el;
       return;

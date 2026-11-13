@@ -239,3 +239,25 @@ test('gün sonu raporu: geçerli kayıt sınırlanır, tarihsiz ya da özetsiz r
 test('cümle sayımı: sıra sayısındaki nokta cümle bitirmez', () => {
   assert.equal(cumleSay('Bu oyun 3. sırada yer alıyor. Abone ol.'), 2);
 });
+
+test('karakter: yumuşak poz geçişi (başta önceki poz, sonda yeni poz, kendi geçişi olan pozlar hariç)', async () => {
+  const { gecisliPoz, GECIS_SN } = await import('../../shared/cop.js');
+  const dur = gecisliPoz('dur', null, 1, 1, false, false, 9);
+  const isaret = gecisliPoz('isaret', null, 1, 1, false, false, 9);
+  const yakin = (a, b, tol = 1e-9) => Math.abs(a - b) <= tol;
+  // geçişin ilk anı: önceki pozun açıları
+  assert.ok(yakin(gecisliPoz('isaret', { poz: 'dur', u: 0 }, 1, 1, false, false, 0).on[0], dur.on[0]));
+  // ortası: iki pozun arasında bir yerde (ya da hafif taşmış), ikisinden de farklı
+  const orta = gecisliPoz('isaret', { poz: 'dur', u: GECIS_SN / 2 }, 1, 1, false, false, GECIS_SN / 2).on[0];
+  assert.ok(orta > dur.on[0] && orta !== isaret.on[0]);
+  // bittikten sonra ve geçiş verilmediğinde: tam yeni poz (eski davranış)
+  assert.deepEqual(gecisliPoz('isaret', { poz: 'dur', u: GECIS_SN }, 1, 1, false, false, 9), isaret);
+  assert.deepEqual(gecisliPoz('isaret', undefined, 1, 1, false, false, 9), isaret);
+  // darbe/düşme anidir: geçiş uygulanmaz
+  assert.deepEqual(gecisliPoz('darbe', { poz: 'dur', u: 0.1 }, 1, 1, false, false, 0.1), gecisliPoz('darbe', null, 1, 1, false, false, 0.1));
+  // taşma sınırlı: hedefin en fazla %10 ötesine geçer
+  for (let u = 0; u < GECIS_SN; u += 0.01) {
+    const v = gecisliPoz('isaret', { poz: 'dur', u }, 1, 1, false, false, u).on[0];
+    assert.ok(v <= isaret.on[0] + (isaret.on[0] - dur.on[0]) * 0.1 && v >= dur.on[0] - 1e-9);
+  }
+});
