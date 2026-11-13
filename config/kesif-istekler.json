@@ -1,35 +1,5 @@
 [
   {
-    "id": "UCUWG17RpxXBZ4avKIqPX6CQ",
-    "ad": "Day One Films",
-    "firsat": {
-      "motor": "dizi-cop",
-      "kanalId": "UCUWG17RpxXBZ4avKIqPX6CQ",
-      "dil": "en",
-      "puan": 8,
-      "maliyet": "Ücretsiz (Microsoft İngilizce ses ya da Chatterbox), günde 1 Shorts",
-      "konsept": "Sessiz ve kısa anlatımlı motivasyon animasyonları: bir karakter, bir alışkanlık, bir dönüşüm.",
-      "renkler": [
-        "#111827",
-        "#F97316",
-        "#F9FAFB"
-      ],
-      "neden": "43 günde 94 bin abone; 'DISCIPLINE' 6 milyon. Basit karakterli (ay başlı) motivasyon kısa filmleri: Day 1 → Day 30 dönüşümü, alarm saati, sessiz anlatım ve güçlü tek cümleler.",
-      "tur": "short",
-      "kanalAdlari": [
-        "Day Zero Stories",
-        "One Habit Films",
-        "Stickman Discipline"
-      ],
-      "bizimAci": "Çöp adam karakterimizle 'Day 1 vs Day 100' dönüşüm hikâyeleri; her film tek bir alışkanlık (erken kalkmak, telefonu bırakmak, para biriktirmek). Untold Vault'un motivasyon tarafını besler; İngilizce reklam geliri yüksek.",
-      "risk": "Motivasyon nişi kalabalık; görsel kimlik (renk, karakter) ayırt edici olmalı.",
-      "ornekKonu": "Day 1 vs Day 100: The Phone"
-    },
-    "not": null,
-    "tekrar": true,
-    "oncekiBaslik": "Day 1 vs Day 100: Mert and the Phone 📱"
-  },
-  {
     "id": "UCZDmrAO-bnBxU4_LiH40CjA",
     "ad": "Nobody Gets In",
     "firsat": {

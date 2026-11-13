@@ -1,8 +1,80 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-12T20:51:47.267Z",
+  "guncellendi": "2026-11-13T00:11:51.306Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
+      "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-12T22:42:51.000Z",
+      "ozet": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Silicon Valley Is Still Defending Jensen Huang",
+      "link": "https://www.wired.com/story/silicon-valley-is-still-defending-jensen-huang/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-12T22:29:43.000Z",
+      "ozet": "Nvidia employees and tech insiders never thought the chip king would lose his job. Despite his sudden resignation, many of them are still in denial.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+      "link": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-12T22:28:47.000Z",
+      "ozet": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Muse can now place calls to US businesses — if you pay",
+      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-12T22:22:28.000Z",
+      "ozet": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang Is Out. Will Nvidia’s Rivals Cash In?",
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huang-is-out-will-nvidias-rivals-cash-in/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-12T22:14:41.000Z",
+      "ozet": "In a special episode of “Uncanny Valley,” we break down Jensen Huang’s resignation from Nvidia, what comes next for the company, and where the AI industry goes from here.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google’s new Gemini model is better at understanding complicated questions",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-12T21:55:32.000Z",
+      "ozet": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part in its responses. It's available starting today in search, the Gemini app, all tiers of Google […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The unfolding Jensen Huang scandal: a timeline",
+      "link": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-12T21:35:00.000Z",
+      "ozet": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-12T21:27:10.000Z",
+      "ozet": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Bu yapay zekâ sadece 22 MB yer kaplıyor, telefonlarda yerel olarak çalışıyor",
+      "link": "https://www.donanimhaber.com/telefonlarda-calisabilen-yeni-yapay-zeka-sadece-22-mb--212845",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-12T21:22:00.000Z",
+      "ozet": "Cactus Compute, yalnızca 22 MB boyutundaki yeni yapay zeka modeli Mirage'ı tanıttı. Model, akıllı telefonlarda yerel olarak çalışıp çeşitli görevleri yerine getirebiliyor.",
+      "kullanildi": false
+    },
     {
       "baslik": "Eski OpenAI yöneticisinden yeni yapay zekâ: Thinking Machines, Inkling 2 Small'u tanıttı",
       "link": "https://www.donanimhaber.com/thinking-machines-yeni-yapay-zekasi-inkling-2-small-u-tanitti--212840",
@@ -28,8 +100,16 @@
       "kullanildi": false
     },
     {
+      "baslik": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-12T20:16:24.000Z",
+      "ozet": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were “potentially infeasible.” Foster, a Democrat who serves on the Committee on…",
+      "kullanildi": false
+    },
+    {
       "baslik": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "link": "https://openai.com/index/amplitude",
+      "link": "https://openai.com/business/customer-stories/amplitude",
       "kaynak": "OpenAI",
       "tarih": "2026-11-12T20:00:00.000Z",
       "ozet": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
@@ -137,7 +217,7 @@
       "kaynak": "Google",
       "tarih": "2026-11-12T18:00:00.000Z",
       "ozet": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Jensen Huang Basically Lit More Than $1 Trillion on Fire in Less Than a Month",
@@ -332,14 +412,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "The unfolding Jensen Huang scandal: a timeline",
-      "link": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T14:30:01.000Z",
-      "ozet": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "kullanildi": false
-    },
-    {
       "baslik": "NVIDIA CEO'su Jensen Huang İstifa Etti: İşte Yerine Geçen İsim!",
       "link": "https://www.webtekno.com/nvidia-ceo-jensen-huang-istifa-etti-h228895.html",
       "kaynak": "Webtekno",
@@ -404,83 +476,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia CEO Jensen Huang resigns amid spy, affair scandals",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-12T13:53:16.000Z",
-      "ozet": "Nvidia's board announced that Jensen Huang - its longtime co-founder, president, and CEO - has resigned after reports of two extramarital affairs, one with an alleged Chinese spy and one with an Nvidia executive who reported to Huang. Following a late Wednesday night meeting, the board accepted Huang's letter of resignation as CEO, president, and […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Ne Nvidia ne AMD: DLSS Frame Generation'a yeni rakip geliyor",
       "link": "https://www.donanimhaber.com/ne-nvidia-ne-amd-dlss-frame-generation-a-yeni-rakip-geliyor--212827",
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-12T13:53:00.000Z",
       "ozet": "Nvidia DLSS Frame Generation'a alternatif geliştiren Apex Compute, ANR teknolojisinin beta sürümünü yayınladı. Şirket, daha hızlı kare üretimi ve daha iyi görüntü kalitesi vadediyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nine Korean startups vie for a spot in Disrupt 2027’s Startup Battlefield 200 competition",
-      "link": "https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T13:26:25.000Z",
-      "ozet": "The startups work across the deep tech sector, including healthcare, fintech, energy, semiconductors, and AI. All nine are looking to enter the U.S.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Adobe'dan fotoğrafları 3D dünyalara dönüştüren yapay zeka",
-      "link": "https://www.donanimhaber.com/adobe-dan-fotograflari-3d-dunyalara-donusturen-yapay-zeka--212826",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T13:21:00.000Z",
-      "ozet": "Adobe, fotoğraf ve video düzenlemeyi kolaylaştıracak yeni yapay zeka projelerini sergiledi. Araçlar, fotoğraflarda farklı açılardan gezinmekten ses efektlerini düzenlemeye kadar yenilikler sunuyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Çin'de Jensen Huang krizi: Nvidia GPU'lar için telaş başladı",
-      "link": "https://www.donanimhaber.com/cin-de-jensen-huang-krizi-nvidia-gpu-lar-icin-telas-basladi--212824",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T13:07:00.000Z",
-      "ozet": "Jensen Huang hakkındaki tartışmaların ardından ABD'nin bulut üzerinden Nvidia GPU erişimini de kısıtlayabileceği endişesi arttı. Çinli yapay zeka şirketleri ise alternatif arayışında.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "NVIDIA'dan Bir Şok Daha: RTX 5080 Super İptal Edildi!",
-      "link": "https://www.webtekno.com/nvidia-rtx-5080-super-iptal-edildi-h228886.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-12T13:03:36.000Z",
-      "ozet": "Sızıntılara göre NVIDIA, artan GDDR7 bellek maliyetleri nedeniyle 24 GB VRAM kapasiteli RTX 5080 Super ekran kartını iptal etti.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI, ChatGPT’deki Gelişmiş ve Standart Ses Modlarını Kaldırıyor",
-      "link": "https://www.webtekno.com/openai-chatgpt-gelismis-ve-standart-ses-modlarini-kaldiriyor-h228871.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-12T11:29:54.000Z",
-      "ozet": "OpenAI, ChatGPT’deki Gelişmiş ve Standart ses modlarını kaldırarak tüm sesli deneyimi GPT-Live modelinde birleştiriyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia CEO’su Jensen Huang’ın olası halefleri belli oldu",
-      "link": "https://www.donanimhaber.com/nvidia-ceo-su-jensen-huang-in-olasi-halefleri-belli-oldu--212805",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T11:18:00.000Z",
-      "ozet": "Jensen Huang'ın olası ayrılığı gündemdeyken Nvidia'da CEO'luk için iki isim öne çıkıyor. CFO Colette Kress ve CUDA'nın mimarlarından Ian Buck, en güçlü halef adayları arasında gösteriliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nothing'in Gizemli Yapay Zekâ Cihazından Yeni Görüntüler Geldi: İşte Tasarımı!",
-      "link": "https://www.webtekno.com/nothing-yapay-zeka-cihazi-h228857.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-12T10:46:28.000Z",
-      "ozet": "Nothing, ekranı olmadan sesle çalışan ve neler yapabileceği merak edilen yeni yapay zeka cihazını gösterdi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Alex Karp Said He’s a ‘Progressive.’ OK! Here’s Some Other Stuff He’s Said Recently",
-      "link": "https://www.wired.com/story/alex-karp-said-hes-a-progressive-ok-heres-some-other-stuff-hes-said-recently/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T10:30:00.000Z",
-      "ozet": "The Palantir CEO touted his “progressive” worldview in a recent interview. Let’s see how that lines up with his comments during the company’s earnings call two weeks ago.",
       "kullanildi": false
     }
   ]
