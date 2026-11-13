@@ -1,8 +1,64 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-13T01:52:45.949Z",
+  "guncellendi": "2026-11-13T09:37:24.567Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Nvidia skandalı Bitcoin fiyatını vurdu",
+      "link": "https://www.donanimhaber.com/bitcoin-dususu-durmuyor--212860",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-13T09:14:41.000Z",
+      "ozet": "Geçen haftadan bu yana gerek ABD seçimleri gerek Binance saldırısı gerekse de Nvidia bünyesinde yaşanan skandallar kripto para yatırımcısını da etkiledi. Bitcoin fiyatı 1 haftadır durmaksızın düşüyor",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia'da skandal büyüyor: Jensen Huang hakkında yeni ilişki iddiası",
+      "link": "https://www.donanimhaber.com/nvidia-da-bir-sok-daha-jensen-huang-hakkinda-yeni-iliski-iddiasi--212854",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-13T07:57:35.000Z",
+      "ozet": "Jensen Huang'ın istifasına yol açan ilişki iddialarına bir yenisi daha eklendi. Yeni bilgilere göre Nvidia'nın eski CEO’su Huang, başka bir şirket çalışanıyla da ilişki yaşadı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Meta'nın Yapay Zekâsı Muse Artık Sizin Yerinize Telefon Görüşmesi Yapabiliyor",
+      "link": "https://www.webtekno.com/meta-muse-sizin-yerinize-telefon-gorusmesi-yapabiliyor-h228916.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-13T07:45:39.000Z",
+      "ozet": "Meta'nın ücretli abonelere sunduğu yeni güncellemeyle yapay zekâ asistanı Muse, artık kullanıcıların yerine telefon görüşmeleri yapabiliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google, Flash Serisinin Yerini Alan Gemini 4 Hydrogen Modelini Duyurdu: Peki Neler Yapabiliyor?",
+      "link": "https://www.webtekno.com/google-gemini-4-hydrogen-modelini-duyurdu-h228910.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-13T07:45:23.000Z",
+      "ozet": "Google, günlük otonom görevlerde 2,5 kat daha hızlı çalışan ve rakiplerini geride bırakan yeni nesil Gemini 4 Hydrogen yapay zekâ modelini tanıttı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Trump, Nvidia’nın Başına Tim Cook’u Önerdi",
+      "link": "https://www.webtekno.com/jensen-huang-nvidia-istifa-trump-tim-cook-onerisi-h228913.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-13T07:45:14.000Z",
+      "ozet": "Jensen Huang’ın istifasının ardından Nvidia’yı geçici olarak Colette Kress yönetiyor. Trump’ın CEO’luk için önerdiği isimse Tim Cook.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Eski CEO Jensen Huang’ın Görevden Ayrılmasının Ardından NVIDIA Hisseleri Yeniden Yükselişe Geçti",
+      "link": "https://www.webtekno.com/nvidia-hisseleri-yeniden-yukselise-gecti-h228901.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-13T06:34:04.000Z",
+      "ozet": "CEO Jensen Huang'ın ayrılık kararının ardından piyasa öncesi düşüş yaşayan NVIDIA hisseleri, tekrar yükselişe geçti.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google'ın yeni ucuz modeli çok daha hızlı, akıllı ve verimli",
+      "link": "https://www.donanimhaber.com/google-yeni-ucuz-modeli-gemini-4-hydrogen-i-tanitti--212849",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-13T04:48:39.000Z",
+      "ozet": "Google, hız ve verimlilik odaklı yeni yapay zeka modeli Gemini 4 Hydrogen'ı duyurdu. Gemini ve Google Arama'ya entegre edilen model, hız, maliyet ve akıl yürütme performansını bir araya getiriyor.",
+      "kullanildi": false
+    },
     {
       "baslik": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
       "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
@@ -420,67 +476,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Robot süpürge almadan önce kontrol etmeniz gereken 7 özellik",
-      "link": "https://www.donanimhaber.com/robot-supurge-alirken-nelere-dikkat-edilmeli--174711",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T14:18:59.000Z",
-      "ozet": "Robot süpürgede en önemli özellik nedir, ideal emiş gücü kaç olmalı, en çok tercih edilen model hangisi? İşte akıllı robot süpürge alırken dikkat edilmesi gerekenler:",
-      "kullanildi": false
-    },
-    {
       "baslik": "Nvidia CEO'su Jensen Huang istifa etti: Yeni CEO aranıyor",
       "link": "https://www.donanimhaber.com/nvidia-ceo-su-jensen-huang-istifa-etti-yeni-ceo-araniyor--212834",
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-12T14:18:47.000Z",
       "ozet": "Yapay zeka devi Nvidia’nın başındaki teknoloji lideri Jensen Huang, CEO’luk görevinden istifa etti. Sarsıcı ayrılık, şirketin geleceğini ve tüm yapay zeka sektörünü belirsizliğe sürüklüyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Hangi robot süpürge size uygun? Evinize ve temizlik alışkanlıklarınıza göre seçim rehberi",
-      "link": "https://www.donanimhaber.com/hangi-robot-supurgeyi-almaliyim--212488",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T14:17:46.000Z",
-      "ozet": "Hangi robot süpürgeyi almalıyım, en iyisi hangisi? Bu rehber, paspas yapabilen modellerden kendi toz haznesini boşaltabilenlere kadar, eviniz için en uygun robot süpürgeyi seçmenize yardımcı olacak.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Elon Musk, Jensen Huang'ı işe almaktan onur duyacağını söyledi",
-      "link": "https://www.donanimhaber.com/elon-musk-jensen-huang-i-ise-almaktan-onur-duyacagini-soyledi--212822",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T14:15:00.000Z",
-      "ozet": "Elon Musk, Nvidia CEO'su Jensen Huang'ı işe almanın kendisi için onur olacağını söyledi. Açıklama, Huang'ın Nvidia yönetim kurulu tarafından görevden alınabileceği haberlerinin ardından geldi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meet Colette Kress, Nvidia’s New Interim CEO",
-      "link": "https://www.wired.com/story/who-is-colette-kress-the-woman-who-could-succeed-jensen-huang/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T14:14:33.000Z",
-      "ozet": "Nvidia’s longtime chief financial officer helped transform the company into an AI powerhouse. Now she’s taking the reins following Jensen Huang’s resignation on Thursday.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "I reviewed the Apple HomeView, ask me anything",
-      "link": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-12T14:10:00.000Z",
-      "ozet": "Hi! I'm Jen Tuohy, The Verge's senior smart home reviewer. I've tested every smart display Amazon and Google have ever made, and for the past week I've been testing Apple's first: The $299 HomeView. I put the tabletop and wall-mounted versions through their paces, on my kitchen counter, bedside table, in my office, and on […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang Resigns as Nvidia CEO",
-      "link": "https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T13:58:06.000Z",
-      "ozet": "Nvidia’s cofounder and chief executive resigned on Thursday after the company opened an investigation into his affair with an alleged Chinese intelligence asset.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Ne Nvidia ne AMD: DLSS Frame Generation'a yeni rakip geliyor",
-      "link": "https://www.donanimhaber.com/ne-nvidia-ne-amd-dlss-frame-generation-a-yeni-rakip-geliyor--212827",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T13:53:00.000Z",
-      "ozet": "Nvidia DLSS Frame Generation'a alternatif geliştiren Apex Compute, ANR teknolojisinin beta sürümünü yayınladı. Şirket, daha hızlı kare üretimi ve daha iyi görüntü kalitesi vadediyor.",
       "kullanildi": false
     }
   ]
