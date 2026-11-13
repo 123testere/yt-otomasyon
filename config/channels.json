@@ -704,15 +704,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-09_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Atalarımız Dişini Misvakla Fırçalıyordu: İlk Fırça 1498",
-        "a": "Tarak",
-        "b": "Şemsiye",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-09T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-10_UCPtL84Agfh5hzoTQqE4jD0w_long1",
         "baslik": "Çamaşır Makinesi: Haftanın En Yorucu Günü Nasıl Bitti?",
         "a": "Buzdolabı",
@@ -765,6 +756,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-13T07:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-13_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+        "baslik": "Makasın İlk Hali Çapraz Değildi: 3000 Yıllık Hikâye",
+        "a": "Kaşık",
+        "b": "Tava",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-13T16:00:00.000Z"
       }
     ]
   },
