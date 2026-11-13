@@ -16,13 +16,12 @@
   "Gerçek kişilere uydurma söz söyletme; sadece anlatıcı konuşur."
  ],
  "yazim": [
-  "Örnek yapı: diziler/ornek/yz-haber-shorts.json. 6-8 sahne, toplam 70-100 kelime (1,2x hızla 30-40 saniye).",
-  "Sahne 1 kanca: mekan 'yz-lab', 'sunucu' ya da 'gelecek'; buyukYazi ile haberin en çarpıcı iddiası (ust ≤14: '7/24 ÇALIŞIYOR', '2 KAT HIZLI'); robot ya da arastirmaci karakteri. Tek cümle, şaşırtıcı iddia ya da soru.",
-  "Sahne 2 haber kartı: mekan 'yz-lab' ya da 'sunucu', haber {etiket: 'SON DAKİKA' ya da 'YAPAY ZEKÂ GÜNDEMİ', baslik: haberin kısa Türkçe başlığı ≤70, kaynak: 'Kaynak · gün ay' ≤40, maddeler: 3 kısa nokta ≤30}. Kadraj yazma. Anlatım: kim, ne yaptı, 1-2 cümle.",
-  "Sahne 3-4: haberin ayrıntısı; mekan 'ofis', 'sunucu', 'yz-lab'; karakterler (arastirmaci, ceo, kullanici, robot) olayı canlandırır; rakam varsa buyukYazi ya da 'grafik' + veri.",
-  "Sahne 5 gelecek: mekan 'gelecek', buyukYazi {ust: '2030?' ya da kısa soru}; 'Peki bu ne değiştirebilir?' + 1-2 tahmin cümlesi.",
-  "Son sahne: izleyiciye seçmeli soru ve yorum çağrısı ('Sen olsan…? Yorumlara yaz, takipte kal!'). kapanis {baslik: 'SENCE?', sonraki: 'Her gün yapay zekâ gündemi', soru: habere özel soru}.",
-  "Başlık ≤60 karakter, merak uyandıran, sonunda 🤖 ya da ⚡; açıklamanın ilk satırı haberin özü (anahtar kelimeyle), ikinci satır 'Kaynak: <site> <bağlantı>', sonra 3-5 hashtag. muzik ve muzikSeviye yazma."
+  "HIZLI SHORTS (her Shorts): 4-5 cümle, toplam 40-70 kelime, 4-5 sahne, 'hiz': 1.2. Başlık ve ilk sahnedeki dev yazı haberin çözdüğü SORUNU ya da açtığı soruyu söyler, video ÇÖZÜMÜ/cevabı verir. Sahne alanlarının biçimi için diziler/ornek/yz-haber-shorts.json dosyasına bak; uzunluk ve yapı bu maddelere göredir.",
+  "Sahne 1 sorun: mekan 'yz-lab', 'sunucu' ya da 'gelecek'; buyukYazi {ust: sorunun 1-2 kelimelik hali ≤14 ('KOD YAZAMIYOR?', 'İŞİN GİDER Mİ?'), alt ≤30}; robot ya da arastirmaci karakteri. TEK cümle: izleyicinin derdini soru olarak sor.",
+  "Sahne 2 haber kartı: mekan 'yz-lab' ya da 'sunucu', haber {etiket: 'SON DAKİKA' ya da 'YAPAY ZEKÂ GÜNDEMİ', baslik: haberin kısa Türkçe başlığı ≤70, kaynak: 'Kaynak · gün ay' ≤40, maddeler: 3 kısa nokta ≤30}. Kadraj yazma. TEK cümle: kim ne yaptı.",
+  "Sahne 3 (ve gerekirse 4) çözüm: bu gelişme o sorunu nasıl çözüyor ya da izleyici için ne değiştiriyor; 1-2 kısa cümle; mekan 'ofis', 'sunucu', 'yz-lab'; rakam varsa buyukYazi. Geleceğe dair kısım tahmin olarak söylenir ('olabilir', 'bekleniyor').",
+  "Son sahne çağrı: TEK cümle, abone + beğen zorunlu ('Her gün yapay zekâ gündemi için abone ol ve beğen; sence işe yarar mı, yorumlara yaz!'). kapanis {baslik: 'ABONE OL', sonraki: 'Her gün yapay zekâ gündemi', soru: habere özel soru}.",
+  "Başlık ≤60 karakter, sorunu ya da soruyu söyler, sonunda 🤖 ya da ⚡; açıklamanın ilk satırı haberin özü (anahtar kelimeyle), ikinci satır 'Kaynak: <site> <bağlantı>', sonra 3-5 hashtag. muzik ve muzikSeviye yazma."
  ],
  "anlatici": {
   "id": "anlatici",

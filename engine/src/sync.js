@@ -19,6 +19,7 @@ import { akislariTazele } from './lib/haberler.js';
 import { sosyalGuncelle } from './lib/sosyal.js';
 import { kesifEsitle } from './lib/kesif-esitle.js';
 import { saatleriYaz } from './lib/sosyal-saatler.js';
+import { gunlukEsitle } from './lib/gunluk.js';
 
 const RECENT_TITLES = 80;
 const YOUTUBE_TTL_MS = 20 * 60 * 60 * 1000;
@@ -185,6 +186,10 @@ async function main() {
       console.warn(`rakip raporu ${f}: ${e.message}`);
     }
   }
+
+  // Gün sonu değerlendirmeleri (analiz/gunluk-<kanal>.json): uygulamaya aktarılır, günde bir bildirim gider.
+  const gunluk = await gunlukEsitle(firestore, now).catch((e) => console.warn(`günlük rapor: ${e.message}`));
+  if (gunluk) console.log(`${gunluk} kanalın gün sonu değerlendirmesi aktarıldı.`);
 
   // Yorumlara otomatik cevap (açık kanallarda): rutinin yazdığı cevapları gönder, cevapsızları topla.
   const gonderilen = await postReplies(firestore).catch((e) => console.warn(`yorum cevapları: ${e.message}`));

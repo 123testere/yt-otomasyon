@@ -5,7 +5,7 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 ## Adımlar
 
 1. `main` dalının en güncel halinde olduğundan emin ol (`git checkout main && git pull`).
-2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa senaryo yazma ama aşağıdaki "Günlük iyileştirme", "Haftalık rapor" ve "Yorum cevapları" işlerine yine bak; onlar da yoksa bitir.
+2. `node engine/src/plan.js` çalıştır (npm install gerekmez). Bu, `config/needed.json` dosyasını şu anki saate göre yeniden hesaplar ve yazılacak videoları listeler. Liste boşsa senaryo yazma ama aşağıdaki "Gün sonu değerlendirmesi", "Günlük iyileştirme", "Haftalık rapor" ve "Yorum cevapları" işlerine yine bak; onlar da yoksa bitir.
 3. `config/needed.json` dosyasını oku. Her öğe yazılması gereken bir video: `id`, `channelId`, `type` (`long` / `short`), `publishAt`, `targetWords`. `format` varsa (`duell`, `cizim`, `dizi`) o formatın aşağıdaki bölümüne göre yaz.
 4. `config/channels.json` içinden ilgili kanalı bul. `brief` alanı kanalın konusu, dili, tonu, anlatıcı karakteri ve ek talimatlarıdır. `recentTitles` daha önce yapılmış videolardır; `done/` klasöründeki dosyalar da aynı kanalın önceki senaryolarıdır.
 5. Her iş için `queue/<id>.json` dosyasını aşağıdaki formatta yaz. `queue/`, `done/` veya `failed/` içinde aynı id zaten varsa atla.
@@ -23,6 +23,32 @@ Kanalların **kimliği sabittir, içerik gelişir.** Asla değiştirme, değişt
 **Değişebilen (otomatik geliştirilen) içerik:** konu seçimi, kanca cümlesinin türü ve uzunluğu, sahne sayısı ve tempo, cümle uzunluğu, ilk 30 saniyenin yapısı, hangi sahne türlerinin ne kadar kullanıldığı (dev rakam yazısı, kart, grafik, diyalog…), başlık/kapak/açıklama kalıpları, kapanış çağrısı, video süresi.
 Sistem kimlikle ilgili dersleri (karakter, ses, anlatıcı, stil kelimeleri geçen) **otomatik reddeder**.
 
+## Hızlı Shorts kuralı (her kanalda, her Shorts; `needed.json` öğesinde `"hizli": true`)
+
+Kanallar büyümüyordu; kullanıcı kararıyla (2026-11-13) **bütün Shorts'lar** bu kalıpla yazılır. Bu bölüm, aşağıdaki format bölümlerinde Shorts için yazan eski süre, sahne ve kelime sayılarının **yerine geçer**; doğrulayıcı bunu kontrol eder.
+
+- **4-5 cümle, çok hızlı.** Toplam kelime `targetWords` ±%30 (Türkçe ~55 kelime, yaklaşık 20-28 saniye). Her cümle kısa (en fazla 14 kelime), dolgu yok, giriş yok. Motor seslendirmeyi ayrıca hızlandırır.
+- **Sorun → çözüm.** Video izleyicinin tanıdığı bir **sorunu ya da cevabını merak ettiği bir soruyu** çözer:
+  1. cümle: **sorun** (izleyiciye soru ya da "sen de…" diye seslenen iddia). İlk saniyede söylenir.
+  2.-4. cümle: **çözüm / cevap**: somut, doğrulanabilir, adım ya da bilgi. Vaat edilen cevap videonun içinde **mutlaka** verilir.
+  Son cümle: **çağrı** (aşağıdaki "Abone ve beğeni çağrısı"). Oylama sorusu varsa aynı son cümlede birleşir.
+- **Deneyle birlikte:** `deney.talimat` ilk cümlenin soru olmamasını istiyorsa sorunu **iddia** olarak söyle ("Çayın ikinci yudumda soğuyor, suç bardakta."); soru olmasını istiyorsa soru olarak sor. Dizi `yazim` kuralındaki "soru olarak sor" ifadesi deney talimatının altındadır.
+- **Başlık sorunu söyler** (≤60 karakter): ✓ "Çayın Bardakta Neden Hemen Soğuyor?", ✓ "Arkadaşlarınla Oynayacak Oyun Bulamıyor musun? 🎮", ✓ "Broke by the 20th Every Month? 💰". ✗ "Çay Bardağının Tarihi", ✗ "En İyi 5 Oyun". Bilgi/tarih kanallarında sorun = izleyicinin günlük hayatta takıldığı soru ("… neden böyle?", "… nasıl çıktı?").
+- **Ekranda dev sorun yazısı** (ilk saniyeden itibaren, büyük ve okunaklı): çizim formatında `baslikKart` (2 satır, sorunun kendisi), dizi formatında ilk sahnede `buyukYazi` (`ust` ≤14 karakter: sorunun 1-2 kelimelik hali, `alt` ≤30), diğer formatlarda `hookText`.
+- **Format karşılıkları:**
+  - *Çizim (Lamba Altında):* 5-6 sahne (her sahne bir cümle ve bir çizim). Son sahne oylama kartı + çağrı.
+  - *Dizi, liste/haber kanalları:* dizi dosyasındaki `yazim` kuralları (hızlı Shorts'a göre güncellendi: sorun + 3 çözüm + çağrı). `"hiz": 1.2`.
+  - *Dizi, hikâye (Bölüm Bölüm kesit ve fragman):* 4-5 satır, en fazla 6 sahne, `"hiz": 1.2`. İlk sahnede `buyukYazi` bölümün sorusunu söyler ("KRAL ANLADI MI?"); çözüm = sorunun cevabına götüren 2-3 en gerilimli an; son satır çağrı + "cevabı/tamamı kanaldaki bölümde". Satırların en az %60'ı yine bölümden gelir.
+  - *Flaggenduell:* başlık zaten soru; anlatım 55-95 kelime (7 bölümün her biri tek kısa cümle), `table` bölümü abone + beğen çağrısıyla biter.
+
+## Abone ve beğeni çağrısı (her videoda)
+
+Abone ve beğeni artmıyordu; izleyiciyi açıkça yönlendiriyoruz. Doğrulayıcı çağrıyı kontrol eder.
+- **Shorts:** Son cümle kanalın dilinde, karakterin ağzından, hem **abone ol** hem **beğen** der ve bir neden verir: "Serinin devamı için abone ol ve beğen." / "Subscribe and like for the rest of the series." / "Abonniere und like für das nächste Duell!". Kalıbı her videoda biraz değiştir (devamı için, yarınki bölüm için, kaçırmamak için) ama iki kelime de geçsin.
+- **Uzun videoya yönlendir:** Kanalın son 7 günde çıkmış ya da bugün çıkacak bir uzun videosu varsa (kesit, fragman ya da aynı konu), son cümle onu da söyler: "Tamamı kanaldaki uzun videoda; devamı için abone ol ve beğen." Açıklamanın ilk satırında da uzun videoya çağrı olsun (bağlantıyı motor ekler).
+- **Uzun video:** İki çağrı zorunlu: (1) ilk üçte birde, vaadi verdikten hemen sonra tek cümle ("Bu seriyi kaçırmamak için şimdi abone ol."), (2) kapanışta "serinin devamı için abone ol ve beğen" + sıradaki videonun konusu. Videonun başında çağrı yapma (ilk 30 saniye kanca içindir).
+- Yalvarma, uzun rica, "zile bas" listesi yok; tek kısa cümle. Yorum cevaplarında çağrı yapılmaz.
+
 ## Optimizasyon (her senaryoda)
 
 Sistem her videonun izlenme, tıklanma ve izleyici tutma verisini ölçer; kanallar kendi verisinden öğrenir.
@@ -37,13 +63,13 @@ Sistem her videonun izlenme, tıklanma ve izleyici tutma verisini ölçer; kanal
 - **Açıklamanın ilk iki satırı** aramada görünen kısımdır: biri videonun anahtar kelimesiyle başlayan, en az 30 karakterlik tam bir cümle olsun (ilk satır kısa bir seri etiketi olabilir). Hashtag ya da bağlantıyla başlama.
 - **Uzun video ek alanları:**
   - `thumbnailText` en fazla 4 kelime ve 25 karakter (küçük ekranda okunmalı).
-  - `thumbnailTextAlt`: Yedek kapak yazısı (≤4 kelime, ≤25 karakter), asıl kapaktan **farklı bir açı** (ör. asıl "22 YIL YASAK", yedek "SULTAN İSTEMEDİ"). Kapak az tıklanırsa sistem bunu dener.
+  - **3 kapak testi:** Her uzun videoya **üç** kapak yazısı yaz: `thumbnailText` (A), `thumbnailTextAlt` (B), `thumbnailTextAlt2` (C). Her biri ≤4 kelime, ≤25 karakter ve **farklı bir açı**: biri rakam/olgu ("22 YIL YASAK"), biri duygu/çatışma ("SULTAN İSTEMEDİ"), biri soru/merak ("KİM YASAKLADI?"). Sistem her kapağı sırayla en az 2 gün yayında tutar, tıklanma oranını ölçer ve **en çok tıklananı kalıcı yapar**; sonuç `config/performans.json` ve haftalık raporda görünür. Kazanan açıyı sonraki videolarda A kapağı olarak kullan.
   - `titleAlt`: Yedek başlık (≤70 karakter), asıl başlıktan farklı bir merak kalıbı. Kapak denemesi de tutmazsa sistem bunu dener.
   - **Bölümler:** Uzun videoda her bölümün ilk sahnesine `"bolum": {"ad": "…"}` yaz (çizim formatında zaten `{no, ust, ad}` yazılıyor). 4-7 bölüm; sistem açıklamaya YouTube bölüm zaman damgalarını (00:00 Giriş, 01:12 …) kendisi ekler.
 
 ## Günlük iyileştirme (her çalıştırmada, `config/performans.json`)
 
-İzlenmeleri yukarı taşımak senin görevin. Her çalıştırmada her kanalın `videolar` listesindeki **uzun videolara** bak (`tip: "long"`, yayın 2-21 gün önce):
+İzlenmeleri yukarı taşımak senin görevin. Her çalıştırmada her kanalın `videolar` listesindeki **uzun videolara** bak (`tip: "long"`, yayın 2-21 gün önce). **Shorts'ta** (yayın 2-7 gün önce, `izlenme` < 100) yalnızca `title` değiştirilebilir: başlığı sorunu söyleyen kalıba çevir (kapak ve `thumbnailText` yazma):
 - **Zayıf tıklanma:** `tiklanma7` < 3 (ve `gosterim7` ≥ 50) → yeni başlık + yeni kapak yazısı yaz.
 - **Zayıf tutma:** `tutma` < 25 ya da `kancaOran` düşük → başlık/kapak videonun vaat ettiğinden farklı bir şey vaat ediyor olabilir; vaadi videonun gerçek içeriğine yaklaştıran yeni başlık yaz.
 - Aynı videoya en fazla **3 günde bir** dokun (`sonIyilestirme` tarihine bak); `kapakDeneme` "deneniyor" ya da "baslik-deneniyor" ise o videoya dokunma (sistem A/B ölçüyor).
@@ -54,8 +80,33 @@ Yazacağın dosya: `iyilestirme/<YYYY-MM-DD-HHMM>.json`
 [{ "youtubeId": "…", "title": "Yeni başlık (≤70, kurallara uygun)", "thumbnailText": "≤3 KELİME", "kapak": {"sahne": 7, "sn": 2}, "neden": "tıklanma %0,9; seri adı başta, vaat yok" }]
 ```
 - `title` ve `thumbnailText` isteğe bağlı (sadece değiştirmek istediğini yaz). `kapak` sadece dizi formatında, farklı bir sahne seçmek için.
-- Bir çalıştırmada en fazla 6 video. Hiçbir video eşiklerin altında değilse dosya yazma.
+- Bir çalıştırmada en fazla 6 uzun video ve 6 Shorts. Hiçbir video eşiklerin altında değilse dosya yazma.
 - Sistem değişikliği YouTube'da uygular, eski değeri ve önceki tıklanmayı kaydeder; sonraki günlerde `tiklanma7` yükselmediyse farklı bir açı dene (aynı kalıbı tekrarlama). Bir değişiklik tuttuysa (tıklanma ya da izlenme arttıysa) bunu haftalık raporda `dersler`e yaz.
+
+## Gün sonu değerlendirmesi (her gece, **bütün** kanallar; `config/performans.json`)
+
+Her gün, günün ilk çalıştırmasında (gece) her kanal için o günü değerlendir ve `analiz/gunluk-<kanalId>.json` yaz (varsa üzerine yaz). Dosyanın `tarih` alanı bugünün tarihiyse o kanalı atla (günde bir kez). `videolar` listesi boş olan (henüz video yüklenmemiş) kanalı atla.
+
+Bak: `videolar` listesinde son 3 günde yayınlananlar ve dünden beri en çok artanlar. Alanlar: `izlenme` (toplam), `izlenmeArtis` (son ölçümden beri, yaklaşık 1 gün), `hedef` (bugünkü izlenmenin 2 katı; en az 100), `tutma` (ortalama izlenme yüzdesi), `kancaOran` (Shorts'ta kaydırmayıp izleyenlerin oranı), `tiklanma7`, `abone7`, `begeni7`, `nedenler` (otomatik teşhis). Senaryoyu `done/<jobId>.json` içinde oku.
+
+Soru her video için aynı: **"Bu video X izlendi; 2X almak için ne yapacağız?"** Cevap somut ve uygulanabilir olsun:
+- `kancaOran` düşük (< 0,5) → ilk cümle/dev yazı sorunu yeterince net söylemiyor: yarınki videoda sorunu ilk 3 kelimeye taşı; bu videonun başlığını sorun kalıbına çevir (`iyilestirme/` dosyasıyla).
+- `tutma` düşük (Shorts < %60, uzun < %30) → çözüm geç geliyor ya da dolgu var: cümle sayısını/kelimeyi azalt, cevabı 2. cümleye al.
+- İzlenme iyi ama `abone7` / `begeni7` sıfıra yakın → çağrı zayıf: çağrıya neden ekle ("devamı yarın"), uzun videoya bağla.
+- İzlenme sıfıra yakın ve `gosterim7` çok düşük → konu/başlık aranmıyor ve önerilmiyor: `aramaTerimleri` ve rakip `fikirler` listesinden konu seç.
+- İyi giden video (kanal medyanının 2 katı) → **neden tuttuğunu** yaz ve yarın aynı sorun alanından devam videosu planla.
+
+```json
+{
+  "tarih": "YYYY-MM-DD",
+  "ozet": ["Bugünün 2-4 maddelik değerlendirmesi: ne tuttu, ne tutmadı, neden (sayıyı değil sebebi söyle)"],
+  "videolar": [{ "youtubeId": "…", "baslik": "…", "izlenme": 100, "hedef": 200, "neden": "neden bu kadarda kaldı / neden tuttu", "aksiyon": "2 katına çıkarmak için yaptığımız ya da yarın yapacağımız somut şey" }],
+  "yarin": ["Yarınki senaryolarda uygulanacak 1-3 somut değişiklik"]
+}
+```
+- `videolar`: en fazla 8 (en yeni ve en öğretici olanlar). `ozet` ve `yarin` Türkçe, kısa; uygulamada ve bildirimde görünür.
+- **Uygula:** `yarin` maddelerini aynı çalıştırmada yazdığın senaryolara uygula. Başlık/kapak değişikliği gerekiyorsa `iyilestirme/` dosyasına yaz (sistem YouTube'da uygular). Bir örüntü en az 2-3 videoda tekrarlıyorsa haftalık raporda `dersler`e ekle.
+- Kimlik sözleşmesi burada da geçerli: karakter, ses, stil değişikliği önerme. `etiket: "erken"` videolar için "henüz erken" de, hüküm verme.
 
 ## Rakip analizi (`config/rakipler/<kanalId>.json` ve `.jpg`)
 
@@ -143,7 +194,7 @@ Kurallar:
 - **Konu:** `config/duell-standings.json` içindeki konulardan, bu kanalın `done/` ve `queue/` dosyalarında `duell.topicId` olarak **hiç kullanılmamış** birini seç. Kazananlar çeşitlensin: Türkiye çok kazanıyor, araya Almanya, Fransa, İspanya, İtalya, Ukrayna, Polonya, Sırbistan kazanan konuları serpiştir. Aynı ülke art arda iki maç kazanmasın.
 - **Sayılar:** SADECE `duell-standings.json`'daki değerleri kullan: `top` listesi (Almanca ülke adları ve ton), `noData`, `countries`. Asla tahmin etme. Yuvarlarken "über", "knapp", "rund" de. Oran veya fark hesaplarsan doğru hesapla (ör. 726.500 / 124.010 ≈ 5,9 → "fast sechsmal so viel").
 - **Okunuş güvenliği:** Büyük sayıları "726 Tausend", "4,4 Millionen", "knapp 3000" gibi yaz; binlik ayırıcı nokta kullanma.
-- **Dil ve ton:** Almanca, hızlı ve heyecanlı bir spor yorumcusu gibi; kısa cümleler. Toplam **90-120 kelime** (yaklaşık 45 saniye). İfadeleri her maçta değiştir, kalıp tekrarlama.
+- **Dil ve ton:** Almanca, hızlı ve heyecanlı bir spor yorumcusu gibi; kısa cümleler. Toplam **60-90 kelime** (hızlı Shorts: her bölüm tek kısa cümle, yaklaşık 30 saniye). İfadeleri her maçta değiştir, kalıp tekrarlama.
 - **Bölümler** (video bu sırayla akar):
   - `intro`: Soru ve yarışın başladığını anlatan kanca (ör. "46 Länder fallen in den Trichter – nur eine Flagge kommt durch!").
   - `nodata`: Verisi olmayan ülke sayısı ilk turda elenir.
@@ -151,7 +202,7 @@ Kurallar:
   - `final`: 1. ile 2. karşı karşıya.
   - `winner`: Kazanan, değeri ve karşılaştırma.
   - `why`: Neden kazandı; genel, doğrulanabilir coğrafya, iklim veya tarım nedenleri. Kesin olmayan rakam verme.
-  - `table`: Sezon tablosuna atıf ve "Schreib dein Thema in die Kommentare!" benzeri bir çağrı.
+  - `table`: Sezon tablosuna tek cümlelik atıf ve **abone + beğen çağrısı** (zorunlu): "Abonniere und like für das nächste Duell – und schreib dein Thema in die Kommentare!" benzeri.
 - `why` dizisi: 2-3 kısa Almanca gerekçe, her biri en fazla 40 karakter.
 - **Sezon:** `needed.json`'daki Flaggenduell öğelerinde `season`, `match`, `total` (30), `final` ve `eveOfFinal` vardır. Güncel puan tablosu `config/channels.json` → kanalın `league.table` alanındadır (puan sistemi: 1.-7. sıra 10-7-5-4-3-2-1).
   - `title` **mutlaka** `Duell {match}/{total}: ` ile başlar (ör. `Duell 7/30: Wer erntet die meisten Äpfel? 🍎`).
@@ -177,17 +228,17 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 { "id": "…", "channelId": "…", "type": "long", "publishAt": "…", "format": "dizi", "dizi": "<needed.dizi>",
   "derleme": <needed.derleme listesi, aynen>, "bolum": <needed.bolum, aynen>,
   "title": "Zincirli · Bölüm 4-6 Tek Parça | …", "titleAlt": "…", "description": "…", "tags": ["…"], "topic": "…",
-  "thumbnailText": "TEK PARÇA", "thumbnailTextAlt": "…", "oynatmaListesi": "Zincirli · 1. Sezon", "ceviriler": { … } }
+  "thumbnailText": "TEK PARÇA", "thumbnailTextAlt": "…", "thumbnailTextAlt2": "…", "oynatmaListesi": "Zincirli · 1. Sezon", "ceviriler": { … } }
 ```
 - Başlık bölüm aralığını ve "Tek Parça" ifadesini içerir; açıklamanın ilk satırı o haftanın hikâyesini 1-2 cümlede özetler (bölümleri izlemeyenler için merak uyandırır, sonu vermez).
 
 **Fragman Shorts'u (`needed.json` öğesinde `"fragman": true`):** Bölüm yayınlanmadan **bir gün önce** çıkar ve izleyiciyi yarınki bölüme çağırır. Kaynak bölüm (`clipOf`) aynı turda yazılıyorsa **önce bölümü yaz**, fragmanı onun satırlarından kur.
-- `"fragman": true`, `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.12`, `bolum` kaynak bölümle aynı. 20-40 saniye, 5-8 sahne, satırların en az %60'ı bölümden.
+- `"fragman": true`, `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.2`, `bolum` kaynak bölümle aynı. **Hızlı Shorts kuralı geçerli:** 4-5 satır, en fazla 6 sahne, ilk sahnede `buyukYazi` ile bölümün sorusu, son satır abone + beğen çağrısı; satırların en az %60'ı bölümden.
 - Kurgu: en çarpıcı soru ya da tehdit cümlesiyle aç; bölümden 3-4 kısa, gerilimli an (yeni karakter, sır, dövüşün başı) art arda; **sonucu, kazananı ve son sahneyi asla gösterme**. Son sahne bölümün en büyük sorusunda kesilir.
 - `kapanis`: `{"baslik": "YARIN 20:00", "sonraki": "<Dizi> · Bölüm <no>: <ad>", "soru": "<tahmin sorusu, ör. Sence Su'yu bulabilecek mi?>"}` (saat kanalın uzun video saatidir).
 - Başlık merak uyandırır ve "yarın" vurgusu taşır (ör. "Yarın her şey değişiyor… ⚔️"); açıklamanın ilk satırı izleyiciye tahmin sorusu sorar, bağlantı eklenmez.
 
-**Bağımsız dizi Shorts'u (`type: short`, `clipOf` yok):** Kendi başına bir video; `"dikey": true`, `"acilis": false`, `"hiz": 1.05`, `bolum` needed.json'daki gibi (`{"no": <slot.bolum.no>, "ad": "<kısa konu>"}`). Kurgu dizinin `yazim` kurallarından gelir; `derivedFrom` yazma.
+**Bağımsız dizi Shorts'u (`type: short`, `clipOf` yok):** Kendi başına bir video; `"dikey": true`, `"acilis": false`, `"hiz": 1.2` (hızlı Shorts kuralı), `bolum` needed.json'daki gibi (`{"no": <slot.bolum.no>, "ad": "<kısa konu>"}`). Kurgu dizinin `yazim` kurallarından gelir; `derivedFrom` yazma.
 
 **Uzun bölüm (`type: long`):**
 - 3-4 dakika: satırlardaki toplam kelime `targetWords` ±%30 (doğrulayıcı kontrol eder). 18-26 sahne.
@@ -196,13 +247,13 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 - Şiddet gösterilmez: kan ve ölüm yok, dövüşler silahsızlandırma ya da bağışlamayla biter.
 - `kapanis`: `{"baslik": "DEVAMI", "sonraki": "Bölüm <no+1>: <sonraki bölümün adı> — Yakında", "soru": "<izleyiciye seçmeli soru>"}`. Son bölümde `sonraki` "Sezon finali" olur.
 - Kapak: `thumbnailText` (2-3 kelime, ≤25 karakter, bölümün duygusu: "ÜÇ SANİYE", "YARIM BİLEZİK") ve `"kapak": {"sahne": <sahne sırası, 0'dan>, "sn": <sahnenin kaçıncı saniyesi>}`. Kapak sahnesinde karakterler **sağ yarıda** dursun (x ≥ 0,55; yazı solda), en dramatik poz olsun (kılıç kaldırmış dev, yerde kahraman, kırık zincir).
-- `titleAlt` ve `thumbnailTextAlt` de yazılır (yukarıdaki optimizasyon kuralları). Başlık kalıbı: `"<Dizi adı> · Bölüm <no>: <bölüm adı>"` ya da merak uyandıran bir cümle + bölüm etiketi; ≤70 karakter.
+- `titleAlt`, `thumbnailTextAlt` ve `thumbnailTextAlt2` de yazılır (yukarıdaki optimizasyon kuralları: 3 kapak testi). Başlık kalıbı: `"<Dizi adı> · Bölüm <no>: <bölüm adı>"` ya da merak uyandıran bir cümle + bölüm etiketi; ≤70 karakter.
 - `oynatmaListesi`: dizinin adı ve sezonu ("Zincirli · 1. Sezon").
 
 **Shorts (`type: short`, `clipOf` dolu):** Bölümün **hızlı, merak uyandıran kısa hali**; bölümü izlemeye çağırır.
-- `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.12`, `bolum` kaynak bölümle aynı.
-- 25-50 saniye, 6-9 sahne, 50-110 kelime. Satırların en az %60'ı kaynak bölümden gelir (kısaltabilirsin).
-- Kurgu: (1) İlk saniyede kanca: bölümün en gerilimli karesi + tek cümle ("Ölmeme üç saniye vardı."). (2) 2-3 sahnede hızlı geçmiş. (3) Bölümün en iyi 2-3 anı. (4) **Doruk noktasında kes**: sonucu gösterme; son sahne hareketin ortasında biter (`sure` ile 1-2 sn aksiyon). (5) `kapanis`: `{"baslik": "NE OLDU?", "sonraki": "Tamamı kanalda: <Dizi> · Bölüm <no>", "soru": "<seçmeli soru>"}`.
+- `"derivedFrom": "<clipOf>"`, `"dikey": true`, `"acilis": false`, `"hiz": 1.2`, `bolum` kaynak bölümle aynı.
+- **Hızlı Shorts kuralı geçerli:** 4-5 satır, en fazla 6 sahne, kelime `targetWords` ±%30. Satırların en az %60'ı kaynak bölümden gelir (kısaltabilirsin). İlk sahnede `buyukYazi` ile bölümün sorusu; son satır "cevabı kanaldaki bölümde; devamı için abone ol ve beğen" benzeri.
+- Kurgu: (1) İlk saniyede sorun: bölümün en gerilimli karesi + tek cümle ("Ölmeme üç saniye vardı."). (2) Bölümün en iyi 2-3 anı, her biri tek satır. (3) **Doruk noktasında kes**: sonucu gösterme. (4) Çağrı satırı. (5) `kapanis`: `{"baslik": "NE OLDU?", "sonraki": "Tamamı kanalda: <Dizi> · Bölüm <no>", "soru": "<seçmeli soru>"}`.
 - Dikey ekranda yatay kadraj kullanma: karakterleri x 0,2-0,8 arasına yerleştir, yerde yatan karakter ekran dışına taşmasın.
 - Başlık kısa, merak uyandıran ve bölüm başlığından farklı ("Ölmesine 3 saniye vardı… ⚔️"); `#shorts` yazma (motor ekler). Açıklamanın ilk satırı izleyiciye soru, bölüm bağlantısını motor ekler.
 
@@ -212,7 +263,7 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
   "id": "…", "channelId": "…", "type": "long", "publishAt": "…",
   "format": "dizi", "dizi": "zincirli", "bolum": {"no": 2, "ad": "Kızıl Loca"},
   "title": "…", "titleAlt": "…", "description": "…", "tags": ["…"], "topic": "…",
-  "thumbnailText": "KIZIL LOCA", "thumbnailTextAlt": "…", "kapak": {"sahne": 0, "sn": 2},
+  "thumbnailText": "KIZIL LOCA", "thumbnailTextAlt": "…", "thumbnailTextAlt2": "…", "kapak": {"sahne": 0, "sn": 2},
   "oynatmaListesi": "Zincirli · 1. Sezon", "muzik": "epik", "muzikSeviye": 0.1,
   "kapanis": {"baslik": "DEVAMI", "sonraki": "Bölüm 3: Yarım Bilezik — Yakında", "soru": "…"},
   "scenes": [
@@ -256,7 +307,7 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 
 Bu kanalın videoları stok görselle değil, **kodla mürekkep çizimiyle** yapılır (eski bir ansiklopedi sayfası; anlatıcı Nur Bey lambası ekranda kendiliğinden çizilir). Her sahnenin görüntüsünü sen `cizim` alanına JavaScript olarak yazarsın. Dosyaya `"format": "cizim"` yaz. Bu formatta `visual.motion` ve `thumbnailPrompt` kullanılmaz; `hookText` yerine `baslikKart` yazılır.
 
-**Sahneler:** Her sahne **bir cümle** (en fazla iki kısa cümle) ve o cümleyi anlatan **tek bir çizim**. Shorts'ta 8-12 sahne, uzun videoda 60-120 sahne olur. Çizim cümlenin somut nesnesini gösterir (çay bardağı, simit, telefon, dükkân, harita, zaman çizgisi, kesit). Yazı sadece etiket ve tarih olarak kullanılır, cümleyi ekrana yazmak yasak (altyazı zaten var).
+**Sahneler:** Her sahne **bir cümle** (en fazla iki kısa cümle) ve o cümleyi anlatan **tek bir çizim**. Shorts'ta 5-6 sahne (hızlı Shorts kuralı: 4-5 cümle + çağrı), uzun videoda 60-120 sahne olur. Çizim cümlenin somut nesnesini gösterir (çay bardağı, simit, telefon, dükkân, harita, zaman çizgisi, kesit). Yazı sadece etiket ve tarih olarak kullanılır, cümleyi ekrana yazmak yasak (altyazı zaten var).
 
 **Görsel (ara sıra):** Sadece gerçek bir fotoğraf ya da belge gerçekten gerekiyorsa (ör. mucidin portresi, tarihi bina), o sahnede `cizim` yerine `"visual": {"query": "…", "prompt": "…"}` yaz; arşivden bulunur ve kâğıda basılmış levha olarak gösterilir. Sahnelerin en fazla dörtte biri görsel olabilir; doğrulayıcı fazlasını reddeder.
 
@@ -292,7 +343,7 @@ for (const [x, yil, ad, k] of [[300, '1841', 'Joseph Nason', 0], [700, '1857', '
 **Diğer alanlar:**
 - `ifade` (isteğe bağlı, her sahne): Nur Bey'in yüzü: `anlatiyor` (varsayılan), `merakli`, `saskin`, `gulumsuyor`, `kahkaha`, `dusunceli`, `endiseli`, `gururlu`. Cümlenin duygusuna göre seç.
 - `baslikKart`: Shorts'ta üstte, uzun videoda girişte duran iki satırlık başlık (her satır ≤22 karakter); ikinci satır lamba renginde vurgulanır. Merak uyandıran soru: `["Simidin ortası", "neden delik?"]`.
-- `kapanis` (Shorts, zorunlu; aşağıdaki "Yorum oylaması"na bak): Son sahnede çıkan seçmeli soru kartı: `{"soru": "Sırada hangisi olsun?", "a": "Saat", "b": "Petek"}` (a ve b ≤18, soru ≤30). Son sahnenin anlatımı bu soruyu sorar; son sahneye çizim olarak `txt('?', MX, 420, 200, { c: K.ak })` yeter.
+- `kapanis` (Shorts, zorunlu; aşağıdaki "Yorum oylaması"na bak): Son sahnede çıkan seçmeli soru kartı: `{"soru": "Sırada hangisi olsun?", "a": "Saat", "b": "Petek"}` (a ve b ≤18, soru ≤30). Kartın altında "abone ol ve beğen" yazısı kendiliğinden çıkar. Son sahnenin anlatımı bu soruyu sorar ve abone + beğen çağrısını yapar; son sahneye çizim olarak `txt('?', MX, 420, 200, { c: K.ak })` yeter.
 - Uzun video: İlk sahneler **giriş**tir (gece zemininde, `baslikKart` başlığıyla). Her bölümün ilk sahnesine `"bolum": {"no": "Bölüm I", "ust": "1840'lar – 1870'ler", "ad": "Konuşamayan tel"}` yaz (ad ≤32). İlk sahnede `bolum` olmaz. 5-7 bölüm.
 - Uzun video kapağı: `thumbnailText` (2-3 kelime, ilk satır lamba renginde: "22 YIL YASAK"), `kapakAlt` (isteğe bağlı küçük italik satır: "İstanbul · 1886–1908") ve `kapakCizim`: **300 × 420** alanında, kalın çizgili (`w: 8`) tek nesne (ör. üstü çizili telefon). Kapakta çizim kendiliğinden kâğıt renginde çizilir.
 
@@ -306,7 +357,7 @@ Shorts'ların sonundaki "Sırada hangisi olsun? A / B" kartına izleyiciler yoru
 - Oy geldiyse (`oyA + oyB > 0`) ilk ya da ikinci cümlede izleyiciye bunu söyle: "Yorumlarda siz seçtiniz: …". Oy yoksa söyleme.
 - Kanca yine ilk cümlede olmalı; seçim cümlesi kancayı geciktirmesin.
 
-**Kapanış kartı (`kapanis`):** Çizim formatındaki her Shorts'ta `kapanis` yaz. `a` ve `b` **gerçekten yapılabilecek, daha önce yapılmamış** iki konu adı olsun (kısa: "Saat", "Kalorifer peteği"). Kanalın konusuna ve Türkiye bağlantısı kuralına uysun. Son sahnenin anlatımı bu iki seçeneği sorup "Yorumlara A ya da B yazın" desin.
+**Kapanış kartı (`kapanis`):** Çizim formatındaki her Shorts'ta `kapanis` yaz. `a` ve `b` **gerçekten yapılabilecek, daha önce yapılmamış** iki konu adı olsun (kısa: "Saat", "Kalorifer peteği"). Kanalın konusuna ve Türkiye bağlantısı kuralına uysun. Son sahnenin anlatımı **tek cümlede** bu iki seçeneği sorar ve çağrıyı yapar: "Sırada saat mi, petek mi; yorumlara yaz, devamı için abone ol ve beğen."
 
 ## Uzun videodan kesit Shorts (`needed.json` öğesinde `clipOf` varsa; dizi formatında değil)
 
@@ -335,11 +386,11 @@ Bu Shorts bağımsız değildir; `clipOf` id'li uzun videonun bir bölümünden 
 - **Karakter tutarlılığı:** Aynı kanalın bütün videolarında anlatıcı aynı kişidir. Konuşma tarzı, hitap şekli ("dostlar", "evlatlarım" gibi) ve kişiliği videodan videoya değişmez. Bir kanal için bir hitap seçtiysen (`recentTitles` ile aynı kanalın `done/` klasöründeki önceki senaryolara bakarak anla) onu koru.
 - Toplam kelime sayısı `targetWords` değerinin ±%25'i içinde olmalı. Doğrulayıcı ±%30 dışını reddeder.
 - **İlk cümle kanca olsun**: soru, şaşırtıcı bilgi veya merak uyandıran bir iddia. "Merhaba arkadaşlar" ile başlama.
-- Uzun video: giriş kancası → 3-6 bölüm → akılda kalan bir kapanış. Kapanışta tek cümleyle abone olmaya davet edebilirsin.
-- Shorts: tek bir fikir, hızlı tempo, son cümle izleyiciyi düşündürsün ya da başa sarmak istetsin.
+- Uzun video: giriş kancası → 3-6 bölüm → akılda kalan bir kapanış. Abone + beğen çağrısı zorunlu ("Abone ve beğeni çağrısı" bölümü).
+- Shorts: "Hızlı Shorts kuralı": tek sorun, 4-5 cümle, çözüm videonun içinde, son cümle çağrı.
 - Metin seslendirilecek: kısaltma (M.Ö., vb., Dr.), emoji, madde işareti, parantez ve URL kullanma.
 - Sayılar: Yıl, adet ve yüzdeleri **rakamla** yaz (1096, 300, %40, 1325'te); motor bunları seslendirmede doğru okunuşa çevirir, altyazıda rakam görünür. **Sıra sayılarını yazıyla** yaz ("15. yüzyıl" değil "on beşinci yüzyıl", "2. Dünya Savaşı" değil "İkinci Dünya Savaşı"). "Milattan önce" yaz, "M.Ö." yazma.
-- Sahneler 15-60 kelime arası olsun, hiçbiri 90 kelimeyi geçmesin. Uzun videoda bir sahne yaklaşık 20-30 saniye eder. (Çizim formatında her sahne bir cümledir; yukarıdaki bölüme bak.)
+- Uzun videoda sahneler 15-60 kelime arası olsun, hiçbiri 90 kelimeyi geçmesin (Shorts'ta her sahne tek kısa cümle). Uzun videoda bir sahne yaklaşık 20-30 saniye eder. (Çizim formatında her sahne bir cümledir; yukarıdaki bölüme bak.)
 
 ## Görsel alanları (her sahne için)
 
@@ -376,7 +427,7 @@ Sınırlar: `stat.value` ≤12 karakter; `timeline` 2-4 öğe; `list` 2-4 madde 
   - Anahtar kelime ilk 3-4 kelimede olsun (aramada ve kesik başlıkta görünsün).
   - Yalan vaat, abartılı büyük harf, emoji yığını yok. Videoda olmayan bir şeyi vaat etme.
   - Her video kendi konusuna özel bir başlık alır. Kanalın önceki başlıklarını (`recentTitles` ve `done/`) **tekrarlama**, aynı kalıbı art arda kullanma (ör. her başlık "…Biliyor Muydunuz?" diye bitmesin). Doğrulayıcı tekrar eden başlığı reddeder. `<` ve `>` kullanma.
-- `hookText`: Videonun **ilk 2,5 saniyesinde** ekranda dev harflerle beliren kanca yazısı. 2-5 kelime, en fazla 40 karakter. Başlığı tekrarlamaz, ilk cümleyi destekler ve izleyiciyi durdurur (ör. "3 kalp, mavi kan", "Kimse okuyamıyor"). Shorts ve uzun video için her zaman yaz.
+- `hookText`: Videonun **ilk 2,5 saniyesinde** ekranda dev harflerle beliren kanca yazısı. 2-5 kelime, en fazla 40 karakter. Shorts'ta **sorunun kendisi** ("Çayın hemen soğuyor mu?"); uzun videoda başlığı tekrarlamaz, ilk cümleyi destekler (ör. "3 kalp, mavi kan", "Kimse okuyamıyor"). Shorts ve uzun video için her zaman yaz.
 - `description`: 2-4 cümlelik özet, ardından konuyla ilgili 3-5 hashtag. `<` ve `>` kullanma.
 - `tags`: 8-15 arası arama ifadesi, kanal dilinde.
 - Uzun video için ayrıca:
@@ -398,6 +449,9 @@ Sınırlar: `stat.value` ≤12 karakter; `timeline` 2-4 öğe; `list` 2-4 madde 
   "description": "…",
   "tags": ["truva atı", "antik tarih"],
   "thumbnailText": "GERÇEK Mİ?",
+  "thumbnailTextAlt": "3000 YILLIK YALAN",
+  "thumbnailTextAlt2": "KANIT YOK",
+  "titleAlt": "Truva Atı Bir Efsane mi? Arkeologların Bulduğu Şey",
   "thumbnailPrompt": "giant wooden horse in front of ancient city walls at dusk",
   "scenes": [
     {
@@ -408,7 +462,7 @@ Sınırlar: `stat.value` ≤12 karakter; `timeline` 2-4 öğe; `list` 2-4 madde 
 }
 ```
 
-`id`, `channelId`, `type` ve `publishAt` değerlerini `needed.json`'dan **aynen** kopyala. Shorts'ta `thumbnailText` ve `thumbnailPrompt` gerekmez.
+`id`, `channelId`, `type` ve `publishAt` değerlerini `needed.json`'dan **aynen** kopyala. Shorts'ta `thumbnailText`, `thumbnailTextAlt`, `thumbnailTextAlt2` ve `thumbnailPrompt` gerekmez.
 
 ## Yapma
 

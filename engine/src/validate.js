@@ -6,6 +6,7 @@ import { pathToFileURL } from 'node:url';
 import { CONFIG_DIR, DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
 import { KAPAK_ALAN, cizimHatasi } from '../../shared/cizim.js';
 import { deneyHatalari } from './lib/deney.js';
+import { HIZLI_CUMLE, HIZLI_DIZI_HIZ, anlatimMetinleri, cagriEksigi, cumleSay } from './lib/hizli.js';
 import { haberLinkleri } from './lib/haberler.js';
 import { POZLAR, ESYALAR } from '../../shared/cop.js';
 import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../shared/dizi.js';
@@ -45,7 +46,7 @@ const DUELL_PHASES = ['intro', 'nodata', 'rounds', 'final', 'winner', 'why', 'ta
 const DUELL_TOPIC_IDS = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'shared', 'duell-topics.json'), 'utf8')).map((t) => t.id));
 
 // Flaggenduell senaryosu: katalogdaki bir konu, 7 bölümlük anlatım, 2-3 kısa gerekçe.
-function duellErrors(d) {
+function duellErrors(d, hizli = false) {
   if (!d || typeof d !== 'object') return ['duell nesnesi eksik'];
   const errors = [];
   if (!DUELL_TOPIC_IDS.has(d.topicId)) errors.push(`duell.topicId katalogda yok: ${d.topicId}`);
@@ -53,7 +54,8 @@ function duellErrors(d) {
     if (!str(d.script?.[p], 400)) errors.push(`duell.script.${p} eksik veya çok uzun`);
   }
   const words = DUELL_PHASES.reduce((n, p) => n + countWords(d.script?.[p] ?? ''), 0);
-  if (words < 75 || words > 135) errors.push(`duell anlatımı ${words} kelime; 45 sn için 75-135 arası olmalı`);
+  if (hizli) { if (words < 55 || words > 95) errors.push(`duell anlatımı ${words} kelime; hızlı Shorts için 55-95 arası olmalı (her bölüm tek kısa cümle)`); }
+  else if (words < 75 || words > 135) errors.push(`duell anlatımı ${words} kelime; 45 sn için 75-135 arası olmalı`);
   if (!Array.isArray(d.why) || d.why.length < 2 || d.why.length > 3 || !d.why.every((w) => str(w, 40))) {
     errors.push('duell.why 2-3 madde, her biri en fazla 40 karakter');
   }
@@ -199,7 +201,9 @@ function diziErrors(job, slot) {
   } else {
     if (job.dikey !== true) errors.push('Shorts\'ta "dikey": true olmalı');
     if (job.acilis !== false) errors.push('Shorts\'ta "acilis": false olmalı (ilk saniyeden kanca)');
-    if (!(typeof job.hiz === 'number' && job.hiz >= 1 && job.hiz <= 1.2)) errors.push('Shorts\'ta hiz 1-1,2 arası olmalı (önerilen 1,12)');
+    if (slot?.hizli) {
+      if (!(typeof job.hiz === 'number' && job.hiz >= HIZLI_DIZI_HIZ.min && job.hiz <= HIZLI_DIZI_HIZ.max)) errors.push(`hızlı Shorts'ta hiz ${HIZLI_DIZI_HIZ.min}-${HIZLI_DIZI_HIZ.max} arası olmalı (önerilen 1,2)`);
+    } else if (!(typeof job.hiz === 'number' && job.hiz >= 1 && job.hiz <= HIZLI_DIZI_HIZ.max)) errors.push('Shorts\'ta hiz 1-1,3 arası olmalı');
     if (scenes.length > 10) errors.push(`Shorts'ta ${scenes.length} sahne var; en fazla 10`);
     if (kelime > 130) errors.push(`Shorts'ta ${kelime} kelime var; 60 saniyeyi geçmemesi için en fazla 130`);
   }
@@ -207,7 +211,11 @@ function diziErrors(job, slot) {
     const min = Math.round(slot.targetWords * (1 - WORD_TOLERANCE));
     const max = Math.round(slot.targetWords * (1 + WORD_TOLERANCE));
     if (job.type === 'long' && (kelime < min || kelime > max)) errors.push(`satırlarda toplam ${kelime} kelime; hedef ${slot.targetWords} (${min}-${max} arası olmalı)`);
-    if (job.type === 'short' && kelime < 40) errors.push(`Shorts'ta ${kelime} kelime; en az 40`);
+    if (job.type === 'short' && slot.hizli) {
+      if (kelime < min || kelime > max) errors.push(`Shorts satırlarında ${kelime} kelime; hızlı Shorts hedefi ${slot.targetWords} (${min}-${max} arası olmalı)`);
+      if (scenes.length > 7) errors.push(`hızlı Shorts'ta ${scenes.length} sahne var; en fazla 7`);
+      if (!(scenes[0]?.buyukYazi || scenes[0]?.sira || scenes[0]?.haber)) errors.push('hızlı Shorts: ilk sahnede sorunu/soruyu bildiren dev yazı olmalı (buyukYazi {ust ≤14, alt ≤30})');
+    } else if (job.type === 'short' && kelime < 40) errors.push(`Shorts'ta ${kelime} kelime; en az 40`);
     if (job.type !== slot.type || job.channelId !== slot.channelId) errors.push('type/channelId needed.json ile uyuşmuyor');
     if (slot.fragman && job.fragman !== true) errors.push('bu Shorts gelecek bölümün fragmanı: "fragman": true yaz ve bölümün sonunu verme');
     if (slot.clipOf) {
@@ -288,11 +296,34 @@ function ekAlanHatalari(job) {
   }
   if (!optStr(job.oynatmaListesi, 60) || /[<>]/.test(job.oynatmaListesi ?? '')) errors.push('oynatmaListesi en fazla 60 karakter, < > olmadan');
   if (!optStr(job.thumbnailTextAlt, 40)) errors.push('thumbnailTextAlt en fazla 40 karakter');
+  if (!optStr(job.thumbnailTextAlt2, 40)) errors.push('thumbnailTextAlt2 en fazla 40 karakter');
   if (!optStr(job.titleAlt, 100) || /[<>]/.test(job.titleAlt ?? '')) errors.push('titleAlt en fazla 100 karakter, < > olmadan');
   return errors;
 }
 
 const kelimeSay = (t) => String(t ?? '').trim().split(/\s+/).filter(Boolean).length;
+
+// Hızlı Shorts (slot.hizli): 4-5 cümle, son cümlede abone/beğen çağrısı. Uzun video: anlatımda abone/beğen çağrısı.
+// Derleme (sahnesiz) ve duell (kendi kontrolü var) hariç.
+export function cagriHatalari(job, slot) {
+  if (job.format === 'duell' || !Array.isArray(job.scenes)) return [];
+  const metinler = anlatimMetinleri(job).filter((m) => m.trim());
+  if (!metinler.length) return [];
+  const errors = [];
+  if (job.type === 'short' && slot.hizli) {
+    const cumle = metinler.reduce((n, m) => n + cumleSay(m), 0);
+    if (cumle < HIZLI_CUMLE.min || cumle > HIZLI_CUMLE.max) {
+      errors.push(`hızlı Shorts: anlatım ${cumle} cümle; 4-5 cümle olmalı (sorun → çözüm → çağrı; en fazla ${HIZLI_CUMLE.max})`);
+    }
+    const c = cagriEksigi(metinler.slice(-2).join(' '), slot.dil);
+    if (c) errors.push(`hızlı Shorts: son cümlede ${c} ("Serinin devamı için abone ol ve beğen" benzeri, kanal dilinde)`);
+  }
+  if (job.type === 'long') {
+    const c = cagriEksigi(metinler.join(' '), slot.dil);
+    if (c) errors.push(`uzun video: anlatımda ${c} (ilk üçte birde kısa bir çağrı, kapanışta "serinin devamı için abone ol ve beğen")`);
+  }
+  return errors;
+}
 
 // Yeni yazılan senaryoya (needed.json'daki slot) uygulanan kurallar: kuyruktaki eski işleri geçersiz kılmaz.
 function slotHatalari(job, slot, { haberKontrol = false } = {}) {
@@ -323,9 +354,17 @@ function slotHatalari(job, slot, { haberKontrol = false } = {}) {
     } else if (job.thumbnailTextAlt.trim().toLocaleLowerCase('tr') === String(job.thumbnailText).trim().toLocaleLowerCase('tr')) {
       errors.push('thumbnailTextAlt asıl kapak yazısından farklı olmalı');
     }
+    // 3 kapak testi: her uzun video üç farklı kapak yazısıyla denenir, en çok tıklanan kalır.
+    const kucuk = (v) => String(v ?? '').trim().toLocaleLowerCase('tr');
+    if (!str(job.thumbnailTextAlt2, 25) || kelimeSay(job.thumbnailTextAlt2) > 4) {
+      errors.push('thumbnailTextAlt2 (üçüncü kapak yazısı, ≤4 kelime, ≤25 karakter) eksik: 3 kapak testi için üç farklı açı yaz');
+    } else if ([kucuk(job.thumbnailText), kucuk(job.thumbnailTextAlt)].includes(kucuk(job.thumbnailTextAlt2))) {
+      errors.push('thumbnailTextAlt2 diğer iki kapak yazısından farklı olmalı');
+    }
     if (!str(job.titleAlt, 70)) errors.push('titleAlt (yedek başlık, ≤70 karakter) eksik');
     else if (normalizeTitle(job.titleAlt) === normalizeTitle(job.title)) errors.push('titleAlt asıl başlıktan farklı olmalı');
   }
+  errors.push(...cagriHatalari(job, slot));
   for (const dil of slot.ceviriDilleri ?? []) {
     if (!job.ceviriler?.[dil]) errors.push(`ceviriler.${dil} eksik: başlık ve açıklamanın ${dil} çevirisi yazılmalı`);
   }
@@ -370,8 +409,12 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
   }
 
   if (job.format === 'duell') {
-    errors.push(...duellErrors(job.duell));
     const slot = needed?.find((n) => n.id === job.id);
+    errors.push(...duellErrors(job.duell, Boolean(slot?.hizli)));
+    if (slot?.hizli) {
+      const c = cagriEksigi(job.duell?.script?.table, slot.dil);
+      if (c) errors.push(`duell.script.table: ${c} (son cümle "Abonniere und like für das nächste Duell" benzeri olmalı)`);
+    }
     if (slot?.match) {
       req(typeof job.title === 'string' && job.title.startsWith(`Duell ${slot.match}/${slot.total}`),
         `title "Duell ${slot.match}/${slot.total}: …" ile başlamalı`);

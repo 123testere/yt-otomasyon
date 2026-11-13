@@ -1,8 +1,9 @@
-// Zayıf kapak denemesi (senkronizasyondan sonra, iş akışında çalışır; Remotion gerekir).
-// Tıklanma oranı kanal ortalamasının çok altında kalan uzun videoda:
-//   1) kapak yedek yazıyla (thumbnailTextAlt) değiştirilir; 3+ gün sonra önceki ve sonraki tıklanma karşılaştırılır.
-//   2) kötüyse eski kapak geri konur ve yedek başlık (titleAlt) denenir; o da kötüyse eski başlık geri gelir.
-// Durum perf/{youtubeId}.kapakDeneme alanında: bekliyor → deneniyor → kazandi | baslik-deneniyor → kazandi | geri-alindi
+// 3 kapak testi (senkronizasyondan sonra, iş akışında çalışır; Remotion gerekir).
+// YouTube'un kendi "Test ve karşılaştır" özelliği API'de yok; bu yüzden kapaklar sırayla denenir:
+//   1) Her uzun videoda A (asıl kapak, thumbnailText) yayından beri ölçülür; sonra B (thumbnailTextAlt) ve
+//      C (thumbnailTextAlt2) en az 2'şer gün yayında kalır. Tıklanma oranı en yüksek olan kapak kalır.
+//   2) Kazanan kapağın tıklanması hâlâ %3'ün altındaysa yedek başlık (titleAlt) denenir; kötüyse eski başlık geri gelir.
+// Durum perf/{youtubeId}.kapakDeneme alanında: bekliyor → deneniyor (asama 1: B, 2: C) → kazandi | baslik-deneniyor → kazandi | geri-alindi
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -12,14 +13,15 @@ import { db } from './lib/firebase.js';
 import { resolveSettings } from './lib/options.js';
 import { DONE_DIR, ROOT } from './lib/paths.js';
 import { notify } from './lib/notify.js';
-import { aralikCtr } from './lib/reach.js';
+import { aralikCtr, enIyiKapak } from './lib/reach.js';
 import { authFor } from './pipeline/youtube.js';
 import { uzunKapak } from './pipeline/cover.js';
 
 const DAY = 86400000;
-const MIN_GUN = 3;
-const MAX_GUN = 14;
-const MIN_GOSTERIM = 80;
+const MIN_GUN = 2; // her kapak en az bu kadar gün yayında kalır
+const MAX_GUN = 5; // gösterim az gelse de bu kadar gün sonra sıradakine geçilir
+const MIN_GOSTERIM = 50;
+const BASLIK_ESIK = 3; // kazanan kapağın tıklanması bunun altındaysa başlık da denenir (%)
 
 const gunNo = (d) => new Date(d).toISOString().slice(0, 10).replace(/-/g, '');
 const gunFarki = (a, b) => (Date.parse(`${b.slice(0, 4)}-${b.slice(4, 6)}-${b.slice(6)}`) - Date.parse(`${a.slice(0, 4)}-${a.slice(4, 6)}-${a.slice(6)}`)) / DAY;
@@ -84,9 +86,9 @@ async function isle(p) {
   if (k.durum === 'bekliyor') {
     const once = aralikCtr(p.gunluk, yayinGun, bugun);
     if (opt.kapakDegistir && job.thumbnailTextAlt) {
-      await kapakKoy(yt, p, job, settings, job.thumbnailTextAlt, 'yedek');
-      return kaydet(p, { durum: 'deneniyor', baslangic: bugun, once },
-        `${ad}: tıklanma %${once.ctr} ile kanal ortalamasının altında; kapak “${job.thumbnailTextAlt}” yazısıyla değiştirildi.`);
+      await kapakKoy(yt, p, job, settings, job.thumbnailTextAlt, 'b');
+      return kaydet(p, { durum: 'deneniyor', asama: 1, baslangic: bugun, once, sonuclar: [{ ad: 'A', yazi: job.thumbnailText, ...once }] },
+        `${ad}: kapak testi başladı. A “${job.thumbnailText}” tıklanma %${once.ctr ?? '?'}; şimdi B “${job.thumbnailTextAlt}” deneniyor.`);
     }
     if (await basligaGec(once)) return null;
     return kaydet(p, { ...k, durum: 'atlandi', neden: 'yedek kapak ya da başlık yok' });
@@ -100,10 +102,24 @@ async function isle(p) {
   const iyi = sonra.ctr != null && k.once?.ctr != null && sonra.ctr >= k.once.ctr;
 
   if (k.durum === 'deneniyor') {
-    if (iyi) return kaydet(p, { ...k, durum: 'kazandi', sonra }, `${ad}: yeni kapak tuttu (tıklanma %${k.once.ctr} → %${sonra.ctr}).`);
-    await kapakKoy(yt, p, job, settings, job.thumbnailText, 'asil');
-    if (await basligaGec(k.once)) return null;
-    return kaydet(p, { ...k, durum: 'geri-alindi', sonra }, `${ad}: yeni kapak tutmadı (%${k.once.ctr} → %${sonra.ctr ?? '?'}), eski kapak geri kondu.`);
+    // Eski kayıtlarda (tek yedekli deneme) sonuclar yok: A = değişiklik öncesi ölçü.
+    const asama = k.asama ?? 1;
+    const yazilar = [job.thumbnailText, job.thumbnailTextAlt, job.thumbnailTextAlt2];
+    const sonuclar = [...(k.sonuclar ?? [{ ad: 'A', yazi: job.thumbnailText, ...k.once }]), { ad: 'ABC'[asama], yazi: yazilar[asama], ...sonra }];
+    if (asama === 1 && job.thumbnailTextAlt2) {
+      await kapakKoy(yt, p, job, settings, job.thumbnailTextAlt2, 'c');
+      return kaydet(p, { ...k, asama: 2, baslangic: bugun, sonuclar },
+        `${ad}: B “${job.thumbnailTextAlt}” tıklanma %${sonra.ctr ?? '?'}; şimdi C “${job.thumbnailTextAlt2}” deneniyor.`);
+    }
+    const kazanan = enIyiKapak(sonuclar) ?? sonuclar[0];
+    if (kazanan.ad !== 'ABC'[asama]) await kapakKoy(yt, p, job, settings, kazanan.yazi, 'kazanan');
+    const ozet = sonuclar.map((s) => `${s.ad} %${s.ctr ?? '?'}`).join(', ');
+    if ((kazanan.ctr ?? 0) < BASLIK_ESIK && await basligaGec({ ctr: kazanan.ctr, gosterim: kazanan.gosterim })) {
+      await firestore.doc(`perf/${p.youtubeId}`).update({ 'kapakDeneme.sonuclar': sonuclar, 'kapakDeneme.kazananKapak': kazanan.ad });
+      return null;
+    }
+    return kaydet(p, { ...k, durum: 'kazandi', sonuclar, kazanan: kazanan.ad, sonra },
+      `${ad}: kapak testi bitti (${ozet}). ${kazanan.ad} “${kazanan.yazi}” kazandı ve kalıcı oldu.`);
   }
   if (k.durum === 'baslik-deneniyor') {
     if (iyi) return kaydet(p, { ...k, durum: 'kazandi', sonra }, `${ad}: yeni başlık tuttu (tıklanma %${k.once.ctr} → %${sonra.ctr}).`);
@@ -141,7 +157,7 @@ for (const f of iyiDosyalar) {
       const settings = resolveSettings((await firestore.doc(`channels/${p.channelId}`).get()).data()?.settings);
       const yt = google.youtube({ version: 'v3', auth: authFor((await firestore.doc(`secrets/${p.channelId}`).get()).data()) });
       const yapilan = [];
-      if (x.thumbnailText && job) {
+      if (x.thumbnailText && job && p.tip === 'long') {
         await kapakKoy(yt, p, { ...job, kapak: x.kapak ?? job.kapak }, settings, x.thumbnailText, `iyilestirme-${Date.now()}`);
         yapilan.push(`kapak “${x.thumbnailText}”`);
       }

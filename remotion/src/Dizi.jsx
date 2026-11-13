@@ -264,8 +264,8 @@ function siraKarti(ctx, s, u, W, H, yatay) {
 }
 
 const METIN = {
-  tr: { bolum: 'BÖLÜM', bolumK: 'Bölüm', onceki: 'Önceki bölümde…', yorum: 'Yorumlara yaz 👇', devami: 'DEVAMI' },
-  en: { bolum: 'EP', bolumK: 'Episode', onceki: 'Previously…', yorum: 'Comment below 👇', devami: 'TO BE CONTINUED' },
+  tr: { bolum: 'BÖLÜM', bolumK: 'Bölüm', onceki: 'Önceki bölümde…', yorum: 'Yorumlara yaz 👇', devami: 'DEVAMI', cagri: 'Devamı için ABONE OL ve BEĞEN 👍' },
+  en: { bolum: 'EP', bolumK: 'Episode', onceki: 'Previously…', yorum: 'Comment below 👇', devami: 'TO BE CONTINUED', cagri: 'SUBSCRIBE and LIKE for more 👍' },
 };
 
 export function kare(ctx, p, t, dur, fns) {
@@ -441,6 +441,8 @@ export function kare(ctx, p, t, dur, fns) {
       sat.forEach((s, j) => yazi(ctx, s, W / 2, cy + 280 + j * 76, 60, { a: eo(pr(v, 0.5, 1)) }));
       yazi(ctx, M.yorum, W / 2, cy + 340 + sat.length * 76, 50, { c: RENK.altin, a: eo(pr(v, 0.9, 1.4)), w: 500 });
     }
+    // Abone ol / beğen çağrısı: her kapanış kartının altında (hafifçe atan yazı)
+    yazi(ctx, M.cagri, W / 2, yatay ? H - 90 : 1500, (yatay ? 58 : 56) * (1 + 0.03 * Math.sin(v * 6)), { c: '#FFFFFF', a: eo(pr(v, 0.6, 1.1)), w: 700 });
   }
 }
 

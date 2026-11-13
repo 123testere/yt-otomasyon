@@ -134,6 +134,26 @@ export default function Optimizasyon() {
         ) : null}
 
         <Card>
+          <Title>Gün sonu değerlendirmesi</Title>
+          {opt.gunluk ? (
+            <>
+              <Dim style={{ fontSize: 12 }}>{opt.gunluk.tarih}</Dim>
+              {(opt.gunluk.ozet ?? []).map((s, i) => <Text key={i} style={st.madde}>• {s}</Text>)}
+              {(opt.gunluk.videolar ?? []).map((v, i) => (
+                <View key={i} style={{ marginTop: 8 }}>
+                  <Text style={[st.madde, { fontWeight: '700' }]}>{v.baslik}</Text>
+                  <Dim style={{ fontSize: 12 }}>{v.izlenme ?? '?'} izlenme → hedef {v.hedef ?? '?'}</Dim>
+                  {v.neden ? <Text style={st.madde}>Neden: {v.neden}</Text> : null}
+                  {v.aksiyon ? <Text style={st.madde}>Yapılan: {v.aksiyon}</Text> : null}
+                </View>
+              ))}
+              {(opt.gunluk.yarin ?? []).length ? <Dim style={{ fontSize: 12, marginTop: 8 }}>Yarın:</Dim> : null}
+              {(opt.gunluk.yarin ?? []).map((s, i) => <Text key={i} style={st.madde}>→ {s}</Text>)}
+            </>
+          ) : <Dim>Her gece her kanal için yazılır: videolar ne aldı, iki katı için ne yapılıyor.</Dim>}
+        </Card>
+
+        <Card>
           <Title>Haftalık rapor</Title>
           {rapor ? (
             <>

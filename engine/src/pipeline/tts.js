@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { HIZLI_TEMPO } from '../lib/hizli.js';
 import path from 'node:path';
 import { PY_DIR } from '../lib/paths.js';
 import { probeDuration, retry, run } from '../lib/util.js';
@@ -82,7 +83,12 @@ async function ownVoice(job, settings, dir, tempo) {
 // Her sahne ayrı seslendirilir; böylece sahne süreleri ve kelime zamanları kesin bilinir.
 export async function narrate(job, settings, dir) {
   // Shorts'a ayrı konuşma hızı seçilmişse o kullanılır.
-  if (job.type === 'short' && settings.shorts?.speechRate) settings = { ...settings, speechRate: settings.shorts.speechRate };
+  // Hızlı Shorts kuralı: Shorts'ta konuşma en az +20% hızlıdır (kanal daha hızlısını seçtiyse o geçerli).
+  if (job.type === 'short') {
+    const secili = settings.shorts?.speechRate ?? settings.speechRate;
+    const taban = Math.round((HIZLI_TEMPO - 1) * 100);
+    settings = { ...settings, speechRate: parseInt(secili, 10) >= taban ? secili : `+${taban}%` };
+  }
   const tempo = 1 + parseInt(settings.speechRate, 10) / 100;
   const own = await ownVoice(job, settings, dir, tempo);
 

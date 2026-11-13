@@ -101,3 +101,7 @@ export function aralikCtr(gunluk, basGun, sonGun) {
   for (const [d, [i, t]] of Object.entries(gunluk ?? {})) if (d >= basGun && d <= sonGun) { impr += i; tik += t; }
   return { gosterim: Math.round(impr), ctr: impr ? Math.round((tik / impr) * 10000) / 100 : null };
 }
+
+// 3 kapak testi: sonuçlardan en yüksek tıklanmalı kapak (eşitlikte önce denenen). Ölçülemeyen (ctr null) kazanamaz.
+export const enIyiKapak = (sonuclar) => sonuclar.filter((s) => typeof s.ctr === 'number')
+  .reduce((en, s) => (!en || s.ctr > en.ctr ? s : en), null);

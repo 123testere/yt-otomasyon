@@ -22,8 +22,10 @@ const DAY = 24 * HOUR;
 const PERF_ARALIK = 20 * HOUR;
 const REACH_TEKRAR = 3 * DAY; // izin yoksa 3 günde bir yeniden denenir (kanal yeniden bağlanınca kendiliğinden başlar)
 const MAX_DERS = 12;
-// Kapak denemesi: 2 günden sonra, en az 100 gösterimle; tıklanma %3'ün ya da kanal medyanının %60'ının altındaysa.
-const KAPAK = { minYas: 2, maxYas: 30, minGosterim: 100, oran: 0.6, mutlak: 3 };
+// 3 kapak testi: her uzun video (yedek kapak yazısı varsa) 2 günden sonra ve en az 50 gösterimle teste girer;
+// gösterim az kalsa da 4. günden sonra başlar. Yedek kapağı olmayan eski videolarda yalnızca tıklanma zayıfsa
+// (%3'ün ya da kanal medyanının %60'ının altı) başlık denemesi yapılır.
+const KAPAK = { minYas: 2, maxYas: 30, minGosterim: 50, gecYas: 4, oran: 0.6, mutlak: 3 };
 export const ANALIZ_DIR = path.join(ROOT, 'analiz');
 
 // ISO hafta: "2026-W45" (İstanbul saatine göre)
@@ -69,14 +71,19 @@ export function aktifDersler(data) {
   return (data.optimizasyon?.dersler ?? []).filter((d) => !silinen.has(d.id)).map((d) => d.metin);
 }
 
-// Zayıf kapak adayı: uzun video, 3-30 günlük, yeterli gösterim, tıklanma kanal medyanının %60'ının altında.
+// Kapak testi adayı: uzun video, 2-30 günlük, tıklanma verisi var.
+//  - Yedek kapak yazısı varsa: her video teste girer (A asıl → B → C, en çok tıklanan kalır).
+//  - Yalnızca yedek başlık varsa: tıklanma zayıfsa başlık denenir.
 export function kapakAdayi(p, perfs, job, settings, now) {
   if (p.tip !== 'long' || p.kapakDeneme || !job) return false;
   const opt = settings.optimizasyon;
-  const alt = (opt.kapakDegistir && job.thumbnailTextAlt) || (opt.baslikDegistir && job.titleAlt);
-  if (!alt) return false;
+  const kapakVar = Boolean(opt.kapakDegistir && job.thumbnailTextAlt);
+  const baslikVar = Boolean(opt.baslikDegistir && job.titleAlt);
+  if (!kapakVar && !baslikVar) return false;
   const yas = (now.getTime() - new Date(p.yayin?.toDate?.() ?? p.yayin).getTime()) / DAY;
-  if (yas < KAPAK.minYas || yas > KAPAK.maxYas || (p.gosterim7 ?? 0) < KAPAK.minGosterim || p.tiklanma7 == null) return false;
+  if (yas < KAPAK.minYas || yas > KAPAK.maxYas || p.tiklanma7 == null) return false;
+  if ((p.gosterim7 ?? 0) < KAPAK.minGosterim && yas < KAPAK.gecYas) return false;
+  if (kapakVar) return true;
   const m = medyan(perfs.filter((q) => q.tip === 'long' && q.youtubeId !== p.youtubeId).map((q) => q.tiklanma7));
   return p.tiklanma7 < KAPAK.mutlak || (Boolean(m) && p.tiklanma7 < m * KAPAK.oran);
 }
@@ -238,6 +245,9 @@ export function performansOzeti(doc, opt, perfs, hafta) {
       youtubeId: p.youtubeId, jobId: p.jobId ?? null, gosterim7: p.gosterim7 ?? null,
       kapakDeneme: p.kapakDeneme?.durum ?? null, sonIyilestirme: p.iyilestirmeler?.at(-1)?.tarih ?? null,
       baslik: p.baslik, tip: p.tip, yayin: tarih(p.yayin), izlenme7: p.izlenme7, tutma: p.tutma, kancaOran: p.kancaOran,
+      // Gün sonu değerlendirmesi için: toplam izlenme, son günün artışı, hedef (bugünkünün iki katı), etkileşim
+      izlenme: p.izlenmeToplam ?? null, izlenmeArtis: p.izlenmeArtis ?? null, hedef: Math.max(100, (p.izlenmeToplam ?? 0) * 2),
+      abone7: p.abone7 ?? null, begeni7: p.begeni7 ?? null, yorum7: p.yorum7 ?? null,
       tutma30: p.tutma30, tiklanma7: p.tiklanma7 ?? null, etiket: p.teshis?.etiket, nedenler: p.teshis?.nedenler?.map((n) => n.metin) ?? [],
       deney: p.deneyId ? `${p.deneyId}/${p.kol}` : null,
     })),

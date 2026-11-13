@@ -147,6 +147,8 @@ export async function updatePerf(firestore, channelDoc, now = new Date()) {
     const temel = {
       channelId: channelDoc.id, youtubeId: v.youtubeId, jobId, baslik: v.baslik, tip: v.tip, sure: v.sure, yayin: v.yayin,
       kol: job?.deney?.kol ?? null, deneyId: job?.deney?.id ?? null, izlenmeToplam: toplam[v.youtubeId] ?? eski?.izlenmeToplam ?? 0,
+      // Son ölçümden (yaklaşık bir gün önce) bu yana gelen izlenme: gün sonu değerlendirmesi buna bakar.
+      izlenmeArtis: eski && toplam[v.youtubeId] != null ? Math.max(0, toplam[v.youtubeId] - (eski.izlenmeToplam ?? 0)) : null,
     };
     let p;
     if (eski?.sabit) {

@@ -2,7 +2,8 @@
 // Bağımlılıksızdır: hem sync (Firestore'dan sonra) hem de bulut rutini (npm install olmadan) kullanır.
 import fs from 'node:fs';
 import path from 'node:path';
-import { options, pick, targetWords } from './options.js';
+import { languageOf, options, pick, resolveSettings, targetWords } from './options.js';
+import { hizliKelime } from './hizli.js';
 import { addDays, dateInTz, weekday, zonedToUtc } from './time.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './paths.js';
 import { matchFor } from './league.js';
@@ -15,7 +16,6 @@ const CLIP_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
 const VOTE_OPEN_MS = 6 * 60 * 60 * 1000; // oylama en az 6 saat açık kalır
 // Dizi: konuşma satırlarının kelime hızı (duraklar, aksiyon ve kartlar dahil dakikada ~85 kelime).
 const DIZI_KELIME_DK = 85;
-const DIZI_SHORTS_KELIME = 80;
 
 export function existingJobIds() {
   const ids = new Set();
@@ -78,7 +78,11 @@ function slotsFor(channel, dates, now) {
       channelId: channel.id,
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
-      targetWords: dizi ? (slot.type === 'long' ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : DIZI_SHORTS_KELIME) : targetWords(s, slot.type),
+      // Shorts her kanalda "hızlı" kurala göre yazılır (lib/hizli.js): 4-5 cümle, ~24 sn.
+      targetWords: slot.type === 'short' ? hizliKelime(languageOf(resolveSettings(s))?.wpm ?? 115)
+        : dizi ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : targetWords(s, slot.type),
+      dil: resolveSettings(s).language,
+      ...(slot.type === 'short' ? { hizli: true } : {}),
       // Haber kanalı: konu config/haberler-<akış>.json listesinden seçilir, kaynak bağlantısı zorunlu.
       ...(s.haberAkisi ? { haberAkisi: s.haberAkisi } : {}),
       ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.derleme ? { derleme: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),

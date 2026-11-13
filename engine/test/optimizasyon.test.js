@@ -3,7 +3,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { degerlendir, deneyHatalari, deneyAyari, kazananAyari, sonrakiDeney, uygunMu, deneyBul, altSaat } from '../src/lib/deney.js';
 import { teshis, enBuyukDusus, haftalikOzet } from '../src/lib/analysis.js';
-import { reachCsv, reachUygula, aralikCtr } from '../src/lib/reach.js';
+import { reachCsv, reachUygula, aralikCtr, enIyiKapak } from '../src/lib/reach.js';
+import { cagriEksigi, cumleSay, hizliKelime } from '../src/lib/hizli.js';
 import { dersEkle, aktifDersler, kapakAdayi, haftaOf } from '../src/lib/optimize.js';
 import { resolveSettings } from '../src/lib/options.js';
 import { egriOzet, saniye } from '../src/lib/perf.js';
@@ -107,14 +108,20 @@ test('dersler: tekrar eklenmez, silinenler senaryo yazarına gitmez, en fazla 12
   assert.deepEqual(aktifDersler({ optimizasyon: { dersler: d.slice(0, 2) }, settings: { optimizasyon: { silinenDersler: ['a'] } } }), [d[1].metin]);
 });
 
-test('zayıf kapak adayı', () => {
+test('kapak testi adayı: yedek kapağı olan her uzun video; yalnızca yedek başlık varsa zayıf olanlar', () => {
   const now = new Date('2026-11-20T00:00:00Z');
   const long = (id, ctr) => ({ youtubeId: id, tip: 'long', tiklanma7: ctr, gosterim7: 2000, yayin: '2026-11-10T00:00:00Z' });
   const perfs = [long('a', 6), long('b', 5), long('c', 7), long('d', 2)];
   const job = { thumbnailTextAlt: 'YEDEK YAZI' };
   assert.equal(kapakAdayi(perfs[3], perfs, job, lamba, now), true);
-  assert.equal(kapakAdayi(perfs[0], perfs, job, lamba, now), false);
+  assert.equal(kapakAdayi(perfs[0], perfs, job, lamba, now), true); // güçlü video da 3 kapak testine girer
+  assert.equal(kapakAdayi(perfs[0], perfs, { titleAlt: 'Yedek başlık' }, lamba, now), false); // yalnız başlık: güçlüye dokunma
+  assert.equal(kapakAdayi(perfs[3], perfs, { titleAlt: 'Yedek başlık' }, lamba, now), true);
   assert.equal(kapakAdayi(perfs[3], perfs, {}, lamba, now), false);
+  // az gösterim: 4. günden önce beklenir, sonra yine de başlar
+  const az = (yayin) => ({ youtubeId: 'z', tip: 'long', tiklanma7: 1, gosterim7: 10, yayin });
+  assert.equal(kapakAdayi(az('2026-11-17T00:00:00Z'), perfs, job, lamba, now), false);
+  assert.equal(kapakAdayi(az('2026-11-15T00:00:00Z'), perfs, job, lamba, now), true);
   assert.equal(kapakAdayi({ ...perfs[3], kapakDeneme: { durum: 'kazandi' } }, perfs, job, lamba, now), false);
 });
 
@@ -183,4 +190,52 @@ test('sahne analizi: uzun anlatımlı sahneler daha çok izleyici kaybettiriyor'
   const r = sahneAnalizi(perfs, jobs, zaman);
   assert.equal(r.yeterli, true);
   assert.equal(r.enCokKaybettiren[0].ozellik, 'uzun anlatım (25+ kelime)');
+});
+
+test('3 kapak testi: en yüksek tıklanma kazanır, ölçülemeyen kazanamaz, eşitlikte ilk denenen', () => {
+  assert.equal(enIyiKapak([{ ad: 'A', ctr: 2.1 }, { ad: 'B', ctr: 4.4 }, { ad: 'C', ctr: 3 }]).ad, 'B');
+  assert.equal(enIyiKapak([{ ad: 'A', ctr: 2.1 }, { ad: 'B', ctr: null }, { ad: 'C', ctr: 2.1 }]).ad, 'A');
+  assert.equal(enIyiKapak([{ ad: 'A', ctr: null }]), null);
+});
+
+test('hızlı Shorts: cümle sayımı, hedef kelime, abone/beğen çağrısı', () => {
+  assert.equal(cumleSay('Çayın bardakta neden soğuyor? Çünkü cam ince. 2,5 dakikada 1.000 kalori gider! Abone ol.'), 4);
+  assert.equal(cumleSay('Tek cümle'), 1);
+  assert.equal(hizliKelime(115), 55);
+  assert.equal(cagriEksigi('Serinin devamı için abone ol ve beğen.', 'tr'), null);
+  assert.equal(cagriEksigi('Devamı için abone olmayı ve beğenmeyi unutma!', 'tr'), null);
+  assert.match(cagriEksigi('Yorumlara yaz, abone ol!', 'tr'), /beğen/);
+  assert.match(cagriEksigi('Yorumlara yaz.', 'tr'), /abone/);
+  assert.equal(cagriEksigi('Subscribe and like for the rest of the series!', 'en'), null);
+  assert.equal(cagriEksigi('Abonniere und like für das nächste Duell!', 'de'), null);
+  assert.equal(cagriEksigi('whatever', 'xx'), null);
+});
+
+test('doğrulayıcı: hızlı Shorts 4-5 cümle ve çağrı ister; uzun videoda çağrı ve üçüncü kapak yazısı zorunlu', async () => {
+  const { cagriHatalari } = await import('../src/validate.js');
+  const short = (cumleler) => ({ type: 'short', scenes: cumleler.map((narration) => ({ narration })) });
+  const slot = { hizli: true, dil: 'tr' };
+  const iyi = short(['Çayın neden hemen soğuyor?', 'Çünkü bardağın camı ince.', 'Çift camlı bardak ısıyı tutar.', 'Bardağı önce sıcak suyla çalkala.', 'Serinin devamı için abone ol ve beğen.']);
+  assert.deepEqual(cagriHatalari(iyi, slot), []);
+  assert.equal(cagriHatalari(short(['Bir.', 'İki.', 'Abone ol ve beğen.']), slot).length, 1); // 3 cümle
+  assert.equal(cagriHatalari(short(['Bir?', 'İki.', 'Üç.', 'Dört.', 'Yorumlara yaz.']), slot).length, 1); // çağrı yok
+  assert.deepEqual(cagriHatalari(short(['Bir?', 'İki.', 'Yorumlara yaz.']), { dil: 'tr' }), []); // eski (hızlı olmayan) slot
+  const uzun = { type: 'long', scenes: [{ narration: 'Giriş.' }, { narration: 'Devamı için abone ol.' }, { narration: 'Videoyu beğenmeyi unutma.' }] };
+  assert.deepEqual(cagriHatalari(uzun, { dil: 'tr' }), []);
+  assert.equal(cagriHatalari({ type: 'long', scenes: [{ narration: 'Sadece anlatım.' }] }, { dil: 'tr' }).length, 1);
+  const dizi = { type: 'short', format: 'dizi', scenes: [{ satirlar: [{ metin: 'Oyun mu arıyorsun?' }] }, { satirlar: [{ metin: 'Üçüncü sırada bu.' }, { metin: 'İkinci bu.' }] }, { satirlar: [{ metin: 'Birinci bu.' }] }, { satirlar: [{ metin: 'Devamı için abone ol ve beğen!' }] }] };
+  assert.deepEqual(cagriHatalari(dizi, slot), []);
+});
+
+test('gün sonu raporu: geçerli kayıt sınırlanır, tarihsiz ya da özetsiz rapor reddedilir', async () => {
+  const { gunlukKayit } = await import('../src/lib/gunluk.js');
+  const k = gunlukKayit({ tarih: '2026-11-13', ozet: ['Bugün 3 video 1.200 izlendi.', 5, ''], videolar: [{ youtubeId: 'abc', baslik: 'X', izlenme: 100, hedef: 200, neden: 'kanca zayıf', aksiyon: 'başlık değişti', fazla: 1 }, null], yarin: ['Sorun başlıklı 2 Shorts'] });
+  assert.deepEqual(k.ozet, ['Bugün 3 video 1.200 izlendi.']);
+  assert.deepEqual(k.videolar, [{ youtubeId: 'abc', baslik: 'X', izlenme: 100, hedef: 200, neden: 'kanca zayıf', aksiyon: 'başlık değişti' }]);
+  assert.equal(gunlukKayit({ tarih: '13.11.2026', ozet: ['x'] }), null);
+  assert.equal(gunlukKayit({ tarih: '2026-11-13', ozet: [] }), null);
+});
+
+test('cümle sayımı: sıra sayısındaki nokta cümle bitirmez', () => {
+  assert.equal(cumleSay('Bu oyun 3. sırada yer alıyor. Abone ol.'), 2);
 });

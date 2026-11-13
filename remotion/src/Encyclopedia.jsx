@@ -117,6 +117,8 @@ function kapanisKarti(ctx, u, kapanis, T) {
     yazi(ctx, String(s ?? ''), x, 760, String(s ?? '').length > 10 ? 46 : 62, { c: K.kagit, a: b });
   });
   yazi(ctx, 'Yorumlara yazın', 540, 960, 66, { c: K.lamba, a: eo(pr(u, 1, 1.5)) });
+  // Abone ol / beğen çağrısı (oylama kartının altında)
+  yazi(ctx, 'Devamı için abone ol ve beğen', 540, 1090, 54, { c: K.kagit, a: eo(pr(u, 1.2, 1.7)), w: 700 });
   const o = eo(pr(u, 1.2, 1.8)), dx = Math.sin(T * 5) * 8;
   const kt = kit(ctx, T, { font: serif });
   yazi(ctx, 'yorum düğmesi', 820, 1250, 36, { c: K.kagit, a: o, w: 500, it: true });
