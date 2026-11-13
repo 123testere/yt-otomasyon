@@ -1,8 +1,72 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-13T17:47:14.825Z",
+  "guncellendi": "2026-11-13T23:37:21.607Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-13T22:43:00.000Z",
+      "ozet": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+      "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-13T21:20:47.000Z",
+      "ozet": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ChatGPT artık alışveriş de yapabilecek: ChatGPT Wallet tanıtıldı",
+      "link": "https://www.donanimhaber.com/chatgpt-artik-alisveris-de-yapabilecek-chatgpt-wallet-tanitildi--212897",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-13T20:59:00.000Z",
+      "ozet": "OpenAI, ChatGPT Wallet özelliğini kullanıma sundu. Yeni sistem, yapay zeka ajanlarının kullanıcılar adına ürün araştırıp satın alma işlemlerini hazırlamasına imkan tanıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-13T20:45:10.000Z",
+      "ozet": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia imparatorluğundaki son saatler: Jensen Huang",
+      "link": "https://www.donanimhaber.com/nvidia-imparatorlugundaki-son-saatler-jensen-huang--212883",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-13T19:47:00.000Z",
+      "ozet": "Jensen Huang, Nvidia'yı küçük bir grafik çipi üreticisinden yapay zeka devinin merkezine taşıdı. İşte 33 yıllık imparatorluğunu kuran kararlar ve CEO'luk koltuğundan ayrıldığı son saatler...",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI agent startup LangChain hits $3B valuation",
+      "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-13T19:37:57.000Z",
+      "ozet": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
+      "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-13T19:08:57.000Z",
+      "ozet": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-13T18:40:30.000Z",
+      "ozet": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "kullanildi": false
+    },
     {
       "baslik": "OpenAI board member worries an AI \"takeover\" of society could be months away",
       "link": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
@@ -268,14 +332,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-      "link": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-12T22:28:47.000Z",
-      "ozet": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Muse can now place calls to US businesses — if you pay",
       "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
       "kaynak": "TechCrunch",
@@ -364,27 +420,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "\"Bir efsanenin yerini başka bir efsane almalı\": Trump’tan Nvidia’ya CEO önerisi",
-      "link": "https://www.donanimhaber.com/trump-tan-nvidia-nin-yeni-ceo-su-icin-surpriz-oneri-tim-cook--212846",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T19:59:26.000Z",
-      "ozet": "Trump, Nvidia CEO'luğundan ayrılan Jensen Huang'ın yerine Tim Cook'u önerdi. ABD Başkanı, Apple'ın eski CEO'su için \"Bir efsanenin yerini başka bir efsane almalı\" dedi.",
-      "kullanildi": false
-    },
-    {
       "baslik": "No, AI agents did not discover a previously unknown Maya site",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
       "kaynak": "The Verge",
       "tarih": "2026-11-12T19:42:40.000Z",
       "ozet": "Armed with a team of AI agents, Google researcher Pietro Miotti claimed earlier this week to have discovered a potentially unmapped Maya site in Mexico. There was just one problem: The site had already been discovered and was published in an academic journal last year. The incident, which sparked criticism among archeologists online, underscores a […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia krizi ezeli rakibine yaradı: AMD yükselişe geçti",
-      "link": "https://www.donanimhaber.com/nvidia-krizi-ezeli-rakibine-yaradi-amd-yukselise-gecti--212833",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T19:39:00.000Z",
-      "ozet": "Nvidia CEO'su Jensen Huang'ın görevden alınabileceği iddiaları rakiplerini harekete geçirdi. AMD ve Broadcom hisseleri yükselirken Google ve Çinli çip üreticileri de fırsat kolluyor.",
       "kullanildi": false
     },
     {
@@ -441,46 +481,6 @@
       "kaynak": "The Verge",
       "tarih": "2026-11-12T18:06:54.000Z",
       "ozet": "I had other things to do today, but Alex Karp's pathetic attempt to pivot back to the left gave me no choice but to put them on hold. Last week's elections were a bloodbath for the right, a problem for all the wannabe fash founders who had tied their political fortunes to a \"vibe shift\" […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google DeepMind Staff Tap the UK Government to Escalate Their Unionization Fight",
-      "link": "https://www.wired.com/story/google-deepmind-staff-escalate-their-union-fight/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T18:05:41.000Z",
-      "ozet": "After initial talks stalled, workers at Google DeepMind are trying to bypass company management in their bid to unionize.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-      "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-      "kaynak": "Google",
-      "tarih": "2026-11-12T18:00:00.000Z",
-      "ozet": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
-      "kullanildi": true
-    },
-    {
-      "baslik": "Jensen Huang Basically Lit More Than $1 Trillion on Fire in Less Than a Month",
-      "link": "https://www.wired.com/story/jensen-huang-tanked-a-trillion-dollars-in-less-than-a-month/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T17:59:15.000Z",
-      "ozet": "Since the scandal involving an alleged Chinese spy began, Nvidia has lost an eye-watering sum from its market value.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Çinli yapay zekâlar kullanımda zirvedeler ama gelir üretmekte zorlanıyorlar",
-      "link": "https://www.donanimhaber.com/cinli-yapay-zek-lar-kullanimda-zirvede-ama-gelirde-cok-gerilerde--212825",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-12T17:50:00.000Z",
-      "ozet": "Çinli yapay zekâ şirketleri, dikkat çekici modellerle ABD'li rakiplerine meydan okusa da gelir tarafında farkı kapatamıyor. Gelir konusunda Çinli şirketlerle Batılı rakipleri arasında uçurum var.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The Jensen Huang scandal is hardly over",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-12T17:44:33.000Z",
-      "ozet": "I was certain, until the story of Jensen Huang's second affair hit, that Huang was bulletproof. After all, why wouldn't he be? He's placed himself indispensably at the center of the AI industry and famously had no succession plan at Nvidia. In fact, he's the only CEO Nvidia has ever had. L'état c'est moi. Then […]",
       "kullanildi": false
     }
   ]
