@@ -1,8 +1,16 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-13T23:37:21.607Z",
+  "guncellendi": "2026-11-14T06:32:20.421Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Amazon has a plan to index the world’s online shopping data",
+      "link": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-13T23:49:11.000Z",
+      "ozet": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers leave Amazon to do their […]",
+      "kullanildi": false
+    },
     {
       "baslik": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
       "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
@@ -129,7 +137,7 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-13T15:00:00.000Z",
       "ozet": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Nvidia GeForce 621.24 sürücüsü yayınlandı: İşte yenilikler",
@@ -265,6 +273,14 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-13T09:14:41.000Z",
       "ozet": "Geçen haftadan bu yana gerek ABD seçimleri gerek Binance saldırısı gerekse de Nvidia bünyesinde yaşanan skandallar kripto para yatırımcısını da etkiledi. Bitcoin fiyatı 1 haftadır durmaksızın düşüyor",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "link": "https://openai.com/business/customer-stories/shield",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-13T08:00:00.000Z",
+      "ozet": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
       "kullanildi": false
     },
     {
@@ -465,22 +481,6 @@
       "kaynak": "Ars Technica",
       "tarih": "2026-11-12T18:57:45.000Z",
       "ozet": "Families confront Google after teen’s lawsuit labels Gemini a “suicide coach.”",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
-      "link": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T18:39:23.000Z",
-      "ozet": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a leadership transition.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Oh, Palantir is ‘progressive’ now, is it?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-12T18:06:54.000Z",
-      "ozet": "I had other things to do today, but Alex Karp's pathetic attempt to pivot back to the left gave me no choice but to put them on hold. Last week's elections were a bloodbath for the right, a problem for all the wannabe fash founders who had tied their political fortunes to a \"vibe shift\" […]",
       "kullanildi": false
     }
   ]
