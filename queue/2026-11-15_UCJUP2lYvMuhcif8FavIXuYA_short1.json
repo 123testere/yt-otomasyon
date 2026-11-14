@@ -1,0 +1,161 @@
+{
+ "id": "2026-11-15_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-15T16:00:00.000Z",
+ "bolum": {
+  "no": 5,
+  "ad": "ChatGPT Wallet"
+ },
+ "kaynak": "OpenAI",
+ "kaynakLink": "https://openai.com/index/introducing-chatgpt-wallet",
+ "title": "ChatGPT Artık Senin Adına Alışveriş Yapabilecek 🤖",
+ "description": "OpenAI, ChatGPT Wallet'ı tanıttı: yapay zekâ ajanları ödemeyi kullanıcı onayıyla tamamlayacak. Sence alışverişi bir ajana bırakır mıydın?\nKaynak: OpenAI https://openai.com/index/introducing-chatgpt-wallet\n\n#yapayzeka #chatgpt #openai #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "chatgpt wallet",
+  "openai",
+  "ai ajan",
+  "chatgpt alışveriş",
+  "teknoloji haberleri"
+ ],
+ "topic": "OpenAI'ın ChatGPT Wallet ile yapay zekâ ajanlarına alışveriş yetkisi vermesi",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "ChatGPT Can Now Shop for You 🤖",
+   "description": "OpenAI introduced ChatGPT Wallet: AI agents can complete purchases with your approval. Would you let an agent do your shopping?\nSource: OpenAI https://openai.com/index/introducing-chatgpt-wallet\n\n#ai #chatgpt #openai #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Alışverişi bir ajana bırakır mıydın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "YZ ALIŞVERİŞ",
+    "alt": "senin adına"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.2
+     },
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yapay zekâ artık senin adına alışveriş yapabilecek."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "OpenAI'dan ChatGPT Wallet: ajanlar ödeme yapabilecek",
+    "kaynak": "OpenAI · 13 Kasım",
+    "maddeler": [
+     "Adı: ChatGPT Wallet",
+     "Ajanlar satın alma yapar",
+     "Ödeme senin onayınla"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "OpenAI, ChatGPT Wallet'ı duyurdu: ajanlar ödemeyi kullanıcı onayıyla tamamlıyor."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Mevcut kart korumaları da geçerli olacak, deniyor."
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "SIRADA NE VAR?"
+   },
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İlk etapta ABD'deki Pro abonelere açılıyor; belki yakında alışveriş listeni ajana bırakırsın."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Güvenir miydin? Yorumlara yaz, her gün gündem için abone ol ve beğen!"
+    }
+   ]
+  }
+ ]
+}

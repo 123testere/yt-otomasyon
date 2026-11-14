@@ -1,0 +1,72 @@
+{
+ "id": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-15T16:00:00.000Z",
+ "topic": "Kaşığın çatala göre çok daha eski bir sofra aleti olması",
+ "title": "Kaşık mı Çatal mı: Sofranın İlk Aleti Hangisi?",
+ "description": "Eşyaların Hikayesi #49\nKaşık, çatalın çok öncesine uzanan bir sofra aletidir; kemik, kabuk ve tahta örnekleri binlerce yıl geriye gider.\n\n#kaşık #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "kaşık",
+  "kaşık tarihi",
+  "çatal tarihi",
+  "sofra aletleri",
+  "kaşıkçı elması",
+  "topkapı sarayı",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Sofranın en eski",
+  "aleti hangisi?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Terazi",
+  "b": "Merdiven"
+ },
+ "oylama": {
+  "kaynak": "2026-11-13_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Spoon or Fork: Which Is the Oldest Table Tool?",
+   "description": "Story of Things #49\nThe spoon is far older than the fork: bone, shell and wooden spoons go back thousands of years."
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Sofranın en eski aleti hangisi: kaşık mı, çatal mı?",
+   "ifade": "merakli",
+   "cizim": "ink(ell(360,230,50,65,26),{close:true,fill:'#EFE4CB',w:5,seed:60,pp:eo(pr(u,0,.7))});ink(ln([360,295],[360,495],10),{w:9,seed:61,pp:eo(pr(u,.3,.9))});ink(ln([640,200],[640,480],10),{w:9,seed:70,pp:eo(pr(u,.4,1))});for(let k=0;k<3;k++)ink(ln([600+k*40,200],[600+k*40,290],6),{w:6,seed:71+k,pp:eo(pr(u,.7,1.2))});txt('?',500,610,110,{c:K.ak,a:eo(pr(u,1,1.5))});"
+  },
+  {
+   "narration": "Kaşık çok eski; kemik, kabuk ve tahtadan yapılanlar binlerce yıllıktır.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(250,230,35,45,26),{close:true,fill:'#E6DBC4',w:5,seed:80,pp:eo(pr(u,0,.7))});ink(ln([250,275],[250,415],10),{w:9,seed:81,pp:eo(pr(u,.3,.9))});ink(ell(500,230,35,45,26),{close:true,fill:'#EDE0C8',w:5,seed:84,pp:eo(pr(u,0,.7))});ink(ln([500,275],[500,415],10),{w:9,seed:85,pp:eo(pr(u,.3,.9))});ink(ell(750,230,35,45,26),{close:true,fill:'#C9A878',w:5,seed:88,pp:eo(pr(u,0,.7))});ink(ln([750,275],[750,415],10),{w:9,seed:89,pp:eo(pr(u,.3,.9))});etk('kemik',250,610,eo(pr(u,.9,1.4)),{size:44});etk('kabuk',500,610,eo(pr(u,1.2,1.7)),{size:44});etk('tahta',750,610,eo(pr(u,1.5,2)),{size:44});"
+  },
+  {
+   "narration": "Çatal Avrupa sofralarına çok daha geç, yüzyıllar sonra yayıldı.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ln([140,380],[860,380],20),{w:4,pp:eo(pr(u,0,.9))});for(const [x,ad,k] of [[260,'kaşık',0],[740,'çatal',1]]){const a=eo(pr(u,.4+k*1.0,1+k*1.0));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(x,380,18,0,7);ctx.fillStyle=k?K.ak:K.s;ctx.fill();ctx.restore();etk(ad,x,470,a,{size:54});}ok([300,300],[700,300],{pp:eo(pr(u,1.2,2)),c:K.bordo,w:5,seed:90});etk('yüzyıllar',500,250,eo(pr(u,1.6,2.2)),{size:44});"
+  },
+  {
+   "narration": "İstanbul'da Topkapı Sarayı'ndaki Kaşıkçı Elması'nın adı da kaşıkla ilişkilendirilir, derler.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink([[500,200],[640,300],[580,470],[420,470],[360,300]],{close:true,fill:'#EAF2F5',w:6,seed:95,pp:eo(pr(u,0,.9))});ink([[360,300],[640,300]],{w:4,seed:96,pp:eo(pr(u,.7,1.1))});ink([[500,200],[440,300],[500,470],[560,300],[500,200]],{w:3,seed:97,pp:eo(pr(u,.9,1.4))});etk('Kaşıkçı Elması',500,580,eo(pr(u,1.2,1.8)),{size:54});etk('Topkapı Sarayı',500,640,eo(pr(u,1.5,2.1)),{size:44});"
+  },
+  {
+   "narration": "Sırada terazi mi, merdiven mi; yorumlara yaz, devamı için abone ol ve beğen.",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,420,220,{c:K.ak,a:eo(pr(u,.2,.8))});etk('terazi mi, merdiven mi?',MX,600,eo(pr(u,.8,1.3)),{size:50});"
+  }
+ ]
+}

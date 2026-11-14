@@ -1,0 +1,150 @@
+{
+ "id": "2026-11-15_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-15T05:00:00.000Z",
+ "bolum": {
+  "no": 8,
+  "ad": "Top 5"
+ },
+ "title": "No Time for a Side Hustle After Work? 🧠",
+ "description": "No time for a side hustle after work? Here are three realistic fixes: tiny daily time blocks, work that fits odd hours, and batching similar tasks. Want more? Watch our latest long video on starting a business with almost no money.\n\n#money #sidehustle #business #motivation",
+ "tags": [
+  "side hustle",
+  "no time side hustle",
+  "make extra money",
+  "time management",
+  "side hustle ideas",
+  "freelancing",
+  "money tips",
+  "business ideas",
+  "productivity"
+ ],
+ "topic": "Three fixes for finding time for a side hustle after work",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿Sin tiempo para un trabajo extra después del trabajo? 🧠",
+   "description": "¿Sin tiempo para un trabajo extra después del trabajo? Tres soluciones realistas: bloques de tiempo pequeños cada día, trabajos que encajan en horarios raros y agrupar tareas parecidas.\n\n#dinero #trabajoextra #negocios #motivacion"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "NO TIME?",
+    "alt": "Side hustle after work"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "No time for a side hustle after work?"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Tiny Daily Time Blocks",
+    "tur": "Time habit",
+    "maddeler": [
+     "Just 30 minutes",
+     "Same time daily",
+     "Small blocks add up"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: start with just thirty minutes a day, because small blocks add up."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Work That Fits Odd Hours",
+    "tur": "Flexible work",
+    "maddeler": [
+     "Weekend freelancing",
+     "Tutoring",
+     "Evening gigs"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: pick work that fits odd hours, like weekend freelancing or tutoring."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Batch Similar Tasks",
+    "tur": "Work smarter",
+    "maddeler": [
+     "Group similar tasks",
+     "One focused session",
+     "Less switching"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: batch similar tasks into one session, so you waste less time switching."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for the rest of the series, and comment your pick!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-15_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-15T05:00:00.000Z",
+ "topic": "Mandeln",
+ "title": "Duell 13/30: Wer erntet die meisten Mandeln? 🌰",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Mandel-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "mandeln",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "nüsse"
+ ],
+ "duell": {
+  "topicId": "mandeln",
+  "why": [
+   "Viel Sonne",
+   "Trockene Sommer",
+   "Große Anbauflächen"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Mandeln Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "30 Länder haben keine Mandel-Daten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Portugal verpasst das Finale um gut 109 Tausend Tonnen!",
+   "final": "Finale! Spanien gegen Türkei – wer holt sich die Mandelkrone?",
+   "winner": "Spanien gewinnt! Rund 370 Tausend Tonnen, fast doppelt so viel wie die Türkei mit 200 Tausend!",
+   "why": "Warum Spanien? Viel Sonne, trockene Sommer und große Anbauflächen.",
+   "table": "In der Saisontabelle führt die Türkei mit 58 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "A"
+ }
+}

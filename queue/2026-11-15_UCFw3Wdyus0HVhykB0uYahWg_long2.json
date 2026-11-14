@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-15_UCFw3Wdyus0HVhykB0uYahWg_long2",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-15T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "derleme": [
+  "2026-11-08_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "2026-11-09_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "2026-11-12_UCFw3Wdyus0HVhykB0uYahWg_long1"
+ ],
+ "bolum": {
+  "no": 3,
+  "son": 5
+ },
+ "title": "Kız Kardeşi İçin Düşmeli mi? Zincirli Bölüm 3-5 Tek Parça",
+ "titleAlt": "Zincirle Bağlı İki Köle, Beş Kılıç: Zincirli 3-5 Tek Parça",
+ "description": "Arın'dan kız kardeşinin yarım bileziği karşılığında yere düşmesi istenir; sonra kral onu ve rakibi Kargan'ı zincirle birbirine bağlatır. Zincirli 3-5. bölümler tek parça. Zincirli, çöp adam animasyonuyla anlatılan bir destandır.\n\n#zincirli #çöpadam #animasyon #dizi",
+ "tags": [
+  "zincirli",
+  "zincirli tek parça",
+  "çöp adam",
+  "animasyon dizi",
+  "gladyatör",
+  "arena",
+  "destan",
+  "bölüm bölüm"
+ ],
+ "topic": "Zincirli 3-5. bölümler: yarım bilezik, sahte dövüş ve çifte zincir",
+ "thumbnailText": "TEK PARÇA",
+ "thumbnailTextAlt": "YARIM BİLEZİK",
+ "thumbnailTextAlt2": "ÇİFTE ZİNCİR",
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Chained Episodes 3-5 Full Cut: Would You Fall for Your Sister?",
+   "description": "Arin faces half of his sister's bracelet and a terrible choice, then the king chains him to his rival Kargan. Chained episodes 3-5 in one piece. Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+  }
+ }
+}
