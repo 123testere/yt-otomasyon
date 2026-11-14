@@ -1,8 +1,40 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-14T14:12:53.602Z",
+  "guncellendi": "2026-11-14T19:13:00.950Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Yeni Apple TV 4K çıktı: Eski modellere Siri AI güncellemesi",
+      "link": "https://www.donanimhaber.com/yeni-apple-tv-4k-cikti-eski-modellere-siri-ai-guncellemesi--212921",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-14T19:00:00.000Z",
+      "ozet": "Apple, yeni Apple TV 4K (4. nesil) modelini 13 Kasım'da satışa sundu ve aynı gün eski modellere Siri yapay zekasını getiren tvOS 27.2.1 güncellemesini yayınladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-14T17:30:00.000Z",
+      "ozet": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "link": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-14T16:34:15.000Z",
+      "ozet": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+      "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-14T15:00:00.000Z",
+      "ozet": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is perhaps best known for having served on […]",
+      "kullanildi": false
+    },
     {
       "baslik": "Beware the New AI-Fueled Ransomware Boom",
       "link": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
@@ -268,22 +300,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "İki araştırmacı, sadece 21 bin dolar bütçeyle görsel üreten yapay zekâ geliştirdi",
-      "link": "https://www.donanimhaber.com/iki-arastirmaci-sadece-21-bin-dolara-yapay-zeka-gelistirdi--212866",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T11:21:00.000Z",
-      "ozet": "İki araştırmacıdan oluşan Linum ekibi, yalnızca 21 bin dolara eğittiği P-JiT modelini yayımladı. Yeni model, farklı mimarisiyle görsel üretiminde eğitim maliyetlerini önemli ölçüde düşürüyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia çalışanları Jensen Huang'ın geri dönmesini istiyor",
-      "link": "https://www.donanimhaber.com/nvidia-calisanlari-jensen-huang-in-geri-donmesini-istiyor--212861",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T10:39:00.000Z",
-      "ozet": "Nvidia çalışanları, hakkındaki ilişki iddialarının ardından görevinden ayrılan Jensen Huang'ın yeniden CEO koltuğuna dönmesini istiyor. Şirket içindeki destek mesajları 1.600'ü aştı.",
-      "kullanildi": false
-    },
-    {
       "baslik": "OpenAI Yönetim Kurulu Üyesinden Korkutan Uyarı: Yapay Zekâ Kazaları En Büyük Ölüm Nedeni Olacak!",
       "link": "https://www.webtekno.com/yapay-zeka-kazalari-en-buyuk-olum-nedeni-olacak-h228947.html",
       "kaynak": "Webtekno",
@@ -305,14 +321,6 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-13T10:08:32.000Z",
       "ozet": "Google, yaklaşık 10 yıldır kullanılan “Hey Google” komutunun yanına “Hey Gemini”yi ekliyor. Yeni çağrı sözcüğü önce Android XR akıllı gözlüklerde kullanılacak. Eski komut da çalışmaya devam edecek.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia skandalı Bitcoin fiyatını vurdu",
-      "link": "https://www.donanimhaber.com/bitcoin-dususu-durmuyor--212860",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T09:14:41.000Z",
-      "ozet": "Geçen haftadan bu yana gerek ABD seçimleri gerek Binance saldırısı gerekse de Nvidia bünyesinde yaşanan skandallar kripto para yatırımcısını da etkiledi. Bitcoin fiyatı 1 haftadır durmaksızın düşüyor",
       "kullanildi": false
     },
     {
@@ -465,22 +473,6 @@
       "kaynak": "Ars Technica",
       "tarih": "2026-11-12T19:23:03.000Z",
       "ozet": "Gemini 4 Hydrogen isn't getting a slow, security-conscious release like Carbon and Argon.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-      "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T19:11:00.000Z",
-      "ozet": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’s $470 Billion Affair",
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huangs-dollar470-billion-affair/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T18:59:58.000Z",
-      "ozet": "This week on “Uncanny Valley,” the team unpacks the Nvidia CEO’s affair with an alleged Chinese spy and what that means for the AI industry.",
       "kullanildi": false
     }
   ]
