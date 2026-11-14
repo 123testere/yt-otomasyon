@@ -1,8 +1,16 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-14T19:13:00.950Z",
+  "guncellendi": "2026-11-14T23:01:35.846Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "link": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-14T21:41:22.000Z",
+      "ozet": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+      "kullanildi": false
+    },
     {
       "baslik": "Yeni Apple TV 4K çıktı: Eski modellere Siri AI güncellemesi",
       "link": "https://www.donanimhaber.com/yeni-apple-tv-4k-cikti-eski-modellere-siri-ai-guncellemesi--212921",
@@ -268,14 +276,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Jensen Huang, ABD Kongresi'nde ifade verecek",
-      "link": "https://www.donanimhaber.com/jensen-huang-abd-kongresi-nde-ifade-verecek--212865",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T12:03:00.000Z",
-      "ozet": "Nvidia'nın eski CEO'su Jensen Huang, ABD Kongresi'nde ifade verecek. Üç komite, Çin'e çip ihracatı ve şirket hakkındaki iddialar nedeniyle Huang'dan açıklama bekliyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Let’s talk about Jensen Huang’s many affairs!",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032339/lets-talk-about-the-nvidia-shitshow",
       "kaynak": "The Verge",
@@ -361,118 +361,6 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-13T06:34:04.000Z",
       "ozet": "CEO Jensen Huang'ın ayrılık kararının ardından piyasa öncesi düşüş yaşayan NVIDIA hisseleri, tekrar yükselişe geçti.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-      "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T22:42:51.000Z",
-      "ozet": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Silicon Valley Is Still Defending Jensen Huang",
-      "link": "https://www.wired.com/story/silicon-valley-is-still-defending-jensen-huang/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T22:29:43.000Z",
-      "ozet": "Nvidia employees and tech insiders never thought the chip king would lose his job. Despite his sudden resignation, many of them are still in denial.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Muse can now place calls to US businesses — if you pay",
-      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T22:22:28.000Z",
-      "ozet": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang Is Out. Will Nvidia’s Rivals Cash In?",
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huang-is-out-will-nvidias-rivals-cash-in/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T22:14:41.000Z",
-      "ozet": "In a special episode of “Uncanny Valley,” we break down Jensen Huang’s resignation from Nvidia, what comes next for the company, and where the AI industry goes from here.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google’s new Gemini model is better at understanding complicated questions",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-12T21:55:32.000Z",
-      "ozet": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part in its responses. It's available starting today in search, the Gemini app, all tiers of Google […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T21:27:10.000Z",
-      "ozet": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang Didn’t Name His Own Replacement as One of Tech’s Most Powerful Women",
-      "link": "https://www.wired.com/story/jensen-huang-colette-kress-replacement-powerful-women-in-tech/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-12T20:35:11.000Z",
-      "ozet": "A recent WIRED investigation explored the complicated definition of “power” for women in the industry. Jensen Huang’s answers now appear to show his blind spots.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang was having a third affair, Reuters reports",
-      "link": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T20:26:47.000Z",
-      "ozet": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
-      "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-12T20:16:24.000Z",
-      "ozet": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were “potentially infeasible.” Foster, a Democrat who serves on the Committee on…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "link": "https://openai.com/business/customer-stories/amplitude",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-12T20:00:00.000Z",
-      "ozet": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Ars Live: What drone attacks on data centers mean for modern life in the cloud",
-      "link": "https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-12T19:59:59.000Z",
-      "ozet": "A livestream Ars discussion is happening on November 17 at 1 pm Eastern Time.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "No, AI agents did not discover a previously unknown Maya site",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-12T19:42:40.000Z",
-      "ozet": "Armed with a team of AI agents, Google researcher Pietro Miotti claimed earlier this week to have discovered a potentially unmapped Maya site in Mexico. There was just one problem: The site had already been discovered and was published in an academic journal last year. The incident, which sparked criticism among archeologists online, underscores a […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-      "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-12T19:27:45.000Z",
-      "ozet": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
-      "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-12T19:23:03.000Z",
-      "ozet": "Gemini 4 Hydrogen isn't getting a slow, security-conscious release like Carbon and Argon.",
       "kullanildi": false
     }
   ]
