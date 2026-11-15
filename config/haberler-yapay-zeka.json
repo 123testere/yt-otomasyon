@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-15T02:44:01.873Z",
+  "guncellendi": "2026-11-15T11:02:00.114Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets",
+      "link": "https://www.wired.com/story/this-ai-tamagotchi-oats-turns-everyday-objects-into-needy-virtual-pets/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-15T11:00:00.000Z",
+      "ozet": "A Carnegie Mellon student’s tiny E Ink gadgets, called OATs, give houseplants, skateboards, and dumbbells expressive personalities to nudge you toward better habits.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia RTX 5080 24 GB maliyetler nedeniyle iptal edildi",
+      "link": "https://www.donanimhaber.com/nvidia-rtx-5080-24-gb-yolun-sonuna-geldi--212916",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-15T10:30:00.000Z",
+      "ozet": "GDDR7 belleklerin fiyatlarında yaşanan inanılmaz artışlar oyunculara olumsuz yansıyor. Merakla beklenen Nvidia RTX 5080 24 GB ekran kartı maliyetler nedeniyle iptal edildi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zeka devre kartı kıtlığı yarattı: Elektronik ürünlerin fiyatını ne bekliyor?",
+      "link": "https://www.donanimhaber.com/yapay-zeka-devre-karti-kitligi-elektronik-fiyatlari-artar-mi--212931",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-15T09:01:35.000Z",
+      "ozet": "Yapay zeka önce belleği, şimdi de PCB’yi yutuyor. Her elektronik cihazın içindeki o yeşil kart kıtlaşıyor. PCB krizinin nedenini, güvenilirliğini ve olası ekonomik yansımalarını konuştuk.",
+      "kullanildi": false
+    },
     {
       "baslik": "Where was Nvidia’s security team?",
       "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
@@ -212,28 +236,12 @@
       "kullanildi": false
     },
     {
-      "baslik": "Google'ın eski çip mimarları, sıfırdan çip tasarlayabilen yapay zekâ geliştirdi",
-      "link": "https://www.donanimhaber.com/google-in-cip-tasarimcilari-kendi-yapay-zeka-modelini-gelistirdi--212875",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T15:11:00.000Z",
-      "ozet": "Google'ın AlphaChip projesinin arkasındaki isimler tarafından geliştirilen Ripple-65B yayınlandı. Model, bazı testlerde kendisinden çok daha büyük yapay zekâları geride bırakıyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Introducing ChatGPT Wallet",
       "link": "https://openai.com/index/introducing-chatgpt-wallet",
       "kaynak": "OpenAI",
       "tarih": "2026-11-13T15:00:00.000Z",
       "ozet": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
       "kullanildi": true
-    },
-    {
-      "baslik": "Nvidia GeForce 621.24 sürücüsü yayınlandı: İşte yenilikler",
-      "link": "https://www.donanimhaber.com/nvidia-geforce-621-24-surucusu-yayinlandi-iste-yenilikler--212876",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T14:49:00.000Z",
-      "ozet": "Nvidia, GeForce Game Ready 621.24 sürücüsünü yayınladı. Yeni güncelleme Warhammer 40.000: Dawn of War IV desteği, DLSS 5 ve Assetto Corsa Rally için önemli yenilikler getiriyor.",
-      "kullanildi": false
     },
     {
       "baslik": "What’s really at stake in the Jensen Huang saga",
@@ -257,14 +265,6 @@
       "kaynak": "The Verge",
       "tarih": "2026-11-13T14:00:00.000Z",
       "ozet": "Normally, the products I test don't offer to help me write up my experience with them. Duet is different. Claude Duet is Anthropic's AI agent for consumers, the latest attempt by an AI company to try to convince us that agents can be useful for people who don't write code. It's been an interesting couple […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Teslimat uygulamalarının komisyonlarına robotlu çözüm",
-      "link": "https://www.donanimhaber.com/teslimat-uygulamalarinin-komisyonlarina-robotlu-cozum--212870",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T13:42:00.000Z",
-      "ozet": "Serve Robotics, 2 bin otonom teslimat robotundan oluşan filosunu küçük işletmelere ve geliştiricilere açıyor. Yeni platform, yüksek teslimat komisyonlarını ortadan kaldırmayı hedefliyor.",
       "kullanildi": false
     },
     {
@@ -305,70 +305,6 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-13T11:37:36.000Z",
       "ozet": "Google'da üst sıralarda yer almak, dijital dünyada görünür olmanın en önemli yollarından biriydi. Ancak ChatGPT, Gemini ve Perplexity gibi yapay zekâ platformlarının kullanıcıların bilgiye ulaşma alışkanlıklarını değiştirmesiyle birlikte işletmeler için yeni bir rekabet alanı ortaya çıktı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI Yönetim Kurulu Üyesinden Korkutan Uyarı: Yapay Zekâ Kazaları En Büyük Ölüm Nedeni Olacak!",
-      "link": "https://www.webtekno.com/yapay-zeka-kazalari-en-buyuk-olum-nedeni-olacak-h228947.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T10:09:02.000Z",
-      "ozet": "OpenAI yönetim kurulu üyesi Paul Christiano, yapay zekâ kazalarının çok yakında insanlık için en büyük ölüm nedeni olabileceği uyarısında bulundu.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Microsoft Outlook, Teams ve Copilot'a Saatlerdir Erişilemiyor: Peki Sorunun Kaynağı Ne?",
-      "link": "https://www.webtekno.com/microsoft-outlook-teams-copilot-saatlerdir-erisilemiyor-h228943.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T10:08:45.000Z",
-      "ozet": "Microsoft'un Outlook, Teams ve Copilot hizmetlerine geçtiğimiz akşamdan beri erişilemiyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "“Hey Google” Tarih mi Oluyor? Google, Gemini İçin Yeni Uyandırma Komutunu Test Ediyor",
-      "link": "https://www.webtekno.com/hey-google-tarih-mi-oluyor-hey-gemini-komutu-h228941.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T10:08:32.000Z",
-      "ozet": "Google, yaklaşık 10 yıldır kullanılan “Hey Google” komutunun yanına “Hey Gemini”yi ekliyor. Yeni çağrı sözcüğü önce Android XR akıllı gözlüklerde kullanılacak. Eski komut da çalışmaya devam edecek.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "link": "https://openai.com/business/customer-stories/shield",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-13T08:00:00.000Z",
-      "ozet": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta'nın Yapay Zekâsı Muse Artık Sizin Yerinize Telefon Görüşmesi Yapabiliyor",
-      "link": "https://www.webtekno.com/meta-muse-sizin-yerinize-telefon-gorusmesi-yapabiliyor-h228916.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T07:45:39.000Z",
-      "ozet": "Meta'nın ücretli abonelere sunduğu yeni güncellemeyle yapay zekâ asistanı Muse, artık kullanıcıların yerine telefon görüşmeleri yapabiliyor.",
-      "kullanildi": true
-    },
-    {
-      "baslik": "Google, Flash Serisinin Yerini Alan Gemini 4 Hydrogen Modelini Duyurdu: Peki Neler Yapabiliyor?",
-      "link": "https://www.webtekno.com/google-gemini-4-hydrogen-modelini-duyurdu-h228910.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T07:45:23.000Z",
-      "ozet": "Google, günlük otonom görevlerde 2,5 kat daha hızlı çalışan ve rakiplerini geride bırakan yeni nesil Gemini 4 Hydrogen yapay zekâ modelini tanıttı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Trump, Nvidia’nın Başına Tim Cook’u Önerdi",
-      "link": "https://www.webtekno.com/jensen-huang-nvidia-istifa-trump-tim-cook-onerisi-h228913.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T07:45:14.000Z",
-      "ozet": "Jensen Huang’ın istifasının ardından Nvidia’yı geçici olarak Colette Kress yönetiyor. Trump’ın CEO’luk için önerdiği isimse Tim Cook.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Eski CEO Jensen Huang’ın Görevden Ayrılmasının Ardından NVIDIA Hisseleri Yeniden Yükselişe Geçti",
-      "link": "https://www.webtekno.com/nvidia-hisseleri-yeniden-yukselise-gecti-h228901.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-13T06:34:04.000Z",
-      "ozet": "CEO Jensen Huang'ın ayrılık kararının ardından piyasa öncesi düşüş yaşayan NVIDIA hisseleri, tekrar yükselişe geçti.",
       "kullanildi": false
     }
   ]
