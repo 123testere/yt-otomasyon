@@ -1,0 +1,770 @@
+{
+ "id": "2026-11-16_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-16T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "bolum": {
+  "no": 6,
+  "ad": "Tek Göz"
+ },
+ "title": "Tek Gözlü Gladyatör Sungur'u Neden Terk Etti? | Zincirli 6",
+ "titleAlt": "Toros Köy Yakmayı Reddetti ve Bedelini Gözüyle Ödedi | Zincirli 6",
+ "description": "Tek gözlü gladyatör Toros, Sungur'la aynı akıncı birliğinden nasıl ayrıldı ve neden bir köyü yakmayı reddetti? Zincirli 6. bölümde Toros'un geçmişi ve zindanın altındaki gizli su kanalı anlatılıyor. Zincirli, çöp adam animasyonuyla anlatılan bir destandır.\n\n#zincirli #çöpadam #animasyon #dizi",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon dizi",
+  "gladyatör",
+  "toros",
+  "sungur",
+  "arena",
+  "destan",
+  "bölüm bölüm"
+ ],
+ "topic": "Toros'un geçmişi: Sungur'la ayrılığı ve zindanın altındaki su kanalı",
+ "thumbnailText": "TEK GÖZ KALDI",
+ "thumbnailTextAlt": "SUNGUR'UN İHANETİ",
+ "thumbnailTextAlt2": "KAPIYI KİM TUTAR?",
+ "kapak": {
+  "sahne": 9,
+  "sn": 1
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "muzik": "gizemli",
+ "muzikSeviye": 0.1,
+ "kapanis": {
+  "baslik": "DEVAMI",
+  "sonraki": "Bölüm 7: Su Kanalı — Yakında",
+  "soru": "Sence Toros kapıyı kimin için tutuyor?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Why the One-Eyed Gladiator Walked Away From Sungur | Chained 6",
+   "description": "Why did the one-eyed gladiator Toros refuse to burn a village and part ways with Sungur? Chained episode 6 tells his past and the hidden water channel under the dungeon. Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Soğuk Açılış",
+   "mekan": "koy-yangin",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Geçmiş: genç Toros eğerin yanında, Sungur elinde meşaleyle karşısında.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Ben köy yakmam, Sungur."
+    },
+    {
+     "kim": "sungur",
+     "metin": "O zaman bir daha hiçbir şey göremeyeceksin."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Peki bir adam, tek gözünü ne uğruna verir?"
+    }
+   ]
+  },
+  {
+   "kisim": "Boş Hücre",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Boş Hücre"
+   },
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Arın ve Kargan boş hücrenin önünde, yerde mum izi.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros'un hücresi boştu ama kapının önünde taze bir mum izi vardı."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Bak, izler aşağı iniyor."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Zincirli iki gölge dar merdivenden iniyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zindanın en alt katına indik. Duvarlar ıslaktı ve zincirimiz taşta çınlıyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Kargan fenerin yanında sessizce bekler, Arın duvarda dolaşan gölgeleri izler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros'un nereye gittiğini düşünüp durduk. Kargan her adımda zinciri hafifçe çekiyor, ben de ona uyuyordum."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Böyle yürümeyi öğrendik. Ama bu kez korkuyorum."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Toros eski bir taş kapağın yanında, yerde oturuyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Geç kaldınız. Oturun, size bir şey anlatacağım."
+    },
+    {
+     "kim": "arin",
+     "metin": "Seni Sungur mu aldı sandık."
+    },
+    {
+     "kim": "toros",
+     "metin": "Beni asıl alan Sungur'du evlat, çok eskiden."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Fener titrer, Toros'un tek gözü ateşe bakar.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros'un tek gözü fenerin alevine takıldı. Bu seriyi kaçırmamak için şimdi abone ol."
+    },
+    {
+     "kim": "toros",
+     "metin": "Dinleyin. Bir gözün hikâyesi uzundur."
+    }
+   ]
+  },
+  {
+   "kisim": "Aynı Birlik",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Aynı Birlik"
+   },
+   "mekan": "kervan",
+   "zaman": "gece",
+   "aciklama": "Geçmiş: iki genç akıncı ateşin başında omuz omuza.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "sungur",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Gençken Sungur'la aynı akıncı birliğindeydik."
+    },
+    {
+     "kim": "toros",
+     "metin": "Aynı atlara binerdik, aynı ateşte ısınırdık. Ben onu kardeş bilirdim."
+    }
+   ]
+  },
+  {
+   "mekan": "yol",
+   "zaman": "safak",
+   "aciklama": "Geçmiş: iki atlı sabaha doğru yola çıkar.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr"
+    },
+    {
+     "id": "sungur",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros, Sungur'un gülüşünü bile hâlâ ezbere biliyordu."
+    },
+    {
+     "kim": "toros",
+     "metin": "Bir gece bir köyü yakma emri geldi. Sungur meşaleyi hemen aldı."
+    }
+   ]
+  },
+  {
+   "mekan": "avlu",
+   "zaman": "gunduz",
+   "aciklama": "Geçmiş: Toros ile Sungur avluda yan yana, birliğin başı onlara bakar.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "sungur",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Birliğin en genç iki adamıydık. Sungur hep önde giderdi, ben arkasında."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "İki dost, aynı yola çıkmıştı ama aynı yere varmayacaklardı."
+    }
+   ]
+  },
+  {
+   "mekan": "koy-yangin",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Geçmiş: Toros eğerden iner, Sungur meşaleyle bekler.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Ben eğerden indim. Çocukların evini yakmam dedim."
+    },
+    {
+     "kim": "sungur",
+     "metin": "Emir, kardeşlikten büyüktür."
+    }
+   ]
+  },
+  {
+   "mekan": "tas-ocagi",
+   "zaman": "gunduz",
+   "aciklama": "Geçmiş: Toros zincirli, bir tüccara teslim edilir.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "uzgun"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Bedelini gözümle ve özgürlüğümle ödedim. Beni zincirleyip bir tüccara sattılar."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O yüzdeki iz bir yaradan çok, bir kararın izine benziyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "gece",
+   "aciklama": "Geçmiş: Toros zincirli bir kervanda, uzakta Sungur'un siluet atı kaybolur.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "diz-cok",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "akinci",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "dur"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Kervan beni götürürken arkama baktım. Sungur atının üstünde dönüp bakmadı bile."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bazen bir dostu kaybetmek, bir gözü kaybetmekten ağırdır."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Kargan hocaya başını eğer, Arın yutkunur.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "notr"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "egil",
+     "ifade": "uzgun"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Hiç pişman olmadın mı?"
+    },
+    {
+     "kim": "toros",
+     "metin": "Tek göz, iki gözün görmediğini görür. Pişman olmadım."
+    }
+   ]
+  },
+  {
+   "kisim": "Su Kanalı",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Su Kanalı"
+   },
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "sis"
+   ],
+   "aciklama": "Toros taş kapağı işaret eder.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Bu zindanın altından eski bir su kanalı geçer."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Kanal mı? Nereye çıkar?"
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "sis"
+   ],
+   "aciklama": "Kapak kalkar, aşağıdan soğuk buhar yükselir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kapağı birlikte kaldırdık. Karanlıktan ıslak taş kokusu ve uzak bir su sesi geldi."
+    },
+    {
+     "kim": "toros",
+     "metin": "Dağın eteğine çıktığını söylerler. Ben çıkışı hiç görmedim."
+    }
+   ]
+  },
+  {
+   "mekan": "tas-ocagi",
+   "zaman": "gunduz",
+   "aciklama": "Geçmiş: taş ocağında Toros bir ustanın yanında eski kanal planını inceliyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Taş ocağında çalışırken yaşlı bir usta bana bu kanalı anlattı. Zindan, eski bir su yolunun üstüne kurulmuş."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Toros o günden beri kapağın yerini hiç unutmadı."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Arın Toros'a elini uzatır.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Bizimle gel Toros. Üçümüz gideriz."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Zinciri birlikte taşıdık. Seni de taşırız."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Kargan zincire bakar, sonra Toros'a döner.",
+   "kadraj": [
+    {
+     "id": "kargan",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "toros",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Seni burada bırakırsak Sungur seni cezalandırır."
+    },
+    {
+     "kim": "toros",
+     "metin": "Cezalar beni korkutmaz. Beni korkutan, bir daha kimsenin ocağının sönmesidir."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "Toros gülümser, başını iki yana sallar.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "arin",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "kargan",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "uzgun"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Beni zincirler yavaşlatmadı evlat. Yaş yavaşlattı."
+    },
+    {
+     "kim": "toros",
+     "metin": "Son kez kalkıp kalkmadığına bakar. Siz kalkın."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "sure": 3,
+   "aciklama": "Arın ve Kargan kapağın başında, aşağıdan rüzgâr esiyor.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir sonraki bölümde kaçış gecesi başlıyor. Serinin devamı için abone ol ve beğen."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Toros fener elinde kapağın önünde duruyor.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "fisilti",
+     "esya": "fener"
+    },
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Ben gelemem. Biri kapıyı tutmalı."
+    }
+   ]
+  }
+ ]
+}

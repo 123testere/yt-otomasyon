@@ -1,0 +1,198 @@
+{
+ "id": "2026-11-15_UCFw3Wdyus0HVhykB0uYahWg_short2",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "publishAt": "2026-11-15T18:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "fragman": true,
+ "derivedFrom": "2026-11-16_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 6,
+  "ad": "Tek Göz"
+ },
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "YARIN 18:00",
+  "sonraki": "Zincirli · Bölüm 6: Tek Göz",
+  "soru": "Sence Toros'un tek gözü neye mal oldu?"
+ },
+ "title": "Yarın Toros'un tek gözünün sırrı çıkıyor ⚔️",
+ "description": "Toros'un tek gözünü kimin aldığını tahmin edebiliyor musun? Yarın Zincirli 6. bölümde Sungur'la geçmişi ortaya çıkıyor.",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "toros",
+  "sungur",
+  "gladyatör",
+  "dizi",
+  "fragman"
+ ],
+ "topic": "Zincirli 6. bölüm fragmanı: Toros'un tek gözünün sırrı",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Tomorrow: the secret of Toros's missing eye ⚔️",
+   "description": "Can you guess who took Toros's eye? Tomorrow in Chained episode 6, his past with Sungur comes out."
+  }
+ },
+ "scenes": [
+  {
+   "buyukYazi": {
+    "ust": "TEK GÖZ NEDEN?",
+    "alt": "Toros'un sırrı yarın"
+   },
+   "mekan": "koy-yangin",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Genç Toros ve Sungur köy yangınının ışığında karşı karşıya.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros tek gözünü bir köyü yakmadığı için verdi."
+    }
+   ]
+  },
+  {
+   "mekan": "koy-yangin",
+   "zaman": "gece",
+   "aciklama": "Sungur meşaleyi kaldırır, Toros eğerden iner.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sungur meşaleyi hemen aldı, Toros ise eğerden indi."
+    }
+   ]
+  },
+  {
+   "mekan": "koy-yangin",
+   "zaman": "gece",
+   "aciklama": "Toros kararlı bakar.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "sungur",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Çocukların evini yakmam dedim ve bedelini gözümle ödedim."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "sis"
+   ],
+   "aciklama": "Arın ve Kargan zindanın alt katında taş kapağa bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "saskin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zindanın en alt katına indik, orada eski bir kapak vardı."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "aciklama": "Fener titrer, Arın kameraya bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen; tamamı kanaldaki bölümde."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,538 @@
+{
+ "id": "2026-11-16_UCJUP2lYvMuhcif8FavIXuYA_long1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "long",
+ "publishAt": "2026-11-16T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "hiz": 1.1,
+ "bolum": {
+  "no": 6,
+  "ad": "Meta Muse"
+ },
+ "kaynak": "Webtekno",
+ "kaynakLink": "https://www.webtekno.com/meta-muse-sizin-yerinize-telefon-gorusmesi-yapabiliyor-h228916.html",
+ "topic": "Meta'nın yapay zekâ asistanı Muse'un telefon görüşmesi yapması",
+ "title": "Yapay Zekâ Senin Yerine Telefonda Konuşuyor: Muse Ne Değiştirecek?",
+ "titleAlt": "Meta'nın Yapay Zekâsı Artık Senin Yerine Arıyor: Risk mi, Rahatlık mı?",
+ "description": "Meta'nın yapay zekâ asistanı Muse, ücretli abonelere sunulan yeni güncellemeyle kullanıcıların yerine telefon görüşmesi yapabiliyor. Bu özellik gündelik işleri nasıl değiştirebilir, hangi sorular akla geliyor?\nKaynak: Webtekno https://www.webtekno.com/meta-muse-sizin-yerinize-telefon-gorusmesi-yapabiliyor-h228916.html\n\n#yapayzeka #meta #muse #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "meta muse",
+  "meta yapay zeka",
+  "yapay zeka asistanı",
+  "telefon görüşmesi",
+  "teknoloji haberleri"
+ ],
+ "thumbnailText": "SENİN YERİNE ARIYOR",
+ "thumbnailTextAlt": "HERKESE AÇIK DEĞİL",
+ "thumbnailTextAlt2": "RİSK Mİ, RAHATLIK MI?",
+ "kapak": {
+  "sahne": 0,
+  "sn": 1.5
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.08,
+ "ceviriler": {
+  "en": {
+   "title": "AI Now Makes Phone Calls For You: What Will Meta Muse Change?",
+   "description": "Meta's AI assistant Muse can now make phone calls on users' behalf with a new update for paying subscribers. How could this change everyday tasks, and what questions does it raise?\nSource: Webtekno\n\n#ai #meta #muse #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENCE?",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Hangi telefon görüşmesini asistanına bırakırdın?"
+ },
+ "scenes": [
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yapay zekâ artık senin yerine telefon açıp konuşabiliyor. Peki bu rahatlık mı, yoksa yeni bir risk mi?"
+    }
+   ],
+   "kisim": "Kanca",
+   "mekan": "yz-lab",
+   "buyukYazi": {
+    "ust": "TELEFONU AÇTI",
+    "alt": "senin yerine konuşuyor"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.4
+     },
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bugün Meta'nın yapay zekâ asistanı Muse'un yeni özelliğini konuşuyoruz. Sonuna kadar kal, çünkü gündelik hayatı nasıl değiştirebileceğini anlatacağım."
+    }
+   ],
+   "mekan": "sunucu",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haber Webtekno'dan. Meta'nın ücretli abonelere sunduğu yeni güncellemeyle Muse, kullanıcıların yerine telefon görüşmeleri yapabiliyor."
+    }
+   ],
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "Meta'nın Muse'u artık telefon görüşmesi yapabiliyor",
+    "kaynak": "Webtekno · 13 Kasım",
+    "maddeler": [
+     "Asistan: Muse",
+     "Ücretli abonelere açık",
+     "Senin yerine arıyor"
+    ]
+   }
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yani özellik herkese değil, ücretli abonelere açılıyor. Haberin özü bu. Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ],
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "ÜCRETLİ ABONE",
+    "alt": "yeni güncelleme"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "isaret"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Çoğu asistan bugüne kadar mesaj yazıp bilgi buluyordu. Şimdi telefonda konuşmak da işin içine giriyor."
+    }
+   ],
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir işletmeyi aramak, bekleme müziğini dinlemek, derdini anlatmak. Bunların hepsi zaman alıyor."
+    }
+   ],
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu tür görevler sabır ister. Bir yapay zekâ bunu üstlenirse zaman kazandırabilir, ama kontrol kimde kalacak sorusu da doğuyor."
+    }
+   ],
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu özellik o küçük ama bıktırıcı işleri senin yerine üstlenebilir. Haberlerde randevu almak ve rezervasyon yapmak gibi işler anılıyor."
+    }
+   ],
+   "kisim": "Neden Önemli?",
+   "mekan": "sunucu",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Mesela bir berberi arayıp saat sormak ya da bir lokantada masa ayırtmak gibi düşün. Bunlar sadece örnek, haberin ayrıntısı değil."
+    }
+   ],
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dusun"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Burada kilit nokta şu: asistan artık yalnızca ekranda cevap vermiyor, dış dünyada bir iş yapıyor."
+    }
+   ],
+   "mekan": "yz-lab",
+   "buyukYazi": {
+    "ust": "EKRANIN DIŞI",
+    "alt": "gerçek dünyada iş"
+   },
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Özelliğin ücretli abonelere sunulması da dikkat çekici. Yapay zekâ yetenekleri yavaş yavaş abonelikle gelen bir hizmete dönüşüyor gibi görünüyor."
+    }
+   ],
+   "mekan": "sunucu",
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "eller-belde"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberin teknik ayrıntılarını Webtekno'da okuyabilirsin. Ben özette olmayan detayları uydurmak istemiyorum."
+    }
+   ],
+   "kisim": "Nasıl Çalışır?",
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "el-salla"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Muhtemelen mantık şöyle: sen asistana ne istediğini söylüyorsun, asistan da karşı tarafla konuşup sonucu sana getiriyor."
+    }
+   ],
+   "mekan": "sunucu",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "yuru"
+    },
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Elbette telefon görüşmesi hassas bir iş. Yanlış anlaşılma, yanlış saat ya da yanlış kişi gibi riskler akla geliyor."
+    }
+   ],
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "eller-belde",
+     "ifade": "supheli"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir asistanın senin adına konuştuğunu düşün: kime, ne kadar bilgi vereceği önemli bir soru. Haberde bu konuda ayrıntı yok, o yüzden sadece soruyu not ediyorum."
+    }
+   ],
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "kullanici",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kısacası haber küçük görünüyor ama yön net: asistanlar sohbet etmekten iş yapmaya geçiyor."
+    }
+   ],
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "SOHBETTEN İŞE",
+    "alt": "asistanlar iş yapıyor"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki bu gelecekte neyi değiştirebilir? Şimdi tahmin yürütme zamanı."
+    }
+   ],
+   "kisim": "Gelecek",
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "SIRADA NE VAR?"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Belki ileride faturalar, abonelik iptalleri ya da randevu işleri çoğunlukla bir asistana bırakılacak. Bunlar yalnızca tahmin, kesin bir şey değil."
+    }
+   ],
+   "mekan": "gelecek",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Belki de işletmeler kendi yapay zekâlarıyla cevap verecek ve iki asistan birbiriyle konuşacak. Kulağa tuhaf geliyor ama olabilir."
+    }
+   ],
+   "mekan": "sunucu",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yine de karşıdaki kişinin bir yapay zekâyla konuştuğunu bilmesi önemli olabilir. Bu konu büyük ihtimalle tartışılacak."
+    }
+   ],
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kaynak olarak Webtekno'nun haberini kullandım; bağlantı açıklamada. Serinin devamı için abone ol ve beğen."
+    }
+   ],
+   "kisim": "Kapanış",
+   "mekan": "sunucu",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sen olsan asistanına hangi telefon görüşmesini bırakırdın? Yorumlara yaz, yarın yeni bir yapay zekâ haberiyle buradayız!"
+    }
+   ],
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ]
+  }
+ ]
+}

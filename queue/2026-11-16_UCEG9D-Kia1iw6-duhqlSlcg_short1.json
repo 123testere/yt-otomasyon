@@ -1,0 +1,149 @@
+{
+ "id": "2026-11-16_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-16T05:00:00.000Z",
+ "bolum": {
+  "no": 9,
+  "ad": "Top 5"
+ },
+ "title": "Stuck in a Job That Pays Too Little? 💰",
+ "description": "Stuck in a job that pays too little? Here are three realistic fixes: learn one in-demand skill, track your wins to ask for a raise, and build a side income. Results vary, so start small.\n\n#money #business #motivation #sidehustle",
+ "tags": [
+  "low paying job",
+  "how to earn more",
+  "ask for a raise",
+  "side income",
+  "career growth",
+  "money tips",
+  "side hustle",
+  "motivation"
+ ],
+ "topic": "Three realistic fixes for a job that pays too little",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿Atascado en un trabajo que paga poco? 💰",
+   "description": "¿Atascado en un trabajo que paga poco? Tres soluciones realistas: aprender una habilidad demandada, registrar tus logros para pedir un aumento y crear un ingreso extra.\n\n#dinero #negocios #motivacion #trabajoextra"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "scenes": [
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Many people wait years for a raise that never arrives on its own."
+    }
+   ],
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "UNDERPAID?",
+    "alt": "Stuck in a low-paying job"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: learn one in-demand skill, because proven skills often earn higher pay."
+    }
+   ],
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Learn One In-Demand Skill",
+    "tur": "Skill growth",
+    "maddeler": [
+     "Pick one useful skill",
+     "Practice every week",
+     "Show real results"
+    ]
+   }
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: track your wins, then ask for a raise using real results."
+    }
+   ],
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Track Your Wins",
+    "tur": "Career habit",
+    "maddeler": [
+     "Write down results",
+     "Use real numbers",
+     "Ask with a plan"
+    ]
+   }
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: build a side income so one paycheck isn't your only option."
+    }
+   ],
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Build a Side Income",
+    "tur": "Extra money",
+    "maddeler": [
+     "Start small",
+     "Use your skills",
+     "Grow it slowly"
+    ]
+   }
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for the rest of the series, and comment your pick!"
+    }
+   ],
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  }
+ ]
+}

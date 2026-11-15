@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-16_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-16T05:00:00.000Z",
+ "topic": "Kiwis",
+ "title": "Duell 14/30: Wer erntet die meisten Kiwis? 🥝",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Kiwi-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "kiwis",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "obst"
+ ],
+ "duell": {
+  "topicId": "kiwis",
+  "why": [
+   "Mildes Klima",
+   "Fruchtbare Böden",
+   "Große Obstanlagen"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Kiwis Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "34 Länder haben keine Kiwi-Daten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Die Türkei verpasst das Finale um gut 250 Tausend Tonnen!",
+   "final": "Finale! Italien gegen Griechenland – wer holt sich die Kiwi-Krone?",
+   "winner": "Italien gewinnt! Knapp 464 Tausend Tonnen, gut ein Drittel mehr als Griechenland mit 342 Tausend!",
+   "why": "Warum Italien? Mildes Klima, fruchtbare Böden und große Obstanlagen.",
+   "table": "Die Türkei führt die Tabelle mit 65 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "B"
+ }
+}

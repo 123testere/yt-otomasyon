@@ -1,0 +1,162 @@
+{
+ "id": "2026-11-16_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-16T16:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 7,
+  "ad": "Apple TV Siri"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/yeni-apple-tv-4k-cikti-eski-modellere-siri-ai-guncellemesi--212921",
+ "title": "Eski Apple TV'ne Yapay Zekâlı Siri Geliyor mu? ⚡",
+ "description": "Apple, yeni Apple TV 4K'yı 13 Kasım'da satışa sundu ve eski modellere Siri yapay zekasını getiren tvOS 27.2.1 güncellemesini yayınladı. Sende bu güncelleme çıktı mı?\nKaynak: DonanımHaber https://www.donanimhaber.com/yeni-apple-tv-4k-cikti-eski-modellere-siri-ai-guncellemesi--212921\n\n#yapayzeka #apple #siri #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "apple tv",
+  "siri",
+  "tvos",
+  "apple",
+  "teknoloji haberleri"
+ ],
+ "topic": "Yeni Apple TV 4K ve eski modellere gelen Siri yapay zekası",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "Is AI Siri Coming to Your Old Apple TV? ⚡",
+   "description": "Apple released the new Apple TV 4K on November 13 and a tvOS 27.2.1 update that brings Siri's AI to older models. Did you get the update yet?\nSource: DonanımHaber\n\n#ai #apple #siri #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Apple TV'nde güncelleme geldi mi?"
+ },
+ "scenes": [
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Eski Apple TV'in yapay zekâlı Siri alabilir mi?"
+    }
+   ],
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "SİRİ YENİLENDİ",
+    "alt": "eski Apple TV'lere de"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.2
+     },
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Apple, yeni Apple TV 4K modelini 13 Kasım'da satışa sundu."
+    }
+   ],
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "Yeni Apple TV 4K çıktı: eski modellere Siri yapay zekası",
+    "kaynak": "DonanımHaber · 14 Kasım",
+    "maddeler": [
+     "Yeni Apple TV 4K satışta",
+     "Güncelleme: tvOS 27.2.1",
+     "Eski modellere Siri AI"
+    ]
+   }
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Aynı gün tvOS 27.2.1 güncellemesi eski modellere Siri yapay zekasını getirdi."
+    }
+   ],
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cihazın desteklenen eski modellerdendiyse güncellemeyi kontrol etmeye değer."
+    }
+   ],
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "GÜNCELLE",
+    "alt": "yeni cihaz şart değil"
+   },
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen!"
+    }
+   ],
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ]
+  }
+ ]
+}
