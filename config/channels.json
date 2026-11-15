@@ -715,15 +715,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-11_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Kurşun Kalemin İçinde Neden Kurşun Yok?",
-        "a": "Makas",
-        "b": "Cetvel",
-        "oyA": 1,
-        "oyB": 0,
-        "yayin": "2026-11-11T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-12_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "Şemsiyenin İlk İşi Yağmurdan Korumak Değildi",
         "a": "Anahtar",
@@ -785,6 +776,15 @@
         "oyA": 1,
         "oyB": 0,
         "yayin": "2026-11-15T07:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+        "baslik": "Kaşık mı Çatal mı: Sofranın İlk Aleti Hangisi?",
+        "a": "Terazi",
+        "b": "Merdiven",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-15T16:00:00.000Z"
       }
     ]
   },
