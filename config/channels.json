@@ -156,6 +156,7 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "Stuck in a Job That Pays Too Little? 💰",
       "No Time for a Side Hustle After Work? 🧠",
       "10 Businesses You Can Start With Almost No Money 💰",
       "5 Businesses You Can Start With Almost No Money 🚀",
@@ -260,6 +261,8 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Tek Gözlü Gladyatör Sungur'u Neden Terk Etti? | Zincirli 6",
+      "Yarın Toros'un tek gözünün sırrı çıkıyor ⚔️",
       "Kız Kardeşi İçin Düşmeli mi? Zincirli Bölüm 3-5 Tek Parça",
       "Zincirle bağlıyken beş kılıcı nasıl yendiler? ⛓️",
       "Zincirli Bir Dev, Beş Muhafıza Karşı: Kimse Yaralanmadan Kazandılar",
@@ -374,6 +377,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Oyunlar Sana Hemen Mi Sıkıyor? 🎮",
       "Hikâyeli Tek Kişilik Oyun Bulamıyor musun? 🎮",
       "Tek Kişi ya da Küçük Ekip: Dünyayı Sallayan 10 Oyun 🎮",
       "Telefonda Zaman Çalan En İyi 5 Oyun 🎮",
@@ -514,6 +518,8 @@
       "baslangic": "2026-11-07T10:19:21.363Z"
     },
     "recentTitles": [
+      "Eski Apple TV'ne Yapay Zekâlı Siri Geliyor mu? ⚡",
+      "Yapay Zekâ Senin Yerine Telefonda Konuşuyor: Muse Ne Değiştirecek?",
       "ChatGPT Artık Senin Adına Alışveriş Yapabilecek 🤖",
       "Google Arama Yeni Yapay Zekâ Modeline Geçiyor ⚡",
       "OpenAI'ın Üç Aylık Geliri 10 Milyar Doları Geçti ⚡",
@@ -655,6 +661,8 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Halat İnce Liflerden Nasıl Bu Kadar Güçlü Oluyor?",
+      "Pusula Kuzeyi Nasıl Buluyor? 🧭",
       "Kaşık mı Çatal mı: Sofranın İlk Aleti Hangisi?",
       "Termometrenin İlk Hali Neden Ters Çalışıyordu?",
       "Düğme Binlerce Yıl Giysiyi Neden Kapatmadı?",
@@ -962,6 +970,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 14/30: Wer erntet die meisten Kiwis? 🥝",
       "Duell 13/30: Wer erntet die meisten Mandeln? 🌰",
       "Duell 12/30: Wer erntet die meisten Pfirsiche? 🍑",
       "Duell 11/30: Wer erntet den meisten Kohl? 🥬",
@@ -981,27 +990,27 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 13,
+      "lastMatch": 14,
       "table": [
         {
           "name": "Türkei",
-          "points": 65
+          "points": 70
         },
         {
           "name": "Spanien",
-          "points": 63
+          "points": 65
+        },
+        {
+          "name": "Italien",
+          "points": 52
         },
         {
           "name": "Ukraine",
           "points": 45
         },
         {
-          "name": "Italien",
-          "points": 42
-        },
-        {
           "name": "Frankreich",
-          "points": 41
+          "points": 45
         },
         {
           "name": "Polen",
@@ -1012,12 +1021,12 @@
           "points": 33
         },
         {
-          "name": "Portugal",
-          "points": 23
+          "name": "Griechenland",
+          "points": 26
         },
         {
-          "name": "Griechenland",
-          "points": 19
+          "name": "Portugal",
+          "points": 26
         },
         {
           "name": "Serbien",
