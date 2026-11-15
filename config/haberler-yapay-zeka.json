@@ -1,8 +1,56 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-15T17:46:15.273Z",
+  "guncellendi": "2026-11-15T22:53:41.083Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "A step toward defining the Standard Model on a lattice",
+      "link": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-15T22:00:01.000Z",
+      "ozet": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Our new blog for science",
+      "link": "https://openai.com/index/our-new-blog-for-science",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-15T22:00:00.000Z",
+      "ozet": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "link": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-15T21:56:35.000Z",
+      "ozet": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+      "link": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-15T20:43:49.000Z",
+      "ozet": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this morning. That includes rumors that Jensen Huang might be trying to find a path back to CEO, […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+      "link": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-15T20:20:57.000Z",
+      "ozet": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-15T19:15:43.000Z",
+      "ozet": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced support for various measures and bills that would tighten rules and have demanded that Huang and other Nvidia leaders testify before Congress. Senate Minority […]",
+      "kullanildi": false
+    },
     {
       "baslik": "Jensen Huang'a destek büyüyor: İmza kampanyası 100 bin kişiyi aştı",
       "link": "https://www.donanimhaber.com/jensen-huang-a-destek-buyuyor-imza-kampanyasi-100-bini-asti--212942",
@@ -153,62 +201,6 @@
       "kaynak": "The Verge",
       "tarih": "2026-11-13T23:49:11.000Z",
       "ozet": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers leave Amazon to do their […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-13T22:43:00.000Z",
-      "ozet": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-      "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-13T21:20:47.000Z",
-      "ozet": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "ChatGPT artık alışveriş de yapabilecek: ChatGPT Wallet tanıtıldı",
-      "link": "https://www.donanimhaber.com/chatgpt-artik-alisveris-de-yapabilecek-chatgpt-wallet-tanitildi--212897",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-13T20:59:00.000Z",
-      "ozet": "OpenAI, ChatGPT Wallet özelliğini kullanıma sundu. Yeni sistem, yapay zeka ajanlarının kullanıcılar adına ürün araştırıp satın alma işlemlerini hazırlamasına imkan tanıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-13T20:45:10.000Z",
-      "ozet": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI agent startup LangChain hits $3B valuation",
-      "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-13T19:37:57.000Z",
-      "ozet": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
-      "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-13T19:08:57.000Z",
-      "ozet": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-13T18:40:30.000Z",
-      "ozet": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
       "kullanildi": false
     }
   ]
