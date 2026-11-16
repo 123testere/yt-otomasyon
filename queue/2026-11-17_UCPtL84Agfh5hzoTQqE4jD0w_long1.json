@@ -1,0 +1,281 @@
+{
+  "id": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "long",
+  "format": "cizim",
+  "publishAt": "2026-11-17T15:00:00.000Z",
+  "topic": "Terazi ve kilogramın hikâyesi: Paris kasasındaki silindirden mutfak tartısına",
+  "title": "Mutfaktaki Tartın 130 Yıl Paris'teki Bir Kasaya Bağlıydı",
+  "titleAlt": "Kilogramın Atası Kilo Veriyordu: Terazinin 4000 Yıllık Hikâyesi",
+  "description": "Eşyaların Hikayesi #53\nMutfaktaki tartın 130 yıl boyunca Paris yakınlarındaki bir kasada duran tek bir silindire bağlıydı. Mısır'da kalbin tartılmasından Osmanlı çarşısındaki muhtesibe, kantardan 2019'da yeniden tanımlanan kilograma terazinin hikâyesi.\n\nSırada hangisi olsun? Merdiven mi, tuğla mı? Yorumlara yaz.\n\n#terazi #kilogram #icatlar #eşyalarınhikayesi",
+  "tags": [
+    "terazi",
+    "terazinin tarihi",
+    "terazi kim icat etti",
+    "adalet terazisi",
+    "kantar",
+    "kilogram",
+    "kilogram nasıl belirlendi",
+    "okka",
+    "eşyaların hikayesi",
+    "lamba altında",
+    "icatlar"
+  ],
+  "thumbnailText": "KİLOGRAM KAYBOLDU",
+  "thumbnailTextAlt": "KASADAKİ SIR",
+  "thumbnailTextAlt2": "HİLELİ TERAZİ",
+  "kapakAlt": "Paris · 1889 · 2019",
+  "kapakCizim": "ink(ln([150,60],[150,330],10),{w:8,seed:1,pp:eo(pr(u,0,.5))});ink(ln([20,370],[280,370],10),{w:8,seed:2,pp:eo(pr(u,0,.5))});ink(ln([20,175],[280,135],10),{w:9,seed:3,pp:eo(pr(u,.1,.7))});ink(ell(150,155,12,12,14),{close:true,fill:K.ak,w:5,seed:4});for(const [px,py,sd] of [[20,175,5],[280,135,6]]){ink([[px,py],[px-30,py+110]],{w:5,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+30,py+110]],{w:5,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+110,50,16,20,0,Math.PI),{close:true,fill:'#EFE4CB',w:8,seed:sd+20,pp:eo(pr(u,.4,1))});}",
+  "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+  "baslikKart": [
+    "Kilogramın atası",
+    "kilo mu veriyordu?"
+  ],
+  "kapanis": {
+    "soru": "Sırada hangisi olsun?",
+    "a": "Merdiven",
+    "b": "Tuğla"
+  },
+  "oylama": {
+    "kaynak": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "secilen": "a"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "Your Kitchen Scale Was Tied to a Vault in Paris for 130 Years",
+      "description": "For 130 years every kilogram on Earth, even the one on your kitchen scale, was tied to a single metal cylinder locked in a vault near Paris. From the weighing of the heart in ancient Egypt to Ottoman market inspectors and the 2019 redefinition of the kilogram: the story of the scale."
+    }
+  },
+  "scenes": [
+    {
+      "narration": "1889. Paris yakınlarında bir kasa kilitlendi.",
+      "ifade": "merakli",
+      "cizim": "ink(kutu(425,300,150,200),{close:true,fill:'#C9C9CE',w:5,seed:4000,pp:eo(pr(u,0,.7))});ink(ell(500,300,75,25,26),{close:true,fill:'#E6E6EA',w:5,seed:4001});ink(ell(500,500,75,25,26,0,Math.PI),{w:5,seed:4002});txt('1889',500,170,100,{c:K.ak,a:eo(pr(u,.5,1.1))});etk('platin ve iridyum',500,650,eo(pr(u,1,1.6)),{size:46});"
+    },
+    {
+      "narration": "İçinde parlak, küçük bir metal silindir vardı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(445,380,110,140),{close:true,fill:'#C9C9CE',w:5,seed:4100,pp:eo(pr(u,0,.7))});ink(ell(500,380,55,18,26),{close:true,fill:'#E6E6EA',w:5,seed:4101});ink(ell(500,520,55,18,26,0,Math.PI),{w:5,seed:4102});for(let k=0;k<3;k++){const r=120+k*40;ink(ell(500,450,r,r*1.1,36,Math.PI,2*Math.PI),{w:4,c:K.mavi,seed:4110+k,pp:eo(pr(u,.4+k*.3,1+k*.3))});ink(ln([500-r,450],[500+r,450],6),{w:4,c:K.mavi,seed:4120+k,pp:eo(pr(u,.4+k*.3,1+k*.3))});}etk('üç cam fanus',500,665,eo(pr(u,1.4,2)),{size:46});"
+    },
+    {
+      "narration": "Dünyadaki bütün kilogramlar ona bağlıydı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(450,200,100,140),{close:true,fill:'#C9C9CE',w:5,seed:4300,pp:eo(pr(u,0,.7))});ink(ell(500,200,50,16,26),{close:true,fill:'#E6E6EA',w:5,seed:4301});ink(ell(500,340,50,16,26,0,Math.PI),{w:5,seed:4302});for(let k=0;k<4;k++){const x=180+k*215;ink(ln([500,360],[x,460],10),{w:3,c:K.ak,seed:4310+k,pp:eo(pr(u,.6+k*.2,1.2+k*.2))});ink(kutu(x-35,460,70,90),{close:true,fill:'#C9C9CE',w:5,seed:4320+k,pp:eo(pr(u,.8+k*.2,1.4+k*.2))});}etk('ülke kopyaları',500,650,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "Senin mutfaktaki tartın bile.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(kutu(250,440,500,120),{close:true,fill:'#EFE4CB',w:7,seed:4800,pp:eo(pr(u,0,.6))});ink(ell(500,420,150,28,28),{close:true,fill:'#FBF6EA',w:6,seed:4801,pp:eo(pr(u,.2,.8))});ink(kutu(430,470,140,60),{close:true,fill:'#CFE0EA',w:4,seed:4802,pp:eo(pr(u,.4,1))});txt('250 g',500,520,40,{a:eo(pr(u,1,1.5))});ink(ell(500,330,90,60,20),{close:true,fill:'#E6DBC4',w:5,seed:4803,pp:eo(pr(u,.6,1.2))});"
+    },
+    {
+      "narration": "Sonra bir gün tartılar garip bir şey gösterdi.",
+      "ifade": "merakli",
+      "cizim": "ink(kutu(370,250,120,170),{close:true,fill:'#C9C9CE',w:5,seed:4400,pp:eo(pr(u,0,.7))});ink(ell(430,250,60,20,26),{close:true,fill:'#E6E6EA',w:5,seed:4401});ink(ell(430,420,60,20,26,0,Math.PI),{w:5,seed:4402});txt('?',700,350,200,{c:K.ak,a:eo(pr(u,.6,1.2))});etk('çok küçük fark',500,650,eo(pr(u,1,1.6)),{size:46});"
+    },
+    {
+      "narration": "Kilogramın atası, sanki kilo veriyordu.",
+      "ifade": "saskin",
+      "cizim": "for(let i=0;i<6;i++){const x=180+i*128,y=420+Math.sin(T*2+i)*14*eo(pr(u,.8,1.4));ink(kutu(x-34,y-60,68,80),{close:true,fill:'#CFC9B8',w:5,seed:4500+i,pp:eo(pr(u,i*.08,.6+i*.08))});}etk('hepsi birlikte oynar',MX,640,eo(pr(u,1.2,1.8)),{size:46});"
+    },
+    {
+      "narration": "Bu hikâyeyi yorumlarda siz seçtiniz. Ve hikâye, dört bin yıl önce bir pazar tezgâhında başlıyor.",
+      "ifade": "gulumsuyor",
+      "cizim": "const a=Math.sin(T*1.4)*.05*eo(pr(u,.6,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:11,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:12,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:13,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:14});for(const [px,py,sd] of [[lx,ly,15],[rx,ry,16]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}for(let i=0;i<3;i++)ink(ell(lx-34+i*34,ly+128-(i%2)*14,17,17,14),{close:true,fill:'#B5432F',w:3,seed:201+i,pp:eo(pr(u,.8+i*.1,1.4))});ink(kutu(rx-30,ry+150-60,60,60),{close:true,fill:'#CFC9B8',w:4,seed:301,pp:eo(pr(u,.8,1.4))});"
+    },
+    {
+      "narration": "En eski terazi bir çubuk ve iki kefeydi.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=0,cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:31,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:32,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:33,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:34});for(const [px,py,sd] of [[lx,ly,35],[rx,ry,36]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}etk('çubuk ve iki kefe',500,650,eo(pr(u,1,1.6)),{size:46});",
+      "bolum": {
+        "no": "Bölüm I",
+        "ust": "Mısır · 4000 yıl önce",
+        "ad": "Tohumla tartmak"
+      }
+    },
+    {
+      "narration": "Bir kefeye mal, ötekine ağırlık konurdu. Kefeler hizaya gelince alışveriş biterdi.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=Math.sin(T*1.4)*.05*eo(pr(u,.6,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:51,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:52,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:53,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:54});for(const [px,py,sd] of [[lx,ly,55],[rx,ry,56]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}for(let i=0;i<3;i++)ink(ell(lx-34+i*34,ly+128-(i%2)*14,17,17,14),{close:true,fill:'#B5432F',w:3,seed:202+i,pp:eo(pr(u,.8+i*.1,1.4))});ink(kutu(rx-30,ry+150-60,60,60),{close:true,fill:'#CFC9B8',w:4,seed:302,pp:eo(pr(u,.8,1.4))});etk('eşit',500,650,eo(pr(u,1,1.6)),{size:46});"
+    },
+    {
+      "narration": "Peki ağırlık neye göreydi? Çoğu zaman tahıl tanelerine göre.",
+      "ifade": "merakli",
+      "cizim": "for(let k=0;k<5;k++){const x=250+k*125;ink(ln([x,600],[x+Math.sin(T*1.5+k)*8,330],14),{w:5,seed:30+k,pp:eo(pr(u,k*.1,.8+k*.1))});for(let j=0;j<5;j++){ink(ell(x+8+(j%2)*12-6+Math.sin(T*1.5+k)*5,340+j*28,9,16,12),{close:true,fill:'#E8B64A',w:3,seed:40+k*5+j,pp:eo(pr(u,.4+j*.1,1.2))});}}etk('arpa ve buğday',MX,665,eo(pr(u,1.2,1.8)),{size:44});"
+    },
+    {
+      "narration": "Altıncılar keçiboynuzu çekirdeği kullanırdı. Kırat kelimesinin buradan geldiği anlatılır.",
+      "ifade": "anlatiyor",
+      "cizim": "ink([[250,330],[400,300],[560,330],[700,400],[760,480]],{w:14,c:'#7A4A2A',seed:51,pp:eo(pr(u,0,.8))});ink([[250,350],[400,320],[560,350],[700,420],[760,500]],{w:6,c:'#7A4A2A',seed:52,pp:eo(pr(u,.1,.9))});for(let i=0;i<5;i++)ink(ell(320+i*90,420-Math.sin(i*.5)*10,10,14,10),{close:true,fill:'#5A3A1A',w:3,seed:53+i,pp:eo(pr(u,.7+i*.1,1.4))});etk('keçiboynuzu → kırat',MX,640,eo(pr(u,1.3,1.9)),{size:46});"
+    },
+    {
+      "narration": "Mısırlılar için terazi pazardan fazlasıydı. Ölülerin kalbi de tartılırdı.",
+      "ifade": "dusunceli",
+      "cizim": "const a=.12*eo(pr(u,.5,1.5)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:71,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:72,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:73,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:74});for(const [px,py,sd] of [[lx,ly,75],[rx,ry,76]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}ink(ell(lx,ly+112,36,32,22),{close:true,fill:'#B5432F',w:4,seed:501,pp:eo(pr(u,.8,1.4))});ink(ln([lx-10,ly+80],[lx-6,ly+66],4),{w:5,seed:511,pp:eo(pr(u,1,1.4))});"
+    },
+    {
+      "narration": "Bir kefede kalp, ötekinde adalet tanrıçası Maat'ın tüyü dururdu.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=Math.sin(T*1.4)*.05*eo(pr(u,.6,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:81,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:82,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:83,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:84});for(const [px,py,sd] of [[lx,ly,85],[rx,ry,86]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}ink(ell(lx,ly+112,36,32,22),{close:true,fill:'#B5432F',w:4,seed:502,pp:eo(pr(u,.8,1.4))});ink(ln([lx-10,ly+80],[lx-6,ly+66],4),{w:5,seed:512,pp:eo(pr(u,1,1.4))});ink([[rx-50,ry+138],[rx-15,ry+112],[rx+20,ry+98],[rx+50,ry+96]],{w:4,c:K.mavi,seed:522,pp:eo(pr(u,.8,1.4))});for(let i=0;i<5;i++)ink(ln([rx-35+i*18,ry+126-i*7],[rx-25+i*18,ry+106-i*7],3),{w:2.5,c:K.mavi,seed:532+i,pp:eo(pr(u,1,1.5))});etk('kalp ve Maat\\'ın tüyü',500,650,eo(pr(u,1,1.6)),{size:46});"
+    },
+    {
+      "narration": "Kalp tüyden ağırsa kötü bir iz var demekti. Hafifse yol açıktı.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=.14*eo(pr(u,.3,1))-.1*eo(pr(u,1.6,2.4)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:91,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:92,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:93,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:94});for(const [px,py,sd] of [[lx,ly,95],[rx,ry,96]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}ink(ell(lx,ly+112,36,32,22),{close:true,fill:'#B5432F',w:4,seed:503,pp:eo(pr(u,.8,1.4))});ink(ln([lx-10,ly+80],[lx-6,ly+66],4),{w:5,seed:513,pp:eo(pr(u,1,1.4))});ink([[rx-50,ry+138],[rx-15,ry+112],[rx+20,ry+98],[rx+50,ry+96]],{w:4,c:K.mavi,seed:523,pp:eo(pr(u,.8,1.4))});for(let i=0;i<5;i++)ink(ln([rx-35+i*18,ry+126-i*7],[rx-25+i*18,ry+106-i*7],3),{w:2.5,c:K.mavi,seed:533+i,pp:eo(pr(u,1,1.5))});etk('kalp hafifse yol açık',500,650,eo(pr(u,1.8,2.4)),{size:46});"
+    },
+    {
+      "narration": "Roma'da adalet tanrıçası Justitia'nın elinde de bir terazi vardı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(ell(500,170,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:1400,pp:eo(pr(u,0,.6))});ink(ln([500,204],[500,320],8),{w:6,seed:1401,pp:eo(pr(u,0,.6))});ink(ln([500,320],[460,420],6),{w:5,seed:1402,pp:eo(pr(u,0,.6))});ink(ln([500,320],[540,420],6),{w:5,seed:1403,pp:eo(pr(u,0,.6))});ink(ln([500,300],[330,260],8),{w:5,seed:1410,pp:eo(pr(u,.4,.9))});ink(ln([500,300],[670,240],8),{w:5,seed:1411,pp:eo(pr(u,.4,.9))});ink(ln([300,260],[360,260],6),{w:5,seed:1412});ink([[300,260],[290,330],[370,330],[360,260]],{close:true,fill:'#EFE4CB',w:4,seed:1413,pp:eo(pr(u,.8,1.3))});ink(ln([670,150],[670,300],8),{w:6,seed:1414,pp:eo(pr(u,.8,1.4))});etk('Justitia',MX,640,eo(pr(u,1.2,1.8)),{size:48});",
+      "bolum": {
+        "no": "Bölüm II",
+        "ust": "Roma · Osmanlı",
+        "ad": "Hileli tartı"
+      }
+    },
+    {
+      "narration": "Bugün Türkiye'deki adliyelerde gördüğün simge oradan geliyor.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink([[300,200],[500,110],[700,200]],{close:true,fill:'#EFE4CB',w:6,seed:1700,pp:eo(pr(u,0,.6))});ink(kutu(300,200,400,30),{close:true,fill:'#E6DBC4',w:5,seed:1701,pp:eo(pr(u,.1,.7))});ink(kutu(325,230,36,280),{close:true,fill:'#FBF6EA',w:4,seed:1702,pp:eo(pr(u,.2+0.0,.9+0.0))});ink(kutu(405,230,36,280),{close:true,fill:'#FBF6EA',w:4,seed:1703,pp:eo(pr(u,.2+0.1,.9+0.1))});ink(kutu(485,230,36,280),{close:true,fill:'#FBF6EA',w:4,seed:1704,pp:eo(pr(u,.2+0.2,.9+0.2))});ink(kutu(565,230,36,280),{close:true,fill:'#FBF6EA',w:4,seed:1705,pp:eo(pr(u,.2+0.2,.9+0.2))});ink(kutu(645,230,36,280),{close:true,fill:'#FBF6EA',w:4,seed:1706,pp:eo(pr(u,.2+0.3,.9+0.3))});ink(kutu(270,510,460,40),{close:true,fill:'#E6DBC4',w:5,seed:1709,pp:eo(pr(u,.6,1.2))});ink(ln([500,128],[500,160],4),{w:4,seed:1710});ink(ln([440,150],[560,150],6),{w:5,seed:1711,pp:eo(pr(u,1,1.5))});ink(ell(440,172,22,8,12,0,Math.PI),{w:3,seed:1712,pp:eo(pr(u,1.2,1.7))});ink(ell(560,172,22,8,12,0,Math.PI),{w:3,seed:1713,pp:eo(pr(u,1.2,1.7))});etk('adliye',MX,640,eo(pr(u,1.3,1.9)),{size:46});"
+    },
+    {
+      "narration": "Bu seriyi kaçırmamak için şimdi abone ol.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(ell(MX,330,150,150,36),{close:true,fill:'#F6E3A8',w:6,seed:1800,pp:eo(pr(u,0,.7))});txt('ABONE OL',MX,350,80,{c:K.bordo,a:eo(pr(u,.5,1))});ink(ln([MX-60,500],[MX+60,500],10),{w:6,seed:1801,pp:eo(pr(u,.3,.9))});etk('serinin devamı için',MX,620,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "Çarşıda ise adalet gündelik bir meseleydi. Eksik tartan satıcı, müşteriyi aldatmış olurdu.",
+      "ifade": "dusunceli",
+      "cizim": "ink([[200,300],[800,300],[840,360],[160,360]],{close:true,fill:'#B5432F',w:5,seed:1900,pp:eo(pr(u,0,.6))});ink(kutu(220,360,560,40),{close:true,fill:'#C9A878',w:5,seed:1901,pp:eo(pr(u,.2,.8))});ink(ln([240,400],[240,560],10),{w:5,seed:1902,pp:eo(pr(u,.3,.8))});ink(ln([760,400],[760,560],10),{w:5,seed:1903,pp:eo(pr(u,.3,.8))});for(let i=0;i<3;i++)ink(ell(420+i*60,340+Math.sin(T*2+i)*0,24,24,14),{close:true,fill:'#B5432F',w:3,seed:1910+i,pp:eo(pr(u,.8+i*.1,1.4))});etk('çarşı tezgâhı',MX,640,eo(pr(u,1.2,1.8)),{size:46});"
+    },
+    {
+      "narration": "Osmanlı çarşılarında tartıları muhtesip denen bir görevli denetlerdi.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(ell(380,160,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:2000,pp:eo(pr(u,0,.6))});ink(ln([380,194],[380,310],8),{w:6,seed:2001,pp:eo(pr(u,0,.6))});ink(ln([380,310],[340,410],6),{w:5,seed:2002,pp:eo(pr(u,0,.6))});ink(ln([380,310],[420,410],6),{w:5,seed:2003,pp:eo(pr(u,0,.6))});ink(ln([380,310],[470,330],8),{w:5,seed:2010,pp:eo(pr(u,.5,1))});ink(kutu(480,320,170,40),{close:true,fill:'#C9A878',w:5,seed:2011,pp:eo(pr(u,.6,1.1))});ink(ell(560,300,30,26,16),{close:true,fill:'#CFC9B8',w:4,seed:2012,pp:eo(pr(u,.8,1.3))});etk('muhtesip',380,640,eo(pr(u,1.1,1.7)),{size:50});"
+    },
+    {
+      "narration": "Kaynaklara göre hileli tartan esnaf cezalandırılırdı. Güven, tezgâhtaki terazide başlardı.",
+      "ifade": "dusunceli",
+      "cizim": "const a=.13*eo(pr(u,.4,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:121,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:122,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:123,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:124});for(const [px,py,sd] of [[lx,ly,125],[rx,ry,126]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}for(let i=0;i<3;i++)ink(ell(lx-34+i*34,ly+128-(i%2)*14,17,17,14),{close:true,fill:'#B5432F',w:3,seed:204+i,pp:eo(pr(u,.8+i*.1,1.4))});ink(kutu(rx-17,ry+150-34,34,34),{close:true,fill:'#CFC9B8',w:4,seed:304,pp:eo(pr(u,.8,1.4))});ink(ln([380,300],[620,500],12),{w:10,c:K.bordo,seed:2101,pp:eo(pr(u,1.4,1.9))});ink(ln([620,300],[380,500],12),{w:10,c:K.bordo,seed:2102,pp:eo(pr(u,1.6,2.1))});etk('hileli tartı',500,665,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "Ölçü de bugünkü gibi değildi: bir okka, yaklaşık 1,3 kilogram ederdi.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(kutu(220,420,260,-150),{close:true,fill:'#EFE4CB',w:5,seed:1100,pp:eo(pr(u,.2,.8))});ink(kutu(520,420,260,-115),{close:true,fill:'#CFE0EA',w:5,seed:1101,pp:eo(pr(u,.6,1.2))});etk('1 okka',350,490,eo(pr(u,1,1.5)),{size:44});etk('1 kilogram',650,490,eo(pr(u,1.3,1.8)),{size:44});txt('≈ 1,3 kg',500,150,90,{c:K.ak,a:eo(pr(u,1.6,2.2))});"
+    },
+    {
+      "narration": "Yolcu tüccarlar kantarı sevdi: kısa kola mal asılır, uzun kolda küçük bir ağırlık kaydırılırdı.",
+      "ifade": "anlatiyor",
+      "cizim": "const bx=150,by=300,ex=860;ink(ln([bx,by],[ex,by-0*0],40),{w:9,seed:1310,pp:eo(pr(u,0,.7))});ink(ln([330,120],[330,by],12),{w:5,seed:1311,pp:eo(pr(u,0,.5))});ink(ell(330,110,22,22,16),{close:true,w:5,seed:1312});ink(ln([bx,by],[bx,by+100],8),{w:4,seed:1313,pp:eo(pr(u,.3,.8))});ink(ell(bx,by+150,60,50,24),{close:true,fill:'#C9A878',w:5,seed:1314,pp:eo(pr(u,.4,1))});for(let i=0;i<9;i++)ink(ln([420+i*50,by],[420+i*50,by+(i%2?24:38)],4),{w:3,seed:1320+i,pp:eo(pr(u,.5+i*.05,1.2))});{const p=420+(.2+.5*eo(pr(u,.6,2.2)))*400;ink(ln([p,by],[p,by+80],6),{w:4,seed:1315});ink(ell(p,by+110,28,32,18),{close:true,fill:'#8A8A92',w:5,seed:1316});}etk('ağırlığı kaydır',500,640,eo(pr(u,.8,1.4)),{size:48});",
+      "bolum": {
+        "no": "Bölüm III",
+        "ust": "Roma · 1770 · 1830",
+        "ad": "Kantar ve yay"
+      }
+    },
+    {
+      "narration": "Kantar kelimesi Türkçede hâlâ yaşıyor. Kapıdaki kantar tabelasını görünce çoğumuz bu hikâyeyi hiç düşünmeyiz.",
+      "ifade": "gulumsuyor",
+      "cizim": "const bx=150,by=300,ex=860;ink(ln([bx,by],[ex,by-0*0],40),{w:9,seed:1330,pp:eo(pr(u,0,.7))});ink(ln([330,120],[330,by],12),{w:5,seed:1331,pp:eo(pr(u,0,.5))});ink(ell(330,110,22,22,16),{close:true,w:5,seed:1332});ink(ln([bx,by],[bx,by+100],8),{w:4,seed:1333,pp:eo(pr(u,.3,.8))});ink(ell(bx,by+150,60,50,24),{close:true,fill:'#C9A878',w:5,seed:1334,pp:eo(pr(u,.4,1))});for(let i=0;i<9;i++)ink(ln([420+i*50,by],[420+i*50,by+(i%2?24:38)],4),{w:3,seed:1340+i,pp:eo(pr(u,.5+i*.05,1.2))});{const p=420+(.4)*400;ink(ln([p,by],[p,by+80],6),{w:4,seed:1335});ink(ell(p,by+110,28,32,18),{close:true,fill:'#8A8A92',w:5,seed:1336});}txt('KANTAR',500,110,70,{c:K.bordo,a:eo(pr(u,.3,.9))});"
+    },
+    {
+      "narration": "Sonra yaylı kantar geldi. Yük asılır, ibre cevabı hemen gösterirdi.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(ell(500,260,150,150,40),{close:true,fill:'#FBF6EA',w:7,seed:3100,pp:eo(pr(u,0,.7))});for(let i=0;i<9;i++){const a=Math.PI*(1+i/8);ink(ln([500+Math.cos(a)*120,260+Math.sin(a)*120],[500+Math.cos(a)*140,260+Math.sin(a)*140],3),{w:3,seed:3110+i,pp:eo(pr(u,.4,1))});}{const a=Math.PI*(1+.15+.6*eo(pr(u,.8,1.8)));ink(ln([500,260],[500+Math.cos(a)*115,260+Math.sin(a)*115],6),{w:6,c:K.bordo,seed:3120});}ink(ln([500,410],[500,520],8),{w:5,seed:3121,pp:eo(pr(u,.4,.9))});ink(ell(500,560,36,36,16),{close:true,fill:'#CFC9B8',w:5,seed:3122,pp:eo(pr(u,.8,1.3))});"
+    },
+    {
+      "narration": "1830'larda platform tartısıyla bir çuvalı, hatta bir arabayı tartmak kolaylaştı.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink(kutu(220,500,560,50),{close:true,fill:'#C9A878',w:6,seed:3300,pp:eo(pr(u,0,.5))});ink([[360,500],[380,380],[500,370],[540,500]],{close:true,fill:'#E6DBC4',w:6,seed:3301,pp:eo(pr(u,.4,1))});ink(ell(560,440,0,0,4),{w:1,seed:3302});ink(kutu(600,590,160,40),{close:true,fill:'#FBF6EA',w:4,seed:3303,pp:eo(pr(u,1,1.5))});txt('50',680,625,36,{a:eo(pr(u,1.3,1.8))});etk('çuval',440,330,eo(pr(u,.9,1.4)),{size:44});"
+    },
+    {
+      "narration": "Fransız Devrimi'nde metre ve kilogram doğdu. Amaç, her yerde aynı ölçüydü.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(150,200,700,70),{close:true,fill:'#EFE4CB',w:6,seed:3600,pp:eo(pr(u,0,.7))});for(let i=0;i<=14;i++)ink(ln([170+i*47,200],[170+i*47,i%5?232:250],4),{w:3,seed:3610+i,pp:eo(pr(u,.3+i*.03,1))});etk('metre',MX,330,eo(pr(u,.8,1.3)),{size:50});ink([[360,520],[400,380],[600,380],[640,520]],{close:true,fill:'#CFC9B8',w:6,seed:3650,pp:eo(pr(u,.8,1.4))});etk('kilogram',MX,600,eo(pr(u,1.3,1.9)),{size:50});",
+      "bolum": {
+        "no": "Bölüm IV",
+        "ust": "Paris · 1889-2019",
+        "ad": "Büyük K"
+      }
+    },
+    {
+      "narration": "Kilogram, bir litre suyun ağırlığına göre belirlendi.",
+      "ifade": "gulumsuyor",
+      "cizim": "ink([[500,180],[620,380],[500,500],[380,380]],{close:true,fill:'#CFE0EA',w:7,seed:3800,pp:eo(pr(u,0,.8))});ink(ell(500,400,120,110,32),{close:true,fill:'#CFE0EA',w:7,seed:3801,pp:eo(pr(u,.2,.9))});etk('1 gram',MX,420,eo(pr(u,.9,1.5)),{size:60,c:K.mavi});etk('suyun çocuğu',MX,640,eo(pr(u,1.4,2)),{size:46});"
+    },
+    {
+      "narration": "1889'da platin ve iridyumdan bir silindir seçildi. Adı Büyük K'ydı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(425,300,150,200),{close:true,fill:'#C9C9CE',w:5,seed:4000,pp:eo(pr(u,0,.7))});ink(ell(500,300,75,25,26),{close:true,fill:'#E6E6EA',w:5,seed:4001});ink(ell(500,500,75,25,26,0,Math.PI),{w:5,seed:4002});txt('1889',500,170,100,{c:K.ak,a:eo(pr(u,.5,1.1))});etk('platin ve iridyum',500,650,eo(pr(u,1,1.6)),{size:46});"
+    },
+    {
+      "narration": "Üç cam fanusun altında, kilitli bir kasada bekledi.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(435,260,130,180),{close:true,fill:'#C9C9CE',w:5,seed:4200,pp:eo(pr(u,0,.7))});ink(ell(500,260,65,21,26),{close:true,fill:'#E6E6EA',w:5,seed:4201});ink(ell(500,440,65,21,26,0,Math.PI),{w:5,seed:4202});txt('K',500,520,120,{c:K.bordo,a:eo(pr(u,.8,1.4))});etk('Büyük K',500,660,eo(pr(u,1,1.6)),{size:52});"
+    },
+    {
+      "narration": "Kopyaları yapılıp ülkelere dağıtıldı. Her ülkenin tartısı bu zincire bağlandı.",
+      "ifade": "anlatiyor",
+      "cizim": "ink(kutu(450,200,100,140),{close:true,fill:'#C9C9CE',w:5,seed:4300,pp:eo(pr(u,0,.7))});ink(ell(500,200,50,16,26),{close:true,fill:'#E6E6EA',w:5,seed:4301});ink(ell(500,340,50,16,26,0,Math.PI),{w:5,seed:4302});for(let k=0;k<4;k++){const x=180+k*215;ink(ln([500,360],[x,460],10),{w:3,c:K.ak,seed:4310+k,pp:eo(pr(u,.6+k*.2,1.2+k*.2))});ink(kutu(x-35,460,70,90),{close:true,fill:'#C9C9CE',w:5,seed:4320+k,pp:eo(pr(u,.8+k*.2,1.4+k*.2))});}etk('ülke kopyaları',500,650,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "Ama kopyalarıyla karşılaştırıldığında, aradaki küçük fark yıllar içinde büyüdü.",
+      "ifade": "merakli",
+      "cizim": "ink(kutu(370,250,120,170),{close:true,fill:'#C9C9CE',w:5,seed:4400,pp:eo(pr(u,0,.7))});ink(ell(430,250,60,20,26),{close:true,fill:'#E6E6EA',w:5,seed:4401});ink(ell(430,420,60,20,26,0,Math.PI),{w:5,seed:4402});txt('?',700,350,200,{c:K.ak,a:eo(pr(u,.6,1.2))});etk('çok küçük fark',500,650,eo(pr(u,1,1.6)),{size:46});"
+    },
+    {
+      "narration": "Büyük K değişirse, dünyadaki bütün kilogramlar da onunla birlikte oynardı.",
+      "ifade": "dusunceli",
+      "cizim": "for(let i=0;i<6;i++){const x=180+i*128,y=420+Math.sin(T*2+i)*14*eo(pr(u,.8,1.4));ink(kutu(x-34,y-60,68,80),{close:true,fill:'#CFC9B8',w:5,seed:4500+i,pp:eo(pr(u,i*.08,.6+i*.08))});}etk('hepsi birlikte oynar',MX,640,eo(pr(u,1.2,1.8)),{size:46});"
+    },
+    {
+      "narration": "2019'da kilogram silindirden alındı ve doğadaki bir sabite, Planck sabitine bağlandı.",
+      "ifade": "anlatiyor",
+      "cizim": "txt('2019',500,200,130,{c:K.ak,a:eo(pr(u,.2,.8))});txt('h',500,470,200,{c:K.bordo,a:eo(pr(u,.8,1.4))});etk('Planck sabiti',500,650,eo(pr(u,1.2,1.8)),{size:48});"
+    },
+    {
+      "narration": "Silindir yaklaşık 130 yıl görevini yaptı. Artık tarihî bir emanet.",
+      "ifade": "dusunceli",
+      "cizim": "ink(kutu(300,420,400,160),{close:true,fill:'#E6DBC4',w:6,seed:4700,pp:eo(pr(u,0,.6))});ink(kutu(330,250,340,170),{close:true,fill:'#DDEAF0',w:5,seed:4701,pp:eo(pr(u,.2,.8))});ink(kutu(465,310,70,90),{close:true,fill:'#C9C9CE',w:5,seed:4710,pp:eo(pr(u,.6,1.1))});ink(ell(500,310,35,11,26),{close:true,fill:'#E6E6EA',w:5,seed:4711});ink(ell(500,400,35,11,26,0,Math.PI),{w:5,seed:4712});txt('130 yıl',500,150,80,{c:K.ak,a:eo(pr(u,1,1.6))});"
+    },
+    {
+      "narration": "Bugün mutfaktaki tartının içinde yük hücresi denen küçük bir parça var.",
+      "ifade": "merakli",
+      "cizim": "ink(kutu(220,330,560,70),{close:true,fill:'#C9C9CE',w:7,seed:4900,pp:eo(pr(u,0,.7))});ink(ell(500,365,36,22,16),{close:true,w:4,seed:4901,pp:eo(pr(u,.4,1))});cizgiEtiket('yük hücresi',[500,330],[500,170],eo(pr(u,1,1.6)),{al:'center'});",
+      "bolum": {
+        "no": "Bölüm V",
+        "ust": "Bugün",
+        "ad": "Mutfaktaki tartı"
+      }
+    },
+    {
+      "narration": "Üstüne yük binince hafifçe bükülür. Bu bükülme ekranda grama dönüşür.",
+      "ifade": "dusunceli",
+      "cizim": "const bd=eo(pr(u,.6,1.6))*26;ink([[220,350],[360,350+bd*.5],[500,350+bd],[640,350+bd*.5],[780,350]],{w:16,c:'#8A8A92',seed:5000,pp:eo(pr(u,0,.5))});ok([500,200],[500,330+bd],{pp:eo(pr(u,.4,1)),c:K.ak,w:6,seed:5001});etk('çok az bükülür',MX,560,eo(pr(u,1.2,1.8)),{size:48});ink([[700,470],[740,440],[780,500],[820,440],[860,470]],{w:5,c:K.mavi,seed:5002,pp:eo(pr(u,1.6,2.2))});"
+    },
+    {
+      "narration": "Ama fikir hiç değişmedi: bilinen bir şeyle bilinmeyeni karşılaştırmak.",
+      "ifade": "dusunceli",
+      "cizim": "ink(kutu(180,300,260,160),{close:true,fill:'#EFE4CB',w:6,seed:5300,pp:eo(pr(u,0,.6))});ink(kutu(560,300,260,160),{close:true,fill:'#CFE0EA',w:6,seed:5301,pp:eo(pr(u,.5,1.1))});etk('bilinen',310,400,eo(pr(u,.8,1.3)),{size:50});etk('bilinmeyen',690,400,eo(pr(u,1.2,1.7)),{size:46});txt('≈',MX,420,110,{c:K.ak,a:eo(pr(u,1.5,2))});"
+    },
+    {
+      "narration": "Bakkalda, eczanede ve kuyumcuda terazi hâlâ güvenin ölçüsü.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=Math.sin(T*1.4)*.05*eo(pr(u,.6,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:131,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:132,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:133,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:134});for(const [px,py,sd] of [[lx,ly,135],[rx,ry,136]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}etk('bakkal · eczane · mücevher · laboratuvar',500,660,eo(pr(u,1,1.6)),{size:38});"
+    },
+    {
+      "narration": "Altın alırken ya da ilaç hazırlarken küçücük bir gram hatası bile önemlidir.",
+      "ifade": "dusunceli",
+      "cizim": "const a=.03*eo(pr(u,.6,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:141,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:142,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:143,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:144});for(const [px,py,sd] of [[lx,ly,145],[rx,ry,146]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}for(let i=0;i<3;i++)ink([[lx-30+i*28,ly+140],[lx-16+i*28,ly+110],[lx-2+i*28,ly+140]],{close:true,fill:'#E8B64A',w:4,seed:5600+i,pp:eo(pr(u,.8+i*.1,1.4))});ink(kutu(rx-18,ry+150-36,36,36),{close:true,fill:'#CFC9B8',w:4,seed:305,pp:eo(pr(u,.8,1.4))});etk('küçük hata, büyük fark',500,660,eo(pr(u,1,1.6)),{size:44});"
+    },
+    {
+      "narration": "İnsanlar dört bin yıldır aynı şeyi istedi: adil olanı ölçebilmek.",
+      "ifade": "gulumsuyor",
+      "cizim": "const a=Math.sin(T*1.4)*.05*eo(pr(u,.6,1.2)),cx=500,cy=250,Lg=250,lx=cx-Math.cos(a)*Lg,ly=cy-Math.sin(a)*Lg,rx=cx+Math.cos(a)*Lg,ry=cy+Math.sin(a)*Lg;ink(ln([cx,cy],[cx,570],10),{w:7,seed:161,pp:eo(pr(u,0,.5))});ink(ln([300,585],[700,585],12),{w:7,seed:162,pp:eo(pr(u,0,.5))});ink(ln([lx,ly],[rx,ry],14),{w:9,seed:163,pp:eo(pr(u,.1,.7))});ink(ell(cx,cy,14,14,14),{close:true,fill:K.ak,w:4,seed:164});for(const [px,py,sd] of [[lx,ly,165],[rx,ry,166]]){ink([[px,py],[px-85,py+150]],{w:3,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,py],[px+85,py+150]],{w:3,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,py+150,95,24,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd+20,pp:eo(pr(u,.4,1))});}for(let i=0;i<3;i++)ink(ell(lx-34+i*34,ly+128-(i%2)*14,17,17,14),{close:true,fill:'#B5432F',w:3,seed:206+i,pp:eo(pr(u,.8+i*.1,1.4))});ink(kutu(rx-30,ry+150-60,60,60),{close:true,fill:'#CFC9B8',w:4,seed:306,pp:eo(pr(u,.8,1.4))});etk('adil = ölçülebilir',500,660,eo(pr(u,1,1.6)),{size:50});"
+    },
+    {
+      "narration": "Sırada merdiven mi, tuğla mı? Yorumlara yaz; serinin devamı için abone ol ve beğen.",
+      "ifade": "merakli",
+      "cizim": "txt('?',MX,340,240,{c:K.ak,a:eo(pr(u,.2,.8))});etk('merdiven mi, tuğla mı?',MX,600,eo(pr(u,.8,1.3)),{size:50});"
+    }
+  ]
+}
