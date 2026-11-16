@@ -4,7 +4,7 @@
 // Sahne çizimleri senaryodaki `cizim` kodundan gelir (shared/cizim.js kiti); Nur Bey nurbey.js ile çizilir.
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
-  AbsoluteFill, continueRender, delayRender, Html5Audio, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig,
+  AbsoluteFill, continueRender, delayRender, Html5Audio, Img, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig,
 } from 'remotion';
 import { drawNurBey } from './nurbey.js';
 import { serif, serifReady } from './fonts.js';
@@ -270,8 +270,25 @@ export function Encyclopedia(props) {
       <Levha scene={scenes[i]} yer={yer} a={gecis} />
       {narration ? <Html5Audio src={staticFile(narration)} /> : null}
       {music ? <Html5Audio src={staticFile(music)} volume={musicVol} loop /> : null}
+      {props.sesEfekt === false ? null : sesler(scenes, portrait).map((e, k) => (
+        <Sequence key={k} from={Math.round(e.t * fps)} durationInFrames={Math.round(1.2 * fps)} layout="none">
+          <Html5Audio src={staticFile(`sfx/${e.ses}.wav`)} volume={e.vol} />
+        </Sequence>
+      ))}
     </AbsoluteFill>
   );
+}
+
+// Efektler: ilk karede kaydırmayı durduran tok vuruş + hızlı geçiş sesi; her yeni çizimde kalemin kâğıtta çizdiği ses;
+// ilk 15 sn'de (Shorts'ta her geçişte) hafif hızlı geçiş sesi. Konuşmanın altında kalacak seviyede.
+function sesler(scenes, portrait) {
+  const ev = [{ t: 0, ses: 'gum', vol: 0.55 }, { t: 0, ses: 'kilic-savurma', vol: 0.35 }];
+  scenes.forEach((s, i) => {
+    if (i === 0) return;
+    ev.push({ t: s.t0, ses: 'kalem', vol: 0.22 });
+    if (portrait || s.t0 < 15) ev.push({ t: Math.max(0, s.t0 - 0.12), ses: 'kilic-savurma', vol: 0.16 });
+  });
+  return ev;
 }
 
 // Kapak (1280x720): gece zemini, solda lamba ışığında Nur Bey, ortada kâğıt renginde çizim, sağda büyük yazı.

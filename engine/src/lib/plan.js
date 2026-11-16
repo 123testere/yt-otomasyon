@@ -82,7 +82,8 @@ function slotsFor(channel, dates, now) {
       targetWords: slot.type === 'short' ? hizliKelime(languageOf(resolveSettings(s))?.wpm ?? 115)
         : dizi ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : targetWords(s, slot.type),
       dil: resolveSettings(s).language,
-      ...(slot.type === 'short' ? { hizli: true } : {}),
+      // dongu: Shorts sonu veda etmez, ilk cümleye bağlanır (sözlü abone/beğen yok, ekrandaki kartta yazar)
+      ...(slot.type === 'short' ? { hizli: true, ...(s.shorts?.dongu ? { dongu: true } : {}) } : {}),
       // Haber kanalı: konu config/haberler-<akış>.json listesinden seçilir, kaynak bağlantısı zorunlu.
       ...(s.haberAkisi ? { haberAkisi: s.haberAkisi } : {}),
       ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.derleme ? { derleme: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),

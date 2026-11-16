@@ -367,11 +367,29 @@ const kelimeSay = (t) => String(t ?? '').trim().split(/\s+/).filter(Boolean).len
 
 // Hızlı Shorts (slot.hizli): 4-5 cümle, son cümlede abone/beğen çağrısı. Uzun video: anlatımda abone/beğen çağrısı.
 // Derleme (sahnesiz) ve duell (kendi kontrolü var) hariç.
+// İzleyiciyi ilk saniyede kaçıran açılışlar (selam, tanıtım, "biliyor muydunuz", "bugün … anlatacağım")
+const YASAK_ACILIS = /^(merhaba|selam|hoş ?geldin|iyi akşamlar|bugün (size|sizlere|sana|bu videoda)|bu videoda|biliyor muydunuz|biliyor musunuz|did you know|hello|hi everyone|hallo|today we)/i;
+const YASAK_CUMLE = /bugün[^.!?]{0,60}(anlatacağım|anlatıyorum|anlatacağız|konuşacağız|bakacağız)/i;
+
 export function cagriHatalari(job, slot) {
   if (job.format === 'duell' || !Array.isArray(job.scenes)) return [];
   const metinler = anlatimMetinleri(job).filter((m) => m.trim());
   if (!metinler.length) return [];
   const errors = [];
+  if (YASAK_ACILIS.test(metinler[0].trim())) errors.push('ilk cümle selam/tanıtım/"biliyor muydunuz" ile başlayamaz: doğrudan hikâyenin şaşırtıcı anından ya da sonuçtan başla');
+  const ilk3 = metinler.slice(0, 3).join(' ');
+  if (YASAK_CUMLE.test(ilk3)) errors.push('girişte "bugün … anlatacağım" gibi tanıtım cümlesi olmaz: anlatmaya doğrudan başla');
+  if (job.format === 'cizim' && job.type === 'long') {
+    const uzun = job.scenes.slice(0, 6).map((s, i) => [i, kelimeSay(s.narration)]).filter(([, n]) => n > 10);
+    if (uzun.length) errors.push(`ilk 15 sn'de görüntü 2-3 sn'de bir değişmeli: ilk 6 sahnenin her biri en fazla 10 kelime (uzun olanlar: ${uzun.map(([i, n]) => `sahne ${i + 1}: ${n}`).join(', ')})`);
+  }
+  if (job.type === 'short' && slot.hizli && slot.dongu) {
+    // Döngü: son cümle veda etmez; ekrandaki kartta abone/beğen zaten yazar
+    const cumle = metinler.reduce((n, m) => n + cumleSay(m), 0);
+    if (cumle < HIZLI_CUMLE.min || cumle > HIZLI_CUMLE.max) errors.push(`hızlı Shorts: anlatım ${cumle} cümle; 4-5 cümle olmalı`);
+    if (/abone|takip|beğen|subscri|follow/i.test(metinler.at(-1))) errors.push('döngülü Shorts: son cümle veda/çağrı içermez, ilk cümleye bağlanır (izleyici fark etmeden başa sarsın)');
+    return errors;
+  }
   if (job.type === 'short' && slot.hizli) {
     const cumle = metinler.reduce((n, m) => n + cumleSay(m), 0);
     if (cumle < HIZLI_CUMLE.min || cumle > HIZLI_CUMLE.max) {

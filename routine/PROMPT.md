@@ -41,10 +41,18 @@ Kanallar büyümüyordu; kullanıcı kararıyla (2026-11-13) **bütün Shorts'la
   - *Dizi, hikâye (Bölüm Bölüm kesit ve fragman):* 4-5 satır, en fazla 6 sahne, `"hiz": 1.2`. İlk sahnede `buyukYazi` bölümün sorusunu söyler ("KRAL ANLADI MI?"); çözüm = sorunun cevabına götüren 2-3 en gerilimli an; son satır çağrı + "cevabı/tamamı kanaldaki bölümde". Satırların en az %60'ı yine bölümden gelir.
   - *Flaggenduell:* başlık zaten soru; anlatım 55-95 kelime (7 bölümün her biri tek kısa cümle), `table` bölümü abone + beğen çağrısıyla biter.
 
+- **Döngülü Shorts (`needed.json` öğesinde `"dongu": true`, ör. Lamba Altında):** Son cümle veda etmez ve abone/beğen demez; **ilk cümleye bağlanır**, izleyici fark etmeden başa sarar (izlenme yüzdesi %100'ü geçer, video daha çok önerilir). Örnek: ilk cümle "Kurşun kalemin içinde tek gram kurşun yok." … son cümle "Peki o siyah iz nereden geliyor? Cevap şaşırtıcı:" → video başa döner. Abone/beğen çağrısı ekrandaki kapanış kartında yazılıdır. Doğrulayıcı son cümlede çağrı görürse reddeder.
+- **Ön gösterim Shorts (`clipOf` dolu):** Uzun videonun en inanılmaz anını anlat, sonucuna gelmeden kes: "asıl hikâye kanaldaki uzun videoda". Sistem açıklamaya ve sabit yoruma uzun videonun bağlantısını kendisi ekler.
+
+## İlk saniye (her videoda, doğrulayıcı kontrol eder)
+- İlk cümle **asla** "Merhaba", "Hoş geldiniz", "Bugün size/sizlere …", "Bu videoda …", "Biliyor muydunuz?" ile başlamaz; ilk 3 cümlede "bugün … anlatacağım" tanıtımı olmaz. Doğrudan hikâyenin şaşırtıcı anından ya da sonuçtan başla.
+- Uzun videoda **in medias res**: hikâyenin kırılma anından somut bir sahne (yıl, yer, kişi, eylem): "1960, Eskişehir. Cebinde parası olmayan bir adam fırının önünde duruyordu. Elindeki küçük kâğıt her şeyi değiştirecekti."
+- Çizim formatında uzun videonun **ilk 6 sahnesi en fazla 10 kelime**: görüntü ilk 15 saniyede 2-3 saniyede bir değişir.
+
 ## Abone ve beğeni çağrısı (her videoda)
 
 Abone ve beğeni artmıyordu; izleyiciyi açıkça yönlendiriyoruz. Doğrulayıcı çağrıyı kontrol eder.
-- **Shorts:** Son cümle kanalın dilinde, karakterin ağzından, hem **abone ol** hem **beğen** der ve bir neden verir: "Serinin devamı için abone ol ve beğen." / "Subscribe and like for the rest of the series." / "Abonniere und like für das nächste Duell!". Kalıbı her videoda biraz değiştir (devamı için, yarınki bölüm için, kaçırmamak için) ama iki kelime de geçsin.
+- **Shorts:** (döngülü Shorts hariç, yukarıya bak) Son cümle kanalın dilinde, karakterin ağzından, hem **abone ol** hem **beğen** der ve bir neden verir: "Serinin devamı için abone ol ve beğen." / "Subscribe and like for the rest of the series." / "Abonniere und like für das nächste Duell!". Kalıbı her videoda biraz değiştir (devamı için, yarınki bölüm için, kaçırmamak için) ama iki kelime de geçsin.
 - **Uzun videoya yönlendir:** Kanalın son 7 günde çıkmış ya da bugün çıkacak bir uzun videosu varsa (kesit, fragman ya da aynı konu), son cümle onu da söyler: "Tamamı kanaldaki uzun videoda; devamı için abone ol ve beğen." Açıklamanın ilk satırında da uzun videoya çağrı olsun (bağlantıyı motor ekler).
 - **Uzun video:** İki çağrı zorunlu: (1) ilk üçte birde, vaadi verdikten hemen sonra tek cümle ("Bu seriyi kaçırmamak için şimdi abone ol."), (2) kapanışta "serinin devamı için abone ol ve beğen" + sıradaki videonun konusu. Videonun başında çağrı yapma (ilk 30 saniye kanca içindir).
 - Yalvarma, uzun rica, "zile bas" listesi yok; tek kısa cümle. Yorum cevaplarında çağrı yapılmaz.
@@ -361,7 +369,8 @@ for (const [x, yil, ad, k] of [[300, '1841', 'Joseph Nason', 0], [700, '1857', '
 - `baslikKart`: Shorts'ta üstte, uzun videoda girişte duran iki satırlık başlık (her satır ≤22 karakter); ikinci satır lamba renginde vurgulanır. Merak uyandıran soru: `["Simidin ortası", "neden delik?"]`.
 - `kapanis` (Shorts, zorunlu; aşağıdaki "Yorum oylaması"na bak): Son sahnede çıkan seçmeli soru kartı: `{"soru": "Sırada hangisi olsun?", "a": "Saat", "b": "Petek"}` (a ve b ≤18, soru ≤30). Kartın altında "abone ol ve beğen" yazısı kendiliğinden çıkar. Son sahnenin anlatımı bu soruyu sorar ve abone + beğen çağrısını yapar; son sahneye çizim olarak `txt('?', MX, 420, 200, { c: K.ak })` yeter.
 - Uzun video: İlk sahneler **giriş**tir (gece zemininde, `baslikKart` başlığıyla). Her bölümün ilk sahnesine `"bolum": {"no": "Bölüm I", "ust": "1840'lar – 1870'ler", "ad": "Konuşamayan tel"}` yaz (ad ≤32). İlk sahnede `bolum` olmaz. 5-7 bölüm.
-- Uzun video kapağı: `thumbnailText` (2-3 kelime, ilk satır lamba renginde: "22 YIL YASAK"), `kapakAlt` (isteğe bağlı küçük italik satır: "İstanbul · 1886–1908") ve `kapakCizim`: **300 × 420** alanında, kalın çizgili (`w: 8`) tek nesne (ör. üstü çizili telefon). Kapakta çizim kendiliğinden kâğıt renginde çizilir.
+- Uzun video başlığı belgesel kalıbında olmaz ("Çamaşır Makinesi: … Nasıl Bitti?" ✗); izleyicinin günlük hayatına dokunan soru ya da zıtlık: "Bu Alet Olmasaydı Günde 8 Saat Çamaşır Yıkıyordunuz" ✓, "Terazi Neden Hiç Yalan Söylemez?" ✓.
+- Uzun video kapağı: `thumbnailText` (en fazla 3 kelime, merak: "ÖLÜMCÜL İCAT", "HAFTADA 1 GÜN"; ilk satır lamba renginde), `kapakAlt` (isteğe bağlı küçük italik satır: "İstanbul · 1886–1908") ve `kapakCizim`: **300 × 420** alanında, kalın çizgili (`w: 8`) tek nesne (ör. üstü çizili telefon). Kapakta çizim kendiliğinden kâğıt renginde çizilir.
 
 **Kesit Shorts'ta:** Kaynak uzun videonun sahnelerindeki `cizim` kodlarını aynen kopyalayabilirsin; alan ölçüsü aynıdır.
 

@@ -164,6 +164,16 @@ const SESLER = {
     for (let i = 0; i < x.length; i++) { const t = i / SR; x[i] *= Math.min(1, t * 2.5) * Math.max(0, 1 - t / 1.9) * (0.7 + 0.3 * Math.sin(t * 40 + Math.sin(t * 7) * 4)); }
     return ekle(x, tok(0.6, 70, 35, 0.15, r), 1.6, 0.7);
   },
+  'kalem': (r) => {
+    // Mürekkep kalemi kâğıtta: kısa, kesik çizgiler (yüksek frekanslı sürtünme)
+    const x = tampon(0.9);
+    for (let k = 0; k < 4; k++) {
+      const sn = 0.12 + r() * 0.16; const g = gurultu(Math.round(sn * SR), r); bantGecir(g, 2600 + r() * 1800, 2.5);
+      for (let i = 0; i < g.length; i++) { const t = i / g.length; g[i] *= Math.sin(t * Math.PI) * (0.6 + 0.4 * Math.sin(i / SR * 90)); }
+      ekle(x, g, k * 0.2 + r() * 0.05, 0.5 + r() * 0.5);
+    }
+    return x;
+  },
   // --- Ortam sesleri (döngü) ---
   'ortam-su': (r) => {
     const sn = 6.5; const x = gurultu(Math.round(sn * SR), r);
@@ -207,7 +217,7 @@ const SESLER = {
 };
 
 export const SFX_ADLARI = Object.keys(SESLER);
-const SURUM = 1; // ses tarifleri değişirse artır (eski dosyalar yeniden üretilir)
+const SURUM = 2; // ses tarifleri değişirse artır (eski dosyalar yeniden üretilir)
 
 export function sfxHazirla(dir) {
   fs.mkdirSync(dir, { recursive: true });

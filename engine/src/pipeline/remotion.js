@@ -104,6 +104,7 @@ export async function thumbnailWithRemotion({ jobId, background, text, badge, se
 
 // Çizim formatı (Lamba Altında): sahneler senaryodaki `cizim` kodundan çizilir (remotion/src/Encyclopedia.jsx).
 export async function renderEncyclopedia({ job, settings, fmt, narrated, images, music, dir }) {
+  sfxHazirla(path.join(DIR, 'public', 'sfx'));
   const stage = stager(job.id);
   try {
     const words = narrated.scenes.flatMap((s, i) => alignWords(job.scenes[i].narration, s.words))
