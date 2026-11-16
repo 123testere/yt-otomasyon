@@ -59,16 +59,19 @@ const musicLibrary = JSON.parse(fs.readFileSync(path.join(ROOT, 'shared', 'music
 const randomOf = (list) => list[Math.floor(Math.random() * list.length)];
 
 // Önce kullanıcının assets/music/<tür>/ klasörüne koyduğu parçalar; yoksa telifsiz kütüphaneden indirilir.
-export async function pickMusic(mood, dir) {
+// sabit: verilirse (ör. dizi adı) her seferinde aynı parça seçilir: dizinin kendi müziği gibi tanınır.
+const sabitSec = (list, anahtar) => { let h = 0; for (const c of String(anahtar)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return list[h % list.length]; };
+export async function pickMusic(mood, dir, sabit = null) {
   if (!mood || mood === 'yok') return null;
+  const sec = (list) => (sabit ? sabitSec(list, `${sabit}:${mood}`) : randomOf(list));
   const own = path.join(MUSIC_DIR, mood);
-  const tracks = fs.existsSync(own) ? fs.readdirSync(own).filter((f) => /\.(mp3|m4a|wav|ogg)$/i.test(f)) : [];
-  if (tracks.length) return { file: path.join(own, randomOf(tracks)), credit: null };
+  const tracks = fs.existsSync(own) ? fs.readdirSync(own).filter((f) => /\.(mp3|m4a|wav|ogg)$/i.test(f)).sort() : [];
+  if (tracks.length) return { file: path.join(own, sec(tracks)), credit: null };
 
   const titles = musicLibrary.moods[mood];
   if (!titles?.length) return null;
-  const title = randomOf(titles);
-  const file = path.join(dir, 'muzik.mp3');
+  const title = sec(titles);
+  const file = path.join(dir, sabit ? `muzik-${mood}.mp3` : 'muzik.mp3');
   try {
     await download(`${musicLibrary.source}${encodeURIComponent(title)}.mp3`, file, { timeoutMs: 120_000, minBytes: 100_000 });
   } catch (e) {

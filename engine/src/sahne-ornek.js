@@ -7,7 +7,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { diziYukle, ozelMekanlar } from './pipeline/build-dizi.js';
+import { diziYukle, ozelMekanlar, sahneMuzikleri } from './pipeline/build-dizi.js';
 import { renderDizi } from './pipeline/remotion.js';
 
 const KELIME_SN = 2.6;
@@ -41,9 +41,12 @@ const scenes = job.scenes.map((sc) => {
 });
 if (job.kapanis) { scenes.at(-1).d += KAPANIS_SN; t += KAPANIS_SN; }
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sahne-ornek-'));
+// Sahneye göre müzik (internet yoksa müziksiz devam eder); efekt ve ortam sesleri çizicide sahneden çıkarılır
+const { muzikler } = job.muzik === 'yok' ? { muzikler: [] } : await sahneMuzikleri(scenes, dizi, job.muzik ?? dizi.muzik ?? 'gizemli', dir);
+console.log('  müzik: ' + (muzikler.map((m) => m.mood + ' ' + Math.round(m.t0) + '-' + Math.round(m.t1) + ' sn').join(', ') || 'yok'));
 const yatay = !job.dikey && dizi.format === 'yatay';
 const video = await renderDizi({
-  job: { id: job.id }, dir, ses: { total: t, scenes, words, narration: null }, music: null, musicVolume: 0,
+  job: { id: job.id }, dir, ses: { total: t, scenes, words, narration: null }, music: null, muzikler, musicVolume: Number(job.muzikSeviye ?? dizi.muzikSeviye ?? 0.12),
   boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
   props: {
     dil: dizi.dil ?? 'tr', rozetNo: false, acilis: false, stil: dizi.stil ?? 'cop', dizi: { ad: dizi.ad }, bolum: job.bolum ?? {},

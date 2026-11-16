@@ -12,6 +12,7 @@ import { spellNumbersTr } from '../lib/numbers-tr.js';
 import { alignWords } from './subtitles.js';
 import { pickMusic } from './render.js';
 import { remotionStill, renderDizi } from './remotion.js';
+import { muzikBolumleri } from '../../../shared/ses-olaylari.js';
 import { elevenScene } from './elevenlabs.js';
 import { klonSatirlari, proportionalWords } from './clone.js';
 
@@ -33,6 +34,17 @@ export function ozelMekanlar(job) {
     if (sc.mekan && !out[sc.mekan] && fs.existsSync(f)) out[sc.mekan] = JSON.parse(fs.readFileSync(f, 'utf8')).kod;
   }
   return out;
+}
+
+// Sahneye göre müzik: bölümler (aynı ruh hali tek parça) ve her ruh hali için dizinin sabit parçası.
+// Döner: { muzikler: [{file, t0, t1, mood}], credits: [..] } — indirilemeyen ruh hali bölümün varsayılanına düşer.
+export async function sahneMuzikleri(scenes, dizi, varsayilan, dir) {
+  const bolumler = muzikBolumleri(scenes, varsayilan);
+  const parcalar = {};
+  for (const mood of [...new Set([...bolumler.map((b) => b.mood), varsayilan])]) parcalar[mood] = await pickMusic(mood, dir, dizi.id ?? dizi.ad);
+  const muzikler = bolumler.map((b) => ({ ...b, file: (parcalar[b.mood] ?? parcalar[varsayilan])?.file })).filter((b) => b.file);
+  const credits = [...new Set(Object.values(parcalar).map((p) => p?.credit).filter(Boolean))];
+  return { muzikler, credits };
 }
 
 export function diziYukle(id) {
@@ -279,13 +291,15 @@ export async function buildDizi(job, settings, { workDir }) {
   console.log('  seslendirme (karakter sesleri)…');
   const ses = await seslendir(job, dizi, dir);
   const muzik = job.muzik ?? dizi.muzik ?? (settings.music && settings.music !== 'yok' ? settings.music : 'gerilim');
-  const music = await pickMusic(muzik, dir);
+  const { muzikler, credits: muzikKredi } = await sahneMuzikleri(ses.scenes, dizi, muzik, dir);
+  const music = muzikler.length ? null : await pickMusic(muzik, dir);
+  console.log(`  müzik: ${muzikler.map((m) => `${m.mood} ${Math.round(m.t0)}-${Math.round(m.t1)} sn`).join(', ') || muzik}`);
   console.log(`  ${job.scenes.length} sahne, ${Math.round(ses.total)} sn — animasyon render (Remotion)…`);
   const no = job.bolum.no;
   const saat = (dizi.format === 'yatay' ? settings.long?.time : settings.shorts?.times?.[0]) ?? '19:00';
   const yatay = (job.format === 'dizi' && job.dikey) ? false : dizi.format === 'yatay';
   const videoPath = await renderDizi({
-    job, dir, ses, music, musicVolume: Number(job.muzikSeviye ?? dizi.muzikSeviye ?? settings.musicVolume ?? 0.12),
+    job, dir, ses, music, muzikler, musicVolume: Number(job.muzikSeviye ?? dizi.muzikSeviye ?? settings.musicVolume ?? 0.12),
     boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
     props: {
       dil: dizi.dil ?? 'tr', rozetNo: dizi.rozetNo !== false,
@@ -309,7 +323,7 @@ export async function buildDizi(job, settings, { workDir }) {
     }
   }
   fs.writeFileSync(path.join(dir, 'transkript.md'), tr.metin);
-  const credits = [music?.credit].filter(Boolean);
+  const credits = [...muzikKredi, music?.credit].filter(Boolean);
   return {
     videoPath, thumbnailPath, duration: ses.total, credits, sahneZaman: ses.scenes.map((s) => Math.round(s.t0 * 10) / 10),
     srt: diziSrt(ses), transkript: tr.metin, bolumlerMetni: tr.bolumler,

@@ -6,6 +6,7 @@ import { options, pick } from '../lib/options.js';
 import { ROOT } from '../lib/paths.js';
 import { probeDuration, run } from '../lib/util.js';
 import { alignWords } from './subtitles.js';
+import { sfxHazirla } from '../lib/sfx.js';
 
 const DIR = path.join(ROOT, 'remotion');
 const ENTRY = 'src/index.jsx';
@@ -156,13 +157,17 @@ export async function remotionStill(id, props, png, jobId) {
 }
 
 // Animasyonlu dizi bölümü (remotion/src/Dizi.jsx): mekân ve karakterler kodla çizilir.
-export async function renderDizi({ job, dir, ses, music, musicVolume, boyut = { width: 1080, height: 1920 }, props: extra }) {
+export async function renderDizi({ job, dir, ses, music, muzikler = null, musicVolume, boyut = { width: 1080, height: 1920 }, props: extra }) {
+  // Efekt sesleri (kodla üretilir, bir kez): remotion/public/sfx
+  sfxHazirla(path.join(DIR, 'public', 'sfx'));
   const stage = stager(job.id);
   try {
     const props = {
       fps: FPS, ...boyut, durationInFrames: Math.max(1, Math.round(ses.total * FPS)),
       scenes: ses.scenes, words: ses.words,
       narration: stage.add(ses.narration), music: stage.add(music?.file), musicVolume,
+      // Sahneye göre müzik bölümleri: [{ src, t0, t1 }]
+      muzikler: muzikler?.length ? muzikler.map((m) => ({ src: stage.add(m.file), t0: m.t0, t1: m.t1 })) : null,
       ...extra,
     };
     const propsFile = path.join(dir, 'remotion-props.json');

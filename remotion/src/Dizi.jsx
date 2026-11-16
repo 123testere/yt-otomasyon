@@ -6,7 +6,8 @@
 //   hareket: {x0, x1, sure, kos, bas (başlama sn)}, adimlar: [{sn, satir (o satırın başından sayılır), poz, x, yon, esya, ifade, sarsinti, darbe}] }
 // Sahne: gecit: {x, ac} (zindanda gizli geçit; ac saniyesinde açılır)
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { AbsoluteFill, continueRender, delayRender, Html5Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, continueRender, delayRender, Html5Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { sesOlaylari } from '../../shared/ses-olaylari.js';
 import { serif, serifReady } from './fonts.js';
 import { agizAcikligi, karakter, mekan } from '../../shared/dizi.js';
 import { cop } from '../../shared/cop.js';
@@ -611,11 +612,44 @@ export function Dizi(props) {
   }, [ready, frame, props, fns]);
   const musicVol = (f) => (musicVolume ?? 0.12) * interpolate(f, [0, 45, durationInFrames - 60, durationInFrames], [0, 1, 1, 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  // Temas sesleri ve ortam sesleri sahne verisinden (shared/ses-olaylari.js); sesEfekt: false ise kapalı
+  const olaylar = useMemo(() => (props.sesEfekt === false ? [] : sesOlaylari(scenes, props.karakterler ?? {})), [scenes, props.sesEfekt, props.karakterler]);
+  // Konuşma sırasında müzik kısılır (ducking): kelime zamanlarından konuşulan anlar
+  const konusma = useMemo(() => (props.words ?? []).map((w) => [w.t - 0.15, w.t + w.d + 0.25]), [props.words]);
+  const konusuyor = (sn) => { let lo = 0; let hi = konusma.length - 1; while (lo <= hi) { const m = (lo + hi) >> 1; if (konusma[m][1] < sn) lo = m + 1; else if (konusma[m][0] > sn) hi = m - 1; else return true; } return false; };
+  const sahneMuzikVol = (bas, sure) => (f) => {
+    const sn = bas + f / fps;
+    const fade = interpolate(f, [0, fps * 1.2, Math.max(fps * 1.2 + 1, sure * fps - fps * 1.2), sure * fps], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+    return (musicVolume ?? 0.12) * fade * (konusuyor(sn) ? 0.55 : 1);
+  };
+  const SFX = 0.6;
   return (
     <AbsoluteFill style={{ backgroundColor: RENK.gece }}>
       <canvas ref={ref} width={width} height={height} style={{ position: 'absolute', inset: 0 }} />
       {narration ? <Html5Audio src={staticFile(narration)} /> : null}
-      {music ? <Html5Audio src={staticFile(music)} volume={musicVol} loop /> : null}
+      {props.muzikler?.length
+        // Sahneye göre müzik: her bölüm kendi ruh halinin parçası, geçişlerde 1,2 sn yumuşak çapraz geçiş
+        ? props.muzikler.map((m, i) => {
+          const bas = Math.max(0, m.t0 - 0.6);
+          const sure = Math.min(durationInFrames / fps, m.t1 + 0.6) - bas;
+          return (
+            <Sequence key={`m${i}`} from={Math.round(bas * fps)} durationInFrames={Math.max(1, Math.round(sure * fps))} layout="none">
+              <Html5Audio src={staticFile(m.src)} volume={sahneMuzikVol(bas, sure)} loop />
+            </Sequence>
+          );
+        })
+        : music ? <Html5Audio src={staticFile(music)} volume={musicVol} loop /> : null}
+      {olaylar.map((e, i) => {
+        const kare = Math.max(1, Math.round((e.d ?? 2.4) * fps));
+        const vol = e.dongu
+          ? (f) => e.vol * interpolate(f, [0, 10, kare - 10, kare], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+          : e.vol * SFX;
+        return (
+          <Sequence key={`s${i}`} from={Math.round(e.t * fps)} durationInFrames={kare} layout="none">
+            <Html5Audio src={staticFile(`sfx/${e.ses}.wav`)} volume={vol} loop={Boolean(e.dongu)} />
+          </Sequence>
+        );
+      })}
       {sfx ? <Html5Audio src={staticFile(sfx)} volume={0.35} loop /> : null}
     </AbsoluteFill>
   );
