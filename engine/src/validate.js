@@ -308,6 +308,15 @@ export function usedTitles(channelId, excludeId) {
       } catch { /* bozuk dosya başlık kontrolünü engellemesin */ }
     }
   }
+  // Yeniden üretilen iş (yeniden-uret.js): kendi eski yüklemesinin başlığı "kullanılmış" sayılmaz
+  if (excludeId) {
+    for (const dir of [QUEUE_DIR, DONE_DIR]) {
+      const f = path.join(dir, `${excludeId}.json`);
+      if (!fs.existsSync(f)) continue;
+      try { titles.delete(normalizeTitle(JSON.parse(fs.readFileSync(f, 'utf8')).title)); } catch { /* yok say */ }
+      break;
+    }
+  }
   return titles;
 }
 
