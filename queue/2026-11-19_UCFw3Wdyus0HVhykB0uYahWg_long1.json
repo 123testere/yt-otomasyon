@@ -1,0 +1,1109 @@
+{
+  "id": "2026-11-19_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+  "type": "long",
+  "publishAt": "2026-11-19T15:00:00.000Z",
+  "format": "dizi",
+  "dizi": "zincirli",
+  "bolum": {
+    "no": 7,
+    "ad": "Su Kanalı"
+  },
+  "tanitim": [
+    "Zindandan kaçış",
+    "Su altından kaçış",
+    "Kapalı çıkış",
+    "Sabahki ilan"
+  ],
+  "title": "Kaçış Yolu Demir Parmaklıkla Bitti: Arın Neden Döndü? | Zincirli 7",
+  "titleAlt": "Zindanın Altındaki Kanaldan Kaçtılar, Sonra Geri Döndüler | Zincirli 7",
+  "description": "Zincirli 7. bölüm: Arın ve Kargan zindanın altındaki eski su kanalından kaçmaya çalışıyor, Toros muhafızları oyalıyor. Ama kanalın çıkışı demir parmaklıkla kapalı.\nSence Arın hocası Toros'a kılıç kaldıracak mı? Yorumlara yaz.\n\n#zincirli #animasyon #dizi #kaçış",
+  "tags": [
+    "zincirli",
+    "animasyon dizi",
+    "çöp adam animasyon",
+    "zindan kaçış",
+    "gladyatör hikayesi",
+    "türkçe animasyon",
+    "arena",
+    "kaçış gecesi",
+    "destan",
+    "bölüm bölüm"
+  ],
+  "topic": "Arın ve Kargan su kanalından kaçmaya çalışır, çıkış kapalıdır, Su için geri dönerler",
+  "thumbnailText": "ÇIKIŞ KAPALI",
+  "thumbnailTextAlt": "GERİ DÖNDÜ",
+  "thumbnailTextAlt2": "HOCASIYLA DÖVÜŞ?",
+  "kapak": {
+    "sahne": 10,
+    "sn": 1.4
+  },
+  "oynatmaListesi": "Zincirli · 1. Sezon",
+  "muzik": "gerilim",
+  "muzikSeviye": 0.1,
+  "kapanis": {
+    "baslik": "DEVAMI",
+    "sonraki": "Bölüm 8: Akıl Hocası — Hocasına kılıç kaldırır mı?",
+    "soru": "Sence Arın hocasıyla dövüşecek mi, yoksa kılıcını bırakacak mı?"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "The Escape Ended at an Iron Grate: Why Did Arin Turn Back? | Chained 7",
+      "description": "Chained episode 7: Arin and Kargan try to escape through the old water canal under the dungeon while Toros distracts the guards. But the canal's exit is sealed by an iron grate.\nWill Arin raise his sword against his own teacher? Tell us in the comments."
+    }
+  },
+  "scenes": [
+    {
+      "kisim": "Soğuk Açılış",
+      "mekan": "kanal",
+      "sure": 6,
+      "aciklama": "0-3 sn: Ay ışığı vuran demir parmaklığın önünde Arın ve Kargan iki elleriyle parmaklığı itiyor, kolları titriyor. 3-6 sn: iki kez daha yükleniyorlar (her yüklenişte sarsıntı), parmaklık yerinden kıpırdamıyor.",
+      "kadraj": [
+        {
+          "id": "kargan",
+          "x": 0.31,
+          "yon": -1,
+          "poz": "it",
+          "esya": null,
+          "ifade": "kizgin",
+          "arka": true
+        },
+        {
+          "id": "arin",
+          "x": 0.22,
+          "yon": -1,
+          "poz": "it",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.8,
+              "sarsinti": true
+            },
+            {
+              "satir": 1,
+              "sn": 1.8,
+              "sarsinti": true
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Dışarısı on adım ötedeydi. Ay ışığı yüzüme vuruyordu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Ama demir parmaklık, ikimiz birden itsek de yerinden kıpırdamadı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "O gece özgürlüğe hiç bu kadar yaklaşmamıştım."
+        }
+      ]
+    },
+    {
+      "kisim": "Kapak",
+      "kart": {
+        "ust": "BİRİNCİ KISIM",
+        "alt": "Kapak"
+      },
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6
+      },
+      "aciklama": "0-2 sn: ara kart. 2-4 sn: gece zindan; Toros fenerini zemindeki ahşap kapağa tutuyor. 4-8 sn: Arın ve Kargan kapağın iki yanında eğilip demir halkaya bakıyor.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.52,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "endiseli",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 1.2,
+              "poz": "egil"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 1.5,
+              "poz": "egil"
+            }
+          ]
+        },
+        {
+          "id": "toros",
+          "x": 0.86,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "fener",
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Bir gece önce. Toros'un feneri, zemindeki eski kapağı gösteriyordu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "On beş yıldır bu kapağı kimseye anlatmamıştı."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6,
+        "satir": 2,
+        "ac": 0.9,
+        "sure": 1.8
+      },
+      "aciklama": "0-2 sn: Toros kapağın ağır olduğunu söyler. 2-4 sn: Kargan \"iki kişi kaldırırız\" der. 4-5 sn: Arın ve Kargan çömelip parmaklarını kapağın kenarına geçirir. 5-7 sn: birlikte asılıp kaldırırlar, kapak arka kenarından ağır ağır dikilir, aşağıdan serin sis yükselir. 7-8 sn: doğrulurlar.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.52,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "endiseli",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0,
+              "poz": "kaldir",
+              "ifade": "kizgin"
+            },
+            {
+              "satir": 2,
+              "sn": 2.9,
+              "poz": "dur",
+              "ifade": "saskin"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0,
+              "poz": "kaldir"
+            },
+            {
+              "satir": 2,
+              "sn": 2.9,
+              "poz": "dur"
+            }
+          ]
+        },
+        {
+          "id": "toros",
+          "x": 0.86,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "fener",
+          "ifade": "dusunceli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Kapak ağırdır. Tek kişi kaldıramaz."
+        },
+        {
+          "kim": "kargan",
+          "metin": "O zaman iki kişi kaldırırız."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Parmaklarımızı kenara geçirdik ve birlikte asıldık."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6,
+        "ac": -5
+      },
+      "kapi": {
+        "x": 0.3
+      },
+      "aciklama": "0-3 sn: açık kapaktan serin sis yükselir, Arın ve Kargan aşağı bakar. 3-5 sn: Toros \"Ben gelemem\" der. 5-7 sn: Toros fenerini bırakmadan sola, ağır kapıya yürür ve sırtını değil iki elini kapıya dayayıp iter, kapıyı kapalı tutar.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.52,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "saskin"
+        },
+        {
+          "id": "kargan",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "endiseli"
+        },
+        {
+          "id": "toros",
+          "x": 0.86,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "fener",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 1.6,
+              "x": 0.41,
+              "sure": 1.6
+            },
+            {
+              "satir": 1,
+              "sn": 3.3,
+              "poz": "it",
+              "esya": null,
+              "ifade": "kizgin"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Aşağıdan serin bir rüzgâr yüzümüze vurdu. Kanal oradaydı."
+        },
+        {
+          "kim": "toros",
+          "metin": "Ben gelemem. Biri kapıyı tutmalı.",
+          "once": 0.3
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Toros'un kolları titriyordu ama kapı kıpırdamadı."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6,
+        "ac": -5
+      },
+      "kapi": {
+        "x": 0.3
+      },
+      "aciklama": "0-2 sn: Toros kapıyı iterek tutuyor, kapının ardından ayak sesleri. 2-4 sn: Arın Toros'a döner. 4-6 sn: Toros \"Gidin!\" der. 6-8 sn: Arın ve Kargan kapağın kenarına yürüyüp çömelir, aşağı inmeye hazırlanır.",
+      "kadraj": [
+        {
+          "id": "toros",
+          "x": 0.41,
+          "yon": -1,
+          "poz": "it",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "arin",
+          "x": 0.52,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "uzgun",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0.4,
+              "x": 0.55,
+              "sure": 0.6
+            },
+            {
+              "satir": 2,
+              "sn": 1.1,
+              "poz": "diz-cok"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "endiseli",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0.6,
+              "x": 0.66,
+              "sure": 0.6
+            },
+            {
+              "satir": 2,
+              "sn": 1.3,
+              "poz": "diz-cok"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "arin",
+          "metin": "Toros, seni burada bırakamayız."
+        },
+        {
+          "kim": "toros",
+          "metin": "Bırakırsınız. Ayak sesleri yaklaşıyor. Gidin!"
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kapağın kenarından aşağı sarktık."
+        }
+      ]
+    },
+    {
+      "kisim": "Aşağı",
+      "kart": {
+        "ust": "İKİNCİ KISIM",
+        "alt": "Aşağı"
+      },
+      "mekan": "merdiven",
+      "sure": 9,
+      "aciklama": "0-2 sn: ara kart. 2-8 sn: Arın elinde meşaleyle sağ üstten sol alta taş basamakları dikkatle iner, Kargan bir adım arkasından. 8-9 sn: Arın en altta durur, aşağıdaki su sesini dinler.",
+      "kadraj": [
+        {
+          "id": "kargan",
+          "x": 0.24,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "endiseli",
+          "hareket": {
+            "x0": 1.1,
+            "x1": 0.24,
+            "y0": -0.3209,
+            "y1": -0.0503,
+            "sure": 6,
+            "bas": 2.6,
+            "dogrusal": true
+          }
+        },
+        {
+          "id": "arin",
+          "x": 0.12,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "mesale",
+          "ifade": "endiseli",
+          "hareket": {
+            "x0": 0.98,
+            "x1": 0.12,
+            "y0": -0.2831,
+            "y1": -0.0126,
+            "sure": 6,
+            "bas": 2,
+            "dogrusal": true
+          }
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Basamaklar kaygandı. Her adımda aşağıdan gelen su sesi büyüyordu.",
+          "once": 2
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Meşalemin alevi her adımda eğiliyordu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bu kaçışı kaçırmamak için şimdi abone ol."
+        }
+      ]
+    },
+    {
+      "kisim": "Toros'un Oyunu",
+      "kart": {
+        "ust": "ÜÇÜNCÜ KISIM",
+        "alt": "Toros'un Oyunu"
+      },
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6
+      },
+      "kapi": {
+        "x": 0.3,
+        "satir": 1,
+        "ac": 0,
+        "sure": 1.2
+      },
+      "aciklama": "0-2 sn: ara kart. 2-4 sn: Toros kapağı kapatmış, üstüne çömelmiş. 4-6 sn: iki muhafız ağır kapıyı iterek açar, içeri yürür. 6-9 sn: Toros yaşlı ve hasta numarası yapar, sağ eliyle kuyuyu (soldaki kapıyı) gösterir. 9-11 sn: iki muhafız birbirine bakar, kapıdan koşarak çıkar.",
+      "kadraj": [
+        {
+          "id": "toros",
+          "x": 0.6,
+          "yon": -1,
+          "poz": "diz-cok",
+          "ifade": "uzgun",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0.3,
+              "poz": "isaret",
+              "ifade": "endiseli"
+            },
+            {
+              "satir": 3,
+              "sn": 1.6,
+              "poz": "diz-cok",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": -0.2,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.3,
+              "x": 0.44,
+              "sure": 1.1
+            },
+            {
+              "satir": 3,
+              "sn": 0.9,
+              "x": -0.25,
+              "sure": 1.1,
+              "kos": true
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": -0.25,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "supheli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.6,
+              "x": 0.33,
+              "sure": 1
+            },
+            {
+              "satir": 3,
+              "sn": 0.7,
+              "x": -0.3,
+              "sure": 1,
+              "kos": true
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Toros kapağı kapatıp üstüne çöktü."
+        },
+        {
+          "kim": "muhafiz",
+          "metin": "İhtiyar! Şampiyon nerede?",
+          "once": 0.6
+        },
+        {
+          "kim": "toros",
+          "metin": "Su istedi, kuyuya gitti. Yaşlı adama bir yudum su getirir misiniz?"
+        },
+        {
+          "kim": "anlatici",
+          "metin": "İki muhafız birbirine baktı ve kuyuya koştu."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6
+      },
+      "kapi": {
+        "x": 0.3,
+        "ac": -5
+      },
+      "aciklama": "0-4 sn: zindan boş; Toros kapağın üstünde çömelmiş, açık kapıya bakıp gülümser. 4-7 sn: başını kapağa eğer, aşağıyı dinler.",
+      "kadraj": [
+        {
+          "id": "toros",
+          "x": 0.6,
+          "yon": -1,
+          "poz": "diz-cok",
+          "ifade": "gulumsuyor",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.4,
+              "yon": 1,
+              "poz": "egil",
+              "ifade": "dusunceli"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "toros",
+          "metin": "Son kez kalkıp kalkmadığına bakar."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Toros onları yarım saat oyaladı. Biz o sırada kanalın dibine ulaştık."
+        }
+      ]
+    },
+    {
+      "kisim": "Parmaklık",
+      "kart": {
+        "ust": "DÖRDÜNCÜ KISIM",
+        "alt": "Parmaklık"
+      },
+      "mekan": "kanal",
+      "sure": 10,
+      "aciklama": "0-2 sn: ara kart. 2-8 sn: Arın elinde meşale, kanalın kenarındaki dar taş yoldan sağdan sola yürür; Kargan arkasından. 8-10 sn: Kargan ileriyi, ay ışığını gösterir.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.42,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "mesale",
+          "ifade": "endiseli",
+          "hareket": {
+            "x0": 1.12,
+            "x1": 0.42,
+            "sure": 5.5,
+            "bas": 2.2
+          }
+        },
+        {
+          "id": "kargan",
+          "x": 0.56,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "dusunceli",
+          "hareket": {
+            "x0": 1.25,
+            "x1": 0.56,
+            "sure": 5.5,
+            "bas": 2.6
+          },
+          "adimlar": [
+            {
+              "satir": 3,
+              "sn": 0.2,
+              "poz": "isaret",
+              "ifade": "saskin"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kanal, zindanın altından nehre akıyordu. Kenarındaki dar taşlardan yürüdük.",
+          "once": 2
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Meşalenin ışığı suyun üstünde titriyordu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Arkamızda kimse yoktu. Önümüzde yalnızca karanlık ve suyun sesi vardı."
+        },
+        {
+          "kim": "kargan",
+          "metin": "İleride ay ışığı var. Gördün mü?"
+        }
+      ]
+    },
+    {
+      "mekan": "kanal",
+      "aciklama": "0-1 sn: ikisi parmaklığa varır. 1-4 sn: birlikte omuz verip iterler; \"bir kez, iki kez, üç kez\" derken her seferinde yüklenirler (sarsıntı). 4-6 sn: Kargan geri çekilir, kilidin dışarıda olduğunu söyler.",
+      "kadraj": [
+        {
+          "id": "kargan",
+          "x": 0.31,
+          "yon": -1,
+          "poz": "it",
+          "esya": null,
+          "ifade": "kizgin",
+          "arka": true,
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0,
+              "poz": "dusun",
+              "ifade": "uzgun"
+            }
+          ]
+        },
+        {
+          "id": "arin",
+          "x": 0.22,
+          "yon": -1,
+          "poz": "it",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 1.3,
+              "sarsinti": true
+            },
+            {
+              "satir": 0,
+              "sn": 2,
+              "sarsinti": true
+            },
+            {
+              "satir": 0,
+              "sn": 2.7,
+              "sarsinti": true
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Parmaklığa omuz verdik. Bir kez, iki kez, üç kez."
+        },
+        {
+          "kim": "kargan",
+          "metin": "Yerinden oynamıyor. Kilidi dışarıda."
+        },
+        {
+          "kim": "kargan",
+          "metin": "Bunu ancak dışarıdan biri açabilir."
+        }
+      ]
+    },
+    {
+      "mekan": "kanal",
+      "aciklama": "0-2 sn: Kargan kılıcını çeker. 2-3 sn: kılıcı kaldırır ve parmaklığın kilidine indirir, kıvılcımlar suya saçılır. 3-5 sn: bir kez daha vurur (kıvılcım), demir yine yerinde; Arın geride bekler.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.46,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "endiseli"
+        },
+        {
+          "id": "kargan",
+          "x": 0.3,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 0.9,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "satir": 1,
+              "sn": 0,
+              "poz": "kilic-indir"
+            },
+            {
+              "satir": 1,
+              "sn": 0.15,
+              "darbe": true
+            },
+            {
+              "satir": 1,
+              "sn": 0.8,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "satir": 1,
+              "sn": 1.5,
+              "poz": "kilic-indir"
+            },
+            {
+              "satir": 1,
+              "sn": 1.65,
+              "darbe": true
+            },
+            {
+              "satir": 1,
+              "sn": 2.6,
+              "poz": "dur"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kargan",
+          "metin": "Bir de kılıçla deneyelim."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kıvılcımlar suya düştü. Demir yine de yerindeydi."
+        }
+      ]
+    },
+    {
+      "mekan": "kanal",
+      "aciklama": "0-4 sn: Arın parmaklığın arasından ay ışığına bakar, düşünür. 4-6 sn: Kargan'a döner, \"Ben dönüyorum\" der. 6-9 sn: Kargan şaşırır, Arın Su'yu söyler. 9-12 sn: Kargan omuz silker, \"Ben de dönerim\" der.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.28,
+          "yon": -1,
+          "poz": "dusun",
+          "ifade": "uzgun",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0,
+              "yon": 1,
+              "poz": "dur",
+              "ifade": "kizgin"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.5,
+          "yon": -1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0,
+              "ifade": "saskin"
+            },
+            {
+              "satir": 4,
+              "sn": 0,
+              "poz": "omuz",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Ay ışığına baktım ve Su'yu düşündüm. Kız kardeşim hâlâ saraydaydı."
+        },
+        {
+          "kim": "arin",
+          "metin": "Ben dönüyorum, Kargan."
+        },
+        {
+          "kim": "kargan",
+          "metin": "Neden?"
+        },
+        {
+          "kim": "arin",
+          "metin": "Su sarayda. Onsuz gitmem."
+        },
+        {
+          "kim": "kargan",
+          "metin": "O zaman ben de dönerim. Bu zincir ikimizi bağladı."
+        }
+      ]
+    },
+    {
+      "mekan": "merdiven",
+      "sure": 6.5,
+      "aciklama": "0-6 sn: Arın meşaleyle sol alttan sağ üste basamakları ağır ağır çıkar, Kargan arkasından. 6-6,5 sn: Arın en üstte durur.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.95,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "mesale",
+          "ifade": "uzgun",
+          "hareket": {
+            "x0": 0.1,
+            "x1": 0.95,
+            "y0": -0.0063,
+            "y1": -0.2737,
+            "sure": 5.8,
+            "dogrusal": true
+          }
+        },
+        {
+          "id": "kargan",
+          "x": 0.82,
+          "yon": 1,
+          "poz": "dur",
+          "esya": null,
+          "ifade": "dusunceli",
+          "hareket": {
+            "x0": -0.05,
+            "x1": 0.82,
+            "y0": 0.0409,
+            "y1": -0.2328,
+            "sure": 5.8,
+            "bas": 0.5,
+            "dogrusal": true
+          }
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Aynı basamakları bu kez yukarı çıktık. Her biri bir öncekinden ağırdı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kargan tek kelime etmedi. Sadece arkamdan yürüdü."
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6,
+        "ac": -5
+      },
+      "kapi": {
+        "x": 0.3,
+        "ac": -5
+      },
+      "aciklama": "0-2 sn: Arın ve Kargan açık kapağın kenarından çıkıp doğrulur. 2-4 sn: Toros ayağa kalkar, şaşkın. 4-7 sn: Toros neden döndüklerini sorar. 7-8 sn: Arın \"Su için\" der, Toros'un gözleri dolar.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.55,
+          "yon": 1,
+          "poz": "diz-cok",
+          "ifade": "uzgun",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 0.4,
+              "poz": "kalk"
+            },
+            {
+              "satir": 0,
+              "sn": 1.3,
+              "poz": "dur"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.66,
+          "yon": 1,
+          "poz": "diz-cok",
+          "esya": null,
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 0.7,
+              "poz": "kalk"
+            },
+            {
+              "satir": 0,
+              "sn": 1.6,
+              "poz": "dur"
+            }
+          ]
+        },
+        {
+          "id": "toros",
+          "x": 0.85,
+          "yon": -1,
+          "poz": "diz-cok",
+          "ifade": "saskin",
+          "adimlar": [
+            {
+              "satir": 0,
+              "sn": 1.2,
+              "poz": "kalk"
+            },
+            {
+              "satir": 0,
+              "sn": 2.1,
+              "poz": "dur"
+            },
+            {
+              "satir": 3,
+              "sn": 0.4,
+              "ifade": "uzgun"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Toros bizi görünce ayağa kalktı."
+        },
+        {
+          "kim": "toros",
+          "metin": "Yol açıktı. Neden döndünüz?"
+        },
+        {
+          "kim": "toros",
+          "metin": "Kapıyı sizin için tutmuştum."
+        },
+        {
+          "kim": "arin",
+          "metin": "Su için."
+        }
+      ]
+    },
+    {
+      "kisim": "Sabah",
+      "kart": {
+        "ust": "BEŞİNCİ KISIM",
+        "alt": "Sabah"
+      },
+      "mekan": "loca",
+      "kalabalik": 0.9,
+      "aciklama": "0-2 sn: ara kart. 2-5 sn: Kral Moran locada ayağa kalkıp kalabalığa sesleniyor, eliyle arenayı gösteriyor. 5-8 sn: Toros'un adını söyler; yanındaki Kara Sungur elleri belinde gülümser.",
+      "kadraj": [
+        {
+          "id": "kral",
+          "x": 0.45,
+          "yon": 1,
+          "poz": "isaret",
+          "ifade": "gulumsuyor",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.5,
+              "poz": "eller-belde"
+            }
+          ]
+        },
+        {
+          "id": "sungur",
+          "x": 0.72,
+          "yon": -1,
+          "poz": "eller-belde",
+          "ifade": "supheli",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0,
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "kral",
+          "metin": "Halkım! Yarın şampiyonum Arın yine arenada!"
+        },
+        {
+          "kim": "kral",
+          "metin": "Rakibi, ona kılıç tutmayı öğreten adam. Yaşlı Toros!"
+        },
+        {
+          "kim": "sungur",
+          "metin": "Hoca ile çırak. Kalabalık buna bayılacak."
+        },
+        {
+          "kim": "kral",
+          "metin": "Kim kalkarsa, o kazanır!"
+        }
+      ]
+    },
+    {
+      "mekan": "zindan",
+      "yerKapak": {
+        "x": 0.6
+      },
+      "aciklama": "0-3 sn: zindanda Arın ve Toros karşı karşıya, ilanı duymuşlar. 3-6 sn: Toros sakin, Arın'a yaklaşıp konuşur. 6-10 sn: Arın Toros'a bakar; son soru ekranda kalır.",
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.38,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "saskin",
+          "adimlar": [
+            {
+              "satir": 2,
+              "sn": 0,
+              "ifade": "uzgun"
+            }
+          ]
+        },
+        {
+          "id": "toros",
+          "x": 0.66,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0,
+              "x": 0.58,
+              "sure": 0.8
+            },
+            {
+              "satir": 1,
+              "sn": 0.9,
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Sabah ilan edildi. Toros yarın arenada benimle dövüşecekti."
+        },
+        {
+          "kim": "toros",
+          "metin": "Korkma evlat. Sana ne öğrettiysem onu yap."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Hocama kılıç kaldıracak mıyım? Serinin devamı için abone ol ve beğen."
+        }
+      ]
+    }
+  ]
+}

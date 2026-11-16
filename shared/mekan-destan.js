@@ -584,7 +584,6 @@ export function destanMekan(ctx, ad, o = {}) {
     if (zindan) {
       gizliGecit(ctx, W, H, u, o.gecit ?? { x: 0.42 });
       if (o.kapi) agirKapi(ctx, W, H, u, o.kapi);
-      if (o.yerKapak) yerKapagi(ctx, W, H, u, t, o.yerKapak);
       // Meşale ışığı ve parmaklık
       const tit = 0.85 + Math.sin(t * 9) * 0.07;
       const g = ctx.createRadialGradient(W * 0.15, H * 0.35, 10, W * 0.15, H * 0.35, W * 0.6);
@@ -604,6 +603,8 @@ export function destanMekan(ctx, ad, o = {}) {
       for (const fx of [0.12, 0.88]) { ctx.fillStyle = '#5A3A1E'; ctx.fillRect(W * fx - 16, yer - 220, 32, 220); ctx.fillRect(W * fx - 70, yer - 170, 140, 22); }
     }
     zemin(ctx, W, H, zindan ? '#1E1A1C' : '#C8B080', 0.74);
+    // Zemin kapağı zeminden sonra çizilir (yoksa zemin üstünü örter)
+    if (zindan && o.yerKapak) yerKapagi(ctx, W, H, u, t, o.yerKapak);
   } else if (ad === 'arena' || ad === 'loca') {
     gok(ctx, W, H, ['#5E9AD0', '#9AC4E4', '#DCE8EE'], 0.4);
     gunes(ctx, W * 0.5, H * 0.08, H * 0.05, '#FFF4D0');
