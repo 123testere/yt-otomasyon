@@ -13,6 +13,7 @@ import { alignWords } from './subtitles.js';
 import { pickMusic } from './render.js';
 import { remotionStill, renderDizi } from './remotion.js';
 import { muzikBolumleri } from '../../../shared/ses-olaylari.js';
+import { enAzTempo } from '../lib/hizli.js';
 import { elevenScene } from './elevenlabs.js';
 import { klonSatirlari, proportionalWords } from './clone.js';
 
@@ -115,7 +116,8 @@ export async function seslendir(job, dizi, dir) {
   // Shorts kesiti: açılış kartı yok (ilk saniyeden kanca), anlatım hızlandırılır (hiz), aralar kısalır.
   // Açılış kartı sadece açıkça istenirse (acilis: true): izleyici ilk saniyeden aksiyon ve ses görmeli.
   const acilis = job.acilis === true ? KART_SN : 0;
-  const hiz = job.hiz ?? 1;
+  // Hızlı konuşma kuralı: Shorts'ta en az 1,2, uzun bölümde en az 1,12 (senaryodaki hiz daha yüksekse o)
+  const hiz = Math.max(job.hiz ?? 1, enAzTempo(job.type));
   const [satirArasi, sahneArasi] = hiz > 1 ? [0.1, 0.18] : [SATIR_ARASI, SAHNE_ARASI];
   const parcalar = acilis ? [sessiz(path.join(dir, 'bas.wav'), acilis)] : [];
   let t = acilis;

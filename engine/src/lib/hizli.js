@@ -7,6 +7,9 @@
 
 export const HIZLI_SN = 24;
 export const HIZLI_TEMPO = 1.2; // Shorts'ta en az bu konuşma hızı
+export const UZUN_TEMPO = 1.12; // uzun videoda en az bu konuşma hızı (kullanıcı kararı 2026-11-16: her video hızlı)
+// Videonun türüne göre en düşük konuşma hızı (kanal daha hızlısını seçtiyse o geçerli)
+export const enAzTempo = (tip) => (tip === 'short' ? HIZLI_TEMPO : UZUN_TEMPO);
 export const HIZLI_CUMLE = { min: 4, max: 6 }; // 4-5 cümle; oylama sorusu ayrı cümleyse 6'ya kadar
 export const HIZLI_DIZI_HIZ = { min: 1.15, max: 1.3 };
 

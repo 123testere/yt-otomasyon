@@ -9,13 +9,14 @@ import os from 'node:os';
 import path from 'node:path';
 import { diziYukle, ozelMekanlar, sahneMuzikleri } from './pipeline/build-dizi.js';
 import { renderDizi } from './pipeline/remotion.js';
+import { enAzTempo } from './lib/hizli.js';
 
 const KELIME_SN = 2.6;
 const KAPANIS_SN = 3.2;
 const [file, out = path.join('..', 'ornek-videolar')] = process.argv.slice(2);
 const job = JSON.parse(fs.readFileSync(file, 'utf8'));
 const dizi = diziYukle(job.dizi);
-const hiz = job.hiz ?? 1;
+const hiz = job.scenes?.some((sc) => sc.satirlar?.length) ? Math.max(job.hiz ?? 1, enAzTempo(job.type ?? 'long')) : 1;
 let t = 0;
 const words = [];
 const scenes = job.scenes.map((sc) => {
