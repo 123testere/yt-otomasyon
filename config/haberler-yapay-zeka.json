@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-15T22:53:41.083Z",
+  "guncellendi": "2026-11-16T02:47:16.707Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Apple launches new app to study how people use AI for health",
+      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-16T01:30:00.000Z",
+      "ozet": "Apple's new app for a study will answer everyday medical questions",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apple’s new study looks to improve the effectiveness of AI health tools",
+      "link": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-16T01:26:56.000Z",
+      "ozet": "Apple announced a new study today with the goal of better understanding how people interact with conversational AI health tools and how useful their responses actually are. The company is conducting the Apple Health AI Usage Study in collaboration with OpenEvidence, a clinical AI platform used by healthcare professionals that generates answers based on medical […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-15T23:30:00.000Z",
+      "ozet": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "kullanildi": false
+    },
     {
       "baslik": "A step toward defining the Standard Model on a lattice",
       "link": "https://openai.com/index/step-toward-defining-the-standard-model",
@@ -105,7 +129,7 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-15T09:01:35.000Z",
       "ozet": "Yapay zeka önce belleği, şimdi de PCB’yi yutuyor. Her elektronik cihazın içindeki o yeşil kart kıtlaşıyor. PCB krizinin nedenini, güvenilirliğini ve olası ekonomik yansımalarını konuştuk.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Where was Nvidia’s security team?",
@@ -193,14 +217,6 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-14T10:00:00.000Z",
       "ozet": "Çin'de 3,2 milyar doları aşan yapay zeka yatırımları, ABD'nin Nvidia çiplerine yönelik ihracat kısıtlamaları nedeniyle belirsizliğe sürüklendi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Amazon has a plan to index the world’s online shopping data",
-      "link": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-13T23:49:11.000Z",
-      "ozet": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers leave Amazon to do their […]",
       "kullanildi": false
     }
   ]

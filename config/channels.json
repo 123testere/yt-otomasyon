@@ -156,6 +156,7 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "Can't Save a Single Dollar? 💰",
       "Stuck in a Job That Pays Too Little? 💰",
       "No Time for a Side Hustle After Work? 🧠",
       "10 Businesses You Can Start With Almost No Money 💰",
@@ -261,6 +262,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Toros'un Hücresi Neden Bomboştu? ⛓️",
       "Tek Gözlü Gladyatör Sungur'u Neden Terk Etti? | Zincirli 6",
       "Yarın Toros'un tek gözünün sırrı çıkıyor ⚔️",
       "Kız Kardeşi İçin Düşmeli mi? Zincirli Bölüm 3-5 Tek Parça",
@@ -377,6 +379,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Bilgisayarın Eski, Oyun mu Açılmıyor? 🎮",
       "Oyunlar Sana Hemen Mi Sıkıyor? 🎮",
       "Hikâyeli Tek Kişilik Oyun Bulamıyor musun? 🎮",
       "Tek Kişi ya da Küçük Ekip: Dünyayı Sallayan 10 Oyun 🎮",
@@ -517,6 +520,7 @@
       "baslangic": "2026-11-07T10:19:21.363Z"
     },
     "recentTitles": [
+      "Yapay Zekâ Devre Kartı Kıtlığı Yarattı: Zam Gelir mi? ⚡",
       "Eski Apple TV'ne Yapay Zekâlı Siri Geliyor mu? ⚡",
       "Yapay Zekâ Senin Yerine Telefonda Konuşuyor: Muse Ne Değiştirecek?",
       "ChatGPT Artık Senin Adına Alışveriş Yapabilecek 🤖",
@@ -658,6 +662,9 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Silgi Yazıyı Nasıl Siliyor? ✏️",
+      "Terazi Adaletin Simgesi Nasıl Oldu? Gramın Gizli Hikâyesi",
+      "Sabun Suyun Çıkaramadığı Yağı Nasıl Söküyor? 🧼",
       "Halat İnce Liflerden Nasıl Bu Kadar Güçlü Oluyor?",
       "Pusula Kuzeyi Nasıl Buluyor? 🧭",
       "Kaşık mı Çatal mı: Sofranın İlk Aleti Hangisi?",
@@ -975,6 +982,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 15/30: Wer erntet die meisten Sonnenblumenkerne? 🌻",
       "Duell 14/30: Wer erntet die meisten Kiwis? 🥝",
       "Duell 13/30: Wer erntet die meisten Mandeln? 🌰",
       "Duell 12/30: Wer erntet die meisten Pfirsiche? 🍑",
@@ -995,27 +1003,27 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 14,
+      "lastMatch": 15,
       "table": [
         {
           "name": "Türkei",
-          "points": 70
+          "points": 77
         },
         {
           "name": "Spanien",
-          "points": 65
+          "points": 66
+        },
+        {
+          "name": "Ukraine",
+          "points": 55
         },
         {
           "name": "Italien",
           "points": 52
         },
         {
-          "name": "Ukraine",
-          "points": 45
-        },
-        {
           "name": "Frankreich",
-          "points": 45
+          "points": 47
         },
         {
           "name": "Polen",
