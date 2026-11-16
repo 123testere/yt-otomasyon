@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-17_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-17T05:00:00.000Z",
+ "topic": "Sonnenblumenkerne",
+ "title": "Duell 15/30: Wer erntet die meisten Sonnenblumenkerne? 🌻",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Sonnenblumen-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "sonnenblumenkerne",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "ernte"
+ ],
+ "duell": {
+  "topicId": "sonnenblumen",
+  "why": [
+   "Riesige Ackerflächen",
+   "Fruchtbare Schwarzerde",
+   "Sonnige Sommer"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Sonnenblumenkerne? 46 Flaggen starten, nur eine kommt durch!",
+   "nodata": "20 Länder haben keine Daten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Ungarn verpasst das Finale um knapp 400 Tausend Tonnen!",
+   "final": "Finale! Die Ukraine gegen die Türkei!",
+   "winner": "Die Ukraine gewinnt mit knapp 11 Millionen Tonnen, fast fünfmal so viel wie die Türkei!",
+   "why": "Warum die Ukraine? Riesige Ackerflächen und fruchtbare Schwarzerde.",
+   "table": "Die Türkei führt mit 70 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "A"
+ }
+}

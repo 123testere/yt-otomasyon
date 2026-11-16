@@ -1,0 +1,73 @@
+{
+ "id": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-17T16:00:00.000Z",
+ "topic": "Silginin kurşun kalem izini nasıl sildiği",
+ "title": "Silgi Yazıyı Nasıl Siliyor? ✏️",
+ "description": "Eşyaların Hikayesi #54\nSilgi yazıyı nasıl siliyor? Kurşun kalem izi kâğıttaki grafit tanecikleridir; silgi onları koparıp kendine yapıştırır.\nBugün kanalda terazinin hikâyesini anlatan uzun video de var.\n\n#silgi #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "silgi",
+  "silgi nasıl siler",
+  "silgi tarihi",
+  "grafit",
+  "kurşun kalem",
+  "kauçuk",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Silgi yazıyı",
+  "nasıl siliyor?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Saat",
+  "b": "Takvim"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "How Does an Eraser Actually Erase? ✏️",
+   "description": "Story of Things #54\nHow does an eraser erase? Pencil marks are graphite particles stuck to the paper; the eraser pulls them off and holds them."
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Silgi yazıyı nasıl siliyor?",
+   "ifade": "merakli",
+   "cizim": "ink(ln([160,380],[840,380],24),{w:6,seed:11,pp:eo(pr(u,0,.9))});const x=840-eo(pr(u,.8,2.6))*420;ink(kutu(x-10,330,130,100),{close:true,fill:'#E9B8B0',w:6,seed:12,pp:eo(pr(u,.1,.7))});ink(kutu(x+120,330,40,100),{close:true,fill:'#C9A878',w:4,seed:13,pp:eo(pr(u,.1,.7))});etk('kurşun kalem izi',MX,200,eo(pr(u,.5,1.1)),{size:46});"
+  },
+  {
+   "narration": "Kurşun kalemin izi aslında kâğıda sıkışmış küçük grafit tanecikleridir.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(180,240,640,260),{close:true,fill:'#FBF6EA',w:6,seed:21,pp:eo(pr(u,0,.6))});for(let i=0;i<40;i++){const x=220+h(i)*560,y=270+h(i+50)*200;ctx.save();ctx.globalAlpha=eo(pr(u,.5+i*.02,1.3));ctx.beginPath();ctx.arc(x,y,4+h(i+9)*5,0,7);ctx.fillStyle=K.m;ctx.fill();ctx.restore();}etk('grafit taneleri',MX,590,eo(pr(u,1.2,1.8)),{size:46});"
+  },
+  {
+   "narration": "Silgi bu taneleri kâğıttan koparıp kendi yüzeyine yapıştırır.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(250,380,500,90),{close:true,fill:'#FBF6EA',w:5,seed:31,pp:eo(pr(u,0,.5))});ink(kutu(380,230,240,100),{close:true,fill:'#E9B8B0',w:6,seed:32,pp:eo(pr(u,.2,.8))});for(let i=0;i<6;i++){const ph=eo(pr(u,.8+i*.2,1.6+i*.2));ctx.save();ctx.beginPath();ctx.arc(330+i*70,370-ph*(i%2?60:100),7,0,7);ctx.fillStyle=K.m;ctx.fill();ctx.restore();}ok([MX,520],[MX,350],{pp:eo(pr(u,1.4,2)),c:K.ak,w:5,seed:33});etk('taneler silgiye yapışır',MX,600,eo(pr(u,1.6,2.2)),{size:44});"
+  },
+  {
+   "narration": "Silgi ufalanırken tanelerle birlikte dökülür; yazı yok olmaz, taşınır.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(380,200,240,100),{close:true,fill:'#E9B8B0',w:6,seed:41,pp:eo(pr(u,0,.6))});for(let i=0;i<9;i++){const ph=(T*.5+i*.13)%1,x=400+i*25+h(i)*20,y=320+ph*260;ctx.save();ctx.globalAlpha=1-ph*.6;ink(ell(x,y,9,6,10),{close:true,fill:'#9A9486',w:2.5,seed:50+i});ctx.restore();}ink(ln([200,610],[800,610],14),{w:4,seed:60,pp:eo(pr(u,.5,1.2))});etk('yazı yok olmaz, taşınır',MX,670,eo(pr(u,1.2,1.8)),{size:42});"
+  },
+  {
+   "narration": "1770 dolaylarında İngiltere'de kauçuk silgiler satılmaya başlayınca ekmek içi devri kapandı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(330,380,130,90,34),{close:true,fill:'#E6C98F',w:6,seed:71,pp:eo(pr(u,0,.7))});for(let i=0;i<7;i++)ink(ell(280+h(i)*100,350+h(i+9)*60,8,6,8),{w:2.5,seed:80+i,pp:eo(pr(u,.4,1))});const a=eo(pr(u,.9,1.5));ink(ln([200,290],[460,470],10),{w:9,c:K.bordo,seed:90,pp:a});ink(ln([460,290],[200,470],10),{w:9,c:K.bordo,seed:91,pp:a});etk('ekmek içi',330,560,eo(pr(u,.5,1)),{size:44});txt('1770',730,380,110,{c:K.ak,a:eo(pr(u,1.4,2))});etk('kauçuk silgi',730,470,eo(pr(u,1.8,2.4)),{size:44});"
+  },
+  {
+   "narration": "Sırada saat mi, takvim mi; yorumlara yaz, devamı için abone ol ve beğen.",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,360,240,{c:K.ak,a:eo(pr(u,.2,.8))});etk('saat mi, takvim mi?',MX,600,eo(pr(u,.8,1.3)),{size:50});"
+  }
+ ]
+}

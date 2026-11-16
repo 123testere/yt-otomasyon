@@ -1,0 +1,158 @@
+{
+ "id": "2026-11-17_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-17T16:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 8,
+  "ad": "Devre Kartı Kıtlığı"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/yapay-zeka-devre-karti-kitligi-elektronik-fiyatlari-artar-mi--212931",
+ "title": "Yapay Zekâ Devre Kartı Kıtlığı Yarattı: Zam Gelir mi? ⚡",
+ "description": "Yapay zekâ önce belleği, şimdi de elektronik cihazlardaki devre kartlarını (PCB) kıtlaştırıyor. Sence elektronik ürünlere zam gelir mi?\nKaynak: DonanımHaber https://www.donanimhaber.com/yapay-zeka-devre-karti-kitligi-elektronik-fiyatlari-artar-mi--212931\n\n#yapayzeka #pcb #elektronik #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "devre kartı",
+  "pcb kıtlığı",
+  "elektronik fiyatları",
+  "bellek",
+  "teknoloji haberleri"
+ ],
+ "topic": "Yapay zekâ talebinin devre kartı (PCB) kıtlığı yaratması",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "AI Is Causing a Circuit Board Shortage ⚡",
+   "description": "AI first swallowed memory chips, and now circuit boards (PCBs) are getting scarce too. Could electronics get pricier?\nSource: DonanımHaber\n\n#ai #pcb #electronics #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Elektronik ürünlere zam gelir mi?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "KART KITLIĞI",
+    "alt": "yapay zekâ yüzünden"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.6,
+      "sure": 1.2
+     },
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yapay zekâ önce belleği yuttu, şimdi sıra devre kartında."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "Yapay zekâ devre kartı kıtlığı yarattı: fiyatlar ne olacak?",
+    "kaynak": "DonanımHaber · 15 Kasım",
+    "maddeler": [
+     "Önce bellek kıtlaştı",
+     "Şimdi devre kartı (PCB)",
+     "Fiyatlar merak konusu"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "DonanımHaber'e göre yapay zekâ talebi devre kartlarını da kıtlaştırıyor."
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her elektronik cihazın içindeki o yeşil kart az bulunur hale geliyor."
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu durum elektronik fiyatlarına yansıyabilir; kesin konuşmak için henüz erken."
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen!"
+    }
+   ]
+  }
+ ]
+}

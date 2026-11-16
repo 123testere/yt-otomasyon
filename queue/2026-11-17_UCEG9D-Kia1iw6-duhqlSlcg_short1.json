@@ -1,0 +1,149 @@
+{
+ "id": "2026-11-17_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-17T05:00:00.000Z",
+ "bolum": {
+  "no": 10,
+  "ad": "Top 5"
+ },
+ "title": "Can't Save a Single Dollar? 💰",
+ "description": "Can't save a single dollar, no matter how hard you try? Here are three realistic fixes: wait 24 hours before non-essential buys, track your spending for a month, and automate a small transfer on payday. Results vary, so start small.\n\n#money #business #motivation #saving",
+ "tags": [
+  "how to save money",
+  "can't save money",
+  "saving tips",
+  "money habits",
+  "automate savings",
+  "budgeting",
+  "track spending",
+  "money tips"
+ ],
+ "topic": "Three realistic fixes for not being able to save money",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿No logras ahorrar ni un dólar? 💰",
+   "description": "¿No logras ahorrar ni un dólar, por mucho que lo intentes? Tres soluciones realistas: esperar 24 horas antes de compras no esenciales, registrar tus gastos durante un mes y automatizar una pequeña transferencia el día de pago.\n\n#dinero #ahorro #negocios #motivacion"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "CAN'T SAVE?",
+    "alt": "Not even one dollar"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Can't save a single dollar, no matter how hard you try?"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Wait 24 Hours Before Buying",
+    "tur": "Spending habit",
+    "maddeler": [
+     "Skip impulse buys",
+     "Sleep on it",
+     "Most urges fade"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: wait twenty-four hours before any non-essential purchase."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Track Every Expense",
+    "tur": "Money basics",
+    "maddeler": [
+     "Log spending a month",
+     "Find the leaks",
+     "Cut just one"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: track every expense for one month and spot the leaks."
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Automate Your Savings",
+    "tur": "Money system",
+    "maddeler": [
+     "Transfer on payday",
+     "Even five dollars",
+     "Out of sight"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "And number one: automate a small transfer to savings every payday, even five dollars."
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for the rest of the series, and comment your pick!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "id": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-17T07:00:00.000Z",
+ "topic": "Sabunun yağı suyla birlikte nasıl söktüğü",
+ "title": "Sabun Suyun Çıkaramadığı Yağı Nasıl Söküyor? 🧼",
+ "description": "Eşyaların Hikayesi #52\nSabun yağı nasıl söküyor? Molekülün bir ucu suyu, öbür ucu yağı sever; bilinen en eski sabun izleri yaklaşık 4800 yıl önce Babil'e uzanır.\n\n#sabun #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "sabun",
+  "sabun nasıl temizler",
+  "sabun tarihi",
+  "yağ ve su",
+  "molekül",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Yağ suyla çıkmaz,",
+  "sabun nasıl söküyor?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Bisiklet",
+  "b": "Fener"
+ },
+ "oylama": {
+  "kaynak": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "How Does Soap Remove the Grease Water Can't? 🧼",
+   "description": "Story of Things #52\nHow does soap remove grease? One end of the molecule loves water and the other loves oil; the oldest known traces of soap-making go back about 4,800 years to Babylon."
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Yağ suyla çıkmaz, ama sabun yaklaşık 4800 yıldır bunu başarıyor.",
+   "ifade": "merakli",
+   "cizim": "for(let i=0;i<5;i++){const y=300+i*60,q=[];for(let j=0;j<=20;j++)q.push([140+j*36,y+Math.sin(j*.7+T*2+i)*10]);ink(q,{w:3.4,c:K.mavi,seed:10+i,pp:eo(pr(u,i*.1,.8+i*.1))});}ink(ell(500,330,120,60,36),{close:true,fill:'#E8B64A',w:5,seed:3,pp:eo(pr(u,.3,1))});etk('yağ',500,340,eo(pr(u,.9,1.4)),{size:40});etk('su',830,600,eo(pr(u,.8,1.3)),{size:40,c:K.mavi});txt('4800 yıl',MX,140,84,{c:K.ak,a:eo(pr(u,1.2,1.8))});"
+  },
+  {
+   "narration": "Yorumlarda siz seçtiniz: sabunun sırrı molekülünün iki ucunda.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(300,300,400,200),{close:true,fill:'#EFE4CB',w:6,seed:21,pp:eo(pr(u,0,.7))});ink(kutu(340,340,320,120),{w:3,seed:22,pp:eo(pr(u,.4,1))});txt('SABUN',MX,430,70,{c:K.bordo,a:eo(pr(u,.8,1.4))});for(let k=0;k<3;k++){const ph=(T*.5+k*.33)%1;ctx.save();ctx.globalAlpha=(1-ph)*.8;ink(ell(380+k*120,260-ph*90,16+k*4,16+k*4,16),{w:3,c:K.mavi,seed:30+k});ctx.restore();}etk('iki uçlu molekül',MX,620,eo(pr(u,1.4,2)),{size:44});"
+  },
+  {
+   "narration": "Bir ucu suyu sever, öbür ucu yağı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(300,380,60,60,24),{close:true,fill:'#CFE0EA',w:5,seed:41,pp:eo(pr(u,0,.6))});const q=[];for(let i=0;i<=20;i++)q.push([360+i*22,380+Math.sin(i*.8+T*2)*14]);ink(q,{w:6,c:K.ak,seed:42,pp:eo(pr(u,.3,1))});cizgiEtiket('suyu sever',[300,330],[250,180],eo(pr(u,1,1.6)),{al:'center'});cizgiEtiket('yağı sever',[700,380],[740,180],eo(pr(u,1.8,2.4)),{al:'center'});"
+  },
+  {
+   "narration": "Yağı çevreleyip küçük damlalara böler, su da hepsini akıtıp götürür.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,340,70,70,30),{close:true,fill:'#E8B64A',w:5,seed:51,pp:eo(pr(u,0,.6))});for(let i=0;i<14;i++){const a=i/14*6.283+T*.4,cx=500+Math.cos(a)*115,cy=340+Math.sin(a)*115;ink(ell(cx,cy,13,13,12),{close:true,fill:'#CFE0EA',w:3,seed:60+i,pp:eo(pr(u,.4+i*.04,1.2))});ink(ln([cx,cy],[500+Math.cos(a)*85,340+Math.sin(a)*85],4),{w:3,c:K.ak,seed:80+i,pp:eo(pr(u,.4+i*.04,1.2))});}for(let k=0;k<5;k++){const ph=(T*.4+k*.2)%1;ink(ln([250+ph*400,560+k*14],[330+ph*400,560+k*14],5),{w:3,c:K.mavi,seed:100+k});}etk('su hepsini akıtır',MX,665,eo(pr(u,1.4,2)),{size:44});"
+  },
+  {
+   "narration": "Sırada bisiklet mi, fener mi; yorumlara yaz, devamı için abone ol ve beğen.",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,360,240,{c:K.ak,a:eo(pr(u,.2,.8))});etk('bisiklet mi, fener mi?',MX,600,eo(pr(u,.8,1.3)),{size:50});"
+  }
+ ]
+}

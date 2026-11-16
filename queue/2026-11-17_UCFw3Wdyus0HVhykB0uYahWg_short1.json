@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-17_UCFw3Wdyus0HVhykB0uYahWg_short1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "derivedFrom": "2026-11-16_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "bolum": {
+  "no": 6,
+  "ad": "Tek Göz"
+ },
+ "publishAt": "2026-11-17T09:00:00.000Z",
+ "muzik": "gizemli",
+ "muzikSeviye": 0.1,
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 6",
+  "soru": "Sence Toros neden zindanda kalıyor?"
+ },
+ "title": "Toros'un Hücresi Neden Bomboştu? ⛓️",
+ "description": "Toros'un hücresi neden bomboştu ve mum izleri nereye gidiyor? Cevabı Zincirli 6. bölümde, kanaldaki tam videoda.",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "gladyatör",
+  "toros",
+  "zindan",
+  "dizi"
+ ],
+ "topic": "Toros'un boş hücresi ve zindanın altındaki su kanalı",
+ "ceviriler": {
+  "en": {
+   "title": "Why Was Toros's Cell Empty? ⛓️",
+   "description": "Why was Toros's cell empty, and where do the candle marks lead? The answer is in Chained episode 6, the full video on the channel."
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "zindan",
+   "efektler": [
+    "titreyen-isik"
+   ],
+   "buyukYazi": {
+    "ust": "TOROS NEREDE?",
+    "alt": "Hücre bomboştu"
+   },
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli",
+     "esya": "fener"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros'un hücresi neden bomboştu?"
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "dusunceli",
+     "esya": "fener"
+    },
+    {
+     "id": "kargan",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kapının önünde taze bir mum izi vardı ve izler aşağı iniyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "esya": "fener"
+    },
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Bu zindanın altından eski bir su kanalı geçer, size anlatacağım."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "efektler": [
+    "agir-cekim"
+   ],
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "uzgun",
+     "esya": "fener"
+    },
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Geç kaldınız evlat, ben gelemem; biri kapıyı tutmalı."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cevabı kanaldaki bölümde; devamı için abone ol ve beğen."
+    }
+   ]
+  }
+ ]
+}
