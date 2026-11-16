@@ -99,6 +99,12 @@ function durum(k, u, varsayilanX, d, sc) {
   let x = k.x ?? varsayilanX;
   let onceX = x;
   let xT = -9;
+  // y: ayak hizasından dikey kayma (ekran yüksekliğinin oranı, eksi = yukarı; merdiven basamakları için)
+  let y = k.y ?? 0;
+  let onceY = y;
+  let mSure = 0.35; // adımdaki yer değişiminin süresi; 0,5 sn ve üstü yürüyerek (ya da koşarak) yapılır
+  let mKos = false;
+  let mYon = null;
   // onceki / gecisT: yumuşak poz geçişi için bir önceki poz ve değiştiği an (shared/cop.js → gecisliPoz)
   const st = { poz: k.poz, yon: k.yon, esya: k.esya, ifade: k.ifade, pozT: 0, onceki: null, gecisT: -9 };
   if (k.hareket) {
@@ -107,6 +113,8 @@ function durum(k, u, varsayilanX, d, sc) {
     const ilerle = eo(pr(u, bas, bas + yuruSure));
     x = k.hareket.x0 + (k.hareket.x1 - k.hareket.x0) * ilerle;
     onceX = x;
+    if (k.hareket.y0 !== undefined) { y = k.hareket.y0 + ((k.hareket.y1 ?? k.hareket.y0) - k.hareket.y0) * (k.hareket.dogrusal ? pr(u, bas, bas + yuruSure) : ilerle); onceY = y; }
+    if (k.hareket.dogrusal) { x = k.hareket.x0 + (k.hareket.x1 - k.hareket.x0) * pr(u, bas, bas + yuruSure); onceX = x; }
     if (u >= bas && ilerle < 1) st.poz = k.hareket.kos ? 'kos' : 'yuru';
     else if (u >= bas) { st.onceki = k.hareket.kos ? 'kos' : 'yuru'; st.gecisT = bas + yuruSure; } // yürüyüş bitti: duruşa yumuşak geçiş
     st.yon = st.yon ?? (Math.sign(k.hareket.x1 - k.hareket.x0) || 1);
@@ -119,16 +127,27 @@ function durum(k, u, varsayilanX, d, sc) {
   }).sort((a, b) => (a.sn ?? 0) - (b.sn ?? 0));
   for (const a of adimlar) {
     if (a.sn > u) break;
-    if (a.x !== undefined) { onceX = x; x = a.x; xT = a.sn; }
+    if (a.x !== undefined || a.y !== undefined) {
+      onceX = x; onceY = y; if (a.x !== undefined) x = a.x; if (a.y !== undefined) y = a.y; xT = a.sn;
+      mSure = a.sure ?? 0.35; mKos = Boolean(a.kos); mYon = a.yon ?? null;
+    }
     if (a.poz !== undefined && a.poz !== st.poz) { st.onceki = st.poz ?? 'dur'; st.gecisT = a.sn; st.poz = a.poz; st.pozT = a.sn; }
     if (a.yon !== undefined) st.yon = a.yon;
     if (a.esya !== undefined) st.esya = a.esya;
     if (a.ifade !== undefined) st.ifade = a.ifade;
     if (a.sarsinti || a.darbe) vurgu = { sn: a.sn, darbe: a.darbe };
   }
-  // Adımdaki yer değişimi 0,35 sn'de kayarak olur
-  const kay = eo(pr(u, xT, xT + 0.35));
+  // Adımdaki yer değişimi: kısa ise kayarak (0,35 sn), sure ≥ 0,5 ise yürüyerek/koşarak; yön gidilen tarafa döner
+  const yuruyerek = mSure >= 0.5;
+  const kay = yuruyerek ? pr(u, xT, xT + mSure) : eo(pr(u, xT, xT + mSure));
   st.x = onceX + (x - onceX) * kay;
+  st.y = onceY + (y - onceY) * kay;
+  if (yuruyerek && xT >= 0 && st.pozT <= xT) {
+    if (u >= xT && kay < 1) {
+      st.poz = mKos ? 'kos' : 'yuru';
+      if (mYon === null && x !== onceX) st.yon = Math.sign(x - onceX);
+    } else if (kay >= 1) { st.onceki = mKos ? 'kos' : 'yuru'; st.gecisT = xT + mSure; }
+  }
   st.vurgu = vurgu;
   return st;
 }
@@ -150,6 +169,11 @@ function nesneCiz(ctx, n, u, W, yer, s) {
     for (const [lw, c] of [[17, '#0C0A10'], [10, '#D8DCE2']]) { ctx.lineWidth = lw; ctx.strokeStyle = c; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(0, -20); ctx.lineTo(0, -190); ctx.stroke(); }
     ctx.lineWidth = 9; ctx.strokeStyle = '#6A4A1E'; ctx.beginPath(); ctx.moveTo(-26, -20); ctx.lineTo(26, -20); ctx.stroke();
     ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(0, -20); ctx.lineTo(0, 20); ctx.stroke();
+  } else if (n.tip === 'anahtar') {
+    ctx.rotate(-aci);
+    ctx.strokeStyle = '#0C0A10'; ctx.lineWidth = 9; ctx.beginPath(); ctx.arc(0, -14, 17, 0, Math.PI * 2); ctx.stroke();
+    ctx.strokeStyle = '#B8B0A0'; ctx.lineWidth = 5; ctx.beginPath(); ctx.arc(0, -14, 17, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = '#C8B070'; ctx.fillRect(10, -10, 40, 7); ctx.fillRect(40, -3, 6, 9);
   } else if (n.tip === 'kirik-kalkan' || n.tip === 'kalkan') {
     const kirik = n.tip === 'kirik-kalkan';
     ctx.fillStyle = '#7A4A26'; ctx.strokeStyle = '#0C0A10'; ctx.lineWidth = 7;
@@ -309,7 +333,7 @@ export function kare(ctx, p, t, dur, fns) {
   } else if (OYUN_MEKANLAR.includes(sc.mekan)) {
     oyunMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, veri: sc.veri });
   } else if (DESTAN_MEKANLAR.includes(sc.mekan)) {
-    destanMekan(ctx, sc.mekan, { W, H, t, u, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, gecit: sc.gecit });
+    destanMekan(ctx, sc.mekan, { W, H, t, u, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, gecit: sc.gecit, kapi: sc.kapi });
   } else {
     mekan(ctx, sc.mekan, { W, H, t, zaman: sc.zaman, efektler: ef, saat: sc.saat, kamera: u / Math.max(1, sc.d) });
   }
@@ -320,6 +344,13 @@ export function kare(ctx, p, t, dur, fns) {
   const yer = yatay ? H * 0.84 : 1430;
   const olcek = yatay ? (H / 1080) * 0.86 : 1.3;
   for (const n of sc.nesneler ?? []) nesneCiz(ctx, n, uc, W, yer, olcek);
+  // Duvar halkaları (duvarZincir: [{id, x, y, sn, bitis}]): zincir karakterin elinden duvardaki halkaya
+  for (const dz of sc.duvarZincir ?? []) {
+    const [rx, ry] = [dz.x * W, dz.y * H];
+    ctx.lineWidth = 12 * olcek; ctx.strokeStyle = '#0C0A10'; ctx.beginPath(); ctx.arc(rx, ry + 14 * olcek, 20 * olcek, 0, Math.PI * 2); ctx.stroke();
+    ctx.lineWidth = 7 * olcek; ctx.strokeStyle = '#6A6670'; ctx.stroke();
+    ctx.fillStyle = '#3A363C'; ctx.fillRect(rx - 16 * olcek, ry - 12 * olcek, 32 * olcek, 22 * olcek);
+  }
   const eller = {};
   const ellerArka = {};
   const elJ = [];
@@ -348,7 +379,7 @@ export function kare(ctx, p, t, dur, fns) {
       const yon = st.yon ?? (st.x < 0.5 ? 1 : -1);
       const arka = k.arka ? 0.82 : 1;
       const r = cop(ctx, def, {
-        x: st.x * W, y: yer - (k.arka ? 46 * olcek : 0), s: (k.olcek ?? 1) * olcek * arka * (sc.cizim ? 0.75 : 1), yon, t: tc, konusuyor: konus,
+        x: st.x * W, y: yer + (st.y ?? 0) * H - (k.arka ? 46 * olcek : 0), s: (k.olcek ?? 1) * olcek * arka * (sc.cizim ? 0.75 : 1), yon, t: tc, konusuyor: konus,
         poz, pozU, gecis, ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr', agiz,
         solgun: Math.max(solgun, k.arka ? 0.35 : 0), seed: (def.seed ?? j + 1) + kopya * 2.37, esya: st.esya,
       });
@@ -364,6 +395,30 @@ export function kare(ctx, p, t, dur, fns) {
       ifade: satir?.ifade ?? k.ifade ?? 'notr', bakis: k.bakis ?? (kadraj.length > 1 ? 0.5 : 0), agiz, solgun, seed: def.seed ?? j + 1,
     });
   });
+  // Duvar zinciri: takıldığı (sn) ve anahtarla açıldığı (bitis) anda küçük bir metal kıvılcımı
+  for (const dz of sc.duvarZincir ?? []) {
+    const el = eller[dz.id];
+    if (!el) continue;
+    const [rx, ry] = [dz.x * W, dz.y * H + 14 * olcek];
+    const bas = dz.sn ?? 0;
+    const son = dz.bitis ?? 1e9;
+    if (uc >= bas && uc < son) {
+      const n = 12;
+      ctx.lineWidth = 5 * olcek; ctx.strokeStyle = '#9A9AA4';
+      for (let q = 0; q <= n; q++) {
+        const cx = el[0] + ((rx - el[0]) * q) / n;
+        const cy = el[1] + ((ry - el[1]) * q) / n + Math.sin((q / n) * Math.PI) * 40 * olcek;
+        ctx.beginPath(); ctx.ellipse(cx, cy, 11 * olcek, 7 * olcek, q % 2 ? 0 : Math.PI / 2, 0, Math.PI * 2); ctx.stroke();
+      }
+    }
+    for (const [an, px, py] of [[bas, rx, ry], [son, el[0], el[1]]]) {
+      const g = uc - an;
+      if (g < 0 || g > 0.25) continue;
+      ctx.save(); ctx.globalAlpha = 1 - g / 0.25; ctx.strokeStyle = '#FFF2C0'; ctx.lineWidth = 3;
+      for (let q = 0; q < 8; q++) { const a = q * 0.785; const r0 = 6 + g * 120; ctx.beginPath(); ctx.moveTo(px + Math.cos(a) * r0, py + Math.sin(a) * r0); ctx.lineTo(px + Math.cos(a) * (r0 + 22), py + Math.sin(a) * (r0 + 22)); ctx.stroke(); }
+      ctx.restore();
+    }
+  }
   // Darbe anında çarpma kıvılcımı: vuran karakterin kılıç ucunda (eli + kılıç yönü) beyaz-sarı yıldız
   durumlar.forEach((d, j) => {
     const v = d.vurgu;

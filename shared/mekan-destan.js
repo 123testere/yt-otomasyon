@@ -3,7 +3,7 @@
 import { h } from './dizi.js';
 import { eo, pr } from './cizim.js';
 
-export const DESTAN_MEKANLAR = ['koy-gunduz', 'koy-yangin', 'kervan', 'tas-ocagi', 'zindan', 'avlu', 'arena', 'loca'];
+export const DESTAN_MEKANLAR = ['koy-gunduz', 'koy-yangin', 'kervan', 'tas-ocagi', 'zindan', 'avlu', 'arena', 'loca', 'merdiven', 'mahzen'];
 
 const rgba = (c, a) => {
   const n = parseInt(c.slice(1), 16);
@@ -112,6 +112,252 @@ function sancak(ctx, x, y, renk, t, seed) {
   ctx.closePath(); ctx.fill();
 }
 
+// --- Ortak ayrıntılar -------------------------------------------------------------------------------------
+// Düzensiz taş/tuğla duvar: sıralar halinde, her taş biraz farklı ton; harç çizgisi, üst kenar ışık, alt kenar gölge
+function tasDuvar(ctx, x0, y0, x1, y1, { boy = 56, en = 110, renk = [52, 46, 44], oyna = 14, seed = 1 } = {}) {
+  let sira = 0;
+  for (let y = y0; y < y1; y += boy, sira++) {
+    let x = x0 - h(sira * 7.1 + seed) * en;
+    for (let k = 0; x < x1; k++) {
+      const w = en * (0.7 + h(sira * 31 + k * 3.7 + seed) * 0.6);
+      const v = (h(sira * 13 + k * 5.3 + seed) - 0.5) * oyna * 2;
+      ctx.fillStyle = `rgb(${renk[0] + v},${renk[1] + v},${renk[2] + v * 0.9})`;
+      ctx.fillRect(x + 2, y + 2, w - 4, boy - 4);
+      ctx.fillStyle = 'rgba(255,240,220,.06)'; ctx.fillRect(x + 2, y + 2, w - 4, 4);
+      ctx.fillStyle = 'rgba(0,0,0,.28)'; ctx.fillRect(x + 2, y + boy - 7, w - 4, 5);
+      x += w;
+    }
+  }
+}
+
+// Duvar meşalesi: demir tutamak, sopa, titreyen alev ve çevresine sıcak ışık
+function mesale(ctx, x, y, t, s = 1, seed = 1) {
+  const tit = 0.85 + Math.sin(t * 9 + seed) * 0.08 + Math.sin(t * 23 + seed * 3) * 0.04;
+  const g = ctx.createRadialGradient(x, y - 30 * s, 8, x, y - 30 * s, 420 * s);
+  g.addColorStop(0, `rgba(255,170,80,${0.42 * tit})`); g.addColorStop(1, 'rgba(255,170,80,0)');
+  ctx.fillStyle = g; ctx.fillRect(x - 420 * s, y - 450 * s, 840 * s, 840 * s);
+  ctx.fillStyle = '#1A1614'; ctx.fillRect(x - 18 * s, y + 30 * s, 36 * s, 10 * s); ctx.fillRect(x - 4 * s, y + 10 * s, 8 * s, 30 * s);
+  ctx.fillStyle = '#4A3020'; ctx.beginPath(); ctx.moveTo(x - 9 * s, y - 20 * s); ctx.lineTo(x + 9 * s, y - 20 * s); ctx.lineTo(x + 5 * s, y + 34 * s); ctx.lineTo(x - 5 * s, y + 34 * s); ctx.closePath(); ctx.fill();
+  for (const [r, c] of [[1, '#D8501A'], [0.68, '#F5A030'], [0.36, '#FFF0B0']]) {
+    const hh = 62 * s * r * tit;
+    ctx.fillStyle = c; ctx.beginPath(); ctx.moveTo(x - 16 * s * r, y - 20 * s);
+    ctx.quadraticCurveTo(x - 14 * s * r, y - 20 * s - hh * 0.7, x + Math.sin(t * 7 + seed) * 6 * s, y - 20 * s - hh);
+    ctx.quadraticCurveTo(x + 14 * s * r, y - 20 * s - hh * 0.6, x + 16 * s * r, y - 20 * s); ctx.closePath(); ctx.fill();
+  }
+}
+
+function tozZerresi(ctx, x0, y0, w, hh, t, renk = '255,220,170', n = 28) {
+  for (let i = 0; i < n; i++) {
+    const x = x0 + ((h(i) * w + t * 12 * (h(i * 3) - 0.5)) % w + w) % w;
+    const y = y0 + ((h(i * 2) * hh - t * 8 * (0.5 + h(i * 5))) % hh + hh) % hh;
+    ctx.fillStyle = `rgba(${renk},${0.25 + 0.35 * h(i * 7)})`; ctx.fillRect(x, y, 3, 3);
+  }
+}
+
+// Ağır ahşap kapı (taş kemerde). Kendiliğinden açılmaz: k.ac anında itilmeye başlanır, k.sure saniyede ağır ağır açılır.
+// Menteşe solda; açıldıkça kanat daralır, kenarı görünür, arkadan aşağı inen merdivenin ışığı sızar.
+function agirKapi(ctx, W, H, u, k) {
+  const gw = W * 0.14;
+  const alt = H * 0.74;
+  const ust = alt - H * 0.46;
+  const gx = W * (k.x ?? 0.24) - gw / 2;
+  const ham = k.ac === undefined ? 0 : pr(u, k.ac, k.ac + (k.sure ?? 1.8));
+  const p = ham * ham * (3 - 2 * ham);
+  const kemer = (pad) => { ctx.beginPath(); ctx.moveTo(gx - pad, alt); ctx.lineTo(gx - pad, ust + gw / 2); ctx.arc(gx + gw / 2, ust + gw / 2, gw / 2 + pad, Math.PI, 0); ctx.lineTo(gx + gw + pad, alt); ctx.closePath(); };
+  // Taş çerçeve: kemer taşları ve yan bloklar
+  ctx.fillStyle = '#5A524C'; kemer(30); ctx.fill();
+  ctx.strokeStyle = 'rgba(0,0,0,.5)'; ctx.lineWidth = 3;
+  for (let i = 0; i <= 8; i++) {
+    const a = Math.PI + (i / 8) * Math.PI;
+    const [cx, cy, r] = [gx + gw / 2, ust + gw / 2, gw / 2];
+    ctx.beginPath(); ctx.moveTo(cx + Math.cos(a) * r, cy + Math.sin(a) * r); ctx.lineTo(cx + Math.cos(a) * (r + 30), cy + Math.sin(a) * (r + 30)); ctx.stroke();
+  }
+  for (let y = ust + gw / 2; y < alt; y += 52) { for (const x of [gx - 30, gx + gw]) { ctx.strokeRect(x, y, 30, 52); } }
+  // İç: karanlık, sola aşağı inen basamaklar, aşağıdan soğuk ışık
+  ctx.save(); kemer(0); ctx.clip();
+  const ig = ctx.createLinearGradient(0, ust, 0, alt);
+  ig.addColorStop(0, '#040507'); ig.addColorStop(1, '#141820');
+  ctx.fillStyle = ig; ctx.fillRect(gx, ust, gw, alt - ust);
+  for (let s = 0; s < 6; s++) {
+    ctx.fillStyle = `rgba(90,90,100,${0.55 - s * 0.08})`;
+    ctx.fillRect(gx + gw * (0.15 + s * 0.06), alt - H * 0.03 * (s + 1), gw * 0.85, H * 0.012);
+  }
+  const mg = ctx.createRadialGradient(gx + gw * 0.2, alt, 4, gx + gw * 0.2, alt, gw);
+  mg.addColorStop(0, 'rgba(120,160,220,.35)'); mg.addColorStop(1, 'rgba(120,160,220,0)');
+  ctx.fillStyle = mg; ctx.fillRect(gx, ust, gw, alt - ust);
+  // Kanat
+  const acik = Math.cos(p * 1.42);
+  const dw = gw * acik;
+  ctx.fillStyle = '#5E3E24'; ctx.fillRect(gx, ust, dw, alt - ust);
+  ctx.strokeStyle = 'rgba(0,0,0,.45)'; ctx.lineWidth = 3;
+  for (let i = 1; i < 5; i++) { ctx.beginPath(); ctx.moveTo(gx + (dw * i) / 5, ust); ctx.lineTo(gx + (dw * i) / 5, alt); ctx.stroke(); }
+  for (let i = 0; i < 5; i++) { ctx.fillStyle = 'rgba(255,220,170,.05)'; ctx.fillRect(gx + (dw * i) / 5 + 3, ust, 6 * acik, alt - ust); }
+  for (const fy of [0.3, 0.75]) {
+    const by = ust + (alt - ust) * fy;
+    ctx.fillStyle = '#2A2626'; ctx.fillRect(gx, by, dw, 16);
+    ctx.fillStyle = '#6A6266'; for (let i = 0; i < 6; i++) { ctx.beginPath(); ctx.arc(gx + 10 + (dw - 20) * (i / 5), by + 8, 3.5, 0, Math.PI * 2); ctx.fill(); }
+  }
+  // Halka tokmak ve kilit
+  if (acik > 0.25) {
+    const hx = gx + dw * 0.84; const hy = ust + (alt - ust) * 0.52;
+    ctx.strokeStyle = '#1A1616'; ctx.lineWidth = 7; ctx.beginPath(); ctx.arc(hx, hy + 18, 16 * acik, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = '#2A2626'; ctx.fillRect(hx - 9 * acik, hy - 6, 18 * acik, 18); ctx.fillStyle = '#000'; ctx.fillRect(hx - 2, hy + 40, 4, 12);
+  }
+  ctx.fillStyle = `rgba(0,0,0,${0.55 * p})`; ctx.fillRect(gx, ust, dw, alt - ust);
+  if (p > 0) { ctx.fillStyle = '#8A6640'; ctx.fillRect(gx + dw, ust, 16 * Math.sin(p * 1.42), alt - ust); }
+  ctx.restore();
+  // Açılırken eşikte kalkan toz
+  if (p > 0.02 && p < 1) {
+    for (let i = 0; i < 16; i++) {
+      const r = 26 + h(i) * 50; const x = gx + h(i * 2) * gw; const y = alt - h(i * 5) * 30;
+      const dg = ctx.createRadialGradient(x, y, 2, x, y, r);
+      dg.addColorStop(0, `rgba(170,160,140,${0.3 * (1 - p)})`); dg.addColorStop(1, 'rgba(170,160,140,0)');
+      ctx.fillStyle = dg; ctx.fillRect(x - r, y - r, r * 2, r * 2);
+    }
+  }
+}
+
+// Taş merdiven: sağ üstten sol alta iner. Karakterler hareket.y ile basamak çizgisini izler:
+// y = -0,28 × (x − 0,08) / 0,89  (x: 0,08 sol alt, 0,97 sağ üst)
+export const merdivenY = (x) => -0.28 * (x - 0.08) / 0.89;
+function merdivenMekan(ctx, W, H, t) {
+  const ayak = W > H ? H * 0.84 : H * 0.745;
+  const A = [W * 0.97, ayak - H * 0.28];
+  const B = [W * 0.08, ayak];
+  ctx.fillStyle = '#1E1A19'; ctx.fillRect(0, 0, W, H);
+  tasDuvar(ctx, 0, 0, W, H, { boy: 58, en: 120, renk: [50, 45, 43], seed: 3 });
+  // Tavan karanlığı
+  const tg = ctx.createLinearGradient(0, 0, 0, H * 0.35);
+  tg.addColorStop(0, 'rgba(0,0,0,.75)'); tg.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = tg; ctx.fillRect(0, 0, W, H * 0.35);
+  // Üstteki kapıdan (zindan) sıcak ışık, aşağıdan (mahzen) soğuk ışık
+  const ust = ctx.createRadialGradient(W, A[1] - H * 0.2, 10, W, A[1] - H * 0.2, W * 0.45);
+  ust.addColorStop(0, 'rgba(255,170,90,.35)'); ust.addColorStop(1, 'rgba(255,170,90,0)');
+  ctx.fillStyle = ust; ctx.fillRect(0, 0, W, H);
+  const alt = ctx.createRadialGradient(0, ayak, 10, 0, ayak, W * 0.4);
+  alt.addColorStop(0, 'rgba(110,150,210,.3)'); alt.addColorStop(1, 'rgba(110,150,210,0)');
+  ctx.fillStyle = alt; ctx.fillRect(0, 0, W, H);
+  // Basamaklar
+  const n = 16;
+  const dx = (A[0] - B[0]) / n;
+  const dy = (B[1] - A[1]) / n;
+  ctx.beginPath(); ctx.moveTo(W, A[1]); ctx.lineTo(A[0], A[1]);
+  for (let i = 0; i < n; i++) { const x = A[0] - dx * i; const y = A[1] + dy * i; ctx.lineTo(x - dx, y); ctx.lineTo(x - dx, y + dy); }
+  ctx.lineTo(0, B[1]); ctx.lineTo(0, H); ctx.lineTo(W, H); ctx.closePath();
+  ctx.fillStyle = '#3A3430'; ctx.fill();
+  // Merdiven gövdesindeki taş sıraları (önden görünen yüz)
+  ctx.save(); ctx.clip();
+  ctx.strokeStyle = 'rgba(0,0,0,.3)'; ctx.lineWidth = 3;
+  for (let y = A[1]; y < H; y += 48) for (let x = (Math.floor(y / 48) % 2) * 60; x < W; x += 120) ctx.strokeRect(x, y, 120, 48);
+  ctx.restore();
+  for (let i = 0; i < n; i++) {
+    const x = A[0] - dx * (i + 1); const y = A[1] + dy * i;
+    ctx.fillStyle = '#6A625A'; ctx.fillRect(x, y - 2, dx, 9); // basamağın üst yüzü (aşınmış, açık)
+    ctx.fillStyle = 'rgba(255,230,200,.12)'; ctx.fillRect(x + dx * 0.15, y - 2, dx * 0.5, 3);
+    ctx.fillStyle = '#2A2522'; ctx.fillRect(x - 2, y + 7, 6, dy - 7); // rıht gölgesi
+  }
+  // Alt sahanlık
+  ctx.fillStyle = '#4A4440'; ctx.fillRect(0, B[1] - 2, B[0], 9);
+  // Korkuluk halatı ve demir halkalar
+  const ly = (x) => A[1] + ((A[0] - x) / (A[0] - B[0])) * (B[1] - A[1]) - H * 0.27;
+  ctx.strokeStyle = '#6A4E30'; ctx.lineWidth = 7; ctx.lineCap = 'round';
+  const kaz = [0.12, 0.34, 0.56, 0.78, 0.96].map((f) => W * f);
+  for (let i = 0; i < kaz.length - 1; i++) {
+    ctx.beginPath(); ctx.moveTo(kaz[i], ly(kaz[i])); ctx.quadraticCurveTo((kaz[i] + kaz[i + 1]) / 2, (ly(kaz[i]) + ly(kaz[i + 1])) / 2 + 30, kaz[i + 1], ly(kaz[i + 1])); ctx.stroke();
+  }
+  for (const x of kaz) { ctx.strokeStyle = '#2A2626'; ctx.lineWidth = 6; ctx.beginPath(); ctx.arc(x, ly(x) - 6, 11, 0, Math.PI * 2); ctx.stroke(); }
+  // Meşaleler duvarda, basamak hizasının üstünde
+  for (const [f, sd] of [[0.3, 1], [0.72, 2]]) mesale(ctx, W * f, ly(W * f) - H * 0.17, t, H / 1080, sd);
+  // Yosun ve su izi
+  ctx.fillStyle = 'rgba(70,95,60,.35)';
+  for (let i = 0; i < 14; i++) { ctx.beginPath(); ctx.ellipse(h(i) * W, ly(h(i) * W) + H * 0.2 + h(i * 3) * 30, 30 + h(i * 2) * 40, 8, 0, 0, Math.PI * 2); ctx.fill(); }
+  tozZerresi(ctx, W * 0.55, A[1] - H * 0.45, W * 0.45, H * 0.5, t);
+}
+
+// Mahzen: tuğla tonozlar, şarap rafı, fıçı yığını, yerde akan su kanalı, sallanan fener, ortadaki kemerden çıkış ışığı.
+function mahzenMekan(ctx, W, H, t) {
+  const zy = W > H ? H * 0.7 : H * 0.62;
+  ctx.fillStyle = '#1C1614'; ctx.fillRect(0, 0, W, H);
+  tasDuvar(ctx, 0, 0, W, zy, { boy: 30, en: 72, renk: [74, 46, 36], oyna: 12, seed: 9 });
+  // Üç kemerli bölme ve aralarındaki kalın sütunlar
+  const kemerler = [[0.04, 0.32], [0.36, 0.64], [0.68, 0.96]];
+  kemerler.forEach(([a, b], i) => {
+    const x0 = W * a; const x1 = W * b; const r = (x1 - x0) / 2; const cx = x0 + r; const top = zy - H * 0.5;
+    ctx.save();
+    ctx.beginPath(); ctx.moveTo(x0, zy); ctx.lineTo(x0, top + r); ctx.arc(cx, top + r, r, Math.PI, 0); ctx.lineTo(x1, zy); ctx.closePath();
+    ctx.fillStyle = i === 1 ? '#0E0C10' : '#140F0D'; ctx.fill(); ctx.clip();
+    if (i === 1) {
+      // Çıkış: uzakta, soğuk mavi-beyaz ışıklı küçük kemer ve ışık hüzmesi
+      const er = r * 0.32; const ex = cx; const ey = zy - H * 0.06;
+      const g = ctx.createRadialGradient(ex, ey - er, 4, ex, ey - er, r * 1.4);
+      g.addColorStop(0, 'rgba(200,225,255,.6)'); g.addColorStop(1, 'rgba(200,225,255,0)');
+      ctx.fillStyle = g; ctx.fillRect(x0, top, x1 - x0, zy - top);
+      ctx.fillStyle = '#D8E6F4'; ctx.beginPath(); ctx.moveTo(ex - er, ey); ctx.lineTo(ex - er, ey - er * 1.6); ctx.arc(ex, ey - er * 1.6, er, Math.PI, 0); ctx.lineTo(ex + er, ey); ctx.closePath(); ctx.fill();
+      for (let k = 0; k < 4; k++) { ctx.fillStyle = 'rgba(60,60,70,.5)'; ctx.fillRect(ex - er * (1.4 + k * 0.5), ey + k * 10, er * (2.8 + k), 6); }
+    } else if (i === 0) {
+      // Şarap rafı: ahşap ızgara ve şişe dipleri
+      ctx.fillStyle = '#3A2414'; ctx.fillRect(x0 + r * 0.25, top + r * 0.6, r * 1.5, zy - top - r * 0.6);
+      for (let yy = 0; yy < 7; yy++) for (let xx = 0; xx < 6; xx++) {
+        const bx = x0 + r * 0.38 + xx * r * 0.25; const by = top + r * 0.75 + yy * (zy - top - r * 0.8) / 7;
+        ctx.fillStyle = h(xx * 7 + yy) < 0.82 ? '#1C3A22' : '#2A1A10'; ctx.beginPath(); ctx.arc(bx, by, r * 0.085, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = 'rgba(200,230,200,.25)'; ctx.fillRect(bx - 3, by - 6, 4, 4);
+      }
+    } else {
+      // Fıçı yığını: alt sıra 3, üst sıra 2; çemberler ve tıpalar
+      const fr = r * 0.3;
+      const fici = (fx, fy) => {
+        ctx.fillStyle = '#6A4426'; ctx.beginPath(); ctx.ellipse(fx, fy, fr, fr * 1.05, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.strokeStyle = '#2A1A10'; ctx.lineWidth = 4; ctx.stroke();
+        ctx.strokeStyle = '#3A3638'; ctx.lineWidth = 6; ctx.beginPath(); ctx.ellipse(fx, fy, fr * 0.72, fr * 0.76, 0, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = '#8A6040'; ctx.beginPath(); ctx.ellipse(fx, fy, fr * 0.5, fr * 0.52, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = '#2A1A10'; ctx.beginPath(); ctx.arc(fx, fy + fr * 0.25, 5, 0, Math.PI * 2); ctx.fill();
+      };
+      for (let k = 0; k < 3; k++) fici(x0 + r * 0.42 + k * fr * 2.05, zy - fr * 1.05);
+      for (let k = 0; k < 2; k++) fici(x0 + r * 0.42 + fr * 1.02 + k * fr * 2.05, zy - fr * 3.05);
+    }
+    ctx.restore();
+    // Kemer taşları
+    ctx.strokeStyle = '#5A3A2A'; ctx.lineWidth = 16; ctx.beginPath(); ctx.moveTo(x0, zy); ctx.lineTo(x0, top + r); ctx.arc(cx, top + r, r, Math.PI, 0); ctx.lineTo(x1, zy); ctx.stroke();
+  });
+  // Tonoz tavan gölgesi ve ön kemer çerçevesi (derinlik)
+  const tg = ctx.createLinearGradient(0, 0, 0, H * 0.3);
+  tg.addColorStop(0, 'rgba(0,0,0,.85)'); tg.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = tg; ctx.fillRect(0, 0, W, H * 0.3);
+  ctx.fillStyle = '#120D0B'; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(W, 0); ctx.lineTo(W, H * 0.5);
+  ctx.quadraticCurveTo(W * 0.97, H * 0.08, W / 2, H * 0.06); ctx.quadraticCurveTo(W * 0.03, H * 0.08, 0, H * 0.5); ctx.closePath(); ctx.fill();
+  // Zemin: taş döşeme, duvar dibinde akan su kanalı
+  ctx.fillStyle = '#2E2826'; ctx.fillRect(0, zy, W, H - zy);
+  ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 3;
+  for (let r = 0, y = zy + 30; y < H; r++, y += 30 + r * 14) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); for (let x = (r % 2) * 90; x < W; x += 180 + r * 30) { ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - 10, y + 30 + r * 14); ctx.stroke(); } }
+  ctx.fillStyle = '#16202A'; ctx.fillRect(0, zy, W, H * 0.025);
+  ctx.strokeStyle = 'rgba(160,190,220,.35)'; ctx.lineWidth = 2;
+  for (let i = 0; i < 26; i++) { const x = ((h(i) * W - t * 60) % W + W) % W; ctx.beginPath(); ctx.moveTo(x, zy + H * 0.012); ctx.lineTo(x + 30, zy + H * 0.012); ctx.stroke(); }
+  // Çıkışın ışığı yere düşer
+  const ex = W / 2;
+  const lg = ctx.createRadialGradient(ex, zy + H * 0.08, 10, ex, zy + H * 0.08, W * 0.35);
+  lg.addColorStop(0, 'rgba(200,225,255,.22)'); lg.addColorStop(1, 'rgba(200,225,255,0)');
+  ctx.fillStyle = lg; ctx.fillRect(0, zy, W, H - zy);
+  // Su birikintileri
+  ctx.fillStyle = 'rgba(120,150,190,.18)';
+  for (let i = 0; i < 6; i++) { ctx.beginPath(); ctx.ellipse(W * (0.1 + h(i * 4) * 0.8), zy + H * (0.06 + h(i * 9) * 0.24), 70 + h(i) * 80, 12, 0, 0, Math.PI * 2); ctx.fill(); }
+  // Sallanan fener (zincirle tavandan)
+  const fx = W * 0.5 + Math.sin(t * 1.3) * 18; const fy = H * 0.22;
+  ctx.strokeStyle = '#2A2626'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(W * 0.5, H * 0.06); ctx.lineTo(fx, fy - 30); ctx.stroke();
+  const fg = ctx.createRadialGradient(fx, fy, 6, fx, fy, W * 0.3);
+  fg.addColorStop(0, 'rgba(255,190,110,.38)'); fg.addColorStop(1, 'rgba(255,190,110,0)');
+  ctx.fillStyle = fg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#2A2424'; ctx.fillRect(fx - 20, fy - 32, 40, 8); ctx.fillRect(fx - 20, fy + 24, 40, 8);
+  ctx.fillStyle = '#FFD890'; ctx.fillRect(fx - 14, fy - 24, 28, 48);
+  ctx.strokeStyle = '#2A2424'; ctx.lineWidth = 4; ctx.strokeRect(fx - 16, fy - 24, 32, 48);
+  // Örümcek ağları köşelerde, damlayan su
+  ctx.strokeStyle = 'rgba(220,220,220,.18)'; ctx.lineWidth = 1.5;
+  for (const [cx, sx] of [[0, 1], [W, -1]]) {
+    for (let k = 1; k < 5; k++) { ctx.beginPath(); ctx.arc(cx, 0, k * 34, sx > 0 ? 0 : Math.PI / 2, sx > 0 ? Math.PI / 2 : Math.PI); ctx.stroke(); }
+    for (let k = 0; k < 5; k++) { const a = (k / 4) * (Math.PI / 2) + (sx > 0 ? 0 : Math.PI / 2); ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx + Math.cos(a) * 170, Math.sin(a) * 170); ctx.stroke(); }
+  }
+  for (let i = 0; i < 4; i++) { const dx = W * (0.2 + i * 0.2); const f = (t * 0.8 + h(i)) % 1; ctx.fillStyle = 'rgba(170,200,230,.6)'; ctx.fillRect(dx, H * 0.08 + f * (zy - H * 0.08), 3, 8); }
+}
+
 // Zindanda gizli geçit: kapalıyken taş duvarın parçası (ince çatlak + gevşek taş + içeri çekilen toz),
 // g.ac saniyesinde taş kapı 1,6 sn'de yana kayar, arkasında aşağı inen merdivenli karanlık geçit görünür.
 function gizliGecit(ctx, W, H, u, g) {
@@ -173,11 +419,16 @@ function gizliGecit(ctx, W, H, u, g) {
 export function destanMekan(ctx, ad, o = {}) {
   const { W = 1920, H = 1080, t = 0, u = t, kamera = 0, kalabalik: hey = 0.5 } = o;
   ctx.save();
-  const z = 1 + Math.min(1, kamera) * 0.05;
+  // Merdivende yakınlaşma yok: karakterlerin ayakları basamak çizgisinde kalmalı
+  const z = ad === 'merdiven' ? 1 : 1 + Math.min(1, kamera) * 0.05;
   ctx.translate(W / 2, H * 0.55); ctx.scale(z, z); ctx.translate(-W / 2, -H * 0.55);
   const yer = H * 0.74;
 
-  if (ad === 'koy-gunduz') {
+  if (ad === 'merdiven') {
+    merdivenMekan(ctx, W, H, t);
+  } else if (ad === 'mahzen') {
+    mahzenMekan(ctx, W, H, t);
+  } else if (ad === 'koy-gunduz') {
     gok(ctx, W, H, ['#6FA8DC', '#A9CCE8', '#E6EEF2']);
     gunes(ctx, W * 0.82, H * 0.16, H * 0.06);
     tepeler(ctx, W, H, ['#6E8F6A', '#557A52'], 0.5);
@@ -226,6 +477,7 @@ export function destanMekan(ctx, ad, o = {}) {
     for (let y = 20; y < H * 0.74; y += 60) for (let x = (y / 60) % 2 ? 0 : 50; x < W; x += 100) ctx.strokeRect(x, y, 100, 60);
     if (zindan) {
       gizliGecit(ctx, W, H, u, o.gecit ?? { x: 0.42 });
+      if (o.kapi) agirKapi(ctx, W, H, u, o.kapi);
       // Meşale ışığı ve parmaklık
       const tit = 0.85 + Math.sin(t * 9) * 0.07;
       const g = ctx.createRadialGradient(W * 0.15, H * 0.35, 10, W * 0.15, H * 0.35, W * 0.6);
@@ -271,6 +523,6 @@ export function destanMekan(ctx, ad, o = {}) {
   ctx.restore();
   // Kenar kararması
   const v = ctx.createRadialGradient(W / 2, H * 0.5, Math.min(W, H) * 0.35, W / 2, H * 0.5, Math.max(W, H) * 0.75);
-  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, ad === 'zindan' || ad === 'koy-yangin' ? 'rgba(0,0,0,.6)' : 'rgba(0,0,0,.35)');
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, ad === 'zindan' || ad === 'koy-yangin' || ad === 'merdiven' || ad === 'mahzen' ? 'rgba(0,0,0,.6)' : 'rgba(0,0,0,.35)');
   ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
 }

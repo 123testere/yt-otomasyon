@@ -1,0 +1,541 @@
+{
+  "id": "zincirli-ornek-03",
+  "dizi": "zincirli",
+  "aciklama": "20 sn: Arın duvara zincirlenir, Kargan muhafızı yenip anahtarla kilidi açar, birlikte ağır kapıyı iterek açıp merdivenden iner, mahzene varıp kaçarlar.",
+  "scenes": [
+    {
+      "aciklama": "0-3,5 sn (zindan): 0-1,4 muhafız eğilip Arın'ın zincirini duvardaki halkaya takar (1,4'te kilit kıvılcımı). 0,6 ikinci muhafız Arın'ı gösterir, 1,6 elleri belinde güler. 1,8 ve 2,2 muhafızlar sağa yürüyüp çıkar. Ekranda: Muhafızlar beni duvara zincirledi.",
+      "mekan": "zindan",
+      "sure": 3.5,
+      "duvarZincir": [
+        {
+          "id": "arin",
+          "x": 0.2,
+          "y": 0.4,
+          "sn": 1.4
+        }
+      ],
+      "yazi": [
+        {
+          "sn": 0.2,
+          "d": 1.4,
+          "metin": "Muhafızlar beni duvara zincirledi."
+        }
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.3,
+          "yon": -1,
+          "poz": "zincirli",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 2.2,
+              "ifade": "uzgun"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.15,
+          "yon": 1,
+          "poz": "egil",
+          "esya": null,
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "sn": 1.4,
+              "poz": "dur",
+              "ifade": "gulumsuyor"
+            },
+            {
+              "sn": 1.8,
+              "x": 1.2,
+              "sure": 1.7
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.55,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "ifade": "supheli",
+          "adimlar": [
+            {
+              "sn": 0.6,
+              "poz": "isaret"
+            },
+            {
+              "sn": 1.6,
+              "poz": "eller-belde",
+              "ifade": "gulumsuyor"
+            },
+            {
+              "sn": 2.2,
+              "x": 1.25,
+              "sure": 1.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aciklama": "3,5-9 sn (zindan): 0-1,0 Kargan sağdan kılıcıyla gelir, Arın ona döner. 1,2 nöbetçi muhafız saldırır, 1,3 Kargan karşılar (kıvılcım). 1,8-2,4 Kargan kılıcı kaldırıp indirir (kıvılcım), muhafızın kılıcı ve anahtar halkası yere düşer, muhafız devrilir. 2,9-3,4 Kargan anahtara yürür, 3,45 eğilir, 3,7 anahtarı alır. 3,85-4,55 Arın'a yürür, 4,6 eğilip kilidi açar, 4,95 zincir düşer (kıvılcım). 5,0 Arın serbest, gülümser.",
+      "mekan": "zindan",
+      "sure": 5.5,
+      "duvarZincir": [
+        {
+          "id": "arin",
+          "x": 0.2,
+          "y": 0.4,
+          "sn": -1,
+          "bitis": 4.95
+        }
+      ],
+      "yazi": [
+        {
+          "sn": 0.3,
+          "d": 1.1,
+          "metin": "Kargan geldi."
+        },
+        {
+          "sn": 3.6,
+          "d": 1.6,
+          "metin": "Muhafızın anahtarını alıp kilidi açtı."
+        }
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.3,
+          "yon": -1,
+          "poz": "zincirli",
+          "ifade": "uzgun",
+          "adimlar": [
+            {
+              "sn": 0.8,
+              "yon": 1,
+              "ifade": "saskin"
+            },
+            {
+              "sn": 5,
+              "poz": "dur",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.58,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 1.2,
+              "poz": "saldir"
+            },
+            {
+              "sn": 1.4,
+              "darbe": true
+            },
+            {
+              "sn": 2.42,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus",
+              "x": 0.53
+            },
+            {
+              "sn": 2.7,
+              "poz": "dus"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.76,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.15,
+            "x1": 0.76,
+            "sure": 1
+          },
+          "adimlar": [
+            {
+              "sn": 1.3,
+              "poz": "blok"
+            },
+            {
+              "sn": 1.8,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 2.25,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 2.4,
+              "darbe": true
+            },
+            {
+              "sn": 2.85,
+              "poz": "dur"
+            },
+            {
+              "sn": 2.9,
+              "x": 0.61,
+              "sure": 0.5
+            },
+            {
+              "sn": 3.45,
+              "poz": "egil"
+            },
+            {
+              "sn": 3.7,
+              "esya": "anahtar"
+            },
+            {
+              "sn": 3.8,
+              "poz": "dur"
+            },
+            {
+              "sn": 3.85,
+              "x": 0.47,
+              "sure": 0.6
+            },
+            {
+              "sn": 4.6,
+              "poz": "egil"
+            },
+            {
+              "sn": 5.05,
+              "poz": "dur",
+              "esya": "kilic",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "nesneler": [
+        {
+          "tip": "anahtar",
+          "x": 0.62,
+          "aci": 0,
+          "ucus": {
+            "x0": 0.56,
+            "sn0": 2.42,
+            "sn1": 2.8
+          },
+          "kaybol": 3.7
+        },
+        {
+          "tip": "kilic",
+          "x": 0.92,
+          "aci": -1.57,
+          "ucus": {
+            "x0": 0.58,
+            "sn0": 2.42,
+            "sn1": 2.9
+          }
+        }
+      ]
+    },
+    {
+      "aciklama": "9-12,5 sn (zindan, ağır kapı): 0-1,0 ikisi sola, kapıya yürür. 1,0 birlikte omuz verip iterler; kapı kendi açılmaz, itildikçe 1,8 sn'de ağır ağır açılır, eşikte toz kalkar, arkada aşağı inen merdiven görünür. 2,0 sağdan iki muhafız koşarak gelir, 2,3 Arın dönüp bakar. 2,95 ikisi kapıdan içeri koşar. Ekranda: Kapı ağırdı, birlikte ittik. / Muhafızlar geliyor!",
+      "mekan": "zindan",
+      "sure": 3.5,
+      "kapi": {
+        "x": 0.22,
+        "ac": 1,
+        "sure": 1.8
+      },
+      "gecit": {
+        "x": 0.62
+      },
+      "yazi": [
+        {
+          "sn": 0.9,
+          "d": 1.3,
+          "metin": "Kapı ağırdı, birlikte ittik."
+        },
+        {
+          "sn": 2.3,
+          "d": 1.1,
+          "metin": "Muhafızlar geliyor!"
+        }
+      ],
+      "kadraj": [
+        {
+          "id": "kargan",
+          "x": 0.39,
+          "yon": -1,
+          "poz": "it",
+          "esya": null,
+          "ifade": "kizgin",
+          "arka": true,
+          "hareket": {
+            "x0": 0.78,
+            "x1": 0.39,
+            "sure": 1
+          },
+          "adimlar": [
+            {
+              "sn": 2.95,
+              "x": 0.08,
+              "sure": 0.6,
+              "kos": true
+            }
+          ]
+        },
+        {
+          "id": "arin",
+          "x": 0.33,
+          "yon": -1,
+          "poz": "it",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 0.64,
+            "x1": 0.33,
+            "sure": 0.9
+          },
+          "adimlar": [
+            {
+              "sn": 2.3,
+              "yon": 1,
+              "ifade": "korkmus"
+            },
+            {
+              "sn": 2.75,
+              "yon": -1
+            },
+            {
+              "sn": 2.9,
+              "x": 0.05,
+              "sure": 0.6,
+              "kos": true
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.75,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.2,
+            "x1": 0.75,
+            "sure": 0.9,
+            "kos": true,
+            "bas": 2
+          }
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.88,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.3,
+            "x1": 0.88,
+            "sure": 0.9,
+            "kos": true,
+            "bas": 2.2
+          }
+        }
+      ]
+    },
+    {
+      "aciklama": "12,5-16 sn (taş merdiven): 0-2,6 Arın sağ üstten sol alta basamakları koşarak iner; 0,35'ten itibaren Kargan arkasından iner. 2,2 ve 2,5 muhafızlar üst basamaklarda belirir. 3,0 Arın en altta dönüp yukarı bakar. Ekranda: Merdivenlerden aşağı koştuk.",
+      "mekan": "merdiven",
+      "sure": 3.5,
+      "yazi": [
+        {
+          "sn": 0.3,
+          "d": 1.5,
+          "metin": "Merdivenlerden aşağı koştuk."
+        }
+      ],
+      "kadraj": [
+        {
+          "id": "muhafiz",
+          "x": 0.8,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.12,
+            "x1": 0.8,
+            "y0": -0.3272,
+            "y1": -0.2265,
+            "sure": 1,
+            "kos": true,
+            "bas": 2.2,
+            "dogrusal": true
+          }
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.9,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.15,
+            "x1": 0.9,
+            "y0": -0.3366,
+            "y1": -0.258,
+            "sure": 0.9,
+            "kos": true,
+            "bas": 2.5,
+            "dogrusal": true
+          }
+        },
+        {
+          "id": "kargan",
+          "x": 0.22,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.08,
+            "x1": 0.22,
+            "y0": -0.3146,
+            "y1": -0.044,
+            "sure": 2.6,
+            "kos": true,
+            "bas": 0.35,
+            "dogrusal": true
+          }
+        },
+        {
+          "id": "arin",
+          "x": 0.1,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "korkmus",
+          "hareket": {
+            "x0": 0.98,
+            "x1": 0.1,
+            "y0": -0.2831,
+            "y1": -0.0063,
+            "sure": 2.6,
+            "kos": true,
+            "dogrusal": true
+          },
+          "adimlar": [
+            {
+              "sn": 3,
+              "yon": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aciklama": "16-20 sn (mahzen, yeni alan): 0-1,0 ikisi sağdan koşarak mahzene girer; 1,0 Arın eğilip soluklanır, 1,4 dönüp merdivene bakar. 1,6 Kargan kılıcını çeker. 2,2 Arın sola, çıkışa işaret eder. 2,6 ve 2,8 ikisi sola koşar. 2,8 bir muhafız sağdan girer. Ekranda: Mahzene vardık, çıkış ileride. / Durmak yok, koş!",
+      "mekan": "mahzen",
+      "sure": 4,
+      "yazi": [
+        {
+          "sn": 0.4,
+          "d": 1.6,
+          "metin": "Mahzene vardık, çıkış ileride."
+        },
+        {
+          "sn": 2.3,
+          "d": 1.3,
+          "metin": "Durmak yok, koş!"
+        }
+      ],
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.55,
+          "yon": -1,
+          "poz": "egil",
+          "ifade": "endiseli",
+          "hareket": {
+            "x0": 1.1,
+            "x1": 0.55,
+            "sure": 1,
+            "kos": true
+          },
+          "adimlar": [
+            {
+              "sn": 1.4,
+              "yon": 1,
+              "poz": "dur"
+            },
+            {
+              "sn": 2.2,
+              "yon": -1,
+              "poz": "isaret",
+              "ifade": "kizgin"
+            },
+            {
+              "sn": 2.6,
+              "x": -0.2,
+              "sure": 1.3,
+              "kos": true
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.7,
+          "yon": -1,
+          "poz": "egil",
+          "esya": null,
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.2,
+            "x1": 0.7,
+            "sure": 1,
+            "kos": true,
+            "bas": 0.25
+          },
+          "adimlar": [
+            {
+              "sn": 1.5,
+              "poz": "dur",
+              "yon": 1
+            },
+            {
+              "sn": 1.6,
+              "esya": "kilic",
+              "poz": "kilic-hazir"
+            },
+            {
+              "sn": 2.8,
+              "x": -0.12,
+              "sure": 1.2,
+              "kos": true
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.95,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 1.2,
+            "x1": 0.95,
+            "sure": 0.6,
+            "kos": true,
+            "bas": 2.8
+          }
+        }
+      ]
+    }
+  ]
+}

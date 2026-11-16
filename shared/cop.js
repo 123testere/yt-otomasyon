@@ -6,8 +6,8 @@ import { KAS, cl, elips, eo, h, kirpma, sekil, ton } from './dizi.js';
 
 export const POZLAR = ['dur', 'yuru', 'kos', 'isaret', 'korku', 'dusun', 'el-salla', 'omuz', 'eller-belde', 'egil',
   'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi',
-  'kilic-hazir', 'kilic-indir'];
-export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta'];
+  'kilic-hazir', 'kilic-indir', 'it'];
+export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta', 'anahtar'];
 
 const COP = { bas: 58, kalca: -215, omuz: -372, kol1: 92, kol2: 88, bacak1: 110, bacak2: 108 };
 const GOVDE = '#F3EAD7';
@@ -65,6 +65,10 @@ function pozAcilari(ad, t, seed, konusuyor, yasli, pozU = 9) {
   } else if (ad === 'kilic-kaldir') {
     const titre = s(t * 30) * 0.02;
     r = { ...r, on: [2.55 + titre, 0.75], arka: [2.4 + titre, 0.85], onB: [0.3, 0.1], arkaB: [-0.35, 0.05], egim: -0.12 };
+  } else if (ad === 'it') {
+    // Ağır bir şeyi (kapı, fıçı) itmek: iki kol önde düz, gövde öne eğik, arka bacak gergin; zorlanırken hafif titrer
+    const z = s(t * 7 + seed) * 0.04;
+    r = { ...r, on: [1.45 + z, -0.12], arka: [1.38 - z, -0.08], onB: [0.18, 0.12], arkaB: [-0.6, 0.12], egim: 0.42, zipla: 0 };
   } else if (ad === 'kilic-hazir') {
     // Muhafız/dövüşçü duruşu: kılıç önde çapraz yukarı, dizler kırık, hafif yaylanma
     const b = s(t * 2.4 + seed) * 0.05;
@@ -304,6 +308,21 @@ function esyaCiz(ctx, esya, el, aci, t, seed) {
     ctx.fillStyle = '#2A4A9A'; ctx.strokeStyle = HAT; ctx.lineWidth = 5;
     ctx.fillRect(-30, -30, 60, 60); ctx.strokeRect(-30, -30, 60, 60);
     ctx.fillStyle = '#C8CCD4'; ctx.fillRect(-16, -30, 32, 20); ctx.fillStyle = '#F2F2EA'; ctx.fillRect(-22, 4, 44, 22);
+    ctx.restore();
+  }
+  if (esya === 'anahtar') {
+    // Anahtar halkası: demir halka ve sallanan iki büyük anahtar
+    const sal = Math.sin(t * 5 + seed) * 0.25;
+    ctx.save(); ctx.translate(el[0], el[1] + 6);
+    ctx.strokeStyle = HAT; ctx.lineWidth = 9; ctx.beginPath(); ctx.arc(0, 14, 17, 0, Math.PI * 2); ctx.stroke();
+    ctx.strokeStyle = '#B8B0A0'; ctx.lineWidth = 5; ctx.beginPath(); ctx.arc(0, 14, 17, 0, Math.PI * 2); ctx.stroke();
+    for (const [dx, a] of [[-6, 0.35 + sal], [7, -0.3 + sal]]) {
+      ctx.save(); ctx.translate(dx, 28); ctx.rotate(a);
+      ctx.fillStyle = '#C8B070'; ctx.strokeStyle = HAT; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(0, 6, 8, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+      ctx.fillRect(-3, 12, 6, 34); ctx.strokeRect(-3, 12, 6, 34); ctx.fillRect(3, 36, 9, 5); ctx.fillRect(3, 42, 7, 4);
+      ctx.restore();
+    }
     ctx.restore();
   }
   if (esya === 'tas') {
