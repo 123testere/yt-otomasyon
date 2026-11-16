@@ -5,7 +5,7 @@ name: Senaryoları al
 on:
   push:
     branches: ['claude/**']
-    paths: ['queue/**', 'analiz/**', 'cevaplar/**', 'iyilestirme/**', 'kesif/**', 'diziler/kesif-*.json']
+    paths: ['queue/**', 'analiz/**', 'cevaplar/**', 'iyilestirme/**', 'kesif/**', 'diziler/kesif-*.json', 'mekanlar/**']
 
 permissions:
   contents: write
@@ -38,7 +38,7 @@ jobs:
           # Sadece queue/ altında yeni eklenen dosyalar; config veya kod değişiklikleri alınmaz.
           files=$(git diff --name-only --diff-filter=A "origin/main...origin/$BRANCH" -- 'queue/*.json')
           # Haftalık yorumlu rapor (analiz/) ve yorum cevapları (cevaplar/) da alınır.
-          extra=$(git diff --name-only --diff-filter=AM "origin/main...origin/$BRANCH" -- 'analiz/*.json' 'cevaplar/*.json' 'iyilestirme/*.json' 'kesif/*/*.json' 'diziler/kesif-*.json')
+          extra=$(git diff --name-only --diff-filter=AM "origin/main...origin/$BRANCH" -- 'analiz/*.json' 'cevaplar/*.json' 'iyilestirme/*.json' 'kesif/*/*.json' 'diziler/kesif-*.json' 'mekanlar/*.json')
           if [ -z "$files$extra" ]; then echo "Yeni dosya yok."; git push origin --delete "$BRANCH" || true; exit 0; fi
           git checkout "origin/$BRANCH" -- $files $extra
           if echo "$extra" | grep -q '^iyilestirme/'; then echo "iyilestir=1" >> "$GITHUB_OUTPUT"; fi

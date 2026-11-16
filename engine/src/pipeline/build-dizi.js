@@ -24,6 +24,17 @@ const ARA_KART_SN = 2.2; // kısım kartı ("15 YIL ÖNCE")
 const SATIR_ARASI = 0.22;
 const SAHNE_ARASI = 0.35;
 
+// Bölümde geçen özel mekânların çizim kodu (mekanlar/<ad>.json)
+export const MEKAN_DIR = path.join(ROOT, 'mekanlar');
+export function ozelMekanlar(job) {
+  const out = {};
+  for (const sc of job.scenes ?? []) {
+    const f = path.join(MEKAN_DIR, `${sc.mekan}.json`);
+    if (sc.mekan && !out[sc.mekan] && fs.existsSync(f)) out[sc.mekan] = JSON.parse(fs.readFileSync(f, 'utf8')).kod;
+  }
+  return out;
+}
+
 export function diziYukle(id) {
   const file = path.join(DIZI_DIR, `${id}.json`);
   if (!fs.existsSync(file)) throw new Error(`dizi bulunamadı: diziler/${id}.json`);
@@ -138,6 +149,7 @@ export async function seslendir(job, dizi, dir) {
       kalabalik: sc.kalabalik ?? null, kart: sc.kart ?? null, kartSn, kadraj: sc.kadraj ?? [], nesneler: sc.nesneler ?? [],
       zincir: sc.zincir ?? null, cizim: sc.cizim ?? null, ozet: Boolean(sc.ozet), satirlar,
       buyukYazi: sc.buyukYazi ?? null, veri: sc.veri ?? null, sira: sc.sira ?? null, haber: sc.haber ?? null,
+      gecit: sc.gecit ?? null, kapi: sc.kapi ?? null, yerKapak: sc.yerKapak ?? null, duvarZincir: sc.duvarZincir ?? null,
     });
   }
   parcalar.push(sessiz(path.join(dir, 'son.wav'), KAPANIS_SN));
@@ -209,6 +221,7 @@ export async function diziKapak({ job, dir, text }) {
     t0: 0, d: 30, mekan: sc.mekan, zaman: sc.zaman ?? 'gece', efektler: (sc.efektler ?? []).filter((e) => e !== 'beyaz-cakma'),
     saat: sc.saat ?? '03:17', kalabalik: sc.kalabalik ?? null, kart: null, kartSn: 0, kadraj: sc.kadraj ?? [],
     nesneler: sc.nesneler ?? [], zincir: null, cizim: null, ozet: false, satirlar: [], veri: sc.veri ?? null,
+    gecit: sc.gecit ?? null, kapi: sc.kapi ?? null, yerKapak: sc.yerKapak ?? null,
   };
   const yatay = dizi.format === 'yatay' && !job.dikey;
   // Küçük ekranda okunsun: karakterler büyütülüp sağ yarıya toplanır (yazı solda)
@@ -221,7 +234,7 @@ export async function diziKapak({ job, dir, text }) {
   }
   const png = await remotionStill(yatay ? 'DiziKareYatay' : 'DiziKare', {
     ...(yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 }),
-    scenes: [sahne], words: [], stil: dizi.stil ?? 'yuz', karakterler: dizi.karakterler, dizi: { ad: '' }, bolum: {},
+    scenes: [sahne], words: [], stil: dizi.stil ?? 'yuz', karakterler: dizi.karakterler, ozelMekanlar: ozelMekanlar(job), dizi: { ad: '' }, bolum: {},
     kapanis: null, acilis: false, t: Number(job.kapak?.sn ?? 1.5), dur: 30, kapakYazi: kapakSatirlari(text), kapakVurgu: true,
   }, path.join(dir, 'kapak.png'), `${job.id}-kapak`);
   const jpg = path.join(dir, 'kapak.jpg');
@@ -276,6 +289,8 @@ export async function buildDizi(job, settings, { workDir }) {
     boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
     props: {
       dil: dizi.dil ?? 'tr', rozetNo: dizi.rozetNo !== false,
+      ozelMekanlar: ozelMekanlar(job),
+      tanitim: Array.isArray(job.tanitim) ? job.tanitim.slice(0, 4) : null,
       acilis: job.acilis === true, stil: dizi.stil ?? 'yuz', dizi: { ad: dizi.ad }, bolum: { no, toplam: dizi.toplam ?? null, ad: job.bolum.ad }, karakterler: dizi.karakterler,
       kapanis: job.kapanis ? {
         baslik: job.kapanis.baslik ?? 'DEVAMI', soru: job.kapanis.soru ?? null,

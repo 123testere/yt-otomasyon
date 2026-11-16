@@ -10,7 +10,7 @@ import { HIZLI_CUMLE, HIZLI_DIZI_HIZ, anlatimMetinleri, cagriEksigi, cumleSay } 
 import { haberLinkleri } from './lib/haberler.js';
 import { POZLAR, ESYALAR } from '../../shared/cop.js';
 import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../shared/dizi.js';
-import { DESTAN_MEKANLAR } from '../../shared/mekan-destan.js';
+import { DESTAN_MEKANLAR, mekanKodHatasi } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
 
@@ -102,7 +102,38 @@ function cizimErrors(job) {
 // Dizi formatı (Bölüm Bölüm): sahneler kodla çizilir, satırlar karakter sesleriyle okunur.
 const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR, ...OYUN_MEKANLAR, ...TEKNO_MEKANLAR];
 const DIZI_EFEKTLER = [...EFEKTLER, 'agir-cekim', 'beyaz-cakma'];
-const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan'];
+const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan', 'anahtar'];
+const MEKAN_DIR = path.join(ROOT, 'mekanlar');
+// Senaryo yazarının çizdiği özel mekânlar: mekanlar/<ad>.json (kodu çalışıyorsa geçerli)
+export function ozelMekanHatasi(ad) {
+  const f = path.join(MEKAN_DIR, `${ad}.json`);
+  if (!fs.existsSync(f)) return 'yok';
+  try {
+    const m = JSON.parse(fs.readFileSync(f, 'utf8'));
+    if (m.ad !== ad) return `mekanlar/${ad}.json içinde ad "${ad}" olmalı`;
+    return mekanKodHatasi(m.kod);
+  } catch (e) { return e.message; }
+}
+const SAYI = { bir: 1, iki: 2, 'üç': 3, 'dört': 4, 'beş': 5, 'altı': 6, yedi: 7, sekiz: 8 };
+const adKoku = (s) => String(s ?? '').toLocaleLowerCase('tr').replace(/[^\p{L}]/gu, '');
+// "Beş muhafız saldırdı" denince sahnede en az 5 muhafız olmalı (anlatılan ne ise o gösterilir).
+export function sayiHatalari(sc, dizi) {
+  const errors = [];
+  const metin = (sc.satirlar ?? []).map((s) => s?.metin ?? '').join(' ').toLocaleLowerCase('tr');
+  for (const [id, def] of Object.entries(dizi.karakterler ?? {})) {
+    const kok = adKoku(def.ad);
+    if (kok.length < 4) continue;
+    const re = new RegExp(`(\\d+|${Object.keys(SAYI).join('|')})\\s+${kok}`, 'gu');
+    for (const m of metin.matchAll(re)) {
+      const n = Number(m[1]) || SAYI[m[1]];
+      if (!(n >= 2 && n <= 8)) continue;
+      const var_ = (sc.kadraj ?? []).filter((k) => k?.id === id).length;
+      if (var_ < n) errors.push(`anlatımda "${m[0]}" geçiyor ama sahnede ${var_} tane ${def.ad} var: ${n} tanesini kadraja koy (ekranda anlatılan görünmeli)`);
+    }
+  }
+  return errors;
+}
+const SANIYE_RE = /\d+(,\d+)?\s*[-–]\s*\d+(,\d+)?\s*sn/;
 const sayi01 = (v) => typeof v === 'number' && v >= 0 && v <= 1;
 const ekranX = (v) => typeof v === 'number' && v >= -0.3 && v <= 1.3; // ekrana girip çıkma
 const sn = (v) => typeof v === 'number' && v >= 0 && v <= 60;
@@ -129,7 +160,23 @@ function diziErrors(job, slot) {
   if (!scenes.length) errors.push('scenes boş olamaz');
   scenes.forEach((sc, i) => {
     const e = (m) => errors.push(`sahne ${i + 1}: ${m}`);
-    if (!DIZI_MEKANLAR.includes(sc.mekan)) e(`mekan şunlardan biri olmalı: ${DIZI_MEKANLAR.join(', ')}`);
+    const nSatir = Array.isArray(sc.satirlar) ? sc.satirlar.length : 0;
+    if (!DIZI_MEKANLAR.includes(sc.mekan)) {
+      const oh = typeof sc.mekan === 'string' && /^[a-z0-9-]{2,40}$/.test(sc.mekan) ? ozelMekanHatasi(sc.mekan) : 'yok';
+      if (oh === 'yok') e(`mekan şunlardan biri olmalı: ${DIZI_MEKANLAR.join(', ')} — ya da yeni mekânı mekanlar/${sc.mekan ?? '<ad>'}.json olarak çiz`);
+      else if (oh) e(`özel mekân mekanlar/${sc.mekan}.json: ${oh}`);
+    }
+    if (slot) {
+      if (!str(sc.aciklama, 600) || !SANIYE_RE.test(sc.aciklama)) e('aciklama saniye saniye yazılmalı: "0-2,5 sn: … 2,5-4 sn: …" (sahnede kim ne yapıyor, ≤600 karakter)');
+      for (const m of sayiHatalari(sc, dizi)) e(m);
+    }
+    const satirOk = (v) => v === undefined || (Number.isInteger(v) && v >= 0 && v < nSatir);
+    for (const o of [sc.gecit, sc.kapi, sc.yerKapak, ...(sc.duvarZincir ?? []), ...(sc.nesneler ?? [])]) {
+      if (o && (!satirOk(o.satir) || !satirOk(o.bitisSatir))) e(`satir 0-${Math.max(0, nSatir - 1)} arası satır sırası olmalı (zamanı o satırın başından sayılır)`);
+    }
+    if (sc.gecit !== undefined && !(sayi01(sc.gecit?.x) && (sc.gecit.ac === undefined || typeof sc.gecit.ac === 'number'))) e('gecit {x 0-1, ac (sn)} olmalı');
+    for (const ad of ['kapi', 'yerKapak']) if (sc[ad] !== undefined && !(sayi01(sc[ad]?.x) && (sc[ad].ac === undefined || (typeof sc[ad].ac === 'number' && sc[ad].ac <= 60)) && (sc[ad].sure === undefined || (sc[ad].sure > 0 && sc[ad].sure <= 6)))) e(`${ad} {x 0-1, ac (sn; eksi = sahne başında zaten açık), sure ≤6} olmalı`);
+    if (sc.duvarZincir !== undefined && !(Array.isArray(sc.duvarZincir) && sc.duvarZincir.every((z) => (sc.kadraj ?? []).some((k) => k.id === z?.id) && sayi01(z.x) && sayi01(z.y)))) e('duvarZincir [{id (kadrajdaki karakter), x 0-1, y 0-1, sn, bitis}] olmalı');
     if (sc.zaman !== undefined && !ZAMANLAR.includes(sc.zaman)) e(`zaman şunlardan biri olmalı: ${ZAMANLAR.join(', ')}`);
     if (sc.efektler !== undefined && !(Array.isArray(sc.efektler) && sc.efektler.every((x) => DIZI_EFEKTLER.includes(x)))) e(`efektler şunlardan olmalı: ${DIZI_EFEKTLER.join(', ')}`);
     if (sc.kalabalik !== undefined && !sayi01(sc.kalabalik)) e('kalabalik 0-1 arası sayı olmalı');
@@ -149,22 +196,25 @@ function diziErrors(job, slot) {
     if (sc.veri !== undefined && !(Array.isArray(sc.veri) && sc.veri.length >= 2 && sc.veri.length <= 8 && sc.veri.every((v) => typeof v === 'number' && v > 0))) e('veri 2-8 pozitif sayı olmalı');
     const kadraj = Array.isArray(sc.kadraj) ? sc.kadraj : [];
     if (sc.kadraj !== undefined && !Array.isArray(sc.kadraj)) e('kadraj bir dizi olmalı');
-    if (kadraj.length > 4) e('kadrajda en fazla 4 karakter olabilir');
+    if (kadraj.length > 8) e('kadrajda en fazla 8 karakter olabilir');
     const poz = (p, yer) => { if (p !== undefined && p !== null && !POZLAR.includes(p)) e(`${yer}: poz şunlardan biri olmalı: ${POZLAR.join(', ')}`); };
     const esya = (x, yer) => { if (x !== undefined && x !== null && !ESYALAR.includes(x)) e(`${yer}: esya şunlardan biri olmalı (ya da null): ${ESYALAR.join(', ')}`); };
     const ifade = (x, yer) => { if (x !== undefined && x !== null && !DIZI_IFADELER.includes(x)) e(`${yer}: ifade şunlardan biri olmalı: ${DIZI_IFADELER.join(', ')}`); };
     for (const k of kadraj) {
       const yer = `kadraj "${k?.id}"`;
       if (!kisiler.has(k?.id)) { e(`${yer}: dizide böyle karakter yok (${[...kisiler].join(', ')})`); continue; }
-      if (k.x !== undefined && !sayi01(k.x)) e(`${yer}: x 0-1 arası olmalı`);
+      if (k.x !== undefined && !ekranX(k.x)) e(`${yer}: x -0,3 ile 1,3 arası olmalı (0-1 ekranda; dışı, ekrana girip çıkan karakter)`);
       if (k.yon !== undefined && ![1, -1].includes(k.yon)) e(`${yer}: yon 1 (sağa bakar) ya da -1 (sola bakar)`);
       poz(k.poz, yer); esya(k.esya, yer); ifade(k.ifade, yer);
-      if (k.hareket !== undefined && !(ekranX(k.hareket?.x0) && ekranX(k.hareket?.x1) && (k.hareket.sure === undefined || sn(k.hareket.sure)))) e(`${yer}: hareket {x0, x1 (-0,3 ile 1,3 arası), sure} olmalı`);
+      if (k.hareket !== undefined && !(ekranX(k.hareket?.x0) && ekranX(k.hareket?.x1) && (k.hareket.sure === undefined || sn(k.hareket.sure)) && (k.hareket.bas === undefined || sn(k.hareket.bas)))) e(`${yer}: hareket {x0, x1 (-0,3 ile 1,3 arası), sure, bas} olmalı`);
+      if (k.arka !== undefined && typeof k.arka !== 'boolean') e(`${yer}: arka true/false olmalı`);
       if (k.adimlar !== undefined) {
         if (!Array.isArray(k.adimlar)) e(`${yer}: adimlar bir dizi olmalı`);
         else for (const a of k.adimlar) {
-          if (!sn(a?.sn)) e(`${yer}: her adımda sn (sahne başından saniye) olmalı`);
-          if (a?.x !== undefined && !sayi01(a.x)) e(`${yer}: adım x 0-1 arası olmalı`);
+          if (!sn(a?.sn)) e(`${yer}: her adımda sn (sahne başından ya da satir verilmişse o satırın başından saniye) olmalı`);
+          if (a?.satir !== undefined && !(Number.isInteger(a.satir) && a.satir >= 0 && a.satir < nSatir)) e(`${yer}: adım satir 0-${Math.max(0, nSatir - 1)} arası satır sırası olmalı`);
+          if (a?.x !== undefined && !ekranX(a.x)) e(`${yer}: adım x -0,3 ile 1,3 arası olmalı`);
+          if (a?.sure !== undefined && !(a.sure > 0 && a.sure <= 8)) e(`${yer}: adım sure 0-8 sn olmalı`);
           poz(a?.poz, yer); esya(a?.esya, yer); ifade(a?.ifade, yer);
         }
       }
@@ -173,8 +223,8 @@ function diziErrors(job, slot) {
       if (!DIZI_NESNELER.includes(n?.tip)) e(`nesne tipi şunlardan biri olmalı: ${DIZI_NESNELER.join(', ')}`);
       else if (!sayi01(n.x)) e('nesne x 0-1 arası olmalı');
     }
-    if (sc.zincir !== undefined && !(kadraj.some((k) => k.id === sc.zincir?.a) && kadraj.some((k) => k.id === sc.zincir?.b) && sn(sc.zincir?.sn))) {
-      e('zincir {a, b (kadrajdaki karakterler), sn} olmalı');
+    if (sc.zincir !== undefined && !(kadraj.some((k) => k.id === sc.zincir?.a) && kadraj.some((k) => k.id === sc.zincir?.b) && sn(sc.zincir?.sn) && [undefined, 'arka'].includes(sc.zincir?.el))) {
+      e('zincir {a, b (kadrajdaki karakterler), sn, el: "arka" (boştaki eller)} olmalı');
     }
     if (sc.satirlar !== undefined && !Array.isArray(sc.satirlar)) e('satirlar bir dizi olmalı');
     if (!(sc.satirlar?.length) && !sc.sure) e('konuşmasız sahneye sure yaz');
@@ -189,6 +239,9 @@ function diziErrors(job, slot) {
   if (!(str(job.kapanis?.baslik, 20) && optStr(job.kapanis?.sonraki, 50) && optStr(job.kapanis?.soru, 70))) {
     errors.push('kapanis {baslik ≤20, sonraki ≤50, soru ≤70} olmalı');
   }
+  // Bölüm tanıtımı: açılışta "BU BÖLÜMDE" maddeleri (yeni senaryolarda zorunlu)
+  if (job.tanitim !== undefined && !(Array.isArray(job.tanitim) && job.tanitim.length >= 2 && job.tanitim.length <= 4 && job.tanitim.every((m) => str(m, 28)))) errors.push('tanitim 2-4 madde, her biri ≤28 karakter olmalı (ör. ["Zindandan kaçış", "Su altından kaçış"])');
+  if (slot && job.tanitim === undefined && !job.fragman) errors.push('tanitim yaz: bölümde olacakları 2-4 kısa maddeyle tanıt (ör. ["Zindandan kaçış", "Su altından kaçış", "Kapalı çıkış"]); sonunu verme');
   if (job.muzikSeviye !== undefined && !(typeof job.muzikSeviye === 'number' && job.muzikSeviye >= 0 && job.muzikSeviye <= 0.3)) errors.push('muzikSeviye 0-0,3 arası');
   const kelime = diziSatirlari(job).reduce((n, s) => n + countWords(String(s?.metin ?? '')), 0);
   if (job.type === 'long') {

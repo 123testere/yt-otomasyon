@@ -10,7 +10,7 @@ import { AbsoluteFill, continueRender, delayRender, Html5Audio, interpolate, sta
 import { serif, serifReady } from './fonts.js';
 import { agizAcikligi, karakter, mekan } from '../../shared/dizi.js';
 import { cop } from '../../shared/cop.js';
-import { DESTAN_MEKANLAR, destanMekan } from '../../shared/mekan-destan.js';
+import { DESTAN_MEKANLAR, destanMekan, mekanDerle } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR, oyunMekan } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR, teknoMekan } from '../../shared/mekan-tekno.js';
 import { ALAN, derle, eo, h, kit, pr } from '../../shared/cizim.js';
@@ -299,9 +299,27 @@ function siraKarti(ctx, s, u, W, H, yatay) {
 }
 
 const METIN = {
-  tr: { bolum: 'BÖLÜM', bolumK: 'Bölüm', onceki: 'Önceki bölümde…', yorum: 'Yorumlara yaz 👇', devami: 'DEVAMI', cagri: 'Devamı için ABONE OL ve BEĞEN 👍' },
-  en: { bolum: 'EP', bolumK: 'Episode', onceki: 'Previously…', yorum: 'Comment below 👇', devami: 'TO BE CONTINUED', cagri: 'SUBSCRIBE and LIKE for more 👍' },
+  tr: { buBolumde: 'BU BÖLÜMDE', bolum: 'BÖLÜM', bolumK: 'Bölüm', onceki: 'Önceki bölümde…', yorum: 'Yorumlara yaz 👇', devami: 'DEVAMI', cagri: 'Devamı için ABONE OL ve BEĞEN 👍' },
+  en: { buBolumde: 'IN THIS EPISODE', bolum: 'EP', bolumK: 'Episode', onceki: 'Previously…', yorum: 'Comment below 👇', devami: 'TO BE CONTINUED', cagri: 'SUBSCRIBE and LIKE for more 👍' },
 };
+
+// Sahnedeki zamanlı öğeler (kapı, kapak, geçit, duvar zinciri, nesneler) bir konuşma satırına bağlanabilir:
+// { satir: 1, ac: 0.8 } → 1. satırın başlamasından 0,8 sn sonra. Ses süreleri değişse de eylem sözle aynı anda olur.
+function satirdan(sc, v, satir) {
+  const s = Number.isInteger(satir) ? sc.satirlar?.[satir] : null;
+  return s && typeof v === 'number' ? s.t0 - sc.t0 + v : v;
+}
+function zamanla(sc) {
+  const ac = (o) => (o ? { ...o, ac: satirdan(sc, o.ac, o.satir) } : o);
+  return {
+    ...sc, gecit: ac(sc.gecit), kapi: ac(sc.kapi), yerKapak: ac(sc.yerKapak),
+    duvarZincir: sc.duvarZincir?.map((z) => ({ ...z, sn: satirdan(sc, z.sn, z.satir), bitis: satirdan(sc, z.bitis, z.bitisSatir ?? z.satir) })),
+    nesneler: sc.nesneler?.map((n) => (Number.isInteger(n.satir) ? {
+      ...n, gorun: satirdan(sc, n.gorun, n.satir), kaybol: satirdan(sc, n.kaybol, n.satir),
+      ucus: n.ucus ? { ...n.ucus, sn0: satirdan(sc, n.ucus.sn0, n.satir), sn1: satirdan(sc, n.ucus.sn1, n.satir) } : n.ucus,
+    } : n)),
+  };
+}
 
 export function kare(ctx, p, t, dur, fns) {
   const M = METIN[p.dil] ?? METIN.tr;
@@ -311,7 +329,7 @@ export function kare(ctx, p, t, dur, fns) {
   const yatay = W > H;
   let i = 0;
   for (let k = 0; k < scenes.length; k++) if (t >= scenes[k].t0) i = k;
-  const sc = scenes[i];
+  const sc = zamanla(scenes[i]);
   const u = t - sc.t0;
   const ef = sc.efektler ?? [];
   // Ağır çekim: karakter hareketleri yavaşlar (ses normal akar)
@@ -332,8 +350,11 @@ export function kare(ctx, p, t, dur, fns) {
     teknoMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d) });
   } else if (OYUN_MEKANLAR.includes(sc.mekan)) {
     oyunMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, veri: sc.veri });
+  } else if (p.ozelMekanlar?.[sc.mekan]) {
+    // Senaryo yazarının kodla çizdiği yeni mekân (mekanlar/<ad>.json); hata olursa koyu zemin
+    try { mekanDerle(p.ozelMekanlar[sc.mekan])(ctx, { W, H, t, u }); } catch { ctx.fillStyle = '#141619'; ctx.fillRect(0, 0, W, H); }
   } else if (DESTAN_MEKANLAR.includes(sc.mekan)) {
-    destanMekan(ctx, sc.mekan, { W, H, t, u, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, gecit: sc.gecit, kapi: sc.kapi });
+    destanMekan(ctx, sc.mekan, { W, H, t, u, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, gecit: sc.gecit, kapi: sc.kapi, yerKapak: sc.yerKapak });
   } else {
     mekan(ctx, sc.mekan, { W, H, t, zaman: sc.zaman, efektler: ef, saat: sc.saat, kamera: u / Math.max(1, sc.d) });
   }
@@ -464,6 +485,26 @@ export function kare(ctx, p, t, dur, fns) {
   if (ef.includes('agir-cekim')) { ctx.fillStyle = 'rgba(20,30,50,.18)'; ctx.fillRect(0, 0, W, H); }
   if (i > 0 && u < GECIS && !ef.includes('beyaz-cakma')) { ctx.fillStyle = `rgba(0,0,0,${1 - u / GECIS})`; ctx.fillRect(0, 0, W, H); }
 
+  // Bölüm tanıtımı (tanitim: ["Zindandan kaçış", "Su altından kaçış", …]): açılış aksiyonu sürerken ilk saniyelerde
+  // sol üstte "BU BÖLÜMDE" başlığı ve maddeler tek tek belirir, sonra kaybolur (videoyu durdurmaz).
+  if (Array.isArray(p.tanitim) && p.tanitim.length && t < 5.2) {
+    const sol = 1 - pr(t, 4.6, 5.2);
+    const x0 = yatay ? 50 : 60; const y0 = yatay ? 130 : 260; const ara = yatay ? 62 : 74; const boy = yatay ? 46 : 54;
+    ctx.save();
+    ctx.globalAlpha = eo(pr(t, 0.2, 0.6)) * sol;
+    const genis = yatay ? 640 : 820;
+    const g = ctx.createLinearGradient(x0 - 30, 0, x0 + genis, 0);
+    g.addColorStop(0, 'rgba(6,8,16,.82)'); g.addColorStop(1, 'rgba(6,8,16,0)');
+    ctx.fillStyle = g; ctx.fillRect(x0 - 30, y0 - boy * 1.4, genis, boy * 1.2 + ara * (p.tanitim.length + 0.6));
+    ctx.restore();
+    yazi(ctx, M.buBolumde, x0, y0, boy * 0.72, { c: RENK.altin, a: eo(pr(t, 0.2, 0.6)) * sol, al: 'left', w: 800 });
+    p.tanitim.slice(0, 4).forEach((m, k) => {
+      const a = eo(pr(t, 0.6 + k * 0.55, 1.0 + k * 0.55)) * sol;
+      if (a <= 0) return;
+      ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = RENK.altin; ctx.fillRect(x0 - (1 - a) * 30, y0 + ara * (k + 1) - boy * 0.42, 10, boy * 0.55); ctx.restore();
+      yazi(ctx, m, x0 + 26 - (1 - a) * 30, y0 + ara * (k + 1), boy, { a, al: 'left', w: 700 });
+    });
+  }
   // Üst rozet: dizi adı ve bölüm
   const acilisSn = p.acilis === false ? 0 : KART_SN;
   const kartBitti = t > acilisSn;

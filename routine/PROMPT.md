@@ -240,6 +240,20 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 
 **Bağımsız dizi Shorts'u (`type: short`, `clipOf` yok):** Kendi başına bir video; `"dikey": true`, `"acilis": false`, `"hiz": 1.2` (hızlı Shorts kuralı), `bolum` needed.json'daki gibi (`{"no": <slot.bolum.no>, "ad": "<kısa konu>"}`). Kurgu dizinin `yazim` kurallarından gelir; `derivedFrom` yazma.
 
+**Sahne yönetimi: anlatılan ne ise ekranda o görünür (kullanıcı kararı 2026-11-16, her dizi videosunda; örnekler: `ornekler/zincirli/02-zincirli-ikili-5-muhafiz.json`, `ornekler/zincirli/03-kurtarma-kacis-20sn.json` — yapıyı aynen izle):**
+- **Sayı = ekrandaki kişi.** "Beş muhafız saldırdı" deniyorsa o sahnede 5 muhafız kadrajda olur (aynı `id` beş kez; kadraj en fazla 8, kalabalıkta bir kısmı `"arka": true`). Doğrulayıcı kontrol eder.
+- **Eylem sözle aynı anda.** "Kılıcı kaldırıp vurdu" satırı okunurken o hareket olur: adımı o satıra bağla (`{"satir": 1, "sn": 0.3, "poz": "kilic-kaldir"}` → 1. satırın başlamasından 0,3 sn sonra). Vuruş: `kilic-kaldir` → 0,6-1 sn sonra `kilic-indir` → 0,15 sn sonra `{"darbe": true}` (kıvılcım). Her çarpmada `darbe`; vurulanın kılıcı `esya: null` ile düşer, `nesneler`de `ucus` ile uçar.
+- **İşler gündelik yapılır, sihirle değil.** Kapı kendi açılmaz: karakterler kapıya yürür, `it` pozunda iter, `kapi.ac` o anda başlar. Zemin kapağı `kaldir` pozunda birlikte kaldırılır (`yerKapak.ac`). Zincir anahtarla açılır: anahtar yerde/muhafızda (`nesneler` `anahtar`), karakter yürüyüp `egil`, `esya: "anahtar"` alır, kilide yürür, `egil`, `duvarZincir.bitis`. Bir yere gitmek = yürümek: `{"sn": 2, "x": 0.4, "sure": 0.8}` (sure ≥ 0,5 yürür; `"kos": true` koşar; yönü kendisi döner).
+- **Mekân değişince yeni mekân.** "Aşağı indik" → `merdiven` sahnesi (sağdan sola iner, `hareket`te `y0/y1` = −0,28×(x−0,08)/0,89 ve `"dogrusal": true`); "alt kata/mahzene vardık" → `mahzen`; kanal → `kanal`. Listede olmayan bir yer gerekiyorsa **kendin çiz**: `mekanlar/<ad>.json` (aşağıda "Yeni mekân çizmek").
+- **Yavaşlat:** "Kılıç yanımdan geçti", "son anda" gibi cümlelerde sahneye `"efektler": ["agir-cekim"]` ver; karakter eğilir/kayar, kılıç yüzünün hemen önünden geçer (iz ağır görünür).
+- **Saniye saniye açıklama (zorunlu):** her sahnenin `aciklama`sı o sahnede kimin ne yaptığını saniye aralıklarıyla yazar: `"0-1,2 sn: Arın kapıya yürür. 1,2-3 sn: Kargan'la birlikte omuz verip iter, kapı ağır ağır açılır. 3-4 sn: ikisi içeri koşar."` Sahne süresini satırların kelime sayısından tahmin et (~2,6 kelime/sn + `once`). Doğrulayıcı aralık yoksa reddeder.
+- **Bölüm tanıtımı (zorunlu):** `"tanitim": ["Zindandan kaçış", "Su altından kaçış", "Kapalı çıkış"]` — 2-4 kısa madde (≤28 karakter); videonun ilk saniyelerinde, soğuk açılış sürerken "BU BÖLÜMDE" olarak belirir. Merak uyandırır, sonucu söylemez.
+- **Sonraki videoya merak (zorunlu):** Son sahne çözülmemiş bir soruda kesilir; `kapanis.sonraki` sonraki bölümün adını ve bir merak cümlesini taşır (≤50: "Bölüm 8: Akıl Hocası — Toros'a kılıç kaldıracak mı?"), `kapanis.soru` seçmeli soru. Shorts'ta da son cümle bir sonraki videoyu merak ettirir.
+- **Yeni araçlar:** pozlar `kilic-hazir` (dövüş duruşu), `kilic-indir` (tek vuruş), `it`, `kaldir`; eşya `anahtar`; sahne alanları `kapi` {x, ac, sure} (zindanda ağır kapı), `yerKapak` {x, ac, sure} (zindan zemininde kapak), `gecit` {x, ac} (zindan duvarında gizli geçit; kapalıyken çatlak görünür), `duvarZincir` [{id, x, y, sn, bitis}] (karakterin elinden duvardaki halkaya zincir; `sn` takılır, `bitis` açılır), `zincir.el: "arka"` (iki karakterin boştaki elleri zincirli, sırt sırta dövüşte kopmaz); kadraj öğesinde `arka`, `hareket.bas` (gecikmeli giriş), `hareket.y0/y1/dogrusal`; adımda `satir`, `sure`, `kos`, `y`.
+- Şiddet kuralı geçerli: kan ve ölüm yok; vurulan silahsız kalır, düşer (`dus` → `yerde`), bağışlanır.
+
+**Yeni mekân çizmek (`mekanlar/<ad>.json`):** Hikâye listede olmayan bir yerde geçiyorsa (saray mutfağı, kule odası, liman…) en yakınını seçme, o yeri çiz. Dosya: `{ "ad": "<ad, a-z ve tire>", "aciklama": "ne olduğu", "kod": "<JavaScript>" }`; sahnede `"mekan": "<ad>"`. Kod tam ekranı (W×H; yatay 1920×1080, dikey 1080×1920) her karede çizer. Kullanılabilenler: `ctx` (canvas 2D), `W`, `H`, `t` (video sn, animasyon için), `u` (sahne sn), `ayak` (karakterlerin ayak çizgisi; zemin bunun biraz üstünden başlamalı), `h(n)` tohumlu rastgele 0-1, `eo`, `pr(u,a,b)`, `tasDuvar(x0,y0,x1,y1,{boy,en,renk:[r,g,b],oyna,seed})` taş/tuğla duvar, `mesale(x,y,t,olcek,seed)` titreyen meşale ve ışığı, `toz(x0,y0,w,h,t,'r,g,b',adet)` uçuşan zerreler. Yasak: Math.random, Date, while, fetch/import/window/document; en fazla 15000 karakter. **Ayrıntı ekle**: arka duvar dokusu, derinlik (ön/arka plan), ışık kaynağı ve ışığın düştüğü yer, en az 4-5 nesne (mobilya, alet, kapı, pencere), hareketli bir öğe (alev, su, toz, sallanan şey). Doğrulayıcı kodu iki boyutta çalıştırıp dener; `mekanlar/` dosyasını senaryolarla birlikte commit et.
+
 **Uzun bölüm (`type: long`):**
 - 3-4 dakika: satırlardaki toplam kelime `targetWords` ±%30 (doğrulayıcı kontrol eder). 18-26 sahne.
 - Yapı: **Soğuk açılış** (bölümün en gerilimli anından 10-20 saniye, ilk sahnede `"kisim": "Soğuk Açılış"`), sonra 3-5 kısım. Her kısmın ilk sahnesinde `kisim` (YouTube bölüm adı olur) ve `kart` (`{"ust": "BİRİNCİ KISIM", "alt": "Demirci'nin Oğlu"}`) olur. Son sahne bölüm planındaki `son` ile biten bir cliffhanger.
@@ -262,6 +276,7 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
 {
   "id": "…", "channelId": "…", "type": "long", "publishAt": "…",
   "format": "dizi", "dizi": "zincirli", "bolum": {"no": 2, "ad": "Kızıl Loca"},
+  "tanitim": ["Kralın kararı", "Kızıl locadaki yüz", "Kaçış planı"],
   "title": "…", "titleAlt": "…", "description": "…", "tags": ["…"], "topic": "…",
   "thumbnailText": "KIZIL LOCA", "thumbnailTextAlt": "…", "thumbnailTextAlt2": "…", "kapak": {"sahne": 0, "sn": 2},
   "oynatmaListesi": "Zincirli · 1. Sezon", "muzik": "epik", "muzikSeviye": 0.1,
@@ -270,7 +285,7 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
     {
       "kisim": "Soğuk Açılış", "kart": {"ust": "…", "alt": "…"},
       "mekan": "arena", "zaman": "gece", "efektler": ["agir-cekim"], "kalabalik": 1,
-      "aciklama": "Transkript için: sahnede ne oluyor (kamera, hareket).",
+      "aciklama": "0-0,8 sn: Arın sağdan koşarak girer. 0,8-1,8 sn: kılıcı kaldırıp indirir, Kargan'ın kılıcına çarpar (kıvılcım). 1,8-3 sn: kılıç uçar, Kargan dizlerinin üstüne çöker.",
       "kadraj": [
         {"id": "arin", "x": 0.6, "yon": -1, "poz": "dur", "ifade": "kizgin", "esya": "kilic",
          "hareket": {"x0": 1.05, "x1": 0.6, "sure": 2, "kos": true},
@@ -287,17 +302,17 @@ Bu kanal (Bölüm Bölüm) belgesel değil, **çöp adam karakterli animasyon di
   ]
 }
 ```
-- `mekan`: destan mekânları `koy-gunduz`, `koy-yangin`, `kervan`, `tas-ocagi`, `zindan`, `avlu`, `arena`, `loca`; köy mekânları `meydan`, `kuyu`, `ev-ic`, `orman`, `yol`, `kule-ic`; oyun mekânları `garaj` (evde stüdyo), `ofis` (oyun stüdyosu), `oyun-salonu` (atari salonu), `fuar` (oyun fuarı sahnesi, `kalabalik` ile), `grafik` (yükselen satış grafiği, `veri`: 2-8 artan sayı), `siralama` (Top 5 kartı için).
+- `mekan`: destan mekânları `koy-gunduz`, `koy-yangin`, `kervan`, `tas-ocagi`, `zindan`, `avlu`, `arena`, `loca`, `merdiven` (sağ üstten sol alta taş merdiven), `mahzen` (tonozlu, fıçılı, çıkışlı), `kanal` (su kanalı, kenar yolu, çıkışta demir parmaklık) ve `mekanlar/` altındaki çizilmiş mekânlar; köy mekânları `meydan`, `kuyu`, `ev-ic`, `orman`, `yol`, `kule-ic`; oyun mekânları `garaj` (evde stüdyo), `ofis` (oyun stüdyosu), `oyun-salonu` (atari salonu), `fuar` (oyun fuarı sahnesi, `kalabalik` ile), `grafik` (yükselen satış grafiği, `veri`: 2-8 artan sayı), `siralama` (Top 5 kartı için).
 - `buyukYazi`: `{"ust": "2,5 MİLYAR $", "alt": "tek bir oyun"}` sahne boyunca ekranda dev sarı yazı (ust ≤14, alt ≤30). Rakam ve yıl vurgusu için.
 - `sira`: `{"no": 5, "ad": "Valheim", "tur": "Viking hayatta kalma", "maddeler": ["…", "…", "…"]}` sıralama kartı (no 1-10, ad ≤28, tur ≤30, en fazla 3 madde ≤24); altta 5-4-3-2-1 geri sayım çubuğu kendiliğinden çizilir. Listede olmayan bir yer için en yakınını seç (saray salonu → `loca` ya da `kule-ic`, demirhane → `ev-ic`, dağ yolu → `yol`).
 - `zaman`: `gece`, `gunduz`, `safak` (köy mekânlarında). `efektler`: `agir-cekim`, `beyaz-cakma` (darbe/geçiş), `sis`, `yagmur`, `simsek`, `titreyen-isik`, `ruzgar`. `kalabalik` (arena tribünü) 0-1.
-- `kadraj`: en fazla 4 karakter, `id` dizinin `karakterler` listesinden. `x` 0-1 (yatayda konum), `yon` 1 sağa / -1 sola bakar. Karakterler birbirine bakacak şekilde yerleşsin.
-- `poz`: `dur`, `yuru`, `kos`, `isaret`, `korku`, `dusun`, `el-salla`, `omuz`, `eller-belde`, `egil`, `kilic-kaldir`, `kilic-savur`, `saldir`, `blok`, `darbe`, `dus`, `yerde`, `kalk`, `zincirli`, `diz-cok`, `zafer`, `tasi`.
-- `esya`: `kilic`, `kalkan`, `kilic+kalkan`, `tahta-kilic`, `mesale`, `fener`, `baston`, `tas`, `oyun-kolu`, `kupa`, `disket` (ya da adımda `null`: elden düşer).
+- `kadraj`: en fazla 8 karakter (aynı `id` birden çok kez olabilir: 5 muhafız), `id` dizinin `karakterler` listesinden. Kalabalıkta geridekilere `"arka": true`. `x` 0-1 (yatayda konum), `yon` 1 sağa / -1 sola bakar. Karakterler birbirine bakacak şekilde yerleşsin.
+- `poz`: `dur`, `yuru`, `kos`, `isaret`, `korku`, `dusun`, `el-salla`, `omuz`, `eller-belde`, `egil`, `kilic-kaldir`, `kilic-savur`, `saldir`, `blok`, `darbe`, `dus`, `yerde`, `kalk`, `zincirli`, `diz-cok`, `zafer`, `tasi`, `kilic-hazir`, `kilic-indir`, `it`, `kaldir`.
+- `esya`: `kilic`, `kalkan`, `kilic+kalkan`, `tahta-kilic`, `mesale`, `fener`, `baston`, `tas`, `oyun-kolu`, `kupa`, `disket`, `anahtar` (ya da adımda `null`: elden düşer).
 - `ifade`: `notr`, `endiseli`, `gulumsuyor`, `uzgun`, `korkmus`, `saskin`, `kizgin`, `dusunceli`, `supheli`, `fisilti`.
 - `hareket`: sahne başında `x0`'dan `x1`'e yürür (`kos: true` koşar); -0,3 ile 1,3 arası ekrana girip çıkmayı sağlar.
 - `adimlar`: sahnenin `sn`. saniyesinde poz/konum/eşya/ifade değişimi; `darbe: true` kırmızı çarpma ve sarsıntı, `sarsinti: true` ekran sarsıntısı. Dövüşleri adım adım kurgula: saldır → blok → darbe → düş → kalk.
-- `nesneler`: yerdeki `kilic`, `kalkan`, `kirik-kalkan`; `ucus` havada uçarak oraya düşer, `gorun` / `kaybol` saniyeleri.
+- `nesneler`: yerdeki `kilic`, `kalkan`, `kirik-kalkan`, `anahtar`; `ucus` havada uçarak oraya düşer, `gorun` / `kaybol` saniyeleri.
 - `zincir`: iki karakter arasında `sn` saniyede fırlayan zincir (Arın'ın imza hamlesi).
 - `sure`: konuşmasız aksiyon sahnesinin en az süresi (sn). Konuşmasız sahneye mutlaka yaz.
 - Satırda `once`: satırdan önce sessiz bekleme (aksiyonun görünmesi için). Satırda rakam yerine yazı tercih et ("on beş yıl"); `( ) * # [ ] < >` kullanma.

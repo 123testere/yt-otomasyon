@@ -6,7 +6,7 @@ import { KAS, cl, elips, eo, h, kirpma, sekil, ton } from './dizi.js';
 
 export const POZLAR = ['dur', 'yuru', 'kos', 'isaret', 'korku', 'dusun', 'el-salla', 'omuz', 'eller-belde', 'egil',
   'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi',
-  'kilic-hazir', 'kilic-indir', 'it'];
+  'kilic-hazir', 'kilic-indir', 'it', 'kaldir'];
 export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta', 'anahtar'];
 
 const COP = { bas: 58, kalca: -215, omuz: -372, kol1: 92, kol2: 88, bacak1: 110, bacak2: 108 };
@@ -65,6 +65,10 @@ function pozAcilari(ad, t, seed, konusuyor, yasli, pozU = 9) {
   } else if (ad === 'kilic-kaldir') {
     const titre = s(t * 30) * 0.02;
     r = { ...r, on: [2.55 + titre, 0.75], arka: [2.4 + titre, 0.85], onB: [0.3, 0.1], arkaB: [-0.35, 0.05], egim: -0.12 };
+  } else if (ad === 'kaldir') {
+    // Yerden ağır bir şey kaldırmak (zemin kapağı, sandık): dizler kırık, sırt düz, iki el aşağıda tutar; zorlanırken titrer
+    const z = s(t * 8 + seed) * 0.03;
+    r = { ...r, on: [0.45 + z, 0.15], arka: [0.4 - z, 0.15], onB: [0.95, 1.35], arkaB: [-0.25, 1.2], egim: 0.3, zipla: -62 };
   } else if (ad === 'it') {
     // Ağır bir şeyi (kapı, fıçı) itmek: iki kol önde düz, gövde öne eğik, arka bacak gergin; zorlanırken hafif titrer
     const z = s(t * 7 + seed) * 0.04;
