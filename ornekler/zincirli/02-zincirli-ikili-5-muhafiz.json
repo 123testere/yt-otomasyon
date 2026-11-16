@@ -1,0 +1,523 @@
+{
+  "id": "zincirli-ornek-02",
+  "dizi": "zincirli",
+  "scenes": [
+    {
+      "aciklama": "0-4 sn: Arın ve Kargan arenada sırt sırta, boştaki elleri zincirli. 5 muhafız koşarak çevreler (3 solda, 2 sağda). 1,2-2,0 Arın kılıcı kaldırıp indirir, 2,0'da 1. muhafızın kılıcına çarpar (kıvılcım), kılıç uçar, muhafız geriye düşer. 2,4-3,25 Kargan aynı şekilde 4. muhafızı indirir.",
+      "mekan": "arena",
+      "sure": 4,
+      "kalabalik": 0.9,
+      "zincir": {
+        "a": "arin",
+        "b": "kargan",
+        "sn": 0,
+        "el": "arka"
+      },
+      "kadraj": [
+        {
+          "id": "muhafiz",
+          "x": 0.14,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": -0.2,
+            "x1": 0.14,
+            "sure": 1.1,
+            "kos": true,
+            "bas": 0.2
+          }
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.21,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "arka": true,
+          "hareket": {
+            "x0": -0.25,
+            "x1": 0.21,
+            "sure": 1.2,
+            "kos": true,
+            "bas": 0.35
+          }
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.88,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 1.25,
+            "x1": 0.88,
+            "sure": 1,
+            "kos": true,
+            "bas": 0.3
+          }
+        },
+        {
+          "id": "arin",
+          "x": 0.43,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 1.2,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 1.85,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 2,
+              "darbe": true
+            },
+            {
+              "sn": 2.8,
+              "poz": "kilic-hazir"
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.57,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 2.4,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 3.1,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 3.25,
+              "darbe": true
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.27,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": -0.15,
+            "x1": 0.27,
+            "sure": 0.9,
+            "kos": true
+          },
+          "adimlar": [
+            {
+              "sn": 1.5,
+              "poz": "saldir"
+            },
+            {
+              "sn": 2.02,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus",
+              "x": 0.25
+            },
+            {
+              "sn": 2.35,
+              "poz": "dus"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.75,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 1.2,
+            "x1": 0.75,
+            "sure": 0.9,
+            "kos": true,
+            "bas": 0.1
+          },
+          "adimlar": [
+            {
+              "sn": 2.9,
+              "poz": "saldir"
+            },
+            {
+              "sn": 3.27,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus",
+              "x": 0.75
+            },
+            {
+              "sn": 3.55,
+              "poz": "dus"
+            }
+          ]
+        }
+      ],
+      "nesneler": [
+        {
+          "tip": "kilic",
+          "x": 0.04,
+          "aci": 1.57,
+          "ucus": {
+            "x0": 0.27,
+            "sn0": 2.02,
+            "sn1": 2.55
+          }
+        },
+        {
+          "tip": "kilic",
+          "x": 0.97,
+          "aci": -1.57,
+          "ucus": {
+            "x0": 0.75,
+            "sn0": 3.27,
+            "sn1": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "aciklama": "4-6,5 sn AĞIR ÇEKİM: 2. muhafız Arın'a atılıp kılıcını indirir; Arın eğilir, kılıç başının hemen üstünden/yanından geçer (vuruş izi yavaş görünür). Ekranda: Kılıcı yanımdan geçti…",
+      "mekan": "arena",
+      "sure": 2.5,
+      "kalabalik": 1,
+      "efektler": [
+        "agir-cekim"
+      ],
+      "zincir": {
+        "a": "arin",
+        "b": "kargan",
+        "sn": 0,
+        "el": "arka"
+      },
+      "yazi": [
+        {
+          "sn": 0.2,
+          "d": 1.6,
+          "metin": "Kılıcı yanımdan geçti…"
+        }
+      ],
+      "kadraj": [
+        {
+          "id": "muhafiz",
+          "x": 0.25,
+          "yon": 1,
+          "poz": "yerde",
+          "esya": null
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.75,
+          "yon": -1,
+          "poz": "yerde",
+          "esya": null
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.21,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "arka": true
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.88,
+          "yon": -1,
+          "poz": "kilic-hazir"
+        },
+        {
+          "id": "arin",
+          "x": 0.43,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "saskin",
+          "adimlar": [
+            {
+              "sn": 0.12,
+              "poz": "diz-cok",
+              "x": 0.475
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.57,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.255,
+          "yon": 1,
+          "poz": "kilic-kaldir",
+          "ifade": "kizgin",
+          "hareket": {
+            "x0": 0.12,
+            "x1": 0.255,
+            "sure": 0.5,
+            "kos": true
+          },
+          "adimlar": [
+            {
+              "sn": 0.3,
+              "poz": "kilic-indir"
+            }
+          ]
+        }
+      ],
+      "nesneler": [
+        {
+          "tip": "kilic",
+          "x": 0.04,
+          "aci": 1.57
+        },
+        {
+          "tip": "kilic",
+          "x": 0.97,
+          "aci": -1.57
+        }
+      ]
+    },
+    {
+      "aciklama": "6,5-10 sn: Arın doğrulup karşılık verir, 0,9'da 2. muhafızı indirir. 5. muhafız Kargan'a vurur, Kargan bloklar (kıvılcım), 1,9'da Kargan onu indirir. Son muhafız (3.) öne atılır, 3,0'da Arın onu da indirir. Zincir baştan sona kopmaz.",
+      "mekan": "arena",
+      "sure": 3.5,
+      "kalabalik": 1,
+      "zincir": {
+        "a": "arin",
+        "b": "kargan",
+        "sn": 0,
+        "el": "arka"
+      },
+      "kadraj": [
+        {
+          "id": "muhafiz",
+          "x": 0.25,
+          "yon": 1,
+          "poz": "yerde",
+          "esya": null
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.75,
+          "yon": -1,
+          "poz": "yerde",
+          "esya": null
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.12,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 0.12,
+            "x1": 0.3,
+            "sure": 0.45,
+            "kos": true,
+            "bas": 1.9
+          },
+          "adimlar": [
+            {
+              "sn": 2.4,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 3.02,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus",
+              "x": 0.26
+            },
+            {
+              "sn": 3.3,
+              "poz": "dus"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.255,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "adimlar": [
+            {
+              "sn": 0.92,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus",
+              "x": 0.22
+            },
+            {
+              "sn": 1.2,
+              "poz": "dus"
+            }
+          ]
+        },
+        {
+          "id": "arin",
+          "x": 0.475,
+          "yon": -1,
+          "poz": "diz-cok",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 0.15,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 0.75,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 0.9,
+              "darbe": true
+            },
+            {
+              "sn": 1.6,
+              "x": 0.43
+            },
+            {
+              "sn": 1.6,
+              "poz": "kilic-hazir"
+            },
+            {
+              "sn": 2.35,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 2.85,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 3,
+              "darbe": true
+            }
+          ]
+        },
+        {
+          "id": "kargan",
+          "x": 0.57,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 1.15,
+              "poz": "blok"
+            },
+            {
+              "sn": 1.55,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 1.75,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 1.9,
+              "darbe": true
+            },
+            {
+              "sn": 2.6,
+              "poz": "kilic-hazir"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.88,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 0.88,
+            "x1": 0.76,
+            "sure": 0.4,
+            "kos": true,
+            "bas": 0.4
+          },
+          "adimlar": [
+            {
+              "sn": 0.85,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 1.2,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 1.35,
+              "darbe": true
+            },
+            {
+              "sn": 1.92,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus",
+              "x": 0.83
+            },
+            {
+              "sn": 2.2,
+              "poz": "dus"
+            }
+          ]
+        }
+      ],
+      "nesneler": [
+        {
+          "tip": "kilic",
+          "x": 0.04,
+          "aci": 1.57
+        },
+        {
+          "tip": "kilic",
+          "x": 0.97,
+          "aci": -1.57
+        },
+        {
+          "tip": "kilic",
+          "x": 0.1,
+          "aci": 1.4,
+          "ucus": {
+            "x0": 0.26,
+            "sn0": 0.92,
+            "sn1": 1.45
+          }
+        },
+        {
+          "tip": "kilic",
+          "x": 0.93,
+          "aci": -1.4,
+          "ucus": {
+            "x0": 0.76,
+            "sn0": 1.92,
+            "sn1": 2.4
+          }
+        },
+        {
+          "tip": "kilic",
+          "x": 0.16,
+          "aci": 1.7,
+          "ucus": {
+            "x0": 0.3,
+            "sn0": 3.02,
+            "sn1": 3.45
+          }
+        }
+      ]
+    }
+  ]
+}

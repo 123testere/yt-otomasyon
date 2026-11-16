@@ -434,5 +434,5 @@ export function cop(ctx, def, o) {
   }
   esyaCiz(ctx, onEsya, kol[2], p.on[0] + p.on[1], t, seed);
   ctx.restore();
-  return { el: [x + kol[2][0] * s * yon, y - p.zipla * s + kol[2][1] * s] };
+  return { el: [x + kol[2][0] * s * yon, y - p.zipla * s + kol[2][1] * s], elArka: [x + arkaKol[2][0] * s * yon, y - p.zipla * s + arkaKol[2][1] * s] };
 }

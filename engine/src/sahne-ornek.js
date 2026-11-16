@@ -12,15 +12,21 @@ const [file, out = 'ornek-videolar'] = process.argv.slice(2);
 const job = JSON.parse(fs.readFileSync(file, 'utf8'));
 const dizi = diziYukle(job.dizi);
 let t = 0;
+const words = [];
 const scenes = job.scenes.map((sc) => {
   for (const k of sc.kadraj ?? []) if (!dizi.karakterler[k.id]) throw new Error(`karakter yok: ${k.id}`);
+  // Ekran yazısı (seslendirme yok): yazi: [{sn, d, metin}] altyazı olarak gösterilir
+  for (const y of sc.yazi ?? []) {
+    const kel = y.metin.split(/\s+/);
+    kel.forEach((w, i) => words.push({ t: t + y.sn + (i * (y.d ?? 1.5)) / kel.length, d: (y.d ?? 1.5) / kel.length, text: w, konusan: "anlatici" }));
+  }
   const s = { zaman: 'gece', efektler: [], nesneler: [], satirlar: [], kart: null, kartSn: 0, ...sc, t0: t, d: sc.sure };
   t += sc.sure;
   return s;
 });
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sahne-ornek-'));
 const video = await renderDizi({
-  job: { id: job.id }, dir, ses: { total: t, scenes, words: [], narration: null }, music: null, musicVolume: 0,
+  job: { id: job.id }, dir, ses: { total: t, scenes, words, narration: null }, music: null, musicVolume: 0,
   boyut: job.dikey ? { width: 1080, height: 1920 } : { width: 1920, height: 1080 },
   props: { dil: dizi.dil ?? 'tr', rozetNo: false, acilis: false, stil: dizi.stil ?? 'cop', dizi: { ad: dizi.ad }, bolum: {}, karakterler: dizi.karakterler, kapanis: null },
 });

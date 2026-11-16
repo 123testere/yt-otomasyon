@@ -321,6 +321,7 @@ export function kare(ctx, p, t, dur, fns) {
   const olcek = yatay ? (H / 1080) * 0.86 : 1.3;
   for (const n of sc.nesneler ?? []) nesneCiz(ctx, n, uc, W, yer, olcek);
   const eller = {};
+  const ellerArka = {};
   const elJ = [];
   const yerler = yerlesim(kadraj.length, W);
   // Arka sıradakiler önce çizilir (önündekiler onları örter)
@@ -352,6 +353,7 @@ export function kare(ctx, p, t, dur, fns) {
         solgun: Math.max(solgun, k.arka ? 0.35 : 0), seed: (def.seed ?? j + 1) + kopya * 2.37, esya: st.esya,
       });
       eller[k.id] = r.el;
+      ellerArka[k.id] = r.elArka;
       elJ[j] = r.el;
       return;
     }
@@ -387,8 +389,10 @@ export function kare(ctx, p, t, dur, fns) {
     ctx.restore();
   });
   // Zincirle bağlama (ör. kahraman zinciri rakibin koluna dolar)
-  if (sc.zincir && uc >= (sc.zincir.sn ?? 0) && uc < (sc.zincir.bitis ?? 1e9) && eller[sc.zincir.a] && eller[sc.zincir.b]) {
-    const [a, b] = [eller[sc.zincir.a], eller[sc.zincir.b]];
+  // el: "arka" → boştaki (kılıçsız) eller arasında; iki karakter sırt sırta zincirli dövüşür
+  const zEl = sc.zincir?.el === "arka" ? ellerArka : eller;
+  if (sc.zincir && uc >= (sc.zincir.sn ?? 0) && uc < (sc.zincir.bitis ?? 1e9) && zEl[sc.zincir.a] && zEl[sc.zincir.b]) {
+    const [a, b] = [zEl[sc.zincir.a], zEl[sc.zincir.b]];
     ctx.lineWidth = 5; ctx.strokeStyle = '#B0B0BA';
     const n = 10;
     for (let k = 0; k <= n; k++) {
