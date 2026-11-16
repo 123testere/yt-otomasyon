@@ -1,8 +1,72 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-16T02:47:16.707Z",
+  "guncellendi": "2026-11-16T11:31:33.799Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Nvidia açıkladı: GeForce ekran kartlarını bırakacak mı?",
+      "link": "https://www.donanimhaber.com/nvidia-acikladi-geforce-ekran-kartlarini-birakacak-mi--212963",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-16T11:32:00.000Z",
+      "ozet": "Nvidia'nın yönetim kadrosundaki değişiklikler, GeForce ekran kartlarının geleceği hakkında soru işaretlerini artırmıştı. Şirketin GeForce temsilcisi Jacob Freeman ise kısa ve net yanıt verdi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
+      "link": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-16T11:00:00.000Z",
+      "ozet": "AI competitors are catching up to Nvidia—and poised to take advantage of the chaos.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia'nın Asya'daki iş ortağı mercek altında: Çin'e çip aktarımı iddiaları araştırılıyor",
+      "link": "https://www.donanimhaber.com/nvidia-nin-is-ortagi-megaspeed-hakkinda-sorusturma-baslatildi--212960",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-16T10:48:00.000Z",
+      "ozet": "Jensen Huang'ın ayrılığıyla gündeme gelen Nvidia skandalı yeni bir boyut kazandı. Eski Megaspeed yöneticisi Alice Huang'ın bağlantılı olduğu şirket, tedarik zincirini incelemeye aldı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Şok İddia: Jensen Huang, NVIDIA CEO'luğuna Geri Dönebilir!",
+      "link": "https://www.webtekno.com/jensen-huang-nvidia-ceoluguna-geri-donebilir-h229015.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-16T10:12:48.000Z",
+      "ozet": "Görevinden ayrılan Jensen Huang'ın Silikon Vadisi'nin desteğiyle NVIDIA CEO'luğuna geri dönmek için kulis yürüttüğü iddia ediliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "link": "https://openai.com/index/lvmh-media-division-partnership",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-16T09:00:00.000Z",
+      "ozet": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "iPhone Duo'ya Jailbreak Yapmadan Windows 11 Kurmayı Başardılar: Siz de Deneyebilirsiniz!",
+      "link": "https://www.webtekno.com/iphone-duo-windows-11-h229007.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-16T08:18:03.000Z",
+      "ozet": "iPhone Duo'ya jailbreak yapmadan Windows 11 kuruldu. Gemini 4 Carbon ile geliştirilen WindowsiOS projesi artık herkes tarafından denenebiliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang, Nvidia CEO koltuğuna geri dönmek için harekete geçti",
+      "link": "https://www.donanimhaber.com/jensen-huang-nvidia-ceo-koltuguna-geri-donmek-icin-harekete-gect--212951",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-16T07:11:17.000Z",
+      "ozet": "Nvidia'dan ayrılmak zorunda kalan Jensen Huang'ın CEO koltuğuna dönmek için yakın çevresiyle görüştüğü öne sürüldü. Önemli isimler de olası geri dönüşünü destekliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apple'ın Yapay Zekâ Destekli Akıllı Gözlüğünden İlk Detaylar Geldi: Ne Zaman Çıkacak?",
+      "link": "https://www.webtekno.com/apple-akilli-gozlugunden-ilk-detaylar-geldi-h228997.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-16T06:37:17.000Z",
+      "ozet": "Apple'ın ekran içermeyen yeni akıllı gözlüğü, gücünü Siri ve iPhone uygulamalarından alarak 2027 yılında piyasaya sürülmeye hazırlanıyor.",
+      "kullanildi": false
+    },
     {
       "baslik": "Apple launches new app to study how people use AI for health",
       "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
@@ -188,35 +252,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Jensen Huang'ın ayrılışında Çin'e kaçırılan milyarlarca dolarlık çiplerin etkisi olabilir",
-      "link": "https://www.donanimhaber.com/huang-in-ayriliginin-arkasinda-cin-e-kacak-cip-ticareti-mi-var--212881",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-14T13:00:00.000Z",
-      "ozet": "Nvidia'nın eski CEO'su Jensen Huang'ın ayrılışının arkasında Çin'e yönelik GPU kaçakçılığının bulunabileceği öne sürüldü. İddiaya göre Çin'e ulaştırılan donanımların kapasitesi 1,5 GW'ı aşmış olabilir",
-      "kullanildi": false
-    },
-    {
       "baslik": "Jensen Huang and the decline of the visionary showman founder CEO",
       "link": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
       "kaynak": "The Verge",
       "tarih": "2026-11-14T12:00:00.000Z",
       "ozet": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "No Pilots. Few Air Traffic Controllers. What Could Go Wrong?",
-      "link": "https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-14T11:00:00.000Z",
-      "ozet": "Normally, aviation is slow to embrace new technology—but AI has come for the skies.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Çin'in 3,2 milyar dolarlık yapay zeka projeleri Nvidia krizinin gölgesinde",
-      "link": "https://www.donanimhaber.com/cin-in-3-2-milyar-dolarlik-yapay-zeka-yatirimlari-tehlikede--212914",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-14T10:00:00.000Z",
-      "ozet": "Çin'de 3,2 milyar doları aşan yapay zeka yatırımları, ABD'nin Nvidia çiplerine yönelik ihracat kısıtlamaları nedeniyle belirsizliğe sürüklendi.",
       "kullanildi": false
     }
   ]

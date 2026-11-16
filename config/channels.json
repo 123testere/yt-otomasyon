@@ -262,6 +262,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Kaçış Yolu Demir Parmaklıkla Bitti: Arın Neden Döndü? | Zincirli 7",
       "Toros'un Hücresi Neden Bomboştu? ⛓️",
       "Tek Gözlü Gladyatör Sungur'u Neden Terk Etti? | Zincirli 6",
       "Yarın Toros'un tek gözünün sırrı çıkıyor ⚔️",
@@ -600,7 +601,7 @@
           2
         ],
         "time": "18:00",
-        "minutes": 10
+        "minutes": 4
       },
       "shorts": {
         "times": [
@@ -608,13 +609,14 @@
           "10:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz",
-        "speechRate": "+20%"
+        "source": "uzundan",
+        "speechRate": "+20%",
+        "dongu": true
       },
       "privacy": "public",
       "aiDisclosure": true,
       "hashtags": "",
-      "extraInstructions": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
+      "extraInstructions": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Uzun videonun kapanışında izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme. KANAL DÜZELTMESİ (2026-11-16, veriye dayalı; uzun videolar 2 izlenmede kaldı, Shorts izleyicisinin yarısı ilk saniyede kaydırıyor): UZUN VİDEO 3,5-5 dk. İlk cümle hikâyenin kırılma anından somut bir sahneyle başlar (yıl, yer, kişi, eylem: \"1960, Eskişehir. Cebinde parası olmayan bir adam fırının önünde duruyordu.\"); \"Bugün ... anlatacağım\", \"Merhaba\", \"Biliyor muydunuz\" yasak. İlk 15 saniyede her sahne en fazla 8-10 kelime: görüntü 2-3 sn'de bir değişsin. Başlık belgesel değil: izleyicinin günlük hayatına dokunan soru ya da zıtlık (\"Bu Alet Olmasaydı Günde 8 Saat Çamaşır Yıkıyordunuz\", \"Terazi Neden Hiç Yalan Söylemez?\"); \"X Nasıl Doğdu?\" kalıbı yok. Kapak yazısı (thumbnailText ve yedekleri) en fazla 3 kelime ve merak: \"ÖLÜMCÜL İCAT\", \"HAFTADA 1 GÜN\". SHORTS uzun videonun ön gösterimidir: hikâyenin en inanılmaz kısmını anlat, sonucuna gelmeden \"asıl hikâye kanaldaki uzun videoda\" de. İlk cümle doğrudan sonuca ya da şoka girer. Son cümle veda etmez, ilk cümleye bağlanır (izleyici fark etmeden başa sarar); abone/beğen çağrısı ekrandaki kartta yazılı, sözlü veda yok.",
       "optimizasyon": {
         "deneyler": true,
         "kapakDegistir": true,
@@ -642,7 +644,7 @@
       "karakter": "Nur Bey: yaklaşık yüz yıllık, pirinçten yapılmış eski bir masa lambası. Sıcak, nostaljik, izleyiciyle akran gibi konuşan bilge bir anlatıcı. (Brass antique desk lamp character, warm glow, vintage encyclopedia illustration)",
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
-      "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Kapanışta izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme.",
+      "ekTalimat": "İzleyici orta ve ileri yaş. Sıcak, nostaljik, ansiklopedi tadında anlat; Nur Bey izleyiciyle akran gibi konuşur. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Uzun videonun kapanışında izleyiciye seçmeli bir soru sor; ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme. KANAL DÜZELTMESİ (2026-11-16, veriye dayalı; uzun videolar 2 izlenmede kaldı, Shorts izleyicisinin yarısı ilk saniyede kaydırıyor): UZUN VİDEO 3,5-5 dk. İlk cümle hikâyenin kırılma anından somut bir sahneyle başlar (yıl, yer, kişi, eylem: \"1960, Eskişehir. Cebinde parası olmayan bir adam fırının önünde duruyordu.\"); \"Bugün ... anlatacağım\", \"Merhaba\", \"Biliyor muydunuz\" yasak. İlk 15 saniyede her sahne en fazla 8-10 kelime: görüntü 2-3 sn'de bir değişsin. Başlık belgesel değil: izleyicinin günlük hayatına dokunan soru ya da zıtlık (\"Bu Alet Olmasaydı Günde 8 Saat Çamaşır Yıkıyordunuz\", \"Terazi Neden Hiç Yalan Söylemez?\"); \"X Nasıl Doğdu?\" kalıbı yok. Kapak yazısı (thumbnailText ve yedekleri) en fazla 3 kelime ve merak: \"ÖLÜMCÜL İCAT\", \"HAFTADA 1 GÜN\". SHORTS uzun videonun ön gösterimidir: hikâyenin en inanılmaz kısmını anlat, sonucuna gelmeden \"asıl hikâye kanaldaki uzun videoda\" de. İlk cümle doğrudan sonuca ya da şoka girer. Son cümle veda etmez, ilk cümleye bağlanır (izleyici fark etmeden başa sarar); abone/beğen çağrısı ekrandaki kartta yazılı, sözlü veda yok.",
       "videoSayisi": 51,
       "dersler": []
     },
@@ -663,7 +665,7 @@
     },
     "recentTitles": [
       "Silgi Yazıyı Nasıl Siliyor? ✏️",
-      "Terazi Adaletin Simgesi Nasıl Oldu? Gramın Gizli Hikâyesi",
+      "Mutfaktaki Tartın 130 Yıl Paris'teki Bir Kasaya Bağlıydı",
       "Sabun Suyun Çıkaramadığı Yağı Nasıl Söküyor? 🧼",
       "Halat İnce Liflerden Nasıl Bu Kadar Güçlü Oluyor?",
       "Pusula Kuzeyi Nasıl Buluyor? 🧭",
@@ -788,6 +790,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-15T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Pusula Kuzeyi Nasıl Buluyor? 🧭",
+        "a": "Harita",
+        "b": "Sabun",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-16T07:00:00.000Z"
       }
     ]
   },
