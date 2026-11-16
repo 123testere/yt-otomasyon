@@ -44,12 +44,13 @@ const FULL_VIDEO = { tr: 'Videonun tamamı', de: 'Ganzes Video', en: 'Full video
 
 // Uzun videodan kesit Shorts: açıklamaya uzun videonun bağlantısı (yüklenmişse) eklenir.
 async function withFullVideoLink(job, settings) {
-  // Fragman bölümden önce yayınlanır; bölüm o an henüz gizli olduğu için bağlantı eklenmez.
-  if (!job.derivedFrom || job.fragman) return job;
+  // Ön gösterim/fragman uzun videodan önce yayınlanır: uzun video zamanlanmış olarak yüklendiyse bağlantı eklenir,
+  // uzun video yayına girdiği anda çalışır hale gelir.
+  if (!job.derivedFrom) return job;
   const url = (await db().doc(`videos/${job.derivedFrom}`).get()).data()?.url;
   if (!url) return job;
   const label = FULL_VIDEO[settings.language] ?? FULL_VIDEO.en;
-  return { ...job, description: `${label}: ${url}
+  return { ...job, description: `${job.fragman ? (settings.language === 'tr' ? 'Tamamı yayında olunca burada' : 'Full video (when it goes live)') : label}: ${url}
 
 ${job.description}` };
 }
@@ -163,12 +164,15 @@ async function main() {
         console.warn(`  ekstralar: ${e.message}`);
       }
       // Kesit Shorts'u: altına uzun videonun bağlantısıyla kanal yorumu
-      if (job.type === 'short' && job.derivedFrom && !job.fragman) {
+      if (job.type === 'short' && job.derivedFrom) {
         try {
           const kaynak = (await firestore.doc(`videos/${job.derivedFrom}`).get()).data();
           if (kaynak?.url) {
             const ad = job.format === 'dizi' && job.bolum?.no ? `Bölüm ${job.bolum.no}` : 'Videonun';
-            const metin = settings.language === 'tr' ? `▶ ${ad} tamamı burada: ${kaynak.url}` : `▶ Watch the full video: ${kaynak.url}`;
+            const saat = kaynak.publishAt?.toDate?.()?.toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' });
+            const metin = settings.language === 'tr'
+              ? (job.fragman ? `▶ ${ad} tamamı ${saat ?? 'yakında'} yayında: ${kaynak.url}` : `▶ ${ad} tamamı burada: ${kaynak.url}`)
+              : `▶ Watch the full video: ${kaynak.url}`;
             await baglantiYorumu({ secret, videoId: yt.videoId, metin });
           }
         } catch (e) {

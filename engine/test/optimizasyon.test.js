@@ -261,3 +261,21 @@ test('karakter: yumuşak poz geçişi (başta önceki poz, sonda yeni poz, kendi
     assert.ok(v <= isaret.on[0] + (isaret.on[0] - dur.on[0]) * 0.1 && v >= dur.on[0] - 1e-9);
   }
 });
+
+test('planlayıcı: uzun videodan önceki 24 saatteki son Shorts ön gösterim olur, sonrakiler kesit', async () => {
+  const { neededJobs } = await import('../src/lib/plan.js');
+  const kanal = {
+    id: 'TESTONGOSTERIM', enabled: true, oylamalar: [],
+    settings: resolveSettings({ contentFormat: 'belgesel', long: { days: [2], time: '18:00', minutes: 4 }, shorts: { times: ['10:00', '19:00'], seconds: 45, source: 'uzundan' } }),
+  };
+  const jobs = neededJobs([kanal], { now: new Date('2026-11-24T04:00:00Z') }); // Salı 07:00 (İstanbul)
+  const uzun = jobs.find((j) => j.type === 'long');
+  const sabah = jobs.find((j) => j.id === '2026-11-24_TESTONGOSTERIM_short1');
+  const aksam = jobs.find((j) => j.id === '2026-11-24_TESTONGOSTERIM_short2');
+  assert.ok(uzun);
+  assert.equal(sabah.fragman, true);
+  assert.equal(sabah.clipOf, uzun.id);
+  assert.equal(sabah.uzunSaat, 'BU AKŞAM 18:00');
+  assert.equal(aksam.fragman, undefined);
+  assert.equal(aksam.clipOf, uzun.id); // yayından sonra: kesit
+});

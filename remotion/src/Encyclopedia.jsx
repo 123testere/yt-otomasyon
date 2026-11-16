@@ -104,7 +104,23 @@ function satirla(ctx, metin, size, maxW) {
   return sat;
 }
 
+// Ön gösterim kartı: "TAMAMI" + yayın saati + yanıp sönen ok (izleyiciyi uzun videoya çağırır)
+function onGosterimKarti(ctx, u, kapanis, T) {
+  const a = eo(pr(u, 0, 0.5)), k = S.kart;
+  ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(30,28,36,.94)';
+  ctx.beginPath(); ctx.roundRect(k.x, k.y - 200, k.w, k.h + 200, 18); ctx.fill(); ctx.restore();
+  yazi(ctx, 'TAMAMI', 540, 360, 110, { c: K.lamba, a });
+  const b = eo(pr(u, 0.3, 0.8)) * (1 + 0.04 * Math.sin(T * 6));
+  yazi(ctx, kapanis.baslik, 540, 560, 96, { c: K.kagit, a: eo(pr(u, 0.3, 0.8)), w: 900 });
+  yazi(ctx, kapanis.alt || 'Uzun videoda, bu kanalda', 540, 680, 58, { c: K.kagit, a: eo(pr(u, 0.6, 1.1)), it: true, w: 500 });
+  ctx.save(); ctx.globalAlpha = eo(pr(u, 0.8, 1.2)); ctx.fillStyle = K.lamba;
+  const oy = 820 + Math.sin(T * 5) * 14 * b;
+  ctx.beginPath(); ctx.moveTo(470, oy); ctx.lineTo(610, oy); ctx.lineTo(540, oy + 80); ctx.closePath(); ctx.fill(); ctx.restore();
+  yazi(ctx, 'Devamı için abone ol ve beğen', 540, 1090, 54, { c: K.kagit, a: eo(pr(u, 1.2, 1.7)), w: 700 });
+}
+
 function kapanisKarti(ctx, u, kapanis, T) {
+  if (kapanis.fragman) return onGosterimKarti(ctx, u, kapanis, T);
   const a = eo(pr(u, 0, 0.5)), k = S.kart;
   ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(30,28,36,.94)';
   ctx.beginPath(); ctx.roundRect(k.x, k.y - 200, k.w, k.h + 200, 18); ctx.fill(); ctx.restore();

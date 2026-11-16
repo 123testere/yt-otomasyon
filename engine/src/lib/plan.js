@@ -115,6 +115,13 @@ function channelJobs(channelId) {
 
 // "Uzun videodan kesit" seçili kanalda her Shorts, yayınından önceki 7 gün içinde çıkan son uzun videoya bağlanır.
 // Kesit hakkı dolmuşsa ya da uzun video yoksa Shorts bağımsız yazılır. Aynı turda yazılacak uzun video da kaynak olabilir.
+// Ön gösterim saati etiketi: aynı gün akşamsa "BU AKŞAM 18:00", gündüzse "BUGÜN 12:00", ertesi günse "YARIN 18:00"
+function uzunSaatEtiketi(shortAt, longAt) {
+  const saat = new Date(longAt).toLocaleTimeString('tr-TR', { timeZone: TZ, hour: '2-digit', minute: '2-digit' });
+  if (dateInTz(new Date(shortAt), TZ) !== dateInTz(new Date(longAt), TZ)) return `YARIN ${saat}`;
+  return Number(saat.slice(0, 2)) >= 17 ? `BU AKŞAM ${saat}` : `BUGÜN ${saat}`;
+}
+
 function attachClips(slots, channels) {
   for (const c of channels.filter((ch) => ch.settings.shorts?.source === 'uzundan' && ch.settings.contentFormat !== 'dizi')) {
     const jobs = channelJobs(c.id);
@@ -123,7 +130,22 @@ function attachClips(slots, channels) {
       .sort((a, b) => b.publishAt.localeCompare(a.publishAt));
     const used = {};
     for (const j of jobs) if (j.derivedFrom) used[j.derivedFrom] = (used[j.derivedFrom] ?? 0) + 1;
-    for (const slot of slots.filter((s) => s.channelId === c.id && s.type === 'short')) {
+    // Ön gösterim (spoiler) Shorts: uzun videodan önceki 24 saat içindeki son Shorts, uzun videonun merak uyandıran
+    // anını gösterip izleyiciyi uzun videoya çağırır (settings.shorts.onGosterim: false ile kapatılır).
+    if (c.settings.shorts?.onGosterim !== false) {
+      for (const l of longs) {
+        const lAt = Date.parse(l.publishAt);
+        if (jobs.some((j) => j.fragman && j.derivedFrom === l.id)) continue;
+        const aday = slots.filter((s) => s.channelId === c.id && s.type === 'short' && !s.clipOf
+          && Date.parse(s.publishAt) < lAt && lAt - Date.parse(s.publishAt) <= 24 * 3600 * 1000)
+          .sort((a, b) => b.publishAt.localeCompare(a.publishAt))[0];
+        if (!aday) continue;
+        aday.clipOf = l.id;
+        aday.fragman = true;
+        aday.uzunSaat = uzunSaatEtiketi(aday.publishAt, l.publishAt);
+      }
+    }
+    for (const slot of slots.filter((s) => s.channelId === c.id && s.type === 'short' && !s.fragman)) {
       const at = Date.parse(slot.publishAt);
       const source = longs.find((l) => Date.parse(l.publishAt) < at && at - Date.parse(l.publishAt) <= CLIP_WINDOW_MS
         && (used[l.id] ?? 0) < CLIPS_PER_LONG);

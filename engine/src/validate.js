@@ -85,8 +85,10 @@ function cizimErrors(job) {
   if (!Array.isArray(job.baslikKart) || job.baslikKart.length !== 2 || !job.baslikKart.every((l) => str(l, 22))) {
     errors.push('baslikKart 2 satır olmalı, her biri en fazla 22 karakter');
   }
-  if (job.type === 'short' && job.kapanis === undefined) errors.push('Shorts\'ta kapanis {a, b} oylama kartı olmalı');
-  if (job.kapanis !== undefined && !(str(job.kapanis?.a, 18) && str(job.kapanis?.b, 18) && optStr(job.kapanis?.soru, 30))) {
+  if (job.type === 'short' && job.kapanis === undefined) errors.push('Shorts\'ta kapanis {a, b} oylama kartı olmalı (ön gösterimde {fragman: true, baslik, alt})');
+  if (job.kapanis?.fragman) {
+    if (!(str(job.kapanis.baslik, 22) && optStr(job.kapanis.alt, 30))) errors.push('ön gösterim kartı kapanis {fragman: true, baslik ≤22 (ör. "BU AKŞAM 18:00"), alt ≤30} olmalı');
+  } else if (job.kapanis !== undefined && !(str(job.kapanis?.a, 18) && str(job.kapanis?.b, 18) && optStr(job.kapanis?.soru, 30))) {
     errors.push('kapanis {a ≤18, b ≤18, soru ≤30} olmalı');
   }
   if (job.type === 'long') {
@@ -550,6 +552,7 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
     req(words >= min && words <= max, `toplam ${words} kelime; hedef ${slot.targetWords} (${min}-${max} arası olmalı)`);
     req(job.type === slot.type && job.channelId === slot.channelId, 'type/channelId needed.json ile uyuşmuyor');
     if (slot.clipOf) errors.push(...clipErrors(job, slot.clipOf));
+    if (slot.fragman && job.fragman !== true) errors.push(`bu Shorts uzun videonun ön gösterimi (uzun videodan önce yayınlanır): "fragman": true yaz, en çarpıcı anı göster, sonucu verme, son cümlede "Tamamı ${slot.uzunSaat ?? 'bu akşam'} kanalda" de`);
     if (slot.format === 'cizim') req(job.format === 'cizim', 'bu kanal çizim formatında: "format": "cizim" olmalı');
     if (slot.oylama) {
       req(job.oylama?.kaynak === slot.oylama.kaynak, `bu video "${slot.oylama.kaynak}" oylamasının konusu: oylama.kaynak yazılmalı`);
