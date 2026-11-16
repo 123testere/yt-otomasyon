@@ -9,3 +9,4 @@ secrets/
 remotion/public/*
 !remotion/public/.gitkeep
 .cache/
+ornek-videolar/

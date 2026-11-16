@@ -1,0 +1,218 @@
+{
+  "id": "zincirli-ornek-01",
+  "dizi": "zincirli",
+  "scenes": [
+    {
+      "aciklama": "0-4 sn: Arın kılıcı kaldırır (0,15-0,65), 1,35te indirir, 1,53te muhafızın kılıcına çarpar (kıvılcım); muhafızın kılıcı havaya uçup sağa düşer, muhafız diz çöker. Arkadaki duvarda gizli geçit kapalı (ince çatlak).",
+      "mekan": "zindan",
+      "sure": 4,
+      "gecit": {
+        "x": 0.5
+      },
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.37,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 0.15,
+              "poz": "kilic-kaldir"
+            },
+            {
+              "sn": 1.35,
+              "poz": "kilic-indir"
+            },
+            {
+              "sn": 1.53,
+              "darbe": true
+            },
+            {
+              "sn": 2.7,
+              "poz": "kilic-hazir"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.6,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "adimlar": [
+            {
+              "sn": 1.3,
+              "poz": "blok"
+            },
+            {
+              "sn": 1.55,
+              "poz": "darbe",
+              "esya": null,
+              "ifade": "korkmus"
+            },
+            {
+              "sn": 2.4,
+              "poz": "diz-cok"
+            }
+          ]
+        }
+      ],
+      "nesneler": [
+        {
+          "tip": "kilic",
+          "x": 0.9,
+          "aci": 1.65,
+          "ucus": {
+            "x0": 0.6,
+            "sn0": 1.55,
+            "sn1": 2.05
+          }
+        }
+      ]
+    },
+    {
+      "aciklama": "4-7 sn: Toros duvarı gösterir, 0,8'de gizli geçit açılır (toz, sarsıntı); Arın 1,7'de geçide yürür.",
+      "mekan": "zindan",
+      "sure": 3,
+      "gecit": {
+        "x": 0.5,
+        "ac": 0.8
+      },
+      "kadraj": [
+        {
+          "id": "toros",
+          "x": 0.22,
+          "yon": 1,
+          "poz": "isaret",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "sn": 0.8,
+              "sarsinti": true
+            }
+          ]
+        },
+        {
+          "id": "arin",
+          "x": 0.8,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "kilic",
+          "ifade": "saskin",
+          "hareket": {
+            "x0": 0.8,
+            "x1": 0.6,
+            "sure": 1,
+            "bas": 1.7
+          }
+        }
+      ]
+    },
+    {
+      "aciklama": "7-10 sn: Geçidin önünde Arın; sağdan kılıçlı 5 muhafız koşarak gelir (ikisi arka sırada), duruş alır, 2,2'de saldırır.",
+      "mekan": "zindan",
+      "sure": 3,
+      "gecit": {
+        "x": 0.25,
+        "ac": -5
+      },
+      "kadraj": [
+        {
+          "id": "arin",
+          "x": 0.22,
+          "yon": 1,
+          "poz": "kilic-hazir",
+          "esya": "kilic",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "sn": 2.3,
+              "poz": "blok"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.52,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 1.2,
+            "x1": 0.52,
+            "sure": 1,
+            "kos": true
+          },
+          "adimlar": [
+            {
+              "sn": 2.2,
+              "poz": "saldir"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 1.25,
+            "x1": 0.68,
+            "sure": 1.1,
+            "kos": true,
+            "bas": 0.15
+          },
+          "adimlar": [
+            {
+              "sn": 2.3,
+              "poz": "saldir"
+            }
+          ]
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.84,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "hareket": {
+            "x0": 1.3,
+            "x1": 0.84,
+            "sure": 1.1,
+            "kos": true,
+            "bas": 0.3
+          }
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.6,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "arka": true,
+          "hareket": {
+            "x0": 1.25,
+            "x1": 0.6,
+            "sure": 1.2,
+            "kos": true,
+            "bas": 0.25
+          }
+        },
+        {
+          "id": "muhafiz",
+          "x": 0.76,
+          "yon": -1,
+          "poz": "kilic-hazir",
+          "arka": true,
+          "hareket": {
+            "x0": 1.3,
+            "x1": 0.76,
+            "sure": 1.2,
+            "kos": true,
+            "bas": 0.4
+          }
+        }
+      ]
+    }
+  ]
+}

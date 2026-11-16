@@ -1,6 +1,7 @@
 // Destan/aksiyon dizileri için mekânlar (ölçüden bağımsız: dikey ve yatay tuvalde çalışır).
 // koy-gunduz, koy-yangin, kervan, tas-ocagi, zindan, avlu, arena, loca
 import { h } from './dizi.js';
+import { eo, pr } from './cizim.js';
 
 export const DESTAN_MEKANLAR = ['koy-gunduz', 'koy-yangin', 'kervan', 'tas-ocagi', 'zindan', 'avlu', 'arena', 'loca'];
 
@@ -111,9 +112,66 @@ function sancak(ctx, x, y, renk, t, seed) {
   ctx.closePath(); ctx.fill();
 }
 
-// o: { W, H, t, kamera (0-1), kalabalik (heyecan 0-1), efektler }
+// Zindanda gizli geçit: kapalıyken taş duvarın parçası (ince çatlak + gevşek taş + içeri çekilen toz),
+// g.ac saniyesinde taş kapı 1,6 sn'de yana kayar, arkasında aşağı inen merdivenli karanlık geçit görünür.
+function gizliGecit(ctx, W, H, u, g) {
+  const gw = W * 0.13;
+  const gx = W * (g.x ?? 0.42) - gw / 2;
+  const alt = H * 0.74;
+  const ust = alt - H * 0.4;
+  const yol = () => { ctx.beginPath(); ctx.moveTo(gx, alt); ctx.lineTo(gx, ust + gw / 2); ctx.arc(gx + gw / 2, ust + gw / 2, gw / 2, Math.PI, 0); ctx.lineTo(gx + gw, alt); ctx.closePath(); };
+  const p = g.ac === undefined ? 0 : eo(pr(u, g.ac, g.ac + 1.6));
+  if (p > 0) {
+    // Geçidin içi: karanlık, aşağı inen basamaklar, uzaktan soğuk mavi ışık
+    ctx.save(); yol(); ctx.clip();
+    const ig = ctx.createLinearGradient(0, ust, 0, alt);
+    ig.addColorStop(0, '#05070C'); ig.addColorStop(1, '#0E1622');
+    ctx.fillStyle = ig; ctx.fillRect(gx, ust, gw, alt - ust);
+    const mg = ctx.createRadialGradient(gx + gw / 2, alt - H * 0.05, 5, gx + gw / 2, alt - H * 0.05, gw * 0.9);
+    mg.addColorStop(0, `rgba(120,170,230,${0.45 * p})`); mg.addColorStop(1, 'rgba(120,170,230,0)');
+    ctx.fillStyle = mg; ctx.fillRect(gx, ust, gw, alt - ust);
+    for (let k = 0; k < 7; k++) {
+      const y = alt - k * H * 0.028; const ic = k * gw * 0.045;
+      ctx.fillStyle = `rgba(70,80,96,${0.75 - k * 0.09})`; ctx.fillRect(gx + ic, y - H * 0.012, gw - ic * 2, H * 0.012);
+    }
+    ctx.restore();
+  }
+  // Taş kapı (duvarla aynı doku); açılırken sola kayıp duvarın içine girer
+  ctx.save(); yol(); ctx.clip();
+  ctx.translate(-p * gw * 1.05, 0);
+  ctx.fillStyle = '#2C282A'; ctx.fillRect(gx, ust, gw, alt - ust);
+  ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 4;
+  for (let y = 20; y < alt; y += 60) for (let x = (y / 60) % 2 ? 0 : 50; x < W; x += 100) if (x + 100 > gx && x < gx + gw && y + 60 > ust) ctx.strokeRect(x, y, 100, 60);
+  // Gevşek taş (kolu): kapı kapalıyken hafif parlar
+  const tx = gx + gw - 70; const ty = alt - H * 0.22;
+  ctx.fillStyle = '#4A4246'; ctx.fillRect(tx, ty, 58, 36);
+  ctx.strokeStyle = `rgba(255,200,120,${0.25 + 0.2 * Math.sin(u * 3)})`; ctx.lineWidth = 3; ctx.strokeRect(tx, ty, 58, 36);
+  ctx.restore();
+  // Kapalıyken: kapının çevresinde ince çatlak ve içeri çekilen toz (gizli ama dikkatli göz fark eder)
+  if (p < 1) {
+    ctx.save(); ctx.globalAlpha = 0.45 * (1 - p); yol(); ctx.strokeStyle = '#0A0809'; ctx.lineWidth = 3; ctx.stroke(); ctx.restore();
+    for (let i = 0; i < 10; i++) {
+      const f = (u * 0.35 + h(i)) % 1;
+      ctx.fillStyle = `rgba(210,200,180,${0.35 * (1 - f) * (1 - p)})`;
+      ctx.fillRect(gx + gw + 40 - f * 46, ust + h(i * 3) * (alt - ust), 3, 3);
+    }
+  }
+  // Açılırken yerden kalkan toz
+  if (p > 0 && p < 1) {
+    for (let i = 0; i < 26; i++) {
+      const r = 30 + h(i) * 70;
+      const x = gx + h(i * 2) * gw * 1.3 - gw * 0.15;
+      const y = alt - h(i * 5) * 50 - p * 40;
+      const dg = ctx.createRadialGradient(x, y, 2, x, y, r);
+      dg.addColorStop(0, `rgba(180,170,150,${0.35 * (1 - p)})`); dg.addColorStop(1, 'rgba(180,170,150,0)');
+      ctx.fillStyle = dg; ctx.fillRect(x - r, y - r, r * 2, r * 2);
+    }
+  }
+}
+
+// o: { W, H, t, u (sahne saniyesi), kamera (0-1), kalabalik (heyecan 0-1), gecit: {x, ac} }
 export function destanMekan(ctx, ad, o = {}) {
-  const { W = 1920, H = 1080, t = 0, kamera = 0, kalabalik: hey = 0.5 } = o;
+  const { W = 1920, H = 1080, t = 0, u = t, kamera = 0, kalabalik: hey = 0.5 } = o;
   ctx.save();
   const z = 1 + Math.min(1, kamera) * 0.05;
   ctx.translate(W / 2, H * 0.55); ctx.scale(z, z); ctx.translate(-W / 2, -H * 0.55);
@@ -167,6 +225,7 @@ export function destanMekan(ctx, ad, o = {}) {
     ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 4;
     for (let y = 20; y < H * 0.74; y += 60) for (let x = (y / 60) % 2 ? 0 : 50; x < W; x += 100) ctx.strokeRect(x, y, 100, 60);
     if (zindan) {
+      gizliGecit(ctx, W, H, u, o.gecit ?? { x: 0.42 });
       // Meşale ışığı ve parmaklık
       const tit = 0.85 + Math.sin(t * 9) * 0.07;
       const g = ctx.createRadialGradient(W * 0.15, H * 0.35, 10, W * 0.15, H * 0.35, W * 0.6);

@@ -5,7 +5,8 @@
 import { KAS, cl, elips, eo, h, kirpma, sekil, ton } from './dizi.js';
 
 export const POZLAR = ['dur', 'yuru', 'kos', 'isaret', 'korku', 'dusun', 'el-salla', 'omuz', 'eller-belde', 'egil',
-  'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi'];
+  'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi',
+  'kilic-hazir', 'kilic-indir'];
 export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta'];
 
 const COP = { bas: 58, kalca: -215, omuz: -372, kol1: 92, kol2: 88, bacak1: 110, bacak2: 108 };
@@ -64,6 +65,17 @@ function pozAcilari(ad, t, seed, konusuyor, yasli, pozU = 9) {
   } else if (ad === 'kilic-kaldir') {
     const titre = s(t * 30) * 0.02;
     r = { ...r, on: [2.55 + titre, 0.75], arka: [2.4 + titre, 0.85], onB: [0.3, 0.1], arkaB: [-0.35, 0.05], egim: -0.12 };
+  } else if (ad === 'kilic-hazir') {
+    // Muhafız/dövüşçü duruşu: kılıç önde çapraz yukarı, dizler kırık, hafif yaylanma
+    const b = s(t * 2.4 + seed) * 0.05;
+    r = { ...r, on: [1.3 + b, 0.6], arka: [0.85 + b, 1.0], onB: [0.45, 0.35], arkaB: [-0.42, 0.3], egim: 0.1, zipla: -16 + s(t * 2.4 + seed) * 3 };
+  } else if (ad === 'kilic-indir') {
+    // Tek seferlik vuruş: kalkık kılıç 0,18 sn'de hızlanarak öne-aşağı iner, çarpmada hafifçe geri teper ve orada kalır
+    const x = cl(pozU / 0.18);
+    const geri = pozU > 0.18 ? Math.sin((pozU - 0.18) * 22) * Math.exp(-(pozU - 0.18) * 9) * 0.08 : 0;
+    const k = x * x - geri;
+    // Bitişte kılıç öne, hafif aşağı bakar (rakibin kılıcına/kalkanına çarpacak yükseklikte)
+    r = { ...r, on: [2.65 - k * 1.5, 0.15], arka: [-0.6, -0.6], onB: [0.25 + 0.4 * k, 0.3], arkaB: [-0.55, 0.1], egim: 0.05 + 0.22 * k, zipla: -12 * k };
   } else if (ad === 'kilic-savur') {
     // Sürekli savurma: yukarıdan aşağı hızlı darbe, yavaş geri kaldırma
     const ph = (t * 1.6 + seed) % 1;
@@ -96,7 +108,9 @@ function pozAcilari(ad, t, seed, konusuyor, yasli, pozU = 9) {
 // (hedefi biraz geçip yerine oturarak) önceki pozdan yenisine kayar. Görünüş değişmez, yalnızca hareket.
 // Kendi geçiş animasyonu olan pozlar (darbe, düşme, kalkma) ve ani olması gereken çarpma hariç.
 export const GECIS_SN = 0.3;
-const GECISSIZ = ['darbe', 'dus', 'yerde', 'kalk'];
+const GECIS_POZ = { 'kilic-kaldir': 0.5, 'kilic-hazir': 0.4 };
+export const gecisSuresi = (ad) => GECIS_POZ[ad] ?? GECIS_SN;
+const GECISSIZ = ['darbe', 'dus', 'yerde', 'kalk', 'kilic-indir'];
 const tasma = (x) => { const c = 1.4, y = x - 1; return 1 + (c + 1) * y * y * y + c * y * y; }; // 0→1, ~%6 taşar
 const kar = (a, b, k) => a + (b - a) * k;
 
@@ -111,8 +125,9 @@ export function pozKaristir(onceki, yeni, k) {
 // gecis: { poz: önceki poz, u: poz değişeli kaç saniye oldu }. Geçiş bittiyse ya da tanımsızsa yeni poz aynen döner.
 export function gecisliPoz(ad, gecis, t, seed, konusuyor, yasli, pozU) {
   const yeni = pozAcilari(ad, t, seed, konusuyor, yasli, pozU);
-  if (!gecis || gecis.poz === ad || !(gecis.u >= 0 && gecis.u < GECIS_SN) || GECISSIZ.includes(ad) || GECISSIZ.includes(gecis.poz)) return yeni;
-  return pozKaristir(pozAcilari(gecis.poz, t, seed, konusuyor, yasli, 9), yeni, tasma(gecis.u / GECIS_SN));
+  const sure = gecisSuresi(ad);
+  if (!gecis || gecis.poz === ad || !(gecis.u >= 0 && gecis.u < sure) || GECISSIZ.includes(ad) || GECISSIZ.includes(gecis.poz)) return yeni;
+  return pozKaristir(pozAcilari(gecis.poz, t, seed, konusuyor, yasli, 9), yeni, tasma(gecis.u / sure));
 }
 
 function sacVeSapka(ctx, def, bx, by) {
@@ -160,8 +175,9 @@ function yuz(ctx, def, fx, by, { ifade, agiz, t, seed }) {
     }
     ctx.fillStyle = HAT;
     ctx.beginPath(); ctx.ellipse(gx, gy, r, r * Math.max(0.12, 1 - kapak), 0, 0, Math.PI * 2); ctx.fill();
-    const ic = dx < 0 ? kas[0] : kas[1];
-    const dis = dx < 0 ? kas[1] : kas[0];
+    // gx-10 sol gözün dış ucu, sağ gözün iç ucudur (kaş iç ucu yüzün ortasına bakan uç)
+    const ic = dx < 0 ? kas[1] : kas[0];
+    const dis = dx < 0 ? kas[0] : kas[1];
     ctx.lineWidth = 4.5; ctx.strokeStyle = HAT; ctx.lineCap = 'round';
     ctx.beginPath(); ctx.moveTo(gx - 10, gy - 17 - ic * 0.5); ctx.lineTo(gx + 10, gy - 17 - dis * 0.5); ctx.stroke();
   }
@@ -403,6 +419,19 @@ export function cop(ctx, def, o) {
     else zincirHalka(ctx, [kol[1][0] * 0.3 + kol[2][0] * 0.7, kol[1][1] * 0.3 + kol[2][1] * 0.7], [kol[2][0] + 10, kol[2][1] + 40], 2);
   }
   if (def.siluet) ctx.filter = 'none';
+  // Kılıç vuruş izi: iniş sırasında kılıcın taradığı yay beyaz bir iz bırakır (0,35 sn'de söner)
+  if (o.poz === 'kilic-indir' && (onEsya === 'kilic' || onEsya === 'tahta-kilic') && (o.pozU ?? 9) < 0.35) {
+    const aci = p.on[0] + p.on[1] * 0.5;
+    const R = COP.kol1 + COP.kol2 + 150;
+    const sol = 1 - (o.pozU ?? 0) / 0.35;
+    const th0 = Math.PI / 2 - 2.75;
+    const th1 = Math.PI / 2 - aci;
+    if (th1 > th0 + 0.05) {
+      const g = ctx.createRadialGradient(omuz[0], omuz[1], R - 170, omuz[0], omuz[1], R + 10);
+      g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(0.75, `rgba(235,242,255,${0.55 * sol})`); g.addColorStop(1, `rgba(255,255,255,${0.9 * sol})`);
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(omuz[0], omuz[1], R + 10, th0, th1); ctx.arc(omuz[0], omuz[1], R - 170, th1, th0, true); ctx.closePath(); ctx.fill();
+    }
+  }
   esyaCiz(ctx, onEsya, kol[2], p.on[0] + p.on[1], t, seed);
   ctx.restore();
   return { el: [x + kol[2][0] * s * yon, y - p.zipla * s + kol[2][1] * s] };

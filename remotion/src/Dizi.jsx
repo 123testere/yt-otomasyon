@@ -2,7 +2,9 @@
 // Mekân ve karakterler kodla çizilir (shared/dizi.js, shared/cop.js, shared/mekan-destan.js).
 // Sahne: { t0, d, mekan, zaman, efektler, saat, kalabalik, kart: {ust, alt}, kartSn, kadraj: [...], nesneler: [...],
 //          zincir: {a, b, sn}, cizim, satirlar: [{kim, t0, t1, ifade, poz}] }
-// Kadraj öğesi: { id, x (0-1), yon, poz, ifade, esya, olcek, hareket: {x0, x1, sure, kos}, adimlar: [{sn, poz, x, yon, esya, ifade, sarsinti, darbe}] }
+// Kadraj öğesi (en fazla 8): { id, x (0-1), yon, poz, ifade, esya, olcek, arka (arka sıra: küçük, geride),
+//   hareket: {x0, x1, sure, kos, bas (başlama sn)}, adimlar: [{sn, satir (o satırın başından sayılır), poz, x, yon, esya, ifade, sarsinti, darbe}] }
+// Sahne: gecit: {x, ac} (zindanda gizli geçit; ac saniyesinde açılır)
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AbsoluteFill, continueRender, delayRender, Html5Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { serif, serifReady } from './fonts.js';
@@ -93,7 +95,7 @@ function yakinCekim(ctx, fn, u, t, W, H) {
 }
 
 // Kadraj öğesinin sahnedeki u. saniyedeki durumu (adımlar zaman çizelgesi).
-function durum(k, u, varsayilanX, d) {
+function durum(k, u, varsayilanX, d, sc) {
   let x = k.x ?? varsayilanX;
   let onceX = x;
   let xT = -9;
@@ -101,15 +103,21 @@ function durum(k, u, varsayilanX, d) {
   const st = { poz: k.poz, yon: k.yon, esya: k.esya, ifade: k.ifade, pozT: 0, onceki: null, gecisT: -9 };
   if (k.hareket) {
     const yuruSure = Math.max(0.5, k.hareket.sure ?? d * 0.6);
-    const ilerle = eo(pr(u, 0, yuruSure));
+    const bas = k.hareket.bas ?? 0; // gecikmeli giriş: o saniyeye kadar x0'da bekler
+    const ilerle = eo(pr(u, bas, bas + yuruSure));
     x = k.hareket.x0 + (k.hareket.x1 - k.hareket.x0) * ilerle;
     onceX = x;
-    if (ilerle < 1) st.poz = k.hareket.kos ? 'kos' : 'yuru';
-    else { st.onceki = k.hareket.kos ? 'kos' : 'yuru'; st.gecisT = yuruSure; } // yürüyüş bitti: duruşa yumuşak geçiş
+    if (u >= bas && ilerle < 1) st.poz = k.hareket.kos ? 'kos' : 'yuru';
+    else if (u >= bas) { st.onceki = k.hareket.kos ? 'kos' : 'yuru'; st.gecisT = bas + yuruSure; } // yürüyüş bitti: duruşa yumuşak geçiş
     st.yon = st.yon ?? (Math.sign(k.hareket.x1 - k.hareket.x0) || 1);
   }
   let vurgu = null;
-  for (const a of k.adimlar ?? []) {
+  // Satıra bağlı adım: sn, o konuşma satırının başladığı andan sayılır (eylem sözle aynı anda olsun)
+  const adimlar = (k.adimlar ?? []).map((a) => {
+    const s = Number.isInteger(a.satir) ? sc?.satirlar?.[a.satir] : null;
+    return s ? { ...a, sn: s.t0 - sc.t0 + (a.sn ?? 0) } : a;
+  }).sort((a, b) => (a.sn ?? 0) - (b.sn ?? 0));
+  for (const a of adimlar) {
     if (a.sn > u) break;
     if (a.x !== undefined) { onceX = x; x = a.x; xT = a.sn; }
     if (a.poz !== undefined && a.poz !== st.poz) { st.onceki = st.poz ?? 'dur'; st.gecisT = a.sn; st.poz = a.poz; st.pozT = a.sn; }
@@ -288,8 +296,9 @@ export function kare(ctx, p, t, dur, fns) {
 
   const copStil = p.stil === 'cop';
   const kadraj = sc.kadraj ?? [];
-  const varsX = [[0.5], [0.3, 0.7], [0.2, 0.5, 0.8], [0.15, 0.38, 0.62, 0.85]][Math.min(3, Math.max(0, kadraj.length - 1))];
-  const durumlar = kadraj.map((k, j) => durum(k, uc, varsX[j] ?? 0.5, sc.d));
+  const varsX = kadraj.length <= 4 ? [[0.5], [0.3, 0.7], [0.2, 0.5, 0.8], [0.15, 0.38, 0.62, 0.85]][Math.max(0, kadraj.length - 1)]
+    : kadraj.map((_, j) => 0.08 + (0.84 * j) / (kadraj.length - 1));
+  const durumlar = kadraj.map((k, j) => durum(k, uc, varsX[j] ?? 0.5, sc.d, sc));
   const vurgu = durumlar.map((d) => d.vurgu).filter(Boolean).sort((a, b) => b.sn - a.sn)[0];
   const sars = vurgu && uc - vurgu.sn < 0.45 ? (1 - (uc - vurgu.sn) / 0.45) * 22 : 0;
 
@@ -300,7 +309,7 @@ export function kare(ctx, p, t, dur, fns) {
   } else if (OYUN_MEKANLAR.includes(sc.mekan)) {
     oyunMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, veri: sc.veri });
   } else if (DESTAN_MEKANLAR.includes(sc.mekan)) {
-    destanMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5 });
+    destanMekan(ctx, sc.mekan, { W, H, t, u, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, gecit: sc.gecit });
   } else {
     mekan(ctx, sc.mekan, { W, H, t, zaman: sc.zaman, efektler: ef, saat: sc.saat, kamera: u / Math.max(1, sc.d) });
   }
@@ -312,10 +321,17 @@ export function kare(ctx, p, t, dur, fns) {
   const olcek = yatay ? (H / 1080) * 0.86 : 1.3;
   for (const n of sc.nesneler ?? []) nesneCiz(ctx, n, uc, W, yer, olcek);
   const eller = {};
+  const elJ = [];
   const yerler = yerlesim(kadraj.length, W);
-  kadraj.forEach((k, j) => {
+  // Arka sıradakiler önce çizilir (önündekiler onları örter)
+  const sira = kadraj.map((k, j) => j).sort((a, b) => (kadraj[a].arka ? 0 : 1) - (kadraj[b].arka ? 0 : 1) || a - b);
+  const ayni = {};
+  sira.forEach((j) => {
+    const k = kadraj[j];
     const def = karakterler[k.id];
     if (!def) return;
+    // Aynı karakterden birden çok (ör. 5 muhafız): hareketleri aynı anda olmasın diye her birine ayrı tohum
+    const kopya = (ayni[k.id] = (ayni[k.id] ?? -1) + 1);
     const konus = konusan === k.id;
     const satir = [...(sc.satirlar ?? [])].reverse().find((s) => s.kim === k.id && t >= s.t0 && (s.ifade || s.poz));
     const st = durumlar[j];
@@ -329,11 +345,14 @@ export function kare(ctx, p, t, dur, fns) {
       // Önceki poz ve değişeli geçen süre: satır pozu adım pozunun üstüne geldiyse önceki = adım pozu
       const gecis = satirYeni ? { poz: st.poz ?? 'dur', u: pozU } : st.onceki ? { poz: st.onceki, u: uc - st.gecisT } : null;
       const yon = st.yon ?? (st.x < 0.5 ? 1 : -1);
+      const arka = k.arka ? 0.82 : 1;
       const r = cop(ctx, def, {
-        x: st.x * W, y: yer, s: (k.olcek ?? 1) * olcek * (sc.cizim ? 0.75 : 1), yon, t: tc, konusuyor: konus,
-        poz, pozU, gecis, ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr', agiz, solgun, seed: def.seed ?? j + 1, esya: st.esya,
+        x: st.x * W, y: yer - (k.arka ? 46 * olcek : 0), s: (k.olcek ?? 1) * olcek * arka * (sc.cizim ? 0.75 : 1), yon, t: tc, konusuyor: konus,
+        poz, pozU, gecis, ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr', agiz,
+        solgun: Math.max(solgun, k.arka ? 0.35 : 0), seed: (def.seed ?? j + 1) + kopya * 2.37, esya: st.esya,
       });
       eller[k.id] = r.el;
+      elJ[j] = r.el;
       return;
     }
     const yerK = yerler[j];
@@ -342,6 +361,30 @@ export function kare(ctx, p, t, dur, fns) {
       x: yerK.x, y: H + 30 + (1 - giris) * 120, s: yerK.s * (sc.cizim ? 0.8 : 1), yon: yerK.yon, t,
       ifade: satir?.ifade ?? k.ifade ?? 'notr', bakis: k.bakis ?? (kadraj.length > 1 ? 0.5 : 0), agiz, solgun, seed: def.seed ?? j + 1,
     });
+  });
+  // Darbe anında çarpma kıvılcımı: vuran karakterin kılıç ucunda (eli + kılıç yönü) beyaz-sarı yıldız
+  durumlar.forEach((d, j) => {
+    const v = d.vurgu;
+    if (!v?.darbe || !elJ[j]) return;
+    const g = uc - v.sn;
+    if (g < 0 || g > 0.32) return;
+    const yon = d.yon ?? (d.x < 0.5 ? 1 : -1);
+    // Kılıç ucu: vuruş bitişinde kılıç öne-hafif aşağı uzanır
+    const [cx, cy] = [elJ[j][0] + yon * 165 * olcek, elJ[j][1] + 45 * olcek];
+    const a = 1 - g / 0.32;
+    ctx.save(); ctx.globalAlpha = a;
+    const rg = ctx.createRadialGradient(cx, cy, 0, cx, cy, 140 * olcek);
+    rg.addColorStop(0, 'rgba(255,250,220,.95)'); rg.addColorStop(0.3, 'rgba(255,200,90,.5)'); rg.addColorStop(1, 'rgba(255,160,40,0)');
+    ctx.fillStyle = rg; ctx.fillRect(cx - 150 * olcek, cy - 150 * olcek, 300 * olcek, 300 * olcek);
+    ctx.strokeStyle = '#FFF6D0'; ctx.lineCap = 'round';
+    for (let q = 0; q < 12; q++) {
+      const aci = q * 0.52 + h(q + j * 13) * 0.3;
+      const r0 = 10 + g * 260 * olcek;
+      const r1 = r0 + (30 + h(q * 7 + j) * 60) * olcek * a;
+      ctx.lineWidth = 3 + 3 * a;
+      ctx.beginPath(); ctx.moveTo(cx + Math.cos(aci) * r0, cy + Math.sin(aci) * r0); ctx.lineTo(cx + Math.cos(aci) * r1, cy + Math.sin(aci) * r1); ctx.stroke();
+    }
+    ctx.restore();
   });
   // Zincirle bağlama (ör. kahraman zinciri rakibin koluna dolar)
   if (sc.zincir && uc >= (sc.zincir.sn ?? 0) && uc < (sc.zincir.bitis ?? 1e9) && eller[sc.zincir.a] && eller[sc.zincir.b]) {
