@@ -156,6 +156,7 @@
       "baslangic": "2026-11-05T07:12:24.487Z"
     },
     "recentTitles": [
+      "Afraid to Start Because You Might Fail? 🧠",
       "Can't Save a Single Dollar? 💰",
       "Stuck in a Job That Pays Too Little? 💰",
       "No Time for a Side Hustle After Work? 🧠",
@@ -262,6 +263,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Yarın tek çıkış kapalı çıkarsa ne yaparsın? ⛓️",
       "Kaçış Yolu Demir Parmaklıkla Bitti: Arın Neden Döndü? | Zincirli 7",
       "Toros'un Hücresi Neden Bomboştu? ⛓️",
       "Tek Gözlü Gladyatör Sungur'u Neden Terk Etti? | Zincirli 6",
@@ -380,6 +382,8 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Oyuna Vaktin mi Yok? Birkaç Dakikada Tadı Çıkan 10 Oyun 🎮",
+      "Oyun Oynamaya Vaktin mi Yok? 🎮",
       "Bilgisayarın Eski, Oyun mu Açılmıyor? 🎮",
       "Oyunlar Sana Hemen Mi Sıkıyor? 🎮",
       "Hikâyeli Tek Kişilik Oyun Bulamıyor musun? 🎮",
@@ -520,6 +524,7 @@
       "baslangic": "2026-11-07T10:19:21.363Z"
     },
     "recentTitles": [
+      "PS4'te Yapay Zekâ Çalıştı: Pahalı PC Şart mı? ⚡",
       "Yapay Zekâ Devre Kartı Kıtlığı Yarattı: Zam Gelir mi? ⚡",
       "Eski Apple TV'ne Yapay Zekâlı Siri Geliyor mu? ⚡",
       "Yapay Zekâ Senin Yerine Telefonda Konuşuyor: Muse Ne Değiştirecek?",
@@ -662,6 +667,8 @@
       "baslangic": "2026-11-05T07:12:43.087Z"
     },
     "recentTitles": [
+      "Ölülerin Kalbi Neden Terazide Tartılırdı? ⚖️",
+      "Kilogram Neden Bir Kasada Kilitli Tutuldu? ⚖️",
       "Silgi Yazıyı Nasıl Siliyor? ✏️",
       "Mutfaktaki Tartın 130 Yıl Paris'teki Bir Kasaya Bağlıydı",
       "Sabun Suyun Çıkaramadığı Yağı Nasıl Söküyor? 🧼",
@@ -979,6 +986,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 16/30: Wer erntet die meisten Sojabohnen? 🫘",
       "Duell 15/30: Wer erntet die meisten Sonnenblumenkerne? 🌻",
       "Duell 14/30: Wer erntet die meisten Kiwis? 🥝",
       "Duell 13/30: Wer erntet die meisten Mandeln? 🌰",
@@ -1000,7 +1008,7 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 15,
+      "lastMatch": 16,
       "table": [
         {
           "name": "Türkei",
@@ -1012,15 +1020,15 @@
         },
         {
           "name": "Ukraine",
-          "points": 55
+          "points": 65
         },
         {
           "name": "Italien",
-          "points": 52
+          "points": 59
         },
         {
           "name": "Frankreich",
-          "points": 47
+          "points": 52
         },
         {
           "name": "Polen",
@@ -1040,7 +1048,7 @@
         },
         {
           "name": "Serbien",
-          "points": 11
+          "points": 15
         }
       ]
     }

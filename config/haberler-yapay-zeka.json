@@ -1,14 +1,38 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-16T22:11:13.222Z",
+  "guncellendi": "2026-11-17T04:33:23.279Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
+      "link": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-16T23:32:32.000Z",
+      "ozet": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
+      "link": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-16T23:17:34.000Z",
+      "ozet": "Jensen Huang's stunning resignation from Nvidia after more than 33 years has sent shockwaves throughout the tech industry. Now prominent figures are calling for Huang's reinstatement, and many are also hopping on board with a theory spreading throughout Silicon Valley: that the scandal is the result of a plot against the former CEO. At the […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Robo-soldier startup backed by Eric Trump misses payroll, may collapse",
+      "link": "https://arstechnica.com/ai/2026/11/robo-soldier-startup-backed-by-eric-trump-misses-payroll-may-collapse/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-16T22:58:27.000Z",
+      "ozet": "Robotics startup misses payroll a year after CEO used funds for luxury home.",
+      "kullanildi": false
+    },
     {
       "baslik": "All the questions Nvidia should answer on Tuesday — but probably won’t",
       "link": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-16T22:03:02.000Z",
-      "ozet": "Nvidia interim CEO and long-time CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
+      "ozet": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
       "kullanildi": false
     },
     {
@@ -16,7 +40,7 @@
       "link": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
       "kaynak": "The Verge",
       "tarih": "2026-11-16T20:46:01.000Z",
-      "ozet": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit on Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters. The lawsuit claims the […]",
+      "ozet": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters. The lawsuit claims the […]",
       "kullanildi": false
     },
     {
@@ -48,7 +72,7 @@
       "link": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-16T20:07:13.000Z",
-      "ozet": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident",
+      "ozet": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
       "kullanildi": false
     },
     {
@@ -108,7 +132,7 @@
       "kullanildi": false
     },
     {
-      "baslik": "Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’",
+      "baslik": "Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’",
       "link": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-16T18:11:10.000Z",
@@ -252,14 +276,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "The Nvidia scandal isn’t slowing down",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T13:00:00.000Z",
-      "ozet": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips are \"the bedrock upon which advanced AI technology in the US is being built.\" Ever-increasing demand has consistently outpaced supply, leading AI CEOs to essentially bow at […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Building AI that can work across the enterprise",
       "link": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/",
       "kaynak": "MIT Technology Review",
@@ -273,7 +289,7 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-16T13:00:00.000Z",
       "ozet": "2013 yılında piyasaya sürülen PlayStation 4, 9 milyar parametreli bir yapay zeka modelini çevrimdışı çalıştırmayı başardı. Konsol, saniyede 39 tokene kadar üretim hızına ulaşabiliyor.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
@@ -457,14 +473,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-15T11:00:00.000Z",
       "ozet": "A Carnegie Mellon student’s tiny E Ink gadgets, called OATs, give houseplants, skateboards, and dumbbells expressive personalities to nudge you toward better habits.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Where was Nvidia’s security team?",
-      "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-15T00:08:07.000Z",
-      "ozet": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
       "kullanildi": false
     }
   ]
