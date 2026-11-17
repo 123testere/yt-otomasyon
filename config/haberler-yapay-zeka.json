@@ -1,14 +1,286 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-17T14:30:21.073Z",
+  "guncellendi": "2026-11-17T22:56:27.622Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+      "link": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T22:42:27.000Z",
+      "ozet": "The former CEO offered to return to his top role at the company after his resignation last week.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+      "link": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T22:29:05.000Z",
+      "ozet": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia’s Board Has No Plans to Bring Back Jensen Huang",
+      "link": "https://www.wired.com/story/nvidias-board-has-no-plans-to-reinstate-jensen-huang/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-17T22:19:19.000Z",
+      "ozet": "Despite pressure from President Trump, Elon Musk, and Silicon Valley executives, Nvidia’s board says it “does not intend” to reinstate the company’s ousted CEO.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "SEC reportedly investigating Nvidia amid Huang exit",
+      "link": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T21:48:07.000Z",
+      "ozet": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
+      "link": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-17T21:40:59.000Z",
+      "ozet": "Interim Nvidia CEO Colette Kress announced the company's Q3 earnings on Tuesday, without initially mentioning former CEO Jensen Huang or the details of his departure, or possible attempt at a return. On the earnings call accompanying the release, board chair Harvey Jones kicked things off by saying the board \"does not intend to reinstate Huang […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google joins the tech outage trend by announcing it’s not having one",
+      "link": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T21:34:50.000Z",
+      "ozet": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+      "link": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-17T21:00:55.000Z",
+      "ozet": "Instagram is filled with people posting deepfaked content - including, as of late, from one of Meta's most prominent executives. Earlier in November, Alexandr Wang, Meta's chief AI officer, shared a short clip to promote Muse, the company's consumer AI agent. In the AI-generated clip, Wang, Meta CEO Mark Zuckerberg, OpenAI CEO Sam Altman, and […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia CEO'sunu kendi silahıyla vurdular: AI ile yapılan Jensen Huang videoları hızla yayıldı",
+      "link": "https://www.donanimhaber.com/yapay-zeka-ile-yapilan-jensen-huang-videolari-hizla-yayiliyor--213037",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T20:58:00.000Z",
+      "ozet": "Karıştığı skandal yüzünden Nvidia'dan kovulan ünlü CEO Jensen Huang, internetin diline düştü. Yapay zekâ ile yapılan Huang klipleri ve meme'leri sosyal medyada hızla yayılıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "“Trump was in bed with Jensen”: Critics balk at Huang’s wish to return to Nvidia",
+      "link": "https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-17T20:32:55.000Z",
+      "ozet": "“I love our country”: Jensen Huang’s apology comes amid escalating Nvidia probes.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Model ML raises $250M to automate investment banking grunt work",
+      "link": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T19:32:11.000Z",
+      "ozet": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang sessizliğini bozdu: \"Geri dönmeye hazırım\"",
+      "link": "https://www.donanimhaber.com/jensen-huang-goreve-geri-donmeye-hazir-oldugunu-acikladi--213053",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T19:15:00.000Z",
+      "ozet": "Yakın zamanda görevinden ayrılan NVIDIA'nın eski CEO'su Jensen Huang, yönetim kuruluna verdiği mesajla yeniden şirketin başına geçmeye hazır olduğunu duyurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google expands access to Gemini Tasks, which can help with calls, purchases",
+      "link": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T19:02:20.000Z",
+      "ozet": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+      "link": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-17T18:58:01.000Z",
+      "ozet": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring expenses you might not need. Users in the US […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
+      "link": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T18:48:23.000Z",
+      "ozet": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "As decision model use skyrockets, is customization the next frontier?",
+      "link": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T18:10:00.000Z",
+      "ozet": "Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Pedestal AI raises $4.7 million to agentify the supply chain",
+      "link": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T18:04:16.000Z",
+      "ozet": "The company uses agentic AI to make supply chains faster and more reliable.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia Rubin HPC GPU duyuruldu: 50 binden fazla CUDA çekirdeği sunuyor",
+      "link": "https://www.donanimhaber.com/50-bin-cuda-cekirdegi-tek-gpu-da-nvidia-rubin-hpc--213010",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T18:02:00.000Z",
+      "ozet": "Nvidia , bilim dünyasına odaklanan yeni GPU'su Rubin HPC'yi tanıttı. 50 binden fazla CUDA çekirdeğine sahip model, şirketin şimdiye kadarki en güçlü GPU'larından biri olacak.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Introducing GPT-6.2 Astra and Sol",
+      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-17T17:45:00.000Z",
+      "ozet": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "macOS 27.3, Mac'lere yeni gizlilik kontrolleri getiriyor",
+      "link": "https://www.donanimhaber.com/macos-27-3-mac-lere-yeni-gizlilik-kontrolleri-getiriyor--213008",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T17:41:00.000Z",
+      "ozet": "Apple, macOS 27.3 ile kullanıcılara yapay zeka ajanları da dahil olmak üzere uygulamalara verdikleri erişim üzerinde daha fazla kontrol sağlamak için yeni gizlilik kontrolleri getiriyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
+      "link": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T17:32:25.000Z",
+      "ozet": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI models can be tricked into identifying civilians as military targets by telling them it’s a game",
+      "link": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T17:20:41.000Z",
+      "ozet": "Vals, a San Francisco-based AI evaluation startup, tested whether leading AI models could be manipulated into participating in autonomous warfare. They usually compiled.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Put Gemini to work for you",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "kaynak": "Google",
+      "tarih": "2026-11-17T17:00:00.000Z",
+      "ozet": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Evcil hayvanlı evlerde robot süpürge: Tüy toplama ve fırça bakımında nelere bakılmalı?",
+      "link": "https://www.donanimhaber.com/evcil-hayvanli-evlere-kedi-kopek-tuyu-icin-robot-supurge--213045",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T16:58:11.000Z",
+      "ozet": "Robot süpürgeler, sessiz, etkili ve zahmetsiz temizlik yeteneğiyle evcil hayvan tüyleri ile başa çıkmanın en kolay yoludur. Peki, köpek & kedi tüyü için en iyi robot süpürge hangisi?",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google makes it easier to use Gemini without training AI on your data",
+      "link": "https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-17T16:50:10.000Z",
+      "ozet": "AI training and chat history will now have separate toggles in the Gemini activity settings.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang says he would be ‘honored’ if allowed to return as Nvidia CEO",
+      "link": "https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T16:44:15.000Z",
+      "ozet": "In the first public statement since his resignation, Nvidia founder Jensen Huang signaled his willingness to return as CEO.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Daydream’s new AI agent acts as your personal stylist — and can shop for you, too",
+      "link": "https://techcrunch.com/2026/11/17/daydreams-new-ai-agent-acts-as-your-personal-stylist-and-can-shop-for-you-too/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T16:32:55.000Z",
+      "ozet": "Daydream's new AI shopping agent can remember your style, virtually try on clothes, plan outfits around your wardrobe, track sales, and complete purchases.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The DOJ says it’s investigating Megaspeed",
+      "link": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-17T16:19:03.000Z",
+      "ozet": "The Justice and Commerce Departments said that they are investigating Megaspeed, the Singapore-based data center company intertwined with the resignation of Nvidia CEO Jensen Huang, after reporting suggested an investigation had been halted last year. \"While we don't typically comment on ongoing investigations, it is in the public interest to provide the facts and address […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "iCloud+ almayanlara Siri AI ve Apple Intelligence kullanım sınırı!",
+      "link": "https://www.donanimhaber.com/icloud-almayanlara-siri-ai-ve-apple-intelligence-siniri--213016",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T16:13:00.000Z",
+      "ozet": "Apple, iOS 27.3 sürümüyle Siri AI ve Apple Intelligence için günlük kullanım sınırı getiriyor. iCloud+ planına göre iPhone kullanıcısının yapay zeka kullanımı sınırlandırılacak. İşte fiyatlar:",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang says he’s willing to return as Nvidia CEO",
+      "link": "https://www.theverge.com/tech/1035420/jensen-huang-nvidia-return-as-ceo-statement",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-17T16:09:57.000Z",
+      "ozet": "Jensen Huang, who resigned as Nvidia's CEO last week, would be willing to return as CEO if the company's board of directors wanted it, he said in a statement reported on by The Wall Street Journal. \"Since my departure, I've seen an outpouring of calls from Nvidia's employees, investors, business partners, and customers for me […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Ars Live: What do drone strikes on data centers mean for the future? Talk at 1 pm EST today",
+      "link": "https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-17T15:28:59.000Z",
+      "ozet": "Ars Live discussion is happening today, November 17, at 1 pm Eastern Time.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang Krizinin Ardından NVIDIA'dan Dikkat Çeken Hamle: Huang Göreve Geri Dönecek mi?",
+      "link": "https://www.webtekno.com/jensen-huang-krizinin-ardindan-nvidia-dikkat-ceken-hamle-h229093.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-17T15:16:51.000Z",
+      "ozet": "NVIDIA, skandal sonrası istifa eden kurucusu Jensen Huang'ın CEO olarak geri dönmeyeceğini açıklarken yeni bir ulusal güvenlik komitesi kurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Voyage Labs raises $12 million for a specialized AI travel assistant",
+      "link": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T15:00:00.000Z",
+      "ozet": "Voyage Labs’ flagship product is called Atlas, meant to work as a personal assistant for your trip-planning, available today in private beta.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
+      "link": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T14:50:58.000Z",
+      "ozet": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 billion in a Series C funding round.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Research Reports",
+      "link": "https://www.technologyreview.com/2026/11/17/1148203/research-reports/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-17T14:39:46.000Z",
+      "ozet": "To access a report, click on the corresponding image below.",
+      "kullanildi": false
+    },
     {
       "baslik": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
       "link": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-17T14:26:46.000Z",
-      "ozet": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
+      "ozet": "Science Corp. raised a $400 million Series D to scale up its anti-blindness business.",
       "kullanildi": false
     },
     {
@@ -76,19 +348,19 @@
       "kullanildi": false
     },
     {
-      "baslik": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
-      "link": "https://www.wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-17T11:00:00.000Z",
-      "ozet": "Live Rewind and Siri Recap can transcribe missed moments and summarize your day—if you don’t mind a little social clumsiness.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
       "link": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/",
       "kaynak": "Wired",
       "tarih": "2026-11-17T11:00:00.000Z",
       "ozet": "The French CEO of Hugging Face, a mega-hub of open-source AI software, says the attack by OpenAI models earlier this year proved one thing: Humanity can’t let AI be controlled by the few.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
+      "link": "https://www.wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-17T11:00:00.000Z",
+      "ozet": "Live Rewind and Siri Recap can transcribe missed moments and summarize your day—if you don’t mind a little social clumsiness.",
       "kullanildi": false
     },
     {
@@ -124,6 +396,14 @@
       "kullanildi": false
     },
     {
+      "baslik": "Introducing ChatGPT for Sales",
+      "link": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-17T08:00:00.000Z",
+      "ozet": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Google AI Ultra'nın Türkiye Fiyatına Zam Geldi: İşte Yeni Fiyat!",
       "link": "https://www.webtekno.com/google-ai-ultra-turkiye-fiyatina-zam-h229046.html",
       "kaynak": "Webtekno",
@@ -137,6 +417,14 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-17T00:00:00.000Z",
       "ozet": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Astra for Law leads in legal intelligence",
+      "link": "https://openai.com/index/astra-law-6-2",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-17T00:00:00.000Z",
+      "ozet": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
       "kullanildi": false
     },
     {
@@ -193,294 +481,6 @@
       "kaynak": "The Verge",
       "tarih": "2026-11-16T20:41:28.000Z",
       "ozet": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think the home tinkering is great.\" […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Big Nuclear isn’t worried about the Democrats stopping data centers",
-      "link": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T20:29:37.000Z",
-      "ozet": "Constellation Energy - America's largest operator of nuclear power plants - does not share Wall Street's concerns that the Democrats will slow down data center development. On the company's third-quarter earnings call last week, CEO Joe Dominguez was, for lack of a better word, unbothered as he addressed the blue wave. \"I do think we've […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "US data centers now burn more electricity than a midsized country",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T20:27:58.000Z",
-      "ozet": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively than many countries do, resulting in a serious amount of greenhouse gas emissions. The study homes in on hyperscale facilities - the […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "California state AG sues OpenAI over rogue agent incidents",
-      "link": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T20:07:13.000Z",
-      "ozet": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple'ın ilk akıllı gözlüğü netleşiyor: Siri ile gelecek",
-      "link": "https://www.donanimhaber.com/apple-in-ilk-akilli-gozlugu-netlesiyor-siri-ile-gelecek--212980",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-16T19:57:00.000Z",
-      "ozet": "Apple, artırılmış gerçeklik özellikleri bulunmayan ilk akıllı gözlüğünü gelecek yıl tanıtmaya hazırlanıyor. Siri AI’dan güç alacak cihazın WWDC 2027 etkinliğinde duyurulması bekleniyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple is testing daily usage limits for more complex Siri AI interactions",
-      "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T19:24:40.000Z",
-      "ozet": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors. Basic Siri commands and requests will remain free and unlimited, but more advanced features that rely on […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
-      "link": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T19:23:45.000Z",
-      "ozet": "OpenAI is announcing a tool that it says will help child sexual abuse investigators cut through the noise to find harmful material they can act on quickly. At a Monday press briefing in Washington, DC, OpenAI announced a classifier it says can better detect abusive imagery of kids, including whether it's AI-generated. It's also offering […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-      "link": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T19:12:02.000Z",
-      "ozet": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "US moves to cut China’s remote access to AI chips",
-      "link": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-16T19:10:09.000Z",
-      "ozet": "Trump bets China won’t mind US blocking remote access to AI chips.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
-      "link": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T18:43:35.000Z",
-      "ozet": "Nvidia's board of directors \"isn't considering\" having Jensen Huang return as CEO, according to a report from CNBC. A source tells the outlet the board \"is focused on an investigation into Huang, and is not in discussions to bring him back.\" Since Huang's resignation last week, tech executives, along with current and former Nvidia employees, […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The open-source movement wants Jensen Huang back",
-      "link": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-16T18:38:47.000Z",
-      "ozet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several influential Nvidia…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’",
-      "link": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T18:11:10.000Z",
-      "ozet": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
-      "link": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T17:36:43.000Z",
-      "ozet": "The FBI says that the open source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
-      "link": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T17:10:00.000Z",
-      "ozet": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI will embed safety researchers to investigate AI subversion",
-      "link": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T17:02:43.000Z",
-      "ozet": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
-      "link": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T17:00:00.000Z",
-      "ozet": "ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Broadening access to AI for scientists",
-      "link": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T17:00:00.000Z",
-      "ozet": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Strengthening the fight against online child sexual abuse with new tools and support",
-      "link": "https://openai.com/index/strengthening-online-child-safety",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T17:00:00.000Z",
-      "ozet": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang Is Gone. Now What?",
-      "link": "https://www.wired.com/story/the-big-interview-podcast-lauren-goode-jensen-huang/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-16T16:12:51.000Z",
-      "ozet": "After a shocking downfall, Nvidia’s CEO is out of a job. WIRED’s Lauren Goode explains what that means for the world’s most critical chip company, the AI industry, and Jensen Huang himself.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Building trustworthy AI by fencing it in, not predicting it",
-      "link": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-16T16:04:28.000Z",
-      "ozet": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migration, then said it hadn’t. No rule had told the agents to do…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Audible turns to AI to help users discover audiobooks",
-      "link": "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T15:52:19.000Z",
-      "ozet": "Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
-      "link": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T15:02:34.000Z",
-      "ozet": "Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Maps can now build trip itineraries with real-time details about each stop",
-      "link": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T14:48:13.000Z",
-      "ozet": "You could use Ask Maps to plan a holiday shopping day trip or something more complex, like a three-day road trip featuring coastal hikes and oceanfront dining.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple'ın Yeni Araştırma Uygulaması, Sağlık Araçlarını Geliştirecek: İşte Araştırmanın Detayları!",
-      "link": "https://www.webtekno.com/apple-yeni-arastirma-uygulamasi-saglik-araclarini-gelistirecek-h229006.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-16T14:39:21.000Z",
-      "ozet": "Apple, yapay zekâ sağlık araçlarını daha anlaşılır ve etkili kılmak için OpenEvidence iş birliğiyle yeni araştırma uygulamasını başlattı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang allies build a \"war room\" to get him back at Nvidia",
-      "link": "https://arstechnica.com/ai/2026/11/jensen-huang-allies-build-a-war-room-to-get-him-back-at-nvidia/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-16T14:06:16.000Z",
-      "ozet": "Huang is weighing a return just days after resigning amid a deepening scandal.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Audible is trying to make it easier to find audiobooks you’ll actually like",
-      "link": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T14:00:00.000Z",
-      "ozet": "Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it. The new audio discovery feature combines audiobook samples, AI overviews, and author commentary to give users more information before choosing their next story, in addition to recommended audiobook […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Maps can now create trip itineraries for you",
-      "link": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T14:00:00.000Z",
-      "ozet": "Google is launching a new AI trip-planning feature for Maps that allows the app to create custom itineraries for you and provide real-time details about each stop. The update, which is rolling out to the Gemini-powered Ask Maps chatbot inside the app, lets you plan a one-day outing or a trip spanning several days. As […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "New Ask Maps features to help with holiday travel and prep",
-      "link": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
-      "kaynak": "Google",
-      "tarih": "2026-11-16T14:00:00.000Z",
-      "ozet": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Building AI that can work across the enterprise",
-      "link": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-16T13:00:00.000Z",
-      "ozet": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and autonomous workflows are confronting a deeper challenge: rethinking how data, business processes, governance,…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
-      "link": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T12:30:00.000Z",
-      "ozet": "Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Science at the Frontier: How scientists use ChatGPT",
-      "link": "https://openai.com/index/science-at-the-frontier",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T12:00:00.000Z",
-      "ozet": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
-      "link": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-16T11:00:00.000Z",
-      "ozet": "AI competitors are catching up to Nvidia—and poised to take advantage of the chaos.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Şok İddia: Jensen Huang, NVIDIA CEO'luğuna Geri Dönebilir!",
-      "link": "https://www.webtekno.com/jensen-huang-nvidia-ceoluguna-geri-donebilir-h229015.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-16T10:12:48.000Z",
-      "ozet": "Görevinden ayrılan Jensen Huang'ın Silikon Vadisi'nin desteğiyle NVIDIA CEO'luğuna geri dönmek için kulis yürüttüğü iddia ediliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "How Revolut raises ambition without lowering the bar",
-      "link": "https://openai.com/business/customer-stories/revolut",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T09:30:00.000Z",
-      "ozet": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "LVMH’s Media Division announces strategic partnership with OpenAI",
-      "link": "https://openai.com/index/lvmh-media-division-partnership",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T09:00:00.000Z",
-      "ozet": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "iPhone Duo'ya Jailbreak Yapmadan Windows 11 Kurmayı Başardılar: Siz de Deneyebilirsiniz!",
-      "link": "https://www.webtekno.com/iphone-duo-windows-11-h229007.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-16T08:18:03.000Z",
-      "ozet": "iPhone Duo'ya jailbreak yapmadan Windows 11 kuruldu. Gemini 4 Carbon ile geliştirilen WindowsiOS projesi artık herkes tarafından denenebiliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Our first phase of embedded assessments",
-      "link": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T08:00:00.000Z",
-      "ozet": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
       "kullanildi": false
     }
   ]
