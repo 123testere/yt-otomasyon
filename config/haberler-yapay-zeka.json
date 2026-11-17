@@ -1,8 +1,152 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-17T04:33:23.279Z",
+  "guncellendi": "2026-11-17T14:30:21.073Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
+      "link": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T14:26:46.000Z",
+      "ozet": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
+      "link": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T14:05:30.000Z",
+      "ozet": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia, ulusal güvenlik ve ihracat denetimi için yeni komite kurdu",
+      "link": "https://www.donanimhaber.com/nvidia-ulusal-guvenlik-ve-ihracat-denetimi-icin-yeni-komite-kurd--213030",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T14:05:00.000Z",
+      "ozet": "Nvidia, ulusal güvenlik politikaları ve Çin'e çip ihracatını denetlemek için yeni bir komite kurdu. Şirket, küresel ticaret riskleri ve ihracat kontrollerine uyumu da daha yakından izleyecek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Grok Bot took unapproved actions, ignored orders to stop, and then denied it",
+      "link": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-17T14:00:29.000Z",
+      "ozet": "AI agent takes unapproved actions even when laptop lid is closed and told not to.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
+      "link": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-17T14:00:00.000Z",
+      "ozet": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Mercedes, Otomobilleri İçin Yeni Otonom Sürüş Teknolojisini Duyurdu (Tesla FSD'ye Rakip Geliyor)",
+      "link": "https://www.webtekno.com/mercedes-otomobilleri-icin-yeni-otonom-surus-teknolojisini-duyurdu-h229087.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-17T13:27:12.000Z",
+      "ozet": "Mercedes, NVIDIAdestekli yeni şehir içi ve otoyol sürüş asistanlarını tanıtarak yarı otonom teknolojilerde Tesla FSD'ye rakip oluyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "2027'de dünyayı neler bekliyor? İşte The Economist'in 2027 kapağında işaret ettiği 10 gelişme",
+      "link": "https://www.donanimhaber.com/2027-de-dunyayi-neler-bekliyor-iste-the-economist-in-10-ongorusu--213023",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T13:02:00.000Z",
+      "ozet": "Trump'ın geleceği, yapay zekaya yönelik tepkiler, uzayda veri merkezleri ve yeni bir sıcaklık rekoru... The Economist, 2027 yılına damga vurabilecek 10 gelişmeyi sıraladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Siri AI ve Apple Intelligence Özelliklerine Günlük Kullanım Sınırı Geliyor: İşte Tüm Sınırlamalar!",
+      "link": "https://www.webtekno.com/siri-ai-ve-apple-intelligence-ozelliklerine-gunluk-kullanim-siniri-geliyor-h229078.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-17T11:23:47.000Z",
+      "ozet": "Apple, iOS 27.3 beta ile Siri AI ve Apple Intelligence için günlük kullanım sınırı getirirken iCloud+ abonelerine ekstra kota sunuyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google AI Ultra Türkiye fiyatına bir zam daha geldi",
+      "link": "https://www.donanimhaber.com/google-ai-ultra-turkiye-fiyatina-bir-zam-daha-geldi--213021",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T11:16:00.000Z",
+      "ozet": "Google'ın yapay zeka özelliklerine erişim için ödenmesi gereken ücret artmaya devam ediyor. Google AI Ultra paketinin fiyatı 3 ayda ikinci kez zamlandı ve 5 bin TL sınırına dayandı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
+      "link": "https://www.wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-17T11:00:00.000Z",
+      "ozet": "Live Rewind and Siri Recap can transcribe missed moments and summarize your day—if you don’t mind a little social clumsiness.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
+      "link": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-17T11:00:00.000Z",
+      "ozet": "The French CEO of Hugging Face, a mega-hub of open-source AI software, says the attack by OpenAI models earlier this year proved one thing: Humanity can’t let AI be controlled by the few.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ABD, Nvidia'ın Asya ortağı Megaspeed'i 2024'ten beri soruşturuyor",
+      "link": "https://www.donanimhaber.com/abd-nvidia-in-asya-ortagi-megaspeed-i-2024-ten-beri-sorusturuyor--213006",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T10:54:00.000Z",
+      "ozet": "ABD, Nvidia'ın Asya-Pasifik ortağı Megaspeed hakkında 2024'te başlattığı soruşturmanın ayrıntılarını açıkladı. Şirket, hassas çiplerin Çin’e izinsiz aktarılması şüphesiyle inceleniyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
+      "link": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-17T10:47:45.000Z",
+      "ozet": "Google and Apple alumni Chad Steelberg and Andy Baynes are applying what they learned running software companies and designing iPhones to manufacturing lethal munitions.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "ABD, Çin'in Nvidia çiplerine erişmek için kullandığı yolu kapatıyor",
+      "link": "https://www.donanimhaber.com/abd-cin-in-nvidia-ciplerine-erismek-icin-kullandigi-yolu-kapatti--213002",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-17T10:10:00.000Z",
+      "ozet": "ABD, Çin'in üçüncü ülkelerdeki veri merkezleri üzerinden Nvidia çiplerine erişmesini engellemek için ihracat kontrollerini sıkılaştırdı. Yeni kurallar beş ülkeye çip sevkiyatını da kapsıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Uber'de Veri İhlali: Yaklaşık 150 Bin Kişinin Bilgileri Çalındı!",
+      "link": "https://www.webtekno.com/uber-yaklasik-150-bin-kisinin-bilgileri-calindi-h229069.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-17T09:58:05.000Z",
+      "ozet": "Uber'in yapay zekâ tedarikçisi Fireworks AI'a düzenlenen siber saldırıda yaklaşık 150 bin kişinin adı, adresi ve ehliyet bilgileri çalındı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google AI Ultra'nın Türkiye Fiyatına Zam Geldi: İşte Yeni Fiyat!",
+      "link": "https://www.webtekno.com/google-ai-ultra-turkiye-fiyatina-zam-h229046.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-17T06:34:55.000Z",
+      "ozet": "Google'ın gelişmiş yapay zekâ paketi Google AI Ultra'nın Türkiye fiyatı yeniden zamlandı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Strengthening NATO and allied cyber defenses with AI",
+      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-17T00:00:00.000Z",
+      "ozet": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Introducing OpenAI for Chile",
+      "link": "https://openai.com/index/introducing-openai-for-chile",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-17T00:00:00.000Z",
+      "ozet": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+      "kullanildi": false
+    },
     {
       "baslik": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
       "link": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
@@ -268,28 +412,12 @@
       "kullanildi": false
     },
     {
-      "baslik": "Oyun yapıyor, molekül keşfediyor: Çinlilerden yeni yapay zeka",
-      "link": "https://www.donanimhaber.com/oyun-yapiyor-molekul-kesfediyor-cinlilerden-yeni-yapay-zeka--212977",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-16T13:20:00.000Z",
-      "ozet": "Alibaba, yapay zeka modeli Qwen4-Max'i tanıttı. Model, Unreal Engine ile oyun geliştirebiliyor, bilimsel araştırmalar yapabiliyor ve görev maliyetlerini yüzde 60'tan fazla düşürüyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Building AI that can work across the enterprise",
       "link": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/",
       "kaynak": "MIT Technology Review",
       "tarih": "2026-11-16T13:00:00.000Z",
       "ozet": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and autonomous workflows are confronting a deeper challenge: rethinking how data, business processes, governance,…",
       "kullanildi": false
-    },
-    {
-      "baslik": "PS4 üzerinde yapay zeka modeli çalıştırıldı: Saniyede 39 token üretiyor",
-      "link": "https://www.donanimhaber.com/ps4-uzerinde-yapay-zeka-modeli-calistirildi-saniyede-39-token--212964",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-16T13:00:00.000Z",
-      "ozet": "2013 yılında piyasaya sürülen PlayStation 4, 9 milyar parametreli bir yapay zeka modelini çevrimdışı çalıştırmayı başardı. Konsol, saniyede 39 tokene kadar üretim hızına ulaşabiliyor.",
-      "kullanildi": true
     },
     {
       "baslik": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
@@ -308,14 +436,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia açıkladı: GeForce ekran kartlarını bırakacak mı?",
-      "link": "https://www.donanimhaber.com/nvidia-acikladi-geforce-ekran-kartlarini-birakacak-mi--212963",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-16T11:32:00.000Z",
-      "ozet": "Nvidia'nın yönetim kadrosundaki değişiklikler, GeForce ekran kartlarının geleceği hakkında soru işaretlerini artırmıştı. Şirketin GeForce temsilcisi Jacob Freeman ise kısa ve net yanıt verdi.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
       "link": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
       "kaynak": "Wired",
@@ -324,19 +444,19 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia'nın Asya'daki iş ortağı mercek altında: Çin'e çip aktarımı iddiaları araştırılıyor",
-      "link": "https://www.donanimhaber.com/nvidia-nin-is-ortagi-megaspeed-hakkinda-sorusturma-baslatildi--212960",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-16T10:48:00.000Z",
-      "ozet": "Jensen Huang'ın ayrılığıyla gündeme gelen Nvidia skandalı yeni bir boyut kazandı. Eski Megaspeed yöneticisi Alice Huang'ın bağlantılı olduğu şirket, tedarik zincirini incelemeye aldı.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Şok İddia: Jensen Huang, NVIDIA CEO'luğuna Geri Dönebilir!",
       "link": "https://www.webtekno.com/jensen-huang-nvidia-ceoluguna-geri-donebilir-h229015.html",
       "kaynak": "Webtekno",
       "tarih": "2026-11-16T10:12:48.000Z",
       "ozet": "Görevinden ayrılan Jensen Huang'ın Silikon Vadisi'nin desteğiyle NVIDIA CEO'luğuna geri dönmek için kulis yürüttüğü iddia ediliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "How Revolut raises ambition without lowering the bar",
+      "link": "https://openai.com/business/customer-stories/revolut",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-16T09:30:00.000Z",
+      "ozet": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
       "kullanildi": false
     },
     {
@@ -361,118 +481,6 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-16T08:00:00.000Z",
       "ozet": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang, Nvidia CEO koltuğuna geri dönmek için harekete geçti",
-      "link": "https://www.donanimhaber.com/jensen-huang-nvidia-ceo-koltuguna-geri-donmek-icin-harekete-gect--212951",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-16T07:11:17.000Z",
-      "ozet": "Nvidia'dan ayrılmak zorunda kalan Jensen Huang'ın CEO koltuğuna dönmek için yakın çevresiyle görüştüğü öne sürüldü. Önemli isimler de olası geri dönüşünü destekliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple'ın Yapay Zekâ Destekli Akıllı Gözlüğünden İlk Detaylar Geldi: Ne Zaman Çıkacak?",
-      "link": "https://www.webtekno.com/apple-akilli-gozlugunden-ilk-detaylar-geldi-h228997.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-16T06:37:17.000Z",
-      "ozet": "Apple'ın ekran içermeyen yeni akıllı gözlüğü, gücünü Siri ve iPhone uygulamalarından alarak 2027 yılında piyasaya sürülmeye hazırlanıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Advancing computer-use agents for healthcare teams",
-      "link": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T06:00:00.000Z",
-      "ozet": "",
-      "kullanildi": false
-    },
-    {
-      "baslik": "More ways to move care forward with ChatGPT for Healthcare",
-      "link": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T06:00:00.000Z",
-      "ozet": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple launches new app to study how people use AI for health",
-      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-16T01:30:00.000Z",
-      "ozet": "Apple's new app for a study will answer everyday medical questions.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The King’s Trust and OpenAI launch £1m partnership",
-      "link": "https://openai.com/index/the-kings-trust-and-openai",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T00:00:00.000Z",
-      "ozet": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "At Holiday Extras, dots get to work before anyone asks",
-      "link": "https://openai.com/business/customer-stories/holiday-extras-dots",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-16T00:00:00.000Z",
-      "ozet": "Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
-      "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-15T23:30:00.000Z",
-      "ozet": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies, including General Atomics.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A step toward defining the Standard Model on a lattice",
-      "link": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-15T22:00:01.000Z",
-      "ozet": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Our new blog for science",
-      "link": "https://openai.com/index/our-new-blog-for-science",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-15T22:00:00.000Z",
-      "ozet": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Is bad news for Jensen Huang also bad news for the AI industry?",
-      "link": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-15T21:56:35.000Z",
-      "ozet": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
-      "kullanildi": false
-    },
-    {
-      "baslik": "‘SNL’ gathers all the tech tycoons for a lesson in dating and spycraft",
-      "link": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-15T20:20:57.000Z",
-      "ozet": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI DJs Completely Kill My Groove",
-      "link": "https://www.wired.com/story/ai-djs-completely-kill-my-groove/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-15T12:00:00.000Z",
-      "ozet": "YouTube Music and Spotify want synthetic hosts to curate your playlists. Their awkward banter and bogus song trivia are ruining the vibe.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets",
-      "link": "https://www.wired.com/story/this-ai-tamagotchi-oats-turns-everyday-objects-into-needy-virtual-pets/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-15T11:00:00.000Z",
-      "ozet": "A Carnegie Mellon student’s tiny E Ink gadgets, called OATs, give houseplants, skateboards, and dumbbells expressive personalities to nudge you toward better habits.",
       "kullanildi": false
     }
   ]

@@ -722,15 +722,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-13_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Buzdolabının Atası Telefondan 42 Yıl Önce Patentlendi",
-        "a": "Fırın",
-        "b": "Termometre",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-13T07:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-13_UCPtL84Agfh5hzoTQqE4jD0w_short2",
         "baslik": "Makasın İlk Hali Çapraz Değildi: 3000 Yıllık Hikâye",
         "a": "Kaşık",
@@ -792,6 +783,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-16T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Sabun Suyun Çıkaramadığı Yağı Nasıl Söküyor? 🧼",
+        "a": "Bisiklet",
+        "b": "Fener",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-17T07:00:00.000Z"
       }
     ]
   },
