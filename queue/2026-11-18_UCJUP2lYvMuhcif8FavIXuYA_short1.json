@@ -1,0 +1,179 @@
+{
+ "id": "2026-11-18_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "publishAt": "2026-11-18T16:00:00.000Z",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 9,
+  "ad": "PS4'te Yapay Zekâ"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/ps4-uzerinde-yapay-zeka-modeli-calistirildi-saniyede-39-token--212964",
+ "title": "PS4'te Yapay Zekâ Çalıştı: Pahalı PC Şart mı? ⚡",
+ "description": "2013'te çıkan PlayStation 4, 9 milyar parametreli bir yapay zekâ modelini çevrimdışı çalıştırdı. Sence yapay zekâ için pahalı bir bilgisayar şart mı?\nKaynak: DonanımHaber https://www.donanimhaber.com/ps4-uzerinde-yapay-zeka-modeli-calistirildi-saniyede-39-token--212964\n\n#yapayzeka #ps4 #yapayzekahaberleri #teknoloji",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "ps4 yapay zeka",
+  "yerel yapay zeka",
+  "çevrimdışı yapay zeka",
+  "token hızı",
+  "teknoloji haberleri"
+ ],
+ "topic": "PlayStation 4 üzerinde 9 milyar parametreli yapay zekâ modelinin çalıştırılması",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "An AI Model Ran on a PS4: Is an Expensive PC Needed? ⚡",
+   "description": "The PlayStation 4, released in 2013, reportedly ran a 9-billion-parameter AI model offline. Do you really need an expensive computer for AI?\nSource: DonanımHaber\n\n#ai #ps4 #aiactuality #tech"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Eski cihazlarda yapay zekâ çalıştırır mıydın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "PC ŞART MI?",
+    "alt": "PS4 de çalıştırdı"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.68,
+      "sure": 1.2
+     },
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yapay zekâ çalıştırmak için pahalı bir bilgisayar şart mı?"
+    }
+   ],
+   "aciklama": "0-1,2 sn: Robot sağdan koşarak kadraja girer. 1,2-3,5 sn: kullanıcı şaşkın, dev yazı PC ŞART MI? ekranda kalır."
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "PS4 üzerinde yapay zekâ modeli çalıştırıldı",
+    "kaynak": "DonanımHaber · 16 Kasım",
+    "maddeler": [
+     "2013'te çıkan PlayStation 4",
+     "9 milyar parametreli model",
+     "Çevrimdışı çalıştı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "DonanımHaber'e göre 2013'te çıkan PlayStation 4, 9 milyar parametreli bir modeli çevrimdışı çalıştırdı."
+    }
+   ],
+   "aciklama": "0-4,5 sn: Haber kartı gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "39 TOKEN/SN",
+    "alt": "PS4 üzerinde"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Konsol saniyede 39 tokene kadar üretim hızına ulaşabiliyor."
+    }
+   ],
+   "aciklama": "0-1 sn: Kullanıcı ekrana işaret eder. 1-3 sn: robot gülümser, dev yazı 39 TOKEN/SN görünür."
+  },
+  {
+   "mekan": "gelecek",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu, eski cihazlarda da yerel yapay zekânın mümkün olabileceğini düşündürüyor."
+    }
+   ],
+   "aciklama": "0-3,5 sn: Araştırmacı düşünceli biçimde geleceğe bakar."
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen, yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-1 sn: Kullanıcı el sallar. 1-3,5 sn: robot zafer pozu verir."
+  }
+ ],
+ "tanitim": [
+  "PS4'te yapay zekâ",
+  "Saniyede 39 token",
+  "Eski cihazlara umut"
+ ]
+}

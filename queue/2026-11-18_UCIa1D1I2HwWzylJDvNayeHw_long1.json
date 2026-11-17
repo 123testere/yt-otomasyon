@@ -1,0 +1,692 @@
+{
+ "id": "2026-11-18_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "hiz": 1.1,
+ "publishAt": "2026-11-18T15:00:00.000Z",
+ "bolum": {
+  "no": 12,
+  "ad": "Top 10"
+ },
+ "tanitim": [
+  "Kısa vakitlik 10 oyun",
+  "Birkaç dakikada tadı",
+  "Birinci sıra sürpriz"
+ ],
+ "title": "Oyuna Vaktin mi Yok? Birkaç Dakikada Tadı Çıkan 10 Oyun 🎮",
+ "titleAlt": "5 Dakikan Varsa Oynayabileceğin En İyi 10 Oyun",
+ "topic": "Kısa oturumlarda oynanabilen en iyi 10 oyun",
+ "description": "Vaktin kısıtlıysa kısa oturumlarda oynanabilen en iyi 10 oyun: Mini Metro, Downwell, Spelunky, Dead Cells, Slay the Spire, Hades, Balatro, Super Meat Boy, Rocket League ve Tetris. Senin listende birinci hangisi?\n\n#oyunönerisi #top10 #gaming #videooyunları",
+ "tags": [
+  "en iyi 10 oyun",
+  "kısa oynanan oyunlar",
+  "vakti az olanlar için oyun",
+  "oyun önerisi",
+  "tetris",
+  "rocket league",
+  "hades",
+  "balatro",
+  "super meat boy",
+  "oyun listesi"
+ ],
+ "thumbnailText": "VAKTİN YOK MU?",
+ "thumbnailTextAlt": "5 DAKİKA YETER",
+ "thumbnailTextAlt2": "BUNLARI OYNA",
+ "kapak": {
+  "sahne": 20,
+  "sn": 2
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "No Time to Play? 10 Games You Can Enjoy in Minutes 🎮",
+   "description": "The 10 best games for short sessions when your time is limited: Mini Metro, Downwell, Spelunky, Dead Cells, Slay the Spire, Hades, Balatro, Super Meat Boy, Rocket League and Tetris. Which one is your number one?\n\n#gaming #top10 #gamerecommendations"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "Kısa vakitte hangi oyunu oynarsın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Giriş",
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "TOP 10",
+    "alt": "Kısa vakte sığan oyunlar"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "esya": "oyun-kolu",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Vaktin kısıtlı ama oyun oynamak mı istiyorsun?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Çözümü var: birkaç dakikada tadını veren on oyun. Hepsi yoğun bir günün küçük bir boşluğuna sığıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu seriyi kaçırmamak için şimdi abone ol. Sondan başlıyoruz!"
+    }
+   ],
+   "aciklama": "0-1,4 sn: Oyuncu soldan koşarak fuara girer, elinde oyun kolu. 1,4-6 sn: dev yazı TOP 10 ekranda kalır, oyuncu şaşkın bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 10,
+    "ad": "Mini Metro",
+    "tur": "Şehir metrosu bulmacası",
+    "maddeler": [
+     "2015 çıkışlı",
+     "Hat çizme oyunu",
+     "Dinosaur Polo Club"
+    ]
+   },
+   "kisim": "10-7",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Onuncu sırada Mini Metro. Yeni Zelandalı küçük stüdyo Dinosaur Polo Club, bu metro hattı çizme oyununu 2015'te çıkardı. Kısa ve sakin bir oyun arayanlar için iyi bir başlangıç."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Duraklar belirip çoğaldıkça hatlarını yeniden çiziyorsun. Kuralları birkaç saniyede kavrıyorsun, bu yüzden kısa bir molada bile açıp oynayabilirsin."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sade görünüyor, ama şehir büyüdükçe iyi plan yapmak gerekiyor. Küçük bir fikir, koca bir bulmaca doğuruyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Telefonda ya da bilgisayarda, kısa bir boşlukta bile hemen içine girebiliyorsun."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 9,
+    "ad": "Downwell",
+    "tur": "Kuyuya iniş oyunu",
+    "maddeler": [
+     "2015 çıkışlı",
+     "Ojiro Fumoto yaptı",
+     "Ayakkabıdan ateş"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dokuzuncu sırada Downwell. Ojiro Fumoto'nun 2015'te çıkardığı bu oyunda, ayakkabılarından ateş ederek derin bir kuyuya iniyorsun. Kısa bir oyun için gerçekten ilginç bir fikir."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2015",
+    "alt": "tek kişilik proje"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her deneme kısa sürüyor, düşersen hemen yeniden başlıyorsun. Hızlı kararlarla, adeta refleks antrenmanı gibi oynanıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyun, Fumoto'nun büyük ölçüde tek başına geliştirdiği bir proje olarak biliniyor. Küçük bir fikir, dünyaca tanınan bir oyuna dönüştü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kısacası, küçük bir oyun da büyük bir heyecan verebiliyor."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 8,
+    "ad": "Spelunky",
+    "tur": "Mağara macerası",
+    "maddeler": [
+     "2008 çıkışlı",
+     "Derek Yu yaptı",
+     "Ücretsiz çıktı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sekizinci sırada Spelunky. Derek Yu, bu mağara macerasını 2008'de ücretsiz bir oyun olarak yayınladı. Zorlu ama bir o kadar eğlenceli bir macera."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "oyun-salonu",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her seferinde mağara farklı biçimde kuruluyor. Ölürsen baştan başlıyorsun, ama her denemede yeni bir şey öğreniyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "2012'de yenilenmiş bir sürümü çıktı. Kısa denemelerle oynanan ama bırakması zor bir oyun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yani bu oyunu sevmek için saatlerce vakit ayırmak şart değil."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 7,
+    "ad": "Dead Cells",
+    "tur": "Hızlı aksiyon",
+    "maddeler": [
+     "2018 tam sürüm",
+     "Motion Twin yaptı",
+     "Her koşu farklı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yedinci sırada Dead Cells. Fransız ekip Motion Twin'in oyunu, 2018'de tam sürümle çıktı. Hızlı ve zorlu aksiyon sevenlere hitap ediyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2018",
+    "alt": "akıcı dövüş"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Zindan her seferinde değişiyor, düşmanlar hızlı ve acımasız. Bir koşu ne kadar sürerse sürsün, her denemede biraz daha ilerliyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Akıcı dövüşüyle, aksiyon sevenlerin favorilerinden biri oldu. Kısa oturumlar için ideal bir seçenek."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu da onu, işten sonra kısa bir mola isteyenler için güzel bir seçenek yapıyor."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 6,
+    "ad": "Slay the Spire",
+    "tur": "Kartlı hayatta kalma",
+    "maddeler": [
+     "2019 tam sürüm",
+     "Mega Crit yaptı",
+     "Deste kurma"
+    ]
+   },
+   "kisim": "6-4",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Altıncı sırada Slay the Spire. Mega Crit'in kart oyunu ile hayatta kalmayı birleştiren yapımı, 2019'da tam sürüme çıktı. Bu türün en çok anılan örneklerinden biri."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "gelistirici-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kartlarını seçip desteni kuruyorsun, her kat bir öncekinden zor. Kaybettiğinde bile aklında yeni bir deste fikri kalıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir oturuma kolayca sığıyor, ama yeniden oynama isteği uzun süre peşini bırakmıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Üstelik her seferinde farklı bir deneme, farklı bir strateji demek."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Hades",
+    "tur": "Aksiyon macerası",
+    "maddeler": [
+     "2020 çıkışlı",
+     "Supergiant Games",
+     "Yeraltından kaçış"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Hades. Supergiant Games'in 2020'de çıkardığı oyunda, yeraltı dünyasından kaçmaya çalışıyorsun. Kısa bir oturumda bile hikâye ilerliyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "oyun-salonu",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2020",
+    "alt": "kaybetmek ilerletir"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her kaçış denemesi yeni bir sahne, yeni bir diyalog getiriyor. Kaybetmek hikâyeyi durdurmuyor, tam tersine ilerletiyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden kısa bir oturumda bile bir şeylerin ilerlediğini hissediyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu da onu, vakti kısıtlı olanlar için bile tatmin edici kılıyor."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Balatro",
+    "tur": "Poker destesi bulmacası",
+    "maddeler": [
+     "2024 çıkışlı",
+     "LocalThunk yaptı",
+     "Poker ve deste kurma"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Balatro. LocalThunk takma adıyla bilinen geliştiricinin 2024'te çıkardığı oyun, poker ellerini deste kurmayla birleştiriyor. Kısa oturumlarda bile bağımlılık yapıcı olduğu söyleniyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2024",
+    "alt": "bir el daha"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Basit bir fikirle başlıyor, sonra puanlar bir anda uçup gidiyor. Her el çabuk geçiyor, bu yüzden bir el daha demek çok kolay."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Küçük bir proje olarak başladı ama dünya çapında ses getirdi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden bir hamle bile kafanda koca bir plana dönüşüyor."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Super Meat Boy",
+    "tur": "Zor platform",
+    "maddeler": [
+     "2010 çıkışlı",
+     "Team Meat yaptı",
+     "Kısacık bölümler"
+    ]
+   },
+   "kisim": "3-1",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Super Meat Boy. Team Meat'in 2010'da çıkardığı bu platform oyunu, kısacık bölümleriyle tanınıyor. Zorluğu ve hızıyla öne çıkıyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "2010",
+    "alt": "anında yeniden başla"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir bölüm genellikle birkaç on saniyede bitiyor. Ölüyorsun, anında yeniden başlıyorsun. Zor, ama bir o kadar hızlı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Edmund McMillen ve Tommy Refenes'in oyunu, kısa bölümlü zor platform akımının öncülerinden biri sayılıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden kısacık bir mola bile oyuna girmek için yetiyor."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Rocket League",
+    "tur": "Araba futbolu",
+    "maddeler": [
+     "2015 çıkışlı",
+     "Psyonix yaptı",
+     "5 dakikalık maç"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Rocket League. Psyonix'in 2015'te çıkardığı oyunda, arabalarla futbol oynuyorsun. Hızlı maçlarıyla milyonlarca oyuncuya ulaştı."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "oyun-salonu",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "5 DAKİKA",
+    "alt": "standart maç"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Standart bir maç beş dakika sürüyor. Yani çay demlenirken bir maç bitebiliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "2020'de ücretsiz oynanabilir hale geldi, bu da oyuncu kitlesini iyice büyüttü. Hızlı rövanş isteği de cabası."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kısa maçlar sayesinde, vaktin az olsa da arkadaşlarınla oynayabilirsin."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Tetris",
+    "tur": "Blok bulmaca",
+    "maddeler": [
+     "1984 çıkışlı",
+     "Alexey Pajitnov",
+     "Moskova'da doğdu"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve birinci sırada, her şeyin başladığı oyun: Tetris. Moskovalı programcı Alexey Pajitnov, 1984'te ilk sürümünü yaptı. Çok eski ama hâlâ taptaze bir fikir."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "fuar",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "1984",
+    "alt": "Moskova, tek bir fikir"
+   },
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Düşen blokları sıraya diziyorsun, çizgiler dolunca kayboluyor. Bir parti birkaç dakikada bitebilir, ama bir daha demeden bırakmak zor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "1989'da Game Boy ile iyice yaygınlaştı ve dünyanın en bilinen oyunlarından biri oldu. Bu kadar basit bir fikrin bu kadar uzun yaşaması, iyi tasarımın gücü."
+    }
+   ],
+   "aciklama": "0-3 sn: İki karakter yan yana durup anlatılan oyunu izler, biri gülümser. 3-8 sn: konuşma devam ederken ikisi de ekrana bakar."
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Vaktin az olsa da güzel oyunlar seni bekliyor. Senin kısa vakit oyunun hangisi?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yorumlara yaz, videoyu beğen ve serinin devamı için abone ol!"
+    }
+   ],
+   "aciklama": "0-1 sn: Kalabalık oyun fuarında alkışlar. 1-5 sn: oyuncu kupayı kaldırıp gülümser, yorum çağrısı yapılır."
+  }
+ ]
+}

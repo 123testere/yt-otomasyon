@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-18_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-18T05:00:00.000Z",
+ "topic": "Sojabohnen",
+ "title": "Duell 16/30: Wer erntet die meisten Sojabohnen? 🫘",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Soja-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "sojabohnen",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "soja"
+ ],
+ "duell": {
+  "topicId": "soja",
+  "why": [
+   "Riesige Ackerflächen",
+   "Fruchtbare Böden",
+   "Viel Platz zum Anbauen"
+  ],
+  "script": {
+   "intro": "Wer erntet die meisten Sojabohnen Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "20 Länder haben keine Soja-Daten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Frankreich verpasst das Finale um gut 727 Tausend Tonnen!",
+   "final": "Finale! Ukraine gegen Italien – wer holt die Soja-Krone?",
+   "winner": "Die Ukraine gewinnt! Knapp 6,6 Millionen Tonnen, fast sechsmal so viel wie Italien!",
+   "why": "Warum die Ukraine? Riesige Ackerflächen und fruchtbare Böden.",
+   "table": "Die Türkei führt die Tabelle mit 77 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "B"
+ }
+}

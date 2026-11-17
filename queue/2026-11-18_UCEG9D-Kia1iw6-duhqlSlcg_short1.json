@@ -1,0 +1,159 @@
+{
+ "id": "2026-11-18_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-18T05:00:00.000Z",
+ "bolum": {
+  "no": 11,
+  "ad": "Top 5"
+ },
+ "title": "Afraid to Start Because You Might Fail? 🧠",
+ "description": "Afraid to start a business or side project because you might fail? Here are three realistic fixes: test your idea small, plan for the worst case, and treat setbacks as feedback. Results vary, so start small.\n\n#money #business #motivation #mindset",
+ "tags": [
+  "fear of failure",
+  "how to start a business",
+  "start small",
+  "business mindset",
+  "side project ideas",
+  "overcome fear",
+  "entrepreneur tips",
+  "money tips"
+ ],
+ "topic": "Three realistic fixes for the fear of failing when starting something new",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿Miedo a empezar por si fracasas? 🧠",
+   "description": "¿Tienes miedo de empezar un negocio o proyecto por si fracasas? Tres soluciones realistas: probar tu idea en pequeño, planear el peor escenario y ver los tropiezos como aprendizaje. Los resultados varían, así que empieza poco a poco.\n\n#dinero #negocios #motivacion #mentalidad"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "FEAR OF FAIL?",
+    "alt": "Start anyway, start small"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Fear of failing keeps more people stuck than failing itself ever does."
+    }
+   ],
+   "aciklama": "0-1,5 sn: The Founder stands in the office, hand on chin, looking worried. 1,5-4 sn: giant text FEAR OF FAIL? stays on screen while he sighs."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Test Your Idea Small",
+    "tur": "Low-risk start",
+    "maddeler": [
+     "Weekend experiment",
+     "Almost no money",
+     "Learn before scaling"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: test your idea small, with a weekend project and almost no money."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 3 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Plan for the Worst Case",
+    "tur": "Mindset",
+    "maddeler": [
+     "Write it down",
+     "Plan your recovery",
+     "Fear gets smaller"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: write down the worst case and plan how you would recover."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 2 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Treat Setbacks as Feedback",
+    "tur": "Growth habit",
+    "maddeler": [
+     "Review what happened",
+     "Change one thing",
+     "Try again"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number one: treat every setback as feedback, change one thing, and try again."
+    }
+   ],
+   "aciklama": "0-1 sn: Ranking card number 1 appears with a white flash. 1-4 sn: three short points appear one by one."
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for the rest of the series, and comment your pick!"
+    }
+   ],
+   "aciklama": "0-1 sn: Crowd cheers at the expo. 1-4 sn: The Founder raises the trophy and smiles."
+  }
+ ],
+ "tanitim": [
+  "Fear of failing",
+  "3 realistic fixes",
+  "Start small"
+ ]
+}

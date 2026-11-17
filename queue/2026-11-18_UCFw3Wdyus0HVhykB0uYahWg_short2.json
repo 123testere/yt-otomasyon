@@ -1,0 +1,269 @@
+{
+ "id": "2026-11-18_UCFw3Wdyus0HVhykB0uYahWg_short2",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "publishAt": "2026-11-18T18:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "fragman": true,
+ "derivedFrom": "2026-11-19_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 7,
+  "ad": "Su Kanalı"
+ },
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "tanitim": [
+  "Su kanalından kaçış",
+  "Kapalı çıkış",
+  "Geri dönüş kararı"
+ ],
+ "kapanis": {
+  "baslik": "YARIN 18:00",
+  "sonraki": "Zincirli · Bölüm 7: Su Kanalı",
+  "soru": "Sence Arın neden geri döndü?"
+ },
+ "title": "Yarın tek çıkış kapalı çıkarsa ne yaparsın? ⛓️",
+ "description": "Kaçış yolu demir parmaklıkla kapanırsa Arın ne yapar? Yarın Zincirli 7. bölümde Arın ve Kargan'ın su kanalındaki kaçışı var.",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "arın",
+  "kargan",
+  "toros",
+  "dizi",
+  "fragman"
+ ],
+ "topic": "Zincirli 7. bölüm fragmanı: su kanalından kaçış ve kapalı çıkış",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Tomorrow: what if the only exit is sealed? ⛓️",
+   "description": "What does Arin do when the escape route ends at an iron grate? Tomorrow in Chained episode 7, Arin and Kargan try to flee through the water canal."
+  }
+ },
+ "scenes": [
+  {
+   "buyukYazi": {
+    "ust": "ÇIKIŞ KAPALI",
+    "alt": "Arın neden döndü?"
+   },
+   "mekan": "kanal",
+   "sure": 4,
+   "aciklama": "0-2 sn: Ay ışığı vuran demir parmaklığın önünde Arın ve Kargan omuz verip itiyor. 2-4 sn: bir kez daha yükleniyorlar, parmaklık kıpırdamıyor (sarsıntı).",
+   "kadraj": [
+    {
+     "id": "kargan",
+     "x": 0.31,
+     "yon": -1,
+     "poz": "it",
+     "esya": null,
+     "ifade": "kizgin",
+     "arka": true
+    },
+    {
+     "id": "arin",
+     "x": 0.22,
+     "yon": -1,
+     "poz": "it",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.8,
+       "sarsinti": true
+      },
+      {
+       "satir": 0,
+       "sn": 2.2,
+       "sarsinti": true
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dışarısı on adım ötedeydi, ama demir parmaklık yerinden kıpırdamadı."
+    }
+   ]
+  },
+  {
+   "mekan": "kanal",
+   "aciklama": "0-1 sn: Kargan geri çekilir, parmaklığa bakar. 1-3,5 sn: kilidin dışarıda olduğunu söyler, Arın başını eğer.",
+   "kadraj": [
+    {
+     "id": "kargan",
+     "x": 0.34,
+     "yon": -1,
+     "poz": "dusun",
+     "esya": null,
+     "ifade": "endiseli"
+    },
+    {
+     "id": "arin",
+     "x": 0.22,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "uzgun"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Kilit dışarıda; bunu ancak dışarıdan biri açabilir."
+    }
+   ]
+  },
+  {
+   "mekan": "kanal",
+   "aciklama": "0-1,5 sn: Arın ay ışığına bakar, sonra Kargan'a döner. 1,5-4 sn: kararlı biçimde geri dönmek istediğini söyler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.2,
+       "poz": "dur",
+       "ifade": "uzgun"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "dur",
+     "esya": null,
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Ben dönüyorum Kargan, çünkü Su sarayda ve onsuz gitmem."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "yerKapak": {
+    "x": 0.6,
+    "ac": -5
+   },
+   "kapi": {
+    "x": 0.3,
+    "ac": -5
+   },
+   "aciklama": "0-1,5 sn: Arın ve Kargan açık kapağın kenarından çıkıp doğrulur. 1,5-3,5 sn: Toros ayağa kalkar, şaşkın bakar ve soruyu sorar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.55,
+     "yon": 1,
+     "poz": "diz-cok",
+     "ifade": "uzgun",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.4,
+       "poz": "kalk"
+      },
+      {
+       "satir": 0,
+       "sn": 1.3,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.66,
+     "yon": 1,
+     "poz": "diz-cok",
+     "esya": null,
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.7,
+       "poz": "kalk"
+      },
+      {
+       "satir": 0,
+       "sn": 1.6,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "toros",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "diz-cok",
+     "ifade": "saskin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.2,
+       "poz": "kalk"
+      },
+      {
+       "satir": 0,
+       "sn": 2.1,
+       "poz": "dur"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Yol açıktı, neden döndünüz?"
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "yerKapak": {
+    "x": 0.6
+   },
+   "aciklama": "0-1,5 sn: Arın ve Toros karşı karşıya durur. 1,5-4 sn: Arın kameraya bakar, ekranda yarınki bölüm hatırlatılır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tamamı yarın 18:00'de kanalda; devamı için abone ol ve beğen."
+    }
+   ]
+  }
+ ]
+}

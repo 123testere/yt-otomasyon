@@ -1,0 +1,69 @@
+{
+ "id": "2026-11-18_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-18T07:00:00.000Z",
+ "derivedFrom": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "topic": "Kilogramın Paris'teki kasada duran tek bir silindire bağlı olması",
+ "title": "Kilogram Neden Bir Kasada Kilitli Tutuldu? ⚖️",
+ "description": "Eşyaların Hikayesi #55\nDünyadaki bütün kilogramlar 130 yıl boyunca Paris yakınlarındaki bir kasada duran tek bir silindire bağlıydı. Asıl hikâye kanaldaki uzun videoda.\n\n#kilogram #icatlar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "kilogram",
+  "kilogram nasıl belirlendi",
+  "büyük k",
+  "terazi",
+  "ölçü birimi",
+  "paris kasası",
+  "icatlar",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Kilogram neden bir",
+  "kasada kilitliydi?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Kibrit",
+  "b": "Pil"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Why Was the Kilogram Locked in a Vault? ⚖️",
+   "description": "Story of Things #55\nFor 130 years every kilogram on Earth was tied to a single metal cylinder in a vault near Paris. The full story is in the long video on the channel.\n\n#kilogram #inventions #storyofthings #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Dünyadaki bütün kilogramlar tek bir metal silindire bağlıydı.",
+   "ifade": "saskin",
+   "cizim": "ink(kutu(430,300,140,190),{close:true,fill:'#E6DBC4',w:6,seed:3,pp:eo(pr(u,0,.6))});ink(ell(500,300,70,20,24),{close:true,fill:'#EFE4CB',w:5,seed:4,pp:eo(pr(u,.2,.7))});ink(ell(500,490,70,20,24,0,Math.PI),{w:5,seed:5,pp:eo(pr(u,.2,.7))});for(let k=0;k<6;k++){const a=k/6*6.283+.4,x=500+Math.cos(a)*350,y=400+Math.sin(a)*200,t=eo(pr(u,.5+k*.1,1.1+k*.1));ink(ln([x,y],[500+Math.cos(a)*105,400+Math.sin(a)*70],8),{w:2.6,seed:20+k,pp:t});txt('kg',x,y,40,{a:t,c:K.ak});}etk('tek silindir',MX,640,eo(pr(u,1.4,2)),{size:44});"
+  },
+  {
+   "narration": "1889'da platin ve iridyumdan bir silindir seçildi, adı Büyük K'ydı.",
+   "ifade": "anlatiyor",
+   "cizim": "txt('1889',MX,170,110,{c:K.ak,a:eo(pr(u,0,.6))});ink(kutu(430,300,140,190),{close:true,fill:'#E6DBC4',w:6,seed:3,pp:eo(pr(u,0,.6))});ink(ell(500,300,70,20,24),{close:true,fill:'#EFE4CB',w:5,seed:4,pp:eo(pr(u,.2,.7))});ink(ell(500,490,70,20,24,0,Math.PI),{w:5,seed:5,pp:eo(pr(u,.2,.7))});cizgiEtiket('platin ve iridyum',[570,400],[800,250],eo(pr(u,.8,1.4)),{al:'left'});cizgiEtiket('Büyük K',[430,400],[200,250],eo(pr(u,1.4,2)),{al:'right'});"
+  },
+  {
+   "narration": "Üç cam fanusun altında, kilitli bir kasada bekledi.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(180,160,640,440),{close:true,fill:'#EFE4CB',w:6,seed:7,pp:eo(pr(u,0,.7))});for(let k=0;k<3;k++){const r=60+k*45;ink(ell(500,470,r,r*1.15,28,Math.PI,6.283),{w:4,seed:30+k,pp:eo(pr(u,.4+k*.4,1+k*.4))});}ink(kutu(455,400,90,70),{close:true,fill:'#E6DBC4',w:5,seed:9,pp:eo(pr(u,.3,.9))});ink(kutu(470,620,60,40),{close:true,fill:K.ak,w:4,seed:10,pp:eo(pr(u,1.6,2.1))});etk('üç fanus, bir kasa',MX,650,eo(pr(u,1.6,2.2)),{size:42});"
+  },
+  {
+   "narration": "Büyük K değişirse, dünyadaki bütün kilogramlar da onunla birlikte oynardı.",
+   "ifade": "endiseli",
+   "cizim": "const s=Math.sin(T*3)*12;ctx.save();ctx.translate(0,s);ink(kutu(430,300,140,190),{close:true,fill:'#E6DBC4',w:6,seed:3,pp:eo(pr(u,0,.6))});ink(ell(500,300,70,20,24),{close:true,fill:'#EFE4CB',w:5,seed:4,pp:eo(pr(u,.2,.7))});ink(ell(500,490,70,20,24,0,Math.PI),{w:5,seed:5,pp:eo(pr(u,.2,.7))});ctx.restore();for(let k=0;k<5;k++){const x=150+k*175,y=560+Math.sin(T*3+k)*8;ink(ln([x-45,y],[x+45,y],6),{w:5,seed:40+k,pp:eo(pr(u,.4+k*.15,1+k*.15))});ink(ln([x,y],[x,y-60],4),{w:4,seed:50+k,pp:eo(pr(u,.4+k*.15,1+k*.15))});}ok([500,250],[500,150],{pp:eo(pr(u,.2,.8)),seed:60});etk('hepsi onunla oynardı',MX,660,eo(pr(u,1.2,1.8)),{size:42});"
+  },
+  {
+   "narration": "Asıl hikâye kanaldaki uzun videoda, ve her şey şu soruyla başlıyor:",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,420,260,{c:K.ak,a:eo(pr(u,.1,.7))});etk('uzun videoda',MX,600,eo(pr(u,.7,1.3)),{size:50});"
+  }
+ ]
+}
