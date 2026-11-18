@@ -1,0 +1,159 @@
+{
+ "id": "2026-11-19_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-19T05:00:00.000Z",
+ "bolum": {
+  "no": 12,
+  "ad": "Top 5"
+ },
+ "title": "Can't Stop Impulse Buying? 💰",
+ "description": "Can't stop impulse buying and wondering where your money went? Here are three simple fixes: mute store emails, remove saved cards from shopping apps, and wait 24 hours before buying. Results vary, so find what works for you.\n\n#money #business #motivation #savingmoney",
+ "tags": [
+  "impulse buying",
+  "stop impulse spending",
+  "how to save money",
+  "money habits",
+  "24 hour rule",
+  "budgeting tips",
+  "spending habits",
+  "money tips"
+ ],
+ "topic": "Three simple fixes for impulse buying",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿No puedes dejar de comprar por impulso? 💰",
+   "description": "¿Compras cosas que no planeabas y te preguntas adónde fue tu dinero? Tres soluciones sencillas: silenciar los correos de las tiendas, borrar las tarjetas guardadas en las apps y esperar 24 horas antes de comprar. Los resultados varían.\n\n#dinero #negocios #motivacion #ahorro"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "garaj",
+   "buyukYazi": {
+    "ust": "IMPULSE BUYS?",
+    "alt": "3 fixes that actually help"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Keep buying things you never planned to, and wonder where your money went?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: The Founder stands in the garage, hand on chin, looking worried. 1,5-4 sn: giant text IMPULSE BUYS? stays on screen while he shrugs."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Mute Store Emails",
+    "tur": "Fewer temptations",
+    "maddeler": [
+     "Unsubscribe in a minute",
+     "Fewer ads reach you",
+     "Less urge to buy"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: unsubscribe from store emails; fewer temptations often mean fewer impulse buys."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 3 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Remove Saved Cards",
+    "tur": "Add friction",
+    "maddeler": [
+     "Delete card details",
+     "Extra steps to pay",
+     "Time to rethink"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: remove saved cards from shopping apps, so buying takes extra steps."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 2 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Wait 24 Hours",
+    "tur": "Cooling-off rule",
+    "maddeler": [
+     "Add it to a list",
+     "Check again tomorrow",
+     "Skip it if it fades"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number one: wait 24 hours before buying, and many wants simply fade away."
+    }
+   ],
+   "aciklama": "0-1 sn: Ranking card number 1 appears with a white flash. 1-4 sn: three short points appear one by one."
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for more fixes, and comment which one you'd try first!"
+    }
+   ],
+   "aciklama": "0-1 sn: Crowd cheers at the expo. 1-4 sn: The Founder raises the trophy and smiles."
+  }
+ ],
+ "tanitim": [
+  "Impulse buying",
+  "3 simple fixes",
+  "Keep more money"
+ ]
+}

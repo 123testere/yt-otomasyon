@@ -1,0 +1,41 @@
+{
+ "id": "2026-11-19_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-19T05:00:00.000Z",
+ "topic": "Äpfel",
+ "title": "Duell 17/30: Wer erntet die meisten Äpfel? 🍎",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Apfel-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "äpfel",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "apfelernte"
+ ],
+ "duell": {
+  "topicId": "aepfel",
+  "why": [
+   "Viel Sonne",
+   "Große Anbauflächen",
+   "Starke Obstregionen"
+  ],
+  "script": {
+   "intro": "Wer erntet die meisten Äpfel Europas? 46 Flaggen, nur eine kommt durch!",
+   "nodata": "6 Länder ohne Daten fliegen sofort raus!",
+   "rounds": "Italien verpasst das Finale um knapp 986 Tausend Tonnen!",
+   "final": "Finale! Türkei gegen Polen!",
+   "winner": "Die Türkei gewinnt! Gut 4,4 Millionen Tonnen, ein Drittel mehr als Polen!",
+   "why": "Warum? Viel Sonne und große Anbauflächen.",
+   "table": "Die Türkei führt mit 77 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "A"
+ }
+}

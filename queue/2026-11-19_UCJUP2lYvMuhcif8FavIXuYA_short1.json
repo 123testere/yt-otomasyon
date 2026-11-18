@@ -1,0 +1,179 @@
+{
+ "id": "2026-11-19_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-19T16:00:00.000Z",
+ "bolum": {
+  "no": 10,
+  "ad": "Gemini Tasks"
+ },
+ "kaynak": "Google",
+ "kaynakLink": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+ "title": "Günlük İşlere Vaktin Yok mu? Gemini Tasks Ücretsiz ⚡",
+ "description": "Google'a göre Gemini'deki Tasks özelliği altı ülkede ücretsiz oldu; yeni özellikler ise ilk olarak ABD'de başlıyor. Sence yapay zekâ günlük işlerini devralmalı mı?\nKaynak: Google https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/\n\n#yapayzeka #gemini #yapayzekahaberleri #google",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "gemini tasks",
+  "google gemini",
+  "ücretsiz yapay zeka",
+  "yapay zeka asistanı",
+  "teknoloji haberleri"
+ ],
+ "topic": "Google'ın Gemini'deki Tasks özelliğini altı ülkede ücretsiz yapması",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "No Time for Daily Chores? Gemini Tasks Is Free ⚡",
+   "description": "According to Google, Tasks in Gemini is now free in six countries, with new features starting in the U.S. Should AI take over your daily chores?\nSource: Google https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/\n\n#ai #gemini #aiactuality #tech"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Günlük işlerini yapay zekâya bırakır mıydın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "6 ÜLKEDE",
+    "alt": "Gemini Tasks ücretsiz"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.68,
+      "sure": 1.2
+     },
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Günlük işlere vakit bulamıyorsan, Google'ın Tasks özelliği artık altı ülkede ücretsiz."
+    }
+   ],
+   "aciklama": "0-1,2 sn: Robot sağdan koşarak kadraja girer. 1,2-3,5 sn: kullanıcı şaşkın, dev yazı 6 ÜLKEDE ekranda kalır."
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "Gemini'deki Tasks özelliği ücretsiz oldu",
+    "kaynak": "Google · 17 Kasım",
+    "maddeler": [
+     "Altı ülkede ücretsiz",
+     "Yeni özellikler ABD'de",
+     "Workspace entegrasyonu"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Google'a göre Tasks, senin adına işleri halletmeye yardım ediyor; Google Workspace entegrasyonu da derinleşiyor."
+    }
+   ],
+   "aciklama": "0-4,5 sn: Haber kartı gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "İLK DURAK ABD",
+    "alt": "Yeni özellikler orada"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yeni özelliklerin ilk durağı ABD; ücretsiz erişim ise altı ülkede açıldı."
+    }
+   ],
+   "aciklama": "0-1 sn: Kullanıcı ekrana işaret eder. 1-3 sn: robot gülümser, dev yazı İLK DURAK ABD görünür."
+  },
+  {
+   "mekan": "gelecek",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yapay zekâ asistanlarının sıradan işleri devralması gelecekte daha yaygın olabilir."
+    }
+   ],
+   "aciklama": "0-3,5 sn: Araştırmacı düşünceli biçimde geleceğe bakar."
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen; sence işe yarar mı, yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-1 sn: Kullanıcı el sallar. 1-3,5 sn: robot zafer pozu verir."
+  }
+ ],
+ "tanitim": [
+  "Gemini Tasks",
+  "Altı ülkede ücretsiz",
+  "Gelecek ne olabilir?"
+ ]
+}

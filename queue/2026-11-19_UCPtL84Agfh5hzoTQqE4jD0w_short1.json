@@ -1,0 +1,68 @@
+{
+ "id": "2026-11-19_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-19T07:00:00.000Z",
+ "derivedFrom": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "topic": "Osmanlı çarşısında okka ölçüsü ve tartıları denetleyen muhtesip",
+ "title": "Osmanlı Çarşısında Hileli Tartanı Kim Yakalardı? ⚖️",
+ "description": "Eşyaların Hikayesi #57\nOsmanlı çarşılarında tartıları muhtesip denen bir görevli denetlerdi; bir okka da bugünkü kilogramdan farklıydı. Asıl hikâye kanaldaki uzun videoda.\n\n#terazi #osmanlı #eşyalarınhikayesi #shorts",
+ "tags": [
+  "muhtesip",
+  "osmanlı çarşısı",
+  "okka kaç kilo",
+  "terazi",
+  "hileli tartı",
+  "osmanlı ölçü birimleri",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Osmanlı çarşısında",
+  "hileli tartan kim?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Pul",
+  "b": "Zar"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Who Caught Cheating Merchants in Ottoman Markets? ⚖️",
+   "description": "Story of Things #57\nIn Ottoman markets an official called the muhtasib inspected the scales, and an okka was not the same as today's kilogram. The full story is in the long video on the channel.\n\n#scale #ottoman #storyofthings #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Osmanlı çarşısında bir okka, yaklaşık 1,3 kilogram ederdi; bugünkü ölçüye hiç benzemezdi.",
+   "ifade": "saskin",
+   "cizim": "ink(ln([500,200],[500,560],10),{w:7,seed:1,pp:eo(pr(u,0,.5))});ink(ln([200,330],[800,330],10),{w:8,seed:2,pp:eo(pr(u,.1,.7))});for(const [px,sd] of [[200,3],[800,4]]){ink([[px,330],[px-60,470]],{w:4,seed:sd,pp:eo(pr(u,.3,.9))});ink([[px,330],[px+60,470]],{w:4,seed:sd+10,pp:eo(pr(u,.3,.9))});ink(ell(px,470,75,20,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:6,seed:sd+20,pp:eo(pr(u,.4,1))});}txt('1 okka',200,230,64,{c:K.ak,a:eo(pr(u,.6,1.1))});txt('1,3 kg',800,230,64,{c:K.s,a:eo(pr(u,1.1,1.6))});etk('aynı ağırlık değil',MX,640,eo(pr(u,1.4,2)),{size:42});"
+  },
+  {
+   "narration": "Eksik tartan satıcı, müşteriyi aldatmış olurdu.",
+   "ifade": "endiseli",
+   "cizim": "const b=eo(pr(u,.2,1))*34;ink(ln([200,330+b],[800,330-b],10),{w:8,seed:2,pp:1});ink(ln([500,200],[500,560],10),{w:7,seed:1});ink(ell(200,470+b,75,20,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:6,seed:23});ink(ell(800,470-b,75,20,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:6,seed:24});ink(ln([700,170],[760,230],6),{w:7,c:K.bordo,seed:30,pp:eo(pr(u,.8,1.2))});ink(ln([760,170],[700,230],6),{w:7,c:K.bordo,seed:31,pp:eo(pr(u,1,1.4))});etk('eksik tartı',MX,650,eo(pr(u,1.2,1.8)),{size:44,c:K.bordo});"
+  },
+  {
+   "narration": "Bu yüzden çarşıda tartıları muhtesip denen bir görevli denetlerdi.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(330,260,46,52,24),{close:true,fill:'#EFE4CB',w:6,seed:40,pp:eo(pr(u,0,.5))});ink(ln([330,312],[330,500],8),{w:6,seed:41,pp:eo(pr(u,.2,.7))});ink(ln([330,370],[250,450],6),{w:6,seed:42,pp:eo(pr(u,.4,.8))});ink(ln([330,370],[440,330],6),{w:6,seed:43,pp:eo(pr(u,.4,.8))});ink(ln([330,500],[270,610],6),{w:6,seed:44,pp:eo(pr(u,.5,.9))});ink(ln([330,500],[390,610],6),{w:6,seed:45,pp:eo(pr(u,.5,.9))});ink(ell(470,310,34,34,20),{w:5,seed:46,pp:eo(pr(u,.8,1.3))});ink(ln([494,334],[540,380],6),{w:6,seed:47,pp:eo(pr(u,1,1.4))});ink(ln([620,420],[900,420],10),{w:6,seed:48,pp:eo(pr(u,.6,1.2))});ink(ln([700,420],[700,280],6),{w:5,seed:49,pp:eo(pr(u,1,1.4))});ink(ln([600,300],[800,300],6),{w:5,seed:50,pp:eo(pr(u,1.2,1.6))});etk('muhtesip',330,660,eo(pr(u,1.4,2)),{size:46});"
+  },
+  {
+   "narration": "Kaynaklara göre hileli tartan esnaf cezalandırılırdı; güven, tezgâhtaki terazide başlardı.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(120,440,760,70),{close:true,fill:'#E6DBC4',w:6,seed:60,pp:eo(pr(u,0,.6))});ink(ln([120,510],[120,620],6),{w:6,seed:61,pp:eo(pr(u,.2,.7))});ink(ln([880,510],[880,620],6),{w:6,seed:62,pp:eo(pr(u,.2,.7))});ink(ln([500,200],[500,440],10),{w:7,seed:63,pp:eo(pr(u,.3,.8))});ink(ln([330,250],[670,250],10),{w:7,seed:64,pp:eo(pr(u,.4,.9))});for(const [px,sd] of [[330,65],[670,66]]){ink(ell(px,330+Math.sin(T*2+sd)*4,70,18,24,0,Math.PI),{close:true,fill:'#EFE4CB',w:5,seed:sd,pp:eo(pr(u,.6,1.2))});}etk('güven burada başlar',MX,640,eo(pr(u,1.2,1.8)),{size:44});"
+  },
+  {
+   "narration": "Peki bir okka tam olarak kaç kilogramdı? Cevap:",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,400,260,{c:K.ak,a:eo(pr(u,.1,.7))});etk('1 okka = ?',MX,600,eo(pr(u,.7,1.3)),{size:50});"
+  }
+ ]
+}

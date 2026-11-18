@@ -1,0 +1,71 @@
+{
+ "id": "2026-11-19_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-19T16:00:00.000Z",
+ "topic": "Mercator haritasında Grönland'ın Afrika kadar büyük görünmesi",
+ "title": "Haritada Grönland Neden Afrika Kadar Büyük? 🗺️",
+ "description": "Eşyaların Hikayesi #58\nHaritada Grönland neden Afrika kadar büyük görünüyor? 1569'da Gerardus Mercator denizciler için bir harita çizdi ve kutuplara yaklaştıkça kara parçaları büyük çizildi.\n\n#harita #mercator #eşyalarınhikayesi #shorts",
+ "tags": [
+  "harita",
+  "mercator haritası",
+  "grönland afrika",
+  "dünya haritası",
+  "harita yanılgısı",
+  "gerardus mercator",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Grönland neden",
+  "Afrika kadar büyük?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Düdük",
+  "b": "Kumbara"
+ },
+ "oylama": {
+  "kaynak": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Why Does Greenland Look as Big as Africa on Maps? 🗺️",
+   "description": "Story of Things #58\nWhy does Greenland look as big as Africa on the map? In 1569 Gerardus Mercator drew a chart for sailors, and landmasses near the poles ended up drawn much larger.\n\n#map #mercator #storyofthings #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Haritada Grönland neden Afrika kadar büyük görünüyor?",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(100,120,800,460),{close:true,fill:'#EFE4CB',w:6,seed:1,pp:eo(pr(u,0,.6))});ink([[230,140],[330,150],[360,230],[300,300],[240,260]],{close:true,fill:'#E6DBC4',w:5,seed:2,pp:eo(pr(u,.3,.9))});ink([[480,300],[640,290],[690,420],[600,540],[520,500],[470,400]],{close:true,fill:'#E6DBC4',w:5,seed:3,pp:eo(pr(u,.5,1.1))});etk('Grönland',290,350,eo(pr(u,1,1.5)),{size:40});etk('Afrika',580,590,eo(pr(u,1.2,1.7)),{size:40});txt('?',MX,650,90,{c:K.ak,a:eo(pr(u,1.4,1.9))});"
+  },
+  {
+   "narration": "Çünkü 1569'da Gerardus Mercator denizciler için bir harita çizdi.",
+   "ifade": "anlatiyor",
+   "cizim": "txt('1569',MX,170,120,{c:K.ak,a:eo(pr(u,0,.6))});ink(ell(500,400,200,200,36),{w:5,seed:5,pp:eo(pr(u,.2,1))});ink(ell(500,400,200,60,30),{w:3,seed:6,pp:eo(pr(u,.4,1.1))});ink(ln([300,400],[700,400],14),{w:3,seed:7,pp:eo(pr(u,.5,1.1))});ink(ln([500,200],[500,600],14),{w:3,seed:8,pp:eo(pr(u,.5,1.1))});etk('Mercator',MX,670,eo(pr(u,1,1.6)),{size:44});"
+  },
+  {
+   "narration": "Bu haritada pusula yönü düz bir çizgi olarak kalıyordu.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(kutu(100,140,800,420),{close:true,fill:'#EFE4CB',w:6,seed:9,pp:eo(pr(u,0,.5))});ink(ln([180,500],[820,220],24),{w:6,c:K.ak,seed:10,pp:eo(pr(u,.4,1.4))});ink(ell(180,500,14,14,12),{close:true,fill:K.ak,w:4,seed:11,pp:eo(pr(u,.4,.7))});ink(ell(820,220,14,14,12),{close:true,fill:K.ak,w:4,seed:12,pp:eo(pr(u,1.2,1.5))});etk('düz çizgi = sabit yön',MX,640,eo(pr(u,1.3,1.9)),{size:42});"
+  },
+  {
+   "narration": "Ama kutuplara yaklaştıkça kara parçaları olduğundan çok daha büyük çiziliyor.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ln([100,200],[900,200],14),{w:4,seed:13,pp:eo(pr(u,0,.5))});ink(ln([100,520],[900,520],14),{w:4,seed:14,pp:eo(pr(u,0,.5))});const a=eo(pr(u,.4,1.4));ink(ell(250,520,40,40,20),{close:true,fill:'#E6DBC4',w:5,seed:15,pp:eo(pr(u,.3,.8))});ink(ell(750,200,40+a*90,28+a*70,24),{close:true,fill:'#E6DBC4',w:5,seed:16,pp:eo(pr(u,.3,.8))});etk('ekvator',250,600,eo(pr(u,.8,1.3)),{size:40});etk('kutba yakın',750,130,eo(pr(u,1,1.5)),{size:40});ok([750,300],[750,420],{pp:eo(pr(u,1.2,1.8)),seed:17});"
+  },
+  {
+   "narration": "Gerçekte Afrika yaklaşık 14 kat büyük; peki harita Grönland'ı neden hâlâ şişiriyor?",
+   "ifade": "merakli",
+   "cizim": "txt('14×',MX,380,200,{c:K.ak,a:eo(pr(u,.1,.7))});etk('Afrika / Grönland',MX,560,eo(pr(u,.7,1.3)),{size:50});txt('?',MX,640,80,{c:K.s,a:eo(pr(u,1.2,1.7))});"
+  }
+ ]
+}
