@@ -723,15 +723,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-14_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Kapı Kilidinin Fikri 4000 Yıllık: Mısır'dan Yale'e",
-        "a": "Pusula",
-        "b": "Mum",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-14T07:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-14_UCPtL84Agfh5hzoTQqE4jD0w_short2",
         "baslik": "Düğme Binlerce Yıl Giysiyi Neden Kapatmadı?",
         "a": "Çivi",
@@ -802,6 +793,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-17T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-18_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Kilogram Neden Bir Kasada Kilitli Tutuldu? ⚖️",
+        "a": "Kibrit",
+        "b": "Pil",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-18T07:00:00.000Z"
       }
     ]
   },

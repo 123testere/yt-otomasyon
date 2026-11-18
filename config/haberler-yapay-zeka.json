@@ -1,8 +1,152 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-18T04:27:47.419Z",
+  "guncellendi": "2026-11-18T14:06:16.669Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Jensen Huang Sessizliğini Bozdu: \"Yönetim Kurulu İsterse NVIDIA CEO'luğuna Dönmekten Onur Duyarım\"",
+      "link": "https://www.webtekno.com/jensen-huang-sessizligini-bozdu-h229117.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-18T13:03:00.000Z",
+      "ozet": "İstifasının ardından ilk kez konuşan Jensen Huang, yönetim kurulunun davet etmesi halinde NVIDIA CEO’luğuna dönmekten onur duyacağını açıkladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI, GPT-6.2 Astra ve GPT-6.2 Sol Modellerini ChatGPT ve Codex’e Getirdi: Peki Neler Yapılabiliyor?",
+      "link": "https://www.webtekno.com/openai-gpt-6-2-astra-ve-gpt-6-2-sol-modellerini-chatgpt-ve-codex-getirdi-h229133.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-18T13:02:03.000Z",
+      "ozet": "OpenAI, daha az token harcayan yeni GPT-6.2 Astra ve Sol modellerini ChatGPT Work, Codex ve API kullanıcıları için kullanıma sundu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia isn’t selling any more AI chips to China",
+      "link": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-18T13:01:05.000Z",
+      "ozet": "Nvidia has stopped sending its advanced AI chips to China, despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette Kress during an earnings call on Tuesday, marking a notable shift for the company that, under former CEO Jensen Huang, […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+      "link": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-18T13:00:00.000Z",
+      "ozet": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
+      "link": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-18T12:00:00.000Z",
+      "ozet": "With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
+      "link": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-18T11:30:00.000Z",
+      "ozet": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google açıkladı: Siber saldırılarda artık insanlar devreden çıktı",
+      "link": "https://www.donanimhaber.com/google-acikladi-siber-saldirilarda-artik-insanlar-devreden-cikti--213069",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-18T11:19:00.000Z",
+      "ozet": "Google, AI ajanlarının artık insan müdahalesi olmadan siber saldırılar gerçekleştirebildiğini açıkladı. Şirketlerin güvenlik güncellemeleri için sahip olduğu süre giderek daralıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Instagram'a Yeni Özellik: Çalıntı Videolar 'İçerik Koruma' Özelliğiyle Otomatik Tespit Edilecek!",
+      "link": "https://www.webtekno.com/instagram-calinti-videolar-otomatik-tespit-edilecek-h229138.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-18T11:18:13.000Z",
+      "ozet": "Instagram, içerik üreticilerinin videolarını ve metinlerini çalan taklitçiler ile yapay zekâ kopyalarını tespit eden yeni koruma aracını duyurdu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Tesla'nın Robotaksileri İçin İlk İki Ay Pek de İyi Geçmedi: 8 Kaza!",
+      "link": "https://www.webtekno.com/tesla-robotaksileri-icin-ilk-iki-ay-iyi-gecmedi-8-kaza-h229135.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-18T11:18:04.000Z",
+      "ozet": "Tesla Cybercab, Austin’deki lansmanından sonraki iki ayda sekiz kazaya karıştı. Sürücüsüz robotaksi görevlerindeki dört kazada araçların hızı saatte yaklaşık 8 kilometreyi aşmadı. Yaralanma bildirilen iki kaza ise test sürücüsüyle yapılan yüksek hızlı denemelerde yaşandı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Suno now lets you make AI videos for your AI music",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-18T11:16:53.000Z",
+      "ozet": "Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called \"Visuals,\" allows users to turn Suno songs into AI-generated video clips that automatically lipsync to lyrics, or make images via prompt descriptions that can be used as thumbnails and album artwork. Visuals […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zekanın gözü üzerinizde: Hong Kong'da gerçek zamanlı gözetim",
+      "link": "https://www.donanimhaber.com/hong-kong-da-yapay-zeka-destekli-yuz-tanima-donemi--213036",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-18T10:59:00.000Z",
+      "ozet": "Hong Kong, şehir genelindeki güvenlik kameralarına yapay zeka destekli yüz tanıma özelliği ekliyor. Sistem, şüphelilerin ve kayıp kişilerin gerçek zamanlı takibini sağlayacak.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "This smell startup says its AI nose is as good as a human’s",
+      "link": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-18T10:20:30.000Z",
+      "ozet": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich set of training data for what AI startup Osmo calls the world’s first foundation…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Lovable Wants You to Vibe Code Your Dream Job",
+      "link": "https://www.wired.com/story/lovable-wants-you-to-vibe-code-a-living/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-18T10:00:00.000Z",
+      "ozet": "This Swedish startup dominated the vibe-coded app boom. Two years after launch, Lovable is shifting gears to help users run vibe-coded businesses.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Dünyanın en büyük üçüncü programlama dili Java'da kritik güvenlik açığı",
+      "link": "https://www.donanimhaber.com/java-da-kritik-guvenlik-acigi-ortaya-cikti--213062",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-18T09:13:07.000Z",
+      "ozet": "OpenAI'ın GPT-6 Cyber modeliyle keşfedilen Java güvenlik açıkları endişe yarattı. Oracle güncelleme yayımlarken ABD siber güvenlik kurumu da şirketleri sistemlerini güncellemeleri konusunda uyardı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zeka Apple'ı vurdu: Samsung ortaklığı büyüyecek",
+      "link": "https://www.donanimhaber.com/yapay-zeka-apple-i-vurdu-samsung-ortakligi-buyuyecek--213039",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-18T08:53:00.000Z",
+      "ozet": "Apple, DRAM tedarikinde kısa vadeli anlaşma politikasını değiştirmeye hazırlanıyor. Şirket, 2027'den itibaren Samsung ile 4-5 yıllık sözleşme imzalayacak.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia, Jensen Huang'ı CEO olarak geri getirmeyi düşünmüyor",
+      "link": "https://www.donanimhaber.com/nvidia-jensen-huang-i-ceo-olarak-geri-getirmeyi-dusunmuyor--213058",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-18T08:11:00.000Z",
+      "ozet": "Nvidia yönetim kurulu, Jensen Huang'ın CEO olarak koltuğuna geri dönmeyeceğini açıkladı. Şirket, 115,8 milyar dolarlık rekor gelir açıklarken yeni CEO arayışını sürdürüyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Petrodoların yerini “çip-dolar” alabilir: Doların geleceği yapay zekâya bağlanıyor",
+      "link": "https://www.donanimhaber.com/ekonomide-yeni-donem-petrodolarin-yerini-cip-dolari-alabilir--213056",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-18T07:50:00.000Z",
+      "ozet": "Doların küresel hâkimiyetinin arkasındaki güç değişiyor. Deutsche Bank, ABD'nin teknoloji liderliğinin yeni bir finansal düzen yarattığını ancak bunun daha büyük riskler taşıdığını belirtiyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Over a Third of Gen Z-ers Rely on AI for Friendship",
+      "link": "https://www.wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-18T05:01:00.000Z",
+      "ozet": "Young people who have online-only friends or use AI as a social companion face higher odds of loneliness than those who do not, a new Gallup report reveals.",
+      "kullanildi": false
+    },
     {
       "baslik": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
       "link": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
@@ -25,6 +169,14 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-18T00:16:50.000Z",
       "ozet": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "link": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-18T00:00:00.000Z",
+      "ozet": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
       "kullanildi": false
     },
     {
@@ -300,43 +452,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Voyage Labs raises $12 million for a specialized AI travel assistant",
-      "link": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-17T15:00:00.000Z",
-      "ozet": "Voyage Labs’ flagship product is called Atlas, meant to work as a personal assistant for your trip-planning, available today in private beta.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
-      "link": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-17T14:50:58.000Z",
-      "ozet": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 billion in a Series C funding round.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Research Reports",
       "link": "https://www.technologyreview.com/2026/11/17/1148203/research-reports/",
       "kaynak": "MIT Technology Review",
       "tarih": "2026-11-17T14:39:46.000Z",
       "ozet": "To access a report, click on the corresponding image below.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
-      "link": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-17T14:26:46.000Z",
-      "ozet": "Science Corp. raised a $400 million Series D to scale up its anti-blindness business.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia, ulusal güvenlik ve ihracat denetimi için yeni komite kurdu",
-      "link": "https://www.donanimhaber.com/nvidia-ulusal-guvenlik-ve-ihracat-denetimi-icin-yeni-komite-kurd--213030",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-17T14:05:00.000Z",
-      "ozet": "Nvidia, ulusal güvenlik politikaları ve Çin'e çip ihracatını denetlemek için yeni bir komite kurdu. Şirket, küresel ticaret riskleri ve ihracat kontrollerine uyumu da daha yakından izleyecek.",
       "kullanildi": false
     },
     {
@@ -356,131 +476,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "2027'de dünyayı neler bekliyor? İşte The Economist'in 2027 kapağında işaret ettiği 10 gelişme",
-      "link": "https://www.donanimhaber.com/2027-de-dunyayi-neler-bekliyor-iste-the-economist-in-10-ongorusu--213023",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-17T13:02:00.000Z",
-      "ozet": "Trump'ın geleceği, yapay zekaya yönelik tepkiler, uzayda veri merkezleri ve yeni bir sıcaklık rekoru... The Economist, 2027 yılına damga vurabilecek 10 gelişmeyi sıraladı.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Siri AI ve Apple Intelligence Özelliklerine Günlük Kullanım Sınırı Geliyor: İşte Tüm Sınırlamalar!",
       "link": "https://www.webtekno.com/siri-ai-ve-apple-intelligence-ozelliklerine-gunluk-kullanim-siniri-geliyor-h229078.html",
       "kaynak": "Webtekno",
       "tarih": "2026-11-17T11:23:47.000Z",
       "ozet": "Apple, iOS 27.3 beta ile Siri AI ve Apple Intelligence için günlük kullanım sınırı getirirken iCloud+ abonelerine ekstra kota sunuyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google AI Ultra Türkiye fiyatına bir zam daha geldi",
-      "link": "https://www.donanimhaber.com/google-ai-ultra-turkiye-fiyatina-bir-zam-daha-geldi--213021",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-17T11:16:00.000Z",
-      "ozet": "Google'ın yapay zeka özelliklerine erişim için ödenmesi gereken ücret artmaya devam ediyor. Google AI Ultra paketinin fiyatı 3 ayda ikinci kez zamlandı ve 5 bin TL sınırına dayandı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
-      "link": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-17T11:00:00.000Z",
-      "ozet": "The French CEO of Hugging Face, a mega-hub of open-source AI software, says the attack by OpenAI models earlier this year proved one thing: Humanity can’t let AI be controlled by the few.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The Apple Watch’s Live Rewind Can Record and Rewind Spoken Conversations. It’s Pretty Awkward",
-      "link": "https://www.wired.com/story/apple-watch-audio-intelligence-live-rewind-siri-recap/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-17T11:00:00.000Z",
-      "ozet": "Live Rewind and Siri Recap can transcribe missed moments and summarize your day—if you don’t mind a little social clumsiness.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "ABD, Nvidia'ın Asya ortağı Megaspeed'i 2024'ten beri soruşturuyor",
-      "link": "https://www.donanimhaber.com/abd-nvidia-in-asya-ortagi-megaspeed-i-2024-ten-beri-sorusturuyor--213006",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-17T10:54:00.000Z",
-      "ozet": "ABD, Nvidia'ın Asya-Pasifik ortağı Megaspeed hakkında 2024'te başlattığı soruşturmanın ayrıntılarını açıkladı. Şirket, hassas çiplerin Çin’e izinsiz aktarılması şüphesiyle inceleniyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
-      "link": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-17T10:47:45.000Z",
-      "ozet": "Google and Apple alumni Chad Steelberg and Andy Baynes are applying what they learned running software companies and designing iPhones to manufacturing lethal munitions.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "ABD, Çin'in Nvidia çiplerine erişmek için kullandığı yolu kapatıyor",
-      "link": "https://www.donanimhaber.com/abd-cin-in-nvidia-ciplerine-erismek-icin-kullandigi-yolu-kapatti--213002",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-17T10:10:00.000Z",
-      "ozet": "ABD, Çin'in üçüncü ülkelerdeki veri merkezleri üzerinden Nvidia çiplerine erişmesini engellemek için ihracat kontrollerini sıkılaştırdı. Yeni kurallar beş ülkeye çip sevkiyatını da kapsıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Uber'de Veri İhlali: Yaklaşık 150 Bin Kişinin Bilgileri Çalındı!",
-      "link": "https://www.webtekno.com/uber-yaklasik-150-bin-kisinin-bilgileri-calindi-h229069.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-17T09:58:05.000Z",
-      "ozet": "Uber'in yapay zekâ tedarikçisi Fireworks AI'a düzenlenen siber saldırıda yaklaşık 150 bin kişinin adı, adresi ve ehliyet bilgileri çalındı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Introducing ChatGPT for Sales",
-      "link": "https://openai.com/index/introducing-chatgpt-for-sales",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-17T08:00:00.000Z",
-      "ozet": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google AI Ultra'nın Türkiye Fiyatına Zam Geldi: İşte Yeni Fiyat!",
-      "link": "https://www.webtekno.com/google-ai-ultra-turkiye-fiyatina-zam-h229046.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-17T06:34:55.000Z",
-      "ozet": "Google'ın gelişmiş yapay zekâ paketi Google AI Ultra'nın Türkiye fiyatı yeniden zamlandı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Strengthening NATO and allied cyber defenses with AI",
-      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-17T00:00:00.000Z",
-      "ozet": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Astra for Law leads in legal intelligence",
-      "link": "https://openai.com/index/astra-law-6-2",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-17T00:00:00.000Z",
-      "ozet": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Introducing OpenAI for Chile",
-      "link": "https://openai.com/index/introducing-openai-for-chile",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-17T00:00:00.000Z",
-      "ozet": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
-      "link": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-16T23:17:34.000Z",
-      "ozet": "Jensen Huang's stunning resignation from Nvidia after more than 33 years has sent shockwaves throughout the tech industry. Now prominent figures are calling for Huang's reinstatement, and many are also hopping on board with a theory spreading throughout Silicon Valley: that the scandal is the result of a plot against the former CEO. At the […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Robo-soldier startup backed by Eric Trump misses payroll, may collapse",
-      "link": "https://arstechnica.com/ai/2026/11/robo-soldier-startup-backed-by-eric-trump-misses-payroll-may-collapse/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-16T22:58:27.000Z",
-      "ozet": "Robotics startup misses payroll a year after CEO used funds for luxury home.",
       "kullanildi": false
     }
   ]
