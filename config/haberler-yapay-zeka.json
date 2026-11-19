@@ -1,8 +1,80 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-19T03:34:30.042Z",
+  "guncellendi": "2026-11-19T13:18:31.840Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "OpenAI'ın yeni modelleri geldi: GPT-6.2 Astra ve Sol neler sunuyor?",
+      "link": "https://www.donanimhaber.com/openai-gpt-6-2-astra-ve-sol-u-kullanima-sundu--213131",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-19T12:58:00.000Z",
+      "ozet": "OpenAI, en zorlu görevler için GPT-6.2 Astra'yı, günlük kullanım içinse Sol'u kullanıma sundu. Yeni modeller bazı kritik testlerde Claude ve Gemini'yi geride bırakıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Canva adds an AI ‘off’ button",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-19T12:30:00.000Z",
+      "ozet": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn off the ability to generate images with its Canva chatbot. This toggle doesn't turn off every AI-powered […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Sam Altman'dan Nvidia'dan Ayrılan Jensen Huang Hakkında Dikkat Çeken Açıklama: \"Onsuz Düşünemiyorum\"",
+      "link": "https://www.webtekno.com/sam-altman-jensen-huang-nvidia-ayrilik-h229213.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-19T12:08:07.000Z",
+      "ozet": "Jensen Huang, casusluk ve sadakatsizlik iddiaları konuşulurken Nvidia’dan ayrıldı. Sam Altman ise Huang’ın yanında durdu. Yapay zekâ devrimini Huang olmadan hayal etmenin zor olduğunu söyledi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
+      "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-19T12:00:00.000Z",
+      "ozet": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger towards data centers could impact its growth.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "MSI EdgeMesa N AI+ Türkiye’de ön siparişe açıldı: Minik kasada 1 PFLOP AI performansı",
+      "link": "https://www.donanimhaber.com/msi-edgemesa-n-ai-turkiye-de-on-siparise-acildi-ozellikleri--213130",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-19T10:47:06.000Z",
+      "ozet": "MSI, NVIDIA RTX Spark N1X platformuyla güçlendirilen yeni AI PC modeli EdgeMesa N AI+ serisini Türkiye'de ön siparişe açtı. Minik boyutlu bu bilgisayar, dev performansıyla dikkat çekiyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google Gemini 4 Neon tanıtıldı: Carbon’dan 3 kat daha hızlı",
+      "link": "https://www.donanimhaber.com/google-gemini-4-neon-tanitildi-carbon-dan-3-kat-daha-hizli--213118",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-19T10:47:00.000Z",
+      "ozet": "Google, karmaşık kodlama ve analitik işlemler için geliştirdiği Gemini 4 Neon'u duyurdu. Yeni model, Carbon'dan üç kat daha hızlı çalışırken daha uygun maliyetler sunuyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI'a odaklanan Artificial filminin fragmanı yayınlandı",
+      "link": "https://www.donanimhaber.com/openai-a-odaklanan-artificial-filminden-yeni-fragman--213111",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-19T10:25:00.000Z",
+      "ozet": "OpenAI'a ve tartışmalı kurucusu Sam Altman'a odaklanan Artificial filminden yeni fragman yayınlandı. The Social Network'e benzetilen film, bu yıl sinemaseverlerle buluşacak.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic borsaya SpaceX rekorunu kırarak girdi: 1,5 trilyon dolar değerlemeye ulaştı",
+      "link": "https://www.donanimhaber.com/anthropic-borsaya-spacex-rekorunu-kirarak-girdi--213109",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-19T08:33:00.000Z",
+      "ozet": "Anthropic, halka arzında 81,3 milyar dolar toplayarak SpaceX'in rekorunu geride bıraktı. Claude'un geliştiricisi, 1,5 trilyon dolarlık değerlemeye ulaşırken yatırımcı talebi beklentileri aştı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google AI Ultra'ya Ücretsiz YouTube Premium Aile Paketi Eklendi",
+      "link": "https://www.webtekno.com/google-ai-ultra-ucretsiz-youtube-premium-aile-paketi-eklendi-h229189.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-19T07:58:52.000Z",
+      "ozet": "Google AI Ultra’ya daha önce bireysel YouTube Premium üyeliği dahildi. Yeni düzenlemeyle Premium, uygun aboneler için ek ücret ödemeden altı kişiye kadar paylaşılabiliyor.",
+      "kullanildi": false
+    },
     {
       "baslik": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
       "link": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
@@ -60,7 +132,7 @@
       "kullanildi": false
     },
     {
-      "baslik": "Anthropic reportedly prices IPO at $83 a share, above projected range",
+      "baslik": "Anthropic prices IPO at $83 a share, above projected range",
       "link": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-18T22:11:15.000Z",
@@ -340,14 +412,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Google açıkladı: Siber saldırılarda artık insanlar devreden çıktı",
-      "link": "https://www.donanimhaber.com/google-acikladi-siber-saldirilarda-artik-insanlar-devreden-cikti--213069",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-18T11:19:00.000Z",
-      "ozet": "Google, AI ajanlarının artık insan müdahalesi olmadan siber saldırılar gerçekleştirebildiğini açıkladı. Şirketlerin güvenlik güncellemeleri için sahip olduğu süre giderek daralıyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Instagram'a Yeni Özellik: Çalıntı Videolar 'İçerik Koruma' Özelliğiyle Otomatik Tespit Edilecek!",
       "link": "https://www.webtekno.com/instagram-calinti-videolar-otomatik-tespit-edilecek-h229138.html",
       "kaynak": "Webtekno",
@@ -361,22 +425,6 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-18T11:18:04.000Z",
       "ozet": "Tesla Cybercab, Austin’deki lansmanından sonraki iki ayda sekiz kazaya karıştı. Sürücüsüz robotaksi görevlerindeki dört kazada araçların hızı saatte yaklaşık 8 kilometreyi aşmadı. Yaralanma bildirilen iki kaza ise test sürücüsüyle yapılan yüksek hızlı denemelerde yaşandı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Suno now lets you make AI videos for your AI music",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-18T11:16:53.000Z",
-      "ozet": "Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called \"Visuals,\" allows users to turn Suno songs into AI-generated video clips that automatically lipsync to lyrics, or make images via prompt descriptions that can be used as thumbnails and album artwork. Visuals […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Yapay zekanın gözü üzerinizde: Hong Kong'da gerçek zamanlı gözetim",
-      "link": "https://www.donanimhaber.com/hong-kong-da-yapay-zeka-destekli-yuz-tanima-donemi--213036",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-18T10:59:00.000Z",
-      "ozet": "Hong Kong, şehir genelindeki güvenlik kameralarına yapay zeka destekli yüz tanıma özelliği ekliyor. Sistem, şüphelilerin ve kayıp kişilerin gerçek zamanlı takibini sağlayacak.",
       "kullanildi": false
     },
     {
@@ -401,22 +449,6 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-18T10:00:00.000Z",
       "ozet": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Dünyanın en büyük üçüncü programlama dili Java'da kritik güvenlik açığı",
-      "link": "https://www.donanimhaber.com/java-da-kritik-guvenlik-acigi-ortaya-cikti--213062",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-18T09:13:07.000Z",
-      "ozet": "OpenAI'ın GPT-6 Cyber modeliyle keşfedilen Java güvenlik açıkları endişe yarattı. Oracle güncelleme yayımlarken ABD siber güvenlik kurumu da şirketleri sistemlerini güncellemeleri konusunda uyardı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Yapay zeka Apple'ı vurdu: Samsung ortaklığı büyüyecek",
-      "link": "https://www.donanimhaber.com/yapay-zeka-apple-i-vurdu-samsung-ortakligi-buyuyecek--213039",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-18T08:53:00.000Z",
-      "ozet": "Apple, DRAM tedarikinde kısa vadeli anlaşma politikasını değiştirmeye hazırlanıyor. Şirket, 2027'den itibaren Samsung ile 4-5 yıllık sözleşme imzalayacak.",
       "kullanildi": false
     },
     {
@@ -449,38 +481,6 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-18T06:00:00.000Z",
       "ozet": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Over a Third of Gen Z-ers Rely on AI for Friendship",
-      "link": "https://www.wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-18T05:01:00.000Z",
-      "ozet": "Young people who have online-only friends or use AI as a social companion face higher odds of loneliness than those who do not, a new Gallup report reveals.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
-      "link": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T01:44:21.000Z",
-      "ozet": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
-      "link": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-18T00:27:29.000Z",
-      "ozet": "Word, Excel, and PowerPoint now live inside Copilot; always-on agents are next.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia promises that revenue will keep soaring — for now",
-      "link": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T00:16:50.000Z",
-      "ozet": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
       "kullanildi": false
     }
   ]

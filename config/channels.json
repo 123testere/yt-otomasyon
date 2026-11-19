@@ -726,15 +726,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Termometrenin İlk Hali Neden Ters Çalışıyordu?",
-        "a": "Sabun",
-        "b": "Tarak",
-        "oyA": 1,
-        "oyB": 0,
-        "yayin": "2026-11-15T07:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short2",
         "baslik": "Kaşık mı Çatal mı: Sofranın İlk Aleti Hangisi?",
         "a": "Terazi",
@@ -805,6 +796,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-18T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-19_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Osmanlı Çarşısında Hileli Tartanı Kim Yakalardı? ⚖️",
+        "a": "Pul",
+        "b": "Zar",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-19T07:00:00.000Z"
       }
     ]
   },
