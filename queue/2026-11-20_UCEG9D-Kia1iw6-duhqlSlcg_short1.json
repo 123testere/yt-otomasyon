@@ -1,0 +1,159 @@
+{
+ "id": "2026-11-20_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-20T05:00:00.000Z",
+ "bolum": {
+  "no": 13,
+  "ad": "Top 5"
+ },
+ "title": "Broke Before Payday Every Month? 💰",
+ "description": "Broke before payday every month and wondering where your money goes? Here are three simple fixes: track your spending for a week, move a set amount to savings on payday, and set a weekly spending limit. Results vary, so find what works for you.\n\n#money #business #motivation #savingmoney",
+ "tags": [
+  "broke before payday",
+  "how to stop running out of money",
+  "budgeting tips",
+  "money habits",
+  "pay yourself first",
+  "weekly spending limit",
+  "track your spending",
+  "money tips"
+ ],
+ "topic": "Three simple fixes for running out of money before payday",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿Sin dinero antes del día de pago cada mes? 💰",
+   "description": "¿Te quedas sin dinero antes del día de pago cada mes? Tres soluciones sencillas: registrar tus gastos durante una semana, mover una cantidad fija a ahorros el día de pago y fijar un límite semanal de gasto. Los resultados varían.\n\n#dinero #negocios #motivacion #ahorro"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "tanitim": [
+  "Broke before payday",
+  "3 simple fixes",
+  "Keep more money"
+ ],
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "PAYDAY BROKE?",
+    "alt": "3 fixes that actually help"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "A $5 daily habit costs about $150 a month."
+    }
+   ],
+   "aciklama": "0-1,5 sn: The Founder shrugs at his desk, looking worried. 1,5-3 sn: giant text PAYDAY BROKE? stays on screen."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Track Every Purchase",
+    "tur": "Find the leaks",
+    "maddeler": [
+     "Write it all down",
+     "Do it for one week",
+     "Spot small leaks"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: track every purchase for one week to spot where money leaks."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 3 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Save on Payday",
+    "tur": "Pay yourself first",
+    "maddeler": [
+     "Pick a fixed amount",
+     "Move it on payday",
+     "Spend what is left"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: move a set amount to savings the moment you get paid."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 2 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Weekly Spending Limit",
+    "tur": "Simple guardrail",
+    "maddeler": [
+     "Set a weekly amount",
+     "Check it every day",
+     "Adjust when needed"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number one: set a weekly spending limit, because it often keeps you on track."
+    }
+   ],
+   "aciklama": "0-1 sn: Ranking card number 1 appears with a white flash. 1-4 sn: three short points appear one by one."
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for more fixes, and tell me which one you would try!"
+    }
+   ],
+   "aciklama": "0-1 sn: Crowd cheers at the expo. 1-4 sn: The Founder raises the trophy and smiles."
+  }
+ ]
+}

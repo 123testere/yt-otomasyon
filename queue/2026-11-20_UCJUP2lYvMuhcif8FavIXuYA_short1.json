@@ -1,0 +1,177 @@
+{
+ "id": "2026-11-20_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-20T16:00:00.000Z",
+ "bolum": {
+  "no": 12,
+  "ad": "Google AI Mode Gizli"
+ },
+ "kaynak": "TechCrunch",
+ "kaynakLink": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+ "title": "Yapay Zekâya Sorduklarının İzi Kalmasın İster misin? ⚡",
+ "description": "Google, AI Mode için arama geçmişine eklenmeyen geçici sohbetler getirdi; peki yapay zekâ gizliliği nasıl değişebilir?\nKaynak: TechCrunch https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/\n\n#yapayzeka #google #aimode #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "google ai mode",
+  "geçici sohbet",
+  "google arama",
+  "yapay zeka gizlilik",
+  "teknoloji haberleri"
+ ],
+ "topic": "Google AI Mode için geçmişe eklenmeyen geçici sohbetler",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "Want Your AI Questions to Leave No Trace? ⚡",
+   "description": "Google added temporary threads to AI Mode that are not added to your search history. How could AI privacy change?\nSource: TechCrunch\n\n#ai #google #aimode #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Hangi sorularını gizli sorardın?"
+ },
+ "tanitim": [
+  "Google AI Mode",
+  "Geçici sohbet",
+  "Gizlilik"
+ ],
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "yz-lab",
+   "buyukYazi": {
+    "ust": "İZ KALMASIN?",
+    "alt": "yapay zekâda gizli sohbet"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "supheli"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yapay zekâ moduna sorduklarının aramada iz bırakmasını istemiyor musun?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: Kullanıcı ekrana bakıp etrafını kontrol eder. 1,5-3,5 sn: robot sessizce yanında durur."
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "Google AI Mode'a geçici sohbet özelliği geliyor",
+    "kaynak": "TechCrunch · 18 Kasım",
+    "maddeler": [
+     "Adı: geçici sohbetler",
+     "Geçmişe eklenmiyor",
+     "Önerileri etkilemiyor"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "TechCrunch'a göre Google, AI Mode için geçici sohbetler getirdi."
+    }
+   ],
+   "aciklama": "0-4 sn: Haber kartı ekrana gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu sohbetler arama geçmişine eklenmiyor ve sonraki önerileri etkilemiyor."
+    }
+   ],
+   "aciklama": "0-2 sn: Kullanıcı ekranı gösterir. 2-4 sn: robot onaylar gibi başını sallar."
+  },
+  {
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "YENİ STANDART?",
+    "alt": "yapay zekâda gizlilik"
+   },
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Belki bu, yapay zekâ gizliliğinde yeni bir standart olabilir."
+    }
+   ],
+   "aciklama": "0-2 sn: Araştırmacı düşünceli bakar. 2-4 sn: dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen; sence işe yarar mı?"
+    }
+   ],
+   "aciklama": "0-2 sn: Kullanıcı el sallar. 2-4 sn: robot zafer pozu verir."
+  }
+ ]
+}

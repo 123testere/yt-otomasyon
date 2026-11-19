@@ -1,0 +1,188 @@
+{
+ "id": "2026-11-20_UCFw3Wdyus0HVhykB0uYahWg_short1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-20T09:00:00.000Z",
+ "derivedFrom": "2026-11-19_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "bolum": {
+  "no": 7,
+  "ad": "Su Kanalı"
+ },
+ "title": "Özgürlüğü Bırakıp Neden Geri Döndü? ⛓️",
+ "description": "Özgürlük on adım ötedeyken sen geri dönmek ister miydin? Arın ve Kargan'ın kaçışı demir parmaklıkta bitti; cevap kanaldaki bölümde.",
+ "tags": [
+  "zincirli",
+  "animasyon dizi",
+  "çöp adam animasyon",
+  "zindan kaçış",
+  "kaçış hikayesi",
+  "türkçe animasyon",
+  "arın",
+  "kargan"
+ ],
+ "topic": "Arın ve Kargan demir parmaklığa takılır, Su için geri dönerler",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Why Did He Turn Back From Freedom? ⛓️",
+   "description": "Would you turn back with freedom ten steps away? Arin and Kargan's escape ended at an iron grate; the answer is in the episode on the channel."
+  }
+ },
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 7",
+  "soru": "Sence Arın hocasına kılıç kaldıracak mı?"
+ },
+ "tanitim": [
+  "Demir parmaklık",
+  "Geri dönüş",
+  "Sabahki ilan"
+ ],
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "kanal",
+   "buyukYazi": {
+    "ust": "ÇIKIŞ KAPALI",
+    "alt": "geri dönmeli miydin?"
+   },
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli",
+     "esya": "mesale"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Özgürlük on adım ötedeyken geri dönmek ister miydin?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: Arın ve Kargan kanalın ucunda, ay ışığına bakar. 1,5-3,5 sn: ikisi de demir parmaklığa döner, dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "kanal",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "it",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "it",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Parmaklığa omuz verdik, ama demir parmaklık yerinden kıpırdamadı."
+    }
+   ],
+   "aciklama": "0-1 sn: Arın ve Kargan parmaklığa yaklaşır. 1-3,5 sn: ikisi omuz verip iter, demir yerinden kıpırdamaz."
+  },
+  {
+   "mekan": "kanal",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "uzgun"
+    },
+    {
+     "id": "kargan",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Ben dönüyorum, Su sarayda, onsuz gitmem."
+    }
+   ],
+   "aciklama": "0-2 sn: Arın parmaklığa sırtını dönüp Kargan'a bakar. 2-3,5 sn: Kargan başıyla onaylar."
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sabah ilan edildi: Toros yarın arenada benimle dövüşecekti."
+    }
+   ],
+   "aciklama": "0-1,5 sn: Arın zindana girer, Toros karşısında durur. 1,5-4 sn: Toros ağır ağır başını sallar."
+  },
+  {
+   "mekan": "zindan",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Hocama kılıç kaldıracak mıyım? Cevabı kanaldaki bölümde; devamı için abone ol ve beğen."
+    }
+   ],
+   "aciklama": "0-2 sn: Arın kılıcına bakar, Toros sakince bekler. 2-5 sn: kamera ikisinin arasında durur."
+  }
+ ]
+}

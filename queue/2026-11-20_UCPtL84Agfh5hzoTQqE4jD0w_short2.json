@@ -1,0 +1,72 @@
+{
+ "id": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-20T16:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "topic": "İlk bisikletin pedalsız tahta makine olması: 1817 Karl von Drais",
+ "title": "İlk Bisikletin Pedalı Neden Yoktu? 🚲",
+ "description": "Eşyaların Hikayesi #60\nİlk bisikletin neden pedalı yoktu? 1817'de Karl von Drais'in tahta makinesi ayaklarla yeri iterek sürülüyordu; pedallar yıllar sonra eklendi.\n\n#bisiklet #eşyalarınhikayesi #icatlar #shorts",
+ "tags": [
+  "bisiklet",
+  "ilk bisiklet",
+  "bisikletin tarihi",
+  "karl von drais",
+  "draisine",
+  "pedalsız bisiklet",
+  "bisiklet kim icat etti",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "İlk bisikletin",
+  "pedalı neden yoktu?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Saat",
+  "b": "Toka"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Bina ve Şehir İcatları",
+ "ceviriler": {
+  "en": {
+   "title": "Why Did the First Bicycle Have No Pedals? 🚲",
+   "description": "Story of Things #60\nWhy did the first bicycle have no pedals? In 1817 Karl von Drais built a wooden machine that riders pushed along with their feet; pedals came years later.\n\n#bicycle #storyofthings #inventions #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "İlk bisikletin neden pedalı yoktu?",
+   "ifade": "merakli",
+   "cizim": "ink(ell(300,450,110,110,32),{w:6,seed:100,pp:eo(pr(u,0,.6))});ink(ell(700,450,110,110,32),{w:6,seed:101,pp:eo(pr(u,.1,.7))});ink(ln([300,450],[480,300],10),{w:6,seed:102,pp:eo(pr(u,.4,.9))});ink(ln([480,300],[700,450],10),{w:6,seed:103,pp:eo(pr(u,.5,1))});ink(ln([480,300],[440,230],6),{w:6,seed:104,pp:eo(pr(u,.7,1.1))});ink(ln([410,230],[500,230],6),{w:6,seed:105,pp:eo(pr(u,.8,1.2))});ink(ln([440,560],[520,640],6),{w:7,c:K.bordo,seed:106,pp:eo(pr(u,1,1.4))});ink(ln([520,560],[440,640],6),{w:7,c:K.bordo,seed:107,pp:eo(pr(u,1.1,1.5))});etk('pedal yok',MX,100,eo(pr(u,1.3,1.9)),{size:48});"
+  },
+  {
+   "narration": "Çünkü 1817'de Karl von Drais'in tahta makinesi, ayaklarla yeri iterek sürülüyordu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(300,450,110,110,32),{w:6,seed:110,pp:eo(pr(u,0,.6))});ink(ell(700,450,110,110,32),{w:6,seed:111,pp:eo(pr(u,.1,.7))});ink(kutu(300,330,400,40),{close:true,fill:'#E6DBC4',w:6,seed:112,pp:eo(pr(u,.3,.9))});ink(ell(500,230,34,38,20),{close:true,fill:'#EFE4CB',w:5,seed:113,pp:eo(pr(u,.6,1))});ink(ln([500,268],[500,350],8),{w:6,seed:114,pp:eo(pr(u,.7,1.1))});ink(ln([500,350],[430,540+Math.sin(T*5)*18],8),{w:6,seed:115,pp:eo(pr(u,.8,1.2))});txt('1817',MX,120,70,{c:K.ak,a:eo(pr(u,.4,1))});"
+  },
+  {
+   "narration": "Mucit ona Almancada Laufmaschine, yani koşu makinesi dedi.",
+   "ifade": "gulumsuyor",
+   "cizim": "for(let i=0;i<5;i++){const a=eo(pr(u,.2+i*.3,.6+i*.3));ink(ell(180+i*150,520,24,12,16),{close:true,fill:'#E6DBC4',w:4,seed:120+i,pp:a});}ink(ln([140,580],[860,580],20),{w:4,seed:130,pp:eo(pr(u,0,1))});txt('Laufmaschine',MX,220,76,{c:K.ak,a:eo(pr(u,.5,1.2))});etk('koşu makinesi',MX,380,eo(pr(u,1.2,1.8)),{size:50});"
+  },
+  {
+   "narration": "Pedallar ancak yıllar sonra, 1860'lar civarında bu makineye eklendi.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ln([140,380],[860,380],20),{w:4,pp:eo(pr(u,0,1))});for(const [x,yil,ad,k] of [[300,'1817','pedalsız',0],[700,'1860lar','pedallı',1]]){const a=eo(pr(u,.4+k*1.2,1+k*1.2));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(x,380,18,0,7);ctx.fillStyle=k?K.ak:K.s;ctx.fill();ctx.restore();txt(yil,x,320,64,{a,c:k?K.ak:K.s});etk(ad,x,460,a,{size:40});}"
+  },
+  {
+   "narration": "Pedalsız bir makine sana tuhaf geliyorsa, asıl soru şu:",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,400,260,{c:K.ak,a:eo(pr(u,.1,.7))});etk('pedal neden geç geldi?',MX,610,eo(pr(u,.7,1.3)),{size:46});"
+  }
+ ]
+}

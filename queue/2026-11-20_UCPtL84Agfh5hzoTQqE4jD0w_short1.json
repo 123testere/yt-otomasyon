@@ -1,0 +1,72 @@
+{
+ "id": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-20T07:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "secilen": "b"
+ },
+ "topic": "Defter sözcüğünün Yunancada işlenmiş deri anlamına gelen kökeni",
+ "title": "Defter Sözcüğü Neden Kâğıt Değil Deri Demek? 📓",
+ "description": "Eşyaların Hikayesi #59\nDefter sözcüğünün kökeni Yunancada işlenmiş deri anlamına gelen bir kelimeye dayanıyor; okul defterimizin adı kâğıttan değil deriden geliyor.\n\n#defter #eşyalarınhikayesi #kelimelerinhikayesi #shorts",
+ "tags": [
+  "defter",
+  "defter kelimesinin kökeni",
+  "defter nereden geliyor",
+  "papirüs",
+  "parşömen",
+  "bergama",
+  "tahrir defteri",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Defter kâğıt değil,",
+  "neden deri demek?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Mum",
+  "b": "Çekiç"
+ },
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Why Does the Word Defter Mean Leather, Not Paper? 📓",
+   "description": "Story of Things #59\nThe Turkish word for notebook, defter, traces back to a Greek word for processed hide, so your school notebook is named after leather, not paper.\n\n#notebook #storyofthings #etymology #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Defter sözcüğü Yunancada kâğıt değil, işlenmiş deri demek.",
+   "ifade": "saskin",
+   "cizim": "ink(kutu(300,150,400,420),{close:true,fill:'#EFE4CB',w:6,seed:1,pp:eo(pr(u,0,.6))});for(let i=0;i<6;i++)ink(ln([340,230+i*50],[660,230+i*50],8),{w:3,seed:10+i,pp:eo(pr(u,.3+i*.08,.9+i*.08))});ink(ln([300,150],[300,570],8),{w:8,c:K.bordo,seed:3,pp:eo(pr(u,.2,.8))});txt('defter',MX,100,60,{c:K.ak,a:eo(pr(u,.8,1.3))});etk('kâğıt değil, deri',MX,650,eo(pr(u,1.2,1.8)),{size:44});"
+  },
+  {
+   "narration": "Eski Mısır'da yazı yaklaşık 5000 yıl önce papirüse yazılıyordu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(260,200,480,300),{close:true,fill:'#E6DBC4',w:6,seed:20,pp:eo(pr(u,0,.6))});ink(ell(260,350,28,150,24),{w:5,seed:21,pp:eo(pr(u,.2,.8))});ink(ell(740,350,28,150,24),{w:5,seed:22,pp:eo(pr(u,.2,.8))});for(let i=0;i<4;i++)ink(ln([320,250+i*55],[690,250+i*55],8),{w:3,seed:30+i,pp:eo(pr(u,.5+i*.15,1.1+i*.15))});txt('5000 yıl',MX,130,72,{c:K.ak,a:eo(pr(u,.4,1))});etk('papirüs',MX,610,eo(pr(u,1,1.6)),{size:46});"
+  },
+  {
+   "narration": "Söylenir ki parşömen adını Bergama'dan alır; orada deri incecik işlenirdi.",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(250,180,500,360),{close:true,w:7,seed:40,pp:eo(pr(u,0,.5))});ink(kutu(300,230,400,260),{close:true,fill:'#EFE4CB',w:5,seed:41,pp:eo(pr(u,.3,.9))});const nk=[[300,230],[700,230],[300,490],[700,490],[500,230],[500,490]];for(let i=0;i<nk.length;i++)ink(ell(nk[i][0],nk[i][1],12,12,12),{w:4,seed:50+i,pp:eo(pr(u,.7,1.1))});txt('Bergama',MX,110,64,{c:K.ak,a:eo(pr(u,.8,1.4))});etk('parşömen',MX,630,eo(pr(u,1.3,1.9)),{size:46});"
+  },
+  {
+   "narration": "Osmanlı'da vergi kayıtlarının tutulduğu kitaba da defter denirdi.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(280,200,440,320),{close:true,fill:'#EFE4CB',w:7,seed:60,pp:eo(pr(u,0,.6))});ink(ln([500,200],[500,520],10),{w:5,seed:61,pp:eo(pr(u,.2,.7))});ink(ln([540,520],[540,600],6),{w:8,c:K.bordo,seed:62,pp:eo(pr(u,.6,1.1))});for(let i=0;i<4;i++){ink(ln([310,250+i*55],[480,250+i*55],6),{w:3,seed:70+i,pp:eo(pr(u,.4+i*.1,1+i*.1))});ink(ln([520,250+i*55],[690,250+i*55],6),{w:3,seed:80+i,pp:eo(pr(u,.5+i*.1,1.1+i*.1))});}txt('Osmanlı',MX,130,60,{c:K.ak,a:eo(pr(u,.6,1.2))});etk('vergi defteri',MX,660,eo(pr(u,1.2,1.8)),{size:46});"
+  },
+  {
+   "narration": "Peki okul defterimizin adı nereden geldi, merak ettiysen cevap şu:",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,400,260,{c:K.ak,a:eo(pr(u,.1,.7))});etk('defter = ?',MX,600,eo(pr(u,.7,1.3)),{size:50});"
+  }
+ ]
+}

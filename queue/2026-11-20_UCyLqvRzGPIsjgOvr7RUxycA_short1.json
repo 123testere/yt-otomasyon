@@ -1,0 +1,40 @@
+{
+ "id": "2026-11-20_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-20T05:00:00.000Z",
+ "topic": "Karotten",
+ "title": "Duell 18/30: Wer erntet die meisten Karotten? 🥕",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Karotten-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "karotten",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "gemüse"
+ ],
+ "duell": {
+  "topicId": "karotten",
+  "why": [
+   "Viel Ackerland",
+   "Vielfältige Klimazonen"
+  ],
+  "script": {
+   "intro": "Wer erntet die meisten Karotten Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "5 Länder haben keine Daten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Deutschland verpasst das Finale um gut 12 Tausend Tonnen!",
+   "final": "Finale! Türkei gegen Vereinigtes Königreich – wer holt die Karotten-Krone?",
+   "winner": "Die Türkei gewinnt! Gut 895 Tausend Tonnen, nur gut 32 Tausend mehr als die Briten!",
+   "why": "Warum die Türkei? Viel Ackerland und vielfältige Klimazonen.",
+   "table": "Die Türkei führt die Tabelle mit 87 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "muzik-seviye",
+  "kol": "B"
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "id": "2026-11-20_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-20T09:00:00.000Z",
+ "bolum": {
+  "no": 14,
+  "ad": "Top 5"
+ },
+ "title": "Oyuna Nereden Başlayacağını Bilmiyor musun? 🎮",
+ "description": "Oyuna yeni başladıysan şu üç oyun iyi bir başlangıç olabilir: Stardew Valley, Portal 2 ve Tetris. Senin ilk oyunun hangisiydi, yorumlara yaz!\n\n#oyun #oyunönerisi #videooyunları #gaming",
+ "tags": [
+  "yeni başlayanlar için oyun",
+  "oyuna nereden başlanır",
+  "stardew valley",
+  "portal 2",
+  "tetris",
+  "oyun önerisi",
+  "en iyi 3 oyun",
+  "başlangıç oyunları"
+ ],
+ "topic": "Oyuna yeni başlayanlar için üç oyun önerisi",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "Not Sure Which Game to Start With? 🎮",
+   "description": "New to gaming? These three games make a good starting point: Stardew Valley, Portal 2 and Tetris. Which was your first game? Tell us in the comments!\n\n#gaming #gamerecommendations #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Devamı için abone ol ve beğen",
+  "soru": "Senin ilk oyunun hangisiydi?"
+ },
+ "tanitim": [
+  "Yeni başlayanlar",
+  "3 kolay oyun",
+  "Senin ilk oyunun?"
+ ],
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "NEREDEN BAŞLA?",
+    "alt": "yeni oyuncular için 3 oyun"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyuna yeni başladın ve nereden başlayacağını bilmiyor musun?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: Genç oyuncu oyun salonunda etrafına bakınır. 1,5-3 sn: elini çenesine götürüp düşünür."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Stardew Valley",
+    "tur": "Sakin çiftlik oyunu",
+    "maddeler": [
+     "2016 çıkışı",
+     "Tek kişi yaptı",
+     "Acelesiz oynanır"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Stardew Valley, tek kişinin yaptığı sakin bir çiftlik oyunu."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı 3 üç kısa maddeyle belirir."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Portal 2",
+    "tur": "Bulmaca oyunu",
+    "maddeler": [
+     "2011 çıkışı",
+     "Portal tabancası",
+     "Ortak oyun modu"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Portal 2: portal açarak bulmaca çözüyorsun."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı 2 üç kısa maddeyle belirir."
+  },
+  {
+   "mekan": "siralama",
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "sira": {
+    "no": 1,
+    "ad": "Tetris",
+    "tur": "Klasik blok oyunu",
+    "maddeler": [
+     "1984'te doğdu",
+     "Kuralı çok basit",
+     "Her cihazda var"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Birinci sırada Tetris, 1984'te doğdu ve kuralı bir dakikada öğrenilir."
+    }
+   ],
+   "aciklama": "0-1 sn: Sıralama kartı 1 beyaz çakmayla belirir. 1-4 sn: üç madde sırayla gelir."
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen, senin ilk oyunun hangisiydi, yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-1 sn: Kalabalık fuarda alkışlar. 1-4 sn: Oyuncu kupayı kaldırıp gülümser."
+  }
+ ]
+}

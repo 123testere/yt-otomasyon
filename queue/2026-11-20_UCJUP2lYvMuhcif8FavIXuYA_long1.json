@@ -1,0 +1,595 @@
+{
+ "id": "2026-11-20_UCJUP2lYvMuhcif8FavIXuYA_long1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "hiz": 1.1,
+ "publishAt": "2026-11-20T15:00:00.000Z",
+ "bolum": {
+  "no": 11,
+  "ad": "ARTEX Saldırıları"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/fbi-uyardi-hackerlar-ai-ile-3-saatte-sistemlere-sizabiliyor--213074",
+ "tanitim": [
+  "FBI'ın uyarısı",
+  "ARTEX nedir?",
+  "Kendini koru"
+ ],
+ "title": "Hackerlar Yapay Zekâyla 3 Saatte İçeri Girdi: FBI Uyardı ⚡",
+ "titleAlt": "ARTEX Nedir? Yapay Zekâlı Hacker Aracı Neden Korkutuyor?",
+ "description": "FBI, hackerların ARTEX adlı yapay zekâ aracıyla dünya genelindeki kuruluşlara saldırdığını açıkladı; bazı sızmalar yalnızca üç saat sürdü. ARTEX nedir, ne değiştirebilir, nasıl önlem alınır?\nKaynak: DonanımHaber https://www.donanimhaber.com/fbi-uyardi-hackerlar-ai-ile-3-saatte-sistemlere-sizabiliyor--213074\n\n#yapayzeka #fbi #siberguvenlik #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "artex",
+  "fbi uyarısı",
+  "yapay zeka hacker",
+  "siber güvenlik",
+  "siber saldırı",
+  "teknoloji haberleri"
+ ],
+ "topic": "FBI'ın uyardığı ARTEX adlı yapay zekâ destekli saldırı aracı",
+ "thumbnailText": "3 SAATTE İÇERİDE",
+ "thumbnailTextAlt": "ARTEX NEDİR?",
+ "thumbnailTextAlt2": "ACEMİLER DE SALDIRIYOR",
+ "kapak": {
+  "sahne": 6,
+  "sn": 1.5
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.08,
+ "ceviriler": {
+  "en": {
+   "title": "Hackers Got In With AI in 3 Hours: The FBI Warns ⚡",
+   "description": "The FBI says hackers attacked organizations worldwide with an AI tool called ARTEX, and some intrusions took only three hours. What is ARTEX, what could change, and which precautions help?\nSource: DonanımHaber\n\n#ai #fbi #cybersecurity #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENCE?",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Yapay zekâ saldırganı mı, savunmayı mı güçlendirir?"
+ },
+ "scenes": [
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bazı saldırılarda hackerlar bir sisteme yalnızca üç saatte sızdı. Bunu FBI açıkladı. Peki bu nasıl mümkün?"
+    }
+   ],
+   "aciklama": "0-2 sn: Robot ekrana girip sunucu ışıklarına bakar. 2-6 sn: dev yazı ekranda kalır, robot başını eğer.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "kisim": "Kanca",
+   "buyukYazi": {
+    "ust": "3 SAATTE SIZDI",
+    "alt": "yapay zekâlı saldırı"
+   }
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Saldırılarda kullanılan aracın adı ARTEX. Peki neymiş bu araç, kimler kullanıyor, nasıl korunulur? Cevaplar bu videoda."
+    }
+   ],
+   "aciklama": "0-3 sn: Araştırmacı ekrana işaret eder. 3-7 sn: robot yanında durup başını sallar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haber DonanımHaber'den. FBI, hackerların ARTEX adlı yapay zekâ aracıyla dünya genelindeki kuruluşlara saldırdığını açıkladı."
+    }
+   ],
+   "aciklama": "0-6 sn: Haber kartı ekrana gelir, üç madde sırayla belirir.",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "FBI: hackerlar ARTEX adlı yapay zekâ aracıyla saldırıyor",
+    "kaynak": "DonanımHaber · 18 Kasım",
+    "maddeler": [
+     "Araç: ARTEX",
+     "Dünya genelinde kuruluşlar",
+     "Bazı sızmalar 3 saat"
+    ]
+   }
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bazı saldırılarda sistemlere girmek yalnızca üç saat sürdü. Haberin özü bu. Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ],
+   "aciklama": "0-3 sn: Robot ekrana işaret eder. 3-7 sn: dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "SADECE 3 SAAT",
+    "alt": "bazı sızmalar bu kadar sürdü"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Wired, ARTEX ve benzerlerini sızma testi araçları olarak tanımlıyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Araştırmacı bir ekranı gösterir. 3-5 sn: robot ekrana bakar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "notr"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "kisim": "ARTEX Nedir?",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "ARTEX Nedir?"
+   }
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu araçlar normalde güvenlik uzmanlarının bir sistemde açık arayıp bulmasına yarar."
+    }
+   ],
+   "aciklama": "0-3 sn: Araştırmacı düşünür. 3-6 sn: ekranda açık arayan bir tarama çizgisi gezer.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Wired'a göre sorun şu: acemi hackerlar da bu araçlarla hedef sistemleri tarayıp açık bulabiliyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Kullanıcı ekrana bakıp korkar. 3-7 sn: robot uyarır gibi işaret eder.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Saldırıyı yönlendiren şey de, sohbet robotlarına yazılan komutlar."
+    }
+   ],
+   "aciklama": "0-3 sn: Kullanıcı ekrana komut yazıyormuş gibi işaret eder. 3-5 sn: robot cevap verir.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Eskiden bir sisteme sızmak uzmanlık ve zaman isterdi. Yapay zekâ bu süreyi kısaltıyor gibi görünüyor."
+    }
+   ],
+   "aciklama": "0-4 sn: Araştırmacı düşünceli bakar. 4-8 sn: arkada geri sayım saati hızlanır.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "kisim": "Neden Önemli?",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Neden Önemli?"
+   }
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Aynı gün Google da bir uyarı yaptı: yapay zekâ ajanları artık insan müdahalesi olmadan siber saldırı yapabiliyor."
+    }
+   ],
+   "aciklama": "0-4 sn: Robot ekrana işaret eder. 4-8 sn: dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "endiseli"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "İNSAN YOK",
+    "alt": "Google'ın uyarısı"
+   }
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Google'a göre şirketlerin güvenlik güncellemeleri için sahip olduğu süre giderek daralıyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Yönetici endişeyle düşünür. 3-6 sn: araştırmacı saate bakar.",
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yani saldırgan hızlanıyor, savunma tarafının zamanı kısalıyor. Bu, haberin en önemli noktası."
+    }
+   ],
+   "aciklama": "0-3 sn: Araştırmacı iki tarafı gösterir. 3-6 sn: robot başını sallar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Anduril'in kurucu ortağı Palmer Luckey de benzer bir şey söylüyor: eski teknolojiler yapay zekâlı saldırılara açık kapı bırakıyor."
+    }
+   ],
+   "aciklama": "0-4 sn: Araştırmacı haberi anlatır. 4-8 sn: robot onaylar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "notr"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki sıradan bir kullanıcı ya da küçük bir işletme ne yapabilir? Haberde bununla ilgili özel bir tavsiye yok, ama temel önlemler hâlâ geçerli."
+    }
+   ],
+   "aciklama": "0-4 sn: Kullanıcı düşünür. 4-8 sn: araştırmacı çözümü gösterir.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ],
+   "kisim": "Sen Ne Yapabilirsin?",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Sen Ne Yapabilirsin?"
+   }
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Güncellemeleri geciktirmemek, iki adımlı doğrulamayı açmak ve parolaları tekrar kullanmamak, saldırıyı zorlaştırabilir."
+    }
+   ],
+   "aciklama": "0-4 sn: Kullanıcı üç madde sayar gibi işaret eder. 4-8 sn: robot onaylar.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Şirketler için de eski sistemleri yenilemek ve açıkları hızlı kapatmak daha da önemli hâle geliyor."
+    }
+   ],
+   "aciklama": "0-4 sn: Yönetici ekranı gösterir. 4-7 sn: araştırmacı notlar alır.",
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "notr"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bundan sonra ne olabilir? Belki savunma tarafı da yapay zekâyı aynı hızla kullanmaya başlayacak."
+    }
+   ],
+   "aciklama": "0-4 sn: Araştırmacı ufka bakar. 4-8 sn: robot yanında durur.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bekleniyor ki yapay zekâlı saldırılarla yapay zekâlı savunma arasındaki yarış önümüzdeki aylarda daha çok konuşulacak."
+    }
+   ],
+   "aciklama": "0-4 sn: Araştırmacı iki robotu karşılaştırır gibi işaret eder. 4-8 sn: robot başını sallar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "notr"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "kisim": "Kapanış",
+   "kart": {
+    "ust": "SON KISIM",
+    "alt": "Kapanış"
+   }
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Özetle: FBI, ARTEX ile saldırıldığını açıkladı, bazı sızmalar üç saat sürdü ve savunma için zaman daralıyor."
+    }
+   ],
+   "aciklama": "0-4 sn: Araştırmacı özetin maddelerini sayar. 4-8 sn: robot onaylar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "notr"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sence yapay zekâ saldırganı mı güçlendiriyor, savunmayı mı? Yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-3 sn: Kullanıcı iki seçeneği tartar. 3-5 sn: robot yorum bekler.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen; yarın yeni bir yapay zekâ haberiyle buradayız."
+    }
+   ],
+   "aciklama": "0-3 sn: Kullanıcı el sallar. 3-6 sn: robot zafer pozu verir.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "notr"
+    }
+   ]
+  }
+ ]
+}
