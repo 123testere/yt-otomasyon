@@ -151,6 +151,8 @@ async function main() {
       await ref.update({ status: 'uploaded', youtubeId: yt.videoId, url: yt.url, scheduled: yt.scheduled,
         warning: yt.thumbnailWarning, sahneZaman: built.sahneZaman ?? null, deney: job.deney ?? null,
         ...(job.format === 'dizi' ? { dizi: job.dizi, bolum: job.bolum ?? null, transkript: built.transkript ?? null, derivedFrom: job.derivedFrom ?? null } : {}),
+        // Klip kampanyası: uygulama "Whop'a gönder" kartını ve 30 dk geri sayımını bundan gösterir
+        ...(job.kampanya ? { kampanya: job.kampanya, kampanyaAd: job.kaynak?.yayinci ?? null, yayinlandiAt: new Date(), whopGonderildi: false } : {}),
         updatedAt: new Date() });
       move(file, DONE_DIR);
       console.log(`✓ ${yt.url}`);

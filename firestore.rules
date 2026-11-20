@@ -43,7 +43,7 @@ service cloud.firestore {
     match /videos/{id} {
       allow read: if isAdmin();
       allow update: if isAdmin()
-        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['retry']);
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['retry', 'whopGonderildi']);
     }
 
     // Kanal karakterinin kayıtlı yüzü; uygulama gösterir ve yalnızca "yeniden çiz" isteyebilir.

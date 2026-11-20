@@ -1,18 +1,20 @@
 import { useEffect, useMemo, useState } from 'react';
-import { FlatList, Image, Linking, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Image, Linking, Share, StyleSheet, Text, View } from 'react-native';
 import { collection, doc, limit, onSnapshot, orderBy, query, updateDoc } from 'firebase/firestore';
 import { db } from '../../lib/firebase';
 import { Button, Card, ChoiceChips, colors, Dim, Screen, StatusBadge } from '../../components/ui';
 
 const FILTERS = [
   { id: 'all', label: 'Hepsi' },
+  { id: 'klip', label: 'Klipler' },
   { id: 'active', label: 'Sürüyor' },
   { id: 'uploaded', label: 'Yüklendi' },
   { id: 'problem', label: 'Sorunlu' },
 ];
 
-const matches = (filter, status) => ({
+const matches = (filter, status, v) => ({
   all: true,
+  klip: Boolean(v?.kampanya) && status === 'uploaded',
   active: ['rendering', 'uploading', 'waiting-quota'].includes(status),
   uploaded: status === 'uploaded',
   problem: ['error', 'invalid', 'paused'].includes(status),
@@ -27,6 +29,40 @@ function Thumb({ video }) {
     : video.youtubeId ? `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg` : null;
   if (!uri) return <View style={[st.thumb, size]} />;
   return <Image source={{ uri }} style={[st.thumb, size]} resizeMode="cover" />;
+}
+
+// Klip kampanyası videosu: link yayından sonra 30 dk içinde Whop / Content Rewards'a gönderilmeli.
+const KAMPANYA_AD = { 'lacy-gta6': 'Lacy GTA 6', 'kai-gta6': 'Kai Cenat GTA 6', 'clix-gta6': 'Clix GTA 6' };
+function KlipKarti({ v }) {
+  const [simdi, setSimdi] = useState(Date.now());
+  useEffect(() => {
+    const t = setInterval(() => setSimdi(Date.now()), 30_000);
+    return () => clearInterval(t);
+  }, []);
+  const yayin = v.yayinlandiAt?.toDate?.().getTime() ?? null;
+  const kalan = yayin ? Math.ceil((yayin + 30 * 60_000 - simdi) / 60_000) : null;
+  const ad = KAMPANYA_AD[v.kampanya] ?? v.kampanyaAd ?? v.kampanya;
+  const durum = v.whopGonderildi
+    ? { metin: "Whop'a gönderildi ✓", renk: colors.ok }
+    : kalan == null ? { metin: "Whop'a gönder", renk: colors.warn }
+      : kalan > 0 ? { metin: `Whop'a gönder: ${kalan} dk kaldı`, renk: kalan <= 10 ? colors.err : colors.warn }
+        : { metin: '30 dk geçti (yine de gönderebilirsin)', renk: colors.dim };
+  return (
+    <View style={st.klip}>
+      <Text style={{ color: colors.text, fontWeight: '700' }}>Kampanya: {ad}</Text>
+      <Text style={{ color: durum.renk, marginTop: 2 }}>{durum.metin}</Text>
+      <Text style={st.link} selectable>{v.url}</Text>
+      <View style={{ flexDirection: 'row', gap: 10, marginTop: 8 }}>
+        <Button title="Linki paylaş / kopyala" onPress={() => Share.share({ message: v.url })} style={{ flex: 1 }} />
+        <Button
+          kind="secondary"
+          title={v.whopGonderildi ? 'Geri al' : 'Gönderdim'}
+          onPress={() => updateDoc(doc(db, 'videos', v.id), { whopGonderildi: !v.whopGonderildi })}
+          style={{ flex: 1 }}
+        />
+      </View>
+    </View>
+  );
 }
 
 export default function Videos() {
@@ -45,7 +81,7 @@ export default function Videos() {
     };
   }, []);
 
-  const shown = useMemo(() => videos.filter((v) => matches(filter, v.status)), [videos, filter]);
+  const shown = useMemo(() => videos.filter((v) => matches(filter, v.status, v)), [videos, filter]);
 
   return (
     <Screen>
@@ -76,6 +112,7 @@ export default function Videos() {
             </View>
             {v.error ? <Text style={st.error} numberOfLines={4}>{v.error}</Text> : null}
             {v.warning ? <Dim style={{ marginTop: 4, color: colors.warn }}>{v.warning}</Dim> : null}
+            {v.kampanya && v.url ? <KlipKarti v={v} /> : null}
             {v.instagram ? (
               <Dim style={{ marginTop: 4, color: v.instagram.durum === 'hata' ? colors.err : v.instagram.durum === 'yayinlandi' ? colors.ok : colors.dim }}>
                 Instagram: {{ bekliyor: 'yayın saatinde paylaşılacak', yayinlandi: 'paylaşıldı', hata: `gönderilemedi — ${v.instagram.hata ?? ''}` }[v.instagram.durum]}
@@ -106,4 +143,6 @@ const st = StyleSheet.create({
   title: { color: colors.text, fontSize: 16, fontWeight: '700' },
   thumb: { borderRadius: 10, backgroundColor: colors.cardHi },
   error: { color: colors.err, marginTop: 6, fontSize: 12 },
+  klip: { marginTop: 10, padding: 10, borderRadius: 10, backgroundColor: colors.cardHi },
+  link: { color: colors.text, marginTop: 6, fontSize: 15 },
 });
