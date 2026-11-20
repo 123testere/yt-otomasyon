@@ -3203,5 +3203,29 @@
         "yeterli": false
       }
     }
+  },
+  "UCaTfPvQYowD7SrHbGfotRrg": {
+    "channelId": "UCaTfPvQYowD7SrHbGfotRrg",
+    "title": "Vice City Dispatch",
+    "hafta": "2026-W47",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde değerlendirilecek kadar izlenen video yok."
+    ],
+    "deney": null,
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [],
+    "videolar": [],
+    "sahneAnalizi": {
+      "short": {
+        "videoSayisi": 0,
+        "yeterli": false
+      },
+      "long": {
+        "videoSayisi": 0,
+        "yeterli": false
+      }
+    }
   }
 }

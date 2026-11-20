@@ -73,11 +73,86 @@
     "oylamalar": []
   },
   {
-    "id": "UCEG9D-Kia1iw6-duhqlSlcg",
-    "title": "Untold Vault",
+    "id": "UCaTfPvQYowD7SrHbGfotRrg",
+    "title": "Vice City Dispatch",
     "enabled": true,
     "settings": {
       "enabled": true,
+      "contentFormat": "belgesel",
+      "niche": "ilginc",
+      "customNiche": "",
+      "language": "en",
+      "voice": "en-US-GuyNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "hazir",
+      "cloneScope": "shorts",
+      "elevenVoiceId": "",
+      "tone": "samimi",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": true,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "yok",
+      "musicVolume": "0.12",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [],
+        "time": "18:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "Bu kanal yalnız klip kampanyası kesitleri yayınlar (engine/src/klip-twitch.js otomatik yazar). Rutin bu kanala senaryo YAZMAZ.",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "İlginç Bilgiler",
+      "dil": "English",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": false,
+      "ekTalimat": "Bu kanal yalnız klip kampanyası kesitleri yayınlar (engine/src/klip-twitch.js otomatik yazar). Rutin bu kanala senaryo YAZMAZ.",
+      "videoSayisi": 5,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": null,
+    "recentTitles": [
+      "Clix: Wtf 😂 #GTA6",
+      "kai cenat argues with his new girlfriend | Kai Cenat GTA 6",
+      "Kai Cenat: wtf is gta bro 😂 #GTA6",
+      "LACY: wtf 😂 #GTA6",
+      "LACY: LUCIA 😂 #GTA6"
+    ],
+    "oylamalar": []
+  },
+  {
+    "id": "UCEG9D-Kia1iw6-duhqlSlcg",
+    "title": "Untold Vault",
+    "enabled": false,
+    "settings": {
+      "enabled": false,
       "contentFormat": "dizi",
       "niche": "is-para",
       "customNiche": "",
@@ -321,11 +396,12 @@
       "subtitleColor": "yesil",
       "long": {
         "days": [
+          1,
           3,
-          6
+          5
         ],
         "time": "18:00",
-        "minutes": 9
+        "minutes": 7
       },
       "shorts": {
         "times": [
@@ -348,7 +424,8 @@
         "yorumCevap": true
       },
       "diziShorts": "bagimsiz",
-      "dizi": "oyun-hikayeleri"
+      "dizi": "oyun-hikayeleri",
+      "diziOnGosterim": true
     },
     "brief": {
       "format": "dizi",
@@ -387,6 +464,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Counter-Strike Bir Öğrencinin Moduydu | Efsane Oyunların Hikâyesi",
       "Seni Korkutacak Oyun mu Arıyorsun? 10 Korku Oyunu 🎮",
       "Seni Gerçekten Korkutacak Oyun mu Arıyorsun? 🎮",
       "Oyuna Nereden Başlayacağını Bilmiyor musun? 🎮",
@@ -743,15 +821,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Pusula Kuzeyi Nasıl Buluyor? 🧭",
-        "a": "Harita",
-        "b": "Sabun",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-16T07:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short2",
         "baslik": "Halat İnce Liflerden Nasıl Bu Kadar Güçlü Oluyor?",
         "a": "Tarak",
@@ -822,6 +891,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-19T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Defter Sözcüğü Neden Kâğıt Değil Deri Demek? 📓",
+        "a": "Mum",
+        "b": "Çekiç",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-20T07:00:00.000Z"
       }
     ]
   },

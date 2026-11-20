@@ -1,8 +1,80 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-20T04:41:47.889Z",
+  "guncellendi": "2026-11-20T12:59:35.483Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-20T12:30:47.000Z",
+      "ozet": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to learn more about the user are \"undermining Signal's ability to independently guarantee privacy,\" Signal president […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google, AI sohbetlerini doğrudan arama sayfasına taşıyor",
+      "link": "https://www.donanimhaber.com/google-ai-sohbetlerini-dogrudan-arama-sayfasina-tasiyor--213168",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T12:21:00.000Z",
+      "ozet": "Google, masaüstü arama sayfasına eklediği yeni kenar çubuğuyla AI Mode sohbet geçmişini erişilebilir hale getiriyor. Kullanıcılar, önceki aramalarına kaldıkları yerden devam edebilecek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Muse Is Unleashing a World of Pettiness on Instagram",
+      "link": "https://www.wired.com/story/muse-is-unleashing-a-world-of-pettiness-on-instagram/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-20T12:00:00.000Z",
+      "ozet": "Meta’s AI assistant can track and unfollow Instagram users who don’t follow you back—and some people are taking full advantage.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Blue Origin, Google'ın yapay zeka veri merkezlerini uzaya taşıyacak",
+      "link": "https://www.donanimhaber.com/blue-origin-google-in-yapay-zeka-uydularini-uzaya-tasiyacak--213163",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T12:00:00.000Z",
+      "ozet": "Blue Origin, Google'ın yapay zeka sunucularını taşıyan uyduları 2029'da New Glenn roketiyle uzaya gönderecek. Görev, uzayda veri merkezi kurma hedefinde önemli bir aşama olacak.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Regular Tech Bros Are Worried About Honeypots",
+      "link": "https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-20T11:00:00.000Z",
+      "ozet": "The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay Zekâ Yerine Gerçek Fotoğraflardan Yanaydı, Apple'ın Kamera Yöneticisi Emekli Oldu",
+      "link": "https://www.webtekno.com/apple-kamera-yoneticisi-emekli-oldu-h229253.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-20T08:53:12.000Z",
+      "ozet": "Apple’ın iPhone kamera ve fotoğraf yazılımlarına yön veren Jon McCormack, sekiz yılın ardından emekli oldu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apple, Siri’yi Yapay Zekâ Ajanına Dönüştürmek İstiyor: Büyük Değişim 2027'de!",
+      "link": "https://www.webtekno.com/apple-siri-yapay-zeka-ajani-2027-h229250.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-20T07:04:54.000Z",
+      "ozet": "Apple, Siri’yi cihazlarınızı sizin yerinize kullanabilecek otonom bir yapay zekâ ajanına dönüştürmek için çalışmalara başladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "This 16-Year-Old Founded an AI Missile Startup. He’s Targeting ‘Cost per Kill’",
+      "link": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-20T07:00:00.000Z",
+      "ozet": "Henrijs Dandzbergs dropped out of high school to join startup accelerator Y Combinator. With a new breed of missile, he wants to make killing as efficient as possible for the US and its military allies.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zekâ büyüdükçe çevreye zararı da büyüyor: Emisyonlarda yüzde 70 artış bekleniyor",
+      "link": "https://www.donanimhaber.com/veri-merkezlerinin-karbon-emisyonlari-dort-yilda-yuzde-70-artacak--213157",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T04:57:47.000Z",
+      "ozet": "Yapay zekâ yarışı enerji sektörünü de dönüştürüyor. ABD ve Çin'in veri merkezlerini fosil yakıtlarla beslemeye yönelmesi, karbon emisyonlarında büyük bir artışa neden olabilir.",
+      "kullanildi": false
+    },
     {
       "baslik": "Apple may be developing its own AI agent that runs your Mac",
       "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
@@ -308,14 +380,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Canva adds an AI ‘off’ button",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T12:30:00.000Z",
-      "ozet": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn off the ability to generate images with its Canva chatbot. This toggle doesn't turn off every AI-powered […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Sam Altman'dan Nvidia'dan Ayrılan Jensen Huang Hakkında Dikkat Çeken Açıklama: \"Onsuz Düşünemiyorum\"",
       "link": "https://www.webtekno.com/sam-altman-jensen-huang-nvidia-ayrilik-h229213.html",
       "kaynak": "Webtekno",
@@ -345,22 +409,6 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-19T10:47:00.000Z",
       "ozet": "Google, karmaşık kodlama ve analitik işlemler için geliştirdiği Gemini 4 Neon'u duyurdu. Yeni model, Carbon'dan üç kat daha hızlı çalışırken daha uygun maliyetler sunuyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI'a odaklanan Artificial filminin fragmanı yayınlandı",
-      "link": "https://www.donanimhaber.com/openai-a-odaklanan-artificial-filminden-yeni-fragman--213111",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T10:25:00.000Z",
-      "ozet": "OpenAI'a ve tartışmalı kurucusu Sam Altman'a odaklanan Artificial filminden yeni fragman yayınlandı. The Social Network'e benzetilen film, bu yıl sinemaseverlerle buluşacak.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic borsaya SpaceX rekorunu kırarak girdi: 1,5 trilyon dolar değerlemeye ulaştı",
-      "link": "https://www.donanimhaber.com/anthropic-borsaya-spacex-rekorunu-kirarak-girdi--213109",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T08:33:00.000Z",
-      "ozet": "Anthropic, halka arzında 81,3 milyar dolar toplayarak SpaceX'in rekorunu geride bıraktı. Claude'un geliştiricisi, 1,5 trilyon dolarlık değerlemeye ulaşırken yatırımcı talebi beklentileri aştı.",
       "kullanildi": false
     },
     {
@@ -433,54 +481,6 @@
       "kaynak": "TechCrunch",
       "tarih": "2026-11-18T23:25:17.000Z",
       "ozet": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-      "link": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T23:17:28.000Z",
-      "ozet": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-      "link": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T22:58:11.000Z",
-      "ozet": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Does Nvidia Got This? Interim CEO Colette Kress Says It’s Got This",
-      "link": "https://www.wired.com/story/guys-really-we-got-this/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-18T22:16:23.000Z",
-      "ozet": "WIRED is tallying up how many times Nvidia’s interim CEO has assured everyone that the company has everything under control.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic prices IPO at $83 a share, above projected range",
-      "link": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T22:11:15.000Z",
-      "ozet": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Even His Own Officials Don’t Think Trump’s China Trip Will Lead to Progress on AI",
-      "link": "https://www.wired.com/story/administration-officials-dont-think-much-ai-progress-will-come-of-trumps-china-visit/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-18T22:00:00.000Z",
-      "ozet": "Fallout from the Nvidia scandal has made any negotiations around AI difficult, officials say.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
-      "link": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T21:57:40.000Z",
-      "ozet": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
       "kullanildi": false
     }
   ]
