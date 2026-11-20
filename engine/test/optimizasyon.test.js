@@ -280,6 +280,20 @@ test('planlayıcı: uzun videodan önceki 24 saatteki son Shorts ön gösterim o
   assert.equal(aksam.clipOf, uzun.id); // yayından sonra: kesit
 });
 
+test('planlayıcı: dizi kanalında (bağımsız Shorts) uzun bölümden önceki Shorts ön gösterim olur', async () => {
+  const { neededJobs } = await import('../src/lib/plan.js');
+  const kanal = { id: 'TESTDIZIOG', enabled: true, oylamalar: [], settings: resolveSettings({ contentFormat: 'dizi', dizi: 'oyun-hikayeleri', diziShorts: 'bagimsiz', diziOnGosterim: true,
+    long: { days: [1, 3, 5], time: '18:00', minutes: 7 }, shorts: { times: ['12:00'], seconds: 45, source: 'bagimsiz' } }) };
+  const jobs = neededJobs([kanal], { now: new Date('2026-11-23T04:00:00Z') }); // Pazartesi 07:00
+  const uzun = jobs.find((j) => j.id === '2026-11-23_TESTDIZIOG_long1');
+  const kisa = jobs.find((j) => j.id === '2026-11-23_TESTDIZIOG_short1');
+  assert.ok(uzun && kisa);
+  assert.equal(kisa.fragman, true);
+  assert.equal(kisa.clipOf, uzun.id);
+  assert.equal(kisa.uzunSaat, 'BU AKŞAM 18:00');
+  assert.equal(jobs.find((j) => j.id === '2026-11-24_TESTDIZIOG_short1').fragman, undefined); // Salı: uzun yok, normal Shorts
+});
+
 test('planlayıcı: seri (Markaların Hikâyesi) uzun video, ön gösterim ve seri Shorts günleri; numara sırayla', async () => {
   const { neededJobs } = await import('../src/lib/plan.js');
   const kanal = {

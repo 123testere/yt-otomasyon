@@ -1,0 +1,827 @@
+{
+  "id": "2026-11-20_UCIa1D1I2HwWzylJDvNayeHw_long1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "long",
+  "format": "dizi",
+  "dizi": "oyun-hikayeleri",
+  "hiz": 1.12,
+  "publishAt": "2026-11-20T15:00:00.000Z",
+  "bolum": {
+    "no": 17,
+    "ad": "Counter-Strike"
+  },
+  "tanitim": [
+    "Bir öğrencinin modu",
+    "Valve'ın teklifi",
+    "İnternet kafe yılları",
+    "Bugünkü CS"
+  ],
+  "title": "Counter-Strike Bir Öğrencinin Moduydu | Efsane Oyunların Hikâyesi",
+  "titleAlt": "CS Nasıl Doğdu? İnternet Kafelerin Efsanesi | Efsane Oyunlar",
+  "topic": "Counter-Strike'ın hikâyesi: Half-Life modundan internet kafelere ve CS 1.6'ya",
+  "description": "Counter-Strike nasıl doğdu? 1999'da bir üniversite öğrencisinin Half-Life için yaptığı moddan Valve'ın teklifine, internet kafelerdeki CS 1.5 ve 1.6 yıllarına uzanan hikâye.\nSenin ilk haritan hangisiydi? Yorumlara yaz.\n\n#counterstrike #cs16 #oyuntarihi #efsaneoyunlar",
+  "tags": [
+    "counter strike hikayesi",
+    "counter strike nasıl çıktı",
+    "cs 1.5",
+    "cs 1.6",
+    "counter strike 1.6",
+    "half life mod",
+    "minh le gooseman",
+    "internet kafe",
+    "oyun tarihi",
+    "efsane oyunlar",
+    "de_dust2"
+  ],
+  "thumbnailText": "BİR MODDU",
+  "thumbnailTextAlt": "ÖĞRENCİ YAPTI",
+  "thumbnailTextAlt2": "KAFELERİN EFSANESİ",
+  "kapak": {
+    "sahne": 10,
+    "sn": 2
+  },
+  "oynatmaListesi": "Efsane Oyunların Hikâyesi",
+  "kapanis": {
+    "baslik": "SENİN HARİTAN?",
+    "sonraki": "Pazartesi: yeni bir efsane oyun",
+    "soru": "İlk oynadığın CS haritası hangisiydi?"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "Counter-Strike Was a Student’s Mod | Legendary Games",
+      "description": "How did Counter-Strike begin? From a university student's Half-Life mod in 1999 to Valve's offer and the internet cafe years of CS 1.5 and 1.6."
+    }
+  },
+  "scenes": [
+    {
+      "kisim": "Soğuk Açılış",
+      "mekan": "garaj",
+      "zaman": "gece",
+      "buyukYazi": {
+        "ust": "1999",
+        "alt": "bir öğrenci odası"
+      },
+      "aciklama": "0-3 sn: gece, odada bilgisayar başında oturan geliştirici hızla yazıyor. 3-7 sn: durup ekrana bakıyor, düşünüyor.",
+      "kadraj": [
+        {
+          "id": "gelistirici",
+          "x": 0.55,
+          "yon": -1,
+          "poz": "egil",
+          "ifade": "dusunceli",
+          "esya": "disket",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.4,
+              "poz": "dusun"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Bin dokuz yüz doksan dokuz. Kanada'da bir üniversite öğrencisi gece yarısı bilgisayarın başında."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Ders çalışmıyor. Başka birinin oyununun içine kendi oyununu yazıyor."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Elinde ne bir şirket var ne de bir bütçe. Sadece bir fikir ve inatçı bir merak."
+        }
+      ]
+    },
+    {
+      "mekan": "oyun-salonu",
+      "buyukYazi": {
+        "ust": "BİR MOD",
+        "alt": "bedava, internetten"
+      },
+      "aciklama": "0-2 sn: oyuncu soldan koşarak girer, oyun koluyla oturur. 2-6 sn: oyuna dalar, şaşırır.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.45,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "oyun-kolu",
+          "ifade": "saskin",
+          "hareket": {
+            "x0": -0.2,
+            "x1": 0.45,
+            "sure": 1.2,
+            "kos": true
+          }
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Bu küçük mod birkaç yıl içinde dünyanın en çok oynanan nişancı oyunlarından birine dönüştü."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Peki bedava dağıtılan bir mod nasıl efsane oldu?"
+        }
+      ]
+    },
+    {
+      "kisim": "Doğuş",
+      "kart": {
+        "ust": "BİRİNCİ KISIM",
+        "alt": "Doğuş"
+      },
+      "mekan": "garaj",
+      "zaman": "gece",
+      "aciklama": "0-2 sn: ara kart. 2-6 sn: geliştirici masada, disketi gösterir. 6-9 sn: ekrana işaret eder.",
+      "kadraj": [
+        {
+          "id": "gelistirici",
+          "x": 0.5,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "disket",
+          "ifade": "notr",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.3,
+              "poz": "isaret"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Öğrencinin adı Minh Le, internetteki takma adı Gooseman."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Valve'ın Half-Life oyununu çok seviyor ve onun motoruyla kendi fikrini deniyor."
+        }
+      ]
+    },
+    {
+      "mekan": "ofis",
+      "aciklama": "0-3 sn: geliştirici ile tasarımcı yan yana, tasarımcı bir şey gösterir. 3-8 sn: ikisi el sıkışır gibi yaklaşır, gülümser.",
+      "kadraj": [
+        {
+          "id": "gelistirici",
+          "x": 0.35,
+          "yon": 1,
+          "poz": "dur",
+          "ifade": "gulumsuyor"
+        },
+        {
+          "id": "gelistirici-2",
+          "x": 0.65,
+          "yon": -1,
+          "poz": "isaret",
+          "ifade": "gulumsuyor",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.2,
+              "poz": "el-salla"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Fikir basit ama yeni: iki takım, tek bir görev."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bir taraf bombayı kurmaya çalışır, diğer taraf onu durdurmaya. Kimse yeniden doğmaz, her tur tek can."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bu fikirle geceler boyunca harita çizdi, silah modelledi, sesleri tek tek ekledi."
+        }
+      ]
+    },
+    {
+      "mekan": "oyun-salonu",
+      "buyukYazi": {
+        "ust": "TEK CAN",
+        "alt": "her tur yeniden başlar"
+      },
+      "aciklama": "0-3 sn: iki oyuncu karşılıklı oyun kollarıyla oynar. 3-7 sn: biri kaybedip omuz silker, diğeri sevinir.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.3,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "oyun-kolu",
+          "ifade": "kizgin",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.5,
+              "poz": "omuz",
+              "ifade": "uzgun"
+            }
+          ]
+        },
+        {
+          "id": "oyuncu-2",
+          "x": 0.7,
+          "yon": -1,
+          "poz": "dur",
+          "esya": "oyun-kolu",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.5,
+              "poz": "zafer",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Tek can kuralı her şeyi değiştirdi. Ölünce turun sonunu izlemek zorundaydın."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bu bekleyiş insanı dikkatli, takım arkadaşını da değerli yapıyordu."
+        }
+      ]
+    },
+    {
+      "mekan": "garaj",
+      "zaman": "gece",
+      "buyukYazi": {
+        "ust": "HAZİRAN 1999",
+        "alt": "ilk deneme sürümü"
+      },
+      "aciklama": "0-3 sn: geliştirici disketi kaldırır. 3-7 sn: oyuncu sağdan koşarak gelir, disketi merakla izler.",
+      "kadraj": [
+        {
+          "id": "gelistirici",
+          "x": 0.4,
+          "yon": 1,
+          "poz": "zafer",
+          "esya": "disket",
+          "ifade": "gulumsuyor"
+        },
+        {
+          "id": "oyuncu",
+          "x": 0.72,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "saskin",
+          "hareket": {
+            "x0": 1.2,
+            "x1": 0.72,
+            "sure": 1,
+            "kos": true
+          }
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Bin dokuz yüz doksan dokuz yazında ilk deneme sürümü internete kondu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kutu yok, reklam yok. Sadece forumlarda konuşulan bir indirme bağlantısı vardı."
+        }
+      ]
+    },
+    {
+      "mekan": "grafik",
+      "veri": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "buyukYazi": {
+        "ust": "SUNUCULAR",
+        "alt": "her hafta daha fazla"
+      },
+      "aciklama": "0-6 sn: grafik yükselir, oyuncu yanında şaşkın izler.",
+      "kadraj": [
+        {
+          "id": "oyuncu-2",
+          "x": 0.82,
+          "yon": -1,
+          "poz": "isaret",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Oyuncular arkadaşlarını çağırdı, onlar da başkalarını. Sunucular hafta hafta çoğaldı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Yeni sürümler arka arkaya geldi ve her birinde harita, silah ve denge biraz daha iyileşti."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Kimse para ödemiyordu ama herkes bir sonraki sürümü bekliyordu."
+        }
+      ]
+    },
+    {
+      "mekan": "oyun-salonu",
+      "aciklama": "0-3 sn: oyuncu ekrana bakıp düşünür. 3-6 sn: anlatıcı abone çağrısı yaparken oyuncu el sallar.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.5,
+          "yon": 1,
+          "poz": "dusun",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0,
+              "poz": "el-salla",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Ama bedava bir mod sonsuza kadar böyle büyüyebilir miydi?"
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bu seriyi kaçırmamak için şimdi abone ol."
+        }
+      ]
+    },
+    {
+      "kisim": "Kriz",
+      "kart": {
+        "ust": "İKİNCİ KISIM",
+        "alt": "Kriz"
+      },
+      "mekan": "ofis",
+      "aciklama": "0-2 sn: ara kart. 2-6 sn: geliştirici yorgun, eğilir. 6-9 sn: elleriyle başını tutar gibi düşünür.",
+      "kadraj": [
+        {
+          "id": "gelistirici",
+          "x": 0.5,
+          "yon": 1,
+          "poz": "egil",
+          "ifade": "endiseli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.3,
+              "poz": "dusun",
+              "ifade": "uzgun"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Oyun büyüdükçe iş de büyüdü. Hata raporları, hileciler, yeni harita istekleri."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bir öğrencinin boş zamanı artık buna yetmiyordu."
+        }
+      ]
+    },
+    {
+      "mekan": "oyun-salonu",
+      "buyukYazi": {
+        "ust": "HİLECİLER",
+        "alt": "sunucular karışıyor"
+      },
+      "aciklama": "0-3 sn: oyuncu kızgın şekilde ayağa kalkar. 3-7 sn: oyuncu-2 eller belde başını sallar.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.35,
+          "yon": 1,
+          "poz": "eller-belde",
+          "ifade": "kizgin"
+        },
+        {
+          "id": "oyuncu-2",
+          "x": 0.65,
+          "yon": -1,
+          "poz": "omuz",
+          "ifade": "supheli"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Hile programları sunuculara yayıldı. Dürüst oynayanlar oyundan soğumaya başladı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Mod topluluğu dağılabilirdi."
+        }
+      ]
+    },
+    {
+      "mekan": "ofis",
+      "buyukYazi": {
+        "ust": "VALVE",
+        "alt": "bir teklif"
+      },
+      "aciklama": "0-2 sn: yönetici soldan yürüyerek girer. 2-6 sn: geliştiriciye teklifini anlatır, işaret eder. 6-9 sn: geliştirici şaşırır, sonra gülümser.",
+      "kadraj": [
+        {
+          "id": "patron",
+          "x": 0.38,
+          "yon": 1,
+          "poz": "isaret",
+          "ifade": "gulumsuyor",
+          "hareket": {
+            "x0": -0.2,
+            "x1": 0.38,
+            "sure": 1.2
+          }
+        },
+        {
+          "id": "gelistirici",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "saskin",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.5,
+              "ifade": "gulumsuyor",
+              "poz": "zafer"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Sonra kapı çalındı. Half-Life'ı yapan Valve, modu fark etmişti."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "İki bin yılında Valve oyunun haklarını aldı ve yapımcılarını işe aldı."
+        }
+      ]
+    },
+    {
+      "mekan": "fuar",
+      "kalabalik": 0.8,
+      "buyukYazi": {
+        "ust": "KUTUDA",
+        "alt": "mağaza raflarında"
+      },
+      "aciklama": "0-3 sn: fuar kalabalığı; oyuncu kutuyu kaldırır gibi kupa tutar. 3-7 sn: kalabalık coşar.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.5,
+          "yon": 1,
+          "poz": "zafer",
+          "esya": "kupa",
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Aynı yılın sonunda Counter-Strike artık bir mod değil, raflarda satılan bir oyundu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Hileye karşı koruma geldi, sunucular düzene girdi."
+        }
+      ]
+    },
+    {
+      "kisim": "Patlama",
+      "kart": {
+        "ust": "ÜÇÜNCÜ KISIM",
+        "alt": "Patlama"
+      },
+      "mekan": "oyun-salonu",
+      "aciklama": "0-2 sn: ara kart. 2-5 sn: oyuncular yan yana koşarak salona girer. 5-9 sn: oturup oyuna başlar.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.35,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "oyun-kolu",
+          "ifade": "gulumsuyor",
+          "hareket": {
+            "x0": -0.2,
+            "x1": 0.35,
+            "sure": 1.3,
+            "kos": true
+          }
+        },
+        {
+          "id": "oyuncu-2",
+          "x": 0.6,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "oyun-kolu",
+          "ifade": "gulumsuyor",
+          "hareket": {
+            "x0": -0.3,
+            "x1": 0.6,
+            "sure": 1.5,
+            "kos": true
+          }
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Asıl patlama ise internet kafelerde yaşandı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Okul çıkışı kafeye koşan gençler, aynı odadaki bilgisayarları birbirine bağlayıp saatlerce oynadı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Saatlik ücretle oynanan bu maçlar, bir neslin ortak hafızası oldu."
+        }
+      ]
+    },
+    {
+      "mekan": "oyun-salonu",
+      "buyukYazi": {
+        "ust": "DE_DUST",
+        "alt": "en bilinen harita"
+      },
+      "aciklama": "0-3 sn: oyuncu sağa doğru yürür, haritayı anlatır gibi işaret eder. 3-7 sn: durur, gülümser.",
+      "kadraj": [
+        {
+          "id": "oyuncu-2",
+          "x": 0.6,
+          "yon": 1,
+          "poz": "isaret",
+          "ifade": "gulumsuyor",
+          "hareket": {
+            "x0": 0.3,
+            "x1": 0.6,
+            "sure": 1.2
+          }
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kum renkli koridorlarıyla dust, sonra da dust iki, belki de oyun tarihinin en çok bilinen haritaları oldu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Pek çok oyuncu o sokakları kendi mahallesinden iyi bilir."
+        }
+      ]
+    },
+    {
+      "mekan": "garaj",
+      "buyukYazi": {
+        "ust": "CS 1.5",
+        "alt": "2002"
+      },
+      "aciklama": "0-3 sn: oyuncu disketi alır, dikkatle inceler. 3-6 sn: arkadaşına uzatır.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.4,
+          "yon": 1,
+          "poz": "dur",
+          "esya": "disket",
+          "ifade": "saskin"
+        },
+        {
+          "id": "oyuncu-2",
+          "x": 0.66,
+          "yon": -1,
+          "poz": "dur",
+          "ifade": "gulumsuyor",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.3,
+              "poz": "el-salla"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Türkiye'de bir dönemin adı da 1.5 oldu. İki bin iki'de gelen bu sürüm kafelerin vazgeçilmeziydi."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bilgisayara bot ekleyip tek başına antrenman yapmak da o yılların alışkanlığıydı."
+        }
+      ]
+    },
+    {
+      "mekan": "grafik",
+      "veri": [
+        3,
+        5,
+        9,
+        12,
+        16,
+        20
+      ],
+      "buyukYazi": {
+        "ust": "CS 1.6",
+        "alt": "2003 · Steam ile"
+      },
+      "aciklama": "0-6 sn: grafik yükselir; yönetici yanında eller belde izler.",
+      "kadraj": [
+        {
+          "id": "patron",
+          "x": 0.82,
+          "yon": -1,
+          "poz": "eller-belde",
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "İki bin üç'te 1.6 geldi. Valve onu yeni Steam platformuyla dağıttı."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Pek çok oyuncu Steam'i ilk kez Counter-Strike için yükledi."
+        }
+      ]
+    },
+    {
+      "mekan": "fuar",
+      "kalabalik": 1,
+      "buyukYazi": {
+        "ust": "TURNUVALAR",
+        "alt": "izleyenler de çoğaldı"
+      },
+      "aciklama": "0-3 sn: kalabalık tribün coşar; oyuncu kupayı kaldırır. 3-7 sn: oyuncu-2 alkışlar gibi el sallar.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.42,
+          "yon": 1,
+          "poz": "zafer",
+          "esya": "kupa",
+          "ifade": "gulumsuyor"
+        },
+        {
+          "id": "oyuncu-2",
+          "x": 0.68,
+          "yon": -1,
+          "poz": "el-salla",
+          "ifade": "gulumsuyor"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Kafelerde başlayan rekabet sahnelere taşındı. Turnuvalar düzenlendi, takımlar kuruldu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bir zamanlar bir öğrencinin denemesi olan oyun, artık izlenen bir spordu."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Oyuncuların taktikleri, hatta kısa sesli komutları bile bu turnuvalarda şekillendi."
+        }
+      ]
+    },
+    {
+      "kisim": "Bugün",
+      "kart": {
+        "ust": "DÖRDÜNCÜ KISIM",
+        "alt": "Bugün"
+      },
+      "mekan": "oyun-salonu",
+      "aciklama": "0-2 sn: ara kart. 2-6 sn: oyuncu tek başına oyun koluyla oturur, düşünür. 6-9 sn: gülümser.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.5,
+          "yon": 1,
+          "poz": "dusun",
+          "esya": "oyun-kolu",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.4,
+              "ifade": "gulumsuyor",
+              "poz": "dur"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Yıllar içinde yeni sürümler geldi: Global Offensive, sonra Counter-Strike 2."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Grafikler değişti ama kural aynı kaldı: tek can, iki takım, bir bomba."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Bugün bile Steam'de en çok oynanan oyunlar listesinde üst sıralarda görünür."
+        }
+      ]
+    },
+    {
+      "mekan": "garaj",
+      "zaman": "gece",
+      "aciklama": "0-3 sn: gece odasında geliştirici bilgisayara bakar. 3-7 sn: ayağa kalkıp gururla doğrulur.",
+      "kadraj": [
+        {
+          "id": "gelistirici",
+          "x": 0.5,
+          "yon": 1,
+          "poz": "egil",
+          "ifade": "dusunceli",
+          "adimlar": [
+            {
+              "satir": 1,
+              "sn": 0.2,
+              "poz": "zafer",
+              "ifade": "gulumsuyor"
+            }
+          ]
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Hikâyenin en şaşırtıcı yanı da bu: dev bir şirketin değil, bir öğrencinin boş zamanının ürünü."
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Doğru fikir, doğru toplulukla buluşunca küçük bir mod bile efsane olabiliyor."
+        }
+      ]
+    },
+    {
+      "mekan": "fuar",
+      "kalabalik": 0.9,
+      "aciklama": "0-3 sn: oyuncu ve oyuncu-2 kupayla fuarda. 3-8 sn: oyuncu izleyiciye döner, soru sorar gibi işaret eder.",
+      "kadraj": [
+        {
+          "id": "oyuncu",
+          "x": 0.4,
+          "yon": 1,
+          "poz": "zafer",
+          "esya": "kupa",
+          "ifade": "gulumsuyor"
+        },
+        {
+          "id": "oyuncu-2",
+          "x": 0.65,
+          "yon": -1,
+          "poz": "isaret",
+          "ifade": "saskin"
+        }
+      ],
+      "satirlar": [
+        {
+          "kim": "anlatici",
+          "metin": "Peki senin ilk oynadığın harita hangisiydi? Dust mı, Inferno mu, yoksa başka bir efsane mi?"
+        },
+        {
+          "kim": "anlatici",
+          "metin": "Yorumlara yaz. Serinin devamı için abone ol ve beğen; pazartesi yeni bir efsane oyunun hikâyesi var."
+        }
+      ]
+    }
+  ]
+}

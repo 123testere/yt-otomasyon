@@ -128,7 +128,9 @@ function uzunSaatEtiketi(shortAt, longAt) {
 }
 
 function attachClips(slots, channels) {
-  for (const c of channels.filter((ch) => (ch.settings.shorts?.source === 'uzundan' || ch.settings.seri?.uzun) && ch.settings.contentFormat !== 'dizi')) {
+  // Dizi kanallarında (bağımsız Shorts) settings.diziOnGosterim: uzun bölümden önceki Shorts onun ön gösterimi olur
+  for (const c of channels.filter((ch) => (ch.settings.contentFormat !== 'dizi' && (ch.settings.shorts?.source === 'uzundan' || ch.settings.seri?.uzun))
+    || (ch.settings.contentFormat === 'dizi' && ch.settings.diziShorts === 'bagimsiz' && ch.settings.diziOnGosterim))) {
     const jobs = channelJobs(c.id);
     const longs = [...jobs, ...slots.filter((s) => s.channelId === c.id)]
       .filter((j) => j.type === 'long')
@@ -153,7 +155,7 @@ function attachClips(slots, channels) {
       }
     }
     // Yayın sonrası kesitler yalnızca 'uzundan' kanallarda (seri kanalında Shorts'lar bağımsız kalır)
-    if (c.settings.shorts?.source !== 'uzundan') continue;
+    if (c.settings.shorts?.source !== 'uzundan' || c.settings.contentFormat === 'dizi') continue;
     for (const slot of slots.filter((s) => s.channelId === c.id && s.type === 'short' && !s.fragman)) {
       const at = Date.parse(slot.publishAt);
       const source = longs.find((l) => Date.parse(l.publishAt) < at && at - Date.parse(l.publishAt) <= CLIP_WINDOW_MS
