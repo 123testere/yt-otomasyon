@@ -29,9 +29,23 @@ export async function kesitIndir(kaynak, dir) {
 export async function buildKesit(job, settings, { workDir }) {
   const dir = path.join(workDir, job.id);
   fs.mkdirSync(dir, { recursive: true });
-  console.log(`  kesit: ${job.kaynak.yayinci} (${job.kaynak.platform}) ${job.kaynak.bas}-${job.kaynak.son} sn`);
+  const aralik = job.kaynak.bas != null ? ` ${job.kaynak.bas}-${job.kaynak.son} sn` : '';
+  console.log(`  kesit: ${job.kaynak.yayinci} (${job.kaynak.platform})${aralik}`);
   const video = await kesitIndir(job.kaynak, dir);
   const sure = Math.min(KESIT_SURE.max, await probeDuration(video));
+
+  // Yayıncının kamerası: büyütülüp üstte gösterilir (kampanyalar "yayıncı ana odak" ister). Bulunamazsa tek görüntü düzeni.
+  let kamera = job.kamera ?? null;
+  if (kamera == null) {
+    try {
+      const json = path.join(dir, 'kamera.json');
+      await sh(process.env.PYTHON ?? 'python3', [path.join(PY_DIR, 'kamera.py'), video, json]);
+      kamera = JSON.parse(fs.readFileSync(json, 'utf8'));
+      console.log(`  kamera: ${kamera ? `x${kamera.x} y${kamera.y} (${kamera.kare}/16 kare)` : 'bulunamadı'}`);
+    } catch (e) {
+      console.warn(`  kamera aranamadı: ${e.stderr?.toString().trim().split('\n').at(-1) ?? e.message}`);
+    }
+  }
 
   // Yorum satırları: her biri kendi sahnesi olarak seslendirilir (hız kuralı tts.js'te: Shorts en az +30%)
   const satirlar = [...(job.yorum ?? []), ...(job.kapanis?.metin ? [{ sn: null, metin: job.kapanis.metin, kapanis: true }] : [])];
@@ -63,7 +77,7 @@ export async function buildKesit(job, settings, { workDir }) {
     }
   }
 
-  const videoPath = await renderKesit({ job, dir, video, sure, yorumlar, altyazi, settings });
+  const videoPath = await renderKesit({ job, dir, video, sure, yorumlar, altyazi, kamera: kamera || null, settings });
   return {
     videoPath, thumbnailPath: null, duration: sure,
     credits: [`Clip: ${job.kaynak.yayinci} — ${job.kaynak.url}`],

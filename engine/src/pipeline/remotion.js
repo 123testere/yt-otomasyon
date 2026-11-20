@@ -183,7 +183,7 @@ export async function renderDizi({ job, dir, ses, music, muzikler = null, musicV
 }
 
 // Yayın kesiti (Vice City Dispatch): remotion/src/Kesit.jsx
-export async function renderKesit({ job, dir, video, sure, yorumlar, altyazi = [], settings }) {
+export async function renderKesit({ job, dir, video, sure, yorumlar, altyazi = [], kamera = null, settings }) {
   const stage = stager(job.id);
   try {
     const props = {
@@ -193,6 +193,7 @@ export async function renderKesit({ job, dir, video, sure, yorumlar, altyazi = [
       kredi: job.kredi ?? `${job.kaynak.yayinci} · ${job.kaynak.platform}`,
       yorumlar: yorumlar.map((y) => ({ t0: y.t0, d: y.d, kapanis: y.kapanis, ses: stage.add(y.wav), words: y.words.map(({ t, d, text }) => ({ t, d, text })) })),
       altyazi, // yayıncının konuşması (yorum yoksa)
+      kamera, // yayıncı kamerası (kaynak karesinde 0-1 kutu) ya da null
       cta: job.cta ?? (settings.language === "tr" ? "DEVAMI İÇİN ABONE OL" : "FOLLOW FOR MORE"),
       kisma: Number(job.kisma ?? 0.22), // yorum sırasında yayın sesi
       accent: job.accent ?? '#FF2E88',
