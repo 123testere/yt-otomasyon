@@ -70,7 +70,8 @@ function slotsFor(channel, dates, now) {
     }
     [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
     // Seri Shorts'u (ör. Markaların Hikâyesi Perşembe ve Cumartesi 14:00): normal Shorts saatlerine ek
-    if (s.seri?.shortsGunleri?.includes(weekday(date))) slots.push({ type: 'short', idx: s.shorts.times.length + 1, date, time: s.seri.shortsSaat ?? '14:00', seri: true });
+    // Kimliği ayrı (…_shortm1): normal Shorts saatleri değişse de daha önce üretilmiş dosyalarla çakışmaz
+    if (s.seri?.shortsGunleri?.includes(weekday(date))) slots.push({ type: 'short', idx: 'm1', date, time: s.seri.shortsSaat ?? '14:00', seri: true });
   }
   return slots
     .map((slot) => ({ ...slot, publishAt: zonedToUtc(slot.date, slot.time, TZ) }))

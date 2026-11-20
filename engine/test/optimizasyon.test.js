@@ -298,7 +298,7 @@ test('planlayıcı: seri (Markaların Hikâyesi) uzun video, ön gösterim ve se
   assert.equal(sali.find((j) => j.id === '2026-11-24_TESTSERI_short2').seri, undefined); // eşya Shorts'u
   assert.equal(sali.find((j) => j.id === '2026-11-24_TESTSERI_short2').clipOf, undefined); // kesit yok
   const persembe = neededJobs([kanal], { now: new Date('2026-11-26T04:00:00Z') });
-  const seriShort = persembe.find((j) => j.id === '2026-11-26_TESTSERI_short3');
+  const seriShort = persembe.find((j) => j.id === '2026-11-26_TESTSERI_shortm1');
   assert.ok(seriShort);
   assert.equal(seriShort.seri.ad, 'Markaların Hikâyesi');
   assert.equal(persembe.filter((j) => j.id.startsWith('2026-11-26') && j.type === 'short').length, 3);

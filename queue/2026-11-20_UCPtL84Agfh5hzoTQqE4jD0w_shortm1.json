@@ -1,0 +1,65 @@
+{
+  "id": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-20T05:30:00.000Z",
+  "seri": "markalar",
+  "rozet": "Markaların Hikâyesi #1",
+  "oynatmaListesi": "Markaların Hikâyesi",
+  "topic": "Nintendo'nun hikâyesi: 1889 hanafuda kartlarından Famicom'a",
+  "title": "Nintendo'nun İlk Ürünü Oyun Konsolu Değildi: 1889 Kartları 🎴",
+  "description": "Markaların Hikâyesi #1\nNintendo'nun hikâyesi: 1889'da Kyoto'da el boyaması oyun kartlarıyla başlayan, taksi ve otel denemelerinden 1983'te Famicom'a uzanan yol.\n\n#nintendo #markalarınhikayesi #oyun #shorts",
+  "tags": [
+    "nintendo",
+    "nintendo hikayesi",
+    "markaların hikayesi",
+    "nintendo nasıl kuruldu",
+    "hanafuda",
+    "famicom",
+    "oyun tarihi",
+    "marka hikayesi",
+    "lamba altında"
+  ],
+  "baslikKart": [
+    "Nintendo'nun ilk ürünü",
+    "konsol değildi"
+  ],
+  "kapanis": {
+    "soru": "Senin ilk oyun konsolun hangisiydi?",
+    "alt": "Yorumlara yaz 👇"
+  },
+  "ceviriler": {
+    "en": {
+      "title": "Nintendo's First Product Wasn't a Game Console: 1889 Cards",
+      "description": "The story of Nintendo: hand-painted hanafuda playing cards in 1889 Kyoto, failed taxi and hotel ventures, and the Famicom in 1983."
+    }
+  },
+  "scenes": [
+    {
+      "narration": "Nintendo'nun ilk ürünü bir oyun konsolu değildi.",
+      "ifade": "merakli",
+      "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(300,250,400,200),{close:true,fill:'#D9D2C2',w:6,seed:1,pp:a});\nink(ell(395,350,40,40,24),{close:true,fill:'#EFE4CB',w:5,seed:2,pp:a});\nink(ln([365,350],[425,350],4),{w:9,seed:9,pp:a});ink(ln([395,320],[395,380],4),{w:9,seed:10,pp:a});\nconst bt=[[600,315],[640,350],[600,385],[560,350]];\nfor(let k=0;k<4;k++)ink(ell(bt[k][0],bt[k][1],16,16,16),{close:true,fill:k%2?K.bordo:K.ak,w:4,seed:3+k,pp:a});\nconst x=eo(pr(u,.6,1.1));\nink(ln([250,200],[750,500],12),{w:16,c:K.bordo,seed:11,pp:x});ink(ln([750,200],[250,500],12),{w:16,c:K.bordo,seed:12,pp:x});\netk('ilk ürün bu değil',500,590,eo(pr(u,.9,1.4)),{size:46});"
+    },
+    {
+      "narration": "1889'da Kyoto'da Fusajiro Yamauchi, elle boyanmış hanafuda oyun kartları satmaya başladı.",
+      "ifade": "anlatiyor",
+      "cizim": "const cards=[[330,-0.18,'#B5432F'],[500,0,'#2F5D8A'],[670,0.18,'#5A7A3A']];\nfor(let k=0;k<3;k++){const [x,r,c]=cards[k];const a=eo(pr(u,k*.25,.4+k*.25));\nctx.save();ctx.translate(x,390);ctx.rotate(r*a);\nink(kutu(-80,-130,160,260),{close:true,fill:'#FBF6EA',w:6,seed:20+k,pp:a});\nink(ell(0,-30,46,46,24),{close:true,fill:c,w:4,seed:30+k,pp:a});\nfor(let i=0;i<3;i++)ink(ln([-55,60+i*22],[55,60+i*22],6),{w:4,c:K.s,seed:40+k*3+i,pp:a});\nctx.restore();}\ntxt('1889',500,175,76,{c:K.ak,a:eo(pr(u,.8,1.2))});\netk('Kyoto · el boyaması hanafuda kartları',500,630,eo(pr(u,1,1.5)),{size:40});"
+    },
+    {
+      "narration": "Şirket sonra taksi, otel, hatta hazır pirinç denedi; çoğu tutmadı.",
+      "ifade": "saskin",
+      "cizim": "const it=[[230,'taksi'],[500,'otel'],[770,'pirinç']];\nfor(let k=0;k<3;k++){const x=it[k][0];const a=eo(pr(u,k*.4,.4+k*.4));\nif(k===0){ink(kutu(x-90,300,180,70),{close:true,fill:'#E8B64A',w:5,seed:50,pp:a});ink(kutu(x-55,255,110,50),{close:true,fill:'#E8B64A',w:5,seed:51,pp:a});ink(ell(x-50,375,18,18,16),{close:true,fill:K.m,w:3,seed:52,pp:a});ink(ell(x+50,375,18,18,16),{close:true,fill:K.m,w:3,seed:53,pp:a});}\nif(k===1){ink(kutu(x-70,210,140,170),{close:true,fill:'#E6DBC4',w:5,seed:54,pp:a});for(let r=0;r<3;r++)for(let c=0;c<2;c++)ink(kutu(x-45+c*55,230+r*48,35,30),{close:true,fill:'#CFE0EA',w:3,seed:60+r*2+c,pp:a});}\nif(k===2){ink(ell(x,330,85,45,24,0,Math.PI),{w:6,seed:70,pp:a,fill:'#FBF6EA'});ink(ln([x-95,330],[x+95,330],6),{w:6,seed:71,pp:a});for(let i=0;i<6;i++)ink(ell(x-50+i*20,322-(i%2)*6,7,4,10),{close:true,fill:'#FBF6EA',w:2,seed:72+i,pp:a});}\netk(it[k][1],x,455,a,{size:42});\nconst xa=eo(pr(u,k*.4+.5,k*.4+.8));ink(ln([x-80,250],[x+80,410],6),{w:10,c:K.bordo,seed:80+k,pp:xa});}\ntxt(\"1960'lar\",500,590,64,{c:K.ak,a:eo(pr(u,1.4,1.8))});"
+    },
+    {
+      "narration": "Kurtuluşu yine oyunlar oldu: önce oyuncaklar, sonra 1983'te Famicom.",
+      "ifade": "gururlu",
+      "cizim": "const a=eo(pr(u,0,.6));\nink(kutu(330,260,340,150),{close:true,fill:'#EDE7DA',w:6,seed:90,pp:a});\nink(kutu(330,260,340,42),{close:true,fill:'#B5432F',w:5,seed:91,pp:a});\nink(kutu(440,330,120,50),{close:true,fill:'#3A3A44',w:4,seed:92,pp:a});\nconst b=eo(pr(u,.5,1));\nconst kol=[[250,93],[750,94]];\nfor(let k=0;k<2;k++){const x=kol[k][0],s=kol[k][1];ink(kutu(x-60,450,120,60),{close:true,fill:'#B5432F',w:5,seed:s,pp:b});ink(ln([x,450],[x+(x<500?80:-80),410],6),{w:4,seed:s+10,pp:b});}\ntxt('1983',500,190,80,{c:K.ak,a:eo(pr(u,.8,1.2))});\netk('Famicom',500,600,eo(pr(u,1,1.4)),{size:46});"
+    },
+    {
+      "narration": "Bugün hâlâ o kartları üretiyor, çünkü Nintendo'nun ilk ürünü…",
+      "ifade": "gulumsuyor",
+      "cizim": "for(let k=0;k<5;k++){const a=eo(pr(u,k*.15,.3+k*.15));ink(kutu(380+k*8,240-k*8,160,240),{close:true,fill:'#FBF6EA',w:5,seed:100+k,pp:a});}\nink(ell(500,330,44,44,24),{close:true,fill:'#B5432F',w:4,seed:110,pp:eo(pr(u,.7,1.1))});\ntxt('1889 → bugün',500,590,58,{c:K.ak,a:eo(pr(u,.9,1.3))});"
+    }
+  ]
+}
