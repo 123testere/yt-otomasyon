@@ -181,3 +181,27 @@ export async function renderDizi({ job, dir, ses, music, muzikler = null, musicV
     stage.cleanup();
   }
 }
+
+// Yayın kesiti (Vice City Dispatch): remotion/src/Kesit.jsx
+export async function renderKesit({ job, dir, video, sure, yorumlar, settings }) {
+  const stage = stager(job.id);
+  try {
+    const props = {
+      fps: FPS, width: 1080, height: 1920, durationInFrames: Math.max(1, Math.round(sure * FPS)),
+      video: stage.add(video),
+      hook: job.hook ?? null,
+      kredi: job.kredi ?? `${job.kaynak.yayinci} · ${job.kaynak.platform}`,
+      yorumlar: yorumlar.map((y) => ({ t0: y.t0, d: y.d, kapanis: y.kapanis, ses: stage.add(y.wav), words: y.words.map(({ t, d, text }) => ({ t, d, text })) })),
+      kisma: Number(job.kisma ?? 0.22), // yorum sırasında yayın sesi
+      accent: job.accent ?? '#FF2E88',
+      lang: settings.language ?? 'en',
+    };
+    const propsFile = path.join(dir, 'remotion-props.json');
+    fs.writeFileSync(propsFile, JSON.stringify(props));
+    const out = path.join(dir, 'video.mp4');
+    await remotion(['render', ENTRY, 'Kesit', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    return out;
+  } finally {
+    stage.cleanup();
+  }
+}
