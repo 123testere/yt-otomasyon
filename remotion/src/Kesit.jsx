@@ -40,11 +40,13 @@ function Altyazi({ words, t, accent }) {
   );
 }
 
-export function Kesit({ video, hook, kredi, yorumlar = [], kisma = 0.22, accent = '#FF2E88' }) {
+export function Kesit({ video, hook, kredi, yorumlar = [], altyazi = [], cta = null, kisma = 0.22, accent = '#FF2E88' }) {
   const f = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = f / fps;
-  const words = yorumlar.flatMap((y) => y.words);
+  // Yorum sesi varsa onun altyazısı, yoksa yayıncının kendi konuşması
+  const words = yorumlar.length ? yorumlar.flatMap((y) => y.words) : altyazi;
+  const ctaBas = durationInFrames / fps - 2.5;
   const hacim = (fr) => (konusuyor(yorumlar, fr / fps) ? kisma : 1);
   const hookSon = Math.min(durationInFrames, Math.round(3.2 * fps));
   const kapanis = yorumlar.find((y) => y.kapanis);
@@ -67,12 +69,12 @@ export function Kesit({ video, hook, kredi, yorumlar = [], kisma = 0.22, accent 
         </Sequence>
       ))}
       <Altyazi words={words} t={t} accent={accent} />
-      {kapanis && t >= kapanis.t0 && (
+      {(kapanis ? t >= kapanis.t0 : cta && t >= ctaBas) && (
         <div style={{
-          position: 'absolute', top: 360, left: 0, right: 0, textAlign: 'center', fontFamily: display, fontSize: 70, color: '#fff',
-          opacity: interpolate(t - kapanis.t0, [0, 0.3], [0, 1], { extrapolateRight: 'clamp' }),
+          position: 'absolute', top: 380, left: 0, right: 0, textAlign: 'center', fontFamily: display, fontSize: 70, color: '#fff',
+          opacity: interpolate(t - (kapanis?.t0 ?? ctaBas), [0, 0.3], [0, 1], { extrapolateRight: 'clamp' }),
         }}>
-          <span style={{ background: accent, padding: '8px 26px' }}>SUBSCRIBE FOR PART 2</span>
+          <span style={{ background: accent, padding: '8px 26px' }}>{cta ?? 'SUBSCRIBE FOR PART 2'}</span>
         </div>
       )}
       <div style={{

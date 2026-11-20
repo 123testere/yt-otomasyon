@@ -10,6 +10,7 @@ import { promisify } from 'node:util';
 import { narrate } from './tts.js';
 import { renderKesit } from './remotion.js';
 import { probeDuration } from '../lib/util.js';
+import { PY_DIR } from '../lib/paths.js';
 
 const sh = promisify(execFile);
 const YTDLP = process.env.YTDLP ?? 'yt-dlp';
@@ -49,7 +50,20 @@ export async function buildKesit(job, settings, { workDir }) {
     return { t0, d, wav: sc.wav, kapanis: !!s.kapanis, words: (sc.words ?? []).map((w) => ({ t: w.t - sc.start + t0, d: w.d, text: w.text ?? w.w })) };
   });
 
-  const videoPath = await renderKesit({ job, dir, video, sure, yorumlar, settings });
+  // Yorum yoksa (yapay zekâ sesi yasak kampanyalar): yayıncının kendi konuşması altyazı olur (Whisper, ücretsiz)
+  let altyazi = [];
+  if (!yorumlar.length && job.altyazi !== false) {
+    try {
+      const json = path.join(dir, 'konusma.json');
+      await sh(process.env.PYTHON ?? 'python3', [path.join(PY_DIR, 'transcribe.py'), video, json, process.env.WHISPER_MODEL ?? 'small.en'], { maxBuffer: 16 * 1024 * 1024 });
+      altyazi = JSON.parse(fs.readFileSync(json, 'utf8')).filter((w) => w.t < sure).map((w) => ({ t: w.t, d: w.d, text: w.w }));
+      console.log(`  altyazı: ${altyazi.length} kelime`);
+    } catch (e) {
+      console.warn(`  altyazı çıkarılamadı (altyazısız devam): ${e.stderr?.toString().trim().split('\n').at(-1) ?? e.message}`);
+    }
+  }
+
+  const videoPath = await renderKesit({ job, dir, video, sure, yorumlar, altyazi, settings });
   return {
     videoPath, thumbnailPath: null, duration: sure,
     credits: [`Clip: ${job.kaynak.yayinci} — ${job.kaynak.url}`],

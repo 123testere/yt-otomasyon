@@ -187,7 +187,11 @@ async function main() {
       if (!settings.identityLocked) {
         await firestore.doc(`channels/${job.channelId}`).update({ 'settings.identityLocked': true });
       }
-      await notify({
+      await notify(job.kampanya ? {
+        // Klip kampanyası: bağlantı yayından sonra 30 dk içinde Whop / Content Rewards'a gönderilmeli
+        level: 'warn', title: `${job.kaynak?.yayinci ?? 'Klip'}: 30 dk içinde Whop'a gönder`,
+        body: `${yt.url} — ${job.title}`, channelId: job.channelId, videoId: fileId,
+      } : {
         title: yt.scheduled ? 'Video zamanlandı' : 'Video yüklendi',
         body: `${channelSnap.data().title}: ${job.title}`, channelId: job.channelId, videoId: fileId,
       });

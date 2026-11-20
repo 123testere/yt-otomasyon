@@ -1,0 +1,52 @@
+name: Klip kampanyaları (Twitch → Vice City Dispatch)
+
+# Kampanyalardaki yayıncıların (config/kampanyalar.json) en çok izlenen GTA 6 kliplerini bulur, kuyruğa kesit işi yazar.
+# Kuyruğa yazılan iş "Video üret ve yükle"yi tetikler.
+on:
+  schedule:
+    - cron: '23 13,17,21,1 * * *' # ABD öğleden sonra / akşam saatlerinden önce
+  workflow_dispatch:
+    inputs:
+      kuru:
+        description: Sadece listele (kuyruğa yazma)
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  bul:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q -U yt-dlp
+      - run: node src/klip-twitch.js ${{ inputs.kuru && '--kuru' || '' }}
+        working-directory: engine
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+      - name: Kuyruğa yaz
+        if: ${{ !inputs.kuru }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add queue
+          git commit -q -m "kuyruk: klip kampanyası kesitleri" || exit 0
+          git pull -q --rebase -X theirs && git push -q
+          # bot gönderimi başka iş akışını tetiklemez: üretimi elle başlat
+          gh workflow run produce.yml
+        env:
+          GH_TOKEN: ${{ github.token }}

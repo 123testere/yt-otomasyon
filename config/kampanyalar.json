@@ -1,0 +1,54 @@
+{
+  "_aciklama": "Content Rewards / Reach klip kampanyaları (Vice City Dispatch). Kurallar kampanya sayfasından; yapayZekaYasak: bilgisayar sesiyle yorum YOK (Reach: yapay zekâ içeriği kalıcı yasak).",
+  "kanal": "UCaTfPvQYowD7SrHbGfotRrg",
+  "kampanyalar": [
+    {
+      "id": "lacy-gta6",
+      "aktif": true,
+      "ad": "Lacy",
+      "twitch": "lacy",
+      "baslangic": "2026-11-18",
+      "oyun": "Grand Theft Auto VI",
+      "zorunluAd": "LACY",
+      "etiketler": [
+        "#LACY",
+        "#GTA6"
+      ],
+      "yapayZekaYasak": true,
+      "gunluk": 3,
+      "kurallar": "Lacy ana odak; olumsuz gösterilmez; logo yok; yayından sonra 30 dk içinde Whop'a gönderilir; kitlenin en az %50'si ABD/İngiltere/Kanada/Avustralya/Yeni Zelanda."
+    },
+    {
+      "id": "kai-gta6",
+      "aktif": true,
+      "ad": "Kai Cenat",
+      "twitch": "kaicenat",
+      "baslangic": "2026-11-18",
+      "oyun": "Grand Theft Auto VI",
+      "zorunluAd": "Kai Cenat",
+      "etiketler": [
+        "#KaiCenat",
+        "#GTA6"
+      ],
+      "yapayZekaYasak": true,
+      "gunluk": 3,
+      "kurallar": "Kai Cenat'ın GTA 6 oynadığı görüntüler ana odak; Twitch ve YouTube'daki GTA 6 maratonundan."
+    },
+    {
+      "id": "clix-gta6",
+      "aktif": true,
+      "ad": "Clix",
+      "twitch": "clix",
+      "baslangic": "2026-11-18",
+      "oyun": "Grand Theft Auto VI",
+      "zorunluAd": "Clix",
+      "etiketler": [
+        "#Clix",
+        "#GTA6"
+      ],
+      "yapayZekaYasak": true,
+      "gunluk": 3,
+      "kurallar": "Clix ana odak; olumsuz gösterilmez; logo yok; 5.000 dolar havuz, en az 400 bin onaylı izlenme; 30 dk içinde Whop a gönder."
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../s
 import { DESTAN_MEKANLAR, mekanKodHatasi } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
+import { kampanyaBul, kampanyaHatalari } from './lib/kampanya.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -492,6 +493,9 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
       'hookText tek satır, 1-40 karakter olmalı');
   }
 
+  // Yayın kesiti (Vice City Dispatch): anlatımsız/az anlatımlı kurgu; kendi kuralları
+  if (job.format === 'kesit') return [...errors, ...kesitHatalari(job)];
+
   errors.push(...ekAlanHatalari(job));
 
   if (job.type === 'long') {
@@ -603,4 +607,22 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   }
   console.log(`${files.length} dosya, ${bad} hatalı.`);
   process.exit(bad ? 1 : 0);
+}
+
+// Yayın kesiti senaryosu: kaynak (izinli yayın), aralık en fazla 58 sn, kısa kanca; kampanya kuralları.
+export function kesitHatalari(job) {
+  const e = [];
+  const k = job.kaynak;
+  if (job.type !== 'short') e.push('kesit yalnız Shorts olur');
+  if (!k || typeof k !== 'object') return [...e, 'kaynak eksik'];
+  if (!/^https?:\/\//.test(k.url ?? '')) e.push('kaynak.url eksik');
+  if (!k.yayinci || !k.platform) e.push('kaynak.yayinci ve kaynak.platform gerekli');
+  if (k.bas != null || k.son != null) {
+    if (!(Number(k.son) > Number(k.bas) && Number(k.bas) >= 0)) e.push('kaynak.bas < kaynak.son olmalı');
+    else if (k.son - k.bas > 58) e.push('kesit en fazla 58 sn olmalı');
+  }
+  if (typeof job.hook !== 'string' || !job.hook.trim() || job.hook.length > 70) e.push('hook 1-70 karakter olmalı');
+  for (const y of job.yorum ?? []) if (typeof y?.metin !== 'string' || !(Number(y.sn) >= 0)) e.push('yorum: [{sn, metin}] olmalı');
+  if (job.kampanya) e.push(...kampanyaHatalari(job, kampanyaBul(job.kampanya)));
+  return e;
 }
