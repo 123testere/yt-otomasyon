@@ -86,7 +86,10 @@ function cizimErrors(job) {
     errors.push('baslikKart 2 satır olmalı, her biri en fazla 22 karakter');
   }
   if (job.type === 'short' && job.kapanis === undefined) errors.push('Shorts\'ta kapanis {a, b} oylama kartı olmalı (ön gösterimde {fragman: true, baslik, alt})');
-  if (job.kapanis?.fragman) {
+  if (job.kapanis && !job.kapanis.fragman && !job.kapanis.a && job.kapanis.soru !== undefined) {
+    // Kişisel soru kartı (oylama yerine): { soru ≤60, alt ≤30 }
+    if (!(str(job.kapanis.soru, 60) && optStr(job.kapanis.alt, 30))) errors.push('kişisel soru kartı kapanis {soru ≤60, alt ≤30} olmalı');
+  } else if (job.kapanis?.fragman) {
     if (!(str(job.kapanis.baslik, 22) && optStr(job.kapanis.alt, 30))) errors.push('ön gösterim kartı kapanis {fragman: true, baslik ≤22 (ör. "BU AKŞAM 18:00"), alt ≤30} olmalı');
   } else if (job.kapanis !== undefined && !(str(job.kapanis?.a, 18) && str(job.kapanis?.b, 18) && optStr(job.kapanis?.soru, 30))) {
     errors.push('kapanis {a ≤18, b ≤18, soru ≤30} olmalı');
@@ -361,6 +364,7 @@ function ekAlanHatalari(job) {
   if (!optStr(job.oynatmaListesi, 60) || /[<>]/.test(job.oynatmaListesi ?? '')) errors.push('oynatmaListesi en fazla 60 karakter, < > olmadan');
   if (!optStr(job.thumbnailTextAlt, 40)) errors.push('thumbnailTextAlt en fazla 40 karakter');
   if (!optStr(job.thumbnailTextAlt2, 40)) errors.push('thumbnailTextAlt2 en fazla 40 karakter');
+  if (!optStr(job.rozet, 32)) errors.push('rozet (ekrandaki seri rozeti, ör. "Markaların Hikâyesi #3") en fazla 32 karakter');
   if (!optStr(job.titleAlt, 100) || /[<>]/.test(job.titleAlt ?? '')) errors.push('titleAlt en fazla 100 karakter, < > olmadan');
   return errors;
 }
@@ -447,6 +451,12 @@ function slotHatalari(job, slot, { haberKontrol = false } = {}) {
     else if (normalizeTitle(job.titleAlt) === normalizeTitle(job.title)) errors.push('titleAlt asıl başlıktan farklı olmalı');
   }
   errors.push(...cagriHatalari(job, slot));
+  if (slot.seri) {
+    const beklenen = `${slot.seri.ad} #${slot.seri.no}`;
+    if (job.seri !== slot.seri.id) errors.push(`bu video "${slot.seri.ad}" serisinin ${slot.seri.no}. bölümü: "seri": "${slot.seri.id}" yaz ve konuyu o seriden seç`);
+    if (job.rozet !== beklenen) errors.push(`ekran rozeti "rozet": "${beklenen}" olmalı`);
+    if (job.type === 'long' && job.oynatmaListesi !== slot.seri.ad) errors.push(`oynatmaListesi "${slot.seri.ad}" olmalı`);
+  }
   for (const dil of slot.ceviriDilleri ?? []) {
     if (!job.ceviriler?.[dil]) errors.push(`ceviriler.${dil} eksik: başlık ve açıklamanın ${dil} çevirisi yazılmalı`);
   }

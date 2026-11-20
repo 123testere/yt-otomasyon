@@ -279,3 +279,27 @@ test('planlayıcı: uzun videodan önceki 24 saatteki son Shorts ön gösterim o
   assert.equal(aksam.fragman, undefined);
   assert.equal(aksam.clipOf, uzun.id); // yayından sonra: kesit
 });
+
+test('planlayıcı: seri (Markaların Hikâyesi) uzun video, ön gösterim ve seri Shorts günleri; numara sırayla', async () => {
+  const { neededJobs } = await import('../src/lib/plan.js');
+  const kanal = {
+    id: 'TESTSERI', enabled: true, oylamalar: [],
+    settings: resolveSettings({ contentFormat: 'belgesel', long: { days: [2], time: '18:00', minutes: 5 },
+      shorts: { times: ['10:00', '19:00'], seconds: 45, source: 'bagimsiz' },
+      seri: { id: 'markalar', ad: 'Markaların Hikâyesi', uzun: true, shortsGunleri: [4, 6], shortsSaat: '14:00' } }),
+  };
+  const sali = neededJobs([kanal], { now: new Date('2026-11-24T04:00:00Z') }); // Salı 07:00 + Çarşamba
+  const uzun = sali.find((j) => j.type === 'long');
+  const teaser = sali.find((j) => j.id === '2026-11-24_TESTSERI_short1');
+  assert.equal(uzun.seri.id, 'markalar');
+  assert.equal(teaser.fragman, true);
+  assert.equal(teaser.seri.id, 'markalar');
+  assert.ok(teaser.seri.no < uzun.seri.no); // ön gösterim önce yayınlanır
+  assert.equal(sali.find((j) => j.id === '2026-11-24_TESTSERI_short2').seri, undefined); // eşya Shorts'u
+  assert.equal(sali.find((j) => j.id === '2026-11-24_TESTSERI_short2').clipOf, undefined); // kesit yok
+  const persembe = neededJobs([kanal], { now: new Date('2026-11-26T04:00:00Z') });
+  const seriShort = persembe.find((j) => j.id === '2026-11-26_TESTSERI_short3');
+  assert.ok(seriShort);
+  assert.equal(seriShort.seri.ad, 'Markaların Hikâyesi');
+  assert.equal(persembe.filter((j) => j.id.startsWith('2026-11-26') && j.type === 'short').length, 3);
+});

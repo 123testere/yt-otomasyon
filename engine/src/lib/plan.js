@@ -69,6 +69,8 @@ function slotsFor(channel, dates, now) {
       slots.push({ type: 'long', idx: 1, date, time: s.long.time });
     }
     [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
+    // Seri Shorts'u (ör. Markaların Hikâyesi Perşembe ve Cumartesi 14:00): normal Shorts saatlerine ek
+    if (s.seri?.shortsGunleri?.includes(weekday(date))) slots.push({ type: 'short', idx: s.shorts.times.length + 1, date, time: s.seri.shortsSaat ?? '14:00', seri: true });
   }
   return slots
     .map((slot) => ({ ...slot, publishAt: zonedToUtc(slot.date, slot.time, TZ) }))
@@ -82,6 +84,8 @@ function slotsFor(channel, dates, now) {
       targetWords: slot.type === 'short' ? hizliKelime(languageOf(resolveSettings(s))?.wpm ?? 115)
         : dizi ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : targetWords(s, slot.type),
       dil: resolveSettings(s).language,
+      // Seri bölümü: uzun video (seri.uzun) ve seri Shorts'ları; numara attachSeri'de verilir
+      ...(s.seri && !dizi && (slot.seri || (slot.type === 'long' && s.seri.uzun)) ? { seri: { id: s.seri.id, ad: s.seri.ad } } : {}),
       // dongu: Shorts sonu veda etmez, ilk cümleye bağlanır (sözlü abone/beğen yok, ekrandaki kartta yazar)
       ...(slot.type === 'short' ? { hizli: true, ...(s.shorts?.dongu ? { dongu: true } : {}) } : {}),
       // Haber kanalı: konu config/haberler-<akış>.json listesinden seçilir, kaynak bağlantısı zorunlu.
@@ -123,7 +127,7 @@ function uzunSaatEtiketi(shortAt, longAt) {
 }
 
 function attachClips(slots, channels) {
-  for (const c of channels.filter((ch) => ch.settings.shorts?.source === 'uzundan' && ch.settings.contentFormat !== 'dizi')) {
+  for (const c of channels.filter((ch) => (ch.settings.shorts?.source === 'uzundan' || ch.settings.seri?.uzun) && ch.settings.contentFormat !== 'dizi')) {
     const jobs = channelJobs(c.id);
     const longs = [...jobs, ...slots.filter((s) => s.channelId === c.id)]
       .filter((j) => j.type === 'long')
@@ -143,8 +147,12 @@ function attachClips(slots, channels) {
         aday.clipOf = l.id;
         aday.fragman = true;
         aday.uzunSaat = uzunSaatEtiketi(aday.publishAt, l.publishAt);
+        // Seri uzun videosunun ön gösterimi de o serinin bölümüdür
+        if (l.seri) aday.seri = typeof l.seri === 'string' ? { id: l.seri, ad: c.settings.seri?.ad } : { id: l.seri.id, ad: l.seri.ad };
       }
     }
+    // Yayın sonrası kesitler yalnızca 'uzundan' kanallarda (seri kanalında Shorts'lar bağımsız kalır)
+    if (c.settings.shorts?.source !== 'uzundan') continue;
     for (const slot of slots.filter((s) => s.channelId === c.id && s.type === 'short' && !s.fragman)) {
       const at = Date.parse(slot.publishAt);
       const source = longs.find((l) => Date.parse(l.publishAt) < at && at - Date.parse(l.publishAt) <= CLIP_WINDOW_MS
@@ -232,6 +240,17 @@ function attachDizi(slots, channels) {
   return slots.filter((s) => !dusen.has(s.id));
 }
 
+// Seri numarası: kanalın o serideki yazılmış bölümlerinden devam (yayın sırasına göre)
+function attachSeri(slots, channels) {
+  for (const c of channels.filter((ch) => ch.settings.seri)) {
+    let no = channelJobs(c.id).filter((j) => j.seri === c.settings.seri.id).length;
+    for (const slot of slots.filter((s) => s.channelId === c.id && s.seri).sort((a, b) => a.publishAt.localeCompare(b.publishAt))) {
+      slot.seri = { ...slot.seri, no: ++no };
+    }
+  }
+  return slots;
+}
+
 // Bugün ve yarın için, açık kanalların henüz yazılmamış video slotları.
 export function neededJobs(channels, { now = new Date(), extraExisting = [] } = {}) {
   const today = dateInTz(now, TZ);
@@ -243,6 +262,6 @@ export function neededJobs(channels, { now = new Date(), extraExisting = [] } = 
     .flatMap((c) => slotsFor(c, dates, now))
     .filter((job) => !existing.has(job.id))
     .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
-  return attachExperiments(attachVotes(attachClips(attachDizi(jobs, channels), channels), channels, now), channels, now)
+  return attachExperiments(attachSeri(attachVotes(attachClips(attachDizi(jobs, channels), channels), channels, now), channels), channels, now)
     .sort((a, b) => a.publishAt.localeCompare(b.publishAt));
 }

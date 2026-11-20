@@ -122,6 +122,7 @@ export async function renderEncyclopedia({ job, settings, fmt, narrated, images,
       musicVolume: Number(settings.musicVolume),
       baslik: job.baslikKart ?? null,
       kapanis: job.kapanis ?? null,
+      rozet: job.rozet ?? null,
     };
     const propsFile = path.join(dir, 'remotion-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));

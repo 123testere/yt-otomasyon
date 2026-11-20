@@ -119,8 +119,26 @@ function onGosterimKarti(ctx, u, kapanis, T) {
   yazi(ctx, 'Devamı için abone ol ve beğen', 540, 1090, 54, { c: K.kagit, a: eo(pr(u, 1.2, 1.7)), w: 700 });
 }
 
+// Kişisel soru kartı: izleyicinin kendi hayatına dair tek soru ("Sizin evde hâlâ var mı?"): oylamadan çok yorum getirir
+function soruKarti(ctx, u, kapanis, T) {
+  const a = eo(pr(u, 0, 0.5)), k = S.kart;
+  ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(30,28,36,.94)';
+  ctx.beginPath(); ctx.roundRect(k.x, k.y - 200, k.w, k.h + 200, 18); ctx.fill(); ctx.restore();
+  // Soru kartın içinde, satırlar dengeli (tek kelime alt satıra düşmesin diye geniş satır)
+  const boy = kapanis.soru.length > 34 ? 70 : 78;
+  ctx.save(); ctx.font = `800 ${boy}px ${serif}`;
+  const sat = satirla(ctx, kapanis.soru, boy, 960, false).slice(0, 4);
+  ctx.restore();
+  const y0 = 560 - (sat.length - 1) * boy * 0.62;
+  sat.forEach((s, j) => yazi(ctx, s, 540, y0 + j * boy * 1.24, boy, { c: K.kagit, a, w: 800 }));
+  const y = y0 + sat.length * boy * 1.24 + 50;
+  yazi(ctx, kapanis.alt || 'Yorumlara yaz 👇', 540, y, 64, { c: K.lamba, a: eo(pr(u, 0.4, 0.9)) * (1 + 0.04 * Math.sin(T * 5)), w: 700 });
+  yazi(ctx, 'Devamı için abone ol ve beğen', 540, 1090, 54, { c: K.kagit, a: eo(pr(u, 1.0, 1.5)), w: 700 });
+}
+
 function kapanisKarti(ctx, u, kapanis, T) {
   if (kapanis.fragman) return onGosterimKarti(ctx, u, kapanis, T);
+  if (!kapanis.a && kapanis.soru) return soruKarti(ctx, u, kapanis, T);
   const a = eo(pr(u, 0, 0.5)), k = S.kart;
   ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(30,28,36,.94)';
   ctx.beginPath(); ctx.roundRect(k.x, k.y - 200, k.w, k.h + 200, 18); ctx.fill(); ctx.restore();
@@ -144,20 +162,38 @@ function kapanisKarti(ctx, u, kapanis, T) {
   ctx.restore();
 }
 
+// İlk sahnenin çizimi ilk karede tamamen çizilmiş görünür (izleyici kaydırıp kaydırmamaya o an karar verir);
+// sonraki sahneler kalemle çizilerek belirir.
+const ILK_HAZIR = 2.5;
+const sahneU = (scenes, k, t) => Math.max(0, t - scenes[k].t0) + (k === 0 ? ILK_HAZIR : 0);
+
+// Seri rozeti: "MARKALARIN HİKÂYESİ #3" / "EŞYALARIN HİKÂYESİ #54" (izleyici bir seriyi takip ettiğini görsün)
+function rozetCiz(ctx, rozet, x, y, boy, a = 1) {
+  if (!rozet || a <= 0) return;
+  const s = String(rozet).toLocaleUpperCase('tr');
+  ctx.save(); ctx.globalAlpha = a; ctx.font = `800 ${boy}px ${serif}`;
+  const w = ctx.measureText(s).width + boy * 1.6;
+  ctx.fillStyle = 'rgba(232,163,61,.16)'; ctx.strokeStyle = K.lamba; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.roundRect(x - w / 2, y - boy * 1.05, w, boy * 1.6, boy * 0.8); ctx.fill(); ctx.stroke();
+  ctx.restore();
+  yazi(ctx, s, x, y, boy, { c: K.lamba, a, w: 800 });
+}
+
 function kisaKare(ctx, p, t, d) {
   const { scenes, fns, words, baslik, kapanis } = p;
   geceZemin(ctx, 1080, 1920);
   const son = scenes.length - 1;
   const kT = kapanis && son > 0 ? scenes[son].t0 : Infinity;
   const ba = t < kT ? 1 : 1 - pr(t, kT, kT + 0.4);
-  yazi(ctx, baslik?.[0] ?? '', 540, 230, 76, { c: K.kagit, a: ba });
-  yazi(ctx, baslik?.[1] ?? '', 540, 322, 76, { c: K.lamba, a: ba });
+  rozetCiz(ctx, p.rozet, 540, 130, 34, ba);
+  yazi(ctx, baslik?.[0] ?? '', 540, 240, 86, { c: K.kagit, a: ba });
+  yazi(ctx, baslik?.[1] ?? '', 540, 340, 86, { c: K.lamba, a: ba });
   kartZemin(ctx, S.kart);
   const k = S.kart;
   ctx.save(); ctx.beginPath(); ctx.roundRect(k.x, k.y, k.w, k.h, 18); ctx.clip();
   const { i, gecis } = sahneDurumu(scenes, t);
-  if (gecis < 1 && i > 0) sahneCiz(ctx, fns[i - 1], S.cizim, t, t - scenes[i - 1].t0, 1 - gecis, false);
-  sahneCiz(ctx, fns[i], S.cizim, t, Math.max(0, t - scenes[i].t0), gecis, false);
+  if (gecis < 1 && i > 0) sahneCiz(ctx, fns[i - 1], S.cizim, t, sahneU(scenes, i - 1, t), 1 - gecis, false);
+  sahneCiz(ctx, fns[i], S.cizim, t, sahneU(scenes, i, t), gecis, false);
   ctx.restore();
   ctx.save(); ctx.strokeStyle = 'rgba(184,137,59,.6)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.roundRect(k.x, k.y, k.w, k.h, 18); ctx.stroke(); ctx.restore();
   const bitis = Number.isFinite(kT) ? kT : d;
@@ -190,11 +226,12 @@ function uzunKare(ctx, p, t) {
   // Giriş: gece zemininde başlık ve kâğıt renginde çizim.
   if (sayfa < 1) {
     ctx.save(); ctx.globalAlpha = 1 - sayfa;
+    rozetCiz(ctx, p.rozet, 1270, 210, 34);
     yazi(ctx, baslik?.[0] ?? '', 1270, 330, 92, { c: K.kagit });
     yazi(ctx, baslik?.[1] ?? '', 1270, 450, 92, { c: K.lamba });
     if (girisSahne(i)) {
-      if (gecis < 1 && i > 0) sahneCiz(ctx, fns[i - 1], L.giris, t, t - scenes[i - 1].t0, 1 - gecis, true);
-      sahneCiz(ctx, fns[i], L.giris, t, Math.max(0, t - scenes[i].t0), gecis, true);
+      if (gecis < 1 && i > 0) sahneCiz(ctx, fns[i - 1], L.giris, t, sahneU(scenes, i - 1, t), 1 - gecis, true);
+      sahneCiz(ctx, fns[i], L.giris, t, sahneU(scenes, i, t), gecis, true);
     }
     ctx.restore();
   }
