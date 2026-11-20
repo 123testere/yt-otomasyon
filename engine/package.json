@@ -11,7 +11,7 @@
     "validate": "node src/validate.js",
     "kanal-bagla": "node src/connect-channel.js",
     "yonetici-yap": "node src/make-admin.js",
-    "test": "node --test test/optimizasyon.test.js"
+    "test": "node --test test/optimizasyon.test.js test/klip.test.js"
   },
   "dependencies": {
     "firebase-admin": "^13.0.0",

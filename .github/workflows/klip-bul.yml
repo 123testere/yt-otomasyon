@@ -1,0 +1,45 @@
+name: Yayın kesiti bul (Vice City Dispatch)
+
+# Bir yayın videosunda en iyi kesit adaylarını bulur ve analiz/klip-adaylari/ altına yazar.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: YouTube yayın/video adresi
+        required: true
+      adet:
+        description: Kaç kesit
+        default: '3'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  bul:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Araçlar
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q -U yt-dlp
+      - run: node src/klip-bul.js "${{ inputs.url }}" "${{ inputs.adet }}"
+        working-directory: engine
+      - name: Kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add analiz/klip-adaylari
+          git commit -q -m "klip adayları: ${{ inputs.url }}" || exit 0
+          git pull -q --rebase -X theirs && git push -q
