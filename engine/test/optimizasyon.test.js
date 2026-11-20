@@ -201,7 +201,7 @@ test('3 kapak testi: en yüksek tıklanma kazanır, ölçülemeyen kazanamaz, e�
 test('hızlı Shorts: cümle sayımı, hedef kelime, abone/beğen çağrısı', () => {
   assert.equal(cumleSay('Çayın bardakta neden soğuyor? Çünkü cam ince. 2,5 dakikada 1.000 kalori gider! Abone ol.'), 4);
   assert.equal(cumleSay('Tek cümle'), 1);
-  assert.equal(hizliKelime(115), 55);
+  assert.equal(hizliKelime(115), 60);
   assert.equal(cagriEksigi('Serinin devamı için abone ol ve beğen.', 'tr'), null);
   assert.equal(cagriEksigi('Devamı için abone olmayı ve beğenmeyi unutma!', 'tr'), null);
   assert.match(cagriEksigi('Yorumlara yaz, abone ol!', 'tr'), /beğen/);

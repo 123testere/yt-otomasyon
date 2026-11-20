@@ -1,17 +1,17 @@
 // Hızlı Shorts kuralı (2026-11-13, tüm kanallar): Shorts çok hızlı ve kısa olur.
 //   - 4-5 cümle (son cümle abone/beğen çağrısı), yaklaşık 20-28 saniye
 //   - başlık ve ekrandaki dev yazı bir SORUN ya da soru bildirir, video ÇÖZÜMÜ/cevabı verir
-//   - seslendirme hızlandırılır (motor: Shorts'ta en az +20%)
+//   - seslendirme hızlandırılır (motor: Shorts'ta en az +30%, uzun videoda en az +20%)
 // Uzun videolarda da abone/beğen çağrısı zorunludur.
 // Bağımlılıksızdır: planlayıcı ve doğrulayıcı bulut rutininde npm install olmadan çalışır.
 
 export const HIZLI_SN = 24;
-export const HIZLI_TEMPO = 1.2; // Shorts'ta en az bu konuşma hızı
-export const UZUN_TEMPO = 1.12; // uzun videoda en az bu konuşma hızı (kullanıcı kararı 2026-11-16: her video hızlı)
+export const HIZLI_TEMPO = 1.3; // Shorts'ta en az bu konuşma hızı (kullanıcı 2026-11-20: daha hızlı)
+export const UZUN_TEMPO = 1.2; // uzun videoda en az bu konuşma hızı (kullanıcı kararı 2026-11-16 ve 2026-11-20: her video hızlı)
 // Videonun türüne göre en düşük konuşma hızı (kanal daha hızlısını seçtiyse o geçerli)
 export const enAzTempo = (tip) => (tip === 'short' ? HIZLI_TEMPO : UZUN_TEMPO);
 export const HIZLI_CUMLE = { min: 4, max: 6 }; // 4-5 cümle; oylama sorusu ayrı cümleyse 6'ya kadar
-export const HIZLI_DIZI_HIZ = { min: 1.15, max: 1.3 };
+export const HIZLI_DIZI_HIZ = { min: 1.15, max: 1.4 };
 
 // Shorts'un hedef kelime sayısı: dilin dakikadaki kelime hızı × hızlandırma × süre (tr 55, en 72, de 60).
 export const hizliKelime = (wpm) => Math.round((HIZLI_SN / 60) * wpm * HIZLI_TEMPO);

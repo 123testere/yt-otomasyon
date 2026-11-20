@@ -43,6 +43,8 @@ function regroupSpokenNumbers(narration, words, language) {
 
 // Kanalın seçtiği kendi ses kaynağıyla bütün sahneleri seslendirir. Biri bile başarısız olursa null döner;
 // o zaman video baştan sona hazır sesle okunur (aynı videoda iki farklı ses olmasın).
+const ELEVEN_MAX_HIZ = 1.2;
+
 async function ownVoice(job, settings, dir, tempo) {
   if (!voiceInScope(settings, job.type)) return null;
   try {
@@ -61,13 +63,14 @@ async function ownVoice(job, settings, dir, tempo) {
           continue;
         }
         const result = await retry(
-          () => elevenScene(text, { voiceId, speed: tempo, voiceSettings }, `${sceneBase(dir, i)}-el.mp3`),
+          () => elevenScene(text, { voiceId, speed: Math.min(ELEVEN_MAX_HIZ, tempo), voiceSettings }, `${sceneBase(dir, i)}-el.mp3`),
           { label: `ElevenLabs sahne ${i + 1}`, tries: 2, delayMs: 5000 },
         );
         await fs.writeFile(cacheFile, JSON.stringify({ key, result }));
         scenes.push(result);
       }
-      return { scenes, retime: false };
+      // ElevenLabs en fazla 1,2 kabul eder; üstü sonradan atempo ile uygulanır (kelime zamanları da ölçeklenir)
+      return { scenes, retime: false, ek: tempo > ELEVEN_MAX_HIZ ? tempo / ELEVEN_MAX_HIZ : 1 };
     }
     if (settings.voiceSource === 'klon') {
       const files = await cloneNarrate(job, settings, dir);
@@ -83,7 +86,7 @@ async function ownVoice(job, settings, dir, tempo) {
 // Her sahne ayrı seslendirilir; böylece sahne süreleri ve kelime zamanları kesin bilinir.
 export async function narrate(job, settings, dir) {
   // Shorts'a ayrı konuşma hızı seçilmişse o kullanılır.
-  // Hızlı konuşma kuralı: Shorts'ta en az +20%, uzun videoda en az +12% (kanal daha hızlısını seçtiyse o geçerli).
+  // Hızlı konuşma kuralı: Shorts'ta en az +30%, uzun videoda en az +20% (kanal daha hızlısını seçtiyse o geçerli).
   {
     const secili = (job.type === 'short' ? settings.shorts?.speechRate : null) ?? settings.speechRate ?? '+0%';
     const taban = Math.round((enAzTempo(job.type) - 1) * 100);
@@ -98,11 +101,12 @@ export async function narrate(job, settings, dir) {
     const base = sceneBase(dir, i);
     const { raw, words } = own?.scenes[i] ?? await edgeScene(spokenText(scene.narration.trim(), settings.language), settings, base);
 
-    const filters = [own?.retime && tempo !== 1 ? `atempo=${tempo}` : null, `apad=pad_dur=${SCENE_GAP_SEC}`].filter(Boolean);
+    const sonra = own?.retime ? tempo : (own?.ek ?? 1);
+    const filters = [sonra !== 1 ? `atempo=${sonra}` : null, `apad=pad_dur=${SCENE_GAP_SEC}`].filter(Boolean);
     await run('ffmpeg', ['-y', '-v', 'error', '-i', raw, '-af', filters.join(','), '-ar', '48000', '-ac', '2', `${base}.wav`]);
     const duration = await probeDuration(`${base}.wav`);
     const sceneWords = words
-      ? regroupSpokenNumbers(scene.narration, words, settings.language)
+      ? regroupSpokenNumbers(scene.narration, sonra !== 1 ? words.map((w) => ({ ...w, t: w.t / sonra, d: w.d / sonra })) : words, settings.language)
       : proportionalWords(scene.narration, Math.max(0.5, duration - SCENE_GAP_SEC), (token) => spokenText(token, settings.language).length);
     results.push({ wav: `${base}.wav`, start: offset, duration, words: sceneWords.map((w) => ({ ...w, t: w.t + offset })) });
     offset += duration;
