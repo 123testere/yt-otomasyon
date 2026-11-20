@@ -1,8 +1,136 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-20T12:59:35.483Z",
+  "guncellendi": "2026-11-20T21:11:32.588Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-20T20:59:08.000Z",
+      "ozet": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+      "link": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-20T19:53:41.000Z",
+      "ozet": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
+      "link": "https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-20T19:52:21.000Z",
+      "ozet": "Amid allegations of multiple affairs, including with a direct report and an alleged Chinese intelligence asset, sources tell WIRED the Nvidia board’s main issue was the former CEO’s “lack of candor.”",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Güney Kore, yapay zeka sayesinde 1 trilyon dolar ihracata ulaştı",
+      "link": "https://www.donanimhaber.com/guney-kore-yapay-zeka-sayesinde-1-trilyon-dolar-ihracata-ulasti--213194",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T19:35:00.000Z",
+      "ozet": "Yapay zeka çiplerine yönelik küresel talep Güney Kore'nin ihracatını rekor seviyeye taşıdı. Ülke, 1 trilyon dolar ihracatı aşan dünyadaki dördüncü ekonomi oldu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+      "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-20T19:32:08.000Z",
+      "ozet": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+      "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-20T18:50:19.000Z",
+      "ozet": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies to build data centers outside of our country,\" Trump said at a […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The most misunderstood graph in AI just got a major update",
+      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-20T18:15:15.000Z",
+      "ozet": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report is an update to the organization’s time horizon plot, which was widely…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Chips can survive the space environment — can their financing?",
+      "link": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-20T17:40:01.000Z",
+      "ozet": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Türkiye'de çocukların yüzde 63'ü yapay zekayı kullanıyor",
+      "link": "https://www.donanimhaber.com/turkiye-de-cocuklarin-yuzde-63-u-yapay-zekayi-kullaniyor--213175",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T17:23:00.000Z",
+      "ozet": "TÜİK verilerine göre 11-17 yaş grubundaki çocukların yüzde 63'ü üretken yapay zeka kullanıyor. Yapay zeka en çok eğitim amacıyla tercih edilirken kullanım oranı kız çocuklarında daha yüksek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-20T16:34:13.000Z",
+      "ozet": "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Apple, bilgisayarları kontrol edebilen kendi yapay zeka ajanını geliştiriyor",
+      "link": "https://www.donanimhaber.com/apple-dan-bilgisayarlari-yonetebilen-yapay-zeka-ajani--213190",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T15:58:00.000Z",
+      "ozet": "Apple, Mac bilgisayarları kullanıcı adına kontrol edebilen bir yapay zeka ajanı geliştiriyor. Sistem uygulamalar arasında geçiş yapabilecek, web'de gezinebilecek ve kod yazabilecek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Çin'in tamamen yapay zeka ile hazırlanan ilk filmi gişede çakıldı",
+      "link": "https://www.donanimhaber.com/cin-in-tamamen-yapay-zeka-ile-hazirlanan-ilk-filmi-gisede-cakildi--213179",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-20T15:37:00.000Z",
+      "ozet": "Çin'in tamamen yapay zeka ile hazırlanan ilk uzun metrajlı filmi Sanxingdui: Future Past, üç haftada yalnızca 1,8 milyon yuan hasılat elde edebildi. İşte detaylar...",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The fallout from Nvidia’s Jensen Huang scandal continues",
+      "link": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-20T14:55:44.000Z",
+      "ozet": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The week everything fell apart",
+      "link": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-20T14:06:59.000Z",
+      "ozet": "There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn't stay up and running. This week, it felt like the technological world simply collapsed. And it felt like this might be the beginning of something even bigger. On […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Six AI-powered gadgets that could make your home office smarter",
+      "link": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-20T14:00:00.000Z",
+      "ozet": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "GTA VI BİLE HİÇ GÜVENDE DEĞİL | Ücretli Yazılım ve Oyun Çağı Bitti mi?",
+      "link": "https://www.webtekno.com/ucretli-yazilim-oyun-cagi-bitti-mi-h229286.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-20T13:04:19.000Z",
+      "ozet": "Ücretli yazılım devri yapay zekanın tersine mühendislik ve açık kaynak gücüyle sarsılıyor; peki donanım mülkiyeti, abonelik ekonomisi ve bulut bilişim geleceğinde bizleri neler bekliyor?",
+      "kullanildi": false
+    },
     {
       "baslik": "Signal is blocking Gemini and Siri AI from reading your screen",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
@@ -41,6 +169,14 @@
       "kaynak": "Wired",
       "tarih": "2026-11-20T11:00:00.000Z",
       "ozet": "The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Combatting adversarial distillation",
+      "link": "https://openai.com/index/combatting-adversarial-distillation",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-20T10:00:00.000Z",
+      "ozet": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
       "kullanildi": false
     },
     {
@@ -92,11 +228,27 @@
       "kullanildi": false
     },
     {
+      "baslik": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "link": "https://openai.com/business/customer-stories/hebbia",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-20T00:00:00.000Z",
+      "ozet": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Can AI help scientists identify promising drug candidates?",
+      "link": "https://openai.com/index/introducing-medchembench",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-20T00:00:00.000Z",
+      "ozet": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Apple is hiring engineers to build its own AI agent",
       "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
       "kaynak": "The Verge",
       "tarih": "2026-11-19T22:31:41.000Z",
-      "ozet": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic AI assistant. […]",
+      "ozet": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the creation of an agentic AI […]",
       "kullanildi": false
     },
     {
@@ -228,14 +380,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia, Çin'e yapay zeka çipi satışını durdurdu",
-      "link": "https://www.donanimhaber.com/nvidia-cin-e-yapay-zeka-cipi-satisini-durdurdu--213144",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T17:39:00.000Z",
-      "ozet": "Nvidia, ABD'den satış izni almasına rağmen Çin'e H200 yapay zeka çipi sevkiyatını durdurdu. Kararda Pekin'in ithalat kısıtlamaları ve ABD’ye bağımlılığını azaltma hedefi etkili oldu.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
       "link": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
       "kaynak": "TechCrunch",
@@ -292,30 +436,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Tesla, direksiyonsuz ve pedalsız 7 kişilik Model Y geliştiriyor",
-      "link": "https://www.donanimhaber.com/tesla-direksiyonsuz-ve-pedalsiz-model-y-gelistiriyor--213128",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T16:09:00.000Z",
-      "ozet": "Tesla, Model Y'nin direksiyon ve pedalları bulunmayan tamamen otonom bir versiyonunu geliştirmeyi planlıyor. Yeni robotaksi, altı veya yedi yolcu taşıyabilecek.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "ChatGPT can transcribe as you speak now with Live Dictation",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T15:16:45.000Z",
-      "ozet": "ChatGPT can receive audio prompts from your microphone faster now with a Live Dictation feature that transcribes as you speak, rather than waiting until you finish recording. It's rolling out now globally on all ChatGPT plans on the web, desktop app, and iOS and Android apps. While using dictation in ChatGPT, you can tap or […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "2.688 NVIDIA çipiyle güçlendirilen süper bilgisayar, bilimsel keşifleri hızlandıracak",
-      "link": "https://www.donanimhaber.com/abd-2-688-nvidia-cipli-dev-super-bilgisayari-devreye-aldi--213141",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T15:07:00.000Z",
-      "ozet": "ABD, bilimsel keşifleri hızlandırmak için 2.688 NVIDIA çipli yeni bir süper bilgisayar kurdu. Sistem, yapay zekâ ajanlarının bilimsel deneyleri otonom şekilde yürütmesini sağlayacak.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Anthropic’s IPO puts AI’s circular financing boom to the test",
       "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
       "kaynak": "TechCrunch",
@@ -340,43 +460,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "With the biggest IPO of all time, Anthropic’s ‘good guy’ reputation is on the line",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T14:25:37.000Z",
-      "ozet": "Today is a new beginning for Anthropic: a years-in-the-making IPO that beat out SpaceX for most valuable of all time, having raised $81.3 billion and set an important precedent for the other public AI lab debuts to come. But it's not simply a financial milestone. Anthropic was founded on the idea that it prioritized safety […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Superhuman pushes its Go assistant everywhere",
       "link": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-19T14:00:00.000Z",
       "ozet": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Avrupa Komisyonu siber saldırıya uğradı: FBI’ın uyardığı ARTEX kullanıldı",
-      "link": "https://www.donanimhaber.com/avrupa-komisyonu-siber-saldiriya-ugradi-artex-kullanildi--213138",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T13:40:00.000Z",
-      "ozet": "Avrupa Komisyonu, yapay zeka destekli ARTEX aracının kullanıldığı siber saldırının hedefi oldu. 10 günden uzun süren kesintide çalışanların kişisel verileri ele geçirilmiş olabilir.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "I let Apple’s always-listening AI summarize my life for two weeks",
-      "link": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T13:00:00.000Z",
-      "ozet": "Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both enable a wearable to ambiently listen to your conversations and, using AI, summarize them for you. Why? So you can […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI'ın yeni modelleri geldi: GPT-6.2 Astra ve Sol neler sunuyor?",
-      "link": "https://www.donanimhaber.com/openai-gpt-6-2-astra-ve-sol-u-kullanima-sundu--213131",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T12:58:00.000Z",
-      "ozet": "OpenAI, en zorlu görevler için GPT-6.2 Astra'yı, günlük kullanım içinse Sol'u kullanıma sundu. Yeni modeller bazı kritik testlerde Claude ve Gemini'yi geride bırakıyor.",
       "kullanildi": false
     },
     {
@@ -393,94 +481,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-19T12:00:00.000Z",
       "ozet": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger toward data centers could impact its growth.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "MSI EdgeMesa N AI+ Türkiye’de ön siparişe açıldı: Minik kasada 1 PFLOP AI performansı",
-      "link": "https://www.donanimhaber.com/msi-edgemesa-n-ai-turkiye-de-on-siparise-acildi-ozellikleri--213130",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T10:47:06.000Z",
-      "ozet": "MSI, NVIDIA RTX Spark N1X platformuyla güçlendirilen yeni AI PC modeli EdgeMesa N AI+ serisini Türkiye'de ön siparişe açtı. Minik boyutlu bu bilgisayar, dev performansıyla dikkat çekiyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Gemini 4 Neon tanıtıldı: Carbon’dan 3 kat daha hızlı",
-      "link": "https://www.donanimhaber.com/google-gemini-4-neon-tanitildi-carbon-dan-3-kat-daha-hizli--213118",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T10:47:00.000Z",
-      "ozet": "Google, karmaşık kodlama ve analitik işlemler için geliştirdiği Gemini 4 Neon'u duyurdu. Yeni model, Carbon'dan üç kat daha hızlı çalışırken daha uygun maliyetler sunuyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-      "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-19T08:00:00.000Z",
-      "ozet": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google AI Ultra'ya Ücretsiz YouTube Premium Aile Paketi Eklendi",
-      "link": "https://www.webtekno.com/google-ai-ultra-ucretsiz-youtube-premium-aile-paketi-eklendi-h229189.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-19T07:58:52.000Z",
-      "ozet": "Google AI Ultra’ya daha önce bireysel YouTube Premium üyeliği dahildi. Yeni düzenlemeyle Premium, uygun aboneler için ek ücret ödemeden altı kişiye kadar paylaşılabiliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "link": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T00:42:56.000Z",
-      "ozet": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Deploying Daybreak Red",
-      "link": "https://openai.com/business/learn/deploying-daybreak-red",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-19T00:00:00.000Z",
-      "ozet": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "See PR scans in action",
-      "link": "https://openai.com/business/learn/pr-scans-demo",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-19T00:00:00.000Z",
-      "ozet": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Explore the Codex Security Plugin",
-      "link": "https://openai.com/business/learn/codex-security-plugin-demo",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-19T00:00:00.000Z",
-      "ozet": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Get started with Daybreak Blue",
-      "link": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-19T00:00:00.000Z",
-      "ozet": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "link": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T23:45:00.000Z",
-      "ozet": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-      "link": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-18T23:25:17.000Z",
-      "ozet": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
       "kullanildi": false
     }
   ]
