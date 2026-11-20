@@ -11,7 +11,11 @@ export const kampanyaBul = (id) => kampanyalar().find((k) => k.id === id) ?? nul
 
 // Yayıncıyı olumsuz gösterebilecek başlıklar (kampanyalar reddeder): klip başlığı izleyici yazısıdır, süzülür.
 const OLUMSUZ = /\b(cring(e|y)|fail(s|ed)?|exposed|cancel+ed|racis[mt]|hate[sd]?|caught|cheat(s|ing|ed)?|toxic|disgust|nsfw|drunk|banned?|l+ ?streamer|ratio|fraud|scam|clown(ed)?|embarrass\w*|meltdown|beef)\b/i;
-export const olumsuzMu = (metin) => OLUMSUZ.test(String(metin ?? ''));
+// Cinsel/uygunsuz başlıklar ve "an" olmayan yayın başlıkları (🚨 GIVEAWAY 24/7 …) de elenir
+const UYGUNSUZ = /\b(peg+ing|sex\w*|horny|nud(e|es|ity)|porn\w*|thirst\w*|onlyfans|strip(per|ping)?|booty|twerk\w*|kys|slur)\b/i;
+const YAYIN_BASLIGI = /(🚨.*🚨)|\b(giveaways?|24\/7|early access|!drop|!sub|sub(athon)?\b.*\bday\s*\d)/i;
+export const olumsuzMu = (metin) => OLUMSUZ.test(String(metin ?? '')) || UYGUNSUZ.test(String(metin ?? ''));
+export const yayinBasligiMi = (metin) => YAYIN_BASLIGI.test(String(metin ?? ''));
 
 export function kampanyaHatalari(job, k) {
   if (!k) return [`kampanya bulunamadı: ${job.kampanya}`];

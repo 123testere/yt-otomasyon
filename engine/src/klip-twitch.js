@@ -7,13 +7,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { kampanyalar, olumsuzMu } from './lib/kampanya.js';
+import { kampanyalar, olumsuzMu, yayinBasligiMi } from './lib/kampanya.js';
 import { DONE_DIR, QUEUE_DIR, ROOT } from './lib/paths.js';
 
 const sh = promisify(execFile);
 const YTDLP = process.env.YTDLP ?? 'yt-dlp';
 const KANAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'kampanyalar.json'), 'utf8')).kanal ?? 'UCaTfPvQYowD7SrHbGfotRrg';
 const KURU = process.argv.includes('--kuru');
+const ONIZLEME = process.argv.includes('--onizleme') ? process.argv[process.argv.indexOf('--onizleme') + 1] : null;
 const FAILED_DIR = path.join(ROOT, 'failed');
 
 // ---- Twitch resmi API (Helix) ----
@@ -95,14 +96,14 @@ async function main() {
   for (const k of kampanyalar().filter((x) => x.aktif)) {
     try {
       const klipler = (anahtar ? await helixKlipler(k) : await ytdlpKlipler(k))
-        .filter((c) => !kullanilan.has(c.id) && !olumsuzMu(c.baslik) && (c.sure ?? 30) >= 6)
+        .filter((c) => !kullanilan.has(c.id) && !olumsuzMu(c.baslik) && !yayinBasligiMi(c.baslik) && (c.sure ?? 30) >= 6)
         .sort((a, b) => b.izlenme - a.izlenme);
-      const kalan = Math.max(0, (k.gunluk ?? 3) - eski.filter((j) => j.kampanya === k.id && j.id.startsWith(bugun)).length);
+      const kalan = ONIZLEME ? 1 : Math.max(0, (k.gunluk ?? 3) - eski.filter((j) => j.kampanya === k.id && j.id.startsWith(bugun)).length);
       console.log(`${k.ad}: ${klipler.length} aday${anahtar ? '' : ' (anahtarsız)'}, bugün ${kalan} hak`);
       for (const c of klipler.slice(0, kalan)) {
         const job = isOlustur(k, c);
         console.log(`  + ${c.izlenme} izlenme  ${c.baslik}`);
-        if (!KURU) { fs.mkdirSync(QUEUE_DIR, { recursive: true }); fs.writeFileSync(path.join(QUEUE_DIR, `${job.id}.json`), JSON.stringify(job, null, 2)); yazilan++; }
+        if (!KURU) { const hedef = ONIZLEME ?? QUEUE_DIR; fs.mkdirSync(hedef, { recursive: true }); fs.writeFileSync(path.join(hedef, `${job.id}.json`), JSON.stringify(job, null, 2)); yazilan++; }
       }
     } catch (e) {
       console.error(`✗ ${k.ad}: ${e.stderr?.toString().trim().split('\n').at(-1) ?? e.message}`);
