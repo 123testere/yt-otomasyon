@@ -1,0 +1,569 @@
+{
+ "id": "2026-11-21_UCEG9D-Kia1iw6-duhqlSlcg_long1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "hiz": 1.1,
+ "publishAt": "2026-11-21T15:00:00.000Z",
+ "bolum": {
+  "no": 15,
+  "ad": "Top 10"
+ },
+ "tanitim": [
+  "Motivation fading",
+  "10 simple fixes",
+  "Number one routine"
+ ],
+ "title": "Can't Stay Motivated? 10 Ways to Keep Going 🧠",
+ "titleAlt": "10 Habits to Keep Going When Motivation Fades",
+ "topic": "Ten realistic ways to stay motivated when motivation fades",
+ "description": "Can't stay motivated for more than a week? These ten realistic fixes can help: write down your why, plan tomorrow tonight, break goals into tiny steps, track your streak, remove distractions, celebrate small wins, protect your sleep, start with two minutes, tell one person your goal and build a routine. Which one will you try first?\n\n#money #business #motivation #habits",
+ "tags": [
+  "how to stay motivated",
+  "motivation tips",
+  "build habits",
+  "two minute rule",
+  "accountability",
+  "daily routine",
+  "self discipline",
+  "top 10 motivation",
+  "productivity habits",
+  "stop procrastinating"
+ ],
+ "thumbnailText": "KEEP GOING",
+ "thumbnailTextAlt": "10 SIMPLE FIXES",
+ "thumbnailTextAlt2": "WHY QUIT?",
+ "kapak": {
+  "sahne": 20,
+  "sn": 2
+ },
+ "oynatmaListesi": "Top 10 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿No puedes mantenerte motivado? 10 formas de seguir 🧠",
+   "description": "¿No logras mantener la motivación más de una semana? Estas diez soluciones realistas pueden ayudarte: escribe tu porqué, planifica mañana esta noche, divide metas en pasos pequeños, registra tu racha, elimina distracciones, celebra pequeños logros, cuida tu sueño, empieza con dos minutos, cuéntale tu meta a alguien y crea una rutina.\n\n#dinero #negocios #motivacion #habitos"
+  }
+ },
+ "kapanis": {
+  "baslik": "YOUR NUMBER 1?",
+  "sonraki": "Next: 10 ways to stop wasting money",
+  "soru": "Which fix will you try first?"
+ },
+ "scenes": [
+  {
+   "kisim": "Intro",
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "TOP 10",
+    "alt": "Stay motivated"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "You start strong on Monday, and by Friday the motivation is gone. Why does it fade so fast?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Here are ten realistic fixes that can help you keep going, counting down from ten."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe now so you don't miss the rest of the series. Let's count down!"
+    }
+   ],
+   "aciklama": "0-1,4 sn: The Founder runs in from the left into the expo. 1,4-8 sn: giant text TOP 10 stays on screen while he looks surprised."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 10,
+    "ad": "Write Down Your Why",
+    "tur": "Know your reason",
+    "maddeler": [
+     "One clear sentence",
+     "Keep it visible",
+     "Reread when stuck"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number ten: write down why you started. A clear reason is easier to hold onto than a vague wish."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one.",
+   "kisim": "10-7"
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Put it on a sticky note where you will see it every day."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "When the work gets boring, reading your own reason can pull you back."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "It sounds simple, and that is exactly why it often works."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "WHY?",
+    "alt": "your reason to start"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 9,
+    "ad": "Plan Tomorrow Tonight",
+    "tur": "Remove morning guesswork",
+    "maddeler": [
+     "Pick top three tasks",
+     "Write them down",
+     "Prepare your space"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number nine: plan tomorrow tonight. When you wake up already knowing the first task, there is less to decide."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one."
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Spend five minutes before bed listing your top three tasks."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Lay out what you need, so starting feels like the easy option."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Many people find that fewer morning decisions make it easier to begin."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 8,
+    "ad": "Break Goals Into Tiny Steps",
+    "tur": "Make it doable",
+    "maddeler": [
+     "Shrink the goal",
+     "One step at a time",
+     "Finish something today"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number eight: break big goals into tiny steps. A huge goal can feel heavy, while a small step feels doable."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one."
+  },
+  {
+   "mekan": "grafik",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Instead of writing a whole book, write one page. Instead of building a business, make one phone call today."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Each finished step gives you a small push to take the next one."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "veri": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 7,
+    "ad": "Track Your Streak",
+    "tur": "See your progress",
+    "maddeler": [
+     "Mark each day",
+     "Do not break the chain",
+     "Start again if you miss"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number seven: track your streak. Marking each day on a calendar makes your progress visible."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one."
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Seeing a row of checkmarks can make you want to keep it going."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "And if you miss a day, do not quit. Just start the streak again tomorrow."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 6,
+    "ad": "Remove Distractions",
+    "tur": "Protect your focus",
+    "maddeler": [
+     "Phone out of reach",
+     "Notifications off",
+     "One tab at a time"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number six: remove distractions. Your phone is often the biggest thief of focus."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one.",
+   "kisim": "6-4"
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Put the phone in another room for a focused work block."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Turn off notifications and close extra tabs. Even twenty five focused minutes can get real work done."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Celebrate Small Wins",
+    "tur": "Reward progress",
+    "maddeler": [
+     "Notice what you did",
+     "Treat yourself a little",
+     "Share the win"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number five: celebrate small wins. Rewarding progress can help your effort feel worth it."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one."
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Finished a hard task? Take a short walk, enjoy a coffee, or tell a friend."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "You do not need a big prize. A small reward is enough to keep you going."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "calisan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Protect Your Sleep",
+    "tur": "Energy comes first",
+    "maddeler": [
+     "Regular bedtime",
+     "Screens off early",
+     "Rest is not lazy"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number four: protect your sleep. It is hard to stay motivated when you are always tired."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one."
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "A regular bedtime can make a big difference to your energy."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Many people also find that light exercise during the day helps them feel more focused."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Start With Two Minutes",
+    "tur": "Make starting easy",
+    "maddeler": [
+     "Pick one tiny task",
+     "Set a timer",
+     "Stop or keep going"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: start with just two minutes. The hardest part is usually getting started."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one.",
+   "kisim": "3-1"
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tell yourself you will work for only two minutes, then set a timer."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Often you will want to keep going, and if you stop, you still showed up."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "ogrenci",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Tell One Person",
+    "tur": "Add accountability",
+    "maddeler": [
+     "Share your goal",
+     "Check in weekly",
+     "Ask for honest feedback"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: tell one person your goal. Accountability often helps you follow through."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one."
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Pick someone you trust and share what you plan to do this week."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "A quick weekly check-in can keep you honest, and it feels good to report real progress."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "calisan",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "yatirimci",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Build a Routine",
+    "tur": "Habits beat mood",
+    "maddeler": [
+     "Same time every day",
+     "Keep it small",
+     "Let it become automatic"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number one: build a routine. Motivation comes and goes, but habits tend to last longer."
+    }
+   ],
+   "aciklama": "0-5 sn: Ranking card appears and three short points show one by one.",
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Do the same small thing at the same time each day, until it feels automatic."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "When the routine is set, you rely less on feeling inspired. You simply do the next thing."
+    }
+   ],
+   "aciklama": "0-3 sn: Characters act out the point while the narrator explains. 3-8 sn: they keep reacting as the example continues.",
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "That is the top ten. Which fix will you try first? Tell me in the comments."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Subscribe and like for the rest of the series. Next up: ten ways to stop wasting money."
+    }
+   ],
+   "aciklama": "0-1 sn: Crowd cheers at the expo. 1-6 sn: The Founder raises the trophy and smiles."
+  }
+ ]
+}

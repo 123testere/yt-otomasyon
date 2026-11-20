@@ -1,0 +1,71 @@
+{
+ "id": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-21T07:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+  "secilen": "b"
+ },
+ "topic": "Delikli tuğlanın içindeki boşlukların hafiflik ve ısı yalıtımı sağlaması",
+ "title": "Tuğlanın İçinde Neden Delikler Var? 🧱",
+ "description": "Eşyaların Hikayesi #61\nTuğlanın içinde neden delikler var? Delikli tuğla daha hafif olur, daha az kil harcanır ve içindeki hava boşlukları ısının geçişini yavaşlatır.\n\n#tuğla #eşyalarınhikayesi #inşaat #shorts",
+ "tags": [
+  "tuğla",
+  "tuğlanın içi neden delikli",
+  "delikli tuğla",
+  "tuğla nasıl yapılır",
+  "ısı yalıtımı",
+  "kil",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Tuğlanın içindeki",
+  "delikler ne işe yarar?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Çivi",
+  "b": "Cetvel"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Bina ve Şehir İcatları",
+ "ceviriler": {
+  "en": {
+   "title": "Why Do Bricks Have Holes Inside? 🧱",
+   "description": "Story of Things #61\nWhy do bricks have holes inside? Hollow bricks are lighter, use less clay, and the air pockets slow the passage of heat.\n\n#brick #storyofthings #construction #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Tuğlanın içindeki delikler süs olsun diye açılmadı.",
+   "ifade": "saskin",
+   "cizim": "ink(kutu(250,230,500,240),{close:true,fill:'#E6DBC4',w:7,seed:1,pp:eo(pr(u,0,.6))});for(let i=0;i<3;i++)ink(ell(340+i*160,350,36,80,24),{close:true,fill:'#FBF6EA',w:4,seed:5+i,pp:eo(pr(u,.4+i*.15,.9+i*.15))});txt('delik?',MX,140,72,{c:K.ak,a:eo(pr(u,.8,1.3))});etk('tuğla',MX,600,eo(pr(u,1.1,1.7)),{size:46});"
+  },
+  {
+   "narration": "Delikli tuğla, aynı boydaki dolu tuğladan belirgin biçimde daha hafiftir.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(100,300,350,200),{close:true,fill:'#E6DBC4',w:7,seed:11,pp:eo(pr(u,0,.5))});ink(kutu(550,300,350,200),{close:true,fill:'#E6DBC4',w:7,seed:12,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(ell(625+i*100,400,28,60,20),{close:true,fill:'#FBF6EA',w:4,seed:20+i,pp:eo(pr(u,.6+i*.1,1+i*.1))});etk('dolu',275,580,eo(pr(u,.8,1.3)),{size:44});etk('delikli',725,580,eo(pr(u,1,1.5)),{size:44});txt('daha hafif',725,230,56,{c:K.ak,a:eo(pr(u,1.3,1.8))});ok([725,260],[725,295],{pp:eo(pr(u,1.4,1.9)),c:K.ak,seed:30});"
+  },
+  {
+   "narration": "Kil daha az harcanır; yani aynı duvar için daha az malzeme gerekir.",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(300,420,400,120),{close:true,fill:'#E6DBC4',w:7,seed:41,pp:eo(pr(u,0,.5))});for(let i=0;i<4;i++)ink(ell(360+i*95,480,26,38,18),{close:true,fill:'#FBF6EA',w:4,seed:42+i,pp:eo(pr(u,.4+i*.1,.8+i*.1))});ink(ell(500,250,120,70,28),{close:true,fill:'#B58A52',w:6,seed:50,pp:eo(pr(u,.8,1.4))});etk('daha az kil',MX,130,eo(pr(u,1.2,1.8)),{size:50});etk('delikler',MX,620,eo(pr(u,.9,1.4)),{size:42});"
+  },
+  {
+   "narration": "İçindeki hava boşlukları ısının geçişini yavaşlatır; yani duvar ısıyı daha iyi tutar.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(350,200,300,380),{close:true,fill:'#E6DBC4',w:7,seed:60,pp:eo(pr(u,0,.5))});for(let i=0;i<3;i++)ink(ell(500,290+i*100,60,34,22),{close:true,fill:'#FBF6EA',w:4,seed:61+i,pp:eo(pr(u,.4+i*.1,.8+i*.1))});for(let k=0;k<3;k++){const ph=(T*.5+k*.3)%1,q=[];for(let i=0;i<=8;i++)q.push([120+i*28+Math.sin(i+T*3+k)*6,260+k*100]);ctx.save();ctx.globalAlpha=(1-ph)*.9;ink(q,{w:3.4,c:K.bordo,amp:.3});ctx.restore();}etk('sıcak',160,170,eo(pr(u,.6,1.1)),{size:44});etk('hava boşluğu',MX,640,eo(pr(u,1.2,1.8)),{size:44});"
+  },
+  {
+   "narration": "Peki bir tuğlanın içi neden boş bırakılır? Cevap:",
+   "ifade": "merakli",
+   "cizim": "txt('?',MX,400,260,{c:K.ak,a:eo(pr(u,.1,.7))});etk('tuğlanın içi boş',MX,600,eo(pr(u,.7,1.3)),{size:50});"
+  }
+ ]
+}

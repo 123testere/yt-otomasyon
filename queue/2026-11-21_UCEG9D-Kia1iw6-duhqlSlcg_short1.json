@@ -1,0 +1,159 @@
+{
+ "id": "2026-11-21_UCEG9D-Kia1iw6-duhqlSlcg_short1",
+ "channelId": "UCEG9D-Kia1iw6-duhqlSlcg",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "para-top5",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-21T05:00:00.000Z",
+ "bolum": {
+  "no": 14,
+  "ad": "Top 5"
+ },
+ "title": "Can't Stay Motivated for More Than a Week? 🧠",
+ "description": "Can't stay motivated for more than a week? Here are three simple fixes: start with just two minutes, tell one person your goal, and build a routine instead of relying on mood. The full top ten is in today's long video on the channel.\n\n#money #business #motivation #habits",
+ "tags": [
+  "how to stay motivated",
+  "motivation tips",
+  "build habits",
+  "two minute rule",
+  "accountability",
+  "daily routine",
+  "self discipline",
+  "motivation for beginners"
+ ],
+ "topic": "Three simple fixes for losing motivation after a week",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Top 5 Money & Business",
+ "ceviriler": {
+  "es": {
+   "title": "¿No logras mantener la motivación más de una semana? 🧠",
+   "description": "¿No logras mantener la motivación más de una semana? Tres soluciones sencillas: empezar con solo dos minutos, contarle tu meta a alguien y crear una rutina. La lista completa de diez está en el video largo del canal.\n\n#dinero #negocios #motivacion #habitos"
+  }
+ },
+ "kapanis": {
+  "baslik": "SUBSCRIBE",
+  "sonraki": "Subscribe and like for more",
+  "soru": "Which fix would you try first?"
+ },
+ "tanitim": [
+  "Losing motivation",
+  "3 simple fixes",
+  "Full top 10 today"
+ ],
+ "scenes": [
+  {
+   "kisim": "Hook",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "NO MOTIVATION?",
+    "alt": "3 fixes that actually help"
+   },
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Can't stay motivated for more than a week?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: The Founder sits at his desk and sighs, looking worried. 1,5-3 sn: giant text NO MOTIVATION? stays on screen."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Start With Two Minutes",
+    "tur": "Make starting easy",
+    "maddeler": [
+     "Pick one tiny task",
+     "Set a timer",
+     "Stop or keep going"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number three: start with just two minutes, because starting is usually the hardest part."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 3 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Tell One Person",
+    "tur": "Add accountability",
+    "maddeler": [
+     "Share your goal",
+     "Check in weekly",
+     "Ask for honest feedback"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number two: tell one person your goal; accountability often helps you follow through."
+    }
+   ],
+   "aciklama": "0-4 sn: Ranking card number 2 appears with three short points."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Build a Routine",
+    "tur": "Habits beat mood",
+    "maddeler": [
+     "Same time every day",
+     "Keep it small",
+     "Let it become automatic"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Number one: build a routine, because habits last longer than motivation."
+    }
+   ],
+   "aciklama": "0-1 sn: Ranking card number 1 appears with a white flash. 1-4 sn: three short points appear one by one.",
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "girisimci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "All ten are in today's long video; subscribe and like for the rest!"
+    }
+   ],
+   "aciklama": "0-1 sn: Crowd cheers at the expo. 1-4 sn: The Founder raises the trophy and smiles."
+  }
+ ]
+}

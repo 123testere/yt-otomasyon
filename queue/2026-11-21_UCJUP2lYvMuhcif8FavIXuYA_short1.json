@@ -1,0 +1,177 @@
+{
+ "id": "2026-11-21_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-21T16:00:00.000Z",
+ "bolum": {
+  "no": 13,
+  "ad": "Gemini Mac'i Kullanıyor"
+ },
+ "kaynak": "TechCrunch",
+ "kaynakLink": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+ "title": "Gemini Artık Mac'indeki Sıkıcı İşleri Yapabilecek ⚡",
+ "description": "Google, Gemini'ye Mac için dosya düzenleyebilen, form doldurabilen bir yapay zekâ ajanı ekledi; sıkıcı bilgisayar işleri devredilebilir mi?\nKaynak: TechCrunch https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/\n\n#yapayzeka #gemini #google #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "gemini",
+  "gemini mac",
+  "google gemini",
+  "yapay zeka ajanı",
+  "teknoloji haberleri"
+ ],
+ "topic": "Google Gemini'nin Mac'te dosya ve form işlerini yapan yapay zekâ ajanı",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "ceviriler": {
+  "en": {
+   "title": "Gemini Can Now Handle Boring Tasks on Your Mac ⚡",
+   "description": "Google added an AI agent to Gemini on Mac that can organize files and fill out forms. Could boring computer chores be handed off?\nSource: TechCrunch\n\n#ai #gemini #google #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Hangi bilgisayar işini yapay zekâya verirdin?"
+ },
+ "tanitim": [
+  "Gemini Mac'te",
+  "Dosya ve form işleri",
+  "Gelecekte ne olabilir?"
+ ],
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "yz-lab",
+   "buyukYazi": {
+    "ust": "SIKICI İŞLER?",
+    "alt": "Gemini Mac'te devralıyor"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Gemini artık Mac'indeki sıkıcı işleri senin yerine yapabiliyor."
+    }
+   ],
+   "aciklama": "0-1,5 sn: Kullanıcı bilgisayarına bakıp bıkkın düşünür. 1,5-3,5 sn: robot yanında hazır bekler, dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "Google, Gemini'ye Mac'i kullanabilen ajan ekledi",
+    "kaynak": "TechCrunch · 19 Kasım",
+    "maddeler": [
+     "Dosyaları düzenliyor",
+     "Formları dolduruyor",
+     "Çok adımlı işleri yapıyor"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "TechCrunch'a göre Google, Gemini'ye Mac için bir yapay zekâ ajanı ekledi."
+    }
+   ],
+   "aciklama": "0-4 sn: Haber kartı ekrana gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu ajan dosyaları düzenleyebiliyor, formları doldurabiliyor ve çok adımlı işleri üstlenebiliyor."
+    }
+   ],
+   "aciklama": "0-2 sn: Kullanıcı ekranı gösterir. 2-4 sn: robot onaylar gibi başını sallar."
+  },
+  {
+   "mekan": "gelecek",
+   "buyukYazi": {
+    "ust": "YAKINDA?",
+    "alt": "işleri yapay zekâya devretmek"
+   },
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Belki sıkıcı bilgisayar işlerini yapay zekâya devretmek yakında olağan hâle gelebilir."
+    }
+   ],
+   "aciklama": "0-2 sn: Araştırmacı düşünceli bakar. 2-4 sn: dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen; sence işe yarar mı?"
+    }
+   ],
+   "aciklama": "0-2 sn: Kullanıcı kameraya el sallar. 2-4 sn: robot zafer pozu verir."
+  }
+ ]
+}

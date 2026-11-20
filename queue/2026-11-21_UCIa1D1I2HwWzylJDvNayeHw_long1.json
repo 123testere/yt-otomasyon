@@ -1,0 +1,638 @@
+{
+ "id": "2026-11-21_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "hiz": 1.1,
+ "publishAt": "2026-11-21T15:00:00.000Z",
+ "bolum": {
+  "no": 16,
+  "ad": "Top 10"
+ },
+ "tanitim": [
+  "En korkutan 10 oyun",
+  "Saklan ya da kaç",
+  "Birinci sıra efsane"
+ ],
+ "title": "Seni Korkutacak Oyun mu Arıyorsun? 10 Korku Oyunu 🎮",
+ "titleAlt": "Işıkları Kapatıp Oynayacağın En Korkutan 10 Oyun",
+ "topic": "En iyi on korku oyunu: Layers of Fear'dan Amnesia'ya",
+ "description": "Seni gerçekten korkutacak oyun arıyorsan işte on öneri: Layers of Fear, Little Nightmares, Five Nights at Freddy's, Lethal Company, Phasmophobia, Dead Space, Resident Evil 7, Outlast, Alien: Isolation ve Amnesia: The Dark Descent. Senin listende birinci hangisi?\n\n#korkuoyunları #oyunönerisi #top10 #videooyunları",
+ "tags": [
+  "en iyi korku oyunları",
+  "korku oyunları",
+  "en iyi 10 korku oyunu",
+  "amnesia the dark descent",
+  "alien isolation",
+  "outlast",
+  "resident evil 7",
+  "phasmophobia",
+  "dead space",
+  "oyun önerisi"
+ ],
+ "thumbnailText": "KORKUTAN 10",
+ "thumbnailTextAlt": "SAKLAN YA DA KAÇ",
+ "thumbnailTextAlt2": "SİLAH YOK",
+ "kapak": {
+  "sahne": 20,
+  "sn": 2
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "Looking for a Game That Scares You? 10 Horror Games 🎮",
+   "description": "If you want a game that truly scares you, here are ten picks: Layers of Fear, Little Nightmares, Five Nights at Freddy's, Lethal Company, Phasmophobia, Dead Space, Resident Evil 7, Outlast, Alien: Isolation and Amnesia: The Dark Descent. Which is your number one?\n\n#horrorgames #gamerecommendations #top10 #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN 1 NUMARAN?",
+  "sonraki": "Yorumlarda en çok yazılan kazanır",
+  "soru": "En çok hangi korku oyunu seni korkuttu?"
+ },
+ "scenes": [
+  {
+   "kisim": "Giriş",
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "TOP 10",
+    "alt": "En korkutan oyunlar"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.5,
+      "sure": 1.4,
+      "kos": true
+     },
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Işıkları kapatıp seni gerçekten korkutacak bir oyun mu arıyorsun?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu listede saklandığın, kaçtığın ve çığlık attığın on korku oyunu var."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu seriyi kaçırmamak için şimdi abone ol. Sondan başlıyoruz!"
+    }
+   ],
+   "aciklama": "0-1,4 sn: Oyuncu soldan koşarak fuara girer. 1,4-8 sn: dev yazı TOP 10 ekranda kalır, oyuncu şaşkın bakar."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 10,
+    "ad": "Layers of Fear",
+    "tur": "Ressamın kâbus evi",
+    "maddeler": [
+     "2016 çıkışlı",
+     "Bloober Team yaptı",
+     "Bir ressamın malikânesi"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Onuncu sırada Layers of Fear. Polonyalı Bloober Team bu oyunu 2016'da çıkardı. Bir ressamın malikânesinde ilerlerken mekân sürekli değişiyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir.",
+   "kisim": "10-7"
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Baktığın yer bir anda başka bir şeye dönüşebiliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hikâye bir ressamın takıntısını anlatıyor. Korku, ani sıçramalardan çok tedirgin edici atmosferden geliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yavaş yavaş geren oyunları seviyorsan ilk durak burası."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden en rahat köşede bile tetikte kalıyorsun."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 9,
+    "ad": "Little Nightmares",
+    "tur": "Küçük kızın kaçış hikâyesi",
+    "maddeler": [
+     "2017 çıkışlı",
+     "Tarsier Studios yaptı",
+     "Altı adlı küçük kız"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dokuzuncu sırada Little Nightmares. İsveçli Tarsier Studios, 2017'de çıkardığı bu oyunda sarı yağmurluklu küçük bir kızı yönetmeni istiyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dev boyutlu, tuhaf yaratıkların arasından saklanarak ve atlayarak geçiyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Her şey sana göre fazla büyük ve bu yüzden daha da ürpertici."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyun hikâyesini sözsüz anlatıyor, boşlukları kendi hayal gücünle dolduruyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Korku burada bağırmadan, bakışlarla ve sessizlikle geliyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 8,
+    "ad": "Five Nights at Freddy's",
+    "tur": "Gece vardiyası korkusu",
+    "maddeler": [
+     "2014 çıkışlı",
+     "Scott Cawthon yaptı",
+     "Güvenlik kameraları"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sekizinci sırada Five Nights at Freddy's. Scott Cawthon bu oyunu 2014'te tek başına yaptı."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir pizzacıda gece bekçisisin ve elinde yalnızca güvenlik kameraları var."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hayvan şeklindeki animatronik oyuncaklar gece boyunca sana yaklaşıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Küçük bir fikir, koca bir seriye dönüştü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "İlk gecenin sonunda sabaha çıkmak bile başlı başına bir başarı."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 7,
+    "ad": "Lethal Company",
+    "tur": "Dört kişilik hurda avı",
+    "maddeler": [
+     "2023 çıkışlı",
+     "Zeekerss yaptı",
+     "Arkadaşlarla oynanır"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yedinci sırada Lethal Company. Zeekerss adlı geliştiricinin yaptığı bu oyunda arkadaşlarınla uzak gezegenlerdeki terk edilmiş yerlerden hurda topluyorsun."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Amaç şirketin kotasını doldurmak, ama karanlıkta gezen yaratıklar işi zorlaştırıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Korku, arkadaşlarınla birlikte çığlık atınca kahkahaya da dönüşebiliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tek başına oynamak da, ekipçe oynamak da bambaşka heyecan veriyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 6,
+    "ad": "Phasmophobia",
+    "tur": "Hayalet avcılığı",
+    "maddeler": [
+     "2020 çıkışlı",
+     "Kinetic Games yaptı",
+     "Ortak oyun"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Altıncı sırada Phasmophobia. Kinetic Games bu oyunu 2020'de erken erişimde çıkardı."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir.",
+   "kisim": "6-4"
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Arkadaşlarınla bir eve girip hayaletin türünü bulmaya çalışıyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ekipman kullanıyorsun, ipuçlarını topluyorsun ve hayalet seni fark edince işler kızışıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Mikrofonla konuştuğunda hayaletin tepki vermesi oyunu çok ürpertici yapıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yüksek sesle konuşmak ya da fısıldamak, hayaletin tepkisini bile değiştirebiliyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 5,
+    "ad": "Dead Space",
+    "tur": "Uzay gemisi korkusu",
+    "maddeler": [
+     "2008 çıkışlı",
+     "Visceral Games yaptı",
+     "Mühendis Isaac Clarke"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Beşinci sırada Dead Space. Visceral Games'in 2008'de çıkardığı oyunda mühendis Isaac Clarke terk edilmiş USG Ishimura gemisinde mahsur kalıyor."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Düşmanların uzuvlarını hedef alarak savaşıyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ekranda arayüz yok denecek kadar az, bilgiler karakterin kıyafeti üzerinde gösteriliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Karanlık koridorlar ve garip sesler korkuyu sürekli canlı tutuyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu tasarım seni ekrandan hiç koparmıyor ve gerilimi hep yüksek tutuyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 4,
+    "ad": "Resident Evil 7",
+    "tur": "Birinci kişi ev korkusu",
+    "maddeler": [
+     "2017 çıkışlı",
+     "Capcom yaptı",
+     "Baker ailesinin evi"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dördüncü sırada Resident Evil 7. Capcom, seriyi 2017'de birinci kişi bakışıyla yeniden başlattı."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Louisiana'daki Baker ailesinin çiftliğinde mahsur kalıyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Mermi ve iyileştirme malzemesi az, bu yüzden her kararın önemli."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Seri bu oyunla daha tedirgin edici bir yöne gitti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Her oda yeni bir tehdit ve yeni bir soru demek."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Outlast",
+    "tur": "Silahsız hayatta kalma",
+    "maddeler": [
+     "2013 çıkışlı",
+     "Red Barrels yaptı",
+     "Kamera ve gece görüşü"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Outlast. Red Barrels bu oyunu 2013'te çıkardı: elinde silah yok, sadece bir kamera var."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir.",
+   "kisim": "3-1"
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Gazeteci Miles Upshur, Mount Massive adlı terk edilmiş akıl hastanesinde hayatta kalmaya çalışıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kameranın gece görüşü pil tüketiyor, bu yüzden karanlıkta ilerlemek riskli."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Savaşamazsın, tek çaren saklanmak ya da kaçmak."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyunun sonuna kadar rahat bir nefes almak neredeyse imkânsız."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Alien: Isolation",
+    "tur": "Uzay istasyonu korkusu",
+    "maddeler": [
+     "2014 çıkışlı",
+     "Creative Assembly yaptı",
+     "Öldürülemeyen yaratık"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Alien: Isolation. Creative Assembly bu oyunu 2014'te çıkardı; Amanda Ripley'i yönetiyorsun."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir."
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Seni avlayan yaratığı yenemezsin, sadece atlatabilirsin."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yaratık sürekli devriye geziyor ve her saklanma yeri güvenli olmayabiliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Alien filminin atmosferini çok iyi yakaladığı için sık sık övülüyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Her adımda yaratığın nerede olduğunu düşünmek seni sürekli diken üstünde tutuyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu-2",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Amnesia: The Dark Descent",
+    "tur": "Karanlık şato korkusu",
+    "maddeler": [
+     "2010 çıkışlı",
+     "Frictional Games yaptı",
+     "Savaşmak yok, kaçmak var"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Birinci sırada Amnesia: The Dark Descent. İsveçli Frictional Games bu oyunu 2010'da çıkardı."
+    }
+   ],
+   "aciklama": "0-5 sn: Sıralama kartı belirir, üç kısa özellik sırayla gelir.",
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Karanlık bir şatoda uyanıyorsun ve elinde hiç silah yok."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Karanlıkta çok kalırsan karakter aklını yitirmeye başlıyor, bu yüzden hem canavardan hem karanlıktan kaçıyorsun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Saklanmaya dayanan korku oyunlarının yolunu açan yapımlardan biri olarak anılıyor."
+    }
+   ],
+   "aciklama": "0-3 sn: Karakter anlatılan oyunu izleyip tepki verir. 3-8 sn: anlatım sürerken tepkisi devam eder.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İşte en korkutan on oyun. Senin listende birinci hangisi? Yorumlara yaz!"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen. Sıradaki videoda yine bir oyun listesi seni bekliyor."
+    }
+   ],
+   "aciklama": "0-1 sn: Kalabalık fuarda alkışlar. 1-6 sn: Oyuncu kupayı kaldırıp gülümser."
+  }
+ ]
+}
