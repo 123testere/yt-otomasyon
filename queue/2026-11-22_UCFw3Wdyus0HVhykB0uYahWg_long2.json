@@ -1,0 +1,28 @@
+{
+  "id": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_long2",
+  "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+  "type": "long",
+  "publishAt": "2026-11-22T15:00:00.000Z",
+  "format": "dizi",
+  "dizi": "zincirli",
+  "derleme": [
+    "2026-11-16_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "2026-11-19_UCFw3Wdyus0HVhykB0uYahWg_long1"
+  ],
+  "bolum": { "no": 6, "son": 7 },
+  "title": "Tek Gözlü Gladyatör ve Kapalı Kanal: Zincirli 6-7 Tek Parça",
+  "titleAlt": "Toros Sungur'u Neden Terk Etti? Kaçış Neden Çıkmaza Girdi?",
+  "description": "Toros'un tek gözünün ve Sungur'la ayrılığının hikâyesi, ardından Arın ve Kargan'ın su kanalından kaçışı: çıkış demir parmaklıkla kapalı. Zincirli 6-7. bölümler tek parça. Zincirli, çöp adam animasyonuyla anlatılan bir destandır.\n\n#zincirli #çöpadam #animasyon #dizi",
+  "tags": ["zincirli", "zincirli tek parça", "çöp adam", "animasyon dizi", "gladyatör", "toros", "su kanalı", "bölüm bölüm"],
+  "topic": "Zincirli 6-7. bölümler: Toros'un geçmişi ve su kanalından kaçış",
+  "thumbnailText": "TEK PARÇA",
+  "thumbnailTextAlt": "KAPALI ÇIKIŞ",
+  "thumbnailTextAlt2": "TOROS NEDEN?",
+  "oynatmaListesi": "Zincirli · 1. Sezon",
+  "ceviriler": {
+    "en": {
+      "title": "One-Eyed Gladiator and the Sealed Canal: Chained 6-7 Full Cut",
+      "description": "The story of Toros's lost eye and his split with Sungur, then Arin and Kargan's escape through the water canal, where the exit is blocked by iron bars. Chained episodes 6-7 in one piece. Chained is an epic told in stick-figure animation.\n\n#chained #stickman #animation #series"
+    }
+  }
+}

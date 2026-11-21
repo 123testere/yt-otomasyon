@@ -1,0 +1,49 @@
+{
+  "id": "2026-11-22_UCJUP2lYvMuhcif8FavIXuYA_short1",
+  "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+  "type": "short",
+  "format": "dizi",
+  "dizi": "yz-gundem",
+  "dikey": true,
+  "acilis": false,
+  "hiz": 1.2,
+  "publishAt": "2026-11-22T16:00:00.000Z",
+  "bolum": { "no": 14, "ad": "Çocuklar ve Yapay Zekâ" },
+  "kaynak": "DonanımHaber",
+  "kaynakLink": "https://www.donanimhaber.com/turkiye-de-cocuklarin-yuzde-63-u-yapay-zekayi-kullaniyor--213175",
+  "title": "Çocukların Yüzde Kaçı Yapay Zekâ Kullanıyor? 🤖",
+  "description": "TÜİK verilerine göre 11-17 yaş grubundaki çocukların yüzde 63'ü üretken yapay zekâ kullanıyor; en çok eğitim amacıyla.\nKaynak: DonanımHaber https://www.donanimhaber.com/turkiye-de-cocuklarin-yuzde-63-u-yapay-zekayi-kullaniyor--213175\n\n#yapayzeka #tüik #çocuklarveyapayzeka #yapayzekahaberleri",
+  "tags": ["yapay zeka", "yapay zeka haberleri", "tüik", "çocuklar yapay zeka", "üretken yapay zeka", "teknoloji haberleri"],
+  "topic": "TÜİK verisi: 11-17 yaş çocukların yüzde 63'ü üretken yapay zekâ kullanıyor",
+  "deney": { "id": "kanca-soru", "kol": "A" },
+  "oynatmaListesi": "Yapay Zekâ Gündemi",
+  "ceviriler": {
+    "en": {
+      "title": "What Share of Kids Use Generative AI in Turkey? 🤖",
+      "description": "According to TurkStat data, 63 percent of children aged 11-17 use generative AI, mostly for education.\nSource: DonanımHaber\n\n#ai #turkstat #kidsandai #aiactuality"
+    }
+  },
+  "kapanis": { "baslik": "ABONE OL", "sonraki": "Her gün yapay zekâ gündemi", "soru": "Çocukların yapay zekâ kullanması sence faydalı mı?" },
+  "tanitim": ["Çocuklar ve yapay zekâ", "TÜİK verisi", "Gelecekte ne olabilir?"],
+  "scenes": [
+    { "kisim": "Kanca", "mekan": "yz-lab", "buyukYazi": { "ust": "ÇOCUKLAR?", "alt": "yapay zekâ kullanıyor mu?" },
+      "kadraj": [{ "id": "kullanici", "x": 0.35, "yon": 1, "poz": "dusun", "ifade": "saskin" }, { "id": "robot", "x": 0.68, "yon": -1, "poz": "dur", "ifade": "notr" }],
+      "satirlar": [{ "kim": "anlatici", "metin": "Çocukların yüzde kaçı yapay zekâ kullanıyor?" }],
+      "aciklama": "0-1,5 sn: Kullanıcı merakla düşünür. 1,5-3 sn: robot yanında bekler, dev yazı ekranda kalır." },
+    { "mekan": "yz-lab", "haber": { "etiket": "YAPAY ZEKÂ GÜNDEMİ", "baslik": "TÜİK: 11-17 yaş çocukların yüzde 63'ü yapay zekâ kullanıyor", "kaynak": "DonanımHaber · 20 Kasım", "maddeler": ["11-17 yaş grubu", "Üretken yapay zekâ", "En çok eğitim için"] },
+      "satirlar": [{ "kim": "anlatici", "metin": "DonanımHaber'e göre TÜİK verilerinde 11 ile 17 yaş arasındaki çocukların yüzde 63'ü üretken yapay zekâ kullanıyor." }],
+      "aciklama": "0-5 sn: Haber kartı ekrana gelir, üç madde sırayla belirir." },
+    { "mekan": "ofis", "buyukYazi": { "ust": "YÜZDE 63", "alt": "en çok eğitim için" },
+      "kadraj": [{ "id": "kullanici", "x": 0.35, "yon": 1, "poz": "isaret", "ifade": "gulumsuyor" }, { "id": "robot", "x": 0.68, "yon": -1, "poz": "dur", "ifade": "gulumsuyor" }],
+      "satirlar": [{ "kim": "anlatici", "metin": "En çok eğitim amacıyla kullanılıyor ve oran kız çocuklarında daha yüksek." }],
+      "aciklama": "0-2 sn: Kullanıcı rakamı gösterir. 2-4 sn: robot onaylar gibi başını sallar, dev yazı ekranda kalır." },
+    { "mekan": "gelecek", "buyukYazi": { "ust": "SIRADA NE VAR?", "alt": "okullarda yapay zekâ" },
+      "kadraj": [{ "id": "arastirmaci", "x": 0.5, "yon": 1, "poz": "dusun", "ifade": "dusunceli" }],
+      "satirlar": [{ "kim": "anlatici", "metin": "Bu eğilim sürerse okullarda yapay zekânın rolü belki daha çok tartışılacak." }],
+      "aciklama": "0-2 sn: Araştırmacı düşünceli bakar. 2-4 sn: dev yazı ekranda kalır." },
+    { "mekan": "yz-lab",
+      "kadraj": [{ "id": "kullanici", "x": 0.35, "yon": 1, "poz": "el-salla", "ifade": "gulumsuyor" }, { "id": "robot", "x": 0.68, "yon": -1, "poz": "zafer" }],
+      "satirlar": [{ "kim": "anlatici", "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen; sence çocuklar için faydalı mı, yorumlara yaz!" }],
+      "aciklama": "0-2 sn: Kullanıcı kameraya el sallar. 2-4 sn: robot zafer pozu verir." }
+  ]
+}

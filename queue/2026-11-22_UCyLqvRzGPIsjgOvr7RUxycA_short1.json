@@ -1,0 +1,25 @@
+{
+  "id": "2026-11-22_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-22T05:00:00.000Z",
+  "topic": "Eier",
+  "title": "Duell 20/30: Wer produziert die meisten Eier? 🥚",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Eier-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": ["flaggenduell", "europa", "länder vergleich", "eier", "landwirtschaft", "ranking", "länderduell", "hühnereier"],
+  "duell": {
+    "topicId": "eier",
+    "why": ["Große Legehennen-Betriebe", "Starke Nachfrage im Land"],
+    "script": {
+      "intro": "Welches Land produziert die meisten Eier Europas? 46 Flaggen starten – nur eine kommt durch!",
+      "nodata": "23 Länder haben keine Eierdaten und fliegen sofort raus!",
+      "rounds": "Jetzt wird gesiebt! Spanien verpasst das Finale um knapp 113 Tausend Tonnen!",
+      "final": "Finale! Türkei gegen Deutschland – wer holt die Ei-Krone?",
+      "winner": "Die Türkei gewinnt! Gut 1,3 Millionen Tonnen, rund ein Drittel mehr als Deutschland!",
+      "why": "Warum die Türkei? Große Legehennen-Betriebe und starke Nachfrage im Land.",
+      "table": "Die Türkei führt die Tabelle mit 107 Punkten. Abonniere und like für das nächste Duell!"
+    }
+  },
+  "deney": { "id": "muzik-seviye", "kol": "B" }
+}

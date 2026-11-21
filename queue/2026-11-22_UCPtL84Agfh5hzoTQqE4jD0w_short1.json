@@ -1,0 +1,71 @@
+{
+  "id": "2026-11-22_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-22T16:00:00.000Z",
+  "oylama": {
+    "kaynak": "2026-11-19_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "secilen": "a"
+  },
+  "topic": "Pulun çıkışı: mektubun parasını alıcının ödediği dönemden Penny Black'e ve Osmanlı'nın ilk pulu 1863'e",
+  "title": "Pul Çıkmadan Önce Mektubun Parasını Kim Öderdi? ✉️",
+  "description": "Eşyaların Hikayesi #63\nPul çıkmadan önce mektubun ücretini genellikle alıcı öderdi; 1840'ta İngiltere'de Penny Black ile gönderen ödemeye başladı, Osmanlı'da ilk pul 1863'te çıktı.\n\n#pul #eşyalarınhikayesi #penny #shorts",
+  "tags": [
+    "pul",
+    "pulun tarihi",
+    "ilk pul",
+    "penny black",
+    "osmanlı pulu",
+    "mektup",
+    "postanın tarihi",
+    "eşyaların hikayesi",
+    "lamba altında"
+  ],
+  "baslikKart": [
+    "Pul çıkmadan önce",
+    "parayı kim öderdi?"
+  ],
+  "kapanis": {
+    "soru": "En son ne zaman mektup yazdın?",
+    "alt": "Yorumlara yaz 👇"
+  },
+  "deney": {
+    "id": "baslik-kalip",
+    "kol": "A"
+  },
+  "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+  "ceviriler": {
+    "en": {
+      "title": "Who Paid for a Letter Before Stamps Existed? ✉️",
+      "description": "Story of Things #63\nBefore stamps, the recipient usually paid for a letter; in 1840 the Penny Black in Britain let the sender pay, and the Ottoman Empire issued its first stamp in 1863.\n\n#stamp #storyofthings #history #shorts"
+    }
+  },
+  "scenes": [
+    {
+      "narration": "Pul çıkmadan önce mektubun parasını gönderen değil, alan öderdi.",
+      "ifade": "saskin",
+      "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(300,300,400,260),{close:true,fill:'#FBF6EA',w:6,seed:1,pp:a});\nink([[300,300],[500,440],[700,300]],{w:5,seed:2,pp:a});\nconst b=eo(pr(u,.6,1.2));\nink(ell(500,230,60,60,20),{close:true,fill:'#EFE4CB',w:5,seed:3,pp:b});\ntxt('?',500,255,70,{c:K.bordo,a:b});\netk('parayı kim öder?',500,640,eo(pr(u,1,1.5)),{size:42});"
+    },
+    {
+      "narration": "1840'ta İngiltere'de ilk yapışkanlı pul, Penny Black, satışa çıktı.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=eo(pr(u,0,.6));\nink(kutu(360,230,280,340),{close:true,fill:'#2A2A2E',w:7,seed:10,pp:a});\nink(kutu(385,255,230,290),{close:true,fill:'#3A3A44',w:4,seed:11,pp:a});\nfor(let i=0;i<10;i++)ink(ell(340+(i%2?300:0),250+Math.floor(i/2)*65,9,9,10),{close:true,fill:K.kagit,w:2,seed:12+i,pp:a});\ntxt('1840',500,170,76,{c:K.ak,a:eo(pr(u,.7,1.2))});\netk('Penny Black',500,640,eo(pr(u,1,1.5)),{size:42});"
+    },
+    {
+      "narration": "Üzerinde dönemin kraliçesi Victoria'nın profili vardı ve pul tek penilikti.",
+      "ifade": "gulumsuyor",
+      "cizim": "const a=eo(pr(u,0,.6));\nink(kutu(330,200,340,400),{close:true,fill:'#2A2A2E',w:7,seed:20,pp:a});\nink(ell(500,400,90,120,24,-1.6,1.6),{w:6,c:K.kagit,seed:21,pp:eo(pr(u,.3,1))});\nink(ell(500,330,48,56,20),{close:true,fill:K.kagit,w:4,seed:22,pp:eo(pr(u,.5,1))});\ntxt('1 penny',500,660,58,{c:K.ak,a:eo(pr(u,1,1.5))});"
+    },
+    {
+      "narration": "Osmanlı'da ise ilk pul yaklaşık yirmi üç yıl sonra, 1863'te kullanıma girdi.",
+      "ifade": "gururlu",
+      "cizim": "const a=eo(pr(u,0,.6));\nink(ln([150,400],[850,400],24),{w:5,seed:30,pp:a});\nfor(const [x,y,t,k] of [[260,'1840','İngiltere',0],[740,'1863','Osmanlı',1]]){const b=eo(pr(u,.4+k*.7,1+k*.7));\nctx.save();ctx.globalAlpha=b;ctx.beginPath();ctx.arc(x,400,18,0,7);ctx.fillStyle=k?K.ak:K.s;ctx.fill();ctx.restore();\ntxt(y,x,320,70,{a:b,c:k?K.ak:K.s});etk(t,x,490,b,{size:42});}"
+    },
+    {
+      "narration": "Peki o zamana kadar mektubun parasını kim öderdi?",
+      "ifade": "merakli",
+      "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(340,400,320,200),{close:true,fill:'#FBF6EA',w:6,seed:40,pp:a});\nink([[340,400],[500,500],[660,400]],{w:5,seed:41,pp:a});\ntxt('?',500,300,230,{c:K.ak,a:eo(pr(u,.3,.8))});"
+    }
+  ]
+}

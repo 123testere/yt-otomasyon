@@ -1,0 +1,46 @@
+{
+  "id": "2026-11-22_UCIa1D1I2HwWzylJDvNayeHw_short1",
+  "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+  "type": "short",
+  "format": "dizi",
+  "dizi": "oyun-hikayeleri",
+  "dikey": true,
+  "acilis": false,
+  "hiz": 1.2,
+  "publishAt": "2026-11-22T09:00:00.000Z",
+  "bolum": { "no": 18, "ad": "Top 5" },
+  "title": "Strateji Oyunu mu Arıyorsun? 🎮",
+  "description": "Strateji oyunu arıyorsan şu üç oyun iyi bir başlangıç olabilir: Civilization 6, Warcraft 3 ve Age of Empires 2. Senin ilk strateji oyunun hangisiydi, yorumlara yaz!\n\n#stratejioyunları #oyunönerisi #videooyunları #gaming",
+  "tags": ["strateji oyunları", "en iyi strateji oyunları", "age of empires 2", "warcraft 3", "civilization 6", "oyun önerisi", "gerçek zamanlı strateji", "pc oyunları"],
+  "topic": "Üç strateji oyunu önerisi: Civilization 6, Warcraft 3 ve Age of Empires 2",
+  "deney": { "id": "kanca-soru", "kol": "A" },
+  "oynatmaListesi": "En İyi Oyun Listeleri",
+  "ceviriler": {
+    "en": {
+      "title": "Looking for a Strategy Game? 🎮",
+      "description": "If you want a strategy game, these three are a good start: Civilization 6, Warcraft 3 and Age of Empires 2. What was your first strategy game? Tell us in the comments!\n\n#strategygames #gamerecommendations #videogames"
+    }
+  },
+  "kapanis": { "baslik": "SENİN OYUNUN?", "sonraki": "Devamı için abone ol ve beğen", "soru": "İnternet kafede ilk hangi stratejiyi oynadın?" },
+  "tanitim": ["Strateji oyunları", "3 efsane oyun"],
+  "scenes": [
+    { "kisim": "Kanca", "mekan": "oyun-salonu", "buyukYazi": { "ust": "STRATEJİ?", "alt": "güçlü bir oyun arıyorsun" },
+      "kadraj": [{ "id": "oyuncu", "x": 0.5, "yon": 1, "poz": "dusun", "ifade": "dusunceli" }],
+      "satirlar": [{ "kim": "anlatici", "metin": "Sıra tabanlı ya da gerçek zamanlı, güçlü bir strateji oyunu mu arıyorsun?" }],
+      "aciklama": "0-1,5 sn: Oyuncu salonda düşünceli bakınır. 1,5-4 sn: dev yazı ekranda kalır, oyuncu çenesini ovuşturur." },
+    { "mekan": "siralama", "sira": { "no": 3, "ad": "Civilization 6", "tur": "Sıra tabanlı strateji", "maddeler": ["2016 çıkışlı", "Firaxis yaptı", "Uygarlık kurarsın"] },
+      "satirlar": [{ "kim": "anlatici", "metin": "Üçüncü sırada Civilization 6: 2016'da çıktı, bir uygarlığı çağdan çağa taşıyorsun." }],
+      "aciklama": "0-4 sn: Sıralama kartı 3 üç kısa maddeyle belirir." },
+    { "mekan": "siralama", "sira": { "no": 2, "ad": "Warcraft 3", "tur": "Gerçek zamanlı strateji", "maddeler": ["2002 çıkışlı", "Blizzard yaptı", "Kahraman birimleri"] },
+      "satirlar": [{ "kim": "anlatici", "metin": "İkinci sırada Warcraft 3: 2002'de çıktı, kahramanlarla ordu kuruyorsun." }],
+      "aciklama": "0-4 sn: Sıralama kartı 2 üç kısa maddeyle belirir." },
+    { "mekan": "siralama", "sira": { "no": 1, "ad": "Age of Empires 2", "tur": "Ortaçağ stratejisi", "maddeler": ["1999 çıkışlı", "Ensemble Studios yaptı", "Ortaçağ uygarlıkları"] },
+      "satirlar": [{ "kim": "anlatici", "metin": "Birinci sırada Age of Empires 2: 1999'dan beri internet kafelerin ve LAN gecelerinin efsanesi." }],
+      "efektler": ["beyaz-cakma"],
+      "aciklama": "0-1 sn: Sıralama kartı 1 beyaz çakmayla belirir. 1-4 sn: üç madde sırayla gelir." },
+    { "mekan": "fuar", "kalabalik": 1,
+      "kadraj": [{ "id": "oyuncu", "x": 0.5, "yon": 1, "poz": "zafer", "esya": "kupa", "ifade": "gulumsuyor" }],
+      "satirlar": [{ "kim": "anlatici", "metin": "Serinin devamı için abone ol ve beğen; senin ilk strateji oyunun hangisiydi, yorumlara yaz!" }],
+      "aciklama": "0-1 sn: Kalabalık fuarda alkışlar. 1-4 sn: Oyuncu kupayı kaldırıp gülümser." }
+  ]
+}

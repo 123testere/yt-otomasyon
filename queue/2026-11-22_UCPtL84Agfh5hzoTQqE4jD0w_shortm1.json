@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-22_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-22T10:00:00.000Z",
+  "seri": "markalar",
+  "rozet": "Markaların Hikâyesi #3",
+  "oylama": {
+    "kaynak": "2026-11-18_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+    "secilen": "a"
+  },
+  "topic": "LEGO'nun hikâyesi: 1932'de ahşap oyuncaklardan 1949'da plastik tuğlalara",
+  "title": "LEGO Önce Ahşap Oyuncak Yapıyordu: 1932 Hikâyesi 🧱",
+  "description": "Markaların Hikâyesi #3\nLEGO'nun hikâyesi: 1932'de Danimarka'nın Billund kasabasında marangoz Ole Kirk Christiansen'in ahşap oyuncaklarla başlayan işi ve 1949'daki plastik tuğlalar.\n\n#lego #markalarınhikayesi #markahikayesi #shorts",
+  "tags": [
+    "lego",
+    "lego hikayesi",
+    "lego nasıl kuruldu",
+    "ole kirk christiansen",
+    "billund",
+    "markaların hikayesi",
+    "marka hikayesi",
+    "lamba altında"
+  ],
+  "baslikKart": [
+    "LEGO'nun ilk",
+    "oyuncakları ahşaptı"
+  ],
+  "kapanis": {
+    "soru": "İlk LEGO setin neydi, hatırlıyor musun?",
+    "alt": "Yorumlara yaz 👇"
+  },
+  "deney": {
+    "id": "baslik-kalip",
+    "kol": "B"
+  },
+  "oynatmaListesi": "Markaların Hikâyesi",
+  "ceviriler": {
+    "en": {
+      "title": "LEGO Started With Wooden Toys in 1932 🧱",
+      "description": "Brand Stories #3\nThe story of LEGO: carpenter Ole Kirk Christiansen's wooden toys in Billund, Denmark, in 1932 and the plastic bricks of 1949.\n\n#lego #brandstory #history #shorts"
+    }
+  },
+  "scenes": [
+    {
+      "narration": "LEGO'nun ilk oyuncakları bugünkü gibi plastik değil, ahşaptı.",
+      "ifade": "saskin",
+      "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(300,330,160,110),{close:true,fill:'#D9B27A',w:6,seed:1,pp:a});\nink(kutu(520,260,120,180),{close:true,fill:'#C99A5C',w:6,seed:2,pp:eo(pr(u,.2,.7))});\nfor(let i=0;i<4;i++)ink(ln([310,350+i*24],[450,350+i*24],6),{w:2,c:K.s,seed:3+i,pp:a});\nink(ell(580,230,28,28,18),{close:true,fill:'#D9B27A',w:5,seed:9,pp:eo(pr(u,.5,.9))});\nconst x=eo(pr(u,.9,1.4));ink(ln([260,520],[760,520],6),{w:5,c:K.s,seed:11,pp:x});\netk('ahşap',500,620,eo(pr(u,1,1.5)),{size:52});"
+    },
+    {
+      "narration": "1932'de Danimarka'daki Billund kasabasında marangoz Ole Kirk Christiansen bunları yapmaya başladı.",
+      "ifade": "anlatiyor",
+      "cizim": "const a=eo(pr(u,0,.6));\nink(kutu(280,300,440,240),{close:true,fill:'#E6DBC4',w:6,seed:20,pp:a});\nink([[260,300],[500,180],[740,300]],{close:true,fill:'#B5432F',w:6,seed:21,pp:a});\nink(kutu(450,400,100,140),{close:true,fill:'#C99A5C',w:5,seed:22,pp:eo(pr(u,.4,.9))});\nink(kutu(320,350,70,60),{close:true,fill:'#CFE0EA',w:4,seed:23,pp:eo(pr(u,.5,1))});\ntxt('1932',500,120,76,{c:K.ak,a:eo(pr(u,.8,1.3))});\netk('Billund · Danimarka',500,640,eo(pr(u,1,1.5)),{size:42});"
+    },
+    {
+      "narration": "Adı Danca leg godt, yani iyi oyna sözünden geliyor.",
+      "ifade": "gulumsuyor",
+      "cizim": "txt('leg godt',500,280,100,{c:K.m,a:eo(pr(u,0,.6))});\nink(ln([260,320],[740,320],14),{w:5,c:K.ak,seed:30,pp:eo(pr(u,.5,1))});\ntxt('= iyi oyna',500,480,84,{c:K.ak,a:eo(pr(u,1,1.6))});\netk('Danca',500,590,eo(pr(u,1.3,1.8)),{size:42});"
+    },
+    {
+      "narration": "Plastik tuğlalara ise ancak 1949'da, yani on yedi yıl sonra geçti.",
+      "ifade": "gururlu",
+      "cizim": "for(let k=0;k<4;k++){const x=250+k*120,y=380-(k%2)*10,a=eo(pr(u,k*.2,.4+k*.2));\nink(kutu(x,y,110,80),{close:true,fill:['#B5432F','#2F5D8A','#E8B64A','#5A7A3A'][k],w:5,seed:40+k,pp:a});\nink(ell(x+30,y-8,14,8,12),{close:true,fill:['#B5432F','#2F5D8A','#E8B64A','#5A7A3A'][k],w:4,seed:50+k,pp:a});\nink(ell(x+80,y-8,14,8,12),{close:true,fill:['#B5432F','#2F5D8A','#E8B64A','#5A7A3A'][k],w:4,seed:60+k,pp:a});}\ntxt('1949',500,200,90,{c:K.ak,a:eo(pr(u,.9,1.4))});\netk('plastik tuğla',500,600,eo(pr(u,1.2,1.7)),{size:44});"
+    },
+    {
+      "narration": "Peki LEGO'nun ilk oyuncakları neden ahşaptı?",
+      "ifade": "merakli",
+      "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(380,330,240,110),{close:true,fill:'#D9B27A',w:6,seed:70,pp:a});\nfor(let i=0;i<3;i++)ink(ln([395,355+i*28],[605,355+i*28],6),{w:2,c:K.s,seed:71+i,pp:a});\ntxt('?',500,250,180,{c:K.ak,a:eo(pr(u,.3,.8))});"
+    }
+  ]
+}
