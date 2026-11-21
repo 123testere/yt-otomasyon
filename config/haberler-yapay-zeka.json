@@ -1,8 +1,16 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-21T02:22:33.928Z",
+  "guncellendi": "2026-11-21T11:13:25.971Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Yapay zekâ rüzgârı diniyor mu? Hisseler çakılıyor",
+      "link": "https://www.donanimhaber.com/yapay-zek-husrani--213216",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-21T10:30:00.000Z",
+      "ozet": "Yıllardır adeta çılgınlar gibi yükselen yapay zekâ ile ilgili şirket hisseleri bu hafta tepetaklak oldu. Anthropic halka arzı da sektöre beklenen ilgiyi getirmedi.",
+      "kullanildi": false
+    },
     {
       "baslik": "Cops Are Pushing Extremely Corny ‘Grand Theft Auto 6’ Slop",
       "link": "https://www.wired.com/story/cops-are-being-extremely-corny-about-gta-vi/",
@@ -228,14 +236,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Yapay zekâ büyüdükçe çevreye zararı da büyüyor: Emisyonlarda yüzde 70 artış bekleniyor",
-      "link": "https://www.donanimhaber.com/veri-merkezlerinin-karbon-emisyonlari-dort-yilda-yuzde-70-artacak--213157",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T04:57:47.000Z",
-      "ozet": "Yapay zekâ yarışı enerji sektörünü de dönüştürüyor. ABD ve Çin'in veri merkezlerini fosil yakıtlarla beslemeye yönelmesi, karbon emisyonlarında büyük bir artışa neden olabilir.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Apple may be developing its own AI agent that runs your Mac",
       "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
       "kaynak": "TechCrunch",
@@ -308,22 +308,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia rekor kırmaya devam ediyor: 115,8 milyar dolar gelir!",
-      "link": "https://www.donanimhaber.com/nvidia-rekor-kirmaya-devam-ediyor-115-8-milyar-dolar-gelir--213154",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T20:59:00.000Z",
-      "ozet": "Nvidia, 2027 mali yılının üçüncü çeyreğinde gelirini yıllık yüzde 103 artırarak 115,8 milyar dolara çıkardı. Şirket, 2028 mali yılı için büyüme tahminini yükseltti",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A101 marketler Samsung Galaxy Z Fold 8 ve Roborock S8 Pro satıyor",
-      "link": "https://www.donanimhaber.com/19-kasim-a101-ekstra-katalogunda-neler-var--213152",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T20:39:00.000Z",
-      "ozet": "19 Kasım A101 Ekstra teknoloji ürünleri arasında Samsung Galaxy Z Fold 8 katlanabilir telefon modeli ve Roborock S8 Pro robot süpürge modeli yer alıyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "The Jensen Huang Blast Radius Has Hit His Favorite Restaurants",
       "link": "https://www.wired.com/story/jensen-huangs-favorite-restaurants-are-caught-up-in-his-scandals-too/",
       "kaynak": "Wired",
@@ -361,14 +345,6 @@
       "kaynak": "The Verge",
       "tarih": "2026-11-19T20:05:06.000Z",
       "ozet": "Google is updating its homepage to include AI searches. In a post on X, Google's vice president of product, Robby Stein, shows how you can now open a collapsible sidebar to view and continue your AI chats. Based on the GIF shared by Stein, it looks like you can open the sidebar by clicking the […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia sürücülerinde SSD sorunu: Saatte 30 GB veri yazılabiliyor",
-      "link": "https://www.donanimhaber.com/nvidia-suruculerinde-ssd-sorunu-saatte-30-gb-veri-yazilabiliyor--213121",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-19T20:05:00.000Z",
-      "ozet": "Nvidia ekran kartı sürücülerinde tespit edilen yeni bir hata, bilgisayar boşta olsa bile SSD'ye saatte 30 GB'a kadar veri yazılmasına neden olabiliyor. İşte detaylar...",
       "kullanildi": false
     },
     {
@@ -481,6 +457,30 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-19T14:49:38.000Z",
       "ozet": "Çin’in Shenzhen kentinde 151 insansı robot aynı koreografiye baştan sona ayak uydurup Guinness dünya rekorunu kırdı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Superhuman pushes its Go assistant everywhere",
+      "link": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-19T14:00:00.000Z",
+      "ozet": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Sam Altman'dan Nvidia'dan Ayrılan Jensen Huang Hakkında Dikkat Çeken Açıklama: \"Onsuz Düşünemiyorum\"",
+      "link": "https://www.webtekno.com/sam-altman-jensen-huang-nvidia-ayrilik-h229213.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-19T12:08:07.000Z",
+      "ozet": "Jensen Huang, casusluk ve sadakatsizlik iddiaları konuşulurken Nvidia’dan ayrıldı. Sam Altman ise Huang’ın yanında durdu. Yapay zekâ devrimini Huang olmadan hayal etmenin zor olduğunu söyledi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
+      "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-19T12:00:00.000Z",
+      "ozet": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger toward data centers could impact its growth.",
       "kullanildi": false
     }
   ]

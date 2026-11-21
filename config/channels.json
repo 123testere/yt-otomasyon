@@ -133,7 +133,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": "Bu kanal yalnız klip kampanyası kesitleri yayınlar (engine/src/klip-twitch.js otomatik yazar). Rutin bu kanala senaryo YAZMAZ.",
-      "videoSayisi": 5,
+      "videoSayisi": 6,
       "dersler": []
     },
     "oynatmaListeleri": [],
@@ -832,15 +832,6 @@
         "yayin": "2026-11-17T15:00:00.000Z"
       },
       {
-        "kaynak": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Sabun Suyun Çıkaramadığı Yağı Nasıl Söküyor? 🧼",
-        "a": "Bisiklet",
-        "b": "Fener",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-17T07:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-17_UCPtL84Agfh5hzoTQqE4jD0w_short2",
         "baslik": "Silgi Yazıyı Nasıl Siliyor? ✏️",
         "a": "Saat",
@@ -902,6 +893,15 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-20T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Tuğlanın İçinde Neden Delikler Var? 🧱",
+        "a": "Çivi",
+        "b": "Cetvel",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-21T07:00:00.000Z"
       }
     ]
   },
