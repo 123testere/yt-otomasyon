@@ -343,6 +343,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Tek Gözlü Gladyatör ve Kapalı Kanal: Zincirli 6-7 Tek Parça",
       "Özgürlüğü Bırakıp Neden Geri Döndü? ⛓️",
       "Yarın tek çıkış kapalı çıkarsa ne yaparsın? ⛓️",
       "Kaçış Yolu Demir Parmaklıkla Bitti: Arın Neden Döndü? | Zincirli 7",
@@ -466,6 +467,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Strateji Oyunu mu Arıyorsun? 🎮",
       "Counter-Strike Bir Öğrencinin Moduydu | Efsane Oyunların Hikâyesi",
       "Seni Korkutacak Oyun mu Arıyorsun? 10 Korku Oyunu 🎮",
       "Seni Gerçekten Korkutacak Oyun mu Arıyorsun? 🎮",
@@ -607,6 +609,7 @@
       "baslangic": "2026-11-07T10:19:21.363Z"
     },
     "recentTitles": [
+      "Çocukların Yüzde Kaçı Yapay Zekâ Kullanıyor? 🤖",
       "Gemini Artık Mac'indeki Sıkıcı İşleri Yapabilecek ⚡",
       "Yapay Zekâya Sorduklarının İzi Kalmasın İster misin? ⚡",
       "Hackerlar Yapay Zekâyla 3 Saatte İçeri Girdi: FBI Uyardı ⚡",
@@ -764,6 +767,9 @@
       "baslangic": "2026-11-19T22:11:58.161Z"
     },
     "recentTitles": [
+      "Pul Çıkmadan Önce Mektubun Parasını Kim Öderdi? ✉️",
+      "LEGO Önce Ahşap Oyuncak Yapıyordu: 1932 Hikâyesi 🧱",
+      "Coca-Cola Bir Zamanlar Neden Eczanede Satılıyordu? 🥤",
       "Nintendo'nun İlk Ürünü Oyun Konsolu Değildi: 1889 Kartları 🎴",
       "Saatin 60 Dakikası Babil'den Miras Kaldı ⏱️",
       "Tuğlanın İçinde Neden Delikler Var? 🧱",
@@ -1090,6 +1096,7 @@
       "baslangic": "2026-11-05T07:12:56.886Z"
     },
     "recentTitles": [
+      "Duell 20/30: Wer produziert die meisten Eier? 🥚",
       "Duell 19/30: Wer produziert das meiste Hähnchenfleisch? 🍗",
       "Duell 18/30: Wer erntet die meisten Karotten? 🥕",
       "Duell 17/30: Wer erntet die meisten Äpfel? 🍎",
@@ -1115,19 +1122,19 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 19,
+      "lastMatch": 20,
       "table": [
         {
           "name": "Türkei",
-          "points": 107
-        },
-        {
-          "name": "Ukraine",
-          "points": 73
+          "points": 117
         },
         {
           "name": "Spanien",
-          "points": 71
+          "points": 76
+        },
+        {
+          "name": "Ukraine",
+          "points": 76
         },
         {
           "name": "Italien",
@@ -1143,19 +1150,19 @@
         },
         {
           "name": "Deutschland",
-          "points": 40
+          "points": 47
+        },
+        {
+          "name": "Portugal",
+          "points": 28
         },
         {
           "name": "Griechenland",
           "points": 26
         },
         {
-          "name": "Portugal",
-          "points": 26
-        },
-        {
           "name": "Vereinigtes Königreich",
-          "points": 20
+          "points": 24
         }
       ]
     }

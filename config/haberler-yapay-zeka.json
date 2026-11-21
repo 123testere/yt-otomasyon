@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-20T21:11:32.588Z",
+  "guncellendi": "2026-11-21T02:22:33.928Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Cops Are Pushing Extremely Corny ‘Grand Theft Auto 6’ Slop",
+      "link": "https://www.wired.com/story/cops-are-being-extremely-corny-about-gta-vi/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-20T23:24:02.000Z",
+      "ozet": "The blockbuster game makes no secret of its contempt for law enforcement. Real police departments using it to recruit new members and scold the public apparently didn’t get the memo.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google rolls out new search homepage with AI chat history and no search button",
+      "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-20T21:58:29.000Z",
+      "ozet": "Google search is making it even easier to access AI tools on the search page.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+      "link": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-20T21:47:10.000Z",
+      "ozet": "Meta is “re-evaluating” 2030 sustainability goals. Will others follow?",
+      "kullanildi": false
+    },
     {
       "baslik": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
       "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
@@ -36,7 +60,7 @@
       "kullanildi": false
     },
     {
-      "baslik": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+      "baslik": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
       "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-20T19:32:08.000Z",
@@ -73,7 +97,7 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-20T17:23:00.000Z",
       "ozet": "TÜİK verilerine göre 11-17 yaş grubundaki çocukların yüzde 63'ü üretken yapay zeka kullanıyor. Yapay zeka en çok eğitim amacıyla tercih edilirken kullanım oranı kız çocuklarında daha yüksek.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
@@ -457,30 +481,6 @@
       "kaynak": "Webtekno",
       "tarih": "2026-11-19T14:49:38.000Z",
       "ozet": "Çin’in Shenzhen kentinde 151 insansı robot aynı koreografiye baştan sona ayak uydurup Guinness dünya rekorunu kırdı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Superhuman pushes its Go assistant everywhere",
-      "link": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T14:00:00.000Z",
-      "ozet": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Sam Altman'dan Nvidia'dan Ayrılan Jensen Huang Hakkında Dikkat Çeken Açıklama: \"Onsuz Düşünemiyorum\"",
-      "link": "https://www.webtekno.com/sam-altman-jensen-huang-nvidia-ayrilik-h229213.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-19T12:08:07.000Z",
-      "ozet": "Jensen Huang, casusluk ve sadakatsizlik iddiaları konuşulurken Nvidia’dan ayrıldı. Sam Altman ise Huang’ın yanında durdu. Yapay zekâ devrimini Huang olmadan hayal etmenin zor olduğunu söyledi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
-      "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-19T12:00:00.000Z",
-      "ozet": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger toward data centers could impact its growth.",
       "kullanildi": false
     }
   ]
