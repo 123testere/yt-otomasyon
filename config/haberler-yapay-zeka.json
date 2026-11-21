@@ -1,8 +1,72 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-21T11:13:25.971Z",
+  "guncellendi": "2026-11-21T18:02:05.496Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "OpenAI, ilk akıllı telefonunun üretimi için Apple'ın tedarikçisiyle anlaştı",
+      "link": "https://www.donanimhaber.com/openai-akilli-telefon-uretimi-icin-apple-tedarikcisiyle-anlasti--213198",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-21T18:00:00.000Z",
+      "ozet": "OpenAI'ın kendi işlemcisine sahip ilk akıllı telefonu için üretim hazırlıkları hızlanıyor. Çin'den gelen raporlara göre Apple'ın iPhone modellerini de üreten Foxconn, cihazın montajını üstlenecek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Here are the top AI agents that can live in your text messages",
+      "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-21T17:00:00.000Z",
+      "ozet": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-21T16:00:00.000Z",
+      "ozet": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Can Anthropic afford to put safety first?",
+      "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-21T15:00:00.000Z",
+      "ozet": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia, SSD yazma sorununu düzelten güncellemeyi yayınladı",
+      "link": "https://www.donanimhaber.com/nvidia-geforce-hotfix-driver-621-35-cikti-ssd-sorunu-cozuldu--213219",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-21T14:30:00.000Z",
+      "ozet": "NVIDIA, SSD'ye aşırı yazma sorunu için yeni hotfix sürümü yayınladı. Sürüm notlarına göre, GeForce Hotfix Driver 621.35, nvlog.nvlgstg dosyasına çok fazla yazma işlemine neden olan hatayı düzeltiyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+      "link": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-21T14:00:00.000Z",
+      "ozet": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative called word. They're all part of Chess's new Classic Games platform, which is launching […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Robot süpürgede emiş gücü nasıl değerlendirilir? PA değerinin ötesinde bilmeniz gerekenler",
+      "link": "https://www.donanimhaber.com/robot-supurgede-emis-gucu-kac-pa-olmali-en-iyisi-hangisi--213150",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-21T13:30:00.000Z",
+      "ozet": "Robot süpürgelerde PA değeri temizlik performansını etkileyen en önemli özelliklerden biridir. Peki, ideal emiş gücü kaç olmalıdır, en yüksek emiş gücüne sahip robot süpürge hangisidir?",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The Outages Are Just Getting Started",
+      "link": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-21T13:00:00.000Z",
+      "ozet": "AI is forcing companies to patch their systems faster as attackers race to exploit newly discovered vulnerabilities. Welcome to internet outage hell.",
+      "kullanildi": false
+    },
     {
       "baslik": "Yapay zekâ rüzgârı diniyor mu? Hisseler çakılıyor",
       "link": "https://www.donanimhaber.com/yapay-zek-husrani--213216",
@@ -356,132 +420,12 @@
       "kullanildi": false
     },
     {
-      "baslik": "Gemini on Mac can now use your computer",
-      "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T18:21:13.000Z",
-      "ozet": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says. Google suggests the feature might be useful for things like speeding up workflows, filling in forms, making presentations, and listing items for sale. Users will […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Google gives Gemini the ability to use your Mac for you",
       "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-19T18:09:11.000Z",
       "ozet": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
       "kullanildi": true
-    },
-    {
-      "baslik": "Introducing Tool Retrieval in the Gemini API",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "kaynak": "Google",
-      "tarih": "2026-11-19T18:00:00.000Z",
-      "ozet": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
-      "link": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T17:38:40.000Z",
-      "ozet": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
-      "link": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T17:00:00.000Z",
-      "ozet": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
-      "link": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-19T17:00:00.000Z",
-      "ozet": "The company’s alternate-universe internet serves as a massive sandbox that allows the Chrome team to properly train AI browsing agents—without the risk of them going rogue.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Walter Isaacson on curiosity and creativity in the AI age.",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
-      "kaynak": "Google",
-      "tarih": "2026-11-19T17:00:00.000Z",
-      "ozet": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-      "link": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T16:59:23.000Z",
-      "ozet": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic starts trading on Wall Street",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T16:52:01.000Z",
-      "ozet": "Anthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol \"ANT\" at $111.50 per share, up from its initial $83 per share price that put company's value at around $1.5 trillion. The listing comes nearly a month after Anthropic revealed its plans to go public. In its lengthy S-1 filing, […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development",
-      "link": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T16:19:41.000Z",
-      "ozet": "In his Nasdaq opening bell speech, Dario Amodei reiterated Anthropic's commitment to pacing AI development, regardless of business or political pressure.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic’s IPO puts AI’s circular financing boom to the test",
-      "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T14:54:39.000Z",
-      "ozet": "Anthropic faces enormous compute commitments as it goes public, but its biggest infrastructure partners, including Amazon and Google, could continue profiting from AI even if Anthropic loses its lead.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google, Claude Opus 5.5 ve GPT-6.2 Sol’a Rakip Olan Yeni Yapay Zekâ Modeli Gemini 4 Neon’u Duyurdu",
-      "link": "https://www.webtekno.com/google-gemini-4-neon-duyurdu-h229207.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-19T14:54:12.000Z",
-      "ozet": "Google, düşük maliyetle yüksek hız ve zekâ sunan, Claude Opus 5.5 ve GPT-6.2 Sol'a rakip yeni yapay zekâ modeli Gemini 4 Neon'u tanıttı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Çin'de 151 İnsansı Robot Aynı Anda Dans Ederek Guinness Dünya Rekoru Kırdı [Video]",
-      "link": "https://www.webtekno.com/151-insansi-robot-senkronize-dans-dunya-rekoru-h229231.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-19T14:49:38.000Z",
-      "ozet": "Çin’in Shenzhen kentinde 151 insansı robot aynı koreografiye baştan sona ayak uydurup Guinness dünya rekorunu kırdı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Superhuman pushes its Go assistant everywhere",
-      "link": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T14:00:00.000Z",
-      "ozet": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Sam Altman'dan Nvidia'dan Ayrılan Jensen Huang Hakkında Dikkat Çeken Açıklama: \"Onsuz Düşünemiyorum\"",
-      "link": "https://www.webtekno.com/sam-altman-jensen-huang-nvidia-ayrilik-h229213.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-19T12:08:07.000Z",
-      "ozet": "Jensen Huang, casusluk ve sadakatsizlik iddiaları konuşulurken Nvidia’dan ayrıldı. Sam Altman ise Huang’ın yanında durdu. Yapay zekâ devrimini Huang olmadan hayal etmenin zor olduğunu söyledi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
-      "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-19T12:00:00.000Z",
-      "ozet": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger toward data centers could impact its growth.",
-      "kullanildi": false
     }
   ]
 }
