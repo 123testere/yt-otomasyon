@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-21T18:02:05.496Z",
+  "guncellendi": "2026-11-21T23:24:09.487Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-21T21:37:10.000Z",
+      "ozet": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "A tale of two Nvidias",
+      "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-21T21:07:42.000Z",
+      "ozet": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The UN fails to agree on rules regulating ‘killer robots’",
+      "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-21T20:03:37.000Z",
+      "ozet": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the […]",
+      "kullanildi": false
+    },
     {
       "baslik": "OpenAI, ilk akıllı telefonunun üretimi için Apple'ın tedarikçisiyle anlaştı",
       "link": "https://www.donanimhaber.com/openai-akilli-telefon-uretimi-icin-apple-tedarikcisiyle-anlasti--213198",
@@ -236,27 +260,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Google, AI sohbetlerini doğrudan arama sayfasına taşıyor",
-      "link": "https://www.donanimhaber.com/google-ai-sohbetlerini-dogrudan-arama-sayfasina-tasiyor--213168",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T12:21:00.000Z",
-      "ozet": "Google, masaüstü arama sayfasına eklediği yeni kenar çubuğuyla AI Mode sohbet geçmişini erişilebilir hale getiriyor. Kullanıcılar, önceki aramalarına kaldıkları yerden devam edebilecek.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Muse Is Unleashing a World of Pettiness on Instagram",
       "link": "https://www.wired.com/story/muse-is-unleashing-a-world-of-pettiness-on-instagram/",
       "kaynak": "Wired",
       "tarih": "2026-11-20T12:00:00.000Z",
       "ozet": "Meta’s AI assistant can track and unfollow Instagram users who don’t follow you back—and some people are taking full advantage.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Blue Origin, Google'ın yapay zeka veri merkezlerini uzaya taşıyacak",
-      "link": "https://www.donanimhaber.com/blue-origin-google-in-yapay-zeka-uydularini-uzaya-tasiyacak--213163",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T12:00:00.000Z",
-      "ozet": "Blue Origin, Google'ın yapay zeka sunucularını taşıyan uyduları 2029'da New Glenn roketiyle uzaya gönderecek. Görev, uzayda veri merkezi kurma hedefinde önemli bir aşama olacak.",
       "kullanildi": false
     },
     {
@@ -330,102 +338,6 @@
       "tarih": "2026-11-20T00:00:00.000Z",
       "ozet": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
       "kullanildi": false
-    },
-    {
-      "baslik": "Apple is hiring engineers to build its own AI agent",
-      "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T22:31:41.000Z",
-      "ozet": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the creation of an agentic AI […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A brief history of Nvidia’s recent stock fluctuations",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T21:59:35.000Z",
-      "ozet": "\"We've got this,\" Colette Kress, interim CEO of Nvidia, said Tuesday night as she closed out the embattled chip company's third quarter earnings call. By Thursday, the company's stock price was hovering at around $150 per share, a nearly 40 percent drop from its all-time high on October 6th, and wiping out a brief post-earnings […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta’s new Muse Charm device may cost $300",
-      "link": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T21:58:06.000Z",
-      "ozet": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "What’s With All These Outages?",
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-whats-with-all-these-outages/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-19T21:57:01.000Z",
-      "ozet": "This week on “Uncanny Valley,” we discuss the outages that have swept digital life over the past week, where new money from Anthropic’s IPO is going, and the AI chip world post-Jensen Huang.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "These tech outages are giving Y2K, AI agent style",
-      "link": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T21:42:31.000Z",
-      "ozet": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The Jensen Huang Blast Radius Has Hit His Favorite Restaurants",
-      "link": "https://www.wired.com/story/jensen-huangs-favorite-restaurants-are-caught-up-in-his-scandals-too/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-19T20:34:17.000Z",
-      "ozet": "In Taiwan, some food vendors are distancing themselves from Nvidia’s former CEO. Others stand by him. “It’s not as if he killed someone or set something on fire,” says one shop owner.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta’s Muse Charm might cost $300",
-      "link": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T20:22:17.000Z",
-      "ozet": "Meta is planning to price the Muse Charm, a little gadget with a screen that lets you chat with your Muse AI agent, at $300, according to The Information. CEO Mark Zuckerberg revealed the gadget earlier this year and said the company expected to ship the Charm \"in time for the holidays in December,\" but […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
-      "link": "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-19T20:19:28.000Z",
-      "ozet": "Lawsuit: Over 99% of school system’s AI gun alerts were false positives.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The unfolding Jensen Huang scandal: a timeline",
-      "link": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T20:18:49.000Z",
-      "ozet": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google is putting AI chats right on the homepage",
-      "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-19T20:05:06.000Z",
-      "ozet": "Google is updating its homepage to include AI searches. In a post on X, Google's vice president of product, Robby Stein, shows how you can now open a collapsible sidebar to view and continue your AI chats. Based on the GIF shared by Stein, it looks like you can open the sidebar by clicking the […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic’s IPO could deliver $156B to charity",
-      "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T19:10:45.000Z",
-      "ozet": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google gives Gemini the ability to use your Mac for you",
-      "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-19T18:09:11.000Z",
-      "ozet": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
-      "kullanildi": true
     }
   ]
 }

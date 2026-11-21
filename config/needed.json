@@ -1,1 +1,204 @@
-[]
+[
+  {
+    "id": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_short2",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "short",
+    "publishAt": "2026-11-22T18:00:00.000Z",
+    "targetWords": 60,
+    "dil": "tr",
+    "hizli": true,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "clipOf": "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "fragman": true,
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 8
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
+  },
+  {
+    "id": "2026-11-23_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "type": "short",
+    "publishAt": "2026-11-23T05:00:00.000Z",
+    "targetWords": 65,
+    "dil": "de",
+    "hizli": true,
+    "format": "duell",
+    "season": 1,
+    "match": 21,
+    "total": 30,
+    "final": false,
+    "eveOfFinal": false,
+    "deney": {
+      "id": "yayin-saati",
+      "kol": "A"
+    }
+  },
+  {
+    "id": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_short1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "short",
+    "publishAt": "2026-11-23T09:00:00.000Z",
+    "targetWords": 60,
+    "dil": "tr",
+    "hizli": true,
+    "format": "dizi",
+    "dizi": "oyun-hikayeleri",
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 19
+    },
+    "clipOf": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_long1",
+    "fragman": true,
+    "uzunSaat": "BU AKŞAM 18:00",
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
+  },
+  {
+    "id": "2026-11-23_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-23T10:00:00.000Z",
+    "targetWords": 60,
+    "dil": "tr",
+    "seri": {
+      "id": "markalar",
+      "ad": "Markaların Hikâyesi",
+      "no": 4
+    },
+    "hizli": true,
+    "dongu": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-19_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+      "a": "Düdük",
+      "b": "Kumbara",
+      "oyA": 0,
+      "oyB": 0,
+      "kazanan": null
+    },
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "B",
+      "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre)."
+    }
+  },
+  {
+    "id": "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "long",
+    "publishAt": "2026-11-23T15:00:00.000Z",
+    "targetWords": 425,
+    "dil": "tr",
+    "format": "dizi",
+    "dizi": "zincirli",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 8
+    }
+  },
+  {
+    "id": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_long1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "long",
+    "publishAt": "2026-11-23T15:00:00.000Z",
+    "targetWords": 595,
+    "dil": "tr",
+    "format": "dizi",
+    "dizi": "oyun-hikayeleri",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 20
+    }
+  },
+  {
+    "id": "2026-11-23_UCJUP2lYvMuhcif8FavIXuYA_long1",
+    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+    "type": "long",
+    "publishAt": "2026-11-23T15:00:00.000Z",
+    "targetWords": 425,
+    "dil": "tr",
+    "haberAkisi": "yapay-zeka",
+    "format": "dizi",
+    "dizi": "yz-gundem",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 15
+    }
+  },
+  {
+    "id": "2026-11-23_UCJUP2lYvMuhcif8FavIXuYA_short1",
+    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+    "type": "short",
+    "publishAt": "2026-11-23T16:00:00.000Z",
+    "targetWords": 60,
+    "dil": "tr",
+    "hizli": true,
+    "haberAkisi": "yapay-zeka",
+    "format": "dizi",
+    "dizi": "yz-gundem",
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 16
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
+  },
+  {
+    "id": "2026-11-23_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-23T16:00:00.000Z",
+    "targetWords": 60,
+    "dil": "tr",
+    "hizli": true,
+    "dongu": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+      "a": "Mum",
+      "b": "Çekiç",
+      "oyA": 0,
+      "oyB": 0,
+      "kazanan": null
+    },
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "A",
+      "talimat": "Başlık bir soru olsun ve soru işaretiyle bitsin; rakam kullanma."
+    }
+  }
+]
