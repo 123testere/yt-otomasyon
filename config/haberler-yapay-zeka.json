@@ -1,8 +1,40 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-22T06:57:06.833Z",
+  "guncellendi": "2026-11-22T15:24:24.285Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "The vibe-coding revolution is coming to all the gadgets",
+      "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-22T13:00:00.000Z",
+      "ozet": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Like so many things with AI, it's not […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zeka sıfırdan işlemci tasarladı: 4,6 kat daha verimli!",
+      "link": "https://www.donanimhaber.com/yapay-zeka-sifirdan-islemci-tasarladi-4-6-kat-daha-verimli--213199",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-22T12:00:00.000Z",
+      "ozet": "Architect Labs, tamamen yapay zeka tarafından tasarlanan CPU mimarisini tanıttı. Şirket, tasarımın geleneksel işlemcilere kıyasla watt başına 4,59 kat yüksek performans sunduğunu iddia ediyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Banks Have Had It Up to Here With Your AI Agent",
+      "link": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-22T11:00:00.000Z",
+      "ozet": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nothing'ın ekransız yapay zeka cihazı 8 Aralık'ta tanıtılacak",
+      "link": "https://www.donanimhaber.com/nothing-in-ekransiz-yapay-zeka-cihazi-8-aralik-ta-tanitilacak--213212",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-22T10:00:00.000Z",
+      "ozet": "Nothing, ilk yapay zeka odaklı cihazını 8 Aralık'ta tanıtacağını duyurdu. Ekransız tasarıma sahip olacak ürünün adı ve hangi özellikleri sunacağı ise henüz açıklanmadı.",
+      "kullanildi": false
+    },
     {
       "baslik": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
       "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
@@ -188,123 +220,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Türkiye'de çocukların yüzde 63'ü yapay zekayı kullanıyor",
-      "link": "https://www.donanimhaber.com/turkiye-de-cocuklarin-yuzde-63-u-yapay-zekayi-kullaniyor--213175",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T17:23:00.000Z",
-      "ozet": "TÜİK verilerine göre 11-17 yaş grubundaki çocukların yüzde 63'ü üretken yapay zeka kullanıyor. Yapay zeka en çok eğitim amacıyla tercih edilirken kullanım oranı kız çocuklarında daha yüksek.",
-      "kullanildi": true
-    },
-    {
       "baslik": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
       "kaynak": "The Verge",
       "tarih": "2026-11-20T16:34:13.000Z",
       "ozet": "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple, bilgisayarları kontrol edebilen kendi yapay zeka ajanını geliştiriyor",
-      "link": "https://www.donanimhaber.com/apple-dan-bilgisayarlari-yonetebilen-yapay-zeka-ajani--213190",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T15:58:00.000Z",
-      "ozet": "Apple, Mac bilgisayarları kullanıcı adına kontrol edebilen bir yapay zeka ajanı geliştiriyor. Sistem uygulamalar arasında geçiş yapabilecek, web'de gezinebilecek ve kod yazabilecek.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Çin'in tamamen yapay zeka ile hazırlanan ilk filmi gişede çakıldı",
-      "link": "https://www.donanimhaber.com/cin-in-tamamen-yapay-zeka-ile-hazirlanan-ilk-filmi-gisede-cakildi--213179",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T15:37:00.000Z",
-      "ozet": "Çin'in tamamen yapay zeka ile hazırlanan ilk uzun metrajlı filmi Sanxingdui: Future Past, üç haftada yalnızca 1,8 milyon yuan hasılat elde edebildi. İşte detaylar...",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The fallout from Nvidia’s Jensen Huang scandal continues",
-      "link": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T14:55:44.000Z",
-      "ozet": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The week everything fell apart",
-      "link": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-20T14:06:59.000Z",
-      "ozet": "There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn't stay up and running. This week, it felt like the technological world simply collapsed. And it felt like this might be the beginning of something even bigger. On […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Six AI-powered gadgets that could make your home office smarter",
-      "link": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T14:00:00.000Z",
-      "ozet": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "GTA VI BİLE HİÇ GÜVENDE DEĞİL | Ücretli Yazılım ve Oyun Çağı Bitti mi?",
-      "link": "https://www.webtekno.com/ucretli-yazilim-oyun-cagi-bitti-mi-h229286.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-20T13:04:19.000Z",
-      "ozet": "Ücretli yazılım devri yapay zekanın tersine mühendislik ve açık kaynak gücüyle sarsılıyor; peki donanım mülkiyeti, abonelik ekonomisi ve bulut bilişim geleceğinde bizleri neler bekliyor?",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Signal is blocking Gemini and Siri AI from reading your screen",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-20T12:30:47.000Z",
-      "ozet": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to learn more about the user are \"undermining Signal's ability to independently guarantee privacy,\" Signal president […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Muse Is Unleashing a World of Pettiness on Instagram",
-      "link": "https://www.wired.com/story/muse-is-unleashing-a-world-of-pettiness-on-instagram/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-20T12:00:00.000Z",
-      "ozet": "Meta’s AI assistant can track and unfollow Instagram users who don’t follow you back—and some people are taking full advantage.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Regular Tech Bros Are Worried About Honeypots",
-      "link": "https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-20T11:00:00.000Z",
-      "ozet": "The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Combatting adversarial distillation",
-      "link": "https://openai.com/index/combatting-adversarial-distillation",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-20T10:00:00.000Z",
-      "ozet": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Yapay Zekâ Yerine Gerçek Fotoğraflardan Yanaydı, Apple'ın Kamera Yöneticisi Emekli Oldu",
-      "link": "https://www.webtekno.com/apple-kamera-yoneticisi-emekli-oldu-h229253.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-20T08:53:12.000Z",
-      "ozet": "Apple’ın iPhone kamera ve fotoğraf yazılımlarına yön veren Jon McCormack, sekiz yılın ardından emekli oldu.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple, Siri’yi Yapay Zekâ Ajanına Dönüştürmek İstiyor: Büyük Değişim 2027'de!",
-      "link": "https://www.webtekno.com/apple-siri-yapay-zeka-ajani-2027-h229250.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-20T07:04:54.000Z",
-      "ozet": "Apple, Siri’yi cihazlarınızı sizin yerinize kullanabilecek otonom bir yapay zekâ ajanına dönüştürmek için çalışmalara başladı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "This 16-Year-Old Founded an AI Missile Startup. He’s Targeting ‘Cost per Kill’",
-      "link": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-20T07:00:00.000Z",
-      "ozet": "Henrijs Dandzbergs dropped out of high school to join startup accelerator Y Combinator. With a new breed of missile, he wants to make killing as efficient as possible for the US and its military allies.",
       "kullanildi": false
     }
   ]
