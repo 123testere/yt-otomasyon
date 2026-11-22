@@ -1,6 +1,6 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-21T23:24:09.487Z",
+  "guncellendi": "2026-11-22T06:57:06.833Z",
   "pencereSaat": 48,
   "haberler": [
     {
@@ -33,7 +33,7 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-21T18:00:00.000Z",
       "ozet": "OpenAI'ın kendi işlemcisine sahip ilk akıllı telefonu için üretim hazırlıkları hızlanıyor. Çin'den gelen raporlara göre Apple'ın iPhone modellerini de üreten Foxconn, cihazın montajını üstlenecek.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Here are the top AI agents that can live in your text messages",
@@ -65,7 +65,7 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-21T14:30:00.000Z",
       "ozet": "NVIDIA, SSD'ye aşırı yazma sorunu için yeni hotfix sürümü yayınladı. Sürüm notlarına göre, GeForce Hotfix Driver 621.35, nvlog.nvlgstg dosyasına çok fazla yazma işlemine neden olan hatayı düzeltiyor.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
@@ -305,38 +305,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-20T07:00:00.000Z",
       "ozet": "Henrijs Dandzbergs dropped out of high school to join startup accelerator Y Combinator. With a new breed of missile, he wants to make killing as efficient as possible for the US and its military allies.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Apple may be developing its own AI agent that runs your Mac",
-      "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T00:56:01.000Z",
-      "ozet": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-      "link": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T00:43:50.000Z",
-      "ozet": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Hebbia sees improvements in financial research with GPT-6 Astra",
-      "link": "https://openai.com/business/customer-stories/hebbia",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-20T00:00:00.000Z",
-      "ozet": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Can AI help scientists identify promising drug candidates?",
-      "link": "https://openai.com/index/introducing-medchembench",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-20T00:00:00.000Z",
-      "ozet": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
       "kullanildi": false
     }
   ]
