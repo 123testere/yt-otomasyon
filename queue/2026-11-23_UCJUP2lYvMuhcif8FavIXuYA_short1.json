@@ -1,0 +1,171 @@
+{
+ "id": "2026-11-23_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-23T16:00:00.000Z",
+ "bolum": {
+  "no": 16,
+  "ad": "NVIDIA SSD Düzeltmesi"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/nvidia-geforce-hotfix-driver-621-35-cikti-ssd-sorunu-cozuldu--213219",
+ "title": "NVIDIA Sürücüsü SSD'ye Aşırı Yazıyormuş: Çözüm Geldi ⚡",
+ "description": "NVIDIA, SSD'ye aşırı yazma sorununu düzelten GeForce Hotfix Driver 621.35 sürümünü yayınladı. Sen sürücünü güncelledin mi?\nKaynak: DonanımHaber https://www.donanimhaber.com/nvidia-geforce-hotfix-driver-621-35-cikti-ssd-sorunu-cozuldu--213219\n\n#nvidia #ssd #yapayzeka #teknolojihaberleri",
+ "tags": [
+  "nvidia",
+  "nvidia sürücü",
+  "ssd aşırı yazma",
+  "geforce hotfix",
+  "geforce 621.35",
+  "teknoloji haberleri",
+  "donanım haberleri"
+ ],
+ "topic": "NVIDIA GeForce Hotfix 621.35: SSD aşırı yazma sorununun düzeltilmesi",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "tanitim": [
+  "NVIDIA sürücü hatası",
+  "SSD aşırı yazma",
+  "621.35 düzeltmesi"
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "NVIDIA Driver Was Over-Writing Your SSD: Fix Is Out ⚡",
+   "description": "NVIDIA released GeForce Hotfix Driver 621.35, which fixes the excessive SSD writes bug. Have you updated your driver?\nSource: DonanımHaber\n\n#nvidia #ssd #tech #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Sürücünü güncelledin mi?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "AŞIRI YAZMA",
+    "alt": "NVIDIA sürücü hatası"
+   },
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir NVIDIA sürücü hatası, SSD'ne gereksiz yere çok fazla yazıyordu."
+    }
+   ],
+   "aciklama": "0-2 sn: robot sunucu ışıklarına bakar. 2-4 sn: dev yazı ekranda kalır, robot başını eğer."
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "NVIDIA, SSD yazma sorununu düzelten güncellemeyi yayınladı",
+    "kaynak": "DonanımHaber · 21 Kasım",
+    "maddeler": [
+     "GeForce Hotfix 621.35",
+     "Aşırı SSD yazma hatası",
+     "Hata düzeltildi"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "DonanımHaber'e göre sorun, tek bir dosyaya çok fazla yazma işlemi yapılmasıydı."
+    }
+   ],
+   "aciklama": "0-5 sn: haber kartı ekrana gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "621.35",
+    "alt": "GeForce Hotfix sürümü"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "NVIDIA bunu düzelten GeForce Hotfix sürücüsünü, 621.35 sürümünü yayınladı."
+    }
+   ],
+   "aciklama": "0-2 sn: kullanıcı sürüm numarasını gösterir. 2-4 sn: robot onaylar, dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "gelecek",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sürücüyü güncelleyen kullanıcılar bu aşırı yazma hatasından kurtulabilir."
+    }
+   ],
+   "aciklama": "0-2 sn: araştırmacı düşünür. 2-4 sn: başını sallayıp gülümser."
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ ve teknoloji gündemi için abone ol ve beğen; sürücünü güncellediysen yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-2 sn: kullanıcı el sallar. 2-4,5 sn: robot zafer pozu verir."
+  }
+ ]
+}

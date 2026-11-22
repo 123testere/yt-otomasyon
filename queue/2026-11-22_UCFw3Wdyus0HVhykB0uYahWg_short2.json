@@ -1,0 +1,224 @@
+{
+ "id": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_short2",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "publishAt": "2026-11-22T18:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "fragman": true,
+ "derivedFrom": "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 8,
+  "ad": "Akıl Hocası"
+ },
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "YARIN 18:00",
+  "sonraki": "Zincirli · Bölüm 8: Akıl Hocası",
+  "soru": "Sence Arın hocasına kılıç kaldıracak mı?"
+ },
+ "title": "Yarın Arın, Hocasına Kılıç Kaldırıyor… ⚔️",
+ "description": "Sence Arın, onu yetiştiren Toros'a kılıç kaldıracak mı? Yarın Zincirli 8. bölümde arenada hoca ile çırak karşı karşıya.",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "arın",
+  "toros",
+  "dizi",
+  "fragman",
+  "arena"
+ ],
+ "topic": "Zincirli 8. bölüm fragmanı: Arın arenada akıl hocası Toros ile karşı karşıya",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Tomorrow Arin Raises His Sword at His Teacher… ⚔️",
+   "description": "Will Arin raise his sword at Toros, the man who trained him? Tomorrow in Chained episode 8, teacher and student face each other in the arena."
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "buyukYazi": {
+    "ust": "HOCAYA KILIÇ?",
+    "alt": "yarın kanalda"
+   },
+   "aciklama": "0-2 sn: Arın ve Toros arenada kılıçları hazır karşı karşıya durur. 2-5 sn: Arın kılıcına bakar, dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Karşımda beni yetiştiren adam duruyordu, ama elimdeki kılıç hiç bu kadar ağır gelmemişti."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "0-2 sn: Toros kılıcını Arın'a doğru uzatır. 2-3,5 sn: Arın geri çekilir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "toros",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Kaldır kılıcını evlat, herkes seni izliyor."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 5,
+   "aciklama": "0-1,5 sn: Toros bir adım geride kalır. 1,5-3 sn: dizlerinin üstüne düşer, kılıcı elinden kayar. 3-5 sn: yere uzanır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "saskin"
+    },
+    {
+     "id": "toros",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "uzgun",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.4,
+       "poz": "dus",
+       "esya": null
+      },
+      {
+       "satir": 0,
+       "sn": 2.8,
+       "poz": "yerde"
+      }
+     ]
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.82,
+     "aci": 1.5,
+     "ucus": {
+      "x0": 0.66,
+      "sn0": 1.5,
+      "sn1": 2.2
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonra Toros bir adım geride kaldı ve dizlerinin üstüne düştü."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "0-2 sn: Arın kılıcını yavaşça kaldırır. 2-4 sn: kalabalık ayağa kalkar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.34,
+     "yon": 1,
+     "poz": "kilic-kaldir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kılıcımı kaldırdım. Kalabalık ayağa fırladı."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "0-2 sn: Arın hocasına bakar. 2-5 sn: Toros yerden ona bakar, ekranda yarınki bölüm hatırlatılır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.34,
+     "yon": 1,
+     "poz": "kilic-kaldir",
+     "esya": "kilic",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "toros",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tamamı yarın 18:00'de kanalda; devamı için abone ol ve beğen."
+    }
+   ]
+  }
+ ]
+}

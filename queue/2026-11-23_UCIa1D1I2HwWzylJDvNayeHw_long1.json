@@ -1,0 +1,721 @@
+{
+ "id": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "hiz": 1.12,
+ "publishAt": "2026-11-23T15:00:00.000Z",
+ "bolum": {
+  "no": 20,
+  "ad": "Minecraft"
+ },
+ "tanitim": [
+  "Tek kişilik fikir",
+  "Hâlâ bitmemişti",
+  "2,5 milyarlık satış"
+ ],
+ "title": "Minecraft Nasıl 2,5 Milyar Dolar Etti? | Efsane Oyunların Hikâyesi",
+ "titleAlt": "Bir Kişinin Boş Zaman Projesi Dünyanın En Çok Satan Oyunu Oldu",
+ "topic": "Minecraft'ın hikâyesi: Markus Persson'un tek başına başlattığı oyundan Microsoft'a 2,5 milyar dolarlık satışa",
+ "description": "Minecraft'ın gerçek hikâyesi: İsveçli geliştirici Markus Persson'un 2009'da tek başına başlattığı oyun, Mojang stüdyosu, 2011'deki tam sürüm ve 2014'te Microsoft'a 2,5 milyar dolara satış. Senin ilk Minecraft anın neydi?\n\n#minecraft #efsaneoyunlar #oyunhikayeleri #videooyunları",
+ "tags": [
+  "minecraft",
+  "minecraft hikayesi",
+  "minecraft nasıl yapıldı",
+  "markus persson",
+  "notch",
+  "mojang",
+  "microsoft mojang",
+  "efsane oyunların hikayesi",
+  "oyun tarihi",
+  "en çok satan oyun"
+ ],
+ "thumbnailText": "TEK KİŞİ YAPTI",
+ "thumbnailTextAlt": "2,5 MİLYAR $",
+ "thumbnailTextAlt2": "SATTI VE ÇIKTI",
+ "kapak": {
+  "sahne": 0,
+  "sn": 2.5
+ },
+ "oynatmaListesi": "Efsane Oyunların Hikâyesi",
+ "ceviriler": {
+  "en": {
+   "title": "How Did Minecraft Become a $2.5 Billion Deal? | Legendary Game Stories",
+   "description": "The true story of Minecraft: Markus Persson started it alone in 2009, Mojang grew around it, the full version launched in 2011 and Microsoft bought the studio in 2014 for 2.5 billion dollars. What was your first Minecraft memory?\n\n#minecraft #gaminghistory #gamestories #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN MİNECRAFT'IN?",
+  "sonraki": "Sıradaki: bir efsane oyunun daha hikâyesi",
+  "soru": "Minecraft'ı ilk nerede, kiminle oynadın?"
+ },
+ "scenes": [
+  {
+   "mekan": "ofis",
+   "kisim": "Soğuk Açılış",
+   "buyukYazi": {
+    "ust": "2,5 MİLYAR $",
+    "alt": "tek bir oyun"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Eylül 2014. Microsoft bir oyun stüdyosu için tam 2,5 milyar dolar ödemeyi kabul etti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ve oyunu yaratan adam stüdyoyu bırakıp ayrıldı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Peki bu oyun nasıl bu noktaya geldi?"
+    }
+   ],
+   "aciklama": "0-3 sn: Patron elini sallayıp anlaşmayı duyurur. 3-6 sn: geliştirici düşünceli şekilde pencereye bakar, dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cevap, yıllar önce tek kişinin yalnız başına yazdığı küçük bir kodda saklı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu hikâye küçük bir fikirden ve çok sabırlı bir geliştiriciden çıktı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici ekrana bakıp düşünür. 3-5 sn: gülümseyerek başını kaldırır.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "kisim": "Tek Kişilik Fikir",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Tek Kişilik Fikir"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "2009. İsveçli yazılımcı Markus Persson, Notch takma adıyla tanınıyordu."
+    }
+   ],
+   "aciklama": "0-2 sn: geliştirici garaja yürüyerek girer. 2-5 sn: masasına oturup bilgisayarı açar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "notr",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.45,
+      "sure": 1.6
+     }
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Boş zamanlarında kendi oyununu yazıyordu. Karşısında ne bir ekip vardı ne de büyük bir bütçe."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici klavyede yazar. 3-7 sn: durup ekrana bakar, başını sallar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kaynaklara göre aklında Infiniminer adlı bir oyun vardı. Bloklardan yapılmış bir dünya fikrinden esinlenmişti."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici ekrandaki blokları gösterir. 3-7 sn: arkadaşı gülümseyerek izler.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İlk sürüm çok basitti. Bloklar koyuyor, bloklar kırıyordun. Ama her şeyi kendin kurabiliyordun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Amaç belirsizdi: istersen hayatta kalıyor, istersen sadece inşa ediyordun."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Dünya rastgele oluşturuluyordu; her oyun yeni bir harita demekti."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu ekrana bakıp şaşırır. 3-7 sn: oyun kolunu kaldırır.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "2009'da ilk sürümü internete yükledi. Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ],
+   "aciklama": "0-2 sn: geliştirici ekrandaki yükle düğmesine basar. 2-5 sn: kollarını kaldırıp sevinir.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun daha bitmeden satılıyordu. Erken alanlar daha ucuza alıyor, güncellemelerle fiyat yükseliyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu ekrandaki fiyatı gösterir. 3-7 sn: ikinci oyuncu şaşkınlıkla bakar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyuncular yeni blokları, yeni dünyaları ve yeni hataları birlikte yaşadı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Her blok bir fikirdi: ev, köprü, hatta dev bir kale."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyuncular kendi yaptığı haritaları, modları ve sunucuları paylaşıp oyunu daha da büyüttü."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu ekranda aynı dünyada gezer. 3-6 sn: biri hata görünce omuz silker.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kisim": "Hâlâ Bitmemişti",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Hâlâ Bitmemişti"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ama oyun hâlâ bitmemişti. Eksikler vardı, hatalar vardı, tek kişi yetişemiyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyuncular devasa şehirler, hatta çalışan hesap makineleri kurdu."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici başını elleri arasına alır. 3-7 sn: yorgun şekilde ekrana bakar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden Mojang adlı bir stüdyo kuruldu ve ekip yavaş yavaş büyüdü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hızlı büyüyen bir oyuna bakmak, tek kişilik bir iş olmaktan çıkmıştı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici yeni ekip arkadaşıyla el sıkışır. 3-6 sn: ikisi masaya birlikte oturur.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici-2",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunun ilk adı bile farklıydı. İlk günlerde Cave Game diye anılıyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici ekrandaki eski adı gösterir. 3-6 sn: gülerek başını sallar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyuncular oyunu videolara çekip paylaştıkça merak da büyüdü."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu ekranı arkadaşına gösterir. 3-6 sn: arkadaşı şaşkınlıkla başını sallar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kisim": "Tam Sürüm",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Tam Sürüm"
+   },
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "18 Kasım 2011. Las Vegas'taki MineCon etkinliğinde Minecraft'ın tam sürümü yayınlandı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Küçük bir ekranda başlayan merak, milyonlarca oyuncunun ortak dünyasına dönüştü."
+    }
+   ],
+   "aciklama": "0-3 sn: kalabalık fuarda geliştirici sahneye çıkar. 3-7 sn: kupayı kaldırıp alkışları karşılar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O etkinlik baştan sona bu oyunun hayranlarına ayrılmıştı."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu kalabalığın içinde el sallar. 3-5 sn: alkış sürer.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonraki yıllarda oyun bilgisayardan telefona, konsola, hemen her ekrana yayıldı."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu önce bilgisayarda sonra oyun kolunda oynar. 3-6 sn: sevinçle başını kaldırır.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "buyukYazi": {
+    "ust": "300 MİLYON+",
+    "alt": "kaynaklara göre"
+   },
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kaynaklara göre Minecraft'ın satışı 300 milyonu aştı. Bu da onu tarihin en çok satan oyunu yapıyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Çocuklar da yetişkinler de aynı dünyada buluştu."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu kupayı kaldırır. 3-8 sn: dev yazı ekranda kalır, kalabalık alkışlar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üstelik oyun yalnızca oynanmadı. Okullarda ders aracı olarak bile kullanıldı."
+    }
+   ],
+   "aciklama": "0-3 sn: ekip arkadaşı okul sınıfını gösterir. 3-7 sn: gülümseyerek başını sallar.",
+   "kadraj": [
+    {
+     "id": "gelistirici-2",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kisim": "Satış",
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Satış"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "2014'te Microsoft, Mojang'ı 2,5 milyar dolara satın aldığını duyurdu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Anlaşma oyun dünyasının en çok konuşulan satın almalarından biri oldu."
+    }
+   ],
+   "aciklama": "0-3 sn: patron elini uzatıp anlaşmayı duyurur. 3-6 sn: geliştirici başını yavaşça sallar.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kaynaklara göre Persson, bu büyüklükte bir şirketin sorumluluğunu istemediğini söylemişti."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici pencereden dışarı bakar. 3-7 sn: omuzları düşer.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "uzgun"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ve stüdyodan ayrıldı. Ama oyun onunla birlikte bitmedi."
+    }
+   ],
+   "aciklama": "0-4 sn: geliştirici yavaşça sağa yürüyüp ekrandan çıkar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr",
+     "hareket": {
+      "x0": 0.5,
+      "x1": 1.2,
+      "sure": 3
+     }
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "kisim": "Hâlâ Büyüyor",
+   "kart": {
+    "ust": "BEŞİNCİ KISIM",
+    "alt": "Hâlâ Büyüyor"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bugün Minecraft hâlâ güncelleniyor. Her yaştan oyuncu yeni dünyalar kuruyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bugün de oyuncular yeni sürümleri, yeni blokları ve yeni dünyaları bekliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Türkiye'de de bu dünyada saatler geçiren çok oyuncu var."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu yan yana oynar. 3-7 sn: birbirine bakıp güler.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "esya": "oyun-kolu"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir zamanlar tek kişinin boş zaman projesi olan oyun, artık koca bir kültür hâline geldi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Basit görünen şeyin arkasında yıllarca emek vardı."
+    }
+   ],
+   "aciklama": "0-3 sn: ekip arkadaşı ekrana bakıp gülümser. 3-7 sn: başını sallar.",
+   "kadraj": [
+    {
+     "id": "gelistirici-2",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki sen Minecraft'ı ilk nerede, kiminle oynadın? Yorumlara yaz."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sen de belki bir gece sabaha kadar bu dünyada kaybolmuştun."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu kameraya doğru el sallar. 3-6 sn: kalabalık alkışlar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen. Sıradaki videoda başka bir efsane oyunun hikâyesi seni bekliyor."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu kupayı kaldırır. 3-8 sn: kalabalık alkışlar, kapanış kartı gelir.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "id": "2026-11-23_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-23T16:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "topic": "Mumun yanışı: fitil sıvı mumu çeker, yanan şey mum buharıdır",
+ "title": "Mumda Aslında Ne Yanıyor? 🕯️",
+ "description": "Eşyaların Hikayesi #64\nMumda yanan şey fitil değil: fitil sıvı mumu yukarı çeker, alevin ısısı onu buharlaştırır ve yanan şey bu mum buharıdır.\n\n#mum #eşyalarınhikayesi #mumunhikayesi #shorts",
+ "tags": [
+  "mum",
+  "mum nasıl yanar",
+  "mumun fitili",
+  "mum buharı",
+  "mumun hikayesi",
+  "eşyaların hikayesi",
+  "günlük eşyalar",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Mumda aslında",
+  "ne yanıyor?"
+ ],
+ "kapanis": {
+  "soru": "Evinde en son ne zaman mum yaktın?",
+  "alt": "Yorumlara yaz 👇"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "What Is Actually Burning in a Candle? 🕯️",
+   "description": "Story of Things #64\nThe wick is not what burns: it pulls liquid wax upward, the flame vaporizes it, and the wax vapor is what actually burns.\n\n#candle #storyofthings #science #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Mumda asıl yanan şey fitil değil.",
+   "ifade": "saskin",
+   "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(430,330,140,230),{close:true,fill:'#FBF6EA',w:6,seed:1,pp:a});\nink(ln([500,330],[500,290],4),{w:5,seed:2,pp:eo(pr(u,.3,.7))});\nconst f=eo(pr(u,.5,1)),s=Math.sin(T*6)*4;\nink([[500,290],[470+s,240],[500,170],[530+s,240],[500,290]],{close:true,fill:'#E8B64A',w:5,seed:3,pp:f});\netk('fitil',700,300,eo(pr(u,1,1.5)),{size:44});\nink(ok([660,300],[520,300],{pp:eo(pr(u,1,1.5)),seed:4}),{w:4});"
+  },
+  {
+   "narration": "Fitil, sıvı mumu bir pipet gibi yukarı çeker.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(430,380,140,180),{close:true,fill:'#FBF6EA',w:6,seed:10,pp:eo(pr(u,0,.4))});\nink(ell(500,380,70,14,20),{close:true,fill:'#F3E3B0',w:4,seed:11,pp:eo(pr(u,.2,.6))});\nink(ln([500,380],[500,290],4),{w:5,seed:12,pp:eo(pr(u,.3,.7))});\nfor(let k=0;k<3;k++){const ph=(T*.7+k*.33)%1;ctx.save();ctx.globalAlpha=1-ph*.6;ctx.beginPath();ctx.arc(500,380-ph*90,7,0,7);ctx.fillStyle='#E8B64A';ctx.fill();ctx.restore();}\netk('sıvı mum yukarı çıkıyor',500,640,eo(pr(u,.9,1.4)),{size:42});"
+  },
+  {
+   "narration": "Alevin ısısı fitildeki sıvıyı buharlaştırır ve yanan şey tam olarak bu buhar olur.",
+   "ifade": "merakli",
+   "cizim": "ink(ln([500,520],[500,330],4),{w:5,seed:20,pp:eo(pr(u,0,.4))});\nconst s=Math.sin(T*6)*5;\nink([[500,330],[455+s,250],[500,140],[545+s,250],[500,330]],{close:true,fill:'#E8B64A',w:5,seed:21,pp:eo(pr(u,.3,.8))});\nfor(let k=0;k<5;k++){const ph=(T*.6+k*.2)%1,q=[];for(let i=0;i<=6;i++)q.push([620+k*20+Math.sin(i+T*3+k)*8,300-i*18-ph*30]);ctx.save();ctx.globalAlpha=(1-ph)*.8;ink(q,{w:3,c:K.s,amp:.3});ctx.restore();}\netk('mum buharı',700,170,eo(pr(u,.9,1.4)),{size:44});"
+  },
+  {
+   "narration": "Yani fitil yalnızca yolu açar; asıl yakıt mumun kendisidir.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(400,360,200,200),{close:true,fill:'#FBF6EA',w:6,seed:30,pp:eo(pr(u,0,.5))});\nink(ln([500,360],[500,300],4),{w:5,seed:31,pp:eo(pr(u,.3,.7))});\nconst s=Math.sin(T*6)*4;\nink([[500,300],[470+s,250],[500,190],[530+s,250],[500,300]],{close:true,fill:'#E8B64A',w:5,seed:32,pp:eo(pr(u,.5,1))});\ntxt('yakıt: mum',500,630,56,{c:K.ak,a:eo(pr(u,1,1.5))});"
+  },
+  {
+   "narration": "Peki mumda yanan şey fitil mi, mumun kendisi mi?",
+   "ifade": "merakli",
+   "cizim": "const a=eo(pr(u,0,.5));\nink(kutu(440,340,120,200),{close:true,fill:'#FBF6EA',w:6,seed:40,pp:a});\nink(ln([500,340],[500,300],4),{w:5,seed:41,pp:a});\ntxt('?',500,230,200,{c:K.ak,a:eo(pr(u,.4,.9))});"
+  }
+ ]
+}

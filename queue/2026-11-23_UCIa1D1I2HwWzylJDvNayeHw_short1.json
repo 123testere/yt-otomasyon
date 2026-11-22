@@ -1,0 +1,171 @@
+{
+ "id": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-23T09:00:00.000Z",
+ "fragman": true,
+ "derivedFrom": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "bolum": {
+  "no": 19,
+  "ad": "Minecraft Ön Gösterim"
+ },
+ "title": "2,5 Milyar Dolarlık Oyun Tek Kişiyle Başladı… Bu Akşam 🎮",
+ "description": "Minecraft'ın hikâyesi bu akşam 18:00'de kanalda: bir kişinin yazdığı küçük bir kod nasıl 2,5 milyar dolarlık bir oyuna dönüştü? Sen Minecraft'ı ilk nerede oynadın?\n\n#minecraft #oyunhikayeleri #videooyunları #shorts",
+ "tags": [
+  "minecraft",
+  "minecraft hikayesi",
+  "markus persson",
+  "mojang",
+  "efsane oyunların hikayesi",
+  "oyun tarihi",
+  "2,5 milyar dolar"
+ ],
+ "topic": "Minecraft hikâyesi ön gösterimi: Microsoft'a 2,5 milyar dolarlık satış ve tek kişilik başlangıç",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "The $2.5 Billion Game That Started With One Person… Tonight 🎮",
+   "description": "The story of Minecraft arrives tonight at 18:00 on the channel: how did one person's small piece of code become a 2.5 billion dollar game? Where did you first play Minecraft?\n\n#minecraft #gamestories #videogames #shorts"
+  }
+ },
+ "kapanis": {
+  "baslik": "BU AKŞAM 18:00",
+  "sonraki": "Minecraft · Efsane Oyunların Hikâyesi",
+  "soru": "Minecraft'ı ilk nerede oynadın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "2,5 MİLYAR $",
+    "alt": "tek bir oyun"
+   },
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Microsoft bir oyun stüdyosu için tam 2,5 milyar dolar ödemeyi kabul etti."
+    }
+   ],
+   "aciklama": "0-2 sn: patron elini sallayıp anlaşmayı duyurur. 2-4,5 sn: geliştirici düşünceli bakar, dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "ofis",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "uzgun",
+     "hareket": {
+      "x0": 0.5,
+      "x1": 1.2,
+      "sure": 3
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunu yaratan adam stüdyoyu bırakıp ayrıldı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici yavaşça sağa yürüyüp ekrandan çıkar."
+  },
+  {
+   "mekan": "garaj",
+   "buyukYazi": {
+    "ust": "TEK KİŞİ",
+    "alt": "yazdı"
+   },
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cevap, yıllar önce tek kişinin yalnız başına yazdığı küçük bir kodda saklı."
+    }
+   ],
+   "aciklama": "0-2 sn: geliştirici bilgisayarın başında düşünür. 2-4,5 sn: klavyeye döner, dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "garaj",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun daha bitmeden satılıyordu, erken alanlar daha ucuza alıyordu."
+    }
+   ],
+   "aciklama": "0-2 sn: oyuncu ekrandaki fiyatı gösterir. 2-4 sn: arkadaşı şaşkınlıkla bakar."
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tamamı bu akşam 18:00'de kanalda; devamı için abone ol ve beğen."
+    }
+   ],
+   "aciklama": "0-2 sn: kalabalık fuarda oyuncu kupayı kaldırır. 2-4 sn: alkış sürer, kapanış kartı gelir."
+  }
+ ]
+}

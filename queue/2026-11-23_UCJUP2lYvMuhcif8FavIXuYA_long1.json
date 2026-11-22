@@ -1,0 +1,553 @@
+{
+ "id": "2026-11-23_UCJUP2lYvMuhcif8FavIXuYA_long1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "hiz": 1.1,
+ "publishAt": "2026-11-23T15:00:00.000Z",
+ "bolum": {
+  "no": 15,
+  "ad": "OpenAI Telefon"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/openai-akilli-telefon-uretimi-icin-apple-tedarikcisiyle-anlasti--213198",
+ "tanitim": [
+  "OpenAI telefon haberi",
+  "Foxconn detayı",
+  "Neler değişebilir?"
+ ],
+ "title": "OpenAI'ın Telefonunu iPhone'u Üreten Firma Yapıyormuş ⚡",
+ "titleAlt": "OpenAI Telefon Çıkarıyor mu? Foxconn Haberi Ne Anlatıyor?",
+ "description": "Çin'den gelen raporlara göre OpenAI, kendi işlemcisine sahip ilk akıllı telefonu için Apple'ın tedarikçisi Foxconn ile anlaştı. Haberde neler var, neler yok, bu gelecekte ne değiştirebilir?\nKaynak: DonanımHaber https://www.donanimhaber.com/openai-akilli-telefon-uretimi-icin-apple-tedarikcisiyle-anlasti--213198\n\n#yapayzeka #openai #akıllıtelefon #yapayzekahaberleri",
+ "tags": [
+  "yapay zeka",
+  "yapay zeka haberleri",
+  "openai telefon",
+  "openai akıllı telefon",
+  "foxconn",
+  "openai foxconn",
+  "yapay zeka telefonu",
+  "teknoloji haberleri"
+ ],
+ "topic": "OpenAI'ın kendi işlemcili ilk telefonu için Foxconn ile üretim anlaşması iddiası",
+ "thumbnailText": "OPENAI TELEFON",
+ "thumbnailTextAlt": "FOXCONN ÜRETECEK",
+ "thumbnailTextAlt2": "KENDİ İŞLEMCİSİ",
+ "kapak": {
+  "sahne": 3,
+  "sn": 2
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "muzik": "gerilim",
+ "muzikSeviye": 0.08,
+ "ceviriler": {
+  "en": {
+   "title": "OpenAI's Phone Reportedly Built by the iPhone Maker ⚡",
+   "description": "According to reports from China, OpenAI has struck a deal with Apple supplier Foxconn to build its first smartphone, which will have its own processor. What does the news say, what is missing, and what could it change?\nSource: DonanımHaber\n\n#ai #openai #smartphone #aiactuality"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENCE?",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Yapay zekâ telefonu alır mıydın?"
+ },
+ "scenes": [
+  {
+   "mekan": "yz-lab",
+   "kisim": "Kanca",
+   "buyukYazi": {
+    "ust": "OPENAI TELEFON",
+    "alt": "üretim hazırlığı hızlandı"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "OpenAI'ın kendi akıllı telefonu için üretim hazırlıkları hızlanıyor. Peki bir yapay zekâ şirketi neden telefon yapmak istiyor?"
+    }
+   ],
+   "aciklama": "0-3 sn: robot ekrana girip sunucu ışıklarına bakar. 3-7 sn: dev yazı ekranda kalır, robot başını eğer.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberde kimin üreteceği, cihazın nasıl bir işlemciyle geleceği ve bundan ne beklenebileceği var. Hepsini bu videoda toplayalım."
+    }
+   ],
+   "aciklama": "0-4 sn: araştırmacı ekrana işaret eder. 4-8 sn: robot yanında durup başını sallar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "SON DAKİKA",
+    "baslik": "OpenAI, ilk telefonu için Apple'ın tedarikçisiyle anlaştı",
+    "kaynak": "DonanımHaber · 21 Kasım",
+    "maddeler": [
+     "Montajı Foxconn yapacak",
+     "Kendi işlemcisi olacak",
+     "Raporlara göre"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haber DonanımHaber'den. Çin'den gelen raporlara göre OpenAI, ilk akıllı telefonu için Apple'ın tedarikçisiyle anlaştı."
+    }
+   ],
+   "aciklama": "0-7 sn: haber kartı ekrana gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "FOXCONN",
+    "alt": "iPhone'u da üretiyor"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tedarikçi Foxconn. Aynı şirket iPhone modellerini de üretiyor. Haberin özü bu. Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ],
+   "aciklama": "0-4 sn: robot ekrana işaret eder. 4-8 sn: dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kisim": "Haberde Ne Var?",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberdeki ilk önemli bilgi şu: cihaz OpenAI'ın kendi işlemcisine sahip olacak."
+    }
+   ],
+   "aciklama": "0-3 sn: kullanıcı düşünür. 3-6 sn: robot yanında bekler.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yani telefon hazır bir işlemciyle değil, şirketin kendi tasarımıyla çalışacak. Haber bunu bu şekilde aktarıyor."
+    }
+   ],
+   "aciklama": "0-4 sn: araştırmacı işlemciyi gösterir. 4-8 sn: gülümseyerek başını sallar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci bilgi üretim. Raporlara göre montajı Foxconn üstlenecek."
+    }
+   ],
+   "aciklama": "0-3 sn: robot ekrana bakar. 3-5 sn: başını sallar.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Foxconn'un adı geçmesi, hazırlıkların ciddi bir aşamaya geldiğini düşündürüyor. Ama bu bir yorum, kesin bilgi değil."
+    }
+   ],
+   "aciklama": "0-4 sn: kullanıcı kuşkuyla bakar. 4-8 sn: araştırmacı eliyle belirsiz bir hareket yapar.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "supheli"
+    },
+    {
+     "id": "arastirmaci",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "buyukYazi": {
+    "ust": "FİYAT YOK",
+    "alt": "tarih de belli değil"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Haberde fiyat, çıkış tarihi ya da cihazın adı yok. Bu yüzden bunlar hakkında kesin bir şey söyleyemiyoruz."
+    }
+   ],
+   "aciklama": "0-4 sn: robot omuz silker. 4-7 sn: dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "kisim": "Neden Önemli?",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Şimdiye kadar yapay zekâ asistanlarını telefonlarda uygulama olarak kullandık."
+    }
+   ],
+   "aciklama": "0-3 sn: kullanıcı telefonuna bakar. 3-6 sn: ekrana dokunur.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Eğer bir yapay zekâ şirketi kendi telefonunu üretirse, asistan uygulama olmaktan çıkıp cihazın merkezine geçebilir."
+    }
+   ],
+   "aciklama": "0-4 sn: araştırmacı robotu işaret eder. 4-8 sn: robot ekranın merkezine yürür.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "buyukYazi": {
+    "ust": "BU BİR TAHMİN",
+    "alt": "haberde yazmıyor"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kendi işlemcisi de yapay zekâ işlerini cihaz üzerinde daha verimli yürütmeye imkân verebilir. Bu bir tahmin."
+    }
+   ],
+   "aciklama": "0-4 sn: robot düşünür. 4-7 sn: dev yazı gelir.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.5,
+     "yon": -1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu durumda telefonlar uygulama ikonlarıyla değil, sohbet ederek kullanılan cihazlara dönüşebilir."
+    }
+   ],
+   "aciklama": "0-4 sn: kullanıcı robotla konuşur gibi el sallar. 4-8 sn: robot onaylar.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Elbette bu hâlâ bir ihtimal. Telefon pazarında rekabet çok sert ve yeni bir oyuncunun yer açması kolay değil."
+    }
+   ],
+   "aciklama": "0-4 sn: yönetici omuz silker. 4-8 sn: kaşlarını çatar.",
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "supheli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "kisim": "Sen Ne Yapabilirsin?",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki sıradan bir kullanıcı olarak ne yapmalısın?"
+    }
+   ],
+   "aciklama": "0-3 sn: kullanıcı düşünür. 3-5 sn: başını kaldırır.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Şimdilik hiçbir şey. Telefon henüz piyasada değil ve haberdeki bilgiler raporlara dayanıyor."
+    }
+   ],
+   "aciklama": "0-4 sn: araştırmacı ellerini açıp sakin konuşur. 4-7 sn: başını sallar.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ama yeni bir telefon almayı düşünüyorsan, önümüzdeki aylarda resmî açıklamaları takip etmek mantıklı olabilir."
+    }
+   ],
+   "aciklama": "0-4 sn: kullanıcı dinler. 4-8 sn: robot ekrana işaret eder.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Şirketlerin duyurularını beklemek, söylentilere bakıp acele karar vermekten genelde daha iyidir."
+    }
+   ],
+   "aciklama": "0-4 sn: yönetici başını sallar. 4-7 sn: gülümser.",
+   "kadraj": [
+    {
+     "id": "ceo",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "gelecek",
+   "kisim": "Kapanış",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bundan sonra ne olabilir? Belki diğer yapay zekâ şirketleri de kendi cihazlarına yönelecek."
+    }
+   ],
+   "aciklama": "0-4 sn: araştırmacı düşünür. 4-7 sn: başını kaldırır.",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "sunucu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Özetle: OpenAI'ın ilk telefonu için üretim hazırlıkları hızlanıyor, montajı Foxconn yapacak ve cihaz kendi işlemcisiyle gelecek."
+    }
+   ],
+   "aciklama": "0-4 sn: robot ekrana işaret eder. 4-8 sn: özet maddeleri sırayla gelir.",
+   "kadraj": [
+    {
+     "id": "robot",
+     "x": 0.55,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sen olsan yapay zekâ telefonu alır mıydın? Yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-3 sn: kullanıcı izleyiciye işaret eder. 3-5 sn: robot başını sallar.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "yz-lab",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen; yarın yeni bir yapay zekâ haberiyle buradayız."
+    }
+   ],
+   "aciklama": "0-3 sn: kullanıcı el sallar. 3-6 sn: robot zafer pozu verir.",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "notr"
+    }
+   ]
+  }
+ ]
+}

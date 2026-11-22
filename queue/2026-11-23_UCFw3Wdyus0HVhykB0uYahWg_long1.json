@@ -1,0 +1,984 @@
+{
+ "id": "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-23T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "bolum": {
+  "no": 8,
+  "ad": "Akıl Hocası"
+ },
+ "tanitim": [
+  "Hocayla karşı karşıya",
+  "Kalabalığın kararı",
+  "Kervandaki sır"
+ ],
+ "title": "Hocasına Kılıç Kaldırmadı: Kral Toros'u Sattı | Zincirli 8",
+ "titleAlt": "Yenilen Hoca Neden Gülümsedi? Arın Kılıcı Kuma Bıraktı | Zincirli 8",
+ "description": "Arın, onu yetiştiren Toros'la arenada karşı karşıya: kılıcını kaldıracak mı, yoksa kuma mı bırakacak? Zincirli 8. bölümde kalabalık bir karar verir, kral başka bir karar.\nSence Arın doğru yaptı mı? Yorumlara yaz.\n\n#zincirli #animasyon #dizi #çöpadam",
+ "tags": [
+  "zincirli",
+  "animasyon dizi",
+  "çöp adam animasyon",
+  "gladyatör hikayesi",
+  "arena",
+  "toros",
+  "arın",
+  "türkçe animasyon",
+  "destan",
+  "bölüm bölüm"
+ ],
+ "topic": "Arın akıl hocası Toros ile arenada dövüşmeye zorlanır; kılıcı kuma bırakır, kral Toros'u bir tüccara satar",
+ "thumbnailText": "KILICI BIRAKTI",
+ "thumbnailTextAlt": "HOCASINA KARŞI",
+ "thumbnailTextAlt2": "TOROS SATILDI",
+ "kapak": {
+  "sahne": 13,
+  "sn": 2.6
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "muzik": "duygusal",
+ "muzikSeviye": 0.1,
+ "kapanis": {
+  "baslik": "DEVAMI",
+  "sonraki": "Bölüm 9: Şampiyonun Dileği — Yakında",
+  "soru": "Sence Arın doğru yaptı mı: kılıcı bırakmak mı, vurmak mı?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "He Wouldn't Raise His Sword at His Teacher: The King Sells Toros | Chained 8",
+   "description": "Arin faces Toros, the man who trained him, in the arena: will he raise his sword or drop it in the sand? In Chained episode 8 the crowd makes one decision and the king makes another.\nDid Arin do the right thing? Tell us in the comments.\n\n#chained #stickman #animation #series"
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Soğuk Açılış",
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 7,
+   "aciklama": "0-3 sn: Arın ve Toros arenanın ortasında kılıçları hazır, karşı karşıya durur. 3-7 sn: Arın kılıcına bakar, kolu titrer; kalabalık sessizdir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Karşımda beni yetiştiren adam duruyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Elimdeki kılıç hiç bu kadar ağır gelmemişti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bütün arena nefesini tutmuş, bize bakıyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "0-2 sn: Toros kılıcını Arın'a doğru uzatır ve konuşur. 2-5 sn: Arın geri çekilir, başını sallar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.36,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "korkmus",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "dur",
+       "ifade": "uzgun"
+      }
+     ]
+    },
+    {
+     "id": "toros",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Kaldır kılıcını evlat, herkes seni izliyor."
+    },
+    {
+     "kim": "arin",
+     "metin": "Hocam, size kılıç kaldıramam."
+    }
+   ]
+  },
+  {
+   "kisim": "Son Gece",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Son Gece"
+   },
+   "mekan": "zindan",
+   "sure": 6,
+   "aciklama": "0-2 sn: ara kart. 2-6 sn: Arın ve Toros zindanda yan yana oturur, ikisi de sessizdir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir gece önce zindanda tek kelime etmeden oturduk."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Fener titriyordu, gölgelerimiz duvarda uzuyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "0-2 sn: Toros Arın'a döner ve soruyu sorar. 2-5 sn: Arın başını eğer, yavaşça cevap verir.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "arin",
+     "x": 0.36,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "uzgun",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "dusun"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Yarın kalabalık gösteri isteyecek. Sen ne yapacaksın?"
+    },
+    {
+     "kim": "arin",
+     "metin": "Bilmiyorum hocam. Sizi yenmek istemiyorum."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "0-3 sn: Toros ayağa kalkar ve fenerin ışığında konuşur. 3-6 sn: Arın hocasına bakar ve onu dinler.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.2,
+       "poz": "isaret"
+      }
+     ]
+    },
+    {
+     "id": "arin",
+     "x": 0.36,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "toros",
+     "metin": "Son kez kalkıp kalkmadığına bakar."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu sözü bana kaç kez söylemişti. Anlamını ilk kez dinliyordum."
+    },
+    {
+     "kim": "toros",
+     "metin": "Kral ne isterse istesin, sen kim olduğunu unutma."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "0-3 sn: Arın tek başına oturup bileğindeki kırık zincire bakar. 3-6 sn: ayağa kalkar, başını kaldırır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.5,
+       "poz": "dur",
+       "ifade": "endiseli"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Gece boyunca düşündüm. Kılıç kaldırmak da bir yenilgi olabilirdi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "zaman": "gece",
+   "aciklama": "0-3 sn: Kargan hücre kapısından Arın'a seslenir. 3-6 sn: Arın ona döner, Kargan omzuna dokunur.",
+   "kadraj": [
+    {
+     "id": "kargan",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "esya": null,
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "arin",
+     "x": 0.36,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "dusun"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Ben yıllarca dövüştüm. Kimse bana hocama kılıç kaldırmayı sormadı."
+    },
+    {
+     "kim": "arin",
+     "metin": "Sen olsan ne yapardın?"
+    },
+    {
+     "kim": "kargan",
+     "metin": "Kalbimin sesini dinlerdim."
+    }
+   ]
+  },
+  {
+   "kisim": "Kum ve Kılıç",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Kum ve Kılıç"
+   },
+   "mekan": "loca",
+   "sure": 6,
+   "aciklama": "0-2 sn: ara kart. 2-6 sn: Kral locada ayağa kalkıp kalabalığa seslenir, Sungur yanında durur.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "sungur",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Halkım! Hoca ile çırak, kum üzerinde karşı karşıya!"
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "efektler": [
+    "beyaz-cakma"
+   ],
+   "aciklama": "0-1 sn: Arın ve Toros birbirine yürür. 1-2 sn: Arın kılıcını savurur, Toros bloklar. 2-4 sn: kılıçlar çarpışır, kıvılcımlar kuma saçılır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.6,
+       "poz": "saldir"
+      },
+      {
+       "satir": 0,
+       "sn": 1.6,
+       "poz": "kilic-hazir"
+      }
+     ]
+    },
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.9,
+       "poz": "blok"
+      },
+      {
+       "satir": 0,
+       "sn": 1,
+       "darbe": true
+      },
+      {
+       "satir": 0,
+       "sn": 1.8,
+       "poz": "kilic-hazir"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kılıçlar ilk kez çarpıştığında kıvılcımlar kumun üstüne saçıldı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Toros'un her hamlesini ezbere biliyordum, o da benimkini."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "0-2 sn: Toros bir kez savurur, Arın eğilip kaçınır. 2-5 sn: Arın geri çekilirken Toros ona seslenir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "saskin",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.8,
+       "poz": "egil"
+      }
+     ]
+    },
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.5,
+       "poz": "kilic-savur"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O savurdu, ben kaçındım. Karşılık vermedim."
+    },
+    {
+     "kim": "toros",
+     "metin": "Daha sert vur evlat, kral seni izliyor!"
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "aciklama": "0-2 sn: Sungur öfkeyle öne eğilir. 2-5 sn: Kral elini kaldırıp onu sakinleştirir.",
+   "kadraj": [
+    {
+     "id": "sungur",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kral",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "el-salla"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sungur",
+     "metin": "Neden vurmuyor? Bu bir oyun değil!"
+    },
+    {
+     "kim": "kral",
+     "metin": "Sabret Sungur. Kalabalık seviyor."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 6,
+   "aciklama": "0-2 sn: kalabalık bağırır, Toros bir adım geride kalır. 2-3,5 sn: dizlerinin üstüne düşer, kılıcı elinden kayar. 3,5-6 sn: yere uzanır, Arın şaşkın bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.36,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "saskin"
+    },
+    {
+     "id": "toros",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "uzgun",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 2.2,
+       "poz": "dus",
+       "esya": null,
+       "x": 0.62
+      },
+      {
+       "satir": 1,
+       "sn": 3.4,
+       "poz": "yerde"
+      }
+     ]
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.8,
+     "aci": 1.5,
+     "ucus": {
+      "x0": 0.62,
+      "sn0": 2.3,
+      "sn1": 3
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kalabalık bağırıyordu: bitir, bitir!"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sonra Toros bir adım geride kaldı ve dizlerinin üstüne düştü."
+    },
+    {
+     "kim": "toros",
+     "metin": "Kalkamıyorum evlat. Bitir işi.",
+     "ifade": "fisilti",
+     "once": 0.3
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "aciklama": "0-2 sn: Arın kılıcını yavaşça kaldırır. 2-4 sn: kalabalık ayağa kalkar, Arın kılıcı havada tutar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "kilic-kaldir",
+     "esya": "kilic",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kılıcımı kaldırdım. Kalabalık ayağa fırladı."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 5,
+   "aciklama": "0-1,5 sn: Arın hocasına bakar ve söyler. 1,5-2,5 sn: kılıcı elinden bırakır, kılıç kuma düşer. 2,5-5 sn: Toros yerden ona bakıp hafifçe gülümser.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.58,
+     "yon": -1,
+     "poz": "dur",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.1,
+       "esya": null,
+       "poz": "dur",
+       "ifade": "uzgun"
+      }
+     ]
+    },
+    {
+     "id": "toros",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "nesneler": [
+    {
+     "tip": "kilic",
+     "x": 0.5,
+     "aci": 1.4,
+     "ucus": {
+      "x0": 0.58,
+      "sn0": 1.6,
+      "sn1": 2.3
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Hayır. Ben hocama kılıç indirmem."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kılıcı kuma bıraktım."
+    }
+   ]
+  },
+  {
+   "kisim": "Kalabalığın Kararı",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Kalabalığın Kararı"
+   },
+   "mekan": "arena",
+   "kalabalik": 1,
+   "sure": 6,
+   "aciklama": "0-2 sn: ara kart. 2-6 sn: kalabalık sessizleşir, sonra alkış yükselir; Arın ellerini açıp bekler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "toros",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "yerde",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Önce sessizlik oldu. Sonra kalabalıktan tek bir ses yükseldi: bağışla!"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Toros yerdeydi, ama yüzünde garip bir sakinlik vardı."
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "aciklama": "0-2,5 sn: Kral ayağa kalkar ve kararını söyler. 2,5-5 sn: Sungur öne eğilip itiraz eder.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "sungur",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "ifade": "kizgin"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Halkım bağışlanmasını istiyor. Bağışlıyorum!"
+    },
+    {
+     "kim": "sungur",
+     "metin": "Majesteleri, bu zayıflıktır."
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "aciklama": "0-3 sn: Kral Sungur'a dönüp sakin sakin konuşur. 3-6 sn: Sungur susar, kral kalabalığa bakar.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "supheli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Ama arenanın bir kuralı var. Yenilen yerinde kalmaz. Toros satılacak."
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "kalabalik": 0.6,
+   "aciklama": "0-2 sn: Arın öne atılır ve bağırır. 2-5 sn: Toros yerden doğrulup elini kaldırarak onu sakinleştirir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.1,
+       "x": 0.46,
+       "sure": 0.6
+      }
+     ]
+    },
+    {
+     "id": "toros",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "kalk",
+     "ifade": "gulumsuyor",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "dur"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Hayır! Ona dokunamazsınız!"
+    },
+    {
+     "kim": "toros",
+     "metin": "Sakin ol evlat. Bunu ben seçtim."
+    }
+   ]
+  },
+  {
+   "kisim": "Kervan",
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Kervan"
+   },
+   "mekan": "kervan",
+   "zaman": "safak",
+   "sure": 6,
+   "aciklama": "0-2 sn: ara kart. 2-6 sn: kervan kapıya dayanır; Toros bileğindeki yeni zincirle sağdan gelir.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "dusunceli",
+     "hareket": {
+      "x0": 0.95,
+      "x1": 0.6,
+      "sure": 2.5
+     }
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ertesi sabah bir tüccarın kervanı kapıya dayandı. Toros'un bileğine yeni bir zincir takıldı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tüccar hiçbir şey sormadan Toros'un ellerine baktı. Sanki yeni bir mal alıyordu."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "aciklama": "0-2 sn: Arın Toros'a koşup yanında durur. 2-5 sn: Toros ona dönüp son sözünü söyler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.34,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "uzgun",
+     "hareket": {
+      "x0": 0,
+      "x1": 0.34,
+      "sure": 1.2,
+      "kos": true
+     }
+    },
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Omuz omuza yıllarca çalışmıştık. Şimdi ayrılığın sesi zincir şakırtısıydı."
+    },
+    {
+     "kim": "arin",
+     "metin": "Hocam, sizi bulacağım."
+    },
+    {
+     "kim": "toros",
+     "metin": "Önce kendini bul evlat."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "aciklama": "0-3 sn: Arın kervanın yüklerine bakar. 3-6 sn: yüklerin üstündeki saray mühürlerini fark eder, şaşkınlıkla durur.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 2.4,
+       "poz": "isaret"
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonra fark ettim. Bu kervan saraya mal taşıyan kervandı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yük arabalarında saray mühürleri vardı."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "sure": 7,
+   "aciklama": "0-2 sn: Toros kervanla yürürken Arın'a dönüp bakar. 2-3,5 sn: Toros usulca göz kırpar. 3,5-7 sn: Arın tek başına kalır, kervan uzaklaşır.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.72,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "gulumsuyor",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 2,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Toros bana döndü ve usulca göz kırptı."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "aciklama": "0-3 sn: Arın kervanın gittiği yöne bakar. 3-7 sn: ayağında kırık zincir, yüzünde kararlı bir ifade; kapanış kartı gelir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir gün o kapıdan ben de geçecektim."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hocam yenilmemişti. Bu daha yeni başlıyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen."
+    }
+   ]
+  }
+ ]
+}
