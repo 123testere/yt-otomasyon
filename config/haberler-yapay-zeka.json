@@ -1,8 +1,48 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-22T15:24:24.285Z",
+  "guncellendi": "2026-11-22T21:51:24.314Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-22T21:14:07.000Z",
+      "ozet": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zekâ alışveriş alışkanlıklarını da değiştirdi: Müşteriler artık önce ona soruyor",
+      "link": "https://www.donanimhaber.com/yapay-zeka-kaynakli-alisveris-trafigi-bir-yilda-yuzde-71-artti--213245",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-22T19:41:03.000Z",
+      "ozet": "ChatGPT ve Gemini gibi yapay zekâ araçları, tüketicilerin satın alma kararlarında giderek daha etkili oluyor. Adobe'nin son raporu, bu değişimin e-ticaret sektörüne etkisini ortaya koyuyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Why data centers are at the center of the Big Tech backlash",
+      "link": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-22T18:08:43.000Z",
+      "ozet": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Binding of Isaac developer removes AI music from Repentance Plus",
+      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-22T17:25:20.000Z",
+      "ozet": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "XPG ve ADATA bellek krizine direniyor! ''XPG Lancer Blade RAM ve ADATA Legend 710'u denedik''",
+      "link": "https://www.donanimhaber.com/xpg-ve-adata-bellek-krizi-dinlemiyor-xpg-ram-ve-adata-ssd-ler--213200",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-22T15:44:28.000Z",
+      "ozet": "AI devlerinin talepleri bitmek tükenmek bilmiyor, OpenAI CEO'su Sam Altman bilgisayarlarımızdaki RAM'lere bile göz dikti. Uyguna RAM ve SSD bulmak zorken, XPG ve ADATA fiyat avantajını sürdürüyor.",
+      "kullanildi": false
+    },
     {
       "baslik": "The vibe-coding revolution is coming to all the gadgets",
       "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
@@ -33,6 +73,14 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-22T10:00:00.000Z",
       "ozet": "Nothing, ilk yapay zeka odaklı cihazını 8 Aralık'ta tanıtacağını duyurdu. Ekransız tasarıma sahip olacak ürünün adı ve hangi özellikleri sunacağı ise henüz açıklanmadı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Perplexity and Intelligence",
+      "link": "https://openai.com/index/perplexity-and-intelligence",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-22T00:00:00.000Z",
+      "ozet": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
       "kullanildi": false
     },
     {
@@ -145,86 +193,6 @@
       "kaynak": "Ars Technica",
       "tarih": "2026-11-20T21:58:29.000Z",
       "ozet": "Google search is making it even easier to access AI tools on the search page.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
-      "link": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-20T21:47:10.000Z",
-      "ozet": "Meta is “re-evaluating” 2030 sustainability goals. Will others follow?",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-20T20:59:08.000Z",
-      "ozet": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
-      "link": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T19:53:41.000Z",
-      "ozet": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
-      "link": "https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-20T19:52:21.000Z",
-      "ozet": "Amid allegations of multiple affairs, including with a direct report and an alleged Chinese intelligence asset, sources tell WIRED the Nvidia board’s main issue was the former CEO’s “lack of candor.”",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Güney Kore, yapay zeka sayesinde 1 trilyon dolar ihracata ulaştı",
-      "link": "https://www.donanimhaber.com/guney-kore-yapay-zeka-sayesinde-1-trilyon-dolar-ihracata-ulasti--213194",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-20T19:35:00.000Z",
-      "ozet": "Yapay zeka çiplerine yönelik küresel talep Güney Kore'nin ihracatını rekor seviyeye taşıdı. Ülke, 1 trilyon dolar ihracatı aşan dünyadaki dördüncü ekonomi oldu.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
-      "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T19:32:08.000Z",
-      "ozet": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-      "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-20T18:50:19.000Z",
-      "ozet": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies to build data centers outside of our country,\" Trump said at a […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The most misunderstood graph in AI just got a major update",
-      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-20T18:15:15.000Z",
-      "ozet": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report is an update to the organization’s time horizon plot, which was widely…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Chips can survive the space environment — can their financing?",
-      "link": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-20T17:40:01.000Z",
-      "ozet": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-20T16:34:13.000Z",
-      "ozet": "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval […]",
       "kullanildi": false
     }
   ]
