@@ -4,6 +4,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { languageOf, options, pick, resolveSettings, targetWords } from './options.js';
 import { hizliKelime } from './hizli.js';
+import { v4Kanal } from './master-v4.js';
+
+// Shorts günleri (Master v4 S5: Shorts ≤ uzun video): shorts.days yoksa her gün
+const shortsGunu = (s, date) => !Array.isArray(s.shorts?.days) || s.shorts.days.includes(weekday(date));
 import { addDays, dateInTz, weekday, zonedToUtc } from './time.js';
 import { DONE_DIR, FAILED_DIR, QUEUE_DIR } from './paths.js';
 import { matchFor } from './league.js';
@@ -37,7 +41,7 @@ function diziSlotlari(channel, dates) {
   if (s.diziShorts === 'bagimsiz') {
     for (const date of dates) {
       if (s.long.days.includes(weekday(date))) slots.push({ type: 'long', idx: 1, date, time: s.long.time });
-      [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
+      if (shortsGunu(s, date)) [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
     }
     return slots;
   }
@@ -68,7 +72,7 @@ function slotsFor(channel, dates, now) {
     if (s.long.days.includes(weekday(date))) {
       slots.push({ type: 'long', idx: 1, date, time: s.long.time });
     }
-    [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
+    if (shortsGunu(s, date)) [...s.shorts.times].sort().forEach((time, i) => slots.push({ type: 'short', idx: i + 1, date, time }));
     // Seri Shorts'u (ör. Markaların Hikâyesi Perşembe ve Cumartesi 14:00): normal Shorts saatlerine ek
     // Kimliği ayrı (…_shortm1): normal Shorts saatleri değişse de daha önce üretilmiş dosyalarla çakışmaz
     if (s.seri?.shortsGunleri?.includes(weekday(date))) slots.push({ type: 'short', idx: 'm1', date, time: s.seri.shortsSaat ?? '14:00', seri: true });
@@ -82,13 +86,16 @@ function slotsFor(channel, dates, now) {
       type: slot.type,
       publishAt: slot.publishAt.toISOString(),
       // Shorts her kanalda "hızlı" kurala göre yazılır (lib/hizli.js): 4-5 cümle, ~24 sn.
-      targetWords: slot.type === 'short' ? hizliKelime(languageOf(resolveSettings(s))?.wpm ?? 115)
+      // Master v4 kanallarında Shorts süresini hikâye belirler (S3): hızlı Shorts kalıbı uygulanmaz
+      targetWords: slot.type === 'short' && v4Kanal(channel.id) ? targetWords(s, 'short')
+        : slot.type === 'short' ? hizliKelime(languageOf(resolveSettings(s))?.wpm ?? 115)
         : dizi ? Math.round((s.long.minutes ?? 4) * DIZI_KELIME_DK) : targetWords(s, slot.type),
       dil: resolveSettings(s).language,
       // Seri bölümü: uzun video (seri.uzun) ve seri Shorts'ları; numara attachSeri'de verilir
       ...(s.seri && !dizi && (slot.seri || (slot.type === 'long' && s.seri.uzun)) ? { seri: { id: s.seri.id, ad: s.seri.ad } } : {}),
       // dongu: Shorts sonu veda etmez, ilk cümleye bağlanır (sözlü abone/beğen yok, ekrandaki kartta yazar)
-      ...(slot.type === 'short' ? { hizli: true, ...(s.shorts?.dongu ? { dongu: true } : {}) } : {}),
+      ...(slot.type === 'short' && !v4Kanal(channel.id) ? { hizli: true, ...(s.shorts?.dongu ? { dongu: true } : {}) } : {}),
+      ...(v4Kanal(channel.id) ? { masterV4: true } : {}),
       // Haber kanalı: konu config/haberler-<akış>.json listesinden seçilir, kaynak bağlantısı zorunlu.
       ...(s.haberAkisi ? { haberAkisi: s.haberAkisi } : {}),
       ...(dizi ? { format: 'dizi', dizi: s.dizi || null, ...(slot.kaynak ? { clipOf: slot.kaynak } : {}), ...(slot.fragman ? { fragman: true } : {}), ...(slot.derleme ? { derleme: true } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),

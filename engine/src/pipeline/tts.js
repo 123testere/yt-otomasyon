@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { enAzTempo } from '../lib/hizli.js';
+import { v4Kanal } from '../lib/master-v4.js';
 import path from 'node:path';
 import { PY_DIR } from '../lib/paths.js';
 import { probeDuration, retry, run } from '../lib/util.js';
@@ -89,7 +90,8 @@ export async function narrate(job, settings, dir) {
   // Hızlı konuşma kuralı: Shorts'ta en az +30%, uzun videoda en az +20% (kanal daha hızlısını seçtiyse o geçerli).
   {
     const secili = (job.type === 'short' ? settings.shorts?.speechRate : null) ?? settings.speechRate ?? '+0%';
-    const taban = Math.round((enAzTempo(job.type) - 1) * 100);
+    // Master v4 kanallarında zorunlu hızlandırma yok (v4: kanıtı olmayan kural); kanalın kendi hızı geçerli
+    const taban = v4Kanal(job.channelId) ? -100 : Math.round((enAzTempo(job.type) - 1) * 100);
     settings = { ...settings, speechRate: parseInt(secili, 10) >= taban ? secili : `+${taban}%` };
   }
   const tempo = 1 + parseInt(settings.speechRate, 10) / 100;

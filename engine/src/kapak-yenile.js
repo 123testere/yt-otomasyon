@@ -11,7 +11,8 @@ import { authFor } from './pipeline/youtube.js';
 import { makeShortCover } from './pipeline/cover.js';
 import { wikimedia } from './pipeline/archives.js';
 import { aiImage } from './pipeline/visuals.js';
-import { remotionStill } from './pipeline/remotion.js';
+import { kapakJpeg, remotionStill } from './pipeline/remotion.js';
+import { v4Kanal } from './lib/master-v4.js';
 import { run } from './lib/util.js';
 
 const only = process.argv[2];
@@ -58,7 +59,7 @@ for (const job of jobs) {
       const accent = (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
       const png = await remotionStill('Thumb', { background: bg, text: job.thumbnailText, badge: null, lang: settings.language, accent }, path.join(dir, 'kapak.png'), `${job.id}-kapak`);
       file = path.join(dir, 'kapak.jpg');
-      await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', file]);
+      await kapakJpeg(png, file, { v4: v4Kanal(job.channelId) });
     }
     const yt = await youtubeFor(job.channelId);
     await yt.thumbnails.set({ videoId: video.youtubeId, media: { mimeType: 'image/jpeg', body: fs.createReadStream(file) } });

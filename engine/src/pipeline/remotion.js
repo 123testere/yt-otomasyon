@@ -7,6 +7,25 @@ import { ROOT } from '../lib/paths.js';
 import { probeDuration, run } from '../lib/util.js';
 import { alignWords } from './subtitles.js';
 import { sfxHazirla } from '../lib/sfx.js';
+import { v4Kanal } from '../lib/master-v4.js';
+
+// Master v4 (U3): uzun video kapağı 3840×2160. Yol/kimlik içinde v4 kanal kimliği geçiyorsa kapak yüksek çözünürlükte çizilir.
+const KANAL_RE = /UC[w-]{22}/;
+export const v4Yol = (...parcalar) => v4Kanal(parcalar.join(' ').match(KANAL_RE)?.[0]);
+const KAPAK_OLCEK = { Thumb: 3, AnsiklopediThumb: 3, DiziKareYatay: 2 };
+
+// Kapak PNG → JPEG. v4'te 3840×2160 ve YouTube'un 2 MB sınırına sığana kadar kalite düşürülür.
+export async function kapakJpeg(png, jpg, { v4 = v4Yol(png), olcek = null } = {}) {
+  if (!v4) {
+    await run('ffmpeg', ['-y', '-v', 'error', '-i', png, ...(olcek ? ['-vf', olcek] : []), '-q:v', '3', jpg]);
+    return jpg;
+  }
+  for (const q of [2, 3, 4, 6, 8, 11, 15]) {
+    await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-vf', 'scale=3840:2160:flags=lanczos', '-q:v', String(q), jpg]);
+    if (fs.statSync(jpg).size < 1.95 * 1024 * 1024) return jpg;
+  }
+  return jpg;
+}
 
 const DIR = path.join(ROOT, 'remotion');
 const ENTRY = 'src/index.jsx';
@@ -32,7 +51,8 @@ function stager(jobId) {
 // CLI doğrudan Node ile çalıştırılır (npx Windows'ta .cmd olduğu için spawn edilemiyor).
 async function remotion(args) {
   const cli = path.join(DIR, 'node_modules', '@remotion', 'cli', 'remotion-cli.js');
-  await run(process.execPath, [cli, ...args, '--log=error'], { cwd: DIR });
+  const olcek = args[0] === 'still' && KAPAK_OLCEK[args[2]] && v4Yol(...args) ? [`--scale=${KAPAK_OLCEK[args[2]]}`] : [];
+  await run(process.execPath, [cli, ...args, ...olcek, '--log=error'], { cwd: DIR });
 }
 
 const accentOf = (settings) => (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
@@ -95,7 +115,7 @@ export async function thumbnailWithRemotion({ jobId, background, text, badge, se
     await remotion(['still', ENTRY, 'Thumb', png, `--props=${propsFile}`]);
     // YouTube küçük resim sınırı 2 MB; JPEG'e çevir.
     const jpg = path.join(dir, 'kapak.jpg');
-    await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
+    await kapakJpeg(png, jpg);
     return jpg;
   } finally {
     stage.cleanup();
@@ -141,7 +161,7 @@ export async function encyclopediaThumbnail({ job, settings, dir }) {
   const png = path.join(dir, 'kapak.png');
   await remotion(['still', ENTRY, 'AnsiklopediThumb', png, `--props=${propsFile}`]);
   const jpg = path.join(dir, 'kapak.jpg');
-  await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
+  await kapakJpeg(png, jpg, { v4: v4Kanal(job.channelId) });
   return jpg;
 }
 

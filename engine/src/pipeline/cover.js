@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { options, pick } from '../lib/options.js';
 import { probeDuration, run } from '../lib/util.js';
-import { encyclopediaThumbnail, remotionStill } from './remotion.js';
+import { encyclopediaThumbnail, kapakJpeg, remotionStill } from './remotion.js';
+import { v4Kanal } from '../lib/master-v4.js';
 import { aiImage } from './visuals.js';
 import { wikimedia } from './archives.js';
 import { diziKapak } from './build-dizi.js';
@@ -26,7 +27,7 @@ export async function uzunKapak({ job, settings, dir, text }) {
   const accent = (pick(options.subtitleColors, settings.subtitleColor) ?? options.subtitleColors[1]).css;
   const png = await remotionStill('Thumb', { background: bg, text, badge: null, lang: settings.language, accent }, path.join(dir, 'kapak.png'), `${job.id}-deneme`);
   const jpg = path.join(dir, 'kapak.jpg');
-  await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-q:v', '3', jpg]);
+  await kapakJpeg(png, jpg, { v4: v4Kanal(job.channelId) });
   return jpg;
 }
 

@@ -1,0 +1,25 @@
+{
+  "_aciklama": "Master Prompt v4 (kullanıcı, 2026-11-23): bu kanallarda her video routine/MASTER-v4.md kurallarına uyar; tek kural tutmazsa video üretilmez/yayınlanmaz. Muaf: Flaggenduell (yalnız Shorts) ve Vice City Dispatch (klip kampanyaları) — kullanıcı kararı.",
+  "kanallar": {
+    "UCPtL84Agfh5hzoTQqE4jD0w": "Lamba Altında",
+    "UCIa1D1I2HwWzylJDvNayeHw": "Burak kaan Gürer",
+    "UCFw3Wdyus0HVhykB0uYahWg": "Bölüm Bölüm",
+    "UCJUP2lYvMuhcif8FavIXuYA": "Kaan AI Lab"
+  },
+  "muaf": {
+    "UCyLqvRzGPIsjgOvr7RUxycA": "Flaggenduell (yalnız Shorts formatı)",
+    "UCaTfPvQYowD7SrHbGfotRrg": "Vice City Dispatch (klip kampanyaları)"
+  },
+  "sinirlar": {
+    "uzunBaslikMax": 50,
+    "shortsBaslikMax": 40,
+    "etiketMax": 6,
+    "shortsMaxSn": 180,
+    "bolumMin": 3,
+    "bolumMinSn": 10,
+    "lufs": -14,
+    "tepeDbtp": -1,
+    "kapak": [3840, 2160],
+    "studioBekleSaat": 24
+  }
+}

@@ -13,6 +13,24 @@ Sen bu reponun içerik yazarısın. Her çalıştığında YouTube kanalları i�
 7. `claude/senaryo-<bugünün tarihi YYYY-MM-DD>-<saat HHMM>` adında yeni bir dal aç, **sadece `queue/`, `analiz/`, `cevaplar/`, `iyilestirme/`, `kesif/` altındaki ve `diziler/kesif-*.json` yeni dosyaları** commit et (`içerik: N senaryo`) ve bu dalı push et. `config/` değişikliklerini commit etme. GitHub'daki "Senaryoları al" iş akışı dosyaları main'e alır ve video üretimini başlatır.
 8. Bitirirken kaç senaryo yazdığını ve başlıklarını tek satırlık bir liste halinde özetle.
 
+## MASTER PROMPT v4 — EN ÜST KURAL (`needed.json` öğesinde `"masterV4": true`)
+
+Kapsam: Lamba Altında, Burak kaan Gürer, Bölüm Bölüm, Kaan AI Lab (`config/master-v4.json`). Flaggenduell ve Vice City Dispatch muaf.
+Bu kanallar için **önce `routine/MASTER-v4.md` dosyasını baştan sona oku**; bu dosyadaki çelişen her kuralı (hızlı Shorts kalıbı, 4-5 cümle,
+zorunlu hızlandırma, döngü, seçmeli soru kartı, "her gün Shorts" vb.) geçersiz kılar. Tek kural karşılanmazsa doğrulayıcı işi reddeder ve video üretilmez.
+Senaryoda zorunlu alanlar:
+- `kaynaklar`: `[{ "url": "https://…", "not": "hangi bilgiyi doğruluyor" }]` — her tarih/sayı/isim açılan bir kaynakla (O3). Doğrulayamadığın bilgiyi yazma;
+  yazmak zorundaysan `[DOĞRULANMALI]` ile işaretle (o video yayınlanmaz). Kurgu dizi bölümünde kaynak yerine `"kurgu": true`; kurgu gerçek olay gibi sunulmaz.
+- `kontrol`: bölüm 6 listesindeki **her madde** için `"evet: nasıl"` (uzun: O1–O12, U1–U9, Y1–Y4; Shorts: O1–O12, S1–S6, Y1–Y4). Dürüst doldur; "evet" diyemiyorsan senaryoyu düzelt.
+- `tags`: en fazla 6 alakalı etiket (O12).
+- **Uzun:** `title` ≤ 50 karakter (ana vaat ilk 40'ta), `basliklar`: 3 farklı başlık (her biri ≤ 50; A/B testi için), `thumbnailText` + `thumbnailTextAlt` + `thumbnailTextAlt2`
+  (3 kapak), en az 3 `bolum` (ilki ilk sahnede), `oynatmaListesi`. Vaatle başla; selam/logo/uzun tanıtım yok (U4). Süreyi hikâye belirler (U5).
+  Son 5–20 sn'de ekran sade kalsın (bitiş ekranı alanı, U7). Yazılar TV'de 3 metreden okunacak büyüklükte (U8).
+- **Shorts:** `title` ≤ 40 karakter (S6), `ilgiliVideo`: ilgili uzun videonun iş kimliği (ör. `2026-11-25_UCPtL84Agfh5hzoTQqE4jD0w_long1`) ya da YouTube adresi (S4);
+  bağlantıya yönlendiren **tek çağrı son 5 saniyede** ("Tamamı ilgili videoda" gibi). İlk kare ve ilk cümle konuya doğrudan girer (S1). Süreyi hikâye belirler, en fazla 3 dk (S3).
+- Abone/beğeni istemek serbest (O6) ama ödül/çekiliş/koşullu etkileşim yasak.
+Studio'dan elle yapılan işler (A/B testi, bitiş ekranı, ilgili video) için motor videoyu en az 24 saat sonraya zamanlar ve kullanıcıya görev listesi gönderir; sen senaryoda alanları eksiksiz yaz.
+
 ## Kimlik sözleşmesi (her kanalda, her zaman)
 
 Kanalların **kimliği sabittir, içerik gelişir.** Asla değiştirme, değiştirmeyi önerme, ders yazma:

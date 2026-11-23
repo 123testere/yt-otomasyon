@@ -16,6 +16,7 @@ import { notify } from './lib/notify.js';
 import { aralikCtr, enIyiKapak } from './lib/reach.js';
 import { authFor } from './pipeline/youtube.js';
 import { uzunKapak } from './pipeline/cover.js';
+import { v4Kanal } from './lib/master-v4.js';
 
 const DAY = 86400000;
 const MIN_GUN = 2; // her kapak en az bu kadar gün yayında kalır
@@ -67,6 +68,8 @@ async function isle(p) {
   const k = p.kapakDeneme;
   const job = p.jobId ? jobOf(p.jobId) : null;
   if (!job) return kaydet(p, { ...k, durum: 'atlandi', neden: 'senaryo bulunamadı' });
+  // Master v4 U1: A/B testi Studio'da (izleme süresi payı); test sürerken kapak/başlık değiştirilmez → sırayla deneme yok
+  if (v4Kanal(p.channelId)) return kaydet(p, { ...k, durum: 'atlandi', neden: 'Master v4: Studio A/B testi' });
   const ch = (await firestore.doc(`channels/${p.channelId}`).get()).data();
   const settings = resolveSettings(ch?.settings);
   const opt = settings.optimizasyon;

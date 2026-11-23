@@ -16,6 +16,10 @@ import { baglantiYorumu, bolumSatirlari, uploadExtras } from './pipeline/extras.
 import { deneyAyari } from './lib/deney.js';
 import { saatleriYaz } from './lib/sosyal-saatler.js';
 import { loadNeeded, usedTitles, validateJob } from './validate.js';
+import { V4, v4Kanal } from './lib/master-v4.js';
+import { kapaklariYayinla, studioGorevleri } from './lib/studio.js';
+import { sesSeviyesi } from './pipeline/ses-seviye.js';
+import { uzunKapak } from './pipeline/cover.js';
 
 const MAX_ATTEMPTS = 3;
 const TIME_BUDGET_MS = Number(process.env.TIME_BUDGET_MIN ?? 300) * 60 * 1000;
@@ -134,6 +138,15 @@ async function main() {
           console.warn(`  Shorts kapağı üretilemedi: ${e.message}`);
         }
       }
+      // Master v4 O8: -14 LUFS / -1 dBTP; tutmazsa yayın yok
+      const v4 = v4Kanal(job.channelId);
+      if (v4) {
+        if (!built.srt) throw new Error('Master v4 O9: Türkçe SRT altyazı üretilmedi');
+        const ses = await sesSeviyesi(built.videoPath, path.join(workDir, `${job.id}-ses.mp4`));
+        if (ses.hata) throw new Error(`Master v4 O8: ${ses.hata}`);
+        built.videoPath = ses.dosya;
+        console.log(`  ses: ${ses.lufs} LUFS, tepe ${ses.tepe} dBTP`);
+      }
       await ref.update({
         status: 'uploading', duration: Math.round(built.duration),
         preview: await previewImage(built, path.join(workDir, `${job.id}-onizleme.jpg`)), updatedAt: new Date(),
@@ -145,7 +158,17 @@ async function main() {
       const linked = await withFullVideoLink(job, settings);
       // Dizi bölümünde YouTube bölümleri transkriptin kısımlarından gelir.
       const bolumler = job.format === 'dizi' ? built.bolumlerMetni ?? null : bolumSatirlari(job, built.sahneZaman, settings.language);
-      const uploadJob = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
+      if (v4 && job.type === 'long' && !bolumler) throw new Error('Master v4 U6: bölümler oluşmadı (ilki 00:00, en az 3 bölüm, her biri en az 10 sn)');
+      let uploadJob = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
+      // Master v4 U1/U7/S4 Studio işleri: video en az 24 saat sonrasına zamanlanır, o sürede telefondan yapılır
+      if (v4) {
+        const enErken = Date.now() + V4.studioBekleSaat * 3600_000;
+        if (Date.parse(uploadJob.publishAt) < enErken) {
+          uploadJob = { ...uploadJob, publishAt: new Date(enErken).toISOString() };
+          await ref.update({ publishAt: new Date(enErken) });
+          console.log(`  yayın ${uploadJob.publishAt} saatine kaydırıldı (Studio işleri için)`);
+        }
+      }
       const yt = await upload({ secret, job: uploadJob, settings, ...built });
 
       await ref.update({ status: 'uploaded', youtubeId: yt.videoId, url: yt.url, scheduled: yt.scheduled,
@@ -188,6 +211,29 @@ async function main() {
       // İlk yayından sonra ses ve karakter kilitlenir; kanal kimliği videodan videoya değişmesin.
       if (!settings.identityLocked) {
         await firestore.doc(`channels/${job.channelId}`).update({ 'settings.identityLocked': true });
+      }
+      if (v4) {
+        try {
+          let kapaklar = [];
+          if (job.type === 'long') {
+            const bc = [];
+            for (const [i, text] of [job.thumbnailTextAlt, job.thumbnailTextAlt2].entries()) {
+              bc.push(await uzunKapak({ job, settings, dir: path.join(workDir, `${job.id}-studio-${i}`), text })
+                .catch((e) => { console.warn(`  kapak ${'BC'[i]}: ${e.message}`); return null; }));
+            }
+            kapaklar = await kapaklariYayinla(job.id, [built.thumbnailPath, ...bc]);
+          }
+          const ilgili = job.ilgiliVideo && !/^https?:/.test(job.ilgiliVideo)
+            ? (await firestore.doc(`videos/${job.ilgiliVideo}`).get()).data()?.url ?? null : job.ilgiliVideo ?? null;
+          const yayinSaati = new Date(uploadJob.publishAt).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' });
+          const gorevler = studioGorevleri({ job, url: yt.url, kapaklar, ilgiliUrl: ilgili, yayinSaati });
+          await ref.update({ studio: { gorevler, kapaklar, basliklar: job.basliklar ?? null, ilgiliVideo: ilgili, tamam: false } });
+          await notify({ level: 'warn', title: `Studio işi: ${job.title}`, body: gorevler.join('\n'), channelId: job.channelId, videoId: fileId });
+        } catch (e) {
+          console.warn(`  Studio paketi: ${e.message}`);
+          await notify({ level: 'warn', title: `Studio işi (eksik paket): ${job.title}`,
+            body: `${yt.url} — A/B testi, bitiş ekranı / ilgili video Studio'dan eklenmeli. (${e.message.slice(0, 80)})`, channelId: job.channelId, videoId: fileId });
+        }
       }
       await notify(job.kampanya ? {
         // Klip kampanyası: bağlantı yayından sonra 30 dk içinde Whop / Content Rewards'a gönderilmeli

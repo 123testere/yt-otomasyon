@@ -11,9 +11,10 @@ import { probeDuration, retry, run } from '../lib/util.js';
 import { spellNumbersTr } from '../lib/numbers-tr.js';
 import { alignWords } from './subtitles.js';
 import { pickMusic } from './render.js';
-import { remotionStill, renderDizi } from './remotion.js';
+import { kapakJpeg, remotionStill, renderDizi } from './remotion.js';
 import { muzikBolumleri } from '../../../shared/ses-olaylari.js';
 import { enAzTempo } from '../lib/hizli.js';
+import { v4Kanal } from '../lib/master-v4.js';
 import { elevenScene } from './elevenlabs.js';
 import { klonSatirlari, proportionalWords } from './clone.js';
 
@@ -117,7 +118,7 @@ export async function seslendir(job, dizi, dir) {
   // Açılış kartı sadece açıkça istenirse (acilis: true): izleyici ilk saniyeden aksiyon ve ses görmeli.
   const acilis = job.acilis === true ? KART_SN : 0;
   // Hızlı konuşma kuralı: Shorts'ta en az 1,2, uzun bölümde en az 1,12 (senaryodaki hiz daha yüksekse o)
-  const hiz = Math.max(job.hiz ?? 1, enAzTempo(job.type));
+  const hiz = v4Kanal(job.channelId) ? (job.hiz ?? 1) : Math.max(job.hiz ?? 1, enAzTempo(job.type));
   const [satirArasi, sahneArasi] = hiz > 1 ? [0.1, 0.18] : [SATIR_ARASI, SAHNE_ARASI];
   const parcalar = acilis ? [sessiz(path.join(dir, 'bas.wav'), acilis)] : [];
   let t = acilis;
@@ -252,7 +253,7 @@ export async function diziKapak({ job, dir, text }) {
     kapanis: null, acilis: false, t: Number(job.kapak?.sn ?? 1.5), dur: 30, kapakYazi: kapakSatirlari(text), kapakVurgu: true,
   }, path.join(dir, 'kapak.png'), `${job.id}-kapak`);
   const jpg = path.join(dir, 'kapak.jpg');
-  await run('ffmpeg', ['-y', '-v', 'error', '-i', png, '-vf', 'scale=1280:-2', '-q:v', '3', jpg]);
+  await kapakJpeg(png, jpg, { v4: v4Kanal(job.channelId), olcek: 'scale=1280:-2' });
   return jpg;
 }
 

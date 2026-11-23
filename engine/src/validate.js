@@ -14,6 +14,7 @@ import { DESTAN_MEKANLAR, mekanKodHatasi } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
 import { kampanyaBul, kampanyaHatalari } from './lib/kampanya.js';
+import { v4Hatalari, v4Kanal } from './lib/master-v4.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -386,7 +387,8 @@ export function cagriHatalari(job, slot) {
   if (YASAK_ACILIS.test(metinler[0].trim())) errors.push('ilk cümle selam/tanıtım/"biliyor muydunuz" ile başlayamaz: doğrudan hikâyenin şaşırtıcı anından ya da sonuçtan başla');
   const ilk3 = metinler.slice(0, 3).join(' ');
   if (YASAK_CUMLE.test(ilk3)) errors.push('girişte "bugün … anlatacağım" gibi tanıtım cümlesi olmaz: anlatmaya doğrudan başla');
-  if (job.format === 'cizim' && job.type === 'long') {
+  // Master v4: "her 3-6 sn görsel değişim" kanıtı olmayan kural; v4 kanallarında uygulanmaz
+  if (job.format === 'cizim' && job.type === 'long' && !v4Kanal(job.channelId)) {
     const uzun = job.scenes.slice(0, 6).map((s, i) => [i, kelimeSay(s.narration)]).filter(([, n]) => n > 10);
     if (uzun.length) errors.push(`ilk 15 sn'de görüntü 2-3 sn'de bir değişmeli: ilk 6 sahnenin her biri en fazla 10 kelime (uzun olanlar: ${uzun.map(([i, n]) => `sahne ${i + 1}: ${n}`).join(', ')})`);
   }
@@ -405,7 +407,8 @@ export function cagriHatalari(job, slot) {
     const c = cagriEksigi(metinler.slice(-2).join(' '), slot.dil);
     if (c) errors.push(`hızlı Shorts: son cümlede ${c} ("Serinin devamı için abone ol ve beğen" benzeri, kanal dilinde)`);
   }
-  if (job.type === 'long') {
+  // Master v4: abone çağrısı serbest ama zorunlu değil (kanıtı yok)
+  if (job.type === 'long' && !v4Kanal(job.channelId)) {
     const c = cagriEksigi(metinler.join(' '), slot.dil);
     if (c) errors.push(`uzun video: anlatımda ${c} (ilk üçte birde kısa bir çağrı, kapanışta "serinin devamı için abone ol ve beğen")`);
   }
@@ -574,6 +577,8 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
       if (slot.oylama.kazanan) req(job.oylama?.secilen === slot.oylama.kazanan, `oylamayı "${slot.oylama.kazanan}" kazandı; o konuyu yaz`);
     }
   }
+  // Master Prompt v4 yayın kapısı (routine/MASTER-v4.md): kapsamdaki kanallarda tek kural tutmazsa video üretilmez
+  errors.push(...v4Hatalari(job));
   return errors;
 }
 
