@@ -343,6 +343,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Halkın Bağışladığı Hoca Neden Satıldı? ⛓️",
       "Hocasına Kılıç Kaldırmadı: Kral Toros'u Sattı | Zincirli 8",
       "Yarın Arın, Hocasına Kılıç Kaldırıyor… ⚔️",
       "Tek Gözlü Gladyatör ve Kapalı Kanal: Zincirli 6-7 Tek Parça",
@@ -470,6 +471,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Yarış Oyunu mu Arıyorsun? 🎮",
       "Minecraft Nasıl 2,5 Milyar Dolar Etti? | Efsane Oyunların Hikâyesi",
       "2,5 Milyar Dolarlık Oyun Tek Kişiyle Başladı… Bu Akşam 🎮",
       "Strateji Oyunu mu Arıyorsun? 🎮",
@@ -611,6 +613,7 @@
       "baslangic": "2026-11-07T10:19:21.363Z"
     },
     "recentTitles": [
+      "Ekransız Yapay Zekâ Cihazı mı Geliyor? Nothing 8 Aralık'ta ⚡",
       "NVIDIA Sürücüsü SSD'ye Aşırı Yazıyormuş: Çözüm Geldi ⚡",
       "OpenAI'ın Telefonunu iPhone'u Üreten Firma Yapıyormuş ⚡",
       "Çocukların Yüzde Kaçı Yapay Zekâ Kullanıyor? 🤖",
@@ -768,6 +771,9 @@
       "baslangic": "2026-11-19T22:11:58.161Z"
     },
     "recentTitles": [
+      "Romalılar Neden Yüz Binlerce Çiviyi Toprağa Gömdü?",
+      "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
+      "1969'da Gelen Bir Saat İsviçre'yi Sarstı… Tamamı Bu Akşam",
       "Mumda Aslında Ne Yanıyor? 🕯️",
       "Nokia Önce Kâğıt Hamuru Yapıyordu: 1865 📱",
       "Pul Çıkmadan Önce Mektubun Parasını Kim Öderdi? ✉️",
@@ -1067,6 +1073,7 @@
       "baslangic": "2026-11-21T18:02:05.496Z"
     },
     "recentTitles": [
+      "Duell 22/30: Wer erntet die meisten Tomaten? 🍅",
       "Duell 21/30: Wer erntet die meisten Birnen? 🍐",
       "Duell 20/30: Wer produziert die meisten Eier? 🥚",
       "Duell 19/30: Wer produziert das meiste Hähnchenfleisch? 🍗",
@@ -1094,23 +1101,23 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 21,
+      "lastMatch": 22,
       "table": [
         {
           "name": "Türkei",
-          "points": 127
+          "points": 137
         },
         {
           "name": "Spanien",
-          "points": 79
-        },
-        {
-          "name": "Ukraine",
-          "points": 77
+          "points": 84
         },
         {
           "name": "Italien",
-          "points": 73
+          "points": 80
+        },
+        {
+          "name": "Ukraine",
+          "points": 80
         },
         {
           "name": "Frankreich",
@@ -1118,7 +1125,7 @@
         },
         {
           "name": "Polen",
-          "points": 53
+          "points": 55
         },
         {
           "name": "Deutschland",
@@ -1126,7 +1133,7 @@
         },
         {
           "name": "Portugal",
-          "points": 28
+          "points": 32
         },
         {
           "name": "Griechenland",

@@ -1,8 +1,24 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-22T21:51:24.314Z",
+  "guncellendi": "2026-11-23T02:50:38.597Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T01:25:53.000Z",
+      "ozet": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "We haven’t seen the last of the major tech outages",
+      "link": "https://www.theverge.com/tech/1039851/major-tech-outages",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-22T22:48:02.000Z",
+      "ozet": "Over the last week or so, we have seen a nationwide FAA ground stop, a multi-day Outlook outage that brought entire companies to a standstill, and a banking outage at JPMorgan Chase. But the consensus is that there are more to come. Director of National Intelligence Jay Clayton told CNN: \"The American people should be […]",
+      "kullanildi": false
+    },
     {
       "baslik": "OpenAI’s chief scientist has thoughts on how to limit AI development",
       "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
@@ -73,7 +89,7 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-22T10:00:00.000Z",
       "ozet": "Nothing, ilk yapay zeka odaklı cihazını 8 Aralık'ta tanıtacağını duyurdu. Ekransız tasarıma sahip olacak ürünün adı ve hangi özellikleri sunacağı ise henüz açıklanmadı.",
-      "kullanildi": false
+      "kullanildi": true
     },
     {
       "baslik": "Perplexity and Intelligence",
@@ -177,22 +193,6 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-21T10:30:00.000Z",
       "ozet": "Yıllardır adeta çılgınlar gibi yükselen yapay zekâ ile ilgili şirket hisseleri bu hafta tepetaklak oldu. Anthropic halka arzı da sektöre beklenen ilgiyi getirmedi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Cops Are Pushing Extremely Corny ‘Grand Theft Auto 6’ Slop",
-      "link": "https://www.wired.com/story/cops-are-being-extremely-corny-about-gta-vi/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-20T23:24:02.000Z",
-      "ozet": "The blockbuster game makes no secret of its contempt for law enforcement. Real police departments using it to recruit new members and scold the public apparently didn’t get the memo.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google rolls out new search homepage with AI chat history and no search button",
-      "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-20T21:58:29.000Z",
-      "ozet": "Google search is making it even easier to access AI tools on the search page.",
       "kullanildi": false
     }
   ]
