@@ -30,7 +30,7 @@ async function helix(yol) {
   return (await r.json()).data ?? [];
 }
 
-async function helixKlipler(k) {
+export async function helixKlipler(k) {
   const [user] = await helix(`users?login=${k.twitch}`);
   const [oyun] = k.oyun ? await helix(`games?name=${encodeURIComponent(k.oyun)}`) : [];
   const bas = new Date(Math.max(Date.parse(k.baslangic), Date.now() - 7 * 864e5)).toISOString();
@@ -41,7 +41,7 @@ async function helixKlipler(k) {
 }
 
 // ---- yt-dlp ile (anahtarsız) ----
-async function ytdlpKlipler(k) {
+export async function ytdlpKlipler(k) {
   const { stdout } = await sh(YTDLP, ['-J', '--no-warnings', '--playlist-end', '40', `https://www.twitch.tv/${k.twitch}/clips?filter=clips&range=7d`], { maxBuffer: 256 * 1024 * 1024 });
   const bas = Date.parse(k.baslangic);
   return (JSON.parse(stdout).entries ?? [])
@@ -51,7 +51,7 @@ async function ytdlpKlipler(k) {
 }
 
 // Daha önce kullanılan klipler ve bugün bu kampanyaya yazılan iş sayısı
-function kullanilanlar() {
+export function kullanilanlar() {
   const out = [];
   for (const d of [QUEUE_DIR, DONE_DIR, FAILED_DIR]) {
     if (!fs.existsSync(d)) continue;
@@ -96,7 +96,7 @@ async function main() {
   for (const k of kampanyalar().filter((x) => x.aktif)) {
     try {
       const klipler = (anahtar ? await helixKlipler(k) : await ytdlpKlipler(k))
-        .filter((c) => !kullanilan.has(c.id) && !olumsuzMu(c.baslik) && !yayinBasligiMi(c.baslik) && (c.sure ?? 30) >= 6)
+        .filter((c) => uygunKlip(c, kullanilan))
         .sort((a, b) => b.izlenme - a.izlenme);
       const kalan = ONIZLEME ? 1 : Math.max(0, (k.gunluk ?? 3) - eski.filter((j) => j.kampanya === k.id && j.id.startsWith(bugun)).length);
       console.log(`${k.ad}: ${klipler.length} aday${anahtar ? '' : ' (anahtarsız)'}, bugün ${kalan} hak`);
@@ -113,3 +113,9 @@ async function main() {
 }
 
 if (process.argv[1]?.endsWith('klip-twitch.js')) main();
+
+// Ortak klip süzgeci: kullanılmamış, olumsuz/uygunsuz değil, yayın başlığı değil, anlamlı başlıklı (en az 3 harf), en az 6 sn
+export function uygunKlip(c, kullanilan = new Set()) {
+  const harf = (String(c.baslik ?? '').match(/\p{L}/gu) ?? []).length;
+  return !kullanilan.has(c.id) && !olumsuzMu(c.baslik) && !yayinBasligiMi(c.baslik) && harf >= 3 && (c.sure ?? 30) >= 6;
+}

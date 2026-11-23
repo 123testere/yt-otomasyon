@@ -210,6 +210,7 @@ export async function renderKesit({ job, dir, video, sure, yorumlar, altyazi = [
       fps: FPS, width: 1080, height: 1920, durationInFrames: Math.max(1, Math.round(sure * FPS)),
       video: stage.add(video),
       hook: job.hook ?? null,
+      ekran: job.ekran ?? null, // bizim yorumumuz (ekran yazısı): baglam, isaretler, analiz
       kredi: job.kredi ?? `${job.kaynak.yayinci} · ${job.kaynak.platform}`,
       yorumlar: yorumlar.map((y) => ({ t0: y.t0, d: y.d, kapanis: y.kapanis, ses: stage.add(y.wav), words: y.words.map(({ t, d, text }) => ({ t, d, text })) })),
       altyazi, // yayıncının konuşması (yorum yoksa)

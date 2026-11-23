@@ -14,7 +14,7 @@ import { DESTAN_MEKANLAR, mekanKodHatasi } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
 import { kampanyaBul, kampanyaHatalari } from './lib/kampanya.js';
-import { v4Hatalari, v4Kanal } from './lib/master-v4.js';
+import { kesitYorumHatalari, v4Hatalari, v4Kanal } from './lib/master-v4.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -629,5 +629,7 @@ export function kesitHatalari(job) {
   if (typeof job.hook !== 'string' || !job.hook.trim() || job.hook.length > 70) e.push('hook 1-70 karakter olmalı');
   for (const y of job.yorum ?? []) if (typeof y?.metin !== 'string' || !(Number(y.sn) >= 0)) e.push('yorum: [{sn, metin}] olmalı');
   if (job.kampanya) e.push(...kampanyaHatalari(job, kampanyaBul(job.kampanya)));
+  // Kampanya klibi: bizim yorumumuz (ekran yazısı) ve v4 özgünlük/kalite maddeleri zorunlu
+  if (job.kampanya) e.push(...kesitYorumHatalari(job));
   return e;
 }

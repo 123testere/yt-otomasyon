@@ -22,6 +22,7 @@ import { sesSeviyesi } from './pipeline/ses-seviye.js';
 import { uzunKapak } from './pipeline/cover.js';
 
 const MAX_ATTEMPTS = 3;
+const KESIT_ONCE_MS = 10 * 60_000; // kesit en erken yayın saatinden 10 dk önce üretilir
 const TIME_BUDGET_MS = Number(process.env.TIME_BUDGET_MIN ?? 300) * 60 * 1000;
 
 // Uygulamadaki video listesi için küçük kapak: varsa YouTube küçük resmi, yoksa videonun içinden bir kare.
@@ -109,6 +110,8 @@ async function main() {
     if (prev.retry) prev.attempts = 0;
     // Deneme hakkı biten iş kuyrukta bekler; uygulamadan "Yeniden dene" denince tekrar işlenir.
     if ((prev.attempts ?? 0) >= MAX_ATTEMPTS) continue;
+    // Kampanya kesiti yayın saatinde üretilip hemen yayınlanır (Whop'a 30 dk içinde gönderim o an başlar)
+    if (job.kampanya && Date.parse(job.publishAt) - Date.now() > KESIT_ONCE_MS) continue;
 
     const channelSnap = await firestore.doc(`channels/${job.channelId}`).get();
     // Müzik deneyinin B kolu bir kademe kısık müzikle üretilir.
@@ -159,7 +162,9 @@ async function main() {
       // Dizi bölümünde YouTube bölümleri transkriptin kısımlarından gelir.
       const bolumler = job.format === 'dizi' ? built.bolumlerMetni ?? null : bolumSatirlari(job, built.sahneZaman, settings.language);
       if (v4 && job.type === 'long' && !bolumler) throw new Error('Master v4 U6: bölümler oluşmadı (ilki 00:00, en az 3 bölüm, her biri en az 10 sn)');
-      let uploadJob = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
+      let uploadJob0 = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
+      // Kampanya kesiti: zamanlama yok, üretildiği an herkese açık
+      let uploadJob = job.kampanya ? { ...uploadJob0, publishAt: new Date().toISOString() } : uploadJob0;
       // Master v4 U1/U7/S4 Studio işleri: video en az 24 saat sonrasına zamanlanır, o sürede telefondan yapılır
       if (v4) {
         const enErken = Date.now() + V4.studioBekleSaat * 3600_000;

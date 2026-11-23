@@ -1,0 +1,21 @@
+name: Kesit yayın saati (Vice City Dispatch)
+
+# Kampanya kesitleri yayın saatinde üretilip hemen yayınlanır (Whop'a 30 dk içinde gönderilebilsin).
+# Saatler (TR): 15:00, 16:30, 18:00, 19:30, 21:00, 23:00 — gece rutini kesitleri bu saatlere yazar.
+on:
+  schedule:
+    - cron: '0 12,15,18 * * *'
+    - cron: '30 13,16 * * *'
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  tetikle:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh workflow run produce.yml -R "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}

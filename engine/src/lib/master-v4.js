@@ -84,3 +84,29 @@ export function bolumZamanHatalari(zamanlar, toplamSn) {
   zamanlar.forEach((t, i) => { if (sonlar[i] - t < V4.bolumMinSn) e.push(`v4 U6: ${i + 1}. bölüm ${Math.round(sonlar[i] - t)} sn; en az ${V4.bolumMinSn}`); });
   return e;
 }
+
+// Vice City Dispatch (klip kampanyaları): v4'ün özgünlük/kalite maddeleri (O1–O12, S1–S3, S6) + bizim yorumumuz zorunlu.
+// S4 (ilgili uzun video) ve S5 (Shorts oranı) kullanıcı kararıyla uygulanmaz (kanalda uzun video yok, kampanya Shorts'la ölçülür).
+export const KESIT_KONTROL = [...ORTAK, 'S1', 'S2', 'S3', 'S6'];
+export function kesitYorumHatalari(job) {
+  const e = [];
+  const x = job.ekran;
+  const sure = Number(job.kaynak?.sure) || null;
+  if (!x || typeof x !== 'object') return ['v4 O1: kendi yorumumuz yok — "ekran": { baglam, isaretler: [{ sn, metin, x?, y? }], analiz: { metin } } yazılmalı'];
+  if (!(typeof x.baglam === 'string' && x.baglam.trim() && x.baglam.length <= 70)) e.push('ekran.baglam: 1-70 karakter bağlam (klipte ne oluyor, neden önemli)');
+  const isr = Array.isArray(x.isaretler) ? x.isaretler : [];
+  if (isr.length < 1 || isr.length > 3) e.push('ekran.isaretler: 1-3 "şuna bak" işareti');
+  for (const i of isr) {
+    if (!(Number(i.sn) >= 0) || (sure && i.sn > sure - 1)) e.push(`ekran.isaretler: sn (${i.sn}) klibin içinde olmalı`);
+    if (!(typeof i.metin === 'string' && i.metin.trim() && i.metin.length <= 40)) e.push('ekran.isaretler: metin 1-40 karakter');
+    if ((i.x != null || i.y != null) && !(i.x >= 0 && i.x <= 1 && i.y >= 0 && i.y <= 1)) e.push('ekran.isaretler: x, y 0-1 arası (kaynak karesinde)');
+  }
+  if (!(typeof x.analiz?.metin === 'string' && x.analiz.metin.trim() && x.analiz.metin.length <= 110)) e.push('ekran.analiz.metin: 1-110 karakter "neden patladı" analizi');
+  if ((job.title ?? '').length > V4.shortsBaslikMax) e.push(`v4 S6: başlık en fazla ${V4.shortsBaslikMax} karakter (${job.title.length})`);
+  if (Array.isArray(job.tags) && job.tags.length > V4.etiketMax) e.push(`v4 O12: en fazla ${V4.etiketMax} etiket`);
+  if (/\[DOĞRULANMALI\]/i.test(JSON.stringify(job))) e.push('v4 §0: [DOĞRULANMALI] işaretli bilgi var');
+  const k = job.kontrol && typeof job.kontrol === 'object' ? job.kontrol : {};
+  const eksik = KESIT_KONTROL.filter((m) => !/^evet\b/i.test(String(k[m] ?? '').trim()));
+  if (eksik.length) e.push(`v4 §6: kontrol listesinde "evet" olmayan/eksik: ${eksik.join(', ')}`);
+  return e;
+}
