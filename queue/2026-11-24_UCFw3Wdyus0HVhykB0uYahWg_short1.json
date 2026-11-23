@@ -1,0 +1,213 @@
+{
+ "id": "2026-11-24_UCFw3Wdyus0HVhykB0uYahWg_short1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "publishAt": "2026-11-24T09:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "derivedFrom": "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "bolum": {
+  "no": 8,
+  "ad": "Akıl Hocası"
+ },
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 8",
+  "soru": "Toros gerçekten satıldı mı, yoksa bu bir plan mıydı?"
+ },
+ "tanitim": [
+  "Kralın kuralı",
+  "Kervandaki mühürler",
+  "Toros'un göz kırpışı"
+ ],
+ "title": "Halkın Bağışladığı Hoca Neden Satıldı? ⛓️",
+ "description": "Kral, halkın bağışladığı Toros'u neden bir tüccara sattı? Cevap Zincirli 8. bölümde, kanaldaki tam videoda.",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "toros",
+  "arın",
+  "kervan",
+  "arena",
+  "dizi"
+ ],
+ "topic": "Zincirli 8. bölüm kesiti: bağışlanan Toros'un kervanla satılması ve saray mühürleri",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Why Was the Teacher the Crowd Forgave Sold Anyway? ⛓️",
+   "description": "Why did the king sell Toros to a merchant after the crowd forgave him? The answer is in Chained episode 8, the full video on the channel."
+  }
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "loca",
+   "buyukYazi": {
+    "ust": "HOCA SATILDI?",
+    "alt": "Halk bağışladı, kral sattı"
+   },
+   "aciklama": "0-2 sn: kral öfkeyle kalabalığa bakar, Sungur yanında durur. 2-3,5 sn: dev yazı ekranda kalır.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "supheli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kral, halkın bağışladığı hocayı neden sattı?"
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "aciklama": "0-2 sn: kral Sungur'a dönüp sakin sakin konuşur. 2-4,5 sn: Sungur susar, kral kalabalığa bakar.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "supheli"
+    },
+    {
+     "id": "sungur",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Ama arenanın bir kuralı var: yenilen yerinde kalmaz, Toros satılacak."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "sure": 5,
+   "aciklama": "0-2 sn: Toros bileğindeki yeni zincirle sağdan yürüyerek gelir. 2-5 sn: muhafız onu kervana doğru yönlendirir.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "dusunceli",
+     "hareket": {
+      "x0": 0.95,
+      "x1": 0.6,
+      "sure": 2.5
+     }
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ertesi sabah bir tüccarın kervanı kapıya dayandı ve Toros'un bileğine yeni bir zincir takıldı."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "aciklama": "0-2 sn: Arın kervanın yüklerine bakar. 2-5 sn: yüklerin üstündeki saray mühürlerini fark eder, şaşkınlıkla durur.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 2.2,
+       "poz": "isaret"
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yük arabalarında saray mühürleri vardı ve Toros bana göz kırptı."
+    }
+   ]
+  },
+  {
+   "mekan": "kervan",
+   "zaman": "safak",
+   "sure": 5,
+   "aciklama": "0-2 sn: Toros kervanla yürürken Arın'a dönüp bakar, usulca göz kırpar. 2-5 sn: Arın tek başına kalır, ekranda bölüm hatırlatılır.",
+   "kadraj": [
+    {
+     "id": "toros",
+     "x": 0.72,
+     "yon": -1,
+     "poz": "yuru",
+     "ifade": "gulumsuyor",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 2,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cevabı kanaldaki bölümde; devamı için abone ol ve beğen."
+    }
+   ]
+  }
+ ]
+}

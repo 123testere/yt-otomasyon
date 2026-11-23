@@ -1,0 +1,368 @@
+{
+ "id": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "long",
+ "format": "cizim",
+ "publishAt": "2026-11-24T15:00:00.000Z",
+ "seri": "markalar",
+ "rozet": "Markaların Hikâyesi #6",
+ "oylama": {
+  "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "secilen": "a"
+ },
+ "topic": "Swatch'ın hikâyesi: 1969 kuvars krizi, 1983'te plastik saatle İsviçre saat sektörünün toparlanması",
+ "title": "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
+ "titleAlt": "Seiko Saati Değiştirdi, Swatch Kurtardı | Markaların Hikâyesi 6",
+ "description": "Markaların Hikâyesi #6\nSwatch'ın hikâyesi: 1969'da kuvars saatlerle sarsılan İsviçre saat sektörü, 1983'te plastik gövdeli ve yaklaşık 51 parçalı bir saatle nasıl toparlandı? Seiko Astron'dan Nicolas Hayek'e, ETA mühendislerinden bugünkü Swatch Group'a kadar anlatıyoruz.\n\nSırada hangisi olsun? Saat mi, toka mı? Yorumlara yaz.\n\n#swatch #saat #markahikayesi #markalarınhikayesi",
+ "tags": [
+  "swatch",
+  "swatch hikayesi",
+  "swatch nasıl kuruldu",
+  "kuvars krizi",
+  "isviçre saat sektörü",
+  "nicolas hayek",
+  "seiko astron",
+  "markaların hikayesi",
+  "marka hikayesi",
+  "lamba altında",
+  "saat tarihi"
+ ],
+ "thumbnailText": "PLASTİK SAAT",
+ "thumbnailTextAlt": "1983: SON ŞANS",
+ "thumbnailTextAlt2": "İSVİÇRE ÇÖKÜYORDU",
+ "kapakAlt": "İsviçre · 1969 · 1983",
+ "kapakCizim": "ink(ell(150,330,110,110,36),{close:true,fill:'#E8B64A',w:8,seed:7001,pp:eo(pr(u,0,.6))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([150+Math.sin(a)*86,330-Math.cos(a)*86],[150+Math.sin(a)*100,330-Math.cos(a)*100],3),{w:6,seed:7010+i,pp:eo(pr(u,.3,.9))});}ink(ln([150,330],[150,260],4),{w:8,seed:7030,pp:eo(pr(u,.5,1))});ink(ln([150,330],[200,350],4),{w:8,seed:7031,pp:eo(pr(u,.5,1))});ink(kutu(100,190,100,40),{close:true,fill:'#B5432F',w:7,seed:7032,pp:eo(pr(u,.2,.7))});ink(kutu(100,430,100,40),{close:true,fill:'#B5432F',w:7,seed:7033,pp:eo(pr(u,.2,.7))});",
+ "oynatmaListesi": "Markaların Hikâyesi",
+ "baslikKart": [
+  "Plastik bir saat",
+  "İsviçre'yi kurtardı?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Saat",
+  "b": "Toka"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "How a Plastic Watch Saved Swiss Watchmaking | Brand Stories 6",
+   "description": "Brand Stories #6\nThe story of Swatch: how Swiss watchmaking, shaken by quartz watches in 1969, recovered in 1983 with a plastic watch of about 51 parts. From Seiko Astron to Nicolas Hayek, the ETA engineers and today's Swatch Group.\n\nWhat should be next? Watch or buckle? Tell us in the comments.\n\n#swatch #watches #brandstory #history"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "1983. İsviçre saat sektörü dibe vurmuştu.",
+   "ifade": "merakli",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#EFE4CB',w:7,seed:1000,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:1001+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:1030,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:1031,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:1032});txt('1983',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('İsviçre',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kurtarıcı, plastikten yapılmış ucuz bir saat oldu.",
+   "ifade": "saskin",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:1100,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:1101+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:1130,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:1131,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:1132});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:1140,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:1141,pp:eo(pr(u,.2,.7))});etk('plastik saat',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Adı Swatch'tı; ilk koleksiyon 1983'te çıktı.",
+   "ifade": "anlatiyor",
+   "cizim": "txt('SWATCH',500,360,120,{c:K.m,a:eo(pr(u,0,.7))});ink(ln([200,440],[800,440],14),{w:6,c:K.ak,seed:1200,pp:eo(pr(u,.5,1.2))});etk('1983 koleksiyonu',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Peki bir plastik saat koca sektörü nasıl kurtardı?",
+   "ifade": "merakli",
+   "cizim": "txt('?',500,400,260,{c:K.ak,a:eo(pr(u,0,.6))});"
+  },
+  {
+   "narration": "Hikâye on dört yıl önce Japonya'da başladı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([140,380],[860,380],20),{w:4,seed:1400,pp:eo(pr(u,0,1))});{const a=eo(pr(u,0.4,1.0));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(300,380,18,0,7);ctx.fillStyle=K.s;ctx.fill();ctx.restore();txt('1969',300,300,72,{a,c:K.s});etk('Japonya',300,470,a,{size:40});}{const a=eo(pr(u,1.6,2.2));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(700,380,18,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();txt('1983',700,300,72,{a,c:K.ak});etk('Swatch',700,470,a,{size:40});}"
+  },
+  {
+   "narration": "1969. Seiko ilk kuvars kol saatini satışa sundu.",
+   "ifade": "saskin",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#EFE4CB',w:7,seed:1500,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:1501+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:1530,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:1531,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:1532});txt('1969',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('Seiko Astron',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bu seriyi kaçırmamak için şimdi abone ol.",
+   "ifade": "gulumsuyor",
+   "cizim": "txt('ABONE OL',500,360,100,{c:K.m,a:eo(pr(u,0,.7))});ink(ln([200,440],[800,440],14),{w:6,c:K.ak,seed:1600,pp:eo(pr(u,.5,1.2))});etk('Markaların Hikâyesi',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Önce o saatin sektörü neden bu kadar sarstığını görelim.",
+   "ifade": "merakli",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:1700,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:1702+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:1715});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:1720,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:1722+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:1735});}etk('önce nedenini görelim',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kuvars saat pille çalışır ve mekanik saatten çok daha az şaşardı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#EFE4CB',w:7,seed:1800,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:1801+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:1830,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:1831,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:1832});etk('kuvars',500,650,eo(pr(u,1,1.5)),{size:46});",
+   "bolum": {
+    "no": "Bölüm I",
+    "ust": "1969 – 1970'ler",
+    "ad": "Kuvars fırtınası"
+   }
+  },
+  {
+   "narration": "Kuvars kristali, pilin verdiği elektrikle saniyede binlerce kez titreşir.",
+   "ifade": "anlatiyor",
+   "cizim": "txt('KUVARS',500,360,120,{c:K.m,a:eo(pr(u,0,.7))});ink(ln([200,440],[800,440],14),{w:6,c:K.ak,seed:1900,pp:eo(pr(u,.5,1.2))});etk('titreşen kristal',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Küçük bir devre bu titreşimleri sayar ve zamanı ölçer.",
+   "ifade": "anlatiyor",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:2000,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:2002+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:2015});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:2020,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:2022+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:2035});}etk('titreşimleri sayar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Mekanik saatte ise onlarca, bazen yüzlerce küçük parça birlikte çalışır.",
+   "ifade": "anlatiyor",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:2100,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:2102+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:2115});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:2120,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:2122+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:2135});}etk('mekanik parçalar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Üstelik zamanla fiyatları hızla düştü.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:2200,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:2201,pp:eo(pr(u,0,.4))});ink([[220,200],[340,230],[460,300],[580,400],[700,480],[800,530]],{w:8,c:K.bordo,seed:2202,pp:eo(pr(u,.3,1.3))});etk('fiyat düşüyor',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kuvars saatin üstünlüğü yalnızca doğruluk değildi; üretimi de çok daha ucuzdu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:2300,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:2301,pp:eo(pr(u,0,.4))});ink([[220,520],[340,500],[460,470],[580,400],[700,300],[800,200]],{w:8,c:K.ak,seed:2302,pp:eo(pr(u,.3,1.3))});ink([[220,500],[340,490],[460,495],[580,485],[700,490],[800,480]],{w:6,c:K.mavi,seed:2303,pp:eo(pr(u,.6,1.4))});etk('doğruluk ve fiyat',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "İsviçre ise yüzyıllardır mekanik saatin başkentiydi.",
+   "ifade": "gururlu",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:2400,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:2402+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:2415});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:2420,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:2422+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:2435});}etk('mekanik saat',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kaynaklara göre kuvars saatin ilk prototiplerini İsviçreli laboratuvarlar da geliştirmişti.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:2500,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#B5432F',w:6,seed:2501,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:2502+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:2509,pp:eo(pr(u,.6,1))});etk('İsviçre laboratuvarı',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Ama sektörün büyük bölümü mekanik saate güvenmeye devam etti.",
+   "ifade": "endiseli",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:2600,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:2602+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:2615});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:2620,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:2622+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:2635});}etk('eski alışkanlık',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Asya'dan gelen ucuz kuvars saatler pazarı doldurdu.",
+   "ifade": "saskin",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:2700,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:2701,pp:eo(pr(u,0,.4))});ink([[220,520],[340,500],[460,470],[580,400],[700,300],[800,200]],{w:8,c:K.ak,seed:2702,pp:eo(pr(u,.3,1.3))});ink([[220,500],[340,490],[460,495],[580,485],[700,490],[800,480]],{w:6,c:K.mavi,seed:2703,pp:eo(pr(u,.6,1.4))});etk('ucuz saatler yükseliyor',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Japonya, Amerika ve Hong Kong'da kuvars saat üreten firmalar çoğaldı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:2800,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#B5432F',w:6,seed:2801,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:2802+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:2809,pp:eo(pr(u,.6,1))});for(let k=0;k<3;k++){const ph=(T*.5+k*.33)%1,q=[];for(let i=0;i<=8;i++)q.push([660+Math.sin(i*.9+T*2+k)*12,190-i*12-ph*50]);ctx.save();ctx.globalAlpha=(1-ph)*.8;ink(q,{w:4,c:K.s,seed:2812+k,amp:.3});ctx.restore();}etk('yeni üreticiler',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Rakipler saati ucuzlattıkça İsviçre'nin pazar payı küçüldü.",
+   "ifade": "endiseli",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:2900,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:2901,pp:eo(pr(u,0,.4))});ink([[220,200],[340,230],[460,300],[580,400],[700,480],[800,530]],{w:8,c:K.bordo,seed:2902,pp:eo(pr(u,.3,1.3))});etk('pazar payı',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "İsviçreli saat firmalarının birçoğu zor duruma düştü, bir kısmı kapandı.",
+   "ifade": "endiseli",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:3000,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#8A8A8A',w:6,seed:3001,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:3002+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:3009,pp:eo(pr(u,.6,1))});etk('kapanan atölye',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kaynaklara göre sektördeki çalışan sayısı kriz boyunca büyük ölçüde azaldı.",
+   "ifade": "endiseli",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:3100,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:3101,pp:eo(pr(u,0,.4))});ink([[220,200],[340,230],[460,300],[580,400],[700,480],[800,530]],{w:8,c:K.bordo,seed:3102,pp:eo(pr(u,.3,1.3))});txt('KRİZ',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('çalışan sayısı',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "İsviçreli saat ustaları için bu, yüzyıllık bir zanaata yönelmiş tehdit gibi görünüyordu.",
+   "ifade": "endiseli",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:3200,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:3201,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:3202,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:3203,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:3204,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:3205,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:3206});ink(ell(570,430,26,26,18),{close:true,fill:'#E8B64A',w:4,seed:3207,pp:eo(pr(u,.6,1.1))});etk('usta',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kısacası sektör, hem teknolojide hem fiyatta rakiplerin gerisinde kalmıştı.",
+   "ifade": "endiseli",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:3300,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:3301,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:3302,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:3303,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:3304,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:3305,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:3306});etk('geride kalan sektör',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "İsviçre'nin iki büyük saat grubu, ASUAG ve SSIH, ağır borç altına girdi.",
+   "ifade": "endiseli",
+   "cizim": "ink([[260,300],[500,190],[740,300]],{close:true,fill:'#E6DBC4',w:6,seed:3400,pp:eo(pr(u,0,.5))});for(let i=0;i<5;i++)ink(kutu(300+i*90,310,44,220),{close:true,fill:'#EFE4CB',w:5,seed:3401+i,pp:eo(pr(u,.2+i*.08,.8))});ink(kutu(250,530,500,36),{close:true,fill:'#E6DBC4',w:6,seed:3408,pp:eo(pr(u,.6,1.1))});etk('ağır borç',500,650,eo(pr(u,1,1.5)),{size:46});",
+   "bolum": {
+    "no": "Bölüm II",
+    "ust": "1970'ler sonu – 1983",
+    "ad": "Batmanın eşiği"
+   }
+  },
+  {
+   "narration": "Bankalar devreye girdi.",
+   "ifade": "dusunceli",
+   "cizim": "ink([[260,300],[500,190],[740,300]],{close:true,fill:'#E6DBC4',w:6,seed:3500,pp:eo(pr(u,0,.5))});for(let i=0;i<5;i++)ink(kutu(300+i*90,310,44,220),{close:true,fill:'#EFE4CB',w:5,seed:3501+i,pp:eo(pr(u,.2+i*.08,.8))});ink(kutu(250,530,500,36),{close:true,fill:'#E6DBC4',w:6,seed:3508,pp:eo(pr(u,.6,1.1))});etk('bankalar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bankalar alacaklarını kaybetmemek için bir çıkış yolu aradı.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,380,150,150,36),{close:true,fill:'#E8B64A',w:8,seed:3600,pp:eo(pr(u,0,.7))});ink(ell(500,380,115,115,32),{w:4,seed:3601,pp:eo(pr(u,.3,.9))});txt('$',500,400,130,{c:K.m,a:eo(pr(u,.6,1.1))});etk('alacaklar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Çıkış için hem ucuz hem de İsviçre'ye yakışır bir ürün gerekiyordu.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#EFE4CB',w:7,seed:3700,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:3701+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:3730,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:3731,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:3732});etk('yeni ürün',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Danışman Nicolas Hayek'e bir rapor hazırlattılar.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:3800,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:3801,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:3802,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:3803,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:3804,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:3805,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:3806});ink(kutu(570,360,80,100),{close:true,fill:'#FBF6EA',w:4,seed:3807,pp:eo(pr(u,.6,1.1))});ink(ln([585,385],[635,385],4),{w:2,seed:3808});ink(ln([585,405],[635,405],4),{w:2,seed:3809});etk('Nicolas Hayek',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Hayek'in önerisi, iki grubu birleştirip işi baştan kurmaktı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(415,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:3900,pp:eo(pr(u,0.0,0.5))});ink(ln([415,354],[415,470],8),{w:6,seed:3901,pp:eo(pr(u,0.0,0.6))});ink(ln([415,380],[360,430],6),{w:5,seed:3902,pp:eo(pr(u,0.0,0.7))});ink(ln([415,380],[470,430],6),{w:5,seed:3903,pp:eo(pr(u,0.0,0.7))});ink(ell(585,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:3905,pp:eo(pr(u,0.1,0.6))});ink(ln([585,354],[585,470],8),{w:6,seed:3906,pp:eo(pr(u,0.1,0.7))});ink(ln([585,380],[530,430],6),{w:5,seed:3907,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ln([585,380],[640,430],6),{w:5,seed:3908,pp:eo(pr(u,0.2,0.7999999999999999))});etk('iki grup birleşiyor',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Sonuçta iki grup SMH adıyla birleşti ve Hayek sonradan şirketin başkanı oldu.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:4000,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#B5432F',w:6,seed:4001,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:4002+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:4009,pp:eo(pr(u,.6,1))});txt('SMH',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('birleşme',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Hedef, insanların ikinci ya da üçüncü saat olarak alacağı bir ürün yapmaktı.",
+   "ifade": "merakli",
+   "cizim": "ink(ell(330,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:4100,pp:eo(pr(u,0.0,0.5))});ink(ln([330,354],[330,470],8),{w:6,seed:4101,pp:eo(pr(u,0.0,0.6))});ink(ln([330,380],[275,430],6),{w:5,seed:4102,pp:eo(pr(u,0.0,0.7))});ink(ln([330,380],[385,430],6),{w:5,seed:4103,pp:eo(pr(u,0.0,0.7))});ink(ell(500,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:4105,pp:eo(pr(u,0.1,0.6))});ink(ln([500,354],[500,470],8),{w:6,seed:4106,pp:eo(pr(u,0.1,0.7))});ink(ln([500,380],[445,430],6),{w:5,seed:4107,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ln([500,380],[555,430],6),{w:5,seed:4108,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ell(670,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:4110,pp:eo(pr(u,0.2,0.7))});ink(ln([670,354],[670,470],8),{w:6,seed:4111,pp:eo(pr(u,0.2,0.8))});ink(ln([670,380],[615,430],6),{w:5,seed:4112,pp:eo(pr(u,0.4,0.8999999999999999))});ink(ln([670,380],[725,430],6),{w:5,seed:4113,pp:eo(pr(u,0.4,0.8999999999999999))});etk('ikinci saat',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Aynı dönemde ETA mühendisleri Elmar Mock ve Jacques Müller yeni bir saat tasarlıyordu.",
+   "ifade": "merakli",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:4200,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:4201,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:4202,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:4203,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:4204,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:4205,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:4206});ink(ell(570,430,26,26,18),{close:true,fill:'#E8B64A',w:4,seed:4207,pp:eo(pr(u,.6,1.1))});etk('ETA mühendisleri',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Gövdesi plastikti ve mekanizma doğrudan gövdeye yerleştirilmişti.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:4300,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:4301+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:4330,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:4331,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:4332});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:4340,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:4341,pp:eo(pr(u,.2,.7))});etk('plastik gövde',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Parça sayısı yaklaşık 51'e inmişti; alışılmış saatlerde bu sayı çok daha fazlaydı.",
+   "ifade": "saskin",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:4400,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:4402+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:4415});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:4420,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:4422+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:4435});}txt('51',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('parça',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bu sayede saat seri ve ucuz üretilebiliyordu.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:4500,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#B5432F',w:6,seed:4501,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:4502+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:4509,pp:eo(pr(u,.6,1))});for(let k=0;k<3;k++){const ph=(T*.5+k*.33)%1,q=[];for(let i=0;i<=8;i++)q.push([660+Math.sin(i*.9+T*2+k)*12,190-i*12-ph*50]);ctx.save();ctx.globalAlpha=(1-ph)*.8;ink(q,{w:4,c:K.s,seed:4512+k,amp:.3});ctx.restore();}etk('seri üretim',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "İsviçre malı denince akla lüks gelirdi; bu saat ise o alışkanlığı tersine çevirdi.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500,380,150,150,36),{close:true,fill:'#E8B64A',w:8,seed:4600,pp:eo(pr(u,0,.7))});ink(ell(500,380,115,115,32),{w:4,seed:4601,pp:eo(pr(u,.3,.9))});txt('CHF',500,400,130,{c:K.m,a:eo(pr(u,.6,1.1))});etk('ucuz ama İsviçre malı',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "1983'te Swatch tanıtıldı.",
+   "ifade": "gururlu",
+   "cizim": "txt('SWATCH',500,360,120,{c:K.m,a:eo(pr(u,0,.7))});ink(ln([200,440],[800,440],14),{w:6,c:K.ak,seed:4700,pp:eo(pr(u,.5,1.2))});txt('1983',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});",
+   "bolum": {
+    "no": "Bölüm III",
+    "ust": "1983 – 1990'lar",
+    "ad": "Saat moda oldu"
+   }
+  },
+  {
+   "narration": "Adın Swiss ve watch kelimelerinden türediği söylenir.",
+   "ifade": "gulumsuyor",
+   "cizim": "txt('SWISS + WATCH',500,360,90,{c:K.m,a:eo(pr(u,0,.7))});ink(ln([200,440],[800,440],14),{w:6,c:K.ak,seed:4800,pp:eo(pr(u,.5,1.2))});etk('adın kaynağı',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Fiyatı, lüks bir parçanın değil, hediye alınabilecek bir ürünün fiyatıydı.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500,380,150,150,36),{close:true,fill:'#E8B64A',w:8,seed:4900,pp:eo(pr(u,0,.7))});ink(ell(500,380,115,115,32),{w:4,seed:4901,pp:eo(pr(u,.3,.9))});txt('$',500,400,130,{c:K.m,a:eo(pr(u,.6,1.1))});etk('hediye fiyatı',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Saat artık yalnızca zamanı göstermiyordu; bir moda ürünüydü.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:5000,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:5001+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:5030,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:5031,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:5032});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:5040,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:5041,pp:eo(pr(u,.2,.7))});etk('moda ürünü',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Renkli kadranlar ve sürekli yenilenen koleksiyonlar insanları birden fazla saat almaya çekti.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(330,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:5100,pp:eo(pr(u,0.0,0.5))});ink(ln([330,354],[330,470],8),{w:6,seed:5101,pp:eo(pr(u,0.0,0.6))});ink(ln([330,380],[275,430],6),{w:5,seed:5102,pp:eo(pr(u,0.0,0.7))});ink(ln([330,380],[385,430],6),{w:5,seed:5103,pp:eo(pr(u,0.0,0.7))});ink(ell(500,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:5105,pp:eo(pr(u,0.1,0.6))});ink(ln([500,354],[500,470],8),{w:6,seed:5106,pp:eo(pr(u,0.1,0.7))});ink(ln([500,380],[445,430],6),{w:5,seed:5107,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ln([500,380],[555,430],6),{w:5,seed:5108,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ell(670,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:5110,pp:eo(pr(u,0.2,0.7))});ink(ln([670,354],[670,470],8),{w:6,seed:5111,pp:eo(pr(u,0.2,0.8))});ink(ln([670,380],[615,430],6),{w:5,seed:5112,pp:eo(pr(u,0.4,0.8999999999999999))});ink(ln([670,380],[725,430],6),{w:5,seed:5113,pp:eo(pr(u,0.4,0.8999999999999999))});etk('koleksiyon',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kadran renkleri, kayış desenleri ve adlar her koleksiyonda değişti.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(330,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:5200,pp:eo(pr(u,0.0,0.5))});ink(ln([330,354],[330,470],8),{w:6,seed:5201,pp:eo(pr(u,0.0,0.6))});ink(ln([330,380],[275,430],6),{w:5,seed:5202,pp:eo(pr(u,0.0,0.7))});ink(ln([330,380],[385,430],6),{w:5,seed:5203,pp:eo(pr(u,0.0,0.7))});ink(ell(500,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:5205,pp:eo(pr(u,0.1,0.6))});ink(ln([500,354],[500,470],8),{w:6,seed:5206,pp:eo(pr(u,0.1,0.7))});ink(ln([500,380],[445,430],6),{w:5,seed:5207,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ln([500,380],[555,430],6),{w:5,seed:5208,pp:eo(pr(u,0.2,0.7999999999999999))});ink(ell(670,320,34,34,20),{close:true,fill:'#EFE4CB',w:5,seed:5210,pp:eo(pr(u,0.2,0.7))});ink(ln([670,354],[670,470],8),{w:6,seed:5211,pp:eo(pr(u,0.2,0.8))});ink(ln([670,380],[615,430],6),{w:5,seed:5212,pp:eo(pr(u,0.4,0.8999999999999999))});ink(ln([670,380],[725,430],6),{w:5,seed:5213,pp:eo(pr(u,0.4,0.8999999999999999))});etk('her sezon yeni',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Sanatçıların tasarladığı özel seriler de çıkarıldı; saat böylece koleksiyon nesnesine dönüştü.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:5300,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:5301,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:5302,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:5303,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:5304,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:5305,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:5306});ink(kutu(570,360,80,100),{close:true,fill:'#FBF6EA',w:4,seed:5307,pp:eo(pr(u,.6,1.1))});ink(ln([585,385],[635,385],4),{w:2,seed:5308});ink(ln([585,405],[635,405],4),{w:2,seed:5309});etk('özel seriler',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Kaynaklara göre bazı eski modeller bugün koleksiyoncular arasında yüksek fiyatlara el değiştiriyor.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500,380,150,150,36),{close:true,fill:'#E8B64A',w:8,seed:5400,pp:eo(pr(u,0,.7))});ink(ell(500,380,115,115,32),{w:4,seed:5401,pp:eo(pr(u,.3,.9))});txt('$',500,400,130,{c:K.m,a:eo(pr(u,.6,1.1))});etk('koleksiyoncular',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Swatch kısa sürede dünyaca tanınan bir marka oldu.",
+   "ifade": "gururlu",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:5500,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:5501,pp:eo(pr(u,0,.4))});ink([[220,520],[340,500],[460,470],[580,400],[700,300],[800,200]],{w:8,c:K.ak,seed:5502,pp:eo(pr(u,.3,1.3))});etk('satışlar yükseliyor',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Birleşen şirket büyüdü ve 1998'de Swatch Group adını aldı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:5600,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#B5432F',w:6,seed:5601,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:5602+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:5609,pp:eo(pr(u,.6,1))});txt('1998',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('Swatch Group',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Omega ve Tissot gibi eski markalar da bu çatı altında kaldı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink([[260,300],[500,190],[740,300]],{close:true,fill:'#E6DBC4',w:6,seed:5700,pp:eo(pr(u,0,.5))});for(let i=0;i<5;i++)ink(kutu(300+i*90,310,44,220),{close:true,fill:'#EFE4CB',w:5,seed:5701+i,pp:eo(pr(u,.2+i*.08,.8))});ink(kutu(250,530,500,36),{close:true,fill:'#E6DBC4',w:6,seed:5708,pp:eo(pr(u,.6,1.1))});etk('eski markalar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bugün Swatch Group dünyanın en büyük saat şirketlerinden biri.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:5800,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#B5432F',w:6,seed:5801,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:5802+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:5809,pp:eo(pr(u,.6,1))});for(let k=0;k<3;k++){const ph=(T*.5+k*.33)%1,q=[];for(let i=0;i<=8;i++)q.push([660+Math.sin(i*.9+T*2+k)*12,190-i*12-ph*50]);ctx.save();ctx.globalAlpha=(1-ph)*.8;ink(q,{w:4,c:K.s,seed:5812+k,amp:.3});ctx.restore();}etk('bugün',500,650,eo(pr(u,1,1.5)),{size:46});",
+   "bolum": {
+    "no": "Bölüm IV",
+    "ust": "Bugün",
+    "ad": "Ders"
+   }
+  },
+  {
+   "narration": "Kuvarsa direnen sektör, kuvarsla yeniden ayağa kalktı.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:5900,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:5901+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:5930,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:5931,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:5932});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:5940,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:5941,pp:eo(pr(u,.2,.7))});etk('kuvars',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "İsviçre'nin saat sektörü bu krizden sonra yeniden toparlandı.",
+   "ifade": "gururlu",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:6000,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:6001,pp:eo(pr(u,0,.4))});ink([[220,520],[340,500],[460,470],[580,400],[700,300],[800,200]],{w:8,c:K.ak,seed:6002,pp:eo(pr(u,.3,1.3))});etk('toparlanma',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bugün hâlâ pahalı mekanik saatler de yapılıyor; ikisi yan yana yaşıyor.",
+   "ifade": "anlatiyor",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:6100,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:6102+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:6115});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:6120,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:6122+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:6135});}etk('mekanik ve kuvars',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Düşüş bir günde olmadı; yıllarca süren alışkanlıkların toplamıydı.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:6200,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:6201,pp:eo(pr(u,0,.4))});ink([[220,200],[340,230],[460,300],[580,400],[700,480],[800,530]],{w:8,c:K.bordo,seed:6202,pp:eo(pr(u,.3,1.3))});etk('alışkanlıklar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Seiko'nun 1969'daki kuvars hamlesi, dolaylı olarak Swatch'ın doğmasına yol açtı.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ln([140,380],[860,380],20),{w:4,seed:6300,pp:eo(pr(u,0,1))});{const a=eo(pr(u,0.4,1.0));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(300,380,18,0,7);ctx.fillStyle=K.s;ctx.fill();ctx.restore();txt('1969',300,300,72,{a,c:K.s});etk('Seiko',300,470,a,{size:40});}{const a=eo(pr(u,1.6,2.2));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(700,380,18,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();txt('1983',700,300,72,{a,c:K.ak});etk('Swatch',700,470,a,{size:40});}"
+  },
+  {
+   "narration": "İsviçre mekanik lüksü bırakmadı; ucuz bir saatle yeni bir pazar açtı.",
+   "ifade": "gururlu",
+   "cizim": "{const a=T*.6*1;ink(ell(430,380,110,110,32),{close:true,fill:'#CFC9B8',w:6,seed:6400,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([430+Math.cos(t)*110,380+Math.sin(t)*110],[430+Math.cos(t)*132,380+Math.sin(t)*132],2),{w:9,seed:6402+i,pp:eo(pr(u,.3,.9))});}ink(ell(430,380,18,18,14),{close:true,fill:K.ak,w:3,seed:6415});}{const a=T*.6*-1;ink(ell(620,320,70,70,32),{close:true,fill:'#CFC9B8',w:6,seed:6420,pp:eo(pr(u,0,.7))});for(let i=0;i<10;i++){const t=a+i*Math.PI/5;ink(ln([620+Math.cos(t)*70,320+Math.sin(t)*70],[620+Math.cos(t)*92,320+Math.sin(t)*92],2),{w:9,seed:6422+i,pp:eo(pr(u,.3,.9))});}ink(ell(620,320,18,18,14),{close:true,fill:K.ak,w:3,seed:6435});}etk('yeni pazar',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Yani kriz, sektöre kendini yeniden icat etme fırsatı da verdi.",
+   "ifade": "gururlu",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:6500,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:6501+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:6530,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:6531,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:6532});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:6540,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:6541,pp:eo(pr(u,.2,.7))});etk('yeniden icat',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bazen kurtuluş, rakibin silahını kendi yolunuzla kullanmaktan geçer.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:6600,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:6601,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:6602,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:6603,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:6604,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:6605,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:6606});ink(ell(570,430,26,26,18),{close:true,fill:'#E8B64A',w:4,seed:6607,pp:eo(pr(u,.6,1.1))});etk('ders',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Hikâyenin özeti şu: eski ustalık, yeni teknolojiyle çatışmak zorunda değil.",
+   "ifade": "dusunceli",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:6700,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:6701+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:6730,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:6731,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:6732});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:6740,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:6741,pp:eo(pr(u,.2,.7))});etk('eski ustalık, yeni fikir',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Sırada saat mi, toka mı? Yorumlara yaz; serinin devamı için abone ol ve beğen.",
+   "ifade": "merakli",
+   "cizim": "txt('?',500,400,260,{c:K.ak,a:eo(pr(u,0,.6))});etk('saat mi, toka mı?',500,650,eo(pr(u,1,1.5)),{size:46});"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "id": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-24T16:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+  "secilen": "a"
+ },
+ "topic": "Romalıların Inchtuthil kalesinde 875 bin çiviyi gömmesi ve 1960 kazısı",
+ "title": "Romalılar Neden Yüz Binlerce Çiviyi Toprağa Gömdü?",
+ "description": "Eşyaların Hikayesi\nRomalılar İskoçya'daki Inchtuthil kalesini boşaltırken yaklaşık 875 bin çiviyi, yani yaklaşık yedi ton demiri toprağa gömdü; çiviler 1960'taki kazıda bulundu.\n\n#çivi #romalılar #eşyalarınhikayesi #shorts",
+ "tags": [
+  "çivi",
+  "romalılar",
+  "inchtuthil",
+  "gömülü çiviler",
+  "çivinin hikayesi",
+  "eşyaların hikayesi",
+  "günlük eşyalar",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Romalılar çiviyi",
+  "neden gömdü?"
+ ],
+ "kapanis": {
+  "soru": "Sırada hangisi olsun?",
+  "a": "Kibrit",
+  "b": "Ayna"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ceviriler": {
+  "en": {
+   "title": "Why Did the Romans Bury Hundreds of Thousands of Nails?",
+   "description": "Story of Things\nWhen Romans left the fort of Inchtuthil in Scotland, they buried about 875,000 nails, roughly seven tons of iron; the nails were found in a 1960 excavation.\n\n#nails #romans #storyofthings #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "Romalılar İskoçya'da 875 bin çiviyi toprağa gömdü.",
+   "ifade": "saskin",
+   "cizim": "ink(ln([320,250],[320,520],6),{w:8,seed:100,pp:eo(pr(u,0.0,0.6))});ink(ln([294,250],[346,250],6),{w:10,seed:101,pp:eo(pr(u,0.0,0.6))});ink(ln([410,250],[410,520],6),{w:8,seed:103,pp:eo(pr(u,0.08,0.6799999999999999))});ink(ln([384,250],[436,250],6),{w:10,seed:104,pp:eo(pr(u,0.08,0.6799999999999999))});ink(ln([500,250],[500,520],6),{w:8,seed:106,pp:eo(pr(u,0.16,0.76))});ink(ln([474,250],[526,250],6),{w:10,seed:107,pp:eo(pr(u,0.16,0.76))});ink(ln([590,250],[590,520],6),{w:8,seed:109,pp:eo(pr(u,0.24,0.84))});ink(ln([564,250],[616,250],6),{w:10,seed:110,pp:eo(pr(u,0.24,0.84))});ink(ln([680,250],[680,520],6),{w:8,seed:112,pp:eo(pr(u,0.32,0.9199999999999999))});ink(ln([654,250],[706,250],6),{w:10,seed:113,pp:eo(pr(u,0.32,0.9199999999999999))});ink(kutu(180,480,640,120),{close:true,fill:'#C9B28A',w:6,seed:150,pp:eo(pr(u,.3,.9))});txt('875 BİN',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('gömülen çivi',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Orada Inchtuthil adlı bir Roma kalesi vardı; gömülen çiviler yaklaşık yedi ton ediyordu.",
+   "ifade": "merakli",
+   "cizim": "ink(kutu(280,320,440,240),{close:true,fill:'#E6DBC4',w:6,seed:200,pp:eo(pr(u,0,.6))});ink([[260,320],[500,200],[740,320]],{close:true,fill:'#8A8A8A',w:6,seed:201,pp:eo(pr(u,.2,.7))});for(let i=0;i<3;i++)ink(kutu(320+i*110,370,70,70),{close:true,fill:'#CFE0EA',w:4,seed:202+i,pp:eo(pr(u,.4+i*.1,.9))});ink(kutu(620,430,70,130),{close:true,fill:'#C99A5C',w:5,seed:209,pp:eo(pr(u,.6,1))});etk('Inchtuthil kalesi',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Arkeologlara göre kaleyi boşaltırken demir düşmanın eline geçmesin diye gömüldü.",
+   "ifade": "anlatiyor",
+   "cizim": "ink(ell(500,300,42,42,22),{close:true,fill:'#EFE4CB',w:5,seed:300,pp:eo(pr(u,0,.5))});ink(ln([500,342],[500,470],8),{w:6,seed:301,pp:eo(pr(u,.1,.6))});ink(ln([500,380],[430,430],6),{w:5,seed:302,pp:eo(pr(u,.3,.8))});ink(ln([500,380],[570,430],6),{w:5,seed:303,pp:eo(pr(u,.3,.8))});ink(ln([500,470],[455,570],6),{w:5,seed:304,pp:eo(pr(u,.4,.9))});ink(ln([500,470],[545,570],6),{w:5,seed:305,pp:eo(pr(u,.4,.9))});ink(ln([500-12,298],[500-12,298],2),{w:4,seed:306});ink(kutu(560,400,120,90),{close:true,fill:'#CFC9B8',w:5,seed:307,pp:eo(pr(u,.6,1.1))});etk('demir düşmana kalmasın',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Çiviler 1960'taki kazıda ortaya çıkana kadar yüzyıllarca toprağın altında yattı.",
+   "ifade": "gururlu",
+   "cizim": "ink(kutu(180,420,640,150),{close:true,fill:'#C9B28A',w:6,seed:401,pp:eo(pr(u,0,.6))});for(let k=0;k<6;k++)ink(ln([260+k*90,440],[260+k*90,520],4),{w:6,seed:402+k,pp:eo(pr(u,.3+k*.08,1))});txt('1960',500,200,120,{c:K.ak,a:eo(pr(u,.5,1))});etk('kazıda bulundu',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Ve asıl şaşırtıcı olan şu:",
+   "ifade": "merakli",
+   "cizim": "ink(ln([500,250],[500,520],6),{w:8,seed:500,pp:eo(pr(u,0.0,0.6))});ink(ln([474,250],[526,250],6),{w:10,seed:501,pp:eo(pr(u,0.0,0.6))});txt('?',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});"
+  }
+ ]
+}

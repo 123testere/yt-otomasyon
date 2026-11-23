@@ -1,0 +1,158 @@
+{
+ "id": "2026-11-24_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-24T09:00:00.000Z",
+ "bolum": {
+  "no": 21,
+  "ad": "Top 3"
+ },
+ "title": "Yarış Oyunu mu Arıyorsun? 🎮",
+ "description": "Yarış oyunu arıyorsan şu üç oyun iyi bir başlangıç olabilir: Mario Kart 8 Deluxe, Forza Horizon 5 ve Need for Speed Most Wanted. İlk yarış oyunun hangisiydi, yorumlara yaz!\n\n#yarışoyunları #oyunönerisi #videooyunları #gaming",
+ "tags": [
+  "yarış oyunları",
+  "en iyi yarış oyunları",
+  "mario kart 8 deluxe",
+  "forza horizon 5",
+  "need for speed most wanted",
+  "oyun önerisi",
+  "araba oyunları",
+  "pc oyunları"
+ ],
+ "topic": "Üç yarış oyunu önerisi: Mario Kart 8 Deluxe, Forza Horizon 5 ve Need for Speed Most Wanted",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "Looking for a Racing Game? 🎮",
+   "description": "If you want a racing game, these three are a good start: Mario Kart 8 Deluxe, Forza Horizon 5 and Need for Speed Most Wanted. What was your first racing game? Tell us in the comments!\n\n#racinggames #gamerecommendations #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN OYUNUN?",
+  "sonraki": "Devamı için abone ol ve beğen",
+  "soru": "İnternet kafede ilk hangi araba oyununu açtın?"
+ },
+ "tanitim": [
+  "Yarış oyunları",
+  "3 popüler oyun"
+ ],
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "oyun-salonu",
+   "buyukYazi": {
+    "ust": "YARIŞ OYUNU?",
+    "alt": "hangisini seçmeli"
+   },
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yarış oyunu mu arıyorsun ama hangisini seçeceğini bilmiyor musun?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: Oyuncu salonda düşünceli bakınır. 1,5-4 sn: dev yazı ekranda kalır, oyuncu omuz silker."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 3,
+    "ad": "Mario Kart 8 Deluxe",
+    "tur": "Eğlenceli yarış",
+    "maddeler": [
+     "2017 çıkışlı",
+     "Nintendo yaptı",
+     "Ortak ekran yarışı"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Mario Kart 8 Deluxe: 2017'de çıktı, arkadaşlarla yarışmak için birebir."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı 3 üç kısa maddeyle belirir."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 2,
+    "ad": "Forza Horizon 5",
+    "tur": "Açık dünya yarış",
+    "maddeler": [
+     "2021 çıkışlı",
+     "Playground Games yaptı",
+     "Meksika'da geçer"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Forza Horizon 5: 2021'de çıktı, Meksika'da açık dünyada serbestçe sürüyorsun."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı 2 üç kısa maddeyle belirir."
+  },
+  {
+   "mekan": "siralama",
+   "sira": {
+    "no": 1,
+    "ad": "Need for Speed Most Wanted",
+    "tur": "Polis kovalamacalı yarış",
+    "maddeler": [
+     "2005 çıkışlı",
+     "EA Black Box yaptı",
+     "Polisten kaçarsın"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Birinci sırada Need for Speed Most Wanted: 2005'ten beri polis kovalamacasıyla ünlü."
+    }
+   ],
+   "aciklama": "0-1 sn: Sıralama kartı 1 beyaz çakmayla belirir. 1-4 sn: üç madde sırayla gelir.",
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "esya": "kupa",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen; ilk yarış oyunun hangisiydi, yorumlara yaz!"
+    }
+   ],
+   "aciklama": "0-1 sn: Kalabalık fuarda alkışlar. 1-4 sn: Oyuncu kupayı kaldırıp gülümser."
+  }
+ ]
+}

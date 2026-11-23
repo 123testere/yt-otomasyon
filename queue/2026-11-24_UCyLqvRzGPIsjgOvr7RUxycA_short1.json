@@ -1,0 +1,25 @@
+{
+  "id": "2026-11-24_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+  "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+  "type": "short",
+  "format": "duell",
+  "publishAt": "2026-11-24T16:00:00.000Z",
+  "topic": "Tomaten",
+  "title": "Duell 22/30: Wer erntet die meisten Tomaten? 🍅",
+  "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Tomaten-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+  "tags": ["flaggenduell", "europa", "länder vergleich", "tomaten", "landwirtschaft", "ranking", "länderduell", "gemüse"],
+  "duell": {
+    "topicId": "tomaten",
+    "why": ["Lange, heiße Sommer", "Riesige Anbauflächen"],
+    "script": {
+      "intro": "Welches Land erntet die meisten Tomaten Europas? 46 Flaggen starten – nur eine kommt durch!",
+      "nodata": "4 Länder haben keine Tomatendaten und fliegen sofort raus!",
+      "rounds": "Jetzt wird gesiebt! Spanien verpasst das Finale um rund 1,4 Millionen Tonnen!",
+      "final": "Finale! Türkei gegen Italien – wer holt die Tomaten-Krone?",
+      "winner": "Die Türkei gewinnt! Rund 14,6 Millionen Tonnen, mehr als doppelt so viel wie Italien!",
+      "why": "Warum die Türkei? Lange, heiße Sommer und riesige Anbauflächen.",
+      "table": "Die Türkei führt die Tabelle mit 127 Punkten. Abonniere und like für das nächste Duell!"
+    }
+  },
+  "deney": { "id": "yayin-saati", "kol": "B" }
+}

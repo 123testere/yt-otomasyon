@@ -1,0 +1,71 @@
+{
+ "id": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-24T10:00:00.000Z",
+ "seri": "markalar",
+ "rozet": "Markaların Hikâyesi #5",
+ "fragman": true,
+ "derivedFrom": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "topic": "Swatch'ın hikâyesi ön gösterimi: 1969 kuvars krizi ve plastik saat",
+ "title": "1969'da Gelen Bir Saat İsviçre'yi Sarstı… Tamamı Bu Akşam",
+ "description": "Markaların Hikâyesi #5\nSwatch'ın hikâyesi: 1969'da kuvars saatlerle sarsılan İsviçre saat sektörünü plastik bir saat kurtarabildi mi? Tamamı bu akşam kanalda.\n\n#swatch #markalarınhikayesi #markahikayesi #shorts",
+ "tags": [
+  "swatch",
+  "swatch hikayesi",
+  "kuvars krizi",
+  "isviçre saat sektörü",
+  "seiko astron",
+  "markaların hikayesi",
+  "marka hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "İsviçre'yi sarsan",
+  "saat nasıl çıktı?"
+ ],
+ "kapanis": {
+  "fragman": true,
+  "baslik": "BU AKŞAM 18:00",
+  "alt": "Uzun videoda, bu kanalda"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Markaların Hikâyesi",
+ "ceviriler": {
+  "en": {
+   "title": "A 1969 Watch Shook Switzerland… Full Story Tonight",
+   "description": "Brand Stories #5\nThe story of Swatch: could a plastic watch save Swiss watchmaking after the 1969 quartz shock? The full story is on the channel tonight.\n\n#swatch #brandstory #history #shorts"
+  }
+ },
+ "scenes": [
+  {
+   "narration": "1969'da bir Japon saati İsviçre sektörünü sarsmaya başladı.",
+   "ifade": "saskin",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#EFE4CB',w:7,seed:100,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:101+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:130,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:131,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:132});txt('1969',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('Seiko Astron',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Ucuz kuvars saatler pazarı doldurdu ve birçok İsviçreli firma zor duruma düştü.",
+   "ifade": "endiseli",
+   "cizim": "ink(ln([200,560],[820,560],10),{w:5,seed:200,pp:eo(pr(u,0,.4))});ink(ln([200,160],[200,560],10),{w:5,seed:201,pp:eo(pr(u,0,.4))});ink([[220,200],[340,230],[460,300],[580,400],[700,480],[800,530]],{w:8,c:K.bordo,seed:202,pp:eo(pr(u,.3,1.3))});etk('İsviçre düşüyor',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Sonra plastikten yapılmış, 51 parçalı bir saat işe karıştı.",
+   "ifade": "merakli",
+   "cizim": "ink(ell(500,380,170,170,40),{close:true,fill:'#E8B64A',w:7,seed:300,pp:eo(pr(u,0,.7))});for(let i=0;i<12;i++){const a=i*Math.PI/6;ink(ln([500+Math.sin(a)*140,380-Math.cos(a)*140],[500+Math.sin(a)*158,380-Math.cos(a)*158],3),{w:4,seed:301+i,pp:eo(pr(u,.4,1))});}ink(ln([500,380],[500+Math.sin(T*.8)*110,380-Math.cos(T*.8)*110],4),{w:6,seed:330,pp:eo(pr(u,.5,1))});ink(ln([500,380],[500+Math.sin(T*.07)*75,380-Math.cos(T*.07)*75],4),{w:8,seed:331,pp:eo(pr(u,.5,1))});ink(ell(500,380,10,10,12),{close:true,fill:K.ak,w:3,seed:332});ink(kutu(450,170,100,55),{close:true,fill:'#B5432F',w:5,seed:340,pp:eo(pr(u,.2,.7))});ink(kutu(450,535,100,55),{close:true,fill:'#B5432F',w:5,seed:341,pp:eo(pr(u,.2,.7))});txt('51',500,120,92,{c:K.ak,a:eo(pr(u,.4,.9))});etk('parça',500,650,eo(pr(u,1,1.5)),{size:46});"
+  },
+  {
+   "narration": "Bu küçük plastik saat koca sektörü gerçekten kurtarabildi mi?",
+   "ifade": "merakli",
+   "cizim": "txt('?',500,400,260,{c:K.ak,a:eo(pr(u,0,.6))});"
+  },
+  {
+   "narration": "Tamamı bu akşam 18:00'de kanalda; hikâye 1969'da başlıyor.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ln([140,380],[860,380],20),{w:4,seed:500,pp:eo(pr(u,0,1))});{const a=eo(pr(u,0.4,1.0));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(300,380,18,0,7);ctx.fillStyle=K.s;ctx.fill();ctx.restore();txt('1969',300,300,72,{a,c:K.s});etk('Seiko',300,470,a,{size:40});}{const a=eo(pr(u,1.6,2.2));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(700,380,18,0,7);ctx.fillStyle=K.ak;ctx.fill();ctx.restore();txt('1983',700,300,72,{a,c:K.ak});etk('Swatch',700,470,a,{size:40});}"
+  }
+ ]
+}

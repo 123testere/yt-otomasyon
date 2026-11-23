@@ -1,0 +1,178 @@
+{
+ "id": "2026-11-24_UCJUP2lYvMuhcif8FavIXuYA_short1",
+ "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "yz-gundem",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-24T16:00:00.000Z",
+ "bolum": {
+  "no": 17,
+  "ad": "Nothing Ekransız Cihaz"
+ },
+ "kaynak": "DonanımHaber",
+ "kaynakLink": "https://www.donanimhaber.com/nothing-in-ekransiz-yapay-zeka-cihazi-8-aralik-ta-tanitilacak--213212",
+ "title": "Ekransız Yapay Zekâ Cihazı mı Geliyor? Nothing 8 Aralık'ta ⚡",
+ "description": "Nothing, ilk yapay zekâ odaklı ekransız cihazını 8 Aralık'ta tanıtacağını duyurdu; ürünün adı ve özellikleri henüz açıklanmadı. Sen böyle bir cihaz kullanır mıydın?\nKaynak: DonanımHaber https://www.donanimhaber.com/nothing-in-ekransiz-yapay-zeka-cihazi-8-aralik-ta-tanitilacak--213212\n\n#nothing #yapayzeka #teknolojihaberleri #ekransızcihaz",
+ "tags": [
+  "nothing",
+  "nothing yapay zeka cihazı",
+  "ekransız cihaz",
+  "yapay zeka cihazı",
+  "8 aralık tanıtım",
+  "teknoloji haberleri",
+  "yapay zeka haberleri"
+ ],
+ "topic": "Nothing'ın ekransız yapay zekâ cihazı 8 Aralık'ta tanıtılacak",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Yapay Zekâ Gündemi",
+ "tanitim": [
+  "Ekransız yapay zekâ",
+  "Nothing'ın hamlesi",
+  "8 Aralık tanıtımı"
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "Nothing's Screenless AI Device Is Coming Dec 8 ⚡",
+   "description": "Nothing announced it will unveil its first AI-focused, screenless device on December 8; its name and features are not yet revealed. Would you use one?\nSource: DonanımHaber\n\n#nothing #ai #tech #aidevice"
+  }
+ },
+ "kapanis": {
+  "baslik": "ABONE OL",
+  "sonraki": "Her gün yapay zekâ gündemi",
+  "soru": "Ekransız cihaz alır mıydın?"
+ },
+ "scenes": [
+  {
+   "kisim": "Kanca",
+   "mekan": "yz-lab",
+   "buyukYazi": {
+    "ust": "EKRANSIZ?",
+    "alt": "Yapay zekâ cihazı"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "saskin"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ekranı olmayan bir yapay zekâ cihazı alır mıydın?"
+    }
+   ],
+   "aciklama": "0-2 sn: kullanıcı şaşkın şekilde robota bakar. 2-3,5 sn: dev yazı ekranda kalır, robot ekransız gövdesini gösterir."
+  },
+  {
+   "mekan": "yz-lab",
+   "haber": {
+    "etiket": "YAPAY ZEKÂ GÜNDEMİ",
+    "baslik": "Nothing, ekransız yapay zekâ cihazını 8 Aralık'ta tanıtacak",
+    "kaynak": "DonanımHaber · 22 Kasım",
+    "maddeler": [
+     "İlk yapay zekâ cihazı",
+     "Ekransız tasarım",
+     "Tanıtım: 8 Aralık"
+    ]
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "DonanımHaber'e göre Nothing, ilk yapay zekâ odaklı cihazını 8 Aralık'ta tanıtacak."
+    }
+   ],
+   "aciklama": "0-5 sn: haber kartı ekrana gelir, üç madde sırayla belirir."
+  },
+  {
+   "mekan": "ofis",
+   "buyukYazi": {
+    "ust": "8 ARALIK",
+    "alt": "Tanıtım tarihi"
+   },
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tasarımı ekransız olacak; adı ve özellikleri ise henüz açıklanmadı."
+    }
+   ],
+   "aciklama": "0-2 sn: kullanıcı takvimi işaret eder. 2-4,5 sn: robot omuz silker, dev yazı ekranda kalır."
+  },
+  {
+   "mekan": "gelecek",
+   "kadraj": [
+    {
+     "id": "arastirmaci",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Belki yakında yapay zekâyla ekrana bakmadan konuşacağımız bir dönem başlayabilir."
+    }
+   ],
+   "aciklama": "0-2,5 sn: araştırmacı düşünür. 2,5-5 sn: başını sallayıp gülümser."
+  },
+  {
+   "mekan": "yz-lab",
+   "kadraj": [
+    {
+     "id": "kullanici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "robot",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Her gün yapay zekâ gündemi için abone ol ve beğen; sen alır mıydın?"
+    }
+   ],
+   "aciklama": "0-2 sn: kullanıcı el sallar. 2-4 sn: robot zafer pozu verir."
+  }
+ ]
+}
