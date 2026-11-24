@@ -1,0 +1,40 @@
+{
+ "id": "2026-11-25_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-25T05:00:00.000Z",
+ "topic": "Zwiebeln",
+ "title": "Duell 23/30: Wer erntet die meisten Zwiebeln? 🧅",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Zwiebel-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "zwiebeln",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "gemüse"
+ ],
+ "duell": {
+  "topicId": "zwiebeln",
+  "why": [
+   "Weite Anbauflächen",
+   "Warme, trockene Sommer"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Zwiebeln Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "6 Länder haben keine Zwiebeldaten und fliegen sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Spanien verpasst das Finale um rund 413 Tausend Tonnen!",
+   "final": "Finale! Türkei gegen die Niederlande – wer holt die Zwiebel-Krone?",
+   "winner": "Die Türkei gewinnt! Rund 2,6 Millionen Tonnen, fast anderthalbmal so viel wie die Niederlande!",
+   "why": "Warum die Türkei? Weite Anbauflächen und warme, trockene Sommer.",
+   "table": "Die Türkei führt die Tabelle mit 137 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "yayin-saati",
+  "kol": "A"
+ }
+}

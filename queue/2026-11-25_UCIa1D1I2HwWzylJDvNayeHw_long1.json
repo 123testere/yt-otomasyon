@@ -1,0 +1,761 @@
+{
+ "id": "2026-11-25_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "hiz": 1.12,
+ "publishAt": "2026-11-25T15:00:00.000Z",
+ "bolum": {
+  "no": 22,
+  "ad": "Tetris"
+ },
+ "tanitim": [
+  "Moskova'da bir bulmaca",
+  "Hakların kavgası",
+  "Game Boy çağı"
+ ],
+ "title": "Tetris'i Bir Sovyet Mühendisi Yaptı | Efsane Oyunlar",
+ "basliklar": [
+  "Tetris'i Bir Sovyet Mühendisi Yaptı | Efsane Oyunlar",
+  "Tetris'in Hakları Kime Aitti? Moskova Hikâyesi",
+  "Dört Kareden Doğan Efsane: Tetris'in Hikâyesi"
+ ],
+ "titleAlt": "Tetris'in Hakları Kime Aitti? Moskova Hikâyesi",
+ "topic": "Tetris'in hikâyesi: Moskova'daki bulmacadan Game Boy'a",
+ "description": "Tetris'in gerçek hikâyesi: Moskova'da 1984'te Aleksey Pajitnov'un geliştirdiği bulmaca, hak kavgası ve 1989'da Game Boy'la dünyaya yayılışı. İlk Tetris anın neydi?\n\n#tetris #efsaneoyunlar #oyunhikayeleri #videooyunları",
+ "tags": [
+  "tetris",
+  "tetris hikayesi",
+  "pajitnov",
+  "game boy",
+  "henk rogers",
+  "efsane oyunlar",
+  "oyun tarihi"
+ ],
+ "thumbnailText": "SOVYET BULMACASI",
+ "thumbnailTextAlt": "HAKLAR KİMİNDİ?",
+ "thumbnailTextAlt2": "DÖRT KAREDEN",
+ "kapak": {
+  "sahne": 0,
+  "sn": 2.5
+ },
+ "oynatmaListesi": "Efsane Oyunların Hikâyesi",
+ "muzik": "oyun",
+ "ceviriler": {
+  "en": {
+   "title": "A Soviet Engineer Made Tetris: The Real Story",
+   "description": "The true story of Tetris: the puzzle Alexey Pajitnov developed in Moscow in 1984, the fight over rights, and its 1989 launch with the Game Boy. What was your first Tetris memory?\n\n#tetris #gaminghistory #gamestories #videogames"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN TETRİSİN?",
+  "sonraki": "Cuma: bir efsane oyunun daha hikâyesi",
+  "soru": "İlk Tetris'i hangi cihazda oynadın?"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://en.wikipedia.org/wiki/Tetris",
+   "not": "Pajitnov, Moskova, 1984, isim kökeni, Game Boy 1989 (yazım sırasında açılamadı; yayın öncesi doğrulanmalı)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Henk_Rogers",
+   "not": "Henk Rogers'ın Moskova'daki hak görüşmeleri (açılamadı; yayın öncesi doğrulanmalı)"
+  }
+ ],
+ "kurgu": false,
+ "kontrol": {
+  "O1": "evet: bkz. senaryo",
+  "O2": "evet: bkz. senaryo",
+  "O3": "hayır: ağ erişimi yok, kaynaklar açılamadı; yalnızca yüksek güvenli bilgi kullanıldı, yayın öncesi doğrulanmalı",
+  "O4": "evet: bkz. senaryo",
+  "O5": "evet: bkz. senaryo",
+  "O6": "evet: bkz. senaryo",
+  "O7": "evet: bkz. senaryo",
+  "O8": "evet: bkz. senaryo",
+  "O9": "evet: bkz. senaryo",
+  "O10": "evet: bkz. senaryo",
+  "O11": "evet: bkz. senaryo",
+  "O12": "evet: bkz. senaryo",
+  "U1": "evet: bkz. senaryo",
+  "U2": "evet: bkz. senaryo",
+  "U3": "evet: bkz. senaryo",
+  "U4": "evet: bkz. senaryo",
+  "U5": "evet: bkz. senaryo",
+  "U6": "evet: bkz. senaryo",
+  "U7": "evet: bkz. senaryo",
+  "U8": "evet: bkz. senaryo",
+  "U9": "evet: bkz. senaryo",
+  "Y1": "evet: bkz. senaryo",
+  "Y2": "evet: bkz. senaryo",
+  "Y3": "evet: bkz. senaryo",
+  "Y4": "evet: bkz. senaryo"
+ },
+ "scenes": [
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "1989. Bir Game Boy kutusunun içinden, Moskova'da yazılmış bir bulmaca çıktı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kimse onu bir oyun şirketi için yapmamıştı."
+    }
+   ],
+   "aciklama": "0-3 sn: patron elini sallar. 3-6 sn: geliştirici düşünceli şekilde pencereye bakar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.82,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    },
+    {
+     "id": "patron",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "kisim": "Soğuk Açılış",
+   "buyukYazi": {
+    "ust": "1984",
+    "alt": "Moskova'da bir bulmaca"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki bir araştırmacının işten arta kalan zamanda yazdığı program dünyayı nasıl sardı?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Cevap, Moskova'daki küçük bir bilgisayar odasında saklı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu hikâyede milyarlar da yok, dev bir stüdyo da; yalnızca bir fikir var."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici ekrana bakıp düşünür. 3-5 sn: gülümser.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sovyetler Birliği'nde, Moskova'daki bir bilgisayar merkezinde çalışan Aleksey Pajitnov, 1984'te bu fikri geliştirdi."
+    }
+   ],
+   "aciklama": "0-2 sn: geliştirici içeri yürür. 2-6 sn: masasına oturup bilgisayarı açar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "notr",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.45,
+      "sure": 1.6
+     }
+    }
+   ],
+   "kisim": "Moskova'da Bir Bulmaca",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Moskova'da Bir Bulmaca"
+   }
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Pajitnov bulmacaları çok severdi. Aynı büyüklükte kareleri birleştirip şekil yapan bir bulmacadan ilham aldı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bilgisayarları oyun için değil, iş için kullanıyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ama bulmaca merakı işinden daha ağır bastı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici bulmaca parçalarını masada çevirir. 3-6 sn: gülümser.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dört kareden oluşan parçalar yukarıdan düşecek, oyuncu onları döndürüp yerine oturtacaktı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kurallar çok sade olmalıydı. Çünkü sade olan, herkesin anlayacağı oyundu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Satırlar dolduğunda kaybolacaktı; boşluk kalırsa yığın yükselecekti."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici parmağıyla havada parça çizer. 3-6 sn: ekrana döner.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Adını da bu dört parçadan aldı. Yunanca dört anlamına gelen bir kelimeyle, en sevdiği spor olan tenisi birleştirdi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kısa sürede bir şeyin farkına vardı: durmadan bir tur daha oynamak istiyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici elleriyle dört sayar. 3-6 sn: gülümseyerek başını sallar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun önce meslektaşlarına gösterildi. Herkes bir tur oynamak için sıra bekledi. Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu ekrana bakar. 3-8 sn: sevinçle el sallarlar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Basit görünüyordu ama bırakmak çok zordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Birisi ofiste uzun süre ekrandan kalkmıyordu, çünkü bir tur daha demişti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tetris işte böyle yayılmaya başladı."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu ekrana eğilir.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun disketlerle elden ele dolaşıp Sovyetler Birliği'nin dışına da ulaştı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Parçalar, kuralları bir cümleyle anlatılan bir oyun için fazlasıyla etkiliydi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yeni bir oyuncuya anlatmak on saniye sürüyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici elindeki disketi uzatır. 3-6 sn: disket sağa gider.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "notr",
+     "esya": "disket"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ama işin asıl karmaşası, oyunun hakları konuşulmaya başlandığında çıktı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici endişeyle patrona bakar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "patron",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ],
+   "kisim": "Hakların Savaşı",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Hakların Savaşı"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun bir devlet kurumunda geliştirilmişti. Hakları kimin elinde olduğu belli değildi."
+    }
+   ],
+   "aciklama": "0-3 sn: iki kişi birbirine bakar. 3-6 sn: omuz silkerler.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "omuz",
+     "ifade": "saskin"
+    },
+    {
+     "id": "patron",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "omuz",
+     "ifade": "supheli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Birçok şirket, haklar kendisinde diye iddia edip Tetris'i satmaya başladı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kâğıt üzerinde işler karışıktı; her taraf başka bir imzadan söz ediyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyuncular bunun farkında bile değildi."
+    }
+   ],
+   "aciklama": "0-3 sn: patron elini sallayıp anlaşma gösterir.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Aralarında Game Boy için hak peşinde olan bir oyun yapımcısı vardı: Henk Rogers."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden aynı oyun farklı cihazlarda farklı şirketlerin adıyla çıkıyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici ve geliştirici yan yana durur. 3-6 sn: yönetici başını sallar.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "yol",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Rogers, anlaşmayı kendi gözleriyle görmek için Moskova'ya gitti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Rogers, oyunu ilk kez gördüğünde bırakamadığını anlatmıştı; kaynaklara göre hak peşine bu yüzden düştü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bunu yapmak kolay değildi."
+    }
+   ],
+   "aciklama": "0-4 sn: yönetici soğukta yürür.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr",
+     "hareket": {
+      "x0": 0.1,
+      "x1": 0.7,
+      "sure": 3
+     }
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kaynaklara göre pazarlıklar gergin geçti. Hakların tek sahibi Sovyet tarafıydı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Soğuk bir şehirde, hiç bilmediği bir sistemin içinde yolunu bulmaya çalıştı."
+    }
+   ],
+   "aciklama": "0-3 sn: iki kişi masada karşılıklı konuşur.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "supheli"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonunda Game Boy için hak, Nintendo'ya bağlandı. Mesele çözülmüştü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Tarafların her biri başka bir şey istiyordu. Zaman geçtikçe iş daha da zorlaşıyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: iki kişi el sıkışır. 3-6 sn: gülümserler.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "kisim": "Game Boy Çağı",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Game Boy Çağı"
+   }
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "1989'da Tetris, Game Boy'un yanında kutudan çıkan oyun oldu."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu elindeki konsolu gösterir. 3-6 sn: gülümser.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "buyukYazi": {
+    "ust": "1989",
+    "alt": "Game Boy'la birlikte"
+   }
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Cebinde taşıyabildiğin bir oyundu. Otobüste, okulda, uçakta oynanıyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ekran küçüktü ve renksizdi ama oyun bunu hiç umursamıyordu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Düşen parçalar, yeni nesil bir oyuncu kitlesini yakaladı."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu kasketini düzeltir, konsola dalar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Türkiye'de de çocukluk anıları arasında bu oyun vardı. Tuşlu konsolların minik ekranında düşen parçalar tanıdıktı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyun bir kez açılınca geriye dönüş yoktu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Pil bitene kadar süren turlar, çocukluk anılarına dönüştü."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu elinde konsolla gülümser.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "kalabalik": 1,
+   "kisim": "Bugün",
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Bugün"
+   }
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yaratıcısı ise uzun süre oyunun getirdiği kazancı alamadı. Kaynaklara göre sonra Amerika'ya taşındı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir internet kafede ya da arkadaşın evinde, sıra beklerken bile oynanırdı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu oyunun gücü karmaşıklığında değil, bırakılamazlığındaydı."
+    }
+   ],
+   "aciklama": "0-4 sn: geliştirici yavaşça sağa yürür.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr",
+     "hareket": {
+      "x0": 0.5,
+      "x1": 1.2,
+      "sure": 3
+     }
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonra o da kendi oyununun hakkını geri aldı. Bu hikâyenin sonu mutlu bitti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Başarının ödülü bir süre ona gitmedi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Böyle hikâyeler oyun dünyasında şaşırtıcı derecede yaygındı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici kollarını kaldırır.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tetris bugün hâlâ yeni cihazlarda oynanıyor. Dört kareden doğan fikir yaşlanmadı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Yıllar sonra haklar yaratıcısının eline geçti. Kaynaklara göre bu, çok sonraydı."
+    }
+   ],
+   "aciklama": "0-4 sn: oyuncular alkışlar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "kalabalik": 1
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen. Cuma günü başka bir efsane oyunun hikâyesi seni bekliyor."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Çocuklar büyüdü, cihazlar değişti, parçalar hâlâ düşüyor."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu kupayı kaldırır. 3-8 sn: kalabalık alkışlar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ],
+   "kalabalik": 1
+  }
+ ]
+}
