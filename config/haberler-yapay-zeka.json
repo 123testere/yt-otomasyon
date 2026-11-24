@@ -1,8 +1,112 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-24T00:56:55.271Z",
+  "guncellendi": "2026-11-24T11:00:02.856Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Jensen Huang’dan Nvidia çalışanlarına: Daha iyi bir CEO olacağım",
+      "link": "https://www.donanimhaber.com/jensen-huang-dan-nvidia-calisanlarina-daha-iyi-bir-ceo-olacagim--213309",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-24T11:02:00.000Z",
+      "ozet": "Nvidia CEO'su Jensen Huang, hakkındaki ilişki iddiaları nedeniyle ayrıldığı görevine geri döndü. Şirkette alkışlarla karşılanan Huang, özür dileyerek daha iyi bir CEO olacağını söyledi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Don’t Bring Up AI if You Want to Enjoy Your Thanksgiving",
+      "link": "https://www.wired.com/story/dont-bring-up-ai-if-you-want-to-enjoy-your-thanksgiving/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-24T10:45:00.000Z",
+      "ozet": "Young people anxious about their futures say they’re increasingly frustrated with their pro-AI parents. They’re worried it’s going to make holiday gatherings very tense.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Ukrayna, Libya'daki Rus savaş gemisini insansız deniz araçlarıyla vurdu",
+      "link": "https://www.donanimhaber.com/ukrayna-rus-savas-gemisini-libya-da-deniz-dronlariyla-vurdu--213308",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-24T10:41:00.000Z",
+      "ozet": "Ukrayna, Libya'daki bir Rus savaş gemisini insansız deniz araçlarıyla hedef aldı. Zelenskiy geminin batırıldığını açıklarken, saldırının cephe hattından 2.400 km uzakta gerçekleşmesi dikkat çekti.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI Solved Math’s Most Famous Problem. Now Humans Are Struggling to Understand It",
+      "link": "https://www.wired.com/story/ai-solved-maths-most-famous-problem/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-24T10:15:00.000Z",
+      "ozet": "It will take mathematicians months to understand the “alien” 17-million-line solution an Anthropic researcher produced for the Riemann hypothesis.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nothing’in İlk Yapay Zekâ Cihazı Netleşti: Çok Yakında Tanıtılacak!",
+      "link": "https://www.webtekno.com/nothing-ilk-yapay-zek-cihazi-netlesti-h229358.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-24T09:44:29.000Z",
+      "ozet": "Nothing, 8 Aralık'ta tanıtacağı yapay zekâ destekli yeni kablosuz kulaklığı Ear (note) ile toplantıları ve telefon görüşmelerini kaydedip özetleyecek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Kod İncelemesi Yapıp Düzelten ve Onaylayan Claude Ship Tanıtıldı: Peki Nasıl Çalışıyor?",
+      "link": "https://www.webtekno.com/claude-ship-tanitildi-nasil-calisiyor-h229363.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-24T09:42:13.000Z",
+      "ozet": "Anthropic, geliştirici ekiplerinin belirlediği politikalar doğrultusunda kodları inceleyen, düzelten ve otomatik onaylayan Claude Ship'i tanıttı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Sadece Konseptlerde Görüyorduk: BYD, İlk Katlanabilir Direksiyonlu Otomobilini Tanıttı!",
+      "link": "https://www.webtekno.com/byd-ilk-katlanabilir-direksiyonlu-otomobilini-tanitti-h229360.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-24T09:42:02.000Z",
+      "ozet": "BYD, insansı robot motorlarıyla çalışan ve park halindeyken ön konsola gizlenen katlanabilir direksiyonlu yeni SUV modeli Tai 9'u tanıttı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "64 dolarlık bu robot, güneş panellerini su kullanmadan temizliyor",
+      "link": "https://www.donanimhaber.com/64-dolarlik-robot-gunes-panellerini-su-kullanmadan-temizliyor--213299",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-24T08:35:00.000Z",
+      "ozet": "Bilim insanları, su kaynaklarının kısıtlı olduğu bölgeler için kendi kendine çalışan bir güneş paneli temizlik robotu geliştirdi. Yalnızca 64 dolara mâl olan robot, testlerden başarıyla geçti.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nothing Ear Note: Duyduğunuz her şeyi kaydedip özetleyen kulaklık",
+      "link": "https://www.donanimhaber.com/nothing-ear-note-duydugunuz-her-seyi-kaydedip-ozetleyen-kulaklik--213302",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-24T07:53:00.000Z",
+      "ozet": "Nothing, konuşmaları sizin yerinize kaydedip not alabilen yapay zeka destekli kulaklığı Ear Note'u piyasaya sürmeye hazırlanıyor. Yeni cihazın çıkış tarihi de belli oldu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang'ın Dönüşüyle NVIDIA Değeri 1 Trilyon Dolara Yakın Arttı",
+      "link": "https://www.webtekno.com/jensen-huang-donusuyle-nvidia-degeri-artti-h229357.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-24T07:26:12.000Z",
+      "ozet": "Jensen Huang'ın iki hafta sonra NVIDIA CEO'luğuna dönmesiyle şirket değeri 1 trilyon dolara yakın arttı ve küresel teknoloji hisseleri yükseldi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Trump engineered a risky comeback for Jensen Huang",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T22:25:12.000Z",
+      "ozet": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia CEO Jensen Huang is back. What happens next?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T22:10:32.000Z",
+      "ozet": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, after The New York Times reported there was evidence of another affair, this time with an Nvidia executive who reported directly to him, a board meeting that night ended […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Welcome to elite impunity, Jensen Huang",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T22:09:26.000Z",
+      "ozet": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. Now, those of us who had some kind of basic education on what a \"free market\" is might […]",
+      "kullanildi": false
+    },
     {
       "baslik": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
       "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
@@ -60,11 +164,35 @@
       "kullanildi": false
     },
     {
+      "baslik": "AI data centers throw another wrench into chaotic UN climate talks",
+      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T21:09:37.000Z",
+      "ozet": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]",
+      "kullanildi": false
+    },
+    {
       "baslik": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
       "link": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-23T20:38:53.000Z",
       "ozet": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Claude AI can review pull requests and ship fixes on its own now",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T20:00:00.000Z",
+      "ozet": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "How Jensen Huang ended up as Nvidia CEO again",
+      "link": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T19:57:18.000Z",
+      "ozet": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over mounting scrutiny around his alleged affairs. Huang admitted he had been \"unfaithful\" to his wife […]",
       "kullanildi": false
     },
     {
@@ -81,6 +209,14 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-23T19:07:00.000Z",
       "ozet": "ACE Studio'nun yeni yapay zekâ modeli ACE Music v1, müzik üretiminde Suno'yu geride bıraktı. Şirket ayrıca modelin daha hafif ve açık kaynaklı sürümünü hazırlıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+      "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T19:04:52.000Z",
+      "ozet": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-generated summaries, similar to Apple's new Watch feature and devices like Amazon's Bee wearable. Nothing CEO Carl Pei demonstrated the new device […]",
       "kullanildi": false
     },
     {
@@ -252,14 +388,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Jensen Huang is back as Nvidia’s CEO",
-      "link": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T14:04:24.000Z",
-      "ozet": "Nvidia has reinstated Jensen Huang as its CEO. The company announced on Monday morning that the board \"voted unanimously to reinstate Mr. Huang following a series of discussions and meetings with Mr. Huang, after which the Board was satisfied with respect to Mr. Huang's candor and ability to lead NVIDIA.\" In its statement, the board […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "Nvidia Is Powering Brain-Computer Interfaces Now",
       "link": "https://www.wired.com/story/nvidia-is-powering-brain-computer-interfaces-now/",
       "kaynak": "Wired",
@@ -292,14 +420,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Meta Muse can do your Black Friday shopping at Walmart",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T11:00:00.000Z",
-      "ozet": "Walmart will now let Meta's Muse shop on your behalf, allowing the AI agent to find and purchase Black Friday deals via Walmart's Sparky AI assistant. The retail giant is rolling out a live implementation of the Agent Gateway it announced last month, which helps AI agents find relevant products for you without sharing your […]",
-      "kullanildi": false
-    },
-    {
       "baslik": "States Sue SpaceX Over Grok Deepfakes",
       "link": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
       "kaynak": "Wired",
@@ -308,35 +428,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Nvidia'nın SSD sorununa yönelik düzeltmesi işe yaramadı",
-      "link": "https://www.donanimhaber.com/nvidia-nin-ssd-sorununa-yonelik-duzeltmesi-ise-yaramadi--213258",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-23T10:36:00.000Z",
-      "ozet": "Nvidia'nın aşırı SSD yazma sorununu gidermek için yayımladığı 621.35 sürücüsü, bazı sistemlerde problemi tamamen çözmedi. Kullanıcılar saatler sonra yeniden yüksek veri yazımı sorunu yaşıyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Goodbye, World: The End of Programmers",
       "link": "https://www.wired.com/story/goodbye-world-the-end-of-programmers/",
       "kaynak": "Wired",
       "tarih": "2026-11-23T10:00:00.000Z",
       "ozet": "The last thing you should ever read—and the last thing I may ever write—about the craft of coding.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Yeni nesil ilaçların önünü açacak yapay zekâ: NovaAtom-Lite, AlphaFold 3'ü gölgede bıraktı",
-      "link": "https://www.donanimhaber.com/yeni-yapay-zeka-novaatom-lite-ilac-kesfini-hizlandirabilir--213255",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-23T08:59:00.000Z",
-      "ozet": "Geodesic Intelligence; proteinlerin, DNA/RNA zincirlerinin ve ilaç moleküllerinin 3D yapılarını atomik düzeyde tahmin eden NovaAtom-Lite'yi tanıttı. Model, AlphaFold 3'ü açık ara geride bırakıyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Meta’nın AI liderinden süper zeka uyarısı: Atom bombası ev ödevi gibi kalır",
-      "link": "https://www.donanimhaber.com/meta-dan-yapay-zeka-uyarisi-atom-bombasi-ev-odevi-gibi-kalir--213252",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-23T08:38:00.000Z",
-      "ozet": "Meta AI Başkanı Alexandr Wang, süper zekanın hızla yaklaştığını belirterek insanlığın yapay zeka üzerindeki kontrolünü kaybedebileceği konusunda endişelerini dile getirdi.",
       "kullanildi": false
     },
     {
@@ -356,27 +452,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Türk matematikçi Riemann hipotezini yapay zeka ile çözdü: Tarihi bir an yaşanıyor",
-      "link": "https://www.donanimhaber.com/turk-matematikci-riemann-hipotezini-yapay-zeka-ile-cozdu--213248",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-23T07:09:35.000Z",
-      "ozet": "Anthropic araştırmacısı Levent Alpöge, Claude'un yardımıyla 167 yıllık Riemann hipotezini kanıtladı. Bağımsız olarak doğrulanan çalışma, bilim dünyasının temellerini sarsabilir.",
-      "kullanildi": false
-    },
-    {
       "baslik": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
       "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-23T01:25:53.000Z",
       "ozet": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "We haven’t seen the last of the major tech outages",
-      "link": "https://www.theverge.com/tech/1039851/major-tech-outages",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-22T22:48:02.000Z",
-      "ozet": "Over the last week or so, we have seen a nationwide FAA ground stop, a multi-day Outlook outage that brought entire companies to a standstill, and a banking outage at JPMorgan Chase. But the consensus is that there are more to come. Director of National Intelligence Jay Clayton told CNN: \"The American people should be […]",
       "kullanildi": false
     },
     {
@@ -388,43 +468,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Yapay zekâ alışveriş alışkanlıklarını da değiştirdi: Müşteriler artık önce ona soruyor",
-      "link": "https://www.donanimhaber.com/yapay-zeka-kaynakli-alisveris-trafigi-bir-yilda-yuzde-71-artti--213245",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-22T19:41:03.000Z",
-      "ozet": "ChatGPT ve Gemini gibi yapay zekâ araçları, tüketicilerin satın alma kararlarında giderek daha etkili oluyor. Adobe'nin son raporu, bu değişimin e-ticaret sektörüne etkisini ortaya koyuyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Why data centers are at the center of the Big Tech backlash",
       "link": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-22T18:08:43.000Z",
       "ozet": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Binding of Isaac developer removes AI music from Repentance Plus",
-      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-22T17:25:20.000Z",
-      "ozet": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The vibe-coding revolution is coming to all the gadgets",
-      "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-22T13:00:00.000Z",
-      "ozet": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Like so many things with AI, it's not […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Banks Have Had It Up to Here With Your AI Agent",
-      "link": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-22T11:00:00.000Z",
-      "ozet": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
       "kullanildi": false
     }
   ]

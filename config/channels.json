@@ -75,9 +75,9 @@
   {
     "id": "UCaTfPvQYowD7SrHbGfotRrg",
     "title": "Vice City Dispatch",
-    "enabled": true,
+    "enabled": false,
     "settings": {
-      "enabled": true,
+      "enabled": false,
       "contentFormat": "belgesel",
       "niche": "ilginc",
       "customNiche": "",
@@ -455,7 +455,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
-      "videoSayisi": 275,
+      "videoSayisi": 276,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -484,6 +484,7 @@
       "baslangic": "2026-11-05T07:12:28.670Z"
     },
     "recentTitles": [
+      "Tetris'i Bir Sovyet Mühendisi Yaptı | Efsane Oyunlar",
       "Yarış Oyunu mu Arıyorsun? 🎮",
       "Minecraft Nasıl 2,5 Milyar Dolar Etti? | Efsane Oyunların Hikâyesi",
       "2,5 Milyar Dolarlık Oyun Tek Kişiyle Başladı… Bu Akşam 🎮",
@@ -534,8 +535,7 @@
       "Video Stratejisi ve Senaryo Yazımında Yapay Z",
       "Videonuz İçin Mükemmel Kanca ve Strateji Nası",
       "Yapay Zeka ile İş Fikirleri ve Para Kazanma Y",
-      "Metinden Görsele Yapay Zeka ile Video Üretimi",
-      "Hızlı Viral Odaklı Tarih ve Tarif Videoları İ"
+      "Metinden Görsele Yapay Zeka ile Video Üretimi"
     ],
     "oylamalar": []
   },
@@ -838,15 +838,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "baslik": "Defter Sözcüğü Neden Kâğıt Değil Deri Demek? 📓",
-        "a": "Mum",
-        "b": "Çekiç",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-20T07:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short2",
         "baslik": "İlk Bisikletin Pedalı Neden Yoktu? 🚲",
         "a": "Saat",
@@ -1052,7 +1043,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 22,
+      "videoSayisi": 23,
       "dersler": []
     },
     "oynatmaListeleri": [],
