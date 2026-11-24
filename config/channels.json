@@ -838,15 +838,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "İlk Bisikletin Pedalı Neden Yoktu? 🚲",
-        "a": "Saat",
-        "b": "Toka",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-20T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "Tuğlanın İçinde Neden Delikler Var? 🧱",
         "a": "Çivi",
@@ -863,6 +854,24 @@
         "oyA": 0,
         "oyB": 0,
         "yayin": "2026-11-21T16:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+        "baslik": "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
+        "a": "Saat",
+        "b": "Toka",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-24T15:00:00.000Z"
+      },
+      {
+        "kaynak": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "baslik": "Romalılar Neden Yüz Binlerce Çiviyi Toprağa Gömdü?",
+        "a": "Kibrit",
+        "b": "Ayna",
+        "oyA": 0,
+        "oyB": 0,
+        "yayin": "2026-11-24T16:00:00.000Z"
       }
     ]
   },

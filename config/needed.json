@@ -1,1 +1,87 @@
-[]
+[
+  {
+    "id": "2026-11-26_UCIa1D1I2HwWzylJDvNayeHw_short1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "short",
+    "publishAt": "2026-11-26T09:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "dizi",
+    "dizi": "oyun-hikayeleri",
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 23
+    },
+    "deney": {
+      "id": "kanca-soru",
+      "kol": "B",
+      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
+    }
+  },
+  {
+    "id": "2026-11-26_UCFw3Wdyus0HVhykB0uYahWg_long1",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "long",
+    "publishAt": "2026-11-26T15:00:00.000Z",
+    "targetWords": 425,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 9
+    }
+  },
+  {
+    "id": "2026-11-26_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "type": "short",
+    "publishAt": "2026-11-26T16:00:00.000Z",
+    "targetWords": 65,
+    "dil": "de",
+    "hizli": true,
+    "format": "duell",
+    "season": 1,
+    "match": 24,
+    "total": 30,
+    "final": false,
+    "eveOfFinal": false,
+    "deney": {
+      "id": "yayin-saati",
+      "kol": "B"
+    }
+  },
+  {
+    "id": "2026-11-26_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-26T16:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+      "a": "Kumbara",
+      "b": "Çan",
+      "oyA": 0,
+      "oyB": 0,
+      "kazanan": null
+    },
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "B",
+      "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre)."
+    }
+  }
+]
