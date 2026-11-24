@@ -1,8 +1,280 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-23T12:56:43.032Z",
+  "guncellendi": "2026-11-24T00:56:55.271Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T22:05:50.000Z",
+      "ozet": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T22:02:05.000Z",
+      "ozet": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "link": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T21:47:41.000Z",
+      "ozet": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-23T21:30:44.000Z",
+      "ozet": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+      "link": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T21:25:42.000Z",
+      "ozet": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI and Cisco introduce Shirudo",
+      "link": "https://openai.com/index/introducing-shirudo",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-23T21:20:00.000Z",
+      "ozet": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Seedream 5.5, yapay zekâ ile görsel üretmedeki en önemli sorunlardan birini çözüyor",
+      "link": "https://www.donanimhaber.com/seedream-5-5-ile-yapay-zeka-gorsellerinde-yeni-donem-basliyor--213296",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T21:10:00.000Z",
+      "ozet": "Yapay zekâ görsellerinde düzenleme sırasında yaşanan bozulmaları ortadan kaldırmayı hedefleyen Seedream 5.5, görselleri 100 düzenleme turu boyunca bozulmadan koruyabiliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "link": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T20:38:53.000Z",
+      "ozet": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T19:14:46.000Z",
+      "ozet": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zekâ ile şarkı yapmada Suno'ya rakip çıktı: ACE Music v1 ilk sıraya yerleşti",
+      "link": "https://www.donanimhaber.com/suno-ya-yeni-rakip-cikti-ace-music-v1-ilk-siraya-yerlesti--213286",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T19:07:00.000Z",
+      "ozet": "ACE Studio'nun yeni yapay zekâ modeli ACE Music v1, müzik üretiminde Suno'yu geride bıraktı. Şirket ayrıca modelin daha hafif ve açık kaynaklı sürümünü hazırlıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T18:26:47.000Z",
+      "ozet": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard safeguards and falsely promoting the safety of its X social media platform and Grok AI features. The complaint filed in Virginia accuses Musk of willfully […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+      "link": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T18:12:22.000Z",
+      "ozet": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Çin, yapay zekâ tokenlarının ölçüm ve ücretlendirmesini standarda bağlayacak",
+      "link": "https://www.donanimhaber.com/cin-de-yapay-zeka-tokenlari-icin-yeni-donem-basliyor--213265",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T17:53:00.000Z",
+      "ozet": "Çin, yapay zeka tokenlarının ölçülmesi, ücretlendirilmesi ve kalite değerlendirmesi için yeni standartlar geliştirmeye hazırlanıyor. Ayrıca ülkede token fabrikaları da kurulacak.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang Is Back, and So Is Nvidia’s Stock",
+      "link": "https://www.wired.com/story/jensens-back-stocks-up-what-the-hell-sure/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-23T17:52:56.000Z",
+      "ozet": "Jensen Huang comes back, numbers go up. Maybe the reason behind the CEO’s return is just that simple?",
+      "kullanildi": false
+    },
+    {
+      "baslik": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-23T17:36:08.000Z",
+      "ozet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+      "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T17:14:23.000Z",
+      "ozet": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang döndü, Nvidia hisseleri fırladı",
+      "link": "https://www.donanimhaber.com/nvidia-abd-icin-her-sey--213289",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T17:01:50.000Z",
+      "ozet": "Piyasalarda yaşanan büyük düşüşler sonrasında ABD hükümeti apar topar Jensen Huang dosyasını kapattı ve Nvidia ile birlikte piyasaların yükselişi başladı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "A more tailored Google Search that’s uniquely yours",
+      "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "kaynak": "Google",
+      "tarih": "2026-11-23T17:00:00.000Z",
+      "ozet": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang isn’t out of the woods yet",
+      "link": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T16:57:40.000Z",
+      "ozet": "Tech leaders should be clear-eyed about all the problems likely to come with Huang's reinstatement.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "BM, “katil robot” silahları düzenleme konusunda anlaşmaya varamadı",
+      "link": "https://www.donanimhaber.com/bm-katil-robot-silahlari-duzenleme-konusunda-anlasmadi--213264",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T16:49:00.000Z",
+      "ozet": "BM'nin Cenevre'de düzenlediği otonom silahlar konferansı anlaşma olmadan sonlandı. 128 ülke müzakereleri sürdürme kararı alırken bağlayıcı kuralların geleceği belirsizliğini koruyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+      "link": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T16:39:10.000Z",
+      "ozet": "\"I spoke to them, let me put it that way … And I convinced them,\" the president told CNBC.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+      "link": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T16:30:11.000Z",
+      "ozet": "It sure looked like President Donald Trump played a role in Jensen Huang's reinstatement as Nvidia CEO - and now the White House is making sure everyone knows he was. \"President Trump was totally involved and this is a great decision by the NVIDIA board,\" White House communications director Steven Cheung said in a statement, […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Tech leaders are celebrating Jensen Huang’s return",
+      "link": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T16:14:04.000Z",
+      "ozet": "Let's say you're Jensen Huang. You (allegedly) cheated on your wife with an alleged Chinese spy, allegedly had an affair with not one, but two subordinates, and (allegedly!) \"terrorized\" your employees, a series of indiscretions that led to your ouster from what was once the world's most valuable company. (The stock price has recently taken […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang reinstated as Nvidia CEO, board chair",
+      "link": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-23T15:46:18.000Z",
+      "ozet": "Trump says he spoke to the board and that Huang \"did nothing wrong.\"",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+      "link": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T15:04:01.000Z",
+      "ozet": "The president cited the U.S. attorney general in defending Huang's return, while urging Nvidia to continue its export-control investigation.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "SON DAKİKA: Jensen Huang Yeniden NVIDIA CEO'su Oldu!",
+      "link": "https://www.webtekno.com/jensen-huang-yeniden-nvidia-ceo-oldu-h229348.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-23T15:03:47.000Z",
+      "ozet": "NVIDIA Yönetim Kurulu, ulusal güvenlik değerlendirmelerinin ardından Jensen Huang'ı oy birliğiyle yeniden Başkan ve CEO görevine iade etti.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia, Jensen Huang'ı yeniden CEO olarak atadı",
+      "link": "https://www.donanimhaber.com/nvidia-jensen-huang-i-yeniden-ceo-olarak-atadi--213279",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T14:52:57.000Z",
+      "ozet": "Nvidia'da Jensen Huang dönemi yeniden başladı. Yönetim kurulu, ABD hükümetinden görüş aldıktan sonra Huang'ı CEO'luğa geri getirdi. Ancak Huang hakkındaki soruşturmalar sürecek.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Vodafone'dan kadına yönelik şiddetle mücadele için teknoloji desteği",
+      "link": "https://www.donanimhaber.com/vodafone-dan-kadina-yonelik-siddetle-mucadele-icin-mobil-uygulama--213281",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T14:46:00.000Z",
+      "ozet": "Vodafone Vakfı'nın kadına yönelik şiddetle mücadele için geliştirdiği Kırmızı Işık uygulaması 390 bin kez indirildi. Uygulama, yapay zekâ destekli sohbet robotu ve acil yardım özellikleri sunuyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+      "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T14:43:03.000Z",
+      "ozet": "Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor, said on Monday that it has raised $1.75 billion in a Series F round.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang Is Back as Nvidia CEO",
+      "link": "https://www.wired.com/story/jensen-huang-is-back-as-nvidia-ceo/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-23T14:27:35.000Z",
+      "ozet": "The company’s board of directors has reinstated Huang a little more than a week after the CEO resigned amid allegations of multiple affairs, including with a direct report.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia reverses course and brings Jensen Huang back as CEO",
+      "link": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-23T14:21:59.000Z",
+      "ozet": "The stunning reversal was supported by senior officials in the U.S. government.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang is back as Nvidia’s CEO",
+      "link": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-23T14:04:24.000Z",
+      "ozet": "Nvidia has reinstated Jensen Huang as its CEO. The company announced on Monday morning that the board \"voted unanimously to reinstate Mr. Huang following a series of discussions and meetings with Mr. Huang, after which the Board was satisfied with respect to Mr. Huang's candor and ability to lead NVIDIA.\" In its statement, the board […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nvidia Is Powering Brain-Computer Interfaces Now",
+      "link": "https://www.wired.com/story/nvidia-is-powering-brain-computer-interfaces-now/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-23T13:11:00.000Z",
+      "ozet": "Brain-computer interface company Paradromics is using Nvidia’s computing hardware and software to process brain data.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Bakanlık açıkladı: İnsansı robotlar için yüzde 50 hibe desteği verilecek",
+      "link": "https://www.donanimhaber.com/insansi-robotlar-icin-yuzde-50-hibe-destegi-verilecek--213266",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-23T13:07:00.000Z",
+      "ozet": "Sanayi ve Teknoloji Bakanlığı, insansı robot geliştirecek firmalara proje bütçelerinin yüzde 50'si kadar hibe desteği sağlayacak. Başvurular yıl sonuna kadar yapılabilecek.",
+      "kullanildi": false
+    },
     {
       "baslik": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
       "link": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
@@ -24,7 +296,7 @@
       "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
       "kaynak": "The Verge",
       "tarih": "2026-11-23T11:00:00.000Z",
-      "ozet": "Walmart will let Meta's Muse shop on its website on your behalf, allowing the AI agent to find and purchase Black Friday deals. Tomorrow, on Tuesday November 24th, the retail giant will roll out a live implementation of the Agent Gateway it announced last month, which helps AI agents find relevant products for you without […]",
+      "ozet": "Walmart will now let Meta's Muse shop on your behalf, allowing the AI agent to find and purchase Black Friday deals via Walmart's Sparky AI assistant. The retail giant is rolling out a live implementation of the Agent Gateway it announced last month, which helps AI agents find relevant products for you without sharing your […]",
       "kullanildi": false
     },
     {
@@ -65,6 +337,22 @@
       "kaynak": "DonanımHaber",
       "tarih": "2026-11-23T08:38:00.000Z",
       "ozet": "Meta AI Başkanı Alexandr Wang, süper zekanın hızla yaklaştığını belirterek insanlığın yapay zeka üzerindeki kontrolünü kaybedebileceği konusunda endişelerini dile getirdi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Connected intelligence for in-house legal",
+      "link": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-23T08:00:00.000Z",
+      "ozet": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Richpanel helps companies automate 50% of support in 30 days",
+      "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-23T08:00:00.000Z",
+      "ozet": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
       "kullanildi": false
     },
     {
@@ -124,14 +412,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "XPG ve ADATA bellek krizine direniyor! ''XPG Lancer Blade RAM ve ADATA Legend 710'u denedik''",
-      "link": "https://www.donanimhaber.com/xpg-ve-adata-bellek-krizi-dinlemiyor-xpg-ram-ve-adata-ssd-ler--213200",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-22T15:44:28.000Z",
-      "ozet": "AI devlerinin talepleri bitmek tükenmek bilmiyor, OpenAI CEO'su Sam Altman bilgisayarlarımızdaki RAM'lere bile göz dikti. Uyguna RAM ve SSD bulmak zorken, XPG ve ADATA fiyat avantajını sürdürüyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "The vibe-coding revolution is coming to all the gadgets",
       "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
       "kaynak": "The Verge",
@@ -140,107 +420,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "Yapay zeka sıfırdan işlemci tasarladı: 4,6 kat daha verimli!",
-      "link": "https://www.donanimhaber.com/yapay-zeka-sifirdan-islemci-tasarladi-4-6-kat-daha-verimli--213199",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-22T12:00:00.000Z",
-      "ozet": "Architect Labs, tamamen yapay zeka tarafından tasarlanan CPU mimarisini tanıttı. Şirket, tasarımın geleneksel işlemcilere kıyasla watt başına 4,59 kat yüksek performans sunduğunu iddia ediyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Banks Have Had It Up to Here With Your AI Agent",
       "link": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
       "kaynak": "Wired",
       "tarih": "2026-11-22T11:00:00.000Z",
       "ozet": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nothing'ın ekransız yapay zeka cihazı 8 Aralık'ta tanıtılacak",
-      "link": "https://www.donanimhaber.com/nothing-in-ekransiz-yapay-zeka-cihazi-8-aralik-ta-tanitilacak--213212",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-22T10:00:00.000Z",
-      "ozet": "Nothing, ilk yapay zeka odaklı cihazını 8 Aralık'ta tanıtacağını duyurdu. Ekransız tasarıma sahip olacak ürünün adı ve hangi özellikleri sunacağı ise henüz açıklanmadı.",
-      "kullanildi": true
-    },
-    {
-      "baslik": "Perplexity and Intelligence",
-      "link": "https://openai.com/index/perplexity-and-intelligence",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-22T00:00:00.000Z",
-      "ozet": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-21T21:37:10.000Z",
-      "ozet": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A tale of two Nvidias",
-      "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-21T21:07:42.000Z",
-      "ozet": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The UN fails to agree on rules regulating ‘killer robots’",
-      "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-21T20:03:37.000Z",
-      "ozet": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI, ilk akıllı telefonunun üretimi için Apple'ın tedarikçisiyle anlaştı",
-      "link": "https://www.donanimhaber.com/openai-akilli-telefon-uretimi-icin-apple-tedarikcisiyle-anlasti--213198",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-21T18:00:00.000Z",
-      "ozet": "OpenAI'ın kendi işlemcisine sahip ilk akıllı telefonu için üretim hazırlıkları hızlanıyor. Çin'den gelen raporlara göre Apple'ın iPhone modellerini de üreten Foxconn, cihazın montajını üstlenecek.",
-      "kullanildi": true
-    },
-    {
-      "baslik": "Here are the top AI agents that can live in your text messages",
-      "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-21T17:00:00.000Z",
-      "ozet": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
-      "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-21T16:00:00.000Z",
-      "ozet": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Can Anthropic afford to put safety first?",
-      "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-21T15:00:00.000Z",
-      "ozet": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
-      "link": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-21T14:00:00.000Z",
-      "ozet": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative called word. They're all part of Chess's new Classic Games platform, which is launching […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "The Outages Are Just Getting Started",
-      "link": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-21T13:00:00.000Z",
-      "ozet": "AI is forcing companies to patch their systems faster as attackers race to exploit newly discovered vulnerabilities. Welcome to internet outage hell.",
       "kullanildi": false
     }
   ]

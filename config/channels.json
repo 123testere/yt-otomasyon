@@ -838,15 +838,6 @@
     ],
     "oylamalar": [
       {
-        "kaynak": "2026-11-19_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "Haritada Grönland Neden Afrika Kadar Büyük? 🗺️",
-        "a": "Düdük",
-        "b": "Kumbara",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-19T16:00:00.000Z"
-      },
-      {
         "kaynak": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
         "baslik": "Defter Sözcüğü Neden Kâğıt Değil Deri Demek? 📓",
         "a": "Mum",
@@ -1075,6 +1066,7 @@
       "baslangic": "2026-11-21T18:02:05.496Z"
     },
     "recentTitles": [
+      "Duell 23/30: Wer erntet die meisten Zwiebeln? 🧅",
       "Duell 22/30: Wer erntet die meisten Tomaten? 🍅",
       "Duell 21/30: Wer erntet die meisten Birnen? 🍐",
       "Duell 20/30: Wer produziert die meisten Eier? 🥚",
@@ -1103,14 +1095,18 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 22,
+      "lastMatch": 23,
       "table": [
         {
           "name": "Türkei",
-          "points": 137
+          "points": 147
         },
         {
           "name": "Spanien",
+          "points": 89
+        },
+        {
+          "name": "Ukraine",
           "points": 84
         },
         {
@@ -1118,20 +1114,16 @@
           "points": 80
         },
         {
-          "name": "Ukraine",
-          "points": 80
-        },
-        {
           "name": "Frankreich",
-          "points": 64
+          "points": 66
         },
         {
           "name": "Polen",
-          "points": 55
+          "points": 56
         },
         {
           "name": "Deutschland",
-          "points": 47
+          "points": 50
         },
         {
           "name": "Portugal",
