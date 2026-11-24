@@ -31,7 +31,7 @@ Senaryoda zorunlu alanlar:
 - Abone/beğeni istemek serbest (O6) ama ödül/çekiliş/koşullu etkileşim yasak.
 Studio'dan elle yapılan işler (A/B testi, bitiş ekranı, ilgili video) için motor videoyu en az 24 saat sonraya zamanlar ve kullanıcıya görev listesi gönderir; sen senaryoda alanları eksiksiz yaz.
 
-## Vice City Dispatch — kampanya kesitleri (`kesit-aday/*.json` varsa, her gece)
+## Vice City Dispatch — kampanya kesitleri (**DURDURULDU 2026-11-24**: kullanıcı kanalı kapattı; bu bölümü uygulama, bu kanala senaryo yazma)
 
 Kanal: Vice City Dispatch (`UCaTfPvQYowD7SrHbGfotRrg`), İngilizce. Lacy / Kai Cenat / Clix'in GTA 6 maratonlarından izinli klipler (Content Rewards kampanyaları,
 kurallar `config/kampanyalar.json`). Her gece 01:30'da `kesit-aday/` yenilenir: her adayda klip bilgisi, `dokum` (saniyeli konuşma dökümü) ve 3 kare (`kareler`, jpg).

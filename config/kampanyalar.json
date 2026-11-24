@@ -4,7 +4,7 @@
   "kampanyalar": [
     {
       "id": "lacy-gta6",
-      "aktif": true,
+      "aktif": false,
       "ad": "Lacy",
       "twitch": "lacy",
       "baslangic": "2026-11-18",
@@ -20,7 +20,7 @@
     },
     {
       "id": "kai-gta6",
-      "aktif": true,
+      "aktif": false,
       "ad": "Kai Cenat",
       "twitch": "kaicenat",
       "baslangic": "2026-11-18",
@@ -36,7 +36,7 @@
     },
     {
       "id": "clix-gta6",
-      "aktif": true,
+      "aktif": false,
       "ad": "Clix",
       "twitch": "clix",
       "baslangic": "2026-11-18",
