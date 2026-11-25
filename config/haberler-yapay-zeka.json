@@ -1,8 +1,64 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-24T21:17:00.790Z",
+  "guncellendi": "2026-11-25T04:21:01.830Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
+      "link": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T00:12:02.000Z",
+      "ozet": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits and raising the question of whether the country is celebrating a company that has helped put advanced chips in its adversaries' hands.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
+      "link": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-24T23:39:04.000Z",
+      "ozet": "Nvidia’s place at the center of the US economy may have outweighed concerns about its CEO’s ties to a suspected Chinese intelligence asset, national security and foreign policy experts say.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
+      "link": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-24T22:27:52.000Z",
+      "ozet": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
+      "link": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-24T21:48:27.000Z",
+      "ozet": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Even the best AI agents struggle with everyday life",
+      "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-24T21:33:29.000Z",
+      "ozet": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+      "link": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-24T21:32:38.000Z",
+      "ozet": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+      "link": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-24T21:19:52.000Z",
+      "ozet": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
+      "kullanildi": false
+    },
     {
       "baslik": "What's going on with the Riemann hypothesis?",
       "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
@@ -220,6 +276,14 @@
       "kullanildi": false
     },
     {
+      "baslik": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-24T13:00:00.000Z",
+      "ozet": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
       "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
       "kaynak": "Ars Technica",
@@ -340,6 +404,14 @@
       "kullanildi": false
     },
     {
+      "baslik": "Clay helps sales teams win with Codex and ChatGPT",
+      "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "kaynak": "OpenAI",
+      "tarih": "2026-11-24T00:00:00.000Z",
+      "ozet": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "kullanildi": false
+    },
+    {
       "baslik": "Trump engineered a risky comeback for Jensen Huang",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
       "kaynak": "The Verge",
@@ -409,78 +481,6 @@
       "kaynak": "OpenAI",
       "tarih": "2026-11-23T21:20:00.000Z",
       "ozet": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Seedream 5.5, yapay zekâ ile görsel üretmedeki en önemli sorunlardan birini çözüyor",
-      "link": "https://www.donanimhaber.com/seedream-5-5-ile-yapay-zeka-gorsellerinde-yeni-donem-basliyor--213296",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-23T21:10:00.000Z",
-      "ozet": "Yapay zekâ görsellerinde düzenleme sırasında yaşanan bozulmaları ortadan kaldırmayı hedefleyen Seedream 5.5, görselleri 100 düzenleme turu boyunca bozulmadan koruyabiliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI data centers throw another wrench into chaotic UN climate talks",
-      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T21:09:37.000Z",
-      "ozet": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
-      "link": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T20:38:53.000Z",
-      "ozet": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Claude AI can review pull requests and ship fixes on its own now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T20:00:00.000Z",
-      "ozet": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
-      "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T19:14:46.000Z",
-      "ozet": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
-      "link": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T18:12:22.000Z",
-      "ozet": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang Is Back, and So Is Nvidia’s Stock",
-      "link": "https://www.wired.com/story/jensens-back-stocks-up-what-the-hell-sure/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-23T17:52:56.000Z",
-      "ozet": "Jensen Huang comes back, numbers go up. Maybe the reason behind the CEO’s return is just that simple?",
-      "kullanildi": false
-    },
-    {
-      "baslik": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
-      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-23T17:36:08.000Z",
-      "ozet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral…",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
-      "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T17:14:23.000Z",
-      "ozet": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.",
       "kullanildi": false
     }
   ]
