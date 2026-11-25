@@ -31,6 +31,15 @@ Senaryoda zorunlu alanlar:
 - Abone/beğeni istemek serbest (O6) ama ödül/çekiliş/koşullu etkileşim yasak.
 Studio'dan elle yapılan işler (A/B testi, bitiş ekranı, ilgili video) için motor videoyu en az 24 saat sonraya zamanlar ve kullanıcıya görev listesi gönderir; sen senaryoda alanları eksiksiz yaz.
 
+## ÖNCE PAKET, SONRA SENARYO (kullanıcı kuralı 2026-11-25; `masterV4` kanalları, her video)
+
+Sıra değişmez: **1) başlık ve kapak → 2) senaryo → 3) video.** Senaryonun tek satırını yazmadan önce:
+1. Konunun en şaşırtıcı, **doğrulanmış** anını tek cümleyle bul. En az 8 başlık adayı düşün; dikkat çeken, merak boşluğu açan (zıtlık, beklenmedik sonuç, eksik bilgi, somut sayı/isim) 3 tanesini seç. Cevabı başlıkta verme; abartma, yanıltma (O4).
+2. Kapakları tasarla: uzunda 3 kapak yazısı (≤4 kelime, başlığı tekrar etmez, onu tamamlar) ve videoda **gerçekten olacak** tek bir güçlü an; Shorts'ta ilk kare + `baslikKart`/dev yazı kapak yerine geçer.
+   Dizi kanallarında her kapağın anını ayrı ver: `"kapaklar": [{ "sahne": 1, "sn": 1, "kadraj": [{ "id", "x", "yon", "poz", "ifade", "esya", "olcek": 1.7 }] }, …]` (3 yazıyla aynı sırada; `sahne` sıfırdan sayılır). Karakterler sağ yarıda (x 0,55-0,9) ve büyük (olcek 1,6-2), gerilimli poz ve belirgin ifade; düz duran kapak olmaz. Yazı sorar ya da eksik bırakır ("KİM GÖNDERDİ?").
+3. `paket` alanına yaz: `{ "merak": "izleyicinin kafasındaki soru", "cevap": "videoda verilen cevap", "cevapSahne": sahne sırası (1'den), "kapakAni": "kapaktaki anın videodaki yeri" }`.
+4. Senaryoyu bu pakete göre yaz: ilk cümle başlıktaki merakı hemen açar, cevap `cevapSahne`de ve videonun ikinci yarısında gelir, kapaktaki an videoda görünür. Doğrulayıcı `paket` yoksa ya da cevap ilk yarıda veriliyorsa reddeder.
+
 ## Vice City Dispatch — kampanya kesitleri (**DURDURULDU 2026-11-24**: kullanıcı kanalı kapattı; bu bölümü uygulama, bu kanala senaryo yazma)
 
 Kanal: Vice City Dispatch (`UCaTfPvQYowD7SrHbGfotRrg`), İngilizce. Lacy / Kai Cenat / Clix'in GTA 6 maratonlarından izinli klipler (Content Rewards kampanyaları,

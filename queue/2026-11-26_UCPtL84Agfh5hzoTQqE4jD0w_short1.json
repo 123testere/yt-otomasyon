@@ -1,0 +1,123 @@
+{
+ "id": "2026-11-26_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-26T16:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "secilen": "b"
+ },
+ "topic": "Çar Çanı: 1735’te dökülen ve hiç çalmayan dünyanın en ağır çanı",
+ "title": "1735’te Dökülen Dev Çan Hiç Çalmadı",
+ "description": "Eşyaların Hikayesi\nMoskova’daki Çar Çanı 1735’te döküldü, 1737 yangınında çatladı, 11,5 tonluk parçası koptu ve hiç çalmadı. 1836’da çukurdan çıkarılıp kaidesine kondu. Ağırlığı kaynaklara göre 180-200 ton.\n\nTerazinin hikâyesi: https://youtu.be/btO8Kzwl_EU\n\nKaynaklar: britannica.com/topic/Tsar-Bell · en.wikipedia.org/wiki/Tsar_Bell\n\n#çan #eşyalarınhikayesi",
+ "tags": [
+  "çar çanı",
+  "çan",
+  "dünyanın en büyük çanı",
+  "kremlin",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Dünyanın en ağır çanı",
+  "neden hiç çalmadı?"
+ ],
+ "rozet": "Eşyaların Hikâyesi",
+ "kapanis": {
+  "soru": "Okul zilinin sesini hatırlıyor musunuz?",
+  "alt": "Yorumlara yazın"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ilgiliVideo": "https://youtu.be/btO8Kzwl_EU",
+ "kaynaklar": [
+  {
+   "url": "https://www.britannica.com/topic/Tsar-Bell",
+   "not": "180 ton, hiç çalmadı, yangında çatladı"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Tsar_Bell",
+   "not": "1735 döküm, 1737 yangın, 1836 çıkarılış"
+  },
+  {
+   "url": "https://kremlin-architectural-ensemble.kreml.ru/en-Us/the-tsar-bell",
+   "not": "soğuk su, 11,5 tonluk parça"
+  },
+  {
+   "url": "https://prlib.ru/en/node/619437",
+   "not": "201 ton döküm"
+  }
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "The Giant Bell Cast in 1735 Never Rang",
+   "description": "Story of Things\nThe Tsar Bell in Moscow was cast in 1735, cracked in the 1737 fire and never rang.\n\n#bell #storyofthings"
+  }
+ },
+ "kontrol": {
+  "O1": "evet: kendi yazımımız ve çizimimiz",
+  "O2": "evet: yasak tür yok",
+  "O3": "evet: 4 kaynak; ağırlık aralık olarak verildi",
+  "O4": "evet: başlıktaki an videoda var",
+  "O5": "evet: YZ beyanı motor ayarında açık",
+  "O6": "evet: koşullu etkileşim yok",
+  "O7": "evet: lisanslı müzik ve kendi seslerimiz",
+  "O8": "evet: motor -14 LUFS ayarlar ve ölçer",
+  "O9": "evet: motor SRT yükler",
+  "O10": "evet: kanalın nişi",
+  "O11": "evet: yeni video",
+  "O12": "evet: en fazla 6 etiket",
+  "S1": "evet: ilk karede kırık çan, ilk cümle sonuç",
+  "S2": "evet: motor düzeni güvenli alanda",
+  "S3": "evet: süreyi hikâye belirler",
+  "S4": "evet: terazi uzun videosu; tek çağrı sonda",
+  "S5": "evet: Shorts ≤ uzun plan",
+  "S6": "evet: ≤40 karakter",
+  "Y1": "evet: haftalık ritimde",
+  "Y2": "evet: format sürüyor",
+  "Y3": "evet: kanalın tipik aralığıyla ölçülecek",
+  "Y4": "evet: gerekirse paket değişir"
+ },
+ "scenes": [
+  {
+   "narration": "Dünyanın en ağır çanı bir kez bile çalmadı.",
+   "ifade": "saskin",
+   "cizim": "ink([[425,143],[385,255],[363,405],[300,505],[700,505],[638,405],[615,255],[575,143]],{close:true,fill:'#B8893B',w:8,seed:10,pp:eo(pr(u,0,.6))});ink(ell(500,115,33,30,18),{close:true,w:7,seed:11,pp:eo(pr(u,.1,.5))});ink(ln([345,435],[655,435],12),{w:5,seed:12,pp:eo(pr(u,.3,.8))});ink([[525,505],[553,405],[610,380],[640,505]],{close:true,fill:'#FBF6EA',w:6,seed:13,pp:eo(pr(u,.5,1))});etk('Çar Çanı',500,620,eo(pr(u,.2,.8)),{size:52});"
+  },
+  {
+   "narration": "1735’te Moskova’da, yerdeki dev bir çukurun içinde döküldü; ağırlığı için kimi kaynak 180, kimi 200 ton diyor.",
+   "ifade": "anlatiyor",
+   "cizim": "ink([[120,300],[260,300],[320,560],[680,560],[740,300],[880,300]],{w:7,seed:31,pp:eo(pr(u,0,.8))});ink([[443,258],[413,343],[396,457],[348,533],[652,533],[605,457],[587,343],[557,258]],{close:true,fill:'#B8893B',w:8,seed:34,pp:eo(pr(u,0,.6))});ink(ell(500,237,25,23,18),{close:true,w:7,seed:35,pp:eo(pr(u,.1,.5))});ink(ln([382,480],[618,480],12),{w:5,seed:36,pp:eo(pr(u,.3,.8))});txt('1735',500,120,96,{c:K.ak,a:eo(pr(u,.3,.9))});etk('döküm çukuru',780,630,eo(pr(u,1,1.6)),{size:42});"
+  },
+  {
+   "narration": "Ama çan daha çukurdan çıkmadan, 1737’de büyük bir yangın başladı.",
+   "ifade": "endiseli",
+   "cizim": "ink([[449,303],[422,379],[407,481],[364,549],[636,549],[594,481],[578,379],[551,303]],{close:true,fill:'#B8893B',w:8,seed:50,pp:eo(pr(u,0,.6))});ink(ell(500,284,22,20,18),{close:true,w:7,seed:51,pp:eo(pr(u,.1,.5))});ink(ln([395,501],[605,501],12),{w:5,seed:52,pp:eo(pr(u,.3,.8))});for(let i=0;i<7;i++){const x=200+i*100,y=560,b=90+40*Math.sin(T*6+i*2);ink([[x-34,y],[x-20,y-b*.6],[x,y-b],[x+22,y-b*.55],[x+34,y]],{close:true,fill:'#E8A33D',w:5,seed:60+i,pp:eo(pr(u,.1+i*.06,.7+i*.06))});}txt('1737',500,120,96,{c:K.bordo,a:eo(pr(u,.3,.9))});"
+  },
+  {
+   "narration": "Kızgın metale dökülen soğuk su çanı çatlattı ve on bir buçuk tonluk bir parça koptu.",
+   "ifade": "saskin",
+   "cizim": "ink([[360,230],[328,320],[310,440],[260,520],[580,520],[530,440],[512,320],[480,230]],{close:true,fill:'#B8893B',w:8,seed:80,pp:eo(pr(u,0,.6))});ink(ell(420,208,26,24,18),{close:true,w:7,seed:81,pp:eo(pr(u,.1,.5))});ink(ln([296,464],[544,464],12),{w:5,seed:82,pp:eo(pr(u,.3,.8))});ink([[440,520],[462,440],[508,420],[532,520]],{close:true,fill:'#FBF6EA',w:6,seed:83,pp:eo(pr(u,.5,1))});ink([[700,540],[722,440],[790,420],[830,540]],{close:true,fill:'#B8893B',w:7,seed:90,pp:eo(pr(u,.5,1))});for(let i=0;i<6;i++){const y=(T*260+i*60)%240;ink(ln([300+i*46,120+y],[300+i*46,150+y],3),{w:5,c:K.mavi,seed:100+i});}txt('11,5 ton',765,640,64,{c:K.ak,a:eo(pr(u,.8,1.3))});"
+  },
+  {
+   "narration": "Tam doksan dokuz yıl çukurda kaldı; 1836’da çıkarılıp bir kaidenin üstüne kondu.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(300,520,400,90),{close:true,fill:'#CFC9B8',w:7,seed:120,pp:eo(pr(u,0,.5))});ink([[443,238],[413,323],[396,437],[348,513],[652,513],[605,437],[587,323],[557,238]],{close:true,fill:'#B8893B',w:8,seed:124,pp:eo(pr(u,0,.6))});ink(ell(500,217,25,23,18),{close:true,w:7,seed:125,pp:eo(pr(u,.1,.5))});ink(ln([382,460],[618,460],12),{w:5,seed:126,pp:eo(pr(u,.3,.8))});ink([[519,513],[540,437],[584,418],[606,513]],{close:true,fill:'#FBF6EA',w:6,seed:127,pp:eo(pr(u,.5,1))});ink(kutu(725,470,60,50),{close:true,fill:'#B8893B',w:5,seed:130,pp:eo(pr(u,.5,1))});txt('1836',500,120,96,{c:K.ak,a:eo(pr(u,.3,.9))});"
+  },
+  {
+   "narration": "Bugün Kremlin’de kırık duruyor: konuşmadan ünlenen tek çan. Peki bu ağırlıklar nasıl ölçüldü? Terazinin hikâyesi ilgili videoda.",
+   "ifade": "gururlu",
+   "cizim": "ink(ln([500,180],[500,560],10),{w:8,seed:150,pp:eo(pr(u,0,.5))});ink(ln([250,230+14*Math.sin(T*2)],[750,230-14*Math.sin(T*2)],10),{w:8,seed:151,pp:eo(pr(u,.2,.7))});ink([[237,318],[219,367],[210,433],[182,477],[358,477],[331,433],[321,367],[303,318]],{close:true,fill:'#B8893B',w:8,seed:155,pp:eo(pr(u,0,.6))});ink(ell(270,305,14,13,18),{close:true,w:7,seed:156,pp:eo(pr(u,.1,.5))});ink(ln([202,446],[338,446],12),{w:5,seed:157,pp:eo(pr(u,.3,.8))});ink([[281,477],[293,433],[318,422],[332,477]],{close:true,fill:'#FBF6EA',w:6,seed:158,pp:eo(pr(u,.5,1))});ink(kutu(690,360,110,90),{close:true,fill:'#8A8A8A',w:6,seed:160,pp:eo(pr(u,.5,1))});ink(kutu(400,560,200,30),{close:true,fill:'#C9B28A',w:6,seed:161,pp:eo(pr(u,.1,.6))});etk('terazinin hikâyesi',500,650,eo(pr(u,1,1.5)),{size:46});"
+  }
+ ],
+ "paket": {
+  "merak": "Dünyanın en ağır çanı neden hiç çalmadı?",
+  "cevap": "Yangında dökülen soğuk su çanı çatlattı, 11,5 tonluk parça koptu",
+  "cevapSahne": 4,
+  "kapakAni": "İlk kare: parçası kopmuş dev çan"
+ }
+}

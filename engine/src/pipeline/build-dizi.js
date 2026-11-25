@@ -229,12 +229,15 @@ function kapakSatirlari(text) {
 export async function diziKapak({ job, dir, text }) {
   fs.mkdirSync(dir, { recursive: true });
   if (Array.isArray(job.derleme) && !job.scenes?.length) job = derlemeKur(job);
+  // Her kapak yazısının kendi anı (kapaklar: [{ sahne, sn, kadraj? }], yazılarla aynı sırada)
+  const kNo = [job.thumbnailText, job.thumbnailTextAlt, job.thumbnailTextAlt2].indexOf(text);
+  if (job.kapaklar?.[kNo]) job = { ...job, kapak: { ...job.kapak, ...job.kapaklar[kNo] } };
   const dizi = diziYukle(job.dizi);
   const k = Math.min(Math.max(0, job.kapak?.sahne ?? 0), job.scenes.length - 1);
   const sc = job.scenes[k];
   const sahne = {
     t0: 0, d: 30, mekan: sc.mekan, zaman: sc.zaman ?? 'gece', efektler: (sc.efektler ?? []).filter((e) => e !== 'beyaz-cakma'),
-    saat: sc.saat ?? '03:17', kalabalik: sc.kalabalik ?? null, kart: null, kartSn: 0, kadraj: sc.kadraj ?? [],
+    saat: sc.saat ?? '03:17', kalabalik: sc.kalabalik ?? null, kart: null, kartSn: 0, kadraj: job.kapak?.kadraj ?? sc.kadraj ?? [],
     nesneler: sc.nesneler ?? [], zincir: null, cizim: null, ozet: false, satirlar: [], veri: sc.veri ?? null,
     gecit: sc.gecit ?? null, kapi: sc.kapi ?? null, yerKapak: sc.yerKapak ?? null,
   };
@@ -243,7 +246,7 @@ export async function diziKapak({ job, dir, text }) {
   if (yatay && !job.kapak?.dogal) {
     const yerler = [[0.72], [0.6, 0.86], [0.56, 0.74, 0.92], [0.55, 0.68, 0.81, 0.94]][Math.min(3, Math.max(0, sahne.kadraj.length - 1))];
     sahne.kadraj = sahne.kadraj.slice(0, 4).map((k, i) => ({
-      ...k, x: yerler[i], hareket: undefined, olcek: (k.olcek ?? 1) * (sahne.kadraj.length > 2 ? 1.3 : 1.5),
+      ...k, x: job.kapak?.kadraj ? k.x : yerler[i], hareket: undefined, olcek: job.kapak?.kadraj ? k.olcek ?? 1.5 : (k.olcek ?? 1) * (sahne.kadraj.length > 2 ? 1.3 : 1.5),
       adimlar: (k.adimlar ?? []).map(({ x, ...a }) => a),
     }));
   }

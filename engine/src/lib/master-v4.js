@@ -65,6 +65,16 @@ export function v4Hatalari(job) {
     if (!(typeof job.ilgiliVideo === 'string' && job.ilgiliVideo.trim())) e.push('v4 S4: "ilgiliVideo" zorunlu (ilgili uzun videonun iş kimliği ya da YouTube adresi); son 5 sn\'deki tek çağrı ona yönlendirir');
   }
 
+  // Önce paket (başlık + kapak), sonra senaryo (kullanıcı kuralı 2026-11-25)
+  const p = job.paket;
+  const dolu = (x) => typeof x === 'string' && x.trim().length >= 8;
+  if (!p || !dolu(p.merak) || !dolu(p.cevap) || !dolu(p.kapakAni)) e.push('paket: önce başlık/kapak — { merak, cevap, cevapSahne, kapakAni } yazılmalı');
+  else if (Array.isArray(job.scenes)) {
+    const n = job.scenes.length;
+    if (!(Number.isInteger(p.cevapSahne) && p.cevapSahne >= 1 && p.cevapSahne <= n)) e.push(`paket.cevapSahne 1-${n} arası olmalı`);
+    else if (p.cevapSahne <= n / 2) e.push('paket: merakın cevabı videonun ikinci yarısında verilmeli');
+  }
+
   // Bölüm 6 kontrol listesi: her madde "evet: nasıl"
   const k = job.kontrol && typeof job.kontrol === 'object' ? job.kontrol : null;
   if (!k) e.push('v4 §6: "kontrol" listesi yok (her madde için "evet: nasıl")');

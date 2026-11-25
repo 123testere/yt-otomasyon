@@ -12,11 +12,11 @@ const uzun = {
   oynatmaListesi: 'Eşyaların Hikâyesi', tags: ['fermuar', 'zipper', 'fermuar tarihi'],
   kaynaklar: [{ url: 'https://www.britannica.com/technology/zipper', not: '1893 patent' }],
   scenes: [{ bolum: { ad: 'Giriş' } }, { bolum: { ad: 'Patent' } }, { bolum: { ad: 'Satış' } }],
-  kontrol: evet('long'), description: '', 
+  kontrol: evet('long'), description: '', paket: { merak: 'Neden satılmadı?', cevap: 'Çünkü kimse alışmadı', cevapSahne: 3, kapakAni: 'Satış sahnesi' },
 };
 const kisa = {
   id: 'y', channelId: LAMBA, type: 'short', title: 'Fermuar 20 yıl satılmadı', ilgiliVideo: '2026-11-25_x_long1',
-  tags: ['fermuar'], kaynaklar: ['https://www.britannica.com/technology/zipper'], kontrol: evet('short'), description: '', scenes: [],
+  tags: ['fermuar'], kaynaklar: ['https://www.britannica.com/technology/zipper'], kontrol: evet('short'), description: '', scenes: [{}, {}], paket: { merak: 'Neden satılmadı?', cevap: 'Çünkü kimse alışmadı', cevapSahne: 2, kapakAni: 'İlk karede' },
 };
 
 test('v4: kapsam — muaf kanal ve kesit kontrol edilmez', () => {
@@ -37,6 +37,8 @@ test('v4: tek eksik madde videoyu durdurur', () => {
   assert.match(h({ ...uzun, basliklar: ['a', 'a', 'b'] }), /U1/);
   assert.match(h({ ...uzun, oynatmaListesi: '' }), /U9/);
   assert.match(h({ ...uzun, scenes: [{ bolum: { ad: 'a' } }, {}] }), /U6/);
+  assert.match(h({ ...uzun, paket: undefined }), /paket/);
+  assert.match(h({ ...uzun, paket: { ...uzun.paket, cevapSahne: 1 } }), /ikinci yarı/);
   assert.match(h({ ...uzun, tags: Array(7).fill('t') }), /O12/);
   assert.match(h({ ...uzun, kontrol: { ...evet('long'), U3: 'hayır' } }), /§6.*U3/);
   assert.match(h({ ...uzun, description: 'tarih [DOĞRULANMALI]' }), /DOĞRULANMALI/);

@@ -1,0 +1,1119 @@
+{
+ "id": "2026-11-26_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-26T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "kurgu": true,
+ "bolum": {
+  "no": 9,
+  "ad": "Şampiyonun Dileği"
+ },
+ "tanitim": [
+  "Surda gece baskını",
+  "Kralın fısıltısı",
+  "Yarım bilezik"
+ ],
+ "title": "Kral Dilek Verdi, O Düşmanını İstedi",
+ "titleAlt": "Kral Ne Fısıldadı? O Gece Anlaşıldı",
+ "basliklar": [
+  "Kral Dilek Verdi, O Düşmanını İstedi",
+  "Kral Ne Fısıldadı? O Gece Anlaşıldı",
+  "15 Yıl Sonra Bileziğin Diğer Yarısı"
+ ],
+ "description": "Kral şampiyonuna bir dilek hakkı verir; Arın, Kara Sungur’u ister. Ama kralın kulağa fısıldadığı plan o gece surda ortaya çıkar. Zincirli 9. bölüm (kurgu animasyon dizi).\nSence merdivendeki kız kim? Yorumlara yaz.\n\n#zincirli #animasyon #dizi",
+ "tags": [
+  "zincirli",
+  "animasyon dizi",
+  "çöp adam animasyon",
+  "gladyatör hikayesi",
+  "arena",
+  "bölüm bölüm"
+ ],
+ "topic": "Arın dilek olarak Sungur ile teke tek dövüş ister; gece surda baskına uğrar, merdivende yarım bilezikli kızı görür",
+ "thumbnailText": "KİM GÖNDERDİ?",
+ "thumbnailTextAlt": "NE FISILDADI?",
+ "thumbnailTextAlt2": "BU KIZ KİM?",
+ "kapak": {
+  "sahne": 13,
+  "sn": 2.2
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "muzik": "gizemli",
+ "muzikSeviye": 0.1,
+ "kapanis": {
+  "baslik": "DEVAMI",
+  "sonraki": "Bölüm 10: Saraydaki Kız — Yakında",
+  "soru": "Sence merdivendeki kız kim?"
+ },
+ "ceviriler": {
+  "en": {
+   "title": "The King’s Whisper: Night Attack on the Wall | Chained 9",
+   "description": "The king grants his champion one wish and Arin asks for Kara Sungur. But the plan the king whispers comes to light that night on the wall. Chained episode 9 (fictional animated series).\nWho is the girl on the stairs? Tell us in the comments.\n\n#chained #animation #series"
+  }
+ },
+ "kontrol": {
+  "O1": "evet: kendi yazımımız ve çizimimiz",
+  "O2": "evet: yasak tür yok",
+  "O3": "evet: kurgu dizi, kurgu: true; açıklamada belirtildi",
+  "O4": "evet: başlıktaki an videoda var",
+  "O5": "evet: YZ beyanı motor ayarında açık",
+  "O6": "evet: koşullu etkileşim yok",
+  "O7": "evet: lisanslı müzik ve kendi seslerimiz",
+  "O8": "evet: motor -14 LUFS ayarlar ve ölçer",
+  "O9": "evet: motor SRT yükler",
+  "O10": "evet: kanalın nişi",
+  "O11": "evet: yeni video",
+  "O12": "evet: en fazla 6 etiket",
+  "U1": "evet: 3 başlık + 3 kapak yazısı",
+  "U2": "evet: başlıklar ≤50 karakter",
+  "U3": "evet: motor 3840x2160 çizer, surdaki gerçek an",
+  "U4": "evet: surdaki baskınla başlar",
+  "U5": "evet: süreyi hikâye belirler",
+  "U6": "evet: 5 kısım, ilki 00:00",
+  "U7": "evet: kapanış kartı, Studio görevi",
+  "U8": "evet: yazılar 30 px üstü",
+  "U9": "evet: Zincirli · 1. Sezon",
+  "Y1": "evet: haftalık ritimde",
+  "Y2": "evet: format sürüyor",
+  "Y3": "evet: kanalın tipik aralığıyla ölçülecek",
+  "Y4": "evet: gerekirse paket değişir"
+ },
+ "scenes": [
+  {
+   "kisim": "Soğuk Açılış",
+   "sure": 7,
+   "muzik": "epik",
+   "mekan": "sur",
+   "aciklama": "0-2 sn: Arın gece surunda kılıcıyla durur, iki muhafız koşarak gelir. 2-4 sn: ilk muhafız kılıcını indirir, Arın bloklar, kıvılcım çıkar. 4-7 sn: Arın karşılık verir, muhafız geri savrulur.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "ifade": "kizgin",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.4,
+       "poz": "blok"
+      },
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 1,
+       "sn": 0.8,
+       "poz": "kilic-indir"
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.58,
+      "sure": 1.1,
+      "kos": true
+     },
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.1,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 0,
+       "sn": 1.5,
+       "poz": "kilic-indir",
+       "darbe": true
+      },
+      {
+       "satir": 1,
+       "sn": 1,
+       "poz": "darbe",
+       "darbe": true
+      },
+      {
+       "satir": 1,
+       "sn": 1.25,
+       "poz": "dus",
+       "esya": null
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "hareket": {
+      "x0": 1.3,
+      "x1": 0.86,
+      "sure": 1.6,
+      "kos": true
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Gece yarısı surun üstünde iki gölge bana doğru koştu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kılıçları kralın muhafızlarının kılıcıydı."
+    }
+   ]
+  },
+  {
+   "efektler": [
+    "agir-cekim"
+   ],
+   "mekan": "sur",
+   "aciklama": "0-2 sn: ikinci muhafız yandan savurur, Arın diz çöker, kılıç başının üstünden geçer. 2-4 sn: Arın kalkıp kılıcını indirir, muhafızın kılıcı elinden düşer.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "ifade": "korkmus",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.5,
+       "poz": "diz-cok"
+      },
+      {
+       "satir": 1,
+       "sn": 0.1,
+       "poz": "kilic-kaldir",
+       "ifade": "kizgin"
+      },
+      {
+       "satir": 1,
+       "sn": 0.6,
+       "poz": "kilic-indir"
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.63,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.1,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 0,
+       "sn": 0.6,
+       "poz": "kilic-indir"
+      },
+      {
+       "satir": 1,
+       "sn": 0.8,
+       "poz": "darbe",
+       "darbe": true
+      },
+      {
+       "satir": 1,
+       "sn": 1.1,
+       "poz": "korku",
+       "esya": null,
+       "ifade": "korkmus"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Çeliğin rüzgârı saçıma değdi, başımın üstünden geçti."
+    },
+    {
+     "kim": "arin",
+     "metin": "Sizi kim gönderdi?"
+    }
+   ]
+  },
+  {
+   "kisim": "Kralın Sözü",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Kralın Sözü"
+   },
+   "kalabalik": 1,
+   "sure": 6,
+   "mekan": "arena",
+   "aciklama": "0-2 sn: ara kart. 2-5 sn: Arın arenanın ortasında kılıcı elinde durur, kalabalık adını bağırır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "ifade": "dusunceli",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "zafer"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İki gün önce arenada on ikinci dövüşümü kazandım."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kalabalık adımı bağırıyordu ama benim aklım Toros hocamdaydı."
+    }
+   ]
+  },
+  {
+   "kalabalik": 1,
+   "mekan": "loca",
+   "aciklama": "0-3 sn: Kral ayağa kalkar, kolunu kalabalığa açar. 3-6 sn: Sungur şaşırıp krala bakar.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "sungur",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 2,
+       "ifade": "saskin"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Şampiyonum! Geleneğimizdir, dile benden ne dilersen!"
+    }
+   ]
+  },
+  {
+   "kalabalik": 1,
+   "mekan": "arena",
+   "aciklama": "0-2 sn: Arın kılıcını indirip locaya bakar. 2-5 sn: kolunu kaldırıp Sungur’u işaret eder.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.45,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.1,
+       "poz": "isaret",
+       "ifade": "kizgin"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Özgürlük isteyebilirdim. Altın isteyebilirdim."
+    },
+    {
+     "kim": "arin",
+     "metin": "Kara Sungur’u istiyorum. Bu kumun üstünde, teke tek!"
+    }
+   ]
+  },
+  {
+   "kalabalik": 1,
+   "mekan": "loca",
+   "aciklama": "0-2 sn: kalabalık susar, Sungur öne çıkar. 2-5 sn: Kral elini kaldırıp onu durdurur ve gülümser.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.1,
+       "poz": "isaret",
+       "ifade": "gulumsuyor"
+      }
+     ]
+    },
+    {
+     "id": "sungur",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.2,
+       "poz": "isaret"
+      },
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "dur",
+       "ifade": "supheli"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "sungur",
+     "metin": "Bu köle benimle dövüşemez!"
+    },
+    {
+     "kim": "kral",
+     "metin": "Söz sözdür. Üç gün sonra dövüşeceksiniz."
+    }
+   ]
+  },
+  {
+   "kalabalik": 0.6,
+   "mekan": "loca",
+   "aciklama": "0-2 sn: Kral Sungur’a yaklaşır, kulağına eğilir. 2-5 sn: Sungur’un yüzü yavaşça gülümser.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.44,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "fisilti"
+    },
+    {
+     "id": "sungur",
+     "x": 0.56,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "ifade": "gulumsuyor"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonra kral, Sungur’un kulağına bir şey fısıldadı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sungur’un yüzündeki öfke, bir anda gülümsemeye döndü."
+    }
+   ]
+  },
+  {
+   "kisim": "Fısıltı",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Fısıltı"
+   },
+   "sure": 6,
+   "mekan": "zindan",
+   "aciklama": "0-2 sn: ara kart. 2-5 sn: Arın zindana yürür, Kargan onu bekler.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.38,
+      "sure": 2.4,
+      "bas": 1
+     }
+    },
+    {
+     "id": "kargan",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "esya": null,
+     "ifade": "endiseli"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O gece zindana döndüğümde Kargan beni bekliyordu."
+    },
+    {
+     "kim": "kargan",
+     "metin": "Kral bir şeyi bedava vermez Arın."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "0-2 sn: Arın yumruğunu sıkar, konuşur. 2-5 sn: Kargan başını sallar, eliyle yukarıyı gösterir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.36,
+     "yon": 1,
+     "poz": "eller-belde",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "kargan",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "esya": null,
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "isaret"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "On beş yıldır bu anı bekliyorum."
+    },
+    {
+     "kim": "kargan",
+     "metin": "O da bekliyor. Gözün önde olsun, kulağın arkada."
+    }
+   ]
+  },
+  {
+   "muzik": "epik",
+   "mekan": "zindan",
+   "aciklama": "0-3 sn: Arın ve Kargan kılıçlarla karşı karşıya geçer, Kargan kılıcını indirir, Arın bloklar ve kıvılcım çıkar. 3-6 sn: Arın karşılık verir, Kargan bloklar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "ifade": "kizgin",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.1,
+       "poz": "blok"
+      },
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 1,
+       "sn": 0.7,
+       "poz": "kilic-indir",
+       "darbe": true
+      }
+     ]
+    },
+    {
+     "id": "kargan",
+     "x": 0.63,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.7,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 0,
+       "sn": 1.2,
+       "poz": "kilic-indir",
+       "darbe": true
+      },
+      {
+       "satir": 1,
+       "sn": 0.5,
+       "poz": "blok"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İki gece boyunca meşale ışığında çalıştık."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Kargan vurdu, ben karşıladım. Sonra ben vurdum."
+    }
+   ]
+  },
+  {
+   "mekan": "zindan",
+   "aciklama": "0-3 sn: ikisi de kılıcını indirir, Kargan güler. 3-5 sn: Arın duvara yaslanan zincire bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "esya": "kilic"
+    },
+    {
+     "id": "kargan",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "dur",
+     "esya": "kilic",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "kargan",
+     "metin": "Artık benden hızlısın. Ama Sungur adil dövüşmez."
+    },
+    {
+     "kim": "arin",
+     "metin": "Babam derdi ki, herkes en çok kazandığını sandığı an açık verir."
+    }
+   ]
+  },
+  {
+   "kisim": "Sur",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Surdaki Gölgeler"
+   },
+   "sure": 6,
+   "mekan": "sur",
+   "aciklama": "0-2 sn: ara kart. 2-5 sn: Arın gece surunda yürür, uzaklara bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "uzgun",
+     "hareket": {
+      "x0": -0.1,
+      "x1": 0.46,
+      "sure": 3,
+      "bas": 0.8
+     },
+     "esya": "kilic"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü gece uyuyamadım ve sura çıktım."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Toros’un kervanı bu yoldan geçip saraya girmişti."
+    }
+   ]
+  },
+  {
+   "muzik": "epik",
+   "mekan": "sur",
+   "aciklama": "0-2 sn: iki muhafız kılıçla gelir, Arın dönüp kılıcını kaldırır. 2-5 sn: birinin kılıcı iner, Arın bloklar, kıvılcım saçılır; ikincisi geri çekilir.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.42,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "ifade": "saskin",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.1,
+       "poz": "blok",
+       "ifade": "kizgin"
+      },
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 1,
+       "sn": 0.7,
+       "poz": "kilic-indir"
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.62,
+      "sure": 0.9,
+      "kos": true
+     },
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.9,
+       "poz": "kilic-kaldir"
+      },
+      {
+       "satir": 0,
+       "sn": 1.2,
+       "poz": "kilic-indir",
+       "darbe": true
+      },
+      {
+       "satir": 1,
+       "sn": 0.9,
+       "poz": "darbe",
+       "darbe": true
+      },
+      {
+       "satir": 1,
+       "sn": 1.2,
+       "poz": "korku",
+       "esya": null
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.84,
+     "yon": -1,
+     "poz": "kilic-hazir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 1,
+       "poz": "korku",
+       "ifade": "korkmus"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İşte o iki gölge tam o anda üstüme koştu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Birinin kılıcını düşürdüm, öteki olduğu yerde kaldı."
+    }
+   ]
+  },
+  {
+   "mekan": "sur",
+   "aciklama": "0-3 sn: muhafız ellerini kaldırır ve konuşur. 3-5 sn: Arın kılıcını indirir, öfkeyle bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "kilic-hazir",
+     "ifade": "kizgin",
+     "esya": "kilic",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.2,
+       "poz": "dur"
+      }
+     ]
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.62,
+     "yon": -1,
+     "poz": "korku",
+     "esya": null,
+     "ifade": "korkmus"
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "muhafiz",
+     "metin": "Sungur gönderdi! Dövüşe yaralı çıkmanı istiyor!"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Demek fısıltı buydu. Beni dövüşten önce yıpratacaklardı."
+    }
+   ]
+  },
+  {
+   "mekan": "sur",
+   "aciklama": "0-2 sn: Arın kılıcıyla yolu gösterir. 2-5 sn: muhafız koşarak kaçar, Arın arkasından bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.38,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "korku",
+     "esya": null,
+     "ifade": "korkmus",
+     "hareket": {
+      "x0": 0.6,
+      "x1": 1.2,
+      "sure": 2,
+      "kos": true,
+      "bas": 1.6
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Git, efendine söyle. Bir dahaki sefere kendi gelsin."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu seriyi kaçırmamak istersen şimdi abone ol."
+    }
+   ]
+  },
+  {
+   "kisim": "Merdivendeki Kız",
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Merdivendeki Kız"
+   },
+   "sure": 6,
+   "mekan": "merdiven",
+   "aciklama": "0-5 sn: Arın taş merdivenden aşağı, sağdan sola basamak basamak iner.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "dusunceli",
+     "esya": null,
+     "hareket": {
+      "x0": 0.85,
+      "x1": 0.3,
+      "sure": 5,
+      "dogrusal": true,
+      "y0": -0.242,
+      "y1": -0.069
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Surdan inerken locanın altındaki eski taş merdivene saptım."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Basamaklarda su damlaları vardı, taze."
+    }
+   ]
+  },
+  {
+   "mekan": "mahzen",
+   "aciklama": "0-2 sn: Arın mahzene girer, durur. 2-5 sn: genç bir kız karşıdan yürüyerek gelir ve durur.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    },
+    {
+     "id": "su-genc",
+     "x": 0.68,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr",
+     "hareket": {
+      "x0": 1.1,
+      "x1": 0.66,
+      "sure": 2.4
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Karşıma su taşıyan genç bir kız çıktı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Beni görünce olduğu yerde donup kaldı."
+    }
+   ]
+  },
+  {
+   "muzik": "duygusal",
+   "mekan": "mahzen",
+   "aciklama": "0-2 sn: kız Arın’ın bileğindeki zincire bakar. 2-5 sn: Arın kızın bileğine bakar, gözleri büyür.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.34,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "dusunceli",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "dur",
+       "ifade": "saskin"
+      }
+     ]
+    },
+    {
+     "id": "su-genc",
+     "x": 0.64,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 1.2,
+       "ifade": "saskin"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Önce bileğimdeki kırık zincire baktı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sonra ben onun bileğini gördüm. Yarım bir bakır bilezik."
+    }
+   ]
+  },
+  {
+   "mekan": "mahzen",
+   "aciklama": "0-2 sn: Arın bir adım atar, elini uzatır. 2-4 sn: kız dönüp koşarak uzaklaşır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.34,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "adimlar": [
+      {
+       "satir": 0,
+       "sn": 0.2,
+       "poz": "isaret"
+      }
+     ]
+    },
+    {
+     "id": "su-genc",
+     "x": 0.64,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "korkmus",
+     "hareket": {
+      "x0": 0.64,
+      "x1": 1.2,
+      "sure": 1.8,
+      "kos": true,
+      "bas": 1.4
+     }
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Dur! Senin adın ne?"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Cevap vermedi. Koşarak karanlıkta kayboldu."
+    }
+   ]
+  },
+  {
+   "muzik": "duygusal",
+   "mekan": "mahzen",
+   "aciklama": "0-3 sn: Arın tek başına kalır, bileğine dokunur. 3-6 sn: başını kaldırıp karanlığa bakar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zincirli",
+     "ifade": "uzgun",
+     "adimlar": [
+      {
+       "satir": 1,
+       "sn": 0.3,
+       "poz": "dur",
+       "ifade": "saskin"
+      }
+     ]
+    }
+   ],
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O bileziği babam ikiye bölmüştü. Yarısı kız kardeşimdeydi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Su yaşıyor muydu? Devamı için abone ol ve beğen."
+    }
+   ]
+  }
+ ],
+ "paket": {
+  "merak": "Kral, Sungur’un kulağına ne fısıldadı?",
+  "cevap": "Arın’ı dövüşten önce surda yaralatma planını",
+  "cevapSahne": 14,
+  "kapakAni": "2. sahne: Arın diz çöker, kılıç başının üstünden geçer"
+ },
+ "kapaklar": [
+  {
+   "sahne": 1,
+   "sn": 1.2,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "diz-cok",
+     "ifade": "korkmus",
+     "olcek": 1.75
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.9,
+     "yon": -1,
+     "poz": "saldir",
+     "esya": "kilic",
+     "ifade": "kizgin",
+     "olcek": 1.75
+    }
+   ]
+  },
+  {
+   "sahne": 6,
+   "sn": 1.2,
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.64,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "fisilti",
+     "olcek": 1.8
+    },
+    {
+     "id": "sungur",
+     "x": 0.86,
+     "yon": -1,
+     "poz": "eller-belde",
+     "ifade": "supheli",
+     "olcek": 1.8
+    }
+   ]
+  },
+  {
+   "sahne": 17,
+   "sn": 1.2,
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin",
+     "olcek": 1.7
+    },
+    {
+     "id": "su-genc",
+     "x": 0.86,
+     "yon": -1,
+     "poz": "korku",
+     "ifade": "korkmus",
+     "olcek": 1.7
+    }
+   ]
+  }
+ ]
+}
