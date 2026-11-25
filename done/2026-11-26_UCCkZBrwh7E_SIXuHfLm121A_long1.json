@@ -1,0 +1,83 @@
+{
+  "id": "2026-11-26_UCCkZBrwh7E_SIXuHfLm121A_long1",
+  "channelId": "UCCkZBrwh7E_SIXuHfLm121A",
+  "type": "long",
+  "format": "hazir",
+  "topic": "Earth stops rotating for one second",
+  "title": "What If Earth Stopped for 1 Second?",
+  "basliklar": [
+    "What If Earth Stopped for 1 Second?",
+    "Earth Stops for 1 Second. Who Survives?",
+    "If Earth Stopped, You Wouldn't"
+  ],
+  "description": "Right now you are racing east at hundreds of miles an hour without feeling it. So what happens if Earth stops for a single second? A short 3D thought experiment based on real science.\n\n00:00 You are already moving\n00:16 The second Earth stops\n00:43 Does anyone survive?\n00:54 Earth is really slowing down\n\nThis is a hypothetical scenario. Sources:\n• https://www.astronomy.com/science/what-would-happen-if-earth-stopped-spinning/\n• https://www.universetoday.com/26623/what-would-happen-if-the-earth-stopped-spinning/\n• https://wmo.int/asu-map?map=Wind_028\n• https://en.wikipedia.org/wiki/Speed_of_sound\n• https://pmc.ncbi.nlm.nih.gov/articles/PMC5247521/",
+  "tags": [
+    "what if",
+    "what if earth stopped",
+    "earth rotation",
+    "space",
+    "science",
+    "thought experiment"
+  ],
+  "thumbnailText": "YOU DON'T STOP",
+  "thumbnailTextAlt": "WHO SURVIVES?",
+  "thumbnailTextAlt2": "1 SECOND",
+  "oynatmaListesi": "What If: Earth",
+  "kaynaklar": [
+    {
+      "url": "https://www.astronomy.com/science/what-would-happen-if-earth-stopped-spinning/",
+      "not": "1,036 mph x cos(latitude): New York 785 mph; oceans surge, air keeps moving"
+    },
+    {
+      "url": "https://www.universetoday.com/26623/what-would-happen-if-the-earth-stopped-spinning/",
+      "not": "at the poles you would barely feel it"
+    },
+    {
+      "url": "https://wmo.int/asu-map?map=Wind_028",
+      "not": "strongest surface gust 253 mph, Barrow Island 1996"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Speed_of_sound",
+      "not": "767 mph at 20 C"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5247521/",
+      "not": "day length +1.8 ms per century"
+    }
+  ],
+  "paket": {
+    "merak": "What happens to you, and does anyone survive?",
+    "cevap": "Only someone standing exactly at the pole",
+    "cevapSahne": 9,
+    "kapakAni": "wind tears the house away (line 6)"
+  },
+  "kontrol": {
+    "O1": "evet: own script, own 3D scenes",
+    "O2": "evet: no banned type, thought experiment labelled on screen",
+    "O3": "evet: 5 sources in kaynaklar",
+    "O4": "evet: every scene in title/thumbnail is in the video",
+    "O5": "evet: synthetic voice declared",
+    "O6": "evet: no conditional engagement",
+    "O7": "evet: own generated music and effects",
+    "O8": "evet: measured before upload",
+    "O9": "evet: English SRT uploaded",
+    "O10": "evet: channel niche",
+    "O11": "evet: new video",
+    "O12": "evet: 6 tags",
+    "U1": "evet: 3 titles + 3 thumbnails",
+    "U2": "evet: <=50 characters",
+    "U3": "evet: 3840x2160, scenes from the video, bottom right free",
+    "U4": "evet: opens on the promise",
+    "U5": "evet: story decides length",
+    "U6": "evet: 4 chapters, each >=10 s",
+    "U7": "evet: last 6 s right side clear, Studio task",
+    "U8": "evet: labels >=30 px",
+    "U9": "evet: playlist set",
+    "Y1": "evet: weekly rhythm planned",
+    "Y2": "evet: first video",
+    "Y3": "evet: measured against own range",
+    "Y4": "evet: repackage if needed"
+  },
+  "hazirVideo": true,
+  "publishAt": "2026-11-26T20:42:25.637Z"
+}
