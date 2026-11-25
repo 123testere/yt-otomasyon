@@ -7,10 +7,11 @@
 // Sahne: gecit: {x, ac} (zindanda gizli geçit; ac saniyesinde açılır)
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AbsoluteFill, continueRender, delayRender, Html5Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
-import { sesOlaylari } from '../../shared/ses-olaylari.js';
+import { SES, sesOlaylari } from '../../shared/ses-olaylari.js';
 import { serif, serifReady } from './fonts.js';
 import { agizAcikligi, karakter, mekan } from '../../shared/dizi.js';
-import { cop } from '../../shared/cop.js';
+import { cop, copNoktalar } from '../../shared/cop.js';
+import { YER_NESNE, yerNesneCiz } from '../../shared/esya-detay.js';
 import { DESTAN_MEKANLAR, destanMekan, mekanDerle } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR, oyunMekan } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR, teknoMekan } from '../../shared/mekan-tekno.js';
@@ -183,8 +184,11 @@ function nesneCiz(ctx, n, u, W, yer, s) {
     y = yer - Math.sin(p * Math.PI) * 260 * s;
     aci = (n.aci ?? 1.4) + (1 - p) * 9;
   }
-  ctx.save(); ctx.translate(x, y); ctx.rotate(aci); ctx.scale(s, s);
-  if (n.tip === 'kilic') {
+  const detay = YER_NESNE.includes(n.tip);
+  ctx.save(); ctx.translate(x, y); ctx.rotate(detay ? (n.ucus ? aci - 1.4 : n.aci ?? 0) : aci); ctx.scale(s, s);
+  if (detay) {
+    yerNesneCiz(ctx, n.tip, u - (n.ucus?.sn1 ?? n.gorun ?? -9));
+  } else if (n.tip === 'kilic') {
     for (const [lw, c] of [[17, '#0C0A10'], [10, '#D8DCE2']]) { ctx.lineWidth = lw; ctx.strokeStyle = c; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(0, -20); ctx.lineTo(0, -190); ctx.stroke(); }
     ctx.lineWidth = 9; ctx.strokeStyle = '#6A4A1E'; ctx.beginPath(); ctx.moveTo(-26, -20); ctx.lineTo(26, -20); ctx.stroke();
     ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(0, -20); ctx.lineTo(0, 20); ctx.stroke();
@@ -331,7 +335,7 @@ function satirdan(sc, v, satir) {
 function zamanla(sc) {
   const ac = (o) => (o ? { ...o, ac: satirdan(sc, o.ac, o.satir) } : o);
   return {
-    ...sc, gecit: ac(sc.gecit), kapi: ac(sc.kapi), yerKapak: ac(sc.yerKapak),
+    ...sc, yakinPlan: sc.yakinPlan?.map((y) => ({ ...y, sn: satirdan(sc, y.sn ?? 0, y.satir) })), gecit: ac(sc.gecit), kapi: ac(sc.kapi), yerKapak: ac(sc.yerKapak),
     duvarZincir: sc.duvarZincir?.map((z) => ({ ...z, sn: satirdan(sc, z.sn, z.satir), bitis: satirdan(sc, z.bitis, z.bitisSatir ?? z.satir) })),
     nesneler: sc.nesneler?.map((n) => (Number.isInteger(n.satir) ? {
       ...n, gorun: satirdan(sc, n.gorun, n.satir), kaybol: satirdan(sc, n.kaybol, n.satir),
@@ -366,10 +370,58 @@ export function kare(ctx, p, t, dur, fns) {
   // 3B görünüm: mekân ve karakterler ayrı katmanlara çizilir, sonda ışık/gölge/kamera ile birleşir (shared/uc-boyut.js)
   const uc3 = p.uc3 ?? null;
   const ana = ctx;
+  const aktif = words.find((w) => t >= w.t && t < w.t + w.d + 0.08);
+  const konusan = aktif?.konusan ?? null;
+  const yer = yatay ? H * 0.84 : 1430;
+  const olcek = yatay ? (H / 1080) * 0.86 : 1.3;
+  // Karakterin çizim girdisi (konuşma, poz, geçiş, konum); çizim ve yakın plan kamerası aynı değerleri kullanır
+  // Aynı karakterden birden çok (ör. 5 muhafız): hareketleri aynı anda olmasın diye her birine ayrı tohum
+  const kopyaNo = kadraj.map((k, j) => kadraj.slice(0, j).filter((x) => x.id === k.id).length);
+  const copGirdi = (j) => {
+    const k = kadraj[j];
+    const satir = [...(sc.satirlar ?? [])].reverse().find((s) => s.kim === k.id && t >= s.t0 && (s.ifade || s.poz));
+    const st = durumlar[j];
+    // Satırdaki poz, adımdaki pozdan daha yeniyse onu kullan
+    const satirYeni = satir?.poz && satir.t0 - sc.t0 >= st.pozT;
+    const poz = satirYeni ? satir.poz : st.poz ?? 'dur';
+    const pozU = uc - (satirYeni ? satir.t0 - sc.t0 : st.pozT);
+    // Önceki poz ve değişeli geçen süre: satır pozu adım pozunun üstüne geldiyse önceki = adım pozu
+    const gecis = satirYeni ? { poz: st.poz ?? 'dur', u: pozU } : st.onceki ? { poz: st.onceki, u: uc - st.gecisT } : null;
+    return {
+      x: st.x * W, y: yer + (st.y ?? 0) * H - (k.arka ? 46 * olcek : 0), s: (k.olcek ?? 1) * olcek * (k.arka ? 0.82 : 1) * (sc.cizim ? 0.75 : 1),
+      yon: st.yon ?? (st.x < 0.5 ? 1 : -1), t: tc, konusuyor: konusan === k.id, poz, pozU, gecis, takilar: k.takilar,
+      ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr',
+      seed: (karakterler[k.id].seed ?? j + 1) + kopyaNo[j] * 2.37, esya: st.esya,
+    };
+  };
+  // Yakın plan (yakinPlan: [{id, hedef: el|bilek|yuz, satir, sn, sure, zoom}] ya da {x} yerdeki nesne): kamera
+  // anlatılan ayrıntıya yaklaşır, bekler, geri çekilir. Çizim yeniden ölçeklendiği için görüntü net kalır.
+  let yakin = null;
+  const yp = copStil ? (sc.yakinPlan ?? []).find((y) => u >= y.sn && u < y.sn + (y.sure ?? 1.8)) : null;
+  if (yp) {
+    const j = kadraj.findIndex((k) => k.id === yp.id);
+    const f = j >= 0 && karakterler[yp.id] ? copNoktalar(karakterler[yp.id], copGirdi(j))[yp.hedef ?? 'el']
+      : typeof yp.x === 'number' ? [yp.x * W, yer + (yp.y ?? 0) * H - 20] : null;
+    if (f) {
+      const sure = yp.sure ?? 1.8;
+      const a = eo(pr(u, yp.sn, yp.sn + 0.4)) * (1 - eo(pr(u, yp.sn + sure - 0.35, yp.sn + sure)));
+      const Z = yp.zoom ?? (yp.hedef === 'yuz' ? 2 : 2.9);
+      const Zb = j >= 0 ? 1 + (Z - 1) * 0.6 : Z; // arka plan daha az büyür (derinlik); yerdeki nesnede zeminle birlikte
+      const [cx, cy] = [W / 2, yatay ? H * 0.43 : H * 0.5];
+      const sinir = (o, n) => Math.min(0, Math.max(n - Zb * n, o));
+      const arkaKam = [1 + (Zb - 1) * a, a * sinir(cx - Zb * f[0], W), a * sinir(cy - Zb * f[1], H)];
+      yakin = {
+        on: j >= 0 ? [1 + (Z - 1) * a, a * (cx - Z * f[0]), a * (cy - Z * f[1])] : arkaKam,
+        arka: arkaKam,
+      };
+    }
+  }
+  const kameraUygula = (c, hangi) => { if (yakin) { const [k, x, y] = yakin[hangi]; c.transform(k, 0, 0, k, x, y); } };
   if (uc3) { uc3.temizle(); ctx = uc3.arka; }
   const plaka = uc3 ? p.plakalar?.[plakaAdi(sc)] : null;
   ctx.save();
   if (sars) ctx.translate((h(Math.floor(t * 30)) - 0.5) * sars, (h(Math.floor(t * 30) + 7) - 0.5) * sars);
+  if (uc3) kameraUygula(ctx, 'arka');
   if (plaka) {
     plakaCiz(ctx, plakaAdi(sc), plaka, W, H, t);
   } else if (TEKNO_MEKANLAR.includes(sc.mekan)) {
@@ -387,14 +439,11 @@ export function kare(ctx, p, t, dur, fns) {
   if (uc3) {
     ctx.restore(); ctx = uc3.on; ctx.save();
     if (sars) ctx.translate((h(Math.floor(t * 30)) - 0.5) * sars, (h(Math.floor(t * 30) + 7) - 0.5) * sars);
+    kameraUygula(ctx, 'on');
   }
   if (sc.cizim && !uc3) yakinCekim(ctx, fns[i], u, t, W, H);
 
-  const aktif = words.find((w) => t >= w.t && t < w.t + w.d + 0.08);
-  const konusan = aktif?.konusan ?? null;
-  const yer = yatay ? H * 0.84 : 1430;
-  const olcek = yatay ? (H / 1080) * 0.86 : 1.3;
-  for (const n of sc.nesneler ?? []) nesneCiz(ctx, n, uc, W, yer, olcek);
+  for (const n of sc.nesneler ?? []) nesneCiz(ctx, n, uc, W, yer + (n.y ?? 0) * H, olcek * (n.olcek ?? 1));
   // Duvar halkaları (duvarZincir: [{id, x, y, sn, bitis}]): zincir karakterin elinden duvardaki halkaya
   for (const dz of sc.duvarZincir ?? []) {
     const [rx, ry] = [dz.x * W, dz.y * H];
@@ -408,32 +457,16 @@ export function kare(ctx, p, t, dur, fns) {
   const yerler = yerlesim(kadraj.length, W);
   // Arka sıradakiler önce çizilir (önündekiler onları örter)
   const sira = kadraj.map((k, j) => j).sort((a, b) => (kadraj[a].arka ? 0 : 1) - (kadraj[b].arka ? 0 : 1) || a - b);
-  const ayni = {};
   sira.forEach((j) => {
     const k = kadraj[j];
     const def = karakterler[k.id];
     if (!def) return;
-    // Aynı karakterden birden çok (ör. 5 muhafız): hareketleri aynı anda olmasın diye her birine ayrı tohum
-    const kopya = (ayni[k.id] = (ayni[k.id] ?? -1) + 1);
     const konus = konusan === k.id;
     const satir = [...(sc.satirlar ?? [])].reverse().find((s) => s.kim === k.id && t >= s.t0 && (s.ifade || s.poz));
-    const st = durumlar[j];
     const solgun = konusan && konusan !== 'anlatici' && karakterler[konusan] && !konus ? 1 : 0;
     const agiz = konus ? agizAcikligi(words, t) : 0;
     if (copStil) {
-      // Satırdaki poz, adımdaki pozdan daha yeniyse onu kullan
-      const satirYeni = satir?.poz && satir.t0 - sc.t0 >= st.pozT;
-      const poz = satirYeni ? satir.poz : st.poz ?? 'dur';
-      const pozU = uc - (satirYeni ? satir.t0 - sc.t0 : st.pozT);
-      // Önceki poz ve değişeli geçen süre: satır pozu adım pozunun üstüne geldiyse önceki = adım pozu
-      const gecis = satirYeni ? { poz: st.poz ?? 'dur', u: pozU } : st.onceki ? { poz: st.onceki, u: uc - st.gecisT } : null;
-      const yon = st.yon ?? (st.x < 0.5 ? 1 : -1);
-      const arka = k.arka ? 0.82 : 1;
-      const r = cop(ctx, def, {
-        x: st.x * W, y: yer + (st.y ?? 0) * H - (k.arka ? 46 * olcek : 0), s: (k.olcek ?? 1) * olcek * arka * (sc.cizim ? 0.75 : 1), yon, t: tc, konusuyor: konus,
-        poz, pozU, gecis, ifade: (satir?.ifade && satir.t0 - sc.t0 >= st.pozT ? satir.ifade : st.ifade) ?? 'notr', agiz,
-        solgun: Math.max(solgun, k.arka ? 0.35 : 0), seed: (def.seed ?? j + 1) + kopya * 2.37, esya: st.esya,
-      });
+      const r = cop(ctx, def, { ...copGirdi(j), agiz, solgun: Math.max(solgun, k.arka ? 0.35 : 0) });
       eller[k.id] = r.el;
       ellerArka[k.id] = r.elArka;
       elJ[j] = r.el;
@@ -512,7 +545,7 @@ export function kare(ctx, p, t, dur, fns) {
     const konus3 = kadraj.findIndex((k) => k.id === konusan);
     const grup = TEKNO_MEKANLAR.includes(sc.mekan) ? 'tekno' : OYUN_MEKANLAR.includes(sc.mekan) ? 'oyun' : null;
     ctx = ana;
-    uc3.birlestir(ctx, { t, u, d: sc.d, no: i, yer, isik: isikSec(sc, grup), net: ['siralama', 'grafik'].includes(sc.mekan), duvar: !ACIK_HAVA.includes(sc.mekan) && !p.ozelMekanlar?.[sc.mekan], odak: konus3 >= 0 ? durumlar[konus3].x * W : null });
+    uc3.birlestir(ctx, { t, u, d: sc.d, no: i, yer: yakin ? yakin.on[0] * yer + yakin.on[2] : yer, kamYer: yer, isik: isikSec(sc, grup), net: ['siralama', 'grafik'].includes(sc.mekan), duvar: !ACIK_HAVA.includes(sc.mekan) && !p.ozelMekanlar?.[sc.mekan], odak: yakin ? null : konus3 >= 0 ? durumlar[konus3].x * W : null });
     if (sc.cizim) yakinCekim(ctx, fns[i], u, t, W, H);
   }
 
@@ -659,9 +692,8 @@ export function Dizi(props) {
   const sahneMuzikVol = (bas, sure) => (f) => {
     const sn = bas + f / fps;
     const fade = interpolate(f, [0, fps * 1.2, Math.max(fps * 1.2 + 1, sure * fps - fps * 1.2), sure * fps], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-    return (musicVolume ?? 0.12) * fade * (konusuyor(sn) ? 0.55 : 1);
+    return (musicVolume ?? 0.12) * fade * (konusuyor(sn) ? SES.muzikKonusma : 1);
   };
-  const SFX = 0.6;
   return (
     <AbsoluteFill style={{ backgroundColor: RENK.gece }}>
       <canvas ref={ref} width={width} height={height} style={{ position: 'absolute', inset: 0 }} />
@@ -681,8 +713,8 @@ export function Dizi(props) {
       {olaylar.map((e, i) => {
         const kare = Math.max(1, Math.round((e.d ?? 2.4) * fps));
         const vol = e.dongu
-          ? (f) => e.vol * interpolate(f, [0, 10, kare - 10, kare], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
-          : e.vol * SFX;
+          ? (f) => e.vol * (konusuyor(e.t + f / fps) ? SES.ortamKonusma : 1) * interpolate(f, [0, 10, kare - 10, kare], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+          : e.vol * (konusuyor(e.t) ? SES.efektKonusma : SES.efekt);
         return (
           <Sequence key={`s${i}`} from={Math.round(e.t * fps)} durationInFrames={kare} layout="none">
             <Html5Audio src={staticFile(`sfx/${e.ses}.wav`)} volume={vol} loop={Boolean(e.dongu)} />

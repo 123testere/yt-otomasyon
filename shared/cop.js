@@ -2,12 +2,13 @@
 // Pozlar eklem açılarıyla çizilir; konuşurken kol hareket eder, ağız oynar, göz kırpar.
 // Karakter aksesuarlarla tanınır: saç, başörtüsü, şapka/miğfer/taç, pelerin, sakal, göz bandı, yara izi, önlük, kuşak.
 // Eşyalar: kılıç, kalkan, tahta kılıç, meşale, fener, baston, bilekte zincir.
+import { esyaCizDetay, IKI_EL, takiCiz } from './esya-detay.js';
 import { KAS, cl, elips, eo, h, kirpma, sekil, ton } from './dizi.js';
 
 export const POZLAR = ['dur', 'yuru', 'kos', 'isaret', 'korku', 'dusun', 'el-salla', 'omuz', 'eller-belde', 'egil',
   'kilic-kaldir', 'kilic-savur', 'saldir', 'blok', 'darbe', 'dus', 'yerde', 'kalk', 'zincirli', 'diz-cok', 'zafer', 'tasi',
-  'kilic-hazir', 'kilic-indir', 'it', 'kaldir'];
-export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta', 'anahtar'];
+  'kilic-hazir', 'kilic-indir', 'it', 'kaldir', 'tut', 'goster'];
+export const ESYALAR = ['kilic', 'kalkan', 'kilic+kalkan', 'tahta-kilic', 'mesale', 'fener', 'baston', 'tas', 'oyun-kolu', 'kupa', 'disket', 'para', 'canta', 'anahtar', 'testi', 'kova', 'sepet', 'tepsi', 'mektup', 'kese', 'sise', 'kitap', 'ekmek', 'cicek', 'kase'];
 
 const COP = { bas: 58, kalca: -215, omuz: -372, kol1: 92, kol2: 88, bacak1: 110, bacak2: 108 };
 const GOVDE = '#F3EAD7';
@@ -99,6 +100,12 @@ function pozAcilari(ad, t, seed, konusuyor, yasli, pozU = 9) {
   } else if (ad === 'dus' || ad === 'yerde' || ad === 'kalk') {
     const y = ad === 'yerde' ? 1 : ad === 'dus' ? eo(cl(pozU / 0.55)) : 1 - eo(cl(pozU / 0.9));
     r = { ...r, on: [1.4 * y + 0.1, -0.3], arka: [-1.6 * y, 0.2], onB: [0.15 + 0.3 * y, 0.2 * y], arkaB: [-0.1, 0.5 * y], yatis: y };
+  } else if (ad === 'tut') {
+    // İki elle gövde önünde taşımak (testi, kova, sepet, tepsi)
+    r.on = [0.45, 1.05]; r.arka = [0.35, 1.2];
+  } else if (ad === 'goster') {
+    // Bileğini/elindekini göstermek: ön kol göğüs hizasında öne uzanır
+    r.on = [0.75 + s(t * 2) * 0.02, 0.95];
   } else if (ad === 'zincirli') {
     r.on = [0.55, 1.25]; r.arka = [0.45, 1.35]; r.egim = 0.08 + (yasli ? 0.1 : 0);
   } else if (ad === 'diz-cok') {
@@ -223,6 +230,7 @@ function yuz(ctx, def, fx, by, { ifade, agiz, t, seed }) {
 // Eldeki eşya; el: [x, y], yon: önkolun açısı (radyan, 0 = aşağı)
 function esyaCiz(ctx, esya, el, aci, t, seed) {
   if (!esya) return;
+  if (esyaCizDetay(ctx, esya, el, t, seed)) return;
   const ux = Math.sin(aci);
   const uy = Math.cos(aci);
   if (esya === 'kilic' || esya === 'tahta-kilic') {
@@ -346,10 +354,34 @@ function zincirHalka(ctx, a, b, n) {
 // o: { x, y (ayak hizası), s, t, poz, pozU, yon (1 sağa, -1 sola bakar), ifade, agiz, solgun, seed, konusuyor, esya,
 //      gecis: { poz, u } (isteğe bağlı: önceki poz ve değişeli geçen saniye; yumuşak geçiş için) }
 // Döner: ön elin dünya koordinatı (zincir bağlamak için).
+export function copPoz(def, o) {
+  const esya = o.esya !== undefined ? o.esya : def.esya;
+  const t = o.t ?? 0;
+  const p = gecisliPoz(o.poz ?? 'dur', o.gecis, t, o.seed ?? 1, o.konusuyor ?? false, def.yas === 'yasli', o.pozU);
+  // İki elle taşınan eşya: yürürken, korkarken, konuşurken de kollar eşyada kalır (korkuda titrer)
+  if (IKI_EL.includes(esya) && p.yatis === 0) {
+    const tit = o.poz === 'korku' ? Math.sin(t * 38) * 0.05 : 0;
+    return { ...p, on: [0.45 + tit, 1.05], arka: [0.35 + tit, 1.2] };
+  }
+  return p;
+}
+// Elin, bileğin ve yüzün ekrandaki yeri (yakın plan kamerası için; cop ile aynı geometri)
+export function copNoktalar(def, o) {
+  const p = copPoz(def, o);
+  const s = (o.s ?? 1) * (def.olcek ?? 1);
+  const boy = COP.kalca - COP.omuz;
+  const omuz = [Math.sin(p.egim) * boy, COP.kalca - Math.cos(p.egim) * boy];
+  const kol = kolNokta(omuz, p.on[0], p.on[1]);
+  const yer = (n) => [o.x + n[0] * s * (o.yon ?? 1), o.y - p.zipla * s + n[1] * s];
+  return {
+    el: yer(kol[2]), bilek: yer([kol[1][0] * 0.25 + kol[2][0] * 0.75, kol[1][1] * 0.25 + kol[2][1] * 0.75]),
+    yuz: yer([omuz[0] + Math.sin(p.egim) * 86 + 10, omuz[1] - 86]),
+  };
+}
 export function cop(ctx, def, o) {
   const { x, y, t = 0, yon = 1, ifade = 'notr', agiz = 0, solgun = 0, seed = 1, konusuyor = false } = o;
   const s = (o.s ?? 1) * (def.olcek ?? 1);
-  const p = gecisliPoz(o.poz ?? 'dur', o.gecis, t, seed, konusuyor, def.yas === 'yasli', o.pozU);
+  const p = copPoz(def, o);
   const kalinlik = 15 * (def.kalin ?? 1);
   const arkaRenk = ton(GOVDE, 0.8);
   const esya = o.esya !== undefined ? o.esya : def.esya ?? (['fener', 'baston', 'mesale'].includes(def.aksesuar) ? def.aksesuar : null);
@@ -437,6 +469,8 @@ export function cop(ctx, def, o) {
 
   const kol = kolNokta(omuz, p.on[0], p.on[1]);
   uzuv(ctx, kol, kalinlik, GOVDE);
+  // Takılar: ön kolun bileğinde (bilezik, yarım bilezik, demir halka…); def.takilar ya da sahnedeki takilar
+  for (const ad of o.takilar ?? def.takilar ?? []) takiCiz(ctx, ad, { dirsek: kol[1], el: kol[2], boyun, t, seed });
   if (def.zincir || o.poz === 'zincirli') {
     if (o.poz === 'zincirli') zincirHalka(ctx, kol[2], arkaKol[2], 5);
     else zincirHalka(ctx, [kol[1][0] * 0.3 + kol[2][0] * 0.7, kol[1][1] * 0.3 + kol[2][1] * 0.7], [kol[2][0] + 10, kol[2][1] + 40], 2);

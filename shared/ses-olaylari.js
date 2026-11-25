@@ -4,7 +4,13 @@
 // Bağımlılıksızdır: hem çizici (Remotion) hem motor (müzik indirme) kullanır.
 
 const KUM = ['arena', 'avlu', 'kervan', 'tas-ocagi', 'koy-gunduz', 'koy-yangin', 'meydan', 'yol', 'orman', 'fuar'];
-// Mekân ortam sesleri: [ses, seviye]
+// Karışım (kullanıcı 2026-11-25: "arka plan sesleri çok yüksek"): konuşma hep önde. Anlatım -18 LUFS'a, müzik dosyası
+// -20 LUFS'a getirilir (pipeline/ses-seviye.js); ortam sesi en çok -38 dB RMS, konuşurken 9 dB daha kısık.
+export const SES = { muzikEnCok: 0.09, muzikKonusma: 0.5, ortamKonusma: 0.35, efekt: 0.34, efektKonusma: 0.16 };
+// Ortam dosyalarının ölçülen ortalama yüksekliği (dB RMS); önem bunun üstünden seviyeye çevrilir
+const ORTAM_RMS = { 'ortam-ates': -25.6, 'ortam-damla': -22.9, 'ortam-kalabalik': -14.8, 'ortam-ruzgar': -16.1, 'ortam-su': -13.5 };
+export const ortamSeviye = (ses, onem) => 10 ** ((-38 - (ORTAM_RMS[ses] ?? -18)) / 20) * Math.min(1, onem / 0.45 + 0.35);
+// Mekân ortam sesleri: [ses, önem 0-0,45]
 const ORTAM = {
   kanal: [['ortam-su', 0.45], ['ortam-damla', 0.3]],
   zindan: [['ortam-ates', 0.1], ['ortam-damla', 0.28]],
@@ -40,7 +46,7 @@ export function sesOlaylari(scenes, karakterler = {}) {
     const ekle = (t, ses, vol = 1) => { if (typeof t === 'number' && t >= sc.t0 - 0.01 && t < son - 0.05) ev.push({ t: Math.max(sc.t0, t), ses, vol }); };
     for (const [ses, vol] of ORTAM[sc.mekan] ?? []) {
       const v = ses === 'ortam-kalabalik' ? vol * (0.6 + 0.8 * (sc.kalabalik ?? 0.5)) : vol;
-      ev.push({ t: sc.t0, ses, vol: v, d: sc.d, dongu: true });
+      ev.push({ t: sc.t0, ses, vol: ortamSeviye(ses, v), d: sc.d, dongu: true });
     }
     const kum = KUM.includes(sc.mekan);
     const adimSes = () => (kum ? 'adim-kum' : (sira++ % 2 ? 'adim-tas2' : 'adim-tas'));
@@ -72,6 +78,7 @@ export function sesOlaylari(scenes, karakterler = {}) {
       }
     }
     for (const n of sc.nesneler ?? []) {
+      if (n.tip === 'su-birikintisi' && typeof n.gorun === 'number') ekle(T(satirSn(sc, n.gorun, n.satir)), 'adim-su', 0.8);
       if (!n.ucus) continue;
       const inis = satirSn(sc, n.ucus.sn1, n.satir);
       ekle(T(inis), n.tip === 'kilic' ? 'kilic-yere' : n.tip === 'anahtar' ? 'anahtar' : 'gum', 0.7);

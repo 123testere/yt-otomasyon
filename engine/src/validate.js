@@ -9,6 +9,8 @@ import { deneyHatalari } from './lib/deney.js';
 import { HIZLI_CUMLE, HIZLI_DIZI_HIZ, anlatimMetinleri, cagriEksigi, cumleSay } from './lib/hizli.js';
 import { haberLinkleri } from './lib/haberler.js';
 import { POZLAR, ESYALAR } from '../../shared/cop.js';
+import { TAKILAR, YER_NESNE } from '../../shared/esya-detay.js';
+import { detayHatalari } from './lib/detay-kapisi.js';
 import { IFADELER as DIZI_IFADELER, MEKANLAR, ZAMANLAR, EFEKTLER } from '../../shared/dizi.js';
 import { DESTAN_MEKANLAR, mekanKodHatasi } from '../../shared/mekan-destan.js';
 import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
@@ -109,7 +111,7 @@ function cizimErrors(job) {
 // Dizi formatı (Bölüm Bölüm): sahneler kodla çizilir, satırlar karakter sesleriyle okunur.
 const DIZI_MEKANLAR = [...DESTAN_MEKANLAR, ...MEKANLAR, ...OYUN_MEKANLAR, ...TEKNO_MEKANLAR];
 const DIZI_EFEKTLER = [...EFEKTLER, 'agir-cekim', 'beyaz-cakma'];
-const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan', 'anahtar'];
+const DIZI_NESNELER = ['kilic', 'kalkan', 'kirik-kalkan', 'anahtar', ...YER_NESNE];
 const MEKAN_DIR = path.join(ROOT, 'mekanlar');
 // Senaryo yazarının çizdiği özel mekânlar: mekanlar/<ad>.json (kodu çalışıyorsa geçerli)
 export function ozelMekanHatasi(ad) {
@@ -190,7 +192,7 @@ function diziErrors(job, slot) {
     if (sc.kisim !== undefined && !str(sc.kisim, 32)) e('kisim ≤32 karakter olmalı');
     if (sc.kart !== undefined && !(str(sc.kart?.ust, 30) && optStr(sc.kart?.alt, 40))) e('kart {ust ≤30, alt ≤40} olmalı');
     if (sc.sure !== undefined && !(typeof sc.sure === 'number' && sc.sure > 0 && sc.sure <= 12)) e('sure 0-12 sn olmalı');
-    if (!optStr(sc.aciklama, 300)) e('aciklama ≤300 karakter');
+    if (!optStr(sc.aciklama, 600)) e('aciklama ≤600 karakter');
     if (sc.buyukYazi !== undefined && !(str(sc.buyukYazi?.ust, 14) && optStr(sc.buyukYazi?.alt, 30))) e('buyukYazi {ust ≤14, alt ≤30} olmalı');
     if (sc.sira !== undefined && !(Number.isInteger(sc.sira?.no) && sc.sira.no >= 1 && sc.sira.no <= 10 && str(sc.sira?.ad, 28) && optStr(sc.sira?.tur, 30)
       && (sc.sira.maddeler === undefined || (Array.isArray(sc.sira.maddeler) && sc.sira.maddeler.length <= 3 && sc.sira.maddeler.every((m) => str(m, 24)))))) {
@@ -226,6 +228,11 @@ function diziErrors(job, slot) {
         }
       }
     }
+    for (const k of kadraj) if (k?.takilar !== undefined && !(Array.isArray(k.takilar) && k.takilar.every((x) => TAKILAR.includes(x)))) e(`kadraj "${k.id}": takilar şunlardan olmalı: ${TAKILAR.join(', ')}`);
+    if (sc.yakinPlan !== undefined && !(Array.isArray(sc.yakinPlan) && sc.yakinPlan.length <= 3 && sc.yakinPlan.every((y) => (kadraj.some((k) => k.id === y?.id) || sayi01(y?.x))
+      && [undefined, 'el', 'bilek', 'yuz'].includes(y.hedef) && sn(y.sn ?? 0) && satirOk(y.satir) && (y.sure === undefined || (y.sure >= 1 && y.sure <= 5)) && (y.zoom === undefined || (y.zoom >= 1.4 && y.zoom <= 4))))) {
+      e('yakinPlan [{id (kadrajdaki karakter) ya da x 0-1 (yerdeki nesne), hedef: el|bilek|yuz, satir, sn, sure 1-5, zoom 1,4-4}] olmalı; sahnede en fazla 3');
+    }
     for (const n of sc.nesneler ?? []) {
       if (!DIZI_NESNELER.includes(n?.tip)) e(`nesne tipi şunlardan biri olmalı: ${DIZI_NESNELER.join(', ')}`);
       else if (!sayi01(n.x)) e('nesne x 0-1 arası olmalı');
@@ -243,6 +250,7 @@ function diziErrors(job, slot) {
       ifade(s?.ifade, 'satır'); poz(s?.poz, 'satır');
     }
   });
+  if (slot && dizi.detayKapisi && !job.derleme) errors.push(...detayHatalari(job, dizi));
   if (!(str(job.kapanis?.baslik, 20) && optStr(job.kapanis?.sonraki, 50) && optStr(job.kapanis?.soru, 70))) {
     errors.push('kapanis {baslik ≤20, sonraki ≤50, soru ≤70} olmalı');
   }

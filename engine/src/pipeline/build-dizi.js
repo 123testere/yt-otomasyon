@@ -12,7 +12,8 @@ import { spellNumbersTr } from '../lib/numbers-tr.js';
 import { alignWords } from './subtitles.js';
 import { pickMusic } from './render.js';
 import { kapakJpeg, remotionStill, renderDizi } from './remotion.js';
-import { muzikBolumleri } from '../../../shared/ses-olaylari.js';
+import { parcaSeviyesi } from './ses-seviye.js';
+import { SES, muzikBolumleri } from '../../../shared/ses-olaylari.js';
 import { enAzTempo } from '../lib/hizli.js';
 import { v4Kanal } from '../lib/master-v4.js';
 import { elevenScene } from './elevenlabs.js';
@@ -165,6 +166,7 @@ export async function seslendir(job, dizi, dir) {
       zincir: sc.zincir ?? null, cizim: sc.cizim ?? null, ozet: Boolean(sc.ozet), satirlar,
       buyukYazi: sc.buyukYazi ?? null, veri: sc.veri ?? null, sira: sc.sira ?? null, haber: sc.haber ?? null,
       gecit: sc.gecit ?? null, kapi: sc.kapi ?? null, yerKapak: sc.yerKapak ?? null, duvarZincir: sc.duvarZincir ?? null,
+      yakinPlan: sc.yakinPlan ?? null, muzik: sc.muzik ?? null,
     });
   }
   parcalar.push(sessiz(path.join(dir, 'son.wav'), KAPANIS_SN));
@@ -297,15 +299,22 @@ export async function buildDizi(job, settings, { workDir }) {
   console.log('  seslendirme (karakter sesleri)…');
   const ses = await seslendir(job, dizi, dir);
   const muzik = job.muzik ?? dizi.muzik ?? (settings.music && settings.music !== 'yok' ? settings.music : 'gerilim');
+  ses.narration = await parcaSeviyesi(ses.narration, -18);
   const { muzikler, credits: muzikKredi } = await sahneMuzikleri(ses.scenes, dizi, muzik, dir);
   const music = muzikler.length ? null : await pickMusic(muzik, dir);
+  // Her müzik parçası aynı yüksekliğe getirilir (aynı dosya bir kez ölçülür)
+  const esit = new Map();
+  for (const m of [...muzikler, music].filter(Boolean)) {
+    if (!esit.has(m.file)) esit.set(m.file, await parcaSeviyesi(m.file, -20));
+    m.file = esit.get(m.file);
+  }
   console.log(`  müzik: ${muzikler.map((m) => `${m.mood} ${Math.round(m.t0)}-${Math.round(m.t1)} sn`).join(', ') || muzik}`);
   console.log(`  ${job.scenes.length} sahne, ${Math.round(ses.total)} sn — animasyon render (Remotion)…`);
   const no = job.bolum.no;
   const saat = (dizi.format === 'yatay' ? settings.long?.time : settings.shorts?.times?.[0]) ?? '19:00';
   const yatay = (job.format === 'dizi' && job.dikey) ? false : dizi.format === 'yatay';
   const videoPath = await renderDizi({
-    job, dir, ses, music, muzikler, musicVolume: Number(job.muzikSeviye ?? dizi.muzikSeviye ?? settings.musicVolume ?? 0.12),
+    job, dir, ses, music, muzikler, musicVolume: Math.min(SES.muzikEnCok, Number(job.muzikSeviye ?? dizi.muzikSeviye ?? settings.musicVolume ?? SES.muzikEnCok)),
     boyut: yatay ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 },
     props: {
       dil: dizi.dil ?? 'tr', rozetNo: dizi.rozetNo !== false,

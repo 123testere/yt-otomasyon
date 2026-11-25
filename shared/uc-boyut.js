@@ -38,13 +38,13 @@ export function ucBoyut(yeniTuval, W, H) {
     arka: C.arka, on: C.on,
     temizle() { temizle(C.arka, W, H); temizle(C.on, W, H); },
     // ok: { t, u, d (sahne süresi), no (sahne sırası), yer (ayak hizası), isik, net (yazılı ekran: bulanıklık/kamera yok), odak (konuşanın x'i) }
-    birlestir(ctx, { t, u, d, no, yer, isik: L, net, odak, duvar = true }) {
+    birlestir(ctx, { t, u, d, no, yer, kamYer = yer, isik: L, net, odak, duvar = true }) {
       const titre = L.titre ? 1 + 0.1 * Math.sin(t * 21) * Math.sin(t * 13.3) : 1;
       const yol = yumusat(u / Math.max(2, d));
       const z = net ? 1 : 1.025 + 0.045 * yol;                              // kamera hiç durmaz: yavaş itme
       const kay = net ? 0 : (no % 2 ? -1 : 1) * W * 0.008 * (yol - 0.5) * 2;   // yana süzülme
       const ox = W * (0.5 + ((odak ?? W / 2) / W - 0.5) * 0.35);
-      const kam = (k) => { const s = 1 + (z - 1) * k; ctx.translate(ox + kay * k, yer); ctx.scale(s, s); ctx.translate(-ox, -yer); };
+      const kam = (k) => { const s = 1 + (z - 1) * k; ctx.translate(ox + kay * k, kamYer); ctx.scale(s, s); ctx.translate(-ox, -kamYer); };
       // ışıklı kenar: karakterin ışığa bakan yanı aydınlanır, öbür yanı soğur
       const on = C.on;
       on.setTransform(1, 0, 0, 1, 0, 0); on.globalCompositeOperation = 'source-atop'; on.globalAlpha = 1;
