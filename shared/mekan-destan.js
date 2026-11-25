@@ -3,7 +3,7 @@
 import { h } from './dizi.js';
 import { eo, pr, sahteCtx } from './cizim.js';
 
-export const DESTAN_MEKANLAR = ['koy-gunduz', 'koy-yangin', 'kervan', 'tas-ocagi', 'zindan', 'avlu', 'arena', 'loca', 'merdiven', 'mahzen', 'kanal'];
+export const DESTAN_MEKANLAR = ['koy-gunduz', 'koy-yangin', 'kervan', 'tas-ocagi', 'zindan', 'avlu', 'arena', 'loca', 'merdiven', 'mahzen', 'kanal', 'sur'];
 
 const rgba = (c, a) => {
   const n = parseInt(c.slice(1), 16);
@@ -522,6 +522,7 @@ function gizliGecit(ctx, W, H, u, g) {
 // o: { W, H, t, u (sahne saniyesi), kamera (0-1), kalabalik (heyecan 0-1), gecit: {x, ac} }
 export function destanMekan(ctx, ad, o = {}) {
   const { W = 1920, H = 1080, t = 0, u = t, kamera = 0, kalabalik: hey = 0.5 } = o;
+  if (ad === 'sur') ad = 'avlu'; // gece suru hazır 3B görüntüyle çizilir (uc-boyut.js); görüntü yoksa avlu
   ctx.save();
   // Merdivende yakınlaşma yok: karakterlerin ayakları basamak çizgisinde kalmalı
   const z = ad === 'merdiven' ? 1 : 1 + Math.min(1, kamera) * 0.05;

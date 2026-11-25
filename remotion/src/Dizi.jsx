@@ -15,6 +15,7 @@ import { DESTAN_MEKANLAR, destanMekan, mekanDerle } from '../../shared/mekan-des
 import { OYUN_MEKANLAR, oyunMekan } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR, teknoMekan } from '../../shared/mekan-tekno.js';
 import { ALAN, derle, eo, h, kit, pr } from '../../shared/cizim.js';
+import { ACIK_HAVA, isikSec, plakaAdi, plakaCiz, ucBoyut } from '../../shared/uc-boyut.js';
 
 const KART_SN = 2.4; // açılış kartı
 const GECIS = 0.3;
@@ -29,6 +30,23 @@ function useFontReady() {
   }, []);
   return ready;
 }
+
+// 3B görünüm: hazır mekân görüntüleri (remotion/public/mekan3b) yüklenir; yüklenemezse eski çizim kullanılır
+function usePlakalar(scenes, W, H, acik) {
+  const [pl, setPl] = useState(acik ? null : {});
+  const [handle] = useState(() => (acik ? delayRender('3B mekânlar') : null));
+  useEffect(() => { if (pl && handle != null) continueRender(handle); }, [pl]); // çizim yeni görüntülerle yapıldıktan sonra
+  useEffect(() => {
+    if (!acik) return;
+    const adlar = [...new Set((scenes ?? []).map((s) => plakaAdi(s)).filter(Boolean))];
+    Promise.all(adlar.map((ad) => new Promise((ok) => {
+      const im = new Image(); im.onload = () => ok([ad, im]); im.onerror = () => ok(null);
+      im.src = staticFile(`mekan3b/${ad}-${W > H ? 'y' : 'd'}.jpg`);
+    }))).then((r) => { setPl(Object.fromEntries(r.filter(Boolean))); });
+  }, []);
+  return pl;
+}
+const tuvalYap = (w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
 
 function yazi(ctx, s, x, y, size, { c = RENK.kagit, a = 1, al = 'center', w = 700, it = false, golge = true } = {}) {
   if (a <= 0 || !s) return;
@@ -345,9 +363,16 @@ export function kare(ctx, p, t, dur, fns) {
   const vurgu = durumlar.map((d) => d.vurgu).filter(Boolean).sort((a, b) => b.sn - a.sn)[0];
   const sars = vurgu && uc - vurgu.sn < 0.45 ? (1 - (uc - vurgu.sn) / 0.45) * 22 : 0;
 
+  // 3B görünüm: mekân ve karakterler ayrı katmanlara çizilir, sonda ışık/gölge/kamera ile birleşir (shared/uc-boyut.js)
+  const uc3 = p.uc3 ?? null;
+  const ana = ctx;
+  if (uc3) { uc3.temizle(); ctx = uc3.arka; }
+  const plaka = uc3 ? p.plakalar?.[plakaAdi(sc)] : null;
   ctx.save();
   if (sars) ctx.translate((h(Math.floor(t * 30)) - 0.5) * sars, (h(Math.floor(t * 30) + 7) - 0.5) * sars);
-  if (TEKNO_MEKANLAR.includes(sc.mekan)) {
+  if (plaka) {
+    plakaCiz(ctx, plakaAdi(sc), plaka, W, H, t);
+  } else if (TEKNO_MEKANLAR.includes(sc.mekan)) {
     teknoMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d) });
   } else if (OYUN_MEKANLAR.includes(sc.mekan)) {
     oyunMekan(ctx, sc.mekan, { W, H, t, kamera: u / Math.max(1, sc.d), kalabalik: sc.kalabalik ?? 0.5, veri: sc.veri });
@@ -359,7 +384,11 @@ export function kare(ctx, p, t, dur, fns) {
   } else {
     mekan(ctx, sc.mekan, { W, H, t, zaman: sc.zaman, efektler: ef, saat: sc.saat, kamera: u / Math.max(1, sc.d) });
   }
-  if (sc.cizim) yakinCekim(ctx, fns[i], u, t, W, H);
+  if (uc3) {
+    ctx.restore(); ctx = uc3.on; ctx.save();
+    if (sars) ctx.translate((h(Math.floor(t * 30)) - 0.5) * sars, (h(Math.floor(t * 30) + 7) - 0.5) * sars);
+  }
+  if (sc.cizim && !uc3) yakinCekim(ctx, fns[i], u, t, W, H);
 
   const aktif = words.find((w) => t >= w.t && t < w.t + w.d + 0.08);
   const konusan = aktif?.konusan ?? null;
@@ -479,6 +508,13 @@ export function kare(ctx, p, t, dur, fns) {
     }
   }
   ctx.restore();
+  if (uc3) {
+    const konus3 = kadraj.findIndex((k) => k.id === konusan);
+    const grup = TEKNO_MEKANLAR.includes(sc.mekan) ? 'tekno' : OYUN_MEKANLAR.includes(sc.mekan) ? 'oyun' : null;
+    ctx = ana;
+    uc3.birlestir(ctx, { t, u, d: sc.d, no: i, yer, isik: isikSec(sc, grup), net: ['siralama', 'grafik'].includes(sc.mekan), duvar: !ACIK_HAVA.includes(sc.mekan) && !p.ozelMekanlar?.[sc.mekan], odak: konus3 >= 0 ? durumlar[konus3].x * W : null });
+    if (sc.cizim) yakinCekim(ctx, fns[i], u, t, W, H);
+  }
 
   // Darbe anında kırmızı, sahne başında beyaz çakma
   if (vurgu?.darbe && uc - vurgu.sn < 0.25) { ctx.fillStyle = `rgba(200,30,30,${0.35 * (1 - (uc - vurgu.sn) / 0.25)})`; ctx.fillRect(0, 0, W, H); }
@@ -605,11 +641,14 @@ export function Dizi(props) {
   const fns = useMemo(() => scenes.map((s) => {
     try { return s.cizim ? derle(s.cizim) : null; } catch { return null; }
   }), [scenes]);
+  const acik3 = props.ucBoyut !== false;
+  const plakalar = usePlakalar(scenes, width, height, acik3);
+  const uc3 = useMemo(() => (acik3 ? ucBoyut(tuvalYap, width, height) : null), [acik3, width, height]);
   useLayoutEffect(() => {
     const ctx = ref.current.getContext('2d');
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
-    kare(ctx, { ...props, width, height }, t, durationInFrames / fps, fns);
-  }, [ready, frame, props, fns]);
+    kare(ctx, { ...props, width, height, uc3, plakalar }, t, durationInFrames / fps, fns);
+  }, [ready, frame, props, fns, plakalar]);
   const musicVol = (f) => (musicVolume ?? 0.12) * interpolate(f, [0, 45, durationInFrames - 60, durationInFrames], [0, 1, 1, 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   // Temas sesleri ve ortam sesleri sahne verisinden (shared/ses-olaylari.js); sesEfekt: false ise kapalı
@@ -664,9 +703,13 @@ export function DiziKare(props) {
   const fns = useMemo(() => (props.scenes ?? []).map((s) => {
     try { return s.cizim ? derle(s.cizim) : null; } catch { return null; }
   }), [props.scenes]);
+  const acik3 = props.ucBoyut !== false;
+  const plakalar = usePlakalar(props.scenes, W, H, acik3);
+  const uc3 = useMemo(() => (acik3 ? ucBoyut(tuvalYap, W, H) : null), [acik3, W, H]);
   useLayoutEffect(() => {
     const ctx = ref.current.getContext('2d');
-    kare(ctx, { words: [], ...props, width: W, height: H }, props.t ?? 4, props.dur ?? 60, fns);
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
+    kare(ctx, { words: [], ...props, width: W, height: H, uc3, plakalar }, props.t ?? 4, props.dur ?? 60, fns);
     // Kapak yazısı: sol tarafta dev, kalın, iki renkli satırlar (karakterler sağ yarıda durur)
     // Kapak vurgusu: karakterlerin arkasında sıcak ışık, kenarlarda karartma (küçük ekranda öne çıksın)
     if (props.kapakVurgu) {
@@ -693,6 +736,6 @@ export function DiziKare(props) {
         ctx.fillStyle = i === satirlar.length - 1 ? '#F2B45A' : '#FFFFFF'; ctx.fillText(s, W * 0.04, y0 + i * boy * 1.02); ctx.restore();
       });
     }
-  }, [ready, props, fns]);
+  }, [ready, props, fns, plakalar]);
   return <canvas ref={ref} width={W} height={H} />;
 }

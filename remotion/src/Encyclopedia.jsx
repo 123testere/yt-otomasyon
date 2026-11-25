@@ -29,7 +29,24 @@ function grain(ctx, w, hh, gece, n) {
   }
 }
 
+// 3B oda (remotion/public/mekan3b/nur-*.jpg): Nur Bey'in masası; kamera çok yavaş iter, lamba ışığı titrer. Görüntü yoksa düz gece zemini.
+let ODA = null;
+let ODA_T = 0;
 function geceZemin(ctx, W, H) {
+  if (ODA) {
+    const z = 1.02 + 0.05 * (0.5 - 0.5 * Math.cos(ODA_T * 0.09)), [ox, oy] = [W * 0.16, H * (W > H ? 0.93 : 0.8)];
+    ctx.save(); ctx.translate(ox, oy); ctx.scale(z, z); ctx.translate(-ox, -oy); ctx.drawImage(ODA, 0, 0, W, H); ctx.restore();
+    const k = ctx.createLinearGradient(0, 0, W > H ? W * 0.75 : 0, W > H ? 0 : H * 0.62);
+    if (W > H) { k.addColorStop(0, 'rgba(12,10,26,.1)'); k.addColorStop(0.5, 'rgba(12,10,26,.62)'); k.addColorStop(1, 'rgba(12,10,26,.74)'); } else { k.addColorStop(0, 'rgba(12,10,26,.72)'); k.addColorStop(0.7, 'rgba(12,10,26,.5)'); k.addColorStop(1, 'rgba(12,10,26,.04)'); }
+    ctx.fillStyle = k; ctx.fillRect(0, 0, W, H);
+    // lambanın havadaki halesi ve ışıkta uçuşan toz
+    const a = 0.26 + 0.03 * Math.sin(ODA_T * 7.3), [lx, ly] = W > H ? [360, 640] : [235, 1270];
+    ctx.save(); ctx.globalCompositeOperation = 'screen';
+    const g = ctx.createRadialGradient(lx, ly, 10, lx, ly, 520); g.addColorStop(0, `rgba(255,180,90,${a})`); g.addColorStop(1, 'rgba(255,150,60,0)'); ctx.fillStyle = g; ctx.fillRect(lx - 540, ly - 540, 1080, 1080);
+    for (let i = 0; i < 34; i++) { const f = (ODA_T * (0.02 + h(i * 3.3) * 0.02) + h(i)) % 1; ctx.fillStyle = `rgba(255,220,160,${0.5 * Math.sin(f * Math.PI)})`; ctx.beginPath(); ctx.arc(lx - 190 + h(i * 7.1) * 560 + Math.sin(ODA_T * 0.5 + i) * 14, ly + 330 - f * 420, 1.2 + h(i * 2.7) * 2, 0, 7); ctx.fill(); }
+    ctx.restore();
+    return;
+  }
   ctx.fillStyle = K.gece; ctx.fillRect(0, 0, W, H); grain(ctx, W, H, true, 9000);
 }
 
@@ -237,7 +254,14 @@ function uzunKare(ctx, p, t) {
   }
   if (sayfa > 0) {
     ctx.save(); ctx.globalAlpha = sayfa;
-    sayfaZemin(ctx, 1920, 1080, L.cilt);
+    if (ODA) {
+      // Kâğıt sayfa 3B odanın önünde: gölgesi masaya düşer, lambanın ışığı soldan vurur
+      const [px, py, pw, ph] = [606, 26, 1288, 1030];
+      ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.65)'; ctx.shadowBlur = 50; ctx.shadowOffsetX = 14; ctx.shadowOffsetY = 18; ctx.fillStyle = K.kagit; ctx.beginPath(); ctx.roundRect(px, py, pw, ph, 14); ctx.fill(); ctx.restore();
+      ctx.save(); ctx.beginPath(); ctx.roundRect(px, py, pw, ph, 14); ctx.clip(); sayfaZemin(ctx, 1920, 1080, 0);
+      const g = ctx.createLinearGradient(px, 0, px + pw, 0); g.addColorStop(0, 'rgba(255,196,110,.30)'); g.addColorStop(0.45, 'rgba(255,210,140,.06)'); g.addColorStop(1, 'rgba(60,40,70,.10)'); ctx.fillStyle = g; ctx.fillRect(px, py, pw, ph);
+      ctx.restore();
+    } else sayfaZemin(ctx, 1920, 1080, L.cilt);
     // Bölüm başlığı: o ana kadarki son bölüm.
     let b = null, bT = 0;
     for (let k = 0; k <= i; k++) if (scenes[k].bolum) { b = scenes[k].bolum; bT = scenes[k].t0; }
@@ -282,6 +306,17 @@ function useFontReady() {
 }
 
 // Görsel sahneleri (ara sıra): çizim alanında, kâğıda basılmış levha gibi.
+function useOda(acik, portrait) {
+  const [im, setIm] = useState(acik ? null : false);
+  const [handle] = useState(() => (acik ? delayRender('3B oda') : null));
+  useEffect(() => {
+    if (!acik) return;
+    const x = new Image(); x.onload = () => setIm(x); x.onerror = () => setIm(false); x.src = staticFile(`mekan3b/nur-${portrait ? 'd' : 'y'}.jpg`);
+  }, []);
+  useEffect(() => { if (im !== null && handle != null) continueRender(handle); }, [im]);
+  return im;
+}
+
 function Levha({ scene, yer, a }) {
   if (!scene?.img || a <= 0) return null;
   const w = ALAN.w * yer.s, hh = ALAN.h * yer.s;
@@ -306,12 +341,14 @@ export function Encyclopedia(props) {
   const fns = useMemo(() => scenes.map((s) => {
     try { return s.cizim ? derle(s.cizim) : null; } catch { return null; }
   }), [scenes]);
+  const oda = useOda(props.ucBoyut !== false, portrait);
   useLayoutEffect(() => {
     const ctx = ref.current.getContext('2d');
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
+    ODA = oda || null; ODA_T = t;
     if (portrait) kisaKare(ctx, { ...props, fns }, t, durationInFrames / fps);
     else uzunKare(ctx, { ...props, fns }, t);
-  }, [ready, frame, props, fns]);
+  }, [ready, frame, props, fns, oda]);
   const { i, gecis } = sahneDurumu(scenes, t);
   const ilkBolum = scenes.findIndex((s) => s.bolum);
   const yer = portrait ? S.cizim : (ilkBolum > 0 && i < ilkBolum ? L.giris : L.cizim);

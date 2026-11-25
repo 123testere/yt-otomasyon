@@ -8,5 +8,6 @@ secrets/
 # Remotion: render sırasında kopyalanan geçici dosyalar
 remotion/public/*
 !remotion/public/.gitkeep
+!remotion/public/mekan3b/
 .cache/
 ornek-videolar/

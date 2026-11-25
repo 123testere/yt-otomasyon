@@ -195,7 +195,18 @@ export async function renderDizi({ job, dir, ses, music, muzikler = null, musicV
     const propsFile = path.join(dir, 'remotion-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));
     const out = path.join(dir, 'video.mp4');
-    await remotion(['render', ENTRY, 'Dizi', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    const ciz = () => remotion(['render', ENTRY, 'Dizi', out, `--props=${propsFile}`, '--codec=h264', '--crf=20']);
+    const bas = Date.now();
+    try {
+      await ciz();
+    } catch (e) {
+      if (props.ucBoyut === false) throw e;
+      // 3B görünüm hata verirse üretim durmaz: video eski düz çizimle üretilir
+      console.warn(`  3B görünüm başarısız, düz çizimle yeniden: ${String(e.message).slice(-200)}`);
+      fs.writeFileSync(propsFile, JSON.stringify({ ...props, ucBoyut: false }));
+      await ciz();
+    }
+    console.log(`  çizim: ${Math.round((Date.now() - bas) / 1000)} sn (${props.durationInFrames} kare)`);
     return out;
   } finally {
     stage.cleanup();
