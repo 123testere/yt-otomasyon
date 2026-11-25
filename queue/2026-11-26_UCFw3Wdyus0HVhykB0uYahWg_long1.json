@@ -175,6 +175,10 @@
     {
      "kim": "anlatici",
      "metin": "Kılıçları kralın muhafızlarının kılıcıydı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ama o gece beni korumak için gelmemişlerdi."
     }
    ]
   },
@@ -291,6 +295,10 @@
     {
      "kim": "anlatici",
      "metin": "Kalabalık adımı bağırıyordu ama benim aklım Toros hocamdaydı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O kumun üstünde, hocamın bıraktığı yerde duruyordum."
     }
    ]
   },
@@ -325,6 +333,10 @@
     {
      "kim": "kral",
      "metin": "Şampiyonum! Geleneğimizdir, dile benden ne dilersen!"
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Koca arena bir anda sustu, herkes ağzımdan çıkacak sözü bekledi."
     }
    ]
   },
@@ -448,6 +460,10 @@
     {
      "kim": "anlatici",
      "metin": "Sungur’un yüzündeki öfke, bir anda gülümsemeye döndü."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O fısıltıda ne vardı? Üç gün boyunca bunu düşündüm."
     }
    ]
   },
@@ -529,6 +545,10 @@
     {
      "kim": "kargan",
      "metin": "O da bekliyor. Gözün önde olsun, kulağın arkada."
+    },
+    {
+     "kim": "arin",
+     "metin": "Ne planladığını öğrenmeden dövüşe çıkmayacağım."
     }
    ]
   },
@@ -598,6 +618,10 @@
     {
      "kim": "anlatici",
      "metin": "Kargan vurdu, ben karşıladım. Sonra ben vurdum."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Her çarpışmada duvarlar kıvılcımla aydınlanıyordu."
     }
    ]
   },
@@ -666,6 +690,10 @@
     {
      "kim": "anlatici",
      "metin": "Toros’un kervanı bu yoldan geçip saraya girmişti."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ay ışığında yalnız nöbetçi meşaleleri yanıyordu. Sonra adım sesleri duydum."
     }
    ]
   },
@@ -803,6 +831,14 @@
     {
      "kim": "anlatici",
      "metin": "Demek fısıltı buydu. Beni dövüşten önce yıpratacaklardı."
+    },
+    {
+     "kim": "arin",
+     "metin": "Kral da biliyor muydu?"
+    },
+    {
+     "kim": "muhafiz",
+     "metin": "Planı fısıldayan zaten kraldı."
     }
    ]
   },
@@ -915,6 +951,10 @@
     {
      "kim": "anlatici",
      "metin": "Beni görünce olduğu yerde donup kaldı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Elindeki testi titredi, su taşa döküldü."
     }
    ]
   },
@@ -1005,6 +1045,10 @@
     {
      "kim": "anlatici",
      "metin": "Cevap vermedi. Koşarak karanlıkta kayboldu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Arkasından koştum ama koridor bomboştu."
     }
    ]
   },
