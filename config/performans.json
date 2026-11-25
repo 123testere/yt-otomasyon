@@ -691,6 +691,54 @@
     ],
     "videolar": [
       {
+        "youtubeId": "3Hgq0ILMABg",
+        "jobId": "2026-11-24_UCIa1D1I2HwWzylJDvNayeHw_short1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Yarış Oyunu mu Arıyorsun? 🎮",
+        "tip": "short",
+        "yayin": "2026-11-24",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": "kanca-soru/A"
+      },
+      {
+        "youtubeId": "C2FcFBBNRtY",
+        "jobId": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_long1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Minecraft Nasıl 2,5 Milyar Dolar Etti? | Efsane Oyunların Hikâyesi",
+        "tip": "long",
+        "yayin": "2026-11-23",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
         "youtubeId": "TPBrLsf91qk",
         "jobId": "2026-11-23_UCIa1D1I2HwWzylJDvNayeHw_short1",
         "gosterim7": null,
@@ -723,18 +771,18 @@
         "baslik": "Strateji Oyunu mu Arıyorsun? 🎮",
         "tip": "short",
         "yayin": "2026-11-22",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
-        "izlenme": 0,
-        "izlenmeArtis": null,
-        "hedef": 100,
+        "izlenme7": 58,
+        "tutma": 46.02,
+        "kancaOran": 0.259,
+        "izlenme": 58,
+        "izlenmeArtis": 58,
+        "hedef": 116,
         "abone7": 0,
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 1.79,
-        "etiket": "erken",
+        "etiket": "az-veri",
         "nedenler": [],
         "deney": "kanca-soru/A"
       },
@@ -742,15 +790,15 @@
         "youtubeId": "BjeMFWTi7DU",
         "jobId": "2026-11-21_UCIa1D1I2HwWzylJDvNayeHw_long1",
         "gosterim7": 629,
-        "kapakDeneme": "bekliyor",
+        "kapakDeneme": "atlandi",
         "sonIyilestirme": null,
         "baslik": "Seni Korkutacak Oyun mu Arıyorsun? 10 Korku Oyunu 🎮",
         "tip": "long",
         "yayin": "2026-11-21",
-        "izlenme7": 3,
-        "tutma": 6.550000000000001,
+        "izlenme7": 6,
+        "tutma": 9.42,
         "kancaOran": 1,
-        "izlenme": 4,
+        "izlenme": 7,
         "izlenmeArtis": 3,
         "hedef": 100,
         "abone7": 0,
@@ -758,7 +806,7 @@
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 0.48,
-        "etiket": "erken",
+        "etiket": "az-veri",
         "nedenler": [],
         "deney": null
       },
@@ -771,12 +819,12 @@
         "baslik": "Seni Gerçekten Korkutacak Oyun mu Arıyorsun? 🎮",
         "tip": "short",
         "yayin": "2026-11-21",
-        "izlenme7": 101,
-        "tutma": 40.41,
-        "kancaOran": 0.228,
-        "izlenme": 102,
-        "izlenmeArtis": 101,
-        "hedef": 204,
+        "izlenme7": 131,
+        "tutma": 44.03,
+        "kancaOran": 0.221,
+        "izlenme": 132,
+        "izlenmeArtis": 30,
+        "hedef": 264,
         "abone7": 1,
         "begeni7": 0,
         "yorum7": 0,
@@ -784,8 +832,8 @@
         "tiklanma7": 0,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,4): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %23 (ortalama %38): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Tıklanma %0 (kanal ortalaması %1,5): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %22 (ortalama %38): ilk saniyelerde kaydırılıyor, kanca zayıf.",
           "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
         ],
         "deney": "kanca-soru/B"
@@ -803,7 +851,7 @@
         "tutma": 49.5,
         "kancaOran": 0.4,
         "izlenme": 12,
-        "izlenmeArtis": 6,
+        "izlenmeArtis": 0,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -823,12 +871,12 @@
         "baslik": "Oyuna Nereden Başlayacağını Bilmiyor musun? 🎮",
         "tip": "short",
         "yayin": "2026-11-20",
-        "izlenme7": 708,
-        "tutma": 48.09,
-        "kancaOran": 0.36,
-        "izlenme": 708,
-        "izlenmeArtis": 309,
-        "hedef": 1416,
+        "izlenme7": 709,
+        "tutma": 48.15,
+        "kancaOran": 0.361,
+        "izlenme": 709,
+        "izlenmeArtis": 1,
+        "hedef": 1418,
         "abone7": 0,
         "begeni7": 4,
         "yorum7": 0,
@@ -836,41 +884,41 @@
         "tiklanma7": 4.44,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %4,4 (ortalama %0,8): kapak ve başlık işe yaradı."
+          "Tıklanma %4,4 (ortalama %1,1): kapak ve başlık işe yaradı."
         ],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "JgPpzW0_Rz0",
         "jobId": "2026-11-19_UCIa1D1I2HwWzylJDvNayeHw_short1",
-        "gosterim7": 221,
+        "gosterim7": 222,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Oyunda Rahatlamak İsteyenlere 3 Sakin Oyun 🎮",
         "tip": "short",
         "yayin": "2026-11-19",
-        "izlenme7": 934,
-        "tutma": 41.56,
+        "izlenme7": 936,
+        "tutma": 41.53,
         "kancaOran": 0.507,
-        "izlenme": 936,
-        "izlenmeArtis": 5,
-        "hedef": 1872,
+        "izlenme": 938,
+        "izlenmeArtis": 2,
+        "hedef": 1876,
         "abone7": 0,
         "begeni7": 4,
         "yorum7": 2,
         "tutma30": null,
-        "tiklanma7": 1.81,
+        "tiklanma7": 1.8,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %1,8 (ortalama %0,8): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %51 (ortalama %38): açılış güçlü."
+          "Tıklanma %1,8 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %51 (ortalama %37): açılış güçlü."
         ],
         "deney": "kanca-soru/B"
       },
       {
         "youtubeId": "Aair14vTCt0",
         "jobId": "2026-11-18_UCIa1D1I2HwWzylJDvNayeHw_long1",
-        "gosterim7": 1374,
+        "gosterim7": 1375,
         "kapakDeneme": "atlandi",
         "sonIyilestirme": null,
         "baslik": "Oyuna Vaktin mi Yok? Birkaç Dakikada Tadı Çıkan 10 Oyun 🎮",
@@ -894,27 +942,27 @@
       {
         "youtubeId": "bidEhzZ46Ww",
         "jobId": "2026-11-18_UCIa1D1I2HwWzylJDvNayeHw_short1",
-        "gosterim7": 127,
+        "gosterim7": 129,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Oyun Oynamaya Vaktin mi Yok? 🎮",
         "tip": "short",
         "yayin": "2026-11-18",
-        "izlenme7": 908,
+        "izlenme7": 909,
         "tutma": 44.88,
         "kancaOran": 0.425,
-        "izlenme": 909,
-        "izlenmeArtis": 0,
-        "hedef": 1818,
+        "izlenme": 910,
+        "izlenmeArtis": 1,
+        "hedef": 1820,
         "abone7": 1,
         "begeni7": 5,
         "yorum7": 2,
         "tutma30": null,
-        "tiklanma7": 0.79,
+        "tiklanma7": 0.78,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %0,8 (kanal ortalaması %1,4): kapak ve başlık izleyiciyi çekmedi.",
-          "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
+          "Tıklanma %0,8 (kanal ortalaması %1,5): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %43 (ortalama %37): açılış güçlü."
         ],
         "deney": "kanca-soru/A"
       },
@@ -927,12 +975,12 @@
         "baslik": "Bilgisayarın Eski, Oyun mu Açılmıyor? 🎮",
         "tip": "short",
         "yayin": "2026-11-17",
-        "izlenme7": 998,
+        "izlenme7": 999,
         "tutma": 44.32,
         "kancaOran": 0.545,
-        "izlenme": 998,
-        "izlenmeArtis": 0,
-        "hedef": 1996,
+        "izlenme": 999,
+        "izlenmeArtis": 1,
+        "hedef": 1998,
         "abone7": 0,
         "begeni7": 7,
         "yorum7": 0,
@@ -940,8 +988,8 @@
         "tiklanma7": 1.68,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %1,7 (ortalama %0,8): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %55 (ortalama %38): açılış güçlü."
+          "Tıklanma %1,7 (ortalama %1,1): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %55 (ortalama %37): açılış güçlü."
         ],
         "deney": "kanca-soru/B"
       },
@@ -967,7 +1015,7 @@
         "tiklanma7": 0,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,4): kapak ve başlık izleyiciyi çekmedi.",
+          "Tıklanma %0 (kanal ortalaması %1,5): kapak ve başlık izleyiciyi çekmedi.",
           "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
         ],
         "deney": "kanca-soru/A"
@@ -984,9 +1032,9 @@
         "izlenme7": 946,
         "tutma": 38.5,
         "kancaOran": 0.359,
-        "izlenme": 946,
-        "izlenmeArtis": 0,
-        "hedef": 1892,
+        "izlenme": 948,
+        "izlenmeArtis": 2,
+        "hedef": 1896,
         "abone7": 0,
         "begeni7": 7,
         "yorum7": 0,
@@ -1035,9 +1083,9 @@
         "izlenme7": 1119,
         "tutma": 49.01,
         "kancaOran": 0.559,
-        "izlenme": 1120,
+        "izlenme": 1121,
         "izlenmeArtis": 1,
-        "hedef": 2240,
+        "hedef": 2242,
         "abone7": 0,
         "begeni7": 4,
         "yorum7": 0,
@@ -1061,9 +1109,9 @@
         "izlenme7": 1030,
         "tutma": 35.21,
         "kancaOran": 0.596,
-        "izlenme": 1032,
+        "izlenme": 1033,
         "izlenmeArtis": 1,
-        "hedef": 2064,
+        "hedef": 2066,
         "abone7": 0,
         "begeni7": 6,
         "yorum7": 1,
@@ -1090,7 +1138,7 @@
         "tutma": 37.8,
         "kancaOran": 0.439,
         "izlenme": 118,
-        "izlenmeArtis": 2,
+        "izlenmeArtis": 0,
         "hedef": 236,
         "abone7": 0,
         "begeni7": 0,
@@ -1116,7 +1164,7 @@
         "izlenme7": 20,
         "tutma": 9.97,
         "kancaOran": 0.75,
-        "izlenme": 23,
+        "izlenme": 24,
         "izlenmeArtis": 1,
         "hedef": 100,
         "abone7": 0,
@@ -1141,7 +1189,7 @@
         "tutma": 38.08,
         "kancaOran": 0.417,
         "izlenme": 275,
-        "izlenmeArtis": 1,
+        "izlenmeArtis": 0,
         "hedef": 550,
         "abone7": 0,
         "begeni7": 3,
@@ -1154,108 +1202,57 @@
           "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
         ],
         "deney": null
-      },
-      {
-        "youtubeId": "FkuXheTS42I",
-        "jobId": "2026-11-10_UCIa1D1I2HwWzylJDvNayeHw_short1",
-        "gosterim7": 270,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "Bedava Oynayabileceğin En İyi 5 Oyun 🎮",
-        "tip": "short",
-        "yayin": "2026-11-10",
-        "izlenme7": 951,
-        "tutma": 41.6,
-        "kancaOran": 0.61,
-        "izlenme": 954,
-        "izlenmeArtis": 0,
-        "hedef": 1908,
-        "abone7": 0,
-        "begeni7": 6,
-        "yorum7": 3,
-        "tutma30": null,
-        "tiklanma7": 2.96,
-        "etiket": "iyi",
-        "nedenler": [
-          "Tıklanma %2,7 (ortalama %0,3): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %61 (ortalama %38): açılış güçlü."
-        ],
-        "deney": null
-      },
-      {
-        "youtubeId": "4FSaLNnqmlo",
-        "jobId": "2026-11-09_UCIa1D1I2HwWzylJDvNayeHw_long1",
-        "gosterim7": 1631,
-        "kapakDeneme": "geri-alindi",
-        "sonIyilestirme": null,
-        "baslik": "İlk Barış Antlaşması Anadolu Kilinde Yazıldı",
-        "tip": "long",
-        "yayin": "2026-11-09",
-        "izlenme7": 158,
-        "tutma": 24.57,
-        "kancaOran": 0.089,
-        "izlenme": 176,
-        "izlenmeArtis": 0,
-        "hedef": 352,
-        "abone7": 0,
-        "begeni7": 1,
-        "yorum7": 0,
-        "tutma30": 0.2,
-        "tiklanma7": 0.8,
-        "etiket": "normal",
-        "nedenler": [],
-        "deney": null
       }
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 12,
+        "videoSayisi": 13,
         "yeterli": true,
         "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
         "enCokKaybettiren": [
           {
             "ozellik": "mekân: siralama",
-            "sahne": 46,
-            "video": 12,
-            "oran": 1.34
+            "sahne": 49,
+            "video": 13,
+            "oran": 1.35
           },
           {
             "ozellik": "sıralama kartı",
-            "sahne": 46,
-            "video": 12,
-            "oran": 1.34
+            "sahne": 49,
+            "video": 13,
+            "oran": 1.35
           }
         ],
         "enIyiTutan": [
           {
             "ozellik": "ilk sahne (kanca)",
-            "sahne": 12,
-            "video": 12,
-            "oran": 0.13
+            "sahne": 13,
+            "video": 13,
+            "oran": 0.12
           },
           {
             "ozellik": "ekranda dev yazı/rakam",
-            "sahne": 12,
-            "video": 12,
-            "oran": 0.13
+            "sahne": 13,
+            "video": 13,
+            "oran": 0.12
           },
           {
             "ozellik": "mekân: oyun-salonu",
-            "sahne": 9,
-            "video": 9,
-            "oran": 0.17
+            "sahne": 10,
+            "video": 10,
+            "oran": 0.15
           },
           {
             "ozellik": "son sahne (kapanış)",
-            "sahne": 12,
-            "video": 12,
-            "oran": 0.56
+            "sahne": 13,
+            "video": 13,
+            "oran": 0.57
           },
           {
             "ozellik": "mekân: fuar",
-            "sahne": 12,
-            "video": 12,
-            "oran": 0.56
+            "sahne": 13,
+            "video": 13,
+            "oran": 0.57
           }
         ],
         "kanca": {
@@ -1264,7 +1261,7 @@
             "tutma3": 104
           },
           "uzun": {
-            "video": 3,
+            "video": 4,
             "tutma3": 102
           },
           "aciklama": "ilk sahne ≤10 kelime / >10 kelime iken 3. saniyede izleyicilerin yüzde kaçı kalıyor"
@@ -1379,12 +1376,16 @@
         "izlenme": 8
       },
       {
+        "terim": "düdüklü tencere amca",
+        "izlenme": 7
+      },
+      {
         "terim": "pusula nasıl kullanılır",
         "izlenme": 7
       },
       {
-        "terim": "düdüklü tencere amca",
-        "izlenme": 6
+        "terim": "saati bulan adam saatin kaç olduğunu nerden biliyordu",
+        "izlenme": 5
       },
       {
         "terim": "yukarıda lamba aşağıda telefon",
@@ -1393,13 +1394,81 @@
       {
         "terim": "alan turing",
         "izlenme": 4
-      },
-      {
-        "terim": "asansörde kalma videoları",
-        "izlenme": 4
       }
     ],
     "videolar": [
+      {
+        "youtubeId": "Hj0NSRk5_jQ",
+        "jobId": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
+        "tip": "long",
+        "yayin": "2026-11-24",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "youtubeId": "_J_3PkK426o",
+        "jobId": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "1969'da Gelen Bir Saat İsviçre'yi Sarstı… Tamamı Bu Akşam",
+        "tip": "short",
+        "yayin": "2026-11-24",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": "baslik-kalip/B"
+      },
+      {
+        "youtubeId": "p_B3iOlNthU",
+        "jobId": "2026-11-23_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Mumda Aslında Ne Yanıyor? 🕯️",
+        "tip": "short",
+        "yayin": "2026-11-23",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 1,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": "baslik-kalip/A"
+      },
       {
         "youtubeId": "K4igO0EswHI",
         "jobId": "2026-11-23_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
@@ -1413,7 +1482,7 @@
         "tutma": null,
         "kancaOran": null,
         "izlenme": 1,
-        "izlenmeArtis": null,
+        "izlenmeArtis": 0,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -1433,19 +1502,23 @@
         "baslik": "Pul Çıkmadan Önce Mektubun Parasını Kim Öderdi? ✉️",
         "tip": "short",
         "yayin": "2026-11-22",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
-        "izlenme": 0,
-        "izlenmeArtis": null,
-        "hedef": 100,
+        "izlenme7": 904,
+        "tutma": 120.22,
+        "kancaOran": 0.324,
+        "izlenme": 904,
+        "izlenmeArtis": 904,
+        "hedef": 1808,
         "abone7": 0,
-        "begeni7": 0,
+        "begeni7": 9,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 0,
         "etiket": "erken",
-        "nedenler": [],
+        "nedenler": [
+          "Tıklanma %0 (kanal ortalaması %0,9): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %32 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %120,2 (ortalama %51,6): izleyici sonuna kadar kaldı."
+        ],
         "deney": "baslik-kalip/A"
       },
       {
@@ -1457,19 +1530,21 @@
         "baslik": "LEGO Önce Ahşap Oyuncak Yapıyordu: 1932 Hikâyesi 🧱",
         "tip": "short",
         "yayin": "2026-11-22",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
-        "izlenme": 0,
-        "izlenmeArtis": null,
-        "hedef": 100,
+        "izlenme7": 888,
+        "tutma": 54.28000000000001,
+        "kancaOran": 0.437,
+        "izlenme": 888,
+        "izlenmeArtis": 888,
+        "hedef": 1776,
         "abone7": 0,
-        "begeni7": 0,
+        "begeni7": 5,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 7.14,
-        "etiket": "erken",
-        "nedenler": [],
+        "etiket": "normal",
+        "nedenler": [
+          "Tıklanma %7,1 (ortalama %0,9): kapak ve başlık işe yaradı."
+        ],
         "deney": "baslik-kalip/B"
       },
       {
@@ -1481,21 +1556,21 @@
         "baslik": "Saatin 60 Dakikası Babil'den Miras Kaldı ⏱️",
         "tip": "short",
         "yayin": "2026-11-21",
-        "izlenme7": 732,
-        "tutma": 58.29,
-        "kancaOran": 0.362,
-        "izlenme": 733,
-        "izlenmeArtis": 732,
-        "hedef": 1466,
+        "izlenme7": 1006,
+        "tutma": 57.87,
+        "kancaOran": 0.383,
+        "izlenme": 1007,
+        "izlenmeArtis": 274,
+        "hedef": 2014,
         "abone7": 0,
-        "begeni7": 3,
+        "begeni7": 6,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 0,
-        "etiket": "erken",
+        "etiket": "normal",
         "nedenler": [
           "Tıklanma %0 (kanal ortalaması %0,9): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %36 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "İzlemeyi seçen %38 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "baslik-kalip/B"
       },
@@ -1508,21 +1583,20 @@
         "baslik": "Coca-Cola Bir Zamanlar Neden Eczanede Satılıyordu? 🥤",
         "tip": "short",
         "yayin": "2026-11-21",
-        "izlenme7": 924,
-        "tutma": 57.830000000000005,
-        "kancaOran": 0.402,
-        "izlenme": 924,
-        "izlenmeArtis": 924,
-        "hedef": 1848,
+        "izlenme7": 981,
+        "tutma": 58.63,
+        "kancaOran": 0.409,
+        "izlenme": 981,
+        "izlenmeArtis": 57,
+        "hedef": 1962,
         "abone7": 0,
-        "begeni7": 3,
+        "begeni7": 4,
         "yorum7": 1,
         "tutma30": null,
         "tiklanma7": 3.03,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %3 (ortalama %0,9): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %40 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "Tıklanma %3 (ortalama %0,9): kapak ve başlık işe yaradı."
         ],
         "deney": "baslik-kalip/A"
       },
@@ -1535,14 +1609,14 @@
         "baslik": "Tuğlanın İçinde Neden Delikler Var? 🧱",
         "tip": "short",
         "yayin": "2026-11-21",
-        "izlenme7": 1087,
-        "tutma": 56.769999999999996,
-        "kancaOran": 0.473,
-        "izlenme": 1092,
-        "izlenmeArtis": 1087,
-        "hedef": 2184,
+        "izlenme7": 1100,
+        "tutma": 56.76,
+        "kancaOran": 0.475,
+        "izlenme": 1105,
+        "izlenmeArtis": 13,
+        "hedef": 2210,
         "abone7": 1,
-        "begeni7": 4,
+        "begeni7": 5,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 1.67,
@@ -1561,14 +1635,14 @@
         "baslik": "İlk Bisikletin Pedalı Neden Yoktu? 🚲",
         "tip": "short",
         "yayin": "2026-11-20",
-        "izlenme7": 1092,
-        "tutma": 57.54,
-        "kancaOran": 0.517,
-        "izlenme": 1092,
-        "izlenmeArtis": 45,
-        "hedef": 2184,
+        "izlenme7": 1189,
+        "tutma": 57.45,
+        "kancaOran": 0.513,
+        "izlenme": 1189,
+        "izlenmeArtis": 97,
+        "hedef": 2378,
         "abone7": 0,
-        "begeni7": 6,
+        "begeni7": 7,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 0,
@@ -1581,54 +1655,54 @@
       {
         "youtubeId": "rTJa1TQp588",
         "jobId": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": 159,
+        "gosterim7": 165,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Defter Sözcüğü Neden Kâğıt Değil Deri Demek? 📓",
         "tip": "short",
         "yayin": "2026-11-20",
-        "izlenme7": 911,
-        "tutma": 57.24,
-        "kancaOran": 0.281,
-        "izlenme": 913,
-        "izlenmeArtis": 2,
-        "hedef": 1826,
+        "izlenme7": 914,
+        "tutma": 57.31,
+        "kancaOran": 0.28,
+        "izlenme": 916,
+        "izlenmeArtis": 3,
+        "hedef": 1832,
         "abone7": 0,
         "begeni7": 3,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 1.26,
+        "tiklanma7": 1.82,
         "etiket": "normal",
         "nedenler": [
-          "Tıklanma %1,3 (ortalama %0,9): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %28 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "Tıklanma %1,8 (ortalama %0,9): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %28 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/B"
       },
       {
         "youtubeId": "MXrQPUeyKRE",
         "jobId": "2026-11-20_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
-        "gosterim7": 82,
+        "gosterim7": 84,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Nintendo'nun İlk Ürünü Oyun Konsolu Değildi: 1889 Kartları 🎴",
         "tip": "short",
         "yayin": "2026-11-20",
-        "izlenme7": 607,
+        "izlenme7": 608,
         "tutma": 46.46,
-        "kancaOran": 0.381,
-        "izlenme": 934,
-        "izlenmeArtis": 19,
-        "hedef": 1868,
+        "kancaOran": 0.38,
+        "izlenme": 935,
+        "izlenmeArtis": 1,
+        "hedef": 1870,
         "abone7": 0,
         "begeni7": 1,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 3.66,
-        "etiket": "zayif",
+        "tiklanma7": 3.57,
+        "etiket": "normal",
         "nedenler": [
-          "Tıklanma %3,7 (ortalama %0,9): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %38 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "Tıklanma %3,6 (ortalama %0,9): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %38 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": null
       },
@@ -1641,12 +1715,12 @@
         "baslik": "Haritada Grönland Neden Afrika Kadar Büyük? 🗺️",
         "tip": "short",
         "yayin": "2026-11-19",
-        "izlenme7": 1001,
+        "izlenme7": 1002,
         "tutma": 45.93,
-        "kancaOran": 0.398,
-        "izlenme": 1005,
-        "izlenmeArtis": 0,
-        "hedef": 2010,
+        "kancaOran": 0.397,
+        "izlenme": 1006,
+        "izlenmeArtis": 1,
+        "hedef": 2012,
         "abone7": 1,
         "begeni7": 4,
         "yorum7": 0,
@@ -1655,7 +1729,7 @@
         "etiket": "normal",
         "nedenler": [
           "Tıklanma %0 (kanal ortalaması %0,9): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %40 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "İzlemeyi seçen %40 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/A"
       },
@@ -1668,12 +1742,12 @@
         "baslik": "Osmanlı Çarşısında Hileli Tartanı Kim Yakalardı? ⚖️",
         "tip": "short",
         "yayin": "2026-11-19",
-        "izlenme7": 971,
-        "tutma": 57.04,
-        "kancaOran": 0.316,
-        "izlenme": 983,
-        "izlenmeArtis": 5,
-        "hedef": 1966,
+        "izlenme7": 973,
+        "tutma": 56.95,
+        "kancaOran": 0.317,
+        "izlenme": 985,
+        "izlenmeArtis": 2,
+        "hedef": 1970,
         "abone7": 0,
         "begeni7": 6,
         "yorum7": 1,
@@ -1682,7 +1756,7 @@
         "etiket": "normal",
         "nedenler": [
           "Tıklanma %0 (kanal ortalaması %0,9): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %32 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "İzlemeyi seçen %32 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/B"
       },
@@ -1695,12 +1769,12 @@
         "baslik": "Ölülerin Kalbi Neden Terazide Tartılırdı? ⚖️",
         "tip": "short",
         "yayin": "2026-11-18",
-        "izlenme7": 1014,
+        "izlenme7": 1015,
         "tutma": 55.75,
-        "kancaOran": 0.439,
-        "izlenme": 1018,
-        "izlenmeArtis": 0,
-        "hedef": 2036,
+        "kancaOran": 0.438,
+        "izlenme": 1019,
+        "izlenmeArtis": 1,
+        "hedef": 2038,
         "abone7": 0,
         "begeni7": 7,
         "yorum7": 0,
@@ -1725,7 +1799,7 @@
         "tutma": 59.02,
         "kancaOran": 0.384,
         "izlenme": 962,
-        "izlenmeArtis": 3,
+        "izlenmeArtis": 0,
         "hedef": 1924,
         "abone7": 0,
         "begeni7": 2,
@@ -1735,7 +1809,7 @@
         "etiket": "normal",
         "nedenler": [
           "Tıklanma %0 (kanal ortalaması %0,9): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %38 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "İzlemeyi seçen %38 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/B"
       },
@@ -1748,12 +1822,12 @@
         "baslik": "Silgi Yazıyı Nasıl Siliyor? ✏️",
         "tip": "short",
         "yayin": "2026-11-17",
-        "izlenme7": 1061,
+        "izlenme7": 1064,
         "tutma": 47.58,
-        "kancaOran": 0.58,
-        "izlenme": 1062,
-        "izlenmeArtis": 0,
-        "hedef": 2124,
+        "kancaOran": 0.578,
+        "izlenme": 1065,
+        "izlenmeArtis": 3,
+        "hedef": 2130,
         "abone7": 2,
         "begeni7": 4,
         "yorum7": 0,
@@ -1803,7 +1877,7 @@
         "tutma": 47.66,
         "kancaOran": 0.485,
         "izlenme": 1068,
-        "izlenmeArtis": 2,
+        "izlenmeArtis": 0,
         "hedef": 2136,
         "abone7": 0,
         "begeni7": 8,
@@ -1819,145 +1893,62 @@
       {
         "youtubeId": "0ZoourNK0No",
         "jobId": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "gosterim7": 465,
+        "gosterim7": 466,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Halat İnce Liflerden Nasıl Bu Kadar Güçlü Oluyor?",
         "tip": "short",
         "yayin": "2026-11-16",
-        "izlenme7": 1016,
+        "izlenme7": 1017,
         "tutma": 39.44,
         "kancaOran": 0.292,
-        "izlenme": 1017,
-        "izlenmeArtis": 2,
-        "hedef": 2034,
+        "izlenme": 1018,
+        "izlenmeArtis": 1,
+        "hedef": 2036,
         "abone7": 0,
         "begeni7": 5,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 0.65,
+        "tiklanma7": 0.64,
         "etiket": "normal",
         "nedenler": [
-          "İzlemeyi seçen %29 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf.",
-          "Ortalama izlenme %39,4 (kanal ortalaması %51,6): izleyici videonun ortasında kopuyor. En büyük kopuş 0:05 civarında: “Yorumlarda siz seçtiniz: halat ince liflerden nasıl bu kadar güçlü olur?”."
+          "İzlemeyi seçen %29 (ortalama %48): ilk saniyelerde kaydırılıyor, kanca zayıf.",
+          "Ortalama izlenme %39,4 (kanal ortalaması %52,2): izleyici videonun ortasında kopuyor. En büyük kopuş 0:05 civarında: “Yorumlarda siz seçtiniz: halat ince liflerden nasıl bu kadar güçlü olur?”."
         ],
         "deney": "kanca-soru/A"
-      },
-      {
-        "youtubeId": "_ogWp4KQz4E",
-        "jobId": "2026-11-16_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": 475,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "Pusula Kuzeyi Nasıl Buluyor? 🧭",
-        "tip": "short",
-        "yayin": "2026-11-16",
-        "izlenme7": 959,
-        "tutma": 48.98,
-        "kancaOran": 0.385,
-        "izlenme": 968,
-        "izlenmeArtis": 3,
-        "hedef": 1936,
-        "abone7": 1,
-        "begeni7": 7,
-        "yorum7": 0,
-        "tutma30": null,
-        "tiklanma7": 1.26,
-        "etiket": "normal",
-        "nedenler": [
-          "Tıklanma %1,3 (ortalama %0,9): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %39 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
-        ],
-        "deney": "kanca-soru/B"
-      },
-      {
-        "youtubeId": "72jgxCu0Fm0",
-        "jobId": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "gosterim7": 176,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "Kaşık mı Çatal mı: Sofranın İlk Aleti Hangisi?",
-        "tip": "short",
-        "yayin": "2026-11-15",
-        "izlenme7": 1139,
-        "tutma": 70.88,
-        "kancaOran": 0.548,
-        "izlenme": 1139,
-        "izlenmeArtis": 2,
-        "hedef": 2278,
-        "abone7": 0,
-        "begeni7": 5,
-        "yorum7": 0,
-        "tutma30": null,
-        "tiklanma7": 0.57,
-        "etiket": "normal",
-        "nedenler": [
-          "Tıklanma %0,6 (kanal ortalaması %0,9): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %55 (ortalama %47): açılış güçlü.",
-          "Ortalama izlenme %70,9 (ortalama %50,1): izleyici sonuna kadar kaldı."
-        ],
-        "deney": "kanca-soru/A"
-      },
-      {
-        "youtubeId": "SQi-6a6tACM",
-        "jobId": "2026-11-15_UCPtL84Agfh5hzoTQqE4jD0w_short1",
-        "gosterim7": 133,
-        "kapakDeneme": null,
-        "sonIyilestirme": null,
-        "baslik": "Termometrenin İlk Hali Neden Ters Çalışıyordu?",
-        "tip": "short",
-        "yayin": "2026-11-15",
-        "izlenme7": 942,
-        "tutma": 61.6,
-        "kancaOran": 0.365,
-        "izlenme": 948,
-        "izlenmeArtis": 0,
-        "hedef": 1896,
-        "abone7": 2,
-        "begeni7": 6,
-        "yorum7": 1,
-        "tutma30": null,
-        "tiklanma7": 3.01,
-        "etiket": "normal",
-        "nedenler": [
-          "Tıklanma %3 (ortalama %0,9): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %37 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf.",
-          "Ortalama izlenme %61,6 (ortalama %50,1): izleyici sonuna kadar kaldı."
-        ],
-        "deney": "kanca-soru/B"
       }
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 28,
+        "videoSayisi": 30,
         "yeterli": true,
         "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
         "enCokKaybettiren": [
           {
             "ozellik": "rakam/tarih içeren cümle",
-            "sahne": 44,
-            "video": 24,
-            "oran": 1.29
+            "sahne": 48,
+            "video": 26,
+            "oran": 1.34
           }
         ],
         "enIyiTutan": [
           {
             "ozellik": "ilk sahne (kanca)",
-            "sahne": 28,
-            "video": 28,
-            "oran": 0.78
+            "sahne": 30,
+            "video": 30,
+            "oran": 0.73
           },
           {
             "ozellik": "soru cümlesi",
-            "sahne": 30,
-            "video": 22,
-            "oran": 0.79
+            "sahne": 32,
+            "video": 24,
+            "oran": 0.78
           }
         ],
         "kanca": {
           "kisa": {
-            "video": 15,
-            "tutma3": 111
+            "video": 17,
+            "tutma3": 115
           },
           "uzun": {
             "video": 13,
@@ -2011,7 +2002,7 @@
       },
       {
         "terim": "das duell um die welt",
-        "izlenme": 4
+        "izlenme": 5
       },
       {
         "terim": "länder",
@@ -2055,9 +2046,9 @@
         "izlenme7": 0,
         "tutma": null,
         "kancaOran": null,
-        "izlenme": 0,
-        "izlenmeArtis": null,
-        "hedef": 100,
+        "izlenme": 74,
+        "izlenmeArtis": 74,
+        "hedef": 148,
         "abone7": 0,
         "begeni7": 0,
         "yorum7": 0,
@@ -2077,7 +2068,7 @@
         "tip": "short",
         "yayin": "2026-11-22",
         "izlenme7": 0,
-        "tutma": null,
+        "tutma": 0,
         "kancaOran": null,
         "izlenme": 0,
         "izlenmeArtis": null,
@@ -2087,7 +2078,7 @@
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 0,
-        "etiket": "erken",
+        "etiket": "az-veri",
         "nedenler": [],
         "deney": "muzik-seviye/B"
       },
@@ -2100,11 +2091,11 @@
         "baslik": "Duell 19/30: Wer produziert das meiste Hähnchenfleisch? 🍗",
         "tip": "short",
         "yayin": "2026-11-21",
-        "izlenme7": 1,
+        "izlenme7": 5,
         "tutma": 62.97999999999999,
-        "kancaOran": 1,
-        "izlenme": 3,
-        "izlenmeArtis": 1,
+        "kancaOran": 0.2,
+        "izlenme": 7,
+        "izlenmeArtis": 4,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -2148,12 +2139,12 @@
         "baslik": "Duell 17/30: Wer erntet die meisten Äpfel? 🍎",
         "tip": "short",
         "yayin": "2026-11-19",
-        "izlenme7": 684,
+        "izlenme7": 688,
         "tutma": 54.24,
-        "kancaOran": 0.599,
-        "izlenme": 900,
-        "izlenmeArtis": 0,
-        "hedef": 1800,
+        "kancaOran": 0.596,
+        "izlenme": 904,
+        "izlenmeArtis": 4,
+        "hedef": 1808,
         "abone7": 1,
         "begeni7": 8,
         "yorum7": 0,
@@ -2168,7 +2159,7 @@
       {
         "youtubeId": "3NnDfuQazVU",
         "jobId": "2026-11-18_UCyLqvRzGPIsjgOvr7RUxycA_short1",
-        "gosterim7": 62,
+        "gosterim7": 61,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Duell 16/30: Wer erntet die meisten Sojabohnen? 🫘",
@@ -2184,10 +2175,10 @@
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": 0.159,
-        "tiklanma7": 3.23,
+        "tiklanma7": 3.28,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %3,2 (ortalama %0,8): kapak ve başlık işe yaradı."
+          "Tıklanma %3,3 (ortalama %0,8): kapak ve başlık işe yaradı."
         ],
         "deney": "muzik-seviye/B"
       },
@@ -2280,8 +2271,8 @@
         "izlenme7": 8,
         "tutma": 27.83,
         "kancaOran": 0.875,
-        "izlenme": 10,
-        "izlenmeArtis": 0,
+        "izlenme": 11,
+        "izlenmeArtis": 1,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -2625,14 +2616,14 @@
     ],
     "videolar": [
       {
-        "youtubeId": "srs8IiSWvIo",
-        "jobId": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_short2",
-        "gosterim7": 22,
+        "youtubeId": "W2DAD2tLWGg",
+        "jobId": "2026-11-24_UCFw3Wdyus0HVhykB0uYahWg_short1",
+        "gosterim7": null,
         "kapakDeneme": null,
         "sonIyilestirme": null,
-        "baslik": "Yarın Arın, Hocasına Kılıç Kaldırıyor… ⚔️",
+        "baslik": "Halkın Bağışladığı Hoca Neden Satıldı? ⛓️",
         "tip": "short",
-        "yayin": "2026-11-22",
+        "yayin": "2026-11-24",
         "izlenme7": 0,
         "tutma": null,
         "kancaOran": null,
@@ -2643,20 +2634,20 @@
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 9.09,
+        "tiklanma7": null,
         "etiket": "erken",
         "nedenler": [],
-        "deney": "kanca-soru/B"
+        "deney": "kanca-soru/A"
       },
       {
-        "youtubeId": "Jr4uUiB-ujQ",
-        "jobId": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_long2",
-        "gosterim7": 95,
+        "youtubeId": "6iiU-9kXn2k",
+        "jobId": "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+        "gosterim7": null,
         "kapakDeneme": null,
         "sonIyilestirme": null,
-        "baslik": "Tek Gözlü Gladyatör ve Kapalı Kanal: Zincirli 6-7 Tek Parça",
-        "tip": "long",
-        "yayin": "2026-11-22",
+        "baslik": "Hocasına Kılıç Kaldırmadı: Kral Toros'u Sattı | Zincirli 8",
+        "tip": "short",
+        "yayin": "2026-11-23",
         "izlenme7": 0,
         "tutma": null,
         "kancaOran": null,
@@ -2667,8 +2658,59 @@
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 2.11,
+        "tiklanma7": null,
         "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
+      {
+        "youtubeId": "srs8IiSWvIo",
+        "jobId": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_short2",
+        "gosterim7": 22,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "Yarın Arın, Hocasına Kılıç Kaldırıyor… ⚔️",
+        "tip": "short",
+        "yayin": "2026-11-22",
+        "izlenme7": 1092,
+        "tutma": 53.16,
+        "kancaOran": 0.328,
+        "izlenme": 1092,
+        "izlenmeArtis": 1092,
+        "hedef": 2184,
+        "abone7": 0,
+        "begeni7": 5,
+        "yorum7": 1,
+        "tutma30": null,
+        "tiklanma7": 9.09,
+        "etiket": "erken",
+        "nedenler": [
+          "Tıklanma %9,1 (ortalama %1,6): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %33 (ortalama %47): ilk saniyelerde kaydırılıyor, kanca zayıf."
+        ],
+        "deney": "kanca-soru/B"
+      },
+      {
+        "youtubeId": "Jr4uUiB-ujQ",
+        "jobId": "2026-11-22_UCFw3Wdyus0HVhykB0uYahWg_long2",
+        "gosterim7": 95,
+        "kapakDeneme": "bekliyor",
+        "sonIyilestirme": null,
+        "baslik": "Tek Gözlü Gladyatör ve Kapalı Kanal: Zincirli 6-7 Tek Parça",
+        "tip": "long",
+        "yayin": "2026-11-22",
+        "izlenme7": 3,
+        "tutma": 5.01,
+        "kancaOran": 1,
+        "izlenme": 4,
+        "izlenmeArtis": 3,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 1,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": 2.11,
+        "etiket": "az-veri",
         "nedenler": [],
         "deney": null
       },
@@ -2681,12 +2723,12 @@
         "baslik": "Özgürlüğü Bırakıp Neden Geri Döndü? ⛓️",
         "tip": "short",
         "yayin": "2026-11-20",
-        "izlenme7": 1060,
+        "izlenme7": 1062,
         "tutma": 39.57,
-        "kancaOran": 0.203,
-        "izlenme": 1061,
-        "izlenmeArtis": 0,
-        "hedef": 2122,
+        "kancaOran": 0.202,
+        "izlenme": 1063,
+        "izlenmeArtis": 2,
+        "hedef": 2126,
         "abone7": 1,
         "begeni7": 6,
         "yorum7": 0,
@@ -2695,7 +2737,7 @@
         "etiket": "normal",
         "nedenler": [
           "Tıklanma %0 (kanal ortalaması %1,7): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %20 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "İzlemeyi seçen %20 (ortalama %47): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/A"
       },
@@ -2732,12 +2774,12 @@
         "baslik": "Yarın tek çıkış kapalı çıkarsa ne yaparsın? ⛓️",
         "tip": "short",
         "yayin": "2026-11-18",
-        "izlenme7": 1156,
+        "izlenme7": 1157,
         "tutma": 43.37,
         "kancaOran": 0.256,
-        "izlenme": 1156,
-        "izlenmeArtis": 0,
-        "hedef": 2312,
+        "izlenme": 1157,
+        "izlenmeArtis": 1,
+        "hedef": 2314,
         "abone7": 0,
         "begeni7": 4,
         "yorum7": 0,
@@ -2746,14 +2788,14 @@
         "etiket": "normal",
         "nedenler": [
           "Tıklanma %2,7 (ortalama %1,6): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %26 (ortalama %49): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "İzlemeyi seçen %26 (ortalama %47): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/B"
       },
       {
         "youtubeId": "Hz8truyD7cs",
         "jobId": "2026-11-17_UCFw3Wdyus0HVhykB0uYahWg_short1",
-        "gosterim7": 116,
+        "gosterim7": 117,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Toros'un Hücresi Neden Bomboştu? ⛓️",
@@ -2763,13 +2805,13 @@
         "tutma": 45.46,
         "kancaOran": 0.422,
         "izlenme": 1160,
-        "izlenmeArtis": 1,
+        "izlenmeArtis": 0,
         "hedef": 2320,
         "abone7": 1,
         "begeni7": 5,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 1.72,
+        "tiklanma7": 1.71,
         "etiket": "normal",
         "nedenler": [],
         "deney": "kanca-soru/A"
@@ -2801,7 +2843,7 @@
       {
         "youtubeId": "ZrOXMpVCuQs",
         "jobId": "2026-11-15_UCFw3Wdyus0HVhykB0uYahWg_short2",
-        "gosterim7": 269,
+        "gosterim7": 268,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Yarın Toros'un tek gözünün sırrı çıkıyor ⚔️",
@@ -2811,7 +2853,7 @@
         "tutma": 43.58,
         "kancaOran": 0.435,
         "izlenme": 1243,
-        "izlenmeArtis": 1,
+        "izlenmeArtis": 0,
         "hedef": 2486,
         "abone7": 0,
         "begeni7": 7,
@@ -2836,8 +2878,8 @@
         "izlenme7": 28,
         "tutma": 20.49,
         "kancaOran": 0.357,
-        "izlenme": 29,
-        "izlenmeArtis": 0,
+        "izlenme": 30,
+        "izlenmeArtis": 1,
         "hedef": 100,
         "abone7": 1,
         "begeni7": 0,
@@ -2861,7 +2903,7 @@
         "tutma": 46.46,
         "kancaOran": 0.606,
         "izlenme": 1329,
-        "izlenmeArtis": 3,
+        "izlenmeArtis": 0,
         "hedef": 2658,
         "abone7": 1,
         "begeni7": 18,
@@ -3078,35 +3120,11 @@
           "Kapak, kanca ve izlenme süresi normal: video az kişiye gösterilmiş. Sorun büyük olasılıkla konu ya da yayın saati."
         ],
         "deney": null
-      },
-      {
-        "youtubeId": "Nw-pdWAIHOE",
-        "jobId": "zincirli_b01_UCFw3Wdyus0HVhykB0uYahWg",
-        "gosterim7": 6465,
-        "kapakDeneme": null,
-        "sonIyilestirme": "2026-11-10T04:32:07.952Z",
-        "baslik": "15 Yıl Köle Kaldı, Yenilmez Şampiyonu Son Saniyede Devirdi | Zincirli 1",
-        "tip": "long",
-        "yayin": "2026-11-06",
-        "izlenme7": 144,
-        "tutma": 19.75,
-        "kancaOran": 0.681,
-        "izlenme": 154,
-        "izlenmeArtis": 0,
-        "hedef": 308,
-        "abone7": 0,
-        "begeni7": 0,
-        "yorum7": 0,
-        "tutma30": 0.347,
-        "tiklanma7": 1.3,
-        "etiket": "normal",
-        "nedenler": [],
-        "deney": null
       }
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 10,
+        "videoSayisi": 11,
         "yeterli": true,
         "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
         "enCokKaybettiren": [
@@ -3114,51 +3132,57 @@
             "ozellik": "mekân: kanal",
             "sahne": 6,
             "video": 2,
-            "oran": 4.19
+            "oran": 3.98
+          },
+          {
+            "ozellik": "mekân: arena",
+            "sahne": 32,
+            "video": 7,
+            "oran": 1.22
           },
           {
             "ozellik": "kısa anlatım (≤12 kelime)",
-            "sahne": 69,
-            "video": 10,
-            "oran": 1.21
+            "sahne": 73,
+            "video": 11,
+            "oran": 1.22
           }
         ],
         "enIyiTutan": [
           {
             "ozellik": "ekranda dev yazı/rakam",
-            "sahne": 4,
-            "video": 4,
-            "oran": 0
+            "sahne": 5,
+            "video": 5,
+            "oran": 0.23
           },
           {
             "ozellik": "kısım kartı (siyah ekran)",
             "sahne": 6,
             "video": 2,
-            "oran": 0.35
+            "oran": 0.33
           },
           {
             "ozellik": "orta anlatım (13-25 kelime)",
-            "sahne": 22,
-            "video": 6,
-            "oran": 0.63
+            "sahne": 23,
+            "video": 7,
+            "oran": 0.61
           },
           {
             "ozellik": "mekân: zindan",
             "sahne": 48,
             "video": 9,
-            "oran": 0.66
+            "oran": 0.63
           },
           {
             "ozellik": "mekân: loca",
             "sahne": 7,
             "video": 4,
-            "oran": 0.78
+            "oran": 0.74
           },
           {
             "ozellik": "karakter diyaloğu",
-            "sahne": 48,
-            "video": 10,
-            "oran": 0.81
+            "sahne": 49,
+            "video": 11,
+            "oran": 0.82
           }
         ],
         "kanca": {
@@ -3167,8 +3191,8 @@
             "tutma3": 105
           },
           "uzun": {
-            "video": 3,
-            "tutma3": 93
+            "video": 4,
+            "tutma3": 97
           },
           "aciklama": "ilk sahne ≤10 kelime / >10 kelime iken 3. saniyede izleyicilerin yüzde kaçı kalıyor"
         }
@@ -3214,6 +3238,10 @@
         "izlenme": 3
       },
       {
+        "terim": "yapay zeka bebek videoları",
+        "izlenme": 3
+      },
+      {
         "terim": "elif sinem",
         "izlenme": 2
       },
@@ -3236,13 +3264,57 @@
       {
         "terim": "efraim",
         "izlenme": 1
-      },
-      {
-        "terim": "galatasaray şarkısı",
-        "izlenme": 1
       }
     ],
     "videolar": [
+      {
+        "youtubeId": "OAqOKYF1W7o",
+        "jobId": "2026-11-23_UCJUP2lYvMuhcif8FavIXuYA_short1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "NVIDIA Sürücüsü SSD'ye Aşırı Yazıyormuş: Çözüm Geldi ⚡",
+        "tip": "short",
+        "yayin": "2026-11-23",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": "kanca-soru/B"
+      },
+      {
+        "youtubeId": "qzAZIIBF6dc",
+        "jobId": "2026-11-23_UCJUP2lYvMuhcif8FavIXuYA_long1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "OpenAI'ın Telefonunu iPhone'u Üreten Firma Yapıyormuş ⚡",
+        "tip": "short",
+        "yayin": "2026-11-23",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      },
       {
         "youtubeId": "rn5q3olzJMc",
         "jobId": "2026-11-22_UCJUP2lYvMuhcif8FavIXuYA_short1",
@@ -3252,11 +3324,11 @@
         "baslik": "Çocukların Yüzde Kaçı Yapay Zekâ Kullanıyor? 🤖",
         "tip": "short",
         "yayin": "2026-11-22",
-        "izlenme7": 0,
-        "tutma": null,
-        "kancaOran": null,
-        "izlenme": 0,
-        "izlenmeArtis": null,
+        "izlenme7": 4,
+        "tutma": 18.08,
+        "kancaOran": 0.25,
+        "izlenme": 4,
+        "izlenmeArtis": 4,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -3276,19 +3348,22 @@
         "baslik": "Gemini Artık Mac'indeki Sıkıcı İşleri Yapabilecek ⚡",
         "tip": "short",
         "yayin": "2026-11-21",
-        "izlenme7": 55,
-        "tutma": 50.31,
-        "kancaOran": 0.109,
-        "izlenme": 55,
-        "izlenmeArtis": 55,
-        "hedef": 110,
+        "izlenme7": 113,
+        "tutma": 48.03,
+        "kancaOran": 0.248,
+        "izlenme": 113,
+        "izlenmeArtis": 58,
+        "hedef": 226,
         "abone7": 0,
         "begeni7": 1,
         "yorum7": 0,
         "tutma30": null,
         "tiklanma7": 0,
-        "etiket": "erken",
-        "nedenler": [],
+        "etiket": "iyi",
+        "nedenler": [
+          "Tıklanma %0 (kanal ortalaması %0,5): kapak ve başlık izleyiciyi çekmedi.",
+          "Ortalama izlenme %48 (ortalama %36,4): izleyici sonuna kadar kaldı."
+        ],
         "deney": "kanca-soru/B"
       },
       {
@@ -3300,12 +3375,12 @@
         "baslik": "Yapay Zekâya Sorduklarının İzi Kalmasın İster misin? ⚡",
         "tip": "short",
         "yayin": "2026-11-20",
-        "izlenme7": 109,
-        "tutma": 36.6,
-        "kancaOran": 0.284,
-        "izlenme": 109,
-        "izlenmeArtis": 14,
-        "hedef": 218,
+        "izlenme7": 111,
+        "tutma": 36.38,
+        "kancaOran": 0.288,
+        "izlenme": 111,
+        "izlenmeArtis": 2,
+        "hedef": 222,
         "abone7": 0,
         "begeni7": 2,
         "yorum7": 0,
@@ -3313,15 +3388,15 @@
         "tiklanma7": 0,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi.",
-          "Konu ilgi gördü: video ortalamanın üstünde gösterildi."
+          "Tıklanma %0 (kanal ortalaması %0,5): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %29 (ortalama %25): açılış güçlü."
         ],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "sNgGUJ97WVA",
         "jobId": "2026-11-20_UCJUP2lYvMuhcif8FavIXuYA_long1",
-        "gosterim7": 198,
+        "gosterim7": 201,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Hackerlar Yapay Zekâyla 3 Saatte İçeri Girdi: FBI Uyardı ⚡",
@@ -3331,13 +3406,13 @@
         "tutma": 4.49,
         "kancaOran": 0.5,
         "izlenme": 2,
-        "izlenmeArtis": 1,
+        "izlenmeArtis": 0,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 0.51,
+        "tiklanma7": 0.5,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": null
@@ -3345,27 +3420,27 @@
       {
         "youtubeId": "vZxjaWu3ISA",
         "jobId": "2026-11-19_UCJUP2lYvMuhcif8FavIXuYA_short1",
-        "gosterim7": 163,
+        "gosterim7": 167,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Günlük İşlere Vaktin Yok mu? Gemini Tasks Ücretsiz ⚡",
         "tip": "short",
         "yayin": "2026-11-19",
-        "izlenme7": 157,
-        "tutma": 41.54,
-        "kancaOran": 0.185,
-        "izlenme": 158,
-        "izlenmeArtis": 6,
-        "hedef": 316,
+        "izlenme7": 159,
+        "tutma": 42.61,
+        "kancaOran": 0.195,
+        "izlenme": 160,
+        "izlenmeArtis": 2,
+        "hedef": 320,
         "abone7": 0,
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 1.84,
+        "tiklanma7": 2.4,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %1,8 (ortalama %0,4): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %19 (ortalama %30): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "Tıklanma %2,4 (ortalama %0,3): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %20 (ortalama %29): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/B"
       },
@@ -3378,12 +3453,12 @@
         "baslik": "PS4'te Yapay Zekâ Çalıştı: Pahalı PC Şart mı? ⚡",
         "tip": "short",
         "yayin": "2026-11-18",
-        "izlenme7": 383,
+        "izlenme7": 384,
         "tutma": 48.54,
-        "kancaOran": 0.324,
-        "izlenme": 384,
-        "izlenmeArtis": 0,
-        "hedef": 768,
+        "kancaOran": 0.323,
+        "izlenme": 385,
+        "izlenmeArtis": 1,
+        "hedef": 770,
         "abone7": 0,
         "begeni7": 2,
         "yorum7": 0,
@@ -3391,32 +3466,32 @@
         "tiklanma7": 1.83,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %1,8 (ortalama %0,4): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %32 (ortalama %26): açılış güçlü.",
-          "Ortalama izlenme %48,5 (ortalama %36,9): izleyici sonuna kadar kaldı."
+          "Tıklanma %1,8 (ortalama %0,3): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %32 (ortalama %25): açılış güçlü.",
+          "Ortalama izlenme %48,5 (ortalama %36,4): izleyici sonuna kadar kaldı."
         ],
         "deney": "kanca-soru/A"
       },
       {
         "youtubeId": "yoloVPXw9m4",
         "jobId": "2026-11-17_UCJUP2lYvMuhcif8FavIXuYA_short1",
-        "gosterim7": 60,
+        "gosterim7": 59,
         "kapakDeneme": null,
         "sonIyilestirme": null,
         "baslik": "Yapay Zekâ Devre Kartı Kıtlığı Yarattı: Zam Gelir mi? ⚡",
         "tip": "short",
         "yayin": "2026-11-17",
-        "izlenme7": 10,
+        "izlenme7": 11,
         "tutma": 49.81,
-        "kancaOran": 0.2,
-        "izlenme": 10,
+        "kancaOran": 0.182,
+        "izlenme": 11,
         "izlenmeArtis": 1,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
         "yorum7": 0,
         "tutma30": null,
-        "tiklanma7": 1.67,
+        "tiklanma7": 1.69,
         "etiket": "az-veri",
         "nedenler": [],
         "deney": "kanca-soru/B"
@@ -3430,12 +3505,12 @@
         "baslik": "Eski Apple TV'ne Yapay Zekâlı Siri Geliyor mu? ⚡",
         "tip": "short",
         "yayin": "2026-11-16",
-        "izlenme7": 482,
+        "izlenme7": 483,
         "tutma": 39.48,
         "kancaOran": 0.232,
-        "izlenme": 482,
+        "izlenme": 483,
         "izlenmeArtis": 1,
-        "hedef": 964,
+        "hedef": 966,
         "abone7": 0,
         "begeni7": 3,
         "yorum7": 1,
@@ -3443,8 +3518,8 @@
         "tiklanma7": 2.48,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %2,5 (ortalama %0,4): kapak ve başlık işe yaradı.",
-          "İzlemeyi seçen %23 (ortalama %30): ilk saniyelerde kaydırılıyor, kanca zayıf."
+          "Tıklanma %2,5 (ortalama %0,3): kapak ve başlık işe yaradı.",
+          "İzlemeyi seçen %23 (ortalama %29): ilk saniyelerde kaydırılıyor, kanca zayıf."
         ],
         "deney": "kanca-soru/A"
       },
@@ -3461,7 +3536,7 @@
         "tutma": 4.72,
         "kancaOran": 1,
         "izlenme": 4,
-        "izlenmeArtis": 2,
+        "izlenmeArtis": 0,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -3494,8 +3569,8 @@
         "tiklanma7": 0,
         "etiket": "iyi",
         "nedenler": [
-          "Tıklanma %0 (kanal ortalaması %1,1): kapak ve başlık izleyiciyi çekmedi.",
-          "İzlemeyi seçen %39 (ortalama %26): açılış güçlü."
+          "Tıklanma %0 (kanal ortalaması %0,5): kapak ve başlık izleyiciyi çekmedi.",
+          "İzlemeyi seçen %39 (ortalama %25): açılış güçlü."
         ],
         "deney": "kanca-soru/B"
       },
@@ -3511,7 +3586,7 @@
         "izlenme7": 25,
         "tutma": 35.92,
         "kancaOran": 0.32,
-        "izlenme": 27,
+        "izlenme": 28,
         "izlenmeArtis": 1,
         "hedef": 100,
         "abone7": 0,
@@ -3559,8 +3634,8 @@
         "izlenme7": 10,
         "tutma": 7.59,
         "kancaOran": 0.4,
-        "izlenme": 10,
-        "izlenmeArtis": 0,
+        "izlenme": 11,
+        "izlenmeArtis": 1,
         "hedef": 100,
         "abone7": 0,
         "begeni7": 0,
@@ -3598,71 +3673,65 @@
     ],
     "sahneAnalizi": {
       "short": {
-        "videoSayisi": 6,
+        "videoSayisi": 7,
         "yeterli": true,
         "aciklama": "oran: o tür sahnede saniye başına izleyici kaybı / kanal ortalaması (1.3 = %30 daha fazla kayıp)",
         "enCokKaybettiren": [
           {
             "ozellik": "haber kartı",
-            "sahne": 6,
-            "video": 6,
-            "oran": 2.62
-          },
-          {
-            "ozellik": "mekân: yz-lab",
-            "sahne": 13,
-            "video": 6,
-            "oran": 1.3
-          },
-          {
-            "ozellik": "orta anlatım (13-25 kelime)",
-            "sahne": 6,
-            "video": 4,
-            "oran": 1.18
+            "sahne": 7,
+            "video": 7,
+            "oran": 2.59
           },
           {
             "ozellik": "mekân: ofis",
-            "sahne": 5,
-            "video": 5,
-            "oran": 1.15
+            "sahne": 6,
+            "video": 6,
+            "oran": 1.29
+          },
+          {
+            "ozellik": "mekân: yz-lab",
+            "sahne": 16,
+            "video": 7,
+            "oran": 1.26
           }
         ],
         "enIyiTutan": [
           {
+            "ozellik": "ilk sahne (kanca)",
+            "sahne": 7,
+            "video": 7,
+            "oran": 0.31
+          },
+          {
             "ozellik": "mekân: sunucu",
             "sahne": 6,
             "video": 5,
-            "oran": 0.34
-          },
-          {
-            "ozellik": "ilk sahne (kanca)",
-            "sahne": 6,
-            "video": 6,
-            "oran": 0.37
+            "oran": 0.33
           },
           {
             "ozellik": "ekranda dev yazı/rakam",
-            "sahne": 12,
-            "video": 6,
+            "sahne": 14,
+            "video": 7,
+            "oran": 0.48
+          },
+          {
+            "ozellik": "mekân: gelecek",
+            "sahne": 7,
+            "video": 7,
             "oran": 0.54
           },
           {
             "ozellik": "son sahne (kapanış)",
-            "sahne": 6,
-            "video": 6,
-            "oran": 0.6
-          },
-          {
-            "ozellik": "mekân: gelecek",
-            "sahne": 6,
-            "video": 6,
-            "oran": 0.62
+            "sahne": 7,
+            "video": 7,
+            "oran": 0.61
           }
         ],
         "kanca": {
           "kisa": {
-            "video": 5,
-            "tutma3": 99
+            "video": 6,
+            "tutma3": 101
           },
           "uzun": {
             "video": 1,

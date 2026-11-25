@@ -1,8 +1,152 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-25T04:21:01.830Z",
+  "guncellendi": "2026-11-25T15:40:47.477Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "link": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T15:41:43.000Z",
+      "ozet": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter more than a pitch deck. ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zeka veri merkezleri için 1.000 derecelik enerji depolama",
+      "link": "https://www.donanimhaber.com/yapay-zeka-veri-merkezlerinin-elektrik-sorununa-sasirtici-cozum--213378",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T14:26:00.000Z",
+      "ozet": "Yapay zeka veri merkezlerinin artan elektrik ihtiyacına dev ısı bataryaları çözüm olabilir. Sistem, güneş ve rüzgar enerjisini depolayarak 7/24 elektrik sağlayabiliyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Amazon is reportedly in talks to end Muse AI shopping block",
+      "link": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-25T14:12:33.000Z",
+      "ozet": "Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center on the kinds of products the AI agent recommends and the potential impact on the ecommerce giant's advertising revenue. As reported by Fortune, […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "link": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T14:10:18.000Z",
+      "ozet": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "5 dolarlık Raspberry Pi ile Nvidia ekran kartının 80 GB belleği açıldı",
+      "link": "https://www.donanimhaber.com/raspberry-pi-ile-nvidia-ekran-kartinin-80-gb-bellegi-acildi--213361",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T13:43:14.000Z",
+      "ozet": "Bir donanım araştırmacısı, 5 dolarlık Raspberry Pi Pico 2 kullanarak Nvidia CMP 170HX ekran kartının bellek kapasitesini 8 GB'tan 80 GB'a çıkardı. İşte detaylar...",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Üç ekranlı laptop Huawei MateBook Fold S tanıtıldı",
+      "link": "https://www.donanimhaber.com/huawei-matebook-fold-s-tanitildi-iste-fiyati-ve-ozellikleri--213362",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T13:05:00.000Z",
+      "ozet": "Huawei, üç ekranlı katlanabilir laptop MateBook Fold S'i tanıttı. Yeni model, HarmonyOS 7 işletim sistemi, Kirin XE90 işlemci ve yapay zeka destekli çeşitli özellikler sunuyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "link": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T13:00:00.000Z",
+      "ozet": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Has vibe coding made open source the new normal for synths?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-25T13:00:00.000Z",
+      "ozet": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, like Roland, have remained silent for now, others have embraced the modding community. In the last several weeks, as it's become clear that no […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Avrupa, ABD ve Çin'e karşı 50 milyar euroluk teknoloji fonu kuruyor",
+      "link": "https://www.donanimhaber.com/avrupa-birligi-50-milyar-euroluk-teknoloji-fonu-kuruyor--213365",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T12:02:00.000Z",
+      "ozet": "AB, ABD ve Çin'e teknoloji alanında rakip olmak isteyen Avrupa Birliği, yapay zeka ve kuantum şirketlerine yatırım yapmak için 50 milyar euroluk yeni bir fon kurmayı planlıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Sağlık Verilerinizi Yorumlayabilen ChatGPT Health, Android'e Geldi",
+      "link": "https://www.webtekno.com/chatgpt-health-android-geldi-h229444.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-25T12:00:35.000Z",
+      "ozet": "OpenAI, ChatGPT Health özelliğini Android Health Connect desteğiyle genişleterek akıllı saat ve fitness verilerinizi sohbet diliyle analiz ediyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI may soon change what it means to be a theoretical physicist",
+      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-25T12:00:28.000Z",
+      "ozet": "Frontier AI is already solving problems that once took top physicists a full day.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Tidal'den dijital müzik sektöründe ilk: Yapay zeka yasağı geliyor!",
+      "link": "https://www.donanimhaber.com/tidal-yapay-zekayla-yapilan-muzikleri-engelleyecek--213356",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T11:40:00.000Z",
+      "ozet": "Tidal, önümüzdeki aydan itibaren yapay zekayla üretilen parçaların çıkarılacağını duyurdu. Şirketin yöneticisi, bu adımın hem sanatçılar hem de dinleyiciler nezdinde yankı bulacağına inanıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Airplane Turbulence Is Extremely Hard to Predict, but Maybe Not for Long",
+      "link": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/",
+      "kaynak": "Wired",
+      "tarih": "2026-11-25T11:30:00.000Z",
+      "ozet": "The “hardest remaining problem in classical physics” gets a boost from terabytes of crowdsourced data and new ways of using machine learning and AI.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Asya borsalarında yapay zeka paniği: SoftBank yüzde 15 düştü",
+      "link": "https://www.donanimhaber.com/asya-borsalarinda-yapay-zeka-panigi-softbank-yuzde-15-dustu--213360",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T10:58:00.000Z",
+      "ozet": "ABD'deki yapay zeka kaynaklı satış dalgası Asya pazarına da sıçradı. SoftBank yüzde 15 düşerken Japon ve Güney Koreli çip üreticilerinde de sert kayıplar yaşandı.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "AI is straining America’s open records systems",
+      "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "kaynak": "MIT Technology Review",
+      "tarih": "2026-11-25T10:00:00.000Z",
+      "ozet": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1858—he also fielded public records requests. Recently, he…",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Meta'nın Yapay Zekâ Asistanı Muse, Instagram DM'lerine Geldi: Peki Neler Yapılabiliyor?",
+      "link": "https://www.webtekno.com/meta-muse-instagram-dm-geldi-h229426.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-25T09:39:16.000Z",
+      "ozet": "Meta, yapay zekâ asistanı Muse'u Instagram DM'lere entegre ederek gönderi analizi, içerik düzenleme ve akıllı planlama özelliklerini kullanıma sundu.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "29 Milyon Şarkı Birden Siliniyor: Tidal Yapay Zekâ Müziğine Savaş Açtı!",
+      "link": "https://www.webtekno.com/tidal-yapay-zeka-muzik-yasak-karari-h229423.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-25T09:39:08.000Z",
+      "ozet": "Tidal, tamamı yapay zekâyla üretilen şarkıları artık kataloğunda istemiyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Samsung, Galaxy S27 Ultra'nın Kamerasından Önemli Bir Özelliği Çıkaracak",
+      "link": "https://www.webtekno.com/samsung-galaxy-s27-ultra-kamerasindan-onemli-bir-ozelligi-cikaracak-h229414.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-25T08:31:34.000Z",
+      "ozet": "Sızıntılara göre Samsung, maliyetleri düşürmek için Galaxy S27 Ultra'daki lazer odaklama donanımını kaldırıp yerine yapay zekâ kullanacak.",
+      "kullanildi": false
+    },
     {
       "baslik": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
       "link": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
@@ -252,14 +396,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Raising the stakes for enterprise networks with AI modernization",
-      "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
-      "kaynak": "MIT Technology Review",
-      "tarih": "2026-11-24T15:15:16.000Z",
-      "ozet": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than the same tasks done by human workers. As…",
-      "kullanildi": false
-    },
-    {
       "baslik": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
       "link": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
       "kaynak": "Ars Technica",
@@ -292,22 +428,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "ABD, Nvidia bağlantılı Megaspeed'i kara listeye aldı",
-      "link": "https://www.donanimhaber.com/abd-nvidia-baglantili-megaspeed-i-kara-listeye-aldi--213315",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T12:27:00.000Z",
-      "ozet": "ABD, gelişmiş yapay zeka çiplerinin ihracat kontrollerini aşmak için başka alıcılara aktarılması şüphesiyle Megaspeed ve altı Güneydoğu Asya şirketini kara listeye aldı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang’dan Nvidia çalışanlarına: Daha iyi bir CEO olacağım",
-      "link": "https://www.donanimhaber.com/jensen-huang-dan-nvidia-calisanlarina-daha-iyi-bir-ceo-olacagim--213309",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T11:02:00.000Z",
-      "ozet": "Nvidia CEO'su Jensen Huang, hakkındaki ilişki iddiaları nedeniyle ayrıldığı görevine geri döndü. Şirkette alkışlarla karşılanan Huang, özür dileyerek daha iyi bir CEO olacağını söyledi.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Searching for distant planets with Astra",
       "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
       "kaynak": "OpenAI",
@@ -321,14 +441,6 @@
       "kaynak": "Wired",
       "tarih": "2026-11-24T10:45:00.000Z",
       "ozet": "Young people anxious about their futures say they’re increasingly frustrated with their pro-AI parents. They’re worried it’s going to make holiday gatherings very tense.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Ukrayna, Libya'daki Rus savaş gemisini insansız deniz araçlarıyla vurdu",
-      "link": "https://www.donanimhaber.com/ukrayna-rus-savas-gemisini-libya-da-deniz-dronlariyla-vurdu--213308",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T10:41:00.000Z",
-      "ozet": "Ukrayna, Libya'daki bir Rus savaş gemisini insansız deniz araçlarıyla hedef aldı. Zelenskiy geminin batırıldığını açıklarken, saldırının cephe hattından 2.400 km uzakta gerçekleşmesi dikkat çekti.",
       "kullanildi": false
     },
     {
@@ -364,123 +476,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "64 dolarlık bu robot, güneş panellerini su kullanmadan temizliyor",
-      "link": "https://www.donanimhaber.com/64-dolarlik-robot-gunes-panellerini-su-kullanmadan-temizliyor--213299",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T08:35:00.000Z",
-      "ozet": "Bilim insanları, su kaynaklarının kısıtlı olduğu bölgeler için kendi kendine çalışan bir güneş paneli temizlik robotu geliştirdi. Yalnızca 64 dolara mâl olan robot, testlerden başarıyla geçti.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nothing Ear Note: Duyduğunuz her şeyi kaydedip özetleyen kulaklık",
-      "link": "https://www.donanimhaber.com/nothing-ear-note-duydugunuz-her-seyi-kaydedip-ozetleyen-kulaklik--213302",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T07:53:00.000Z",
-      "ozet": "Nothing, konuşmaları sizin yerinize kaydedip not alabilen yapay zeka destekli kulaklığı Ear Note'u piyasaya sürmeye hazırlanıyor. Yeni cihazın çıkış tarihi de belli oldu.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Jensen Huang'ın Dönüşüyle NVIDIA Değeri 1 Trilyon Dolara Yakın Arttı",
       "link": "https://www.webtekno.com/jensen-huang-donusuyle-nvidia-degeri-artti-h229357.html",
       "kaynak": "Webtekno",
       "tarih": "2026-11-24T07:26:12.000Z",
       "ozet": "Jensen Huang'ın iki hafta sonra NVIDIA CEO'luğuna dönmesiyle şirket değeri 1 trilyon dolara yakın arttı ve küresel teknoloji hisseleri yükseldi.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "How Intentful uses dots to make more time for growth",
-      "link": "https://openai.com/business/customer-stories/intentful-dots",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-24T00:00:00.000Z",
-      "ozet": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "How iFood scales coding agents across 15,000 repositories",
-      "link": "https://openai.com/business/customer-stories/ifood",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-24T00:00:00.000Z",
-      "ozet": "",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Clay helps sales teams win with Codex and ChatGPT",
-      "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-24T00:00:00.000Z",
-      "ozet": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Trump engineered a risky comeback for Jensen Huang",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T22:25:12.000Z",
-      "ozet": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nvidia CEO Jensen Huang is back. What happens next?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T22:10:32.000Z",
-      "ozet": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, after The New York Times reported there was evidence of another affair, this time with an Nvidia executive who reported directly to him, a board meeting that night ended […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Welcome to elite impunity, Jensen Huang",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
-      "kaynak": "The Verge",
-      "tarih": "2026-11-23T22:09:26.000Z",
-      "ozet": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. Now, those of us who had some kind of basic education on what a \"free market\" is might […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T22:05:50.000Z",
-      "ozet": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
-      "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T22:02:05.000Z",
-      "ozet": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
-      "link": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T21:47:41.000Z",
-      "ozet": "\"The mistake has been corrected,\" Elon Musk chimed in.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-      "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-23T21:30:44.000Z",
-      "ozet": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-      "link": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-23T21:25:42.000Z",
-      "ozet": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "OpenAI and Cisco introduce Shirudo",
-      "link": "https://openai.com/index/introducing-shirudo",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-23T21:20:00.000Z",
-      "ozet": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
       "kullanildi": false
     }
   ]
