@@ -28,11 +28,10 @@ export async function fbSaglik(fb) {
 
 // Sayfada son 2 günde aynı başlıkla bir Reels var mı (Instagram'dan otomatik gelmiş olabilir)
 export async function fbZatenVar(fb, baslik) {
-  const ilk = String(baslik).trim().split('
-')[0].toLowerCase();
+  const ilkSatir = (m) => String(m ?? '').trim().split(/\r?\n/)[0].toLowerCase();
+  const ilk = ilkSatir(baslik);
   const d = await graph('GET', `${fb.pageId}/video_reels`, yt(fb), { fields: 'id,description,created_time', limit: '15' });
-  return (d.data ?? []).find((x) => Date.now() - Date.parse(x.created_time) < 2 * 86400e3 && String(x.description ?? '').trim().split('
-')[0].toLowerCase() === ilk) ?? null;
+  return (d.data ?? []).find((x) => Date.now() - Date.parse(x.created_time) < 2 * 86400e3 && ilkSatir(x.description) === ilk) ?? null;
 }
 
 // Reels: başlat → Facebook videoyu adresten kendisi indirir → yayınla. Döner: { videoId, permalink }
