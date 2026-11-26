@@ -7,9 +7,12 @@ import os from 'node:os';
 import path from 'node:path';
 import { IgIzinHatasi, caption, dropHeld, fetchHeld, heldUrl, holdForInstagram, igSaglik, igTokenYenile, publishReel } from '../pipeline/instagram.js';
 import { notify } from './notify.js';
+import { FbIzinHatasi, fbAciklama, fbReelsPaylas, fbSaglik } from '../pipeline/facebook.js';
 import { TtIzinHatasi, ttAciklama, ttPaylas, ttYenile } from '../pipeline/tiktok.js';
 
 const MAX_TRIES = 3;
+// Aynı videoyu bekleyen başka platform var mı (bekleme dosyası o zaman silinmez)
+const digerBekliyor = (v, ben) => ['instagram', 'tiktok', 'facebook'].some((p) => p !== ben && ['bekliyor', 'izin-hatasi'].includes(v[p]?.durum));
 const UYARI_ARASI_MS = 12 * 60 * 60 * 1000; // aynı bağlantı sorunu için en fazla 12 saatte bir bildirim
 
 // Üretimden: YouTube yüklemesinden sonra (Instagram ve/veya TikTok'u açık kanalların Shorts'ları).
@@ -25,6 +28,16 @@ export async function queueForInstagram(firestore, job, settings, videoPath) {
     } catch (e) {
       await ref.update({ tiktok: { durum: 'hata', hata: e.message.slice(0, 300) } });
       await notify({ level: 'error', title: 'TikTok sırasına alınamadı', body: `${job.title}: ${e.message.slice(0, 150)}`, channelId: job.channelId, videoId: job.id });
+    }
+  }
+  if (settings.facebook?.enabled) {
+    try {
+      if (!(await firestore.doc(`secrets/fb_${job.channelId}`).get()).exists) throw new Error('Kanalın Facebook sayfası bağlı değil');
+      await holdForInstagram(job.id, videoPath);
+      await ref.update({ facebook: { durum: 'bekliyor', yayin: new Date(job.publishAt), aciklama: fbAciklama(job), deneme: 0 } });
+    } catch (e) {
+      await ref.update({ facebook: { durum: 'hata', hata: e.message.slice(0, 300) } });
+      await notify({ level: 'error', title: 'Facebook sırasına alınamadı', body: `${job.title}: ${e.message.slice(0, 150)}`, channelId: job.channelId, videoId: job.id });
     }
   }
   if (!settings.instagram?.enabled) return;
@@ -112,7 +125,7 @@ export async function publishDueReels(firestore, now = new Date()) {
           await doc.ref.update({ 'instagram.hikayeDurum': `hata: ${e.message.slice(0, 200)}` });
         }
       }
-      if (!['bekliyor', 'izin-hatasi'].includes(v.tiktok?.durum)) await dropHeld(doc.id);
+      if (!digerBekliyor(v, 'instagram')) await dropHeld(doc.id);
       const gecikme = Math.round((now.getTime() - v.instagram.yayin.toMillis()) / 60000);
       console.log(`✓ Instagram: ${v.title} ${r.permalink} (${gecikme} dk gecikme)`);
       await notify({ title: 'Instagram\'da yayınlandı', body: v.title, channelId: v.channelId, videoId: doc.id });
@@ -130,7 +143,7 @@ export async function publishDueReels(firestore, now = new Date()) {
       await doc.ref.update({ 'instagram.deneme': deneme, 'instagram.hata': e.message.slice(0, 300), 'instagram.durum': bitti ? 'hata' : 'bekliyor' });
       console.warn(`✗ Instagram ${doc.id} (${deneme}. deneme): ${e.message}`);
       if (bitti) {
-        if (!['bekliyor', 'izin-hatasi'].includes(v.tiktok?.durum)) await dropHeld(doc.id);
+        if (!digerBekliyor(v, 'instagram')) await dropHeld(doc.id);
         await notify({ level: 'error', title: 'Instagram\'a gönderilemedi', body: `${v.title}: ${e.message.slice(0, 150)}`, channelId: v.channelId, videoId: doc.id });
       }
     } finally {
@@ -160,7 +173,7 @@ export async function publishDueTiktok(firestore, now = new Date()) {
       const r = await ttPaylas(tt, file, { mod: v.tiktok.mod, baslik: v.tiktok.aciklama });
       const taslak = v.tiktok.mod !== 'direkt';
       await doc.ref.update({ 'tiktok.durum': taslak ? 'taslak-gonderildi' : 'yayinlandi', 'tiktok.publishId': r.publishId, 'tiktok.at': now, 'tiktok.hata': null });
-      if (!['bekliyor', 'izin-hatasi'].includes(v.instagram?.durum)) await dropHeld(doc.id);
+      if (!digerBekliyor(v, 'tiktok')) await dropHeld(doc.id);
       await firestore.doc(`channels/${v.channelId}`).set({ tiktokHata: null }, { merge: true });
       console.log(`✓ TikTok (${taslak ? 'taslak' : 'yayın'}): ${v.title}`);
       await notify({
@@ -188,6 +201,47 @@ ${v.tiktok.aciklama}` : v.title,
       if (deneme >= MAX_TRIES) await notify({ level: 'error', title: 'TikTok\'a gönderilemedi', body: `${v.title}: ${e.message.slice(0, 150)}`, channelId: v.channelId, videoId: doc.id });
     } finally {
       fs.rmSync(dir, { recursive: true, force: true });
+    }
+  }
+}
+
+// Facebook sayfası Reels: yayın saati gelenler paylaşılır; bağlantı hatasında video bekler ve haber verilir.
+export async function publishDueFacebook(firestore, now = new Date()) {
+  const snap = await firestore.collection('videos').where('facebook.durum', 'in', ['bekliyor', 'izin-hatasi']).get();
+  const bozuk = new Set();
+  for (const doc of snap.docs) {
+    const v = doc.data();
+    if (v.facebook.yayin.toMillis() > now.getTime() || bozuk.has(v.channelId)) continue;
+    try {
+      const fb = (await firestore.doc(`secrets/fb_${v.channelId}`).get()).data();
+      if (!fb?.token) throw new FbIzinHatasi('Kanalın Facebook sayfası bağlı değil');
+      await fbSaglik(fb);
+      const r = await fbReelsPaylas(fb, await heldUrl(doc.id), v.facebook.aciklama);
+      await doc.ref.update({ 'facebook.durum': 'yayinlandi', 'facebook.videoId': r.videoId, 'facebook.permalink': r.permalink, 'facebook.at': now, 'facebook.hata': null });
+      if (!digerBekliyor(v, 'facebook')) await dropHeld(doc.id);
+      await firestore.doc(`channels/${v.channelId}`).set({ facebookHata: null }, { merge: true });
+      console.log(`✓ Facebook: ${v.title} ${r.permalink ?? r.videoId}`);
+      await notify({ title: "Facebook'ta yayınlandı", body: v.title, channelId: v.channelId, videoId: doc.id });
+    } catch (e) {
+      if (e instanceof FbIzinHatasi) {
+        bozuk.add(v.channelId);
+        await doc.ref.update({ 'facebook.durum': 'izin-hatasi', 'facebook.hata': e.message.slice(0, 300) });
+        const cref = firestore.doc(`channels/${v.channelId}`);
+        const onceki = (await cref.get()).data()?.facebookHata;
+        await cref.set({ facebookHata: { mesaj: e.message.slice(0, 300), at: new Date() } }, { merge: true });
+        if (!onceki?.at || Date.now() - onceki.at.toMillis() >= UYARI_ARASI_MS) {
+          await notify({ level: 'error', title: 'Facebook bağlantısı çalışmıyor', body: `Reels bekletiliyor. Sayfayı yeniden bağla (node src/connect-facebook.js). Hata: ${e.message.slice(0, 120)}`, channelId: v.channelId });
+        }
+        console.warn(`✗ Facebook ${doc.id}: bağlantı hatası: ${e.message}`);
+        continue;
+      }
+      const deneme = (v.facebook.deneme ?? 0) + 1;
+      await doc.ref.update({ 'facebook.deneme': deneme, 'facebook.hata': e.message.slice(0, 300), 'facebook.durum': deneme >= MAX_TRIES ? 'hata' : 'bekliyor' });
+      console.warn(`✗ Facebook ${doc.id} (${deneme}. deneme): ${e.message}`);
+      if (deneme >= MAX_TRIES) {
+        if (!digerBekliyor(v, 'facebook')) await dropHeld(doc.id);
+        await notify({ level: 'error', title: "Facebook'a gönderilemedi", body: `${v.title}: ${e.message.slice(0, 150)}`, channelId: v.channelId, videoId: doc.id });
+      }
     }
   }
 }
