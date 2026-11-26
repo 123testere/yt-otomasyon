@@ -210,7 +210,8 @@ async function main() {
         }
       }
       // Instagram açık kanallarda Shorts, yayın saatinde Reels olarak da paylaşılır (senkronizasyon gönderir).
-      await queueForInstagram(firestore, await withFullVideoLink(job, settings), settings, built.videoPath);
+      // Reels/TikTok, YouTube ile aynı anda: v4 kaydırması dahil gerçek yayın saati
+      await queueForInstagram(firestore, { ...(await withFullVideoLink(job, settings)), publishAt: uploadJob.publishAt }, settings, built.videoPath);
       // Flaggenduell: maç yayınlandıktan sonra sezon tablosu kalıcı olarak güncellenir.
       if (built.leagueUpdate) await firestore.doc(`leagues/${job.channelId}`).set(built.leagueUpdate);
       // İlk yayından sonra ses ve karakter kilitlenir; kanal kimliği videodan videoya değişmesin.

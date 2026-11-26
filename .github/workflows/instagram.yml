@@ -1,13 +1,11 @@
 name: Instagram Reels paylaş
 
-# Shorts yayın saatinde (Lamba Altında: 19:00 TR = 16:00 UTC) birkaç kez çalışır; saatlik senkronizasyon
-# gecikse bile Reels zamanında gider. Sabah çalışması bağlantıyı yoklar (bozuksa yayından önce haber verir).
-# Shorts saati değişirse buradaki saatleri de güncelle.
+# Saatte bir çalışır (Shorts yayın saati v4 kuralıyla kayabildiği için sabit saat yok); yayın saati geçen Reels/TikTok gönderilir.
+# Sabah çalışması bağlantıyı da yoklar. Her çalışma ~20 sn.
 on:
   schedule:
     - cron: '7 6 * * *'
-    - cron: '4,22,41 16 * * *'
-    - cron: '13 17 * * *'
+    - cron: '3,33 * * * *'
   workflow_dispatch:
 
 permissions:
