@@ -1,0 +1,40 @@
+{
+ "id": "2026-11-26_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-26T16:00:00.000Z",
+ "topic": "Gurken",
+ "title": "Duell 24/30: Wer erntet die meisten Gurken? 🥒",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Gurken-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "gurken",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "gemüse"
+ ],
+ "duell": {
+  "topicId": "gurken",
+  "why": [
+   "Warmes Klima",
+   "Viel Gewächshausanbau"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Gurken Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "6 Länder haben keine Gurkendaten und fliegen raus!",
+   "rounds": "Jetzt wird gesiebt! Spanien verpasst das Finale um rund 92 Tausend Tonnen!",
+   "final": "Finale! Türkei gegen Ukraine – wer holt die Gurken-Krone?",
+   "winner": "Die Türkei gewinnt! Rund 1,7 Millionen Tonnen, etwa doppelt so viel wie die Ukraine!",
+   "why": "Warum die Türkei? Warmes Klima und viel Gewächshausanbau.",
+   "table": "Die Türkei führt die Tabelle mit 147 Punkten. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "yayin-saati",
+  "kol": "B"
+ }
+}

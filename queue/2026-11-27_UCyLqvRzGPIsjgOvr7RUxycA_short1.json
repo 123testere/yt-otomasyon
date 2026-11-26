@@ -1,0 +1,40 @@
+{
+ "id": "2026-11-27_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-27T05:00:00.000Z",
+ "topic": "Paprika",
+ "title": "Duell 25/30: Wer erntet die meisten Paprika? 🫑",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Paprika-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "paprika",
+  "landwirtschaft",
+  "ranking",
+  "länderduell",
+  "gemüse"
+ ],
+ "duell": {
+  "topicId": "paprika",
+  "why": [
+   "Warme Sommer",
+   "Große Anbauflächen"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Paprika Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "14 Länder haben keine Paprikadaten und sind sofort raus!",
+   "rounds": "Jetzt wird gesiebt! Die Niederlande verpassen das Finale um rund 1,1 Millionen Tonnen!",
+   "final": "Finale! Türkei gegen Spanien – wer holt die Paprika-Krone?",
+   "winner": "Die Türkei gewinnt! Rund 3,4 Millionen Tonnen, mehr als doppelt so viel wie Spanien!",
+   "why": "Warum die Türkei? Warme Sommer und große Anbauflächen.",
+   "table": "Die Türkei baut die Tabellenführung weiter aus. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "yayin-saati",
+  "kol": "A"
+ }
+}
