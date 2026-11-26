@@ -1,0 +1,75 @@
+{
+  "id": "2026-11-26_UCJUP2lYvMuhcif8FavIXuYA_long1",
+  "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
+  "type": "long",
+  "format": "hazir",
+  "topic": "Claude ile kurulan video otomasyonunun 27 günlük gerçek sonuçları",
+  "title": "Claude 27 Günde 181 Video Yükledi: Gerçek Sonuç",
+  "basliklar": [
+    "Claude 27 Günde 181 Video Yükledi: Gerçek Sonuç",
+    "181 Videoluk Yapay Zekâ Deneyi: Kaç Abone Geldi?",
+    "Yapay Zekâ 6 Kanalımı Yönetti: Rakamlar Şaşırttı"
+  ],
+  "description": "Claude ile kurduğum sistem 27 günde 6 kanala 181 video yükledi. Elli dört bin izlenme alan kanal neden sadece 43 abone kazandı, aynı video neden bir yerde 1.044, başka yerde 6.694 izlendi? Yapay zekânın hataları, kapattığım kanallar ve bu kanalın para kazanma yolculuğu: hepsi gerçek rakamlarla.\n\n00:00 Giriş\n00:55 Ne kurdum?\n02:45 Rakamlar\n03:49 Kırk üç abone\n04:45 Aynı video: 1.044 ve 6.694\n06:48 Yapay zekânın hataları\n08:16 Neyi kapattım\n08:39 Bundan sonra\n\nRakamlar 26 Kasım 2026 tarihli YouTube Analytics, sistem kayıtları ve GitHub geçmişinden alındı. Kaynaklar:\n• https://support.google.com/youtube/answer/72851\n• https://developers.tiktok.com/doc/content-sharing-guidelines/\n• https://github.com/123testere/yt-otomasyon/actions\n\n#yapayzeka #claude #otomasyon",
+  "tags": [
+    "claude",
+    "yapay zeka",
+    "youtube otomasyon",
+    "yapay zeka ile video",
+    "faceless youtube",
+    "claude code"
+  ],
+  "thumbnailText": "181 VİDEO 43 ABONE",
+  "thumbnailTextAlt": "1.044 vs 6.694",
+  "thumbnailTextAlt2": "6 KANAL 1 KİŞİ",
+  "oynatmaListesi": "Claude ile Gerçek Deneyler",
+  "kaynaklar": [
+    {
+      "url": "https://support.google.com/youtube/answer/72851",
+      "not": "YPP şartları: 1.000 abone + 4.000 saat"
+    },
+    {
+      "url": "https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "not": "TikTok: onaysız uygulama yalnız gizli paylaşım, kişisel araçlar kabul edilmez"
+    },
+    {
+      "url": "https://github.com/123testere/yt-otomasyon/actions",
+      "not": "üretim çalışmaları"
+    }
+  ],
+  "paket": {
+    "merak": "Bu kadar video neden bu kadar az abone getirdi?",
+    "cevap": "Etkileşim yok; aynı video Facebook’ta bir kez patladı",
+    "cevapSahne": 44,
+    "kapakAni": "181 video ve 43 abone panoları"
+  },
+  "kontrol": {
+    "O1": "evet: kendi deneyimiz, kendi verimiz, kendi panolarımız",
+    "O2": "evet: yasak tür yok",
+    "O3": "evet: rakamlar YouTube API/Analytics, Firestore, GitHub kayıtlarından (26.11.2026); kurallar resmi sayfalardan",
+    "O4": "evet: başlıktaki 181 video ve 43 abone videoda",
+    "O5": "evet: klon ses beyan edildi",
+    "O6": "evet: koşullu etkileşim yok",
+    "O7": "evet: kendi ürettiğimiz müzik",
+    "O8": "evet: yüklemeden önce ölçüldü",
+    "O9": "evet: Türkçe SRT",
+    "O10": "evet: yapay zekâ ve otomasyon nişi",
+    "O11": "evet: yeni video",
+    "O12": "evet: 6 etiket",
+    "U1": "evet: 3 başlık + 3 kapak",
+    "U2": "evet: ≤50 karakter",
+    "U3": "evet: 3840x2160, videodaki rakamlar, sağ alt boş",
+    "U4": "evet: ilk cümle sonuç",
+    "U5": "evet: hikâye kadar",
+    "U6": "evet: 8 bölüm, her biri ≥10 sn",
+    "U7": "evet: son 14 sn sağ taraf boş, Studio görevi",
+    "U8": "evet: yazılar ≥30 px",
+    "U9": "evet: oynatma listesi",
+    "Y1": "evet: haftalık seri",
+    "Y2": "evet: yeni formatın ilk videosu",
+    "Y3": "evet: kanalın kendi aralığıyla",
+    "Y4": "evet: gerekirse paket değişir"
+  },
+  "hazirVideo": true,
+  "publishAt": "2026-11-26T15:00:00.000Z"
+}
