@@ -14,7 +14,7 @@ const al = async (yol, p) => { const r = await (await fetch(`${API}/${yol}?${new
 
 let token = kullaniciToken;
 // Uygulama bilgisi varsa 60 günlük token'a çevir (ondan alınan sayfa token'ı süresizdir)
-const appDosya = path.join(SECRETS_DIR, 'meta-app.json');
+const appDosya = path.join(SECRETS_DIR, 'instagram.json'); // { appId, appSecret }: "yt" uygulaması
 if (fs.existsSync(appDosya)) {
   const app = JSON.parse(fs.readFileSync(appDosya, 'utf8'));
   token = (await al('oauth/access_token', { grant_type: 'fb_exchange_token', client_id: app.appId, client_secret: app.appSecret, fb_exchange_token: token })).access_token;
@@ -30,7 +30,8 @@ const sayfa = sayfalar.find((s) => sayfaAdi && s.name.toLowerCase().includes(say
   ?? (sayfalar.length === 1 ? sayfalar[0] : null);
 if (!sayfa) throw new Error(`Hangi sayfa? Sayfa adını da yaz: ${sayfalar.map((s) => s.name).join(', ')}`);
 const f = db();
-await f.doc(`secrets/fb_${kanal}`).set({ pageId: sayfa.id, pageName: sayfa.name, token: sayfa.access_token, updatedAt: new Date() });
+// Mevcut istatistik bilgisi (token, userToken) korunur; paylaşım için ayrı token yazılır
+await f.doc(`secrets/fb_${kanal}`).set({ pageId: sayfa.id, pageName: sayfa.name, paylasToken: sayfa.access_token, paylasUpdatedAt: new Date() }, { merge: true });
 await f.doc(`channels/${kanal}`).set({ settings: { facebook: { enabled: true, sayfa: sayfa.name } } }, { merge: true });
 console.log(`✓ "${sayfa.name}" sayfası bağlandı; bu kanalın Shorts'ları Facebook Reels olarak da paylaşılacak.`);
 process.exit(0);

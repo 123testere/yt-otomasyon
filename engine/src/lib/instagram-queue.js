@@ -7,7 +7,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { IgIzinHatasi, caption, dropHeld, fetchHeld, heldUrl, holdForInstagram, igSaglik, igTokenYenile, publishReel } from '../pipeline/instagram.js';
 import { notify } from './notify.js';
-import { FbIzinHatasi, fbAciklama, fbReelsPaylas, fbSaglik } from '../pipeline/facebook.js';
+import { FbIzinHatasi, fbAciklama, fbReelsPaylas, fbSaglik, fbZatenVar } from '../pipeline/facebook.js';
 import { TtIzinHatasi, ttAciklama, ttPaylas, ttYenile } from '../pipeline/tiktok.js';
 
 const MAX_TRIES = 3;
@@ -211,11 +211,19 @@ export async function publishDueFacebook(firestore, now = new Date()) {
   const bozuk = new Set();
   for (const doc of snap.docs) {
     const v = doc.data();
-    if (v.facebook.yayin.toMillis() > now.getTime() || bozuk.has(v.channelId)) continue;
+    // Instagram'ın kendiliğinden Facebook paylaşımına 20 dk fırsat: aynı video iki kez gitmesin
+    if (v.facebook.yayin.toMillis() + 20 * 60e3 > now.getTime() || bozuk.has(v.channelId)) continue;
     try {
       const fb = (await firestore.doc(`secrets/fb_${v.channelId}`).get()).data();
-      if (!fb?.token) throw new FbIzinHatasi('Kanalın Facebook sayfası bağlı değil');
+      if (!fb?.paylasToken && !fb?.token) throw new FbIzinHatasi('Kanalın Facebook sayfası bağlı değil');
       await fbSaglik(fb);
+      const var_ = await fbZatenVar(fb, v.facebook.aciklama);
+      if (var_) {
+        await doc.ref.update({ 'facebook.durum': 'zaten-vardi', 'facebook.videoId': var_.id, 'facebook.at': now, 'facebook.hata': null });
+        if (!digerBekliyor(v, 'facebook')) await dropHeld(doc.id);
+        console.log(`Facebook: ${v.title} sayfada zaten var (Instagram'dan), tekrar gönderilmedi`);
+        continue;
+      }
       const r = await fbReelsPaylas(fb, await heldUrl(doc.id), v.facebook.aciklama);
       await doc.ref.update({ 'facebook.durum': 'yayinlandi', 'facebook.videoId': r.videoId, 'facebook.permalink': r.permalink, 'facebook.at': now, 'facebook.hata': null });
       if (!digerBekliyor(v, 'facebook')) await dropHeld(doc.id);
