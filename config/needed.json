@@ -1,28 +1,5 @@
 [
   {
-    "id": "2026-11-26_UCIa1D1I2HwWzylJDvNayeHw_short1",
-    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
-    "type": "short",
-    "publishAt": "2026-11-26T09:00:00.000Z",
-    "targetWords": 86,
-    "dil": "tr",
-    "masterV4": true,
-    "format": "dizi",
-    "dizi": "oyun-hikayeleri",
-    "dikey": true,
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 23
-    },
-    "deney": {
-      "id": "kanca-soru",
-      "kol": "B",
-      "talimat": "İlk cümle soru OLMASIN: şaşırtıcı bir bilgi ya da iddia olsun, mümkünse rakamla."
-    }
-  },
-  {
     "id": "2026-11-27_UCFw3Wdyus0HVhykB0uYahWg_short1",
     "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
     "type": "short",
@@ -60,7 +37,7 @@
       "en"
     ],
     "bolum": {
-      "no": 24
+      "no": 23
     }
   },
   {

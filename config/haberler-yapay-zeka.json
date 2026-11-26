@@ -1,8 +1,32 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-26T00:27:01.605Z",
+  "guncellendi": "2026-11-26T09:36:14.868Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "Nvidia ekran kartlarını bulmak daha da zorlaşabilir: Stok krizi büyüyor",
+      "link": "https://www.donanimhaber.com/nvidia-ekran-kartlarini-bulmak-daha-da-zorlasabilir--213402",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-26T07:51:00.000Z",
+      "ozet": "Nvidia’nın GeForce RTX 50 serisi ekran kartlarının arzını yüzde 30'a kadar azaltacağı iddia edildi. Stok sıkıntısının yeni yılda fiyat artışlarını beraberinde getirmesi bekleniyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "SpaceX, Uzaya 1 Milyon Uydu Göndermek İçin Onay Aldı",
+      "link": "https://www.webtekno.com/spacex-uzayi-1-milyon-uydu-onay-h229465.html",
+      "kaynak": "Webtekno",
+      "tarih": "2026-11-26T07:47:42.000Z",
+      "ozet": "ABD Federal İletişim Komisyonu (FCC), SpaceX'in uzaya yapay zekâ veri merkezleri kurma planı Starmind için 1 milyon uydu fırlatmasına onay verdi.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI iş bulmanızı sağlayacak",
+      "link": "https://www.donanimhaber.com/openworks-geliyor--213401",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-26T06:00:00.000Z",
+      "ozet": "Yapay zekâ ekosisteminin lider oyuncularından OpenAI, küçük işletmeler için ücretsiz yapay zekâ danışmanlığı sunan OpenWorks adlı yeni programını duyurdu",
+      "kullanildi": false
+    },
     {
       "baslik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
       "link": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
@@ -457,30 +481,6 @@
       "kaynak": "Ars Technica",
       "tarih": "2026-11-24T14:56:50.000Z",
       "ozet": "Huang’s allies enlisted Trump and Vance to pressure Nvidia’s board into taking him back.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Gemini Kullanıcılarını Sevindirecek Yeni Bir Özellik Geliyor",
-      "link": "https://www.webtekno.com/gemini-kullanicilarini-sevindirecek-yeni-bir-ozellik-geliyor-h229379.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-24T13:59:02.000Z",
-      "ozet": "Gemini'ye eski sohbetleri silmeden yan menüden gizlemenizi sağlayacak arşivleme özelliği geliyor.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-      "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-24T13:00:00.000Z",
-      "ozet": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
-      "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
-      "kaynak": "Ars Technica",
-      "tarih": "2026-11-24T12:30:05.000Z",
-      "ozet": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
       "kullanildi": false
     }
   ]
