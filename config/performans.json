@@ -3946,5 +3946,37 @@
         "yeterli": false
       }
     }
+  },
+  "UCCkZBrwh7E_SIXuHfLm121A": {
+    "channelId": "UCCkZBrwh7E_SIXuHfLm121A",
+    "title": "What If Earth",
+    "hafta": "2026-W48",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde değerlendirilecek kadar izlenen video yok."
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-26T00:27:01.605Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [],
+    "videolar": [],
+    "sahneAnalizi": {
+      "short": {
+        "videoSayisi": 0,
+        "yeterli": false
+      },
+      "long": {
+        "videoSayisi": 0,
+        "yeterli": false
+      }
+    }
   }
 }

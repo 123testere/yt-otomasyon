@@ -149,6 +149,92 @@
     "oylamalar": []
   },
   {
+    "id": "UCCkZBrwh7E_SIXuHfLm121A",
+    "title": "What If Earth",
+    "enabled": false,
+    "settings": {
+      "enabled": false,
+      "contentFormat": "belgesel",
+      "niche": "bilim",
+      "customNiche": "",
+      "language": "en",
+      "voice": "en-US-GuyNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "elevenlabs",
+      "cloneScope": "shorts",
+      "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
+      "tone": "samimi",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": false,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "yok",
+      "musicVolume": "0.12",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          2,
+          5
+        ],
+        "time": "18:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "12:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "Bilim",
+      "dil": "English",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": false,
+      "ekTalimat": null,
+      "videoSayisi": 1,
+      "dersler": []
+    },
+    "oynatmaListeleri": [
+      "What If: Earth"
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-26T00:27:01.605Z"
+    },
+    "recentTitles": [
+      "What If Earth Stopped for 1 Second?"
+    ],
+    "oylamalar": []
+  },
+  {
     "id": "UCEG9D-Kia1iw6-duhqlSlcg",
     "title": "Untold Vault",
     "enabled": false,
@@ -349,6 +435,7 @@
       "baslangic": "2026-11-06T10:59:27.327Z"
     },
     "recentTitles": [
+      "Kral Dilek Verdi, O Düşmanını İstedi",
       "Halkın Bağışladığı Hoca Neden Satıldı? ⛓️",
       "Hocasına Kılıç Kaldırmadı: Kral Toros'u Sattı | Zincirli 8",
       "Yarın Arın, Hocasına Kılıç Kaldırıyor… ⚔️",
@@ -785,6 +872,7 @@
       "baslangic": "2026-11-19T22:11:58.161Z"
     },
     "recentTitles": [
+      "1735’te Dökülen Dev Çan Hiç Çalmadı",
       "Romalılar Neden Yüz Binlerce Çiviyi Toprağa Gömdü?",
       "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
       "1969'da Gelen Bir Saat İsviçre'yi Sarstı… Tamamı Bu Akşam",
@@ -837,15 +925,6 @@
       "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!"
     ],
     "oylamalar": [
-      {
-        "kaynak": "2026-11-21_UCPtL84Agfh5hzoTQqE4jD0w_short2",
-        "baslik": "Saatin 60 Dakikası Babil'den Miras Kaldı ⏱️",
-        "a": "Kumbara",
-        "b": "Çan",
-        "oyA": 0,
-        "oyB": 0,
-        "yayin": "2026-11-21T16:00:00.000Z"
-      },
       {
         "kaynak": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
         "baslik": "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
@@ -1057,6 +1136,8 @@
       "baslangic": "2026-11-21T18:02:05.496Z"
     },
     "recentTitles": [
+      "Duell 25/30: Wer erntet die meisten Paprika? 🫑",
+      "Duell 24/30: Wer erntet die meisten Gurken? 🥒",
       "Duell 23/30: Wer erntet die meisten Zwiebeln? 🧅",
       "Duell 22/30: Wer erntet die meisten Tomaten? 🍅",
       "Duell 21/30: Wer erntet die meisten Birnen? 🍐",
@@ -1086,23 +1167,23 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 23,
+      "lastMatch": 25,
       "table": [
         {
           "name": "Türkei",
-          "points": 147
+          "points": 167
         },
         {
           "name": "Spanien",
-          "points": 89
+          "points": 101
         },
         {
           "name": "Ukraine",
-          "points": 84
+          "points": 91
         },
         {
           "name": "Italien",
-          "points": 80
+          "points": 82
         },
         {
           "name": "Frankreich",
@@ -1110,23 +1191,23 @@
         },
         {
           "name": "Polen",
-          "points": 56
+          "points": 64
         },
         {
           "name": "Deutschland",
-          "points": 50
+          "points": 52
         },
         {
           "name": "Portugal",
           "points": 32
         },
         {
-          "name": "Griechenland",
-          "points": 26
+          "name": "Niederlande",
+          "points": 27
         },
         {
-          "name": "Vereinigtes Königreich",
-          "points": 24
+          "name": "Griechenland",
+          "points": 26
         }
       ]
     }

@@ -1,14 +1,134 @@
 {
   "akis": "yapay-zeka",
-  "guncellendi": "2026-11-25T15:40:47.477Z",
+  "guncellendi": "2026-11-26T00:27:01.605Z",
   "pencereSaat": 48,
   "haberler": [
+    {
+      "baslik": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "link": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T22:44:32.000Z",
+      "ozet": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-25T21:51:26.000Z",
+      "ozet": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this monstrosity come […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Yapay zekâda ezber bozan mimari: GLM-5.4 aynı katmanları iki kez işleyip gücünü artırıyor",
+      "link": "https://www.donanimhaber.com/glm-5-4-tanitildi-yapay-zeka-modellerinde-ezber-bozan-mimari--213383",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T20:30:00.000Z",
+      "ozet": "Çinli Z.ai'ın Loop Transformer mimarisini temel alan yeni yapay zekâsı GLM-5.4 , sinir ağı katmanlarını tekrar kullanarak kendisinden çok daha büyük modellerin performansına yaklaşıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T20:03:27.000Z",
+      "ozet": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "link": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T19:54:57.000Z",
+      "ozet": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+      "link": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T19:44:24.000Z",
+      "ozet": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Want to buy your kid an AI toy this Christmas? Not in New York",
+      "link": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T18:11:46.000Z",
+      "ozet": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "OpenAI ve Anthropic'in gizli yapay zeka modelleri çalışanları korkutuyor",
+      "link": "https://www.donanimhaber.com/henuz-yayinlanmamis-yapay-zeka-modelleri-calisanlari-korkutuyor--213381",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T17:50:00.000Z",
+      "ozet": "OpenAI ve Anthropic çalışanları, henüz yayımlanmayan yapay zeka modellerinin kontrol edilmesinin giderek zorlaştığını belirterek güvenlik riskleri konusunda uyarıyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-25T17:44:51.000Z",
+      "ozet": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing the idea of putting AI data centers in space, including Google and Blue Origin, this is the first approval the agency […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+      "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "kaynak": "TechCrunch",
+      "tarih": "2026-11-25T17:35:58.000Z",
+      "ozet": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Amazon'da robot süpürgelerde indirimlere ek indirim fırsatı başladı!",
+      "link": "https://www.donanimhaber.com/kasim-indirimine-giren-robot-supurgeler-hangisi-en-iyi-2026--213392",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T17:26:58.000Z",
+      "ozet": "Kasım indirimlerinde robot süpürge fırsatları öne çıkıyor. Amazon'da yılın en düşük fiyatlı robot süpürgelerini ve fiyatına göre en iyi modelleri listeledik.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Ars Live recap: Don’t expect military attacks on data centers to stop",
+      "link": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
+      "kaynak": "Ars Technica",
+      "tarih": "2026-11-25T16:47:14.000Z",
+      "ozet": "Militaries have many reasons to target data centers and the cloud in wartime.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Robot köpekler daha da akıllanıyor",
+      "link": "https://www.donanimhaber.com/uni-doggie-tanitildi-iste-ozellikleri-ve-fiyati--213388",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T16:30:00.000Z",
+      "ozet": "UNI-DOGGIE robot köpek standart asistan fonksiyonlarının yanı sıra dans, zıplama, kalp hareketleri gibi yetenekleriyle evinizi daha eğlenceli hale getiriyor.",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Nothing offers a full look at its AI earbuds and charging case",
+      "link": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "kaynak": "The Verge",
+      "tarih": "2026-11-25T16:00:59.000Z",
+      "ozet": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize your conversations. Like the Ear 3, the Ear Note's microphone-equipped case comes with a \"Talk\" button that you […]",
+      "kullanildi": false
+    },
+    {
+      "baslik": "Huang etkisi kısa sürdü, hisseler yeniden çakıldı",
+      "link": "https://www.donanimhaber.com/yapay-zek-sektorunde-endiseler--213374",
+      "kaynak": "DonanımHaber",
+      "tarih": "2026-11-25T16:00:00.000Z",
+      "ozet": "Yıllardır soluksuz yükselen yapay zekâ ile ilişkili şirket hisseleri tepetaklak oldu. Önce Nvidia krizi şimdi de Anthropic çöküşü soru işaretlerini yeniden gündeme taşıdı.",
+      "kullanildi": false
+    },
     {
       "baslik": "AI data centers are becoming harder to build, and neoclouds are feeling it",
       "link": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-25T15:41:43.000Z",
-      "ozet": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter more than a pitch deck. ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]",
+      "ozet": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter more than a pitch deck. ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]",
       "kullanildi": false
     },
     {
@@ -56,7 +176,7 @@
       "link": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-25T13:00:00.000Z",
-      "ozet": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
+      "ozet": "The central question for investigators is what Nvidia knew about where those chips ended up and whether Huang's affair with a Megaspeed executive gave the company reason to doubt Megaspeed's assurances.",
       "kullanildi": false
     },
     {
@@ -212,14 +332,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Huawei Watch Air incecik gövdesiyle geliyor",
-      "link": "https://www.donanimhaber.com/huawei-watch-air-tanitildi-iste-ozellikleri-ve-fiyati--213321",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T20:12:00.000Z",
-      "ozet": "Huawei Watch Air akıllı saat modelinde 1.92 inçlik AMOLED ekran, 6.9mm kalınlık, 5 güne kadar kullanım süresi, gelişmiş yapay zekâ sağlık taraması gibi özellikler yer alıyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
       "link": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
       "kaynak": "The Verge",
@@ -236,14 +348,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Roblox'un yeni yapay zekâsı PixVid, 480p maliyetine 960p video üretiyor",
-      "link": "https://www.donanimhaber.com/roblox-yapay-zekasi-pixvid-480p-maliyetine-960p-video-uretiyor--213328",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T18:46:00.000Z",
-      "ozet": "Roblox, üniversitelerden de yardım alarak PixVid'i geliştirdi. Video üreten yapay zekâlarda kullanılan VAE sıkıştırma katmanını ortadan kaldıran model, 480p maliyetine 960p video üretebiliyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
       "link": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
       "kaynak": "TechCrunch",
@@ -257,14 +361,6 @@
       "kaynak": "The Verge",
       "tarih": "2026-11-24T18:15:00.000Z",
       "ozet": "Though David Fincher's fans had been eagerly anticipating The Further Mis-Adventures of Cliff Booth, early screenings of the Once Upon a Time in Hollywood sequel starring Brad Pitt have raised questions about whether generative AI was used in the film. People have claimed that the movie is chock-full of uncanny, inconsistent visuals that make it […]",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Google Arama'nın yapay zekası Drive, Wallet ve Gemini'ye bağlanıyor",
-      "link": "https://www.donanimhaber.com/google-ai-modunu-drive-wallet-ve-gemini-ye-bagliyor--213330",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T18:04:00.000Z",
-      "ozet": "Google, AI Modunu Drive, Wallet ve Gemini ile entegre ediyor. Yapay zeka artık kişisel dosyalardan finansal bilgilere kadar daha fazla veriyi kullanarak kişiye özel yanıtlar sunabilecek.",
       "kullanildi": false
     },
     {
@@ -292,14 +388,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Tesla, otomobillerinde 1 milyar parametreli yapay zeka modeli çalıştırıyor",
-      "link": "https://www.donanimhaber.com/tesla-larda-1-milyar-parametreli-yapay-zeka-modeli-calisiyor--213334",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T17:20:00.000Z",
-      "ozet": "Elon Musk, Tesla araçlarında çalışan 1 milyar parametreli yapay zeka modelinin teknik detaylarını açıkladı. Reality View, otomobillerin çevresini gerçek zamanlı olarak 36 FPS hızında görüntülüyor.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Tidal will start banning AI-generated music next month",
       "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
       "kaynak": "The Verge",
@@ -316,27 +404,11 @@
       "kullanildi": false
     },
     {
-      "baslik": "AI Günlükleri: Yapay zekâ dünyasında bu hafta (24 Kasım 2026)",
-      "link": "https://www.donanimhaber.com/yapay-zeka-dunyasinda-bu-hafta-24-kasim-2026--213337",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T16:58:00.000Z",
-      "ozet": "Yapay zekâ dünyasında bu hafta neler yaşandı; yeni neler tanıtıldı? \"AI Günlükleri\" serimizde, hızla büyüyen bu alanda neler olup bittiğini haftalık olarak kayıt altına almaya devam ediyoruz.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
       "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
       "kaynak": "TechCrunch",
       "tarih": "2026-11-24T16:46:00.000Z",
       "ozet": "The company said it will still accept songs that were made with AI assistance, but not fully generated.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Robotikte çifte sıçrama: İki yeni yapay zekâ, dokunma duyusu ve hızlı öğrenmenin kilidini açtı",
-      "link": "https://www.donanimhaber.com/robotlarin-iki-buyuk-eksigi-gideriliyor-dokunma-duyusu-ve-hiz--213332",
-      "kaynak": "DonanımHaber",
-      "tarih": "2026-11-24T16:37:00.000Z",
-      "ozet": "Robotik alanında bir haftada iki önemli çalışma: Robotlara dokunma duyusu kazandıran 21,9 MB'lık LingBot-Touch ve yalnızca 50 gösterimle görev öğrenebilen Flash ALOHA açık kaynak olarak yayımlandı.",
       "kullanildi": false
     },
     {
@@ -364,14 +436,6 @@
       "kullanildi": false
     },
     {
-      "baslik": "Pinterest will now let parents limit the AI-generated content their teens see",
-      "link": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-24T16:02:37.000Z",
-      "ozet": "While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.",
-      "kullanildi": false
-    },
-    {
       "baslik": "Anthropic Created a Honeypot to Lure AI Agents Into Misbehaving",
       "link": "https://www.wired.com/story/ai-agents-can-get-honeypotted-too-aw/",
       "kaynak": "Wired",
@@ -385,14 +449,6 @@
       "kaynak": "Google",
       "tarih": "2026-11-24T16:00:00.000Z",
       "ozet": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
-      "link": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
-      "kaynak": "TechCrunch",
-      "tarih": "2026-11-24T15:51:07.000Z",
-      "ozet": "Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.",
       "kullanildi": false
     },
     {
@@ -425,62 +481,6 @@
       "kaynak": "Ars Technica",
       "tarih": "2026-11-24T12:30:05.000Z",
       "ozet": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Searching for distant planets with Astra",
-      "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
-      "kaynak": "OpenAI",
-      "tarih": "2026-11-24T11:00:00.000Z",
-      "ozet": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Don’t Bring Up AI if You Want to Enjoy Your Thanksgiving",
-      "link": "https://www.wired.com/story/dont-bring-up-ai-if-you-want-to-enjoy-your-thanksgiving/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-24T10:45:00.000Z",
-      "ozet": "Young people anxious about their futures say they’re increasingly frustrated with their pro-AI parents. They’re worried it’s going to make holiday gatherings very tense.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "AI Solved Math’s Most Famous Problem. Now Humans Are Struggling to Understand It",
-      "link": "https://www.wired.com/story/ai-solved-maths-most-famous-problem/",
-      "kaynak": "Wired",
-      "tarih": "2026-11-24T10:15:00.000Z",
-      "ozet": "It will take mathematicians months to understand the “alien” 17-million-line solution an Anthropic researcher produced for the Riemann hypothesis.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Nothing’in İlk Yapay Zekâ Cihazı Netleşti: Çok Yakında Tanıtılacak!",
-      "link": "https://www.webtekno.com/nothing-ilk-yapay-zek-cihazi-netlesti-h229358.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-24T09:44:29.000Z",
-      "ozet": "Nothing, 8 Aralık'ta tanıtacağı yapay zekâ destekli yeni kablosuz kulaklığı Ear (note) ile toplantıları ve telefon görüşmelerini kaydedip özetleyecek.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Kod İncelemesi Yapıp Düzelten ve Onaylayan Claude Ship Tanıtıldı: Peki Nasıl Çalışıyor?",
-      "link": "https://www.webtekno.com/claude-ship-tanitildi-nasil-calisiyor-h229363.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-24T09:42:13.000Z",
-      "ozet": "Anthropic, geliştirici ekiplerinin belirlediği politikalar doğrultusunda kodları inceleyen, düzelten ve otomatik onaylayan Claude Ship'i tanıttı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Sadece Konseptlerde Görüyorduk: BYD, İlk Katlanabilir Direksiyonlu Otomobilini Tanıttı!",
-      "link": "https://www.webtekno.com/byd-ilk-katlanabilir-direksiyonlu-otomobilini-tanitti-h229360.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-24T09:42:02.000Z",
-      "ozet": "BYD, insansı robot motorlarıyla çalışan ve park halindeyken ön konsola gizlenen katlanabilir direksiyonlu yeni SUV modeli Tai 9'u tanıttı.",
-      "kullanildi": false
-    },
-    {
-      "baslik": "Jensen Huang'ın Dönüşüyle NVIDIA Değeri 1 Trilyon Dolara Yakın Arttı",
-      "link": "https://www.webtekno.com/jensen-huang-donusuyle-nvidia-degeri-artti-h229357.html",
-      "kaynak": "Webtekno",
-      "tarih": "2026-11-24T07:26:12.000Z",
-      "ozet": "Jensen Huang'ın iki hafta sonra NVIDIA CEO'luğuna dönmesiyle şirket değeri 1 trilyon dolara yakın arttı ve küresel teknoloji hisseleri yükseldi.",
       "kullanildi": false
     }
   ]
