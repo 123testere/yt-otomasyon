@@ -39,23 +39,5 @@
     "bolum": {
       "no": 23
     }
-  },
-  {
-    "id": "2026-11-27_UCJUP2lYvMuhcif8FavIXuYA_long1",
-    "channelId": "UCJUP2lYvMuhcif8FavIXuYA",
-    "type": "long",
-    "publishAt": "2026-11-27T15:00:00.000Z",
-    "targetWords": 425,
-    "dil": "tr",
-    "masterV4": true,
-    "haberAkisi": "yapay-zeka",
-    "format": "dizi",
-    "dizi": "yz-gundem",
-    "ceviriDilleri": [
-      "en"
-    ],
-    "bolum": {
-      "no": 18
-    }
   }
 ]

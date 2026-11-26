@@ -419,7 +419,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 21,
+      "videoSayisi": 22,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -543,7 +543,9 @@
       "cocukIcerigi": false,
       "ekTalimat": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
       "videoSayisi": 276,
-      "dersler": []
+      "dersler": [
+        "Kancayı şaşırtıcı bir bilgiyle aç (mümkünse rakamla): bu kanalda sorudan daha çok izleyici tutuyor."
+      ]
     },
     "oynatmaListeleri": [
       "Efsane Oyunların Hikâyesi",
@@ -562,13 +564,13 @@
       "gamer"
     ],
     "deney": {
-      "id": "kanca-soru",
+      "id": "baslik-kalip",
       "tip": "short",
-      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
-      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
-      "A": "Soruyla açılış",
-      "B": "Şaşırtıcı bilgiyle açılış",
-      "baslangic": "2026-11-05T07:12:28.670Z"
+      "ad": "Başlık kalıbı: soru mu, rakam mı?",
+      "hipotez": "Somut rakam içeren başlıklar soru başlıklarından daha çok tıklanır.",
+      "A": "Soru başlık",
+      "B": "Rakamlı başlık",
+      "baslangic": "2026-11-26T19:40:43.761Z"
     },
     "recentTitles": [
       "Tetris'i Bir Sovyet Mühendisi Yaptı | Efsane Oyunlar",
@@ -629,9 +631,9 @@
   {
     "id": "UCJUP2lYvMuhcif8FavIXuYA",
     "title": "Kaan AI Lab",
-    "enabled": true,
+    "enabled": false,
     "settings": {
-      "enabled": true,
+      "enabled": false,
       "contentFormat": "dizi",
       "niche": "teknoloji",
       "customNiche": "",
@@ -690,7 +692,8 @@
       "haberAkisi": "yapay-zeka",
       "dizi": "yz-gundem",
       "masterV4": true,
-      "masterV4Not": "Master Prompt v4 (2026-11-23) geçerli: routine/MASTER-v4.md. Her senaryoda kaynaklar, kontrol listesi; uzunda 3 başlık (≤50) + 3 kapak yazısı + oynatmaListesi; Shorts başlığı ≤40 ve ilgiliVideo."
+      "masterV4Not": "Master Prompt v4 (2026-11-23) geçerli: routine/MASTER-v4.md. Her senaryoda kaynaklar, kontrol listesi; uzunda 3 başlık (≤50) + 3 kapak yazısı + oynatmaListesi; Shorts başlığı ≤40 ve ilgiliVideo.",
+      "durdurmaNotu": "2026-11-26 kullanıcı: haber Shorts durduruldu; yeni format (gerçek verili 10-15 dk öğretici) hazırlanıyor"
     },
     "brief": {
       "format": "dizi",
@@ -701,23 +704,27 @@
       "gorselStil": "Hareketli grafik + konu fotoğrafları",
       "cocukIcerigi": false,
       "ekTalimat": "Günlük yapay zekâ haberleri. Haberi config/haberler-yapay-zeka.json listesinden seç (kaynak ve kaynakLink zorunlu), diziler/yz-gundem.json kurallarına uy. Güçlü kancayla başla, haberi 2-3 cümlede anlat, sonra 'bu gelecekte ne değiştirebilir?' merakını tahmin olarak söyle.",
-      "videoSayisi": 167,
-      "dersler": []
+      "videoSayisi": 168,
+      "dersler": [
+        "Kancayı soruyla aç: ilk cümlede izleyiciye doğrudan soru sormak bu kanalda daha çok izleyici tutuyor."
+      ]
     },
     "oynatmaListeleri": [
+      "Claude ile Gerçek Deneyler",
       "Yapay Zekâ Gündemi",
       "Google AI Studio ile 30 Günde 30 Uygulama Serisi"
     ],
     "deney": {
-      "id": "kanca-soru",
+      "id": "baslik-kalip",
       "tip": "short",
-      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
-      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
-      "A": "Soruyla açılış",
-      "B": "Şaşırtıcı bilgiyle açılış",
-      "baslangic": "2026-11-07T10:19:21.363Z"
+      "ad": "Başlık kalıbı: soru mu, rakam mı?",
+      "hipotez": "Somut rakam içeren başlıklar soru başlıklarından daha çok tıklanır.",
+      "A": "Soru başlık",
+      "B": "Rakamlı başlık",
+      "baslangic": "2026-11-26T19:40:43.761Z"
     },
     "recentTitles": [
+      "Claude 27 Günde 181 Video Yükledi: Gerçek Sonuç",
       "Ekransız Yapay Zekâ Cihazı mı Geliyor? Nothing 8 Aralık'ta ⚡",
       "NVIDIA Sürücüsü SSD'ye Aşırı Yazıyormuş: Çözüm Geldi ⚡",
       "OpenAI'ın Telefonunu iPhone'u Üreten Firma Yapıyormuş ⚡",
@@ -759,8 +766,7 @@
       "AJANSLARA PARA VERMEYİN! 🎨|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
       "OYUN YAPMAK ARTIK BEDAVA! 🎮|30 Günde 30 Yapay Zeka Uygulaması - Gün-23  #reklam #googleaıstudio",
       "Oyun_Geliştirme_Devrimi|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
-      "Gerçekçi_Grafikler_Bedava|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
-      "Yapay_Zeka_Desteği|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini"
+      "Gerçekçi_Grafikler_Bedava|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini"
     ],
     "oylamalar": []
   },
@@ -841,7 +847,11 @@
         "shortsSaat": "13:00",
         "shortsGunleri": []
       },
-      "masterV4Not": "Master Prompt v4 (2026-11-23) geçerli: routine/MASTER-v4.md. Her senaryoda kaynaklar, kontrol listesi; uzunda 3 başlık (≤50) + 3 kapak yazısı + oynatmaListesi; Shorts başlığı ≤40 ve ilgiliVideo."
+      "masterV4Not": "Master Prompt v4 (2026-11-23) geçerli: routine/MASTER-v4.md. Her senaryoda kaynaklar, kontrol listesi; uzunda 3 başlık (≤50) + 3 kapak yazısı + oynatmaListesi; Shorts başlığı ≤40 ve ilgiliVideo.",
+      "facebook": {
+        "sayfa": "Lamba Altinda ",
+        "enabled": true
+      }
     },
     "brief": {
       "format": "belgesel",
@@ -852,7 +862,7 @@
       "gorselStil": "Ansiklopedi (kâğıt, mürekkep, Nur Bey)",
       "cocukIcerigi": false,
       "ekTalimat": "İZLEYİCİ (YouTube verisi, Kasım 2026): %58'i 25-44 yaş, %75'i erkek, %88'i Türkiye; 55 yaş üstü yalnızca %4. Nur Bey'in kişiliği ve hitabı aynı kalır ama anlatım net, tempolu ve meraklı olsun; nostalji yalnızca hikâyeye hizmet ederse. Konu açısı: sanayi, teknoloji, marka, rekabet, kaza, sır, yasak, iflastan dönüş; aramada çok aranan isimler (Eti, Evliya Çelebi, Alan Turing, asansör kazaları) ilgi görüyor. Görsel dünya: akşam, masa lambasının altında açılmış eski bir ansiklopedi sayfası; krem kâğıt, mürekkep çizgisi, patent ve kesit çizimleri. Uydurma veri, sayı veya tarih yazma; emin olunmayan bilgiyi \"söylenir\" diye belirt. Shorts ses kapalıyken de anlaşılmalı. Büyüme kuralları (her videoda): İlk cümle tek başına merak uyandıran bir soru ya da şaşırtıcı bir bilgi olsun; selam, tanıtım, kanal adı yok. Her konuda Türkiye bağlantısını ara (Osmanlı, İstanbul, Anadolu), varsa başlıkta öne çıkar. Konu seçerken o haftanın Türkiye gündemine (bayram, mevsim, lansman, saat değişimi gibi) bağlanabilen bir eşya ya da icat hikâyesi varsa onu öne al. Uzun videonun kapanışında izleyiciye kendi hayatına dair tek bir soru sor (\"Sizin evde hâlâ var mı?\"); ertesi günün videosunun konusu belliyse \"Yarın akşam: ...\" diye duyur. Açıklamanın ilk satırı \"Eşyaların Hikayesi #N\" olsun (N = brief.videoSayisi + bu kanal için queue/ içinde bekleyen video sayısı + 1). Acı olaylarda saygılı ve bilgilendirici ol, seçmeli soru ve espri kullanma. Siyasi ve tartışmalı konulara girme. KANAL DÜZELTMESİ (2026-11-16, veriye dayalı; uzun videolar 2 izlenmede kaldı, Shorts izleyicisinin yarısı ilk saniyede kaydırıyor): UZUN VİDEO 3,5-5 dk. İlk cümle hikâyenin kırılma anından somut bir sahneyle başlar (yıl, yer, kişi, eylem: \"1960, Eskişehir. Cebinde parası olmayan bir adam fırının önünde duruyordu.\"); \"Bugün ... anlatacağım\", \"Merhaba\", \"Biliyor muydunuz\" yasak. İlk 15 saniyede her sahne en fazla 8-10 kelime: görüntü 2-3 sn'de bir değişsin. Başlık belgesel değil: izleyicinin günlük hayatına dokunan soru ya da zıtlık (\"Bu Alet Olmasaydı Günde 8 Saat Çamaşır Yıkıyordunuz\", \"Terazi Neden Hiç Yalan Söylemez?\"); \"X Nasıl Doğdu?\" kalıbı yok. Kapak yazısı (thumbnailText ve yedekleri) en fazla 3 kelime ve merak: \"ÖLÜMCÜL İCAT\", \"HAFTADA 1 GÜN\". SHORTS uzun videonun ön gösterimidir: hikâyenin en inanılmaz kısmını anlat, sonucuna gelmeden \"asıl hikâye kanaldaki uzun videoda\" de. İlk cümle doğrudan sonuca ya da şoka girer. Son cümle veda etmez, ilk cümleye bağlanır (izleyici fark etmeden başa sarar); abone/beğen çağrısı ekrandaki kartta yazılı, sözlü veda yok. SERİLER: Eşya videolarında ekranda rozet \"Eşyaların Hikâyesi #N\" (N, açıklamanın ilk satırındaki numarayla aynı). Marka bölümleri needed.json'daki seri alanıyla gelir (Markaların Hikâyesi). SHORTS KAPANIŞI: oylama (A/B) kartı yerine kişisel soru kartı: \"kapanis\": {\"soru\": \"Sizin evde hâlâ var mı?\", \"alt\": \"Yorumlara yaz\"} — izleyicinin anısını ya da fikrini soran, tek cümlelik, cevabı kolay soru (41 bin izlenmede A/B oylaması yalnızca 20 yorum getirdi).",
-      "videoSayisi": 71,
+      "videoSayisi": 72,
       "dersler": []
     },
     "oynatmaListeleri": [
@@ -921,8 +931,7 @@
       "Fincanın kulpu var, ince belli çay bardağımızın yok. Peki neden?",
       "Eskişehir'deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!",
       "Eti’nin Gerçek Hikayesi: Eskişehir’den Bütün Türkiye’ye",
-      "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?",
-      "Eskişehir’deki Küçük Bir Fabrika Nasıl Eti Oldu? Gerçek Hikaye!"
+      "Çocukluğumuzun Bisküvisi Eti Nasıl Doğdu?"
     ],
     "oylamalar": [
       {
@@ -1122,7 +1131,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 23,
+      "videoSayisi": 25,
       "dersler": []
     },
     "oynatmaListeleri": [],
