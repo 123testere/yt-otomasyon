@@ -1,0 +1,224 @@
+{
+ "id": "2026-11-27_UCFw3Wdyus0HVhykB0uYahWg_short1",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "short",
+ "publishAt": "2026-11-27T09:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "derivedFrom": "2026-11-26_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "ilgiliVideo": "2026-11-26_UCFw3Wdyus0HVhykB0uYahWg_long1",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "kurgu": true,
+ "bolum": {
+  "no": 9,
+  "ad": "Şampiyonun Dileği"
+ },
+ "muzik": "gerilim",
+ "muzikSeviye": 0.12,
+ "kapanis": {
+  "baslik": "NE OLDU?",
+  "sonraki": "Tamamı kanalda: Zincirli · Bölüm 9",
+  "soru": "Kral Sungur'un kulağına ne fısıldadı sence?"
+ },
+ "tanitim": [
+  "Kralın dileği",
+  "Gece pususu",
+  "Yarım bilezik"
+ ],
+ "title": "Kralın Fısıltısı Surda Pusuya Döndü ⛓️",
+ "description": "Kral şampiyonuna dilek hakkı verdi, Arın Kara Sungur'u istedi. Fısıltının sırrı Zincirli 9. bölümde, kanaldaki tam videoda. (Kurgu animasyon dizi)",
+ "tags": [
+  "zincirli",
+  "çöp adam",
+  "animasyon",
+  "arın",
+  "sungur",
+  "dizi"
+ ],
+ "topic": "Zincirli 9. bölüm kesiti: dilek hakkı, kralın fısıltısı ve surdaki gece pususu",
+ "deney": {
+  "id": "kanca-soru",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "The King's Whisper Turned Into an Ambush ⛓️",
+   "description": "The king gave his champion a wish and Arin asked for Kara Sungur. The secret of the whisper is in Chained episode 9, the full video on the channel. (Fictional animated series)"
+  }
+ },
+ "paket": {
+  "merak": "Kral Sungur'un kulağına ne fısıldadı?",
+  "cevap": "Cevap kanaldaki 9. bölümde: dövüşten önce Arın'ı yıpratma planı",
+  "cevapSahne": 5,
+  "kapakAni": "1. sahne: Arın surda, iki muhafız kılıçla koşuyor ve dev KİM GÖNDERDİ? yazısı"
+ },
+ "kontrol": {
+  "O1": "evet: bkz. senaryo",
+  "O2": "evet: bkz. senaryo",
+  "O3": "evet: kurgu dizi, kurgu: true; açıklamada belirtildi",
+  "O4": "evet: bkz. senaryo",
+  "O5": "evet: bkz. senaryo",
+  "O6": "evet: bkz. senaryo",
+  "O7": "evet: bkz. senaryo",
+  "O8": "evet: bkz. senaryo",
+  "O9": "evet: bkz. senaryo",
+  "O10": "evet: bkz. senaryo",
+  "O11": "evet: bkz. senaryo",
+  "O12": "evet: bkz. senaryo",
+  "S1": "evet: bkz. senaryo",
+  "S2": "evet: bkz. senaryo",
+  "S3": "evet: bkz. senaryo",
+  "S4": "evet: bkz. senaryo",
+  "S5": "evet: bkz. senaryo",
+  "S6": "evet: bkz. senaryo",
+  "Y1": "evet: bkz. senaryo",
+  "Y2": "evet: bkz. senaryo",
+  "Y3": "evet: bkz. senaryo",
+  "Y4": "evet: bkz. senaryo"
+ },
+ "scenes": [
+  {
+   "mekan": "sur",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Dövüşe 3 gün kala, gece yarısı surda kralın kendi muhafızları bana kılıç kaldırdı. Beni korumak için gelmemişlerdi."
+    }
+   ],
+   "aciklama": "0-2 sn: Arın surda durur. 2-5 sn: iki muhafız kılıç kaldırıp ona koşar.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.3,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "korkmus"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    },
+    {
+     "id": "muhafiz",
+     "x": 0.85,
+     "yon": -1,
+     "poz": "saldir",
+     "ifade": "kizgin",
+     "esya": "kilic"
+    }
+   ],
+   "kisim": "Kanca",
+   "buyukYazi": {
+    "ust": "KİM GÖNDERDİ?",
+    "alt": "gece yarısı surda"
+   }
+  },
+  {
+   "mekan": "loca",
+   "satirlar": [
+    {
+     "kim": "kral",
+     "metin": "Şampiyonum, geleneğimizdir: dile benden ne dilersen, bütün arena sözünü duysun!"
+    }
+   ],
+   "aciklama": "0-3 sn: kral kolunu açıp kalabalığa seslenir. 3-5 sn: Sungur yanında kollarını kavuşturur.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "sungur",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "notr"
+    }
+   ]
+  },
+  {
+   "mekan": "arena",
+   "satirlar": [
+    {
+     "kim": "arin",
+     "metin": "Kara Sungur'u istiyorum. Bu kumun üstünde, teke tek!"
+    }
+   ],
+   "aciklama": "0-2 sn: Arın kumun ortasında durur. 2-4 sn: Sungur'u işaret eder.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "kizgin"
+    }
+   ],
+   "yakinPlan": [
+    {
+     "id": "arin",
+     "hedef": "yuz",
+     "satir": 0,
+     "sn": 0.8,
+     "sure": 2.2,
+     "zoom": 2.6
+    }
+   ]
+  },
+  {
+   "mekan": "loca",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonra kral Sungur'un kulağına bir şey fısıldadı ve Sungur'un öfkesi bir anda gülümsemeye döndü."
+    }
+   ],
+   "aciklama": "0-3 sn: kral Sungur'a eğilip fısıldar. 3-6 sn: Sungur'un yüzü gülümsemeye döner.",
+   "kadraj": [
+    {
+     "id": "kral",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "fisilti"
+    },
+    {
+     "id": "sungur",
+     "x": 0.66,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ]
+  },
+  {
+   "mekan": "sur",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O fısıltıda ne vardı? Cevap ve merdivendeki gizemli kız kanaldaki bölümde; devamı için abone ol ve beğen."
+    }
+   ],
+   "aciklama": "0-3 sn: Arın surda düşünceli bakar. 3-6 sn: uzaktan meşale ışığı yaklaşır.",
+   "kadraj": [
+    {
+     "id": "arin",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  }
+ ]
+}

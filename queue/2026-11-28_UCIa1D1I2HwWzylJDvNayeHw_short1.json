@@ -1,0 +1,202 @@
+{
+ "id": "2026-11-28_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-28T09:00:00.000Z",
+ "bolum": {
+  "no": 24,
+  "ad": "Top 3"
+ },
+ "title": "Dövüş Oyunu mu Arıyorsun?",
+ "ilgiliVideo": "2026-11-27_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "description": "Dövüş oyunu arıyorsan şu üç oyun iyi bir başlangıç olabilir: Mortal Kombat, Tekken 3 ve Street Fighter II. Atari salonunda ilk oynadığın dövüş oyunu hangisiydi, yorumlara yaz!\n\n#dövüşoyunları #oyunönerisi #atari #videooyunları",
+ "tags": [
+  "dövüş oyunları",
+  "street fighter 2",
+  "tekken 3",
+  "mortal kombat",
+  "atari salonu",
+  "oyun önerisi"
+ ],
+ "topic": "Üç klasik dövüş oyunu: Mortal Kombat, Tekken 3 ve Street Fighter II",
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "A"
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "Looking for a Fighting Game?",
+   "description": "If you want a fighting game, these three are a good start: Mortal Kombat, Tekken 3 and Street Fighter II. What was the first fighting game you played in the arcade? Tell us in the comments!\n\n#fightinggames #gamerecommendations #arcade"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN OYUNUN?",
+  "sonraki": "Devamı için abone ol ve beğen",
+  "soru": "Atari salonunda ilk hangi dövüş oyununu oynadın?"
+ },
+ "tanitim": [
+  "Dövüş oyunları",
+  "3 klasik oyun"
+ ],
+ "paket": {
+  "merak": "Hangi dövüş oyunu atari salonu nostaljisi için en iyi seçim?",
+  "cevap": "Sırayla Mortal Kombat, Tekken 3 ve birinci sırada Street Fighter II",
+  "cevapSahne": 4,
+  "kapakAni": "1. sahne: dev DÖVÜŞ OYUNU? yazısı ve salonda düşünen oyuncu"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://en.wikipedia.org/wiki/Street_Fighter_II",
+   "not": "Capcom, 1991 (ağ erişimi olmadığından açılamadı)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Tekken_3",
+   "not": "Namco, 1997 atari, 1998 PlayStation (açılamadı)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Mortal_Kombat_(1992_video_game)",
+   "not": "Midway, 1992 (açılamadı)"
+  }
+ ],
+ "kurgu": false,
+ "kontrol": {
+  "O1": "evet: bkz. senaryo",
+  "O2": "evet: bkz. senaryo",
+  "O3": "evet: yalnız yüksek güvenli yıl ve şirket bilgileri; ağ erişimi olmadığından bağlantılar açılamadı",
+  "O4": "evet: bkz. senaryo",
+  "O5": "evet: bkz. senaryo",
+  "O6": "evet: bkz. senaryo",
+  "O7": "evet: bkz. senaryo",
+  "O8": "evet: bkz. senaryo",
+  "O9": "evet: bkz. senaryo",
+  "O10": "evet: bkz. senaryo",
+  "O11": "evet: bkz. senaryo",
+  "O12": "evet: bkz. senaryo",
+  "S1": "evet: bkz. senaryo",
+  "S2": "evet: bkz. senaryo",
+  "S3": "evet: bkz. senaryo",
+  "S4": "evet: bkz. senaryo",
+  "S5": "evet: bkz. senaryo",
+  "S6": "evet: bkz. senaryo",
+  "Y1": "evet: bkz. senaryo",
+  "Y2": "evet: bkz. senaryo",
+  "Y3": "evet: bkz. senaryo",
+  "Y4": "evet: bkz. senaryo"
+ },
+ "scenes": [
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Atari salonunda arkadaşınla yumruk yumruğa oynayacak dövüş oyunu mu arıyorsun?"
+    }
+   ],
+   "aciklama": "0-1,5 sn: oyuncu salonda düşünceli bakınır. 1,5-4 sn: dev yazı kalır, oyuncu omuz silker.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ],
+   "kisim": "Kanca",
+   "buyukYazi": {
+    "ust": "DÖVÜŞ OYUNU?",
+    "alt": "hangisini seçmeli"
+   }
+  },
+  {
+   "mekan": "siralama",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Mortal Kombat: Midway 1992'de çıkardı, gerçekçi görünen dövüşleriyle salonların gözdesiydi."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı belirir, üç madde sırayla gelir.",
+   "sira": {
+    "no": 3,
+    "ad": "Mortal Kombat",
+    "tur": "Sinematik dövüş",
+    "maddeler": [
+     "1992 çıkışlı",
+     "Midway yaptı",
+     "Salonların gözdesi"
+    ]
+   }
+  },
+  {
+   "mekan": "siralama",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Tekken 3: 1997'de salonlara geldi, ertesi yıl PlayStation'a uğradı."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı belirir, üç madde sırayla gelir.",
+   "sira": {
+    "no": 2,
+    "ad": "Tekken 3",
+    "tur": "3 boyutlu dövüş",
+    "maddeler": [
+     "1997 atari çıkışlı",
+     "Namco yaptı",
+     "1998'de PlayStation'da"
+    ]
+   }
+  },
+  {
+   "mekan": "siralama",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Birinci sırada Street Fighter II: Capcom 1991'de çıkardı, dövüş oyunu furyasını başlatan oyunlardan biri sayılır; salonda sıra beklenirdi."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı belirir, üç madde sırayla gelir.",
+   "sira": {
+    "no": 1,
+    "ad": "Street Fighter II",
+    "tur": "Dövüş furyası",
+    "maddeler": [
+     "1991 çıkışlı",
+     "Capcom yaptı",
+     "Türün öncülerinden"
+    ]
+   },
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Salonların sarı efsanesi Pac-Man'in hikâyesi kanalda; devamı için abone ol ve beğen."
+    }
+   ],
+   "aciklama": "0-1 sn: kalabalık fuarda alkışlar. 1-5 sn: oyuncu kupayı kaldırır.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ],
+   "kalabalik": 1
+  }
+ ]
+}

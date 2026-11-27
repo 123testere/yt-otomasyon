@@ -1,0 +1,39 @@
+{
+ "id": "2026-11-28_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-28T16:00:00.000Z",
+ "topic": "Honig",
+ "title": "Duell 26/30: Wer produziert den meisten Honig? 🍯",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Honig-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "honig",
+  "landwirtschaft",
+  "ranking",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "honig",
+  "why": [
+   "Vielfältige Blüten",
+   "Viele Imker"
+  ],
+  "script": {
+   "intro": "Welches Land produziert den meisten Honig Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "21 Länder haben keine Honigdaten und fliegen raus!",
+   "rounds": "Jetzt wird gesiebt! Spanien verpasst das Finale um rund 20 Tausend Tonnen!",
+   "final": "Finale! Türkei gegen Ukraine – wer holt die Honig-Krone?",
+   "winner": "Die Türkei gewinnt! Rund 95 Tausend Tonnen, fast doppelt so viel wie die Ukraine!",
+   "why": "Warum die Türkei? Vielfältige Blüten und viele Imker.",
+   "table": "Die Türkei führt die Tabelle weiter an. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "yayin-saati",
+  "kol": "B"
+ }
+}

@@ -1,0 +1,833 @@
+{
+ "id": "2026-11-27_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "long",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "hiz": 1.12,
+ "publishAt": "2026-11-27T15:00:00.000Z",
+ "bolum": {
+  "no": 23,
+  "ad": "Pac-Man"
+ },
+ "tanitim": [
+  "Pizza dilimi fikri",
+  "Dört hayaletin sırrı",
+  "Adın değişme nedeni"
+ ],
+ "title": "Pac-Man'in İlk Adı Neden Puck-Man'dı?",
+ "basliklar": [
+  "Pac-Man'in İlk Adı Neden Puck-Man'dı?",
+  "Pac-Man'i Bir Pizza mı Doğurdu?",
+  "Atari Salonlarının Sarı Efsanesi: Pac-Man"
+ ],
+ "titleAlt": "Pac-Man'i Bir Pizza mı Doğurdu?",
+ "topic": "Pac-Man'in hikâyesi: pizza fikri, dört hayalet ve ad değişikliği",
+ "description": "Pac-Man'in hikâyesi: Japonya'da Puck-Man adıyla çıkan oyunun pizza dilimine benzetilen şekli, dört hayaleti ve Amerika'da adının neden değiştirildiği. İlk atari jetonunu hangi oyuna attın?\n\n#pacman #efsaneoyunlar #oyunhikayeleri #atari",
+ "tags": [
+  "pac-man",
+  "pacman hikayesi",
+  "puck-man",
+  "namco",
+  "atari salonu",
+  "efsane oyunlar"
+ ],
+ "thumbnailText": "PUCK-MAN?",
+ "thumbnailTextAlt": "PİZZA DİLİMİ",
+ "thumbnailTextAlt2": "ŞİDDET YOK",
+ "kapak": {
+  "sahne": 0,
+  "sn": 2
+ },
+ "kapaklar": [
+  {
+   "sahne": 0,
+   "sn": 2,
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin",
+     "olcek": 1.8
+    }
+   ]
+  },
+  {
+   "sahne": 7,
+   "sn": 2,
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.75,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor",
+     "olcek": 1.8
+    }
+   ]
+  },
+  {
+   "sahne": 19,
+   "sn": 2,
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.8,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli",
+     "olcek": 1.7
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.58,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin",
+     "olcek": 1.7
+    }
+   ]
+  }
+ ],
+ "paket": {
+  "merak": "Pac-Man'in ilk adı neden Puck-Man'dı ve neden değiştirildi?",
+  "cevap": "Amerika'da makinelerdeki adın birkaç çizgiyle uygunsuz bir kelimeye dönüşme endişesi",
+  "cevapSahne": 21,
+  "kapakAni": "1. sahne: oyuncu sarı ışıklı makinenin önünde dev PUCK-MAN? yazısına şaşırır"
+ },
+ "oynatmaListesi": "Efsane Oyunların Hikâyesi",
+ "muzik": "oyun",
+ "ceviriler": {
+  "en": {
+   "title": "Why Was Pac-Man First Called Puck-Man?",
+   "description": "The story of Pac-Man: the pizza slice shape, the four ghosts and why the name was changed for America. What was the first arcade game you played?\n\n#pacman #gaminghistory #arcade #gamestories"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN OYUNUN?",
+  "sonraki": "Pazartesi: bir efsane oyunun daha hikâyesi",
+  "soru": "Atari salonunda ilk hangi oyuna jeton attın?"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://en.wikipedia.org/wiki/Pac-Man",
+   "not": "Namco, 1980, Toru Iwatani, Puck-Man adı, Midway, dört hayalet davranışları (ağ erişimi olmadığından açılamadı; yayın öncesi gözden geçirilmeli)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Toru_Iwatani",
+   "not": "Tasarımcının pizza ilhamı anlatımı ve oyunun amacı (açılamadı; rivayet olarak sunuldu)"
+  }
+ ],
+ "kurgu": false,
+ "kontrol": {
+  "O1": "evet: bkz. senaryo",
+  "O2": "evet: bkz. senaryo",
+  "O3": "evet: yalnız yüksek güvenli bilgi, belirsizler 'anlatılır/rivayete göre' diye sunuldu; ağ erişimi olmadığından bağlantılar açılamadı",
+  "O4": "evet: bkz. senaryo",
+  "O5": "evet: bkz. senaryo",
+  "O6": "evet: bkz. senaryo",
+  "O7": "evet: bkz. senaryo",
+  "O8": "evet: bkz. senaryo",
+  "O9": "evet: bkz. senaryo",
+  "O10": "evet: bkz. senaryo",
+  "O11": "evet: bkz. senaryo",
+  "O12": "evet: bkz. senaryo",
+  "U1": "evet: bkz. senaryo",
+  "U2": "evet: bkz. senaryo",
+  "U3": "evet: bkz. senaryo",
+  "U4": "evet: bkz. senaryo",
+  "U5": "evet: bkz. senaryo",
+  "U6": "evet: bkz. senaryo",
+  "U7": "evet: bkz. senaryo",
+  "U8": "evet: bkz. senaryo",
+  "U9": "evet: bkz. senaryo",
+  "Y1": "evet: bkz. senaryo",
+  "Y2": "evet: bkz. senaryo",
+  "Y3": "evet: bkz. senaryo",
+  "Y4": "evet: bkz. senaryo"
+ },
+ "scenes": [
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Pac-Man'in ilk adı Pac-Man değildi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Japonya'da oyunun adı Puck-Man'dı ve Amerika'ya giderken ad bilerek değiştirildi."
+    }
+   ],
+   "aciklama": "0-2 sn: oyuncu salonda sarı ışıklı makineye bakar. 2-7 sn: dev yazı ekranda kalır, oyuncu şaşkınlıkla başını kaşır.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.72,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ],
+   "kisim": "Soğuk Açılış",
+   "buyukYazi": {
+    "ust": "PUCK-MAN?",
+    "alt": "oyunun ilk adı buydu"
+   }
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Neden değiştirildi? Cevap küçük bir harfte saklı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Ama önce 1980'e, Japonya'ya gidelim."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu düşünceli şekilde makinenin etrafında dolaşır. 3-6 sn: omuz silkip gülümser.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.6,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "1980. Namco adlı Japon şirketi, atari salonları için yeni bir oyun istiyordu."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici masada elini sallar. 3-6 sn: geliştirici dosyaya bakar.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "el-salla",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "dusunceli"
+    }
+   ],
+   "kisim": "Bir Pizza Dilimi",
+   "kart": {
+    "ust": "BİRİNCİ KISIM",
+    "alt": "Bir Pizza Dilimi"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunun tasarımcısı Toru Iwatani'ydi."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici masasında kâğıda çizim yapar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "O günlerin salonları çoğunlukla uzay gemileri ve patlamalarla doluydu."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu makinelerin arasında yürür. 3-5 sn: etrafına bakınır.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "yuru",
+     "ifade": "notr",
+     "hareket": {
+      "x0": 0.2,
+      "x1": 0.6,
+      "sure": 3
+     }
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Iwatani'nin anlattığına göre amacı, şiddet içermeyen ve herkesin sevebileceği bir oyun yapmaktı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici elini kalbine götürür. 3-7 sn: gülümseyerek ekrana bakar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Fikrin pizzadan çıktığı anlatılır. Rivayete göre dilimi alınmış bir pizzaya bakarken şekli buldu."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici masaya yaslanıp düşünür. 3-7 sn: parmağıyla yuvarlak bir şekil çizer.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Yuvarlak bir ağız, bir lokmayı yutan sarı bir karakter. Adın da Japoncada ağzın açılıp kapanmasını anlatan 'paku paku' sesinden geldiği söylenir."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bu seriyi kaçırmamak için şimdi abone ol."
+    }
+   ],
+   "aciklama": "0-4 sn: geliştirici elini ağız gibi açıp kapar. 4-9 sn: gülümseyip izleyiciye döner.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunun bir labirenti, yenecek noktaları ve dört hayaleti vardı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici kâğıtta labirent çizer.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "notr"
+    }
+   ],
+   "kisim": "Dört Hayalet",
+   "kart": {
+    "ust": "İKİNCİ KISIM",
+    "alt": "Dört Hayalet"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Hayaletlerin hepsi aynı davranmazdı. Biri doğrudan kovalar, bir başkası önüne geçmeye çalışırdı."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici iki parmağını farklı yönlere uzatır. 3-6 sn: dikkatle bakar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bu yüzden oyun ezberle geçilmezdi. Her hayaleti ayrı ayrı okumak gerekirdi."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu ekrana eğilir. 3-6 sn: başını sallar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunda tek bir kontrol vardı: bir kol. Düğme yoktu, karmaşık kural yoktu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Bir çocuk makinenin başına geçip birkaç saniyede ne yapacağını anlayabilirdi."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici elini bir kol tutuyormuş gibi sağa sola oynatır. 3-8 sn: gülümseyip başparmağını kaldırır.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Hayaletlerin Batı'da bilinen adları Blinky, Pinky, Inky ve Clyde'dır."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Hepsinin rengi ve davranışı farklıydı; oyuncu onların ne yapacağını tahmin etmeye çalışırdı."
+    }
+   ],
+   "aciklama": "0-4 sn: geliştirici parmaklarıyla dört hayaleti sayar. 4-8 sn: düşünceli şekilde başını sallar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Anlatıldığına göre oyunu yalnızca erkek oyuncular için değil, kadınlar ve çiftler için de çekici yapmak istemişlerdi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Sevimli bir karakter bu yüzden önemliydi."
+    }
+   ],
+   "aciklama": "0-4 sn: geliştirici iki oyuncuyu yan yana çizer. 4-8 sn: gülümseyerek kâğıdı gösterir.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Büyük bir noktayı yiyince roller değişirdi. Kovalayan hayaletler kaçan olurdu."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu kolunu kaldırır. 3-6 sn: sevinçle zıplar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Peki oyun Japonya'dan çıkıp Amerika'ya geçince ne oldu? Asıl sorun adındaydı."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici telefona bakıp endişelenir. 3-6 sn: geliştiriciye döner.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "supheli"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyun Japonya'da Puck-Man adıyla çıkmıştı."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici bir kâğıdı masaya koyar.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "isaret",
+     "ifade": "notr"
+    }
+   ],
+   "kisim": "Adın Sırrı",
+   "kart": {
+    "ust": "ÜÇÜNCÜ KISIM",
+    "alt": "Adın Sırrı"
+   }
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Amerika'da dağıtım için Midway adlı şirketle anlaşıldı."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici ve geliştirici el sıkışır.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Ama bir endişe vardı. Makinelerin üstüne büyük harflerle yazılan ad, birkaç çizgiyle bozulabilirdi."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici makinenin başlığına endişeyle bakar. 3-6 sn: geliştirici parmağıyla işaret eder.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "endiseli"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "garaj",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Anlatılana göre P harfinin başına gelen bir çizik, kelimeyi uygunsuz bir şeye çevirebilirdi."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Çocukların yoğun geldiği salonlarda bu kimsenin istemediği bir şeydi."
+    }
+   ],
+   "aciklama": "0-3 sn: yönetici kafasını iki yana sallar. 3-8 sn: geliştirici elini yüzüne kapatır.",
+   "kadraj": [
+    {
+     "id": "patron",
+     "x": 0.65,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "kizgin"
+    },
+    {
+     "id": "gelistirici",
+     "x": 0.35,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "ofis",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Çözüm basitti: ad Pac-Man yapıldı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Cevap buydu. İsim, kötü bir şakanın önüne geçmek için değişti."
+    }
+   ],
+   "aciklama": "0-3 sn: geliştirici tahtaya yeni adı yazar. 3-8 sn: yönetici başını sallayıp onaylar.",
+   "kadraj": [
+    {
+     "id": "gelistirici",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Oyunun aralarında kısa animasyonlar bile vardı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "O dönem için bu, bir atari oyununa küçük bir hikâye eklemek gibi bir şeydi."
+    }
+   ],
+   "aciklama": "0-4 sn: oyuncu ekrana yaklaşıp gülümser. 4-8 sn: arkadaşına dönüp gösterir.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.7,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "1982'de Pac-Man Fever adlı bir şarkı bile çıktı."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyun artık yalnızca salonda değil, radyoda ve çocukların konuşmalarındaydı."
+    }
+   ],
+   "aciklama": "0-4 sn: oyuncu başını müzikle sallar. 4-8 sn: arkadaşıyla birlikte dans eder gibi zıplar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "En iyi oyuncular 256. seviyeye ulaşınca ekranın yarısı bozulurdu."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Oyun bu noktadan sonra devam edemezdi; bu hata efsanelerden biri oldu."
+    }
+   ],
+   "aciklama": "0-4 sn: oyuncu ekrana bakıp şaşırır. 4-8 sn: iki elini başına götürür.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "korku",
+     "ifade": "saskin"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sonrasında Pac-Man salonların en tanınan makinelerinden biri oldu. Çocuklar harçlıklarını jetona çevirdi, salonlar mahallenin buluşma yeri oldu."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu makineye jeton atar. 3-6 sn: ekrana bakıp gülümser.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ],
+   "kisim": "Salondan Hafızaya",
+   "kart": {
+    "ust": "DÖRDÜNCÜ KISIM",
+    "alt": "Salondan Hafızaya"
+   }
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Türkiye'de de atari salonları yıllarca bir neslin buluşma noktasıydı."
+    }
+   ],
+   "aciklama": "0-3 sn: iki oyuncu yan yana makineye bakar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.4,
+     "yon": 1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    },
+    {
+     "id": "oyuncu-2",
+     "x": 0.6,
+     "yon": -1,
+     "poz": "dur",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Bir jetonla başlayan oyun, hayaletler seni yakalayana kadar sürerdi."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu heyecanla makineye eğilir. 3-6 sn: omuzları düşer, gülümser.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "egil",
+     "ifade": "endiseli"
+    }
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Sarı bir daire, bir ağız ve basit bir kural: yakalanma. Pac-Man bugün hâlâ oyun tarihinin en tanınan karakterlerinden biri sayılır."
+    }
+   ],
+   "aciklama": "0-3 sn: kalabalık fuarda oyuncu kupayı gösterir. 3-8 sn: alkış.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ],
+   "kalabalik": 1
+  },
+  {
+   "mekan": "oyun-salonu",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İlk atari jetonunu hangi oyuna attın? Yorumlara yaz."
+    },
+    {
+     "kim": "anlatici",
+     "metin": "Serinin devamı için abone ol ve beğen; Pazartesi başka bir efsane oyunun hikâyesi seni bekliyor."
+    }
+   ],
+   "aciklama": "0-3 sn: oyuncu cebinden jeton çıkarır. 3-10 sn: gülümseyerek jetonu havaya atar.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "isaret",
+     "ifade": "gulumsuyor"
+    }
+   ]
+  }
+ ]
+}
