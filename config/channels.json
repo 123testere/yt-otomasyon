@@ -473,11 +473,7 @@
           "12:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz",
-        "days": [
-          2,
-          5
-        ]
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -596,12 +592,7 @@
           "12:00"
         ],
         "seconds": 45,
-        "source": "bagimsiz",
-        "days": [
-          2,
-          4,
-          6
-        ]
+        "source": "bagimsiz"
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -1063,6 +1054,7 @@
       "baslangic": "2026-11-19T22:11:58.161Z"
     },
     "recentTitles": [
+      "Fermuarı Kim İcat Etti? 1893 Hikâyesi",
       "1735’te Dökülen Dev Çan Hiç Çalmadı",
       "Romalılar Neden Yüz Binlerce Çiviyi Toprağa Gömdü?",
       "Plastik Saat İsviçre'yi Nasıl Kurtardı? | Markaların Hikâyesi 6",
