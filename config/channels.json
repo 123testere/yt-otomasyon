@@ -73,6 +73,94 @@
     "oylamalar": []
   },
   {
+    "id": "UC7AKETiWyNSuHPdUjT28lrQ",
+    "title": "Dodi",
+    "enabled": false,
+    "settings": {
+      "enabled": false,
+      "contentFormat": "belgesel",
+      "niche": "masal",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "elevenlabs",
+      "cloneScope": "hepsi",
+      "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
+      "tone": "samimi",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": false,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "yok",
+      "musicVolume": "0.12",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          2,
+          5
+        ],
+        "time": "18:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "12:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "Dodi çocuk masal kanalı: kanallar/dodi/KURULUM.md. Elle üretim (frameforge-projects/masal); gece rutini üretmez.",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "Masallar (Çocuk)",
+      "dil": "Türkçe",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": true,
+      "ekTalimat": "Dodi çocuk masal kanalı: kanallar/dodi/KURULUM.md. Elle üretim (frameforge-projects/masal); gece rutini üretmez.",
+      "videoSayisi": 5,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-27T12:32:45.262Z"
+    },
+    "recentTitles": [
+      "What If a Raindrop Gets Cold? ❄️ Pitpit Becomes a Snowflake",
+      "Where Do Puddles Go? 💧 Pitpit the Raindrop",
+      "Why Do Rainbows Appear? 🌈 Pitpit the Raindrop",
+      "Why Is the Little Raindrop Crying? | Pitpit's Long Way Home | Bedtime Story for Kids",
+      "Why Was the Little Raindrop Crying? | Pitpit's Story"
+    ],
+    "oylamalar": []
+  },
+  {
     "id": "UCaTfPvQYowD7SrHbGfotRrg",
     "title": "Vice City Dispatch",
     "enabled": false,
@@ -770,6 +858,93 @@
       "OYUN YAPMAK ARTIK BEDAVA! 🎮|30 Günde 30 Yapay Zeka Uygulaması - Gün-23  #reklam #googleaıstudio",
       "Oyun_Geliştirme_Devrimi|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini",
       "Gerçekçi_Grafikler_Bedava|30 Günde 30 Yapay Zeka Uygulaması - Gün  #reklam #googleaıstudio #gemini"
+    ],
+    "oylamalar": []
+  },
+  {
+    "id": "UCO4-HvyZ47bS_2taLix25UQ",
+    "title": "DodiTr",
+    "enabled": false,
+    "settings": {
+      "enabled": false,
+      "contentFormat": "belgesel",
+      "niche": "masal",
+      "customNiche": "",
+      "language": "tr",
+      "voice": "tr-TR-AhmetNeural",
+      "speechRate": "+0%",
+      "voiceStyle": "dengeli",
+      "voicePitch": "+0Hz",
+      "voiceSource": "elevenlabs",
+      "cloneScope": "hepsi",
+      "elevenVoiceId": "qLnVd55Hf2R5L8dmdHoH",
+      "tone": "samimi",
+      "character": "yok",
+      "customCharacter": "",
+      "characterOnScreen": true,
+      "identityLocked": false,
+      "visualStyle": "ai-sinematik",
+      "template": "animasyonlu",
+      "music": "yok",
+      "musicVolume": "0.12",
+      "subtitles": "klasik",
+      "subtitleColor": "beyaz",
+      "long": {
+        "days": [
+          2,
+          5
+        ],
+        "time": "18:00",
+        "minutes": 8
+      },
+      "shorts": {
+        "times": [
+          "12:00"
+        ],
+        "seconds": 45,
+        "source": "bagimsiz"
+      },
+      "privacy": "public",
+      "aiDisclosure": true,
+      "hashtags": "",
+      "extraInstructions": "Dodi çocuk masal kanalı: kanallar/dodi/KURULUM.md. Elle üretim (frameforge-projects/masal); gece rutini üretmez.",
+      "optimizasyon": {
+        "deneyler": true,
+        "kapakDegistir": true,
+        "baslikDegistir": true,
+        "altyazi": true,
+        "ceviri": true,
+        "oynatmaListesi": true,
+        "yorumCevap": false
+      }
+    },
+    "brief": {
+      "format": "belgesel",
+      "konu": "Masallar (Çocuk)",
+      "dil": "Türkçe",
+      "ton": "İzleyiciyle konuşur gibi, sıcak ve doğal.",
+      "karakter": null,
+      "gorselStil": "YZ görsel – sinematik",
+      "cocukIcerigi": true,
+      "ekTalimat": "Dodi çocuk masal kanalı: kanallar/dodi/KURULUM.md. Elle üretim (frameforge-projects/masal); gece rutini üretmez.",
+      "videoSayisi": 4,
+      "dersler": []
+    },
+    "oynatmaListeleri": [],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-27T12:32:45.262Z"
+    },
+    "recentTitles": [
+      "Yağmur Damlası Üşürse Ne Olur? ❄️ Pıtpıt Kar Tanesi Oluyor",
+      "Su Birikintisi Nereye Gider? 💧 Yağmur Damlası Pıtpıt",
+      "Gökkuşağı Neden Çıkar? 🌈 Yağmur Damlası Pıtpıt",
+      "Küçük Yağmur Damlası Neden Ağlıyor? | Pıtpıt'ın Eve Dönüş Yolu | Uyku Masalı"
     ],
     "oylamalar": []
   },

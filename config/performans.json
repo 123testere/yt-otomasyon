@@ -4042,5 +4042,69 @@
         "yeterli": false
       }
     }
+  },
+  "UC7AKETiWyNSuHPdUjT28lrQ": {
+    "channelId": "UC7AKETiWyNSuHPdUjT28lrQ",
+    "title": "Dodi",
+    "hafta": "2026-W48",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde değerlendirilecek kadar izlenen video yok."
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-27T12:32:45.262Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [],
+    "videolar": [],
+    "sahneAnalizi": {
+      "short": {
+        "videoSayisi": 0,
+        "yeterli": false
+      },
+      "long": {
+        "videoSayisi": 0,
+        "yeterli": false
+      }
+    }
+  },
+  "UCO4-HvyZ47bS_2taLix25UQ": {
+    "channelId": "UCO4-HvyZ47bS_2taLix25UQ",
+    "title": "DodiTr",
+    "hafta": "2026-W48",
+    "raporGerekli": true,
+    "otomatikRapor": [
+      "Son 14 günde değerlendirilecek kadar izlenen video yok."
+    ],
+    "deney": {
+      "id": "kanca-soru",
+      "tip": "short",
+      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
+      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
+      "A": "Soruyla açılış",
+      "B": "Şaşırtıcı bilgiyle açılış",
+      "baslangic": "2026-11-27T12:32:45.262Z"
+    },
+    "sonDeneyler": [],
+    "dersler": [],
+    "aramaTerimleri": [],
+    "videolar": [],
+    "sahneAnalizi": {
+      "short": {
+        "videoSayisi": 0,
+        "yeterli": false
+      },
+      "long": {
+        "videoSayisi": 0,
+        "yeterli": false
+      }
+    }
   }
 }
