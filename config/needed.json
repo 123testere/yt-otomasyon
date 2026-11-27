@@ -55,5 +55,110 @@
       "kol": "B",
       "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre)."
     }
+  },
+  {
+    "id": "2026-11-29_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+    "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+    "type": "short",
+    "publishAt": "2026-11-29T05:00:00.000Z",
+    "targetWords": 65,
+    "dil": "de",
+    "hizli": true,
+    "format": "duell",
+    "season": 1,
+    "match": 27,
+    "total": 30,
+    "final": false,
+    "eveOfFinal": false,
+    "deney": {
+      "id": "yayin-saati",
+      "kol": "A"
+    }
+  },
+  {
+    "id": "2026-11-29_UCIa1D1I2HwWzylJDvNayeHw_short1",
+    "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+    "type": "short",
+    "publishAt": "2026-11-29T09:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "dizi",
+    "dizi": "oyun-hikayeleri",
+    "dikey": true,
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 25
+    },
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "B",
+      "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre)."
+    }
+  },
+  {
+    "id": "2026-11-29_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-29T11:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "seri": {
+      "id": "markalar",
+      "ad": "Markaların Hikâyesi",
+      "no": 8
+    },
+    "masterV4": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "A",
+      "talimat": "Başlık bir soru olsun ve soru işaretiyle bitsin; rakam kullanma."
+    }
+  },
+  {
+    "id": "2026-11-29_UCFw3Wdyus0HVhykB0uYahWg_long2",
+    "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+    "type": "long",
+    "publishAt": "2026-11-29T15:00:00.000Z",
+    "targetWords": 0,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "dizi",
+    "dizi": "zincirli",
+    "derleme": [
+      "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+      "2026-11-26_UCFw3Wdyus0HVhykB0uYahWg_long1"
+    ],
+    "ceviriDilleri": [
+      "en"
+    ],
+    "bolum": {
+      "no": 8,
+      "son": 9
+    }
+  },
+  {
+    "id": "2026-11-29_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-29T15:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "B",
+      "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre)."
+    }
   }
 ]
