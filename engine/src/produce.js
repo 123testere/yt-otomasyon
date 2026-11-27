@@ -163,10 +163,10 @@ async function main() {
       const bolumler = job.format === 'dizi' ? built.bolumlerMetni ?? null : bolumSatirlari(job, built.sahneZaman, settings.language);
       if (v4 && job.type === 'long' && !bolumler) throw new Error('Master v4 U6: bölümler oluşmadı (ilki 00:00, en az 3 bölüm, her biri en az 10 sn)');
       let uploadJob0 = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
-      // Kampanya kesiti: zamanlama yok, üretildiği an herkese açık
-      let uploadJob = job.kampanya ? { ...uploadJob0, publishAt: new Date().toISOString() } : uploadJob0;
+      // Kampanya kesiti ya da kullanıcının "hemen yayınla" dediği iş (job.hemen): zamanlama yok, üretildiği an herkese açık
+      let uploadJob = job.kampanya || job.hemen ? { ...uploadJob0, publishAt: new Date().toISOString() } : uploadJob0;
       // Master v4 U1/U7/S4 Studio işleri: video en az 24 saat sonrasına zamanlanır, o sürede telefondan yapılır
-      if (v4) {
+      if (v4 && !job.hemen) {
         const enErken = Date.now() + V4.studioBekleSaat * 3600_000;
         if (Date.parse(uploadJob.publishAt) < enErken) {
           uploadJob = { ...uploadJob, publishAt: new Date(enErken).toISOString() };

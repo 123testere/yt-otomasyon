@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-27_UCPtL84Agfh5hzoTQqE4jD0w_short2",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "publishAt": "2026-11-27T15:00:00.000Z",
+  "hemen": true,
+  "topic": "Fermuar: 1893'te Whitcomb Judson'un kancalı kilidi, 1913'te Gideon Sundback'ın dişli fermuarı, 1923'te 'zipper' adı",
+  "title": "Fermuarı Kim İcat Etti? 1893 Hikâyesi",
+  "description": "Eşyaların Hikâyesi\nFermuarı bir terzi mi buldu, bir mühendis mi? 1893'te Chicago'da Whitcomb Judson kancalı bir kilit gösterdi ama sık sık takılıyordu. 1913'te İsveçli mühendis Gideon Sundback dişleri küçültüp iç içe geçirdi. 'Zipper' adını 1923'te B.F. Goodrich lastik çizmeleri için koydu.\n\nTerazinin hikâyesi: https://youtu.be/btO8Kzwl_EU\n\nKaynaklar: britannica.com/technology/zipper · lemelson.mit.edu/resources/gideon-sundback\n\n#fermuar #eşyalarınhikayesi",
+  "tags": ["fermuar", "fermuarın icadı", "whitcomb judson", "gideon sundback", "eşyaların hikayesi", "lamba altında"],
+  "baslikKart": ["Fermuarı bir terzi mi", "buldu, mühendis mi?"],
+  "rozet": "Eşyaların Hikâyesi",
+  "kapanis": { "soru": "Sizin en eski fermuarlı eşyanız ne?", "alt": "Yorumlara yazın" },
+  "soru": { "metin": "Fermuarı kim icat etti?", "a": "Bir terzi", "b": "Bir mühendis", "dogru": "b" },
+  "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+  "ilgiliVideo": "https://youtu.be/btO8Kzwl_EU",
+  "kaynaklar": [
+    { "url": "https://www.britannica.com/technology/zipper", "not": "Judson 1893 clasp locker, Sundback 1913, Goodrich 1923 'zipper' adı" },
+    { "url": "https://lemelson.mit.edu/resources/gideon-sundback", "not": "Sundback İsveç doğumlu mühendis, 1913 Hookless No. 2" },
+    { "url": "https://www.smithsonianmag.com/innovation/history-zipper-180961640/", "not": "Judson'un kilidi takılıyor, kendiliğinden açılıyordu; ad galoşlardan" }
+  ],
+  "ceviriler": { "en": { "title": "Who Invented the Zipper? The 1893 Story", "description": "Story of Things\nWhitcomb Judson showed a hook-and-eye 'clasp locker' in Chicago in 1893, but it kept jamming. In 1913 Swedish engineer Gideon Sundback made the interlocking teeth. B.F. Goodrich named it 'zipper' in 1923.\n\n#zipper #storyofthings" } },
+  "kontrol": {
+    "O1": "evet: kendi yazımımız ve çizimimiz", "O2": "evet: yasak tür yok", "O3": "evet: 3 kaynak, tarihler kaynaklarla aynı",
+    "O4": "evet: başlıktaki 1893 videoda var", "O5": "evet: YZ beyanı motor ayarında açık", "O6": "evet: koşullu etkileşim yok",
+    "O7": "evet: lisanslı müzik ve kendi seslerimiz", "O8": "evet: motor -14 LUFS ayarlar ve ölçer", "O9": "evet: motor SRT yükler",
+    "O10": "evet: kanalın nişi", "O11": "evet: yeni video", "O12": "evet: 6 etiket",
+    "S1": "evet: ilk karede yarı açık dev fermuar, ilk cümle soru", "S2": "evet: motor düzeni güvenli alanda", "S3": "evet: süreyi hikâye belirler",
+    "S4": "evet: terazi uzun videosu; tek çağrı sonda", "S5": "evet: kullanıcı kararı 2026-11-27 günde 2 Shorts", "S6": "evet: ≤40 karakter",
+    "Y1": "evet: yeni günlük ritim", "Y2": "evet: format sürüyor", "Y3": "evet: kanalın tipik aralığıyla ölçülecek", "Y4": "evet: gerekirse paket değişir"
+  },
+  "paket": { "merak": "Fermuarı bir terzi mi icat etti, bir mühendis mi?", "cevap": "Mühendisler: Judson başlattı, Sundback dişli fermuarla çözdü", "cevapSahne": 5, "kapakAni": "İlk kare: yarı açık dev fermuar ve soru işareti" },
+  "scenes": [
+    { "narration": "Sence fermuarı ilk kim icat etti: bir terzi mi, yoksa bir mühendis mi? Cevap sonda.", "ifade": "merakli",
+      "cizim": "const sy = 330 + Math.sin(T * 2) * 18; for (let i = 0; i < 17; i++) { const y = 100 + i * 32, o = y < sy ? (sy - y) * 0.35 : 0; ink(kutu(462 - o, y, 30, 16), { close: true, fill: '#C9A24A', w: 3, seed: 20 + i }); ink(kutu(508 + o, y + 16, 30, 16), { close: true, fill: '#C9A24A', w: 3, seed: 60 + i }); } ink([[440 - (sy - 90) * 0.35, 90], [458, sy], [458, 650]], { w: 18, c: '#3E5A8A', seed: 2 }); ink([[560 + (sy - 90) * 0.35, 90], [542, sy], [542, 650]], { w: 18, c: '#3E5A8A', seed: 3 }); ink(kutu(468, sy - 34, 64, 74), { close: true, fill: '#8A8F99', w: 5, seed: 4 }); ink(ell(500, sy + 70, 16, 30, 16), { close: true, fill: '#8A8F99', w: 4, seed: 5 }); const a = eo(pr(u, w('terzi'), w('terzi') + .5)), b = eo(pr(u, w('mühendis'), w('mühendis') + .5)); etk('terzi?', 200, 300, a, { size: 52, c: K.bordo }); etk('mühendis?', 810, 300, b, { size: 52, c: K.mavi });" },
+    { "narration": "1893'te Chicago'da Whitcomb Judson adında bir mühendis, uzun ayakkabı bağlamaktan bıkmıştı.", "ifade": "anlatiyor",
+      "cizim": "ink([[300, 140], [420, 140], [430, 470], [620, 510], [645, 600], [285, 600]], { close: true, fill: '#6B4A2F', w: 6, seed: 1, pp: eo(pr(u, 0, .8)) }); const t0 = w('ayakkabı'); for (let k = 0; k < 6; k++) { const y = 180 + k * 48, p = eo(pr(u, t0 + k * .12, t0 + k * .12 + .3)); ink(ln([320, y], [405, y + 38], 4), { w: 5, c: '#FBF6EA', seed: 30 + k, pp: p }); ink(ln([405, y], [320, y + 38], 4), { w: 5, c: '#FBF6EA', seed: 40 + k, pp: p }); } const a = eo(pr(u, w('1893'), w('1893') + .5)); txt('1893', 760, 180, 96, { a, c: K.ak }); etk('Chicago', 760, 270, eo(pr(u, w('Chicago'), w('Chicago') + .5)), { size: 46 }); etk('Whitcomb Judson', 760, 350, eo(pr(u, w('Whitcomb'), w('Whitcomb') + .5)), { size: 42, c: K.mavi }); const bk = eo(pr(u, w('bıkmıştı'), w('bıkmıştı') + .4)); ctx.save(); ctx.translate(360, 90); ctx.rotate(Math.sin(T * 8) * 0.08 * bk); etk('of!', 0, 0, bk, { size: 60, c: K.bordo }); ctx.restore();" },
+    { "narration": "Kancalı bir kilit icat etti ama sık sık takılıyor, kendi kendine açılıyordu.", "ifade": "endiseli",
+      "cizim": "const ta = w('takılıyor'), ac = w('açılıyordu'); ink(ln([120, 380], [880, 380], 20), { w: 14, c: '#3E5A8A', seed: 1, pp: eo(pr(u, 0, .6)) }); for (let i = 0; i < 9; i++) { const x = 160 + i * 85; let dx = 0, dy = 0, r = 0; if (i === 3) dx = Math.sin(T * 40) * 6 * pr(u, ta, ta + .3) * (1 - pr(u, ta + 1.2, ta + 1.5)); if (i === 6) { const p = eo(pr(u, ac, ac + .7)); dy = -170 * p; r = p * 2.5; } ctx.save(); ctx.translate(x + dx, 350 + dy); ctx.rotate(r); ink(ell(0, 0, 20, 28, 14, 0.4, 5.8), { w: 6, c: K.m, seed: 10 + i, pp: eo(pr(u, i * .08, i * .08 + .4)) }); ctx.restore(); } etk('takıldı!', 415, 520, eo(pr(u, ta, ta + .4)), { size: 52, c: K.bordo }); etk('açıldı!', 670, 130, eo(pr(u, ac + .3, ac + .7)), { size: 52, c: K.bordo }); etk('kancalı kilit', 500, 620, eo(pr(u, w('Kancalı'), w('Kancalı') + .5)), { size: 44, c: K.mavi });" },
+    { "narration": "1913'te İsveçli mühendis Gideon Sundback dişleri küçültüp iç içe geçirdi ve sorunu çözdü.", "ifade": "gururlu",
+      "cizim": "const p = eo(pr(u, w('iç'), w('iç') + 1)), d = eo(pr(u, w('dişleri'), w('dişleri') + .6)); for (let i = 0; i < 11; i++) { const x = 170 + i * 62; ink(kutu(x, 300 - 70 * (1 - p), 40, 40), { close: true, fill: '#C9A24A', w: 4, seed: 20 + i, pp: d }); ink(kutu(x + 31, 345 + 70 * (1 - p), 40, 40), { close: true, fill: '#C9A24A', w: 4, seed: 40 + i, pp: d }); } const s = eo(pr(u, w('çözdü') - .3, w('çözdü') + .9)); ink(kutu(130 + 720 * s, 270, 70, 150), { close: true, fill: '#8A8F99', w: 5, seed: 7, pp: eo(pr(u, w('çözdü') - .4, w('çözdü'))) }); txt('1913', 760, 140, 90, { a: eo(pr(u, w('1913'), w('1913') + .5)), c: K.ak }); etk('Gideon Sundback', 300, 140, eo(pr(u, w('Gideon'), w('Gideon') + .5)), { size: 44, c: K.mavi }); etk('çözüldü ✓', 500, 600, eo(pr(u, w('çözdü') + .6, w('çözdü') + 1)), { size: 56, c: K.yesil });" },
+    { "narration": "Adını ise 1923'te bir lastik çizme şirketi koydu: açılırken çıkardığı vızz sesinden, zipper.", "ifade": "gulumsuyor",
+      "cizim": "ink([[330, 160], [450, 160], [460, 470], [640, 505], [660, 600], [315, 600]], { close: true, fill: '#4F7A4A', w: 6, seed: 1, pp: eo(pr(u, w('çizme'), w('çizme') + .7)) }); ink(ln([440, 180], [445, 460], 12), { w: 8, c: '#C9A24A', dash: [10, 8], seed: 2, pp: eo(pr(u, w('çizme') + .3, w('çizme') + .9)) }); const v = eo(pr(u, w('vızz'), w('vızz') + .4)); ctx.save(); ctx.translate(560, 260); ctx.rotate(-0.15 + Math.sin(T * 10) * 0.05 * v); txt('vızz!', 0, 0, 80 * (0.6 + 0.4 * v), { a: v, c: K.bordo }); ctx.restore(); txt('1923', 780, 150, 90, { a: eo(pr(u, w('1923'), w('1923') + .5)), c: K.ak }); txt('ZIPPER', 500, 650, 70, { a: eo(pr(u, w('zipper'), w('zipper') + .5)), c: K.mavi });" },
+    { "narration": "Doğru cevap: bir mühendis. Yeni eşya hikâyelerini kaçırmamak için abone olun, takip edin.", "ifade": "gulumsuyor",
+      "cizim": "txt('?', MX, 420, 200, { c: K.ak }); etk('bir mühendis', 500, 600, eo(pr(u, w('mühendis'), w('mühendis') + .5)), { size: 60, c: K.mavi });" }
+  ]
+}
