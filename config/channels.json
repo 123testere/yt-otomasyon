@@ -507,20 +507,20 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 22,
+      "videoSayisi": 23,
       "dersler": []
     },
     "oynatmaListeleri": [
       "Zincirli · 1. Sezon"
     ],
     "deney": {
-      "id": "kanca-soru",
+      "id": "baslik-kalip",
       "tip": "short",
-      "ad": "Açılış cümlesi: soru mu, şaşırtıcı bilgi mi?",
-      "hipotez": "İlk cümlede şaşırtıcı bir bilgi vermek, soru sormaktan daha çok izleyici tutar.",
-      "A": "Soruyla açılış",
-      "B": "Şaşırtıcı bilgiyle açılış",
-      "baslangic": "2026-11-06T10:59:27.327Z"
+      "ad": "Başlık kalıbı: soru mu, rakam mı?",
+      "hipotez": "Somut rakam içeren başlıklar soru başlıklarından daha çok tıklanır.",
+      "A": "Soru başlık",
+      "B": "Rakamlı başlık",
+      "baslangic": "2026-11-27T15:48:40.943Z"
     },
     "recentTitles": [
       "Kralın Fısıltısı Surda Pusuya Döndü ⛓️",
@@ -631,7 +631,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": "Kanalın konusu: video oyunlarının gerçek hikâyeleri ve başarıları (bir oyunun nasıl yapıldığı, iflasın eşiğinden dönen stüdyolar, rekor satışlar, efsane geliştiriciler, oyun dünyasının şaşırtıcı olayları). Çok hızlı, enerjik anlatım: kısa cümleler, her cümlede yeni bilgi. İlk cümle güçlü bir kanca (şaşırtıcı rakam ya da iddia). Sadece doğrulanabilir bilgi kullan: satış rakamları, tarihler ve kişi adları kaynaklardaki gibi olsun, emin değilsen yazma. Görsel tariflerinde oyun karakterlerini, logoları ve markalı tasarımları isteme; atmosferi anlat (eski bilgisayar başında geliştirici, ışıklı oyun salonu, kalabalık oyun fuarı). Merak edici bir soru sor ve izleyiciyi videoya çek; sonunda yorum yazmalarını, kanala abone olmalarını ve videoyu beğenmelerini söyle.",
-      "videoSayisi": 276,
+      "videoSayisi": 278,
       "dersler": [
         "Kancayı şaşırtıcı bir bilgiyle aç (mümkünse rakamla): bu kanalda sorudan daha çok izleyici tutuyor."
       ]
@@ -713,9 +713,7 @@
       "Abone Sayısı Artıyor Ama İzlenmeler Düşüyor!",
       "Yapay Zekanın Geleceği ve Video İçerik Üretim",
       "Video Stratejisi ve Senaryo Yazımında Yapay Z",
-      "Videonuz İçin Mükemmel Kanca ve Strateji Nası",
-      "Yapay Zeka ile İş Fikirleri ve Para Kazanma Y",
-      "Metinden Görsele Yapay Zeka ile Video Üretimi"
+      "Videonuz İçin Mükemmel Kanca ve Strateji Nası"
     ],
     "oylamalar": []
   },
@@ -985,15 +983,12 @@
       },
       "shorts": {
         "times": [
-          "19:00"
+          "18:00"
         ],
         "seconds": 45,
         "source": "bagimsiz",
         "speechRate": "+20%",
-        "dongu": false,
-        "days": [
-          4
-        ]
+        "dongu": false
       },
       "privacy": "public",
       "aiDisclosure": true,
@@ -1018,17 +1013,25 @@
         "enabled": true
       },
       "masterV4": true,
-      "seri": {
-        "id": "markalar",
-        "ad": "Markaların Hikâyesi",
-        "uzun": true,
-        "shortsSaat": "13:00",
-        "shortsGunleri": []
-      },
       "masterV4Not": "Master Prompt v4 (2026-11-23) geçerli: routine/MASTER-v4.md. Her senaryoda kaynaklar, kontrol listesi; uzunda 3 başlık (≤50) + 3 kapak yazısı + oynatmaListesi; Shorts başlığı ≤40 ve ilgiliVideo.",
       "facebook": {
         "sayfa": "Lamba Altinda ",
         "enabled": true
+      },
+      "seri": {
+        "id": "markalar",
+        "ad": "Markaların Hikâyesi",
+        "uzun": true,
+        "shortsGunleri": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "shortsSaat": "14:00"
       }
     },
     "brief": {
@@ -1103,6 +1106,7 @@
       "Düdüklü Tencerenin Atası Kemik Yumuşatıyordu",
       "Fermuar Önce Ayakkabı İçin Tasarlandı: 1893 Hikâyesi",
       "Kibriti Yanlışlıkla Bulan Eczacı Patent Almadı",
+      "İsviçre Saatçiliği vs. Japon Kuvarsı: Kazanan Kim Oldu?",
       "Lokuma Neden Lokum Diyoruz? Hikâye 1777'de Başladı",
       "Simidin ortası neden delik? Evliya Çelebi’ye göre 1630'larda İstanbul’da 70 simit fırını vardı",
       "Ayakkabı bağcığının ucundaki o küçük plastiğin bir adı var: aglet.",
@@ -1309,7 +1313,7 @@
       "gorselStil": "YZ görsel – sinematik",
       "cocukIcerigi": false,
       "ekTalimat": null,
-      "videoSayisi": 25,
+      "videoSayisi": 26,
       "dersler": []
     },
     "oynatmaListeleri": [],

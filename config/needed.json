@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "id": "2026-11-28_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-28T11:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "seri": {
+      "id": "markalar",
+      "ad": "Markaların Hikâyesi",
+      "no": 7
+    },
+    "masterV4": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+      "a": "Saat",
+      "b": "Toka",
+      "oyA": 0,
+      "oyB": 0,
+      "kazanan": null
+    },
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "A",
+      "talimat": "Başlık bir soru olsun ve soru işaretiyle bitsin; rakam kullanma."
+    }
+  },
+  {
+    "id": "2026-11-28_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+    "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+    "type": "short",
+    "publishAt": "2026-11-28T15:00:00.000Z",
+    "targetWords": 86,
+    "dil": "tr",
+    "masterV4": true,
+    "format": "cizim",
+    "ceviriDilleri": [
+      "en"
+    ],
+    "oylama": {
+      "kaynak": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+      "a": "Kibrit",
+      "b": "Ayna",
+      "oyA": 0,
+      "oyB": 0,
+      "kazanan": null
+    },
+    "deney": {
+      "id": "baslik-kalip",
+      "kol": "B",
+      "talimat": "Başlık soru olmasın; somut bir rakam içersin (yıl, sayı ya da süre)."
+    }
+  }
+]
