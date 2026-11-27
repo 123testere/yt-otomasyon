@@ -143,6 +143,7 @@ export async function renderEncyclopedia({ job, settings, fmt, narrated, images,
       baslik: job.baslikKart ?? null,
       kapanis: job.kapanis ?? null,
       rozet: job.rozet ?? null,
+      soru: job.soru ?? null,
     };
     const propsFile = path.join(dir, 'remotion-props.json');
     fs.writeFileSync(propsFile, JSON.stringify(props));

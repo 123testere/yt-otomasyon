@@ -4,6 +4,8 @@ Bu kanalın videoları stok görselle değil, **kodla mürekkep çizimiyle** yap
 
 **Sahneler:** Her sahne **bir cümle** (en fazla iki kısa cümle) ve o cümleyi anlatan **tek bir çizim**. Shorts'ta 5-6 sahne (hızlı Shorts kuralı: 4-5 cümle + çağrı), uzun videoda 60-120 sahne olur. Çizim cümlenin somut nesnesini gösterir (çay bardağı, simit, telefon, dükkân, harita, zaman çizgisi, kesit). Yazı sadece etiket ve tarih olarak kullanılır, cümleyi ekrana yazmak yasak (altyazı zaten var).
 
+**Çizim sözle eşzamanlı (kullanıcı kuralı 2026-11-27; doğrulayıcı reddeder):** Anlatılan şey **söylendiği anda** çizilir ve hareket eder. Kodda `w('kelime')` o kelimenin sahnedeki saniyesini verir (u ile aynı saat): `const c = w('çatladı'); ink(catlak, {pp: eo(pr(u, c, c + .4))});`. Sayılar o kelimede sayarak çıkar (`Math.round(180 * eo(pr(u, w('180'), w('180') + 1)))`), yıllar akar, nesneler o kelimede kopar/düşer/yanar. 8 kelimeden uzun her sahnede en az bir `w(` olmalı; iyisi her somut ad ve fiil için bir tane. Duran resim yok: her sahnede en az iki hareketli öğe. Kelimeyi metindeki gibi yaz (ilk harfleri yeter: `w('Kremlin')`). Örnek: `kanallar/lamba-altinda/ornek-can.json`.
+
 **Görsel (ara sıra):** Sadece gerçek bir fotoğraf ya da belge gerçekten gerekiyorsa (ör. mucidin portresi, tarihi bina), o sahnede `cizim` yerine `"visual": {"query": "…", "prompt": "…"}` yaz; arşivden bulunur ve kâğıda basılmış levha olarak gösterilir. Sahnelerin en fazla dörtte biri görsel olabilir; doğrulayıcı fazlasını reddeder.
 
 **Çizim alanı:** 1000 × 700 (sol üst 0,0). Kenarlardan 40 piksel içeride kal. Yazılar en az 36 piksel. Çizim kodu bu değişkenleri ve fonksiyonları kullanabilir, başka hiçbir şey yok:

@@ -31,6 +31,13 @@ Senaryoda zorunlu alanlar:
 - Abone/beğeni istemek serbest (O6) ama ödül/çekiliş/koşullu etkileşim yasak.
 Studio'dan elle yapılan işler (A/B testi, bitiş ekranı, ilgili video) için motor videoyu en az 24 saat sonraya zamanlar ve kullanıcıya görev listesi gönderir; sen senaryoda alanları eksiksiz yaz.
 
+## SORU, MERAK VE ÇAĞRI (kullanıcı kuralı 2026-11-27; bütün kanallar, her yeni senaryo; doğrulayıcı reddeder)
+- **Video soruyla başlar:** ilk sahnede izleyiciye bir soru sorulur ve merak uyandırılır (`?` zorunlu): "Dünyanın en ağır çanı hiç çalmadı. Sence neden? Çatladı mı, yoksa hiç asılamadı mı? Cevap sonda."
+- **`soru` alanı:** `{"metin": "Sence neden hiç çalmadı?", "a": "Çatladı", "b": "Hiç asılamadı", "dogru": "a"}` (metin ≤60, seçenekler ≤24). Ekranda iki seçenekli kart olur; "Sence" söylenince belirir, doğru cevap söylenince yeşil yanar. Yanlış seçenek inandırıcı olsun (yorumda tartışma çıksın).
+- **Cevap ikinci yarıda:** "Doğru cevap: çatladı." Cevabı erken verme; izleyici sonuna kadar kalsın.
+- **Son cümle:** kaçırmamak için abone olup takip etme çağrısı ("Yeni hikâyeleri kaçırmamak için abone olun, takip edin."). Ekrandaki kısa "Beğen · Abone ol" çağrıları (başta, ortada, sonda) motordan kendiliğinden gelir; metne yazma.
+- **Shorts 30-40 sn:** soru cümlesi de sığsın diye anlatımı kısa tut.
+
 ## ÖNCE PAKET, SONRA SENARYO (kullanıcı kuralı 2026-11-25; `masterV4` kanalları, her video)
 
 Sıra değişmez: **1) başlık ve kapak → 2) senaryo → 3) video.** Senaryonun tek satırını yazmadan önce:

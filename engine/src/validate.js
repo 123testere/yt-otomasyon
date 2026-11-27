@@ -17,6 +17,7 @@ import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
 import { kampanyaBul, kampanyaHatalari } from './lib/kampanya.js';
 import { kesitYorumHatalari, v4Hatalari, v4Kanal } from './lib/master-v4.js';
+import { etkilesimHatalari } from './lib/etkilesim.js';
 
 const WORD_TOLERANCE = 0.3;
 
@@ -548,6 +549,7 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
     const slot = needed?.find((n) => n.id === job.id);
     errors.push(...diziErrors(job, slot));
     if (slot) errors.push(...slotHatalari(job, slot, { haberKontrol }));
+    if (slot) errors.push(...etkilesimHatalari(job, slot.language ?? 'tr'));
     return errors;
   }
 
@@ -570,6 +572,8 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
 
   const slot = needed?.find((n) => n.id === job.id);
   if (slot) errors.push(...slotHatalari(job, slot, { haberKontrol }));
+  // Etkileşim kuralı (2026-11-27): soru ve merakla başla, cevap sonda, son cümle abone/takip çağrısı, çizim söze bağlı
+  if (slot) errors.push(...etkilesimHatalari(job, slot.language ?? 'tr'));
   if (slot && Array.isArray(job.scenes)) {
     const words = job.scenes.reduce((sum, s) => sum + countWords(s.narration ?? ''), 0);
     const min = Math.round(slot.targetWords * (1 - WORD_TOLERANCE));

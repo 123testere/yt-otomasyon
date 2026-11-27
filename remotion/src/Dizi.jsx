@@ -7,6 +7,7 @@
 // Sahne: gecit: {x, ac} (zindanda gizli geçit; ac saniyesinde açılır)
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AbsoluteFill, continueRender, delayRender, Html5Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { ctaCiz, soruCiz } from '../../shared/cta.js';
 import { SES, sesOlaylari } from '../../shared/ses-olaylari.js';
 import { serif, serifReady } from './fonts.js';
 import { agizAcikligi, karakter, mekan } from '../../shared/dizi.js';
@@ -631,6 +632,13 @@ export function kare(ctx, p, t, dur, fns) {
       y += boyut;
     }
     sat.forEach((s, j) => yazi(ctx, s, W / 2, y + j * satH, boyut, { it: anlatici, w: anlatici ? 500 : 700 }));
+  }
+
+  // Etkileşim (kullanıcı kararı 2026-11-27): başta soru (cevabı sonda), başta/ortada/sonda kısa beğen-abone çağrısı
+  if (kartBitti && !kapanisVar && !kartVar) {
+    const wl = words.map((w) => ({ t: w.t, text: w.text }));
+    if (p.soru) soruCiz(ctx, { soru: p.soru, t, words: wl, d: dur, dil: p.dil ?? 'tr', x: W / 2, y: yatay ? 30 : 190, gen: yatay ? 1100 : 1000, font: serif, kagit: '#FFFFFF', vurgu: RENK.altin, zemin: 'rgba(6,8,16,.78)' });
+    ctaCiz(ctx, { t, d: dur, dil: p.dil ?? 'tr', x: yatay ? W - 330 : 760, y: yatay ? 330 : 520, s: yatay ? 0.8 : 0.8, uzun: yatay && dur > 90, font: serif });
   }
 
   // Açılış kartı: dizi adı, bölüm numarası ve adı

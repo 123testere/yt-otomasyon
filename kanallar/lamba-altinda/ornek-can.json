@@ -1,0 +1,31 @@
+{
+  "id": "ornek-can-yeni",
+  "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+  "type": "short",
+  "format": "cizim",
+  "title": "Dünyanın En Ağır Çanı Neden Hiç Çalmadı?",
+  "rozet": "Eşyaların Hikâyesi",
+  "soru": { "metin": "Sence neden hiç çalmadı?", "a": "Çatladı", "b": "Hiç asılamadı", "dogru": "a" },
+  "scenes": [
+    {
+      "narration": "Dünyanın en ağır çanı bir kez bile çalmadı. Sence neden? Çatladı mı, yoksa hiç asılamadı mı? Cevap sonda.",
+      "cizim": "const b=eo(pr(u,0,.7));ctx.save();ctx.translate(500,330);ctx.rotate(Math.sin(T*1.6)*.035*b);ctx.translate(-500,-330);ink([[425,143],[385,255],[363,405],[300,505],[700,505],[638,405],[615,255],[575,143]],{close:true,fill:'#B8893B',w:8,seed:10,pp:b});ink(ell(500,115,33,30,18),{close:true,w:7,seed:11,pp:eo(pr(u,.1,.5))});ink(ln([345,435],[655,435],12),{w:5,seed:12,pp:eo(pr(u,.3,.8))});ctx.restore();const sor=w('neden');const q=eo(pr(u,sor,sor+.5));for(let i=0;i<3;i++){const a=q*(.6+.4*Math.sin(T*4+i));txt('?',260+i*240,120+30*Math.sin(T*2+i),90,{c:K.ak,a});}const c1=w('Çatladı'),c2=w('asılamadı');ink(ln([470,160],[520,290],6),{w:5,c:K.bordo,seed:14,pp:eo(pr(u,c1,c1+.5))});ink(ln([500,60],[500,0],4),{w:6,seed:15,pp:eo(pr(u,c2,c2+.4)),dash:[10,10]});etk('ağırlık?',620,60,eo(pr(u,c2,c2+.5)),{size:40});etk('Çar Çanı · Moskova',500,640,eo(pr(u,.3,.9)),{size:48});"
+    },
+    {
+      "narration": "1735, Moskova. Çan yerdeki dev bir çukurun içinde döküldü. Ağırlığı için kimi kaynak 180, kimi 200 ton diyor.",
+      "cizim": "const k=w('çukurun');ink([[120,300],[260,300],[320,560],[680,560],[740,300],[880,300]],{w:7,seed:31,pp:eo(pr(u,k-.3,k+.5))});const d=w('döküldü');const f=eo(pr(u,d,d+1.2));for(let i=0;i<6;i++){const y=140+((T*240+i*55)%160);ink(ln([500+Math.sin(i)*12,y],[500+Math.sin(i)*12,y+30],3),{w:9,c:'#E8A33D',seed:40+i,amp:.4,pp:1-f});}ctx.save();ctx.globalAlpha=f;ink([[443,258],[413,343],[396,457],[348,533],[652,533],[605,457],[587,343],[557,258]],{close:true,fill:'#B8893B',w:8,seed:34});ctx.restore();const y=Math.round(1700+35*eo(pr(u,0,1.2)));txt(String(y),500,120,96,{c:K.ak,a:eo(pr(u,0,.4))});const t=w('kaynak');const s=Math.round(180*eo(pr(u,t,t+1)));txt(s+' ton',170,640,58,{c:K.m,a:eo(pr(u,t,t+.4))});const t2=w('200');txt(Math.round(200*eo(pr(u,t2,t2+.8)))+' ton',830,640,58,{c:K.m,a:eo(pr(u,t2,t2+.4))});"
+    },
+    {
+      "narration": "1737’de büyük bir yangın çıktı. Söndürmek için dökülen soğuk su, kızgın metale değdi.",
+      "cizim": "ink([[449,303],[422,379],[407,481],[364,549],[636,549],[594,481],[578,379],[551,303]],{close:true,fill:'#B8893B',w:8,seed:50});ink(ell(500,284,22,20,18),{close:true,w:7,seed:51});const y=w('yangın');for(let i=0;i<7;i++){const x=180+i*107,b=(90+40*Math.sin(T*6+i*2))*eo(pr(u,y+i*.06,y+.6+i*.06));ink([[x-34,600],[x-20,600-b*.6],[x,600-b],[x+22,600-b*.55],[x+34,600]],{close:true,fill:'#E8A33D',w:5,seed:60+i});}txt('1737',500,110,96,{c:K.bordo,a:eo(pr(u,0,.4))});const s=w('su');for(let i=0;i<8;i++){const p=pr(u,s+i*.08,s+.9+i*.08);if(p<=0)continue;const yy=150+p*150;ink(ln([380+i*34,yy],[380+i*34,yy+34],3),{w:6,c:K.mavi,seed:90+i});}const dg=w('değdi');const bu=eo(pr(u,dg,dg+.8));for(let i=0;i<5;i++){ctx.save();ctx.globalAlpha=bu*(.7-i*.1);ink(ell(430+i*35,300-bu*80-i*14,24,14,14),{w:3,c:K.s,seed:110+i});ctx.restore();}"
+    },
+    {
+      "narration": "Kızgın metal çatladı ve on bir buçuk tonluk bir parça koptu.",
+      "cizim": "const c=w('çatladı');const p=w('koptu');const kop=eo(pr(u,p,p+.7));const sar=u>c&&u<c+.35?Math.sin(u*90)*6:0;ctx.save();ctx.translate(sar,0);ink([[360,230],[328,320],[310,440],[260,520],[580,520],[530,440],[512,320],[480,230]],{close:true,fill:'#B8893B',w:8,seed:80});ink(ell(420,208,26,24,18),{close:true,w:7,seed:81});ink([[430,250],[452,330],[436,400],[470,470],[455,520]],{w:6,c:K.m,seed:85,pp:eo(pr(u,c,c+.4))});ctx.restore();ink([[440,520],[462,440],[508,420],[532,520]],{close:true,fill:'#FBF6EA',w:6,seed:83,pp:kop});ctx.save();ctx.translate(kop*280,kop*20);ctx.rotate(kop*.25);ink([[440,520],[462,440],[508,420],[532,520]],{close:true,fill:'#B8893B',w:7,seed:90});ctx.restore();const on=w('on');txt((11.5*eo(pr(u,on,on+.8))).toFixed(1).replace('.',',')+' ton',790,640,70,{c:K.ak,a:eo(pr(u,on,on+.3))});"
+    },
+    {
+      "narration": "Doğru cevap: çatladı. Çan doksan dokuz yıl çukurda kaldı; bugün Kremlin’de kırık duruyor. Bilenler yorumlara yazsın.",
+      "cizim": "ink(kutu(300,520,400,90),{close:true,fill:'#CFC9B8',w:7,seed:120,pp:eo(pr(u,0,.5))});ink([[443,238],[413,323],[396,437],[348,513],[652,513],[605,437],[587,323],[557,238]],{close:true,fill:'#B8893B',w:8,seed:124});ink(ell(500,217,25,23,18),{close:true,w:7,seed:125});ink([[519,513],[540,437],[584,418],[606,513]],{close:true,fill:'#FBF6EA',w:6,seed:127});ink(kutu(725,470,60,50),{close:true,fill:'#B8893B',w:5,seed:130});const d=w('doksan');txt(String(Math.round(1737+99*eo(pr(u,d,d+1.4)))),500,120,96,{c:K.ak,a:eo(pr(u,d,d+.3))});const k=w('Kremlin’de');etk('Kremlin, bugün',500,650,eo(pr(u,k,k+.5)),{size:46});"
+    }
+  ]
+}

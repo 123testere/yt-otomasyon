@@ -320,6 +320,7 @@ export async function buildDizi(job, settings, { workDir }) {
       dil: dizi.dil ?? 'tr', rozetNo: dizi.rozetNo !== false,
       ozelMekanlar: ozelMekanlar(job),
       tanitim: Array.isArray(job.tanitim) ? job.tanitim.slice(0, 4) : null,
+      soru: job.soru ?? null,
       acilis: job.acilis === true, stil: dizi.stil ?? 'yuz', dizi: { ad: dizi.ad }, bolum: { no, toplam: dizi.toplam ?? null, ad: job.bolum.ad }, karakterler: dizi.karakterler,
       kapanis: job.kapanis ? {
         baslik: job.kapanis.baslik ?? 'DEVAMI', soru: job.kapanis.soru ?? null,

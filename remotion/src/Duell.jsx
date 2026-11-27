@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import {
   AbsoluteFill, Html5Audio, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig,
 } from 'remotion';
+import { ctaAnlari, ctaMetin } from '../../shared/cta.js';
 import { Ball } from './League.jsx';
 import { Captions } from './VideoComposition.jsx';
 import { body, display } from './fonts.js';
@@ -276,6 +277,18 @@ function TableOverlay({ tl, frame, fps, data, flags, final, eveOfFinal }) {
   );
 }
 
+// Kurz eingeblendeter Like/Abo-Hinweis am Anfang, in der Mitte und am Ende (Benutzerentscheidung 2026-11-27)
+function CtaHinweis({ frame, fps, total }) {
+  const t = frame / fps; const d = total / fps;
+  const [like, abo] = ctaMetin('de').cagri;
+  return ctaAnlari(d).map((t0, i) => {
+    const a = Math.min(1, Math.max(0, (t - t0) / 0.3)) * (1 - Math.min(1, Math.max(0, (t - t0 - 2.3) / 0.3)));
+    if (a <= 0) return null;
+    const z = 1 + 0.15 * Math.max(0, 1 - (t - t0) / 0.35);
+    return <div key={i} style={{ position: 'absolute', top: 470, right: 60, opacity: a, transform: `scale(${z})`, transformOrigin: 'right center', background: '#C0392B', color: WHITE, fontFamily: display, fontSize: 40, padding: '14px 30px', borderRadius: 44, boxShadow: '0 8px 24px rgba(0,0,0,.45)' }}>{like} · {abo}</div>;
+  });
+}
+
 export function Duell(props) {
   const { phases, data, flags, words, narration, music, musicVolume, brand, match, season = 1, total = 30, seasonFinal = false, eveOfFinal = false } = props;
   const frame = useCurrentFrame();
@@ -318,6 +331,7 @@ export function Duell(props) {
       <WinnerOverlay tl={tl} frame={frame} fps={fps} data={data} />
       <WhyOverlay tl={tl} frame={frame} fps={fps} data={data} />
       <TableOverlay tl={tl} frame={frame} fps={fps} data={data} flags={flags} final={seasonFinal} eveOfFinal={eveOfFinal} />
+      <CtaHinweis frame={frame} fps={fps} total={durationInFrames} />
       <Captions words={words} mode="kelime" color={GOLD} portrait lang="de" bottomOverride={400} />
       {narration ? <Html5Audio src={staticFile(narration)} /> : null}
       {music ? <Html5Audio src={staticFile(music)} volume={musicVol} loop /> : null}

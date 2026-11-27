@@ -76,10 +76,16 @@ export function kit(ctx, T, { font = 'Lora, serif', gece = false, alan = ALAN } 
 }
 
 // Sahne çizim kodunu fonksiyona çevirir: (kit, u) => void. u: sahnenin başından beri geçen saniye.
-export function derle(kod) {
+// w('kelime'): o kelimenin söylendiği an (sahne saniyesi, u ile aynı saat); çizim sözle eşzamanlı olsun diye
+// (kullanıcı kararı 2026-11-27). sozler: [{ text, u }]; bulunamayan kelime 0 döner (çizim hemen başlar).
+const sadeK = (x) => String(x).toLocaleLowerCase('tr').replace(/[^\p{L}\p{N}]/gu, '');
+export function kelimeSaati(sozler = [], ek = 0) {
+  return (kelime) => { const k = sadeK(kelime); const x = sozler.find((s) => sadeK(s.text).startsWith(k)); return x ? x.u + ek : 0; };
+}
+export function derle(kod, w = () => 0) {
   // eslint-disable-next-line no-new-func
-  const f = new Function(...KIT_ADLARI, `"use strict";\n${kod}`);
-  return (k, u) => f(...KIT_ADLARI.map((ad) => (ad === 'u' ? u : k[ad])));
+  const f = new Function(...KIT_ADLARI, 'w', `"use strict";\n${kod}`);
+  return (k, u) => f(...KIT_ADLARI.map((ad) => (ad === 'u' ? u : k[ad])), w);
 }
 
 // Doğrulayıcı için sahte çizim bağlamı: her metodu kabul eder, hiçbir şey çizmez.

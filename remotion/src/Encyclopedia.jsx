@@ -8,7 +8,8 @@ import {
 } from 'remotion';
 import { drawNurBey } from './nurbey.js';
 import { serif, serifReady } from './fonts.js';
-import { ALAN, KAPAK_ALAN, PALET as K, derle, eo, h, kit, pr } from '../../shared/cizim.js';
+import { ALAN, KAPAK_ALAN, PALET as K, derle, eo, h, kelimeSaati, kit, pr } from '../../shared/cizim.js';
+import { ctaCiz, soruCiz } from '../../shared/cta.js';
 
 const GECIS = 0.35; // sahneler arası yumuşak geçiş (sn)
 const SAYFA_GECIS = 0.6; // girişten kâğıt sayfaya geçiş (sn)
@@ -196,15 +197,20 @@ function rozetCiz(ctx, rozet, x, y, boy, a = 1) {
   yazi(ctx, s, x, y, boy, { c: K.lamba, a, w: 800 });
 }
 
+const sahteSoruCtx = new Proxy({ measureText: (s) => ({ width: String(s).length * 20 }) }, { get: (o, k) => (k in o ? o[k] : () => {}), set: () => true });
 function kisaKare(ctx, p, t, d) {
   const { scenes, fns, words, baslik, kapanis } = p;
   geceZemin(ctx, 1080, 1920);
   const son = scenes.length - 1;
   const kT = kapanis && son > 0 ? scenes[son].t0 : Infinity;
   const ba = t < kT ? 1 : 1 - pr(t, kT, kT + 0.4);
-  rozetCiz(ctx, p.rozet, 540, 130, 34, ba);
-  yazi(ctx, baslik?.[0] ?? '', 540, 240, 86, { c: K.kagit, a: ba });
-  yazi(ctx, baslik?.[1] ?? '', 540, 340, 86, { c: K.lamba, a: ba });
+  // Soru kartı görünürken başlık söner (soru, başlığın yerini alır)
+  const sa = p.soru && t < kT ? soruCiz(sahteSoruCtx, { soru: p.soru, t, words, d, dil: p.lang, x: 540, y: 120, gen: 1000, font: serif }) : 0;
+  const ya = ba * (1 - sa);
+  rozetCiz(ctx, p.rozet, 540, 130, 34, ya);
+  yazi(ctx, baslik?.[0] ?? '', 540, 240, 86, { c: K.kagit, a: ya });
+  yazi(ctx, baslik?.[1] ?? '', 540, 340, 86, { c: K.lamba, a: ya });
+  if (sa > 0) soruCiz(ctx, { soru: p.soru, t, words, d, dil: p.lang, x: 540, y: 130, gen: 1000, font: serif, zemin: 'rgba(30,28,36,0)' });
   kartZemin(ctx, S.kart);
   const k = S.kart;
   ctx.save(); ctx.beginPath(); ctx.roundRect(k.x, k.y, k.w, k.h, 18); ctx.clip();
@@ -220,6 +226,7 @@ function kisaKare(ctx, p, t, d) {
   const ifade = t >= kT ? 'merakli' : scenes[i].ifade || 'anlatiyor';
   const konusuyor = words.some((w) => t >= w.t && t < w.t + w.d + 0.05);
   drawNurBey(ctx, { ...S.nur, t, ifade, konusuyor, isik: 0.9, koni: true });
+  ctaCiz(ctx, { t, d, dil: p.lang, x: 800, y: 470, s: 0.8, font: serif });
   if (t < kT) {
     const g = altyaziGruplari(words, 70).find((q) => t >= q.t0 && (q.next === undefined || t < q.next));
     if (g) {
@@ -280,6 +287,9 @@ function uzunKare(ctx, p, t) {
   }
   const konusuyor = words.some((w) => t >= w.t && t < w.t + w.d + 0.05);
   drawNurBey(ctx, { ...L.nur, t, ifade: scenes[i].ifade || 'anlatiyor', konusuyor, isik: 0.9, koni: true });
+  const dU = p.dur ?? (words.at(-1)?.t ?? 0) + 4;
+  if (p.soru) soruCiz(ctx, { soru: p.soru, t, words, d: dU, dil: p.lang, x: 300, y: 40, gen: 560, font: serif });
+  ctaCiz(ctx, { t, d: dU, dil: p.lang, x: 1600, y: 80, s: 0.7, uzun: true, font: serif });
 
   const g = altyaziGruplari(words, 80).find((q) => t >= q.t0 && (q.next === undefined || t < q.next));
   if (g) {
@@ -338,16 +348,19 @@ export function Encyclopedia(props) {
   const ref = useRef(null);
   const ready = useFontReady();
   const t = frame / fps;
-  const fns = useMemo(() => scenes.map((s) => {
-    try { return s.cizim ? derle(s.cizim) : null; } catch { return null; }
-  }), [scenes]);
+  // Her sahnenin çizimi kendi kelime saatini alır: w('çatladı') o kelimenin söylendiği an
+  const fns = useMemo(() => scenes.map((s, i) => {
+    const son = scenes[i + 1]?.t0 ?? Infinity;
+    const sozler = (props.words ?? []).filter((x) => x.t >= s.t0 - 0.05 && x.t < son).map((x) => ({ text: x.text, u: x.t - s.t0 }));
+    try { return s.cizim ? derle(s.cizim, kelimeSaati(sozler, portrait && i === 0 ? ILK_HAZIR : 0)) : null; } catch { return null; }
+  }), [scenes, props.words, portrait]);
   const oda = useOda(props.ucBoyut !== false, portrait);
   useLayoutEffect(() => {
     const ctx = ref.current.getContext('2d');
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
     ODA = oda || null; ODA_T = t;
     if (portrait) kisaKare(ctx, { ...props, fns }, t, durationInFrames / fps);
-    else uzunKare(ctx, { ...props, fns }, t);
+    else uzunKare(ctx, { ...props, fns, dur: durationInFrames / fps }, t);
   }, [ready, frame, props, fns, oda]);
   const { i, gecis } = sahneDurumu(scenes, t);
   const ilkBolum = scenes.findIndex((s) => s.bolum);
