@@ -653,6 +653,7 @@
       "baslangic": "2026-11-26T19:40:43.761Z"
     },
     "recentTitles": [
+      "Kafanı Yoracak 3 Bulmaca Oyunu 🎮",
       "Dövüş Oyunu mu Arıyorsun?",
       "Pac-Man'in İlk Adı Neden Puck-Man'dı?",
       "Tetris'i Bir Sovyet Mühendisi Yaptı | Efsane Oyunlar",
@@ -1054,6 +1055,10 @@
       "baslangic": "2026-11-19T22:11:58.161Z"
     },
     "recentTitles": [
+      "Konservenin Açacağı 1850'lerde Geldi",
+      "Kodak Dijital Kamerayı Neden Sakladı?",
+      "1826'da Doğan Kibrit Tehlikeliydi",
+      "Casio'nun İlk Ürünü Neden Saat Değildi?",
       "Fermuarı Kim İcat Etti? 1893 Hikâyesi",
       "1735’te Dökülen Dev Çan Hiç Çalmadı",
       "Romalılar Neden Yüz Binlerce Çiviyi Toprağa Gömdü?",
@@ -1319,6 +1324,7 @@
       "baslangic": "2026-11-21T18:02:05.496Z"
     },
     "recentTitles": [
+      "Duell 27/30: Wer erntet die meisten Erdbeeren? 🍓",
       "Duell 26/30: Wer produziert den meisten Honig? 🍯",
       "Duell 25/30: Wer erntet die meisten Paprika? 🫑",
       "Duell 24/30: Wer erntet die meisten Gurken? 🥒",
@@ -1351,15 +1357,15 @@
     "league": {
       "calendarStart": "2026-11-03",
       "season": 1,
-      "lastMatch": 26,
+      "lastMatch": 27,
       "table": [
         {
           "name": "Türkei",
-          "points": 177
+          "points": 187
         },
         {
           "name": "Spanien",
-          "points": 106
+          "points": 113
         },
         {
           "name": "Ukraine",
@@ -1367,31 +1373,31 @@
         },
         {
           "name": "Italien",
-          "points": 85
+          "points": 88
+        },
+        {
+          "name": "Polen",
+          "points": 69
         },
         {
           "name": "Frankreich",
           "points": 68
         },
         {
-          "name": "Polen",
-          "points": 64
-        },
-        {
           "name": "Deutschland",
-          "points": 56
+          "points": 58
         },
         {
           "name": "Portugal",
           "points": 32
         },
         {
-          "name": "Niederlande",
-          "points": 27
+          "name": "Griechenland",
+          "points": 30
         },
         {
-          "name": "Griechenland",
-          "points": 26
+          "name": "Niederlande",
+          "points": 27
         }
       ]
     }

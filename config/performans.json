@@ -4066,7 +4066,32 @@
     "sonDeneyler": [],
     "dersler": [],
     "aramaTerimleri": [],
-    "videolar": [],
+    "videolar": [
+      {
+        "youtubeId": "QVSkGVEw0Nc",
+        "jobId": "2026-11-26_UCCkZBrwh7E_SIXuHfLm121A_long1",
+        "gosterim7": null,
+        "kapakDeneme": null,
+        "sonIyilestirme": null,
+        "baslik": "What If Earth Stopped for 1 Second?",
+        "tip": "short",
+        "yayin": "2026-11-26",
+        "izlenme7": 0,
+        "tutma": null,
+        "kancaOran": null,
+        "izlenme": 0,
+        "izlenmeArtis": null,
+        "hedef": 100,
+        "abone7": 0,
+        "begeni7": 0,
+        "yorum7": 0,
+        "tutma30": null,
+        "tiklanma7": null,
+        "etiket": "erken",
+        "nedenler": [],
+        "deney": null
+      }
+    ],
     "sahneAnalizi": {
       "short": {
         "videoSayisi": 0,
