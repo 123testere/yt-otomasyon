@@ -9,5 +9,6 @@ secrets/
 remotion/public/*
 !remotion/public/.gitkeep
 !remotion/public/mekan3b/
+!remotion/public/masal-muzik/
 .cache/
 ornek-videolar/

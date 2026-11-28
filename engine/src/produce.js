@@ -19,6 +19,7 @@ import { loadNeeded, usedTitles, validateJob } from './validate.js';
 import { V4, v4Kanal } from './lib/master-v4.js';
 import { kapaklariYayinla, studioGorevleri } from './lib/studio.js';
 import { sesSeviyesi } from './pipeline/ses-seviye.js';
+import { masalIkizi } from './lib/masal-kapi.js';
 import { uzunKapak } from './pipeline/cover.js';
 
 const MAX_ATTEMPTS = 3;
@@ -131,7 +132,7 @@ async function main() {
     try {
       const built = await buildVideo(job, settings, { workDir, cacheDir });
       // Shorts'a da dev kanca yazılı küçük resim (yüklenemezse video yine yayınlanır).
-      if (job.type === 'short' && !built.thumbnailPath && job.format !== 'dizi') {
+      if (job.type === 'short' && !built.thumbnailPath && job.format !== 'dizi' && job.format !== 'masal') {
         try {
           const dir = path.join(workDir, `${job.id}-kapak`);
           fs.mkdirSync(dir, { recursive: true });
@@ -160,13 +161,14 @@ async function main() {
       // Uzun videoda bölüm zaman damgaları açıklamaya eklenir (aramada bölümler ayrı görünür).
       const linked = await withFullVideoLink(job, settings);
       // Dizi bölümünde YouTube bölümleri transkriptin kısımlarından gelir.
-      const bolumler = job.format === 'dizi' ? built.bolumlerMetni ?? null : bolumSatirlari(job, built.sahneZaman, settings.language);
+      const bolumler = job.format === 'dizi' || job.format === 'masal' ? built.bolumlerMetni ?? null : bolumSatirlari(job, built.sahneZaman, settings.language);
       if (v4 && job.type === 'long' && !bolumler) throw new Error('Master v4 U6: bölümler oluşmadı (ilki 00:00, en az 3 bölüm, her biri en az 10 sn)');
       let uploadJob0 = bolumler ? { ...linked, description: `${linked.description.trim()}\n\n${bolumler}` } : linked;
       // Kampanya kesiti ya da kullanıcının "hemen yayınla" dediği iş (job.hemen): zamanlama yok, üretildiği an herkese açık
       let uploadJob = job.kampanya || job.hemen ? { ...uploadJob0, publishAt: new Date().toISOString() } : uploadJob0;
       // Master v4 U1/U7/S4 Studio işleri: video en az 24 saat sonrasına zamanlanır, o sürede telefondan yapılır
-      if (v4 && !job.hemen) {
+      // Kanal ayarı v4Bekleme false ise (Lamba, kullanıcı 2026-11-28) video planlanan saatinde çıkar, 24 saat kaydırılmaz
+      if (v4 && !job.hemen && settings.v4Bekleme !== false) {
         const enErken = Date.now() + V4.studioBekleSaat * 3600_000;
         if (Date.parse(uploadJob.publishAt) < enErken) {
           uploadJob = { ...uploadJob, publishAt: new Date(enErken).toISOString() };
@@ -184,6 +186,10 @@ async function main() {
         updatedAt: new Date() });
       move(file, DONE_DIR);
       console.log(`✓ ${yt.url}`);
+      // Masal ikizi (Dodi → DodiTr): aynı hikâye diğer dilde, ikiz kanalda gecikmeli yayın için kuyruğa yazılır
+      if (job.format === 'masal' && job.ikiz) {
+        try { console.log(`  ikiz kuyruğa: ${masalIkizi(job, QUEUE_DIR)}`); } catch (e) { console.warn(`  ikiz: ${e.message}`); }
+      }
       // Altyazı, başka dillerde başlık, oynatma listesi: başarısız olsa da video yayında kalır.
       try {
         const hashtags = [settings.hashtags?.trim(), job.type === 'short' ? '#shorts' : ''].filter(Boolean).join(' ');

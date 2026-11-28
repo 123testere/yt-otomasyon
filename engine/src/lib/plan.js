@@ -105,6 +105,8 @@ function slotsFor(channel, dates, now) {
         : {}),
       // Ansiklopedi stili: sahneler kodla çizilir (routine/PROMPT.md → Çizim formatı).
       ...(pick(options.visualStyles, s.visualStyle)?.theme === 'ansiklopedi' ? { format: 'cizim' } : {}),
+      // Masal (Dodi): hikâye JSON'u iki dilde yazılır; Türkçe ikiz kanal (settings.masalIkiz) motor tarafından kuyruğa eklenir
+      ...(s.contentFormat === 'masal' ? { format: 'masal', ...(s.masalIkiz ? { ikizKanal: s.masalIkiz } : {}), ...(slot.type === 'short' ? { dikey: true } : {}) } : {}),
       // Başka dillerde başlık/açıklama (YouTube yabancı izleyiciye kendi dilinde gösterir).
       ...(s.optimizasyon?.ceviri !== false && s.contentFormat !== 'flaggenduell' && options.ceviriDilleri?.[s.language]?.length
         ? { ceviriDilleri: options.ceviriDilleri[s.language] } : {}),

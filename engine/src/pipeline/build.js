@@ -11,6 +11,7 @@ import { remotionAvailable, renderWithRemotion, thumbnailWithRemotion } from './
 import { buildDuell } from '../league/build-duell.js';
 import { anlatimBilgisi, buildCizim } from './build-cizim.js';
 import { buildDizi } from './build-dizi.js';
+import { buildMasal } from './build-masal.js';
 import { buildKesit } from './build-kesit.js';
 
 async function characterImage(channelId, settings, cacheDir) {
@@ -49,6 +50,7 @@ export async function buildVideo(job, settings, { workDir, cacheDir }) {
   if (job.format === 'cizim') return buildCizim(job, settings, { workDir });
   if (job.format === 'dizi') return buildDizi(job, settings, { workDir });
   if (job.format === 'kesit') return buildKesit(job, settings, { workDir });
+  if (job.format === 'masal') return buildMasal(job, settings, { workDir });
   const fmt = formatFor(job.type);
   const dir = path.join(workDir, job.id);
   fs.mkdirSync(dir, { recursive: true });

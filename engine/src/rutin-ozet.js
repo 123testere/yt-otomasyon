@@ -24,6 +24,7 @@ export function okunacaklar({ needed, kanallar, perf, kesif, istek, yorum }) {
     if (j.clipOf && j.format !== 'dizi') b('kesit');
     if (j.format === 'dizi') b('dizi');
     else if (j.format === 'cizim') b('cizim');
+    else if (j.format === 'masal') b('masal');
     else if (j.format === 'duell') b('flaggenduell');
     else b('gorsel');
   }

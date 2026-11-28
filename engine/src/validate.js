@@ -17,6 +17,7 @@ import { OYUN_MEKANLAR } from '../../shared/mekan-oyun.js';
 import { TEKNO_MEKANLAR } from '../../shared/mekan-tekno.js';
 import { kampanyaBul, kampanyaHatalari } from './lib/kampanya.js';
 import { kesitYorumHatalari, v4Hatalari, v4Kanal } from './lib/master-v4.js';
+import { masalHatalari } from './lib/masal-kapi.js';
 import { etkilesimHatalari } from './lib/etkilesim.js';
 
 const WORD_TOLERANCE = 0.3;
@@ -507,6 +508,8 @@ export function validateJob(job, { fileId, needed, takenTitles, haberKontrol = f
 
   // Yayın kesiti (Vice City Dispatch): anlatımsız/az anlatımlı kurgu; kendi kuralları
   if (job.format === 'kesit') return [...errors, ...kesitHatalari(job)];
+  // Masal (Dodi/DodiTr): hikâye şeması, iki dil, çocuk kanalı kuralları (lib/masal-kapi.js)
+  if (job.format === 'masal') return [...errors, ...masalHatalari(job)];
 
   errors.push(...ekAlanHatalari(job));
 

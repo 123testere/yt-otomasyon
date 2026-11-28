@@ -9,6 +9,7 @@ import { ShortCover } from './ShortCover.jsx';
 import { Avatar, Banner } from './Brand.jsx';
 import { Dizi, DiziKare } from './Dizi.jsx';
 import { Kesit } from './Kesit.jsx';
+import { MasalVideo, MasalKapak } from './Masal.tsx';
 
 // Süre ve boyut motorun gönderdiği props'tan gelir (engine/src/pipeline/remotion.js).
 const fromProps = ({ props }) => ({
@@ -51,6 +52,10 @@ function Root() {
         defaultProps={{ scenes: [{ t0: 0, d: 8, mekan: 'meydan', zaman: 'gece', kadraj: [] }], karakterler: {}, t: 4 }} />
       <Composition id="Kesit" component={Kesit} defaultProps={{ fps: 30, width: 1080, height: 1920, durationInFrames: 150, video: null, hook: 'WAIT FOR IT', kredi: 'Streamer · Twitch', yorumlar: [] }}
         calculateMetadata={fromProps} fps={30} width={1080} height={1920} durationInFrames={150} />
+      <Composition id="Masal" component={MasalVideo} defaultProps={{ fps: 30, width: 1920, height: 1080, durationInFrames: 150, veri: { dil: 'en', sure: 5, sahne: [{ t0: 0, t1: 4 }], words: [] }, hikaye: { baslik: { en: '', tr: '' }, sahneler: [{ m: 'cayir', en: '', tr: '' }] }, ses: null }}
+        calculateMetadata={fromProps} fps={30} width={1920} height={1080} durationInFrames={150} />
+      <Still id="MasalKapak" component={MasalKapak} width={1920} height={1080}
+        defaultProps={{ hikaye: { baslik: { en: '', tr: '' }, sahneler: [], kapak: { m: 'cayir' } }, dil: 'en', dikey: 0 }} />
       <Still id="AppIcon" component={AppIcon} width={1024} height={1024} defaultProps={{ variant: 'full' }} />
       <Still id="Thumb" component={Thumbnail} width={1280} height={720}
         defaultProps={{ background: null, text: 'KAPAK YAZISI', badge: null, lang: 'tr', accent: '#FFE600' }} />
