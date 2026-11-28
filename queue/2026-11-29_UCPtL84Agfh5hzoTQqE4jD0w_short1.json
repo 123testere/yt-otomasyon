@@ -1,0 +1,117 @@
+{
+ "id": "2026-11-29_UCPtL84Agfh5hzoTQqE4jD0w_short1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-29T15:00:00.000Z",
+ "topic": "Konserve kutusu 1810'da patentlendi; açacağı 1850'lerde, çekiç ve keskiyle açılırdı",
+ "title": "Konservenin Açacağı 1850'lerde Geldi",
+ "description": "Eşyaların Hikayesi\nKonserve 1810'da patentlendi ama özel açacaklar ancak 1850'lerde göründü; o zamana kadar kutular çekiç ve keskiyle açılıyordu.\n\nTerazinin hikâyesi: https://youtu.be/btO8Kzwl_EU\n\nKaynaklar: britannica.com/technology/can-opener · en.wikipedia.org/wiki/Can_opener\n\n#konserve #eşyalarınhikayesi",
+ "tags": [
+  "konserve",
+  "konserve açacağı",
+  "peter durand",
+  "ezra warner",
+  "eşyaların hikayesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Konservenin açacağı",
+  "neden çok geç geldi?"
+ ],
+ "rozet": "Eşyaların Hikâyesi",
+ "soru": {
+  "metin": "Konserve kutuları nasıl açılıyordu?",
+  "a": "Çekiç ve keskiyle",
+  "b": "Özel bir anahtarla",
+  "dogru": "a"
+ },
+ "kapanis": {
+  "soru": "Sizin mutfakta en eski açacak hangisi?",
+  "alt": "Yorumlara yazın"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "B"
+ },
+ "oynatmaListesi": "Evdeki Eşyaların Hikayesi",
+ "ilgiliVideo": "https://youtu.be/btO8Kzwl_EU",
+ "paket": {
+  "merak": "Konserve icat edilince kutular nasıl açılıyordu?",
+  "cevap": "Çekiç ve keskiyle; açacak kırk yıldan fazla sonra geldi",
+  "cevapSahne": 5,
+  "kapakAni": "İlk kare: kapalı konserve kutusu ve iki soru işareti"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://www.britannica.com/technology/can-opener",
+   "not": "açacağın geç gelişi, 1858 Ezra Warner"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Can_opener",
+   "not": "1810 Durand patenti, ilk kutular çekiç ve keskiyle açılırdı, 1850'lerde açacaklar"
+  }
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "The Can Opener Came in the 1850s",
+   "description": "Story of Things\nCanned food was patented in 1810, but dedicated can openers only appeared in the 1850s. Before that, cans were opened with a hammer and chisel.\n\n#canopener #storyofthings"
+  }
+ },
+ "kontrol": {
+  "O1": "evet: kendi yazımımız ve çizimimiz",
+  "O2": "evet: yasak tür yok",
+  "O3": "evet: kaynaklar alanında; kesin olmayanlar \"anlatılana göre/söylenir\" diye geçti",
+  "O4": "evet: başlıktaki vaat videoda var",
+  "O5": "evet: YZ beyanı motor ayarında açık",
+  "O6": "evet: koşullu etkileşim yok",
+  "O7": "evet: lisanslı müzik ve kendi seslerimiz",
+  "O8": "evet: motor -14 LUFS ayarlar ve ölçer",
+  "O9": "evet: motor SRT yükler",
+  "O10": "evet: kanalın nişi",
+  "O11": "evet: yeni video",
+  "O12": "evet: en fazla 6 etiket",
+  "S1": "evet: ilk karede konserve kutusu, ilk cümle soru",
+  "S2": "evet: motor düzeni güvenli alanda",
+  "S3": "evet: süreyi hikâye belirler",
+  "S4": "evet: ilgili video alanı dolu; tek çağrı sonda",
+  "S5": "evet: günlük Shorts planı kullanıcı kararı",
+  "S6": "evet: ≤40 karakter",
+  "Y1": "evet: günlük ritimde",
+  "Y2": "evet: format sürüyor",
+  "Y3": "evet: kanalın tipik aralığıyla ölçülecek",
+  "Y4": "evet: gerekirse paket değişir"
+ },
+ "scenes": [
+  {
+   "narration": "Konserveyi 1810'da icat ettiler ama açacağı yoktu. Peki kutular nasıl açılıyordu? Çekiçle mi, anahtarla mı? Cevap sonda.",
+   "ifade": "merakli",
+   "cizim": "const a=w('Konserveyi');ink(kutu(380,300,240,280),{close:true,fill:'#CFC9B8',w:8,seed:1,pp:eo(pr(u,a,a+.7))});ink(ell(500,300,120,30,20),{w:6,seed:2,pp:eo(pr(u,a+.2,a+.8))});ink(ell(500,580,120,30,20,0,3.14),{w:6,seed:3,pp:eo(pr(u,a+.2,a+.8))});const y=w('1810');txt(String(Math.round(1700+110*eo(pr(u,y,y+.9)))),500,130,90,{c:K.ak,a:eo(pr(u,y-.2,y+.3))});const q=w('Cevap');txt('?',200,420+Math.sin(T*4)*10,150,{c:K.ak,a:eo(pr(u,q,q+.4))});txt('?',800,420+Math.cos(T*4)*10,150,{c:K.ak,a:eo(pr(u,q,q+.4))});"
+  },
+  {
+   "narration": "1810'da İngiliz Peter Durand, teneke kutuda yiyecek saklama yöntemi için patent aldı.",
+   "ifade": "anlatiyor",
+   "cizim": "const a=w('Durand');etk('Peter Durand',500,130,eo(pr(u,a,a+.5)),{size:56,c:K.mavi});const k=w('teneke');for(let i=0;i<3;i++)ink(kutu(250+i*180,330,130,170),{close:true,fill:'#CFC9B8',w:7,seed:10+i,pp:eo(pr(u,k+i*.15,k+i*.15+.5))});const p=w('patent');ink(kutu(330,540,340,90),{close:true,fill:'#EFE4CB',w:5,seed:20,pp:eo(pr(u,p,p+.5))});ink(ln([360,570],[640,570],8),{w:4,seed:21,pp:eo(pr(u,p+.2,p+.8))});ink(ln([360,600],[560,600],8),{w:4,seed:22,pp:eo(pr(u,p+.4,p+1))});ctx.save();ctx.translate(500,300+Math.sin(T*2)*3);ctx.restore();"
+  },
+  {
+   "narration": "İlk kutuların duvarı kalındı; açmak için çekiç ve keskiyle uğraşılırdı.",
+   "ifade": "endiseli",
+   "cizim": "ink(kutu(380,380,240,200),{close:true,fill:'#CFC9B8',w:10,seed:30,pp:eo(pr(u,0,.6))});const k=w('keskiyle');ink(ln([480,360],[540,300],4),{w:10,seed:31,pp:eo(pr(u,k-.5,k))});const c=w('çekiç');const sw=Math.sin(T*8)*.6*eo(pr(u,k,k+.3));ctx.save();ctx.translate(700,200);ctx.rotate(-.9+sw);ink(ln([0,0],[0,170],4),{w:12,seed:32,pp:eo(pr(u,c,c+.5))});ink(kutu(-40,-30,90,50),{close:true,fill:'#6B4A2F',w:7,seed:33,pp:eo(pr(u,c,c+.5))});ctx.restore();for(let i=0;i<4;i++)ink(ln([500+i*10,300],[490+i*20,270-Math.sin(T*8+i)*10],2),{w:3,c:K.ak,seed:34+i,pp:eo(pr(u,k+.2,k+.5))});"
+  },
+  {
+   "narration": "Özel açacaklar ancak 1850'lerde göründü; Amerikalı Ezra Warner 1858'de bir açacak patentledi.",
+   "ifade": "gulumsuyor",
+   "cizim": "const a=w('1850');txt(Math.round(1800+50*eo(pr(u,a,a+.8)))+\"'ler\",250,150,70,{c:K.ak,a:eo(pr(u,a-.2,a+.3))});const b=w('1858');txt(String(Math.round(1800+58*eo(pr(u,b,b+.8)))),750,150,70,{c:K.bordo,a:eo(pr(u,b-.2,b+.3))});ink(kutu(380,330,240,200),{close:true,fill:'#CFC9B8',w:8,seed:40,pp:eo(pr(u,0,.6))});ink([[500,330],[560,260],[640,300],[580,350]],{close:true,fill:'#E9E3D6',w:7,seed:41,pp:eo(pr(u,a,a+.6))});ink(ln([420,330],[580,330],14),{w:6,c:K.bordo,seed:42,pp:eo(pr(u,w('açacak'),w('açacak')+.9))});etk('Ezra Warner',500,620,eo(pr(u,w('Ezra'),w('Ezra')+.5)),{size:48});"
+  },
+  {
+   "narration": "Doğru cevap: çekiç ve keskiyle; yani konserve, açacağından kırk yıldan fazla önce vardı.",
+   "ifade": "gururlu",
+   "cizim": "const t=w('Doğru');ink([[160,200],[210,260],[310,140]],{w:12,c:K.yesil,seed:50,pp:eo(pr(u,t,t+.5))});const c=w('çekiç');ctx.save();ctx.translate(300,300);ctx.rotate(-.7+Math.sin(T*6)*.3);ink(ln([0,0],[0,150],4),{w:12,seed:51,pp:eo(pr(u,c,c+.5))});ink(kutu(-40,-30,90,50),{close:true,fill:'#6B4A2F',w:7,seed:52,pp:eo(pr(u,c,c+.5))});ctx.restore();const k=w('keskiyle');ink(ln([450,450],[540,330],4),{w:10,seed:53,pp:eo(pr(u,k,k+.5))});const y=w('kırk');ink(ln([200,600],[800,600],20),{w:4,seed:54,pp:eo(pr(u,y,y+1))});txt(Math.round(45*eo(pr(u,y,y+1)))+'+ yıl',500,560,52,{c:K.ak,a:eo(pr(u,y,y+.3))});"
+  },
+  {
+   "narration": "Eşyaların başka hikâyeleri ilgili videoda; kaçırmamak için abone olun, takip edin.",
+   "ifade": "gulumsuyor",
+   "cizim": "const t=w('ilgili');ink(kutu(300,230,400,240),{close:true,fill:'#EFE4CB',w:7,seed:70,pp:eo(pr(u,t-.4,t+.4))});ink([[470,300],[470,400],[570,350]],{close:true,fill:K.ak,w:5,seed:71,pp:eo(pr(u,t,t+.5))});etk('ilgili video',500,580,eo(pr(u,t,t+.6)),{size:52});const s=w('abone');ink(ell(840,150,40+6*Math.sin(T*5),40+6*Math.sin(T*5),20),{close:true,fill:K.bordo,w:5,seed:72,pp:eo(pr(u,s,s+.5))});ink(ell(160,150,30,30,16),{close:true,w:5,seed:73,pp:eo(pr(u,s,s+.5)),amp:.5+Math.sin(T*6)*.2});"
+  }
+ ]
+}

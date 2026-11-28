@@ -1,0 +1,39 @@
+{
+ "id": "2026-11-29_UCyLqvRzGPIsjgOvr7RUxycA_short1",
+ "channelId": "UCyLqvRzGPIsjgOvr7RUxycA",
+ "type": "short",
+ "format": "duell",
+ "publishAt": "2026-11-29T05:00:00.000Z",
+ "topic": "Erdbeeren",
+ "title": "Duell 27/30: Wer erntet die meisten Erdbeeren? 🍓",
+ "description": "46 Länder, echte Daten, nur eine Flagge kommt durch. Wer ist der Erdbeer-Champion Europas?\n\n#flaggenduell #europa #länder #shorts",
+ "tags": [
+  "flaggenduell",
+  "europa",
+  "länder vergleich",
+  "erdbeeren",
+  "landwirtschaft",
+  "ranking",
+  "länderduell"
+ ],
+ "duell": {
+  "topicId": "erdbeeren",
+  "why": [
+   "Mildes Klima",
+   "Große Anbauflächen"
+  ],
+  "script": {
+   "intro": "Welches Land erntet die meisten Erdbeeren Europas? 46 Flaggen starten – nur eine kommt durch!",
+   "nodata": "8 Länder haben keine Erdbeerdaten und fliegen raus!",
+   "rounds": "Jetzt wird gesiebt! Polen verpasst das Finale um rund 150 Tausend Tonnen!",
+   "final": "Finale! Türkei gegen Spanien – wer holt die Erdbeer-Krone?",
+   "winner": "Die Türkei gewinnt! Rund 606 Tausend Tonnen, fast doppelt so viel wie Spanien!",
+   "why": "Warum die Türkei? Mildes Klima und große Anbauflächen.",
+   "table": "Die Türkei führt die Tabelle weiter an. Abonniere und like für das nächste Duell!"
+  }
+ },
+ "deney": {
+  "id": "yayin-saati",
+  "kol": "A"
+ }
+}

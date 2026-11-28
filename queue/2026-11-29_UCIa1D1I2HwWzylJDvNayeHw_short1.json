@@ -1,0 +1,208 @@
+{
+ "id": "2026-11-29_UCIa1D1I2HwWzylJDvNayeHw_short1",
+ "channelId": "UCIa1D1I2HwWzylJDvNayeHw",
+ "type": "short",
+ "format": "dizi",
+ "dizi": "oyun-hikayeleri",
+ "dikey": true,
+ "acilis": false,
+ "hiz": 1.2,
+ "publishAt": "2026-11-29T09:00:00.000Z",
+ "bolum": {
+  "no": 25,
+  "ad": "Top 3"
+ },
+ "title": "Kafanı Yoracak 3 Bulmaca Oyunu 🎮",
+ "ilgiliVideo": "2026-11-27_UCIa1D1I2HwWzylJDvNayeHw_long1",
+ "description": "Kafanı yoracak bir bulmaca oyunu arıyorsan şu üç oyun iyi bir başlangıç olabilir: Limbo, Baba Is You ve Portal. Sence ilk sırada hangisi var, yorumlara yaz!\n\n#bulmacaoyunları #oyunönerisi #portal #videooyunları",
+ "tags": [
+  "bulmaca oyunları",
+  "portal",
+  "limbo",
+  "baba is you",
+  "oyun önerisi",
+  "top 3"
+ ],
+ "topic": "Üç bulmaca oyunu: Limbo, Baba Is You ve Portal",
+ "soru": {
+  "metin": "Sence listenin birincisi hangisi?",
+  "a": "Portal",
+  "b": "Limbo",
+  "dogru": "a"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "B"
+ },
+ "oynatmaListesi": "En İyi Oyun Listeleri",
+ "ceviriler": {
+  "en": {
+   "title": "3 Puzzle Games That Will Bend Your Brain 🎮",
+   "description": "If you want a puzzle game, these three are a good start: Limbo, Baba Is You and Portal. Which one is number one? Tell us in the comments!\n\n#puzzlegames #gamerecommendations #portal"
+  }
+ },
+ "kapanis": {
+  "baslik": "SENİN OYUNUN?",
+  "sonraki": "Devamı için abone ol ve beğen",
+  "soru": "En çok seni hangi bulmaca oyunu uykusuz bıraktı?"
+ },
+ "tanitim": [
+  "Bulmaca oyunları",
+  "3 oyun"
+ ],
+ "paket": {
+  "merak": "Bulmaca oyunları arasında listenin birincisi hangisi?",
+  "cevap": "Birinci sırada Portal; Limbo üçüncü, Baba Is You ikinci",
+  "cevapSahne": 4,
+  "kapakAni": "1. sahne: dev BULMACA? yazısı ve düşünen oyuncu"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://en.wikipedia.org/wiki/Limbo_(video_game)",
+   "not": "Playdead, 2010"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Baba_Is_You",
+   "not": "Hempuli (Arvi Teikari), 2019"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
+   "not": "Valve, 2007, The Orange Box"
+  }
+ ],
+ "kurgu": false,
+ "kontrol": {
+  "O1": "evet: kendi yazımımız",
+  "O2": "evet: yasak tür yok",
+  "O3": "evet: yalnız yüksek güvenli yıl ve şirket bilgileri; kaynaklar alanında",
+  "O4": "evet: başlıktaki 3 oyun videoda",
+  "O5": "evet: YZ beyanı motor ayarında açık",
+  "O6": "evet: koşullu etkileşim yok",
+  "O7": "evet: lisanslı müzik ve kendi sesimiz",
+  "O8": "evet: motor -14 LUFS ayarlar",
+  "O9": "evet: motor SRT yükler",
+  "O10": "evet: kanalın nişi",
+  "O11": "evet: yeni video",
+  "O12": "evet: 6 etiket",
+  "S1": "evet: ilk karede dev BULMACA? yazısı, ilk cümle soru",
+  "S2": "evet: motor düzeni güvenli alanda",
+  "S3": "evet: süreyi hikâye belirler",
+  "S4": "evet: ilgili uzun video alanı dolu; tek çağrı sonda",
+  "S5": "evet: kanal planı",
+  "S6": "evet: ≤40 karakter",
+  "Y1": "evet: günlük ritimde",
+  "Y2": "evet: format sürüyor",
+  "Y3": "evet: kanalın tipik aralığıyla ölçülecek",
+  "Y4": "evet: gerekirse paket değişir"
+ },
+ "scenes": [
+  {
+   "mekan": "garaj",
+   "kisim": "Kanca",
+   "buyukYazi": {
+    "ust": "BULMACA?",
+    "alt": "kafanı yoracak oyun"
+   },
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Kafanı yoracak oyun mu arıyorsun? Sence listenin birincisi hangisi: Portal mı, Limbo mu? Cevap sonda."
+    }
+   ],
+   "aciklama": "0-1,5 sn: oyuncu düşünceli bakınır. 1,5-6 sn: dev yazı kalır, oyuncu omuz silker.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "dusun",
+     "ifade": "dusunceli"
+    }
+   ]
+  },
+  {
+   "mekan": "siralama",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Üçüncü sırada Limbo: Playdead'in 2010 çıkışlı, siyah beyaz bulmaca platform oyunu."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı belirir, üç madde sırayla gelir.",
+   "sira": {
+    "no": 3,
+    "ad": "Limbo",
+    "tur": "Bulmaca platform",
+    "maddeler": [
+     "2010 çıkışlı",
+     "Playdead yaptı",
+     "Siyah beyaz"
+    ]
+   }
+  },
+  {
+   "mekan": "siralama",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "İkinci sırada Baba Is You: 2019'da çıktı, oyunun kurallarını kendin değiştiriyorsun."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı belirir, üç madde sırayla gelir.",
+   "sira": {
+    "no": 2,
+    "ad": "Baba Is You",
+    "tur": "Kural bulmacası",
+    "maddeler": [
+     "2019 çıkışlı",
+     "Hempuli yaptı",
+     "Kuralları değiştir"
+    ]
+   }
+  },
+  {
+   "mekan": "siralama",
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Doğru cevap: Portal. Valve 2007'de çıkardı; portal tabancasıyla düşündüren odalar sunuyor."
+    }
+   ],
+   "aciklama": "0-4 sn: Sıralama kartı belirir, üç madde sırayla gelir.",
+   "sira": {
+    "no": 1,
+    "ad": "Portal",
+    "tur": "Bulmaca ve fizik",
+    "maddeler": [
+     "2007 çıkışlı",
+     "Valve yaptı",
+     "Portal tabancası"
+    ]
+   },
+   "efektler": [
+    "beyaz-cakma"
+   ]
+  },
+  {
+   "mekan": "fuar",
+   "kalabalik": 1,
+   "satirlar": [
+    {
+     "kim": "anlatici",
+     "metin": "Tamamı kanaldaki uzun videoda; yeni oyun hikâyelerini kaçırmamak için abone ol, takip et."
+    }
+   ],
+   "aciklama": "0-1 sn: kalabalık fuarda alkışlar. 1-5 sn: oyuncu kupayı kaldırır.",
+   "kadraj": [
+    {
+     "id": "oyuncu",
+     "x": 0.5,
+     "yon": 1,
+     "poz": "zafer",
+     "ifade": "gulumsuyor",
+     "esya": "kupa"
+    }
+   ]
+  }
+ ]
+}

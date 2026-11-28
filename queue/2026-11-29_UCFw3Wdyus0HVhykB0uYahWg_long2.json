@@ -1,0 +1,44 @@
+{
+ "id": "2026-11-29_UCFw3Wdyus0HVhykB0uYahWg_long2",
+ "channelId": "UCFw3Wdyus0HVhykB0uYahWg",
+ "type": "long",
+ "publishAt": "2026-11-29T15:00:00.000Z",
+ "format": "dizi",
+ "dizi": "zincirli",
+ "derleme": [
+  "2026-11-23_UCFw3Wdyus0HVhykB0uYahWg_long1",
+  "2026-11-26_UCFw3Wdyus0HVhykB0uYahWg_long1"
+ ],
+ "bolum": {
+  "no": 8,
+  "son": 9
+ },
+ "title": "Kılıcı Bırakan Arın, Gece Surda Kimi Gördü?",
+ "basliklar": [
+  "Kılıcı Bırakan Arın, Gece Surda Kimi Gördü?",
+  "Zincirli 8-9 Tek Parça: Kılıç Kumda, Dilek Surda",
+  "Arın Kılıcını Kuma Bıraktı, Kral Ne Planladı?"
+ ],
+ "titleAlt": "Arın Dileğinde Neden Sungur’u İstedi? | Zincirli 8-9",
+ "description": "Arın, akıl hocası Toros’la arenada karşı karşıya gelir ve kılıcını kuma bırakır; kral Toros’u satar. Ardından şampiyonun dileği, kralın fısıltısı ve surda geçen gece: merdivende yarım bilezikli bir kız. Zincirli 8-9. bölümler tek parça (kurgu animasyon dizi).\n\n#zincirli #animasyon #dizi #çöpadam",
+ "tags": [
+  "zincirli",
+  "zincirli tek parça",
+  "çöp adam",
+  "animasyon dizi",
+  "toros",
+  "bölüm bölüm"
+ ],
+ "topic": "Zincirli 8-9. bölümler: Toros’la arena ve şampiyonun dileği",
+ "thumbnailText": "TEK PARÇA",
+ "thumbnailTextAlt": "KILIÇ KUMDA",
+ "thumbnailTextAlt2": "KİM GÖNDERDİ?",
+ "oynatmaListesi": "Zincirli · 1. Sezon",
+ "ceviriler": {
+  "en": {
+   "title": "Arin Dropped His Sword: Who Did He See on the Wall?",
+   "description": "Arin faces his mentor Toros in the arena and drops his sword in the sand; the king sells Toros. Then the champion’s wish, the king’s whisper and a night on the wall: a girl with half a bracelet on the stairs. Chained episodes 8-9 in one piece (fictional stick-figure series).\n\n#chained #stickman #animation #series"
+  }
+ },
+ "kurgu": true
+}

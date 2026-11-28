@@ -1,0 +1,118 @@
+{
+ "id": "2026-11-29_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-29T11:00:00.000Z",
+ "seri": "markalar",
+ "topic": "Kodak'ın 1975'te dijital kamerayı yapması, rafa kaldırması ve 2012 iflas koruması",
+ "title": "Kodak Dijital Kamerayı Neden Sakladı?",
+ "description": "Markaların Hikâyesi #8\nKodak mühendisi Steven Sasson 1975'te ilk dijital kamerayı yaptı; film işini korumak isteyen şirket buluşu rafa kaldırdı ve 2012'de iflas koruması için başvurdu.\n\nBenzer bir krizin hikâyesi: https://youtu.be/btO8Kzwl_EU\n\nKaynaklar: britannica.com/topic/Eastman-Kodak-Company · en.wikipedia.org/wiki/Steven_Sasson\n\n#kodak #markalarınhikayesi",
+ "tags": [
+  "kodak",
+  "kodak tarihi",
+  "steven sasson",
+  "dijital kamera",
+  "markaların hikâyesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Dijital kamerayı bulan",
+  "Kodak neden sakladı?"
+ ],
+ "rozet": "Markaların Hikâyesi #8",
+ "soru": {
+  "metin": "Kodak dijital kamerayı neden sakladı?",
+  "a": "Film satışı azalacaktı",
+  "b": "Teknoloji çalışmadı",
+  "dogru": "a"
+ },
+ "kapanis": {
+  "soru": "Sizin evde hâlâ filmli makine var mı?",
+  "alt": "Yorumlara yazın"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Markaların Hikâyesi",
+ "ilgiliVideo": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "paket": {
+  "merak": "Dijital kamerayı bulan Kodak onu neden rafa kaldırdı?",
+  "cevap": "Film satışı azalacaktı; geliri büyük ölçüde filmden geliyordu",
+  "cevapSahne": 5,
+  "kapakAni": "İlk kare: Kodak yazılı dev kamera, rafta ve soru işareti"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://www.britannica.com/topic/Eastman-Kodak-Company",
+   "not": "Kodak, film geliri, 2012 iflas koruması başvurusu"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Steven_Sasson",
+   "not": "1975 ilk dijital kamera, yaklaşık 3,6 kg, kayıt 23 saniye; yönetimin tepkisi anlatılana göre"
+  }
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "Why Did Kodak Shelve the Digital Camera?",
+   "description": "Story of Brands #8\nKodak engineer Steven Sasson built the first digital camera in 1975. The company shelved it to protect film sales and filed for bankruptcy protection in 2012.\n\n#kodak #storyofbrands"
+  }
+ },
+ "kontrol": {
+  "O1": "evet: kendi yazımımız ve çizimimiz",
+  "O2": "evet: yasak tür yok",
+  "O3": "evet: kaynaklar alanında; kesin olmayanlar \"anlatılana göre/söylenir\" diye geçti",
+  "O4": "evet: başlıktaki vaat videoda var",
+  "O5": "evet: YZ beyanı motor ayarında açık",
+  "O6": "evet: koşullu etkileşim yok",
+  "O7": "evet: lisanslı müzik ve kendi seslerimiz",
+  "O8": "evet: motor -14 LUFS ayarlar ve ölçer",
+  "O9": "evet: motor SRT yükler",
+  "O10": "evet: kanalın nişi",
+  "O11": "evet: yeni video",
+  "O12": "evet: en fazla 6 etiket",
+  "S1": "evet: ilk karede rafta dijital kamera, ilk cümle soru",
+  "S2": "evet: motor düzeni güvenli alanda",
+  "S3": "evet: süreyi hikâye belirler",
+  "S4": "evet: ilgili video alanı dolu; tek çağrı sonda",
+  "S5": "evet: günlük Shorts planı kullanıcı kararı",
+  "S6": "evet: ≤40 karakter",
+  "Y1": "evet: günlük ritimde",
+  "Y2": "evet: format sürüyor",
+  "Y3": "evet: kanalın tipik aralığıyla ölçülecek",
+  "Y4": "evet: gerekirse paket değişir"
+ },
+ "scenes": [
+  {
+   "narration": "Kodak dijital kamerayı neden rafa kaldırdı? Teknoloji çalışmadığından mı, yoksa film satışı azalacağından mı? Cevap sonda.",
+   "ifade": "merakli",
+   "cizim": "const a=w('kamerayı');ink(kutu(300,260,400,260),{close:true,fill:'#E9E3D6',w:8,seed:1,pp:eo(pr(u,a,a+.7))});ink(ell(500,390,80,80,28),{close:true,fill:'#CFC9B8',w:7,seed:2,pp:eo(pr(u,a+.2,a+.8))});ink(kutu(560,215,100,45),{close:true,w:6,seed:3,pp:eo(pr(u,a+.2,a+.8))});const r=w('rafa');ink(ln([200,640],[800,640],14),{w:8,seed:4,pp:eo(pr(u,r,r+.5))});const q=w('Cevap');txt('?',150,300+Math.sin(T*4)*10,150,{c:K.ak,a:eo(pr(u,q,q+.4))});etk('Kodak',500,150,eo(pr(u,.2,.8)),{size:64,c:K.bordo});"
+  },
+  {
+   "narration": "1975'te Kodak mühendisi Steven Sasson ilk dijital kamerayı yaptı: ağırlığı yaklaşık 3,6 kilo, bir fotoğrafı kaydetmesi 23 saniye.",
+   "ifade": "saskin",
+   "cizim": "const y=w('1975');txt(String(Math.round(1900+75*eo(pr(u,y,y+.9)))),500,110,92,{c:K.ak,a:eo(pr(u,y-.2,y+.3))});ink(kutu(300,230,400,250),{close:true,fill:'#E9E3D6',w:8,seed:10,pp:eo(pr(u,0,.7))});ink(ell(500,355,70,70,26),{close:true,w:7,seed:11,pp:eo(pr(u,.3,.9))});const k=w('3,6');txt((3.6*eo(pr(u,k,k+.8))).toFixed(1)+' kg',250,600,56,{c:K.m,a:eo(pr(u,k,k+.3))});const s=w('23');txt(Math.round(23*eo(pr(u,s,s+1)))+' sn',750,600,56,{c:K.bordo,a:eo(pr(u,s,s+.3))});ink(ln([500,500],[500+Math.sin(T*3)*50,540],4),{w:5,seed:12,pp:eo(pr(u,s,s+.5))});"
+  },
+  {
+   "narration": "Anlatılana göre yöneticiler buluşu ilginç buldu ama film işini tehlikeye atmak istemedi.",
+   "ifade": "dusunceli",
+   "cizim": "ink(kutu(150,380,320,180),{close:true,fill:'#EFE4CB',w:7,seed:20,pp:eo(pr(u,0,.6))});const a=w('yöneticiler');for(let i=0;i<2;i++){ink(ell(250+i*120,300,36,36,16),{close:true,w:6,seed:21+i,pp:eo(pr(u,a+i*.2,a+i*.2+.5))});ink(ln([250+i*120,336],[250+i*120,380],2),{w:6,seed:23+i,pp:eo(pr(u,a,a+.5))});}const f=w('film');for(let i=0;i<4;i++){const x=620+i*60;ink(kutu(x,260+Math.sin(T*3+i)*4,44,150),{close:true,fill:'#B8893B',w:5,seed:30+i,pp:eo(pr(u,f+i*.1,f+i*.1+.4))});}const t=w('tehlikeye');ink(ln([600,230],[860,440],2),{w:9,c:K.bordo,seed:40,pp:eo(pr(u,t,t+.4))});ink(ln([860,230],[600,440],2),{w:9,c:K.bordo,seed:41,pp:eo(pr(u,t+.1,t+.5))});"
+  },
+  {
+   "narration": "Yıllar geçti, rakipler dijitale geçti; 2012'de Kodak iflas koruması için başvurdu.",
+   "ifade": "endiseli",
+   "cizim": "ink(ln([140,560],[860,560],20),{w:4,seed:50,pp:eo(pr(u,0,.6))});const d=w('dijitale');for(let i=0;i<5;i++){const h=60+i*55;ink(kutu(190+i*130,560-h*eo(pr(u,d+i*.15,d+i*.15+.6)),70,h*eo(pr(u,d+i*.15,d+i*.15+.6))),{close:true,fill:i<4?'#CFC9B8':K.bordo,w:5,seed:51+i});}const y=w('2012');txt(String(Math.round(1900+112*eo(pr(u,y,y+.9)))),500,150,90,{c:K.bordo,a:eo(pr(u,y-.2,y+.3))});etk('Kodak',500,260+Math.sin(T*2)*4,eo(pr(u,w('Kodak'),w('Kodak')+.5)),{size:50});"
+  },
+  {
+   "narration": "Doğru cevap: kaynaklara göre film satışı azalacaktı; Kodak'ın geliri büyük ölçüde filmdendi.",
+   "ifade": "gururlu",
+   "cizim": "const t=w('Doğru');ink([[160,200],[210,260],[310,140]],{w:12,c:K.yesil,seed:60,pp:eo(pr(u,t,t+.5))});const f=w('film');for(let i=0;i<6;i++){const x=300+i*80,hh=Math.round(150*eo(pr(u,f,f+.8)));ink(kutu(x,520-hh,56,hh),{close:true,fill:'#B8893B',w:5,seed:61+i});}const a=w('azalacaktı');for(let i=0;i<3;i++){const x=300+(5-i)*80;ctx.save();ctx.globalAlpha=eo(pr(u,a+i*.15,a+i*.15+.4))*.9;ctx.fillStyle=K.kagit;ctx.fillRect(x-4,360,66,170);ctx.restore();}etk('film geliri',500,620,eo(pr(u,f,f+.5)),{size:50});"
+  },
+  {
+   "narration": "Benzer bir krizin hikâyesi, plastik saat, ilgili videoda; kaçırmamak için abone olun, takip edin.",
+   "ifade": "gulumsuyor",
+   "cizim": "const t=w('ilgili');ink(kutu(300,230,400,240),{close:true,fill:'#EFE4CB',w:7,seed:70,pp:eo(pr(u,t-.4,t+.4))});ink([[470,300],[470,400],[570,350]],{close:true,fill:K.ak,w:5,seed:71,pp:eo(pr(u,t,t+.5))});etk('ilgili video',500,580,eo(pr(u,t,t+.6)),{size:52});const s=w('abone');ink(ell(840,150,40+6*Math.sin(T*5),40+6*Math.sin(T*5),20),{close:true,fill:K.bordo,w:5,seed:72,pp:eo(pr(u,s,s+.5))});ink(ell(160,150,30,30,16),{close:true,w:5,seed:73,pp:eo(pr(u,s,s+.5)),amp:.5+Math.sin(T*6)*.2});"
+  }
+ ]
+}

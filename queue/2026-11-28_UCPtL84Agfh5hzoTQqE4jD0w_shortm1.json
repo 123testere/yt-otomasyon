@@ -1,0 +1,122 @@
+{
+ "id": "2026-11-28_UCPtL84Agfh5hzoTQqE4jD0w_shortm1",
+ "channelId": "UCPtL84Agfh5hzoTQqE4jD0w",
+ "type": "short",
+ "format": "cizim",
+ "publishAt": "2026-11-28T11:00:00.000Z",
+ "oylama": {
+  "kaynak": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+  "secilen": "a"
+ },
+ "seri": "markalar",
+ "topic": "Casio'nun ilk ürünü: yüzük piposu; hesap makinesi, Casiotron ve G-Shock",
+ "title": "Casio'nun İlk Ürünü Neden Saat Değildi?",
+ "description": "Markaların Hikâyesi #7\nCasio'nun ilk ürünü saat değil, parmağa takılan bir sigara tutacağıydı; şirket sonra 1957'de hesap makinesine, 1974'te Casiotron'a, 1983'te G-Shock'a uzandı.\n\nTamamı ilgili videoda: https://youtu.be/btO8Kzwl_EU\n\nKaynaklar: britannica.com/topic/Casio-Computer-Co-Ltd · en.wikipedia.org/wiki/Casio\n\n#casio #markalarınhikayesi",
+ "tags": [
+  "casio",
+  "casio tarihi",
+  "g-shock",
+  "casiotron",
+  "markaların hikâyesi",
+  "lamba altında"
+ ],
+ "baslikKart": [
+  "Casio'nun ilk ürünü",
+  "neden saat değildi?"
+ ],
+ "rozet": "Markaların Hikâyesi #7",
+ "soru": {
+  "metin": "Casio'nun ilk ürünü neydi?",
+  "a": "Yüzük piposu",
+  "b": "Küçük bir saat",
+  "dogru": "a"
+ },
+ "kapanis": {
+  "soru": "Casio'nun ilk ürünü neydi?",
+  "alt": "Yorumlara yazın"
+ },
+ "deney": {
+  "id": "baslik-kalip",
+  "kol": "A"
+ },
+ "oynatmaListesi": "Markaların Hikâyesi",
+ "ilgiliVideo": "2026-11-24_UCPtL84Agfh5hzoTQqE4jD0w_long1",
+ "paket": {
+  "merak": "Casio'nun ilk ürünü bir saat miydi, yoksa başka bir şey mi?",
+  "cevap": "Parmağa takılan sigara tutacağı (yüzük piposu); sonra hesap makinesi ve saatler",
+  "cevapSahne": 5,
+  "kapakAni": "İlk kare: bir yanda saat, bir yanda yüzük piposu ve dev soru işareti"
+ },
+ "kaynaklar": [
+  {
+   "url": "https://www.britannica.com/topic/Casio-Computer-Co-Ltd",
+   "not": "Kashio ailesi, 1946 kuruluş, 1957 hesap makinesi"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Casio",
+   "not": "ilk ürün yubiwa pipe (yüzük piposu), 1974 Casiotron, 1983 G-Shock"
+  }
+ ],
+ "ceviriler": {
+  "en": {
+   "title": "Why Wasn't Casio's First Product a Watch?",
+   "description": "Story of Brands #7\nCasio's first product was not a watch but a ring that held a cigarette. Calculators, the Casiotron and the G-Shock came later.\n\n#casio #storyofbrands"
+  }
+ },
+ "kontrol": {
+  "O1": "evet: kendi yazımımız ve çizimimiz",
+  "O2": "evet: yasak tür yok",
+  "O3": "evet: kaynaklar alanında; kesin olmayanlar \"anlatılana göre/söylenir\" diye geçti",
+  "O4": "evet: başlıktaki vaat videoda var",
+  "O5": "evet: YZ beyanı motor ayarında açık",
+  "O6": "evet: koşullu etkileşim yok",
+  "O7": "evet: lisanslı müzik ve kendi seslerimiz",
+  "O8": "evet: motor -14 LUFS ayarlar ve ölçer",
+  "O9": "evet: motor SRT yükler",
+  "O10": "evet: kanalın nişi",
+  "O11": "evet: yeni video",
+  "O12": "evet: en fazla 6 etiket",
+  "S1": "evet: ilk karede saat ve yüzük piposu, ilk cümle soru",
+  "S2": "evet: motor düzeni güvenli alanda",
+  "S3": "evet: süreyi hikâye belirler",
+  "S4": "evet: ilgili video alanı dolu; tek çağrı sonda",
+  "S5": "evet: günlük Shorts planı kullanıcı kararı",
+  "S6": "evet: ≤40 karakter",
+  "Y1": "evet: günlük ritimde",
+  "Y2": "evet: format sürüyor",
+  "Y3": "evet: kanalın tipik aralığıyla ölçülecek",
+  "Y4": "evet: gerekirse paket değişir"
+ },
+ "scenes": [
+  {
+   "narration": "Casio'nun ilk ürünü neydi? Bir saat mi, yoksa parmağa takılan bir sigara tutacağı mı? Cevap sonda.",
+   "ifade": "merakli",
+   "cizim": "const a=w('saat');ink(ell(280,340,110,110,30),{close:true,fill:'#E8B64A',w:7,seed:1,pp:eo(pr(u,a,a+.6))});ink(ln([280,340],[280+Math.sin(T)*70,340-Math.cos(T)*70],4),{w:6,seed:2,pp:eo(pr(u,a,a+.6))});ink(kutu(235,160,90,50),{close:true,w:5,seed:3,pp:eo(pr(u,a,a+.6))});ink(kutu(235,470,90,50),{close:true,w:5,seed:4,pp:eo(pr(u,a,a+.6))});const b=w('parmağa');ink(ell(740,420,60,60,24),{close:true,w:9,seed:5,pp:eo(pr(u,b,b+.6))});ink(ln([740,360],[860,250],8),{w:9,seed:6,pp:eo(pr(u,b+.3,b+.9))});const c=w('Cevap');txt('?',500,330+Math.sin(T*4)*10,160,{c:K.ak,a:eo(pr(u,c,c+.4))});etk('Casio',500,640,eo(pr(u,.2,.8)),{size:48});"
+  },
+  {
+   "narration": "Savaştan sonra Tokyo'da Tadao Kashio küçük bir atölye kurdu.",
+   "ifade": "anlatiyor",
+   "cizim": "const a=w('Tokyo');ink(kutu(300,330,400,230),{close:true,fill:'#EFE4CB',w:7,seed:10,pp:eo(pr(u,0,.7))});ink([[280,330],[500,210],[720,330]],{close:true,fill:'#CFC9B8',w:7,seed:11,pp:eo(pr(u,.2,.8))});ink(kutu(470,430,80,130),{close:true,w:5,seed:12,pp:eo(pr(u,.4,.9))});const k=w('atölye');for(let i=0;i<3;i++){const y=(T*60+i*40)%120;ink(ell(640+i*14,300-y,10+y/10,8+y/10,12),{w:3,c:K.s,seed:13+i,pp:eo(pr(u,k,k+.3))});}etk('Tokyo',500,130,eo(pr(u,a,a+.5)),{size:60,c:K.mavi});etk('Tadao Kashio',500,640,eo(pr(u,w('Tadao'),w('Tadao')+.5)),{size:46});"
+  },
+  {
+   "narration": "1957'de kardeşleriyle birlikte, tamamen elektrikli, küçük bir hesap makinesi çıkardı.",
+   "ifade": "gururlu",
+   "cizim": "const a=w('1957');const y=Math.round(1900+57*eo(pr(u,a,a+1)));txt(String(y),500,110,92,{c:K.ak,a:eo(pr(u,a-.2,a+.3))});ink(kutu(330,200,340,420),{close:true,fill:'#E9E3D6',w:7,seed:20,pp:eo(pr(u,0,.7))});ink(kutu(360,230,280,70),{close:true,fill:'#FBF6EA',w:5,seed:21,pp:eo(pr(u,.3,.8))});for(let r=0;r<3;r++)for(let c=0;c<3;c++)ink(kutu(365+c*95,340+r*85,70,60),{close:true,w:4,seed:30+r*3+c,pp:eo(pr(u,.5+r*.15+c*.05,1+r*.15))});const hs=w('hesap');txt(String(Math.round(1957*eo(pr(u,hs,hs+.8)))%1000),620,285,40,{al:'right',a:eo(pr(u,hs,hs+.3))});"
+  },
+  {
+   "narration": "Saat ise çok sonra geldi: 1974'te Casiotron, 1983'te de düşmeye dayanıklı G-Shock.",
+   "ifade": "gulumsuyor",
+   "cizim": "ink(ln([140,380],[860,380],20),{w:4,seed:40,pp:eo(pr(u,0,.8))});for(const [x,yil,ad,k] of [[330,'1974','Casiotron',0],[670,'1983','G-Shock',1]]){const t=w(yil);const a=eo(pr(u,t,t+.5));ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(x,380,16+3*Math.sin(T*4),0,7);ctx.fillStyle=k?K.ak:K.s;ctx.fill();ctx.restore();txt(yil,x,300,70,{a,c:k?K.ak:K.s});etk(ad,x,470,a,{size:44});}const d=w('düşmeye');for(let i=0;i<3;i++){const y=(T*200+i*50)%100;ink(ln([670+i*30-30,520+y*.2],[670+i*30-30,540+y*.2],2),{w:4,c:K.m,seed:50+i,pp:eo(pr(u,d,d+.3))});}"
+  },
+  {
+   "narration": "Doğru cevap: yüzük piposu; Casio'nun ilk ürünü, parmağa takılıp sigarayı tutan bir halkaydı.",
+   "ifade": "saskin",
+   "cizim": "const a=w('yüzük');ink(ell(500,400,110,110,32),{close:true,w:12,seed:60,pp:eo(pr(u,a,a+.7))});ink(ln([560,310],[720,170],8),{w:12,seed:61,pp:eo(pr(u,w('piposu'),w('piposu')+.6))});const s=w('sigarayı');ink(ln([700,190],[800,110],6),{w:6,c:K.s,seed:62,pp:eo(pr(u,s,s+.5))});for(let i=0;i<3;i++){const p=(T*.5+i*.33)%1;ctx.save();ctx.globalAlpha=1-p;ink([[800+i*8,100-p*70],[790+i*8,80-p*70],[805+i*8,60-p*70]],{w:3,c:K.s,seed:63+i});ctx.restore();}const t=w('Doğru');ink([[180,200],[230,260],[330,140]],{w:12,c:K.yesil,seed:66,pp:eo(pr(u,t,t+.5))});etk('yüzük piposu',500,640,eo(pr(u,a,a+.6)),{size:52});"
+  },
+  {
+   "narration": "Başka bir saat hikâyesi, plastik Swatch, ilgili videoda; marka hikâyelerini kaçırmamak için abone olun, takip edin.",
+   "ifade": "gulumsuyor",
+   "cizim": "const t=w('ilgili');ink(kutu(300,230,400,240),{close:true,fill:'#EFE4CB',w:7,seed:70,pp:eo(pr(u,t-.4,t+.4))});ink([[470,300],[470,400],[570,350]],{close:true,fill:K.ak,w:5,seed:71,pp:eo(pr(u,t,t+.5))});etk('ilgili video',500,580,eo(pr(u,t,t+.6)),{size:52});const s=w('abone');ink(ell(840,150,40+6*Math.sin(T*5),40+6*Math.sin(T*5),20),{close:true,fill:K.bordo,w:5,seed:72,pp:eo(pr(u,s,s+.5))});ink(ell(160,150,30,30,16),{close:true,w:5,seed:73,pp:eo(pr(u,s,s+.5)),amp:.5+Math.sin(T*6)*.2});"
+  }
+ ]
+}
